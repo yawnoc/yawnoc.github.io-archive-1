@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="stylesheet" href="/conway.min.css">
+<link rel="stylesheet" href="/conway-katex.min.css">
+<script defer src="/conway-katex.min.js"></script>
+<script defer src="/conway-render.min.js"></script>
+<title>Projectile motion: optimal launch angle from a platform — Conway's site</title>
+</head>
+<body onload="dateRender(); mathsRender();">
+<header><nav><ul>
+<li><a href="/" title="Home page">Home</a></li>
+<li><a href="#" title="Jump back to top">Top</a></li>
+<li><a href="#solution" title="Solution">Solution</a></li>
+<li><a href="#result" title="Skip to the result">Result</a></li>
+<li><a href="#cite" title="Cite this page">Cite</a></li>
+</ul></nav></header>
+<h1>Projectile motion: optimal launch angle from a platform</h1>
+<p class="page-properties">
+First created:&nbsp;20190413<br>
+Last modified:&nbsp;<b>20190817</b><br>
+<b>See also:</b>&nbsp;<a href="/pages/optimal-angle-weak-drag.html" title="Projectile motion: optimal launch angle for weak quadratic drag">Projectile motion: optimal launch angle for weak quadratic drag</a>
+</p>
+<p>
+In the absence of air resistance, a launch angle of 45° maximises range.
+In high school Mr&nbsp;Benn asked what happens to the optimal launch angle
+if the projectile is instead launched from a raised platform.
+Here is a slightly condensed version of what I came up with:
+</p>
+<h2 id="solution"><a class="self-link" href="#solution"></a>
+Solution
+</h2>
+<p>
+<b>Manuscript:</b>
+<a href="/manuscripts/platform.pdf" title="Manuscript for Projectile motion: optimal launch angle from a platform"><code>platform.pdf</code></a>
+</p>
+<svg class="embedded-styles"><style>
+text {
+font-family: sans-serif;
+text-anchor: middle;
+}
+@font-face {
+font-display: swap;
+font-family: "KaTeX_Math-Italic";
+src:
+url("/fonts/KaTeX_Math-Italic.woff2") format("woff2"),
+url("/fonts/KaTeX_Math-Italic.woff") format("woff"),
+url("/fonts/KaTeX_Math-Italic.ttf") format("truetype");
+}
+@font-face {
+font-display: swap;
+font-family: "KaTeX_Main-Regular";
+src:
+url("/fonts/KaTeX_Main-Regular.woff2") format("woff2"),
+url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
+url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+}
+text.m {
+font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
+}
+text.mr {
+font-family: "KaTeX_Main-Regular";
+}
+line, path {
+stroke:        black;
+vector-effect: non-scaling-stroke;
+}
+</style></svg>
+<div class="centred-svg">
+<svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5">
+<defs>
+<marker
+id           = "arrowhead"
+viewBox      = "0 -0.15 0.5 0.3"
+refX         = "0.5"
+refY         = "0"
+markerWidth  = "0.5"
+markerHeight = "0.15"
+orient       = "auto-start-reverse">
+<path d="M 0, -0.15 L 0, 0.15 L 0.5, 0 z" />
+</marker>
+</defs>
+<line
+x1 = "0"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<text class="m"
+x = "5.5"
+y = "0"
+font-size   = "0.45"
+dx          = "0.5em"
+dy          = "0.3em"
+>x
+</text>
+<line
+x1 = "0"
+y1 = "0"
+x2 = "0"
+y2 = "-3.5" />
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size   = "0.45"
+dy          = "-0.5em"
+>y
+</text>
+<line
+x1 = "-0.25"
+y1 = "-2"
+x2 = "0.5"
+y2 = "-2" />
+<text class="m"
+x = "-0.25"
+y = "-2"
+font-size   = "0.45"
+dx          = "-0.5em"
+dy          = "0.3em"
+>h
+</text>
+<path
+d = "M 0,-2 Q 1.5,-5 5,0"
+fill          = "none" />
+<text class="m"
+x = "0.6"
+y = "-2"
+font-size   = "0.45"
+dx          = "-0.5em"
+dy          = "-0.35em"
+>ϕ
+</text>
+<text class="m"
+x = "5"
+y = "0"
+font-size   = "0.45"
+dy          = "1em"
+>R
+</text>
+<line
+x1 = "0"
+y1 = "-2"
+x2 = "0.8"
+y2 = "-3.6"
+marker-end = "url(#arrowhead)" />
+<text class="m"
+x = "0.8"
+y = "-3.6"
+font-size   = "0.45"
+dx          = "0.5em"
+>u
+</text>
+</svg>
+</div>
+<p>
+Suppose the projectile is launched at speed <span class="maths">u</span> and angle <span class="maths">\phi</span>
+from height <span class="maths">h</span> above the ground,
+which has gravitational field strength <span class="maths">g</span>,
+so that the motion is given by
+</p>
+<div class="maths">
+\begin{aligned}
+  x (t) &amp;= u t \cos\phi \\
+  y (t) &amp;= u t \sin\phi - \frac{1}{2} g t^2 + h.
+\end{aligned}
+</div>
+<p>
+The flight time is the positive solution to the quadratic
+<span class="maths">y (t) = 0</span>, i.e.
+</p>
+<div class="maths">
+\begin{aligned}
+  t
+  &amp;=
+    \frac{1}{g}
+    \left(
+      u \sin\phi
+    + \sqrt{u^2 \sin^2\phi + 2 g h}
+    \right) \\
+  &amp;=
+    \frac{u}{g}
+    \left(
+      \sin\phi
+    + \sqrt{\sin^2\phi + C}
+    \right)
+\end{aligned}
+</div>
+<p>
+where <span class="maths">C = 2 g h / u^2</span> is the dimensionless ratio
+between the initial potential and kinetic energies of the projectile.
+Substituting the flight time into <span class="maths">x (t)</span> gives the range
+</p>
+<div class="maths">
+R =
+  \frac{u^2 \cos\phi}{g}
+  \left(
+    \sin\phi
+  + \sqrt{\sin^2\phi + C}
+  \right).
+</div>
+<p>
+To maximise the range <span class="maths">R</span> with respect to the launch angle <span class="maths">\phi</span>,
+we compute
+</p>
+<div class="maths">
+\begin{aligned}
+  \frac{\pd R}{\pd\phi}
+  &amp;=
+    \frac{u^2}{g}
+    \left[
+      \cos\phi \cdot \cos\phi
+    - \sin\phi \cdot \sin\phi
+    + \cos\phi
+      \cdot
+      \frac{2 \sin\phi \cos\phi}{2 \sqrt{\sin^2\phi + C}}
+    - \sin\phi \sqrt{\sin^2\phi + C}
+    \right] \\
+  &amp;=
+    \frac{u^2}{g}
+    \left[
+      \cos^2\phi
+      \left(
+        1 + \frac{\sin\phi}{\sqrt{\sin^2\phi + C}}
+      \right)
+    - \sin\phi
+      \left(
+        \sin\phi + \sqrt{\sin^2\phi + C}
+      \right)
+    \right].
+\end{aligned}
+</div>
+<p>
+For brevity let <span class="maths">\beta = \sin\phi</span>. Then
+</p>
+<div class="maths">
+\begin{aligned}
+  \frac{\pd R}{\pd\phi}
+  &amp;=
+    \frac{u^2}{g}
+    \left[
+      (1 - \beta^2)
+      \left(
+        1 + \frac{\beta}{\sqrt{\beta^2 + C}}
+      \right)
+    - \beta
+      \left(
+        \beta + \sqrt{\beta^2 + C}
+      \right)
+    \right] \\
+  &amp;=
+    \frac{u^2}{g}
+    \left(
+      \beta + \sqrt{\beta^2 + C}
+    \right)
+    \left[
+      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
+    - \beta
+    \right] \\
+  &amp;=
+    \frac{2h}{C}
+    {\color{blue}
+      \left(
+        \beta + \sqrt{\beta^2 + C}
+      \right)
+    }
+    {\color{red}
+      \left[
+        \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
+      - \beta
+      \right]
+    }.
+\end{aligned}
+</div>
+<p>
+We carefully consider the ways in which <span class="maths">\pd R / \pd\phi</span> can vanish:
+</p>
+<ol class="sparse-list">
+<li>
+If <span class="maths">C = \infty</span>, then
+<div class="maths">
+\frac{\pd R}{\pd\phi}
+= \frac{2h}{C}
+  {\color{blue} \left( \sqrt{C} \right)}
+  {\color{red} \left[ -\beta \right]}
+= - 2\beta \cdot \frac{h}{\sqrt{C}},
+</div>
+which vanishes assuming <span class="maths">h</span> is finite.
+But since <span class="maths">C = 2 g h / u^2</span> is infinite, this only occurs if
+<span class="maths">g = \infty</span> (infinitely strong gravity) or
+<span class="maths">u = 0</span> (zero launch speed),
+and in either case the range is zero, i.e.&nbsp;<span class="maths">R</span> is minimised.
+</li>
+<li>
+If <span class="maths">C = 0</span> and <span class="maths">\beta &lt; 0</span>, then
+<div class="maths">
+\begin{aligned}
+  \frac{\pd R}{\pd\phi}
+  &amp;=
+    \frac{2h}{C}
+    {\color{blue}
+      \left(
+        \beta
+      + (-\beta)
+        \left(
+          1
+        + \frac{C}{2 \beta^2}
+        \right)
+      \right)
+    }
+    {\color{red}
+      \left[
+        \frac{1 - \beta^2}{-\beta}
+      + \frac{\beta^2}{-\beta}
+      \right]
+    } \\
+  &amp;=
+    \frac{2h}{C}
+    {\color{blue}
+      \left(
+      - \frac{C}{2 \beta}
+      \right)
+    }
+    {\color{red}
+      \left[
+      - \frac{1}{\beta}
+      \right]
+    } \\
+  &amp;= \frac{h}{\beta^2},
+\end{aligned}
+</div>
+which vanishes only if <span class="maths">h = 0</span>.
+But since <span class="maths">\phi = \sin^{-1}\beta &lt; 0</span>, this corresponds to
+launching the projectile downwards starting from ground level,
+and again the range is zero.
+</li>
+<li>
+If <span class="maths">\color{red}
+      \left[
+        \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
+      - \beta
+      \right] = 0</span>,
+then <span class="maths">\pd R / \pd\phi</span> vanishes unconditionally, and we have
+<div class="maths">
+\begin{aligned}
+  (1 - \beta^2)^2 &amp;= \beta^2 (\beta^2 + C) \\
+  1 - 2 \beta^2 + \cancel{\beta^4}
+    &amp;= \cancel{\beta^4} + C \beta^2 \\
+  1 &amp;= (C + 2) \beta^2 \\
+  \beta &amp;= \frac{1}{\sqrt{C + 2}},
+\end{aligned}
+</div>
+<p>
+which indeed corresponds to the positive maximum range, which is
+</p>
+<div class="maths">
+\begin{aligned}
+  R
+  &amp;=
+    \frac{u^2}{g}
+    \sqrt{1 - \beta^2}
+    \left(
+      \beta
+    + \sqrt{\beta^2 + C}
+    \right) \\
+  &amp;=
+    \frac{u^2}{g}
+    \sqrt{1 - \frac{1}{C + 2}}
+    \left(
+      \frac{\cancel{\beta^2}}{\beta}
+    + \frac{1 - \cancel{\beta^2}}{\beta}
+    \right) \\
+  &amp;=
+    \frac{u^2}{g}
+    \sqrt{\frac{C + 1}{\cancel{C + 2}}}
+      \cdot
+    \frac{1}{\cancel{\beta}} \\
+  &amp;=
+    \frac{u^2}{g}
+    \sqrt{C + 1}.
+\end{aligned}
+</div>
+</li>
+</ol>
+<h2 id="result"><a class="self-link" href="#result"></a>
+Result
+</h2>
+<p>
+Hence the <b>optimal launch angle</b> for a projectile launched at
+speed <span class="maths">u</span> from height <span class="maths">h</span>
+in a gravitational field of strength <span class="maths">g</span> is
+</p>
+<div class="maths">
+\boxed{
+  \phi = \sin^{-1} \frac{1}{\sqrt{2 g h / u^2 + 2}},
+}
+</div>
+<p>
+achieving a <b>maximum range</b> of
+</p>
+<div class="maths">
+\boxed{
+  R = \frac{u^2}{g} \sqrt{2 g h / u^2 + 1}.
+}
+</div>
+<p>
+In particular:
+</p>
+<ul class="sparse-list">
+<li>
+For <span class="maths">h = 0</span>, we recover
+<span class="maths">\phi = \sin^{-1} (1/\sqrt{2}) = 45\degree</span> and <span class="maths">R = u^2 / g</span>,
+which are the optimal angle and maximum range
+respectively for a projectile launched from ground level.
+For small <span class="maths">h</span> we have
+<div class="maths">
+\phi \sim 45\degree - \frac{g h}{2 u^2} \cdot \frac{180\degree}{\pi}
+</div>
+<p>and</p>
+<div class="maths">
+R \sim \frac{u^2}{g} + h.
+</div>
+</li>
+<li>
+For <span class="maths">h = \infty</span>, the optimal angle is
+<span class="maths">\phi = \sin^{-1} (1/\sqrt{\infty}) = 0</span>
+and the maximum range is
+<span class="maths">R = u^2/g \cdot \sqrt{\infty} = \infty</span>.
+Projectiles should be launched almost horizontally
+from very tall platforms; asymptotically we have
+<div class="maths">
+\phi \sim \frac{1}{\sqrt{2 g h / u^2}}
+  = \frac{u}{\sqrt{2 g h}} \cdot \frac{180 \degree}{\pi}
+</div>
+<p>and</p>
+<div class="maths">
+R \sim \frac{u^2}{g} \sqrt{2 g h / u^2} = u \sqrt{\frac{2 h}{g}}.
+</div>
+</li>
+</ul>
+<p>
+Finally note that the optimal angle depends only on
+the dimensionless ratio <span class="maths">C = 2 g h / u^2</span>.
+In fact this may be shown using dimensional analysis
+without actually having to solve the problem;
+the only parameters are <span class="maths">u</span>, <span class="maths">g</span> and <span class="maths">h</span>,
+so the only dimensionless group (up to a power) is <span class="maths">g h / u^2</span>.
+</p>
+<h2 id="cite"><a class="self-link" href="#cite"></a>
+Cite this page
+</h2>
+<ul>
+<li>Text:
+<p>
+Conway&nbsp;(2019).
+<i>Projectile motion: optimal launch angle from a platform</i>.
+&lt;https://yawnoc.github.io/pages/optimal-angle-platform.html&gt;
+[Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
+</p>
+</li>
+<li>BibTeX:
+<pre>
+@misc{conway-platform,
+  author = {Conway},
+  year = {2019},
+  title = {Projectile motion: optimal launch angle from a platform},
+  howpublished = {\url{https://yawnoc.github.io/pages/optimal-angle-platform.html}},
+  note = {[Accessed <span class="date">d~month~yyyy</span>]}
+}
+</pre>
+</li>
+<li>BibLaTeX:
+<pre>
+@online{conway-platform,
+  author = {Conway},
+  year = {2019},
+  title = {Projectile motion: optimal launch angle from a platform},
+  url = {https://yawnoc.github.io/pages/optimal-angle-platform.html},
+  urldate = {<span class="date">yyyy-mm-dd</span>}
+}
+</pre>
+</li>
+</ul>
+<footer>
+<hr>
+©&nbsp;2019&nbsp;Conway.
+</footer>
+</body>
+</html>
