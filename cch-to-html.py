@@ -1,0 +1,3305 @@
+#!/usr/bin/python
+
+################################################################
+# conv.py
+# Modified: 20191031
+################################################################
+# A converter from Conway's concise HTML (CCH) to HTML,
+# written by Conway, for the sole purpose of building his site
+#   https://yawnoc.github.io/
+# with fewer keystrokes and better readability than straight HTML.
+# Done entirely with regular expression replacements.
+# ----------------------------------------------------------------
+# You   : Why the hell would you use regex to do this?
+# Conway: It works, really!
+# You   : You're crazy.
+# Conway: Oh shut up, I already know that.
+# ----------------------------------------------------------------
+# To be kept in the root directory.
+# ----------------------------------------------------------------
+# Basic documentation on how CCH works:
+#   https://yawnoc.github.io/code/cch-to-html.html
+# ----------------------------------------------------------------
+# Released into the public domain (CC0):
+#   https://creativecommons.org/publicdomain/zero/1.0/
+# ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
+################################################################
+
+################################################################
+# Tags in canonical order
+################################################################
+#   Tag             Name                              Descendants
+# ----------------------------------------------------------------
+# Supreme tags
+# ----------------------------------------------------------------
+# These are immune to any processing below it.
+#   <``>            display_code
+#   <`>             inline_code
+#   <!-- -->        html_comment
+#   <$$>            display_maths
+#   <$>             inline_maths
+#   <$d>            inline_maths_definition
+# ----------------------------------------------------------------
+# Zero-argument tags
+# ----------------------------------------------------------------
+#   <@i{type}>      item_anchor_abbreviation          <@i>
+#   <^^>            assisting_romanisation_radio      <^>
+#   <-{type}>       svg_style_abbreviation
+# ----------------------------------------------------------------
+# Multiple-argument tags
+# ----------------------------------------------------------------
+# Arguments are to be separated by the pipe character |.
+# Use \| for a literal pipe.
+# Nesting is allowed provided the inner tag is strictly higher in this list.
+#   <+{pos}>        dialogue_image                    <+>
+#   <+>             image
+#   <^>             assisting_romanisation            <^e>
+#   <^cm[gov]>      cantonese_mandarin_romanisation   <@>, <^e>
+#   <@{dir}>        directed_triangle_anchor          <@>
+#   <@i>            item_anchor                       <@>
+#   <@{level}>      heading_self_link_anchor          <@>
+#   <@>             anchor
+#   <#[size]>       boxed_translation
+#   <;sh>           shuen_heading                     <@{level}>
+#   <;s@@>          shuen_link_division               <@@>, <@{dir}>, <@>
+#   <*>             preamble
+#   <*p>            page_properties                   <@>
+#   <*c>            cite_this_page                    <@{level}>
+#   <*f>            footer
+# <@{dir}>, <@{level}>, <@> require a second pass, since they are descendants
+# of multiple-argument tags which are lower down than themselves.
+# ----------------------------------------------------------------
+# Single-argument tags
+# ----------------------------------------------------------------
+#   <:{type}>       formatted_span
+#   <#[type]>       boxed_division
+#   <~~>            dialogue_division
+#   <~{pos}[type]>  dialogue_paragraph
+#   <@@>            link_division
+#   <=h>            header_navigation_bar             <=>
+#   <=>             navigation_bar
+#   <.>             note_paragraph
+#   <![type]>       overflowing_division
+#   <-->            svg_style_container
+#   <^e>            text_romanisation
+################################################################
+
+################################################################
+# Escapes
+################################################################
+#   Unescaped       Escaped
+# ----------------------------------------------------------------
+# Python (for regex replacement strings)
+# ----------------------------------------------------------------
+#   \               \\
+# ----------------------------------------------------------------
+# HTML
+# ----------------------------------------------------------------
+#   &               &amp;
+#   <               &lt;
+#   >               &gt;
+# ----------------------------------------------------------------
+# Quotes (for attribute values)
+# ----------------------------------------------------------------
+#   "               &quot;
+# ----------------------------------------------------------------
+# Conway
+# ----------------------------------------------------------------
+#   \               \\              (literal backslash)
+#   |               \|              (literal pipe in a Multiple-argument tag)
+#   ~               \~              (literal tilde)
+#   {               \{              (literal opening curly bracket)
+#   }               \}              (literal closing curly bracket)
+#   &nbsp;          ~               (non-breaking space)
+#   {U+30FB}        \.              (・ U+30FB KATAKANA MIDDLE DOT)
+#   {Chinese run}   \{Chinese run}  (literal Chinese run (no language span))
+#   &amp;           \&              (HTML-escaped ampersand)
+#   &lt;            \<              (HTML-escaped less than)
+#   &gt;            \>              (HTML-escaped greater than)
+#   LORD            \*              (Lord in small caps)
+#   &numsp;         \_              (figure space for use in numerical tables)
+#   &thinsp;        \,              (thin space)
+#   <i>             {               (Conway italics opening tag)
+#   </i>            }               (Conway italics closing tag)
+# \ and | are called functional Conway literals.
+# ~, { and } are called special Conway literals.
+# ----------------------------------------------------------------
+# Romanisation (for text romanisation tags)
+# ----------------------------------------------------------------
+# Conway only
+#   œ               oe              (œ U+0153 LATIN SMALL LIGATURE OE)
+# Wade–Giles only
+#   ê               e^              (ê U+00EA LATIN SMALL LETTER E WITH CIRCUMFLEX)
+#   ŭ               uu              (ŭ U+016D LATIN SMALL LETTER U WITH BREVE)
+# Pinyin tone 1 陰平 (dark level) only
+#   ā               a=              (ā U+0101 LATIN SMALL LETTER A WITH MACRON)
+#   ē               e=              (ē U+0113 LATIN SMALL LETTER E WITH MACRON)
+#   ī               i=              (ī U+012B LATIN SMALL LETTER I WITH MACRON)
+#   ō               o=              (ō U+014D LATIN SMALL LETTER O WITH MACRON)
+#   ū               u=              (ū U+016B LATIN SMALL LETTER U WITH MACRON)
+#   ǖ               u"=             (ǖ U+01D6 LATIN SMALL LETTER U WITH DIAERESIS AND MACRON)
+# Pinyin tone 2 陽平 (light level) only
+#   á               a/              (á U+00E1 LATIN SMALL LETTER A WITH ACUTE)
+#   é               e/              (é U+00E9 LATIN SMALL LETTER E WITH ACUTE)
+#   í               i/              (í U+00ED LATIN SMALL LETTER I WITH ACUTE)
+#   ó               o/              (ó U+00F3 LATIN SMALL LETTER O WITH ACUTE)
+#   ú               u/              (ú U+00FA LATIN SMALL LETTER U WITH ACUTE)
+#   ǘ               u"/             (ǘ U+01D8 LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE)
+# Pinyin tone 3 上 (rising) only
+#   ǎ               av              (ǎ U+01CE LATIN SMALL LETTER A WITH CARON)
+#   ě               ev              (ě U+011B LATIN SMALL LETTER E WITH CARON)
+#   ǐ               iv              (ǐ U+01D0 LATIN SMALL LETTER I WITH CARON)
+#   ǒ               ov              (ǒ U+01D2 LATIN SMALL LETTER O WITH CARON)
+#   ǔ               uv              (ǔ U+01D4 LATIN SMALL LETTER U WITH CARON)
+#   ǚ               u"v             (ǚ U+01DA LATIN SMALL LETTER U WITH DIAERESIS AND CARON)
+# Pinyin tone 4 去 (departing) only
+#   à               a\              (à U+00E0 LATIN SMALL LETTER A WITH GRAVE)
+#   è               e\              (è U+00E8 LATIN SMALL LETTER E WITH GRAVE)
+#   ì               i\              (ì U+00EC LATIN SMALL LETTER I WITH GRAVE)
+#   ò               o\              (ò U+00F2 LATIN SMALL LETTER O WITH GRAVE)
+#   ù               u\              (ù U+00F9 LATIN SMALL LETTER U WITH GRAVE)
+#   ǜ               u"\             (ǜ U+01DC LATIN SMALL LETTER U WITH DIAERESIS AND GRAVE)
+# Common
+#   ü               u"              (ü U+00FC LATIN SMALL LETTER U WITH DIAERESIS)
+################################################################
+
+################################################################
+# Italics
+################################################################
+# Curly brackets {} are automatically converted to italics tags
+# <i></i>, unless preceded immediately by a backslash.
+################################################################
+
+################################################################
+# Whitespace (for lighter HTML)
+################################################################
+# Unnecessary whitespace is removed:
+# 1. Preformatted tags are de-indented (but not affected by the removals below)
+# 2. Leading whitespace and empty lines are removed
+# 3. Newlines preceded immediately by a backslash are removed
+################################################################
+
+################################################################
+# Language spans
+################################################################
+# Runs of Chinese characters and ・ (U+30FB KATAKANA MIDDLE DOT)
+# are automatically wrapped in a lang="zh-Hant" span,
+# unless preceded immediately by a backslash.
+################################################################
+
+###############################################################################
+###############################################################################
+###############################################################################
+
+import argparse
+import re
+from textwrap import dedent as de_indent
+
+################################################################
+# Replace display code with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   <``> {content} </``>
+
+# Raw regular expression for unprocessed string:
+#   <``>([\s\S]*?)</``>
+#   \1  {content}
+
+# Processed string:
+#   <pre> {HTML-escaped, de-indented content} </pre>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_display_code(match_object):
+  
+  content = match_object.group(1)
+  content = escape_html(content)
+  content = de_indent(content)
+  
+  processed_string = '<pre>{content}</pre>'.format(content = content)
+  
+  return create_temporary_replacement_string(processed_string)
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_display_code(string):
+  
+  return re.sub(r'<``>([\s\S]*?)</``>', replace_display_code, string)
+
+################################################################
+# Replace inline code with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   <`> {content} </`>
+
+# Raw regular expression for unprocessed string:
+#   <`>([\s\S]*?)</`>
+#   \1  {content}
+
+# Processed string:
+#   <code> {HTML-escaped content} </code>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_inline_code(match_object):
+  
+  content = match_object.group(1)
+  content = escape_html(content)
+  
+  processed_string = '<code>{content}</code>'.format(content = content)
+  
+  return create_temporary_replacement_string(processed_string)
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_inline_code(string):
+  
+  return re.sub(r'<`>([\s\S]*?)</`>', replace_inline_code, string)
+
+################################################################
+# Remove HTML comments (and all preceding whitespace)
+################################################################
+
+# Unprocessed string:
+#   {whitespace} <!-- {content} -->
+
+# Raw regular expression for unprocessed string:
+#   \s*<!\-\-[\s\S]*?\-\->
+
+# Processed string:
+#   {empty string}
+
+def remove_all_html_comments(string):
+  
+  return re.sub(r'\s*<!\-\-[\s\S]*?\-\->', '', string)
+
+################################################################
+# Replace display maths with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   <$$> {content} </$$>
+
+# Raw regular expression for unprocessed string:
+#   <\$\$>([\s\S]*?)</\$\$>
+#   \1  {content}
+
+# Processed string:
+#   <div class="maths"> {HTML-escaped, de-indented content} </div>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_display_maths(match_object):
+  
+  content = match_object.group(1)
+  content = escape_html(content)
+  content = de_indent(content)
+  
+  processed_string = (
+    '<div class="maths">{content}</div>'.format(content = content)
+  )
+  
+  return create_temporary_replacement_string(processed_string)
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_display_maths(string):
+  
+  return re.sub(r'<\$\$>([\s\S]*?)</\$\$>', replace_display_maths, string)
+
+################################################################
+# Replace inline maths with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   <$> {content} </$>
+
+# Raw regular expression for unprocessed string:
+#   <\$>([\s\S]*?)</\$>
+#   \1  {content}
+
+# Processed string:
+#   <span class="maths"> {HTML-escaped content} </span>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_inline_maths(match_object):
+  
+  content = match_object.group(1)
+  content = escape_html(content)
+  
+  processed_string = (
+    '<span class="maths">{content}</span>'.format(content = content)
+  )
+  
+  return create_temporary_replacement_string(processed_string)
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_inline_maths(string):
+  
+  return re.sub(r'<\$>([\s\S]*?)</\$>', replace_inline_maths, string)
+
+################################################################
+# Replace inline maths definitions with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   <$d> {content} </$d>
+
+# Raw regular expression for unprocessed string:
+#   <\$d>([\s\S]*?)</\$d>
+#   \1  {content}
+
+# Processed string:
+#   <span class="maths embedded-definitions"> {HTML-escaped content} </span>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_inline_maths_definition(match_object):
+  
+  content = match_object.group(1)
+  content = escape_html(content)
+  
+  processed_string = (
+    '<span class="maths embedded-definitions">{content}</span>'.format(
+      content = content
+    )
+  )
+  
+  return create_temporary_replacement_string(processed_string)
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_inline_maths_definitions(string):
+  
+  return re.sub(
+    r'<\$d>([\s\S]*?)</\$d>',
+    replace_inline_maths_definition,
+    string
+  )
+
+################################################################
+# Replace item anchor abbreviations
+################################################################
+
+# Unprocessed string:
+#   <@i{type}></@i{type}>
+# where {type} is one of h, t, i, n, r or c
+
+# Raw regular expression for unprocessed string:
+#   <@i([htinrc])></@i\1>
+#   \1  {type}
+
+# Processed string:
+#   <@i> {content} | {href} | {title} </@i>
+# where {content}, {href} and {title} depend on {type}
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+item_anchor_abbreviation_content_dictionary = {
+  'h': 'Home',
+  't': 'Top',
+  'i': 'Intro',
+  'n': 'Translation',
+  'r': 'Result',
+  'c': 'Cite'
+}
+
+item_anchor_abbreviation_href_dictionary = {
+  'h': '/',
+  't': '#',
+  'i': '#introduction',
+  'n': '#translation',
+  'r': '#result',
+  'c': '#cite'
+}
+
+item_anchor_abbreviation_title_dictionary = {
+  'h': 'Home page',
+  't': 'Jump back to top',
+  'i': 'Introduction',
+  'n': 'Translation',
+  'r': 'Skip to the result',
+  'c': 'Cite this page'
+}
+
+def replace_item_anchor_abbreviation(match_object):
+  
+  type = match_object.group(1)
+  
+  content = item_anchor_abbreviation_content_dictionary[type]
+  href = item_anchor_abbreviation_href_dictionary[type]
+  title = item_anchor_abbreviation_title_dictionary[type]
+  
+  processed_string = (
+    '<@i> {content} | {href} | {title} </@i>'.format(
+      content = content,
+      href = href,
+      title = title
+    )
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_item_anchor_abbreviations(string):
+  
+  return re.sub(
+    r'<@i([htinrc])></@i\1>',
+    replace_item_anchor_abbreviation,
+    string
+  )
+
+################################################################
+# Replace assisting romanisation radio
+################################################################
+
+# Only the first occurrence is replaced.
+
+# Unprocessed string:
+#   <^^></^^>
+
+# Raw regular expression for unprocessed string:
+#   <\^\^></\^\^>
+
+# Processed string:
+#   <div class="romanisation-radio">
+#     Romanisation~(F9):~音標<^>yam peeu | yin piao | yin biao</^><br>
+#     <input type="radio" name="romanisation" id="romanisation-none" value="none">
+#       <label for="romanisation-none">None</label>
+#     <input type="radio" name="romanisation" id="romanisation-conway" value="conway">
+#       <label for="romanisation-conway">Conway</label>
+#     <input type="radio" name="romanisation" id="romanisation-wadegiles" value="wadegiles">
+#       <label for="romanisation-wadegiles">Wade–Giles</label>
+#     <input type="radio" name="romanisation" id="romanisation-pinyin" value="pinyin">
+#       <label for="romanisation-pinyin">Pinyin</label>
+#   </div>
+# where the dash in Wade–Giles is U+2013 EN DASH
+
+def replace_assisting_romanisation_radio(string):
+  
+  processed_string = de_indent('''\
+    <div class="romanisation-radio">
+      Romanisation~(F9):~音標<^>yam peeu | yin piao | yin biao</^><br>
+      <input type="radio" name="romanisation" id="romanisation-none" value="none">
+        <label for="romanisation-none">None</label>
+      <input type="radio" name="romanisation" id="romanisation-conway" value="conway">
+        <label for="romanisation-conway">Conway</label>
+      <input type="radio" name="romanisation" id="romanisation-wadegiles" value="wadegiles">
+        <label for="romanisation-wadegiles">Wade–Giles</label>
+      <input type="radio" name="romanisation" id="romanisation-pinyin" value="pinyin">
+        <label for="romanisation-pinyin">Pinyin</label>
+    </div>'''
+  )
+  
+  return re.sub(
+    r'<\^\^></\^\^>',
+    escape_python_backslash(processed_string),
+    string,
+    count = 1
+  )
+
+################################################################
+# Replace SVG style abbreviations
+################################################################
+
+# Unprocessed string:
+#   <-{type}></-{type}>
+# where {type} is one of t or m
+
+# Raw regular expressions for unprocessed string:
+#   <\-t></\-t>
+#   <\-m></\-m>
+
+# Processed string for {type} t:
+#   text {
+#     font-family: sans-serif;
+#     text-anchor: middle;
+#   }
+# Processed string for {type} m:
+#   @font-face {
+#     font-display: swap;
+#     font-family: "KaTeX_Math-Italic";
+#     src:
+#       url("/fonts/KaTeX_Math-Italic.woff2") format("woff2"),
+#       url("/fonts/KaTeX_Math-Italic.woff") format("woff"),
+#       url("/fonts/KaTeX_Math-Italic.ttf") format("truetype");
+#   }
+#   @font-face {
+#     font-display: swap;
+#     font-family: "KaTeX_Main-Regular";
+#     src:
+#       url("/fonts/KaTeX_Main-Regular.woff2") format("woff2"),
+#       url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
+#       url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+#   }
+#   text.m {
+#     font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
+#   }
+#   text.mr {
+#     font-family: "KaTeX_Main-Regular";
+#   }
+# where all curly brackets are literal
+
+def replace_all_svg_style_abbreviations(string):
+  
+  processed_string = de_indent('''\
+    text {
+      font-family: sans-serif;
+      text-anchor: middle;
+    }'''
+  )
+  
+  string = re.sub(
+    r'<\-t></\-t>',
+    escape_python_backslash(processed_string),
+    string
+  )
+  
+  processed_string = de_indent('''\
+    @font-face {
+      font-display: swap;
+      font-family: "KaTeX_Math-Italic";
+      src:
+        url("/fonts/KaTeX_Math-Italic.woff2") format("woff2"),
+        url("/fonts/KaTeX_Math-Italic.woff") format("woff"),
+        url("/fonts/KaTeX_Math-Italic.ttf") format("truetype");
+    }
+    @font-face {
+      font-display: swap;
+      font-family: "KaTeX_Main-Regular";
+      src:
+        url("/fonts/KaTeX_Main-Regular.woff2") format("woff2"),
+        url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
+        url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+    }
+    text.m {
+      font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
+    }
+    text.mr {
+      font-family: "KaTeX_Main-Regular";
+    }'''
+  )
+  
+  string = re.sub(
+    r'<\-m></\-m>',
+    escape_python_backslash(processed_string),
+    string
+  )
+  
+  return string
+
+################################################################
+# Split string by pipe character and surrounding whitespace
+################################################################
+
+def split_by_pipe(string):
+  
+  string = replace_all_conway_literal_pipes(string)
+  
+  argument_list = string.split('|')
+  argument_list = [argument.strip() for argument in argument_list]
+  
+  return argument_list
+
+################################################################
+# Replace dialogue images
+################################################################
+
+# Unprocessed string:
+#   <+{pos}> {src} | {alt} </+{pos}>
+# where position {pos} is one of h or g
+
+# Raw regular expression for unprocessed string:
+#   <\+([hg])>([\s\S]*?)</\+\1>
+#   \1 {pos}
+#   \2 {arguments}: {src} | {alt}
+
+# Processed string:
+#   <+> {src} | {alt} | | | dialogue-{full pos} </+>
+# where {full pos} is host if {pos} is h, and guest if {pos} is g.
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_dialogue_image(match_object):
+  
+  pos = match_object.group(1)
+  if pos == 'h':
+    full_pos = 'host'
+  else:
+    full_pos = 'guest'
+  
+  arguments = match_object.group(2)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 2
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Dialogue image <+{{pos}}> {{src}} | {{alt}} </+{{pos}}> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments
+  src, alt = argument_list[:num_arguments]
+  
+  processed_string = (
+    '<+> {src} | {alt} | | | dialogue-{full_pos} </+>'.format(
+      src = src,
+      alt = alt,
+      full_pos = full_pos
+    )
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_dialogue_images(string):
+  
+  return re.sub(r'<\+([hg])>([\s\S]*?)</\+\1>', replace_dialogue_image, string)
+
+################################################################
+# Replace images
+################################################################
+
+# Unprocessed string:
+#   <+> {src} | {alt} [| title [| width [| class]]] </+>
+
+# Raw regular expression for unprocessed string:
+#   <\+>([\s\S]*?)</\+>
+#   \1  {arguments}: {src} | {alt} [| title [| width [| class]]]
+
+# Processed string:
+#   <img[ class="[class]"] src="{src}" alt="{alt}"[ title="[title]"][ width="[width]"]>
+# where an empty [title], [width] or [class] is equivalent to an omitted one
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_image(match_object):
+  
+  arguments = match_object.group(1)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 2
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Image <+> {{src}} | {{alt}} [| title [| width [| class]]] </+> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments + 3
+  argument_list += [''] * (num_arguments - num_supplied_arguments)
+  src, alt, title, width, class_ = argument_list[:num_arguments]
+  
+  src = escape_attribute_value(src)
+  alt = escape_attribute_value(alt)
+  title = escape_attribute_value(title)
+  width = escape_attribute_value(width)
+  class_ = escape_attribute_value(class_)
+  
+  if title == '':
+    title_spec = ''
+  else:
+    title_spec = ' title="{title}"'.format(title = title)
+  
+  if width == '':
+    width_spec = ''
+  else:
+    width_spec = ' width="{width}"'.format(width = width)
+  
+  if class_ == '':
+    class_spec = ''
+  else:
+    class_spec = ' class="{class_}"'.format(class_ = class_)
+  
+  processed_string = (
+    '<img{class_spec} src="{src}" alt="{alt}"{title_spec}{width_spec}>'.format(
+      src = src,
+      alt = alt,
+      title_spec = title_spec,
+      width_spec = width_spec,
+      class_spec = class_spec
+    )
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_images(string):
+  
+  return re.sub(r'<\+>([\s\S]*?)</\+>', replace_image, string)
+
+################################################################
+# Replace assisting romanisations
+################################################################
+
+# Unprocessed string:
+#   <^> {conway} | {wadegiles} | {pinyin} </^>
+
+# Raw regular expression for unprocessed string:
+#   <\^>([\s\S]*?)</\^>
+#   \1  {arguments}: {conway} | {wadegiles} | {pinyin}
+
+# Processed string:
+#   <span class="romanisation romanisation-conway">~(<^e>{conway}</^e>)</span>\
+#   <span class="romanisation romanisation-wadegiles">~(<^e>{wadegiles}</^e>)</span>\
+#   <span class="romanisation romanisation-pinyin">~(<^e>{pinyin}</^e>)</span>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_assisting_romanisation(match_object):
+  
+  arguments = match_object.group(1)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 3
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Assisting romanisation <^> {{conway}} | {{wadegiles}} | {{pinyin}} </^> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments
+  conway, wadegiles, pinyin = argument_list[:num_arguments]
+  
+  processed_string = (
+    '<span class="romanisation romanisation-conway">~(<^e>{conway}</^e>)</span>'
+    '<span class="romanisation romanisation-wadegiles">~(<^e>{wadegiles}</^e>)</span>'
+    '<span class="romanisation romanisation-pinyin">~(<^e>{pinyin}</^e>)</span>'
+  ).format(
+    conway = conway,
+    wadegiles = wadegiles,
+    pinyin = pinyin
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_assisting_romanisations(string):
+  
+  return re.sub(r'<\^>([\s\S]*?)</\^>', replace_assisting_romanisation, string)
+
+################################################################
+# Replace Cantonese & Mandarin romanisations
+################################################################
+
+# Unprocessed string:
+#   <^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]>
+# where [gov] is one of g or n, otherwise omitted
+
+# Raw regular expression for unprocessed string:
+#   <\^cm([gn]?)>([\s\S]*?)</\^cm\1>
+#   \1  [gov]
+#   \2  {arguments}: {cantonese} | {mandarin} [| government]
+
+# Processed string:
+#   <@>
+#     Cantonese
+#     | /pages/conway-cantonese-romanisation.html
+#     | Conway's Custom Romanisation for Cantonese
+#   </@>:~<^e>{cantonese}</^e>,
+#   Mandarin~<^e>{mandarin}</^e>\
+#   [, [full gov] Mandarin (統讀):~<^e>{government}</^e>]
+# where [full gov] is Government-regulated if [gov] is g and
+# nominally-Communist if [gov] is n
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_cantonese_mandarin_romanisation(match_object):
+  
+  gov = match_object.group(1)  
+  if gov == 'g':
+    full_gov = 'Government-regulated'
+  elif gov == 'n':
+    full_gov = 'nominally-Communist'
+  else:
+    full_gov = ''
+  
+  arguments = match_object.group(2)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 2
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Cantonese & Mandarin romanisation '
+    '<^cm[gov]> {{cantonese}} | {{mandarin}} [| government] </^cm[gov]> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments + 1
+  argument_list += [''] * (num_arguments - num_supplied_arguments)
+  cantonese, mandarin, government = argument_list[:num_arguments]
+  
+  if gov == '':
+    gov_spec = ''
+  else:
+    assert government != '', (
+      'Cantonese & Mandarin romanisation '
+      '<^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]> '
+      'requires non-empty [government] if [gov] is supplied'
+    )
+    gov_spec = ', {full_gov} Mandarin (統讀):~<^e>{government}</^e>'.format(
+      full_gov = full_gov,
+      government = government
+    )
+  
+  processed_string = de_indent('''\
+    <@>
+      Cantonese
+      | /pages/conway-cantonese-romanisation.html
+      | Conway's Custom Romanisation for Cantonese
+    </@>:~<^e>{cantonese}</^e>,
+    Mandarin~<^e>{mandarin}</^e>{gov_spec}'''
+  ).format(
+    cantonese = cantonese,
+    mandarin = mandarin,
+    gov_spec = gov_spec
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_cantonese_mandarin_romanisations(string):
+  
+  return re.sub(
+    r'<\^cm([gn]?)>([\s\S]*?)</\^cm\1>',
+    replace_cantonese_mandarin_romanisation,
+    string
+  )
+
+################################################################
+# Replace directed-triangle anchors
+################################################################
+
+# Unprocessed string:
+#   <@{dir}> {content} | {id} [| title] </@{dir}>
+# where {dir} is one of u or d
+# and [title] defaults to {content} if supplied explicitly as {empty string}
+
+# Raw regular expression for unprocessed string:
+#   <@([ud])>([\s\S]*?)</@\1>
+#   \1  {dir}
+#   \2  {arguments}: {content} | {id} [| title]
+
+# Processed string:
+#   <@> [{triangle}\,{content}] | #{id} [| title] </@>
+# where {triangle} is
+#   ▲ U+25B2 BLACK UP-POINTING TRIANGLE if {dir} is u and
+#   ▼ U+25BC BLACK DOWN-POINTING TRIANGLE if {dir} is d
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_directed_triangle_anchor(match_object):
+  
+  dir = match_object.group(1)
+  if dir == 'u':
+    triangle = '▲'
+  else:
+    triangle = '▼'
+  
+  arguments = match_object.group(2)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 2
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Directed-triangle anchor '
+    '<@{dir}> {content} | {id} [| title] </@{dir}> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  content, id_ = argument_list[:num_required_arguments]
+  if num_supplied_arguments > num_required_arguments:
+    title = argument_list[num_required_arguments]
+    if title == '':
+      title = content
+    title_spec = '| {title}'.format(title = title)
+  else:
+    title_spec = ''
+  
+  processed_string = (
+    '<@> [{triangle}\\,{content}] | #{id_}{title_spec} </@>'.format(
+      triangle = triangle,
+      content = content,
+      id_ = id_,
+      title_spec = title_spec
+    )
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_directed_triangle_anchors(string):
+  
+  return re.sub(
+    r'<@([ud])>([\s\S]*?)</@\1>',
+    replace_directed_triangle_anchor,
+    string
+  )
+
+################################################################
+# Replace item anchors
+################################################################
+
+# Unprocessed string:
+#   <@i> {content} | {href} [| title] </@i>
+# where [title] defaults to {content} if supplied explicitly as {empty string}
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <@i>  </@i>
+
+# Processed string:
+#   <li><@> {content} | {href} [| title] </@></li>
+
+def replace_all_item_anchors(string):
+  
+  string = re.sub('<@i>', '<li><@>', string)
+  string = re.sub('</@i>', '</@></li>', string)
+  
+  return string
+
+################################################################
+# Replace heading self-link anchors
+################################################################
+
+# Unprocessed string:
+#   <@{level}> {content} | {id} </@{level}>
+# where {level} is one of 2, 3 or 4
+
+# Raw regular expression for unprocessed string:
+#   <@([234])>([\s\S]*?)</@\1>
+#   \1  {level}
+#   \2  {arguments}: {content} | {id}
+
+# Processed string:
+#   <h{level} id="{id}"><a class="self-link" href="#{id}"></a>
+#     {content}
+#   </h{level}>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_heading_self_link_anchor(match_object):
+  
+  level = match_object.group(1)
+  
+  arguments = match_object.group(2)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 2
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Heading self-link anchor <@{{level}}> {{content}} | {{id}} </@{{level}}> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments
+  content, id_ = argument_list[:num_arguments]
+  
+  id_ = escape_attribute_value(id_)
+  
+  processed_string = de_indent('''\
+    <h{level} id="{id_}"><a class="self-link" href="#{id_}"></a>
+      {content}
+    </h{level}>'''
+  ).format(
+    level = level,
+    id_ = id_,
+    content = content
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_heading_self_link_anchors(string):
+  
+  return re.sub(
+    r'<@([234])>([\s\S]*?)</@\1>',
+    replace_heading_self_link_anchor,
+    string
+  )
+
+################################################################
+# Replace anchors
+################################################################
+
+# Unprocessed string:
+#   <@> {content} | {href} [| title] </@>
+# where [title] defaults to {content} if supplied explicitly as {empty string}
+
+# Raw regular expression for unprocessed string:
+#   <@>([\s\S]*?)</@>
+#   \1  {arguments}: {content} | {href} [| title]
+
+# Processed string:
+#   <a href="{href}"[ title="[title]"]>{content}</a>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_anchor(match_object):
+  
+  arguments = match_object.group(1)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 2
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Anchor <@> {{content}} | {{href}} [| title] </@> '
+    'or Item anchor <@i> {{content}} | {{href}} [| title] </@i>'
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  content, href = argument_list[:num_required_arguments]
+  if num_supplied_arguments > num_required_arguments:
+    title = argument_list[num_required_arguments]
+    if title == '':
+      title = content
+  else:
+    title = ''
+  
+  href = escape_attribute_value(href)
+  title = escape_attribute_value(title)
+  
+  if title == '':
+    title_spec = ''
+  else:
+    title_spec = ' title="{title}"'.format(title = title)
+  
+  processed_string = (
+    '<a href="{href}"{title_spec}>{content}</a>'.format(
+      href = href,
+      content = content,
+      title_spec = title_spec
+    )
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_anchors(string):
+  
+  return re.sub(r'<@>([\s\S]*?)</@>', replace_anchor, string)
+
+################################################################
+# Replace boxed translations
+################################################################
+
+# Unprocessed string:
+#   <#t[size]> {chinese} | {english} </#t[size]>
+# where [size] is n, otherwise omitted
+
+# Raw regular expression for unprocessed string:
+#   <#t(n?)>([\s\S]*?)</#t\1>
+#   \1  [size]
+#   \2  {arguments}: {chinese} | {english}
+
+# Processed string:
+#   <div class="boxed[ not-large] translation">
+#     {chinese}
+#     <hr>
+#     {english}
+#   </div>
+# where [ not-large] is included if and only if [size] is supplied as n
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_boxed_translation(match_object):
+  
+  size = match_object.group(1)
+  if size == '':
+    size_spec = ''
+  else:
+    size_spec = ' not-large'
+  
+  arguments = match_object.group(2)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 2
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Boxed translation <#t[size]> {{chinese}} | {{english}} </#t[size]> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments
+  chinese, english = argument_list[:num_arguments]
+  
+  processed_string = de_indent('''\
+    <div class="boxed{size_spec} translation">
+      {chinese}
+      <hr>
+      {english}
+    </div>'''
+  ).format(
+    size_spec = size_spec,
+    chinese = chinese,
+    english = english
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_boxed_translations(string):
+  
+  return re.sub(
+    r'<#t(n?)>([\s\S]*?)</#t\1>',
+    replace_boxed_translation,
+    string
+  )
+
+################################################################
+# Replace Shuen headings
+################################################################
+
+# Unprocessed string:
+#   <;sh> {volume} | {paragraph} | {content} </;sh>
+
+# Raw regular expression for unprocessed string:
+#   <;sh>([\s\S]*?)</;sh>
+#   \1  {arguments}: {volume} | {paragraph} | {content}
+
+# Processed string:
+#   <@4>
+#     Vol.~{capital roman volume}~¶{paragraph}.
+#     <span class="heading">{content}</span>
+#     | {paragraph}
+#   </@4>
+# where the paragraph symbol is U+00B6 PILCROW SIGN
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_shuen_heading(match_object):
+  
+  arguments = match_object.group(1)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 3
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Shuen heading <;sh> {{volume}} | {{paragraph}} | {{content}} </;sh> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments
+  volume, paragraph, content = argument_list[:num_arguments]
+  
+  capital_roman_volume = int(volume) * 'I'
+  
+  processed_string = de_indent('''\
+    <@4>
+      Vol.~{capital_roman_volume}~¶{paragraph}.
+      <span class="heading">{content}</span>
+      | {paragraph}
+    </@4>'''
+  ).format(
+    capital_roman_volume = capital_roman_volume,
+    paragraph = paragraph,
+    content = content
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_shuen_headings(string):
+  
+  return re.sub(r'<;sh>([\s\S]*?)</;sh>', replace_shuen_heading, string)
+
+################################################################
+# Replace Shuen link divisions
+################################################################
+
+# Unprocessed string:
+#   <;s@@> {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@>
+
+# Raw regular expression for unprocessed string:
+#   <;s@@>([\s\S]*?)</;s@@>
+#   \1  {arguments}: {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p}
+
+# Processed string:
+#   <@@>
+#     <@u>
+#       Paragraphs
+#       | paragraphs
+#       | Volume {capital roman volume}: Paragraph navigation
+#     </@u>
+#     <@>
+#       [manuscript]
+#       | /manuscripts/shuen-{small roman volume}-{paragraph}.pdf
+#       | Translation manuscript for Vol. {capital roman volume} ¶{paragraph}
+#     </@>
+#     [<@>
+#       A{a p}
+#       | https://archive.org/details/02094034.cn/page/n{a p}
+#       | Version A: 02094034.cn at archive.org
+#     </@>]
+#     [<@>
+#       B{b p}({b p minus 5})
+#       | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page={b p}
+#       | Version B: 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+#     </@>]
+#     <@>
+#       C{c p}({volume}.{c q})
+#       | https://ctext.org/sunzi-suan-jing#n{c p}
+#       | Version C: ctext.org database page
+#     </@>
+#     <@>
+#       D{d p}
+#       | https://ctext.org/library.pl?if=en&file=86926&page={d p}
+#       | Version D: 《知不足齋叢書》本 at ctext.org library
+#     </@>
+#   </@@>
+# where the square brackets for [manuscript] are literal,
+# and the links for Versions A and B are omitted if {a p} and {b p}
+# are {empty string} respectively
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_shuen_link_division(match_object):
+  
+  arguments = match_object.group(1)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 7
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Shuen link division <;s@@> '
+    '{{volume}} | {{paragraph}} | {{a p}} | {{b p}} | {{c p}} | {{c q}} | {{d p}} </;s@@> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments
+  volume, paragraph, a_p, b_p, c_p, c_q, d_p = argument_list[:num_arguments]
+  
+  capital_roman_volume = int(volume) * 'I'
+  small_roman_volume = int(volume) * 'i'
+  
+  paragraphs_link = de_indent('''\
+    <@u>
+      Paragraphs
+      | paragraphs
+      | Volume {capital_roman_volume}: Paragraph navigation
+    </@u>'''
+  ).format(
+    capital_roman_volume = capital_roman_volume
+  )
+  
+  manuscript_link = de_indent('''\
+    <@>
+      [manuscript]
+      | /manuscripts/shuen-{small_roman_volume}-{paragraph}.pdf
+      | Translation manuscript for Vol. {capital_roman_volume} ¶{paragraph}
+    </@>'''
+  ).format(
+    small_roman_volume = small_roman_volume,
+    capital_roman_volume = capital_roman_volume,
+    paragraph = paragraph
+  )
+  
+  if a_p == '':
+    version_a_link = ''
+  else:
+    version_a_link = de_indent('''\
+      <@>
+        A{a_p}
+        | https://archive.org/details/02094034.cn/page/n{a_p}
+        | Version A: 02094034.cn at archive.org
+      </@>'''
+    ).format(
+      a_p = a_p
+    )
+  
+  if b_p == '':
+    version_b_link = ''
+  else:
+    b_p_minus_5 = int(b_p) - 5
+    version_b_link = de_indent('''\
+      <@>
+        B{b_p}({b_p_minus_5})
+        | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page={b_p}
+        | Version B: 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+      </@>'''
+    ).format(
+      b_p = b_p,
+      b_p_minus_5 = b_p_minus_5
+    )
+  
+  version_c_link = de_indent('''\
+    <@>
+      C{c_p}({volume}.{c_q})
+      | https://ctext.org/sunzi-suan-jing#n{c_p}
+      | Version C: ctext.org database page
+    </@>'''
+  ).format(
+    volume = volume,
+    c_p = c_p,
+    c_q = c_q
+  )
+  
+  version_d_link = de_indent('''\
+    <@>
+      D{d_p}
+      | https://ctext.org/library.pl?if=en&file=86926&page={d_p}
+      | Version D: 《知不足齋叢書》本 at ctext.org library
+    </@>'''
+  ).format(
+    d_p = d_p
+  )
+  
+  processed_string = de_indent('''\
+    <@@>
+      {paragraphs_link}
+      {manuscript_link}
+      {version_a_link}
+      {version_b_link}
+      {version_c_link}
+      {version_d_link}
+    </@@>'''
+  ).format(
+    paragraphs_link = paragraphs_link,
+    manuscript_link = manuscript_link,
+    version_a_link = version_a_link,
+    version_b_link = version_b_link,
+    version_c_link = version_c_link,
+    version_d_link = version_d_link
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_shuen_link_divisions(string):
+  
+  return re.sub(
+    r'<;s@@>([\s\S]*?)</;s@@>', 
+    replace_shuen_link_division,
+    string
+  )
+
+################################################################
+# Replace preamble
+################################################################
+
+# Must be supplied at the very beginning of markup.
+# Only the first occurrence is replaced.
+
+# Unprocessed string:
+#   <*> {title} | {first created} | {last modified} [| rendering] </*>
+# where [rendering] is specified by including or excluding d, m and r
+
+# Raw regular expression for unprocessed string:
+#   <\*>([\s\S]*?)</\*>
+#   \1  {arguments}: {title} | {first created} | {last modified} [| rendering]
+
+# Processed string (beginning):
+#   <!DOCTYPE html>
+#   <html lang="en">
+#   <head>
+#     <meta charset="utf-8">
+#     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+#     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+#     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+#     <link rel="manifest" href="/site.webmanifest">
+#     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+#     <meta name="msapplication-TileColor" content="#00aba9">
+#     <meta name="theme-color" content="#ffffff">
+#     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+#     <link rel="stylesheet" href="/conway.min.css">
+#     [<link rel="stylesheet" href="/conway-katex.min.css">
+#     <script defer src="/conway-katex.min.js"></script>]
+#     [<script defer src="/conway-render.min.js"></script>]
+#     <title>[title — ]Conway's site</title>
+#   </head>
+#   <body[ onload="[dateRender();] [mathsRender();] [romanisationInitialise();]"]>
+# where "/conway-katex.min.*" are loaded if [rendering] contains m,
+# "/conway-render.min.js" is loaded if [rendering] contains any of d, m or r,
+# [title — ] is omitted if {title} is {empty string},
+# the dash is U+2014 EM DASH, and [dateRender();], [mathsRender();] and
+# [romanisationInitialise();] are called if and only if [rendering] contains
+# d, m and r respectively.
+
+# Processed string (end):
+#   </body>
+#   </html>
+
+def replace_preamble(string):
+  
+  global first_created, last_modified
+  global year_first_created, year_last_modified
+  
+  preamble_regex = re.compile(r'<\*>([\s\S]*?)</\*>')
+  preamble_match_object = preamble_regex.match(string)
+  assert preamble_match_object is not None, (
+    'Preamble <*> {title} | {first created} | {last modified} [| rendering] </*> '
+    'must be supplied at the very beginning of markup'
+  )
+  
+  arguments = preamble_match_object.group(1)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 3
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Preamble <*> {{title}} | {{first created}} | {{last modified}} [| rendering] </*> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments + 1
+  argument_list += [''] * (num_arguments - num_supplied_arguments)
+  title, first_created, last_modified, rendering = argument_list[:num_arguments]
+  
+  # {first created} and {last modified} assumed to be in the form YYYYMMDD.
+  # (I probably won't be around come Y10K, i.e. 10000 A.D.)
+  year_first_created = first_created[:4]
+  year_last_modified = last_modified[:4]
+  
+  title = escape_attribute_value(title)
+  
+  if title == '':
+    title_with_dash = ''
+  else:
+    title_with_dash = title + ' — '
+  
+  require_date = 'd' in rendering
+  require_maths = 'm' in rendering
+  require_romanisation = 'r' in rendering
+  require_rendering = require_date or require_maths or require_romanisation
+  
+  if require_maths:
+    maths_css_js = de_indent('''\
+      <link rel="stylesheet" href="/conway-katex.min.css">
+      <script defer src="/conway-katex.min.js"></script>'''
+    )
+  else:
+    maths_css_js = ''
+  
+  if require_rendering:
+    rendering_js = '<script defer src="/conway-render.min.js"></script>'
+    onload_functions = ''
+    if require_date:
+      onload_functions += ' dateRender();'
+    if require_maths:
+      onload_functions += ' mathsRender();'
+    if require_romanisation:
+      onload_functions += ' romanisationInitialise();'
+    onload_functions = onload_functions.lstrip()
+    onload_spec = ' onload="{onload_functions}"'.format(
+      onload_functions = onload_functions
+    )
+  else:
+    rendering_js = ''
+    onload_spec = ''
+  
+  processed_string_beginning = de_indent('''\
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#00aba9">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+      <link rel="stylesheet" href="/conway.min.css">
+      {maths_css_js}
+      {rendering_js}
+      <title>{title_with_dash}Conway's site</title>
+    </head>
+    <body{onload_spec}>
+    '''
+  ).format(
+    maths_css_js = maths_css_js,
+    rendering_js = rendering_js,
+    title_with_dash = title_with_dash,
+    onload_spec = onload_spec
+  )
+  
+  processed_string_end = de_indent('''
+    </body>
+    </html>'''
+  )
+  
+  string = preamble_regex.sub('', string, count = 1)
+  string = string.strip()
+  
+  string = processed_string_beginning + string + processed_string_end
+  
+  return string
+
+################################################################
+# Replace page properties
+################################################################
+
+# Only the first occurrence is replaced.
+
+# Unprocessed string:
+#   <*p> [see also] [| misc] </*p>
+
+# Raw regular expression for unprocessed string:
+#   <\*p>([\s\S]*?)</\*p>
+#   \1  {arguments}: [see also] [| misc]
+
+# Processed string:
+#   <p class="page-properties">
+#     First created:~{first created}<br>
+#     Last modified:~<b>{last modified}</b>[<br>
+#     <b>See also:</b>~[see also]][<br>
+#     [misc]]
+#   </p>
+# where {last modified} links to #history if building index.html
+
+def replace_page_properties(string):
+  
+  page_properties_regex = re.compile(r'<\*p>([\s\S]*?)</\*p>')
+  page_properties_match_object = page_properties_regex.search(string)
+  if page_properties_match_object is None:
+    return string
+  
+  arguments = page_properties_match_object.group(1)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  
+  num_arguments = 2
+  argument_list += [''] * (num_arguments - num_supplied_arguments)
+  see_also, misc = argument_list[:num_arguments]
+  
+  if see_also == '':
+    see_also_spec = ''
+  else:
+    see_also_spec = de_indent('''\
+      <br>
+        <b>See also:</b>~{see_also}'''
+    ).format(
+      see_also = see_also
+    )
+  
+  if misc == '':
+    misc_spec = ''
+  else:
+    misc_spec = de_indent('''\
+      <br>
+        {misc}'''
+    ).format(
+      misc = misc
+    )
+  
+  if is_index:
+    last_modified_spec = (
+      '<@> <b>{last_modified}</b> | #history | Site history </@>'
+    ).format(
+      last_modified = last_modified
+    )
+  else:
+    last_modified_spec = (
+      '<b>{last_modified}</b>'
+    ).format(
+      last_modified = last_modified
+    )
+  
+  processed_string = de_indent('''\
+    <p class="page-properties">
+      First created:~{first_created}<br>
+      Last modified:~{last_modified_spec}'''
+      '{see_also_spec}'
+      '{misc_spec}' '''
+    </p>'''
+  ).format(
+    first_created = first_created,
+    last_modified_spec = last_modified_spec,
+    see_also_spec = see_also_spec,
+    misc_spec = misc_spec
+  )
+  
+  return page_properties_regex.sub(
+    escape_python_backslash(processed_string),
+    string,
+    count = 1
+  )
+
+################################################################
+# Replace cite this page
+################################################################
+
+# Only the first occurrence is replaced.
+
+# Unprocessed string:
+#   <*c> {text heading} | {tex key} | {tex heading} [| inconvenience message] </*c>
+
+# Raw regular expression for unprocessed string:
+#   <\*c>([\s\S]*?)</\*c>
+#   \1  {arguments}: {text heading} | {tex key} | {tex heading} [| inconvenience message]
+
+# Processed string:
+#   <@2> Cite this page | cite </@2>
+#   [<p>
+#     [inconvenience message]
+#   </p>]
+#   <ul>
+#     <li>Text:
+#       <p>
+#         Conway~({year last modified}).
+#         【{text heading}】.
+#         \<{address}\>
+#         [Accessed <span class="date">d~month~yyyy</span>]
+#       </p>
+#     </li>
+#     <li>BibTeX:
+#       <pre>
+#         @misc《conway-{tex key},
+#           author = 《Conway》,
+#           year = 《{year last modified}》,
+#           title = 《{Conway-special-literal-escaped tex heading}》,
+#           howpublished = 《\\url《{address}》》,
+#           note = 《[Accessed <span class="date">d\~month\~yyyy</span>]》
+#         》
+#       </pre>
+#     </li>
+#     <li>BibLaTeX:
+#       <pre>
+#         @online《conway-{tex key},
+#           author = 《Conway》,
+#           year = 《{year last modified}》,
+#           title = 《{Conway-special-literal-escaped tex heading}》,
+#           url = 《{address}》,
+#           urldate = 《<span class="date">yyyy-mm-dd</span>》
+#         》
+#       </pre>
+#     </li>
+#   </ul>
+# where the square brackets for [Accessed ...] are literal,
+# and, for readability, 【 and 】 stand for { and } (for Conway italics),
+# and 《 and 》 stand for \{ and \} (which should render as literal { and })
+
+def replace_cite_this_page(string):
+  
+  cite_this_page_regex = re.compile(r'<\*c>([\s\S]*?)</\*c>')
+  cite_this_page_match_object = cite_this_page_regex.search(string)
+  if cite_this_page_match_object is None:
+    return string
+  
+  arguments = cite_this_page_match_object.group(1)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  num_required_arguments = 3
+  
+  assert num_supplied_arguments >= num_required_arguments, (
+    'Cite this page '
+    '<*c> {{text heading}} | {{tex key}} | {{tex heading}} [| inconvenience message] </*c> '
+    'requires at least {num_required_arguments} pipe-delimited arguments; '
+    'only {num_supplied_arguments} supplied'
+  ).format(
+    num_required_arguments = num_required_arguments,
+    num_supplied_arguments = num_supplied_arguments
+  )
+  
+  num_arguments = num_required_arguments + 1
+  argument_list += [''] * (num_arguments - num_supplied_arguments)
+  text_heading, tex_key, tex_heading, inconvenience_message = (
+    argument_list[:num_arguments]
+  )
+  
+  if inconvenience_message == '':
+    inconvenience_spec = ''
+  else:
+    inconvenience_spec = de_indent('''\
+      <p>
+        {inconvenience_message}
+      </p>'''
+    ).format(
+      inconvenience_message = inconvenience_message
+    )
+  
+  tex_heading = escape_conway_special_literals(tex_heading)
+  
+  address = 'https://yawnoc.github.io/'
+  if not is_index:
+    address += file_name + '.html'
+  
+  # NOTE: <pre> ... </pre> must be used rather than <``> ... </``>
+  # in order for <span class="date">d\~month\~yyyy</span> to actually render
+  # today's date, rather than appear literally
+  
+  processed_string = de_indent('''\
+    <@2> Cite this page | cite </@2>
+    {inconvenience_spec}
+    <ul>
+      <li>Text:
+        <p>
+          Conway~({year_last_modified}).
+          【{text_heading}】.
+          \<{address}\>
+          [Accessed <span class="date">d~month~yyyy</span>]
+        </p>
+      </li>
+      <li>BibTeX:
+        <pre>
+          @misc《conway-{tex_key},
+            author = 《Conway》,
+            year = 《{year_last_modified}》,
+            title = 《{tex_heading}》,
+            howpublished = 《\\url《{address}》》,
+            note = 《[Accessed <span class="date">d\~month\~yyyy</span>]》
+          》
+        </pre>
+      </li>
+      <li>BibLaTeX:
+        <pre>
+          @online《conway-{tex_key},
+            author = 《Conway》,
+            year = 《{year_last_modified}》,
+            title = 《{tex_heading}》,
+            url = 《{address}》,
+            urldate = 《<span class="date">yyyy-mm-dd</span>》
+          》
+        </pre>
+      </li>
+    </ul>'''
+  )
+  
+  # NOTE: doubled curly brackets are required for replacing 【, 】, 《 and 》 below
+  # since processed_string will be passed to str.format().
+  # The replacements must be performed before str.format() because
+  # the strings inserted by str.format() may contain 【, 】, 《 and 》,
+  # which we have only used for readability of the code above.
+  
+  # Conway italics: 【 and 】 to { and }
+  processed_string = re.sub('【', '{{', processed_string)
+  processed_string = re.sub('】', '}}', processed_string)
+  
+  # Conway-escaped italic brackets: 《 and 》 to \{ and \}
+  processed_string = re.sub('《', r'\\{{', processed_string)
+  processed_string = re.sub('》', r'\\}}', processed_string)
+  
+  processed_string = processed_string.format(
+    inconvenience_spec = inconvenience_spec,
+    year_last_modified = year_last_modified,
+    address = address,
+    text_heading = text_heading,
+    tex_key = tex_key,
+    tex_heading = tex_heading
+  )
+  
+  return cite_this_page_regex.sub(
+    escape_python_backslash(processed_string),
+    string,
+    count = 1
+  )
+
+################################################################
+# Replace footer
+################################################################
+
+# Only the first occurrence is replaced.
+
+# Unprocessed string:
+#   <*f> [copyright exception] [| ending remark] </*f>
+
+# Raw regular expression for unprocessed string:
+#   <\*f>([\s\S]*?)</\*f>
+#   \1  {arguments}: [copyright exception] [| ending remark]
+
+# Processed string:
+#   <footer>
+#     <hr>
+#     ©~{year first created}[–year last modified]~Conway[,
+#     [copyright exception]].[<br>
+#     [ending remark]]
+#   </footer>
+# where the dash in the year range is U+2013 EN DASH,
+# [–year last modified] is only included if {year last modified}
+# is greater than {year first created},
+# and a default [ending remark] is used if building index.html.
+
+def replace_footer(string):
+  
+  footer_regex = re.compile(r'<\*f>([\s\S]*?)</\*f>')
+  footer_match_object = footer_regex.search(string)
+  if footer_match_object is None:
+    return string
+  
+  arguments = footer_match_object.group(1)
+  argument_list = split_by_pipe(arguments)
+  
+  num_supplied_arguments = len(argument_list)
+  
+  num_arguments = 2
+  argument_list += [''] * (num_arguments - num_supplied_arguments)
+  copyright_exception, ending_remark = argument_list[:num_arguments]
+  
+  if is_index:
+    next_year = int(year_last_modified) + 1
+    ending_remark = de_indent('''\
+      And if the current year is greater than~{year_last_modified}:
+      no, the footer is not "out of date".
+      It means that I haven't thought up or gotten around to adding content
+      since~{next_year}; possibly I have died.'''
+    ).format(
+      year_last_modified = year_last_modified,
+      next_year = next_year
+    )
+  
+  year_range = year_first_created
+  
+  if int(year_last_modified) > int(year_first_created):
+    year_range += '–{year_last_modified}'.format(
+      year_last_modified = year_last_modified
+    )
+  
+  if copyright_exception == '':
+    copyright_exception_spec = ''
+  else:
+    copyright_exception_spec = ', {copyright_exception}'.format(
+      copyright_exception = copyright_exception
+    )
+  
+  if ending_remark == '':
+    ending_remark_spec = ''
+  else:
+    ending_remark_spec = de_indent('''\
+      <br>
+        {ending_remark}'''
+    ).format(
+      ending_remark = ending_remark
+    )
+  
+  processed_string = de_indent('''\
+    <footer>
+      <hr>
+      ©~{year_range}~Conway'''
+      '{copyright_exception_spec}.'
+      '{ending_remark_spec}' '''
+    </footer>'''
+  ).format(
+    year_range = year_range,
+    copyright_exception_spec = copyright_exception_spec,
+    ending_remark_spec = ending_remark_spec
+  )
+  
+  return footer_regex.sub(
+    escape_python_backslash(processed_string),
+    string,
+    count = 1
+  )
+
+################################################################
+# Replace formatted spans
+################################################################
+
+# Unprocessed string:
+#   <:{type}>{content}</:{type}>
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <:r>  </:r>
+#   <:g>  </:g>
+#   <:b>  </:b>
+#   <:m>  </:m>
+#   <:y>  </:y>
+#   <:h>  </:h>
+#   <:n>  </:n>
+#   <:t>  </:t>
+
+# Processed string for {type} r:
+#   <span class="red">{content}</span>
+
+# Processed string for {type} g:
+#   <span class="green">{content}</span>
+
+# Processed string for {type} b:
+#   <span class="blue">{content}</span>
+
+# Processed string for {type} m:
+#   <span class="magenta">{content}</span>
+
+# Processed string for {type} y:
+#   <span class="lightyellow">{content}</span>
+
+# Processed string for {type} h:
+#   <span class="highlighted-part">{content}</span>
+
+# Processed string for {type} n:
+#   <span class="numeral">~({content})</span>
+
+# Processed string for {type} t:
+#   <span class="thought">{content}</span>
+
+def replace_all_formatted_spans(string):
+  
+  string = re.sub('<:r>', '<span class="red">', string)
+  string = re.sub('</:r>', '</span>', string)
+  
+  string = re.sub('<:g>', '<span class="green">', string)
+  string = re.sub('</:g>', '</span>', string)
+  
+  string = re.sub('<:b>', '<span class="blue">', string)
+  string = re.sub('</:b>', '</span>', string)
+  
+  string = re.sub('<:m>', '<span class="magenta">', string)
+  string = re.sub('</:m>', '</span>', string)
+  
+  string = re.sub('<:y>', '<span class="lightyellow">', string)
+  string = re.sub('</:y>', '</span>', string)
+  
+  string = re.sub('<:h>', '<span class="highlighted-part">', string)
+  string = re.sub('</:h>', '</span>', string)
+  
+  string = re.sub('<:n>', '<span class="numeral">~(', string)
+  string = re.sub('</:n>', ')</span>', string)
+  
+  string = re.sub('<:t>', '<span class="thought">', string)
+  string = re.sub('</:t>', '</span>', string)
+  
+  return string
+
+################################################################
+# Replace boxed divisions
+################################################################
+
+# Unprocessed string:
+#   <#[type]>{content}</#[type]>
+# where [type] is one of c or n, otherwise omitted
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <#>   </#>
+#   <#c>  </#c>
+#   <#n>  </#n>
+
+# Processed string for omitted [type]:
+#   <div class="boxed">{content}</div>
+
+# Processed string for [type] c:
+#   <div class="boxed centred-text">{content}</div>
+
+# Processed string for [type] n:
+#   <div class="boxed not-large">{content}</div>
+
+def replace_all_boxed_divisions(string):
+  
+  string = re.sub('<#>', '<div class="boxed">', string)
+  string = re.sub('</#>', '</div>', string)
+  
+  string = re.sub('<#c>', '<div class="boxed centred-text">', string)
+  string = re.sub('</#c>', '</div>', string)
+  
+  string = re.sub('<#n>', '<div class="boxed not-large">', string)
+  string = re.sub('</#n>', '</div>', string)
+  
+  return string
+
+################################################################
+# Replace dialogue divisions
+################################################################
+
+# Unprocessed string:
+#   <~~>{content}</~~>
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <~~>  </~~>
+
+# Processed string:
+#   <div class="dialogue">
+#     {content}
+#     <div class="end">END</div>
+#   </div>
+
+def replace_all_dialogue_divisions(string):
+  
+  string = re.sub('<~~>', '<div class="dialogue">', string)
+  string = re.sub('</~~>', r'<div class="end">END</div>\n</div>', string)
+  
+  return string
+
+################################################################
+# Replace dialogue paragraphs
+################################################################
+
+# Unprocessed string:
+#   <~{pos}[type]>{content}</~{pos}[type]>
+# where {pos} is one of h or g and [type] is t, otherwise omitted
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <~g>    </~g>
+#   <~gt>   </~gt>
+#   <~h>    </~h>
+#   <~ht>   </~ht>
+
+# Processed string for {pos} g and omitted [type]:
+#   <p class="dialogue-guest">{content}</p>
+
+# Processed string for {pos} g and [type] t:
+#   <p class="dialogue-guest thought">{content}</p>
+
+# Processed string for {pos} h and omitted [type]:
+#   <p class="dialogue-host">{content}</p>
+
+# Processed string for {pos} h and [type] t:
+#   <p class="dialogue-host thought">{content}</p>
+
+def replace_all_dialogue_paragraphs(string):
+  
+  string = re.sub('<~g>', '<p class="dialogue-guest">', string)
+  string = re.sub('</~g>', '</p>', string)
+  
+  string = re.sub('<~gt>', '<p class="dialogue-guest thought">', string)
+  string = re.sub('</~gt>', '</p>', string)
+  
+  string = re.sub('<~h>', '<p class="dialogue-host">', string)
+  string = re.sub('</~h>', '</p>', string)
+  
+  string = re.sub('<~ht>', '<p class="dialogue-host thought">', string)
+  string = re.sub('</~ht>', '</p>', string)
+  
+  return string
+
+################################################################
+# Replace link divisions
+################################################################
+
+# Unprocessed string:
+#   <@@>{content}</@@>
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <@@>  </@@>
+
+# Processed string:
+#   <div class="links">{content}</div>
+
+def replace_all_link_divisions(string):
+  
+  string = re.sub('<@@>', '<div class="links">', string)
+  string = re.sub('</@@>', '</div>', string)
+  
+  return string
+
+################################################################
+# Replace header navigation bars
+################################################################
+
+# Unprocessed string:
+#   <=h>{content}</=h>
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <=h>  </=h>
+
+# Processed string:
+#   <header><=>{content}</=></header>
+
+def replace_all_header_navigation_bars(string):
+  
+  string = re.sub('<=h>', '<header><=>', string)
+  string = re.sub('</=h>', '</=></header>', string)
+  
+  return string
+
+################################################################
+# Replace navigation bars
+################################################################
+
+# Unprocessed string:
+#   <=>{content}</=>
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <=>  </=>
+
+# Processed string:
+#   <nav><ul>{content}</ul></nav>
+
+def replace_all_navigation_bars(string):
+  
+  string = re.sub('<=>', '<nav><ul>', string)
+  string = re.sub('</=>', '</ul></nav>', string)
+  
+  return string
+
+################################################################
+# Replace note paragraphs
+################################################################
+
+# Unprocessed string:
+#   <.>{content}</.>
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <\.>  </\.>
+
+# Processed string:
+#   <p class="note">{content}</p>
+
+def replace_all_note_paragraphs(string):
+  
+  string = re.sub('<\.>', '<p class="note">', string)
+  string = re.sub('</\.>', '</p>', string)
+  
+  return string
+
+################################################################
+# Replace overflowing divisions
+################################################################
+
+# Unprocessed string:
+#   <![type]>{content}</![type]>
+# where [type] is one of c or cc, otherwise omitted
+
+# Raw regular expressions for unprocessed string
+# (opening and closing tags are decoupled):
+#   <!>     </!>
+#   <!c>    </!c>
+#   <!cc>   </!cc>
+
+# Processed string for omitted [type]:
+#   <div class="overflowing">{content}</div>
+
+# Processed string for [type] c:
+#   <div class="centred-flex"><div class="overflowing">{content}</div></div>
+
+# Processed string for [type] cc:
+#   <div class="centred-flex"><div class="centred-text overflowing">
+#     {content}
+#   </div></div>
+
+def replace_all_overflowing_divisions(string):
+  
+  string = re.sub('<!>', '<div class="overflowing">', string)
+  string = re.sub('</!>', '</div>', string)
+  
+  string = re.sub(
+    '<!c>',
+    '<div class="centred-flex"><div class="overflowing">',
+    string
+  )
+  string = re.sub('</!c>', '</div></div>', string)
+  
+  string = re.sub(
+    '<!cc>',
+    '<div class="centred-flex"><div class="centred-text overflowing">',
+    string
+  )
+  string = re.sub('</!cc>', '</div></div>', string)
+  
+  return string
+
+################################################################
+# Replace SVG style containers
+################################################################
+
+# Unprocessed string:
+#   <-->{content}</-->
+
+# Raw regular expressions for unprocessed string:
+#   <\-\->([\s\S]*?)</\-\->
+#   \1  {content}
+
+# Processed string:
+#   <svg class="embedded-styles"><style>
+#     {Conway-special-literal-escaped content}
+#   </style></svg>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_svg_style_container(match_object):
+  
+  content = match_object.group(1)
+  content = escape_conway_special_literals(content)
+  
+  processed_string = (
+    '<svg class="embedded-styles"><style>'
+      '{content}'
+    '</style></svg>'.format(content = content)
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_svg_style_containers(string):
+  
+  return re.sub(
+    r'<\-\->([\s\S]*?)</\-\->',
+    replace_svg_style_container,
+    string
+  )
+
+################################################################
+# Replace text romanisations
+################################################################
+
+# Unprocessed string:
+#   <^e> {content} </^e>
+
+# Raw regular expression for unprocessed string:
+#   <\^e>([\s\S]*?)</\^e>
+#   \1  {content}
+
+# Processed string:
+#   {romanisation-unescaped content}
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_text_romanisation(match_object):
+  
+  content = match_object.group(1)
+  content = content.strip()
+  
+  content = replace_all_conway_literal_backslashes(content)
+  
+  content = unescape_romanisations(content)
+  
+  return content
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_text_romanisations(string):
+  
+  return re.sub(r'<\^e>([\s\S]*?)</\^e>', replace_text_romanisation, string)
+
+################################################################
+# Escape Python (for regex replacement strings)
+################################################################
+
+def escape_python_backslash(string):
+  
+  # Escape \ as \\
+  return re.sub(r'\\', r'\\\\', string)
+
+################################################################
+# Escape Quotes (for attribute values)
+################################################################
+
+def escape_quotes(string):
+  
+  # Escape " as &quot;
+  return re.sub('"', '&quot;', string)
+
+################################################################
+# Escape HTML
+################################################################
+
+def escape_html(string):
+  
+  # Escape & as &amp;
+  string = re.sub('&', '&amp;', string)
+  
+  # Escape < as &lt;
+  string = re.sub('<', '&lt;', string)
+  
+  # Escape > as &gt;
+  string = re.sub('>', '&gt;', string)
+  
+  return string
+
+################################################################
+# Replace Conway literal backslashes with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   \\
+
+# Raw regular expression for unprocessed string:
+#   \\\\
+
+# Processed string:
+#   \
+
+def replace_all_conway_literal_backslashes(string):
+  
+  processed_string = '\\'
+  
+  return re.sub(
+    r'\\\\',
+    create_temporary_replacement_string(processed_string),
+    string
+  )
+
+################################################################
+# Replace Conway literal pipes with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   \|
+
+# Raw regular expression for unprocessed string:
+#   \\\|
+
+# Processed string:
+#   |
+
+def replace_all_conway_literal_pipes(string):
+  
+  processed_string = '|'
+  
+  return re.sub(
+    r'\\\|',
+    create_temporary_replacement_string(processed_string),
+    string
+  )
+
+################################################################
+# Replace Conway literal tildes with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   \~
+
+# Raw regular expression for unprocessed string:
+#   \\~
+
+# Processed string:
+#   ~
+
+def replace_all_conway_literal_tildes(string):
+  
+  processed_string = '~'
+  
+  return re.sub(
+    r'\\~',
+    create_temporary_replacement_string(processed_string),
+    string
+  )
+
+################################################################
+# Replace Conway literal curly brackets with temporary replacements
+################################################################
+
+# Unprocessed strings:
+#   \{  \}
+
+# Raw regular expression for unprocessed strings
+# (opening and closing brackets are decoupled):
+#   \\\{
+#   \\\}
+
+# Processed strings:
+#   {   }
+
+def replace_all_conway_literal_curly_brackets(string):
+  
+  processed_string = '{'
+  
+  string = re.sub(
+    r'\\\{',
+    create_temporary_replacement_string(processed_string),
+    string
+  )
+  
+  processed_string = '}'
+  
+  string = re.sub(
+    r'\\\}',
+    create_temporary_replacement_string(processed_string),
+    string
+  )
+  
+  return string
+
+################################################################
+# Replace Conway literal Chinese runs with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   \{Chinese run}
+
+# Raw regular expression for unprocessed string:
+#   \\([{Chinese character range}]+)
+#   \1  {Chinese run}
+
+# Processed string:
+#   {Chinese run}
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_conway_literal_chinese(match_object):
+  
+  chinese_run = match_object.group(1)
+  
+  processed_string = chinese_run
+  
+  return create_temporary_replacement_string(processed_string)
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_conway_literal_chinese_runs(string):
+  
+  return re.sub(
+    r'\\([{CHINESE_CHARACTER_RANGE}]+)'.format(
+      CHINESE_CHARACTER_RANGE = CHINESE_CHARACTER_RANGE
+    ),
+    replace_conway_literal_chinese,
+    string
+  )
+
+################################################################
+# Escape Conway special literals
+################################################################
+
+def escape_conway_special_literals(string):
+  
+  # Escape ~ as \~
+  string = re.sub(r'~', r'\\~', string)
+  
+  # Escape { as \{
+  string = re.sub(r'\{', r'\\{', string)
+  
+  # Escape } as \}
+  string = re.sub(r'\}', r'\\}', string)
+  
+  return string
+
+################################################################
+# Ensure Conway-escaped HTML
+################################################################
+
+# Ensures that &, < and > which are not preceded by a backslash
+# are replaced with their Conway-escaped forms \&, \< and \>.
+# Used in attribute value escaping.
+
+def ensure_conway_escaped_html(string):
+  
+  string = replace_all_conway_literal_backslashes(string)
+  
+  string = re.sub(r'(?<!\\)&', r'\\&', string)
+  string = re.sub(r'(?<!\\)<', r'\\<', string)
+  string = re.sub(r'(?<!\\)>', r'\\>', string)
+  
+  return string
+
+################################################################
+# Ensure Conway-escaped Chinese runs
+################################################################
+
+# Ensures that any {Chinese run} not preceded by a backslash
+# is replaced with its Conway-escaped form \{Chinese run}.
+# Used in attribute value escaping.
+
+def ensure_conway_escaped_chinese_run(string):
+  
+  string = replace_all_conway_literal_backslashes(string)
+  string = unescape_katakana_middle_dot(string)
+  
+  string = re.sub(
+    r'(?<!\\)([{CHINESE_CHARACTER_RANGE}]+)'.format(
+      CHINESE_CHARACTER_RANGE = CHINESE_CHARACTER_RANGE
+    ),
+    r'\\\1',
+    string
+  )
+  
+  return string
+
+################################################################
+# Escape attribute values
+################################################################
+
+def escape_attribute_value(string):
+  
+  string = replace_all_text_romanisations(string)
+  string = ensure_conway_escaped_html(string)
+  string = ensure_conway_escaped_chinese_run(string)
+  string = remove_conway_italics(string)
+  string = escape_quotes(string)
+  
+  return string
+
+################################################################
+# Range of Chinese characters
+################################################################
+
+CHINESE_CHARACTER_RANGE = (
+  
+  # ----------------------------------------------------------------
+  # U+2E80 to U+2EFF (CJK Radicals Supplement)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Radicals_Supplement
+  
+  '\u2E80-\u2EFF'     # All
+  
+  # ----------------------------------------------------------------
+  # U+2F00 to U+2FDF (Kangxi Radicals)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/Kangxi_Radicals
+  
+  '\u2F00-\u2FDF'     # All
+  
+  # ----------------------------------------------------------------
+  # U+2FF0 to U+2FFF (Ideographic Description Characters)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/Ideographic_Description_Characters
+  
+  '\u2FF0-\u2FFF'     # All
+  
+  # ----------------------------------------------------------------
+  # U+3000 to U+303F (CJK Symbols and Punctuation)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Symbols_and_Punctuation
+  
+  '\u3000-\u3002'     # Ideographic space (　), comma (、) and full stop (。)
+  '\u3005'            # Ideographic iteration mark (々)
+  '\u3007'            # Ideographic number zero (〇)
+  '\u3008-\u3011'     # Brackets
+  '\u301C'            # Wave dash
+  '\u3021-\u3029'     # Suzhou numerals one through nine
+  '\u302A-\u302D'     # Ideographic tone marks (four tones 平上去入)
+  '\u3038-\u303A'     # Suzhou numerals ten, twenty and thirty
+  
+  # ----------------------------------------------------------------
+  # U+30A0 to U+30FF (Katakana)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/Katakana
+  
+  '\u30FB'            # Katakana middle dot (・)
+  
+  # ----------------------------------------------------------------
+  # U+31C0 to U+31EF (CJK Strokes)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Strokes
+  
+  '\u31C0-\u31EF'     # All
+  
+  # ----------------------------------------------------------------
+  # U+3400 to U+4DBF (CJK Unified Ideographs Extension A)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_A
+  
+  '\u3400-\u4DBF'     # All
+  
+  # ----------------------------------------------------------------
+  # U+4DC0 to U+4DFF (Yijing Hexagram Symbols)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/Yijing_Hexagram_Symbols
+  
+  '\u4DC0-\u4DFF'     # All
+  
+  # ----------------------------------------------------------------
+  # U+4E00 to U+9FFF (CJK Unified Ideographs)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs
+  
+  '\u4E00-\u9FFF'     # All
+  
+  # ----------------------------------------------------------------
+  # U+A700 to U+A71F (Modifier Tone Letters)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/Modifier_Tone_Letters
+  
+  '\uA700-\uA707'     # Eight tone modifiers (陰平 through 陽入)
+  
+  # ----------------------------------------------------------------
+  # U+F900 to U+FAFF (CJK Compatibility Ideographs)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Compatibility_Ideographs
+  
+  '\uF900-\uFAFF'     # All
+  
+  # ----------------------------------------------------------------
+  # U+FF00 to U+FFEF (Halfwidth and Fullwidth Forms)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/Halfwidth_and_Fullwidth_Forms
+  
+  '\uFF01-\uFF1F'     # Fullwidth punctuation and digits
+  '\uFF3B-\uFF3E'     # Fullwidth punctuation
+  '\uFF5B-\uFF60'     # Fullwidth punctuation
+  
+  # ----------------------------------------------------------------
+  # U+20000 to U+2A6DF (CJK Unified Ideographs Extension B)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_B
+  
+  '\U00020000-\U0002A6DF'   # All
+  
+  # ----------------------------------------------------------------
+  # U+2A700 to U+2B73F (CJK Unified Ideographs Extension C)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_C
+  
+  '\U0002A700-\U0002B73F'   # All
+  
+  # ----------------------------------------------------------------
+  # U+2B740 to U+2B81F (CJK Unified Ideographs Extension D)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_D
+  
+  '\U0002B740-\U0002B81F'   # All
+  
+  # ----------------------------------------------------------------
+  # U+2B820 to U+2CEAF (CJK Unified Ideographs Extension E)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_E
+  
+  '\U0002B820-\U0002CEAF'   # All
+  
+  # ----------------------------------------------------------------
+  # U+2CEB0 to U+2EBEF (CJK Unified Ideographs Extension F)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_F
+  
+  '\U0002CEB0-\U0002EBEF'   # All
+  
+  # ----------------------------------------------------------------
+  # U+2F800 to U+2FA1F (CJK Compatibility Ideographs Supplement)
+  # ----------------------------------------------------------------
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Compatibility_Ideographs_Supplement
+  
+  '\U0002F800-\U0002FA1F'   # All
+
+)
+
+################################################################
+# Unescape Katakana middle dot
+################################################################
+
+def unescape_katakana_middle_dot(string):
+  
+  # Unescape \. as ・ U+30FB KATAKANA MIDDLE DOT
+  string = re.sub(r'\\\.', '・', string)
+  
+  return string
+
+################################################################
+# Unescape Conway
+################################################################
+
+def unescape_conway(string):
+  
+  # Unescape \\ as \
+  string = replace_all_conway_literal_backslashes(string)
+  
+  # Unescape \| as |
+  string = replace_all_conway_literal_pipes(string)
+  
+  # Unescape \~ as ~
+  string = replace_all_conway_literal_tildes(string)
+  
+  # Unescape \{ as {
+  # Unescape \} as }
+  string = replace_all_conway_literal_curly_brackets(string)
+  
+  # Unescape ~ as &nbsp;
+  string = re.sub('~', '&nbsp;', string)
+  
+  # Unescape \. as ・ U+30FB KATAKANA MIDDLE DOT
+  string = unescape_katakana_middle_dot(string)
+  
+  # Unescape \{Chinese run} as {Chinese run}
+  string = replace_all_conway_literal_chinese_runs(string)
+  
+  # Unescape \& as &amp;
+  string = re.sub(r'\\&', '&amp;', string)
+  
+  # Unescape \< as &lt;
+  string = re.sub(r'\\<', '&lt;', string)
+  
+  # Unescape \> as &gt;
+  string = re.sub(r'\\>', '&gt;', string)
+  
+  # Unescape \* as Lord in small caps;
+  string = re.sub(r'\\\*', '<span class="small-caps">Lord</span>', string)
+  
+  # Unescape \_ as &numsp;
+  string = re.sub(r'\\_', '&numsp;', string)
+  
+  # Unescape \, as &thinsp;
+  string = re.sub(r'\\,', '&thinsp;', string)
+  
+  return(string)
+
+################################################################
+# Unescape romanisations
+################################################################
+
+def unescape_romanisations(string):
+  
+  # Conway only
+  string = re.sub('oe', 'œ', string)
+  
+  # Wade–Giles only
+  string = re.sub(r'e\^', 'ê', string)
+  string = re.sub('uu', 'ŭ', string)
+  
+  # Pinyin tone 1 陰平 (dark level) only
+  string = re.sub(r'a=', 'ā', string)
+  string = re.sub(r'e=', 'ē', string)
+  string = re.sub(r'i=', 'ī', string)
+  string = re.sub(r'o=', 'ō', string)
+  string = re.sub(r'u=', 'ū', string)
+  string = re.sub(r'u"=', 'ǖ', string)
+  
+  # Pinyin tone 2 陽平 (light level) only
+  string = re.sub(r'a\/', 'á', string)
+  string = re.sub(r'e\/', 'é', string)
+  string = re.sub(r'i\/', 'í', string)
+  string = re.sub(r'o\/', 'ó', string)
+  string = re.sub(r'u\/', 'ú', string)
+  string = re.sub(r'u"\/', 'ǘ', string)
+  
+  # Pinyin tone 3 上 (rising) only
+  string = re.sub('av', 'ǎ', string)
+  string = re.sub('ev', 'ě', string)
+  string = re.sub('iv', 'ǐ', string)
+  string = re.sub('ov', 'ǒ', string)
+  string = re.sub('uv', 'ǔ', string)
+  string = re.sub('u"v', 'ǚ', string)
+  
+  # Pinyin tone 4 去 (departing) only
+  string = re.sub(r'a\\', 'à', string)
+  string = re.sub(r'e\\', 'è', string)
+  string = re.sub(r'i\\', 'ì', string)
+  string = re.sub(r'o\\', 'ò', string)
+  string = re.sub(r'u\\', 'ù', string)
+  string = re.sub(r'u"\\', 'ǜ', string)
+  
+  # Common
+  string = re.sub('u"', 'ü', string)
+  
+  return string
+
+################################################################
+# Wrap Chinese runs in a language span
+################################################################
+
+# Unprocessed string:
+#   {Chinese run}
+
+# Raw regular expression for unprocessed string:
+#   ({Chinese run regular expression})
+
+# Processed string:
+#   <span lang="zh-Hant">{Chinese run}</span>
+
+def wrap_chinese_runs(string):
+  
+  return re.sub(
+    r'([{CHINESE_CHARACTER_RANGE}]+)'.format(
+      CHINESE_CHARACTER_RANGE = CHINESE_CHARACTER_RANGE
+    ),
+    r'<span lang="zh-Hant">\1</span>',
+    string
+  )
+
+################################################################
+# Apply Conway italics
+################################################################
+
+# Unprocessed strings:
+#   {   }
+
+# Raw regular expression for unprocessed strings
+# (opening and closing brackets are decoupled):
+#   \{
+#   \}
+
+# Processed strings:
+#   <i>   </i>
+
+def apply_conway_italics(string):
+  
+  processed_string = '<i>'
+  
+  string = re.sub(
+    r'\{',
+    create_temporary_replacement_string(processed_string),
+    string
+  )
+  
+  processed_string = '</i>'
+  
+  string = re.sub(
+    r'\}',
+    create_temporary_replacement_string(processed_string),
+    string
+  )
+  
+  return string
+
+################################################################
+# Remove Conway italics
+################################################################
+
+# Removes { and } which are not preceded by a backslash.
+# Used in attribute value escaping.
+
+def remove_conway_italics(string):
+  
+  string = replace_all_conway_literal_backslashes(string)
+  
+  string = re.sub(r'(?<!\\)\{', '', string)
+  string = re.sub(r'(?<!\\)\}', '', string)
+  
+  return string
+
+################################################################
+# Replace preformatted code with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   <pre> {content} </pre>
+
+# Raw regular expression for unprocessed string:
+#   <pre>([\s\S]*?)</pre>
+#   \1  {content}
+
+# Processed string:
+#   <pre> {de-indented content} </pre>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_preformatted(match_object):
+  
+  content = match_object.group(1)
+  content = de_indent(content)
+  
+  processed_string = '<pre>{content}</pre>'.format(content = content)
+  
+  return create_temporary_replacement_string(processed_string)
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_preformatted(string):
+  
+  return re.sub(r'<pre>([\s\S]*?)</pre>', replace_preformatted, string)
+
+################################################################
+# Remove unnecessary whitespace
+################################################################
+
+def remove_unnecessary_whitespace(string):
+  
+  # De-indent preformatted tags (and temporarily replace them
+  # so that subsequent whitespace removal does not affect them)
+  string = replace_all_preformatted(string)
+  
+  # Remove leading whitespace and empty lines
+  string = re.sub(r'^[\s]+', '', string, flags = re.MULTILINE)
+  
+  # Remove newlines preceded immediately by a backslash
+  string = re.sub(r'\\\n', '', string)
+  
+  return string
+
+################################################################
+# Create temporary replacement string and add to dictionary
+################################################################
+
+def create_temporary_replacement_string(processed_string):
+  
+  global temporary_replacement_counter, temporary_replacement_dictionary
+  
+  # Increment counter
+  temporary_replacement_counter += 1
+  
+  # Build temporary replacement string
+  temporary_replacement_string = (
+    '{E000_RUN}{temporary_replacement_counter}{E000}'.format(
+      E000_RUN = E000_RUN,
+      temporary_replacement_counter = temporary_replacement_counter,
+      E000 = E000
+    )
+  )
+  
+  # NOTE: the processed string may contain existing temporary replacements,
+  # which must be replaced with their own corresponding processed strings,
+  # before the current processed string is stored to the dictionary
+  processed_string = replace_all_temporary_replacements(processed_string)
+  
+  # Add entry to dictionary with
+  # key {temporary replacement string} and value {processed string}
+  temporary_replacement_dictionary[temporary_replacement_string] = (
+    processed_string
+  )
+  
+  # Return the temporary replacement string
+  return temporary_replacement_string
+
+################################################################
+# Replace temporary replacements with processed strings
+################################################################
+
+# Raw regular expression for temporary replacement:
+#   {E000_RUN}[0-9]+{E000}
+#   \0  {temporary replacement string} in its entirety
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_temporary_replacement(match_object):
+  
+  temporary_replacement_string = match_object.group(0)
+  
+  processed_string = (
+    temporary_replacement_dictionary[temporary_replacement_string]
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_temporary_replacements(string):
+  
+  return TEMPORARY_REPLACEMENT_REGEX.sub(
+    replace_temporary_replacement,
+    string
+  )
+
+################################################################
+# Main
+################################################################
+
+def main(args):
+  
+  global file_name, is_index
+  global E000, E000_RUN, TEMPORARY_REPLACEMENT_REGEX
+  global temporary_replacement_counter, temporary_replacement_dictionary
+  
+  # ----------------------------------------------------------------
+  # File name
+  # ----------------------------------------------------------------
+  
+  file_name = args.file_name
+  
+  # ----------------------------------------------------------------
+  # Whether we are building index.html
+  # ----------------------------------------------------------------
+  
+  is_index = file_name == 'index'
+  
+  # ----------------------------------------------------------------
+  # Import contents (markup) of CCH file
+  # ----------------------------------------------------------------
+  
+  cch_file = open(file_name + '.cch', 'r', encoding = 'utf-8')
+  markup = cch_file.read()
+  
+  # ----------------------------------------------------------------
+  # Temporary replacements
+  # ----------------------------------------------------------------
+  
+  # To prevent unwanted replacements affecting portions {m} of markup
+  # which must NOT be touched after they have been processed into strings {p}
+  # (e.g. CCH display code tags),
+  # we replace the portions {m} with temporary replacement strings {t},
+  # and store the processed strings {p} inside a replacement dictionary,
+  # using keys the temporary replacement strings {t}
+  # and values the processed strings {p}.
+  
+  # Only after all the unwanted replacements have been completed
+  # do we replace the temporary replacement strings {t}
+  # with the processed strings {p}.
+  
+  # For this purpose we require temporary replacement strings {t} which
+  # (1) do not appear in the original markup,
+  # (2) will not appear in the markup as a result of any processing
+  #     (unwanted replacements) unless deliberately inserted,
+  # (3) can always be unambiguously picked out and not confused with adjacent
+  #     characters,
+  # (4) will not change as a result of any processing (unwanted replacements),
+  #     and
+  # (5) are unique.
+  
+  # To achieve this, we use temporary replacement strings of the form
+  #   {U+E000 run}{temporary replacement counter}{U+E000}
+  # where
+  # (a) {U+E000} is the first "Private Use Area" code point in Unicode,
+  # (b) {U+E000 run} is the run consisting of one more than
+  #     the total number of occurrences of {U+E000} in markup (usually zero),
+  #     and
+  # (c) {temporary_replacement_counter} is an integer which is incremented.
+  
+  # By construction, this satisfies the requirements (1) through (5) above.
+  
+  # Constants
+  E000 = '\uE000'
+  E000_RUN = (markup.count(E000) + 1) * E000
+  TEMPORARY_REPLACEMENT_REGEX = re.compile(
+    '{E000_RUN}[0-9]+{E000}'.format(
+      E000_RUN = E000_RUN,
+      E000 = E000
+    )
+  )
+  
+  # Initialise global variables
+  temporary_replacement_counter = 0
+  temporary_replacement_dictionary = {}
+  
+  ################################################################
+  # START of processing markup
+  ################################################################
+  
+  # ----------------------------------------------------------------
+  # Replace all Supreme tags
+  # ----------------------------------------------------------------
+  
+  markup = replace_all_display_code(markup)
+  markup = replace_all_inline_code(markup)
+  markup = remove_all_html_comments(markup)
+  markup = replace_all_display_maths(markup)
+  markup = replace_all_inline_maths(markup)
+  markup = replace_all_inline_maths_definitions(markup)
+  
+  # ----------------------------------------------------------------
+  # Replace all Zero-argument tags
+  # ----------------------------------------------------------------
+  
+  markup = replace_all_item_anchor_abbreviations(markup)
+  markup = replace_assisting_romanisation_radio(markup)
+  markup = replace_all_svg_style_abbreviations(markup)
+  
+  # ----------------------------------------------------------------
+  # Replace all Multiple-argument tags
+  # ----------------------------------------------------------------
+  
+  markup = replace_all_dialogue_images(markup)
+  markup = replace_all_images(markup)
+  markup = replace_all_assisting_romanisations(markup)
+  markup = replace_all_cantonese_mandarin_romanisations(markup)
+  markup = replace_all_directed_triangle_anchors(markup)
+  markup = replace_all_item_anchors(markup)
+  markup = replace_all_heading_self_link_anchors(markup)
+  markup = replace_all_anchors(markup)
+  markup = replace_all_boxed_translations(markup)
+  markup = replace_all_shuen_headings(markup)
+  markup = replace_all_shuen_link_divisions(markup)
+  markup = replace_preamble(markup)
+  markup = replace_page_properties(markup)
+  markup = replace_cite_this_page(markup)
+  markup = replace_footer(markup)
+  
+  # ----------------------------------------------------------------
+  # Replace all Multiple-argument tags which require a second pass
+  # ----------------------------------------------------------------
+  
+  markup = replace_all_directed_triangle_anchors(markup)
+  markup = replace_all_heading_self_link_anchors(markup)
+  markup = replace_all_anchors(markup)
+  
+  # ----------------------------------------------------------------
+  # Replace all Single-argument tags
+  # ----------------------------------------------------------------
+  
+  markup = replace_all_formatted_spans(markup)
+  markup = replace_all_boxed_divisions(markup)
+  markup = replace_all_dialogue_divisions(markup)
+  markup = replace_all_dialogue_paragraphs(markup)
+  markup = replace_all_link_divisions(markup)
+  markup = replace_all_header_navigation_bars(markup)
+  markup = replace_all_navigation_bars(markup)
+  markup = replace_all_note_paragraphs(markup)
+  markup = replace_all_overflowing_divisions(markup)
+  markup = replace_all_svg_style_containers(markup)
+  markup = replace_all_text_romanisations(markup)
+  
+  # ----------------------------------------------------------------
+  # Unescape all Conway escapes
+  # ----------------------------------------------------------------
+  
+  markup = unescape_conway(markup)
+  
+  # ----------------------------------------------------------------
+  # Apply Conway italics
+  # ----------------------------------------------------------------
+  
+  markup = apply_conway_italics(markup)
+  
+  # ----------------------------------------------------------------
+  # Remove unnecessary Whitespace
+  # ----------------------------------------------------------------
+  
+  markup = remove_unnecessary_whitespace(markup)
+  
+  # ----------------------------------------------------------------
+  # Wrap Chinese runs in Language spans
+  # ----------------------------------------------------------------
+  
+  markup = wrap_chinese_runs(markup)
+  
+  # ----------------------------------------------------------------
+  # Replace all temporary replacements with processed strings
+  # ----------------------------------------------------------------
+  
+  markup = replace_all_temporary_replacements(markup)
+  
+  ################################################################
+  # END of processing markup
+  ################################################################
+  
+  # ----------------------------------------------------------------
+  # Write processed markup to HTML file
+  # ----------------------------------------------------------------
+  
+  html_file = open(file_name + '.html', 'w', encoding = 'utf-8')
+  html_file.write(markup)
+
+################################################################
+# Argument parsing
+################################################################
+
+if __name__ == '__main__':
+  
+  # Description
+  parser = argparse.ArgumentParser(description = 'Converts CCH to HTML')
+  
+  # Argument
+  parser.add_argument(
+    'file_name',
+    help = 'File name of CCH file to be converted, without the .cch extension'
+  )
+  
+  # Run
+  main(parser.parse_args())
