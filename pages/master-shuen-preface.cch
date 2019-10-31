@@ -31,7 +31,7 @@
     《孫子算經》<br>
     "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
     | /pages/master-shuen.html
-    | "Master 孫's Computational Classic"
+    | "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
   </@>
   <ul>
     
@@ -43,14 +43,14 @@
     <@i>
       《卷上》~"Volume~I"
       | /pages/master-shuen-i.html
-      | "Master 孫's Computational Classic: Volume I"
+      | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
     </@i>
     
     <li>
       <@>
         《卷中》~"Volume~II"
         | /pages/master-shuen-ii.html
-        | "Master 孫's Computational Classic: Volume II"
+        | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
       </@>
       <:r>(work in progress)</:r>
     </li>
