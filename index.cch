@@ -1,0 +1,367 @@
+<*> | 20190309 | 20191031 | dr </*>
+
+<=h>
+  <@it></@it>
+  <@i> Pages | #pages | Stuff to read </@i>
+  <@i> Math. | #applied | Applied mathematics, or physics </@i>
+  <@i> Lit. | #literary | English translations of Literary Chinese </@i>
+  <@i> Code | #code | Useful code </@i>
+  <@ic></@ic>
+</=h>
+
+<h1>Conway's site</h1>
+
+<*p> |
+  Feedback welcome: <`>leeconway@protonmail.com</`>
+</*p>
+
+<p>
+  Assorted musings of a remnant of the 20th~century,
+  with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
+</p>
+
+
+<@2> About | about </@2>
+
+
+<p>
+  This site partially answers the popular question
+  "what does Conway do in his spare time".
+  Most of the stuff here is either
+  <@> applied maths | #applied | Applied mathematics, or physics </@> or
+  <@>
+    Literary Chinese | #literary | English translations of Literary Chinese
+  </@>;
+  see <@> FAQ | /pages/faq.html | </@>.
+</p>
+
+
+<@2> Stuff to read | pages </@2>
+
+
+<@3> General material | general </@3>
+
+<table>
+  
+  <tr><td>
+    <@>
+      <b>Conway's Custom Romanisation for Cantonese</b>
+      | /pages/conway-cantonese-romanisation.html
+      | Conway's Custom Romanisation for Cantonese
+    </@>
+    <.>Used in this site.</.>
+  </td></tr>
+  
+  <tr><td>
+    <@> <b>FAQ</b> | /pages/faq.html | FAQ </@>
+    <.>"What does Conway do in his spare time?"</.>
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      <b>A <:t>cynic's</:t> 7.30 (and other programs)</b>
+      | /cynicism/7-30.html
+      | A cynic's 7.30 (and other programs)
+    </@>
+    <.>Mind reading: Australian politics.</.>
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      <b>Mao on separatism: 27~Chinas</b>
+      | /pages/mao-27-chinas.html
+      | Mao on separatism: 27~Chinas: 長沙《大公報》一九二零年九月三日——湖南共和國
+    </@>
+    <.>Mao in 1920, on why China ought to be split
+    into 27 separate countries.</.>
+  </td></tr>
+  
+</table>
+
+<@3> Applied mathematics, or physics | applied </@3>
+
+<table>
+  
+  <tr><td>
+    <@>
+      <b>Daytime: dependence on latitude and season</b>
+      | /pages/daytime.html
+      | Daytime: dependence on latitude and season
+    </@>
+    <.>
+      The sun's path through the sky
+      and the duration of daytime (among other quantities).
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      <b>Projectile motion: optimal launch angle for weak quadratic drag</b>
+      | /pages/optimal-angle-weak-drag.html
+      | Projectile motion: optimal launch angle for weak quadratic drag
+    </@>
+    <.>
+      Launching projectiles in weak air resistance
+      proportional to the square of speed.
+    </.>
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      <b>Projectile motion: optimal launch angle from a platform</b>
+      | /pages/optimal-angle-platform.html
+      | Projectile motion: optimal launch angle from a platform
+    </@>
+    <.>Launching projectiles from a raised platform.</.>
+  </td></tr>
+  
+</table>
+
+<@3> English translations of Literary Chinese | literary </@3>
+
+<^^></^^>
+
+<@4> Mathematics | literary-maths </@4>
+
+<table>
+  
+  <tr><td>
+    <@>
+      《孫子算經》 or <br>
+      <b>"Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"</b>
+      | /pages/master-shuen.html
+      | "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
+    </@>
+    <ul>
+      <@i>
+        《序》~"Preface"
+        | /pages/master-shuen-preface.html
+        | "Master <^e>Shu"n</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+      </@i>
+      <@i>
+        《卷上》~"Volume~I"
+        | /pages/master-shuen-i.html
+        | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+      </@i>
+      <li>
+        <@>
+          《卷中》~"Volume~II"
+          | /pages/master-shuen-ii.html
+          | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+        </@>
+        <:r>(work in progress)</:r>
+      </li>
+      <li>
+        《卷下》~"Volume~III"
+        <:r>(haven't started)</:r>
+      </li>
+    </ul>
+    <.>
+      An annotated translation of the entire
+      {Sunzi Suanjing} (when completed).
+    </.>
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      《海島算經》 or<br>
+      <b>"{The} Sea Island Computational Classic"</b>
+      | /pages/sea-island.html
+      | "{The} Sea Island Computational Classic": 《海島算經》
+    </@>
+    <.>The first problem in {Haidao Suanjing}.</.>
+  </td></tr>
+  
+</table>
+
+<@4> Not mathematics | literary-not-maths </@4>
+
+<table>
+  
+  <tr><td>
+    <@>
+      《香港出師表》 or<br>
+      <b>"Memorial {unto the} Mobilisation, Hong Kong"</b>
+      | /pages/hk-mobilisation.html
+      | "Memorial {unto the} Mobilisation, Hong Kong": 《香港出師表》
+    </@>
+    <.>
+      香港人！加油！
+    </.>
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      <b>"The Need to Win"</b> or<br>
+      <b>"Attaching Importance to {the} External"</b>
+      | /pages/need-to-win.html
+      | "The Need to Win"
+    </@>
+    <.>
+      Me on {The Turning} (Tim Winton), quoting Thomas Merton,
+      paraphrasing <^e>Chuang Tzuu</^e>, on Confucius, on (probably) archery.
+    </.>
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      《孔子問答：小兒論》 or<br>
+      <b>"Q{\&}A {with} Confucius: {the} Little Child's Discourse"</b>
+      | /pages/little-childs-discourse.html
+      | "Q{\&}A {with} Confucius: {the} Little Child's Discourse": 《孔子問答：小兒論》
+    </@>
+    <.>Confucius getting his arse whooped by a little kid.</.>
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      《太平山獅子亭記》 or<br>
+      <b>"Record of {the} Lion's Pavilion,
+      Mount~太平<^> T'aai P'ing | T'ai P'ing | Tai Ping</^>"</b>
+      | /pages/lions-pavilion-record.html
+      | "Record of {the} Lion's Pavilion, Mount~<^e>T'aai P'ing</^e>": 《太平山獅子亭記》
+    </@>
+    <.>
+      The text on a plaque in the Lion's Pavilion, Victoria Peak, Hong Kong.
+    </.>
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      《狐假虎威》 or<br>
+      <b>"{The} Fox Falsely Assumes {the} Tiger's Authority"</b>
+      | /pages/fox-falsely-assumes-tigers-authority.html
+      | "{The} Fox Falsely Assumes {the} Tiger's Authority": 《狐假虎威》
+    </@>
+    <.>The original second half of {The Gruffalo}.</.>
+  </td></tr>
+  
+  <tr><td>
+    <@>
+      《施氏食獅史》 or<br>
+      <b>"{An} History of Mr~施<^> See | Shih | Shi</^>'s Eating of Lions"</b>
+      | /pages/lion-eating-history.html
+      | "{An} History of Mr~<^e>See</^e>'s Eating of Lions": 《施氏食獅史》
+    </@>
+    <.>The original Mandarin "lion tongue twister".</.>
+  </td></tr>
+  
+</table>
+
+
+<@2> Useful code | code </@2>
+
+
+<.>
+  No input checking, not optimised, and ABSOLUTELY NO WARRANTY,
+  i.e.~"GOD SAVE YOU".
+</.>
+
+<@3> Website building | code-web </@3>
+
+<ul>
+  <@i>
+    <b>How to render mathematical equations using KaTeX</b>
+    | /code/katex-guide.html
+    | How to render mathematical equations using KaTeX
+  </@i>
+  <@i>
+    <b>Python: a regex converter from CCH to HTML</b>
+    | /code/cch-to-html.html
+    | Python: a regex converter from CCH to HTML
+  </@i>
+</ul>
+
+<@3> Mathematical stuff | code-maths </@3>
+
+<ul>
+  <@i>
+    <b>Python: Master~孫<^> Shu"n | Sun | Sun </^> square root algorithm</b>
+    | https://github.com/yawnoc/yawnoc.github.io/blob/master/code/shuen-sqrt.py
+    | Python: Master~<^e> Shu"n</^e> square root algorithm
+  </@i>
+  <@i>
+    Mathematica: Master~孫<^> Shu"n | Sun | Sun </^>
+      multiplication \& division animations
+    | /code/master-shuen-animations.html
+    | Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
+  </@i>
+  <li>
+    <@> Unicode mathematical symbols | /code/unicode-maths.html | </@>
+    <span class="note">
+      (technically not code, but useful for typing emails)
+    </span>
+  </li>
+</ul>
+
+
+<@2> Site history | history </@2>
+
+
+<ul class="site-history">
+  
+  <li><span>20191031:</span>
+    Rewrote the CCH to HTML converter
+    <@>
+      <`>cch-to-html.py</`>
+      | https://github.com/yawnoc/yawnoc.github.io/blob/master/cch-to-html.py
+      | cch-to-html.py
+    </@>,
+    and rebuilt the whole site accordingly.
+  </li>
+  
+  <li><span>20190830:</span>
+    New series:
+    <@>
+      A <:t>cynic's</:t> 7.30
+      | /cynicism/7-30.html
+      | A cynic's 7.30
+    </@>.
+  </li>
+  
+  <li><span>20190822:</span>
+    Completed
+    <@>
+      handwritten translation manuscripts
+      | /pages/master-shuen.html#manuscripts
+      | Translation manuscripts for
+        "Master <^e>Shu"n</^e>'s Computational Classic:" 《孫子算經》
+    </@>
+    for Volume~II of "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic".
+    Typesetting of corresponding HTML in progress.
+  </li>
+  
+  <li><span>20190605:</span>
+    Completed
+    <@>
+      handwritten translation manuscripts
+      | /pages/master-shuen.html#manuscripts
+      | Translation manuscripts for
+        "Master <^e>Shu"n</^e>'s Computational Classic:" 《孫子算經》
+    </@>
+    for Volume~I of "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic".
+    <s>Typesetting of corresponding HTML in progress.</s>
+  </li>
+  
+  <li><span>20190504:</span>
+    Began
+    <@>
+      "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
+      | /pages/master-shuen.html
+      | "Master <^e>Shu"n</^e>'s Computational Classic:" 《孫子算經》
+    </@>,
+    an ongoing translation effort which will probably take until
+    the end of this year to complete.
+  </li>
+  
+  <li><span>20190309:</span>
+    Website first created.
+  </li>
+</ul>
+
+<*c>
+  Conway's site
+  | home
+  | {Conway's} site
+</*c>
+
+<*f></*f>
