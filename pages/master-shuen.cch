@@ -1,0 +1,578 @@
+<*>
+  "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
+  | 20190504 | 20191006 | dmr
+</*>
+
+<=h>
+  <@ih></@ih>
+  <@it></@it>
+  <@i> Manuscripts | #manuscripts | </@i>
+  <@in></@in>
+  <@ic></@ic>
+</=h>
+
+<h1>
+  《孫子算經》 or<br>
+  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
+</h1>
+
+<*p> |
+  Also known as {Sunzi Suanjing}.
+</*p>
+
+
+<@2> Introduction | introduction </@2>
+
+
+<@@>
+  <@d> Translation | translation </@d>
+</@@>
+<p>
+  《孫子算經》, or
+  <@>
+    "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
+    | https://en.wikipedia.org/wiki/Sunzi_Suanjing
+    | Wikipedia: Sunzi Suanjing
+  </@>,
+  like the
+  <@>
+    Sea Island Computational Classic
+    | /pages/sea-island.html
+    | "The Sea Island Computational Classic"
+  </@>, is one of the
+  <@>
+    ten canon classics of Chinese mathematics
+    | https://en.wikipedia.org/wiki/Ten_Computational_Canons
+    | Wikipedia: Ten Computational Canons
+  </@>.
+  Probably written in the 3rd to 5th centuries AD,
+  the author 孫子<^> Shu"n Chee | Sun Tzuu | Sun Zi </^>
+  is not the same
+  <@>
+    孫子<^> Shu"n Chee | Sun Tzuu | Sun Zi </^>
+    | https://en.wikipedia.org/wiki/Sun_Tzu
+    | Wikipedia: Sun Tzu
+  </@>
+  who wrote
+  <@>
+    {The Art of War}
+    | https://en.wikipedia.org/wiki/The_Art_of_War
+    | Wikipedia: The Art of War
+  </@>.
+</p>
+
+<p>
+  In late April~2019, I set myself the rather ambitious task of translating
+  the entire 《孫子算經》 into English.
+  Apparently
+  <@>
+    this has been done before
+    | https://books.google.com.au/books/about/Fleeting_Footsteps.html?id=fGYmpWE5UZgC
+    | Fleeting Footsteps: Tracing the Conception of Arithmetic and Algebra in Ancient China
+  </@>,
+  but I shall <b>not</b> read that translation
+  (which is behind a paywall anyway) until I have completed mine.
+</p>
+
+<p>
+  Each night I will be translating a few sentences, maybe 50~characters.
+  Since the text is some 9000 characters long,
+  the whole thing will take around 9000/50 = 180~days,
+  so perhaps I can complete it by the end of this year.
+</p>
+
+<@3> Versions | versions </@3>
+
+<p>
+  There are four versions which I refer to,
+  with slight differences in wording between them.
+  <b>Unless otherwise noted I will be following the text from
+  <@>
+    Version~D
+    | https://ctext.org/library.pl?if=en&res=80226
+    | 孫子算經+五曹算經（知不足齋本）
+  </@>.</b>
+  The punctuation is based on that in
+  <@> Version~C (ctext.org) | https://ctext.org/sunzi-suan-jing | 《孫子算經》 </@>,
+  but with changes to my liking.
+  I have grouped the paragraphs mostly following the line breaks
+  of Versions~A, B and~D, with groupings which
+  in my opinion are more logical than those in Version~C.
+</p>
+
+<p>
+  A quick system for referring to specific pages is as follows:
+</p>
+
+<ul>
+  
+  <li>
+    <b>A</b>:
+    <@>
+      02094034.cn at archive.org
+      | https://archive.org/details/02094034.cn
+      | 《孫子算經》
+    </@>
+    <#>
+      A<:g><$>p</$></:g> shall mean
+      <code>
+        https://archive.org/details/02094034.cn/page/n<:g><$>p</$></:g>
+      </code>
+    </#>
+  </li>
+  
+  <li>
+    <b>B</b>:
+    <@>
+      《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=144
+      | 《文淵閣四庫全書》 0797冊
+    </@>
+    <#>
+      B<:g><$>p</$></:g>(<:g><$>q</$></:g>) shall mean
+      <code>
+        https://commons.wikimedia.org/w/index.php?title=File%3A文淵閣四庫全書_0797冊.djvu\&page=<:g><$>p</$></:g>
+      </code><br>
+      corresponding to the printed page number <:g><$>q</$></:g>.<br>
+      Note that <$>{\color{green}p} - {\color{green}q} = 5</$>.
+    </#>
+  </li>
+  
+  <li>
+    <b>C</b>:
+    <@>
+      ctext.org database page
+      | https://ctext.org/sunzi-suan-jing
+      | 《孫子算經》
+    </@>
+    <#>
+      C<:g><$>p</$></:g>(<:g><$>v</$></:g>.<:g><$>q</$></:g>) shall mean
+      <code>
+        https://ctext.org/sunzi-suan-jing#n<:g><$>p</$></:g>
+      </code><br>
+      corresponding to Volume <:g><$>v</$></:g>, Line <:g><$>q</$></:g>
+      according to ctext.org's numbering.
+    </#>
+  </li>
+  
+  <li>
+    <b>D</b>:
+    <@>
+      《知不足齋叢書》本 at ctext.org library
+      | https://ctext.org/library.pl?if=en&res=80226
+      | 孫子算經+五曹算經（知不足齋本）
+    </@>
+    <b>(This shall be the base reference version.)</b>
+    <#>
+      D<:g><$>p</$></:g> shall mean
+      <code>
+        https://ctext.org/library.pl?if=en\&file=86926\&page=<:g><$>p</$></:g>
+      </code>
+    </#>
+  </li>
+  
+</ul>
+
+<@3> Canonical variant-character substitutions | variants </@3>
+
+<p>
+  The following variant substitutions have been used
+  (in each pair the character on the right is preferred):
+</p>
+<#n>
+  羣群
+  氂釐
+  歴歷
+  卽即
+  爲為
+  㵎澗
+  乗乘
+  荅答
+  竝並
+  幷并
+</#n>
+
+<@3> A note on mass and weight | weight </@3>
+
+<p>
+  Classical Chinese does not distinguish between mass and weight;
+  nor is this a physics text in which the distinction is important.
+  Therefore I will be using the two terms interchangeably.
+</p>
+
+<@3> A note on thousands and myriads | myriads </@3>
+
+<p>
+  In Chinese, numbers are grouped in 萬, myriads<:n>10000s</:n>,
+  rather than thousands<:n>1000s</:n>.
+  For example, 八萬五千<:n>85000</:n> is literally
+  "eight myriad five thousand" rather than "eighty-five thousand".
+  However, I shall default to rendering numbers in the English using the
+  thousands grouping, only using the myriads grouping
+  for passages where the thousands grouping is awkward.
+</p>
+
+<h3>Romanisation preference</h3>
+
+<^^></^^>
+
+
+<@2> Manuscripts | manuscripts </@2>
+
+
+<p>
+  These are PDF scans of my handwritten translation scribblings.
+  They are drafts, and as such, will not contain
+  corrections I have made since they were scanned.
+  Manuscripts for Volumes~I &;~II are now complete.
+</p>
+<ul>
+  
+  <@i>
+    Version referencing system
+    | /manuscripts/shuen-versions.pdf
+    | Referencing system for different versions
+  </@i>
+  
+  <@i>
+    <b>Preface</b>
+    | /manuscripts/shuen-preface.pdf
+    | Translation manuscript for Preface
+  </@i>
+  <li>
+    <b>Volume I:</b>
+    <@>
+      ¶1
+      | /manuscripts/shuen-i-1.pdf
+      | Translation manuscript for Vol. I ¶1
+    </@>
+    <@>
+      ¶2
+      | /manuscripts/shuen-i-2.pdf
+      | Translation manuscript for Vol. I ¶2
+    </@>
+    <@>
+      ¶3
+      | /manuscripts/shuen-i-3.pdf
+      | Translation manuscript for Vol. I ¶3
+    </@>
+    <@>
+      ¶4
+      | /manuscripts/shuen-i-4.pdf
+      | Translation manuscript for Vol. I ¶4
+    </@>
+    <@>
+      ¶5
+      | /manuscripts/shuen-i-5.pdf
+      | Translation manuscript for Vol. I ¶5
+    </@>
+    <@>
+      ¶6
+      | /manuscripts/shuen-i-6.pdf
+      | Translation manuscript for Vol. I ¶6
+    </@>
+    <@>
+      ¶7
+      | /manuscripts/shuen-i-7.pdf
+      | Translation manuscript for Vol. I ¶7
+    </@>
+    <@>
+      ¶8
+      | /manuscripts/shuen-i-8.pdf
+      | Translation manuscript for Vol. I ¶8
+    </@>
+    <@>
+      ¶9
+      | /manuscripts/shuen-i-9.pdf
+      | Translation manuscript for Vol. I ¶9
+    </@>
+    <@>
+      ¶10
+      | /manuscripts/shuen-i-10.pdf
+      | Translation manuscript for Vol. I ¶10
+    </@>
+    <@>
+      ¶11
+      | /manuscripts/shuen-i-11.pdf
+      | Translation manuscript for Vol. I ¶11
+    </@>
+    <@>
+      ¶12
+      | /manuscripts/shuen-i-12.pdf
+      | Translation manuscript for Vol. I ¶12
+    </@>
+    <@>
+      ¶13
+      | /manuscripts/shuen-i-13.pdf
+      | Translation manuscript for Vol. I ¶13
+    </@>
+    <@>
+      ¶14
+      | /manuscripts/shuen-i-14.pdf
+      | Translation manuscript for Vol. I ¶14
+    </@>
+    <@>
+      ¶15
+      | /manuscripts/shuen-i-15.pdf
+      | Translation manuscript for Vol. I ¶15
+    </@>
+    <@>
+      ¶16
+      | /manuscripts/shuen-i-16.pdf
+      | Translation manuscript for Vol. I ¶16
+    </@>
+    <@>
+      ¶17
+      | /manuscripts/shuen-i-17.pdf
+      | Translation manuscript for Vol. I ¶17
+    </@>
+    <@>
+      ¶18
+      | /manuscripts/shuen-i-18.pdf
+      | Translation manuscript for Vol. I ¶18
+    </@>
+    <@>
+      ¶19
+      | /manuscripts/shuen-i-19.pdf
+      | Translation manuscript for Vol. I ¶19
+    </@>
+    <@>
+      ¶20
+      | /manuscripts/shuen-i-20.pdf
+      | Translation manuscript for Vol. I ¶20
+    </@>
+    <@>
+      ¶21
+      | /manuscripts/shuen-i-21.pdf
+      | Translation manuscript for Vol. I ¶21
+    </@>
+    <@>
+      ¶22
+      | /manuscripts/shuen-i-22.pdf
+      | Translation manuscript for Vol. I ¶22
+    </@>
+    <@>
+      ¶23
+      | /manuscripts/shuen-i-23.pdf
+      | Translation manuscript for Vol. I ¶23
+    </@>
+    <@>
+      ¶24
+      | /manuscripts/shuen-i-24.pdf
+      | Translation manuscript for Vol. I ¶24
+    </@>
+  </li>
+  
+  <li>
+    <b>Volume II:</b>
+    <@>
+      ¶1
+      | /manuscripts/shuen-ii-1.pdf
+      | Translation manuscript for Vol. II ¶1
+    </@>
+    <@>
+      ¶2
+      | /manuscripts/shuen-ii-2.pdf
+      | Translation manuscript for Vol. II ¶2
+    </@>
+    <@>
+      ¶3
+      | /manuscripts/shuen-ii-3.pdf
+      | Translation manuscript for Vol. II ¶3
+    </@>
+    <@>
+      ¶4
+      | /manuscripts/shuen-ii-4.pdf
+      | Translation manuscript for Vol. II ¶4
+    </@>
+    <@>
+      ¶5
+      | /manuscripts/shuen-ii-5.pdf
+      | Translation manuscript for Vol. II ¶5
+    </@>
+    <@>
+      ¶6
+      | /manuscripts/shuen-ii-6.pdf
+      | Translation manuscript for Vol. II ¶6
+    </@>
+    <@>
+      ¶7
+      | /manuscripts/shuen-ii-7.pdf
+      | Translation manuscript for Vol. II ¶7
+    </@>
+    <@>
+      ¶8
+      | /manuscripts/shuen-ii-8.pdf
+      | Translation manuscript for Vol. II ¶8
+    </@>
+    <@>
+      ¶9
+      | /manuscripts/shuen-ii-9.pdf
+      | Translation manuscript for Vol. II ¶9
+    </@>
+    <@>
+      ¶10
+      | /manuscripts/shuen-ii-10.pdf
+      | Translation manuscript for Vol. II ¶10
+    </@>
+    <@>
+      ¶11
+      | /manuscripts/shuen-ii-11.pdf
+      | Translation manuscript for Vol. II ¶11
+    </@>
+    <@>
+      ¶12
+      | /manuscripts/shuen-ii-12.pdf
+      | Translation manuscript for Vol. II ¶12
+    </@>
+    <@>
+      ¶13
+      | /manuscripts/shuen-ii-13.pdf
+      | Translation manuscript for Vol. II ¶13
+    </@>
+    <@>
+      ¶14
+      | /manuscripts/shuen-ii-14.pdf
+      | Translation manuscript for Vol. II ¶14
+    </@>
+    <@>
+      ¶15
+      | /manuscripts/shuen-ii-15.pdf
+      | Translation manuscript for Vol. II ¶15
+    </@>
+    <@>
+      ¶16
+      | /manuscripts/shuen-ii-16.pdf
+      | Translation manuscript for Vol. II ¶16
+    </@>
+    <@>
+      ¶17
+      | /manuscripts/shuen-ii-17.pdf
+      | Translation manuscript for Vol. II ¶17
+    </@>
+    <@>
+      ¶18
+      | /manuscripts/shuen-ii-18.pdf
+      | Translation manuscript for Vol. II ¶18
+    </@>
+    <@>
+      ¶19
+      | /manuscripts/shuen-ii-19.pdf
+      | Translation manuscript for Vol. II ¶19
+    </@>
+    <@>
+      ¶20
+      | /manuscripts/shuen-ii-20.pdf
+      | Translation manuscript for Vol. II ¶20
+    </@>
+    <@>
+      ¶21
+      | /manuscripts/shuen-ii-21.pdf
+      | Translation manuscript for Vol. II ¶21
+    </@>
+    <@>
+      ¶22
+      | /manuscripts/shuen-ii-22.pdf
+      | Translation manuscript for Vol. II ¶22
+    </@>
+    <@>
+      ¶23
+      | /manuscripts/shuen-ii-23.pdf
+      | Translation manuscript for Vol. II ¶23
+    </@>
+    <@>
+      ¶24
+      | /manuscripts/shuen-ii-24.pdf
+      | Translation manuscript for Vol. II ¶24
+    </@>
+    <@>
+      ¶25
+      | /manuscripts/shuen-ii-25.pdf
+      | Translation manuscript for Vol. II ¶25
+    </@>
+    <@>
+      ¶26
+      | /manuscripts/shuen-ii-26.pdf
+      | Translation manuscript for Vol. II ¶26
+    </@>
+    <@>
+      ¶27
+      | /manuscripts/shuen-ii-27.pdf
+      | Translation manuscript for Vol. II ¶27
+    </@>
+    <@>
+      ¶28
+      | /manuscripts/shuen-ii-28.pdf
+      | Translation manuscript for Vol. II ¶28
+    </@>
+  </li>
+  
+  <li>
+    <b>Volume III:</b>
+    <:r>(haven't started)</:r>
+  </li>
+  
+</ul>
+
+<p>
+  A link to the corresponding manuscript is also provided by the
+  [manuscript] link above each of the paragraphs themselves.
+</p>
+
+
+
+<@2> Translation | translation </@2>
+
+
+<#t>
+  《孫子算經》 |
+  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
+</#t>
+
+<p>
+  The text is too large for a single page; see the links below.
+</p>
+
+<#n>
+  <ul>
+    
+    <@i>
+      《序》~"Preface"
+      | /pages/master-shuen-preface.html
+      | "Master <^e>Shu"n</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+    </@i>
+    
+    <@i>
+      《卷上》~"Volume~I"
+      | /pages/master-shuen-i.html
+      | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+    </@i>
+    
+    <li>
+      <@>
+        《卷中》~"Volume~II"
+        | /pages/master-shuen-ii.html
+        | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+      </@>
+      <:r>(work in progress)</:r>
+    </li>
+    
+    <li>
+      《卷下》~"Volume~III"
+      <:r>(haven't started)</:r>
+    </li>
+    
+  </ul>
+</#n>
+
+<*c>
+  "Master~孫's Computational Classic"
+  | shuen
+  | ``{Master~Sh{\"u}n's} {Computational} {Classic}''
+  | If typesetting Chinese is inconvenient,
+    you may use "<^e>Shu"n</^e>" instead of 孫.
+    If typesetting the umlaut is also inconvenient,
+    you may use "Shuen" instead of "<^e>Shu"n</^e>".
+</*c>
+
+<*f></*f>
