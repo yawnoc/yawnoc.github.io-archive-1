@@ -1,0 +1,3299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="stylesheet" href="/conway.min.css">
+<link rel="stylesheet" href="/conway-katex.min.css">
+<script defer src="/conway-katex.min.js"></script>
+<script defer src="/conway-render.min.js"></script>
+<title>&quot;The Sea Island Computational Classic&quot;: 《海島算經》 — Conway's site</title>
+</head>
+<body onload="dateRender(); mathsRender(); romanisationInitialise();">
+<header><nav><ul>
+<li><a href="/" title="Home page">Home</a></li>
+<li><a href="#" title="Jump back to top">Top</a></li>
+<li><a href="#introduction" title="Introduction">Intro</a></li>
+<li><a href="#translation" title="Translation">Translation</a></li>
+<li><a href="#cite" title="Cite this page">Cite</a></li>
+</ul></nav></header>
+<h1>
+<span lang="zh-Hant">《海島算經》</span> or<br>
+"<i>The</i> Sea Island Computational Classic"
+</h1>
+<p class="page-properties">
+First created:&nbsp;20190420<br>
+Last modified:&nbsp;<b>20191031</b><br>
+Also known as <i>Haidao Suanjing</i>.
+</p>
+<h2 id="introduction"><a class="self-link" href="#introduction"></a>
+Introduction
+</h2>
+<p>
+<span lang="zh-Hant">《海島算經》</span>, or
+<a href="https://en.wikipedia.org/wiki/Haidao_Suanjing" title="Wikipedia: Haidao Suanjing">"<i>The</i> Sea Island Computational Classic"</a>,
+is one of the
+<a href="https://en.wikipedia.org/wiki/Ten_Computational_Canons" title="Wikipedia: Ten Computational Canons">ten canon classics of Chinese mathematics</a>.
+Written by
+<a href="https://en.wikipedia.org/wiki/Liu_Hui" title="Wikipedia: Liu Hui"><span lang="zh-Hant">劉徽</span><span class="romanisation romanisation-conway">&nbsp;(Lau Fai)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Liu Hui)</span><span class="romanisation romanisation-pinyin">&nbsp;(Liu Hui)</span></a>
+of the
+<a href="https://en.wikipedia.org/wiki/Three_Kingdoms" title="Wikipedia: Three Kingdoms">Three Kingdoms period</a> (220–280 AD),
+it consists of nine problems in the surveying of distant structures
+or landforms.
+For each problem, the Classic itself only gives the statement of the problem,
+the answer and the formula used to compute the answer.
+Derivations of the formulae I found in
+<a href="https://archive.org/details/02094033.cn" title="《海島算經細草圖說》"><span lang="zh-Hant">《海島算經細草圖說》</span></a>,
+or "<i>The</i> Sea Island Computational Classic
+<i>with</i> detailed working, diagrams <i>and</i> explanations".
+Written by
+<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%BD%A2" title="維基百科：李潢"><span lang="zh-Hant">李潢</span><span class="romanisation romanisation-conway">&nbsp;(Lei Wong)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Li Huang)</span><span class="romanisation romanisation-pinyin">&nbsp;(Li Huang)</span></a>,
+the (arithmetic) working&nbsp;(<span lang="zh-Hant">草</span>), diagrams&nbsp;(<span lang="zh-Hant">圖</span>)
+and explanations&nbsp;(<span lang="zh-Hant">說</span>) supplement the older (but at times erroneous)
+annotations of
+<a href="https://en.wikipedia.org/wiki/Li_Chunfeng" title="Wikipedia: Li Chunfeng"><span lang="zh-Hant">李淳風</span><span class="romanisation romanisation-conway">&nbsp;(Lei S_n-fung)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Li Ch'un-fêng)</span><span class="romanisation romanisation-pinyin">&nbsp;(Li Chunfeng)</span></a>.
+It is in the explanations&nbsp;(<span lang="zh-Hant">說</span>) that I find derivations of the formulae,
+and they read very much like high school geometry proofs.
+</p>
+<p>
+Here I translate the the eponymous first problem <span lang="zh-Hant">望海島</span>,
+"looking at <i>a</i> sea island",
+and its corresponding derivation as found in <span lang="zh-Hant">《海島算經細草圖說》</span>.
+</p>
+<svg class="embedded-styles"><style>
+text {
+font-family: sans-serif;
+text-anchor: middle;
+}
+@font-face {
+font-display: swap;
+font-family: "KaTeX_Math-Italic";
+src:
+url("/fonts/KaTeX_Math-Italic.woff2") format("woff2"),
+url("/fonts/KaTeX_Math-Italic.woff") format("woff"),
+url("/fonts/KaTeX_Math-Italic.ttf") format("truetype");
+}
+@font-face {
+font-display: swap;
+font-family: "KaTeX_Main-Regular";
+src:
+url("/fonts/KaTeX_Main-Regular.woff2") format("woff2"),
+url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
+url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+}
+text.m {
+font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
+}
+text.mr {
+font-family: "KaTeX_Main-Regular";
+}
+line {
+stroke: black;
+vector-effect: non-scaling-stroke;
+}
+line.blue {
+stroke: blue;
+stroke-width: 3;
+}
+line.green {
+stroke: green;
+stroke-width: 3;
+}
+line.magenta {
+stroke: magenta;
+stroke-width: 3;
+}
+line.red {
+stroke: red;
+stroke-width: 3;
+}
+text.blue {
+fill: blue;
+}
+text.green {
+fill: green;
+}
+text.magenta {
+fill: magenta;
+}
+text.red {
+fill: red;
+}
+</style></svg>
+<h2 id="translation"><a class="self-link" href="#translation"></a>
+Translation
+</h2>
+<div class="links">
+<a href="#problem" title="Problem">[Problem]</a>
+<a href="#derivation" title="Derivation">[Derivation]</a>
+</div>
+<div class="romanisation-radio">
+Romanisation&nbsp;(F9):&nbsp;<span lang="zh-Hant">音標</span><span class="romanisation romanisation-conway">&nbsp;(yam peeu)</span><span class="romanisation romanisation-wadegiles">&nbsp;(yin piao)</span><span class="romanisation romanisation-pinyin">&nbsp;(yin biao)</span><br>
+<input type="radio" name="romanisation" id="romanisation-none" value="none">
+<label for="romanisation-none">None</label>
+<input type="radio" name="romanisation" id="romanisation-conway" value="conway">
+<label for="romanisation-conway">Conway</label>
+<input type="radio" name="romanisation" id="romanisation-wadegiles" value="wadegiles">
+<label for="romanisation-wadegiles">Wade–Giles</label>
+<input type="radio" name="romanisation" id="romanisation-pinyin" value="pinyin">
+<label for="romanisation-pinyin">Pinyin</label>
+</div>
+<p>
+Chinese text
+<a href="https://archive.org/details/02094033.cn/page/n2" title="今有望海島"><span lang="zh-Hant">今有望海島</span> (problem)</a>
+&amp;
+<a href="https://archive.org/details/02094033.cn/page/n6" title="說曰"><span lang="zh-Hant">說曰</span> (derivation)</a>
+taken from archive.org.
+After reading these in their original forms (i.e.&nbsp;without any punctuation)
+it is hard not to appreciate modern mathematical notation.
+</p>
+<p>
+Chinese units of measurement have changed many times throughout history.
+These are the relevant conversions for distances
+at the time the Classic was written:
+</p>
+<div class="maths">
+\begin{aligned}
+  3 \unit{丈} &amp;=   5 \unit{步} \\
+    \unit{里} &amp;= 300 \unit{步}
+\end{aligned}
+</div>
+<p>
+The units themselves I leave untranslated,
+but to give you a sense of their magnitude:
+</p>
+<ul>
+<li>
+<span lang="zh-Hant">丈</span><span class="romanisation romanisation-conway">&nbsp;(chœng)</span><span class="romanisation romanisation-wadegiles">&nbsp;(chang)</span><span class="romanisation romanisation-pinyin">&nbsp;(zhang)</span> is of the order two metres
+</li>
+<li>
+<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span> is of the order one metre
+</li>
+<li>
+<span lang="zh-Hant">里</span><span class="romanisation romanisation-conway">&nbsp;(lei)</span><span class="romanisation romanisation-wadegiles">&nbsp;(li)</span><span class="romanisation romanisation-pinyin">&nbsp;(li)</span> is of the order half a kilometre
+</li>
+</ul>
+<h3 id="problem"><a class="self-link" href="#problem"></a>
+Problem
+</h3>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4">
+<line class="blue"
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<text class="blue"
+x = "0"
+y = "-1.75"
+font-size = "0.3"
+dx = "0em"
+dy = "-1em"
+transform = "rotate(-90 0 -1.75)"
+>sea island
+</text>
+<line
+x1 = "0"
+y1 = "0"
+x2 = "3"
+y2 = "0" />
+<line
+x1 = "5.5"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line class="red"
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dy = "-0.5em"
+>front
+</text>
+<text class="m red"
+x = "3"
+y = "-0.5"
+font-size = "0.3"
+dx = "0em"
+dy = "-0.5em"
+transform = "rotate(-90 3 -0.5)"
+>3 丈
+</text>
+<line class="red"
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dy = "-0.5em"
+>rear
+</text>
+<text class="m red"
+x = "5.5"
+y = "-0.5"
+font-size = "0.3"
+dx = "0em"
+dy = "1.3em"
+transform = "rotate(-90 5.5 -0.5)"
+>3 丈
+</text>
+<line class="green"
+x1 = "3"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<text class="m green"
+x = "4.25"
+y = "0"
+font-size = "0.3"
+dy = "-0.5em"
+>1000 步
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">今有望</span><span class="blue"><span lang="zh-Hant">海島</span></span><span lang="zh-Hant">，立</span><span class="red"><span lang="zh-Hant">兩表</span></span><span lang="zh-Hant">，</span><span class="red"><span lang="zh-Hant">齊高三丈</span></span><span lang="zh-Hant">，前後</span><span class="green"><span lang="zh-Hant">相去千步</span></span><span lang="zh-Hant">，令後表與前表參相直。</span>
+<hr>
+Now there be <i>a</i> looking at <i>a</i> <span class="blue">sea island</span>;
+erect <span class="red">two poles</span>, <span class="red"><i>of the</i> same height
+three<span class="numeral">&nbsp;(3)</span>&nbsp;<span lang="zh-Hant">丈</span><span class="romanisation romanisation-conway">&nbsp;(chœng)</span><span class="romanisation romanisation-wadegiles">&nbsp;(chang)</span><span class="romanisation romanisation-pinyin">&nbsp;(zhang)</span></span>,
+<i>one</i> in front of <i>the</i> other, <span class="green">mutually separated by
+<i>a</i> thousand<span class="numeral">&nbsp;(1000)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span></span>,
+<i>and</i> make <i>the</i> rear pole three-in-line
+with <i>the</i> front pole <i>and the island</i>.
+</div>
+<ul>
+<li><span lang="zh-Hant">表：標也；</span>
+poles;
+or pillars;
+literally markers
+</li>
+<li><span lang="zh-Hant">齊：</span>
+<i>the</i> same; or uniform
+</li>
+<li><span lang="zh-Hant">丈</span><span class="romanisation romanisation-conway">&nbsp;(chœng)</span><span class="romanisation romanisation-wadegiles">&nbsp;(chang)</span><span class="romanisation romanisation-pinyin">&nbsp;(zhang)</span><br>
+A unit of distance, of the order two metres.
+Note that <span class="maths">3 \unit{丈} = 5 \unit{步}</span>.
+</li>
+<li><span lang="zh-Hant">前後：</span>
+<i>one</i> in front of <i>the</i> other;
+literally front <i>and</i> rear
+</li>
+<li><span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span><span lang="zh-Hant">：</span>
+literally steps;
+or paces<br>
+A unit of distance, of the order one metre.
+</li>
+<li><span lang="zh-Hant">參相直：</span>
+three-in-line;
+literally mutually straight, <i>the</i> three of <i>them</i><br>
+<span lang="zh-Hant">參</span> means <span lang="zh-Hant">三</span>, three (saam1/sān).
+</li>
+</ul>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4.2">
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<line
+x1 = "0"
+y1 = "0"
+x2 = "3"
+y2 = "0" />
+<line
+x1 = "4.2"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<line class="red"
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<line class="blue"
+x1 = "3"
+y1 = "0"
+x2 = "4.2"
+y2 = "0" />
+<text class="m blue"
+x = "3.6"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>123 步
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">從前表</span><span class="blue"><span lang="zh-Hant">卻行一百二十三步</span></span><span lang="zh-Hant">，人目著地</span><span class="red"><span lang="zh-Hant">取望島峯</span></span><span lang="zh-Hant">，與表末參合。</span>
+<hr>
+<span class="blue">Walking back one hundred <i>and</i> twenty-three<span class="numeral">&nbsp;(123)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span></span> from <i>the</i> front pole,
+<i>a</i> person's eye on <i>the</i> ground,
+<span class="red">taking <i>a</i> look at <i>the</i> peak of <i>the</i> island</span>,
+meeteth with <i>the</i> tip of <i>the</i> pole, <i>the</i> three of <i>them</i>.
+</div>
+<ul>
+<li><span lang="zh-Hant">著地：</span>
+on <i>the</i> ground;
+or on ground <i>level</i>;
+literally contacting <i>the</i> ground
+</li>
+<li><span lang="zh-Hant">峯：</span>
+peak;
+or summit
+</li>
+<li>
+In other words, the three of them
+(the island's peak, the pole's tip and the person's eye)
+are in a straight line.
+</li>
+</ul>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4.2">
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<line
+x1 = "0"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<line class="red"
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<line class="blue"
+x1 = "5.5"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<text class="m blue"
+x = "6.6"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>127 步
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">從後表</span><span class="blue"><span lang="zh-Hant">卻行一百二十七步</span></span><span lang="zh-Hant">，人目着地</span><span class="red"><span lang="zh-Hant">取望島峯</span></span><span lang="zh-Hant">，亦與表末參合。</span>
+<hr>
+<span class="blue">Walking back one hundred <i>and</i> twenty-seven<span class="numeral">&nbsp;(127)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span></span>
+from <i>the</i> rear pole, <i>a</i> person's eye on <i>the</i> ground,
+<span class="red">taking <i>a</i> look at <i>the</i> peak of <i>the</i> island</span>,
+also meeteth with <i>the</i> tip of <i>the</i> pole, <i>the</i> three of <i>them</i>.
+</div>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4.2">
+<line class="blue"
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<text class="blue"
+x = "0"
+y = "-1.75"
+font-size = "0.3"
+dx = "0em"
+dy = "-1em"
+transform = "rotate(-90 0 -1.75)"
+>island height?
+</text>
+<line
+x1 = "3"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line class="red"
+x1 = "0"
+y1 = "0"
+x2 = "3"
+y2 = "0" />
+<text class="red"
+x = "1.5"
+y = "0"
+font-size = "0.3"
+dy = "-0.5em"
+>distance?
+</text>
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">問</span><span class="blue"><span lang="zh-Hant">島高</span></span><span lang="zh-Hant">及</span><span class="red"><span lang="zh-Hant">去表</span></span><span lang="zh-Hant">各幾何？</span>
+<hr>
+<i>We</i> ask: how much <i>are</i> each of <span class="blue"><i>the</i> height of <i>the</i> island</span>,
+and <span class="red"><i>its</i> distance from <i>the front</i> pole</span>?
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">答曰：島高</span><span class="blue"><span lang="zh-Hant">四里五十五步</span></span><span lang="zh-Hant">；去表</span><span class="red"><span lang="zh-Hant">一百二里一百五十步</span></span><span lang="zh-Hant">。</span>
+<hr>
+Answer saith: <i>the</i> height of <i>the</i> island <i>is</i>
+<span class="blue">four<span class="numeral">&nbsp;(4)</span>&nbsp;<span lang="zh-Hant">里</span><span class="romanisation romanisation-conway">&nbsp;(lei)</span><span class="romanisation romanisation-wadegiles">&nbsp;(li)</span><span class="romanisation romanisation-pinyin">&nbsp;(li)</span>
+fifty-five<span class="numeral">&nbsp;(55)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span></span>, <i>and the</i>
+distance from <i>the front</i> pole
+<span class="red">one hundred <i>and</i> two<span class="numeral">&nbsp;(102)</span>&nbsp;<span lang="zh-Hant">里</span><span class="romanisation romanisation-conway">&nbsp;(lei)</span><span class="romanisation romanisation-wadegiles">&nbsp;(li)</span><span class="romanisation romanisation-pinyin">&nbsp;(li)</span>
+one hundred <i>and</i> fifty<span class="numeral">&nbsp;(150)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span></span>.
+</div>
+<ul>
+<li><span lang="zh-Hant">里</span><span class="romanisation romanisation-conway">&nbsp;(lei)</span><span class="romanisation romanisation-wadegiles">&nbsp;(li)</span><span class="romanisation romanisation-pinyin">&nbsp;(li)</span><br>
+A unit of distance, of the order half a kilometre.
+</li>
+<li><span lang="zh-Hant">一百二：</span>
+one hundred <i>and</i> two<span class="numeral">&nbsp;(102)</span><br>
+(Remember I <i>emphasise</i> words not in the original Chinese.)
+<ul>
+<li>
+In modern Chinese, one must say
+<span lang="zh-Hant">一百零二</span>,
+"one hundred oh two", to mean&nbsp;102.
+If one just says <span lang="zh-Hant">一百二</span>
+or <span lang="zh-Hant">百二</span>,
+this means&nbsp;120;
+the&nbsp;<span lang="zh-Hant">二</span> refers to
+the next significant digit
+(as in <span class="maths">1.2 \times 100 = 120</span>).
+</li>
+<li>
+In Literary Chinese you might see
+<span lang="zh-Hant">一百又二</span>
+or <span lang="zh-Hant">一百有二</span>,
+"one hundred and two", but the "and" is not necessary.
+Thus <span lang="zh-Hant">一百二</span> or
+<span lang="zh-Hant">百二</span> means&nbsp;102
+rather than&nbsp;120; this is preserved in modern Japanese.
+</li>
+</ul>
+</li>
+</ul>
+<div class="boxed translation">
+<span lang="zh-Hant">術曰：以表高乘表間爲實；相多爲法，除之。所得加表高，即得島高。</span>
+<hr>
+Method saith: use <i>the</i> pole height times
+<i>the</i> pole separation as <i>the</i> dividend, <i>and the</i>
+mutual excess as <i>the</i> divisor, <i>and</i> divide them.
+<i>Unto</i> that which <i>is</i> obtained, add <i>the</i> pole height,
+<i>to</i> immediately obtain <i>the</i> height of <i>the</i> island.
+</div>
+<ul>
+<li><span lang="zh-Hant">實：</span>
+dividend;
+or numerator
+</li>
+<li><span lang="zh-Hant">間：</span>
+separation<br>
+<span lang="zh-Hant">間，去聲，</span>
+<a href="/pages/conway-cantonese-romanisation.html" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;kaan3,
+Mandarin&nbsp;jiàn
+</li>
+<li><span lang="zh-Hant">相多：</span>
+mutual excess;
+or difference<br>
+It is not immediately obvious, but <b>"mutual excess" refers to
+the difference between the backward walking distances
+from the two poles.</b>
+</li>
+<li><span lang="zh-Hant">法：</span>
+divisor;
+or denominator<br>
+<div class="maths">
+\frac{\text{實}}{\text{法}} = \frac{\text{[dividend]}}{\text{[divisor]}}
+</div>
+<span lang="zh-Hant">實</span> and <span lang="zh-Hant">法</span> are very much mathematical jargon terms of Literary Chinese.
+In no other context do they mean "dividend" and "divisor".
+</li>
+<li>
+In modern notation,
+<div class="maths">
+\text{島高} = \frac{\text{表高} \cdot \text{表間}}{\text{相多}} + \text{表高}
+</div>
+or
+<div class="maths">
+\begin{aligned}
+  \text{[island height]}
+  &amp;=
+    \frac{
+      \text{[pole height]} \cdot \text{[pole separation]}
+    }{
+      \text{[mutual excess]}
+    } + \text{[pole height]} \\[2ex]
+  &amp;=
+    \frac{
+      3 \unit{丈} \cdot 1000 \unit{步}
+    }{
+      127 \unit{步} - 123 \unit{步}
+    } + 5 \unit{步} \\[2ex]
+  &amp;=
+    \frac{
+      5 \unit{步} \cdot 1000 \unit{步}
+    }{
+      4 \unit{步}
+    } + 5 \unit{步} \\[2ex]
+  &amp;= 1255 \unit{步} \\
+  &amp;= 4 \cdot 300 \unit{步} + 55 \unit{步} \\
+  &amp;= 4 \unit{里} + 55 \unit{步}.
+\end{aligned}
+</div>
+</li>
+</ul>
+<div class="boxed translation">
+<span lang="zh-Hant">求前表去島遠近者：以前表卻行乘表間爲實；相多爲法。除之，得島去表里數。</span>
+<hr>
+Those seeking <i>the</i> distance <i>that the</i> front pole <i>is</i> separated
+from <i>the</i> island:
+use <i>the</i> front pole backward walk times <i>the</i> pole separation
+as <i>the</i> dividend,
+<i>and the</i> mutual excess as <i>the</i> divisor.
+Divide them <i>to</i> obtain <i>the</i> number of <span lang="zh-Hant">里</span><span class="romanisation romanisation-conway">&nbsp;(lei)</span><span class="romanisation romanisation-wadegiles">&nbsp;(li)</span><span class="romanisation romanisation-pinyin">&nbsp;(li)</span>
+<i>that the</i> island <i>is</i> separated from <i>the front</i> pole.
+</div>
+<ul>
+<li><span lang="zh-Hant">遠近：</span>
+distance;
+literally far-closeness
+</li>
+<li>
+In modern notation,
+<div class="maths">
+\text{島去表} = \frac{\text{前表卻行} \cdot \text{表間}}{\text{相多}}
+</div>
+or
+<div class="maths">
+\begin{aligned}
+  \text{[island-pole separation]}
+  &amp;=
+    \frac{
+      \text{[front pole backward walk]}
+        \cdot
+      \text{[pole separation]}
+    }{
+      \text{[mutual excess]}
+    } \\[2ex]
+  &amp;=
+    \frac{
+      123 \unit{步} \cdot 1000 \unit{步}
+    }{
+      127 \unit{步} - 123 \unit{步}
+    } \\[2ex]
+  &amp;=
+    \frac{
+      123000 \unit{步}^2
+    }{
+      4 \unit{步}
+    } \\[2ex]
+  &amp;= 30750 \unit{步} \\
+  &amp;= 102 \cdot 300 \unit{步} + 150 \unit{步} \\
+  &amp;= 102 \unit{里} + 150 \unit{步}.
+\end{aligned}
+</div>
+</li>
+</ul>
+<h3 id="derivation"><a class="self-link" href="#derivation"></a>
+Derivation
+</h3>
+<p>
+The derivation in <span lang="zh-Hant">《海島算經細草圖說》</span>, called an
+<a href="https://archive.org/details/02094033.cn/page/n6" title="說曰">explanation&nbsp;(<span lang="zh-Hant">說</span>)</a>,
+comes with a
+<a href="https://archive.org/details/02094033.cn/page/n4" title="望海島圖">diagram&nbsp;(<span lang="zh-Hant">圖</span>)</a>
+which I have reproduced here, minus some irrelevant vertical lines.
+I have mapped the names of the vertices as follows:
+</p>
+<div class="centred-flex"><div class="centred-text overflowing"><table>
+<tr>
+<td><span lang="zh-Hant">甲</span></td>
+<td><span lang="zh-Hant">乙</span></td>
+<td><span lang="zh-Hant">丙</span></td>
+<td><span lang="zh-Hant">丁</span></td>
+<td><span lang="zh-Hant">戊</span></td>
+<td><span lang="zh-Hant">己</span></td>
+<td><span lang="zh-Hant">庚</span></td>
+<td><span lang="zh-Hant">辛</span></td>
+<td><span lang="zh-Hant">壬</span></td>
+<td><span lang="zh-Hant">辰</span></td>
+</tr>
+<tr>
+<td><span class="maths">A</span></td>
+<td><span class="maths">B</span></td>
+<td><span class="maths">C</span></td>
+<td><span class="maths">D</span></td>
+<td><span class="maths">E</span></td>
+<td><span class="maths">F</span></td>
+<td><span class="maths">G</span></td>
+<td><span class="maths">H</span></td>
+<td><span class="maths">I</span></td>
+<td><span class="maths">O</span></td>
+</tr>
+</table></div></div>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line
+x1 = "0"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line
+x1 = "0"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "6.7"
+y2 = "0" />
+<text
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>壬
+</text>
+<text class="m"
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>I
+</text>
+</svg>
+</div>
+<p>
+The punctuation inserted in this section is my own.
+</p>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line class="blue"
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<text class="red"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m red"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line
+x1 = "0"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">說曰：</span><span class="blue"><span lang="zh-Hant">甲乙爲海島</span></span><span lang="zh-Hant">，</span><span class="red"><span lang="zh-Hant">甲爲島峯</span></span><span lang="zh-Hant">。</span>
+<hr>
+Explanation saith:
+<span class="blue"><span class="maths">AB</span> is <i>the</i> sea island</span>;
+<span class="red"><span class="maths">A</span> is <i>the</i> peak of <i>the</i> island</span>.
+</div>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line
+x1 = "0"
+y1 = "0"
+x2 = "3"
+y2 = "0" />
+<line
+x1 = "4.2"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line class="blue"
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line class="magenta"
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<text class="green"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m green"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line class="red"
+x1 = "3"
+y1 = "0"
+x2 = "4.2"
+y2 = "0" />
+</svg>
+</div>
+<div class="boxed translation">
+<span class="blue"><span lang="zh-Hant">丙丁爲前表</span></span><span lang="zh-Hant">，</span><span class="red"><span lang="zh-Hant">戊丁爲前去表</span></span><span lang="zh-Hant">，</span><span class="green"><span lang="zh-Hant">戊爲人目</span></span><span lang="zh-Hant">，</span><span class="magenta"><span lang="zh-Hant">戊丙甲爲前表望島峯</span></span><span lang="zh-Hant">。</span>
+<hr>
+<span class="blue"><span class="maths">CD</span> is <i>the</i> front pole</span>;
+<span class="red"><span class="maths">ED</span> is <i>the</i> front <i>walk's</i> separation from <i>the</i> pole</span>;
+<span class="green"><span class="maths">E</span> is <i>the</i> person's eye</span>;
+<span class="magenta"><span class="maths">ECA</span> is <i>the</i> front pole's
+looking at <i>the</i> peak of <i>the</i> island</span>.
+</div>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line
+x1 = "0"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line class="blue"
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line class="magenta"
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text class="green"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m green"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line class="red"
+x1 = "5.5"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+</svg>
+</div>
+<div class="boxed translation">
+<span class="blue"><span lang="zh-Hant">己庚爲後表</span></span><span lang="zh-Hant">，</span><span class="red"><span lang="zh-Hant">辛庚爲後去表</span></span><span lang="zh-Hant">，</span><span class="green"><span lang="zh-Hant">辛爲人目</span></span><span lang="zh-Hant">，</span><span class="magenta"><span lang="zh-Hant">辛己甲爲後表望島峯</span></span><span lang="zh-Hant">。</span>
+<hr>
+<span class="blue"><span class="maths">FG</span> is <i>the</i> rear pole</span>;
+<span class="red"><span class="maths">HG</span> is <i>the</i> rear <i>walk's</i> separation from <i>the</i> pole</span>;
+<span class="green"><span class="maths">H</span> is <i>the</i> person's eye</span>;
+<span class="magenta"><span class="maths">HFA</span> is <i>the</i> rear pole's looking at
+<i>the</i> peak of <i>the</i> island</span>.
+</div>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "-1" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line class="green"
+x1 = "0"
+y1 = "-1"
+x2 = "0"
+y2 = "0" />
+<line
+x1 = "5.5"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line class="blue"
+x1 = "0"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<line class="green"
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line class="green"
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line class="red"
+x1 = "0"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">與</span><span class="blue"><span lang="zh-Hant">庚戊丁乙</span></span><span lang="zh-Hant">平行</span><span class="red"><span lang="zh-Hant">作己丙辰</span></span><span lang="zh-Hant">，則</span><span class="green"><span lang="zh-Hant">辰乙與丙丁、己庚俱等</span></span><span lang="zh-Hant">。</span>
+<hr>
+<span class="red">Construct <span class="maths">FCO</span></span> parallel with <span class="blue"><span class="maths">GEDB</span></span>;
+thus <span class="green"><span class="maths">OB</span> <i>is</i> equal with both <span class="maths">CD</span> <i>and</i> <span class="maths">FG</span></span>.
+</div>
+<ul>
+<li><span lang="zh-Hant">俱：</span>
+both;
+literally all
+</li>
+</ul>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line
+x1 = "0"
+y1 = "0"
+x2 = "3"
+y2 = "0" />
+<line
+x1 = "4.2"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<line
+x1 = "6.7"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line class="green"
+x1 = "3"
+y1 = "0"
+x2 = "4.2"
+y2 = "0" />
+<line class="green"
+x1 = "5.5"
+y1 = "0"
+x2 = "6.7"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line
+x1 = "0"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "3"
+y2 = "-1" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line class="blue"
+x1 = "3"
+y1 = "-1"
+x2 = "4.2"
+y2 = "0" />
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line class="red"
+x1 = "5.5"
+y1 = "-1"
+x2 = "6.7"
+y2 = "0" />
+<text
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>壬
+</text>
+<text class="m"
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>I
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">與</span><span class="blue"><span lang="zh-Hant">丙戊</span></span><span lang="zh-Hant">平行</span><span class="red"><span lang="zh-Hant">作己壬</span></span><span lang="zh-Hant">，則</span><span class="green"><span lang="zh-Hant">壬庚與戊丁等</span></span><span lang="zh-Hant">。</span>
+<hr>
+<span class="red">Construct <span class="maths">FI</span></span> parallel with <span class="blue"><span class="maths">CE</span></span>;
+thus <span class="green"><span class="maths">IG</span> <i>is</i> equal with <span class="maths">ED</span></span>.
+</div>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-1"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line class="red"
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "-1" />
+<line
+x1 = "0"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<line class="blue"
+x1 = "5.5"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line class="blue"
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line class="red"
+x1 = "0"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line class="red"
+x1 = "0"
+y1 = "-3.5"
+x2 = "5.5"
+y2 = "-1" />
+<line class="blue"
+x1 = "7.7"
+y1 = "0"
+x2 = "5.5"
+y2 = "-1" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "6.7"
+y2 = "0" />
+<text
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>壬
+</text>
+<text class="m"
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>I
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span class="blue"><span lang="zh-Hant">己庚辛形</span></span><span lang="zh-Hant">，與</span><span class="red"><span lang="zh-Hant">甲辰己形</span></span><span lang="zh-Hant">同式。</span>
+<hr>
+<span class="blue"><i>The</i> shape <span class="maths">FGH</span></span> <i>is</i> similar with
+<span class="red"><i>the</i> shape <span class="maths">AOF</span></span>.
+</div>
+<ul>
+<li><span lang="zh-Hant">同式：</span>
+similar;
+literally same form;
+or same style
+</li>
+</ul>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-1"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line class="red"
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "-1" />
+<line
+x1 = "0"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<line
+x1 = "6.7"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line class="blue"
+x1 = "5.5"
+y1 = "0"
+x2 = "6.7"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line class="blue"
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line class="red"
+x1 = "0"
+y1 = "-1"
+x2 = "3"
+y2 = "-1" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line class="red"
+x1 = "0"
+y1 = "-3.5"
+x2 = "3"
+y2 = "-1" />
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line class="blue"
+x1 = "5.5"
+y1 = "-1"
+x2 = "6.7"
+y2 = "0" />
+<text
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>壬
+</text>
+<text class="m"
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>I
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span class="blue"><span lang="zh-Hant">己庚壬形</span></span><span lang="zh-Hant">，與</span><span class="red"><span lang="zh-Hant">甲辰丙形</span></span><span lang="zh-Hant">同式。</span>
+<hr>
+<span class="blue"><i>The</i> shape <span class="maths">FGI</span></span> <i>is</i> similar with
+<span class="red"><i>the</i> shape <span class="maths">AOC</span></span>.
+</div>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line
+x1 = "0"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<line class="blue"
+x1 = "5.5"
+y1 = "0"
+x2 = "6.7"
+y2 = "0" />
+<line class="red"
+x1 = "6.7"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line class="blue"
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line
+x1 = "0"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line class="blue"
+x1 = "5.5"
+y1 = "-1"
+x2 = "6.7"
+y2 = "0" />
+<text
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>壬
+</text>
+<text class="m"
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>I
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">己庚辛形，分</span><span class="blue"><span lang="zh-Hant">己庚壬形，同己庚句</span></span><span lang="zh-Hant">，而</span><span class="red"><span lang="zh-Hant">辛壬爲股較</span></span><span lang="zh-Hant">。</span>
+<hr>
+<i>The</i> shape <span class="maths">FGH</span> <i>is</i> split into <span class="blue"><i>the</i> shape <span class="maths">FGI</span>
+<i>having the</i> same minor cathetus  <span class="maths">FG</span></span>,
+with <span class="red"><span class="maths">HI</span> as <i>the</i> major cathetus chariot-beam</span>.
+</div>
+<ul>
+<li><span lang="zh-Hant">句：</span>
+minor cathetus;
+or shorter leg (of a right-angled triangle)<br>
+Variant of <span lang="zh-Hant">勾</span>.<br>
+A <a href="https://en.wikipedia.org/wiki/Cathetus" title="Wikipedia: Cathetus">cathetus</a> or leg
+is a non-hypotenuse side of a right-angled triangle.
+</li>
+<li><span lang="zh-Hant">股：</span>
+major cathetus;
+or longer leg (of a right-angled triangle)<br>
+Surveying the sea island from distances much greater than its height,
+the horizontal lengths will be much greater than
+the vertical lengths.
+Thus the relevant horizontal segments are referred to as
+<span class="red">major catheti&nbsp;(<span lang="zh-Hant">股</span>)</span>
+and the relevant vertical segments as
+<span class="blue">minor catheti&nbsp;(<span lang="zh-Hant">句</span>)</span>.
+</li>
+<li><span lang="zh-Hant">較：</span>
+<span class="red">(horizontal) chariot-beam</span><br>
+<span lang="zh-Hant">較，入聲，音覺，</span>
+<a href="/pages/conway-cantonese-romanisation.html" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;kok8,
+Mandarin&nbsp;jiào<br>
+If I understand
+<a href="https://ctext.org/kangxi-zidian/159/6#n352070" title="《康熙字典》較">the entry in <span lang="zh-Hant">《康熙字典》</span></a> correctly,
+<span lang="zh-Hant">較</span> are horizontal beams of a chariot which <span class="red">stick out like horns</span>,
+above <span lang="zh-Hant">輢</span> (the wooden vertical side boards)
+and above <span lang="zh-Hant">軾</span> (which are the horizontal handrails for standing passengers).
+So <span class="red"><span lang="zh-Hant">辛壬爲股較</span></span> is a very literary way of saying
+<span class="red">"<span class="maths">HI</span> sticks out horizontally"</span> (from <span class="maths">FGI</span>).
+</li>
+</ul>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-1"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line class="blue"
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "-1" />
+<line
+x1 = "0"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line class="red"
+x1 = "3"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line class="blue"
+x1 = "0"
+y1 = "-1"
+x2 = "3"
+y2 = "-1" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line class="blue"
+x1 = "0"
+y1 = "-3.5"
+x2 = "3"
+y2 = "-1" />
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "6.7"
+y2 = "0" />
+<text
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>壬
+</text>
+<text class="m"
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>I
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">甲辰己形，分</span><span class="blue"><span lang="zh-Hant">甲辰丙形，同甲辰句</span></span><span lang="zh-Hant">，而</span><span class="red"><span lang="zh-Hant">己丙爲股較</span></span><span lang="zh-Hant">。</span>
+<hr>
+<i>The</i> shape <span class="maths">AOF</span> <i>is</i> split into <span class="blue"><i>the</i> shape <span class="maths">AOC</span>
+<i>having the</i> same minor cathetus  <span class="maths">AO</span></span>,
+with <span class="red"><span class="maths">FC</span> as <i>the</i> major cathetus chariot-beam</span>.
+</div>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-1"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line class="magenta"
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "-1" />
+<line
+x1 = "0"
+y1 = "0"
+x2 = "6.7"
+y2 = "0" />
+<line class="blue"
+x1 = "6.7"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line class="red"
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line
+x1 = "0"
+y1 = "-1"
+x2 = "3"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line class="green"
+x1 = "3"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "6.7"
+y2 = "0" />
+<text
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>壬
+</text>
+<text class="m"
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>I
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">以</span><span class="blue"><span lang="zh-Hant">小股較辛壬</span></span><span lang="zh-Hant">比</span><span class="red"><span lang="zh-Hant">小句己庚</span></span><span lang="zh-Hant">，若</span><span class="green"><span lang="zh-Hant">大股較己丙</span></span><span lang="zh-Hant">比</span><span class="magenta"><span lang="zh-Hant">大句甲辰</span></span><span lang="zh-Hant">。</span>
+<hr>
+Using <span class="blue"><i>the</i> small major cathetus chariot-beam <span class="maths">HI</span></span>
+<i>to</i> compare to <span class="red"><i>the</i> small minor cathetus <span class="maths">FG</span></span>,
+<i>is</i> like <span class="green"><i>the</i> large major cathetus chariot-beam <span class="maths">FC</span></span>
+compared to <span class="magenta"><i>the</i> large minor cathetus <span class="maths">AO</span></span>.
+</div>
+<ul>
+<li>
+In modern notation,
+<div class="maths">
+\begin{aligned}
+  \frac{\color{blue}HI}{\color{red}FG}
+  &amp;= \frac{\color{green}FC}{\color{magenta}AO} \\[2ex]
+  {\color{magenta}AO}
+  &amp;=
+    \frac{
+      {\color{red}FG} \cdot {\color{green}FC}
+    }{
+      \color{blue}HI
+    }.
+\end{aligned}
+</div>
+</li>
+</ul>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line class="red"
+x1 = "0"
+y1 = "-1"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line class="magenta"
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "-1" />
+<line
+x1 = "0"
+y1 = "0"
+x2 = "6.7"
+y2 = "0" />
+<line class="blue"
+x1 = "6.7"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line class="red"
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line class="red"
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line
+x1 = "0"
+y1 = "-1"
+x2 = "3"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line class="green"
+x1 = "3"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "6.7"
+y2 = "0" />
+<text
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>壬
+</text>
+<text class="m"
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>I
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">既得</span><span class="magenta"><span lang="zh-Hant">甲辰</span></span><span lang="zh-Hant">，加</span><span class="red"><span lang="zh-Hant">表高辰乙</span></span><span lang="zh-Hant">（即</span><span class="red"><span lang="zh-Hant">丙丁</span></span><span lang="zh-Hant">），得甲乙，爲島高。</span>
+<hr>
+Having obtained <span class="magenta"><span class="maths">AO</span></span>,
+add <span class="red"><i>the</i> pole height <span class="maths">OB</span></span> (which is <span class="red"><span class="maths">CD</span></span>)
+<i>to</i> obtain <span class="maths">AB</span>, <i>which</i> is <i>the</i> height of <i>the</i> island.
+</div>
+<ul>
+<li>
+In modern notation,
+<div class="maths">
+\begin{aligned}
+  AB
+  &amp;= {\color{magenta}AO} + {\color{red}OB} \\[1ex]
+  &amp;=
+    \frac{
+      {\color{red}FG} \cdot {\color{green}FC}
+    }{
+      \color{blue}HI
+    } + {\color{red}OB} \\[2ex]
+  \text{[island height]}
+  &amp;=
+    \frac{
+      \text{\color{red}[pole height]}
+        \cdot
+      \text{\color{green}[pole separation]}
+    }{
+      \text{\color{blue}[mutual excess]}
+    } + \text{\color{red}[pole height]}.
+\end{aligned}
+</div>
+Remember
+<div class="maths">
+\begin{aligned}
+  \text{\color{blue}[mutual excess]}
+  &amp;= {\color{blue}HI} \\
+  &amp;= HG - IG \\
+  &amp;= HG - ED \\
+  &amp;= \text{[rear pole backward walk]}
+   - \text{[front pole backward walk]}.
+\end{aligned}
+</div>
+</li>
+</ul>
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "0"
+y2 = "0" />
+<text
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>甲
+</text>
+<text class="m"
+x = "0"
+y = "-3.5"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>A
+</text>
+<text
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>乙
+</text>
+<text class="m"
+x = "0"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>B
+</text>
+<line
+x1 = "3"
+y1 = "0"
+x2 = "5.5"
+y2 = "0" />
+<line class="blue"
+x1 = "6.7"
+y1 = "0"
+x2 = "7.7"
+y2 = "0" />
+<line class="red"
+x1 = "5.5"
+y1 = "0"
+x2 = "6.7"
+y2 = "0" />
+<line class="magenta"
+x1 = "0"
+y1 = "0"
+x2 = "3"
+y2 = "0" />
+<line
+x1 = "3"
+y1 = "-1"
+x2 = "3"
+y2 = "0" />
+<text
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>丙
+</text>
+<text class="m"
+x = "3"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>C
+</text>
+<text
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>丁
+</text>
+<text class="m"
+x = "3"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>D
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "5.5"
+y2 = "0" />
+<text
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-0.5em"
+>己
+</text>
+<text class="m"
+x = "5.5"
+y = "-1"
+font-size = "0.3"
+dx = "0.4em"
+dy = "-1.7em"
+>F
+</text>
+<text
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>庚
+</text>
+<text class="m"
+x = "5.5"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>G
+</text>
+<line class="green"
+x1 = "3"
+y1 = "-1"
+x2 = "5.5"
+y2 = "-1" />
+<line class="magenta"
+x1 = "0"
+y1 = "-1"
+x2 = "3"
+y2 = "-1" />
+<text
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-1em"
+dy = "0.3em"
+>辰
+</text>
+<text class="m"
+x = "0"
+y = "-1"
+font-size = "0.3"
+dx = "-2.25em"
+dy = "0.3em"
+>O
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "4.2"
+y2 = "0" />
+<text
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>戊
+</text>
+<text class="m"
+x = "4.2"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>E
+</text>
+<line
+x1 = "0"
+y1 = "-3.5"
+x2 = "7.7"
+y2 = "0" />
+<text
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>辛
+</text>
+<text class="m"
+x = "7.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>H
+</text>
+<line
+x1 = "5.5"
+y1 = "-1"
+x2 = "6.7"
+y2 = "0" />
+<text
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "1.2em"
+>壬
+</text>
+<text class="m"
+x = "6.7"
+y = "0"
+font-size = "0.3"
+dy = "2.7em"
+>I
+</text>
+</svg>
+</div>
+<div class="boxed translation">
+<span class="blue"><span lang="zh-Hant">小股較辛壬</span></span><span lang="zh-Hant">比</span><span class="red"><span lang="zh-Hant">分股壬庚</span></span><span lang="zh-Hant">，若</span><span class="green"><span lang="zh-Hant">大股較己丙</span></span><span lang="zh-Hant">比</span><span class="magenta"><span lang="zh-Hant">分股丙辰</span></span><span lang="zh-Hant">（即</span><span class="magenta"><span lang="zh-Hant">丁乙</span></span><span lang="zh-Hant">），得</span><span class="magenta"><span lang="zh-Hant">島去前表之遠</span></span><span lang="zh-Hant">。</span>
+<hr>
+<span class="blue"><i>The</i> small major cathetus chariot-beam <span class="maths">HI</span></span> compared to
+<span class="red"><i>the</i> split major cathetus <span class="maths">IG</span></span>,
+<i>is</i> like
+<span class="green"><i>the</i> large major cathetus chariot-beam <span class="maths">FC</span></span> compared to
+<span class="magenta"><i>the</i> split major cathetus <span class="maths">CO</span></span>
+(which is <span class="magenta"><span class="maths">DB</span></span>);
+<i>we</i> obtain <span class="magenta"><i>the</i> distance <i>that the</i> island <i>is</i> separated
+from <i>the</i> front pole</span>.
+</div>
+<ul>
+<li>
+In modern notation,
+<div class="maths">
+\begin{aligned}
+  \frac{\color{blue}HI}{\color{red}IG}
+  &amp;= \frac{\color{green}FC}{\color{magenta}CO} \\[2ex]
+  &amp;= \frac{\color{green}FC}{\color{magenta}DB} \\[2ex]
+  {\color{magenta}DB}
+  &amp;=
+    \frac{
+      {\color{red}IG} \cdot {\color{green}FC}
+    }{
+      \color{blue}HI
+    } \\[2ex]
+  \text{\color{magenta}[island-pole separation]}
+  &amp;=
+    \frac{
+      \text{\color{red}[front pole backward walk]}
+        \cdot
+      \text{\color{green}[pole separation]}
+    }{
+      \text{\color{blue}[mutual excess]}
+    }.
+\end{aligned}
+</div>
+</li>
+</ul>
+<h2 id="cite"><a class="self-link" href="#cite"></a>
+Cite this page
+</h2>
+<ul>
+<li>Text:
+<p>
+Conway&nbsp;(2019).
+<i>"<i>The</i> Sea Island Computational Classic"</i>.
+&lt;https://yawnoc.github.io/pages/sea-island.html&gt;
+[Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
+</p>
+</li>
+<li>BibTeX:
+<pre>
+@misc{conway-island,
+  author = {Conway},
+  year = {2019},
+  title = {``\emph{The} {Sea} {Island} {Computational} {Classic}''},
+  howpublished = {\url{https://yawnoc.github.io/pages/sea-island.html}},
+  note = {[Accessed <span class="date">d~month~yyyy</span>]}
+}
+</pre>
+</li>
+<li>BibLaTeX:
+<pre>
+@online{conway-island,
+  author = {Conway},
+  year = {2019},
+  title = {``\emph{The} {Sea} {Island} {Computational} {Classic}''},
+  url = {https://yawnoc.github.io/pages/sea-island.html},
+  urldate = {<span class="date">yyyy-mm-dd</span>}
+}
+</pre>
+</li>
+</ul>
+<footer>
+<hr>
+©&nbsp;2019&nbsp;Conway.
+</footer>
+</body>
+</html>

@@ -1,0 +1,3486 @@
+<*>
+  "{The} Sea Island Computational Classic": 《海島算經》
+  | 20190420 | 20191031 | dmr
+</*>
+
+<=h>
+  <@ih></@ih>
+  <@it></@it>
+  <@ii></@ii>
+  <@in></@in>
+  <@ic></@ic>
+</=h>
+
+<h1>
+  《海島算經》 or<br>
+  "{The} Sea Island Computational Classic"
+</h1>
+
+<*p> |
+  Also known as {Haidao Suanjing}.
+</*p>
+
+
+<@2> Introduction | introduction </@2>
+
+
+<p>
+  《海島算經》, or
+  <@>
+    "{The} Sea Island Computational Classic"
+    | https://en.wikipedia.org/wiki/Haidao_Suanjing
+    | Wikipedia: Haidao Suanjing
+  </@>,
+  is one of the
+  <@>
+    ten canon classics of Chinese mathematics
+    | https://en.wikipedia.org/wiki/Ten_Computational_Canons
+    | Wikipedia: Ten Computational Canons
+  </@>.
+  Written by
+  <@>
+    劉徽<^> Lau Fai | Liu Hui | Liu Hui </^>
+    | https://en.wikipedia.org/wiki/Liu_Hui
+    | Wikipedia: Liu Hui
+  </@>
+  of the
+  <@>
+    Three Kingdoms period
+    | https://en.wikipedia.org/wiki/Three_Kingdoms
+    | Wikipedia: Three Kingdoms
+  </@> (220–280 AD),
+  it consists of nine problems in the surveying of distant structures
+  or landforms.
+  For each problem, the Classic itself only gives the statement of the problem,
+  the answer and the formula used to compute the answer.
+  Derivations of the formulae I found in
+  <@>
+    《海島算經細草圖說》
+    | https://archive.org/details/02094033.cn
+    |
+  </@>,
+  or "{The} Sea Island Computational Classic
+  {with} detailed working, diagrams {and} explanations".
+  Written by
+  <@>
+    李潢<^> Lei Wong | Li Huang | Li Huang </^>
+    | https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%BD%A2
+    | 維基百科：李潢
+  </@>,
+  the (arithmetic) working~(草), diagrams~(圖)
+  and explanations~(說) supplement the older (but at times erroneous)
+  annotations of
+  <@>
+    李淳風<^> Lei S_n-fung | Li Ch'un-fe^ng | Li Chunfeng </^>
+    | https://en.wikipedia.org/wiki/Li_Chunfeng
+    | Wikipedia: Li Chunfeng
+  </@>.
+  It is in the explanations~(說) that I find derivations of the formulae,
+  and they read very much like high school geometry proofs.
+</p>
+
+<p>
+  Here I translate the the eponymous first problem 望海島,
+  "looking at {a} sea island",
+  and its corresponding derivation as found in 《海島算經細草圖說》.
+</p>
+
+
+<-->
+  <-t></-t>
+  <-m></-m>
+  line {
+    stroke: black;
+    vector-effect: non-scaling-stroke;
+  }
+  line.blue {
+    stroke: blue;
+    stroke-width: 3;
+  }
+  line.green {
+    stroke: green;
+    stroke-width: 3;
+  }
+  line.magenta {
+    stroke: magenta;
+    stroke-width: 3;
+  }
+  line.red {
+    stroke: red;
+    stroke-width: 3;
+  }
+  text.blue {
+    fill: blue;
+  }
+  text.green {
+    fill: green;
+  }
+  text.magenta {
+    fill: magenta;
+  }
+  text.red {
+    fill: red;
+  }
+</-->
+
+
+<@2> Translation | translation </@2>
+
+
+<@@>
+  <@> [Problem] | #problem | Problem </@>
+  <@> [Derivation] | #derivation | Derivation </@>
+</@@>
+
+<^^></^^>
+
+<p>
+  Chinese text
+  <@>
+    今有望海島 (problem)
+    | https://archive.org/details/02094033.cn/page/n2
+    | 今有望海島
+  </@>
+    \&
+  <@>
+    說曰 (derivation)
+    | https://archive.org/details/02094033.cn/page/n6
+    | 說曰
+  </@>
+  taken from archive.org.
+  After reading these in their original forms (i.e.~without any punctuation)
+  it is hard not to appreciate modern mathematical notation.
+</p>
+
+<p>
+  Chinese units of measurement have changed many times throughout history.
+  These are the relevant conversions for distances
+  at the time the Classic was written:
+</p>
+<$$>
+\begin{aligned}
+  3 \unit{丈} &=   5 \unit{步} \\
+    \unit{里} &= 300 \unit{步}
+\end{aligned}
+</$$>
+
+<p>
+  The units themselves I leave untranslated,
+  but to give you a sense of their magnitude:
+</p>
+<ul>
+  <li>
+    丈<^> choeng | chang | zhang </^> is of the order two metres
+  </li>
+  <li>
+    步<^> pou | pu | bu </^> is of the order one metre
+  </li>
+  <li>
+    里<^> lei | li | li </^> is of the order half a kilometre
+  </li>
+</ul>
+
+<@3> Problem | problem </@3>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4">
+  <!-- sea island AB -->
+  <line class="blue"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <text class="blue"
+    x = "0"
+    y = "-1.75"
+    font-size = "0.3"
+    dx = "0em"
+    dy = "-1em"
+    transform = "rotate(-90 0 -1.75)"
+    >sea island
+  </text>
+  <!-- ground BH except DG -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "3"
+    y2 = "0" />
+  <line
+    x1 = "5.5"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line class="red"
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dy = "-0.5em"
+    >front
+  </text>
+  <text class="m red"
+    x = "3"
+    y = "-0.5"
+    font-size = "0.3"
+    dx = "0em"
+    dy = "-0.5em"
+    transform = "rotate(-90 3 -0.5)"
+    >3 \丈
+  </text>
+  <!-- rear pole FG -->
+  <line class="red"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dy = "-0.5em"
+    >rear
+  </text>
+  <text class="m red"
+    x = "5.5"
+    y = "-0.5"
+    font-size = "0.3"
+    dx = "0em"
+    dy = "1.3em"
+    transform = "rotate(-90 5.5 -0.5)"
+    >3 \丈
+  </text>
+  <!-- pole separation DG -->
+  <line class="green"
+    x1 = "3"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "0" />
+  <text class="m green"
+    x = "4.25"
+    y = "0"
+    font-size = "0.3"
+    dy = "-0.5em"
+    >1000 \步
+  </text>
+</svg>
+</div>
+
+<#t>
+  今有望<:b>海島</:b>，立<:r>兩表</:r>，<:r>齊高三丈</:r>，\
+  前後<:g>相去千步</:g>，令後表與前表參相直。 |
+  Now there be {a} looking at {a} <:b>sea island</:b>;
+  erect <:r>two poles</:r>, <:r>{of the} same height
+    three<:n>3</:n>~丈<^> choeng | chang | zhang </^></:r>,
+  {one} in front of {the} other, <:g>mutually separated by
+    {a} thousand<:n>1000</:n>~步<^> pou | pu | bu </^></:g>,
+  {and} make {the} rear pole three-in-line
+  with {the} front pole {and the island}.
+</#t>
+<ul>
+  <li>表：標也；
+    poles;
+    or pillars;
+    literally markers
+  </li>
+  <li>齊：
+    {the} same; or uniform
+  </li>
+  <li>丈<^> choeng | chang | zhang </^><br>
+    A unit of distance, of the order two metres.
+    Note that <$>3 \unit{丈} = 5 \unit{步}</$>.
+  </li>
+  <li>前後：
+    {one} in front of {the} other;
+    literally front {and} rear
+  </li>
+  <li>步<^> pou | pu | bu </^>：
+    literally steps;
+    or paces<br>
+    A unit of distance, of the order one metre.
+  </li>
+  <li>參相直：
+    three-in-line;
+    literally mutually straight, {the} three of {them}<br>
+    參 means 三, three (<^e>saam1</^e>/<^e>sa=n</^e>).
+  </li>
+</ul>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4.2">
+  <!-- sea island AB -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <!-- ground BH except DE -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "3"
+    y2 = "0" />
+  <line
+    x1 = "4.2"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <!-- rear pole FG -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <!-- front line of sight ACE -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <!-- front pole backward walk DE -->
+  <line class="blue"
+    x1 = "3"
+    y1 = "0"
+    x2 = "4.2"
+    y2 = "0" />
+  <text class="m blue"
+    x = "3.6"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >123 \步
+  </text>
+</svg>
+</div>
+
+<#t>
+  從前表<:b>卻行一百二十三步</:b>，人目著地<:r>取望島峯</:r>，與表末參合。 |
+  <:b>Walking back one hundred {and} twenty-three<:n>123</:n>~\
+    步<^> pou | pu | bu </^></:b> from {the} front pole,
+  {a} person's eye on {the} ground,
+    <:r>taking {a} look at {the} peak of {the} island</:r>,
+  meeteth with {the} tip of {the} pole, {the} three of {them}.
+</#t>
+<ul>
+  <li>著地：
+    on {the} ground;
+    or on ground {level};
+    literally contacting {the} ground
+  </li>
+  <li>峯：
+    peak;
+    or summit
+  </li>
+  <li>
+    In other words, the three of them
+    (the island's peak, the pole's tip and the person's eye)
+    are in a straight line.
+  </li>
+</ul>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4.2">
+  <!-- sea island AB -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <!-- ground BH except GH -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <!-- rear pole FG -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <!-- rear line of sight AFH -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- rear pole backward walk GH -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <text class="m blue"
+    x = "6.6"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >127 \步
+  </text>
+</svg>
+</div>
+
+<#t>
+  從後表<:b>卻行一百二十七步</:b>，人目着地<:r>取望島峯</:r>，亦與表末參合。 |
+  <:b>Walking back one hundred {and} twenty-seven<:n>127</:n>~\
+    步<^> pou | pu | bu </^></:b>
+  from {the} rear pole, {a} person's eye on {the} ground,
+  <:r>taking {a} look at {the} peak of {the} island</:r>,
+  also meeteth with {the} tip of {the} pole, {the} three of {them}.
+</#t>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4.2">
+<!-- sea island AB -->
+  <line class="blue"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <text class="blue"
+    x = "0"
+    y = "-1.75"
+    font-size = "0.3"
+    dx = "0em"
+    dy = "-1em"
+    transform = "rotate(-90 0 -1.75)"
+    >island height?
+  </text>
+  <!-- ground BH except BD -->
+  <line
+    x1 = "3"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- distance from front pole BD -->
+  <line class="red"
+    x1 = "0"
+    y1 = "0"
+    x2 = "3"
+    y2 = "0" />
+  <text class="red"
+    x = "1.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "-0.5em"
+    >distance?
+  </text>
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <!-- rear pole FG -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+</svg>
+</div>
+
+<#t>
+  問<:b>島高</:b>及<:r>去表</:r>各幾何？ |
+  {We} ask: how much {are} each of <:b>{the} height of {the} island</:b>,
+  and <:r>{its} distance from {the front} pole</:r>?
+</#t>
+
+<#t>
+  答曰：島高<:b>四里五十五步</:b>；去表<:r>一百二里一百五十步</:r>。 |
+  Answer saith: {the} height of {the} island {is}
+    <:b>four<:n>4</:n>~里<^> lei | li | li </^>
+    fifty-five<:n>55</:n>~步<^> pou | pu | bu </^></:b>, {and the}
+  distance from {the front} pole
+    <:r>one hundred {and} two<:n>102</:n>~里<^> lei | li | li </^>
+    one hundred {and} fifty<:n>150</:n>~步<^> pou | pu | bu </^></:r>.
+</#t>
+<ul>
+  <li>里<^> lei | li | li </^><br>
+    A unit of distance, of the order half a kilometre.
+  </li>
+  <li>一百二：
+    one hundred {and} two<:n>102</:n><br>
+    (Remember I {emphasise} words not in the original Chinese.)
+    <ul>
+      <li>
+        In modern Chinese, one must say
+        一百零二,
+        "one hundred oh two", to mean~102.
+        If one just says 一百二
+        or 百二,
+        this means~120;
+        the~二 refers to
+        the next significant digit
+        (as in <$>1.2 \times 100 = 120</$>).
+      </li>
+      <li>
+        In Literary Chinese you might see
+        一百又二
+        or 一百有二,
+        "one hundred and two", but the "and" is not necessary.
+        Thus 一百二 or
+        百二 means~102
+        rather than~120; this is preserved in modern Japanese.
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<#t>
+  術曰：以表高乘表間爲實；相多爲法，除之。所得加表高，即得島高。 |
+  Method saith: use {the} pole height times
+  {the} pole separation as {the} dividend, {and the}
+  mutual excess as {the} divisor, {and} divide them.
+  {Unto} that which {is} obtained, add {the} pole height,
+  {to} immediately obtain {the} height of {the} island.
+</#t>
+<ul>
+  <li>實：
+    dividend;
+    or numerator
+  </li>
+  <li>間：
+    separation<br>
+      間，去聲，
+      <^cm> kaan3 | jia\n </^cm>
+  </li>
+  <li>相多：
+    mutual excess;
+    or difference<br>
+    It is not immediately obvious, but <b>"mutual excess" refers to
+    the difference between the backward walking distances
+    from the two poles.</b>
+  </li>
+  <li>法：
+    divisor;
+    or denominator<br>
+    <$$>
+      \frac{\text{實}}{\text{法}} = \frac{\text{[dividend]}}{\text{[divisor]}}
+    </$$>
+    實 and 法 are very much mathematical jargon terms of Literary Chinese.
+    In no other context do they mean "dividend" and "divisor".
+  </li>
+  <li>
+    In modern notation,
+    <$$>
+      \text{島高} = \frac{\text{表高} \cdot \text{表間}}{\text{相多}} + \text{表高}
+    </$$>
+    or
+    <$$>
+      \begin{aligned}
+        \text{[island height]}
+        &=
+          \frac{
+            \text{[pole height]} \cdot \text{[pole separation]}
+          }{
+            \text{[mutual excess]}
+          } + \text{[pole height]} \\[2ex]
+        &=
+          \frac{
+            3 \unit{丈} \cdot 1000 \unit{步}
+          }{
+            127 \unit{步} - 123 \unit{步}
+          } + 5 \unit{步} \\[2ex]
+        &=
+          \frac{
+            5 \unit{步} \cdot 1000 \unit{步}
+          }{
+            4 \unit{步}
+          } + 5 \unit{步} \\[2ex]
+        &= 1255 \unit{步} \\
+        &= 4 \cdot 300 \unit{步} + 55 \unit{步} \\
+        &= 4 \unit{里} + 55 \unit{步}.
+      \end{aligned}
+    </$$>
+  </li>
+</ul>
+<#t>
+  求前表去島遠近者：以前表卻行乘表間爲實；相多爲法。除之，得島去表里數。 |
+  Those seeking {the} distance {that the} front pole {is} separated
+    from {the} island:
+  use {the} front pole backward walk times {the} pole separation
+    as {the} dividend,
+  {and the} mutual excess as {the} divisor.
+  Divide them {to} obtain {the} number of 里<^> lei | li | li </^>
+    {that the} island {is} separated from {the front} pole.
+</#t>
+<ul>
+  <li>遠近：
+    distance;
+    literally far-closeness
+  </li>
+  <li>
+    In modern notation,
+    <$$>
+      \text{島去表} = \frac{\text{前表卻行} \cdot \text{表間}}{\text{相多}}
+    </$$>
+    or
+    <$$>
+      \begin{aligned}
+        \text{[island-pole separation]}
+        &=
+          \frac{
+            \text{[front pole backward walk]}
+              \cdot
+            \text{[pole separation]}
+          }{
+            \text{[mutual excess]}
+          } \\[2ex]
+        &=
+          \frac{
+            123 \unit{步} \cdot 1000 \unit{步}
+          }{
+            127 \unit{步} - 123 \unit{步}
+          } \\[2ex]
+        &=
+          \frac{
+            123000 \unit{步}^2
+          }{
+            4 \unit{步}
+          } \\[2ex]
+        &= 30750 \unit{步} \\
+        &= 102 \cdot 300 \unit{步} + 150 \unit{步} \\
+        &= 102 \unit{里} + 150 \unit{步}.
+      \end{aligned}
+    </$$>
+  </li>
+</ul>
+
+<@3> Derivation | derivation </@3>
+
+<p>
+  The derivation in 《海島算經細草圖說》, called an
+  <@>
+    explanation~(說)
+    | https://archive.org/details/02094033.cn/page/n6
+    | 說曰
+  </@>,
+  comes with a
+  <@>
+    diagram~(圖)
+    | https://archive.org/details/02094033.cn/page/n4
+    | 望海島圖
+  </@>
+  which I have reproduced here, minus some irrelevant vertical lines.
+  I have mapped the names of the vertices as follows:
+</p>
+
+<!cc><table>
+  <tr>
+    <td>甲</td>
+    <td>乙</td>
+    <td>丙</td>
+    <td>丁</td>
+    <td>戊</td>
+    <td>己</td>
+    <td>庚</td>
+    <td>辛</td>
+    <td>壬</td>
+    <td>辰</td>
+  </tr>
+  <tr>
+    <td><$>A</$></td>
+    <td><$>B</$></td>
+    <td><$>C</$></td>
+    <td><$>D</$></td>
+    <td><$>E</$></td>
+    <td><$>F</$></td>
+    <td><$>G</$></td>
+    <td><$>H</$></td>
+    <td><$>I</$></td>
+    <td><$>O</$></td>
+  </tr>
+</table></!cc>
+
+<!--                       Full diagram
+  ***********************************************************************
+  Constant    Description                           Value
+  ***********************************************************************
+    p           pole height                             1
+    h           island height                           3.5
+    d           distance from front pole                3
+    s           pole separation                         2.5
+    f           front pole backward walk                1.2
+                  f / p == (f + d) / h
+                  f == d/h / (1/p - 1/h)
+    r           rear pole backward walk                 2.2
+                  r / p == (r + s + d) / h
+                  r == (s+d)/h / (1/p - 1/h)
+    BH          horizontal range d + s + r              7.7
+    xleft       left x pos                             -1
+    xright      right x pos                             8.2
+    w           total width                             9.2
+    ytop        top y pos                              -4
+    ybottom     bottom y pos                            1
+    h           total height                            5
+  ***********************************************************************
+      A____
+      |    \____
+      |  \      \____
+      |    -         \____
+      |       \           \____
+      |          \             \____
+  h   |              \              \____
+      |                  \     C         \____ F
+    O |______________________\________________\____
+      |                        |\ _           |\_  \____
+    p |                        |   \ _        |   \ _   \____
+      |________________________|_______\______|_______\______\_
+      B           d            D   f   E      G   f   I       H
+                                      s              r
+  ***********************************************************************
+  -->
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- ground BH -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF -->
+  <line
+    x1 = "0"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- front line of sight ACE -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- rear line of sight AFH -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- front line of sight translated unto rear FI -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "6.7"
+    y2 = "0" />
+  <text
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\壬
+  </text>
+  <text class="m"
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >I
+  </text>
+</svg>
+</div>
+
+<p>
+  The punctuation inserted in this section is my own.
+</p>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB -->
+  <line class="blue"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <text class="red"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m red"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- ground BH -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+</svg>
+</div>
+
+<#t>
+  說曰：<:b>甲乙爲海島</:b>，<:r>甲爲島峯</:r>。 |
+  Explanation saith:
+  <:b><$>AB</$> is {the} sea island</:b>;
+  <:r><$>A</$> is {the} peak of {the} island</:r>.
+</#t>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- ground BH except DE -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "3"
+    y2 = "0" />
+  <line
+    x1 = "4.2"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line class="blue"
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- front line of sight ACE -->
+  <line class="magenta"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <text class="green"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m green"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- front pillar backward walk ED -->
+  <line class="red"
+    x1 = "3"
+    y1 = "0"
+    x2 = "4.2"
+    y2 = "0" />
+</svg>
+</div>
+
+<#t>
+  <:b>丙丁爲前表</:b>，<:r>戊丁爲前去表</:r>，\
+  <:g>戊爲人目</:g>，<:m>戊丙甲爲前表望島峯</:m>。 |
+  <:b><$>CD</$> is {the} front pole</:b>;
+  <:r><$>ED</$> is {the} front {walk's} separation from {the} pole</:r>;
+  <:g><$>E</$> is {the} person's eye</:g>;
+  <:m><$>ECA</$> is {the} front pole's
+  looking at {the} peak of {the} island</:m>.
+</#t>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- ground BH except HG -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- front line of sight ACE -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- rear line of sight AFH -->
+  <line class="magenta"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text class="green"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m green"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- rear pole backward walk HG -->
+  <line class="red"
+    x1 = "5.5"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+</svg>
+</div>
+
+<#t>
+  <:b>己庚爲後表</:b>，<:r>辛庚爲後去表</:r>，\
+  <:g>辛爲人目</:g>，<:m>辛己甲爲後表望島峯</:m>。 |
+  <:b><$>FG</$> is {the} rear pole</:b>;
+  <:r><$>HG</$> is {the} rear {walk's} separation from {the} pole</:r>;
+  <:g><$>H</$> is {the} person's eye</:g>;
+  <:m><$>HFA</$> is {the} rear pole's looking at
+    {the} peak of {the} island</:m>.
+</#t>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB except OB -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- OB -->
+  <line class="green"
+    x1 = "0"
+    y1 = "-1"
+    x2 = "0"
+    y2 = "0" />
+  <!-- ground BH except GEDB -->
+  <line
+    x1 = "5.5"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- GEDB -->
+  <line class="blue"
+    x1 = "0"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line class="green"
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line class="green"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- front line of sight ACE -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- rear line of sight AFH -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+</svg>
+</div>
+
+<#t>
+  與<:b>庚戊丁乙</:b>平行<:r>作己丙辰</:r>，則<:g>辰乙與丙丁、己庚俱等</:g>。 |
+  <:r>Construct <$>FCO</$></:r> parallel with <:b><$>GEDB</$></:b>;
+  thus <:g><$>OB</$> {is} equal with both <$>CD</$> {and} <$>FG</$></:g>.
+</#t>
+<ul>
+  <li>俱：
+    both;
+    literally all
+  </li>
+</ul>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- ground BH except IG and ED -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "3"
+    y2 = "0" />
+  <line
+    x1 = "4.2"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "0" />
+  <line
+    x1 = "6.7"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- ED -->
+  <line class="green"
+    x1 = "3"
+    y1 = "0"
+    x2 = "4.2"
+    y2 = "0" />
+  <!-- IG -->
+  <line class="green"
+    x1 = "5.5"
+    y1 = "0"
+    x2 = "6.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF -->
+  <line
+    x1 = "0"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- front line of sight ACE except CE -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "3"
+    y2 = "-1" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- CE -->
+  <line class="blue"
+    x1 = "3"
+    y1 = "-1"
+    x2 = "4.2"
+    y2 = "0" />
+  <!-- rear line of sight AFH -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- front line of sight translated unto rear FI -->
+  <line class="red"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "6.7"
+    y2 = "0" />
+  <text
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\壬
+  </text>
+  <text class="m"
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >I
+  </text>
+</svg>
+</div>
+
+<#t>
+  與<:b>丙戊</:b>平行<:r>作己壬</:r>，則<:g>壬庚與戊丁等</:g>。 |
+  <:r>Construct <$>FI</$></:r> parallel with <:b><$>CE</$></:b>;
+  thus <:g><$>IG</$> {is} equal with <$>ED</$></:g>.
+</#t>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB except AO -->
+  <line
+    x1 = "0"
+    y1 = "-1"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- AO -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "-1" />
+  <!-- ground BH except GH -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "0" />
+  <!-- GH -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- front line of sight ACE -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- rear line of sight AFH except HF -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "5.5"
+    y2 = "-1" />
+  <!-- HF -->
+  <line class="blue"
+    x1 = "7.7"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "-1" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- front line of sight translated unto rear FI -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "6.7"
+    y2 = "0" />
+  <text
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\壬
+  </text>
+  <text class="m"
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >I
+  </text>
+</svg>
+</div>
+
+<#t>
+  <:b>己庚辛形</:b>，與<:r>甲辰己形</:r>同式。 |
+  <:b>{The} shape <$>FGH</$></:b> {is} similar with
+  <:r>{the} shape <$>AOF</$></:r>.
+</#t>
+<ul>
+  <li>同式：
+    similar;
+    literally same form;
+    or same style
+  </li>
+</ul>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB except AO -->
+  <line
+    x1 = "0"
+    y1 = "-1"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- AO -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "-1" />
+  <!-- ground BH except GI -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "0" />
+  <line
+    x1 = "6.7"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- GI -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "0"
+    x2 = "6.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF except OC -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- OC -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "-1" />
+  <!-- front line of sight ACE except CA -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- CA -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "3"
+    y2 = "-1" />
+  <!-- rear line of sight AFH -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- front line of sight translated unto rear FI -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "6.7"
+    y2 = "0" />
+  <text
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\壬
+  </text>
+  <text class="m"
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >I
+  </text>
+</svg>
+</div>
+
+<#t>
+  <:b>己庚壬形</:b>，與<:r>甲辰丙形</:r>同式。 |
+  <:b>{The} shape <$>FGI</$></:b> {is} similar with
+  <:r>{the} shape <$>AOC</$></:r>.
+</#t>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- ground BH except GH -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "0" />
+  <!-- GI -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "0"
+    x2 = "6.7"
+    y2 = "0" />
+  <!-- HI -->
+  <line class="red"
+    x1 = "6.7"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF -->
+  <line
+    x1 = "0"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- front line of sight ACE -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- rear line of sight AFH -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- front line of sight translated unto rear FI -->
+  <line class="blue"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "6.7"
+    y2 = "0" />
+  <text
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\壬
+  </text>
+  <text class="m"
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >I
+  </text>
+</svg>
+</div>
+
+<#t>
+  己庚辛形，分<:b>己庚壬形，同己庚句</:b>，而<:r>辛壬爲股較</:r>。 |
+  {The} shape <$>FGH</$> {is} split into <:b>{the} shape <$>FGI</$>
+  {having the} same minor cathetus  <$>FG</$></:b>,
+  with <:r><$>HI</$> as {the} major cathetus chariot-beam</:r>.
+</#t>
+
+<ul>
+  <li>句：
+    minor cathetus;
+    or shorter leg (of a right-angled triangle)<br>
+    Variant of 勾.<br>
+    A <@>
+      cathetus
+      | https://en.wikipedia.org/wiki/Cathetus
+      | Wikipedia: Cathetus
+    </@> or leg
+    is a non-hypotenuse side of a right-angled triangle.
+  </li>
+  <li>股：
+    major cathetus;
+    or longer leg (of a right-angled triangle)<br>
+    Surveying the sea island from distances much greater than its height,
+    the horizontal lengths will be much greater than
+    the vertical lengths.
+    Thus the relevant horizontal segments are referred to as
+    <:r>major catheti~(股)</:r>
+    and the relevant vertical segments as
+    <:b>minor catheti~(句)</:b>.
+  </li>
+  <li>較：
+    <:r>(horizontal) chariot-beam</:r><br>
+      較，入聲，音覺，
+      <^cm> kok8 | jia\o </^cm><br>
+    If I understand
+    <@>
+      the entry in 《康熙字典》
+      | https://ctext.org/kangxi-zidian/159/6#n352070
+      | 《康熙字典》較
+    </@> correctly,
+    較 are horizontal beams of a chariot which <:r>stick out like horns</:r>,
+    above 輢 (the wooden vertical side boards)
+    and above 軾 (which are the horizontal handrails for standing passengers).
+    So <:r>辛壬爲股較</:r> is a very literary way of saying
+    <:r>"<$>HI</$> sticks out horizontally"</:r> (from <$>FGI</$>).
+  </li>
+</ul>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB except AO -->
+  <line
+    x1 = "0"
+    y1 = "-1"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- AO -->
+  <line class="blue"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "-1" />
+  <!-- ground BH -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF except OC -->
+  <line class="red"
+    x1 = "3"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- OC -->
+  <line class="blue"
+    x1 = "0"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "-1" />
+  <!-- front line of sight ACE except CA -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- CA -->
+  <line class="blue"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "3"
+    y2 = "-1" />
+  <!-- rear line of sight AFH -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- front line of sight translated unto rear FI -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "6.7"
+    y2 = "0" />
+  <text
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\壬
+  </text>
+  <text class="m"
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >I
+  </text>
+</svg>
+</div>
+
+<#t>
+  甲辰己形，分<:b>甲辰丙形，同甲辰句</:b>，而<:r>己丙爲股較</:r>。 |
+  {The} shape <$>AOF</$> {is} split into <:b>{the} shape <$>AOC</$>
+  {having the} same minor cathetus  <$>AO</$></:b>,
+  with <:r><$>FC</$> as {the} major cathetus chariot-beam</:r>.
+</#t>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB except AO -->
+  <line
+    x1 = "0"
+    y1 = "-1"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- AO -->
+  <line class="magenta"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "-1" />
+  <!-- ground BH except HI -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "6.7"
+    y2 = "0" />
+  <!-- HI -->
+  <line class="blue"
+    x1 = "6.7"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line class="red"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF except FC -->
+  <line
+    x1 = "0"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- FC -->
+  <line class="green"
+    x1 = "3"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <!-- front line of sight ACE -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- rear line of sight AFH -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- front line of sight translated unto rear FI -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "6.7"
+    y2 = "0" />
+  <text
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\壬
+  </text>
+  <text class="m"
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >I
+  </text>
+</svg>
+</div>
+
+<#t>
+  以<:b>小股較辛壬</:b>比<:r>小句己庚</:r>，\
+  若<:g>大股較己丙</:g>比<:m>大句甲辰</:m>。 |
+  Using <:b>{the} small major cathetus chariot-beam <$>HI</$></:b>
+  {to} compare to <:r>{the} small minor cathetus <$>FG</$></:r>,
+  {is} like <:g>{the} large major cathetus chariot-beam <$>FC</$></:g>
+  compared to <:m>{the} large minor cathetus <$>AO</$></:m>.
+</#t>
+<ul>
+  <li>
+    In modern notation,
+    <$$>
+      \begin{aligned}
+        \frac{\color{blue}HI}{\color{red}FG}
+        &= \frac{\color{green}FC}{\color{magenta}AO} \\[2ex]
+        {\color{magenta}AO}
+        &=
+          \frac{
+            {\color{red}FG} \cdot {\color{green}FC}
+          }{
+            \color{blue}HI
+          }.
+      \end{aligned}
+    </$$>
+  </li>
+</ul>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB except AO -->
+  <line class="red"
+    x1 = "0"
+    y1 = "-1"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- AO -->
+  <line class="magenta"
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "-1" />
+  <!-- ground BH except HI -->
+  <line
+    x1 = "0"
+    y1 = "0"
+    x2 = "6.7"
+    y2 = "0" />
+  <!-- HI -->
+  <line class="blue"
+    x1 = "6.7"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line class="red"
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line class="red"
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF except FC -->
+  <line
+    x1 = "0"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- FC -->
+  <line class="green"
+    x1 = "3"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <!-- front line of sight ACE -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- rear line of sight AFH -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- front line of sight translated unto rear FI -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "6.7"
+    y2 = "0" />
+  <text
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\壬
+  </text>
+  <text class="m"
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >I
+  </text>
+</svg>
+
+</div>
+<#t>
+  既得<:m>甲辰</:m>，加<:r>表高辰乙</:r>（即<:r>丙丁</:r>），得甲乙，爲島高。 |
+  Having obtained <:m><$>AO</$></:m>,
+  add <:r>{the} pole height <$>OB</$></:r> (which is <:r><$>CD</$></:r>)
+  {to} obtain <$>AB</$>, {which} is {the} height of {the} island.
+</#t>
+<ul>
+  <li>
+    In modern notation,
+    <$$>
+      \begin{aligned}
+        AB
+        &= {\color{magenta}AO} + {\color{red}OB} \\[1ex]
+        &=
+          \frac{
+            {\color{red}FG} \cdot {\color{green}FC}
+          }{
+            \color{blue}HI
+          } + {\color{red}OB} \\[2ex]
+        \text{[island height]}
+        &=
+          \frac{
+            \text{\color{red}[pole height]}
+              \cdot
+            \text{\color{green}[pole separation]}
+          }{
+            \text{\color{blue}[mutual excess]}
+          } + \text{\color{red}[pole height]}.
+      \end{aligned}
+    </$$>
+    Remember
+    <$$>
+      \begin{aligned}
+        \text{\color{blue}[mutual excess]}
+        &= {\color{blue}HI} \\
+        &= HG - IG \\
+        &= HG - ED \\
+        &= \text{[rear pole backward walk]}
+         - \text{[front pole backward walk]}.
+      \end{aligned}
+    </$$>
+  </li>
+</ul>
+
+<div class="centred-svg">
+<svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
+  <!-- sea island AB -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "0"
+    y2 = "0" />
+  <text
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\甲
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-3.5"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >A
+  </text>
+  <text
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\乙
+  </text>
+  <text class="m"
+    x = "0"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >B
+  </text>
+  <!-- ground BH except GH and DB -->
+  <line
+    x1 = "3"
+    y1 = "0"
+    x2 = "5.5"
+    y2 = "0" />
+  <!-- HI -->
+  <line class="blue"
+    x1 = "6.7"
+    y1 = "0"
+    x2 = "7.7"
+    y2 = "0" />
+  <!-- IG -->
+  <line class="red"
+    x1 = "5.5"
+    y1 = "0"
+    x2 = "6.7"
+    y2 = "0" />
+  <!-- DB -->
+  <line class="magenta"
+    x1 = "0"
+    y1 = "0"
+    x2 = "3"
+    y2 = "0" />
+  <!-- front pole CD -->
+  <line
+    x1 = "3"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "0" />
+  <text
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\丙
+  </text>
+  <text class="m"
+    x = "3"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >C
+  </text>
+  <text
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\丁
+  </text>
+  <text class="m"
+    x = "3"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >D
+  </text>
+  <!-- rear pole FG -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "0" />
+  <text
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-0.5em"
+    >\己
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "-1"
+    font-size = "0.3"
+    dx = "0.4em"
+    dy = "-1.7em"
+    >F
+  </text>
+  <text
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\庚
+  </text>
+  <text class="m"
+    x = "5.5"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >G
+  </text>
+  <!-- pole height line OF except CO -->
+  <line class="green"
+    x1 = "3"
+    y1 = "-1"
+    x2 = "5.5"
+    y2 = "-1" />
+  <!-- CO -->
+  <line class="magenta"
+    x1 = "0"
+    y1 = "-1"
+    x2 = "3"
+    y2 = "-1" />
+  <text
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-1em"
+    dy = "0.3em"
+    >\辰
+  </text>
+  <text class="m"
+    x = "0"
+    y = "-1"
+    font-size = "0.3"
+    dx = "-2.25em"
+    dy = "0.3em"
+    >O
+  </text>
+  <!-- front line of sight ACE -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "4.2"
+    y2 = "0" />
+  <text
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\戊
+  </text>
+  <text class="m"
+    x = "4.2"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >E
+  </text>
+  <!-- rear line of sight AFH -->
+  <line
+    x1 = "0"
+    y1 = "-3.5"
+    x2 = "7.7"
+    y2 = "0" />
+  <text
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\辛
+  </text>
+  <text class="m"
+    x = "7.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >H
+  </text>
+  <!-- front line of sight translated unto rear FI -->
+  <line
+    x1 = "5.5"
+    y1 = "-1"
+    x2 = "6.7"
+    y2 = "0" />
+  <text
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "1.2em"
+    >\壬
+  </text>
+  <text class="m"
+    x = "6.7"
+    y = "0"
+    font-size = "0.3"
+    dy = "2.7em"
+    >I
+  </text>
+</svg>
+</div>
+
+<#t>
+  <:b>小股較辛壬</:b>比<:r>分股壬庚</:r>，\
+  若<:g>大股較己丙</:g>比<:m>分股丙辰</:m>（即<:m>丁乙</:m>），\
+  得<:m>島去前表之遠</:m>。 |
+  <:b>{The} small major cathetus chariot-beam <$>HI</$></:b> compared to
+  <:r>{the} split major cathetus <$>IG</$></:r>,
+  {is} like
+  <:g>{the} large major cathetus chariot-beam <$>FC</$></:g> compared to
+  <:m>{the} split major cathetus <$>CO</$></:m>
+  (which is <:m><$>DB</$></:m>);
+  {we} obtain <:m>{the} distance {that the} island {is} separated
+  from {the} front pole</:m>.
+</#t>
+<ul>
+  <li>
+    In modern notation,
+    <$$>
+      \begin{aligned}
+        \frac{\color{blue}HI}{\color{red}IG}
+        &= \frac{\color{green}FC}{\color{magenta}CO} \\[2ex]
+        &= \frac{\color{green}FC}{\color{magenta}DB} \\[2ex]
+        {\color{magenta}DB}
+        &=
+          \frac{
+            {\color{red}IG} \cdot {\color{green}FC}
+          }{
+            \color{blue}HI
+          } \\[2ex]
+        \text{\color{magenta}[island-pole separation]}
+        &=
+          \frac{
+            \text{\color{red}[front pole backward walk]}
+              \cdot
+            \text{\color{green}[pole separation]}
+          }{
+            \text{\color{blue}[mutual excess]}
+          }.
+      \end{aligned}
+    </$$>
+  </li>
+</ul>
+
+<*c>
+  "{The} Sea Island Computational Classic"
+  | island
+  | ``\emph{The} {Sea} {Island} {Computational} {Classic}''
+</*c>
+
+<*f></*f>
