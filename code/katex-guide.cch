@@ -1,0 +1,296 @@
+<*>
+  How to render mathematical equations using KaTeX
+  | 20190529 | 20191031 | d
+</*>
+
+<=h>
+  <@ih></@ih>
+  <@it></@it>
+  <@i> Steps | #steps | </@i>
+  <@ic></@ic>
+</=h>
+
+<h1>How to render mathematical equations using KaTeX</h1>
+
+<*p> |
+  <b>Demo:</b>
+  <@> <`>katex-example.html</`> | /katex-example.html | katex-example.html </@>
+</*p>
+
+<p>
+  This is a step-by-step guide demonstrating how I have rendered
+  mathematical equations on this site using
+  <@> KaTeX | https://katex.org/ | katex.org </@> (CSS and JavaScript only).
+</p>
+
+<p>
+  It is based on
+  <@>
+    Steve Mayer's guide
+    | http://sixthform.info/katex/guide.html
+    | Simple guide to using KaTeX
+  </@>,
+  which I have built on by:
+</p>
+
+<ol class="sparse-list">
+  
+  <li>
+    Combining the CSS and JavaScript for the
+    <@>
+      copy-tex extension
+      | https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+      | Copy-tex extension
+    </@>
+    together with KaTeX proper's CSS and JavaScript so that they
+    do not need to be loaded separately; and
+  </li>
+  
+  <li>
+    Automatically defining some commonly used macros of mine
+    through KaTeX's <`>macros</`> option.
+  </li>
+  
+</ol>
+
+<p>
+  I am not using Steve's <`>document.body.innerHTML</`> replacements.
+</p>
+
+
+<@2> Steps | steps </@2>
+
+
+<h3>1.~KaTeX</h3>
+
+<p>
+  <:y>
+    Download a release of KaTeX from
+    <@>
+      GitHub
+      | https://github.com/KaTeX/KaTeX/releases
+      | GitHub: KaTeX releases
+    </@>.
+  </:y>
+</p>
+
+<h3>2.~Fonts folder</h3>
+
+<p>
+  <:y>
+    Put the <`>fonts</`> folder into your root directory.
+  </:y>
+</p>
+
+<h3>3.~CSS</h3>
+
+<p>
+  <:y>
+    Put
+    <@>
+      <`>conway-katex.css</`>
+      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-katex.css
+      | conway-katex.css
+    </@>
+    (or the
+    <@>
+      minified version
+      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-katex.min.css
+      | conway-katex.min.css
+    </@>)
+    into your root directory.
+  </:y>
+  This style sheet was made by combining an edited version of <`>katex.css</`>
+  (edited so that <`>@font-face</`> is called with <`>font-display: swap</`>)
+  with
+  <@>
+    <`>copy-tex.css</`>
+    | https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.css
+    | copy-tex.css
+  </@>
+  (from the
+  <@>
+    copy-tex extension
+    | https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+    | Copy-tex extension
+  </@>,
+  which makes equations copy as their source code).
+</p>
+
+<h3>4.~JavaScript</h3>
+
+<p>
+  <:y>
+    Put
+    <@>
+      <`>conway-katex.js</`>
+      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-katex.js
+      | conway-katex.js
+    </@>
+    (or the
+    <@>
+      minified version
+      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-katex.min.js
+      | conway-katex.min.js
+    </@>)
+    into your root directory.
+  </:y>
+  This script was made by combining <`>katex.js</`> with an edited version of
+  <@>
+    <`>copy-tex.js</`>
+    | https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.js
+    | copy-tex.js
+  </@>
+  (edited so that the display math delimiters are <`>\[</`> and <`>\]</`>
+  rather than <`>$$</`> and <`>$$</`>).
+</p>
+
+<h3>5.~Automatic rendering</h3>
+
+<p>
+  <:y>
+    Put
+    <@>
+      <`>conway-render.js</`>
+      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-render.js
+      | conway-render.js
+    </@>
+    (or the
+    <@>
+      minified version
+      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-render.min.js
+      | conway-render.min.js
+    </@>)
+    into your root directory.
+  </:y>
+  You will only need the function <`>mathsRender</`>;
+  the other code is unrelated to equation rendering.
+  The script is based on Steve Mayer's
+  <@>
+    <`>smrender.js</`>
+    | http://sixthform.info/katex/guide.html#jsfile
+    | smrender.js
+  </@>.
+  I am no longer using Steve's <`>document.body.innerHTML</`>
+  replacements because they destroy event handlers,
+  so yes, you will need to type
+  <`><span class="maths"> {...} </span></`> for inline equations and
+  <`><div class="maths"> {...} </div></`> for display equations
+  (unless you are using
+  <@>
+    my concise HTML
+    | /code/cch-to-html.html
+    | Python: a regex converter from CCH to HTML
+  </@>,
+  in which case you can use <`><$> {...} </$></`> for inline equations
+  and <`><$$> {...} </$$></`> for display equations).
+</p>
+
+<p>
+  The following macros are defined automatically
+  (the double backslashes are required in JavaScript; see <`>MACROS</`> in
+  <@>
+    <`>conway-render.js</`>
+    | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-render.js
+    | conway-render.js
+  </@>):
+</p>
+<``>
+{
+  '\\del' : '\\mathop{}\\!\\boldsymbol{\\nabla}',
+  '\\dotp': '\\boldsymbol{\\cdot}',
+  '\\ee'  : '\\mathrm{e}',
+  '\\eps' : '\\varepsilon',
+  '\\ii'  : '\\mathrm{i}',
+  '\\pd'  : '\\mathop{}\\!\\partial',
+  '\\td'  : '\\mathop{}\\!\\mathrm{d}',
+  '\\unit': '\\mathop{}\\!\\text{#1}',
+  '\\vec' : '\\mathbf{#1}',
+  '\\veca': '\\mathop{}\\!\\vec{a}'
+}
+</``>
+
+<p>
+  To overwrite these or to define other commands for use in a page,
+  use <`>\gdef</`> or <`>\global\def</`>
+  (which will persist between expressions).
+</p>
+
+<h3>6.~HTML page</h3>
+
+<p>
+  <b>Demo:</b>
+  <@> <`>katex-example.html</`> | /katex-example.html | katex-example.html </@>
+</p>
+<p>
+  <:y>
+    Put the following (almost) minimal example into your root directory.
+  </:y>
+  If you are using the minified versions of the CSS and JavaScript above,
+  insert <`>.min</`> before the extensions.
+</p>
+
+<``>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="stylesheet" href="conway-katex.css">
+  <script defer src="conway-katex.js"></script>
+  <script defer src="conway-render.js"></script>
+  <title>KaTeX example</title>
+  </head>
+  <body onload="mathsRender();">
+  <h1>KaTeX equation rendering: an (almost) minimal example</h1>
+  <p>
+    <a
+      href="https://yawnoc.github.io/code/katex-guide.html"
+      title="How to render equations using KaTeX"
+    >[back to Conway's step-by-step KaTeX guide]</a>
+  </p>
+  <p>
+    Inline: we have
+    <span class="maths">\td (u v) = u \td v + v \td u</span>.
+    Display:
+  </p>
+  <div class="maths">
+    1 + \frac{1}{2^2} + \frac{1}{3^2} + \dots = \frac{\pi^2}{6}.
+  </div>
+  <p>
+    Testing macros defined automatically by <code>mathsRender</code>:
+  </p>
+  <div class="maths">
+  \begin{aligned}
+    \veca_x \dotp \veca_y &amp;= 0 \\
+    \ee^{\ii \pi} + 1 &amp;= 0 \\
+    (x + \td x)^2 &amp;= x^2 + 2 x \td x \\
+    (\vec{x} + \td\vec{x})^2 &amp;= \vec{x}^2 + 2 \vec{x} \dotp \td\vec{x} \\
+    \eps &amp;\ll 1 \\
+    \del^2 u &amp;= \frac{\pd^2 u}{{\pd x}^2} + \frac{\pd^2 u}{{\pd y}^2} \\
+    3 \unit{斤} &amp;= 4 \unit{lb}
+  \end{aligned}
+  </div>
+  <p>
+    <span class="maths">
+      \gdef\pow#1#2{{#1}^{#2}}
+      \gdef\suits{\spades \hearts \clubs \diamonds}
+    </span>
+    Testing macros defined in this page: <span class="maths">\pow{x}{y}</span>
+    and <span class="maths">\suits</span>.
+    Finally, a deliberate typo to show the error message:
+  </p>
+  <div class="maths">
+    \frack{1}{2}
+  </div>
+  </body>
+  </html>
+</``>
+
+<*c>
+  How to render mathematical equations using KaTeX
+  | katex
+  | How to render mathematical equations using {KaTeX}
+</*c>
+
+<*f></*f>
