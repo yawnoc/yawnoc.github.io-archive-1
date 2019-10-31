@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="stylesheet" href="/conway.min.css">
+<link rel="stylesheet" href="/conway-katex.min.css">
+<script defer src="/conway-katex.min.js"></script>
+<script defer src="/conway-render.min.js"></script>
+<title>Mathematica: Master&nbsp;Shün multiplication &amp; division animations — Conway's site</title>
+</head>
+<body onload="mathsRender(); romanisationInitialise();">
+<header><nav><ul>
+<li><a href="/" title="Home page">Home</a></li>
+<li><a href="#" title="Jump back to top">Top</a></li>
+<li><a href="#multiplication" title="Multiplication">Multiplication</a></li>
+<li><a href="#division" title="Division">Division</a></li>
+</ul></nav></header>
+<h1>
+Mathematica:
+Master&nbsp;<span lang="zh-Hant">孫</span><span class="romanisation romanisation-conway">&nbsp;(Shün)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Sun)</span><span class="romanisation romanisation-pinyin">&nbsp;(Sun)</span> multiplication &amp; division animations
+</h1>
+<p class="page-properties">
+First created:&nbsp;20190526<br>
+Last modified:&nbsp;<b>20191031</b>
+</p>
+<p>
+Mathematica code for the animations in my
+<a href="/pages/master-shuen.html" title="&quot;Master Shün's Computational Classic&quot;: 《孫子算經》">translation of
+"Master&nbsp;<span lang="zh-Hant">孫</span><span class="romanisation romanisation-conway">&nbsp;(Shün)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Sun)</span><span class="romanisation romanisation-pinyin">&nbsp;(Sun)</span>'s Computational Classic"</a>;
+see Vol.&nbsp;I <a href="/pages/master-shuen-i.html#8" title="Vol. I ¶8">¶8</a>
+&amp;&nbsp;<a href="/pages/master-shuen-i.html#13" title="Vol. I ¶13">¶13</a> (multiplication)
+and <a href="/pages/master-shuen-i.html#9" title="Vol. I ¶9">¶9</a>
+&amp;&nbsp;<a href="/pages/master-shuen-i.html#14" title="Vol. I ¶14">¶14</a> (division).
+</p>
+<div class="romanisation-radio">
+Romanisation&nbsp;(F9):&nbsp;<span lang="zh-Hant">音標</span><span class="romanisation romanisation-conway">&nbsp;(yam peeu)</span><span class="romanisation romanisation-wadegiles">&nbsp;(yin piao)</span><span class="romanisation romanisation-pinyin">&nbsp;(yin biao)</span><br>
+<input type="radio" name="romanisation" id="romanisation-none" value="none">
+<label for="romanisation-none">None</label>
+<input type="radio" name="romanisation" id="romanisation-conway" value="conway">
+<label for="romanisation-conway">Conway</label>
+<input type="radio" name="romanisation" id="romanisation-wadegiles" value="wadegiles">
+<label for="romanisation-wadegiles">Wade–Giles</label>
+<input type="radio" name="romanisation" id="romanisation-pinyin" value="pinyin">
+<label for="romanisation-pinyin">Pinyin</label>
+</div>
+<h2 id="multiplication"><a class="self-link" href="#multiplication"></a>
+Multiplication
+</h2>
+<div class="centred-flex"><div class="centred-text overflowing"><table>
+<tr>
+<th><span class="maths">81 \times 81 = 6561</span></th>
+<th><span class="maths">1989 \times 64 = 127296</span></th>
+<th><span class="maths">1024 \times 1024 = 1048576</span></th>
+<th><span class="maths">246 \times 97531 = 23992626</span></th>
+</tr>
+<tr>
+<td>
+<img src="/images/shuenmultiply-81-81.gif" alt="孫子 multiplication: 81 × 81">
+</td>
+<td>
+<img src="/images/shuenmultiply-1989-64.gif" alt="孫子 multiplication: 1989 × 64">
+</td>
+<td>
+<img src="/images/shuenmultiply-1024-1024.gif" alt="孫子 multiplication: 1024 × 1024">
+</td>
+<td>
+<img src="/images/shuenmultiply-246-97531.gif" alt="孫子 multiplication: 246 × 97531">
+</td>
+</tr>
+</table></div></div>
+<pre>
+shuenmultiply[upper_Integer, lower_Integer] :=
+  Module[
+   {upperdigits, lowerdigits,
+    pmax, qmax,
+    middle,
+    bound,
+    rowfun, gridfun,
+    frames,
+    up, lo, res
+   },
+    (* List of digits *)
+    upperdigits = IntegerDigits[upper];
+    lowerdigits = IntegerDigits[lower];
+    (* Exponent (pmax for upper, qmax for lower) *)
+    pmax = Length[upperdigits] - 1;
+    qmax = Length[lowerdigits] - 1;
+    (* Middle number *)
+    middle = 0;
+    (* Upper bound for number of digits of the product *)
+    bound = pmax + qmax + 2;
+    (* Function for row of grid (with tra trailing spaces) *)
+    rowfun[arg_]                   := rowfun[arg, 0];
+    rowfun[0, tra_]                := rowfun[{}, tra];
+    rowfun[0, tra_, False]         := rowfun[{0}, tra];
+    rowfun[int_Integer, tra_, ___] := rowfun[IntegerDigits[int], tra];
+    rowfun[digits_List, tra_Integer] :=
+      PadLeft[
+        Join[digits, ConstantArray[Null, tra]],
+        bound,
+        Null
+      ];
+    (* Function for grid *)
+    gridfun[rows__List, rules___Rule] :=
+      Grid[
+        List[rows],
+        Background -&gt; {None, None, {rules}},
+        Dividers   -&gt; {False, {2 -&gt; True, -2 -&gt; True}},
+        ItemSize   -&gt; All,
+        ItemStyle  -&gt; Large
+      ];
+    (* Grid rows are:
+       upper,
+       temporary (result of product of digits),
+       middle, and
+       lower.
+     *)
+    (* From most significant to least significant:
+       the upper places are p = pmax, ..., 1, 0;
+       the lower places are q = qmax, ..., 1, 0.
+     *)
+    (* Reap frames for animation *)
+    frames =
+      Last @ Last @ Reap[
+        (* Loop through upper places *)
+        Do[
+          (* Frame (initial) *)
+          Sow @ gridfun[
+            rowfun[upperdigits],
+            rowfun[0],
+            rowfun[middle],
+            rowfun[lowerdigits, p],
+            {{1, 1},
+             {bound - pmax,
+              bound - p - 1
+             }
+            } -&gt; Gray (* finished upper digits *)
+          ];
+          (* Loop through lower places *)
+          Do[
+            (* Frame (highlight digits being multiplied) *)
+            Sow @ gridfun[
+              rowfun[upperdigits],
+              rowfun[0],
+              rowfun[middle],
+              rowfun[lowerdigits, p],
+              {{1, 1},
+               {bound - pmax,
+                bound - p - 1
+               }
+              }                    -&gt; Gray,   (* finished upper digits *)
+              {1, bound - p}       -&gt; Yellow, (* upper digit *)
+              {4, bound - (p + q)} -&gt; Yellow  (* lower digit *)
+            ];
+            (* Multiply upper and lower digit *)
+            up  = upperdigits[[pmax + 1 - p]];
+            lo  = lowerdigits[[qmax + 1 - q]];
+            res = up * lo;
+            (* Frame (also highlight result of digits being multiplied) *)
+            Sow @ gridfun[
+              rowfun[upperdigits],
+              rowfun[res, p + q, False],
+              rowfun[middle],
+              rowfun[lowerdigits, p],
+              {{1, 1},
+               {bound - pmax,
+                bound - p - 1
+               }
+              }                    -&gt; Gray,   (* finished upper digits *)
+              {1, bound - p}       -&gt; Yellow, (* upper digit *)
+              {{2, 2},
+               {bound - (p + q) - (Length @ IntegerDigits[res] - 1),
+                bound - (p + q)
+               }
+              }                    -&gt; Cyan,   (* temporary result *)
+              {4, bound - (p + q)} -&gt; Yellow  (* lower digit *)
+            ];
+            (* Add unto middle number (accounting for place) *)
+            middle += res * 10 ^ (p + q);
+            (* Frame (highlight digits which have been multiplied) *)
+            Sow @ gridfun[
+              rowfun[upperdigits],
+              rowfun[0],
+              rowfun[middle],
+              rowfun[lowerdigits, p],
+              {{1, 1},
+               {bound - pmax,
+                bound - p - 1
+               }
+              }                    -&gt; Gray,   (* finished upper digits *)
+              {1, bound - p}       -&gt; Yellow, (* upper digit *)
+              {4, bound - (p + q)} -&gt; Yellow  (* lower digit *)
+            ];
+          , {q, qmax, 0, -1}];
+        , {p, pmax, 0, -1}];
+        (* Frame (final) *)
+        Sow @ gridfun[
+          rowfun[upperdigits],
+          rowfun[0],
+          rowfun[middle],
+          rowfun[lowerdigits, 0],
+          {{1, 1},
+           {bound - pmax,
+            bound
+           }
+          } -&gt; Gray, (* finished upper digits *)
+          {{3, 3},
+           {bound - (Length @ IntegerDigits[middle] - 1),
+            bound
+           }
+          } -&gt; Green, (* final product *)
+          {{4, 4},
+           {bound - qmax,
+            bound
+           }
+          } -&gt; Gray (* finished lower digits *)
+        ];
+      ];
+    (* Export animation *)
+    Export[
+      "shuenmultiply-" &lt;&gt; ToString[upper] &lt;&gt; "-" &lt;&gt; ToString[lower] &lt;&gt; ".gif",
+      frames,
+      "DisplayDurations" -&gt; 2
+    ];
+    (* Return product *)
+    middle
+  ];
+</pre>
+<pre>
+shuenmultiply[81, 81]
+shuenmultiply[1989, 64]
+shuenmultiply[1024, 1024]
+shuenmultiply[246, 97531]
+</pre>
+<h2 id="division"><a class="self-link" href="#division"></a>
+Division
+</h2>
+<div class="centred-flex"><div class="centred-text overflowing"><table>
+<tr>
+<th><span class="maths">100 \div 6 = 16 + \dfrac{4}{6}</span></th>
+<th><span class="maths">1989 \div 64 = 31 + \dfrac{5}{64}</span></th>
+<th><span class="maths">6561 \div 9 = 729</span></th>
+<th><span class="maths">97531 \div 4 = 24382 + \dfrac{3}{4}</span></th>
+</tr>
+<tr>
+<td>
+<img src="/images/shuendivide-100-6.gif" alt="孫子 division: 100 ÷ 6">
+</td>
+<td>
+<img src="/images/shuendivide-1989-64.gif" alt="孫子 division: 1989 ÷ 64">
+</td>
+<td>
+<img src="/images/shuendivide-6561-9.gif" alt="孫子 division: 6561 ÷ 9">
+</td>
+<td>
+<img src="/images/shuendivide-97531-4.gif" alt="孫子 division: 97531 ÷ 4">
+</td>
+</tr>
+</table></div></div>
+<pre>
+shuendivide[dividend_Integer, divisor_Integer] :=
+  Module[
+   {upper, middle,
+    middledigits, lowerdigits,
+    pmax, qmax,
+    bound,
+    rowfun, gridfun,
+    frames,
+    mi, up, res
+   },
+    (* Upper and middle numbers *)
+    upper  = 0;
+    middle = dividend;
+    (* List of digits *)
+    middledigits = IntegerDigits[dividend];
+    lowerdigits  = IntegerDigits[divisor];
+    (* Exponent (pmax for middle, qmax for divisor) *)
+    pmax = Length[middledigits] - 1;
+    qmax = Length[lowerdigits]  - 1;
+    (* Upper bound for number of digits in the grid *)
+    bound = pmax + qmax + 1;
+    (* Function for row of grid (with tra trailing spaces) *)
+    rowfun[arg_]                   := rowfun[arg, 0];
+    rowfun[0, tra_]                := rowfun[{}, tra];
+    rowfun[0, tra_, False]         := rowfun[{0}, tra];
+    rowfun[int_Integer, tra_, ___] := rowfun[IntegerDigits[int], tra];
+    rowfun[digits_List, tra_Integer] :=
+      PadLeft[
+        Join[digits, ConstantArray[Null, tra]],
+        bound,
+        Null
+      ];
+    (* Function for grid *)
+    gridfun[rows__List, rules___Rule] :=
+      Grid[
+        List[rows],
+        Background -&gt; {None, None, {rules}},
+        Dividers   -&gt; {False, {2 -&gt; True, -2 -&gt; True}},
+        ItemSize   -&gt; All,
+        ItemStyle  -&gt; Large
+      ];
+    (* Grid rows are:
+       upper,
+       temporary (result to be subtracted),
+       middle, and
+       lower.
+     *)
+    (* From most significant to least significant:
+       the middle places are p = pmax, ..., 1, 0.
+     *)
+    (* Reap frames for animation *)
+    frames =
+      Last @ Last @ Reap[
+        (* Loop through middle places *)
+        Do[
+          (* Frame (initial) *)
+          Sow @ gridfun[
+            rowfun[upper / 10 ^ (p + 1), p + 1],
+            rowfun[0],
+            rowfun[middle],
+            rowfun[divisor, p],
+            {{4, 4},
+             {bound - (p + qmax),
+              bound - p
+             }
+            } -&gt; Yellow (* divisor *)
+          ];
+          (* Determine upper digit and update upper number *)
+          mi = Quotient[middle, 10 ^ p];
+          up = Quotient[mi, divisor];
+          upper += up * 10 ^ p;
+          (* Frame (highlight those being multiplied) *)
+          Sow @ gridfun[
+            rowfun[upper / 10 ^ p, p, False],
+            rowfun[0],
+            rowfun[middle],
+            rowfun[divisor, p],
+            {1, bound - p} -&gt; Yellow, (* upper digit *)
+            {{4, 4},
+             {bound - (p + qmax),
+              bound - p
+             }
+            }              -&gt; Yellow (* divisor *)
+          ];
+          (* Multiply upper digit and divisor *)
+          res = up * divisor;
+          (* Frame (also highlight result of multiplication) *)
+          Sow @ gridfun[
+            rowfun[upper / 10 ^ p, p, False],
+            rowfun[res, p, False],
+            rowfun[middle],
+            rowfun[divisor, p],
+            {1, bound - p} -&gt; Yellow, (* upper digit *)
+            {{2, 2},
+             {bound - p - (Length @ IntegerDigits[res] - 1),
+              bound - p
+             }
+            }              -&gt; Cyan, (* temporary result *)
+            {{4, 4},
+             {bound - (p + qmax),
+              bound - p
+             }
+            }              -&gt; Yellow (* divisor *)
+          ];
+          (* Subtract from middle number (accounting for place) *)
+          middle -= res * 10 ^ p;
+          (* Frame (highlight those which have been multiplied) *)
+          Sow @ gridfun[
+            rowfun[upper / 10 ^ p, p, False],
+            rowfun[0],
+            rowfun[middle],
+            rowfun[divisor, p],
+            {1, bound - p} -&gt; Yellow, (* upper digit *)
+            {{4, 4},
+             {bound - (p + qmax),
+              bound - p
+             }
+            }              -&gt; Yellow (* divisor *)
+          ];
+        , {p, pmax, 0, -1}];
+        (* Frame (final) *)
+        If[
+          middle == 0,
+          (* if remainder is zero: *)
+          Sow @ gridfun[
+            rowfun[upper],
+            rowfun[0],
+            rowfun[0],
+            rowfun[divisor],
+            {{1, 1},
+             {bound - (Length @ IntegerDigits[upper] - 1),
+              bound}
+            }                               -&gt; Green, (* final quotient *)
+            {{4, 4}, {bound - qmax, bound}} -&gt; Gray   (* finished divisor *)
+          ];
+          ,
+          (* otherwise: *)
+          Sow @ gridfun[
+            rowfun[upper],
+            rowfun[0],
+            rowfun[middle],
+            rowfun[divisor],
+            {{1, 1},
+             {bound - (Length @ IntegerDigits[upper] - 1),
+              bound}
+            }                               -&gt; Green, (* final quotient *)
+            {{3, 3},
+             {bound - (Length @ IntegerDigits[middle] - 1),
+              bound}
+            }                               -&gt; Pink, (* final remainder *)
+            {{4, 4}, {bound - qmax, bound}} -&gt; Pink  (* divisor *)
+          ]
+        ]
+      ];
+    (* Export animation *)
+    Export[
+      "shuendivide-" &lt;&gt; ToString[dividend] &lt;&gt; "-" &lt;&gt; ToString[divisor] &lt;&gt; ".gif",
+      frames,
+      "DisplayDurations" -&gt; 2
+    ];
+    (* Return result of division *)
+    If[
+      middle == 0,
+      (* if remainder is zero: *)
+      upper,
+      (* otherwise: *)
+      Inactive[Plus][upper, Inactive[Divide][middle, divisor]]
+    ]
+  ];
+</pre>
+<pre>
+shuendivide[100, 6]
+shuendivide[1989, 64]
+shuendivide[6561, 9]
+shuendivide[97531, 4]
+</pre>
+<footer>
+<hr>
+©&nbsp;2019&nbsp;Conway.<br>
+The code above and the animations produced therefrom are released into the
+<a href="https://creativecommons.org/publicdomain/zero/1.0/" title="CC0 1.0 Universal (CC0 1.0) Public Domain Dedication">public domain (CC0)</a>.
+</footer>
+</body>
+</html>
