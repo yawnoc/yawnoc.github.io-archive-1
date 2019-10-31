@@ -1,0 +1,574 @@
+<*>
+  "Master <^e>Shu"n</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+  | 20190609 | 20190822 | dr
+</*>
+
+<=h>
+  <@ih></@ih>
+  <@it></@it>
+  <@ic></@ic>
+</=h>
+
+<h1>
+  《孫子算經\.序》 or<br>
+  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic: Preface"
+</h1>
+
+<*p> |
+  Also known as {Sunzi Suanjing}: Preface.
+</*p>
+
+
+<@2> Volume navigation | volumes </@2>
+
+
+<@@>
+  <@d> Translation | translation </@d>
+</@@>
+
+<#n>
+  <@>
+    《孫子算經》<br>
+    "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
+    | /pages/master-shuen.html
+    | "Master 孫's Computational Classic"
+  </@>
+  <ul>
+    
+    <li>
+      《序》~"Preface"
+      <b>(you are here)</b>
+    </li>
+    
+    <@i>
+      《卷上》~"Volume~I"
+      | /pages/master-shuen-i.html
+      | "Master 孫's Computational Classic: Volume I"
+    </@i>
+    
+    <li>
+      <@>
+        《卷中》~"Volume~II"
+        | /pages/master-shuen-ii.html
+        | "Master 孫's Computational Classic: Volume II"
+      </@>
+      <:r>(work in progress)</:r>
+    </li>
+    
+    <li>
+      《卷下》~"Volume~III"
+      <:r>(haven't started)</:r>
+    </li>
+    
+  </ul>
+</#n>
+
+
+<@2> Translation | translation </@2>
+
+
+<@@>
+  <@u> Volumes | volumes | Volume navigation </@u>
+</@@>
+<^^></^^>
+
+<p>
+  In the preface, 孫子<^> Shu"n Chee | Sun Tzuu | Sun Zi </^>
+  tells us that mathematics governs absolutely everything,
+  and allows us to do even magical things
+  (like "seek {the} whereabouts of gods {and} earth gods").
+  Basically it reads like advertising material for
+  prospective STEM undergraduates.
+</p>
+
+<#t>
+  《孫子算經\.序》 |
+  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic: Preface"
+</#t>
+
+<@@>
+  <@u> Volumes | volumes | Volume navigation </@u>
+  <@>
+    [manuscript]
+    | /manuscripts/shuen-preface.pdf
+    | Translation manuscript for Preface
+  </@>
+  <@>
+    A2
+    | https://archive.org/details/02094034.cn/page/n2
+    | 02094034.cn at archive.org
+  </@>
+  <@>
+    B146(141)
+    | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=146
+    | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+  </@>
+  <@>
+    C
+    | https://ctext.org/sunzi-suan-jing
+    | ctext.org database page
+  </@>
+  <@>
+    D7
+    | https://ctext.org/library.pl?if=en&file=86926&page=7
+    | 《知不足齋叢書》本 at ctext.org library
+  </@>
+</@@>
+
+<#t>
+  孫子曰：夫算者， |
+  Master~孫<^> Shu"n | Sun | Sun </^> saith: Computation—
+</#t>
+<ul>
+  <li>算：
+    Computation;
+    or Mathematics
+  </li>
+</ul>
+
+<p>
+  From the next line until almost the end of the preface,
+  the text consists of pairs of lines which parallel each other,
+  character for character.
+  This is a very common rhetorical device in Literary Chinese.
+</p>
+
+<#t>
+  天地之經緯，群生之元首； |
+  {the} warp {and} woof of Heaven {and} Earth,
+  {and the} origin {and} beginning of {the} living masses;
+</#t>
+<ul>
+  <li>經緯：
+    {the} warp {and} woof;
+    also literally {the} meridians {and} parallels<br>
+    Here,
+    <@>
+      "warp {and} woof"
+      | https://en.wiktionary.org/wiki/warp_and_woof
+      | Wiktionary: warp and woof
+    </@>
+    translates surprisingly well, both in
+    the literal sense (longways and sideways threads) 
+    and in the figurative sense (fundamental structure).
+    If every phrase were like this, translation would be straightforward.
+    (Unfortunately this is not the case.)
+  </li>
+</ul>
+
+<#t>
+  五常之本末，陰陽之父母； |
+  {the} beginning {and} end of {the} Five Everlasting Virtues,
+  {and the} father {and} mother of Dark {and} Light;
+</#t>
+<ul>
+  <li>五常：
+    {the} Five Everlasting Virtues<br>
+    <@>
+      仁義禮智信
+      | https://ctext.org/three-character-classic#n90581
+      | 《三字經》
+    </@>,
+    i.e.~Humanity, Righteousness, Propriety (or Rites), Wisdom and Trust.
+  </li>
+  <li>本末：
+    {the} beginning {and} end;
+    also literally {the} base {and} tip
+  </li>
+  <li>陰陽：
+    Dark {and} Light;
+    or Shade {and} Sun; or Female {and} Male<br>
+    <@>
+      "Yin {and} Yang"
+      | https://en.wikipedia.org/wiki/Yin_and_yang
+      | Wikipedia: Yin and yang
+    </@>.
+  </li>
+</ul>
+
+<#t>
+  星辰之建號，三光之表裏； |
+  {the} establishment {and} designation of
+  {the} stars {and} heavenly bodies,
+  {and the} surface {and} internals of
+  {the} Three Luminaries;
+</#t>
+<ul>
+  <li>三光：
+    {the} Three Luminaries<br>
+    <@>
+      日月星
+      | https://ctext.org/three-character-classic#n90576
+      | 《三字經》
+    </@>,
+    i.e.~the sun, the moon and the stars.
+  </li>
+  <li>
+    <@>
+      Version~C
+      | https://ctext.org/sunzi-suan-jing
+      | ctext.org database page
+    </@>
+    erroneously has 裹 for 裏.
+  </li>
+</ul>
+
+<#t>
+  五行之準平，四時之終始； |
+  {the} evenness {and} balance of {the} Five Elements,
+  {and the} finishing {and} starting of {the} Four Seasons;
+</#t>
+<ul>
+  <li>五行：
+    {the} Five Elements<br>
+    <@>
+      金木水火土
+      | https://en.wikipedia.org/wiki/Wu_Xing
+      | Wikipedia: Wu Xing
+    </@>,
+    i.e.~metal, tree, water, fire and earth.
+    Perhaps better rendered as "{the} Five Phases".
+  </li>
+  <li>準：平也；又均也；
+    evenness;
+    or levelness
+  </li>
+</ul>
+
+<#t>
+  萬物之祖宗，六藝之綱紀。 |
+  {the} ancestor {and} progenitor of {the} myriad things,
+  {and the} principle {and} law of {the} Six Arts.
+</#t>
+<ul>
+  <li>萬物：
+    literally {the} myriad things;
+    everything
+  </li>
+  <li>六藝：
+    {the} Six Arts<br>
+    <@>
+      禮樂射御書數
+      | https://en.wikipedia.org/wiki/Six_Arts
+      | Wikipedia: Six Arts
+    </@>,
+    i.e.~Propriety (or Rites), Music, Archery,
+    (Chariot) Driving, Calligraphy and Mathematics.
+  </li>
+</ul>
+
+<#t>
+  稽群倫之聚散，考二氣之降升； |
+  {It} examineth {the} gathering {and} dispersion of {the} amassed kinds,
+  {and} inspecteth {the} falling {and} rising of {the} Two Breaths;
+</#t>
+<ul>
+  <li>稽：考也；
+    examineth
+  </li>
+  <li>群：
+    amassed;
+    literally crowded
+  </li>
+  <li>倫：
+    kinds;
+    or types
+  </li>
+  <li>二氣：
+    {the} Two Breaths<br>
+    陰氣 and 陽氣.
+    Recall
+    陰 and 陽 are
+    "Dark {and} Light", "Shade {and} Sun", or
+    "Female {and} Male".
+    <@>
+      氣
+      | https://en.wikipedia.org/wiki/Qi
+      | Wikipedia: Qi
+    </@>
+    is usually rendered as "life force",
+    transliterated as <^e>Hei</^e>
+    (<@>
+      Cantonese
+      | /pages/conway-cantonese-romanisation.html
+      | Conway's Custom Romanisation for Cantonese
+    </@>), <^e>Ch'i</^e> (Wade-Giles) or <^e>Qi\</^e> (Pinyin).
+  </li>
+</ul>
+
+<#t>
+  推寒暑之迭運，步遠近之殊同； |
+  {it} deduceth {the} alternating {and} revolving of winter {and} summer,
+  {and} measureth {the} disparity {and} sameness of farness {and} nearness;
+</#t>
+<ul>
+  <li>寒暑：
+    winter {and} summer;
+    literally cold {and} heat
+  </li>
+  <li>迭：更也；
+    alternating
+  </li>
+  <li>步：
+    measureth (in steps)
+  </li>
+</ul>
+
+<#t>
+  觀天道精微之兆基，察地理從橫之長短； |
+  {it} inspecteth {the} signs {and} foundations of
+    {the} intricacies {and} minutiae of Physics,
+  {and} examineth {the} length {and} shortness of
+    {the} meridians {and} parallels of Geography;
+</#t>
+<ul>
+  <li>天道：
+    Physics;
+    literally {the} laws of Nature;
+    or {the} way of Heaven
+  </li>
+  <li>兆基：
+    signs {and} foundations<br>
+    In other contexts, 兆基 apparently means 開創基業,
+    roughly "opening/beginning/foundation".
+    I don't think that meaning applies here,
+    since 兆基 is paired with 長短 (length {and} shortness) in the next line.
+    So 兆 and 基 must be opposites as well, and I think that
+    兆 means "signs" (or "omens") while 基 means "foundations".
+    Arguably these are opposites, in that signs are manifest, whereas
+    foundations are inherent.
+  </li>
+  <li>地理：
+    Geography;
+    literally {the} science of Earth
+  </li>
+  <li>從橫：
+    meridians {and} parallels (of latitude)<br>
+    Variant of 縱橫.
+    Here 從橫 is referring to "things of broad scope"
+    or "the grand scheme of things", in contrast to 精微
+    (intricacies {and} minutiae) in the previous line,
+    which it is parallel with.
+  </li>
+</ul>
+
+<#t>
+  采神祇之所在，極成敗之符驗；<br>
+  窮道德之理，究性命之情。 |
+  {it} seeketh {the} whereabouts of gods {and} earth gods,
+  {and} examineth corroboration of success {and} failure;<br>
+  {it} exhausteth {the} reasoning of morality,
+  {and} investigateth {the} sense of life.
+</#t>
+<ul>
+  <li>祇：地神；
+    earth gods<br>
+      祇，音岐，
+      <^cm> k'ei4 | qi/ </^cm>
+  </li>
+  <li>極：
+    examineth ({unto} extremity)<br>
+    All of 采, 極, 窮 and 究
+    mean "investigate", and in particular the last three mean
+    "investigate to the utmost extent".
+  </li>
+  <li>符驗：
+    corroboration;
+    literally corroboration {by} talisman
+  </li>
+  <li>道德：
+    morality;
+    or ethics
+  </li>
+  <li>理：
+    reasoning;
+    or logic
+  </li>
+</ul>
+
+<#t>
+  立規矩，準方圓，<br>
+  謹法度，約尺丈， |
+  {It} establisheth {the} rules,
+  standardiseth the square {and} the circle,<br>
+  abideth by {the} law,
+  agreeth upon
+    尺<^> ch'ek | ch'ih | chi </^> {and}
+    丈<^> choeng | chang | zhang </^>,
+</#t>
+<ul>
+  <li>規矩：
+    {the} rules;
+    literally the compass {and} the set square
+  </li>
+  <li>尺丈<^> ch'ek choeng | ch'ih chang | chi zhang </^><br>
+    Units of length, see
+    <@> Vol.~I~¶1 | /pages/master-shuen-i.html#1 | Vol. I ¶1 </@>.
+  </li>
+</ul>
+
+<#t>
+  立權衡，平重輕，<br>
+  剖毫釐，析黍絫。 |
+  establisheth the weighing scale,
+  balanceth heavy {and} light<br>
+  disecteth 毫<^> hou | hao | hao </^> {and} 釐<^> lei | li | li </^>,
+  {and} splitteth 黍<^> shu" | shu | shu </^> {and} 絫<^> l_u" | lei | lei </^>.
+</#t>
+<ul>
+  <li>重輕：
+    heavy {and} light;
+    also important {and} unimportant
+  </li>
+  <li>毫釐<^> hou lei | hao li | hao li </^><br>
+    Small units of length, see
+    <@> Vol.~I~¶1 | /pages/master-shuen-i.html#1 | Vol. I ¶1 </@>.
+    毫~=~10<sup>−3</sup>~寸 and
+    釐~=~10<sup>−2</sup>~寸, and
+    寸<^> ch'u"n | ts'un | cun </^> is of the order one inch.<br>
+    Imagine that they are plural in English.
+  </li>
+  <li>黍絫<^> shu" l_u" | shu lei | shu lei </^><br>
+    Small units of weight, see
+    <@> Vol.~I~¶2 | /pages/master-shuen-i.html#2 | Vol. I ¶2 </@>.
+    黍~=~10<sup>−2</sup>~銖 and
+    絫~=~10<sup>−1</sup>~銖, and
+    銖<^> chu" | chu | zhu </^> is of the order one gram.
+  </li>
+</ul>
+
+<#t>
+  歷億載而不朽，施八極而無疆。 |
+  {It} endureth {an} hundred million years with no deterioration,
+  {and is} applied unto {the} Eight Extremities with no bound.
+</#t>
+<ul>
+  <li>朽：
+    deterioration;
+    or decay
+  </li>
+  <li>八極：
+    {the} Eight Extremities<br>
+    Probably the four cardinal directions
+    plus the four intercardinal directions.
+    Sometimes called the "principal winds" in English.
+  </li>
+</ul>
+
+<#t>
+  散之不可勝究，斂之不盈掌握。 |
+  Scattering it, {one} cannot {be} able to investigate {it},
+  {yet} gathering it, {it is} not beyond grasp.
+</#t>
+<ul>
+  <li>勝：
+    {be} able to<br>
+      勝，平聲，
+      <^cmg> sing1 | she=ng | she\ng </^cmg>
+  </li>
+  <li>斂：聚也；
+    gathering
+  </li>
+  <li>盈：過曰盈；
+    beyond;
+    literally in excess of
+  </li>
+</ul>
+
+<#t>
+  嚮之者富有餘，背之者貧且窶； |
+  Those who echo {in agreement with} it {shall be} rich in excess,
+  {but} those who turn {their} backs to it {shall be} poor and destitute;
+</#t>
+<ul>
+  <li>窶：貧也；
+    destitute<br>
+      窶，音巨，
+      <^cm> k_u"6 | ju\ </^cm>
+  </li>
+</ul>
+
+<#t>
+  心開者幼沖而即悟，意閉者皓首而難精。 |
+  those who {are} open-minded, {even as} young children,
+    {shall} immediately comprehend {it},
+  {but} those who {are} close-minded,
+    {even with a} bright white head {of hair},
+    {shall find it} hard to {be} proficient {in it}.
+</#t>
+<ul>
+  <li>沖：童也；
+    children
+  </li>
+  <li>意閉：
+    close-minded<br>
+    This is the literal rendering;
+    perhaps "narrow-minded" sounds more natural.
+    I have translated both 心 and 意 as
+    <span class="no-wrapping">"-minded"</span>.
+  </li>
+  <li>皓：光也；白也；
+    bright white<br>
+      皓，音號，
+      <^cm> hou6 | ha\o </^cm>
+  </li>
+</ul>
+
+<p>
+  At this point the parallel pairs of lines stops.
+</p>
+
+<#t>
+  夫欲學之者必務量能揆己，志在所專。 |
+  Those who wish to learn it must seek to
+  gauge {one's} abilities {and} measure oneself,
+  {and put one's} will unto that which {one} focuseth upon.
+</#t>
+<ul>
+  <li>量：
+    gauge; or measure<br>
+      量，去聲，
+      <^cm> loeng6 | lia\ng </^cm><br>
+    量 is a funny word.
+    When it is the verb "measure/gauge" applied to physical measurements
+      (e.g.~volume of grain),
+      it is read in 平聲 (<^e>loeng4</^e>/<^e>lia/ng</^e>),
+    but when applied to figurative or not-so-physical quantities
+      (e.g.~量力, "gauging strength/ability", or 量入, "gauging revenue"),
+      it is read in 去聲 (<^e>loeng6</^e>/<^e>lia\ng</^e>).
+    And when it is the noun "amount",
+      also 去聲 (<^e>loeng6</^e>/<^e>lia\ng</^e>).
+  </li>
+  <li>揆：度也；
+    measure<br>
+      揆，音葵，
+      <^cm> k'wai4 | kui/ </^cm>
+  </li>
+</ul>
+
+<#t>
+  如是則焉有不成者哉！ |
+  {Among those} like this, how be there those who succeed not!
+</#t>
+
+<div class="end">
+  <span>END of Preface</span><br>
+  Next:
+  <@>
+    《卷上》~"Volume~I"
+    | /pages/master-shuen-i.html
+    | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+  </@>
+</div>
+
+<*c>
+  "Master~孫's Computational Classic: Preface"
+  | shuen-preface
+  | ``{Master~Sh{\"u}n's} {Computational} {Classic}: {Preface}''
+  | If typesetting Chinese is inconvenient,
+    you may use "<^e>Shu"n</^e>" instead of 孫.
+    If typesetting the umlaut is also inconvenient,
+    you may use "Shuen" instead of "<^e>Shu"n</^e>".
+</*c>
+
+<*f></*f>
