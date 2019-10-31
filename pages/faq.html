@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="stylesheet" href="/conway.min.css">
+<link rel="stylesheet" href="/conway-katex.min.css">
+<script defer src="/conway-katex.min.js"></script>
+<script defer src="/conway-render.min.js"></script>
+<title>FAQ — Conway's site</title>
+</head>
+<body onload="dateRender(); mathsRender(); romanisationInitialise();">
+<header><nav><ul>
+<li><a href="/" title="Home page">Home</a></li>
+<li><a href="#" title="Jump back to top">Top</a></li>
+</ul></nav></header>
+<h1>FAQ</h1>
+<p class="page-properties">
+First created:&nbsp;20190801<br>
+Last modified:&nbsp;<b>20191031</b>
+</p>
+<p>
+<a href="#general">General</a>
+</p>
+<ul>
+<li><a href="#spare-time">What do you do in your spare time?</a></li>
+<li><a href="#spare-time-no-dodge">Without dodging, what do you do in your spare time?</a></li>
+<li><a href="#site">How is this site built?</a></li>
+<li><a href="#custom-domain">Why don't you get yourself a custom domain
+instead of the default yawnoc.github.io?</a></li>
+<li><a href="#death">Oh... that's a bit macabre... (or, I wish you didn't mention death)</a></li>
+<li><a href="#broken-no-javascript">Why are citation date, maths equations &amp; romanisation toggling broken?</a></li>
+<li><a href="#cookies-romanisation">Does your site use cookies?</a></li>
+<li><a href="#favicon">How did you set up the site favicon?</a></li>
+</ul>
+<p>
+<a href="#applied">Applied mathematics, or physics</a>
+</p>
+<ul>
+<li><a href="#maths-render">How are the maths equations rendered?</a></li>
+</ul>
+<p>
+<a href="#literary">English translations of Literary Chinese</a>
+</p>
+<ul>
+<li><a href="#italics">Why are there italicised words in your translations?</a></li>
+<li><a href="#archaic-verbs">Wherefore usest thou archaic verb conjugation?</a></li>
+<li><a href="#see-yaa" title="But I thought that 是 means &quot;is&quot;, and 也 &quot;also&quot;.">But I thought that <span lang="zh-Hant">是</span> means "is", and <span lang="zh-Hant">也</span> "also".</a></li>
+<li><a href="#faan-ch'eet" title="A certain 反切 doesn't work for Mandarin.">A certain <span lang="zh-Hant">反切</span> doesn't work for Mandarin.</a></li>
+<li><a href="#t'ung-tuk" title="What is 統讀, or Government-regulated Mandarin?">What is <span lang="zh-Hant">統讀</span>, or Government-regulated Mandarin?</a></li>
+<li><a href="#see-sing" title="What do you mean by 四聲, four tones?">What do you mean by <span lang="zh-Hant">四聲</span>, four tones?</a></li>
+</ul>
+<h2 id="general"><a class="self-link" href="#general"></a>
+General
+</h2>
+<h3 id="spare-time"><a class="self-link" href="#spare-time"></a>
+What do you do in your spare time?
+</h3>
+<p>
+That depends on what you mean by spare time; a day is quite short really.
+Generally speaking life is very short too.
+Eighty years is not a very long time to (expect to) be alive,
+and even eight hundred years would pass me by very quickly.
+</p>
+<h3 id="spare-time-no-dodge"><a class="self-link" href="#spare-time-no-dodge"></a>
+Without dodging, what do you do in your spare time?
+</h3>
+<p>
+I ponder unsophisticated
+<a href="#applied" title="Applied mathematics, or physics">applied maths problems</a>
+and attempt to read
+<a href="#literary" title="English translations of Literary Chinese">Literary Chinese</a>.
+I guess now I am burning even more of my time by building this website
+and making this content freely available online.
+</p>
+<h3 id="site"><a class="self-link" href="#site"></a>
+How is this site built?
+</h3>
+<p>
+Using <a href="https://pages.github.com/">GitHub Pages</a>,
+which is
+<span class="green"><b>simple</b></span>,
+<span class="green"><b>fast</b></span> and most importantly
+<span class="green"><b>ad-free</b></span>
+(but unfortunately conway.github.io was already taken, sob).
+I definitely recommend it for building a static website.
+And no, I do not use Jekyll or other plugins;
+just straight CSS and JavaScript.
+</p>
+<p>
+The pages are written in my own "concise HTML" (<code>.cch</code>),
+which gets converted to standard HTML (<code>.html</code>) via my custom-written
+<a href="/code/cch-to-html.html" title="Python: a regex converter from CCH to HTML">Python converter</a>.
+For example, this page was generated from the CCH file
+<a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/pages/faq.cch" title="faq.cch"><code>faq.cch</code></a>.
+</p>
+<h3 id="custom-domain"><a class="self-link" href="#custom-domain"></a>
+Why don't you get yourself a custom domain
+instead of the default yawnoc.github.io?
+</h3>
+<p>
+Firstly, I am poor, and secondly, even if I did buy a domain,
+I can't keep it with me when I die. On the other hand,
+the default subdomain is as permanent as GitHub Pages itself.
+</p>
+<h3 id="death"><a class="self-link" href="#death"></a>
+Oh... that's a bit macabre... (or, I wish you didn't mention death)
+</h3>
+<p>
+I do not fear death for my own sake.
+I might die some time later today, or I may have many decades yet.
+At the time of writing the latter is more probable. Fear changes nothing.
+</p>
+<h3 id="broken-no-javascript"><a class="self-link" href="#broken-no-javascript"></a>
+Why are citation date, maths equations &amp; romanisation toggling broken?
+</h3>
+<p>
+JavaScript is required. Tests for your browser:
+</p>
+<ul>
+<li>
+Today's date:&nbsp;<span class="date">d&nbsp;month&nbsp;yyyy</span>
+<p class="note">
+(Should display today's date, rather than "d&nbsp;month&nbsp;yyyy".)
+</p>
+</li>
+<li>
+An equation: <span class="maths">\td \log x = \td x / x</span>
+<p class="note">
+(Should render nicely, rather than stay as the unrendered source code
+"\td \log x = \td x / x".)
+</p>
+</li>
+<li>
+A romanisation: <span lang="zh-Hant">詩曰</span><span class="romanisation romanisation-conway">&nbsp;(see yœk)</span><span class="romanisation romanisation-wadegiles">&nbsp;(shih yüeh)</span><span class="romanisation romanisation-pinyin">&nbsp;(shi yue)</span>
+<p class="note">
+(Should change on F9 key or using the radio below.
+Unfortunately Firefox uses F9 to toggle reader view.)
+</p>
+<div class="romanisation-radio">
+Romanisation&nbsp;(F9):&nbsp;<span lang="zh-Hant">音標</span><span class="romanisation romanisation-conway">&nbsp;(yam peeu)</span><span class="romanisation romanisation-wadegiles">&nbsp;(yin piao)</span><span class="romanisation romanisation-pinyin">&nbsp;(yin biao)</span><br>
+<input type="radio" name="romanisation" id="romanisation-none" value="none">
+<label for="romanisation-none">None</label>
+<input type="radio" name="romanisation" id="romanisation-conway" value="conway">
+<label for="romanisation-conway">Conway</label>
+<input type="radio" name="romanisation" id="romanisation-wadegiles" value="wadegiles">
+<label for="romanisation-wadegiles">Wade–Giles</label>
+<input type="radio" name="romanisation" id="romanisation-pinyin" value="pinyin">
+<label for="romanisation-pinyin">Pinyin</label>
+</div>
+</li>
+</ul>
+<h3 id="cookies-romanisation"><a class="self-link" href="#cookies-romanisation"></a>
+Does your site use cookies?
+</h3>
+<p>
+A single cookie called <code>romanisation</code> is used
+to remember your romanisation preference.
+Unless you tamper with it, its value will only be one of
+<code>none</code>, <code>conway</code>, <code>wadegiles</code> or <code>pinyin</code>.
+I do not track you.
+</p>
+<p class="note">
+Cookie banners/pop-ups are stupid. Sue me.<br>
+<span class="small-caps"><b>
+<span class="red">I</span> <span class="red">A</span>m <span class="red">N</span>ot <span class="red">A</span> <span class="red">L</span>awyer
+</b></span>
+</p>
+<h3 id="favicon"><a class="self-link" href="#favicon"></a>
+How did you set up the site favicon?
+</h3>
+<p>
+Using <a href="https://realfavicongenerator.net/">RealFaviconGenerator</a>
+by <a href="https://stackoverflow.com/a/19590415">Philippe Bernard</a>.
+</p>
+<h2 id="applied"><a class="self-link" href="#applied"></a>
+Applied mathematics, or physics
+</h2>
+<p>
+The <a href="/#applied" title="Applied mathematics, or physics">applied maths</a>
+I am interested in is really physics, specifically
+problems in the Newtonian regime which can be modelled in a continuum manner,
+with none of the complications of quantum mechanics (which I do not understand)
+and relativity.
+</p>
+<h3 id="maths-render"><a class="self-link" href="#maths-render"></a>
+How are the maths equations rendered?
+</h3>
+<p>
+Using KaTeX. See
+<a href="/code/katex-guide.html">How to render equations using KaTeX</a>.
+</p>
+<h2 id="literary"><a class="self-link" href="#literary"></a>
+English translations of Literary Chinese
+</h2>
+<p>
+In any regional variant of Chinese, there is a continuum between
+<span lang="zh-Hant">白話</span> (vernacular Chinese; literally "plain talk") and <span lang="zh-Hant">文言</span>
+(Literary Chinese, or Classical Chinese; literally "literary speech").
+<span lang="zh-Hant">文言</span> is extremely concise, and prone to dropping things
+which can be inferred by context.
+It is very difficult to read because
+Chinese characters have many meanings which are now archaic.
+For example, the character <span lang="zh-Hant">之</span> retains only two meanings in modern usage
+(though the second is rare and very formal):
+</p>
+<ul>
+<li>
+reverse of "of",
+so that "A&nbsp;<span lang="zh-Hant">之</span>&nbsp;B"
+means "B&nbsp;of&nbsp;A"
+</li>
+<li>
+any non-subject pronoun (him, it, etc.)
+</li>
+</ul>
+<p>
+However in literary Chinese, <span lang="zh-Hant">之</span> can also be
+</p>
+<ul>
+<li><span lang="zh-Hant">此也：</span>
+this (as in <span lang="zh-Hant">之子：</span>this daughter)
+</li>
+<li><span lang="zh-Hant">往也：</span>
+go (as in <span lang="zh-Hant">東之：</span>went east)
+</li>
+<li><span lang="zh-Hant">至也：</span>
+until (as in <span lang="zh-Hant">之死：</span>until death)
+</li>
+</ul>
+<p>
+among other meanings.
+There is also the interchangeable use of certain characters, e.g.&nbsp;<span lang="zh-Hant">女</span>&nbsp;for&nbsp;<span lang="zh-Hant">汝</span> (thou),
+<span lang="zh-Hant">邪</span>&nbsp;for&nbsp;<span lang="zh-Hant">耶</span> (a speech-assist word indicating a question),
+<span lang="zh-Hant">反</span>&nbsp;for&nbsp;<span lang="zh-Hant">返</span> (return),
+<span lang="zh-Hant">矜</span>&nbsp;for&nbsp;<span lang="zh-Hant">鰥</span> (widower), etc.
+I also note that <span lang="zh-Hant">文言</span> was originally written with no punctuation
+and very little paragraphing, and that in all the resources we read today,
+an editor has already gone ahead and inserted the punctuation for us.
+</p>
+<p>
+Recently I got the idea of 
+<a href="/#literary" title="English translations of Literary Chinese">translating</a>
+some of the texts which I have been reading into English.
+</p>
+<h3 id="italics"><a class="self-link" href="#italics"></a>
+Why are there italicised words in your translations?
+</h3>
+<p>
+I strive for
+<a href="https://en.wikipedia.org/wiki/Dynamic_and_formal_equivalence" title="Wikipedia: Dynamic and formal equivalence">formal equivalence</a>
+in my translations, and I adopt the convention of the
+King&nbsp;James Bible translators, who <i>emphasised</i> words
+which did not appear in the original Hebrew, Aramaic or Greek.
+In my case, English words which do not appear in the original Chinese
+(meaning I cannot point to a character which corresponds to
+or contains that word) are <i>emphasised</i>, except:
+</p>
+<ol>
+<li>
+"The" is not emphasised when referring to a general class
+as opposed to a particular instance, e.g.&nbsp;"the poor".
+</li>
+<li>
+"Of" is not emphasised unless part an entire phrase
+not in the original Chinese,
+and is thought of as being provided by the word order in Chinese.
+</li>
+<li>
+Prepositions are not emphasised when they follow a verb,
+and are thought of as part of the verb in Chinese,
+e.g.&nbsp;"went to", "laughed at".
+</li>
+</ol>
+<h3 id="archaic-verbs"><a class="self-link" href="#archaic-verbs"></a>
+Wherefore usest thou archaic verb conjugation?
+</h3>
+<p>
+This is stylistic, and in my view
+accurately reflects the archaicness of Literary Chinese.
+</p>
+<p>
+Also it sounds cooler and allows for greater freedom in word order.
+For example, compare
+"This is what the <span class="small-caps">Lord</span> says" (New International Version)
+to
+"Thus saith the <span class="small-caps">Lord</span>" (King&nbsp;James Version).
+</p>
+<h3 id="see-yaa"><a class="self-link" href="#see-yaa"></a>
+But I thought that <span lang="zh-Hant">是</span> means "is", and <span lang="zh-Hant">也</span>, "also".
+</h3>
+<p>
+Forget everything you learnt in Mandarin class; that is modern vernacular.
+Welcome to pre-twentieth-century Chinese Literature, in which
+<span lang="zh-Hant">是</span> primarily means "this", and <span lang="zh-Hant">也</span> is primarily an ending
+speech-assist word (with no inherent meaning) which asserts
+the preceding thing/notion/statement.
+</p>
+<p>
+In Hong Kong you might see <span lang="zh-Hant">是日例湯</span> written on a chalkboard
+for soup at an eatery.
+Here <span class="magenta"><span lang="zh-Hant">是</span></span><span lang="zh-Hant">日</span> means "<span class="magenta">this</span> day", i.e.&nbsp;"today".
+</p>
+<h3 id="faan-ch'eet"><a class="self-link" href="#faan-ch'eet"></a>
+A certain <span lang="zh-Hant">反切</span> doesn't work for Mandarin.
+</h3>
+<p>
+Too bad. Usually I use
+<a href="https://en.wikipedia.org/wiki/Fanqie" title="Wikipedia: Fanqie"><span lang="zh-Hant">反切</span></a>
+from the old rime dictionaries.
+When this is inconsistent with modern Cantonese I modify it,
+but I can't always make it work for Mandarin as well
+due to phonological shifts (e.g.&nbsp;Mandarin has lost the ending consonants
+<span class="no-wrapping">-m</span>, <span class="no-wrapping">-p</span>,
+<span class="no-wrapping">-t</span> and <span class="no-wrapping">-k</span>).
+Also there is <span lang="zh-Hant">統讀</span>, or Government-regulated Mandarin.
+</p>
+<h3 id="t'ung-tuk"><a class="self-link" href="#t'ung-tuk"></a>
+What is <span lang="zh-Hant">統讀</span>, or Government-regulated Mandarin?
+</h3>
+<p>
+These are government-regulated Mandarin pronunciations
+in Mainlandia since 1985,
+where pronunciations of certain characters have been merged or changed.
+For example, <span lang="zh-Hant">勝</span> has two pronunciations for two meanings:
+</p>
+<ul>
+<li>
+<span lang="zh-Hant">平聲</span>&nbsp;(level tone);<br>
+homophone of&nbsp;<span lang="zh-Hant">升</span>,
+<a href="/pages/conway-cantonese-romanisation.html" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;sing1,
+Mandarin&nbsp;shēng<br>
+meaning "able (to bear)"<br>
+as in <span lang="zh-Hant">勝任：</span>able to bear <i>the</i> responsibility/role
+</li>
+<li>
+<span lang="zh-Hant">去聲</span>&nbsp;(departing tone);<br>
+homophone of&nbsp;<span lang="zh-Hant">聖</span>,
+<a href="/pages/conway-cantonese-romanisation.html" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;sing3,
+Mandarin&nbsp;shèng<br>
+meaning "victory"<br>
+as in <span lang="zh-Hant">勝負：</span>wins <i>and</i> losses
+</li>
+</ul>
+<p>
+But in Mandarin on the mainland, they are both "supposed to be" read
+in departing tone (shèng).
+For an analogy, the English word "tear" has two pronunciations,
+rhyming with "dare" and with "dear";
+now imagine having to say "tare drop" instead of "tear drop".
+It is a real pity that the nuances of the Chinese language
+are lost in government-regulated Mandarin; tone patterns (<span lang="zh-Hant">平仄</span>) are ruined.
+On the other hand if I pronounced <span lang="zh-Hant">勝任</span> in Cantonese with <span lang="zh-Hant">勝</span> in departing tone,
+I would certainly be mocked as illiterate
+(though to be honest, I am only barely literate, if literate at all).
+</p>
+<h3 id="see-sing"><a class="self-link" href="#see-sing"></a>
+What do you mean by <span lang="zh-Hant">四聲</span>, four tones?
+</h3>
+<p>
+I <b>do not</b> mean the four tones of modern Mandarin,
+but instead the <b>four classical tone classes</b> of Chinese:
+</p>
+<ol>
+<li><span lang="zh-Hant">平</span>&nbsp;(level)</li>
+<li><span lang="zh-Hant">上</span>&nbsp;(rising)</li>
+<li><span lang="zh-Hant">去</span>&nbsp;(departing)</li>
+<li><span lang="zh-Hant">入</span>&nbsp;(entering)</li>
+</ol>
+<p>
+From the perspective of Western linguistics, entering tones
+are not separate tones because they are syllables which end abruptly
+in <span class="no-wrapping">-p</span>, <span class="no-wrapping">-t</span>
+or <span class="no-wrapping">-k</span>,
+but classically the distinction is important.
+In poetry you want a good balance of words in
+<span lang="zh-Hant">平聲</span> (level tone) and <span lang="zh-Hant">仄聲</span> (sloping tone, i.e.&nbsp;<span lang="zh-Hant">上去入</span>).
+Here it suffices for you to know that <b>Mandarin has no entering tones</b>;
+its tones are:
+</p>
+<ol>
+<li><span lang="zh-Hant">陰平</span>&nbsp;(dark level)</li>
+<li><span lang="zh-Hant">陽平</span>&nbsp;(light level)</li>
+<li><span lang="zh-Hant">上</span>&nbsp;(rising)</li>
+<li><span lang="zh-Hant">去</span>&nbsp;(departing)</li>
+</ol>
+<p>
+Although Mandarin has four tones numerically,
+they only fall under the first <b>three</b> classical tone classes.
+Those of you familiar with Mandarin will notice that
+tone&nbsp;2, light level, is actually rising in pitch,
+and tone&nbsp;3, rising, is more of a dip or depression;
+indeed phonology has changed by a lot over the ages.
+Cantonese has done a better job of preserving the abrupt consonant endings
+of the entering tones, and it still has level and rising tones which are
+level and rising in pitch respectively.
+Altogether there are nine tones numerically, covering all four classes:
+</p>
+<ol>
+<li><span lang="zh-Hant">陰平</span>&nbsp;(dark level)</li>
+<li><span lang="zh-Hant">陰上</span>&nbsp;(dark rising)</li>
+<li><span lang="zh-Hant">陰去</span>&nbsp;(dark departing)</li>
+<li><span lang="zh-Hant">陽平</span>&nbsp;(light level)</li>
+<li><span lang="zh-Hant">陽上</span>&nbsp;(light rising)</li>
+<li><span lang="zh-Hant">陽去</span>&nbsp;(light departing)</li>
+<li><span lang="zh-Hant">高陰入</span>&nbsp;(upper dark entering)</li>
+<li><span lang="zh-Hant">低陰入</span>&nbsp;(lower dark entering)</li>
+<li><span lang="zh-Hant">陽入</span>&nbsp;(light entering)</li>
+</ol>
+<footer>
+<hr>
+©&nbsp;2019&nbsp;Conway.
+</footer>
+</body>
+</html>

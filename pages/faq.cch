@@ -1,0 +1,467 @@
+<*> FAQ | 20190801 | 20191031 | dmr </*>
+
+<=h>
+  <@ih></@ih>
+  <@it></@it>
+</=h>
+
+<h1>FAQ</h1>
+
+<*p></*p>
+
+<p>
+  <@> General | #general </@>
+</p>
+
+<ul>
+  <@i> What do you do in your spare time? | #spare-time </@i>
+  <@i>
+    Without dodging, what do you do in your spare time?
+    | #spare-time-no-dodge
+  </@i>
+  <@i> How is this site built? | #site </@i>
+  <@i>
+    Why don't you get yourself a custom domain
+    instead of the default yawnoc.github.io?
+    | #custom-domain
+  </@i>
+  <@i>
+    Oh... that's a bit macabre... (or, I wish you didn't mention death)
+    | #death
+  </@i>
+  <@i>
+    Why are citation date, maths equations \& romanisation toggling broken?
+    | #broken-no-javascript
+  </@i>
+  <@i> Does your site use cookies? | #cookies-romanisation </@i>
+  <@i> How did you set up the site favicon? | #favicon </@i>
+</ul>
+
+<p>
+  <@> Applied mathematics, or physics | #applied </@>
+</p>
+<ul>
+  <@i> How are the maths equations rendered? | #maths-render </@i>
+</ul>
+
+<p>
+  <@> English translations of Literary Chinese | #literary </@>
+</p>
+<ul>
+  <@i> Why are there italicised words in your translations? | #italics </@i>
+  <@i> Wherefore usest thou archaic verb conjugation? | #archaic-verbs </@i>
+  <@i>
+    But I thought that 是 means "is", and 也 "also".
+    | #see-yaa
+    | But I thought that 是 means "is", and 也 "also".
+  </@i>
+  <@i>
+    A certain 反切 doesn't work for Mandarin.
+    | #faan-ch'eet
+    | A certain 反切 doesn't work for Mandarin.
+  </@i>
+  <@i>
+    What is 統讀, or Government-regulated Mandarin?
+    | #t'ung-tuk
+    | What is 統讀, or Government-regulated Mandarin?
+  </@i>
+  <@i>
+    What do you mean by 四聲, four tones?
+    | #see-sing
+    | What do you mean by 四聲, four tones?
+  </@i>
+</ul>
+
+
+<@2> General | general </@2>
+
+
+<@3> What do you do in your spare time? | spare-time </@3>
+
+<p>
+  That depends on what you mean by spare time; a day is quite short really.
+  Generally speaking life is very short too.
+  Eighty years is not a very long time to (expect to) be alive,
+  and even eight hundred years would pass me by very quickly.
+</p>
+
+<@3>
+  Without dodging, what do you do in your spare time?
+  | spare-time-no-dodge
+</@3>
+
+<p>
+  I ponder unsophisticated
+  <@>
+    applied maths problems
+    | #applied
+    | Applied mathematics, or physics
+  </@>
+  and attempt to read
+  <@>
+    Literary Chinese
+    | #literary
+    | English translations of Literary Chinese
+  </@>.
+  I guess now I am burning even more of my time by building this website
+  and making this content freely available online.
+</p>
+
+<@3> How is this site built? | site </@3>
+
+<p>
+  Using <@> GitHub Pages | https://pages.github.com/ </@>,
+  which is
+    <:g><b>simple</b></:g>,
+    <:g><b>fast</b></:g> and most importantly
+    <:g><b>ad-free</b></:g>
+  (but unfortunately conway.github.io was already taken, sob).
+  I definitely recommend it for building a static website.
+  And no, I do not use Jekyll or other plugins;
+  just straight CSS and JavaScript.
+</p>
+<p>
+  The pages are written in my own "concise HTML" (<`>.cch</`>),
+  which gets converted to standard HTML (<`>.html</`>) via my custom-written
+  <@>
+    Python converter
+    | /code/cch-to-html.html
+    | Python: a regex converter from CCH to HTML
+  </@>.
+  For example, this page was generated from the CCH file
+  <@>
+    <`>faq.cch</`>
+    | https://github.com/yawnoc/yawnoc.github.io/blob/master/pages/faq.cch
+    | faq.cch
+  </@>.
+</p>
+
+<@3>
+  Why don't you get yourself a custom domain
+  instead of the default yawnoc.github.io?
+  | custom-domain
+</@3>
+
+<p>
+  Firstly, I am poor, and secondly, even if I did buy a domain,
+  I can't keep it with me when I die. On the other hand,
+  the default subdomain is as permanent as GitHub Pages itself.
+</p>
+
+<@3>
+  Oh... that's a bit macabre... (or, I wish you didn't mention death)
+  | death
+</@3>
+
+<p>
+  I do not fear death for my own sake.
+  I might die some time later today, or I may have many decades yet.
+  At the time of writing the latter is more probable. Fear changes nothing.
+</p>
+
+<@3>
+  Why are citation date, maths equations \& romanisation toggling broken?
+  | broken-no-javascript
+</@3>
+
+<p>
+  JavaScript is required. Tests for your browser:
+</p>
+<ul>
+  <li>
+    Today's date:~<span class="date">d~month~yyyy</span>
+    <.>
+      (Should display today's date, rather than "d~month~yyyy".)
+    </.>
+  </li>
+  <li>
+    An equation: <$>\td \log x = \td x / x</$>
+    <.>
+      (Should render nicely, rather than stay as the unrendered source code
+      "\td \log x = \td x / x".)
+    </.>
+  </li>
+  <li>
+    A romanisation: 詩曰<^> see yoek | shih yu"eh | shi yue </^>
+    <.>
+      (Should change on F9 key or using the radio below.
+      Unfortunately Firefox uses F9 to toggle reader view.)
+    </.>
+    <^^></^^>
+  </li>
+</ul>
+
+<@3> Does your site use cookies? | cookies-romanisation </@3>
+
+<p>
+  A single cookie called <`>romanisation</`> is used
+  to remember your romanisation preference.
+  Unless you tamper with it, its value will only be one of
+  <`>none</`>, <`>conway</`>, <`>wadegiles</`> or <`>pinyin</`>.
+  I do not track you.
+</p>
+<.>
+  Cookie banners/pop-ups are stupid. Sue me.<br>
+  <span class="small-caps"><b>
+    <:r>I</:r> <:r>A</:r>m <:r>N</:r>ot <:r>A</:r> <:r>L</:r>awyer
+  </b></span>
+</.>
+
+<@3> How did you set up the site favicon? | favicon </@3>
+
+<p>
+  Using <@> RealFaviconGenerator | https://realfavicongenerator.net/ </@>
+  by <@> Philippe Bernard | https://stackoverflow.com/a/19590415 </@>.
+</p>
+
+
+<@2> Applied mathematics, or physics | applied </@2>
+
+
+<p>
+  The <@> applied maths | /#applied | Applied mathematics, or physics </@>
+  I am interested in is really physics, specifically
+  problems in the Newtonian regime which can be modelled in a continuum manner,
+  with none of the complications of quantum mechanics (which I do not understand)
+  and relativity.
+</p>
+
+<@3> How are the maths equations rendered? | maths-render </@3>
+
+<p>
+  Using KaTeX. See
+  <@> How to render equations using KaTeX | /code/katex-guide.html</@>.
+</p>
+
+
+<@2> English translations of Literary Chinese | literary </@2>
+
+
+<p>
+  In any regional variant of Chinese, there is a continuum between
+  白話 (vernacular Chinese; literally "plain talk") and 文言
+  (Literary Chinese, or Classical Chinese; literally "literary speech").
+  文言 is extremely concise, and prone to dropping things
+  which can be inferred by context.
+  It is very difficult to read because
+  Chinese characters have many meanings which are now archaic.
+  For example, the character 之 retains only two meanings in modern usage
+  (though the second is rare and very formal):
+</p>
+<ul>
+  <li>
+    reverse of "of",
+    so that "A~之~B"
+    means "B~of~A"
+  </li>
+  <li>
+    any non-subject pronoun (him, it, etc.)
+  </li>
+</ul>
+<p>
+  However in literary Chinese, 之 can also be
+</p>
+<ul>
+  <li>此也：
+    this (as in 之子：this daughter)
+  </li>
+  <li>往也：
+    go (as in 東之：went east)
+  </li>
+  <li>至也：
+    until (as in 之死：until death)
+  </li>
+</ul>
+<p>
+  among other meanings.
+  There is also the interchangeable use of certain characters, e.g.~\
+    女~for~汝 (thou),
+    邪~for~耶 (a speech-assist word indicating a question),
+    反~for~返 (return),
+    矜~for~鰥 (widower), etc.
+  I also note that 文言 was originally written with no punctuation
+  and very little paragraphing, and that in all the resources we read today,
+  an editor has already gone ahead and inserted the punctuation for us.
+</p>
+
+<p>
+  Recently I got the idea of 
+  <@> translating | /#literary | English translations of Literary Chinese </@>
+  some of the texts which I have been reading into English.
+</p>
+
+<@3> Why are there italicised words in your translations? | italics </@3>
+
+<p>
+  I strive for
+  <@>
+    formal equivalence
+    | https://en.wikipedia.org/wiki/Dynamic_and_formal_equivalence
+    | Wikipedia: Dynamic and formal equivalence
+  </@>
+  in my translations, and I adopt the convention of the
+  King~James Bible translators, who {emphasised} words
+  which did not appear in the original Hebrew, Aramaic or Greek.
+  In my case, English words which do not appear in the original Chinese
+  (meaning I cannot point to a character which corresponds to
+  or contains that word) are {emphasised}, except:
+</p>
+<ol>
+  <li>
+    "The" is not emphasised when referring to a general class
+    as opposed to a particular instance, e.g.~"the poor".
+  </li>
+  <li>
+    "Of" is not emphasised unless part an entire phrase
+    not in the original Chinese,
+    and is thought of as being provided by the word order in Chinese.
+  </li>
+  <li>
+    Prepositions are not emphasised when they follow a verb,
+    and are thought of as part of the verb in Chinese,
+    e.g.~"went to", "laughed at".
+  </li>
+</ol>
+
+<@3> Wherefore usest thou archaic verb conjugation? | archaic-verbs </@3>
+
+<p>
+  This is stylistic, and in my view
+  accurately reflects the archaicness of Literary Chinese.
+</p>
+<p>
+  Also it sounds cooler and allows for greater freedom in word order.
+  For example, compare
+    "This is what the \* says" (New International Version)
+  to
+    "Thus saith the \*" (King~James Version).
+</p>
+
+<@3>
+  But I thought that 是 means "is", and 也, "also". | see-yaa </@3>
+
+<p>
+  Forget everything you learnt in Mandarin class; that is modern vernacular.
+  Welcome to pre-twentieth-century Chinese Literature, in which
+  是 primarily means "this", and 也 is primarily an ending
+  speech-assist word (with no inherent meaning) which asserts
+  the preceding thing/notion/statement.
+</p>
+<p>
+  In Hong Kong you might see 是日例湯 written on a chalkboard
+  for soup at an eatery.
+  Here <:m>是</:m>日 means "<:m>this</:m> day", i.e.~"today".
+</p>
+
+<@3> A certain 反切 doesn't work for Mandarin. | faan-ch'eet </@3>
+
+<p>
+  Too bad. Usually I use
+  <@> 
+    反切
+    | https://en.wikipedia.org/wiki/Fanqie
+    | Wikipedia: Fanqie
+  </@>
+  from the old rime dictionaries.
+  When this is inconsistent with modern Cantonese I modify it,
+  but I can't always make it work for Mandarin as well
+  due to phonological shifts (e.g.~Mandarin has lost the ending consonants
+  <span class="no-wrapping">-m</span>, <span class="no-wrapping">-p</span>,
+  <span class="no-wrapping">-t</span> and <span class="no-wrapping">-k</span>).
+  Also there is 統讀, or Government-regulated Mandarin.
+</p>
+
+<@3> What is 統讀, or Government-regulated Mandarin? | t'ung-tuk </@3>
+
+<p>
+  These are government-regulated Mandarin pronunciations
+  in Mainlandia since 1985,
+  where pronunciations of certain characters have been merged or changed.
+  For example, 勝 has two pronunciations for two meanings:
+</p>
+<ul>
+  <li>
+    平聲~(level tone);<br>
+    homophone of~升,
+    <^cm> sing1 | she=ng </^cm><br>
+    meaning "able (to bear)"<br>
+    as in 勝任：able to bear {the} responsibility/role
+  </li>
+  <li>
+    去聲~(departing tone);<br>
+    homophone of~聖,
+    <^cm> sing3 | she\ng </^cm><br>
+    meaning "victory"<br>
+    as in 勝負：wins {and} losses
+  </li>
+</ul>
+
+<p>
+  But in Mandarin on the mainland, they are both "supposed to be" read
+  in departing tone (<^e>she\ng</^e>).
+  For an analogy, the English word "tear" has two pronunciations,
+  rhyming with "dare" and with "dear";
+  now imagine having to say "tare drop" instead of "tear drop".
+  It is a real pity that the nuances of the Chinese language
+  are lost in government-regulated Mandarin; tone patterns (平仄) are ruined.
+  On the other hand if I pronounced 勝任 in Cantonese with 勝 in departing tone,
+  I would certainly be mocked as illiterate
+  (though to be honest, I am only barely literate, if literate at all).
+</p>
+
+<@3> What do you mean by 四聲, four tones? | see-sing </@3>
+
+<p>
+  I <b>do not</b> mean the four tones of modern Mandarin,
+  but instead the <b>four classical tone classes</b> of Chinese:
+</p>
+<ol>
+  <li>平~(level)</li>
+  <li>上~(rising)</li>
+  <li>去~(departing)</li>
+  <li>入~(entering)</li>
+</ol>
+
+<p>
+  From the perspective of Western linguistics, entering tones
+  are not separate tones because they are syllables which end abruptly
+  in <span class="no-wrapping">-p</span>, <span class="no-wrapping">-t</span>
+  or <span class="no-wrapping">-k</span>,
+  but classically the distinction is important.
+  In poetry you want a good balance of words in
+  平聲 (level tone) and 仄聲 (sloping tone, i.e.~上去入).
+  Here it suffices for you to know that <b>Mandarin has no entering tones</b>;
+  its tones are:
+</p>
+<ol>
+  <li>陰平~(dark level)</li>
+  <li>陽平~(light level)</li>
+  <li>上~(rising)</li>
+  <li>去~(departing)</li>
+</ol>
+
+<p>
+  Although Mandarin has four tones numerically,
+  they only fall under the first <b>three</b> classical tone classes.
+  Those of you familiar with Mandarin will notice that
+  tone~2, light level, is actually rising in pitch,
+  and tone~3, rising, is more of a dip or depression;
+  indeed phonology has changed by a lot over the ages.
+  Cantonese has done a better job of preserving the abrupt consonant endings
+  of the entering tones, and it still has level and rising tones which are
+  level and rising in pitch respectively.
+  Altogether there are nine tones numerically, covering all four classes:
+</p>
+<ol>
+  <li>陰平~(dark level)</li>
+  <li>陰上~(dark rising)</li>
+  <li>陰去~(dark departing)</li>
+  <li>陽平~(light level)</li>
+  <li>陽上~(light rising)</li>
+  <li>陽去~(light departing)</li>
+  <li>高陰入~(upper dark entering)</li>
+  <li>低陰入~(lower dark entering)</li>
+  <li>陽入~(light entering)</li>
+</ol>
+
+<*f></*f>
