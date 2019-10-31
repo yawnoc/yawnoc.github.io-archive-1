@@ -1,0 +1,68 @@
+<*> A cynic's 7.30 (and other programs) | 20190830 | 20191015 </*>
+
+<=h>
+  <@ih></@ih>
+  <@it></@it>
+</=h>
+
+<h1>A <:t>cynic's</:t> 7.30 (and other programs)</h1>
+
+<*p></*p>
+
+<p>
+  Originally the plan was to make comic strips
+  with proper speech and thought bubbles,
+  but I don't think I can pull that off with just HTML and CSS.
+  So if you see
+  <:t>highlighted text in <@> Comic Neue | http://comicneue.com/ | </@></:t>,
+  it's supposed to be in a thought bubble.
+</p>
+
+<#c>
+  You may not care about politics, but politics cares about you.
+  And by that I mean: politics is out to screw you.
+</#c>
+
+<@2> 2019 | 2019 </@2>
+
+<ul class="sparse-list">
+  
+  <li>
+    <b>14~October~2019</b><br>
+    <@>
+      Energy Minister Angus Taylor discusses Snowy Hydro 2.0
+      | 7-30-20191014-taylor-snowy.html
+      |
+    </@>
+  </li>
+  
+  <li>
+    <b>10~September~2019 (The Bolt Report, not 7.30)</b><br>
+    <@>
+      Gladys Liu discusses membership of various Chinese Associations
+      | bolt-20190910-liu-association.html
+      |
+    </@>
+  </li>
+  
+  <li>
+    <b>3~September~2019</b><br>
+    <@>
+      Anthony Albanese discusses the NSW Labor donation scandal
+      | 7-30-20190903-albanese-donation.html
+      |
+    </@>
+  </li>
+  
+  <li>
+    <b>28~August~2019</b><br>
+    <@>
+      Education Minister Dan Tehan discusses NAPLAN and the latest results
+      | 7-30-20190828-tehan-naplan.html
+      |
+    </@>
+  </li>
+  
+</ul>
+
+<*f></*f>
