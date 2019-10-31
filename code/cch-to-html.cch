@@ -1,0 +1,1805 @@
+<*>
+  Python: a regex converter from CCH to HTML | 20190720 | 20191031 | dmr
+</*>
+
+<=h>
+  <@ih></@ih>
+  <@it></@it>
+  <@ic></@ic>
+</=h>
+
+<h1>Python: a regex converter from CCH to HTML</h1>
+
+<*p> |
+  <b>Code:</b>
+  <@>
+    <`>cch-to-html.py</`>
+    | https://github.com/yawnoc/yawnoc.github.io/blob/master/cch-to-html.py
+    | GitHub: cch-to-html.py
+  </@>
+</*p>
+
+<=>
+  
+  <@i> <b>Supreme:</b> | #supreme | Supreme tags </@i>
+  
+  <@i> <code>\<``\></code> | #display-code | Display code tag </@i>
+  <@i> <code>\<`\></code> | #inline-code | Inline code tag </@i>
+  <@i> <`><!-- --></`> | #html-comment | HTML comment tag </@i>
+  <@i> <`><$$></`> | #display-maths | Display maths tag </@i>
+  <@i> <`><$></`> | #inline-maths | Inline maths tag </@i>
+  <@i>
+    <`><$d></`> | #inline-maths-definition | Inline maths definition tag
+  </@i>
+  
+  <@i> <b>0-arg:</b> | #zero-argument | Zero-argument tags </@i>
+  
+  <@i>
+    <`><@ih></`>
+    | #item-anchor-abbreviation
+    | Item anchor abbreviation tag
+  </@i>
+  <@i>
+    <`><^^></`>
+    | #assisting-romanisation-radio
+    | Assisting romanisation radio tag
+  </@i>
+  <@i>
+    <`><-t></`>
+    | #svg-style-abbreviation
+    | SVG style abbreviation tag
+  </@i>
+  
+  <@i> <b>Multi-arg:</b> | #multiple-argument | Multiple-argument tags </@i>
+  
+  <@i> <`><+h></`> | #dialogue-image | Dialogue image tag </@i>
+  <@i> <`><+></`> | #image | Image tag </@i>
+  <@i> <`><^></`> | #assisting-romanisation |  Assisting romanisation tag </@i>
+  <@i>
+    <`><^cm></`>
+    | #cantonese-mandarin-romanisation
+    | Cantonese \& Mandarin romanisation tag
+  </@i>
+  <@i>
+    <`><@u></`>
+    | #directed-triangle-anchor
+    |  Directed triangle anchor tag
+  </@i>
+  <@i> <`><@i></`> | #item-anchor | Item anchor tag </@i>
+  <@i>
+    <`><@2></`>
+    | #heading-self-link-anchor
+    | Heading self-link anchor tag
+  </@i>
+  <@i> <`><@></`> | #anchor | Anchor tag </@i>
+  <@i> <`><#t></`> | #boxed-translation | Boxed translation tag </@i>
+  <@i> <`><;sh></`> | #shuen-heading | <^e>Shu"n</^e> heading tag </@i>
+  <@i>
+    <`><;s@@></`>
+    | #shuen-link-division
+    | <^e>Shu"n</^e> link division tag
+  </@i>
+  <@i> <`><*></`> | #preamble | Preamble tag </@i>
+  <@i> <`><*p></`> | #page-properties | Page properties tag </@i>
+  <@i> <`><*c></`> | #cite-this-page | Cite this page tag </@i>
+  <@i> <`><*f></`> | #footer | Footer tag </@i>
+  
+  <@i> <b>1-arg:</b> | #single-argument | Single-argument tags </@i>
+  
+  <@i> <`><:r></`> | #formatted-span | Formatted span tag </@i>
+  <@i> <`><#></`> | #boxed-division | Boxed division tag </@i>
+  <@i> <`><~~></`> | #dialogue-division | Dialogue division tag </@i>
+  <@i> <`><~h></`> | #dialogue-paragraph | Dialogue paragraph tag </@i>
+  <@i> <`><@@></`> | #link-division | Link division tag </@i>
+  <@i> <`><=h></`> | #header-navigation-bar | Header navigation bar tag </@i>
+  <@i> <`><=></`> | #navigation-bar | Navigation bar tag </@i>
+  <@i> <`><.></`> | #note-paragraph | Note paragraph tag </@i>
+  <@i> <`><!></`> | #overflowing-division | Overflowing division tag </@i>
+  <@i> <`><--></`> | #svg-style-container | SVG style container tag </@i>
+  <@i> <`><^e></`> | #text-romanisation | Text romanisation tag </@i>
+  
+  <@i> <b>Escapes</b> | #escapes | Escapes </@i>
+  
+  <@i> <b><`>{}</`></b> | #conway-italics | Conway italics </@i>
+  
+  <@i> <b>Whitespace</b> | #whitespace | Whitespace </@i>
+  
+  <@i>
+    <b><`>lang</`>~spans</b>
+    | #automatic-chinese-span
+    | Automatic Chinese language spans
+  </@i>
+  
+</=>
+
+<p>
+  For the sole purpose of building this site, I wrote a Python program
+  <@>
+    <`>cch-to-html.py</`>
+    | https://github.com/yawnoc/yawnoc.github.io/blob/master/cch-to-html.py
+    | GitHub: cch-to-html.py
+  </@>
+  which converts Conway's concise HTML (CCH) to standard (HTML),
+  using regular expression replacements.
+</p>
+<p>
+  CCH consists mostly of HTML-like tags,
+  but with names starting with a punctuation character.
+  By design, CCH tags are more readable and require fewer keystrokes
+  than normal HTML tags (and Notepad++ is able to auto-complete both),
+  mostly by using pipe-delimited arguments rather than HTML attributes.
+  For instance compare the CCH code
+</p>
+<``>
+  <+> image.png | Alt text | Title text | 300 | class-name </+>
+</``>
+<p>
+  to the equivalent HTML code
+</p>
+<``>
+  <img class="class-name" src="image.png" alt="Alt text" title="Title text" width="300">
+</``>
+
+<p>
+  Also CCH has many convenient backslash-escaped abbreviations;
+  e.g.~<`>\<</`> gets converted to the HTML~<`>&lt;</`>
+  and renders as~\<.
+  CCH can be used in conjunction with normal HTML tags
+  (except the <`><head></`> tag and a few others
+  which are generated automatically).
+</p>
+
+<p>
+  This page
+  <@>
+    <`>cch-to-html.html</`>
+    | https://github.com/yawnoc/yawnoc.github.io/blob/master/code/cch-to-html.html
+    | GitHub: cch-to-html.html
+  </@>
+  was generated from
+  <@>
+    <`>cch-to-html.cch</`>
+    | https://github.com/yawnoc/yawnoc.github.io/blob/master/code/cch-to-html.cch
+    | GitHub: cch-to-html.cch
+  </@>
+  by running <`>cch-to-html.py code/cch-to-html</`>,
+  and it serves as both the documentation and an example.
+</p>
+
+<p>
+  Finally, I am indebted unto <b>J.H.</b>, without whom this converter would not exist,
+  due to lack of motivation to start writing it (and learn Python).
+</p>
+
+<p>
+  CCH in canonical order, which is roughly the order in which
+  the regex replacements are performed, is as thus:
+</p>
+
+
+<@2> Supreme tags | supreme </@2>
+
+
+<p>
+  Each of these tags is immune to any other tags or processing
+  lower than it in this page.
+  For example, the normal
+  <@>
+    HTML comment tag <`><!-- --></`>
+    | #html-comment
+    | HTML comment tag
+  </@>
+  yields to the
+  <@>
+    display code tag <code>\<``\> \{content\} \</``\></code>
+    | #display-code
+    | Display code tag
+  </@>
+  and the
+  <@>
+    inline code tag <code>\<`\> \{content\} \</`\></code>
+    | #inline-code
+    | Inline code tag
+  </@>,
+  but prevails over all else.
+</p>
+
+<@3> Display code tag | display-code </@3>
+
+<#>
+  <code>\<``\> \{content\} \</``\></code>
+</#>
+
+<p>
+  Converted to a <`><pre></`> tag,
+  with automatic escaping of <`>&</`>, <`><</`> and <`>></`>,
+  and automatic de-indentation, for <`>{content}</`>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <pre>
+      \<``\>
+        if x == 1 &amp;&amp; y &lt; 0
+      \</``\>
+    </pre>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      <pre>
+      if x == 1 &amp;&amp; y &lt; 0
+      </pre>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <``>
+        if x == 1 && y < 0
+      </``>
+  </li>
+  
+</ul>
+
+<@3> Inline code tag | inline-code </@3>
+
+<#>
+  <code>\<`\> \{content\} \</`\></code>
+</#>
+
+<p>
+  Converted to a <`><code></`> tag,
+  with automatic escaping of <`>&</`>, <`><</`> and <`>></`>
+  for <`>{content}</`>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <`> if x == 1 && y < 0 </`>
+    </``>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      <code> if x == 1 &amp;&amp; y &lt; 0 </code>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b><br>
+      <`> if x == 1 && y < 0 </`>
+  </li>
+  
+</ul>
+
+<@3> HTML comment tag | html-comment </@3>
+
+<#>
+  <`> {whitespace} <!-- {content} --> </`>
+</#>
+
+<p>
+  Removed. (You can comment as much as you like in the CCH source file
+  without increasing the size of the output HTML file.) <!-- Like so. -->
+</p>
+
+<@3> Display maths tag | display-maths </@3>
+
+<#>
+  <`><$$> {content} </$$></`>
+</#>
+
+<p>
+  Converted to a <`><div class="maths"></`> tag for a
+  <@>
+    KaTeX
+    | /code/katex-guide.html
+    | How to render mathematical equations using KaTeX
+  </@>
+  display equation, with automatic escaping of <`>&</`>, <`><</`> and <`>></`>,
+  and automatic de-indentation, for <`>{content}</`>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <$$>
+        \begin{aligned}
+          1 + 1 &= 2 \\
+          1 + 1 &< 3
+        \end{aligned}
+      </$$>
+    </``>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      <div class="maths">
+      \begin{aligned}
+        1 + 1 &amp;= 2 \\
+        1 + 1 &amp;&lt; 3
+      \end{aligned}
+      </div>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <$$>
+        \begin{aligned}
+          1 + 1 &= 2 \\
+          1 + 1 &< 3
+        \end{aligned}
+      </$$>
+  </li>
+  
+</ul>
+
+<@3> Inline maths tag | inline-maths </@3>
+
+<#>
+  <`><$> {content} </$></`>
+</#>
+
+<p>
+  Converted to a <`><span class="maths"></`> tag for a
+  <@>
+    KaTeX
+    | /code/katex-guide.html
+    | How to render mathematical equations using KaTeX
+  </@>
+  inline equation, with automatic escaping of <`>&</`>, <`><</`> and <`>></`>
+  for <`>{content}</`>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <$> 1 + 1 < 3 </$>
+    </``>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      <span class="maths"> 1 + 1 &lt; 3 </span>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b><br>
+      <$> 1 + 1 < 3 </$>
+  </li>
+  
+</ul>
+
+<@3> Inline maths definition tag | inline-maths-definition </@3>
+
+<#>
+  <`><$d> {content} </$d></`>
+</#>
+
+<p>
+  Converted to a <`><span class="maths embedded-definitions"></`> tag,
+  with automatic escaping of <`>&</`>, <`><</`> and <`>></`>
+  for <`>{content}</`>.
+  This does not display, and should be used to hold
+  <@>
+    KaTeX
+    | /code/katex-guide.html
+    | How to render mathematical equations using KaTeX
+  </@>
+  <`>\gdef</`> definitions.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <$d> \gdef\f#1#2{\cos(#1 \pi x) \cos(#2 \pi y)} </$d>
+      <$$> \f{m}{n} + \f{n}{m} </$$>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <$d> \gdef\f#1#2{\cos(#1 \pi x) \cos(#2 \pi y)} </$d>
+      <$$> \f{m}{n} + \f{n}{m} </$$>
+  </li>
+  
+</ul>
+
+
+<@2> Zero-argument tags | zero-argument </@2>
+
+
+
+<@3> Item anchor abbreviation tag | item-anchor-abbreviation </@3>
+
+<#>
+  <`><@i{type}></@i{type}></`>
+</#>
+
+<p>
+  Pre-defined abbreviations for
+  <@> item anchors | #item-anchor | Item anchor tag </@>.
+</p>
+
+<!c><table>
+  <tr>
+    <th><`>{type}</`></th>
+    <th><`>{content}</`></th>
+    <th><`>{href}</`></th>
+    <th><`>{title}</`></th>
+  </tr>
+  <tr>
+    <td><`>h</`></td>
+    <td>Home</td>
+    <td>/</td>
+    <td>Home page</td>
+  </tr>
+  <tr>
+    <td><`>t</`></td>
+    <td>Top</td>
+    <td>#</td>
+    <td>Jump back to top</td>
+  </tr>
+  <tr>
+    <td><`>i</`></td>
+    <td>Intro</td>
+    <td>#introduction</td>
+    <td>Introduction</td>
+  </tr>
+  <tr>
+    <td><`>n</`></td>
+    <td>Translation</td>
+    <td>#translation</td>
+    <td>Translation</td>
+  </tr>
+  <tr>
+    <td><`>r</`></td>
+    <td>Result</td>
+    <td>#result</td>
+    <td>Skip to the result</td>
+  </tr>
+  <tr>
+    <td><`>c</`></td>
+    <td>Cite</td>
+    <td>#cite</td>
+    <td>Cite this page</td>
+  </tr>
+</table></!c>
+
+<p>
+  For example, the navigation bar at the top of this page is generated using
+</p>
+<``>
+  <=h>
+    <@ih></@ih>
+    <@it></@it>
+    <@ic></@ic>
+  </=h>
+</``>
+
+<@3> Assisting romanisation radio tag | assisting-romanisation-radio </@3>
+
+<#>
+  <`><^^></^^></`>
+</#>
+
+<p>
+  Only the first occurrence is replaced.
+</p>
+<p>
+  Converted to the radio controller for
+  <@>
+    assisting romanisations
+    | #assisting-romanisation
+    | Assisting romanisation tag
+  </@>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>Rendered</b>
+    <^^></^^>
+  </li>
+  
+</ul>
+
+<@3> SVG style abbreviation tag | svg-style-abbreviation </@3>
+
+<#>
+  <`><-{type}></-{type}></`>
+</#>
+
+<p>
+  Pre-defined abbreviations for SVG font styles,
+  for text (<`>{type}</`>~<`>t</`>) and maths (<`>{type}</`>~<`>m</`>).
+  Must be used inside an
+  <@> SVG style container tag | #svg-style-container </@>.
+</p>
+
+
+<@2> Multiple-argument tags | multiple-argument </@2>
+
+
+<p>
+  Arguments are to be delimited by the pipe character <`>|</`>.
+  For a literal pipe, use the <@> backslash escape | #escapes | Escapes </@>
+  <`>\|</`>.
+</p>
+<p>
+  Tags may be nested provided the inner tag occurs
+  strictly higher in this list
+  (except the <@> preamble | #preamble | Preamble tag </@>,
+  which must be supplied at the very beginning of the CCH source file).
+</p>
+
+
+<@3> Dialogue image tag | dialogue-image </@3>
+
+<#>
+  <`><+{pos}> {src} | {alt} </+{pos}></`>
+</#>
+
+<p>
+  Converted to an <`><img></`> tag
+  for the host (<`>{pos}</`>~<`>h</`>) or the guest (<`>{pos}</`>~<`>g</`>),
+  and to be used inside a
+  <@> dialogue division tag | #dialogue-division | Dialogue division tag </@>.
+</p>
+
+<@3> Image tag | image </@3>
+
+<#>
+  <`><+> {src} | {alt} [| title [| width [| class]]] </+></`>
+</#>
+
+<p>
+  Converted to an <`><img></`> tag.
+  Passing the empty string (or only whitespace) to
+  any of <`>[title]</`>, <`>[width]</`> or <`>[class]</`>
+  is equivalent to omitting them.
+</p>
+
+<p>
+  <`>&</`>, <`><</`>, <`>></`> and <`>"</`> are automatically escaped as
+  <`>&amp;</`>, <`>&lt;</`>, <`>&gt;</`> and <`>&quot;</`> in all arguments.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <+>
+        /favicon-32x32.png
+        | Site favicon: two crescents
+        | &, <, >, and " are automatically escaped.
+          Alternatively you may use backslash escapes (\&, \<, \>)
+          for the first three of these.
+      </+>
+    </``>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      <img src="/favicon-32x32.png" alt="Site favicon: two crescents" title="&amp;, &lt;, &gt;, and &quot; are automatically escaped.
+      Alternatively you may use backslash escapes (&amp;, &lt;, &gt;)
+      for the first three of these.">
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b><br>
+      <+>
+        /favicon-32x32.png
+        | Site favicon: two crescents
+        | &, <, >, and " are automatically escaped.
+          Alternatively you may use backslash escapes (\&, \<, \>)
+          for the first three of these.
+      </+>
+  </li>
+  
+</ul>
+
+<@3> Assisting romanisation tag | assisting-romanisation </@3>
+
+<#>
+  <`><^> {conway} | {wadegiles} | {pinyin} </^></`>
+</#>
+
+<p>
+  Converted to <`><span></`> tags controlled by the
+  <@>
+    assisting romanisation radio
+    | #assisting-romanisation-radio
+    | Assisting romanisation radio tag
+  </@>,
+  where all arguments are unescaped after the manner of the
+  <@> text romanisation tag | #text-romanisation | Text romanisation tag </@>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      絲<^> see1 | ssuu1 | si= </^>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b><br>
+      絲<^> see1 | ssuu1 | si= </^>
+  </li>
+  
+</ul>
+
+<@3> Cantonese \& Mandarin romanisation tag | cantonese-mandarin-romanisation </@3>
+
+<#>
+  <`><^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]></`>
+</#>
+
+<p>
+  If <`>[gov]</`> is supplied (<`>g</`>) then <`>[government]</`> is required.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      惡，平聲， <^cm> woo1 | wu= </^cm><br>
+      勝，平聲， <^cmg> sing1 | she=ng | she\ng </^cmg>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b><br>
+      惡，平聲， <^cm> woo1 | wu= </^cm><br>
+      勝，平聲， <^cmg> sing1 | she=ng | she\ng </^cmg>
+  </li>
+  
+</ul>
+
+<@3> Directed triangle anchor tag | directed-triangle-anchor </@3>
+
+<#>
+  <`><@{dir}> {content} | {id} [| title] </@{dir}></`>
+</#>
+
+<p>
+  Converted to the equivalent <@> anchor tag | #anchor | Anchor tag </@>
+  with an upward or downward triangle if <`>{dir}</`> is <`>u</`> or <`>d</`>.
+  Usually used in <@> link divisions | #link-division | Link division tag </@>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <@d> Link division tag | link-division </@d>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b><br>
+      <@d> Link division tag | link-division </@d>
+  </li>
+  
+</ul>
+
+<@3> Item anchor tag | item-anchor </@3>
+
+<#>
+  <`><@i> {content} | {href} [| title] </@i></`>
+</#>
+
+<p>
+  Converted to the equivalent <@> anchor tag | #anchor | Anchor tag </@>
+  wrapped inside a list item <`><li></`> tag, usually to be used inside
+  <@>
+    navigation bar tags
+    | #header-navigation-bar
+    |  Header navigation bar tag
+  </@>.
+</p>
+
+<@3> Heading self-link anchor tag | heading-self-link-anchor </@3>
+
+<#>
+  <`><@{level}> {content} | {id} </@{level}></`>
+</#>
+
+<p>
+  Converted to a heading of <`>{level}</`> <`>2</`>, <`>3</`> or <`>4</`>,
+  with a self-link to its left.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <@4> A level~4 heading | level-4 </@4>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <@4> A level~4 heading | level-4 </@4>
+  </li>
+  
+</ul>
+
+<@3> Anchor tag | anchor </@3>
+
+<#>
+  <`><@> {content} | {href} [| title] </@></`>
+</#>
+
+<p>
+  Converted to an <`><a></`> tag.
+  If the empty string (or only whitespace) is passed to <`>[title]</`>,
+  the title defaults to <`>{content}</`> with all the necessary escaping.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <@>
+        This link, with "quotes", {italics} and \{literal curly brackets\},
+        has no title.
+        | https://en.wikipedia.org/wiki/Main_Page
+      </@><br>
+      <@>
+        This link, with "quotes", {italics} and \{literal curly brackets\},
+        has the same title as its content (with proper escaping).
+        | https://en.wikipedia.org/wiki/Main_Page
+        |
+      </@><br>
+      <@>
+        This link, with "quotes", {italics} and \{literal curly brackets\},
+        has a custom title.
+        | https://en.wikipedia.org/wiki/Main_Page
+        | Wikipedia, the free encyclopedia
+      </@>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b><br>
+      <@>
+        This link, with "quotes", {italics} and \{literal curly brackets\},
+        has no title.
+        | https://en.wikipedia.org/wiki/Main_Page
+      </@><br>
+      <@>
+        This link, with "quotes", {italics} and \{literal curly brackets\},
+        has the same title as its content (with proper escaping).
+        | https://en.wikipedia.org/wiki/Main_Page
+        |
+      </@><br>
+      <@>
+        This link, with "quotes", {italics} and \{literal curly brackets\},
+        has a custom title.
+        | https://en.wikipedia.org/wiki/Main_Page
+        | Wikipedia, the free encyclopedia
+      </@>
+  </li>
+  
+</ul>
+
+<@3> Boxed translation tag | boxed-translation </@3>
+
+<#>
+  <`><#t[size]> {chinese} | {english} </#t[size]></`>
+</#>
+
+<p>
+  Converted to a <`><div class="boxed translation"></`> tag,
+  with the additional class <`>not-large</`>
+  if <`>[size]</`> is supplied as <`>n</`>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <#t>
+        是謂序。 | This be {the} preface.
+      </#t>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <#t>
+        是謂序。 | This be {the} preface.
+      </#t>
+  </li>
+  
+</ul>
+
+<@3> <^e>Shu"n</^e> heading tag | shuen-heading </@3>
+
+<#>
+  <`><;sh> {volume} | {paragraph} | {content} </;sh></`>
+</#>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <;sh> 1 | 5 | <$>\pi \approx 3</$>, <$>\sqrt{2} \approx 7/5</$> </;sh>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <;sh> 1 | 5 | <$>\pi \approx 3</$>, <$>\sqrt{2} \approx 7/5</$> </;sh>
+  </li>
+  
+</ul>
+
+<@3> <^e>Shu"n</^e> link division tag | shuen-link-division </@3>
+
+<#>
+  <`><;s@@> {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@></`>
+</#>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <;s@@> 1 | 5 | 6 | 147 | 52061 | 4 | 13 </;s@@>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <;s@@> 1 | 5 | 6 | 147 | 52061 | 4 | 13 </;s@@>
+  </li>
+  
+</ul>
+
+<@3> Preamble tag | preamble </@3>
+
+<#>
+  <`><*> {title} | {first created} | {last modified} [| rendering] </*></`>
+</#>
+
+<p>
+  Must be supplied at the very beginning of the CCH source file.
+  Only the first occurrence is replaced.
+</p>
+<p>
+  Automatically generates the <`><!DOCTYPE html></`> declaration
+  and the <`><head></`> and <`><body></`> tags.
+</p>
+
+<ul>
+  
+  <li>
+    <`>{title}</`> is the text which appears in the <`><title></`> element,
+  </li>
+  
+  <li>
+    <`>{first created}</`> and <`>{last modified}</`>
+    are stored for use later in the
+    <@> page properties | #page-properties | Page properties tag </@>
+    and <@> footer (copyright) | #footer | Footer tag </@> tags, and
+  </li>
+  
+  <li>
+    <`>[rendering]</`> loads the relevant CSS and Javascript required
+    for displaying today's date in the
+    <@> Cite this page | #cite-this-page | Cite this page tag </@>,
+    for KaTeX <@> maths equations | #display-maths | Display maths tag </@>
+    and for
+    <@>
+      assisting romanisations
+      | #assisting-romanisation
+      | Assisting romanisation tag
+    </@>,
+    if the supplied string contains
+    <`>d</`>, <`>m</`> and <`>r</`> respectively.
+  </li>
+  
+</ul>
+
+<p>
+  For example, this page's preamble is
+</p>
+<``>
+  <*>
+    Python: a regex converter from CCH to HTML | 20190720 | 20191030 | dmr
+  </*>
+</``>
+
+<@3> Page properties tag | page-properties </@3>
+
+<#>
+  <`><*p> [see also] [| misc] </*p></`>
+</#>
+
+<p>
+  Only the first occurrence is replaced.
+</p>
+<p>
+  Automatically generates the page properties paragraph,
+  using the <`>{first created}</`> and <`>{last modified}</`> dates
+  supplied to the <@> preamble | #preamble | Preamble tag </@>.
+</p>
+
+<@3> Cite this page tag | cite-this-page </@3>
+
+<#>
+  <`><*c> {text heading} | {tex key} | {tex heading} [| inconvenience message] </*c></`>
+</#>
+
+<p>
+  Only the first occurrence is replaced.
+</p>
+<p>
+  Automatically generates the Cite this page section,
+  with automatic escaping of <`>~</`>, <`>{</`> and <`>}</`> for
+  <`>{tex heading}</`>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <*c>
+        Python: a regex converter from CCH to HTML
+        | cch
+        | {Python}: a regex converter from {CCH} to {HTML}
+      </*c>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <*c>
+        Python: a regex converter from CCH to HTML
+        | cch
+        | {Python}: a regex converter from {CCH} to {HTML}
+      </*c>
+  </li>
+  
+</ul>
+
+<@3> Footer tag | footer </@3>
+
+<#>
+  <`><*f> [copyright exception] [| ending remark] </*f></`>
+</#>
+
+<p>
+  Only the first occurrence is replaced.
+</p>
+<p>
+  Converted to a <`><footer></`> tag,
+  with the copyright year range automatically determined from
+  <`>{first created}</`> and <`>{last modified}</`>
+  supplied to the <@> preamble | #preamble | Preamble tag </@>.
+</p>
+
+
+<@2> Single-argument tags | single-argument </@2>
+
+
+<@3> Formatted span tag | formatted-span </@3>
+
+<#>
+  <`><:{type}>{content}</:{type}></`>
+</#>
+
+<p>
+  Converted to <`><span></`> tags with various types of formatting.
+</p>
+
+<!c><table>
+  <tr>
+    <th><`>{type}</`></th>
+    <th>CCH</th>
+    <th>Rendered</th>
+  </tr>
+  <tr>
+    <td><`>r</`></td>
+    <td><`><:r>red</:r></`></td>
+    <td><:r>red</:r></td>
+  </tr>
+  <tr>
+    <td><`>g</`></td>
+    <td><`><:g>green</:g></`></td>
+    <td><:g>green</:g></td>
+  </tr>
+  <tr>
+    <td><`>b</`></td>
+    <td><`><:b>blue</:b></`></td>
+    <td><:b>blue</:b></td>
+  </tr>
+  <tr>
+    <td><`>m</`></td>
+    <td><`><:m>magenta</:m></`></td>
+    <td><:m>magenta</:m></td>
+  </tr>
+  <tr>
+    <td><`>y</`></td>
+    <td><`><:y>light-yellow</:y></`></td>
+    <td><:y>light-yellow</:y></td>
+  </tr>
+  <tr>
+    <td><`>h</`></td>
+    <td><`><:h>highlighted part</:h></`></td>
+    <td><:h>highlighted part</:h></td>
+  </tr>
+  <tr>
+    <td><`>n</`></td>
+    <td><`>ten<:n>10</:n></`></td>
+    <td>ten<:n>10</:n></td>
+  </tr>
+  <tr>
+    <td><`>t</`></td>
+    <td><`><:t>thought</:t></`></td>
+    <td><:t>thought</:t></td>
+  </tr>
+</table></!c>
+
+<@3> Boxed division tag | boxed-division </@3>
+
+<#>
+  <`><#[type]>{content}</#[type]></`>
+</#>
+
+<p>
+  Converted to boxed <`><div></`> tag, with centred or not-large text
+  if <`>[type]</`> is supplied as <`>c</`> or <`>n</`>.
+</p>
+
+<p>
+  For example, the boxed division above is generated using
+</p>
+<``>
+  <#>
+    <`><#[type]>{content}</#[type]></`>
+  </#>
+</``>
+
+<@3> Dialogue division tag | dialogue-division </@3>
+
+<#>
+  <`><~~>{content}</~~></`>
+</#>
+
+<p>
+  Converted to a <`><div></`> tag, for holding a dialogue
+  between a host and a guest, which comprises of
+  <@> dialogue images | #dialogue-image | Dialogue image tag </@> and
+  <@> dialogue paragraphs | #dialogue-paragraph | Dialogue paragraph tag </@>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <~~>
+        
+        <+h> /images/dialogue-host.png | Host </+h>
+        <~h>
+          I am the host; my words and thoughts are in blue.
+        </~h>
+        <~ht>
+          (Thoughts are in <@> Comic Neue | http://comicneue.com/ </@>,
+          against a light-yellow background.)
+        </~ht>
+        
+        <+g> /images/dialogue-guest.png | Guest </+g>
+        <~g>
+          I am the guest; my words are thoughts are in black.
+        </~g>
+        <~gt>
+          (My thoughts are against a light-yellow background also,
+          and our images are automatically framed in our respectively colours.
+          Also words and thoughts can span multiple paragraphs each,
+          and will wrap around the image
+          of the corresponding speaker or thinker.)
+        </~gt>
+        <~gt>
+          (The dialogue is automatically concluded with "END"
+          in a <`><div></`> tag.)
+        </~gt>
+        
+      </~~>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <~~>
+        
+        <+h> /images/dialogue-host.png | Host </+h>
+        <~h>
+          I am the host; my words and thoughts are in blue.
+        </~h>
+        <~ht>
+          (Thoughts are in <@> Comic Neue | http://comicneue.com/ </@>,
+          against a light-yellow background.)
+        </~ht>
+        
+        <+g> /images/dialogue-guest.png | Guest </+g>
+        <~g>
+          I am the guest; my words are thoughts are in black.
+        </~g>
+        <~gt>
+          (My thoughts are against a light-yellow background also,
+          and our images are automatically framed in our respectively colours.
+          Also words and thoughts can span multiple paragraphs each,
+          and will wrap around the image
+          of the corresponding speaker or thinker.)
+        </~gt>
+        <~gt>
+          (The dialogue is automatically concluded with "END"
+          in a <`><div></`> tag.)
+        </~gt>
+        
+      </~~>
+  </li>
+  
+</ul>
+
+<@3> Dialogue paragraph tag | dialogue-paragraph </@3>
+
+<#>
+  <`><~{pos}[type]>{content}</~{pos}[type]></`>
+</#>
+
+<p>
+  Converted to a <`><p></`> tag for the host's (<`>{pos}</`>~<`>h</`>)
+  or the guest's (<`>{pos}</`>~<`>g</`>) words in a dialogue,
+  or thoughts if <`>[type]</`> is supplied as <`>t</`>, and to be used inside a
+  <@> dialogue division tag | #dialogue-division | Dialogue division tag </@>.
+</p>
+
+<@3> Link division tag | link-division </@3>
+
+<#>
+  <`><@@>{content}</@@></`>
+</#>
+
+<p>
+  Converted to a <`><div class="links"></`> tag, for holding
+  <@> anchor tags | #anchor | Anchor tag </@>.
+</p>
+
+<@3> Header navigation bar tag | header-navigation-bar </@3>
+
+<#>
+  <`><=h>{content}</=h></`>
+</#>
+
+<p>
+  Converted to the equivalent
+  <@> navigation bar tag | #navigation-bar | Navigation bar tag </@>
+  wrapped inside a <`><header></`> tag,
+  and usually to be filled with
+  <@> item anchors | #item-anchor | Item anchor tag </@>.
+</p>
+
+<@3> Navigation bar tag | navigation-bar </@3>
+
+<#>
+  <`><=>{content}</=></`>
+</#>
+
+<p>
+  Converted to a <`><nav></`> tag containing a <`><ul></`> tag,
+  and usually to be filled with
+  <@> item anchors | #item-anchor | Item anchor tag </@>.
+</p>
+
+<@3> Note paragraph tag | note-paragraph </@3>
+
+<#>
+  <`><.>{content}</.></`>
+</#>
+
+<p>
+  Converted to a <`><p class="note"></`> tag.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <.>
+        <b>Note.</b> This is a note paragraph. The font is smaller.
+      </.>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <.>
+        <b>Note.</b> This is a note paragraph. The font is smaller.
+      </.>
+  </li>
+  
+</ul>
+
+<@3> Overflowing division tag | overflowing-division </@3>
+
+<#>
+  <`><![type]>{content}</![type]></`>
+</#>
+
+<p>
+  Converted to a <`><div class="overflowing"></`> tag,
+  wrapped inside a <`><div class="centred-flex"></`> tag
+    for <`>[type]</`>~<`>c</`>,
+  and with additional class <`>centred-text</`>
+    and wrapped inside a <`><div class="centred-flex"></`> tag
+    for <`>[type]</`>~<`>cc</`>.
+</p>
+
+<@3> SVG style container tag | svg-style-container </@3>
+
+<#>
+  <`><-->{content}</--></`>
+</#>
+
+<p>
+  Converted to a <`><style></`> tag wrapped inside
+  a <`><svg class="embedded-styles"></`> tag,
+  with all the necessary escaping automatically performed
+  for the <@> special Conway literals | #escapes | Escapes </@>
+  <`>~</`>, <`>{</`> and <`>}</`>.
+</p>
+
+<@3> Text romanisation tag | text-romanisation </@3>
+
+<#>
+  <`><^e> {content} </^e></`>
+</#>
+
+<p>
+  Unescapes <`>{content}</`>, i.e.~replaces entries in the CCH column
+  with the corresponding entries in the Rendered column
+  (these conversions are used for the arguments of
+  <@>
+    assisting romanisations tags
+    | #assisting-romanisation
+    | Assisting romanisation tag
+  </@>):
+</p>
+
+<!c><table>
+  
+  <tr>
+    <th>CCH</th>
+    <th>Rendered</th>
+    <th>Code point</th>
+  </tr>
+  
+  <tr>
+    <th colspan="3">Conway only</th>
+  </tr>
+  
+  <tr>
+    <td><`>oe</`></td>
+    <td><^e>oe</^e></td>
+    <td><`>U+0153</`></td>
+  </tr>
+  
+  <tr>
+    <th colspan="3">Wade–Giles only</th>
+  </tr>
+  
+  <tr>
+    <td><`>e^</`></td>
+    <td><^e>e^</^e></td>
+    <td><`>U+00EA</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>uu</`></td>
+    <td><^e>uu</^e></td>
+    <td><`>U+016D</`></td>
+  </tr>
+  
+  <tr>
+    <th colspan="3">Pinyin tone 1 (陰平 dark level) only</th>
+  </tr>
+  
+  <tr>
+    <td><`>a=</`></td>
+    <td><^e>a=</^e></td>
+    <td><`>U+0101</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>e=</`></td>
+    <td><^e>e=</^e></td>
+    <td><`>U+0113</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>i=</`></td>
+    <td><^e>i=</^e></td>
+    <td><`>U+012B</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>o=</`></td>
+    <td><^e>o=</^e></td>
+    <td><`>U+014D</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>u=</`></td>
+    <td><^e>u=</^e></td>
+    <td><`>U+016B</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>u"=</`></td>
+    <td><^e>u"=</^e></td>
+    <td><`>U+01D6</`></td>
+  </tr>
+  
+  <tr>
+    <th colspan="3">Pinyin tone 2 (陽平 light level) only</th>
+  </tr>
+  
+  <tr>
+    <td><`>a/</`></td>
+    <td><^e>a/</^e></td>
+    <td><`>U+00E1</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>e/</`></td>
+    <td><^e>e/</^e></td>
+    <td><`>U+00E9</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>i/</`></td>
+    <td><^e>i/</^e></td>
+    <td><`>U+00ED</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>o/</`></td>
+    <td><^e>o/</^e></td>
+    <td><`>U+00F3</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>u/</`></td>
+    <td><^e>u/</^e></td>
+    <td><`>U+00FA</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>u"/</`></td>
+    <td><^e>u"/</^e></td>
+    <td><`>U+01D8</`></td>
+  </tr>
+  
+  <tr>
+    <th colspan="3">Pinyin tone 3 (上 rising) only</th>
+  </tr>
+  
+  <tr>
+    <td><`>av</`></td>
+    <td><^e>av</^e></td>
+    <td><`>U+01CE</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>ev</`></td>
+    <td><^e>ev</^e></td>
+    <td><`>U+011B</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>iv</`></td>
+    <td><^e>iv</^e></td>
+    <td><`>U+01D0</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>ov</`></td>
+    <td><^e>ov</^e></td>
+    <td><`>U+01D2</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>uv</`></td>
+    <td><^e>uv</^e></td>
+    <td><`>U+01D4</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>u"v</`></td>
+    <td><^e>u"v</^e></td>
+    <td><`>U+01DA</`></td>
+  </tr>
+  
+  <tr>
+    <th colspan="3">Pinyin tone 4 (去 departing) only</th>
+  </tr>
+  
+  <tr>
+    <td><`>a\</`></td>
+    <td><^e>a\</^e></td>
+    <td><`>U+00E0</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>e\</`></td>
+    <td><^e>e\</^e></td>
+    <td><`>U+00E8</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>i\</`></td>
+    <td><^e>i\</^e></td>
+    <td><`>U+00EC</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>o\</`></td>
+    <td><^e>o\</^e></td>
+    <td><`>U+00F2</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>u\</`></td>
+    <td><^e>u\</^e></td>
+    <td><`>U+00F9</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>u"\</`></td>
+    <td><^e>u"\</^e></td>
+    <td><`>U+01DC</`></td>
+  </tr>
+  
+  <tr>
+    <th colspan="3">Common</th>
+  </tr>
+  
+  <tr>
+    <td><`>u"</`></td>
+    <td><^e>u"</^e></td>
+    <td><`>U+00FC</`></td>
+  </tr>
+  
+</table></!c>
+
+
+<@2> Escapes | escapes </@2>
+
+
+<p>
+  "Escaped form" refers to the CCH,
+  while "unescaped form" refers to the HTML it gets converted into.
+</p>
+
+<!c><table>
+  
+  <tr>
+    <th>CCH</th>
+    <th>HTML</th>
+    <th>Rendered</th>
+    <th>Note</th>
+  </tr>
+  
+  <tr>
+    <th colspan="4">Functional Conway literals</th>
+  </tr>
+  
+  <tr>
+    <td><`>\\</`></td>
+    <td><`>\</`></td>
+    <td>\\</td>
+    <td>Literal backslash</td>
+  </tr>
+  
+  <tr>
+    <td><`>\|</`></td>
+    <td><`>|</`></td>
+    <td>\|</td>
+    <td>Literal pipe</td>
+  </tr>
+  
+  <tr>
+    <th colspan="4">Special Conway literals</th>
+  </tr>
+  
+  <tr>
+    <td><`>\~</`></td>
+    <td><`>~</`></td>
+    <td>\~</td>
+    <td>Literal tilde</td>
+  </tr>
+  
+  <tr>
+    <td><`>\{</`></td>
+    <td><`>{</`></td>
+    <td>\{</td>
+    <td>
+      Literal opening <@> curly bracket | #conway-italics | Conway italics </@>
+    </td>
+  </tr>
+  
+  <tr>
+    <td><`>\}</`></td>
+    <td><`>}</`></td>
+    <td>\}</td>
+    <td>
+      Literal closing <@> curly bracket | #conway-italics | Conway italics </@>
+    </td>
+  </tr>
+  
+  <tr>
+    <th colspan="4">Various symbols</th>
+  </tr>
+  
+  <tr>
+    <td><`>~</`></td>
+    <td><`>&nbsp;</`></td>
+    <td>~</td>
+    <td>Non-breaking space</td>
+  </tr>
+  
+  <tr>
+    <td><`>\.</`></td>
+    <td><`>・</`></td>
+    <td>\.</td>
+    <td><`>U+30FB KATAKANA MIDDLE DOT</`></td>
+  </tr>
+  
+  <tr>
+    <td><`>\&</`></td>
+    <td><`>&amp;</`></td>
+    <td>\&</td>
+    <td>Ampersand</td>
+  </tr>
+  
+  <tr>
+    <td><`>\<</`></td>
+    <td><`>&lt;</`></td>
+    <td>\<</td>
+    <td>Less than</td>
+  </tr>
+  
+  <tr>
+    <td><`>\></`></td>
+    <td><`>&gt;</`></td>
+    <td>\></td>
+    <td>Greater than</td>
+  </tr>
+  
+  <tr>
+    <td><`>\*</`></td>
+    <td>(very long)</td>
+    <td>\*</td>
+    <td>"Lord" in small caps</td>
+  </tr>
+  
+  <tr>
+    <td><`>\_</`></td>
+    <td><`>&numsp;</`></td>
+    <td>\_</td>
+    <td>Figure space</td>
+  </tr>
+  
+  <tr>
+    <td><`>\,</`></td>
+    <td><`>&thinsp;</`></td>
+    <td>\,</td>
+    <td>Thin space</td>
+  </tr>
+  
+  <tr>
+    <th colspan="4">Conway literal Chinese run</th>
+  </tr>
+  
+  <tr>
+    <td><`>\仁者，人也。</`></td>
+    <td><`>仁者，人也。</`></td>
+    <td>\仁者，人也。</td>
+    <td>
+      Prevent
+      <@>
+        language span
+        | #automatic-chinese-span
+        |  Automatic Chinese language spans
+      </@>
+    </td>
+  </tr>
+  
+</table></!c>
+
+<p>
+  A backslash before a run of Chinese characters
+  prevents automatic surrounding by a <`><span lang="zh-Hant"></`> tag.
+  (Here \. <`>U+30FB KATAKANA MIDDLE DOT</`> is considered a Chinese character.)
+</p>
+
+
+<@2> Conway italics | conway-italics </@2>
+
+
+<p>
+  Curly brackets are automatically converted to italics tags.
+  For literal curly brackets use the
+  <@> backslash escapes | #escapes | Escapes </@> <`>\{</`> and <`>\}</`>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      An {italicised} word, followed by
+      {an italicised phrase containing a {nested-italic} part}.
+    </``>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      An <i>italicised</i> word, followed by
+      <i>an italicised phrase containing a <i>nested-italic</i> part</i>.
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b><br>
+      An {italicised} word, followed by
+      {an italicised phrase containing a {nested-italic} part}.
+  </li>
+  
+</ul>
+
+
+<@2> Whitespace | whitespace </@2>
+
+<ol>
+  <li>
+    <`><pre></`> tags are de-indented
+    (but not affected by the subsequent removals),
+  </li>
+  <li>
+    Leading whitespace is removed,
+  </li>
+  <li>
+    Empty lines are removed, and
+  </li>
+  <li>
+    Line breaks preceded immediately by a backslash are removed.
+  </li>
+</ol>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <pre>
+                A heavily indented line.
+                    A more heavily indented line.
+      </pre>
+      <p>
+        A line with leading whitespace.<br>
+            A line followed by a blank line.<br>
+            
+        A line ending in a backslash\
+            (stuff originally on the next line).
+      </p>
+    </``>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      <pre>
+      A heavily indented line.
+          A more heavily indented line.
+      </pre>
+      <p>
+      A line with leading whitespace.<br>
+      A line followed by a blank line.<br>
+      A line ending in a backslash(stuff originally on the next line).
+      </p>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b>
+      <pre>
+                A heavily indented line.
+                    A more heavily indented line.
+      </pre>
+      <p>
+        A line with leading whitespace.<br>
+            A line followed by a blank line.<br>
+            
+        A line ending in a backslash\
+            (stuff originally on the next line).
+      </p>
+  </li>
+  
+</ul>
+
+
+<@2> Automatic Chinese language spans | automatic-chinese-span </@2>
+
+<p>
+  Runs of Chinese characters
+  (including \. <`>U+30FB KATAKANA MIDDLE DOT</`>)
+  are automatically wrapped in <`><span lang="zh-Hant"></`> tags.
+  <@> Precede runs by a backslash | #escapes | Escapes </@> to prevent this.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      《禮記\.禮運》大道之行也，天下為公。<br>
+      \《禮記\.禮運》大道之行也，天下為公。
+    </``>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      <span lang="zh-Hant">《禮記・禮運》大道之行也，天下為公。</span><br>
+      《禮記・禮運》大道之行也，天下為公。
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b><br>
+      《禮記\.禮運》大道之行也，天下為公。<br>
+      \《禮記\.禮運》大道之行也，天下為公。
+  </li>
+  
+</ul>
+
+<*f></*f>
