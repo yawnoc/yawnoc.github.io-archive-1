@@ -1,4 +1,4 @@
-<*> Conway's Custom Romanisation for Cantonese | 20190407 | 20191031 | d </*>
+<*> Conway's Custom Romanisation for Cantonese | 20190407 | 20191102 | d </*>
 
 <=h>
   <@ih></@ih>
@@ -38,71 +38,9 @@
     (k k' ng h kw k'w w) | #velar-glottal | Velar and glottal
   </@i>
   <@i>
-    (ch ch' s sh y) | #sibilant-palatal | Sibilant dental/alveolar and palatal
+    (ts ch ts' ch' s sh y) | #sibilant-palatal | Sibilant dental/alveolar and palatal
   </@i>
 </=>
-
-<p>
-  I don't distinguish the initial consonants amongst the pairs
-  將/張, 槍/昌 and 相/傷.
-  These have long since merged, with the distinctions remnant only
-  in most romanisations of district names in Hong Kong, e.g.
-</p>
-
-<ul>
-  
-  <li>
-    \{<:m><^e>ts</^e></:m> vs <:m><^e>ch</^e></:m>\}:
-    將軍澳 (<:h>Ts</:h>eung Kwan O) and 荔枝角 (Lai <:h>Ch</:h>i Kok),
-  </li>
-  
-  <li>
-    \{<:m><^e>ts'</^e></:m> vs <:m><^e>ch'</^e></:m>\}:
-    荃灣 (<:h>Ts</:h>uen Wan) and 東涌 (Tung <:h>Ch</:h>ung), and
-  </li>
-  
-  <li>
-    \{<:m><^e>s</^e></:m> vs <:m><^e>sh</^e></:m>\}:
-    西灣河 (<:h>S</:h>ai Wan Ho) and 筲箕灣 (<:h>Sh</:h>au Kei Wan).
-  </li>
-  
-</ul>
-
-<p>
-  Not all district romanisations follow the pre-merger consonants correctly,
-  e.g.~灣仔 should really be Wan Tsai (not Wan Chai),
-  and 彩虹 should be Tsoi Hung (not Choi Hung).
-</p>
-
-<p>
-  In general I perceive a tendency for people to favour different consonants
-  of the merger depending on the vowel which follows:
-</p>
-<ol>
-  <li>
-    <:m><^e>ts</^e></:m> and <:m><^e>ts'</^e></:m> (i.e.~[ts] and [tsʰ])
-    before [aː], [ɐ], [ɛː], [e] and [iː],
-  </li>
-  <li>
-    <:m><^e>ch</^e></:m> and <:m><^e>ch'</^e></:m> (i.e.~[tɕ] and [tɕʰ])
-    before [ɔː], [o], [uː], [œ], [ɵ] and [yː],
-  </li>
-  <li>
-    <:m><^e>s</^e></:m> (i.e.~[s])
-    before [aː], [ɐ], [ɛː], [e], [iː], [ɔː], [o], [uː], [œ] and [ɵ], and
-  </li>
-  <li>
-    <:m><^e>sh</^e></:m> (i.e.~[ɕ]) before [yː].
-  </li>
-</ol>
-<p>
-  In my romanisation system, I observe tendencies~3 and~4 above
-  for \{<:m><^e>s</^e></:m> vs <:m><^e>sh</^e></:m>\},
-  but for \{<:m><^e>ts</^e></:m> vs <:m><^e>ch</^e></:m>\}
-  and \{<:m><^e>ts'</^e></:m> vs <:m><^e>ch'</^e></:m>\}
-  I always use <:m><^e>ch</^e></:m> and <:m><^e>ch'</^e></:m> respectively
-  regardless of the vowel which follows.
-</p>
 
 <@3> Labial | labial </@3>
 <@@>
@@ -317,11 +255,6 @@
   <@u> Initials | initials | Initials (聲) </@u>
 </@@>
 
-<p>
-  <span class="underlined green">Underlined IPA</span> shows
-  the pronunciations among the mergers which are favoured by my romanisation.
-</p>
-
 <!><table>
   
   <tr>
@@ -335,56 +268,64 @@
   </tr>
   
   <tr>
-    <td>將張</td>
-    <td>[ts]~<span class="underlined green">[tɕ]</span></td>
+    <td>將</td>
+    <td>[ts]</td>
+    <td class="not-applicable">ts</td>
+    <td rowspan="2">z</td>
+    <td rowspan="2">j</td>
+    <td rowspan="2">j</td>
+    <td>[<:h>ts</:h> as in lis<:h>ts</:h>]</td>
+  </tr>
+  
+  <tr>
+    <td>張</td>
+    <td>[tɕ]</td>
     <td>ch</td>
-    <td>z</td>
-    <td>j</td>
-    <td>j</td>
     <td>
-      between [<:h>ts</:h> as in lis<:h>ts</:h>]
+      halfway between [<:h>ts</:h> as in lis<:h>ts</:h>]
       and [<:h>t</:h> as in s<:h>t</:h>upid],
       with the latter in a sufficiently broad Australian accent
-      for which the T is sounded like [<:h>ch</:h> as in <:h>ch</:h>ew],
-      and altogether closer to [<:h>ts</:h> as in lis<:h>ts</:h>], the former
+      for which the T is sounded like [<:h>ch</:h> as in <:h>ch</:h>ew]
     </td>
   </tr>
   
   <tr>
-    <td>槍昌</td>
-    <td>[tsʰ]~<span class="underlined green">[tɕʰ]</span></td>
+    <td>槍</td>
+    <td>[tsʰ]</td>
+    <td class="not-applicable">ts'</td>
+    <td rowspan="2">c</td>
+    <td rowspan="2">ch</td>
+    <td rowspan="2">ch</td>
+    <td>[<:h>ts</:h> as in hi<:h>ts</:h>]</td>
+  </tr>
+  
+  <tr>
+    <td>昌</td>
+    <td>[tɕʰ]</td>
     <td>ch'</td>
-    <td>c</td>
-    <td>ch</td>
-    <td>ch</td>
     <td>
-      between [<:h>ts</:h> as in hi<:h>ts</:h>]
-      and [<:h>ch</:h> as in hit<:h>ch</:h>],
-      and altogether closer to [<:h>ts</:h> as in hi<:h>ts</:h>], the former
+      halfway between [<:h>ts</:h> as in hi<:h>ts</:h>]
+      and [<:h>ch</:h> as in hit<:h>ch</:h>]
     </td>
   </tr>
   
   <tr>
-    <td>相傷</td>
-    <td><span class="underlined green">[s]</span>~[ɕ]</td>
+    <td>相</td>
+    <td>[s]</td>
     <td><^e>s</^e></td>
-    <td>s</td>
-    <td>s</td>
-    <td>s</td>
+    <td rowspan="2">s</td>
+    <td rowspan="2">s</td>
+    <td rowspan="2">s</td>
     <td>[<:h>s</:h> as in <:h>s</:h>igh]</td>
   </tr>
   
   <tr>
-    <td>雪說</td>
-    <td>[s]~<span class="underlined green">[ɕ]</span></td>
+    <td>傷</td>
+    <td>[ɕ]</td>
     <td>sh</td>
-    <td>s</td>
-    <td>s</td>
-    <td>s</td>
     <td>
-      between [<:h>s</:h> as in <:h>s</:h>igh]
-      and [<:h>sh</:h> as in <:h>sh</:h>y],
-      and altogether closer to [<:h>s</:h> as in <:h>s</:h>igh], the former
+      halfway between [<:h>s</:h> as in <:h>s</:h>igh]
+      and [<:h>sh</:h> as in <:h>sh</:h>y]
     </td>
   </tr>
   
@@ -399,6 +340,132 @@
   </tr>
   
 </table></!>
+
+<p>
+  Modern Cantonese has merged the initials in the pairs
+    \{將~<^e><:h>ts</:h>oeng</^e> vs 張~<^e><:h>ch</:h>oeng</^e>\},
+    \{槍~<^e><:h>ts'</:h>oeng</^e> vs 昌~<^e><:h>ch'</:h>oeng</^e>\} and
+    \{相~<^e><:h>s</:h>oeng</^e> vs 傷~<^e><:h>sh</:h>oeng</^e>\}.
+  As noted by Samuel Wells in
+  <@>
+    《英華分韻撮要》
+    | https://archive.org/details/tonicdictionaryo00will/page/n25
+    | A tonic dictionary of the Chinese language in the Canton dialect
+  </@>
+  (1856, or 咸豐丙辰年):
+</p>
+<blockquote>
+  "The initials {ch} and {ts} are constantly confounded,
+  and some persons are absolutely unable to detect the difference,
+  more frequently calling the words under {ts} as {ch}, than contrawise."
+</blockquote>
+
+<p>
+  The pre-merger distinctions are remnant only in most romanisations
+  of district names in Hong Kong, e.g.
+</p>
+<ul>
+  
+  <li>
+    \{<:m><^e>ts</^e></:m> vs <:m><^e>ch</^e></:m>\}:
+    將軍澳 (<:h>Ts</:h>eung Kwan O) and 荔枝角 (Lai <:h>Ch</:h>i Kok),
+  </li>
+  
+  <li>
+    \{<:m><^e>ts'</^e></:m> vs <:m><^e>ch'</^e></:m>\}:
+    荃灣 (<:h>Ts</:h>uen Wan) and 東涌 (Tung <:h>Ch</:h>ung), and
+  </li>
+  
+  <li>
+    \{<:m><^e>s</^e></:m> vs <:m><^e>sh</^e></:m>\}:
+    西灣河 (<:h>S</:h>ai Wan Ho) and 筲箕灣 (<:h>Sh</:h>au Kei Wan).
+  </li>
+  
+</ul>
+<p>
+  Not all district romanisations follow the pre-merger consonants correctly though,
+  e.g.~灣仔 should really be Wan <:h>Ts</:h>ai (not Wan <:h>Ch</:h>ai),
+  and 彩虹 should be <:h>Ts</:h>oi Hung (not <:h>Ch</:h>oi Hung).
+</p>
+
+<p>
+  Now despite the merging of those pairs of initials,
+  I perceive a tendency for people to favour different consonants
+  of the merger depending on the vowel which follows:
+</p>
+
+
+<!c><table>
+  
+  <tr>
+    <th>Following vowel</th>
+    <td>[aː]</td>
+    <td>[ɐ]</td>
+    <td>[ɛː]</td>
+    <td>[e]</td>
+    <td>[iː]</td>
+    <td>[ɔː]</td>
+    <td>[o]</td>
+    <td>[uː]</td>
+    <td>[œ]</td>
+    <td>[ɵ]</td>
+    <td>[yː]</td>
+  </tr>
+  
+  <tr>
+    <th rowspan="3">Favoured merger initial</th>
+    <td class="centred-text not-applicable" colspan="5"><:m><^e>ts</^e></:m></td>
+    <td class="centred-text" colspan="6"><:m><^e>ch</^e></:m></td>
+  </tr>
+  
+  <tr>
+    <td class="centred-text not-applicable" colspan="5"><:m><^e>ts'</^e></:m></td>
+    <td class="centred-text" colspan="6"><:m><^e>ch'</^e></:m></td>
+  </tr>
+  
+  <tr>
+    <td class="centred-text" colspan="10"><:m><^e>s</^e></:m></td>
+    <td class="centred-text"><:m><^e>sh</^e></:m></td>
+  </tr>
+  
+</table></!c>
+
+<p>
+  The \{<:m><^e>s</^e></:m> vs <:m><^e>sh</^e></:m>\} tendency
+  is the strongest. I have never heard anyone pronounce 書,
+    <^e><:h>sh</:h>u"</^e> (i.e.~[ɕyː]),
+    as <^e><:h>s</:h>u"</^e> (i.e.~[syː]),
+  and yet the vast majority of people will pronounce 石
+    as <^e><:h>s</:h>ek</^e> (i.e.~[sɛːk̚])
+    rather than <^e><:h>sh</:h>ek</^e> (i.e.~[ɕɛːk̚]).
+  The \{<:m><^e>ts</^e></:m> vs <:m><^e>ch</^e></:m>\}
+  and \{<:m><^e>ts'</^e></:m> vs <:m><^e>ch'</^e></:m>\} tendencies
+  are not as strong, so for the purpose of my romanisation system
+  I have decided to not use <:m><^e>ts</^e></:m> and <:m><^e>ts'</^e></:m>
+  (which is why they are greyed out in the tables above).
+  That is,
+</p>
+
+<ol>
+  
+  <li>
+    For \{<:m><^e>ts</^e></:m> vs <:m><^e>ch</^e></:m>\}
+    I always use <:m><^e>ch</^e></:m>,
+  </li>
+  
+  <li>
+    For \{<:m><^e>ts'</^e></:m> vs <:m><^e>ch'</^e></:m>\}
+    I always use <:m><^e>ch'</^e></:m>, and
+  </li>
+  
+  <li>
+    For \{<:m><^e>s</^e></:m> vs <:m><^e>sh</^e></:m>\}
+    I use <:m><^e>sh</^e></:m>
+    if followed by the vowel <:m><^e>u"</^e></:m> (i.e.~[yː]),
+    otherwise <:m><^e>s</^e></:m>.
+  </li>
+  
+</ol>
 
 
 <@2> Finals (韻) | finals </@2>

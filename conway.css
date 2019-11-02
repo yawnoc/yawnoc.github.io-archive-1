@@ -1,7 +1,7 @@
 /*
   conway.css
   Style sheet for https://yawnoc.github.io/
-  Modified: 20191030
+  Modified: 20191102
 */
 
 /* ---------------------------------------------------------------- */
@@ -655,7 +655,7 @@ td.no-padding {
 }
 
 td.not-applicable {
-  background: grey;
+  background: lightgrey;
 }
 
 td.top-aligned {
