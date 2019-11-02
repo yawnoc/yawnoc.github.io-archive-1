@@ -1,4 +1,4 @@
-<*> Conway's Custom Romanisation for Cantonese | 20190407 | 20191102 | d </*>
+<*> Conway's Custom Romanisation for Cantonese | 20190407 | 20191103 | d </*>
 
 <=h>
   <@ih></@ih>
@@ -1761,7 +1761,10 @@
 </div>
 
 <p>
-  Tone~4 is also pronounced slightly falling, i.e.~[fɐn˨˩]~(21).
+  Tone~4 is also pronounced slightly falling, i.e.~[fɐn˨˩]~(21),
+  especially if the syllable is drawn-out
+  (for instance in operatic or theatrical dialogue).
+  Tone~2 can start slightly lower, i.e.~[fɐn˨˥]~(25).
 </p>
 
 <p>
@@ -1831,9 +1834,67 @@
   as tones 1, 3 and 6 respectively, they should not be regarded as the same.
   In poetry, balancing 平聲 (tones 1 and 4) and 仄聲 (the rest)
   is highly desirable; if you count tone~7 (高陰入) as tone~1 (陰平),
-  you will get this wrong.
+  you will get tone patterns (平仄) wrong.
   None of Jyutping, Yale and Sidney~Lau make this distinction.
 </p>
+
+<p>
+  Tone patterns and literary situations aside though,
+  tones in colloquial Cantonese are highly versatile, in that they can be
+  vernacularised as different tones in particular instances.
+  This, in my opinion, makes colloquial Cantonese
+  probably the most inconsistent language in the world.
+  Here are a few examples:
+</p>
+
+<!c><table>
+  
+  <tr>
+    <th>Phrase</th>
+    <th>Literary</th>
+    <th>Vernacularised</th>
+  </tr>
+  
+  <tr>
+    <td>笛</td>
+    <td><^e>tek<:h>9</:h></^e></td>
+    <td><^e>tek<:h>2</:h></^e></td>
+  </tr>
+  
+  <tr>
+    <td>姐姐</td>
+    <td><^e>che<:h>2</:h>~che<:h>2</:h></^e></td>
+    <td><^e>che<:h>4</:h>~che<:h>1</:h></^e></td>
+  </tr>
+  
+  <tr>
+    <td>後尾</td>
+    <td><^e>hau<:h>6</:h>~mei<:h>5</:h></^e></td>
+    <td>
+      <^e>hau6~mei<:h>1</:h></^e><br>
+      <^e>hau<:h>1</:h>~mei<:h>1</:h></^e>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>今晚</td>
+    <td><^e>kam1~maan<:h>5</:h></^e></td>
+    <td><^e>kam1~maan<:h>1</:h></^e></td>
+  </tr>
+  
+  <tr>
+    <td>長沙灣</td>
+    <td><^e>ch'oeng4~saa1~waan<:h>1</:h></^e></td>
+    <td><^e>ch'oeng4~saa1~waan<:h>4</:h></^e></td>
+  </tr>
+  
+  <tr>
+    <td>油麻地</td>
+    <td><^e>yau4~maa4~tei<:h>6</:h></^e></td>
+    <td><^e>yau4~maa4~tei<:h>2</:h></^e></td>
+  </tr>
+  
+</table></!c>
 
 
 <@2> Compact reference tables | compact </@2>
