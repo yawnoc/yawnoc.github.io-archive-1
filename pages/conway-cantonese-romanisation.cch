@@ -357,9 +357,9 @@
   (1856, or 咸豐丙辰年):
 </p>
 <blockquote>
-  "The initials {ch} and {ts} are constantly confounded,
+  The initials {ch} and {ts} are constantly confounded,
   and some persons are absolutely unable to detect the difference,
-  more frequently calling the words under {ts} as {ch}, than contrawise."
+  more frequently calling the words under {ts} as {ch}, than contrawise.
 </blockquote>
 
 <p>
@@ -487,20 +487,10 @@
 </=>
 
 <p>
-  Cantonese has no R sound.
-  In both my romanisation scheme and my approximations,
-  the letter R only controls vowel sounds,
-  and is <b>never</b> sounded as a consonant.
-</p>
-<.>
-  Thank you to <b>J.H.</b> for pointing out that "rolled R" means trilling,
-  rather than sounding R as a consonant.
-</.>
-
-<p>
-  If typesetting of the characters œ~(<`>U+0153</`>)
-  and ü~(<`>U+00FC</`>) is inconvenient,
-  you may use the ASCII-only substitutes oe and ue respectively.
+  If typesetting of the characters <:m><^e>oe</^e></:m>~(<`>U+0153</`>)
+  and <:m><^e>u"</^e></:m>~(<`>U+00FC</`>) is inconvenient,
+  you may use the ASCII-only substitutes <:m>oe</:m> and <:m>ue</:m>
+  respectively.
 </p>
 
 <@3> aː | aa </@3>
@@ -1008,6 +998,12 @@
 <@@>
   <@u> Finals | finals | Finals (韻) </@u>
 </@@>
+
+<p>
+  Cantonese has no R sound.
+  The letter R only appears in "<:m>or</:m>" to represent the vowel [ɔː],
+  and is <b>never</b> sounded as a consonant.
+</p>
 
 <!><table>
   
