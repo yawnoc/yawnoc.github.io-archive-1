@@ -29,16 +29,18 @@
 
 <=>
   <@i>
-    (p p' m f) | #labial | Labial
+    (<^e>p p' m f</^e>) | #labial | Labial
   </@i>
   <@i>
-    (t t' n l) | #plain | Plain dental/alveolar
+    (<^e>t t' n l</^e>) | #plain | Plain dental/alveolar
   </@i>
   <@i>
-    (k k' ng h kw k'w w) | #velar-glottal | Velar and glottal
+    (<^e>k k' ng h kw k'w w</^e>) | #velar-glottal | Velar and glottal
   </@i>
   <@i>
-    (ts ch ts' ch' s sh y) | #sibilant-palatal | Sibilant dental/alveolar and palatal
+    (<^e>ts ch ts' ch' s sh y</^e>)
+    | #sibilant-palatal
+    | Sibilant dental/alveolar and palatal
   </@i>
 </=>
 
@@ -62,7 +64,7 @@
   <tr>
     <td>巴</td>
     <td>[p]</td>
-    <td><^e>p</^e></td>
+    <td><:m><^e>p</^e></:m></td>
     <td>b</td>
     <td>b</td>
     <td>b</td>
@@ -72,7 +74,7 @@
   <tr>
     <td>怕</td>
     <td>[pʰ]</td>
-    <td><^e>p'</^e></td>
+    <td><:m><^e>p'</^e></:m></td>
     <td>p</td>
     <td>p</td>
     <td>p</td>
@@ -82,7 +84,7 @@
   <tr>
     <td>媽</td>
     <td>[m]</td>
-    <td><^e>m</^e></td>
+    <td><:m><^e>m</^e></:m></td>
     <td>m</td>
     <td>m</td>
     <td>m</td>
@@ -92,7 +94,7 @@
   <tr>
     <td>花</td>
     <td>[f]</td>
-    <td><^e>f</^e></td>
+    <td><:m><^e>f</^e></:m></td>
     <td>f</td>
     <td>f</td>
     <td>f</td>
@@ -121,7 +123,7 @@
   <tr>
     <td>打</td>
     <td>[t]</td>
-    <td><^e>t</^e></td>
+    <td><:m><^e>t</^e></:m></td>
     <td>d</td>
     <td>d</td>
     <td>d</td>
@@ -131,7 +133,7 @@
   <tr>
     <td>他</td>
     <td>[tʰ]</td>
-    <td><^e>t'</^e></td>
+    <td><:m><^e>t'</^e></:m></td>
     <td>t</td>
     <td>t</td>
     <td>t</td>
@@ -141,7 +143,7 @@
   <tr>
     <td>那</td>
     <td>[n]</td>
-    <td><^e>n</^e></td>
+    <td><:m><^e>n</^e></:m></td>
     <td>n</td>
     <td>n</td>
     <td>n</td>
@@ -151,7 +153,7 @@
   <tr>
     <td>啦</td>
     <td>[l]</td>
-    <td><^e>l</^e></td>
+    <td><:m><^e>l</^e></:m></td>
     <td>l</td>
     <td>l</td>
     <td>l</td>
@@ -180,7 +182,7 @@
   <tr>
     <td>家</td>
     <td>[k]</td>
-    <td><^e>k</^e></td>
+    <td><:m><^e>k</^e></:m></td>
     <td>g</td>
     <td>g</td>
     <td>g</td>
@@ -190,7 +192,7 @@
   <tr>
     <td>卡</td>
     <td>[kʰ]</td>
-    <td><^e>k'</^e></td>
+    <td><:m><^e>k'</^e></:m></td>
     <td>k</td>
     <td>k</td>
     <td>k</td>
@@ -201,7 +203,7 @@
   <tr>
     <td>牙</td>
     <td>[ŋ]</td>
-    <td><^e>ng</^e></td>
+    <td><:m><^e>ng</^e></:m></td>
     <td>ng</td>
     <td>ng</td>
     <td>ng</td>
@@ -211,7 +213,7 @@
   <tr>
     <td>蝦</td>
     <td>[h]</td>
-    <td><^e>h</^e></td>
+    <td><:m><^e>h</^e></:m></td>
     <td>h</td>
     <td>h</td>
     <td>h</td>
@@ -221,7 +223,7 @@
   <tr>
     <td>瓜</td>
     <td>[kʷ]</td>
-    <td><^e>kw</^e></td>
+    <td><:m><^e>kw</^e></:m></td>
     <td>gw</td>
     <td>gw</td>
     <td>gw</td>
@@ -231,7 +233,7 @@
   <tr>
     <td>誇</td>
     <td>[kʷʰ]</td>
-    <td><^e>k'w</^e></td>
+    <td><:m><^e>k'w</^e></:m></td>
     <td>kw</td>
     <td>kw</td>
     <td>kw</td>
@@ -241,7 +243,7 @@
   <tr>
     <td>華</td>
     <td>[w]</td>
-    <td><^e>w</^e></td>
+    <td><:m><^e>w</^e></:m></td>
     <td>w</td>
     <td>w</td>
     <td>w</td>
@@ -270,7 +272,7 @@
   <tr>
     <td>將</td>
     <td>[ts]</td>
-    <td class="not-applicable">ts</td>
+    <td class="not-applicable"><:m><^e>ts</^e></:m></td>
     <td rowspan="2">z</td>
     <td rowspan="2">j</td>
     <td rowspan="2">j</td>
@@ -280,7 +282,7 @@
   <tr>
     <td>張</td>
     <td>[tɕ]</td>
-    <td>ch</td>
+    <td><:m><^e>ch</^e></:m></td>
     <td>
       halfway between [<:h>ts</:h> as in lis<:h>ts</:h>]
       and [<:h>t</:h> as in s<:h>t</:h>upid],
@@ -292,7 +294,7 @@
   <tr>
     <td>槍</td>
     <td>[tsʰ]</td>
-    <td class="not-applicable">ts'</td>
+    <td class="not-applicable"><:m><^e>ts'</^e></:m></td>
     <td rowspan="2">c</td>
     <td rowspan="2">ch</td>
     <td rowspan="2">ch</td>
@@ -302,7 +304,7 @@
   <tr>
     <td>昌</td>
     <td>[tɕʰ]</td>
-    <td>ch'</td>
+    <td><:m><^e>ch'</^e></:m></td>
     <td>
       halfway between [<:h>ts</:h> as in hi<:h>ts</:h>]
       and [<:h>ch</:h> as in hit<:h>ch</:h>]
@@ -312,7 +314,7 @@
   <tr>
     <td>相</td>
     <td>[s]</td>
-    <td><^e>s</^e></td>
+    <td><:m><^e>s</^e></:m></td>
     <td rowspan="2">s</td>
     <td rowspan="2">s</td>
     <td rowspan="2">s</td>
@@ -322,7 +324,7 @@
   <tr>
     <td>傷</td>
     <td>[ɕ]</td>
-    <td>sh</td>
+    <td><:m><^e>sh</^e></:m></td>
     <td>
       halfway between [<:h>s</:h> as in <:h>s</:h>igh]
       and [<:h>sh</:h> as in <:h>sh</:h>y]
@@ -332,7 +334,7 @@
   <tr>
     <td>也</td>
     <td>[j]</td>
-    <td><^e>y</^e></td>
+    <td><:m><^e>y</^e></:m></td>
     <td>j</td>
     <td>y</td>
     <td>y</td>
@@ -367,17 +369,17 @@
 <ul>
   
   <li>
-    \{<:m><^e>ts</^e></:m> vs <:m><^e>ch</^e></:m>\}:
+    \{<:m><^e>ts</^e></:m>~vs~<:m><^e>ch</^e></:m>\}:
     將軍澳 (<:h>Ts</:h>eung Kwan O) and 荔枝角 (Lai <:h>Ch</:h>i Kok),
   </li>
   
   <li>
-    \{<:m><^e>ts'</^e></:m> vs <:m><^e>ch'</^e></:m>\}:
+    \{<:m><^e>ts'</^e></:m>~vs~<:m><^e>ch'</^e></:m>\}:
     荃灣 (<:h>Ts</:h>uen Wan) and 東涌 (Tung <:h>Ch</:h>ung), and
   </li>
   
   <li>
-    \{<:m><^e>s</^e></:m> vs <:m><^e>sh</^e></:m>\}:
+    \{<:m><^e>s</^e></:m>~vs~<:m><^e>sh</^e></:m>\}:
     西灣河 (<:h>S</:h>ai Wan Ho) and 筲箕灣 (<:h>Sh</:h>au Kei Wan).
   </li>
   
@@ -431,15 +433,15 @@
 </table></!c>
 
 <p>
-  The \{<:m><^e>s</^e></:m> vs <:m><^e>sh</^e></:m>\} tendency
+  The \{<:m><^e>s</^e></:m>~vs~<:m><^e>sh</^e></:m>\} tendency
   is the strongest. I have never heard anyone pronounce 書,
     <^e><:h>sh</:h>u"</^e> (i.e.~[ɕyː]),
     as <^e><:h>s</:h>u"</^e> (i.e.~[syː]),
   and yet the vast majority of people will pronounce 石
     as <^e><:h>s</:h>ek</^e> (i.e.~[sɛːk̚])
     rather than <^e><:h>sh</:h>ek</^e> (i.e.~[ɕɛːk̚]).
-  The \{<:m><^e>ts</^e></:m> vs <:m><^e>ch</^e></:m>\}
-  and \{<:m><^e>ts'</^e></:m> vs <:m><^e>ch'</^e></:m>\} tendencies
+  The \{<:m><^e>ts</^e></:m>~vs~<:m><^e>ch</^e></:m>\}
+  and \{<:m><^e>ts'</^e></:m>~vs~<:m><^e>ch'</^e></:m>\} tendencies
   are not as strong, so for the purpose of my romanisation system
   I have decided to not use <:m><^e>ts</^e></:m> and <:m><^e>ts'</^e></:m>
   (which is why they are greyed out in the tables above).
@@ -449,17 +451,17 @@
 <ol>
   
   <li>
-    For \{<:m><^e>ts</^e></:m> vs <:m><^e>ch</^e></:m>\}
+    For \{<:m><^e>ts</^e></:m>~vs~<:m><^e>ch</^e></:m>\}
     I always use <:m><^e>ch</^e></:m>,
   </li>
   
   <li>
-    For \{<:m><^e>ts'</^e></:m> vs <:m><^e>ch'</^e></:m>\}
+    For \{<:m><^e>ts'</^e></:m>~vs~<:m><^e>ch'</^e></:m>\}
     I always use <:m><^e>ch'</^e></:m>, and
   </li>
   
   <li>
-    For \{<:m><^e>s</^e></:m> vs <:m><^e>sh</^e></:m>\}
+    For \{<:m><^e>s</^e></:m>~vs~<:m><^e>sh</^e></:m>\}
     I use <:m><^e>sh</^e></:m>
     if followed by the vowel <:m><^e>u"</^e></:m> (i.e.~[yː]),
     otherwise <:m><^e>s</^e></:m>.
@@ -472,16 +474,16 @@
 
 
 <=>
-  <@i> (aa) | #aa | aː </@i>
-  <@i> (a) | #a | ɐ </@i>
-  <@i> (e) | #e | ɛː and e </@i>
-  <@i> (ee i) | #ee-i | iː and e </@i>
-  <@i> (or o) | #or-o | ɔː and o </@i>
-  <@i> (oo u) | #oo-u | uː and o </@i>
-  <@i> (œ) | #oe | œ </@i>
-  <@i> (_) | #_ | ɵ </@i>
-  <@i> (ü) | #ue | yː </@i>
-  <@i> (m ng) | #m-ng | m̩ and ŋ̍ </@i>
+  <@i> (<^e>aa</^e>) | #aa | aː </@i>
+  <@i> (<^e>a</^e>) | #a | ɐ </@i>
+  <@i> (<^e>e</^e>) | #e | ɛː and e </@i>
+  <@i> (<^e>ee i</^e>) | #ee-i | iː and e </@i>
+  <@i> (<^e>or o</^e>) | #or-o | ɔː and o </@i>
+  <@i> (<^e>oo u</^e>) | #oo-u | uː and o </@i>
+  <@i> (<^e>oe</^e>) | #oe | œ </@i>
+  <@i> (<^e>_</^e>) | #_ | ɵ </@i>
+  <@i> (<^e>u"</^e>) | #ue | yː </@i>
+  <@i> (<^e>m ng</^e>) | #m-ng | m̩ and ŋ̍ </@i>
 </=>
 
 <p>
@@ -521,7 +523,7 @@
   <tr>
     <td>叉</td>
     <td>[aː]</td>
-    <td><^e>aa</^e></td>
+    <td><:m><^e>aa</^e></:m></td>
     <td>aa</td>
     <td>a</td>
     <td>a</td>
@@ -534,7 +536,7 @@
   <tr>
     <td>釵</td>
     <td>[aːi]</td>
-    <td><^e>aai</^e></td>
+    <td><:m><^e>aai</^e></:m></td>
     <td>aai</td>
     <td>aai</td>
     <td>aai</td>
@@ -544,7 +546,7 @@
   <tr>
     <td>抄</td>
     <td>[aːu]</td>
-    <td><^e>aau</^e></td>
+    <td><:m><^e>aau</^e></:m></td>
     <td>aau</td>
     <td>aau</td>
     <td>aau</td>
@@ -559,7 +561,7 @@
   <tr>
     <td>參</td>
     <td>[aːm]</td>
-    <td><^e>aam</^e></td>
+    <td><:m><^e>aam</^e></:m></td>
     <td>aam</td>
     <td>aam</td>
     <td>aam</td>
@@ -574,7 +576,7 @@
   <tr>
     <td>餐</td>
     <td>[aːn]</td>
-    <td><^e>aan</^e></td>
+    <td><:m><^e>aan</^e></:m></td>
     <td>aan</td>
     <td>aan</td>
     <td>aan</td>
@@ -587,7 +589,7 @@
   <tr>
     <td>撐</td>
     <td>[aːŋ]</td>
-    <td><^e>aang</^e></td>
+    <td><:m><^e>aang</^e></:m></td>
     <td>aang</td>
     <td>aang</td>
     <td>aang</td>
@@ -601,7 +603,7 @@
   <tr>
     <td>插</td>
     <td>[aːp̚]</td>
-    <td><^e>aap</^e></td>
+    <td><:m><^e>aap</^e></:m></td>
     <td>aap</td>
     <td>aap</td>
     <td>aap</td>
@@ -615,7 +617,7 @@
   <tr>
     <td>察</td>
     <td>[aːt̚]</td>
-    <td><^e>aat</^e></td>
+    <td><:m><^e>aat</^e></:m></td>
     <td>aat</td>
     <td>aat</td>
     <td>aat</td>
@@ -633,7 +635,7 @@
   <tr>
     <td>拆</td>
     <td>[aːk̚]</td>
-    <td><^e>aak</^e></td>
+    <td><:m><^e>aak</^e></:m></td>
     <td>aak</td>
     <td>aak</td>
     <td>aak</td>
@@ -670,7 +672,7 @@
   <tr>
     <td>仔</td>
     <td>[ɐi]</td>
-    <td><^e>ai</^e></td>
+    <td><:m><^e>ai</^e></:m></td>
     <td>ai</td>
     <td>ai</td>
     <td>ai</td>
@@ -684,7 +686,7 @@
   <tr>
     <td>走</td>
     <td>[ɐu]</td>
-    <td><^e>au</^e></td>
+    <td><:m><^e>au</^e></:m></td>
     <td>au</td>
     <td>au</td>
     <td>au</td>
@@ -699,7 +701,7 @@
   <tr>
     <td>針</td>
     <td>[ɐm]</td>
-    <td><^e>am</^e></td>
+    <td><:m><^e>am</^e></:m></td>
     <td>am</td>
     <td>am</td>
     <td>am</td>
@@ -709,7 +711,7 @@
   <tr>
     <td>真</td>
     <td>[ɐn]</td>
-    <td><^e>an</^e></td>
+    <td><:m><^e>an</^e></:m></td>
     <td>an</td>
     <td>an</td>
     <td>an</td>
@@ -719,7 +721,7 @@
   <tr>
     <td>增</td>
     <td>[ɐŋ]</td>
-    <td><^e>ang</^e></td>
+    <td><:m><^e>ang</^e></:m></td>
     <td>ang</td>
     <td>ang</td>
     <td>ang</td>
@@ -729,7 +731,7 @@
   <tr>
     <td>汁</td>
     <td>[ɐp̚]</td>
-    <td><^e>ap</^e></td>
+    <td><:m><^e>ap</^e></:m></td>
     <td>ap</td>
     <td>ap</td>
     <td>ap</td>
@@ -742,7 +744,7 @@
   <tr>
     <td>疾</td>
     <td>[ɐt̚]</td>
-    <td><^e>at</^e></td>
+    <td><:m><^e>at</^e></:m></td>
     <td>at</td>
     <td>at</td>
     <td>at</td>
@@ -759,7 +761,7 @@
   <tr>
     <td>仄</td>
     <td>[ɐk̚]</td>
-    <td><^e>ak</^e></td>
+    <td><:m><^e>ak</^e></:m></td>
     <td>ak</td>
     <td>ak</td>
     <td>ak</td>
@@ -791,7 +793,7 @@
   <tr>
     <td>爹</td>
     <td>[ɛː]</td>
-    <td><^e>e</^e></td>
+    <td><:m><^e>e</^e></:m></td>
     <td>e</td>
     <td>e</td>
     <td>e</td>
@@ -804,7 +806,7 @@
   <tr>
     <td>地</td>
     <td>[ei]</td>
-    <td><^e>ei</^e></td>
+    <td><:m><^e>ei</^e></:m></td>
     <td>ei</td>
     <td>ei</td>
     <td>ei</td>
@@ -817,7 +819,7 @@
   <tr>
     <td>掉</td>
     <td>[ɛːu]</td>
-    <td><^e>eu</^e></td>
+    <td><:m><^e>eu</^e></:m></td>
     <td>eu</td>
     <td></td>
     <td></td>
@@ -831,7 +833,7 @@
   <tr>
     <td>舔</td>
     <td>[ɛːm]</td>
-    <td><^e>em</^e></td>
+    <td><:m><^e>em</^e></:m></td>
     <td>em</td>
     <td></td>
     <td></td>
@@ -844,7 +846,7 @@
   <tr>
     <td>贏</td>
     <td>[ɛːŋ]</td>
-    <td><^e>eng</^e></td>
+    <td><:m><^e>eng</^e></:m></td>
     <td>eng</td>
     <td>eng</td>
     <td>eng</td>
@@ -857,7 +859,7 @@
   <tr>
     <td>夾</td>
     <td>[ɛːp̚]</td>
-    <td><^e>ep</^e></td>
+    <td><:m><^e>ep</^e></:m></td>
     <td>ep</td>
     <td></td>
     <td></td>
@@ -874,7 +876,7 @@
   <tr>
     <td>尺</td>
     <td>[ɛːk̚]</td>
-    <td><^e>ek</^e></td>
+    <td><:m><^e>ek</^e></:m></td>
     <td>ek</td>
     <td>ek</td>
     <td>ek</td>
@@ -910,7 +912,7 @@
   <tr>
     <td>而</td>
     <td>[iː]</td>
-    <td><^e>ee</^e></td>
+    <td><:m><^e>ee</^e></:m></td>
     <td>i</td>
     <td>i</td>
     <td>i</td>
@@ -920,7 +922,7 @@
   <tr>
     <td>堯</td>
     <td>[iːu]</td>
-    <td><^e>eeu</^e></td>
+    <td><:m><^e>eeu</^e></:m></td>
     <td>iu</td>
     <td>iu</td>
     <td>iu</td>
@@ -934,7 +936,7 @@
   <tr>
     <td>嚴</td>
     <td>[iːm]</td>
-    <td><^e>eem</^e></td>
+    <td><:m><^e>eem</^e></:m></td>
     <td>im</td>
     <td>im</td>
     <td>im</td>
@@ -944,7 +946,7 @@
   <tr>
     <td>言</td>
     <td>[iːn]</td>
-    <td><^e>een</^e></td>
+    <td><:m><^e>een</^e></:m></td>
     <td>in</td>
     <td>in</td>
     <td>in</td>
@@ -954,7 +956,7 @@
   <tr>
     <td>形</td>
     <td>[eŋ]</td>
-    <td><^e>ing</^e></td>
+    <td><:m><^e>ing</^e></:m></td>
     <td>ing</td>
     <td>ing</td>
     <td>ing</td>
@@ -964,7 +966,7 @@
   <tr>
     <td>葉</td>
     <td>[iːp̚]</td>
-    <td><^e>eep</^e></td>
+    <td><:m><^e>eep</^e></:m></td>
     <td>ip</td>
     <td>ip</td>
     <td>ip</td>
@@ -977,7 +979,7 @@
   <tr>
     <td>熱</td>
     <td>[iːt̚]</td>
-    <td><^e>eet</^e></td>
+    <td><:m><^e>eet</^e></:m></td>
     <td>it</td>
     <td>it</td>
     <td>it</td>
@@ -990,7 +992,7 @@
   <tr>
     <td>亦</td>
     <td>[ek̚]</td>
-    <td><^e>ik</^e></td>
+    <td><:m><^e>ik</^e></:m></td>
     <td>ik</td>
     <td>ik</td>
     <td>ik</td>
@@ -1022,7 +1024,7 @@
   <tr>
     <td>歌</td>
     <td>[ɔː]</td>
-    <td><^e>or</^e></td>
+    <td><:m><^e>or</^e></:m></td>
     <td>o</td>
     <td>o</td>
     <td>oh</td>
@@ -1035,7 +1037,7 @@
   <tr>
     <td>該</td>
     <td>[ɔːy]</td>
-    <td><^e>oi</^e></td>
+    <td><:m><^e>oi</^e></:m></td>
     <td>oi</td>
     <td>oi</td>
     <td>oi</td>
@@ -1048,7 +1050,7 @@
   <tr>
     <td>高</td>
     <td>[ou]</td>
-    <td><^e>ou</^e></td>
+    <td><:m><^e>ou</^e></:m></td>
     <td>ou</td>
     <td>ou</td>
     <td>o</td>
@@ -1064,7 +1066,7 @@
   <tr>
     <td>干</td>
     <td>[ɔːn]</td>
-    <td><^e>orn</^e></td>
+    <td><:m><^e>orn</^e></:m></td>
     <td>on</td>
     <td>on</td>
     <td>on</td>
@@ -1077,7 +1079,7 @@
   <tr>
     <td>江</td>
     <td>[ɔːŋ]</td>
-    <td><^e>ong</^e></td>
+    <td><:m><^e>ong</^e></:m></td>
     <td>ong</td>
     <td>ong</td>
     <td>ong</td>
@@ -1090,7 +1092,7 @@
   <tr>
     <td>葛</td>
     <td>[ɔːt̚]</td>
-    <td><^e>ort</^e></td>
+    <td><:m><^e>ort</^e></:m></td>
     <td>ot</td>
     <td>ot</td>
     <td>ot</td>
@@ -1108,7 +1110,7 @@
   <tr>
     <td>各</td>
     <td>[ɔːk̚]</td>
-    <td><^e>ok</^e></td>
+    <td><:m><^e>ok</^e></:m></td>
     <td>ok</td>
     <td>ok</td>
     <td>ok</td>
@@ -1140,7 +1142,7 @@
   <tr>
     <td>呼</td>
     <td>[uː]</td>
-    <td><^e>oo</^e></td>
+    <td><:m><^e>oo</^e></:m></td>
     <td>u</td>
     <td>u</td>
     <td>oo</td>
@@ -1153,7 +1155,7 @@
   <tr>
     <td>灰</td>
     <td>[uːy]</td>
-    <td><^e>ooi</^e></td>
+    <td><:m><^e>ooi</^e></:m></td>
     <td>ui</td>
     <td>ui</td>
     <td>ooi</td>
@@ -1167,7 +1169,7 @@
   <tr>
     <td>歡</td>
     <td>[uːn]</td>
-    <td><^e>oon</^e></td>
+    <td><:m><^e>oon</^e></:m></td>
     <td>un</td>
     <td>un</td>
     <td>oon</td>
@@ -1180,7 +1182,7 @@
   <tr>
     <td>風</td>
     <td>[oŋ]</td>
-    <td><^e>ung</^e></td>
+    <td><:m><^e>ung</^e></:m></td>
     <td>ung</td>
     <td>ung</td>
     <td>ung</td>
@@ -1193,7 +1195,7 @@
   <tr>
     <td>闊</td>
     <td>[uːt̚]</td>
-    <td><^e>oot</^e></td>
+    <td><:m><^e>oot</^e></:m></td>
     <td>ut</td>
     <td>ut</td>
     <td>oot</td>
@@ -1207,7 +1209,7 @@
   <tr>
     <td>福</td>
     <td>[ok̚]</td>
-    <td><^e>uk</^e></td>
+    <td><:m><^e>uk</^e></:m></td>
     <td>uk</td>
     <td>uk</td>
     <td>uk</td>
@@ -1243,7 +1245,7 @@
   <tr>
     <td>靴</td>
     <td>[œː]</td>
-    <td><^e>oe</^e></td>
+    <td><:m><^e>oe</^e></:m></td>
     <td>oe</td>
     <td>eu</td>
     <td>euh</td>
@@ -1257,7 +1259,7 @@
   <tr>
     <td>香</td>
     <td>[œːŋ]</td>
-    <td><^e>oeng</^e></td>
+    <td><:m><^e>oeng</^e></:m></td>
     <td>oeng</td>
     <td>eung</td>
     <td>eung</td>
@@ -1270,7 +1272,7 @@
   <tr>
     <td>卻</td>
     <td>[œːk̚]</td>
-    <td><^e>oek</^e></td>
+    <td><:m><^e>oek</^e></:m></td>
     <td>oek</td>
     <td>euk</td>
     <td>euk</td>
@@ -1302,7 +1304,7 @@
   <tr>
     <td>需</td>
     <td>[ɵy]</td>
-    <td><^e>_u"</^e></td>
+    <td><:m><^e>_u"</^e></:m></td>
     <td>eoi</td>
     <td>eui</td>
     <td>ui</td>
@@ -1315,7 +1317,7 @@
   <tr>
     <td>詢</td>
     <td>[ɵn]</td>
-    <td><^e>_n</^e></td>
+    <td><:m><^e>_n</^e></:m></td>
     <td>eon</td>
     <td>eun</td>
     <td>un</td>
@@ -1328,7 +1330,7 @@
   <tr>
     <td>戌</td>
     <td>[ɵt̚]</td>
-    <td><^e>_t</^e></td>
+    <td><:m><^e>_t</^e></:m></td>
     <td>eot</td>
     <td>eut</td>
     <td>ut</td>
@@ -1360,7 +1362,7 @@
   <tr>
     <td>遇</td>
     <td>[yː]</td>
-    <td><^e>u"</^e></td>
+    <td><:m><^e>u"</^e></:m></td>
     <td>yu</td>
     <td>yu</td>
     <td>ue</td>
@@ -1370,7 +1372,7 @@
   <tr>
     <td>願</td>
     <td>[yːn]</td>
-    <td><^e>u"n</^e></td>
+    <td><:m><^e>u"n</^e></:m></td>
     <td>yun</td>
     <td>yun</td>
     <td>uen</td>
@@ -1383,7 +1385,7 @@
   <tr>
     <td>月</td>
     <td>[yːt̚]</td>
-    <td><^e>u"t</^e></td>
+    <td><:m><^e>u"t</^e></:m></td>
     <td>yut</td>
     <td>yut</td>
     <td>uet</td>
@@ -1415,7 +1417,7 @@
   <tr>
     <td>唔</td>
     <td>[m̩]</td>
-    <td><^e>m</^e></td>
+    <td><:m><^e>m</^e></:m></td>
     <td>m</td>
     <td>m</td>
     <td>m</td>
@@ -1425,7 +1427,7 @@
   <tr>
     <td>吾</td>
     <td>[ŋ̍]</td>
-    <td><^e>ng</^e></td>
+    <td><:m><^e>ng</^e></:m></td>
     <td>ng</td>
     <td>ng</td>
     <td>ng</td>
@@ -1454,7 +1456,7 @@
     <td>1</td>
     <td>陰平</td>
     <td>[fɐn˥]~(55)</td>
-    <td><^e>fan1</^e></td>
+    <td><:m><^e>fan1</^e></:m></td>
     <td>fan1</td>
     <td>fān</td>
     <td>fan1</td>
@@ -1465,7 +1467,7 @@
     <td>2</td>
     <td>陰上</td>
     <td>[fɐn˧˥]~(35)</td>
-    <td><^e>fan2</^e></td>
+    <td><:m><^e>fan2</^e></:m></td>
     <td>fan2</td>
     <td>fán</td>
     <td>fan2</td>
@@ -1476,7 +1478,7 @@
     <td>3</td>
     <td>陰去</td>
     <td>[fɐn˧]~(33)</td>
-    <td><^e>fan3</^e></td>
+    <td><:m><^e>fan3</^e></:m></td>
     <td>fan3</td>
     <td>fan</td>
     <td>fan3</td>
@@ -1487,7 +1489,7 @@
     <td>4</td>
     <td>陽平</td>
     <td>[fɐn˩]~(11)</td>
-    <td><^e>fan4</^e></td>
+    <td><:m><^e>fan4</^e></:m></td>
     <td>fan4</td>
     <td>fàhn</td>
     <td>fan4</td>
@@ -1498,7 +1500,7 @@
     <td>5</td>
     <td>陽上</td>
     <td>[fɐn˨˧]~(23)</td>
-    <td><^e>fan5</^e></td>
+    <td><:m><^e>fan5</^e></:m></td>
     <td>fan5</td>
     <td>fáhn</td>
     <td>fan5</td>
@@ -1509,7 +1511,7 @@
     <td>6</td>
     <td>陽去</td>
     <td>[fɐn˨]~(22)</td>
-    <td><^e>fan6</^e></td>
+    <td><:m><^e>fan6</^e></:m></td>
     <td>fan6</td>
     <td>fahn</td>
     <td>fan6</td>
@@ -1520,7 +1522,7 @@
     <td>7</td>
     <td>高陰入</td>
     <td>[fɐt̚˥]~(5)</td>
-    <td><^e>fat7</^e></td>
+    <td><:m><^e>fat7</^e></:m></td>
     <td>fat1</td>
     <td>fāt</td>
     <td>fat1</td>
@@ -1531,7 +1533,7 @@
     <td>8</td>
     <td>低陰入</td>
     <td>[fɐt̚˧]~(3)</td>
-    <td><^e>fat8</^e></td>
+    <td><:m><^e>fat8</^e></:m></td>
     <td>fat3</td>
     <td>fat</td>
     <td>fat3</td>
@@ -1542,7 +1544,7 @@
     <td>9</td>
     <td>陽入</td>
     <td>[fɐt̚˨]~(2)</td>
-    <td><^e>fat9</^e></td>
+    <td><:m><^e>fat9</^e></:m></td>
     <td>fat6</td>
     <td>faht</td>
     <td>fat6</td>
@@ -1794,7 +1796,7 @@
         | https://ctext.org/kangxi-zidian/11/0#n318684
         | 《康熙字典》入
       </@>
-      i.e.~任~<^e>(yam6)</^e> to~入~<^e>(yap9)</^e>
+      i.e.~任~<:m><^e>(yam6)</^e></:m> to~入~<:m><^e>(yap9)</^e></:m>
     </td>
   </tr>
   
@@ -1808,7 +1810,7 @@
         | https://ctext.org/kangxi-zidian/17/3#n319099
         | 《康熙字典》出
       </@>
-      i.e.~春~<^e>(ch'_n1)</^e> to~出~<^e>(ch'_t7)</^e>
+      i.e.~春~<:m><^e>(ch'_n1)</^e></:m> to~出~<:m><^e>(ch'_t7)</^e></:m>
     </td>
   </tr>
   
@@ -1822,7 +1824,7 @@
         | https://ctext.org/kangxi-zidian/60/12#n326232
         | 《康熙字典》德
       </@>
-      i.e.~登~<^e>(tang1)</^e> to~德~<^e>(tak7)</^e>
+      i.e.~登~<:m><^e>(tang1)</^e></:m> to~德~<:m><^e>(tak7)</^e></:m>
     </td>
   </tr>
   
@@ -1844,32 +1846,32 @@
 <h3>Initials (聲)</h3>
 <!c><table>
   <tr>
-    <td>巴~<^e>p</^e></td>
-    <td>打~<^e>t</^e></td>
-    <td>家~<^e>k</^e></td>
-    <td>瓜~<^e>kw</^e></td>
-    <td>將張~<^e>ch</^e></td>
+    <td>巴~<:m><^e>p</^e></:m></td>
+    <td>打~<:m><^e>t</^e></:m></td>
+    <td>家~<:m><^e>k</^e></:m></td>
+    <td>瓜~<:m><^e>kw</^e></:m></td>
+    <td>將張~<:m><^e>ch</^e></:m></td>
   </tr>
   <tr>
-    <td>怕~<^e>p'</^e></td>
-    <td>他~<^e>t'</^e></td>
-    <td>卡~<^e>k'</^e></td>
-    <td>誇~<^e>k'w</^e></td>
-    <td>槍昌~<^e>ch'</^e></td>
+    <td>怕~<:m><^e>p'</^e></:m></td>
+    <td>他~<:m><^e>t'</^e></:m></td>
+    <td>卡~<:m><^e>k'</^e></:m></td>
+    <td>誇~<:m><^e>k'w</^e></:m></td>
+    <td>槍昌~<:m><^e>ch'</^e></:m></td>
   </tr>
   <tr>
-    <td>媽~<^e>m</^e></td>
-    <td>那~<^e>n</^e></td>
-    <td>牙~<^e>ng</^e></td>
-    <td>華~<^e>w</^e></td>
-    <td>相傷~<^e>s</^e></td>
+    <td>媽~<:m><^e>m</^e></:m></td>
+    <td>那~<:m><^e>n</^e></:m></td>
+    <td>牙~<:m><^e>ng</^e></:m></td>
+    <td>華~<:m><^e>w</^e></:m></td>
+    <td>相傷~<:m><^e>s</^e></:m></td>
   </tr>
   <tr>
-    <td>花~<^e>f</^e></td>
-    <td>啦~<^e>l</^e></td>
-    <td>蝦~<^e>h</^e></td>
-    <td>也~<^e>y</^e></td>
-    <td>雪說~<^e>sh</^e></td>
+    <td>花~<:m><^e>f</^e></:m></td>
+    <td>啦~<:m><^e>l</^e></:m></td>
+    <td>蝦~<:m><^e>h</^e></:m></td>
+    <td>也~<:m><^e>y</^e></:m></td>
+    <td>雪說~<:m><^e>sh</^e></:m></td>
   </tr>
 </table></!c>
 
@@ -1877,83 +1879,35 @@
 
 <!c><table>
   <tr>
-    <td>叉~<^e>aa</^e></td>
+    <td>叉~<:m><^e>aa</^e></:m></td>
     <td></td>
-    <td>爹~<^e>e</^e></td>
-    <td>而~<^e>ee</^e></td>
-    <td>歌~<^e>or</^e></td>
-    <td>呼~<^e>oo</^e></td>
-    <td>靴~<^e>oe</^e></td>
+    <td>爹~<:m><^e>e</^e></:m></td>
+    <td>而~<:m><^e>ee</^e></:m></td>
+    <td>歌~<:m><^e>or</^e></:m></td>
+    <td>呼~<:m><^e>oo</^e></:m></td>
+    <td>靴~<:m><^e>oe</^e></:m></td>
     <td></td>
-    <td>遇~<^e>u"</^e></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>釵~<^e>aai</^e></td>
-    <td>仔~<^e>ai</^e></td>
-    <td>地~<^e>ei</^e></td>
-    <td></td>
-    <td>該~<^e>oi</^e></td>
-    <td>灰~<^e>ooi</^e></td>
-    <td></td>
-    <td>需~<^e>_u"</^e></td>
-    <td></td>
+    <td>遇~<:m><^e>u"</^e></:m></td>
     <td></td>
   </tr>
   <tr>
-    <td>抄~<^e>aau</^e></td>
-    <td>走~<^e>au</^e></td>
-    <td>掉~<^e>eu</^e></td>
-    <td>堯~<^e>eeu</^e></td>
-    <td>高~<^e>ou</^e></td>
+    <td>釵~<:m><^e>aai</^e></:m></td>
+    <td>仔~<:m><^e>ai</^e></:m></td>
+    <td>地~<:m><^e>ei</^e></:m></td>
     <td></td>
+    <td>該~<:m><^e>oi</^e></:m></td>
+    <td>灰~<:m><^e>ooi</^e></:m></td>
     <td></td>
-    <td></td>
+    <td>需~<:m><^e>_u"</^e></:m></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>參~<^e>aam</^e></td>
-    <td>針~<^e>am</^e></td>
-    <td>舔~<^e>em</^e></td>
-    <td>嚴~<^e>eem</^e></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>唔~<^e>m</^e></td>
-  </tr>
-  <tr>
-    <td>餐~<^e>aan</^e></td>
-    <td>真~<^e>an</^e></td>
-    <td></td>
-    <td>言~<^e>een</^e></td>
-    <td>干~<^e>orn</^e></td>
-    <td>歡~<^e>oon</^e></td>
-    <td></td>
-    <td>詢~<^e>_n</^e></td>
-    <td>願~<^e>u"n</^e></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>撐~<^e>aang</^e></td>
-    <td>增~<^e>ang</^e></td>
-    <td>贏~<^e>eng</^e></td>
-    <td>形~<^e>ing</^e></td>
-    <td>江~<^e>ong</^e></td>
-    <td>風~<^e>ung</^e></td>
-    <td>香~<^e>oeng</^e></td>
-    <td></td>
-    <td></td>
-    <td>吾~<^e>ng</^e></td>
-  </tr>
-  <tr>
-    <td>插~<^e>aap</^e></td>
-    <td>汁~<^e>ap</^e></td>
-    <td>夾~<^e>ep</^e></td>
-    <td>葉~<^e>eep</^e></td>
-    <td></td>
+    <td>抄~<:m><^e>aau</^e></:m></td>
+    <td>走~<:m><^e>au</^e></:m></td>
+    <td>掉~<:m><^e>eu</^e></:m></td>
+    <td>堯~<:m><^e>eeu</^e></:m></td>
+    <td>高~<:m><^e>ou</^e></:m></td>
     <td></td>
     <td></td>
     <td></td>
@@ -1961,25 +1915,73 @@
     <td></td>
   </tr>
   <tr>
-    <td>察~<^e>aat</^e></td>
-    <td>疾~<^e>at</^e></td>
+    <td>參~<:m><^e>aam</^e></:m></td>
+    <td>針~<:m><^e>am</^e></:m></td>
+    <td>舔~<:m><^e>em</^e></:m></td>
+    <td>嚴~<:m><^e>eem</^e></:m></td>
     <td></td>
-    <td>熱~<^e>eet</^e></td>
-    <td>葛~<^e>ort</^e></td>
-    <td>闊~<^e>oot</^e></td>
     <td></td>
-    <td>戌~<^e>_t</^e></td>
-    <td>月~<^e>u"t</^e></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>唔~<:m><^e>m</^e></:m></td>
+  </tr>
+  <tr>
+    <td>餐~<:m><^e>aan</^e></:m></td>
+    <td>真~<:m><^e>an</^e></:m></td>
+    <td></td>
+    <td>言~<:m><^e>een</^e></:m></td>
+    <td>干~<:m><^e>orn</^e></:m></td>
+    <td>歡~<:m><^e>oon</^e></:m></td>
+    <td></td>
+    <td>詢~<:m><^e>_n</^e></:m></td>
+    <td>願~<:m><^e>u"n</^e></:m></td>
     <td></td>
   </tr>
   <tr>
-    <td>拆~<^e>aak</^e></td>
-    <td>仄~<^e>ak</^e></td>
-    <td>尺~<^e>ek</^e></td>
-    <td>亦~<^e>ik</^e></td>
-    <td>各~<^e>ok</^e></td>
-    <td>福~<^e>uk</^e></td>
-    <td>卻~<^e>oek</^e></td>
+    <td>撐~<:m><^e>aang</^e></:m></td>
+    <td>增~<:m><^e>ang</^e></:m></td>
+    <td>贏~<:m><^e>eng</^e></:m></td>
+    <td>形~<:m><^e>ing</^e></:m></td>
+    <td>江~<:m><^e>ong</^e></:m></td>
+    <td>風~<:m><^e>ung</^e></:m></td>
+    <td>香~<:m><^e>oeng</^e></:m></td>
+    <td></td>
+    <td></td>
+    <td>吾~<:m><^e>ng</^e></:m></td>
+  </tr>
+  <tr>
+    <td>插~<:m><^e>aap</^e></:m></td>
+    <td>汁~<:m><^e>ap</^e></:m></td>
+    <td>夾~<:m><^e>ep</^e></:m></td>
+    <td>葉~<:m><^e>eep</^e></:m></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>察~<:m><^e>aat</^e></:m></td>
+    <td>疾~<:m><^e>at</^e></:m></td>
+    <td></td>
+    <td>熱~<:m><^e>eet</^e></:m></td>
+    <td>葛~<:m><^e>ort</^e></:m></td>
+    <td>闊~<:m><^e>oot</^e></:m></td>
+    <td></td>
+    <td>戌~<:m><^e>_t</^e></:m></td>
+    <td>月~<:m><^e>u"t</^e></:m></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>拆~<:m><^e>aak</^e></:m></td>
+    <td>仄~<:m><^e>ak</^e></:m></td>
+    <td>尺~<:m><^e>ek</^e></:m></td>
+    <td>亦~<:m><^e>ik</^e></:m></td>
+    <td>各~<:m><^e>ok</^e></:m></td>
+    <td>福~<:m><^e>uk</^e></:m></td>
+    <td>卻~<:m><^e>oek</^e></:m></td>
     <td></td>
     <td></td>
     <td></td>
