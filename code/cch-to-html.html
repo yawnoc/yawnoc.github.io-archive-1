@@ -25,7 +25,7 @@
 <h1>Python: a regex converter from CCH to HTML</h1>
 <p class="page-properties">
 First created:&nbsp;20190720<br>
-Last modified:&nbsp;<b>20191031</b><br>
+Last modified:&nbsp;<b>20191103</b><br>
 <b>Code:</b>
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch-to-html.py" title="GitHub: cch-to-html.py"><code>cch-to-html.py</code></a>
 </p>
@@ -1503,7 +1503,10 @@ Automatic Chinese language spans
 </h2>
 <p>
 Runs of Chinese characters
-(including <span lang="zh-Hant">・</span> <code>U+30FB KATAKANA MIDDLE DOT</code>)
+(including <span lang="zh-Hant">・</span> <code>U+30FB KATAKANA MIDDLE DOT</code>),
+and consecutive runs of
+<a href="#formatted-span" title="Formatted span tag">formatted spans</a>
+of <code>{type}</code> not <code>n</code> containing these,
 are automatically wrapped in <code>&lt;span lang="zh-Hant"&gt;</code> tags.
 <a href="#escapes" title="Escapes">Precede runs by a backslash</a> to prevent this.
 </p>
@@ -1512,20 +1515,24 @@ are automatically wrapped in <code>&lt;span lang="zh-Hant"&gt;</code> tags.
 <b>CCH</b>
 <pre>
 《禮記\.禮運》大道之行也，天下為公。&lt;br&gt;
-\《禮記\.禮運》大道之行也，天下為公。
+\《禮記\.禮運》大道之行也，天下為公。&lt;br&gt;
+黑、&lt;:r&gt;赤&lt;/:r&gt;、&lt;:g&gt;翠&lt;/:g&gt;、&lt;:b&gt;青&lt;/:b&gt;、&lt;:m&gt;紫&lt;/:m&gt;、&lt;:y&gt;黃&lt;/:y&gt;、\
+  &lt;:h&gt;顯&lt;/:h&gt;、&lt;:t&gt;思&lt;/:t&gt;。
 </pre>
 </li>
 <li>
 <b>HTML</b>
 <pre>
 &lt;span lang="zh-Hant"&gt;《禮記・禮運》大道之行也，天下為公。&lt;/span&gt;&lt;br&gt;
-《禮記・禮運》大道之行也，天下為公。
+《禮記・禮運》大道之行也，天下為公。&lt;br&gt;
+&lt;span lang="zh-Hant"&gt;黑、&lt;span class="red"&gt;赤&lt;/span&gt;、&lt;span class="green"&gt;翠&lt;/span&gt;、&lt;span class="blue"&gt;青&lt;/span&gt;、&lt;span class="magenta"&gt;紫&lt;/span&gt;、&lt;span class="lightyellow"&gt;黃&lt;/span&gt;、&lt;span class="highlighted-part"&gt;顯&lt;/span&gt;、&lt;span class="thought"&gt;思&lt;/span&gt;。&lt;/span&gt;
 </pre>
 </li>
 <li>
 <b>Rendered</b><br>
 <span lang="zh-Hant">《禮記・禮運》大道之行也，天下為公。</span><br>
-《禮記・禮運》大道之行也，天下為公。
+《禮記・禮運》大道之行也，天下為公。<br>
+<span lang="zh-Hant">黑、<span class="red">赤</span>、<span class="green">翠</span>、<span class="blue">青</span>、<span class="magenta">紫</span>、<span class="lightyellow">黃</span>、<span class="highlighted-part">顯</span>、<span class="thought">思</span>。</span>
 </li>
 </ul>
 <footer>

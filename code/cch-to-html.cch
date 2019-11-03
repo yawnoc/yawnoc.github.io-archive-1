@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20191031 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20191103 | dmr
 </*>
 
 <=h>
@@ -1771,7 +1771,14 @@
 
 <p>
   Runs of Chinese characters
-  (including \. <`>U+30FB KATAKANA MIDDLE DOT</`>)
+  (including \. <`>U+30FB KATAKANA MIDDLE DOT</`>),
+  and consecutive runs of
+  <@>
+    formatted spans
+    | #formatted-span
+    | Formatted span tag
+  </@>
+  of <`>{type}</`> not <`>n</`> containing these,
   are automatically wrapped in <`><span lang="zh-Hant"></`> tags.
   <@> Precede runs by a backslash | #escapes | Escapes </@> to prevent this.
 </p>
@@ -1782,7 +1789,9 @@
     <b>CCH</b>
     <``>
       《禮記\.禮運》大道之行也，天下為公。<br>
-      \《禮記\.禮運》大道之行也，天下為公。
+      \《禮記\.禮運》大道之行也，天下為公。<br>
+      黑、<:r>赤</:r>、<:g>翠</:g>、<:b>青</:b>、<:m>紫</:m>、<:y>黃</:y>、\
+        <:h>顯</:h>、<:t>思</:t>。
     </``>
   </li>
   
@@ -1790,14 +1799,17 @@
     <b>HTML</b>
     <``>
       <span lang="zh-Hant">《禮記・禮運》大道之行也，天下為公。</span><br>
-      《禮記・禮運》大道之行也，天下為公。
+      《禮記・禮運》大道之行也，天下為公。<br>
+      <span lang="zh-Hant">黑、<span class="red">赤</span>、<span class="green">翠</span>、<span class="blue">青</span>、<span class="magenta">紫</span>、<span class="lightyellow">黃</span>、<span class="highlighted-part">顯</span>、<span class="thought">思</span>。</span>
     </``>
   </li>
   
   <li>
     <b>Rendered</b><br>
       《禮記\.禮運》大道之行也，天下為公。<br>
-      \《禮記\.禮運》大道之行也，天下為公。
+      \《禮記\.禮運》大道之行也，天下為公。<br>
+      黑、<:r>赤</:r>、<:g>翠</:g>、<:b>青</:b>、<:m>紫</:m>、<:y>黃</:y>、\
+        <:h>顯</:h>、<:t>思</:t>。
   </li>
   
 </ul>
