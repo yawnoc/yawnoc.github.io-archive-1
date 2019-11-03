@@ -2,7 +2,7 @@
 
 ################################################################
 # conv.py
-# Modified: 20191031
+# Modified: 20191103
 ################################################################
 # A converter from Conway's concise HTML (CCH) to HTML,
 # written by Conway, for the sole purpose of building his site
@@ -182,9 +182,10 @@
 ################################################################
 # Language spans
 ################################################################
-# Runs of Chinese characters and ・ (U+30FB KATAKANA MIDDLE DOT)
+# Runs of Chinese characters and ・ (U+30FB KATAKANA MIDDLE DOT),
+# and consecutive runs of formatted spans of {type} not n containing these,
 # are automatically wrapped in a lang="zh-Hant" span,
-# unless preceded immediately by a backslash.
+# unless the runs of Chinese are preceded immediately by a backslash.
 ################################################################
 
 ###############################################################################
@@ -2909,11 +2910,16 @@ def unescape_romanisations(string):
 ################################################################
 
 # Unprocessed string:
-#   {Chinese run}
+#   Repetitions of [<span class="{class}">]{Chinese run}[</span>]
+# This allows for all formatted spans except {type} n.
 
 # Raw regular expression for unprocessed string:
-#   {Chinese run regular expression}
-#   \g<0>   {Chinese run} in its entirety
+#   (
+#     (<span class="[^"]+?">)?
+#     {Chinese run regular expression}
+#     (</span>)?
+#   )+
+#   \g<0>   {unprocessed string} in its entirety
 
 # Processed string:
 #   <span lang="zh-Hant">{Chinese run}</span>
@@ -2921,7 +2927,13 @@ def unescape_romanisations(string):
 def wrap_chinese_runs(string):
   
   return re.sub(
-    r'[{CHINESE_CHARACTER_RANGE}]+'.format(
+    (
+      '('
+        '(<span class="[^"]+?">)?'
+        '[{CHINESE_CHARACTER_RANGE}]+?'
+        '(</span>)?'
+      ')+'
+    ).format(
       CHINESE_CHARACTER_RANGE = CHINESE_CHARACTER_RANGE
     ),
     r'<span lang="zh-Hant">\g<0></span>',
