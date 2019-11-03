@@ -2912,7 +2912,8 @@ def unescape_romanisations(string):
 #   {Chinese run}
 
 # Raw regular expression for unprocessed string:
-#   ({Chinese run regular expression})
+#   {Chinese run regular expression}
+#   \g<0>   {Chinese run} in its entirety
 
 # Processed string:
 #   <span lang="zh-Hant">{Chinese run}</span>
@@ -2920,10 +2921,10 @@ def unescape_romanisations(string):
 def wrap_chinese_runs(string):
   
   return re.sub(
-    r'([{CHINESE_CHARACTER_RANGE}]+)'.format(
+    r'[{CHINESE_CHARACTER_RANGE}]+'.format(
       CHINESE_CHARACTER_RANGE = CHINESE_CHARACTER_RANGE
     ),
-    r'<span lang="zh-Hant">\1</span>',
+    r'<span lang="zh-Hant">\g<0></span>',
     string
   )
 
@@ -3071,7 +3072,7 @@ def create_temporary_replacement_string(processed_string):
 
 # Raw regular expression for temporary replacement:
 #   {E000_RUN}[0-9]+{E000}
-#   \0  {temporary replacement string} in its entirety
+#   \g<0>   {temporary replacement string} in its entirety
 
 # ----------------------------------------------------------------
 # Single
