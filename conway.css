@@ -1,7 +1,7 @@
 /*
   conway.css
   Style sheet for https://yawnoc.github.io/
-  Modified: 20191102
+  Modified: 20191104
 */
 
 /* ---------------------------------------------------------------- */
@@ -73,9 +73,9 @@ h4 a.self-link {
 /* ---------------------------------------------------------------- */
 
 blockquote {
-  background: #ffe000;
-  border-left: 0.5em solid grey;
-  padding: 0.4em 0.8em;
+  background: #ffffce;
+  border-left: 3px solid grey;
+  padding: 10px;
 }
 
 @media print {
