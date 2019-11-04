@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 ################################################################
-# conv.py
+# cch-to-html.py
 # Modified: 20191103
 ################################################################
 # A converter from Conway's concise HTML (CCH) to HTML,
