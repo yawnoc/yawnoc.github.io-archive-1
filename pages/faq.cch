@@ -14,23 +14,23 @@
 </p>
 
 <ul>
-  <@i> What do you do in your spare time? | #spare-time </@i>
-  <@i> How is this site built? | #site </@i>
+  <@i> What do you do in your spare time? | #spare-time | </@i>
+  <@i> How is this site built? | #site | </@i>
   <@i>
     Why don't you get yourself a custom domain
     instead of the default yawnoc.github.io?
-    | #custom-domain
+    | #custom-domain |
   </@i>
   <@i>
     Oh... that's a bit macabre... (or, I wish you didn't mention death)
-    | #death
+    | #death |
   </@i>
   <@i>
     Why are citation date, maths equations \& romanisation toggling broken?
-    | #broken-no-javascript
+    | #broken-no-javascript |
   </@i>
-  <@i> Does your site use cookies? | #cookies-romanisation </@i>
-  <@i> How did you set up the site favicon? | #favicon </@i>
+  <@i> Does your site use cookies? | #cookies-romanisation | </@i>
+  <@i> How did you set up the site favicon? | #favicon | </@i>
 </ul>
 
 <p>
@@ -41,7 +41,7 @@
   </@>
 </p>
 <ul>
-  <@i> How are the maths equations rendered? | #maths-render </@i>
+  <@i> How are the maths equations rendered? | #maths-render | </@i>
 </ul>
 
 <p>
@@ -52,27 +52,23 @@
   </@>
 </p>
 <ul>
-  <@i> Why are there italicised words in your translations? | #italics </@i>
-  <@i> Wherefore usest thou archaic verb conjugation? | #archaic-verbs </@i>
+  <@i> Why are there italicised words in your translations? | #italics | </@i>
+  <@i> Wherefore usest thou archaic verb conjugation? | #archaic-verbs | </@i>
   <@i>
     But I thought that 是 means "is", and 也 "also".
-    | #see-yaa
-    | But I thought that 是 means "is", and 也 "also".
+    | #see-yaa |
   </@i>
   <@i>
     A certain 反切 doesn't work for Mandarin.
-    | #faan-ch'eet
-    | A certain 反切 doesn't work for Mandarin.
+    | #faan-ch'eet |
   </@i>
   <@i>
     What is 統讀, or Government-regulated Mandarin?
-    | #t'ung-tuk
-    | What is 統讀, or Government-regulated Mandarin?
+    | #t'ung-tuk |
   </@i>
   <@i>
     What do you mean by 四聲, four tones?
-    | #see-sing
-    | What do you mean by 四聲, four tones?
+    | #see-sing |
   </@i>
 </ul>
 
