@@ -10,15 +10,11 @@
 <*p></*p>
 
 <p>
-  <@> General | #general </@>
+  <@> <b>General</b> | #general | General </@>
 </p>
 
 <ul>
   <@i> What do you do in your spare time? | #spare-time </@i>
-  <@i>
-    Without dodging, what do you do in your spare time?
-    | #spare-time-no-dodge
-  </@i>
   <@i> How is this site built? | #site </@i>
   <@i>
     Why don't you get yourself a custom domain
@@ -38,14 +34,22 @@
 </ul>
 
 <p>
-  <@> Applied mathematics, or physics | #applied </@>
+  <@>
+    <b>Applied mathematics, or physics</b>
+    | #applied
+    | Applied mathematics, or physics
+  </@>
 </p>
 <ul>
   <@i> How are the maths equations rendered? | #maths-render </@i>
 </ul>
 
 <p>
-  <@> English translations of Literary Chinese | #literary </@>
+  <@>
+    <b>English translations of Literary Chinese</b>
+    | #literary
+    | English translations of Literary Chinese
+  </@>
 </p>
 <ul>
   <@i> Why are there italicised words in your translations? | #italics </@i>
@@ -84,11 +88,6 @@
   Eighty years is not a very long time to (expect to) be alive,
   and even eight hundred years would pass me by very quickly.
 </p>
-
-<@3>
-  Without dodging, what do you do in your spare time?
-  | spare-time-no-dodge
-</@3>
 
 <p>
   I ponder unsophisticated
@@ -157,6 +156,7 @@
   I do not fear death for my own sake.
   I might die some time later today, or I may have many decades yet.
   At the time of writing the latter is more probable. Fear changes nothing.
+  (And neither do euphemisms for dying.)
 </p>
 
 <@3>
@@ -301,8 +301,8 @@
   in my translations, and I adopt the convention of the
   King~James Bible translators, who {distinguished} words
   which did not appear in the original Hebrew, Aramaic or Greek
-  (though in the original 1611 version this was done not using italics,
-  but using Roman type against Black Letter type).
+  (note that in the original 1611 version this was done not using italics,
+  but using Roman type instead of the main Black Letter type).
   In my case, English words which do not appear in the original Chinese
   (meaning I cannot point to a character which corresponds to
   or contains that word) are {distinguished}, except:
@@ -413,8 +413,8 @@
 <@3> What do you mean by 四聲, four tones? | see-sing </@3>
 
 <p>
-  I <b>do not</b> mean the four tones of modern Mandarin,
-  but instead the <b>four classical tone classes</b> of Chinese:
+  I <strong>do not</strong> mean the four tones of modern Mandarin,
+  but instead the <strong>four classical tone classes</strong> of Chinese:
 </p>
 <ol>
   <li>平~(level)</li>
@@ -431,7 +431,8 @@
   but classically the distinction is important.
   In poetry you want a good balance of words in
   平聲 (level tone) and 仄聲 (sloping tone, i.e.~上去入).
-  Here it suffices for you to know that <b>Mandarin has no entering tones</b>;
+  Here it suffices for you to know that
+  <strong>Mandarin has no entering tones</strong>;
   its tones are:
 </p>
 <ol>
@@ -443,7 +444,7 @@
 
 <p>
   Although Mandarin has four tones numerically,
-  they only fall under the first <b>three</b> classical tone classes.
+  they only fall under the first <strong>three</strong> classical tone classes.
   Those of you familiar with Mandarin will notice that
   tone~2, light level, is actually rising in pitch,
   and tone~3, rising, is more of a dip or depression;
