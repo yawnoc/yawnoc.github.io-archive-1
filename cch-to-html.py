@@ -2,7 +2,6 @@
 
 ################################################################
 # cch-to-html.py
-# Modified: 20191107
 ################################################################
 # A converter from Conway's concise HTML (CCH) to HTML,
 # written by Conway, for the sole purpose of building his site

@@ -2,7 +2,6 @@
 
 ################################################################
 # shuen-sqrt.py
-# Modified: 20190817
 ################################################################
 # 孫子算經 Master Shün's Computational Classic
 # Square root algorithm in Volume II Paragraph 19:
