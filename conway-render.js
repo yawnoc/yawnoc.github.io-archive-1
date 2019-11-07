@@ -1,6 +1,6 @@
 /*
   conway-render.js
-  Modified: 20191030
+  Modified: 20191107
   
   ----------------------------------------------------------------
   Section 1
@@ -360,8 +360,8 @@ function romanisationInitialise() {
   let removePrefix = function (string) {
     return string.slice(PREFIX.length);
   };
-  // Handler for when F9 is down (cycle through romanisations)
-  let romanisationOnF9 = function () {
+  // Handler for when F2 is down (cycle through romanisations)
+  let romanisationOnF2 = function () {
     // Get current romanisation
     let romanisation =
       removePrefix(
@@ -381,11 +381,11 @@ function romanisationInitialise() {
     // Show selected romanisation
     romanisationShow(romanisation);
   };
-  // Set handler for F9
+  // Set handler for F2
   window.addEventListener('keydown',
     function (event) {
-      if (event.code === 'F9') {
-        romanisationOnF9();
+      if (event.code === 'F2') {
+        romanisationOnF2();
       }
     }
   );

@@ -2,7 +2,7 @@
 
 ################################################################
 # cch-to-html.py
-# Modified: 20191103
+# Modified: 20191107
 ################################################################
 # A converter from Conway's concise HTML (CCH) to HTML,
 # written by Conway, for the sole purpose of building his site
@@ -493,7 +493,7 @@ def replace_all_item_anchor_abbreviations(string):
 
 # Processed string:
 #   <div class="romanisation-radio">
-#     Romanisation~(F9):~音標<^>yam peeu | yin piao | yin biao</^><br>
+#     Romanisation~(<kbd>F2</kbd>):~音標<^>yam peeu | yin piao | yin biao</^><br>
 #     <input type="radio" name="romanisation" id="romanisation-none" value="none">
 #       <label for="romanisation-none">None</label>
 #     <input type="radio" name="romanisation" id="romanisation-conway" value="conway">
@@ -509,7 +509,7 @@ def replace_assisting_romanisation_radio(string):
   
   processed_string = de_indent('''\
     <div class="romanisation-radio">
-      Romanisation~(F9):~音標<^>yam peeu | yin piao | yin biao</^><br>
+      Romanisation~(<kbd>F2</kbd>):~音標<^>yam peeu | yin piao | yin biao</^><br>
       <input type="radio" name="romanisation" id="romanisation-none" value="none">
         <label for="romanisation-none">None</label>
       <input type="radio" name="romanisation" id="romanisation-conway" value="conway">
