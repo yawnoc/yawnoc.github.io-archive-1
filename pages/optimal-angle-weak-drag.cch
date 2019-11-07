@@ -38,7 +38,7 @@
     | Projectile Motion with Resistance and the Lambert W Function
   </@>.
   However, a more realistic model of air resistance
-  has drag proportional to the <b>square</b> of speed,
+  has drag proportional to the <strong>square</strong> of speed,
   for which the equations of motion are nonlinear and
   analytic solutions cannot be obtained.
 </p>
@@ -364,8 +364,8 @@ csvwrite ("trajectory-plot.csv", [x_sol, y_sol]);
 <p>
   Now the optimal angle is dimensionless, so it can depend only on
   the sole dimensionless group <$>B</$>.
-  Thus, <b>the optimal angle depends only on <$>\sqrt{B} = u / c</$>,
-  the ratio between the initial and terminal speeds</b>.
+  Thus, <strong>the optimal angle depends only on <$>\sqrt{B} = u / c</$>,
+  the ratio between the initial and terminal speeds</strong>.
   (I wish I knew this back in Year~12.)
 </p>
 

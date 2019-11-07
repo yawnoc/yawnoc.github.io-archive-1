@@ -354,7 +354,7 @@
 </#t>
 <ul>
   <li>
-    <:r>Beware stranger danger.</:r>
+    <:r><strong>Beware stranger danger.</strong></:r>
   </li>
   <li>汝意下如何：
     what {be} thy thoughts {upon this};

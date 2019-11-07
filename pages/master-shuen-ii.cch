@@ -276,8 +276,8 @@
     diminish {the} greater by {the} lesser.
     {For the} equal quantity {we} obtain six<:n>6</:n><br>
     In my opinion this description of the algorithm lacks clarity;
-    there isn't any instruction here to <b>repeat</b> the subtraction
-    <b>until</b> you get the equal quantity~6.
+    there isn't any instruction here to <strong>repeat</strong> the subtraction
+    <strong>until</strong> you get the equal quantity~6.
     A better description is found in 《九章算術》,
     "Nine Chapters {on} Computational Methods",
     in the chapter 〈方田〉, 'Rectangular Fields',
@@ -1119,7 +1119,7 @@
     寸<^> ch'u"n | ts'un | cun </^> and
     分<^> fan | fe^n | fen </^> are each a tenth of the previous)
     is actually supposed to represent the volume
-    1.62~<b>cubic</b>~尺<^> ch'ek | ch'ih | chi </^>.
+    1.62~<strong>cubic</strong>~尺<^> ch'ek | ch'ih | chi </^>.
     In modern (dimensionally consistent) notation, the conversion factor is
     <$$>
       1 = \frac{1.62 \unit{尺}^3}{\unit{斛}}.

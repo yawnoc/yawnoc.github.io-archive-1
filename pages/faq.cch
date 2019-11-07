@@ -1,4 +1,4 @@
-<*> FAQ | 20190801 | 20191031 | dmr </*>
+<*> FAQ | 20190801 | 20191107 | dmr </*>
 
 <=h>
   <@ih></@ih>
@@ -202,9 +202,9 @@
 </p>
 <.>
   Cookie banners/pop-ups are stupid. Sue me.<br>
-  <span class="small-caps"><b>
-    <:r>I</:r> <:r>A</:r>m <:r>N</:r>ot <:r>A</:r> <:r>L</:r>awyer
-  </b></span>
+  <span class="small-caps"><strong>\
+    <:r>I</:r> <:r>A</:r>m <:r>N</:r>ot <:r>A</:r> <:r>L</:r>awyer\
+  </strong></span>
 </.>
 
 <@3> How did you set up the site favicon? | favicon </@3>
@@ -300,11 +300,13 @@
     | Wikipedia: Dynamic and formal equivalence
   </@>
   in my translations, and I adopt the convention of the
-  King~James Bible translators, who {emphasised} words
-  which did not appear in the original Hebrew, Aramaic or Greek.
+  King~James Bible translators, who {distinguished} words
+  which did not appear in the original Hebrew, Aramaic or Greek
+  (though in the original 1611 version this was done not using italics,
+  but using Roman type against Black Letter type).
   In my case, English words which do not appear in the original Chinese
   (meaning I cannot point to a character which corresponds to
-  or contains that word) are {emphasised}, except:
+  or contains that word) are {distinguished}, except:
 </p>
 <ol>
   <li>

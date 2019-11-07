@@ -3029,7 +3029,7 @@
   </li>
   <li><:y>粟<:b>米</:b>：</:y>
     <:y>{regular} <:b>grain</:b></:y><br>
-    <b>This is not a nice paragraph to render into English</b>
+    <strong>This is not a nice paragraph to render into English</strong>
     (hence the colours).
     I am overloading the word <b>"grain"</b> with both
     <:y>粟</:y>, <:y>"{regular} grain"</:y> (in contrast to
