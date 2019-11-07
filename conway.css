@@ -1,7 +1,7 @@
 /*
   conway.css
   Style sheet for https://yawnoc.github.io/
-  Modified: 20191104
+  Modified: 20191107
 */
 
 /* ---------------------------------------------------------------- */
@@ -439,6 +439,20 @@ nav li a {
   display: block;
   height: 40px;
   margin: -40px 0 0;
+}
+
+/* ---------------------------------------------------------------- */
+/* Keyboard input                                                   */
+/* ---------------------------------------------------------------- */
+
+kbd {
+  background-color: #ececec;
+  border-radius: 4px;
+  border: 1px solid grey;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  margin: 0 0.1em;
+  padding: 0 0.3em;
 }
 
 /* ---------------------------------------------------------------- */
