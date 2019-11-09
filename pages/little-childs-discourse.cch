@@ -1,7 +1,7 @@
 <*>
   "Q{\&}A {with} Confucius: {the} Little Child's Discourse":
   《孔子問答：小兒論》
-  | 20190407 | 20191031 | dr
+  | 20190407 | 20191109 | dr
 </*>
 
 <=h>
@@ -137,7 +137,7 @@
     when technically they mean 名;
     this is to do with Mandarin having (on average) more homophones
     than other variants of Chinese, hence the need to include
-    more syllables (in this case "字") to serve as disambiguators.
+    more syllables (in this case "字") to disambiguate.
   </li>
   <li>敎：
     {a} teaching<br>
@@ -411,15 +411,7 @@
     brilliant; or wise
   </li>
   <li>暇：閒也；
-    spare time; or free time<br>
-      暇，亥駕切，音夏，
-      <^cmg> haa6 | xia\ | xia/ </^cmg><br>
-    Originally <^e>xia\</^e>, i.e.~去聲,
-    暇 is now pronounced <^e>xia/</^e> in Mandarin on the mainland,
-    so that 何暇同遊 consists of four consecutive characters
-    in 陽平聲 (<^e>he/ xia/ to/ng yo/u</^e>), which sounds absolutely awful.
-    However I note that 暇 in Cantonese does get pronounced
-    in 陽平聲, <^e>haa4</^e>, for instance in the phrase 閒暇.
+    spare time; or free time
   </li>
 </ul>
 
@@ -459,7 +451,7 @@
   小兒答曰：「天子好博，四海不理。諸侯好博，有妨政紀。士儒好博，學問廢弛。 |
   {The} little child replied, saying,
     "{Be the} Son of Heaven fond of wagering:
-      {all within the} four seas {shall} not {be properly} administered.
+      {all within the} Four Seas {shall} not {be properly} administered.
     {Be the} many lords fond of wagering:
       {this} doth harm governance {and} law.
     {Be the} scholars {and} academics fond of wagering:
@@ -1218,22 +1210,6 @@
   </div></div>
 </#t>
 <ul>
-  <li>詩曰：
-    verse saith; or {a} poem says<br>
-    Usually 詩曰
-    is a reference to
-    <@>
-      《詩經》<^> See King | Shih Ching | Shi Jing </^>
-      | https://ctext.org/book-of-poetry
-      | 《詩經》
-    </@>, the Classic of Poetry,
-    but in this case the poem is not from 《詩經》.
-    "{A} poem reads" might sound more natural,
-    but 曰 means "say", and I like being fancy, hence "verse saith".
-  </li>
-  <li>休：
-    do not
-  </li>
   <li>欺：
     bully;
     or pick on
