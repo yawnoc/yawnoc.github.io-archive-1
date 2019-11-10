@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20191013 | dmr
+  | 20190609 | 20191110 | dmr
 </*>
 
 <=h>
@@ -784,13 +784,14 @@
   今有粟二斗一升。問為粺米幾何？<br>
   答曰：一斗一升五十分升之一十七。 |
   Now there be {regular} grain,
-  two<:n>2</:n>~斗<^> tau | tou | dou </^>
-  one<:n>1</:n>~升<^> sing | she^ng | sheng </^>.
+    two<:n>2</:n>~斗<^> tau | tou | dou </^> {and}
+    one<:n>1</:n>~升<^> sing | she^ng | sheng </^>.
   {We} ask: how much be {this in} fine grain?<br>
-  Answer saith: one<:n>1</:n>~斗<^> tau | tou | dou </^>
-  one<:n>1</:n>~升<^> sing | she^ng | sheng </^> {and}
-  seventeen fiftieths<:n>17/50</:n> of {a}
-  升<^> sing | she^ng | sheng </^>.
+  Answer saith:
+    one<:n>1</:n>~斗<^> tau | tou | dou </^>,
+    one<:n>1</:n>~升<^> sing | she^ng | sheng </^> {and}
+    seventeen fiftieths<:n>17/50</:n> of {a}
+    升<^> sing | she^ng | sheng </^>.
 </#t>
 <ul>
   <li>
@@ -840,13 +841,14 @@
   今有粟四斗五升。問為糳米幾何？<br>
   答曰：二斗一升五分升之三。 |
   Now there be {regular} grain,
-  four<:n>4</:n>~斗<^> tau | tou | dou </^>
-  five<:n>5</:n>~升<^> sing | she^ng | sheng </^>.
+    four<:n>4</:n>~斗<^> tau | tou | dou </^> {and}
+    five<:n>5</:n>~升<^> sing | she^ng | sheng </^>.
   {We} ask: how much be {this in} intricate grain?<br>
-  Answer saith: two<:n>2</:n>~斗<^> tau | tou | dou </^>
-  one<:n>1</:n>~升<^> sing | she^ng | sheng </^> {and}
-  three fifths<:n>3/5</:n> of {a}
-  升<^> sing | she^ng | sheng </^>.
+  Answer saith:
+    two<:n>2</:n>~斗<^> tau | tou | dou </^>,
+    one<:n>1</:n>~升<^> sing | she^ng | sheng </^> {and}
+    three fifths<:n>3/5</:n> of {a}
+    升<^> sing | she^ng | sheng </^>.
 </#t>
 <ul>
   <li>
@@ -905,13 +907,14 @@
   今有粟七斗九升。問為御米幾何？<br>
   答曰：三斗三升一合八勺。 |
   Now there be {regular} grain,
-  seven<:n>7</:n>~斗<^> tau | tou | dou </^>
-  nine<:n>9</:n>~升<^> sing | she^ng | sheng </^>.
+    seven<:n>7</:n>~斗<^> tau | tou | dou </^> {and}
+    nine<:n>9</:n>~升<^> sing | she^ng | sheng </^>.
   {We} ask: how much be {this in} poppy seed?<br>
-  Answer saith: three<:n>3</:n>~斗<^> tau | tou | dou </^>
-  three<:n>3</:n>~升<^> sing | she^ng | sheng </^>
-  one<:n>1</:n>~合<^> kap | ko | ge </^>
-  eight<:n>8</:n>~勺<^> choek | shao | shao </^>.
+  Answer saith:
+    three<:n>3</:n>~斗<^> tau | tou | dou </^>,
+    three<:n>3</:n>~升<^> sing | she^ng | sheng </^>,
+    one<:n>1</:n>~合<^> kap | ko | ge </^> {and}
+    eight<:n>8</:n>~勺<^> choek | shao | shao </^>.
 </#t>
 <ul>
   <li>
@@ -931,8 +934,8 @@
 <#t>
   術曰：置七斗九升。以御米率二十一乘之，得一千六百五十九升為實。以粟率五十除之，即得。 |
   Method saith: put {down the}
-  seven<:n>7</:n>~斗<^> tau | tou | dou </^>
-  nine<:n>9</:n>~升<^> sing | she^ng | sheng </^>.
+    seven<:n>7</:n>~斗<^> tau | tou | dou </^> {and}
+    nine<:n>9</:n>~升<^> sing | she^ng | sheng </^>.
   Multiplying it by {the} poppy seed rate, twenty-one<:n>21</:n>,
   resulteth in one thousand, six hundred {and} fifty-nine<:n>1659</:n>\
   ~升<^> sing | she^ng | sheng </^> as {the} dividend.
@@ -1044,7 +1047,7 @@
   答曰：一十五萬一千四百七十四斛七升二十七分升之一十一。 |
   Answer saith: one hundred {and} fifty-one thousand,
   four hundred {and} seventy-four<:n>151474</:n>\
-    ~斛<^> huk | hu | hu </^>
+    ~斛<^> huk | hu | hu </^>,
   seven<:n>7</:n>~升<^> sing | she^ng | sheng </^>
   {and} eleven twenty-sevenths<:n>11/27</:n> of {a}
   升<^> sing | she^ng | sheng </^>.
@@ -1091,39 +1094,50 @@
 <#t>
   以斛法一尺六寸二分除之，即得。 |
   Dividing it by {the} 斛<^> huk | hu | hu </^> divisor,
-    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>
-    six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^>
+    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+    six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
     two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
   {we are} done.
 </#t>
 <ul>
   <li>斛法一尺六寸二分：
     {the} 斛<^> huk | hu | hu </^> divisor,
-      one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>
-      six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^>
+      one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+      six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
       two<:n>2</:n>~分<^> fan | fe^n | fen </^><br>
     The "斛<^> huk | hu | hu </^> divisor" gives the conversion between
     the volume unit cubic~尺<^> ch'ek | ch'ih | chi </^>
     and the capacity unit 斛<^> huk | hu | hu </^>.
-    Now recall that the Chinese did not have a fully developed notion of
-    dimensional analysis, so linear~尺<^> ch'ek | ch'ih | chi </^>,
-    square~尺<^> ch'ek | ch'ih | chi </^> and
-    cubic~尺<^> ch'ek | ch'ih | chi </^> were all written as just
-    尺<^> ch'ek | ch'ih | chi </^>
-    (though they still did the conversions correctly).
-    Here we have a very horrible abuse of dimensions; the length
-    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>
-      six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^>
-      two<:n>2</:n>~分<^> fan | fe^n | fen </^>
-    (where the length units 尺<^> ch'ek | ch'ih | chi </^>,
-    寸<^> ch'u"n | ts'un | cun </^> and
-    分<^> fan | fe^n | fen </^> are each a tenth of the previous)
-    is actually supposed to represent the volume
-    1.62~<strong>cubic</strong>~尺<^> ch'ek | ch'ih | chi </^>.
-    In modern (dimensionally consistent) notation, the conversion factor is
+    In modern (dimensionally consistent) notation, we would write
     <$$>
       1 = \frac{1.62 \unit{尺}^3}{\unit{斛}}.
     </$$>
+    Recall the Chinese did not have a fully developed notion
+    of dimensional analysis, so square~尺<^> ch'ek | ch'ih | chi </^>
+    and cubic~尺<^> ch'ek | ch'ih | chi </^> were simply referred to as
+    尺<^> ch'ek | ch'ih | chi </^>
+    (though they still knew how to do area and volume conversions correctly).
+    Here, by
+      "one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+      six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
+      two<:n>2</:n>~分<^> fan | fe^n | fen </^>",
+    which is the length 1.62~尺<^> ch'ek | ch'ih | chi </^>,
+    they actually meant the volume
+      1.62~<strong>cubic</strong>~尺<^> ch'ek | ch'ih | chi </^>.
+    But
+      <$$>
+        \begin{aligned}
+          1.62 \unit{尺}^3
+          &= (1 \unit{尺} + 6 \unit{寸} + 2 \unit{分}) \cdot \unit{尺}^2 \\
+          &= 1 \unit{尺}^3 + 600 \unit{寸}^3 + 20000 \unit{分}^3 \\
+          &\ne 1 \unit{尺}^3 + 6 \unit{寸}^3 + 2 \unit{分}^3,
+        \end{aligned}
+      </$$>
+    so parsing
+      尺<^> ch'ek | ch'ih | chi </^>,
+      寸<^> ch'u"n | ts'un | cun </^> and
+      分<^> fan | fe^n | fen </^>
+    individually as cubic units doesn't make sense.
   </li>
 </ul>
 
@@ -1156,13 +1170,13 @@
   今有方窖，廣四丈六尺，長五丈四尺，深三丈五尺。問受粟幾何？ |
   Now there be {a} rectangular cellar,
   of width
-    four<:n>4</:n>~丈<^> choeng | chang | zhang </^>
+    four<:n>4</:n>~丈<^> choeng | chang | zhang </^> {and}
     six<:n>6</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   length
-    five<:n>5</:n>~丈<^> choeng | chang | zhang </^>
+    five<:n>5</:n>~丈<^> choeng | chang | zhang </^> {and}
     four<:n>4</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   {and} depth
-    three<:n>3</:n>~丈<^> choeng | chang | zhang </^>
+    three<:n>3</:n>~丈<^> choeng | chang | zhang </^> {and}
     five<:n>5</:n>~尺<^> ch'ek | ch'ih | chi </^>.
   {We} ask: how much grain beareth {it}?
 </#t>
@@ -1171,8 +1185,8 @@
   答曰：五萬三千六百六十六斛六斗六升三分升之二。 |
   Answer saith:
   fifty-three thousand, six hundred {and} sixty-six<:n>53666</:n>\
-    ~斛<^> huk | hu | hu </^>
-  six<:n>6</:n>~斗<^> tau | tou | dou </^>
+    ~斛<^> huk | hu | hu </^>,
+  six<:n>6</:n>~斗<^> tau | tou | dou </^>,
   six<:n>6</:n>~升<^> sing | she^ng | sheng </^>
   {and} two thirds<:n>2/3</:n> of {a}
   升<^> sing | she^ng | sheng </^>.
@@ -1197,10 +1211,10 @@
 <#t>
   術曰：置廣四丈六尺、長五丈四尺，相乘，得二千四百八十四尺。 |
   Method saith: put {down the} width,
-    four<:n>4</:n>~丈<^> choeng | chang | zhang </^>
+    four<:n>4</:n>~丈<^> choeng | chang | zhang </^> {and}
     six<:n>6</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   {and the} length,
-    five<:n>5</:n>~丈<^> choeng | chang | zhang </^>
+    five<:n>5</:n>~丈<^> choeng | chang | zhang </^> {and}
     four<:n>4</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   {which}, multiplied with each other,
   result in two thousand, four hundred {and} eighty-four<:n>2484</:n>\
@@ -1210,7 +1224,7 @@
 <#t>
   以深三丈五尺乘之，得八萬六千九百四十尺。 |
   Multiplying it by {the} depth,
-    three<:n>3</:n>~丈<^> choeng | chang | zhang </^>
+    three<:n>3</:n>~丈<^> choeng | chang | zhang </^> {and}
     five<:n>5</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   resulteth in
     eighty-six thousand, nine hundred {and} forty<:n>86940</:n>\
@@ -1220,8 +1234,8 @@
 <#t>
   以斛法一尺六寸二分除之，即得。 |
   Dividing it by {the} 斛<^> huk | hu | hu </^> divisor,
-    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>
-    six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^>
+    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+    six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
     two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
   {we are} done.
 </#t>
@@ -1250,10 +1264,10 @@
 <#t>
   今有圓窖，周五丈四尺，深一丈八尺。問受粟幾何？ |
   Now there be {a} circular cellar, of circumference
-    five<:n>5</:n>~丈<^> choeng | chang | zhang </^>
+    five<:n>5</:n>~丈<^> choeng | chang | zhang </^> {and}
     four<:n>4</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   {and} depth
-    one<:n>1</:n>~丈<^> choeng | chang | zhang </^>
+    one<:n>1</:n>~丈<^> choeng | chang | zhang </^> {and}
     eight<:n>8</:n>~尺<^> ch'ek | ch'ih | chi </^>.
   {We} ask: how much grain beareth {it}?
 </#t>
@@ -1261,13 +1275,13 @@
 <#t>
   答曰：二千七百斛。 |
   Answer saith:
-  two thousand, seven hundred<:n>2700</:n>~斛<^> huk | hu | hu </^>.
+  two thousand seven hundred<:n>2700</:n>~斛<^> huk | hu | hu </^>.
 </#t>
 
 <#t>
   術曰：先置周五丈四尺，自相乘，得二千九百一十六尺。 |
   Method saith: First put {down the} circumference,
-    five<:n>5</:n>~丈<^> choeng | chang | zhang </^>
+    five<:n>5</:n>~丈<^> choeng | chang | zhang </^> {and}
     four<:n>4</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   {which}, multiplied with itself, resulteth in
   two thousand, nine hundred {and} sixteen<:n>2916</:n>\
@@ -1299,7 +1313,7 @@
 <#t>
   以深一丈八尺乘之，得五萬二千四百八十八尺。 |
   Multiplying it by {the} depth,
-    one<:n>1</:n>~丈<^> choeng | chang | zhang </^>
+    one<:n>1</:n>~丈<^> choeng | chang | zhang </^> {and}
     eight<:n>8</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   resulteth in
     fifty-two thousand, four hundred {and} eighty-eight<:n>52488</:n>\
@@ -1316,8 +1330,8 @@
 <#t>
   以斛法一尺六寸二分除之，即得。 |
   Dividing it by {the} 斛<^> huk | hu | hu </^> divisor,
-    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>
-    six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^>
+    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+    six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
     two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
   {we are} done.
 </#t>
@@ -1360,7 +1374,7 @@
 
 <#t>
   答曰：三十一畝奇六十步。 |
-  Answer saith: thirty-one<:n>31</:n>~畝<^> mau | mu | mu </^>
+  Answer saith: thirty-one<:n>31</:n>~畝<^> mau | mu | mu </^>,
   remainder sixty<:n>60</:n>~步<^> pou | pu | bu </^>.
 </#t>
 <ul>
@@ -1465,8 +1479,8 @@
 <#t>
   答曰：一頃八十三畝奇一百八十步。 |
   Answer saith:
-    one<:n>1</:n>~頃<^> k'ing | ch'ing | qing </^>
-    eighty-three<:n>83</:n>~畝<^> mau | mu | mu </^>
+    one<:n>1</:n>~頃<^> k'ing | ch'ing | qing </^> {and}
+    eighty-three<:n>83</:n>~畝<^> mau | mu | mu </^>,
     remainder one hundred {and} eighty<:n>180</:n>\
       ~步<^> pou | pu | bu </^>.
 </#t>
