@@ -502,7 +502,7 @@
       </li>
     </ul>
   </li>
-  <li>黍：
+  <li>黍<^> shu" | shu | shu </^>：
     literally millet<br>
       黍，音暑，
       <^cm> shu"2 | shuv </^cm>
@@ -682,7 +682,7 @@
   <li>圭，古攜切，音閨，
       <^cm> kwai1 | gui= </^cm>
   </li>
-  <li>撮：
+  <li>撮<^> ch'u"t | ts'o | cuo </^>：
     literally pinch (two or three fingers)<br>
       撮，寸入聲，
       <^cm> ch'u"t8 | cuo= </^cm>
@@ -1004,78 +1004,67 @@
 
 <!cc><table>
   <tr>
-    <th>Romanisation</th>
     <th>Quantity</th>
     <th><@> ¶3 | #3 | Vol. I ¶3</@></th>
     <th><@> ¶4 | #4 | Vol. I ¶4</@></th>
     <th>Modern</th>
   </tr>
   <tr>
-    <td><^e>yik7</^e>/<^e>yi\</^e></td>
-    <td lang="zh-Hant">億</td>
+    <td>億<^> yik | i | yi </^></td>
     <td>10<sup>8</sup></td>
     <td>10<sup>8</sup></td>
     <td>10<sup>8</sup></td>
   </tr>
   <tr>
-    <td><^e>seeu6</^e>/<^e>zha\o</^e></td>
-    <td lang="zh-Hant">兆</td>
+    <td>兆<^> seeu | chao | zhao </^></td>
     <td>10<sup>9</sup></td>
     <td>10<sup>16</sup></td>
     <td>10<sup>12</sup></td>
   </tr>
   <tr>
-    <td><^e>king1</^e>/<^e>ji=ng</^e></td>
-    <td lang="zh-Hant">京</td>
+    <td>京<^> king | ching | jing </^></td>
     <td>10<sup>10</sup></td>
     <td>10<sup>24</sup></td>
     <td>10<sup>16</sup></td>
   </tr>
   <tr>
-    <td><^e>koi1</^e>/<^e>ga=i</^e></td>
-    <td lang="zh-Hant">陔</td>
+    <td>陔<^> koi | kai | gai </^></td>
     <td>10<sup>11</sup></td>
     <td>10<sup>32</sup></td>
     <td>10<sup>20</sup></td>
   </tr>
   <tr>
-    <td><^e>chee2</^e>/<^e>ziv</^e></td>
-    <td lang="zh-Hant">秭</td>
+    <td>秭<^> chee | tzuu | zi </^></td>
     <td>10<sup>12</sup></td>
     <td>10<sup>40</sup></td>
     <td>10<sup>24</sup></td>
   </tr>
   <tr>
-    <td><^e>yoeng6</^e>/<^e>ravng</^e></td>
-    <td lang="zh-Hant">壤</td>
+    <td>壤<^> yoeng | jang | rang </^></td>
     <td>10<sup>13</sup></td>
     <td>10<sup>48</sup></td>
     <td>10<sup>28</sup></td>
   </tr>
   <tr>
-    <td><^e>k'au1</^e>/<^e>go=u</^e></td>
-    <td lang="zh-Hant">溝</td>
+    <td>溝<^> k'au | kou | gou </^></td>
     <td>10<sup>14</sup></td>
     <td>10<sup>56</sup></td>
     <td>10<sup>32</sup></td>
   </tr>
   <tr>
-    <td><^e>kaan3</^e>/<^e>jia\n</^e></td>
-    <td lang="zh-Hant">澗</td>
+    <td>澗<^> kaan | chien | jian </^></td>
     <td>10<sup>15</sup></td>
     <td>10<sup>64</sup></td>
     <td>10<sup>36</sup></td>
   </tr>
   <tr>
-    <td><^e>ching3</^e>/<^e>zhe\ng</^e></td>
-    <td lang="zh-Hant">正</td>
+    <td>正<^> ching | che^ng | zheng </^></td>
     <td>10<sup>16</sup></td>
     <td>10<sup>72</sup></td>
     <td>10<sup>40</sup></td>
   </tr>
   <tr>
-    <td><^e>choi2</^e>/<^e>zavi</^e></td>
-    <td lang="zh-Hant">載</td>
+    <td>載<^> choi | tsai | zai </^></td>
     <td>10<sup>17</sup></td>
     <td>10<sup>80</sup></td>
     <td>10<sup>44</sup></td>
@@ -1446,7 +1435,7 @@
   either fluked the measurements for gold, copper, lead and iron
   or he was actually a decent experimentalist but buggered up
   the measurements for silver and jade.
-  Or maybe he only had access to {very} impure silver and jade:
+  Or maybe he only had access to <em>very</em> impure silver and jade:
 </p>
 
 <!--                     Density comparison
@@ -2668,7 +2657,7 @@
   <@>
     here
     | /code/master-shuen-animations.html
-    | Code for 孫子 multiplication/division algorithm animations
+    | Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
 </p>
@@ -2863,7 +2852,7 @@
   <@>
     here
     | /code/master-shuen-animations.html
-    | Code for 孫子 multiplication/division algorithm animations
+    | Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
 </p>
@@ -3273,7 +3262,7 @@
   <@>
     here
     | /code/master-shuen-animations.html
-    | Code for 孫子 multiplication/division algorithm animations
+    | Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
   </@>.
 </p>
 
@@ -3399,7 +3388,7 @@
   <@>
     here
     | /code/master-shuen-animations.html
-    | Code for 孫子 multiplication/division algorithm animations
+    | Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
   </@>.
 </p>
 
