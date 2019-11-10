@@ -89,26 +89,32 @@
   <@u> Volumes | volumes | Volume navigation </@u>
 </@@>
 
+<p>
+  <b>Note.</b>
+  The <span class="heading"><b>"About" short headings</b></span>
+  are not part of the original text.
+</p>
+
 <!><table>
   <tr>
     <th>Link</th>
-    <th>About</th>
+    <th class="heading">About</th>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶1 | #1 | Vol. II ¶1 </@></td>
-    <td>Reducing fractions</td>
+    <td class="heading">Reducing fractions</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶2 | #2 | Vol. II ¶2 </@></td>
-    <td>Adding fractions</td>
+    <td class="heading">Adding fractions</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶3 | #3 | Vol. II ¶3 </@></td>
-    <td>Subtracting fractions</td>
+    <td class="heading">Subtracting fractions</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶4 | #4 | Vol. II ¶4 </@></td>
-    <td>Redistributing fractions for equality</td>
+    <td class="heading">Redistributing fractions for equality</td>
   </tr>
   <tr>
     <td class="centred-text">
@@ -117,31 +123,31 @@
       <@> ¶7 | #7 | Vol. II ¶7 </@>
       <@> ¶8 | #8 | Vol. II ¶8 </@>
     </td>
-    <td>Volume conversions for grain</td>
+    <td class="heading">Volume conversions for grain</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶9 | #9 | Vol. II ¶9 </@></td>
-    <td>Area of a rectangle</td>
+    <td class="heading">Area of a rectangle</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶10 | #10 | Vol. II ¶10 </@></td>
-    <td>Volume of a cylinder</td>
+    <td class="heading">Volume of a cylinder</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶11 | #11 | Vol. II ¶11 </@></td>
-    <td>Volume of a rectangular prism</td>
+    <td class="heading">Volume of a rectangular prism</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶12 | #12 | Vol. II ¶12 </@></td>
-    <td>Volume of a cylinder</td>
+    <td class="heading">Volume of a cylinder</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶13 | #13 | Vol. II ¶13 </@></td>
-    <td>Area of a circle</td>
+    <td class="heading">Area of a circle</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶14 | #14 | Vol. II ¶14 </@></td>
-    <td>Area of a square of a given circumradius</td>
+    <td class="heading">Area of a square of a given circumradius</td>
   </tr>
 </table></!>
 

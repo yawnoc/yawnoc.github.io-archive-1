@@ -107,111 +107,117 @@
   <@u> Volumes | volumes | Volume navigation </@u>
 </@@>
 
+<p>
+  <b>Note.</b>
+  The <span class="heading"><b>"About" short headings</b></span>
+  are not part of the original text.
+</p>
+
 <!><table>
   <tr>
     <th>Link</th>
-    <th>About</th>
+    <th class="heading">About</th>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶1 | #1 | Vol. I ¶1 </@></td>
-    <td>Units of length (or distance)</td>
+    <td class="heading">Units of length (or distance)</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶2 | #2 | Vol. I ¶2 </@></td>
-    <td>Units of weight (or mass)</td>
+    <td class="heading">Units of weight (or mass)</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶3 | #3 | Vol. I ¶3 </@></td>
-    <td>Units of capacity</td>
+    <td class="heading">Units of capacity</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶4 | #4 | Vol. I ¶4 </@></td>
-    <td>Names of large numbers</td>
+    <td class="heading">Names of large numbers</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶5 | #5 | Vol. I ¶5 </@></td>
-    <td>
+    <td class="heading">
       <$>\pi \approx 3</$>,
       <$>\sqrt{2} \approx 7/5</$>
     </td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶6 | #6 | Vol. I ¶6 </@></td>
-    <td>Densities of metals~etc.</td>
+    <td class="heading">Densities of metals~etc.</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶7 | #7 | Vol. I ¶7 </@></td>
-    <td>Rod calculus: vertical \&~horizontal forms</td>
+    <td class="heading">Rod calculus: vertical \&~horizontal forms</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶8 | #8 | Vol. I ¶8 </@></td>
-    <td>Rod calculus: multiplication algorithm</td>
+    <td class="heading">Rod calculus: multiplication algorithm</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶9 | #9 | Vol. I ¶9 </@></td>
-    <td>Rod calculus: division algorithm</td>
+    <td class="heading">Rod calculus: division algorithm</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶10 | #10 | Vol. I ¶10 </@></td>
-    <td>Volume conversion rates for grain \&~rice</td>
+    <td class="heading">Volume conversion rates for grain \&~rice</td>
   </tr>
   <tr>
     <td class="centred-text">
       <@> ¶11 | #11 | Vol. I ¶11 </@>
       <@> ¶12 | #12 | Vol. I ¶12 </@>
     </td>
-    <td>Some equivalent fractions</td>
+    <td class="heading">Some equivalent fractions</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶13 | #13 | Vol. I ¶13 </@></td>
-    <td>Rod calculus: <$>81 \times 81</$></td>
+    <td class="heading">Rod calculus: <$>81 \times 81</$></td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶14 | #14 | Vol. I ¶14 </@></td>
-    <td>Rod calculus: <$>6561 \div 9</$></td>
+    <td class="heading">Rod calculus: <$>6561 \div 9</$></td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶15 | #15 | Vol. I ¶15 </@>  </td>
-    <td>Results of multiplication \&~division: multiples of~9</td>
+    <td class="heading">Results of multiplication \&~division: multiples of~9</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶16 | #16 | Vol. I ¶16 </@></td>
-    <td>Results of multiplication \&~division: multiples of~8</td>
+    <td class="heading">Results of multiplication \&~division: multiples of~8</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶17 | #17 | Vol. I ¶17 </@></td>
-    <td>Results of multiplication \&~division: multiples of~7</td>
+    <td class="heading">Results of multiplication \&~division: multiples of~7</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶18 | #18 | Vol. I ¶18 </@></td>
-    <td>Results of multiplication \&~division: multiples of~6</td>
+    <td class="heading">Results of multiplication \&~division: multiples of~6</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶19 | #19 | Vol. I ¶19 </@></td>
-    <td>Results of multiplication \&~division: multiples of~5</td>
+    <td class="heading">Results of multiplication \&~division: multiples of~5</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶20 | #20 | Vol. I ¶20 </@></td>
-    <td>Results of multiplication \&~division: multiples of~4</td>
+    <td class="heading">Results of multiplication \&~division: multiples of~4</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶21 | #21 | Vol. I ¶21 </@></td>
-    <td>Results of multiplication \&~division: multiples of~3</td>
+    <td class="heading">Results of multiplication \&~division: multiples of~3</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶22 | #22 | Vol. I ¶22 </@></td>
-    <td>Results of multiplication \&~division: multiples of~2</td>
+    <td class="heading">Results of multiplication \&~division: multiples of~2</td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶23 | #23 | Vol. I ¶23 </@></td>
-    <td>
+    <td class="heading">
       Results of multiplication \&~division:
       multiples of~1, and all multiples of~9 through~1 combined
     </td>
   </tr>
   <tr>
     <td class="centred-text"><@> ¶24 | #24 | Vol. I ¶24 </@></td>
-    <td>Results of multiplication \&~division: multiples of powers of~3</td>
+    <td class="heading">Results of multiplication \&~division: multiples of powers of~3</td>
   </tr>
 </table></!>
 
