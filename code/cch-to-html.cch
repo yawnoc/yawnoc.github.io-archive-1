@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20191103 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20191110 | dmr
 </*>
 
 <=h>
@@ -1632,6 +1632,16 @@
     <td><`>&thinsp;</`></td>
     <td>\,</td>
     <td>Thin space</td>
+  </tr>
+  
+  <tr>
+    <td><`>\/</`></td>
+    <td colspan="3">\/</td>
+  </tr>
+  
+  <tr>
+    <td><`>\=</`></td>
+    <td colspan="3">\=</td>
   </tr>
   
   <tr>

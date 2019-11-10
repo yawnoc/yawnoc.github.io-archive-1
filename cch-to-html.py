@@ -118,6 +118,8 @@
 #   LORD            \*              (Lord in small caps)
 #   &numsp;         \_              (figure space for use in numerical tables)
 #   &thinsp;        \,              (thin space)
+#   {master URL}    \/              (GitHub: yawnoc.github.io master root)
+#   {yawnoc URL}    \=              (GitHub: yawnoc)
 #   <i>             {               (Conway italics opening tag)
 #   </i>            }               (Conway italics closing tag)
 # \ and | are called functional Conway literals.
@@ -2851,6 +2853,12 @@ def unescape_conway(string):
   
   # Unescape \, as &thinsp;
   string = re.sub(r'\\,', '&thinsp;', string)
+  
+  # Unescape \/ as \=/yawnoc.github.io/blob/master/
+  string = re.sub(r'\\/', '\\=/yawnoc.github.io/blob/master/', string)
+  
+  # Unescape \= as https://github.com/yawnoc
+  string = re.sub(r'\\=', 'https://github.com/yawnoc', string)
   
   return(string)
 
