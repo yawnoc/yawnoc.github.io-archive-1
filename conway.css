@@ -595,12 +595,6 @@ svg.embedded-styles {
 /* Spans                                                            */
 /* ---------------------------------------------------------------- */
 
-/* Heading (or short description, of paragraphs etc.) */
-
-span.heading {
-  color: green;
-}
-
 /* Highlighted part (of words, phonetics etc.) */
 
 span.highlighted-part {
@@ -758,6 +752,12 @@ td ul {
 
 .lightyellow {
   background: lightyellow
+}
+
+/* Heading (or short description, of paragraphs etc.) */
+
+.heading {
+  color: navy;
 }
 
 /* Thought */
