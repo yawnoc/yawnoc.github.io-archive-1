@@ -12,11 +12,7 @@
 
 <*p> |
   <b>Code:</b>
-  <@>
-    <`>cch-to-html.py</`>
-    | https://github.com/yawnoc/yawnoc.github.io/blob/master/cch-to-html.py
-    | GitHub: cch-to-html.py
-  </@>
+  <@> <`>cch-to-html.py</`> | \/cch-to-html.py | GitHub: cch-to-html.py </@>
 </*p>
 
 <=>
@@ -114,11 +110,7 @@
 
 <p>
   For the sole purpose of building this site, I wrote a Python program
-  <@>
-    <`>cch-to-html.py</`>
-    | https://github.com/yawnoc/yawnoc.github.io/blob/master/cch-to-html.py
-    | GitHub: cch-to-html.py
-  </@>
+  <@> <`>cch-to-html.py</`> | \/cch-to-html.py | GitHub: cch-to-html.py </@>
   which converts Conway's concise HTML (CCH) to standard (HTML),
   using regular expression replacements.
 </p>
@@ -152,14 +144,14 @@
 <p>
   This page
   <@>
-    <`>cch-to-html.html</`>
-    | https://github.com/yawnoc/yawnoc.github.io/blob/master/code/cch-to-html.html
+    <`>cch-to-html.html</`> 
+    | \/code/cch-to-html.html
     | GitHub: cch-to-html.html
   </@>
   was generated from
   <@>
     <`>cch-to-html.cch</`>
-    | https://github.com/yawnoc/yawnoc.github.io/blob/master/code/cch-to-html.cch
+    | \/code/cch-to-html.cch
     | GitHub: cch-to-html.cch
   </@>
   by running <`>cch-to-html.py code/cch-to-html</`>,

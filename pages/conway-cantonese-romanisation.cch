@@ -9,10 +9,7 @@
 <h1>Conway's Custom Romanisation for Cantonese</h1>
 
 <*p>
-  <@>
-    Python: Cantonese Diceware
-    | https://github.com/yawnoc/cantonese-diceware
-  </@>
+  <@> Python: Cantonese Diceware | \=/cantonese-diceware </@>
 </*p>
 
 <=>

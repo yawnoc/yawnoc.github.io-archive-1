@@ -87,17 +87,9 @@
 <p>
   <:y>
     Put
-    <@>
-      <`>conway-katex.css</`>
-      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-katex.css
-      | conway-katex.css
-    </@>
+    <@> <`>conway-katex.css</`> | \/conway-katex.css | conway-katex.css </@>
     (or the
-    <@>
-      minified version
-      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-katex.min.css
-      | conway-katex.min.css
-    </@>)
+    <@> minified version | \/conway-katex.min.css | conway-katex.min.css </@>)
     into your root directory.
   </:y>
   This style sheet was made by combining an edited version of <`>katex.css</`>
@@ -124,13 +116,13 @@
     Put
     <@>
       <`>conway-katex.js</`>
-      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-katex.js
+      | \/conway-katex.js
       | conway-katex.js
     </@>
     (or the
     <@>
       minified version
-      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-katex.min.js
+      | \/conway-katex.min.js
       | conway-katex.min.js
     </@>)
     into your root directory.
@@ -150,17 +142,10 @@
 <p>
   <:y>
     Put
-    <@>
-      <`>conway-render.js</`>
-      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-render.js
-      | conway-render.js
+    <@> <`>conway-render.js</`> | \/conway-render.js | conway-render.js
     </@>
     (or the
-    <@>
-      minified version
-      | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-render.min.js
-      | conway-render.min.js
-    </@>)
+    <@> minified version | \/conway-render.min.js | conway-render.min.js </@>)
     into your root directory.
   </:y>
   You will only need the function <`>mathsRender</`>;
@@ -189,11 +174,7 @@
 <p>
   The following macros are defined automatically
   (the double backslashes are required in JavaScript; see <`>MACROS</`> in
-  <@>
-    <`>conway-render.js</`>
-    | https://github.com/yawnoc/yawnoc.github.io/blob/master/conway-render.js
-    | conway-render.js
-  </@>):
+  <@> <`>conway-render.js</`> | \/conway-render.js | conway-render.js </@>):
 </p>
 <``>
 {

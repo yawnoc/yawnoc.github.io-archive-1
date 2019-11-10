@@ -276,17 +276,17 @@
 <ul>
   <@i>
     <b>Python: Big Two (鋤大弟) scoring statistics</b>
-    | https://github.com/yawnoc/big-two-stats
+    | \=/big-two-stats
     | Python: Big Two (鋤大弟) scoring statistics
   </@i>
   <@i>
     <b>Python: Cantonese Diceware</b>
-    | https://github.com/yawnoc/cantonese-diceware
+    | \=/cantonese-diceware
     | Python: Cantonese Diceware
   </@i>
   <@i>
     <b>Python: Master~孫<^> Shu"n | Sun | Sun </^> square root algorithm</b>
-    | https://github.com/yawnoc/yawnoc.github.io/blob/master/code/shuen-sqrt.py
+    | \/code/shuen-sqrt.py
     | Python: Master~<^e> Shu"n</^e> square root algorithm
   </@i>
   <@i>
@@ -311,11 +311,7 @@
   
   <li><span>20191031:</span>
     Rewrote the CCH to HTML converter
-    <@>
-      <`>cch-to-html.py</`>
-      | https://github.com/yawnoc/yawnoc.github.io/blob/master/cch-to-html.py
-      | cch-to-html.py
-    </@>,
+    <@> <`>cch-to-html.py</`> | \/cch-to-html.py | cch-to-html.py </@>,
     and rebuilt the whole site accordingly.
   </li>
   
