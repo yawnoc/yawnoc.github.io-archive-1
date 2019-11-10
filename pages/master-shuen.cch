@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
-  | 20190504 | 20191006 | dmr
+  | 20190504 | 20191110 | dmr
 </*>
 
 <=h>
@@ -223,8 +223,8 @@
 <p>
   These are PDF scans of my handwritten translation scribblings.
   They are drafts, and as such, will not contain
-  corrections I have made since they were scanned.
-  Manuscripts for Volumes~I &;~II are now complete.
+  edits and corrections I have made since they were scanned.
+  Manuscripts for Volumes~I \&~II are now complete.
 </p>
 <ul>
   
@@ -509,7 +509,47 @@
   
   <li>
     <b>Volume III:</b>
-    <:r>(haven't started)</:r>
+    <@>
+      ¶1
+      | /manuscripts/shuen-iii-1.pdf
+      | Translation manuscript for Vol. III ¶1
+    </@>
+    <@>
+      ¶2
+      | /manuscripts/shuen-iii-2.pdf
+      | Translation manuscript for Vol. III ¶2
+    </@>
+    <@>
+      ¶3
+      | /manuscripts/shuen-iii-3.pdf
+      | Translation manuscript for Vol. III ¶3
+    </@>
+    <@>
+      ¶4
+      | /manuscripts/shuen-iii-4.pdf
+      | Translation manuscript for Vol. III ¶4
+    </@>
+    <@>
+      ¶5
+      | /manuscripts/shuen-iii-5.pdf
+      | Translation manuscript for Vol. III ¶5
+    </@>
+    <@>
+      ¶6
+      | /manuscripts/shuen-iii-6.pdf
+      | Translation manuscript for Vol. III ¶6
+    </@>
+    <@>
+      ¶7
+      | /manuscripts/shuen-iii-7.pdf
+      | Translation manuscript for Vol. III ¶7
+    </@>
+    <@>
+      ¶8
+      | /manuscripts/shuen-iii-8.pdf
+      | Translation manuscript for Vol. III ¶8
+    </@>
+    <:r>(work in progress)</:r>
   </li>
   
 </ul>
