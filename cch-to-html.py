@@ -3144,8 +3144,8 @@ def main(args):
   # Import contents (markup) of CCH file
   # ----------------------------------------------------------------
   
-  cch_file = open(file_name + '.cch', 'r', encoding = 'utf-8')
-  markup = cch_file.read()
+  with open(file_name + '.cch', 'r', encoding = 'utf-8') as cch_file:
+    markup = cch_file.read()
   
   # ----------------------------------------------------------------
   # Temporary replacements
@@ -3303,8 +3303,8 @@ def main(args):
   # Write processed markup to HTML file
   # ----------------------------------------------------------------
   
-  html_file = open(file_name + '.html', 'w', encoding = 'utf-8')
-  html_file.write(markup)
+  with open(file_name + '.html', 'w', encoding = 'utf-8') as html_file:
+    html_file.write(markup)
 
 ################################################################
 # Argument parsing
