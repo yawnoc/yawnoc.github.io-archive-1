@@ -194,6 +194,7 @@
 ###############################################################################
 
 import argparse
+import os
 import re
 from textwrap import dedent as de_indent
 
@@ -1775,7 +1776,7 @@ def replace_page_properties(string):
 #       <p>
 #         Conway~({year last modified}).
 #         【{text heading}】.
-#         \<{address}\>
+#         \<{url}\>
 #         [Accessed <span class="date">d~month~yyyy</span>]
 #       </p>
 #     </li>
@@ -1785,7 +1786,7 @@ def replace_page_properties(string):
 #           author = 《Conway》,
 #           year = 《{year last modified}》,
 #           title = 《{Conway-special-literal-escaped tex heading}》,
-#           howpublished = 《\\url《{address}》》,
+#           howpublished = 《\\url《{url}》》,
 #           note = 《[Accessed <span class="date">d\~month\~yyyy</span>]》
 #         》
 #       </pre>
@@ -1796,7 +1797,7 @@ def replace_page_properties(string):
 #           author = 《Conway》,
 #           year = 《{year last modified}》,
 #           title = 《{Conway-special-literal-escaped tex heading}》,
-#           url = 《{address}》,
+#           url = 《{url}》,
 #           urldate = 《<span class="date">yyyy-mm-dd</span>》
 #         》
 #       </pre>
@@ -1848,10 +1849,6 @@ def replace_cite_this_page(string):
   
   tex_heading = escape_conway_special_literals(tex_heading)
   
-  address = 'https://yawnoc.github.io/'
-  if not is_index:
-    address += file_name + '.html'
-  
   # NOTE: <pre> ... </pre> must be used rather than <``> ... </``>
   # in order for <span class="date">d\~month\~yyyy</span> to actually render
   # today's date, rather than appear literally
@@ -1864,7 +1861,7 @@ def replace_cite_this_page(string):
         <p>
           Conway~({year_last_modified}).
           【{text_heading}】.
-          \<{address}\>
+          \<{url}\>
           [Accessed <span class="date">d~month~yyyy</span>]
         </p>
       </li>
@@ -1874,7 +1871,7 @@ def replace_cite_this_page(string):
             author = 《Conway》,
             year = 《{year_last_modified}》,
             title = 《{tex_heading}》,
-            howpublished = 《\\url《{address}》》,
+            howpublished = 《\\url《{url}》》,
             note = 《[Accessed <span class="date">d\~month\~yyyy</span>]》
           》
         </pre>
@@ -1885,7 +1882,7 @@ def replace_cite_this_page(string):
             author = 《Conway》,
             year = 《{year_last_modified}》,
             title = 《{tex_heading}》,
-            url = 《{address}》,
+            url = 《{url}》,
             urldate = 《<span class="date">yyyy-mm-dd</span>》
           》
         </pre>
@@ -1910,7 +1907,7 @@ def replace_cite_this_page(string):
   processed_string = processed_string.format(
     inconvenience_spec = inconvenience_spec,
     year_last_modified = year_last_modified,
-    address = address,
+    url = url,
     text_heading = text_heading,
     tex_key = tex_key,
     tex_heading = tex_heading
@@ -3119,26 +3116,38 @@ def replace_all_temporary_replacements(string):
   )
 
 ################################################################
-# Main
+# Converter
 ################################################################
 
-def main(args):
+def cch_to_html(file_name):
   
-  global file_name, is_index
+  global is_index, url
   global E000, E000_RUN, TEMPORARY_REPLACEMENT_REGEX
   global temporary_replacement_counter, temporary_replacement_dictionary
   
   # ----------------------------------------------------------------
-  # File name
+  # Canonicalise file name
   # ----------------------------------------------------------------
   
-  file_name = args.file_name
+  # Convert Windows backslashes to forward slashes
+  file_name = re.sub(r'\\', '/', file_name)
+  
+  # Remove current directory leading dot slash
+  file_name = re.sub('^\./', '', file_name)
   
   # ----------------------------------------------------------------
   # Whether we are building index.html
   # ----------------------------------------------------------------
   
   is_index = file_name == 'index'
+  
+  # ----------------------------------------------------------------
+  # Canonical URL for Cite this page
+  # ----------------------------------------------------------------
+  
+  url = 'https://yawnoc.github.io/'
+  if not is_index:
+    url += file_name + '.html'
   
   # ----------------------------------------------------------------
   # Import contents (markup) of CCH file
@@ -3307,6 +3316,35 @@ def main(args):
     html_file.write(markup)
 
 ################################################################
+# Main
+################################################################
+
+def main(file_name):
+  
+  # ----------------------------------------------------------------
+  # If file name is given as * then convert all CCH files
+  # ----------------------------------------------------------------
+  
+  if file_name == '*':
+    
+    for path, _, files in os.walk('.'):
+      
+      for name in files:
+        
+        if name.endswith('.cch'):
+          
+          file_name = os.path.join(path, os.path.splitext(name)[0])
+          cch_to_html(file_name)
+  
+  # ----------------------------------------------------------------
+  # Otherwise convert given file only
+  # ----------------------------------------------------------------
+  
+  else:
+    
+    cch_to_html(file_name)
+
+################################################################
 # Argument parsing
 ################################################################
 
@@ -3318,8 +3356,16 @@ if __name__ == '__main__':
   # Argument
   parser.add_argument(
     'file_name',
-    help = 'File name of CCH file to be converted, without the .cch extension'
+    help = (
+      'File name of CCH file to be converted, without the .cch extension '
+      '(omit or use * to convert all CCH files)'
+    ),
+    nargs = '?',
+    default = '*'
   )
   
+  args = parser.parse_args()
+  file_name = args.file_name
+  
   # Run
-  main(parser.parse_args())
+  main(file_name)
