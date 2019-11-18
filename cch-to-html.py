@@ -2914,14 +2914,15 @@ def unescape_romanisations(string):
 ################################################################
 
 # Unprocessed string:
-#   Repetitions of [<span class="{class}">]{Chinese run}[</span>]
+#   Repetitions of [<span class="{class}">...]{Chinese run}[...</span>]
 # This allows for all formatted spans except {type} n.
+# No check is performed for mismatched tags.
 
 # Raw regular expression for unprocessed string:
 #   (
-#     (<span class="[^"]+?">)?
+#     (<span class="[^"]+?">)*
 #     {Chinese run regular expression}
-#     (</span>)?
+#     (</span>)*
 #   )+
 #   \g<0>   {unprocessed string} in its entirety
 
@@ -2933,9 +2934,9 @@ def wrap_chinese_runs(string):
   return re.sub(
     (
       '('
-        '(<span class="[^"]+?">)?'
+        '(<span class="[^"]+?">)*'
         '[{CHINESE_CHARACTER_RANGE}]+?'
-        '(</span>)?'
+        '(</span>)*'
       ')+'
     ).format(
       CHINESE_CHARACTER_RANGE = CHINESE_CHARACTER_RANGE
