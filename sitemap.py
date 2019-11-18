@@ -13,17 +13,12 @@
 import os
 import re
 
-from os.path import join
-
-# Whether a file is an HTML page
-def is_page(name):
-  return name.endswith('.html') and name != 'googlefe5d4ec3587d5f3a.html'
-
-# Get list of all pages
+# Get list of all HTML pages
 sitemap = [
-  join(path, name)
+  os.path.join(path, name)
     for path, _, files in os.walk('.')
-      for name in filter(is_page, files)
+      for name in files
+        if name.endswith('.html') and name != 'googlefe5d4ec3587d5f3a.html'
 ]
 
 # Convert list to newline-separated string
@@ -40,5 +35,5 @@ root = 'https://yawnoc.github.io'
 sitemap = re.sub(r'^\.', root, sitemap, flags = re.MULTILINE)
 
 # Write to sitemap.txt
-sitemap_file = open('sitemap.txt', 'w', encoding = 'utf-8')
-sitemap_file.write(sitemap)
+with open('sitemap.txt', 'w', encoding = 'utf-8') as sitemap_file:
+  sitemap_file.write(sitemap)
