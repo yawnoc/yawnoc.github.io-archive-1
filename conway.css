@@ -156,6 +156,10 @@ li div.centred-flex {
   margin-bottom: 0.3em;
 }
 
+div.boxed + div.centred-flex {
+  margin-top: 1em;
+}
+
 /* Centred SVG and text */
 
 div.centred-svg, div.centred-text {
