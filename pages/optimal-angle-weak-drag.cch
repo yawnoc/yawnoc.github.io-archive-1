@@ -1408,7 +1408,7 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
     font-size = "1"
     dx = "1.2em"
     dy = "0.3em"
-    >u / c
+    >u\,/\,c
   </text>
   <!-- Horizontal axis coarse ticks -->
   <polyline class="points"

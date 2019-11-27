@@ -78,10 +78,10 @@ url("/fonts/KaTeX_Main-Regular.woff2") format("woff2"),
 url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
 url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
 }
-text.m {
+.m {
 font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
 }
-text.mr {
+.mr {
 font-family: "KaTeX_Main-Regular";
 }
 .thick {
@@ -1406,36 +1406,10 @@ y1 = "0"
 x2 = "20.5"
 y2 = "0" />
 <text class="m"
-x = "8.35"
-y = "2.6"
-font-size = "1"
->ρ
-</text>
-<text class="mr"
-x = "9"
-y = "2.6"
-font-size = "0.8"
-dy = "0.2em"
->m
-</text>
-<text class="mr"
 x = "11"
 y = "2.6"
 font-size = "1"
->/(g cm
-</text>
-<text class="mr"
-x = "13"
-y = "2.6"
-font-size = "0.8"
-dy = "-0.4em"
->−3
-</text>
-<text class="mr"
-x = "13.8"
-y = "2.6"
-font-size = "1"
->)
+>ρ<tspan class="mr" font-size="0.8" dx="0.05em" dy="0.25em">m</tspan><tspan dy="-0.2em">&thinsp;/</tspan>(<tspan class="mr">g</tspan> <tspan class="mr">cm</tspan><tspan font-size="0.8" dy="-0.4em">−3</tspan><tspan dx="0.1em" dy="0.32em">)</tspan>
 </text>
 <polyline class="points"
 points = "5,0 10,0 15,0 20,0"
@@ -1484,40 +1458,10 @@ x2 = "0"
 y2 = "-17.5" />
 <text class="m"
 x = "-2.4"
-y = "-5.92"
+y = "-8.5"
 font-size = "1"
-transform   = "rotate(-90 -2.4 -5.92)"
->ρ
-</text>
-<text class="mr"
-x = "-2.4"
-y = "-6.4"
-font-size = "0.8"
-dy = "0.25em"
-transform = "rotate(-90 -2.4 -6.4)"
->s
-</text>
-<text class="mr"
-x = "-2.4"
-y = "-8.2"
-font-size = "1"
-transform = "rotate(-90 -2.4 -8.2)"
->/(兩 寸
-</text>
-<text class="mr"
-x = "-2.4"
-y = "-10.4"
-font-size = "0.8"
-dy = "-0.4em"
-transform = "rotate(-90 -2.4 -10.4)"
->−3
-</text>
-<text class="mr"
-x = "-2.4"
-y = "-11.2"
-font-size = "1"
-transform = "rotate(-90 -2.4 -11.2)"
->)
+transform = "rotate(-90 -2.4 -8.5)"
+>ρ<tspan class="mr" font-size="0.8" dy="0.25em">s</tspan><tspan dy="-0.25em">&thinsp;/</tspan>(兩 寸<tspan font-size="0.8" dy="-0.4em">−3</tspan><tspan dx="0.1em" dy="0.32em">)</tspan>
 </text>
 <polyline class="points"
 points = "0,-5 0,-10 0,-15"
