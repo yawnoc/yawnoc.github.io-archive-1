@@ -498,22 +498,22 @@
 <svg class="fit-width" width="320px" viewBox="-0.5 -4.1 12 5.1">
   <!-- hypotenuse (radius) -->
   <line x1="0" y1="0" x2="8" y2="-4" />
-  <text class="m" x="4" y="-2" font-size="0.7" dy="-0.6em">ρ</text>
+  <text class="maths-italic" x="4" y="-2" font-size="0.7" dy="-0.6em">ρ</text>
   <!-- angle -->
-  <text class="m" x="1.8" y="-0.3" font-size="0.7">φ</text>
+  <text class="maths-italic" x="1.8" y="-0.3" font-size="0.7">φ</text>
   <!-- run -->
   <line x1="0" y1="0" x2="8" y2="0" />
   <text x="4" y="0.8" font-size="0.7">
-    <tspan class="mr">cos</tspan>
-    <tspan class="m">Y</tspan>
+    <tspan class="maths-roman">cos</tspan>
+    <tspan class="maths-italic">Y</tspan>
   </text>
   <!-- rise -->
   <line x1="8" y1="0" x2="8" y2="-4" />
   <text x="9.8" y="-1.8" font-size="0.7">
-    <tspan class="mr">cos</tspan>
-    <tspan class="m">τ</tspan>
-    <tspan class="mr">sin</tspan>
-    <tspan class="m">Y</tspan>
+    <tspan class="maths-roman">cos</tspan>
+    <tspan class="maths-italic">τ</tspan>
+    <tspan class="maths-roman">sin</tspan>
+    <tspan class="maths-italic">Y</tspan>
   </text>
   <!-- right angle -->
   <line x1="7.5" y1="0" x2="7.5" y2="-0.5" />

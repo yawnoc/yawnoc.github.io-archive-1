@@ -126,7 +126,7 @@
     y1 = "0"
     x2 = "11"
     y2 = "0" />
-  <text class="m"
+  <text class="maths-italic"
     x = "11"
     y = "0"
     font-size = "0.8"
@@ -140,7 +140,7 @@
     y1 = "0"
     x2 = "0"
     y2 = "-8" />
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-8"
     font-size = "0.8"
@@ -249,7 +249,7 @@ csvwrite ("trajectory-plot.csv", [x_sol, y_sol]);
   "
   />
   <!-- launch angle phi -->
-  <text class="m"
+  <text class="maths-italic"
     x = "1.2"
     y = "-0.1"
     font-size = "0.8"
@@ -258,7 +258,7 @@ csvwrite ("trajectory-plot.csv", [x_sol, y_sol]);
     >ϕ
   </text>
   <!-- range R -->
-  <text class="m"
+  <text class="maths-italic"
     x = "10"
     y = "0"
     font-size = "0.8"
@@ -272,7 +272,7 @@ csvwrite ("trajectory-plot.csv", [x_sol, y_sol]);
     x2 = "1"
     y2 = "-2"
     marker-end = "url(#arrowhead)" />
-  <text class="m"
+  <text class="maths-italic"
     x = "1"
     y = "-2"
     font-size = "0.8"
@@ -1121,7 +1121,7 @@ csvwrite ("optimal-angle-asymptotic-table.csv", table);
     y1 = "-35"
     x2 = "21"
     y2 = "-35" />
-  <text class="m"
+  <text class="maths-italic"
     x = "21"
     y = "-35"
     font-size = "1"
@@ -1135,42 +1135,42 @@ csvwrite ("optimal-angle-asymptotic-table.csv", table);
     marker-start = "url(#htickcoarse)"
     marker-mid   = "url(#htickcoarse)"
     marker-end   = "url(#htickcoarse)" />
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-35"
     font-size = "1"
     dy = "1.35em"
     >0
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4"
     y = "-35"
     font-size = "1"
     dy = "1.35em"
     >1
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "8"
     y = "-35"
     font-size = "1"
     dy = "1.35em"
     >2
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "12"
     y = "-35"
     font-size = "1"
     dy = "1.35em"
     >3
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "16"
     y = "-35"
     font-size = "1"
     dy = "1.35em"
     >4
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "20"
     y = "-35"
     font-size = "1"
@@ -1191,7 +1191,7 @@ csvwrite ("optimal-angle-asymptotic-table.csv", table);
     y1 = "-35"
     x2 = "0"
     y2 = "-46.8" />
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-46.8"
     font-size = "1"
@@ -1204,7 +1204,7 @@ csvwrite ("optimal-angle-asymptotic-table.csv", table);
     marker-start = "url(#vtickcoarse)"
     marker-mid = "url(#vtickcoarse)"
     marker-end = "url(#vtickcoarse)" />
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-35"
     font-size = "1"
@@ -1212,7 +1212,7 @@ csvwrite ("optimal-angle-asymptotic-table.csv", table);
     dy = "0.3em"
     >35°
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-40"
     font-size = "1"
@@ -1220,7 +1220,7 @@ csvwrite ("optimal-angle-asymptotic-table.csv", table);
     dy = "0.3em"
     >40°
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-45"
     font-size = "1"
@@ -1402,7 +1402,7 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
     y1 = "-30"
     x2 = "20.5"
     y2 = "-30" />
-  <text class="m"
+  <text class="maths-italic"
     x = "20.5"
     y = "-30"
     font-size = "1"
@@ -1416,35 +1416,35 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
     marker-start = "url(#htickcoarse)"
     marker-mid = "url(#htickcoarse)"
     marker-end = "url(#htickcoarse)" />
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-30"
     font-size = "1"
     dy = "1.35em"
     >0
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5"
     y = "-30"
     font-size = "1"
     dy = "1.35em"
     >1
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "10"
     y = "-30"
     font-size = "1"
     dy = "1.35em"
     >2
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "15"
     y = "-30"
     font-size = "1"
     dy = "1.35em"
     >3
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "20"
     y = "-30"
     font-size = "1"
@@ -1464,7 +1464,7 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
     y1 = "-30"
     x2 = "0"
     y2 = "-46.8" />
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-46.8"
     font-size = "1"
@@ -1477,7 +1477,7 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
     marker-start = "url(#vtickcoarse)"
     marker-mid = "url(#vtickcoarse)"
     marker-end = "url(#vtickcoarse)" />
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-30"
     font-size = "1"
@@ -1485,7 +1485,7 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
     dy = "0.3em"
     >30°
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-35"
     font-size = "1"
@@ -1493,7 +1493,7 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
     dy = "0.3em"
     >35°
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-40"
     font-size = "1"
@@ -1501,7 +1501,7 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
     dy = "0.3em"
     >40°
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-45"
     font-size = "1"

@@ -564,10 +564,10 @@ def replace_assisting_romanisation_radio(string):
 #       url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
 #       url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
 #   }
-#   .m {
+#   .maths-italic {
 #     font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
 #   }
-#   .mr {
+#   .maths-roman {
 #     font-family: "KaTeX_Main-Regular";
 #   }
 # where all curly brackets are literal
@@ -604,10 +604,10 @@ def replace_all_svg_style_abbreviations(string):
         url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
         url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
     }
-    .m {
+    .maths-italic {
       font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
     }
-    .mr {
+    .maths-roman {
       font-family: "KaTeX_Main-Regular";
     }'''
   )

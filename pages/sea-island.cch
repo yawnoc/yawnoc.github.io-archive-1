@@ -223,7 +223,7 @@
     dy = "-0.5em"
     >front
   </text>
-  <text class="m red"
+  <text class="maths-italic red"
     x = "3"
     y = "-0.5"
     font-size = "0.3"
@@ -245,7 +245,7 @@
     dy = "-0.5em"
     >rear
   </text>
-  <text class="m red"
+  <text class="maths-italic red"
     x = "5.5"
     y = "-0.5"
     font-size = "0.3"
@@ -260,7 +260,7 @@
     y1 = "0"
     x2 = "5.5"
     y2 = "0" />
-  <text class="m green"
+  <text class="maths-italic green"
     x = "4.25"
     y = "0"
     font-size = "0.3"
@@ -353,7 +353,7 @@
     y1 = "0"
     x2 = "4.2"
     y2 = "0" />
-  <text class="m blue"
+  <text class="maths-italic blue"
     x = "3.6"
     y = "0"
     font-size = "0.3"
@@ -426,7 +426,7 @@
     y1 = "0"
     x2 = "7.7"
     y2 = "0" />
-  <text class="m blue"
+  <text class="maths-italic blue"
     x = "6.6"
     y = "0"
     font-size = "0.3"
@@ -764,7 +764,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -779,7 +779,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -806,7 +806,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -821,7 +821,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -842,7 +842,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -857,7 +857,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -878,7 +878,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -899,7 +899,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -919,7 +919,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -939,7 +939,7 @@
     dy = "1.2em"
     >\壬
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "6.7"
     y = "0"
     font-size = "0.3"
@@ -969,7 +969,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m red"
+  <text class="maths-italic red"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -984,7 +984,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -1023,7 +1023,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -1038,7 +1038,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -1070,7 +1070,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -1085,7 +1085,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -1105,7 +1105,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m green"
+  <text class="maths-italic green"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -1147,7 +1147,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -1162,7 +1162,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -1189,7 +1189,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -1204,7 +1204,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -1225,7 +1225,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -1240,7 +1240,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -1260,7 +1260,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -1280,7 +1280,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m green"
+  <text class="maths-italic green"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -1322,7 +1322,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -1337,7 +1337,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -1376,7 +1376,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -1391,7 +1391,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -1412,7 +1412,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -1427,7 +1427,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -1448,7 +1448,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -1469,7 +1469,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -1489,7 +1489,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -1527,7 +1527,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -1542,7 +1542,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -1591,7 +1591,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -1606,7 +1606,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -1627,7 +1627,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -1642,7 +1642,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -1663,7 +1663,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -1684,7 +1684,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -1710,7 +1710,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -1730,7 +1730,7 @@
     dy = "1.2em"
     >\壬
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "6.7"
     y = "0"
     font-size = "0.3"
@@ -1762,7 +1762,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -1777,7 +1777,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -1816,7 +1816,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -1831,7 +1831,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -1852,7 +1852,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -1867,7 +1867,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -1888,7 +1888,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -1909,7 +1909,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -1935,7 +1935,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -1955,7 +1955,7 @@
     dy = "1.2em"
     >\壬
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "6.7"
     y = "0"
     font-size = "0.3"
@@ -1994,7 +1994,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -2009,7 +2009,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -2053,7 +2053,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -2068,7 +2068,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -2089,7 +2089,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -2104,7 +2104,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -2125,7 +2125,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -2152,7 +2152,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -2178,7 +2178,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -2198,7 +2198,7 @@
     dy = "1.2em"
     >\壬
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "6.7"
     y = "0"
     font-size = "0.3"
@@ -2230,7 +2230,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -2245,7 +2245,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -2284,7 +2284,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -2299,7 +2299,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -2320,7 +2320,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -2335,7 +2335,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -2356,7 +2356,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -2377,7 +2377,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -2397,7 +2397,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -2417,7 +2417,7 @@
     dy = "1.2em"
     >\壬
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "6.7"
     y = "0"
     font-size = "0.3"
@@ -2491,7 +2491,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -2506,7 +2506,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -2539,7 +2539,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -2554,7 +2554,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -2575,7 +2575,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -2590,7 +2590,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -2611,7 +2611,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -2638,7 +2638,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -2664,7 +2664,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -2684,7 +2684,7 @@
     dy = "1.2em"
     >\壬
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "6.7"
     y = "0"
     font-size = "0.3"
@@ -2717,7 +2717,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -2732,7 +2732,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -2771,7 +2771,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -2786,7 +2786,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -2807,7 +2807,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -2822,7 +2822,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -2843,7 +2843,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -2870,7 +2870,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -2890,7 +2890,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -2910,7 +2910,7 @@
     dy = "1.2em"
     >\壬
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "6.7"
     y = "0"
     font-size = "0.3"
@@ -2963,7 +2963,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -2978,7 +2978,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -3017,7 +3017,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -3032,7 +3032,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -3053,7 +3053,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -3068,7 +3068,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -3089,7 +3089,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -3116,7 +3116,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -3136,7 +3136,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -3156,7 +3156,7 @@
     dy = "1.2em"
     >\壬
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "6.7"
     y = "0"
     font-size = "0.3"
@@ -3226,7 +3226,7 @@
     dy = "0.3em"
     >\甲
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-3.5"
     font-size = "0.3"
@@ -3241,7 +3241,7 @@
     dy = "1.2em"
     >\乙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "0"
     font-size = "0.3"
@@ -3286,7 +3286,7 @@
     dy = "-0.5em"
     >\丙
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "-1"
     font-size = "0.3"
@@ -3301,7 +3301,7 @@
     dy = "1.2em"
     >\丁
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "3"
     y = "0"
     font-size = "0.3"
@@ -3322,7 +3322,7 @@
     dy = "-0.5em"
     >\己
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "-1"
     font-size = "0.3"
@@ -3337,7 +3337,7 @@
     dy = "1.2em"
     >\庚
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "5.5"
     y = "0"
     font-size = "0.3"
@@ -3364,7 +3364,7 @@
     dy = "0.3em"
     >\辰
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "0"
     y = "-1"
     font-size = "0.3"
@@ -3385,7 +3385,7 @@
     dy = "1.2em"
     >\戊
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "4.2"
     y = "0"
     font-size = "0.3"
@@ -3405,7 +3405,7 @@
     dy = "1.2em"
     >\辛
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "7.7"
     y = "0"
     font-size = "0.3"
@@ -3425,7 +3425,7 @@
     dy = "1.2em"
     >\壬
   </text>
-  <text class="m"
+  <text class="maths-italic"
     x = "6.7"
     y = "0"
     font-size = "0.3"
