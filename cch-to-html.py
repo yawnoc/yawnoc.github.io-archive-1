@@ -1512,12 +1512,15 @@ def replace_all_shuen_link_divisions(string):
 # Only the first occurrence is replaced.
 
 # Unprocessed string:
-#   <*> {title} | {first created} | {last modified} [| rendering] </*>
+#   <*>
+#     {title} | {first created} | {last modified} [| rendering] [| description]
+#   </*>
 # where [rendering] is specified by including or excluding d, m and r
 
 # Raw regular expression for unprocessed string:
 #   <\*>([\s\S]*?)</\*>
-#   \1  {arguments}: {title} | {first created} | {last modified} [| rendering]
+#   \1  {arguments}:
+#     {title} | {first created} | {last modified} [| rendering] [| description]
 
 # Processed string (beginning):
 #   <!DOCTYPE html>
@@ -1529,6 +1532,8 @@ def replace_all_shuen_link_divisions(string):
 #     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 #     <link rel="manifest" href="/site.webmanifest">
 #     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+#     <meta name="author" content="Conway">
+#     [<meta name="description" content="[description]">]
 #     <meta name="msapplication-TileColor" content="#00aba9">
 #     <meta name="theme-color" content="#ffffff">
 #     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -1539,7 +1544,8 @@ def replace_all_shuen_link_divisions(string):
 #     <title>[title — ]Conway's site</title>
 #   </head>
 #   <body[ onload="[dateRender();] [mathsRender();] [romanisationInitialise();]"]>
-# where "/conway-katex.min.*" are loaded if [rendering] contains m,
+# where description is omitted if [description] is {empty string},
+# "/conway-katex.min.*" are loaded if [rendering] contains m,
 # "/conway-render.min.js" is loaded if [rendering] contains any of d, m or r,
 # [title — ] is omitted if {title} is {empty string},
 # the dash is U+2014 EM DASH, and [dateRender();], [mathsRender();] and
@@ -1558,7 +1564,8 @@ def replace_preamble(string):
   preamble_regex = re.compile(r'<\*>([\s\S]*?)</\*>')
   preamble_match_object = preamble_regex.match(string)
   assert preamble_match_object is not None, (
-    'Preamble <*> {title} | {first created} | {last modified} [| rendering] </*> '
+    'Preamble '
+    '<*> {title} | {first created} | {last modified} [| rendering] [| description] </*> '
     'must be supplied at the very beginning of markup'
   )
   
@@ -1569,7 +1576,10 @@ def replace_preamble(string):
   num_required_arguments = 3
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Preamble <*> {{title}} | {{first created}} | {{last modified}} [| rendering] </*> '
+    'Preamble '
+    '<*> '
+      '{{title}} | {{first created}} | {{last modified}} [| rendering] [| description] '
+    '</*> '
     'requires at least {num_required_arguments} pipe-delimited arguments; '
     'only {num_supplied_arguments} supplied'
   ).format(
@@ -1577,9 +1587,11 @@ def replace_preamble(string):
     num_supplied_arguments = num_supplied_arguments
   )
   
-  num_arguments = num_required_arguments + 1
+  num_arguments = num_required_arguments + 2
   argument_list += [''] * (num_arguments - num_supplied_arguments)
-  title, first_created, last_modified, rendering = argument_list[:num_arguments]
+  title, first_created, last_modified, rendering, description = (
+    argument_list[:num_arguments]
+  )
   
   # {first created} and {last modified} assumed to be in the form YYYYMMDD.
   # (I probably won't be around come Y10K, i.e. 10000 A.D.)
@@ -1587,6 +1599,7 @@ def replace_preamble(string):
   year_last_modified = last_modified[:4]
   
   title = escape_attribute_value(title)
+  description = escape_attribute_value(description)
   
   if title == '':
     title_with_dash = ''
@@ -1605,6 +1618,15 @@ def replace_preamble(string):
     )
   else:
     maths_css_js = ''
+  
+  if description == '':
+    meta_description = ''
+  else:
+    meta_description = (
+      '<meta name="description" content="{description}">'.format(
+        description = description
+      )
+    )
   
   if require_rendering:
     rendering_js = '<script defer src="/conway-render.min.js"></script>'
@@ -1633,6 +1655,8 @@ def replace_preamble(string):
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/site.webmanifest">
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="author" content="Conway">
+      {meta_description}
       <meta name="msapplication-TileColor" content="#00aba9">
       <meta name="theme-color" content="#ffffff">
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -1644,6 +1668,7 @@ def replace_preamble(string):
     <body{onload_spec}>
     '''
   ).format(
+    meta_description = meta_description,
     maths_css_js = maths_css_js,
     rendering_js = rendering_js,
     title_with_dash = title_with_dash,
