@@ -1,6 +1,8 @@
 <*>
   Projectile motion: optimal launch angle from a platform
   | 20190413 | 20190817 | dm
+  | A derivation of the optimal launch angle (which maximises range) \
+    for projectile motion (no air resistance) from a raised platform.
 </*>
 
 <=h>

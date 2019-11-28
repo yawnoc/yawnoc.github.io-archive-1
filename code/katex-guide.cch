@@ -1,6 +1,8 @@
 <*>
   How to render mathematical equations using KaTeX
   | 20190529 | 20191031 | d
+  | A step-by-step guide demonstrating how to render mathematical equations \
+    using KaTeX (CSS and JavaScript only) in webpages.
 </*>
 
 <=h>

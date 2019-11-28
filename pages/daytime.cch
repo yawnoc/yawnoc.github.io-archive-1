@@ -1,4 +1,8 @@
-<*> Daytime: dependence on latitude and season | 20190712 | 20190918 | dm </*>
+<*>
+  Daytime: dependence on latitude and season | 20190712 | 20190918 | dm
+  | A simple mathematical model for the sun's path through the sky \
+    and the amount of daytime at different times of the year.
+</*>
 
 <=h>
   <@ih></@ih>
