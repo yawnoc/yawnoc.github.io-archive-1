@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
-  | 20190504 | 20191119 | dmr
+  | 20190504 | 20191129 | dmr
   | An annotated English translation of Sunzi Suanjing, \
     《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
 </*>
@@ -8,7 +8,7 @@
 <=h>
   <@ih></@ih>
   <@it></@it>
-  <@i> Manuscripts | #manuscripts | </@i>
+  <@i> Manuscript | #manuscript | </@i>
   <@in></@in>
   <@ic></@ic>
 </=h>
@@ -48,10 +48,10 @@
     | Wikipedia: Ten Computational Canons
   </@>.
   Probably written in the 3rd to 5th centuries AD,
-  the author 孫子<^> Shu"n Chee | Sun Tzuu | Sun Zi </^>
+  the author <^e>Sun Tzuu</^e> (孫子), "Master~孫<^> Shu"n | Sun | Sun </^>",
   is not the same
   <@>
-    孫子<^> Shu"n Chee | Sun Tzuu | Sun Zi </^>
+    <^e>Sun Tzuu</^e>
     | https://en.wikipedia.org/wiki/Sun_Tzu
     | Wikipedia: Sun Tzu
   </@>
@@ -73,14 +73,14 @@
     | Fleeting Footsteps: Tracing the Conception of Arithmetic and Algebra in Ancient China
   </@>,
   but I shall <strong>not</strong> read that translation
-  (which is behind a paywall anyway) until I have completed mine.
+  (which is behind a paywall anyway) until I have completely finished mine.
 </p>
 
 <p>
-  Each night I will be translating a few sentences, maybe 50~characters.
-  Since the text is some 9000 characters long,
-  the whole thing will take around 9000/50 = 180~days,
-  so perhaps I can complete it by the end of this year.
+  As of 23 November 2019, I have finished the
+  <@> manuscript | #manuscript | Manuscript </@> for the entire text,
+  but it will probably take until the end of 2020
+  to type up all of this in web (HTML) format.
 </p>
 
 <@3> Versions | versions </@3>
@@ -219,14 +219,13 @@
 <^^></^^>
 
 
-<@2> Manuscripts | manuscripts </@2>
+<@2> Manuscript | manuscript </@2>
 
 
 <p>
   These are PDF scans of my handwritten translation scribblings.
-  They are drafts, and as such, will not contain
+  They are drafts, and as such, do not contain
   edits and corrections I have made since they were scanned.
-  Manuscripts for Volumes~I \&~II are now complete.
 </p>
 <ul>
   
@@ -646,7 +645,51 @@
       | /manuscripts/shuen-iii-27.pdf
       | Translation manuscript for Vol. III ¶27
     </@>
-    <:r>(work in progress)</:r>
+    <@>
+      ¶28
+      | /manuscripts/shuen-iii-28.pdf
+      | Translation manuscript for Vol. III ¶28
+    </@>
+    <@>
+      ¶29
+      | /manuscripts/shuen-iii-29.pdf
+      | Translation manuscript for Vol. III ¶29
+    </@>
+    <@>
+      ¶30
+      | /manuscripts/shuen-iii-30.pdf
+      | Translation manuscript for Vol. III ¶30
+    </@>
+    <@>
+      ¶31
+      | /manuscripts/shuen-iii-31.pdf
+      | Translation manuscript for Vol. III ¶31
+    </@>
+    <@>
+      ¶32
+      | /manuscripts/shuen-iii-32.pdf
+      | Translation manuscript for Vol. III ¶32
+    </@>
+    <@>
+      ¶33
+      | /manuscripts/shuen-iii-33.pdf
+      | Translation manuscript for Vol. III ¶33
+    </@>
+    <@>
+      ¶34
+      | /manuscripts/shuen-iii-34.pdf
+      | Translation manuscript for Vol. III ¶34
+    </@>
+    <@>
+      ¶35
+      | /manuscripts/shuen-iii-35.pdf
+      | Translation manuscript for Vol. III ¶35
+    </@>
+    <@>
+      ¶36
+      | /manuscripts/shuen-iii-36.pdf
+      | Translation manuscript for Vol. III ¶36
+    </@>
   </li>
   
 </ul>

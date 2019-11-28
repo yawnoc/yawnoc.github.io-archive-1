@@ -1,5 +1,5 @@
 <*>
-  | 20190309 | 20191121 | dr
+  | 20190309 | 20191129 | dr
   | Assorted musings, mostly applied maths and Literary Chinese.
 </*>
 
@@ -323,6 +323,19 @@
 
 <ul class="site-history">
   
+  <li><span>20191129:</span>
+    Completed
+    <@>
+      handwritten translation manuscript
+      | /pages/master-shuen.html#manuscript
+      | Translation manuscript for
+        "Master <^e>Shu"n</^e>'s Computational Classic:" 《孫子算經》
+    </@>
+    for Volume~III of "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic".
+    The entire translation should be available in web (HTML) format
+    by the end of 2020 (currently I am halfway through Volume~II typing it up).
+  </li>
+  
   <li><span>20191031:</span>
     Rewrote the CCH to HTML converter
     <@> <`>cch-to-html.py</`> | \/cch-to-html.py | cch-to-html.py </@>,
@@ -341,25 +354,23 @@
   <li><span>20190822:</span>
     Completed
     <@>
-      handwritten translation manuscripts
-      | /pages/master-shuen.html#manuscripts
-      | Translation manuscripts for
+      handwritten translation manuscript
+      | /pages/master-shuen.html#manuscript
+      | Translation manuscript for
         "Master <^e>Shu"n</^e>'s Computational Classic:" 《孫子算經》
     </@>
     for Volume~II of "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic".
-    Typesetting of corresponding HTML in progress.
   </li>
   
   <li><span>20190605:</span>
     Completed
     <@>
-      handwritten translation manuscripts
-      | /pages/master-shuen.html#manuscripts
-      | Translation manuscripts for
+      handwritten translation manuscript
+      | /pages/master-shuen.html#manuscript
+      | Translation manuscript for
         "Master <^e>Shu"n</^e>'s Computational Classic:" 《孫子算經》
     </@>
     for Volume~I of "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic".
-    <s>Typesetting of corresponding HTML in progress.</s>
   </li>
   
   <li><span>20190504:</span>
