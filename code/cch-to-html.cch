@@ -1,5 +1,7 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20191110 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20191128 | dmr
+  | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
+    written in Python.
 </*>
 
 <=h>
@@ -883,7 +885,7 @@
 <@3> Preamble tag | preamble </@3>
 
 <#>
-  <`><*> {title} | {first created} | {last modified} [| rendering] </*></`>
+  <`><*> {title} | {first created} | {last modified} [| rendering] [| description] </*></`>
 </#>
 
 <p>
@@ -905,7 +907,7 @@
     <`>{first created}</`> and <`>{last modified}</`>
     are stored for use later in the
     <@> page properties | #page-properties | Page properties tag </@>
-    and <@> footer (copyright) | #footer | Footer tag </@> tags, and
+    and <@> footer (copyright) | #footer | Footer tag </@> tags,
   </li>
   
   <li>
@@ -920,7 +922,11 @@
       | Assisting romanisation tag
     </@>,
     if the supplied string contains
-    <`>d</`>, <`>m</`> and <`>r</`> respectively.
+    <`>d</`>, <`>m</`> and <`>r</`> respectively, and
+  </li>
+  
+  <li>
+    <`>[description]</`> is the text which appears in the description meta tag.
   </li>
   
 </ul>
@@ -930,7 +936,9 @@
 </p>
 <``>
   <*>
-    Python: a regex converter from CCH to HTML | 20190720 | 20191030 | dmr
+    Python: a regex converter from CCH to HTML | 20190720 | 20191128 | dmr
+    | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
+      written in Python.
   </*>
 </``>
 
