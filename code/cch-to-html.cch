@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20191128 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20191201 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -1721,7 +1721,8 @@
     Empty lines are removed, and
   </li>
   <li>
-    Line breaks preceded immediately by a backslash are removed.
+    Line breaks preceded immediately by a backslash are removed
+    (i.e.~backslash is the line continuation character).
   </li>
 </ol>
 

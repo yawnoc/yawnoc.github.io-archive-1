@@ -178,6 +178,7 @@
 # 1. Preformatted tags are de-indented (but not affected by the removals below)
 # 2. Leading whitespace and empty lines are removed
 # 3. Newlines preceded immediately by a backslash are removed
+#    (i.e. backslash is the line continuation character)
 ################################################################
 
 ################################################################
@@ -3070,6 +3071,7 @@ def remove_unnecessary_whitespace(string):
   string = re.sub(r'^[\s]+', '', string, flags = re.MULTILINE)
   
   # Remove newlines preceded immediately by a backslash
+  # (i.e. backslash is the line continuation character)
   string = re.sub(r'\\\n', '', string)
   
   return string
