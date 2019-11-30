@@ -65,14 +65,14 @@
   <-t></-t>
   <-m></-m>
   line, polyline {
-    stroke:        black;
+    stroke: black;
     vector-effect: non-scaling-stroke;
   }
   polyline {
     fill: none;
   }
   polyline.points {
-    fill:   none;
+    fill: none;
     stroke: none;
   }
 </-->
