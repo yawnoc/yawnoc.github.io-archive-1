@@ -111,44 +111,19 @@
   <!-- Marker definitions -->
   <defs>
     <!-- velocity arrowhead -->
-    <marker
-      id = "arrowhead"
-      viewBox = "0 -0.3 1 0.6"
-      refX = "1"
-      refY = "0"
-      markerWidth = "1"
-      markerHeight = "0.3"
+    <marker id="arrowhead" viewBox="0 -0.3 1 0.6"
+      refX="1" refY="0"
+      markerWidth="1" markerHeight="0.3"
       orient = "auto-start-reverse">
-      <path d="M 0, -0.3 L 0, 0.3 L 1, 0 z" />
+      <path d="M 0, -0.3 L 0, 0.3 L 1, 0 z"/>
     </marker>
   </defs>
   <!-- x-axis -->
-  <line
-    x1 = "0"
-    y1 = "0"
-    x2 = "11"
-    y2 = "0" />
-  <text class="maths-italic"
-    x = "11"
-    y = "0"
-    font-size = "0.8"
-    dx = "0.6em"
-    dy = "0.3em"
-    >x
-  </text>
+  <line x1="0" y1="0" x2="11" y2="0"/>
+  <text class="maths-italic" x="11" y="0" font-size="0.8" dx="0.6em" dy="0.3em">x</text>
   <!-- y-axis -->
-  <line
-    x1 = "0"
-    y1 = "0"
-    x2 = "0"
-    y2 = "-8" />
-  <text class="maths-italic"
-    x = "0"
-    y = "-8"
-    font-size = "0.8"
-    dy = "-0.5em"
-    >y
-  </text>
+  <line x1="0" y1="0" x2="0" y2="-8"/>
+  <text class="maths-italic" x="0" y="-8" font-size="0.8" dy="-0.5em">y</text>
   <!-- trajectory -->
   <!--
 b_big  = 3;
@@ -162,8 +137,7 @@ x_sol =  x_sol / len;
 y_sol = -y_sol / len;
 csvwrite ("trajectory-plot.csv", [x_sol, y_sol]);
     -->
-  <polyline
-    points="0,-0
+  <polyline points="0,-0
   0.245110995009268,-0.4861517187099219
   0.4801816778208002,-0.9442990762404092
   0.7061283410059535,-1.376564718270853
@@ -248,39 +222,14 @@ csvwrite ("trajectory-plot.csv", [x_sol, y_sol]);
   9.918864534298352,-0.3571026084636498
   9.978597146417505,-0.09640216124025217
   9.999999999999998,-1.12021820651121e-015
-  "
-  />
+  "/>
   <!-- launch angle phi -->
-  <text class="maths-italic"
-    x = "1.2"
-    y = "-0.1"
-    font-size = "0.8"
-    dx = "-0.5em"
-    dy = "-0.35em"
-    >ϕ
-  </text>
+  <text class="maths-italic" x="1.2" y="-0.1" font-size="0.8" dx="-0.5em" dy="-0.35em">ϕ</text>
   <!-- range R -->
-  <text class="maths-italic"
-    x = "10"
-    y = "0"
-    font-size = "0.8"
-    dy = "1em"
-    >R
-  </text>
+  <text class="maths-italic" x="10" y="0" font-size="0.8" dy="1em">R</text>
   <!-- velocity vector u -->
-  <line
-    x1 = "0"
-    y1 = "0"
-    x2 = "1"
-    y2 = "-2"
-    marker-end = "url(#arrowhead)" />
-  <text class="maths-italic"
-    x = "1"
-    y = "-2"
-    font-size = "0.8"
-    dx = "-0.6em"
-    >u
-  </text>
+  <line x1="0" y1="0" x2="1" y2="-2" marker-end="url(#arrowhead)"/>
+  <text class="maths-italic" x="1" y="-2" font-size="0.8" dx="-0.6em">u</text>
 </svg>
 </div>
 
@@ -1061,181 +1010,66 @@ csvwrite ("optimal-angle-asymptotic-table.csv", table);
   <!-- Marker definitions -->
   <defs>
     <!-- Horizontal axis coarse tick -->
-    <marker
-      id = "htickcoarse"
-      viewBox = "-0.1 0 0.2 0.4"
-      refX = "0"
-      refY = "0"
-      markerWidth = "0.2"
-      markerHeight = "0.4">
-      <line
-        x1 = "0"
-        y1 = "0"
-        x2 = "0"
-        y2 = "0.4" />
+    <marker id="htickcoarse" viewBox="-0.1 0 0.2 0.4"
+      refX="0" refY="0" markerWidth="0.2" markerHeight="0.4">
+      <line x1="0" y1="0" x2="0" y2="0.4"/>
     </marker>
     <!-- Horizontal axis fine tick -->
-    <marker
-      id = "htickfine"
-      viewBox = "-0.1 0 0.2 0.25"
-      refX = "0"
-      refY = "0"
-      markerWidth = "0.2"
-      markerHeight = "0.25">
-      <line
-        x1 = "0"
-        y1 = "0"
-        x2 = "0"
-        y2 = "0.25" />
+    <marker id="htickfine" viewBox="-0.1 0 0.2 0.25"
+      refX="0" refY="0" markerWidth="0.2" markerHeight="0.25">
+      <line x1="0" y1="0" x2="0" y2="0.25"/>
     </marker>
     <!-- Vertical axis coarse tick -->
-    <marker
-      id = "vtickcoarse"
-      viewBox = "-0.4 -0.1 0.4 0.2"
-      refX = "0"
-      refY = "0"
-      markerWidth = "0.4"
-      markerHeight = "0.2">
-      <line
-        x1 = "-0.4"
-        y1 = "0"
-        x2 = "0"
-        y2 = "0" />
+    <marker id="vtickcoarse" viewBox="-0.4 -0.1 0.4 0.2"
+      refX="0" refY="0" markerWidth="0.4" markerHeight="0.2">
+      <line x1="-0.4" y1="0" x2="0" y2="0"/>
     </marker>
     <!-- Vertical axis fine tick -->
-    <marker
-      id = "vtickfine"
-      viewBox = "-0.25 -0.1 0.25 0.2"
-      refX = "0"
-      refY = "0"
-      markerWidth = "0.25"
-      markerHeight = "0.2">
-      <line
-        x1 = "-0.25"
-        y1 = "0"
-        x2 = "0"
-        y2 = "0" />
+    <marker id="vtickfine" viewBox="-0.25 -0.1 0.25 0.2"
+      refX="0" refY="0" markerWidth="0.25" markerHeight="0.2">
+      <line x1="-0.25" y1="0" x2="0" y2="0"/>
     </marker>
   </defs>
   <!-- B-axis -->
-  <line
-    x1 = "0"
-    y1 = "-35"
-    x2 = "21"
-    y2 = "-35" />
-  <text class="maths-italic"
-    x = "21"
-    y = "-35"
-    font-size = "1"
-    dx = "0.6em"
-    dy = "0.3em"
-    >B
-  </text>
+  <line x1="0" y1="-35" x2="21" y2="-35"/>
+  <text class="maths-italic" x="21" y="-35" font-size="1" dx="0.6em" dy="0.3em">B</text>
   <!-- Horizontal axis coarse ticks -->
-  <polyline class="points"
-    points = "0,-35 4,-35 8,-35 12,-35 16,-35 20,-35"
-    marker-start = "url(#htickcoarse)"
-    marker-mid   = "url(#htickcoarse)"
-    marker-end   = "url(#htickcoarse)" />
-  <text class="maths-italic"
-    x = "0"
-    y = "-35"
-    font-size = "1"
-    dy = "1.35em"
-    >0
-  </text>
-  <text class="maths-italic"
-    x = "4"
-    y = "-35"
-    font-size = "1"
-    dy = "1.35em"
-    >1
-  </text>
-  <text class="maths-italic"
-    x = "8"
-    y = "-35"
-    font-size = "1"
-    dy = "1.35em"
-    >2
-  </text>
-  <text class="maths-italic"
-    x = "12"
-    y = "-35"
-    font-size = "1"
-    dy = "1.35em"
-    >3
-  </text>
-  <text class="maths-italic"
-    x = "16"
-    y = "-35"
-    font-size = "1"
-    dy = "1.35em"
-    >4
-  </text>
-  <text class="maths-italic"
-    x = "20"
-    y = "-35"
-    font-size = "1"
-    dy = "1.35em"
-    >5
-  </text>
+  <polyline class="points" points="0,-35 4,-35 8,-35 12,-35 16,-35 20,-35"
+    marker-start="url(#htickcoarse)"
+    marker-mid="url(#htickcoarse)"
+    marker-end="url(#htickcoarse)"/>
+  <text class="maths-italic" x="0" y="-35" font-size="1" dy="1.35em">0</text>
+  <text class="maths-italic" x="4" y="-35" font-size="1" dy="1.35em">1</text>
+  <text class="maths-italic" x="8" y="-35" font-size="1" dy="1.35em">2</text>
+  <text class="maths-italic" x="12" y="-35" font-size="1" dy="1.35em">3</text>
+  <text class="maths-italic" x="16" y="-35" font-size="1" dy="1.35em">4</text>
+  <text class="maths-italic" x="20" y="-35" font-size="1" dy="1.35em">5</text>
   <!-- Horizontal axis fine ticks -->
   <polyline class="points"
-    points = "0.8,-35 1.6,-35 2.4,-35 3.2,-35 4.8,-35 5.6,-35 6.4,-35 7.2,-35
+    points="0.8,-35 1.6,-35 2.4,-35 3.2,-35 4.8,-35 5.6,-35 6.4,-35 7.2,-35
       8.8,-35 9.6,-35 10.4,-35 11.2,-35 12.8,-35 13.6,-35 14.4,-35 15.2,-35
       16.8,-35 17.6,-35 18.4,-35 19.2,-35 20.8,-35"
-    marker-start = "url(#htickfine)"
-    marker-mid = "url(#htickfine)"
-    marker-end = "url(#htickfine)" />
+    marker-start="url(#htickfine)"
+    marker-mid="url(#htickfine)"
+    marker-end="url(#htickfine)"/>
   <!-- phi-axis -->
-  <line
-    x1 = "0"
-    y1 = "-35"
-    x2 = "0"
-    y2 = "-46.8" />
-  <text class="maths-italic"
-    x = "0"
-    y = "-46.8"
-    font-size = "1"
-    dy = "-0.5em"
-    >ϕ
-  </text>
+  <line x1="0" y1="-35" x2="0" y2="-46.8"/>
+  <text class="maths-italic" x="0" y="-46.8" font-size="1" dy="-0.5em">ϕ</text>
   <!-- Vertical axis coarse ticks -->
   <polyline class="points"
-    points = "0,-35 0,-40 0,-45"
-    marker-start = "url(#vtickcoarse)"
-    marker-mid = "url(#vtickcoarse)"
-    marker-end = "url(#vtickcoarse)" />
-  <text class="maths-italic"
-    x = "0"
-    y = "-35"
-    font-size = "1"
-    dx = "-1.4em"
-    dy = "0.3em"
-    >35°
-  </text>
-  <text class="maths-italic"
-    x = "0"
-    y = "-40"
-    font-size = "1"
-    dx = "-1.4em"
-    dy = "0.3em"
-    >40°
-  </text>
-  <text class="maths-italic"
-    x = "0"
-    y = "-45"
-    font-size = "1"
-    dx = "-1.4em"
-    dy = "0.3em"
-    >45°
-  </text>
+    points="0,-35 0,-40 0,-45"
+    marker-start="url(#vtickcoarse)"
+    marker-mid="url(#vtickcoarse)"
+    marker-end="url(#vtickcoarse)"/>
+  <text class="maths-italic" x="0" y="-35" font-size="1" dx="-1.4em" dy="0.3em">35°</text>
+  <text class="maths-italic" x="0" y="-40" font-size="1" dx="-1.4em" dy="0.3em">40°</text>
+  <text class="maths-italic" x="0" y="-45" font-size="1" dx="-1.4em" dy="0.3em">45°</text>
   <!-- Vertical axis fine ticks -->
   <polyline class="points"
-    points = "0,-36 0,-37 0,-38 0,-39 0,-41 0,-42 0,-43 0,-44 0,-46"
-    marker-start = "url(#vtickfine)"
-    marker-mid = "url(#vtickfine)"
-    marker-end = "url(#vtickfine)" />
+    points="0,-36 0,-37 0,-38 0,-39 0,-41 0,-42 0,-43 0,-44 0,-46"
+    marker-start="url(#vtickfine)"
+    marker-mid="url(#vtickfine)"
+    marker-end="url(#vtickfine)"/>
   <!-- numerical -->
   <!--
 optimal_angle_export (0 : 0.2 : 2, "plot-b");
@@ -1244,8 +1078,7 @@ table(:,1) *= 4;
 table(:,2) *= -1;
 csvwrite ("optimal-angle-plot-b.csv", table);
     -->
-  <polyline
-    points="0,-45
+  <polyline points="0,-45
   0.4,-44.4287109375
   0.8,-43.912353515625
   1.2,-43.44268798828125
@@ -1296,16 +1129,8 @@ csvwrite ("optimal-angle-plot-b.csv", table);
   19.2,-35.48583984375
   19.6,-35.4034423828125
   20,-35.32379150390625
-  "
-  />
-  <text
-    x = "10"
-    y = "-37.97698974609375"
-    font-size = "1"
-    dx = "2.5em"
-    dy = "-0.5em"
-    >Numerical
-  </text>
+  "/>
+  <text x="10" y="-37.97698974609375" font-size="1" dx="2.5em" dy="-0.5em">Numerical</text>
   <!-- asymptotic -->
   <!--
 b_big_values = (0 : 0.05 : 2.05)';
@@ -1314,8 +1139,7 @@ table(:,1) *= 4;
 table(:,2) *= -1;
 csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
     -->
-  <polyline
-    points="0,-45
+  <polyline points="0,-45
   0.2,-44.70730811994633
   0.4,-44.43106503807245
   0.6000000000000001,-44.17127075437838
@@ -1357,16 +1181,8 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
   7.800000000000001,-45.77357612914315
   8,-46.12238737810192
   8.199999999999999,-46.4876474252405
-  "
-  />
-  <text
-    x = "8.4"
-    y = "-46.8693562705589"
-    font-size = "1"
-    dx = "-3.5em"
-    dy = "1em"
-    >Asymptotic
-  </text>
+  "/>
+  <text x="8.4" y="-46.8693562705589" font-size="1" dx="-3.5em" dy="1em">Asymptotic</text>
 </svg>
 </div>
 
@@ -1399,125 +1215,46 @@ csvwrite ("optimal-angle-asymptotic-plot-b-scaled.csv", table);
 <div class="centred-svg">
 <svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 21">
   <!-- u/c-axis -->
-  <line
-    x1 = "0"
-    y1 = "-30"
-    x2 = "20.5"
-    y2 = "-30" />
-  <text class="maths-italic"
-    x = "20.5"
-    y = "-30"
-    font-size = "1"
-    dx = "1.2em"
-    dy = "0.3em"
-    >u\,/\,c
-  </text>
+  <line x1="0" y1="-30" x2="20.5" y2="-30"/>
+  <text class="maths-italic" x="20.5" y="-30" font-size="1" dx="1.2em" dy="0.3em">u\,/\,c</text>
   <!-- Horizontal axis coarse ticks -->
   <polyline class="points"
-    points = "0,-30 5,-30 10,-30 15,-30 20,-30"
-    marker-start = "url(#htickcoarse)"
-    marker-mid = "url(#htickcoarse)"
-    marker-end = "url(#htickcoarse)" />
-  <text class="maths-italic"
-    x = "0"
-    y = "-30"
-    font-size = "1"
-    dy = "1.35em"
-    >0
-  </text>
-  <text class="maths-italic"
-    x = "5"
-    y = "-30"
-    font-size = "1"
-    dy = "1.35em"
-    >1
-  </text>
-  <text class="maths-italic"
-    x = "10"
-    y = "-30"
-    font-size = "1"
-    dy = "1.35em"
-    >2
-  </text>
-  <text class="maths-italic"
-    x = "15"
-    y = "-30"
-    font-size = "1"
-    dy = "1.35em"
-    >3
-  </text>
-  <text class="maths-italic"
-    x = "20"
-    y = "-30"
-    font-size = "1"
-    dy = "1.35em"
-    >4
-  </text>
+    points="0,-30 5,-30 10,-30 15,-30 20,-30"
+    marker-start="url(#htickcoarse)"
+    marker-mid="url(#htickcoarse)"
+    marker-end="url(#htickcoarse)"/>
+  <text class="maths-italic" x="0" y="-30" font-size="1" dy="1.35em">0</text>
+  <text class="maths-italic" x="5" y="-30" font-size="1" dy="1.35em">1</text>
+  <text class="maths-italic" x="10" y="-30" font-size="1" dy="1.35em">2</text>
+  <text class="maths-italic" x="15" y="-30" font-size="1" dy="1.35em">3</text>
+  <text class="maths-italic" x="20" y="-30" font-size="1" dy="1.35em">4</text>
   <!-- Horizontal axis fine ticks -->
   <polyline class="points"
-    points = "1,-30 2,-30 3,-30 4,-30 6,-30 7,-30 8,-30 9,-30
+    points="1,-30 2,-30 3,-30 4,-30 6,-30 7,-30 8,-30 9,-30
       11,-30 12,-30 13,-30 14,-30 16,-30 17,-30 18,-30 19,-30"
-    marker-start = "url(#htickfine)"
-    marker-mid = "url(#htickfine)"
-    marker-end = "url(#htickfine)" />
+    marker-start="url(#htickfine)"
+    marker-mid="url(#htickfine)"
+    marker-end="url(#htickfine)"/>
   <!-- phi-axis -->
-  <line
-    x1 = "0"
-    y1 = "-30"
-    x2 = "0"
-    y2 = "-46.8" />
-  <text class="maths-italic"
-    x = "0"
-    y = "-46.8"
-    font-size = "1"
-    dy = "-0.5em"
-    >ϕ
-  </text>
+  <line x1="0" y1="-30" x2="0" y2="-46.8"/>
+  <text class="maths-italic" x="0" y="-46.8" font-size="1" dy="-0.5em">ϕ</text>
   <!-- Vertical axis coarse ticks -->
   <polyline class="points"
-    points = "0,-30 0,-35 0,-40 0,-45"
-    marker-start = "url(#vtickcoarse)"
-    marker-mid = "url(#vtickcoarse)"
-    marker-end = "url(#vtickcoarse)" />
-  <text class="maths-italic"
-    x = "0"
-    y = "-30"
-    font-size = "1"
-    dx = "-1.4em"
-    dy = "0.3em"
-    >30°
-  </text>
-  <text class="maths-italic"
-    x = "0"
-    y = "-35"
-    font-size = "1"
-    dx = "-1.4em"
-    dy = "0.3em"
-    >35°
-  </text>
-  <text class="maths-italic"
-    x = "0"
-    y = "-40"
-    font-size = "1"
-    dx = "-1.4em"
-    dy = "0.3em"
-    >40°
-  </text>
-  <text class="maths-italic"
-    x = "0"
-    y = "-45"
-    font-size = "1"
-    dx = "-1.4em"
-    dy = "0.3em"
-    >45°
-  </text>
+    points="0,-30 0,-35 0,-40 0,-45"
+    marker-start="url(#vtickcoarse)"
+    marker-mid="url(#vtickcoarse)"
+    marker-end="url(#vtickcoarse)"/>
+  <text class="maths-italic" x="0" y="-30" font-size="1" dx="-1.4em" dy="0.3em">30°</text>
+  <text class="maths-italic" x="0" y="-35" font-size="1" dx="-1.4em" dy="0.3em">35°</text>
+  <text class="maths-italic" x="0" y="-40" font-size="1" dx="-1.4em" dy="0.3em">40°</text>
+  <text class="maths-italic" x="0" y="-45" font-size="1" dx="-1.4em" dy="0.3em">45°</text>
   <!-- Vertical axis fine ticks -->
   <polyline class="points"
-    points = "0,-31 0,-32 0,-33 0,-34 0,-36 0,-37 0,-38 0,-39
+    points="0,-31 0,-32 0,-33 0,-34 0,-36 0,-37 0,-38 0,-39
       0,-41 0,-42 0,-43 0,-44 0,-46"
-    marker-start = "url(#vtickfine)"
-    marker-mid = "url(#vtickfine)"
-    marker-end = "url(#vtickfine)" />
+    marker-start="url(#vtickfine)"
+    marker-mid="url(#vtickfine)"
+    marker-end="url(#vtickfine)"/>
   <!-- numerical -->
   <!--
 u_per_c_values = 0 : 0.1 : 4;
@@ -1570,16 +1307,8 @@ csvwrite ("optimal-angle-plot-u-per-c-scaled.csv", table);
   19,-31.24786376953125
   19.5,-31.058349609375
   20,-30.87432861328125
-  "
-  />
-  <text
-    x = "10"
-    y = "-36.19720458984375"
-    font-size = "1"
-    dx = "2.5em"
-    dy = "-0.5em"
-    >Numerical
-  </text>
+  "/>
+  <text x="10" y="-36.19720458984375" font-size="1" dx="2.5em" dy="-0.5em">Numerical</text>
   <!-- asymptotic -->
   <!--
 u_per_c_values = (0 : 0.05 : 1.45)';
@@ -1589,8 +1318,7 @@ table(:,1) *= 5;
 table(:,2) *= -1;
 csvwrite ("optimal-angle-asymptotic-plot-u-per-c-scaled.csv", table);
     -->
-  <polyline
-    points="0,-45
+  <polyline points="0,-45
   0.25,-44.98497474704055
   0.5,-44.94014572013488
   0.7500000000000001,-44.86625311520109
@@ -1620,16 +1348,8 @@ csvwrite ("optimal-angle-asymptotic-plot-u-per-c-scaled.csv", table);
   6.75,-44.95855881705962
   7.000000000000001,-45.84202247508053
   7.25,-46.88887349377703
-  "
-  />
-  <text
-    x = "7.250000000000001"
-    y = "-46.88887349377704"
-    font-size = "1"
-    dx = "-3.2em"
-    dy = "1em"
-    >Asymptotic
-  </text>
+  "/>
+  <text x="7.250000000000001" y="-46.88887349377704" font-size="1" dx="-3.2em" dy="1em">Asymptotic</text>
 </svg>
 </div>
 
