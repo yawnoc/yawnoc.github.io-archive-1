@@ -327,7 +327,9 @@
   For example, compare
     "This is what the \* says" (New International Version)
   to
-    "Thus saith the \*" (King~James Version).
+    "Thus saith the \*" (King~James Version)
+  for the Hebrew
+    <span lang="he" dir="rtl" class="no-wrapping">כה אמר יהוה</span>.
 </p>
 
 <@3>
