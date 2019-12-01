@@ -678,7 +678,7 @@ td.no-padding {
 }
 
 td.not-applicable {
-  background: lightgrey;
+  background: #ececec;
 }
 
 td.top-aligned {
