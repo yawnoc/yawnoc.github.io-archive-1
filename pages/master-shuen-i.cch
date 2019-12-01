@@ -387,14 +387,14 @@
 
 <p>
   However, it is very interesting to note that
-  <:m>the British only standardised these
+  the British only standardised these
   Chinese length units with reference to English units in
   <@>
     Ordinance No.~8 of~1885 (PDF)
     | http://oelawhk.lib.hku.hk/archive/files/52fa22f83069cf6a385779d462a0f6e7.pdf
     | Ordinance No. 8 of 1885 (1890 Edition)
   </@>,
-  more than four decades later</:m>:
+  more than four decades later:
 </p>
 <div class="centred-flex">
   <+>
@@ -2396,13 +2396,13 @@
     三之，五而一。<br>
   以<:y><:r>糲</:r><:b>米</:b></:y>求<:y>粟</:y>，\
     五之，三而一。<br>
-  以<:y><:r>糲</:r><:b>米</:b></:y>求<:y><:m>飯</:m></:y>，\
+  以<:y><:r>糲</:r><:b>米</:b></:y>求<:y><:v>飯</:v></:y>，\
     五之，二而一。<br>
-  以<:y>粟<:b>米</:b></:y>求<:y><:r>糲</:r><:m>飯</:m></:y>，\
+  以<:y>粟<:b>米</:b></:y>求<:y><:r>糲</:r><:v>飯</:v></:y>，\
     六之，四而一。<br>
-  以<:y><:r>糲</:r><:m>飯</:m></:y>求<:y><:r>糲</:r><:b>米</:b></:y>，\
+  以<:y><:r>糲</:r><:v>飯</:v></:y>求<:y><:r>糲</:r><:b>米</:b></:y>，\
     二之，五而一。<br>
-  以<:y><:g>糳</:g><:b>米</:b></:y>求<:y><:m>飯</:m></:y>，\
+  以<:y><:g>糳</:g><:b>米</:b></:y>求<:y><:v>飯</:v></:y>，\
     八之，四而一。 |
   Seeking <:y><:r>coarse</:r> <:b>grain</:b></:y>
   with <:y>{regular} grain</:y>:
@@ -2410,16 +2410,16 @@
   Seeking <:y>{regular} grain</:y>
   with <:y><:r>coarse</:r> <:b>grain</:b></:y>:
     quintuple<:n>5~×</:n> it, {and make} three<:n>3</:n> {as} one.<br>
-  Seeking <:y><:r>{coarse}</:r> <:m>rice</:m></:y>
+  Seeking <:y><:r>{coarse}</:r> <:v>rice</:v></:y>
   with <:y><:r>coarse</:r> <:b>grain</:b></:y>:
     quintuple<:n>5~×</:n> it, {and make} two<:n>2</:n> {as} one.<br>
-  Seeking <:y><:r>coarse</:r> <:m>rice</:m></:y>
+  Seeking <:y><:r>coarse</:r> <:v>rice</:v></:y>
   with <:y>{regular} <:b>grain</:b></:y>:
     sextuple<:n>6~×</:n> it, {and make} four<:n>4</:n> {as} one.<br>
   Seeking <:y><:r>coarse</:r> <:b>grain</:b></:y>
-  with <:y><:r>coarse</:r> <:m>rice</:m></:y>:
+  with <:y><:r>coarse</:r> <:v>rice</:v></:y>:
     double<:n>2~×</:n> it, {and make} five<:n>5</:n> {as} one.<br>
-  Seeking <:y><:g>{intricate}</:g> <:m>rice</:m></:y>
+  Seeking <:y><:g>{intricate}</:g> <:v>rice</:v></:y>
   with <:y><:g>intricate</:g> <:b>grain</:b></:y>:
     octuple<:n>8~×</:n> it, {and make} four<:n>4</:n> {as} one.
 </#t>
@@ -2454,8 +2454,8 @@
     <:y><:g>糳</:g></:y>, <:y><:g>"intricate grain"</:g></:y>)
     and <:y><:b>米</:b></:y>, <:y><:b>"grain"</:b></:y>,
     i.e.~<:y><:b>"uncooked rice"</:b></:y> (in contrast to
-    <:y><:m>飯</:m></:y>, <:y><:m>"cooked rice"</:m></:y>,
-    which I am just calling <:y><:m>"rice"</:m></:y> for brevity).
+    <:y><:v>飯</:v></:y>, <:y><:v>"cooked rice"</:v></:y>,
+    which I am just calling <:y><:v>"rice"</:v></:y> for brevity).
   </li>
   <li>
     <@>
@@ -2489,19 +2489,19 @@
       &= \frac{5}{3} \cdot
     V(\colorbox{lightyellow}{{\color{red}糲}{\color{blue}米}})
       \\[2ex]
-    V(\colorbox{lightyellow}{{\color{red}糲}{\color{magenta}飯}})
+    V(\colorbox{lightyellow}{{\color{red}糲}{\color{darkviolet}飯}})
       &= \frac{5}{2} \cdot
     V(\colorbox{lightyellow}{{\color{red}糲}{\color{blue}米}})
       \\[2ex]
-    V(\colorbox{lightyellow}{{\color{red}糲}{\color{magenta}飯}})
+    V(\colorbox{lightyellow}{{\color{red}糲}{\color{darkviolet}飯}})
       &= \frac{6}{4} \cdot
     V(\colorbox{lightyellow}{粟{\color{blue}米}})
       \\[2ex]
     V(\colorbox{lightyellow}{{\color{red}糲}{\color{blue}米}})
       &= \frac{2}{5} \cdot
-    V(\colorbox{lightyellow}{{\color{red}糲}{\color{magenta}飯}})
+    V(\colorbox{lightyellow}{{\color{red}糲}{\color{darkviolet}飯}})
       \\[2ex]
-    V(\colorbox{lightyellow}{{\color{green}糳}{\color{magenta}飯}})
+    V(\colorbox{lightyellow}{{\color{green}糳}{\color{darkviolet}飯}})
       &= \frac{8}{4} \cdot
     V(\colorbox{lightyellow}{{\color{green}糳}{\color{blue}米}})
   \end{aligned}

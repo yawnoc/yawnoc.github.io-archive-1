@@ -602,7 +602,7 @@ svg.embedded-styles {
 /* Highlighted part (of words, phonetics etc.) */
 
 span.highlighted-part {
-  color: magenta;
+  color: darkviolet;
   text-decoration: underline;
 }
 
@@ -748,8 +748,8 @@ td ul {
   color: blue;
 }
 
-.magenta {
-  color: magenta;
+.violet {
+  color: darkviolet;
 }
 
 /* Coloured background */

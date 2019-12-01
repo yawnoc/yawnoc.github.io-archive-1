@@ -2053,7 +2053,7 @@ def replace_footer(string):
 #   <:r>  </:r>
 #   <:g>  </:g>
 #   <:b>  </:b>
-#   <:m>  </:m>
+#   <:v>  </:v>
 #   <:y>  </:y>
 #   <:h>  </:h>
 #   <:n>  </:n>
@@ -2068,8 +2068,8 @@ def replace_footer(string):
 # Processed string for {type} b:
 #   <span class="blue">{content}</span>
 
-# Processed string for {type} m:
-#   <span class="magenta">{content}</span>
+# Processed string for {type} v:
+#   <span class="violet">{content}</span>
 
 # Processed string for {type} y:
 #   <span class="lightyellow">{content}</span>
@@ -2094,8 +2094,8 @@ def replace_all_formatted_spans(string):
   string = re.sub('<:b>', '<span class="blue">', string)
   string = re.sub('</:b>', '</span>', string)
   
-  string = re.sub('<:m>', '<span class="magenta">', string)
-  string = re.sub('</:m>', '</span>', string)
+  string = re.sub('<:v>', '<span class="violet">', string)
+  string = re.sub('</:v>', '</span>', string)
   
   string = re.sub('<:y>', '<span class="lightyellow">', string)
   string = re.sub('</:y>', '</span>', string)
