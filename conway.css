@@ -603,7 +603,7 @@ svg.embedded-styles {
 
 span.highlighted-part {
   color: darkviolet;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 /* Note */
@@ -782,12 +782,6 @@ td ul {
 
 nav .thought, ul.site-history li:first-child .thought {
   background: transparent;
-}
-
-/* Underlined */
-
-.underlined {
-  text-decoration: underline;
 }
 
 /* Whitespace */
