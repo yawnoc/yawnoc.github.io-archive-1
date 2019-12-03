@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic: Preface": 《孫子算經\.序》
-  | 20190609 | 20190822 | dr
+  | 20190609 | 20191203 | dr
   | An annotated English translation of the preface to Sunzi Suanjing, \
     《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
 </*>
@@ -301,7 +301,7 @@
 <#t>
   推寒暑之迭運，步遠近之殊同； |
   {it} deduceth {the} alternating {and} revolving of winter {and} summer,
-  {and} measureth {the} disparity {and} sameness of farness {and} nearness;
+  {and} measureth {the} disparity {and} sameness of far {and} near;
 </#t>
 <ul>
   <li>寒暑：
@@ -318,9 +318,9 @@
 
 <#t>
   觀天道精微之兆基，察地理從橫之長短； |
-  {it} inspecteth {the} signs {and} foundations of
+  {it} inspecteth {the} foundations of
     {the} intricacies {and} minutiae of Physics,
-  {and} examineth {the} length {and} shortness of
+  {and} examineth {the} length of
     {the} meridians {and} parallels of Geography;
 </#t>
 <ul>
@@ -329,16 +329,9 @@
     literally {the} laws of Nature;
     or {the} way of Heaven
   </li>
-  <li>兆基：
-    signs {and} foundations<br>
-    In other contexts, 兆基 apparently means 開創基業,
+  <li>兆基<br>
+    According to 《國語辭典》 this means 開創基業,
     roughly "opening/beginning/foundation".
-    I don't think that meaning applies here,
-    since 兆基 is paired with 長短 (length {and} shortness) in the next line.
-    So 兆 and 基 must be opposites as well, and I think that
-    兆 means "signs" (or "omens") while 基 means "foundations".
-    Arguably these are opposites, in that signs are manifest, whereas
-    foundations are inherent.
   </li>
   <li>地理：
     Geography;
@@ -351,6 +344,10 @@
     or "the grand scheme of things", in contrast to 精微
     (intricacies {and} minutiae) in the previous line,
     which it is parallel with.
+  </li>
+  <li>長短：
+    length;
+    literally length {and} shortness
   </li>
 </ul>
 
@@ -441,14 +438,10 @@
 
 <#t>
   歷億載而不朽，施八極而無疆。 |
-  {It} endureth {an} hundred million years with no deterioration,
-  {and is} applied unto {the} Eight Extremities with no bound.
+  {It} endureth {an} hundred million years and decayeth not,
+  {and is} applied unto {the} Eight Extremities without bound.
 </#t>
 <ul>
-  <li>朽：
-    deterioration;
-    or decay
-  </li>
   <li>八極：
     {the} Eight Extremities<br>
     Probably the four cardinal directions
@@ -479,7 +472,7 @@
 
 <#t>
   嚮之者富有餘，背之者貧且窶； |
-  Those who echo {in agreement with} it {shall be} rich in excess,
+  Those who echo {in agreement with} it {shall be} rich {in} excess,
   {but} those who turn {their} backs to it {shall be} poor and destitute;
 </#t>
 <ul>
