@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
-  | 20190609 | 20191120 | dmr
+  | 20190609 | 20191204 | dmr
   | An annotated English translation of Volume~I of Sunzi Suanjing, \
     《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
 </*>
@@ -235,7 +235,7 @@
   beginneth {it} from 忽<^> fat | hu | hu </^>.
   {If one} wisheth to know {the size of}
   忽<^> fat | hu | hu </^>: the silkworm spitteth silk,
-  {which} is {of thickness} 忽<^> fat | hu | hu </^>.
+  {which} be {of thickness} 忽<^> fat | hu | hu </^>.
 </#t>
 <ul>
   <li>度：
@@ -1094,8 +1094,8 @@
   周三徑一。方五邪七；<br>
   見邪求方，五之，七而一；<br>
   見方求邪，七之，五而一。 |
-  {The} circumference three<:n>3</:n>; {the} diameter one<:n>1</:n>.
-  {The} square's edge five<:n>5</:n>; {the} diagonal seven<:n>7</:n>.<br>
+  {The} circumference three<:n>3</:n>: {the} diameter one<:n>1</:n>.
+  {The} square's edge five<:n>5</:n>: {the} diagonal seven<:n>7</:n>.<br>
   Seeing {the} diagonal {and} seeking {the} square's edge,
     quintuple<:n>5~×</:n> it, {and make} seven<:n>7</:n> {as} one.<br>
   Seeing {the} square's edge {and} seeking {the} diagonal,
@@ -1211,11 +1211,11 @@
   黃金方寸重一斤。<br>
   白金方寸重一十四兩。<br>
   玉方寸重一十二兩。 |
-  {A} cubic~寸<^> ch'u"n | ts'un | cun </^> of gold weigheth
+  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of gold weigheth
     one<:n>1</:n>~斤<^> kan | chin | jin </^>.<br>
-  {A} cubic~寸<^> ch'u"n | ts'un | cun </^> of silver weigheth
+  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of silver weigheth
     fourteen<:n>14</:n>~兩<^> loeng | liang | liang </^>.<br>
-  {A} cubic~寸<^> ch'u"n | ts'un | cun </^> of jade weigheth
+  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of jade weigheth
     twelve<:n>12</:n>~兩<^> loeng | liang | liang </^>.
 </#t>
 <ul>
@@ -1251,14 +1251,14 @@
   鉛方寸重九兩半。<br>
   鐵方寸重六兩。<br>
   石方寸重三兩。 |
-  {A} cubic~寸<^> ch'u"n | ts'un | cun </^> of copper weigheth
+  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of copper weigheth
     seven<:n>7</:n>~兩<^> loeng | liang | liang </^> {and a} half<:n>½</:n>.<br>
-  {A} cubic~寸<^> ch'u"n | ts'un | cun </^> of lead weigheth
+  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of lead weigheth
     nine<:n>9</:n>~兩<^> loeng | liang | liang </^>
     {and a} half<:n>½</:n>.<br>
-  {A} cubic~寸<^> ch'u"n | ts'un | cun </^> of iron weigheth
+  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of iron weigheth
     six<:n>6</:n>~兩<^> loeng | liang | liang </^>.<br>
-  {A} cubic~寸<^> ch'u"n | ts'un | cun </^> of stone weigheth
+  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of stone weigheth
     three<:n>3</:n>~兩<^> loeng | liang | liang </^>.
 </#t>
 <ul>
@@ -2052,7 +2052,7 @@
   Command the lower with the upper.
   {The} quantities which {are} obtained
   {are} arranged in {a} row, in {the} middle places.
-  {And} tens<:n>10s</:n> {are} carried,
+  {And} tens<:n>10s</:n> are carried,
   {but those} not reaching {ten<:n>10</:n>},
   {left} as themselves.
 </#t>
@@ -2129,7 +2129,7 @@
 <#t>
   六不積，五不隻。 |
   Sixes<:n>6s</:n> {are} not accumulated;
-  fives<:n>5s</:n> not single.
+  fives<:n>5s</:n>, not single.
 </#t>
 <ul>
   <li>六不積<br>
@@ -2192,7 +2192,7 @@
 <#t>
   上下相乘，至盡則已。 |
   The upper {and} the lower {are} mutually multiplied,
-  finishing {when} reaching {the} end.
+  finishing {when} reaching exhaustion.
 </#t>
 <ul>
   <li>
@@ -2204,8 +2204,8 @@
     erroneously has 土下 for 上下.
   </li>
   <li>盡：
-    end;
-    or limit
+    exhaustion;
+    or {the} end
   </li>
 </ul>
 
@@ -2217,7 +2217,7 @@
   乘得在中央，除得在上方。 |
   {The} method of all division {is} directly opposite to multiplication.<br>
   {The} result of multiplication {is placed} in {the} middle;
-  {the} result of division in {the} above.
+  {the} result of division, in {the} above.
 </#t>
 <ul>
   <li>異：
@@ -2405,16 +2405,16 @@
   以<:y><:g>糳</:g><:b>米</:b></:y>求<:y><:v>飯</:v></:y>，\
     八之，四而一。 |
   Seeking <:y><:r>coarse</:r> <:b>grain</:b></:y>
-  with <:y>{regular} grain</:y>:
+  with <:y>grain</:y>:
     triple<:n>3~×</:n> it, {and make} five<:n>5</:n> {as} one.<br>
-  Seeking <:y>{regular} grain</:y>
+  Seeking <:y>grain</:y>
   with <:y><:r>coarse</:r> <:b>grain</:b></:y>:
     quintuple<:n>5~×</:n> it, {and make} three<:n>3</:n> {as} one.<br>
   Seeking <:y><:r>{coarse}</:r> <:v>rice</:v></:y>
   with <:y><:r>coarse</:r> <:b>grain</:b></:y>:
     quintuple<:n>5~×</:n> it, {and make} two<:n>2</:n> {as} one.<br>
   Seeking <:y><:r>coarse</:r> <:v>rice</:v></:y>
-  with <:y>{regular} <:b>grain</:b></:y>:
+  with <:y><:b>grain</:b></:y>:
     sextuple<:n>6~×</:n> it, {and make} four<:n>4</:n> {as} one.<br>
   Seeking <:y><:r>coarse</:r> <:b>grain</:b></:y>
   with <:y><:r>coarse</:r> <:v>rice</:v></:y>:
@@ -2433,7 +2433,7 @@
     erroneously has 米粟求糲米 for 以粟求糲米.
   </li>
   <li><:y>粟：</:y>
-    <:y>{regular} grain</:y><br>
+    <:y>grain</:y><br>
     As opposed to
     <:y><:r>糲</:r></:y>, <:y><:r>"coarse grain"</:r></:y>, or
     <:y><:g>糳</:g></:y>, <:y><:g>"intricate grain"</:g></:y>,
@@ -2445,11 +2445,11 @@
       <^cm> lai6 | li\ </^cm>
   </li>
   <li><:y>粟<:b>米</:b>：</:y>
-    <:y>{regular} <:b>grain</:b></:y><br>
+    <:y><:b>grain</:b></:y><br>
     <strong>This is not a nice paragraph to render into English</strong>
     (hence the colours).
     I am overloading the word <b>"grain"</b> with both
-    <:y>粟</:y>, <:y>"{regular} grain"</:y> (in contrast to
+    <:y>粟</:y>, <:y>"grain"</:y> (in contrast to
     <:y><:r>糲</:r></:y>, <:y><:r>"coarse grain"</:r></:y>, and
     <:y><:g>糳</:g></:y>, <:y><:g>"intricate grain"</:g></:y>)
     and <:y><:b>米</:b></:y>, <:y><:b>"grain"</:b></:y>,
@@ -2774,7 +2774,7 @@
 
 <#t>
   中位並盡，收下位。上位所得即人之所得。 |
-  {The} middle places {having} all {been} ended:
+  {The} middle places {now} all exhausted,
   put away {the} lower place.
   That obtained {in the} upper places is that received of
   {each} person.
