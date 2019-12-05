@@ -881,7 +881,7 @@
 <ul>
   <li>以二約：
     reducing by two<br>
-    The intricate grain rate~24 here and the {regular} grain rate~50 below
+    The intricate grain rate~24 here and the (normal) grain rate~50 below
     are reduced by their greatest common divisor, <$>\gcd (24, 50) = 2</$>.
   </li>
 </ul>
