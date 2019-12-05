@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20191113 | dmr
+  | 20190609 | 20191205 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
 </*>
@@ -252,7 +252,7 @@
   Put subsidiarily {the} two places,
   {and} diminish {the} greater by {the} lesser.
   {For the} equal quantity {we} obtain six<:n>6</:n>
-  as {the} divisor, {and} reducing them, {we are} done.
+  as {the} divisor, {and} reducing them, {we} are done.
 </#t>
 <ul>
   <li>副：
@@ -436,7 +436,7 @@
   Method saith:
   put {the} three shares<:n>/3</:n> {and the} five shares<:n>/5</:n>
     on {the} right;
-  {the} one of<:n>1</:n> {and the} two of<:n>2</:n>
+  {the} one of<:n>1</:n> {and the} two of<:n>2</:n>,
     on {the} left.
 </#t>
 
@@ -445,10 +445,10 @@
   右方二母相乘，得一十五為法。 |
   {The} denominators {are}
   mutually multiplied with {the} numerators:
-  {for the} two of five shares<:n>2/5</:n> {we} obtain six<:n>6</:n>,
+  {for the} two of five shares<:n>2/5</:n> {there} resulteth six<:n>6</:n>,
   {and for the} one of three shares<:n>1/3</:n>
-  {we} obtain five<:n>5</:n>;
-  combining them, {we} obtain eleven<:n>11</:n> as {the} dividend.
+  {there} resulteth five<:n>5</:n>;
+  combining them, resulteth in eleven<:n>11</:n> as {the} dividend.
   {The} two denominators {to the} right, multiplied with each other,
   result in fifteen<:n>15</:n> as {the} divisor.
 </#t>
@@ -464,7 +464,7 @@
 <#t>
   不滿法，以法命之，即得。 |
   {The dividend} reacheth not {the} divisor;
-  naming it {for a fraction} using {the} divisor, {we are} done.
+  naming it {for a fraction} using {the} divisor, {we} are done.
 </#t>
 <ul>
   <li>不滿法：
@@ -490,7 +490,7 @@
   術曰：置九分、五分在右方，之八、之一在左方。 |
   Method saith: put {the} nine shares<:n>/9</:n>
   {and the} five shares<:n>/5</:n> on {the} right;
-  {the} eight of<:n>8</:n> {and the} one of<:n>1</:n>
+  {the} eight of<:n>8</:n> {and the} one of<:n>1</:n>,
   on {the} left.
 </#t>
 
@@ -500,11 +500,11 @@
   {The} denominators {are} mutually multiplied
   with {the} numerators:
   {for the} one of five shares<:n>1/5</:n>
-    {we} obtain nine<:n>9</:n>,
+    {there} resulteth nine<:n>9</:n>,
   {and for the} eight of nine shares<:n>8/9</:n>
-    {we} obtain forty<:n>40</:n>;
+    {there} resulteth forty<:n>40</:n>;
   diminishing {the} greater by {the} lesser,
-  thirty-one<:n>31</:n> remaineth as {the} dividend.
+  {there} remaineth thirty-one<:n>31</:n> as {the} dividend.
   {The} denominators multiplied with each other,
   result in forty-five<:n>45</:n> as {the} divisor.
 </#t>
@@ -527,7 +527,7 @@
 <#t>
   不滿法，以法命之，即得。 |
   {The dividend} reacheth not {the} divisor;
-  naming it {for a fraction} using {the} divisor, {we are} done.
+  naming it {for a fraction} using {the} divisor, {we} are done.
 </#t>
 <;sh> 2 | 4 | Redistributing fractions for equality </;sh>
 <;s@@> 2 | 4 | 28 | 153 | 52139 | 4 | 41 </;s@@>
@@ -593,7 +593,7 @@
   {the} three shares<:n>/3</:n> {and the} four shares<:n>/4</:n>
   on {the} right;
   {the} one of<:n>1</:n>, {the} two of<:n>2</:n> {and the}
-  three of<:n>3</:n> on {the} left.
+  three of<:n>3</:n>, on {the} left.
   {The} denominators, mutually multiplied with {the} numerators,
   combined subsidiarily, result in sixty-three<:n>63</:n>,
   put to {the} right as {the} level dividend.
@@ -654,7 +654,7 @@
 
 <#t>
   等數得九，約訖。 |
-  {We} obtain nine<:n>9</:n> {for their} equal quantity.
+  {For their} equal quantity {there} resulteth nine<:n>9</:n> .
   Finish reducing {them}.
 </#t>
 <ul>
@@ -695,7 +695,7 @@
 <#t>
   今有粟一斗。問為糲米幾何？<br>
   答曰：六升。 |
-  Now there be {regular} grain,
+  Now there be grain,
   one<:n>1</:n>~斗<^> tau | tou | dou </^>.
   {We} ask: how much be {this in} coarse grain?<br>
   Answer saith: six<:n>6</:n>~升<^> sing | she^ng | sheng </^>.
@@ -713,14 +713,14 @@
 
 <#t>
   術曰：置粟一斗，十升。以糲米率三十乘之，得三百升為實。以粟率五十為法，除之，即得。 |
-  Method saith: put {down the regular} grain,
+  Method saith: put {down the} grain,
   one<:n>1</:n>~斗<^> tau | tou | dou </^>, {or}
   ten<:n>10</:n>~升<^> sing | she^ng | sheng </^>.
   Multiplying it by {the} coarse grain rate, thirty<:n>30</:n>,
   resulteth in three hundred<:n>300</:n>~升<^> sing | she^ng | sheng </^>
   as {the} dividend.
-  Use {the regular} grain rate, fifty<:n>50</:n>, as {the} divisor.
-  Dividing them, {we are} done.
+  Use {the} grain rate, fifty<:n>50</:n>, as {the} divisor.
+  Dividing them, {we} are done.
 </#t>
 <p>
   In modern notation, with <$>V</$> for volume and <$>r</$> for rate:
@@ -766,7 +766,7 @@
       糳米二十四；\
       御米二十一；…… |
       {The} method of grain:
-      {the regular} grain rate {is} fifty<:n>50</:n>;
+      {the} grain rate {is} fifty<:n>50</:n>;
       coarse grain, thirty<:n>30</:n>;
       fine grain, twenty-seven<:n>27</:n>;
       intricate grain, twenty-four<:n>24</:n>;
@@ -791,7 +791,7 @@
 <#t>
   今有粟二斗一升。問為粺米幾何？<br>
   答曰：一斗一升五十分升之一十七。 |
-  Now there be {regular} grain,
+  Now there be grain,
     two<:n>2</:n>~斗<^> tau | tou | dou </^> {and}
     one<:n>1</:n>~升<^> sing | she^ng | sheng </^>.
   {We} ask: how much be {this in} fine grain?<br>
@@ -827,12 +827,12 @@
 <#t>
   術曰：置粟二十一升。以粺米率二十七乘之，得五百六十七升為實。\
   以粟率五十為法，除之。不盡，以法而命分。 |
-  Method saith: put {down the regular} grain,
+  Method saith: put {down the} grain,
   twenty-one<:n>21</:n>~升<^> sing | she^ng | sheng </^>.
   Multiplying it by {the} fine grain rate, twenty-seven<:n>27</:n>,
   resulteth in five hundred {and} sixty-seven<:n>567</:n>\
   ~升<^> sing | she^ng | sheng </^> as {the} dividend.
-  Use {the regular} grain rate, fifty<:n>50</:n>, as {the} divisor.
+  Use {the} grain rate, fifty<:n>50</:n>, as {the} divisor.
   Divide them.
   {For the} remainder, name {the} fraction using {the} divisor.
 </#t>
@@ -848,7 +848,7 @@
 <#t>
   今有粟四斗五升。問為糳米幾何？<br>
   答曰：二斗一升五分升之三。 |
-  Now there be {regular} grain,
+  Now there be grain,
     four<:n>4</:n>~斗<^> tau | tou | dou </^> {and}
     five<:n>5</:n>~升<^> sing | she^ng | sheng </^>.
   {We} ask: how much be {this in} intricate grain?<br>
@@ -871,7 +871,7 @@
 
 <#t>
   術曰：置粟四十五升。以二約糳米率二十四，得一十二，乘之，得五百四十升為實。 |
-  Method saith: put {down the regular} grain, forty-five<:n>45</:n>~\
+  Method saith: put {down the} grain, forty-five<:n>45</:n>~\
   升<^> sing | she^ng | sheng </^>.
   Reducing {the} intricate grain rate, twenty-four<:n>24</:n>,
   by two<:n>2</:n>, resulteth in twelve<:n>12</:n>;
@@ -888,7 +888,7 @@
 
 <#t>
   以二約粟率五十，得二十五為法。除之。不盡，以等數約之，而命分。 |
-  Reducing {the regular} grain rate, fifty<:n>50</:n>,
+  Reducing {the} grain rate, fifty<:n>50</:n>,
   by two<:n>2</:n>, resulteth in twenty-five<:n>25</:n> as {the} divisor.
   Divide them.
   {For the} remainder, reduce it by {the} equal quantity,
@@ -914,7 +914,7 @@
 <#t>
   今有粟七斗九升。問為御米幾何？<br>
   答曰：三斗三升一合八勺。 |
-  Now there be {regular} grain,
+  Now there be grain,
     seven<:n>7</:n>~斗<^> tau | tou | dou </^> {and}
     nine<:n>9</:n>~升<^> sing | she^ng | sheng </^>.
   {We} ask: how much be {this in} poppy seed?<br>
@@ -947,8 +947,8 @@
   Multiplying it by {the} poppy seed rate, twenty-one<:n>21</:n>,
   resulteth in one thousand, six hundred {and} fifty-nine<:n>1659</:n>\
   ~升<^> sing | she^ng | sheng </^> as {the} dividend.
-  Dividing it by {the regular} grain rate, fifty<:n>50</:n>,
-  {we are} done.
+  Dividing it by {the} grain rate, fifty<:n>50</:n>,
+  {we} are done.
 </#t>
 <$$>
   V
@@ -966,7 +966,7 @@
     north-{to}-south,
   {and}
   six<:n>6</:n>~丈<^> choeng | chang | zhang </^>
-    east-{to}-west:
+    east-{to}-west,
   {and we} wish to build it with bricks.
   Every two<:n>2</:n>~尺<^> ch'ek | ch'ih | chi </^> of area
   useth five<:n>5</:n> bricks.
@@ -1006,7 +1006,7 @@
     ~尺<^> ch'ek | ch'ih | chi </^>.
   Multiplying it by five<:n>5</:n>, resulteth in
   nine thousand<:n>9000</:n>~尺<^> ch'ek | ch'ih | chi </^>.
-  Dividing it by two<:n>2</:n>, {we are} done.
+  Dividing it by two<:n>2</:n>, {we} are done.
 </#t>
 <ul>
   <li>九千尺：
@@ -1039,7 +1039,8 @@
   Now there be {a} circular cellar, of lower circumference
   two hundred {and} eighty-six<:n>286</:n>\
     ~尺<^> ch'ek | ch'ih | chi </^>,
-  {and} depth three<:n>3</:n>~丈<^> choeng | chang | zhang </^>
+  {and} depth
+    three<:n>3</:n>~丈<^> choeng | chang | zhang </^> {and}
     six<:n>6</:n>~尺<^> ch'ek | ch'ih | chi </^>.
   {We} ask: how much grain beareth {it}?
 </#t>
@@ -1074,7 +1075,7 @@
 <#t>
   以深三丈六尺乘之，得二百九十四萬四千六百五十六尺。 |
   Multiplying it by {the} depth,
-  three<:n>3</:n>~丈<^> choeng | chang | zhang </^>
+  three<:n>3</:n>~丈<^> choeng | chang | zhang </^> {and}
     six<:n>6</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   resulteth in two million, nine hundred {and} forty-four thousand,
   six hundred {and} fifty-six<:n>2944656</:n>\
@@ -1105,7 +1106,7 @@
     one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
     six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
     two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
-  {we are} done.
+  {we} are done.
 </#t>
 <ul>
   <li>斛法一尺六寸二分：
@@ -1245,7 +1246,7 @@
     one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
     six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
     two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
-  {we are} done.
+  {we} are done.
 </#t>
 
 <p>
@@ -1341,7 +1342,7 @@
     one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
     six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
     two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
-  {we are} done.
+  {we} are done.
 </#t>
 
 <p>
@@ -1420,7 +1421,7 @@
   以畝法二百四十步除之，即得。 |
   Dividing it by {the} 畝<^> mau | mu | mu </^> divisor,
     two hundred {and} forty<:n>240</:n>~步<^> pou | pu | bu </^>,
-  {we are} done.
+  {we} are done.
 </#t>
 
 <#t>
@@ -1519,7 +1520,7 @@
   以二百四十步除之，即得。 |
   Dividing it by
     two hundred {and} forty<:n>240</:n>~步<^> pou | pu | bu </^>,
-  {we are} done.
+  {we} are done.
 </#t>
 <p>
   In modern notation, the area of a square with circumradius (or semi-diagonal)
