@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
-  | 20190609 | 20191205 | dmr
+  | 20190609 | 20191206 | dmr
   | An annotated English translation of Volume~I of Sunzi Suanjing, \
     《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
 </*>
@@ -1095,17 +1095,13 @@
   見邪求方，五之，七而一；<br>
   見方求邪，七之，五而一。 |
   {The} circumference three<:n>3</:n>: {the} diameter one<:n>1</:n>.
-  {The} square's edge five<:n>5</:n>: {the} diagonal seven<:n>7</:n>.<br>
-  Seeing {the} diagonal {and} seeking {the} square's edge,
+  {The} square's {edge} five<:n>5</:n>: {the} diagonal seven<:n>7</:n>.<br>
+  Seeing {the} diagonal {and} seeking {the} square's {edge},
     quintuple<:n>5~×</:n> it, {and make} seven<:n>7</:n> {as} one.<br>
-  Seeing {the} square's edge {and} seeking {the} diagonal,
+  Seeing {the} square's {edge} {and} seeking {the} diagonal,
     septuple<:n>7~×</:n> it, {and make} five<:n>5</:n> {as} one.
 </#t>
 <ul>
-  <li>方：
-    square's edge;
-    literally square
-  </li>
   <li>邪：
     diagonal;
     literally incline<br>
