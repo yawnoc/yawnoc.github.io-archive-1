@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20191205 | dmr
+  | 20190609 | 20191210 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
 </*>
@@ -150,6 +150,10 @@
   <tr>
     <td class="centred-text"><@> ¶14 | #14 | Vol. II ¶14 </@></td>
     <td class="heading">Area of a square of a given circumradius</td>
+  </tr>
+  <tr>
+    <td class="centred-text"><@> ¶15 | #15 | Vol. II ¶15 </@></td>
+    <td class="heading">Dividing a cube into smaller cubes</td>
   </tr>
 </table></!>
 
@@ -1542,6 +1546,81 @@
   Here <$>\sqrt{2} \approx 7/5</$>, see
   <@> Vol.~I ¶5 | /pages/master-shuen-i.html#5 | Vol. I ¶5 </@>.
 </p>
+
+
+<;sh> 2 | 15 | Dividing a cube into smaller cubes </;sh>
+<;s@@> 2 | 15 | 36 | 155 | 52174 | 15 | 49 </;s@@>
+
+<#t>
+  今有木方三尺，欲方五寸作枕一枚。問得幾何？ |
+  Now there be {a} wooden cube {of edge}
+    three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+  {and we} wish {that each} cube {of edge}
+    five<:n>5</:n>~寸<^> ch'u"n | ts'un | cun </^>
+    {thereof be} made into one<:n>1</:n> pillow.
+  {We} ask: how many result?
+</#t>
+<ul>
+  <li>
+    <@>
+      Version~B
+      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=155
+      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+    </@>
+    and
+    <@>
+      Version~C
+      | https://ctext.org/sunzi-suan-jing#n52174
+      | ctext.org database page
+    </@>
+    have 高三尺 after 木方三尺.
+  </li>
+  <li>枚<br>
+    Classifier, omitted in the English.
+  </li>
+</ul>
+
+<#t>
+  答曰：二百一十六枚。 |
+  Answer saith: two hundred {and} sixteen<:n>216</:n> {pillows}.
+</#t>
+
+<#t>
+  術曰：置方三尺，自相乘，得九尺。以高三尺乘之，得二十七尺。 |
+  Method saith: put {down the} cube's {edge},
+    three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+  {which}, multiplied with itself, resulteth in
+    nine<:n>9</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  Multiplying it by {the} height,
+    three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+  resulteth in
+    twenty-seven<:n>27</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+</#t>
+
+<#t>
+  以一尺木八枕乘之，即得。 |
+  Multiplying it by eight<:n>8</:n> pillows {for each}
+    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^> of wood,
+  {we} are done.
+</#t>
+<ul>
+  <li>一尺：
+    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^><br>
+    This is a cubic 尺<^> ch'ek | ch'ih | chi </^>,
+    as are the 27~尺<^> ch'ek | ch'ih | chi </^> above.
+  </li>
+</ul>
+<p>
+  In modern notation, the number of pillows is
+</p>
+<$$>
+  (3 \unit{尺})^3 \times \frac{8}{1 \unit{尺}^3} = 216,
+</$$>
+<p>
+  where we have used the fact that <$>1 \unit{尺} = 2 \times 5 \unit{寸}</$>,
+  and that <$>2^3 = 8</$>.
+</p>
+
 
 <div class="end">
   <:r>WORK IN PROGRESS</:r>
