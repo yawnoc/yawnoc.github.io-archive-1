@@ -159,6 +159,10 @@
     <td class="centred-text"><@> ¶16 | #16 | Vol. II ¶16 </@></td>
     <td class="heading">Side length of a square of a given perimeter</td>
   </tr>
+  <tr>
+    <td class="centred-text"><@> ¶17 | #17 | Vol. II ¶17 </@></td>
+    <td class="heading">Volume of a trapezoidal prism</td>
+  </tr>
 </table></!>
 
 <@4> Unit conversions | units </@4>
@@ -537,6 +541,7 @@
   {The dividend} reacheth not {the} divisor;
   naming it {for a fraction} using {the} divisor, {we} are done.
 </#t>
+
 <;sh> 2 | 4 | Redistributing fractions for equality </;sh>
 <;s@@> 2 | 4 | 28 | 153 | 52139 | 4 | 41 </;s@@>
 
@@ -916,6 +921,7 @@
   = \frac{45 \unit{升} \times 24 \div 2}{50 \div 2}
   = 21 \tfrac{3}{5} \unit{升}
 </$$>
+
 <;sh> 2 | 8 | Volume conversions for grain </;sh>
 <;s@@> 2 | 8 | 30 | 154 | 52151 | 8 | 44 </;s@@>
 
@@ -1685,6 +1691,103 @@
     \frac{5794 \unit{步}}{4}
     &= 1448 \unit{步} + \frac{2 \unit{步}}{4} \times \frac{6 \unit{尺}}{\unit{步}} \\[2ex]
     &= 1448 \unit{步} + 3 \unit{尺}.
+  \end{aligned}
+</$$>
+
+
+<;sh> 2 | 17 | Volume of a trapezoidal prism </;sh>
+<;s@@> 2 | 17 | 38 | 155 | 52180 | 17 | 51 </;s@@>
+
+<#t>
+  今有隄，下廣五丈，上廣三丈，高二丈，長六十尺，欲以一千尺作一方。問計幾何？ |
+  Now there be {an} embankment, of
+    lower width five<:n>5</:n>~丈<^> choeng | chang | zhang </^>,
+    upper width three<:n>3</:n>~丈<^> choeng | chang | zhang </^>,
+    height two<:n>2</:n>~丈<^> choeng | chang | zhang </^>, {and}
+    length sixty<:n>60</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+  {and we} wish to consider
+    one thousand<:n>1000</:n>~尺<^> ch'ek | ch'ih | chi </^>
+  as one block.
+  {We} ask: how many amounteth {this} to?
+</#t>
+
+<#t>
+  答曰：四十八方。 |
+  Answer saith: forty-eight<:n>48</:n> blocks.
+</#t>
+
+<#t>
+  法曰：置隄上廣三丈、下廣五丈。并之，得八丈。半之，得四丈。 |
+  Method saith: put {down the} embankment's
+  upper width, three<:n>3</:n>~丈<^> choeng | chang | zhang </^>, {and the}
+  lower width, five<:n>5</:n>~丈<^> choeng | chang | zhang </^>.
+  Combining them resulteth in eight<:n>8</:n>~丈<^> choeng | chang | zhang </^>.
+  Halving it resulteth in four<:n>4</:n>~丈<^> choeng | chang | zhang </^>.
+</#t>
+<ul>
+  <li>法：
+    method<br>
+    <@>
+      Version~B
+      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=155
+      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+    </@>
+    and
+    <@>
+      Version~C
+      | https://ctext.org/sunzi-suan-jing#n52180
+      | ctext.org database page
+    </@>
+    have the usual 術 for 法.
+  </li>
+</ul>
+
+<#t>
+  以高二丈乘之，得八百尺。以長六十尺乘之，得四萬八千。 |
+  Multiplying it by {the} height,
+    two<:n>2</:n>~丈<^> choeng | chang | zhang </^>,
+  resulteth in
+    eight hundred<:n>800</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  Multiplying it by {the} length,
+    sixty<:n>60</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+  resulteth in
+    forty-eight thousand<:n>48000</:n>.
+</#t>
+<ul>
+  <li>
+    <@>
+      Version~B
+      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=155
+      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+    </@>
+    has the  以二丈 for 以高二丈.
+  </li>
+</ul>
+
+<#t>
+  以一千尺除之，即得。 |
+  Dividing it by one thousand<:n>1000</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+  {we} are done.
+</#t>
+
+<p>
+  In modern notation, the volume of a trapezoidal prism of
+    upper width <$>A = 3 \unit{丈}</$>,
+    lower width <$>B = 5 \unit{丈}</$>,
+    height <$>H = 2 \unit{丈}</$> and
+    length <$>L = 60 \unit{尺}</$> is
+</p>
+<$$>
+  \begin{aligned}
+    V
+    &= \frac{A + B}{2} \cdot H L \\[2ex]
+    &=
+      \frac{30 \unit{尺} + 50 \unit{尺}}{2}
+        \times
+      20 \unit{尺} \times 60 \unit{尺}
+        \div
+      \frac{1000 \unit{尺}^3}{\unit{block}} \\[2ex]
+    &= 48 \unit{blocks}.
   \end{aligned}
 </$$>
 
