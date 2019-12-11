@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20191210 | dmr
+  | 20190609 | 20191211 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
 </*>
@@ -154,6 +154,10 @@
   <tr>
     <td class="centred-text"><@> ¶15 | #15 | Vol. II ¶15 </@></td>
     <td class="heading">Dividing a cube into smaller cubes</td>
+  </tr>
+  <tr>
+    <td class="centred-text"><@> ¶16 | #16 | Vol. II ¶16 </@></td>
+    <td class="heading">Side length of a square of a given perimeter</td>
   </tr>
 </table></!>
 
@@ -1620,6 +1624,69 @@
   where we have used the fact that <$>1 \unit{尺} = 2 \times 5 \unit{寸}</$>,
   and that <$>2^3 = 8</$>.
 </p>
+
+<;sh> 2 | 16 | Side length of a square of a given perimeter </;sh>
+<;s@@> 2 | 16 | 38 | 155 | 52177 | 16 | 50 </;s@@>
+
+<#t>
+  今有索長五千七百九十四步，欲使作方。問幾何？<br>
+  答曰：一千四百四十八步三尺。 |
+  Now there be rope, of length
+    five thousand, seven hundred {and} ninety-four<:n>5794</:n>\
+    ~步<^> pou | pu | bu </^>,
+  {and we} wish to make {it} be {a} square.
+  {We} ask: how much {be its edge}?<br>
+  Answer saith: one thousand, four hundred {and} forty-eight<:n>1448</:n>\
+    ~步<^> pou | pu | bu </^>
+    {and} three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+</#t>
+
+<#t>
+  術曰：置索長五千七百九十四步。以四除之，得一千四百四十八步，餘二步。 |
+  Method saith: put {down the} rope's length,
+    five thousand, seven hundred {and} ninety-four<:n>5794</:n>\
+    ~步<^> pou | pu | bu </^>.
+  Dividing it by four, resulteth in
+    one thousand, four hundred {and} forty-eight<:n>1448</:n>\
+    ~步<^> pou | pu | bu </^>,
+    remainder two<:n>2</:n>~步<^> pou | pu | bu </^>.
+
+</#t>
+<#t>
+  以六因之，得一丈二尺。以四除之，得三尺。 |
+  Multiplying it by six, resulteth in
+    one<:n>1</:n>~丈<^> choeng | chang | zhang </^> {and}
+    two<:n>2</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  Dividing it by four, resulteth in
+    three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+</#t>
+<ul>
+  <li>因：
+    multiplying<br>
+    As in times tables, 九因歌, "{the} Song of Nine Multiples".
+  </li>
+</ul>
+
+<#t>
+  通計，即得。 |
+  Computing {the} total, {we} are done.
+</#t>
+<ul>
+  <li>通：總也；
+    total
+  </li>
+</ul>
+
+<p>
+  In modern notation, the side length of the square is
+</p>
+<$$>
+  \begin{aligned}
+    \frac{5794 \unit{步}}{4}
+    &= 1448 \unit{步} + \frac{2 \unit{步}}{4} \times \frac{6 \unit{尺}}{\unit{步}} \\[2ex]
+    &= 1448 \unit{步} + 3 \unit{尺}.
+  \end{aligned}
+</$$>
 
 
 <div class="end">
