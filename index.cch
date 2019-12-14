@@ -1,6 +1,6 @@
 <*>
-  | 20190309 | 20191209 | dr
-  | Assorted musings, mostly applied maths and Literary Chinese.
+  | 20190309 | 20191215 | dr
+  | Assorted musings of Conway, mostly applied maths and Literary Chinese.
 </*>
 
 <=h>
@@ -322,6 +322,10 @@
 
 
 <ul class="site-history">
+  
+  <li><span>20191215:</span>
+    Hooray, <`>git</`> works in Termux!
+  </li>
   
   <li><span>20191208:</span>
     800,000 today.<br>
