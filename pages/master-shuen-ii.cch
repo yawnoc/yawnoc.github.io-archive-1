@@ -1,6 +1,6 @@
 <*>
   "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20191211 | dmr
+  | 20190609 | 20191215 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
 </*>
@@ -162,6 +162,10 @@
   <tr>
     <td class="centred-text"><@> ¶17 | #17 | Vol. II ¶17 </@></td>
     <td class="heading">Volume of a trapezoidal prism</td>
+  </tr>
+  <tr>
+    <td class="centred-text"><@> ¶18 | #18 | Vol. II ¶18 </@></td>
+    <td class="heading">Volume of a rectangular prism</td>
   </tr>
 </table></!>
 
@@ -1788,6 +1792,62 @@
         \div
       \frac{1000 \unit{尺}^3}{\unit{block}} \\[2ex]
     &= 48 \unit{blocks}.
+  \end{aligned}
+</$$>
+
+<;sh> 2 | 18 | Volume of a rectangular prism </;sh>
+<;s@@> 2 | 18 | 38 | 155 | 52183 | 18 | 51 </;s@@>
+
+<#t>
+  今有溝，廣十丈，深五丈，長二十丈，欲以千尺作一方。問得幾何？ |
+  Now there be {a} ditch, of
+    width ten<:n>10</:n>~丈<^> choeng | chang | zhang </^>,
+    depth five<:n>5</:n>~丈<^> choeng | chang | zhang </^>, {and}
+    length twenty<:n>20</:n>~丈<^> choeng | chang | zhang </^>,
+  {and we} wish to consider
+    {a} thousand<:n>1000</:n>~尺<^> ch'ek | ch'ih | chi </^>
+  as one block.
+  {We} ask: how many result?
+</#t>
+
+<#t>
+  答曰：一千方。 |
+  Answer saith: one thousand<:n>1000</:n> blocks.
+</#t>
+
+<#t>
+  術曰：置廣一十丈。以深五丈乘之，得五千尺。又以長二十丈乘之，得一百萬尺。 |
+  Method saith: put {down the} width,
+    ten<:n>10</:n>~丈<^> choeng | chang | zhang </^>.
+  Multiplying it by {the} depth,
+    five<:n>5</:n>~丈<^> choeng | chang | zhang </^>,
+  resulteth in
+    five thousand<:n>5000</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  Also multiplying it by {the} length,
+    twenty<:n>20</:n>~丈<^> choeng | chang | zhang </^>,
+  resulteth in
+    one million<:n>1000000</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+</#t>
+
+<#t>
+  以一千除之，即得。 |
+  Dividing it by one thousand, {we} are done.
+</#t>
+
+<p>
+  In modern notation, the volume of a rectangular prism of
+  width <$>W = 10 \unit{丈}</$>, depth <$>H = 5 \unit{丈}</$> and
+  length <$>L = 20 \unit{丈}</$> is
+</p>
+<$$>
+  \begin{aligned}
+    V
+    &= W H L \\
+    &=
+      100 \unit{尺} \times 50 \unit{尺} \times 200 \unit{尺}
+        \div
+      \frac{1000 \unit{尺}^3}{\unit{block}} \\[2ex]
+    &= 1000 \unit{blocks}.
   \end{aligned}
 </$$>
 
