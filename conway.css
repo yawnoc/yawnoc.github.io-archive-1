@@ -550,6 +550,10 @@ svg.fit-width {
   margin-top: 1em;
 }
 
+svg.tight {
+  margin-top: 0;
+}
+
 /* For holding styles used in all subsequent SVGs without taking up space */
 
 svg.embedded-styles {
