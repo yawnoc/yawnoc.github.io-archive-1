@@ -1,5 +1,5 @@
 ################################################################
-# shuen-pregnant.m
+# shuen_pregnant.m
 ################################################################
 # 孫子算經 Master Shün's Computational Classic
 # Sex determination algorithm in Volume III Paragraph 36:

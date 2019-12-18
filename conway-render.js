@@ -326,7 +326,7 @@ function mathsRender() {
   Romanisations are none, conway, wadegiles, pinyin.
   Button ids and classes have prefix 'romanisation-'.
   See 'Romanisations for English text radio box <^^>' and
-  'Romanisations for English text <^>' in cch-to-html.py.
+  'Romanisations for English text <^>' in cch.py.
 */
 
 /*

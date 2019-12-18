@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20191201 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20191218 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -14,7 +14,7 @@
 
 <*p> |
   <b>Code:</b>
-  <@> <`>cch-to-html.py</`> | \/cch-to-html.py | GitHub: cch-to-html.py </@>
+  <@> <`>cch.py</`> | \/cch.py | GitHub: cch.py </@>
 </*p>
 
 <=>
@@ -112,7 +112,7 @@
 
 <p>
   For the sole purpose of building this site, I wrote a Python program
-  <@> <`>cch-to-html.py</`> | \/cch-to-html.py | GitHub: cch-to-html.py </@>
+  <@> <`>cch.py</`> | \/cch.py | GitHub: cch.py </@>
   which converts Conway's concise HTML (CCH) to standard (HTML),
   using regular expression replacements.
 </p>
@@ -156,7 +156,7 @@
     | \/code/cch-to-html.cch
     | GitHub: cch-to-html.cch
   </@>
-  by running <`>cch-to-html.py code/cch-to-html</`>,
+  by running <`>cch.py code/cch-to-html</`>,
   and it serves as both the documentation and an example.
 </p>
 

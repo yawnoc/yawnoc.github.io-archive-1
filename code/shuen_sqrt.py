@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 ################################################################
-# shuen-sqrt.py
+# shuen_sqrt.py
 ################################################################
 # 孫子算經 Master Shün's Computational Classic
 # Square root algorithm in Volume II Paragraph 19:

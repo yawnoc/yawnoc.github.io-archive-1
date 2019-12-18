@@ -1,5 +1,5 @@
 <*>
-  | 20190309 | 20191215 | dr
+  | 20190309 | 20191218 | dr
   | Assorted musings of Conway, mostly applied maths and Literary Chinese.
 </*>
 
@@ -300,7 +300,7 @@
   </@i>
   <@i>
     <b>Python: Master~孫<^> Shu"n | Sun | Sun </^> square root algorithm</b>
-    | \/code/shuen-sqrt.py
+    | \/code/shuen_sqrt.py
     | Python: Master~<^e> Shu"n</^e> square root algorithm
   </@i>
   <@i>
@@ -355,7 +355,7 @@
   
   <li><span>20191031:</span>
     Rewrote the CCH to HTML converter
-    <@> <`>cch-to-html.py</`> | \/cch-to-html.py | cch-to-html.py </@>,
+    <@> <`>cch.py</`> | \/cch.py | cch.py </@>,
     and rebuilt the whole site accordingly.
   </li>
   
