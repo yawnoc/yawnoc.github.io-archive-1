@@ -23,7 +23,7 @@ def digits_to_int(digits_list):
     total = total * 10 + digit
   return total
 
-def shuen_sqrt(x):
+def shuen_sqrt(x, print_details = False):
   
   # Number of digits of radicand, N
   N = math.floor(math.log10(x)) + 1
@@ -69,8 +69,8 @@ def shuen_sqrt(x):
     
     # If not done yet, step to next place; otherwise break
     if L > 1:
-      pqr_list = [int(rho/10) for rho in pqr_list]
-      L = int(L/100)
+      pqr_list = [rho // 10 for rho in pqr_list]
+      L = L // 100
     else:
       break
     
@@ -89,15 +89,16 @@ def shuen_sqrt(x):
   # Actual square root
   sqrt_actual = math.sqrt(x)
   
-  # Display results
-  print('Straight divisors: ' + str(pqr_list))
-  print('Answer saith: ' + str(U) + ' + ' + str(R) + '/' + str(L))
-  
-  # Errors
-  error_abs = sqrt_shuen - sqrt_actual
-  error_rel = sqrt_shuen/sqrt_actual - 1
-  print('Absolute error: ' + '{0:.2g}'.format(error_abs))
-  print('Relative error: ' + '{0:.2g}'.format(error_rel * 100) + ' %')
+  # Print results and errors
+  if print_details:
+    
+    print(f'Straight divisors: {pqr_list}')
+    print(f'Answer saith: {U} + {R}/{L}')
+    
+    error_abs = sqrt_shuen - sqrt_actual
+    error_rel = sqrt_shuen/sqrt_actual - 1
+    print(f'Absolute error: {error_abs:.2g}')
+    print(f'Relative error: {error_rel * 100:.2g} %')
   
   # Return value
   return sqrt_shuen
@@ -105,11 +106,14 @@ def shuen_sqrt(x):
 def main(args):
   
   x = args.x
-  x = int(x)
-  shuen_sqrt(x)
+  shuen_sqrt(x, True)
 
 if __name__ == '__main__':
   
   parser = argparse.ArgumentParser(description = 'Computes square root')
-  parser.add_argument('x', help = 'Radicand (integer to be square rooted)')
+  parser.add_argument(
+    'x',
+    help = 'Radicand (integer to be square rooted)',
+    type = int
+  )
   main(parser.parse_args())
