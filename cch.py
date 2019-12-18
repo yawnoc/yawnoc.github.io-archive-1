@@ -223,7 +223,7 @@ def replace_display_code(match_object):
   content = escape_html(content)
   content = de_indent(content)
   
-  processed_string = '<pre>{content}</pre>'.format(content = content)
+  processed_string = f'<pre>{content}</pre>'
   
   return create_temporary_replacement_string(processed_string)
 
@@ -258,7 +258,7 @@ def replace_inline_code(match_object):
   content = match_object.group(1)
   content = escape_html(content)
   
-  processed_string = '<code>{content}</code>'.format(content = content)
+  processed_string = f'<code>{content}</code>'
   
   return create_temporary_replacement_string(processed_string)
 
@@ -311,9 +311,7 @@ def replace_display_maths(match_object):
   content = escape_html(content)
   content = de_indent(content)
   
-  processed_string = (
-    '<div class="maths">{content}</div>'.format(content = content)
-  )
+  processed_string = f'<div class="maths">{content}</div>'
   
   return create_temporary_replacement_string(processed_string)
 
@@ -348,9 +346,7 @@ def replace_inline_maths(match_object):
   content = match_object.group(1)
   content = escape_html(content)
   
-  processed_string = (
-    '<span class="maths">{content}</span>'.format(content = content)
-  )
+  processed_string = f'<span class="maths">{content}</span>'
   
   return create_temporary_replacement_string(processed_string)
 
@@ -386,9 +382,7 @@ def replace_inline_maths_definition(match_object):
   content = escape_html(content)
   
   processed_string = (
-    '<span class="maths embedded-definitions">{content}</span>'.format(
-      content = content
-    )
+    f'<span class="maths embedded-definitions">{content}</span>'
   )
   
   return create_temporary_replacement_string(processed_string)
@@ -460,13 +454,7 @@ def replace_item_anchor_abbreviation(match_object):
   href = item_anchor_abbreviation_href_dictionary[type]
   title = item_anchor_abbreviation_title_dictionary[type]
   
-  processed_string = (
-    '<@i> {content} | {href} | {title} </@i>'.format(
-      content = content,
-      href = href,
-      title = title
-    )
-  )
+  processed_string = f'<@i> {content} | {href} | {title} </@i>'
   
   return processed_string
 
@@ -670,24 +658,15 @@ def replace_dialogue_image(match_object):
   num_required_arguments = 2
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Dialogue image <+{{pos}}> {{src}} | {{alt}} </+{{pos}}> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    'Dialogue image <+{pos}> {src} | {alt} </+{pos}> '
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments
   src, alt = argument_list[:num_arguments]
   
-  processed_string = (
-    '<+> {src} | {alt} | | | dialogue-{full_pos} </+>'.format(
-      src = src,
-      alt = alt,
-      full_pos = full_pos
-    )
-  )
+  processed_string = f'<+> {src} | {alt} | | | dialogue-{full_pos} </+>'
   
   return processed_string
 
@@ -727,12 +706,9 @@ def replace_image(match_object):
   num_required_arguments = 2
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Image <+> {{src}} | {{alt}} [| title [| width [| class]]] </+> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    'Image <+> {src} | {alt} [| title [| width [| class]]] </+> '
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments + 3
@@ -748,26 +724,20 @@ def replace_image(match_object):
   if title == '':
     title_spec = ''
   else:
-    title_spec = ' title="{title}"'.format(title = title)
+    title_spec = f' title="{title}"'
   
   if width == '':
     width_spec = ''
   else:
-    width_spec = ' width="{width}"'.format(width = width)
+    width_spec = f' width="{width}"'
   
   if class_ == '':
     class_spec = ''
   else:
-    class_spec = ' class="{class_}"'.format(class_ = class_)
+    class_spec = f' class="{class_}"'
   
   processed_string = (
-    '<img{class_spec} src="{src}" alt="{alt}"{title_spec}{width_spec}>'.format(
-      src = src,
-      alt = alt,
-      title_spec = title_spec,
-      width_spec = width_spec,
-      class_spec = class_spec
-    )
+    f'<img{class_spec} src="{src}" alt="{alt}"{title_spec}{width_spec}>'
   )
   
   return processed_string
@@ -809,25 +779,18 @@ def replace_assisting_romanisation(match_object):
   num_required_arguments = 3
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Assisting romanisation <^> {{conway}} | {{wadegiles}} | {{pinyin}} </^> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    'Assisting romanisation <^> {conway} | {wadegiles} | {pinyin} </^> '
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments
   conway, wadegiles, pinyin = argument_list[:num_arguments]
   
   processed_string = (
-    '<span class="romanisation romanisation-conway">~(<^e>{conway}</^e>)</span>'
-    '<span class="romanisation romanisation-wadegiles">~(<^e>{wadegiles}</^e>)</span>'
-    '<span class="romanisation romanisation-pinyin">~(<^e>{pinyin}</^e>)</span>'
-  ).format(
-    conway = conway,
-    wadegiles = wadegiles,
-    pinyin = pinyin
+    f'<span class="romanisation romanisation-conway">~(<^e>{conway}</^e>)</span>'
+    f'<span class="romanisation romanisation-wadegiles">~(<^e>{wadegiles}</^e>)</span>'
+    f'<span class="romanisation romanisation-pinyin">~(<^e>{pinyin}</^e>)</span>'
   )
   
   return processed_string
@@ -886,12 +849,9 @@ def replace_cantonese_mandarin_romanisation(match_object):
   
   assert num_supplied_arguments >= num_required_arguments, (
     'Cantonese & Mandarin romanisation '
-    '<^cm[gov]> {{cantonese}} | {{mandarin}} [| government] </^cm[gov]> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    '<^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]> '
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments + 1
@@ -906,22 +866,15 @@ def replace_cantonese_mandarin_romanisation(match_object):
       '<^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]> '
       'requires non-empty [government] if [gov] is supplied'
     )
-    gov_spec = ', {full_gov} Mandarin (統讀):~<^e>{government}</^e>'.format(
-      full_gov = full_gov,
-      government = government
-    )
+    gov_spec = f', {full_gov} Mandarin (統讀):~<^e>{government}</^e>'
   
-  processed_string = de_indent('''\
+  processed_string = de_indent(f'''\
     <@>
       Cantonese
       | /pages/conway-cantonese-romanisation.html
       | Conway's Custom Romanisation for Cantonese
     </@>:~<^e>{cantonese}</^e>,
     Mandarin~<^e>{mandarin}</^e>{gov_spec}'''
-  ).format(
-    cantonese = cantonese,
-    mandarin = mandarin,
-    gov_spec = gov_spec
   )
   
   return processed_string
@@ -979,11 +932,8 @@ def replace_directed_triangle_anchor(match_object):
   assert num_supplied_arguments >= num_required_arguments, (
     'Directed-triangle anchor '
     '<@{dir}> {content} | {id} [| title] </@{dir}> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   content, id_ = argument_list[:num_required_arguments]
@@ -991,18 +941,11 @@ def replace_directed_triangle_anchor(match_object):
     title = argument_list[num_required_arguments]
     if title == '':
       title = content
-    title_spec = '| {title}'.format(title = title)
+    title_spec = f'| {title}'
   else:
     title_spec = ''
   
-  processed_string = (
-    '<@> [{triangle}\\,{content}] | #{id_}{title_spec} </@>'.format(
-      triangle = triangle,
-      content = content,
-      id_ = id_,
-      title_spec = title_spec
-    )
-  )
+  processed_string = f'<@> [{triangle}\\,{content}] | #{id_}{title_spec} </@>'
   
   return processed_string
 
@@ -1073,12 +1016,9 @@ def replace_heading_self_link_anchor(match_object):
   num_required_arguments = 2
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Heading self-link anchor <@{{level}}> {{content}} | {{id}} </@{{level}}> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    'Heading self-link anchor <@{level}> {content} | {id} </@{level}> '
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments
@@ -1086,14 +1026,10 @@ def replace_heading_self_link_anchor(match_object):
   
   id_ = escape_attribute_value(id_)
   
-  processed_string = de_indent('''\
+  processed_string = de_indent(f'''\
     <h{level} id="{id_}"><a class="self-link" href="#{id_}"></a>
       {content}
     </h{level}>'''
-  ).format(
-    level = level,
-    id_ = id_,
-    content = content
   )
   
   return processed_string
@@ -1138,13 +1074,10 @@ def replace_anchor(match_object):
   num_required_arguments = 2
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Anchor <@> {{content}} | {{href}} [| title] </@> '
-    'or Item anchor <@i> {{content}} | {{href}} [| title] </@i>'
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    'Anchor <@> {content} | {href} [| title] </@> '
+    'or Item anchor <@i> {content} | {href} [| title] </@i>'
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   content, href = argument_list[:num_required_arguments]
@@ -1161,15 +1094,9 @@ def replace_anchor(match_object):
   if title == '':
     title_spec = ''
   else:
-    title_spec = ' title="{title}"'.format(title = title)
+    title_spec = f' title="{title}"'
   
-  processed_string = (
-    '<a href="{href}"{title_spec}>{content}</a>'.format(
-      href = href,
-      content = content,
-      title_spec = title_spec
-    )
-  )
+  processed_string = f'<a href="{href}"{title_spec}>{content}</a>'
   
   return processed_string
 
@@ -1221,27 +1148,20 @@ def replace_boxed_translation(match_object):
   num_required_arguments = 2
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Boxed translation <#t[size]> {{chinese}} | {{english}} </#t[size]> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    'Boxed translation <#t[size]> {chinese} | {english} </#t[size]> '
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments
   chinese, english = argument_list[:num_arguments]
   
-  processed_string = de_indent('''\
+  processed_string = de_indent(f'''\
     <div class="boxed{size_spec} translation">
       {chinese}
       <hr>
       {english}
     </div>'''
-  ).format(
-    size_spec = size_spec,
-    chinese = chinese,
-    english = english
   )
   
   return processed_string
@@ -1290,12 +1210,9 @@ def replace_shuen_heading(match_object):
   num_required_arguments = 3
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Shuen heading <;sh> {{volume}} | {{paragraph}} | {{content}} </;sh> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    'Shuen heading <;sh> {volume} | {paragraph} | {content} </;sh> '
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments
@@ -1303,16 +1220,12 @@ def replace_shuen_heading(match_object):
   
   capital_roman_volume = int(volume) * 'I'
   
-  processed_string = de_indent('''\
+  processed_string = de_indent(f'''\
     <@4>
       Vol.~{capital_roman_volume}~¶{paragraph}.
       <span class="heading">{content}</span>
       | {paragraph}
     </@4>'''
-  ).format(
-    capital_roman_volume = capital_roman_volume,
-    paragraph = paragraph,
-    content = content
   )
   
   return processed_string
@@ -1387,12 +1300,9 @@ def replace_shuen_link_division(match_object):
   
   assert num_supplied_arguments >= num_required_arguments, (
     'Shuen link division <;s@@> '
-    '{{volume}} | {{paragraph}} | {{a p}} | {{b p}} | {{c p}} | {{c q}} | {{d p}} </;s@@> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    '{volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@> '
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments
@@ -1401,79 +1311,62 @@ def replace_shuen_link_division(match_object):
   capital_roman_volume = int(volume) * 'I'
   small_roman_volume = int(volume) * 'i'
   
-  paragraphs_link = de_indent('''\
+  paragraphs_link = de_indent(f'''\
     <@u>
       Paragraphs
       | paragraphs
       | Volume {capital_roman_volume}: Paragraph navigation
     </@u>'''
-  ).format(
-    capital_roman_volume = capital_roman_volume
   )
   
-  manuscript_link = de_indent('''\
+  manuscript_link = de_indent(f'''\
     <@>
       [manuscript]
       | /manuscripts/shuen-{small_roman_volume}-{paragraph}.pdf
       | Translation manuscript for Vol. {capital_roman_volume} ¶{paragraph}
     </@>'''
-  ).format(
-    small_roman_volume = small_roman_volume,
-    capital_roman_volume = capital_roman_volume,
-    paragraph = paragraph
   )
   
   if a_p == '':
     version_a_link = ''
   else:
-    version_a_link = de_indent('''\
+    version_a_link = de_indent(f'''\
       <@>
         A{a_p}
         | https://archive.org/details/02094034.cn/page/n{a_p}
         | Version A: 02094034.cn at archive.org
       </@>'''
-    ).format(
-      a_p = a_p
     )
   
   if b_p == '':
     version_b_link = ''
   else:
     b_p_minus_5 = int(b_p) - 5
-    version_b_link = de_indent('''\
+    version_b_link = de_indent(f'''\
       <@>
         B{b_p}({b_p_minus_5})
         | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page={b_p}
         | Version B: 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
       </@>'''
-    ).format(
-      b_p = b_p,
-      b_p_minus_5 = b_p_minus_5
     )
   
-  version_c_link = de_indent('''\
+  version_c_link = de_indent(f'''\
     <@>
       C{c_p}({volume}.{c_q})
       | https://ctext.org/sunzi-suan-jing#n{c_p}
       | Version C: ctext.org database page
     </@>'''
-  ).format(
-    volume = volume,
-    c_p = c_p,
-    c_q = c_q
   )
   
-  version_d_link = de_indent('''\
+  version_d_link = de_indent(f'''\
     <@>
       D{d_p}
       | https://ctext.org/library.pl?if=en&file=86926&page={d_p}
       | Version D: 《知不足齋叢書》本 at ctext.org library
     </@>'''
-  ).format(
-    d_p = d_p
   )
   
-  processed_string = de_indent('''\
+  processed_string = de_indent(f'''\
     <@@>
       {paragraphs_link}
       {manuscript_link}
@@ -1482,13 +1375,6 @@ def replace_shuen_link_division(match_object):
       {version_c_link}
       {version_d_link}
     </@@>'''
-  ).format(
-    paragraphs_link = paragraphs_link,
-    manuscript_link = manuscript_link,
-    version_a_link = version_a_link,
-    version_b_link = version_b_link,
-    version_c_link = version_c_link,
-    version_d_link = version_d_link
   )
   
   return processed_string
@@ -1579,13 +1465,10 @@ def replace_preamble(string):
   assert num_supplied_arguments >= num_required_arguments, (
     'Preamble '
     '<*> '
-      '{{title}} | {{first created}} | {{last modified}} [| rendering] [| description] '
+      '{title} | {first created} | {last modified} [| rendering] [| description] '
     '</*> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments + 2
@@ -1605,7 +1488,7 @@ def replace_preamble(string):
   if title == '':
     title_with_dash = ''
   else:
-    title_with_dash = title + ' — '
+    title_with_dash = f'{title} — '
   
   require_date = 'd' in rendering
   require_maths = 'm' in rendering
@@ -1623,11 +1506,7 @@ def replace_preamble(string):
   if description == '':
     meta_description = ''
   else:
-    meta_description = (
-      '<meta name="description" content="{description}">'.format(
-        description = description
-      )
-    )
+    meta_description = f'<meta name="description" content="{description}">'
   
   if require_rendering:
     rendering_js = '<script defer src="/conway-render.min.js"></script>'
@@ -1639,14 +1518,12 @@ def replace_preamble(string):
     if require_romanisation:
       onload_functions += ' romanisationInitialise();'
     onload_functions = onload_functions.lstrip()
-    onload_spec = ' onload="{onload_functions}"'.format(
-      onload_functions = onload_functions
-    )
+    onload_spec = f' onload="{onload_functions}"'
   else:
     rendering_js = ''
     onload_spec = ''
   
-  processed_string_beginning = de_indent('''\
+  processed_string_beginning = de_indent(f'''\
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -1668,12 +1545,6 @@ def replace_preamble(string):
     </head>
     <body{onload_spec}>
     '''
-  ).format(
-    meta_description = meta_description,
-    maths_css_js = maths_css_js,
-    rendering_js = rendering_js,
-    title_with_dash = title_with_dash,
-    onload_spec = onload_spec
   )
   
   processed_string_end = de_indent('''
@@ -1729,48 +1600,33 @@ def replace_page_properties(string):
   if see_also == '':
     see_also_spec = ''
   else:
-    see_also_spec = de_indent('''\
-      <br>
-        <b>See also:</b>~{see_also}'''
-    ).format(
-      see_also = see_also
+    see_also_spec = de_indent(
+      '<br>' f'''
+      <b>See also:</b>~{see_also}'''
     )
   
   if misc == '':
     misc_spec = ''
   else:
-    misc_spec = de_indent('''\
-      <br>
-        {misc}'''
-    ).format(
-      misc = misc
+    misc_spec = de_indent(
+      '<br>' f'''
+      {misc}'''
     )
   
   if is_index:
     last_modified_spec = (
-      '<@> <b>{last_modified}</b> | #history | Site history </@>'
-    ).format(
-      last_modified = last_modified
+      f'<@> <b>{last_modified}</b> | #history | Site history </@>'
     )
   else:
-    last_modified_spec = (
-      '<b>{last_modified}</b>'
-    ).format(
-      last_modified = last_modified
-    )
+    last_modified_spec = f'<b>{last_modified}</b>'
   
-  processed_string = de_indent('''\
+  processed_string = de_indent(f'''\
     <p class="page-properties">
       First created:~{first_created}<br>
       Last modified:~{last_modified_spec}'''
-      '{see_also_spec}'
-      '{misc_spec}' '''
+      f'{see_also_spec}'
+      f'{misc_spec}' '''
     </p>'''
-  ).format(
-    first_created = first_created,
-    last_modified_spec = last_modified_spec,
-    see_also_spec = see_also_spec,
-    misc_spec = misc_spec
   )
   
   return page_properties_regex.sub(
@@ -1848,12 +1704,9 @@ def replace_cite_this_page(string):
   
   assert num_supplied_arguments >= num_required_arguments, (
     'Cite this page '
-    '<*c> {{text heading}} | {{tex key}} | {{tex heading}} [| inconvenience message] </*c> '
-    'requires at least {num_required_arguments} pipe-delimited arguments; '
-    'only {num_supplied_arguments} supplied'
-  ).format(
-    num_required_arguments = num_required_arguments,
-    num_supplied_arguments = num_supplied_arguments
+    '<*c> {text heading} | {tex key} | {tex heading} [| inconvenience message] </*c> '
+    f'requires at least {num_required_arguments} pipe-delimited arguments; '
+    f'only {num_supplied_arguments} supplied'
   )
   
   num_arguments = num_required_arguments + 1
@@ -1865,12 +1718,10 @@ def replace_cite_this_page(string):
   if inconvenience_message == '':
     inconvenience_spec = ''
   else:
-    inconvenience_spec = de_indent('''\
+    inconvenience_spec = de_indent(f'''\
       <p>
         {inconvenience_message}
       </p>'''
-    ).format(
-      inconvenience_message = inconvenience_message
     )
   
   tex_heading = escape_conway_special_literals(tex_heading)
@@ -1988,51 +1839,38 @@ def replace_footer(string):
   
   if is_index:
     next_year = int(year_last_modified) + 1
-    ending_remark = de_indent('''\
+    ending_remark = de_indent(f'''\
       And if the current year is greater than~{year_last_modified}:
       no, the footer is not "out of date".
       It means that I haven't thought up or gotten around to adding content
       since~{next_year}; possibly I have died.'''
-    ).format(
-      year_last_modified = year_last_modified,
-      next_year = next_year
     )
   
   year_range = year_first_created
   
   if int(year_last_modified) > int(year_first_created):
-    year_range += '–{year_last_modified}'.format(
-      year_last_modified = year_last_modified
-    )
+    year_range += f'–{year_last_modified}'
   
   if copyright_exception == '':
     copyright_exception_spec = ''
   else:
-    copyright_exception_spec = ', {copyright_exception}'.format(
-      copyright_exception = copyright_exception
-    )
+    copyright_exception_spec = f', {copyright_exception}'
   
   if ending_remark == '':
     ending_remark_spec = ''
   else:
-    ending_remark_spec = de_indent('''\
-      <br>
-        {ending_remark}'''
-    ).format(
-      ending_remark = ending_remark
+    ending_remark_spec = de_indent(
+      '<br>' f'''
+      {ending_remark}'''
     )
   
-  processed_string = de_indent('''\
+  processed_string = de_indent(f'''\
     <footer>
       <hr>
       ©~{year_range}~Conway'''
-      '{copyright_exception_spec}.'
-      '{ending_remark_spec}' '''
+      f'{copyright_exception_spec}.'
+      f'{ending_remark_spec}' '''
     </footer>'''
-  ).format(
-    year_range = year_range,
-    copyright_exception_spec = copyright_exception_spec,
-    ending_remark_spec = ending_remark_spec
   )
   
   return footer_regex.sub(
@@ -2370,9 +2208,7 @@ def replace_svg_style_container(match_object):
   content = escape_conway_special_literals(content)
   
   processed_string = (
-    '<svg class="embedded-styles"><style>'
-      '{content}'
-    '</style></svg>'.format(content = content)
+    f'<svg class="embedded-styles"><style>{content}</style></svg>'
   )
   
   return processed_string
@@ -2598,9 +2434,7 @@ def replace_conway_literal_chinese(match_object):
 def replace_all_conway_literal_chinese_runs(string):
   
   return re.sub(
-    r'\\([{CHINESE_CHARACTER_RANGE}]+)'.format(
-      CHINESE_CHARACTER_RANGE = CHINESE_CHARACTER_RANGE
-    ),
+    rf'\\([{CHINESE_CHARACTER_RANGE}]+)',
     replace_conway_literal_chinese,
     string
   )
@@ -2654,9 +2488,7 @@ def ensure_conway_escaped_chinese_run(string):
   string = unescape_katakana_middle_dot(string)
   
   string = re.sub(
-    r'(?<!\\)([{CHINESE_CHARACTER_RANGE}]+)'.format(
-      CHINESE_CHARACTER_RANGE = CHINESE_CHARACTER_RANGE
-    ),
+    rf'(?<!\\)([{CHINESE_CHARACTER_RANGE}]+)',
     r'\\\1',
     string
   )
@@ -2899,12 +2731,12 @@ def unescape_romanisations(string):
   string = re.sub('uu', 'ŭ', string)
   
   # Pinyin tone 1 陰平 (dark level) only
-  string = re.sub(r'a=', 'ā', string)
-  string = re.sub(r'e=', 'ē', string)
-  string = re.sub(r'i=', 'ī', string)
-  string = re.sub(r'o=', 'ō', string)
-  string = re.sub(r'u=', 'ū', string)
-  string = re.sub(r'u"=', 'ǖ', string)
+  string = re.sub('a=', 'ā', string)
+  string = re.sub('e=', 'ē', string)
+  string = re.sub('i=', 'ī', string)
+  string = re.sub('o=', 'ō', string)
+  string = re.sub('u=', 'ū', string)
+  string = re.sub('u"=', 'ǖ', string)
   
   # Pinyin tone 2 陽平 (light level) only
   string = re.sub(r'a\/', 'á', string)
@@ -2961,11 +2793,9 @@ def wrap_chinese_runs(string):
     (
       '('
         '(<span class="[^"]+?">)*'
-        '[{CHINESE_CHARACTER_RANGE}]+?'
+        f'[{CHINESE_CHARACTER_RANGE}]+?'
         '(</span>)*'
       ')+'
-    ).format(
-      CHINESE_CHARACTER_RANGE = CHINESE_CHARACTER_RANGE
     ),
     r'<span lang="zh-Hant">\g<0></span>',
     string
@@ -3045,7 +2875,7 @@ def replace_preformatted(match_object):
   content = match_object.group(1)
   content = de_indent(content)
   
-  processed_string = '<pre>{content}</pre>'.format(content = content)
+  processed_string = f'<pre>{content}</pre>'
   
   return create_temporary_replacement_string(processed_string)
 
@@ -3089,11 +2919,7 @@ def create_temporary_replacement_string(processed_string):
   
   # Build temporary replacement string
   temporary_replacement_string = (
-    '{E000_RUN}{temporary_replacement_counter}{E000}'.format(
-      E000_RUN = E000_RUN,
-      temporary_replacement_counter = temporary_replacement_counter,
-      E000 = E000
-    )
+    f'{E000_RUN}{temporary_replacement_counter}{E000}'
   )
   
   # NOTE: the processed string may contain existing temporary replacements,
@@ -3175,13 +3001,13 @@ def cch_to_html(file_name):
   
   url = 'https://yawnoc.github.io/'
   if not is_index:
-    url += file_name + '.html'
+    url += f'{file_name}.html'
   
   # ----------------------------------------------------------------
   # Import contents (markup) of CCH file
   # ----------------------------------------------------------------
   
-  with open(file_name + '.cch', 'r', encoding = 'utf-8') as cch_file:
+  with open(f'{file_name}.cch', 'r', encoding = 'utf-8') as cch_file:
     markup = cch_file.read()
   
   # ----------------------------------------------------------------
@@ -3224,12 +3050,7 @@ def cch_to_html(file_name):
   # Constants
   E000 = '\uE000'
   E000_RUN = (markup.count(E000) + 1) * E000
-  TEMPORARY_REPLACEMENT_REGEX = re.compile(
-    '{E000_RUN}[0-9]+{E000}'.format(
-      E000_RUN = E000_RUN,
-      E000 = E000
-    )
-  )
+  TEMPORARY_REPLACEMENT_REGEX = re.compile(f'{E000_RUN}[0-9]+{E000}')
   
   # Initialise global variables
   temporary_replacement_counter = 0
@@ -3340,7 +3161,7 @@ def cch_to_html(file_name):
   # Write processed markup to HTML file
   # ----------------------------------------------------------------
   
-  with open(file_name + '.html', 'w', encoding = 'utf-8') as html_file:
+  with open(f'{file_name}.html', 'w', encoding = 'utf-8') as html_file:
     html_file.write(markup)
 
 ################################################################
