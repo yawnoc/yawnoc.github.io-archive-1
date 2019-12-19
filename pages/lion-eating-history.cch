@@ -1,9 +1,9 @@
 <*>
-  "{An} History of Mr~<^e>See</^e>'s Eating of Lions": 《施氏食獅史》
-  | 20190407 | 20191109 | dr
+  "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions": 《施氏食獅史》
+  | 20190407 | 20191219 | dr
   | An English translation of the Mandarin "lion tongue twister" \
     《施氏食獅史》, "shi shi shi shi shi", or \
-    "{An} History of Mr~<^e>See</^e>'s Eating of Lions".
+    "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions".
 </*>
 
 <=h>
@@ -16,7 +16,7 @@
 
 <h1>
   《施氏食獅史》 or<br>
-  "{An} History of Mr~施<^> See | Shih | Shi</^>'s Eating of Lions"
+  "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions"
 </h1>
 
 <*p>
@@ -112,8 +112,9 @@
   did not write 《施氏食獅史》 to compare the phonologies of Cantonese and Mandarin,
   but to demonstrate (with an extreme example) why literary Chinese
   should not be romanised.
-  In any regional variant, Literary Chinese is a language for
-  reading with the eyes, rather than out loud.
+  In any regional variant, Literary Chinese is a language
+  to be read and understood with the eyes, rather than heard with the ears,
+  though it may still be read aloud.
   (Romanising vernacular Chinese, however, is all right;
   趙元任<^> Cheeu Yu"n-yam | Chao Yu"an-je^n | Zhao Yuanren </^>
   and others developed
@@ -143,12 +144,12 @@
 
 <#t>
   《施氏食獅史》 |
-  "{An} History of Mr~施<^> See | Shih | Shi</^>'s Eating of Lions"
+  "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions"
 </#t>
 <ul>
   <li>施氏：
-    Mr~施<^> See | Shih | Shi</^>;
-    literally {he with} surname 施<^> See | Shih | Shi</^>
+    Mr~<^e>Shih</^e>;
+    literally {he with} surname <^e>Shih</^e>
   </li>
   <li>史：
     history;
@@ -158,7 +159,7 @@
 
 <#t>
   石室詩士施氏，嗜獅，誓食十獅。 |
-  {The} poet Mr~施<^> See | Shih | Shi</^> of {a} stone house liked lions,
+  {The} poet Mr~<^e>Shih</^e> of {a} stone house liked lions,
   {and} sware to eat ten lions.
 </#t>
 <ul>
@@ -190,7 +191,7 @@
 
 <#t>
   氏時時適市視獅。 |
-  Mr~{施<^> See | Shih | Shi</^>} went to {the} market all the time
+  Mr~{<^e>Shih</^e>} went to {the} market all the time
   {to} view lions.
 </#t>
 <ul>
@@ -210,7 +211,7 @@
 <#t>
   十時，適十獅適市。是時，適施氏適市。 |
   {At} ten o'clock, ten lions {had} just arrived at {the} market.
-  {At} this time, Mr~施<^> See | Shih | Shi</^> {had also} just arrived
+  {At} this time, Mr~<^e>Shih</^e> {had also} just arrived
   at {the} market.
 </#t>
 <ul>
@@ -236,7 +237,7 @@
 
 <#t>
   氏視是十獅，恃矢勢，使是十獅逝世。 |
-  Mr~{施<^> See | Shih | Shi</^>} saw these ten lions,
+  Mr~{<^e>Shih</^e>} saw these ten lions,
   {and} using {the} situational {advantage} of the arrow,
   made these ten lions pass away.
 </#t>
@@ -258,7 +259,7 @@
 
 <#t>
   氏拾是十獅屍，適石室。 |
-  Mr~{施<^> See | Shih | Shi</^>}
+  Mr~{<^e>Shih</^e>}
   picked up {the} carcasses of these ten lions,
   {and} went to {the} stone house.
 </#t>
@@ -266,14 +267,14 @@
 <#t>
   石室濕，氏使侍拭石室。 |
   {The} stone house {was} wet,
-  {so} Mr~{施<^> See | Shih | Shi</^>}
+  {so} Mr~{<^e>Shih</^e>}
   made {his} servants wipe {the} stone house.
 </#t>
 
 <#t>
   石室拭，氏始試食是十獅屍。 |
   {The} stone house {having been} wiped,
-  Mr~{施<^> See | Shih | Shi</^>} began to try eating
+  Mr~{<^e>Shih</^e>} began to try eating
   {the} carcasses of these ten lions.
 </#t>
 <ul>
@@ -325,11 +326,9 @@
 </ul>
 
 <*c>
-  "{An} History of Mr~施's Eating of Lions"
+  "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions"
   | lion
-  | ``\emph{An} {History} of {Mr~See's} {Eating} of {Lions}''
-  | If typesetting Chinese is inconvenient,
-    you may use "<^e>See</^e>" instead of 施.
+  | ``\emph{An} {History} of {Mr}~{Shih's} {Eating} of {Lions}''
 </*c>
 
 <*f></*f>
