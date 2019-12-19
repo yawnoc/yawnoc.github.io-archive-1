@@ -1642,17 +1642,14 @@ def replace_page_properties(string):
 # Only the first occurrence is replaced.
 
 # Unprocessed string:
-#   <*c> {text heading} | {tex key} | {tex heading} [| inconvenience message] </*c>
+#   <*c> {text heading} | {tex key} | {tex heading} </*c>
 
 # Raw regular expression for unprocessed string:
 #   <\*c>([\s\S]*?)</\*c>
-#   \1  {arguments}: {text heading} | {tex key} | {tex heading} [| inconvenience message]
+#   \1  {arguments}: {text heading} | {tex key} | {tex heading}
 
 # Processed string:
 #   <@2> Cite this page | cite </@2>
-#   [<p>
-#     [inconvenience message]
-#   </p>]
 #   <ul>
 #     <li>Text:
 #       <p>
@@ -1704,25 +1701,13 @@ def replace_cite_this_page(string):
   
   assert num_supplied_arguments >= num_required_arguments, (
     'Cite this page '
-    '<*c> {text heading} | {tex key} | {tex heading} [| inconvenience message] </*c> '
+    '<*c> {text heading} | {tex key} | {tex heading} </*c> '
     f'requires at least {num_required_arguments} pipe-delimited arguments; '
     f'only {num_supplied_arguments} supplied'
   )
   
-  num_arguments = num_required_arguments + 1
-  argument_list += [''] * (num_arguments - num_supplied_arguments)
-  text_heading, tex_key, tex_heading, inconvenience_message = (
-    argument_list[:num_arguments]
-  )
-  
-  if inconvenience_message == '':
-    inconvenience_spec = ''
-  else:
-    inconvenience_spec = de_indent(f'''\
-      <p>
-        {inconvenience_message}
-      </p>'''
-    )
+  num_arguments = num_required_arguments
+  text_heading, tex_key, tex_heading = argument_list[:num_arguments]
   
   tex_heading = escape_conway_special_literals(tex_heading)
   
@@ -1732,7 +1717,6 @@ def replace_cite_this_page(string):
   
   processed_string = de_indent('''\
     <@2> Cite this page | cite </@2>
-    {inconvenience_spec}
     <ul>
       <li>Text:
         <p>
@@ -1782,7 +1766,6 @@ def replace_cite_this_page(string):
   processed_string = re.sub('》', r'\\}}', processed_string)
   
   processed_string = processed_string.format(
-    inconvenience_spec = inconvenience_spec,
     year_last_modified = year_last_modified,
     url = url,
     text_heading = text_heading,
