@@ -1,8 +1,8 @@
 <*>
-  "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20191218 | dmr
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+  | 20190609 | 20191219 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
-    《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
+    《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
 
 <=h>
@@ -15,7 +15,7 @@
 
 <h1>
   《孫子算經\.卷中》 or<br>
-  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic: Volume~II"
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II"
 </h1>
 
 <*p> |
@@ -33,22 +33,22 @@
 <#n>
   <@>
     《孫子算經》<br>
-    "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
-    | /pages/master-shuen.html
-    | "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
+    "<^e>Sun~Tzuu</^e>'s Computational Classic"
+    | /pages/sun-tzu.html
+    | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
   </@>
   <ul>
     
     <@i>
       《序》~"Preface"
-      | /pages/master-shuen-preface.html
-      | "Master <^e>Shu"n</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+      | /pages/sun-tzu-preface.html
+      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
     </@i>
     
     <@i>
       《卷上》~"Volume~I"
-      | /pages/master-shuen-i.html
-      | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+      | /pages/sun-tzu-i.html
+      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
     </@i>
     
     <li>
@@ -94,7 +94,7 @@
 
 <#t>
   《孫子算經\.卷中》 |
-  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic:
+  "<^e>Sun~Tzuu</^e>'s Computational Classic:
   Volume~II"
 </#t>
 <p>
@@ -193,7 +193,7 @@
 
 <p>
   For units of <b>length</b>, see
-  <@> Vol.~I ¶1 | /pages/master-shuen-i.html#1 | Vol. I ¶1 </@>.
+  <@> Vol.~I ¶1 | /pages/sun-tzu-i.html#1 | Vol. I ¶1 </@>.
 </p>
 <ul>
   <li>
@@ -230,7 +230,7 @@
 </ul>
 <p>
   For units of <b>capacity</b>, see
-  <@> Vol.~I ¶3 | /pages/master-shuen-i.html#3 | Vol. I ¶3 </@>.
+  <@> Vol.~I ¶3 | /pages/sun-tzu-i.html#3 | Vol. I ¶3 </@>.
 </p>
 <ul>
   <li>
@@ -619,7 +619,7 @@
 </$$>
 <p>
   respectively.
-  Of course Master~孫<^> Shu"n | Sun | Sun </^>
+  Of course <^e>Sun~Tzuu</^e>
   did not have the luxury of modern mathematical notation:
 </p>
 
@@ -1207,7 +1207,7 @@
 
 <p>
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
-  <@> Vol.~I ¶5 | /pages/master-shuen-i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | Vol. I ¶5 </@>.
 </p>
 
 <;sh> 2 | 11 | Volume of a rectangular prism </;sh>
@@ -1400,7 +1400,7 @@
 </$$>
 <p>
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
-  <@> Vol.~I ¶5 | /pages/master-shuen-i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | Vol. I ¶5 </@>.
 </p>
 
 <;sh> 2 | 13 | Area of a circle </;sh>
@@ -1416,7 +1416,7 @@
 </#t>
 <p>
   Here <$>\pi \approx 3</$>, see
-  <@> Vol.~I ¶5 | /pages/master-shuen-i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | Vol. I ¶5 </@>.
 </p>
 
 <#t>
@@ -1578,7 +1578,7 @@
 </$$>
 <p>
   Here <$>\sqrt{2} \approx 7/5</$>, see
-  <@> Vol.~I ¶5 | /pages/master-shuen-i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | Vol. I ¶5 </@>.
 </p>
 
 
@@ -2152,13 +2152,9 @@
 </div>
 
 <*c>
-  "Master~孫's Computational Classic: Volume~II"
-  | shuen-ii
-  | ``{Master~Sh{\"u}n's} {Computational} {Classic}: {Volume~II}''
-  | If typesetting Chinese is inconvenient,
-    you may use "<^e>Shu"n</^e>" instead of 孫.
-    If typesetting the umlaut is also inconvenient,
-    you may use "Shuen" instead of "<^e>Shu"n</^e>".
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II"
+  | sun-tzu-ii
+  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {Volume~II}''
 </*c>
 
 <*f></*f>

@@ -59,8 +59,8 @@
 #   <@{level}>      heading_self_link_anchor          <@>
 #   <@>             anchor
 #   <#[size]>       boxed_translation
-#   <;sh>           shuen_heading                     <@{level}>
-#   <;s@@>          shuen_link_division               <@@>, <@{dir}>, <@>
+#   <;sh>           sun_tzu_heading                   <@{level}>
+#   <;s@@>          sun_tzu_link_division             <@@>, <@{dir}>, <@>
 #   <*>             preamble
 #   <*p>            page_properties                   <@>
 #   <*c>            cite_this_page                    <@{level}>
@@ -1179,7 +1179,7 @@ def replace_all_boxed_translations(string):
   )
 
 ################################################################
-# Replace Shuen headings
+# Replace Sun Tzu headings
 ################################################################
 
 # Unprocessed string:
@@ -1201,7 +1201,7 @@ def replace_all_boxed_translations(string):
 # Single
 # ----------------------------------------------------------------
 
-def replace_shuen_heading(match_object):
+def replace_sun_tzu_heading(match_object):
   
   arguments = match_object.group(1)
   argument_list = split_by_pipe(arguments)
@@ -1210,7 +1210,7 @@ def replace_shuen_heading(match_object):
   num_required_arguments = 3
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Shuen heading <;sh> {volume} | {paragraph} | {content} </;sh> '
+    'Sun Tzu heading <;sh> {volume} | {paragraph} | {content} </;sh> '
     f'requires at least {num_required_arguments} pipe-delimited arguments; '
     f'only {num_supplied_arguments} supplied'
   )
@@ -1234,12 +1234,12 @@ def replace_shuen_heading(match_object):
 # All
 # ----------------------------------------------------------------
 
-def replace_all_shuen_headings(string):
+def replace_all_sun_tzu_headings(string):
   
-  return re.sub(r'<;sh>([\s\S]*?)</;sh>', replace_shuen_heading, string)
+  return re.sub(r'<;sh>([\s\S]*?)</;sh>', replace_sun_tzu_heading, string)
 
 ################################################################
-# Replace Shuen link divisions
+# Replace Sun Tzu link divisions
 ################################################################
 
 # Unprocessed string:
@@ -1258,7 +1258,7 @@ def replace_all_shuen_headings(string):
 #     </@u>
 #     <@>
 #       [manuscript]
-#       | /manuscripts/shuen-{small roman volume}-{paragraph}.pdf
+#       | /manuscripts/sun-tzu-{small roman volume}-{paragraph}.pdf
 #       | Translation manuscript for Vol. {capital roman volume} ¶{paragraph}
 #     </@>
 #     [<@>
@@ -1290,7 +1290,7 @@ def replace_all_shuen_headings(string):
 # Single
 # ----------------------------------------------------------------
 
-def replace_shuen_link_division(match_object):
+def replace_sun_tzu_link_division(match_object):
   
   arguments = match_object.group(1)
   argument_list = split_by_pipe(arguments)
@@ -1299,7 +1299,7 @@ def replace_shuen_link_division(match_object):
   num_required_arguments = 7
   
   assert num_supplied_arguments >= num_required_arguments, (
-    'Shuen link division <;s@@> '
+    'Sun Tzu link division <;s@@> '
     '{volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@> '
     f'requires at least {num_required_arguments} pipe-delimited arguments; '
     f'only {num_supplied_arguments} supplied'
@@ -1322,7 +1322,7 @@ def replace_shuen_link_division(match_object):
   manuscript_link = de_indent(f'''\
     <@>
       [manuscript]
-      | /manuscripts/shuen-{small_roman_volume}-{paragraph}.pdf
+      | /manuscripts/sun-tzu-{small_roman_volume}-{paragraph}.pdf
       | Translation manuscript for Vol. {capital_roman_volume} ¶{paragraph}
     </@>'''
   )
@@ -1383,11 +1383,11 @@ def replace_shuen_link_division(match_object):
 # All
 # ----------------------------------------------------------------
 
-def replace_all_shuen_link_divisions(string):
+def replace_all_sun_tzu_link_divisions(string):
   
   return re.sub(
     r'<;s@@>([\s\S]*?)</;s@@>', 
-    replace_shuen_link_division,
+    replace_sun_tzu_link_division,
     string
   )
 
@@ -3092,8 +3092,8 @@ def cch_to_html(file_name):
   markup = replace_all_heading_self_link_anchors(markup)
   markup = replace_all_anchors(markup)
   markup = replace_all_boxed_translations(markup)
-  markup = replace_all_shuen_headings(markup)
-  markup = replace_all_shuen_link_divisions(markup)
+  markup = replace_all_sun_tzu_headings(markup)
+  markup = replace_all_sun_tzu_link_divisions(markup)
   markup = replace_preamble(markup)
   markup = replace_page_properties(markup)
   markup = replace_cite_this_page(markup)

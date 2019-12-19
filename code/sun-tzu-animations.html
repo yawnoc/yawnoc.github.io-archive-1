@@ -16,9 +16,9 @@
 <link rel="stylesheet" href="/conway-katex.min.css">
 <script defer src="/conway-katex.min.js"></script>
 <script defer src="/conway-render.min.js"></script>
-<title>Mathematica: Master&nbsp;Shün multiplication &amp; division animations — Conway's site</title>
+<title>Mathematica: Sun&nbsp;Tzŭ multiplication &amp; division animations — Conway's site</title>
 </head>
-<body onload="mathsRender(); romanisationInitialise();">
+<body onload="mathsRender();">
 <header><nav><ul>
 <li><a href="/" title="Home page">Home</a></li>
 <li><a href="#" title="Jump back to top">Top</a></li>
@@ -27,32 +27,21 @@
 </ul></nav></header>
 <h1>
 Mathematica:
-Master&nbsp;<span lang="zh-Hant">孫</span><span class="romanisation romanisation-conway">&nbsp;(Shün)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Sun)</span><span class="romanisation romanisation-pinyin">&nbsp;(Sun)</span> multiplication &amp; division animations
+Sun&nbsp;Tzŭ multiplication &amp; division animations
 </h1>
 <p class="page-properties">
 First created:&nbsp;20190526<br>
-Last modified:&nbsp;<b>20191031</b>
+Last modified:&nbsp;<b>20191219</b>
 </p>
 <p>
 Mathematica code for the animations in my
-<a href="/pages/master-shuen.html" title="&quot;Master Shün's Computational Classic&quot;: 《孫子算經》">translation of
-"Master&nbsp;<span lang="zh-Hant">孫</span><span class="romanisation romanisation-conway">&nbsp;(Shün)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Sun)</span><span class="romanisation romanisation-pinyin">&nbsp;(Sun)</span>'s Computational Classic"</a>;
-see Vol.&nbsp;I <a href="/pages/master-shuen-i.html#8" title="Vol. I ¶8">¶8</a>
-&amp;&nbsp;<a href="/pages/master-shuen-i.html#13" title="Vol. I ¶13">¶13</a> (multiplication)
-and <a href="/pages/master-shuen-i.html#9" title="Vol. I ¶9">¶9</a>
-&amp;&nbsp;<a href="/pages/master-shuen-i.html#14" title="Vol. I ¶14">¶14</a> (division).
+<a href="/pages/sun-tzu.html" title="&quot;Sun&nbsp;Tzŭ's Computational Classic&quot;: 《孫子算經》">translation of
+"Sun&nbsp;Tzŭ's Computational Classic"</a>;
+see Vol.&nbsp;I <a href="/pages/sun-tzu-i.html#8" title="Vol. I ¶8">¶8</a>
+&amp;&nbsp;<a href="/pages/sun-tzu-i.html#13" title="Vol. I ¶13">¶13</a> (multiplication)
+and <a href="/pages/sun-tzu-i.html#9" title="Vol. I ¶9">¶9</a>
+&amp;&nbsp;<a href="/pages/sun-tzu-i.html#14" title="Vol. I ¶14">¶14</a> (division).
 </p>
-<div class="romanisation-radio">
-Romanisation&nbsp;(<kbd>F2</kbd>):&nbsp;<span lang="zh-Hant">音標</span><span class="romanisation romanisation-conway">&nbsp;(yam peeu)</span><span class="romanisation romanisation-wadegiles">&nbsp;(yin piao)</span><span class="romanisation romanisation-pinyin">&nbsp;(yin biao)</span><br>
-<input type="radio" name="romanisation" id="romanisation-none" value="none">
-<label for="romanisation-none">None</label>
-<input type="radio" name="romanisation" id="romanisation-conway" value="conway">
-<label for="romanisation-conway">Conway</label>
-<input type="radio" name="romanisation" id="romanisation-wadegiles" value="wadegiles">
-<label for="romanisation-wadegiles">Wade–Giles</label>
-<input type="radio" name="romanisation" id="romanisation-pinyin" value="pinyin">
-<label for="romanisation-pinyin">Pinyin</label>
-</div>
 <h2 id="multiplication"><a class="self-link" href="#multiplication"></a>
 Multiplication
 </h2>
@@ -65,21 +54,21 @@ Multiplication
 </tr>
 <tr>
 <td>
-<img src="/images/shuenmultiply-81-81.gif" alt="孫子 multiplication: 81 × 81">
+<img src="/images/sun-tzu-multiply-81-81.gif" alt="Sun&nbsp;Tzŭ multiplication: 81 × 81">
 </td>
 <td>
-<img src="/images/shuenmultiply-1989-64.gif" alt="孫子 multiplication: 1989 × 64">
+<img src="/images/sun-tzu-multiply-1989-64.gif" alt="Sun&nbsp;Tzŭ multiplication: 1989 × 64">
 </td>
 <td>
-<img src="/images/shuenmultiply-1024-1024.gif" alt="孫子 multiplication: 1024 × 1024">
+<img src="/images/sun-tzu-multiply-1024-1024.gif" alt="Sun&nbsp;Tzŭ multiplication: 1024 × 1024">
 </td>
 <td>
-<img src="/images/shuenmultiply-246-97531.gif" alt="孫子 multiplication: 246 × 97531">
+<img src="/images/sun-tzu-multiply-246-97531.gif" alt="Sun&nbsp;Tzŭ multiplication: 246 × 97531">
 </td>
 </tr>
 </table></div></div>
 <pre>
-shuenmultiply[upper_Integer, lower_Integer] :=
+suntzumultiply[upper_Integer, lower_Integer] :=
   Module[
    {upperdigits, lowerdigits,
     pmax, qmax,
@@ -228,7 +217,7 @@ shuenmultiply[upper_Integer, lower_Integer] :=
       ];
     (* Export animation *)
     Export[
-      "shuenmultiply-" &lt;&gt; ToString[upper] &lt;&gt; "-" &lt;&gt; ToString[lower] &lt;&gt; ".gif",
+      "sun-tzu-multiply-" &lt;&gt; ToString[upper] &lt;&gt; "-" &lt;&gt; ToString[lower] &lt;&gt; ".gif",
       frames,
       "DisplayDurations" -&gt; 2
     ];
@@ -237,10 +226,10 @@ shuenmultiply[upper_Integer, lower_Integer] :=
   ];
 </pre>
 <pre>
-shuenmultiply[81, 81]
-shuenmultiply[1989, 64]
-shuenmultiply[1024, 1024]
-shuenmultiply[246, 97531]
+suntzumultiply[81, 81]
+suntzumultiply[1989, 64]
+suntzumultiply[1024, 1024]
+suntzumultiply[246, 97531]
 </pre>
 <h2 id="division"><a class="self-link" href="#division"></a>
 Division
@@ -254,21 +243,21 @@ Division
 </tr>
 <tr>
 <td>
-<img src="/images/shuendivide-100-6.gif" alt="孫子 division: 100 ÷ 6">
+<img src="/images/sun-tzu-divide-100-6.gif" alt="Sun&nbsp;Tzŭ division: 100 ÷ 6">
 </td>
 <td>
-<img src="/images/shuendivide-1989-64.gif" alt="孫子 division: 1989 ÷ 64">
+<img src="/images/sun-tzu-divide-1989-64.gif" alt="Sun&nbsp;Tzŭ division: 1989 ÷ 64">
 </td>
 <td>
-<img src="/images/shuendivide-6561-9.gif" alt="孫子 division: 6561 ÷ 9">
+<img src="/images/sun-tzu-divide-6561-9.gif" alt="Sun&nbsp;Tzŭ division: 6561 ÷ 9">
 </td>
 <td>
-<img src="/images/shuendivide-97531-4.gif" alt="孫子 division: 97531 ÷ 4">
+<img src="/images/sun-tzu-divide-97531-4.gif" alt="Sun&nbsp;Tzŭ division: 97531 ÷ 4">
 </td>
 </tr>
 </table></div></div>
 <pre>
-shuendivide[dividend_Integer, divisor_Integer] :=
+suntzudivide[dividend_Integer, divisor_Integer] :=
   Module[
    {upper, middle,
     middledigits, lowerdigits,
@@ -424,7 +413,7 @@ shuendivide[dividend_Integer, divisor_Integer] :=
       ];
     (* Export animation *)
     Export[
-      "shuendivide-" &lt;&gt; ToString[dividend] &lt;&gt; "-" &lt;&gt; ToString[divisor] &lt;&gt; ".gif",
+      "sun-tzu-divide-" &lt;&gt; ToString[dividend] &lt;&gt; "-" &lt;&gt; ToString[divisor] &lt;&gt; ".gif",
       frames,
       "DisplayDurations" -&gt; 2
     ];
@@ -439,10 +428,10 @@ shuendivide[dividend_Integer, divisor_Integer] :=
   ];
 </pre>
 <pre>
-shuendivide[100, 6]
-shuendivide[1989, 64]
-shuendivide[6561, 9]
-shuendivide[97531, 4]
+suntzudivide[100, 6]
+suntzudivide[1989, 64]
+suntzudivide[6561, 9]
+suntzudivide[97531, 4]
 </pre>
 <footer>
 <hr>

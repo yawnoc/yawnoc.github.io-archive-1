@@ -1,6 +1,6 @@
 <*>
-  Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
-  | 20190526 | 20191031 | mr
+  Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
+  | 20190526 | 20191219 | m
   | Mathematica code generating animations for the \
     Sunzi Suanjing multiplication \& division algorithms.
 </*>
@@ -14,7 +14,7 @@
 
 <h1>
   Mathematica:
-  Master~孫<^> Shu"n | Sun | Sun </^> multiplication \& division animations
+  <^e>Sun~Tzuu</^e> multiplication \& division animations
 </h1>
 
 <*p></*p>
@@ -23,17 +23,15 @@
   Mathematica code for the animations in my
   <@>
     translation of
-    "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
-    | /pages/master-shuen.html
-    | "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
+    "<^e>Sun~Tzuu</^e>'s Computational Classic"
+    | /pages/sun-tzu.html
+    | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
   </@>;
-  see Vol.~I <@> ¶8 | /pages/master-shuen-i.html#8 | Vol. I ¶8 </@>
-  \&~<@> ¶13 | /pages/master-shuen-i.html#13 | Vol. I ¶13 </@> (multiplication)
-  and <@> ¶9 | /pages/master-shuen-i.html#9 | Vol. I ¶9 </@>
-  \&~<@> ¶14 | /pages/master-shuen-i.html#14 | Vol. I ¶14 </@> (division).
+  see Vol.~I <@> ¶8 | /pages/sun-tzu-i.html#8 | Vol. I ¶8 </@>
+  \&~<@> ¶13 | /pages/sun-tzu-i.html#13 | Vol. I ¶13 </@> (multiplication)
+  and <@> ¶9 | /pages/sun-tzu-i.html#9 | Vol. I ¶9 </@>
+  \&~<@> ¶14 | /pages/sun-tzu-i.html#14 | Vol. I ¶14 </@> (division).
 </p>
-
-<^^></^^>
 
 
 <@2> Multiplication | multiplication </@2>
@@ -49,32 +47,32 @@
   <tr>
     <td>
       <+>
-        /images/shuenmultiply-81-81.gif
-        | 孫子 multiplication: 81 × 81
+        /images/sun-tzu-multiply-81-81.gif
+        | <^e>Sun~Tzuu</^e> multiplication: 81 × 81
       </+>
     </td>
     <td>
       <+>
-        /images/shuenmultiply-1989-64.gif
-        | 孫子 multiplication: 1989 × 64
+        /images/sun-tzu-multiply-1989-64.gif
+        | <^e>Sun~Tzuu</^e> multiplication: 1989 × 64
       </+>
     </td>
     <td>
       <+>
-        /images/shuenmultiply-1024-1024.gif
-        | 孫子 multiplication: 1024 × 1024
+        /images/sun-tzu-multiply-1024-1024.gif
+        | <^e>Sun~Tzuu</^e> multiplication: 1024 × 1024
       </+>
     </td>
     <td>
       <+>
-        /images/shuenmultiply-246-97531.gif
-        | 孫子 multiplication: 246 × 97531
+        /images/sun-tzu-multiply-246-97531.gif
+        | <^e>Sun~Tzuu</^e> multiplication: 246 × 97531
       </+>
     </td>
   </tr>
 </table></!cc>
 <``>
-  shuenmultiply[upper_Integer, lower_Integer] :=
+  suntzumultiply[upper_Integer, lower_Integer] :=
     Module[
      {upperdigits, lowerdigits,
       pmax, qmax,
@@ -223,7 +221,7 @@
         ];
       (* Export animation *)
       Export[
-        "shuenmultiply-" <> ToString[upper] <> "-" <> ToString[lower] <> ".gif",
+        "sun-tzu-multiply-" <> ToString[upper] <> "-" <> ToString[lower] <> ".gif",
         frames,
         "DisplayDurations" -> 2
       ];
@@ -232,10 +230,10 @@
     ];
 </``>
 <``>
-  shuenmultiply[81, 81]
-  shuenmultiply[1989, 64]
-  shuenmultiply[1024, 1024]
-  shuenmultiply[246, 97531]
+  suntzumultiply[81, 81]
+  suntzumultiply[1989, 64]
+  suntzumultiply[1024, 1024]
+  suntzumultiply[246, 97531]
 </``>
 
 
@@ -252,32 +250,32 @@
   <tr>
     <td>
       <+>
-        /images/shuendivide-100-6.gif
-        | 孫子 division: 100 ÷ 6
+        /images/sun-tzu-divide-100-6.gif
+        | <^e>Sun~Tzuu</^e> division: 100 ÷ 6
       </+>
     </td>
     <td>
       <+>
-        /images/shuendivide-1989-64.gif
-        | 孫子 division: 1989 ÷ 64
+        /images/sun-tzu-divide-1989-64.gif
+        | <^e>Sun~Tzuu</^e> division: 1989 ÷ 64
       </+>
     </td>
     <td>
       <+>
-        /images/shuendivide-6561-9.gif
-        | 孫子 division: 6561 ÷ 9
+        /images/sun-tzu-divide-6561-9.gif
+        | <^e>Sun~Tzuu</^e> division: 6561 ÷ 9
       </+>
     </td>
     <td>
       <+>
-        /images/shuendivide-97531-4.gif
-        | 孫子 division: 97531 ÷ 4
+        /images/sun-tzu-divide-97531-4.gif
+        | <^e>Sun~Tzuu</^e> division: 97531 ÷ 4
       </+>
     </td>
   </tr>
 </table></!cc>
 <``>
-  shuendivide[dividend_Integer, divisor_Integer] :=
+  suntzudivide[dividend_Integer, divisor_Integer] :=
     Module[
      {upper, middle,
       middledigits, lowerdigits,
@@ -433,7 +431,7 @@
         ];
       (* Export animation *)
       Export[
-        "shuendivide-" <> ToString[dividend] <> "-" <> ToString[divisor] <> ".gif",
+        "sun-tzu-divide-" <> ToString[dividend] <> "-" <> ToString[divisor] <> ".gif",
         frames,
         "DisplayDurations" -> 2
       ];
@@ -448,10 +446,10 @@
     ];
 </``>
 <``>
-  shuendivide[100, 6]
-  shuendivide[1989, 64]
-  shuendivide[6561, 9]
-  shuendivide[97531, 4]
+  suntzudivide[100, 6]
+  suntzudivide[1989, 64]
+  suntzudivide[6561, 9]
+  suntzudivide[97531, 4]
 </``>
 
 <*f> |

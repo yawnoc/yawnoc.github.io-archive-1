@@ -1,8 +1,8 @@
 <*>
-  "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
-  | 20190609 | 20191206 | dmr
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+  | 20190609 | 20191219 | dmr
   | An annotated English translation of Volume~I of Sunzi Suanjing, \
-    《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
+    《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
 
 <=h>
@@ -14,7 +14,7 @@
 
 <h1>
   《孫子算經\.卷上》 or<br>
-  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic: Volume~I"
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I"
 </h1>
 
 <*p> |
@@ -32,16 +32,16 @@
 <#n>
   <@>
     《孫子算經》<br>
-    "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
-    | /pages/master-shuen.html
-    | "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
+    "<^e>Sun~Tzuu</^e>'s Computational Classic"
+    | /pages/sun-tzu.html
+    | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
   </@>
   <ul>
     
     <@i>
       《序》~"Preface"
-      | /pages/master-shuen-preface.html
-      | "Master <^e>Shu"n</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+      | /pages/sun-tzu-preface.html
+      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
     </@i>
     
     <li>
@@ -52,8 +52,8 @@
     <li>
       <@>
         《卷中》~"Volume~II"
-        | /pages/master-shuen-ii.html
-        | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+        | /pages/sun-tzu-ii.html
+        | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
       </@>
       <:r>(work in progress)</:r>
     </li>
@@ -98,7 +98,7 @@
 
 <#t>
   《孫子算經\.卷上》 |
-  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic:
+  "<^e>Sun~Tzuu</^e>'s Computational Classic:
   Volume~I"
 </#t>
 
@@ -730,7 +730,7 @@
 </$$>
 
 <p>
-  In <@> Vol.~II ¶10 | /pages/master-shuen-ii.html#10 | Vol. II ¶10 </@>,
+  In <@> Vol.~II ¶10 | /pages/sun-tzu-ii.html#10 | Vol. II ¶10 </@>,
   the conversion between
   the capacity unit 斛<^> huk | hu | hu </^>
   and the volume unit cubic~尺<^> ch'ek | ch'ih | chi </^>
@@ -1405,7 +1405,7 @@
 
 <p>
   Apart from silver and jade, the densities appear to fit quite well,
-  so Master~孫<^> Shu"n | Sun | Sun </^>
+  so <^e>Sun~Tzuu</^e>
   either fluked the measurements for gold, copper, lead and iron
   or he was actually a decent experimentalist but buggered up
   the measurements for silver and jade.
@@ -1544,12 +1544,12 @@
 </p>
 
 <p>
-  Assuming that Master~孫<^> Shu"n | Sun | Sun </^>'s
+  Assuming that <^e>Sun~Tzuu</^e>'s
   <$>\rho_\text{s}</$> and toady's <$>\rho_\text{m}</$>
   are referring to the same material,
   we <em>should</em> have that <$>\rho_\text{s} = \rho_\text{m}</$>.
   Therefore we obtain the following experimental conversion relation
-  between Master~孫<^> Shu"n | Sun | Sun </^>
+  between <^e>Sun~Tzuu</^e>
   and modern density units:
 </p>
 <$$>
@@ -2105,8 +2105,8 @@
 
 <div class="centred-flex">
   <+>
-    /images/shuenmultiply-1989-64.gif
-    | 孫子 multiplication: 1989 × 64
+    /images/sun-tzu-multiply-1989-64.gif
+    | <^e>Sun~Tzuu</^e> multiplication: 1989 × 64
   </+>
 </div>
 
@@ -2116,8 +2116,8 @@
   after both the 6 and the 4 have been multiplied through. See
   <@>
     here
-    | /code/master-shuen-animations.html
-    | Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
+    | /code/sun-tzu-animations.html
+    | Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
 </p>
@@ -2266,8 +2266,8 @@
 </ul>
 <div class="centred-flex">
   <+>
-    /images/shuendivide-100-6.gif
-    | 孫子 division: 100 ÷ 6
+    /images/sun-tzu-divide-100-6.gif
+    | <^e>Sun~Tzuu</^e> division: 100 ÷ 6
   </+>
 </div>
 
@@ -2275,8 +2275,8 @@
   See
   <@>
     here
-    | /code/master-shuen-animations.html
-    | Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
+    | /code/sun-tzu-animations.html
+    | Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
 </p>
@@ -2677,16 +2677,16 @@
 </p>
 <div class="centred-flex">
   <+>
-    /images/shuenmultiply-81-81.gif
-    | 孫子 multiplication: 81 × 81
+    /images/sun-tzu-multiply-81-81.gif
+    | <^e>Sun~Tzuu</^e> multiplication: 81 × 81
   </+>
 </div>
 <p>
   Source code available
   <@>
     here
-    | /code/master-shuen-animations.html
-    | Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
+    | /code/sun-tzu-animations.html
+    | Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
   </@>.
 </p>
 
@@ -2803,16 +2803,16 @@
 </p>
 <div class="centred-flex">
   <+>
-    /images/shuendivide-6561-9.gif
-    | 孫子 division: 6561 ÷ 9
+    /images/sun-tzu-divide-6561-9.gif
+    | <^e>Sun~Tzuu</^e> division: 6561 ÷ 9
   </+>
 </div>
 <p>
   Source code available
   <@>
     here
-    | /code/master-shuen-animations.html
-    | Mathematica: Master~<^e>Shu"n</^e> multiplication \& division animations
+    | /code/sun-tzu-animations.html
+    | Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
   </@>.
 </p>
 
@@ -3675,8 +3675,8 @@
   This gets rather repetitive (and boring), so you may wish to
   <@>
     skip to Volume~II
-    | /pages/master-shuen-ii.html
-    | "Master 孫's Computational Classic: Volume II"
+    | /pages/sun-tzu-ii.html
+    | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume II"
   </@>.
 </p>
 
@@ -3842,25 +3842,21 @@
   Previous:
   <@>
     《序》~"Preface"
-    | /pages/master-shuen-preface.html
-    | "Master <^e>Shu"n</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+    | /pages/sun-tzu-preface.html
+    | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
   </@><br>
   Next:
   <@>
     《卷中》~"Volume~II"
-    | /pages/master-shuen-ii.html
-    | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+    | /pages/sun-tzu-ii.html
+    | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
   </@>
 </div>
 
 <*c>
-  "Master~孫's Computational Classic: Volume~I"
-  | shuen-i
-  | ``{Master~Sh{\"u}n's} {Computational} {Classic}: {Volume~I}''
-  | If typesetting Chinese is inconvenient,
-    you may use "<^e>Shu"n</^e>" instead of 孫.
-    If typesetting the umlaut is also inconvenient,
-    you may use "Shuen" instead of "<^e>Shu"n</^e>".
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I"
+  | sun-tzu-i
+  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {Volume~I}''
 </*c>
 
 <*f></*f>

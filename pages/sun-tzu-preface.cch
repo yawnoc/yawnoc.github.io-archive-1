@@ -1,8 +1,8 @@
 <*>
-  "Master <^e>Shu"n</^e>'s Computational Classic: Preface": 《孫子算經\.序》
-  | 20190609 | 20191203 | dr
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+  | 20190609 | 20191219 | dr
   | An annotated English translation of the preface to Sunzi Suanjing, \
-    《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
+    《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
 
 <=h>
@@ -13,7 +13,7 @@
 
 <h1>
   《孫子算經\.序》 or<br>
-  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic: Preface"
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface"
 </h1>
 
 <*p> |
@@ -31,9 +31,9 @@
 <#n>
   <@>
     《孫子算經》<br>
-    "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
-    | /pages/master-shuen.html
-    | "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
+    "<^e>Sun~Tzuu</^e>'s Computational Classic"
+    | /pages/sun-tzu.html
+    | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
   </@>
   <ul>
     
@@ -44,15 +44,15 @@
     
     <@i>
       《卷上》~"Volume~I"
-      | /pages/master-shuen-i.html
-      | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+      | /pages/sun-tzu-i.html
+      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
     </@i>
     
     <li>
       <@>
         《卷中》~"Volume~II"
-        | /pages/master-shuen-ii.html
-        | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+        | /pages/sun-tzu-ii.html
+        | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
       </@>
       <:r>(work in progress)</:r>
     </li>
@@ -75,7 +75,7 @@
 <^^></^^>
 
 <p>
-  In the preface, Master~孫<^> Shu"n | Sun | Sun </^>
+  In the preface, <^e>Sun~Tzuu</^e>
   tells us that mathematics governs absolutely everything,
   and allows us to do even magical things
   (like "seek {the} whereabouts of gods {and} earth gods").
@@ -85,14 +85,14 @@
 
 <#t>
   《孫子算經\.序》 |
-  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic: Preface"
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface"
 </#t>
 
 <@@>
   <@u> Volumes | volumes | Volume navigation </@u>
   <@>
     [manuscript]
-    | /manuscripts/shuen-preface.pdf
+    | /manuscripts/sun-tzu-preface.pdf
     | Translation manuscript for Preface
   </@>
   <@>
@@ -119,7 +119,7 @@
 
 <#t>
   孫子曰：夫算者， |
-  Master~孫<^> Shu"n | Sun | Sun </^> saith: Computation—
+  <^e>Sun~Tzuu</^e> saith: Computation—
 </#t>
 <ul>
   <li>算：
@@ -402,7 +402,7 @@
   </li>
   <li>尺丈<^> ch'ek choeng | ch'ih chang | chi zhang </^><br>
     Units of length, see
-    <@> Vol.~I~¶1 | /pages/master-shuen-i.html#1 | Vol. I ¶1 </@>.
+    <@> Vol.~I~¶1 | /pages/sun-tzu-i.html#1 | Vol. I ¶1 </@>.
   </li>
 </ul>
 
@@ -421,7 +421,7 @@
   </li>
   <li>毫釐<^> hou lei | hao li | hao li </^><br>
     Small units of length, see
-    <@> Vol.~I~¶1 | /pages/master-shuen-i.html#1 | Vol. I ¶1 </@>.
+    <@> Vol.~I~¶1 | /pages/sun-tzu-i.html#1 | Vol. I ¶1 </@>.
     毫~=~10<sup>−3</sup>~寸 and
     釐~=~10<sup>−2</sup>~寸, and
     寸<^> ch'u"n | ts'un | cun </^> is of the order one inch.<br>
@@ -429,7 +429,7 @@
   </li>
   <li>黍絫<^> shu" l_u" | shu lei | shu lei </^><br>
     Small units of weight, see
-    <@> Vol.~I~¶2 | /pages/master-shuen-i.html#2 | Vol. I ¶2 </@>.
+    <@> Vol.~I~¶2 | /pages/sun-tzu-i.html#2 | Vol. I ¶2 </@>.
     黍~=~10<sup>−2</sup>~銖 and
     絫~=~10<sup>−1</sup>~銖, and
     銖<^> chu" | chu | zhu </^> is of the order one gram.
@@ -551,19 +551,15 @@
   Next:
   <@>
     《卷上》~"Volume~I"
-    | /pages/master-shuen-i.html
-    | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+    | /pages/sun-tzu-i.html
+    | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
   </@>
 </div>
 
 <*c>
-  "Master~孫's Computational Classic: Preface"
-  | shuen-preface
-  | ``{Master~Sh{\"u}n's} {Computational} {Classic}: {Preface}''
-  | If typesetting Chinese is inconvenient,
-    you may use "<^e>Shu"n</^e>" instead of 孫.
-    If typesetting the umlaut is also inconvenient,
-    you may use "Shuen" instead of "<^e>Shu"n</^e>".
+  "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface"
+  | sun-tzu-preface
+  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {Preface}''
 </*c>
 
 <*f></*f>

@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20191218 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20191219 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -71,11 +71,11 @@
   </@i>
   <@i> <`><@></`> | #anchor | Anchor tag </@i>
   <@i> <`><#t></`> | #boxed-translation | Boxed translation tag </@i>
-  <@i> <`><;sh></`> | #shuen-heading | <^e>Shu"n</^e> heading tag </@i>
+  <@i> <`><;sh></`> | #sun-tzu-heading | <^e>Sun~Tzuu</^e> heading tag </@i>
   <@i>
     <`><;s@@></`>
-    | #shuen-link-division
-    | <^e>Shu"n</^e> link division tag
+    | #sun-tzu-link-division
+    | <^e>Sun~Tzuu</^e> link division tag
   </@i>
   <@i> <`><*></`> | #preamble | Preamble tag </@i>
   <@i> <`><*p></`> | #page-properties | Page properties tag </@i>
@@ -838,7 +838,7 @@
   
 </ul>
 
-<@3> <^e>Shu"n</^e> heading tag | shuen-heading </@3>
+<@3> <^e>Sun~Tzuu</^e> heading tag | sun-tzu-heading </@3>
 
 <#>
   <`><;sh> {volume} | {paragraph} | {content} </;sh></`>
@@ -860,7 +860,7 @@
   
 </ul>
 
-<@3> <^e>Shu"n</^e> link division tag | shuen-link-division </@3>
+<@3> <^e>Sun~Tzuu</^e> link division tag | sun-tzu-link-division </@3>
 
 <#>
   <`><;s@@> {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@></`>
@@ -936,7 +936,7 @@
 </p>
 <``>
   <*>
-    Python: a regex converter from CCH to HTML | 20190720 | 20191128 | dmr
+    Python: a regex converter from CCH to HTML | 20190720 | 20191219 | dmr
     | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
       written in Python.
   </*>

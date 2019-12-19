@@ -1,8 +1,8 @@
 <*>
-  "Master <^e>Shu"n</^e>'s Computational Classic": 《孫子算經》
-  | 20190504 | 20191129 | dmr
+  "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
+  | 20190504 | 20191219 | dm
   | An annotated English translation of Sunzi Suanjing, \
-    《孫子算經》, or "Master <^e>Shu"n</^e>'s Computational Classic".
+    《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
 
 <=h>
@@ -15,7 +15,7 @@
 
 <h1>
   《孫子算經》 or<br>
-  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
+  "<^e>Sun~Tzuu</^e>'s Computational Classic"
 </h1>
 
 <*p> |
@@ -32,7 +32,7 @@
 <p>
   《孫子算經》, or
   <@>
-    "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
+    "<^e>Sun~Tzuu</^e>'s Computational Classic"
     | https://en.wikipedia.org/wiki/Sunzi_Suanjing
     | Wikipedia: Sunzi Suanjing
   </@>,
@@ -48,7 +48,7 @@
     | Wikipedia: Ten Computational Canons
   </@>.
   Probably written in the 3rd to 5th centuries AD,
-  the author <^e>Sun Tzuu</^e> (孫子), "Master~孫<^> Shu"n | Sun | Sun </^>",
+  the author <^e>Sun Tzuu</^e> (孫子)
   is not the same
   <@>
     <^e>Sun Tzuu</^e>
@@ -214,10 +214,6 @@
   for passages where the thousands grouping is awkward.
 </p>
 
-<h3>Romanisation preference</h3>
-
-<^^></^^>
-
 
 <@2> Manuscript | manuscript </@2>
 
@@ -231,135 +227,135 @@
   
   <@i>
     Version referencing system
-    | /manuscripts/shuen-versions.pdf
+    | /manuscripts/sun-tzu-versions.pdf
     | Referencing system for different versions
   </@i>
   
   <@i>
     <b>Preface</b>
-    | /manuscripts/shuen-preface.pdf
+    | /manuscripts/sun-tzu-preface.pdf
     | Translation manuscript for Preface
   </@i>
   <li>
     <b>Volume I:</b>
     <@>
       ¶1
-      | /manuscripts/shuen-i-1.pdf
+      | /manuscripts/sun-tzu-i-1.pdf
       | Translation manuscript for Vol. I ¶1
     </@>
     <@>
       ¶2
-      | /manuscripts/shuen-i-2.pdf
+      | /manuscripts/sun-tzu-i-2.pdf
       | Translation manuscript for Vol. I ¶2
     </@>
     <@>
       ¶3
-      | /manuscripts/shuen-i-3.pdf
+      | /manuscripts/sun-tzu-i-3.pdf
       | Translation manuscript for Vol. I ¶3
     </@>
     <@>
       ¶4
-      | /manuscripts/shuen-i-4.pdf
+      | /manuscripts/sun-tzu-i-4.pdf
       | Translation manuscript for Vol. I ¶4
     </@>
     <@>
       ¶5
-      | /manuscripts/shuen-i-5.pdf
+      | /manuscripts/sun-tzu-i-5.pdf
       | Translation manuscript for Vol. I ¶5
     </@>
     <@>
       ¶6
-      | /manuscripts/shuen-i-6.pdf
+      | /manuscripts/sun-tzu-i-6.pdf
       | Translation manuscript for Vol. I ¶6
     </@>
     <@>
       ¶7
-      | /manuscripts/shuen-i-7.pdf
+      | /manuscripts/sun-tzu-i-7.pdf
       | Translation manuscript for Vol. I ¶7
     </@>
     <@>
       ¶8
-      | /manuscripts/shuen-i-8.pdf
+      | /manuscripts/sun-tzu-i-8.pdf
       | Translation manuscript for Vol. I ¶8
     </@>
     <@>
       ¶9
-      | /manuscripts/shuen-i-9.pdf
+      | /manuscripts/sun-tzu-i-9.pdf
       | Translation manuscript for Vol. I ¶9
     </@>
     <@>
       ¶10
-      | /manuscripts/shuen-i-10.pdf
+      | /manuscripts/sun-tzu-i-10.pdf
       | Translation manuscript for Vol. I ¶10
     </@>
     <@>
       ¶11
-      | /manuscripts/shuen-i-11.pdf
+      | /manuscripts/sun-tzu-i-11.pdf
       | Translation manuscript for Vol. I ¶11
     </@>
     <@>
       ¶12
-      | /manuscripts/shuen-i-12.pdf
+      | /manuscripts/sun-tzu-i-12.pdf
       | Translation manuscript for Vol. I ¶12
     </@>
     <@>
       ¶13
-      | /manuscripts/shuen-i-13.pdf
+      | /manuscripts/sun-tzu-i-13.pdf
       | Translation manuscript for Vol. I ¶13
     </@>
     <@>
       ¶14
-      | /manuscripts/shuen-i-14.pdf
+      | /manuscripts/sun-tzu-i-14.pdf
       | Translation manuscript for Vol. I ¶14
     </@>
     <@>
       ¶15
-      | /manuscripts/shuen-i-15.pdf
+      | /manuscripts/sun-tzu-i-15.pdf
       | Translation manuscript for Vol. I ¶15
     </@>
     <@>
       ¶16
-      | /manuscripts/shuen-i-16.pdf
+      | /manuscripts/sun-tzu-i-16.pdf
       | Translation manuscript for Vol. I ¶16
     </@>
     <@>
       ¶17
-      | /manuscripts/shuen-i-17.pdf
+      | /manuscripts/sun-tzu-i-17.pdf
       | Translation manuscript for Vol. I ¶17
     </@>
     <@>
       ¶18
-      | /manuscripts/shuen-i-18.pdf
+      | /manuscripts/sun-tzu-i-18.pdf
       | Translation manuscript for Vol. I ¶18
     </@>
     <@>
       ¶19
-      | /manuscripts/shuen-i-19.pdf
+      | /manuscripts/sun-tzu-i-19.pdf
       | Translation manuscript for Vol. I ¶19
     </@>
     <@>
       ¶20
-      | /manuscripts/shuen-i-20.pdf
+      | /manuscripts/sun-tzu-i-20.pdf
       | Translation manuscript for Vol. I ¶20
     </@>
     <@>
       ¶21
-      | /manuscripts/shuen-i-21.pdf
+      | /manuscripts/sun-tzu-i-21.pdf
       | Translation manuscript for Vol. I ¶21
     </@>
     <@>
       ¶22
-      | /manuscripts/shuen-i-22.pdf
+      | /manuscripts/sun-tzu-i-22.pdf
       | Translation manuscript for Vol. I ¶22
     </@>
     <@>
       ¶23
-      | /manuscripts/shuen-i-23.pdf
+      | /manuscripts/sun-tzu-i-23.pdf
       | Translation manuscript for Vol. I ¶23
     </@>
     <@>
       ¶24
-      | /manuscripts/shuen-i-24.pdf
+      | /manuscripts/sun-tzu-i-24.pdf
       | Translation manuscript for Vol. I ¶24
     </@>
   </li>
@@ -368,142 +364,142 @@
     <b>Volume II:</b>
     <@>
       ¶1
-      | /manuscripts/shuen-ii-1.pdf
+      | /manuscripts/sun-tzu-ii-1.pdf
       | Translation manuscript for Vol. II ¶1
     </@>
     <@>
       ¶2
-      | /manuscripts/shuen-ii-2.pdf
+      | /manuscripts/sun-tzu-ii-2.pdf
       | Translation manuscript for Vol. II ¶2
     </@>
     <@>
       ¶3
-      | /manuscripts/shuen-ii-3.pdf
+      | /manuscripts/sun-tzu-ii-3.pdf
       | Translation manuscript for Vol. II ¶3
     </@>
     <@>
       ¶4
-      | /manuscripts/shuen-ii-4.pdf
+      | /manuscripts/sun-tzu-ii-4.pdf
       | Translation manuscript for Vol. II ¶4
     </@>
     <@>
       ¶5
-      | /manuscripts/shuen-ii-5.pdf
+      | /manuscripts/sun-tzu-ii-5.pdf
       | Translation manuscript for Vol. II ¶5
     </@>
     <@>
       ¶6
-      | /manuscripts/shuen-ii-6.pdf
+      | /manuscripts/sun-tzu-ii-6.pdf
       | Translation manuscript for Vol. II ¶6
     </@>
     <@>
       ¶7
-      | /manuscripts/shuen-ii-7.pdf
+      | /manuscripts/sun-tzu-ii-7.pdf
       | Translation manuscript for Vol. II ¶7
     </@>
     <@>
       ¶8
-      | /manuscripts/shuen-ii-8.pdf
+      | /manuscripts/sun-tzu-ii-8.pdf
       | Translation manuscript for Vol. II ¶8
     </@>
     <@>
       ¶9
-      | /manuscripts/shuen-ii-9.pdf
+      | /manuscripts/sun-tzu-ii-9.pdf
       | Translation manuscript for Vol. II ¶9
     </@>
     <@>
       ¶10
-      | /manuscripts/shuen-ii-10.pdf
+      | /manuscripts/sun-tzu-ii-10.pdf
       | Translation manuscript for Vol. II ¶10
     </@>
     <@>
       ¶11
-      | /manuscripts/shuen-ii-11.pdf
+      | /manuscripts/sun-tzu-ii-11.pdf
       | Translation manuscript for Vol. II ¶11
     </@>
     <@>
       ¶12
-      | /manuscripts/shuen-ii-12.pdf
+      | /manuscripts/sun-tzu-ii-12.pdf
       | Translation manuscript for Vol. II ¶12
     </@>
     <@>
       ¶13
-      | /manuscripts/shuen-ii-13.pdf
+      | /manuscripts/sun-tzu-ii-13.pdf
       | Translation manuscript for Vol. II ¶13
     </@>
     <@>
       ¶14
-      | /manuscripts/shuen-ii-14.pdf
+      | /manuscripts/sun-tzu-ii-14.pdf
       | Translation manuscript for Vol. II ¶14
     </@>
     <@>
       ¶15
-      | /manuscripts/shuen-ii-15.pdf
+      | /manuscripts/sun-tzu-ii-15.pdf
       | Translation manuscript for Vol. II ¶15
     </@>
     <@>
       ¶16
-      | /manuscripts/shuen-ii-16.pdf
+      | /manuscripts/sun-tzu-ii-16.pdf
       | Translation manuscript for Vol. II ¶16
     </@>
     <@>
       ¶17
-      | /manuscripts/shuen-ii-17.pdf
+      | /manuscripts/sun-tzu-ii-17.pdf
       | Translation manuscript for Vol. II ¶17
     </@>
     <@>
       ¶18
-      | /manuscripts/shuen-ii-18.pdf
+      | /manuscripts/sun-tzu-ii-18.pdf
       | Translation manuscript for Vol. II ¶18
     </@>
     <@>
       ¶19
-      | /manuscripts/shuen-ii-19.pdf
+      | /manuscripts/sun-tzu-ii-19.pdf
       | Translation manuscript for Vol. II ¶19
     </@>
     <@>
       ¶20
-      | /manuscripts/shuen-ii-20.pdf
+      | /manuscripts/sun-tzu-ii-20.pdf
       | Translation manuscript for Vol. II ¶20
     </@>
     <@>
       ¶21
-      | /manuscripts/shuen-ii-21.pdf
+      | /manuscripts/sun-tzu-ii-21.pdf
       | Translation manuscript for Vol. II ¶21
     </@>
     <@>
       ¶22
-      | /manuscripts/shuen-ii-22.pdf
+      | /manuscripts/sun-tzu-ii-22.pdf
       | Translation manuscript for Vol. II ¶22
     </@>
     <@>
       ¶23
-      | /manuscripts/shuen-ii-23.pdf
+      | /manuscripts/sun-tzu-ii-23.pdf
       | Translation manuscript for Vol. II ¶23
     </@>
     <@>
       ¶24
-      | /manuscripts/shuen-ii-24.pdf
+      | /manuscripts/sun-tzu-ii-24.pdf
       | Translation manuscript for Vol. II ¶24
     </@>
     <@>
       ¶25
-      | /manuscripts/shuen-ii-25.pdf
+      | /manuscripts/sun-tzu-ii-25.pdf
       | Translation manuscript for Vol. II ¶25
     </@>
     <@>
       ¶26
-      | /manuscripts/shuen-ii-26.pdf
+      | /manuscripts/sun-tzu-ii-26.pdf
       | Translation manuscript for Vol. II ¶26
     </@>
     <@>
       ¶27
-      | /manuscripts/shuen-ii-27.pdf
+      | /manuscripts/sun-tzu-ii-27.pdf
       | Translation manuscript for Vol. II ¶27
     </@>
     <@>
       ¶28
-      | /manuscripts/shuen-ii-28.pdf
+      | /manuscripts/sun-tzu-ii-28.pdf
       | Translation manuscript for Vol. II ¶28
     </@>
   </li>
@@ -512,182 +508,182 @@
     <b>Volume III:</b>
     <@>
       ¶1
-      | /manuscripts/shuen-iii-1.pdf
+      | /manuscripts/sun-tzu-iii-1.pdf
       | Translation manuscript for Vol. III ¶1
     </@>
     <@>
       ¶2
-      | /manuscripts/shuen-iii-2.pdf
+      | /manuscripts/sun-tzu-iii-2.pdf
       | Translation manuscript for Vol. III ¶2
     </@>
     <@>
       ¶3
-      | /manuscripts/shuen-iii-3.pdf
+      | /manuscripts/sun-tzu-iii-3.pdf
       | Translation manuscript for Vol. III ¶3
     </@>
     <@>
       ¶4
-      | /manuscripts/shuen-iii-4.pdf
+      | /manuscripts/sun-tzu-iii-4.pdf
       | Translation manuscript for Vol. III ¶4
     </@>
     <@>
       ¶5
-      | /manuscripts/shuen-iii-5.pdf
+      | /manuscripts/sun-tzu-iii-5.pdf
       | Translation manuscript for Vol. III ¶5
     </@>
     <@>
       ¶6
-      | /manuscripts/shuen-iii-6.pdf
+      | /manuscripts/sun-tzu-iii-6.pdf
       | Translation manuscript for Vol. III ¶6
     </@>
     <@>
       ¶7
-      | /manuscripts/shuen-iii-7.pdf
+      | /manuscripts/sun-tzu-iii-7.pdf
       | Translation manuscript for Vol. III ¶7
     </@>
     <@>
       ¶8
-      | /manuscripts/shuen-iii-8.pdf
+      | /manuscripts/sun-tzu-iii-8.pdf
       | Translation manuscript for Vol. III ¶8
     </@>
     <@>
       ¶9
-      | /manuscripts/shuen-iii-9.pdf
+      | /manuscripts/sun-tzu-iii-9.pdf
       | Translation manuscript for Vol. III ¶9
     </@>
     <@>
       ¶10
-      | /manuscripts/shuen-iii-10.pdf
+      | /manuscripts/sun-tzu-iii-10.pdf
       | Translation manuscript for Vol. III ¶10
     </@>
     <@>
       ¶11
-      | /manuscripts/shuen-iii-11.pdf
+      | /manuscripts/sun-tzu-iii-11.pdf
       | Translation manuscript for Vol. III ¶11
     </@>
     <@>
       ¶12
-      | /manuscripts/shuen-iii-12.pdf
+      | /manuscripts/sun-tzu-iii-12.pdf
       | Translation manuscript for Vol. III ¶12
     </@>
     <@>
       ¶13
-      | /manuscripts/shuen-iii-13.pdf
+      | /manuscripts/sun-tzu-iii-13.pdf
       | Translation manuscript for Vol. III ¶13
     </@>
     <@>
       ¶14
-      | /manuscripts/shuen-iii-14.pdf
+      | /manuscripts/sun-tzu-iii-14.pdf
       | Translation manuscript for Vol. III ¶14
     </@>
     <@>
       ¶15
-      | /manuscripts/shuen-iii-15.pdf
+      | /manuscripts/sun-tzu-iii-15.pdf
       | Translation manuscript for Vol. III ¶15
     </@>
     <@>
       ¶16
-      | /manuscripts/shuen-iii-16.pdf
+      | /manuscripts/sun-tzu-iii-16.pdf
       | Translation manuscript for Vol. III ¶16
     </@>
     <@>
       ¶17
-      | /manuscripts/shuen-iii-17.pdf
+      | /manuscripts/sun-tzu-iii-17.pdf
       | Translation manuscript for Vol. III ¶17
     </@>
     <@>
       ¶18
-      | /manuscripts/shuen-iii-18.pdf
+      | /manuscripts/sun-tzu-iii-18.pdf
       | Translation manuscript for Vol. III ¶18
     </@>
     <@>
       ¶19
-      | /manuscripts/shuen-iii-19.pdf
+      | /manuscripts/sun-tzu-iii-19.pdf
       | Translation manuscript for Vol. III ¶19
     </@>
     <@>
       ¶20
-      | /manuscripts/shuen-iii-20.pdf
+      | /manuscripts/sun-tzu-iii-20.pdf
       | Translation manuscript for Vol. III ¶20
     </@>
     <@>
       ¶21
-      | /manuscripts/shuen-iii-21.pdf
+      | /manuscripts/sun-tzu-iii-21.pdf
       | Translation manuscript for Vol. III ¶21
     </@>
     <@>
       ¶22
-      | /manuscripts/shuen-iii-22.pdf
+      | /manuscripts/sun-tzu-iii-22.pdf
       | Translation manuscript for Vol. III ¶22
     </@>
     <@>
       ¶23
-      | /manuscripts/shuen-iii-23.pdf
+      | /manuscripts/sun-tzu-iii-23.pdf
       | Translation manuscript for Vol. III ¶23
     </@>
     <@>
       ¶24
-      | /manuscripts/shuen-iii-24.pdf
+      | /manuscripts/sun-tzu-iii-24.pdf
       | Translation manuscript for Vol. III ¶24
     </@>
     <@>
       ¶25
-      | /manuscripts/shuen-iii-25.pdf
+      | /manuscripts/sun-tzu-iii-25.pdf
       | Translation manuscript for Vol. III ¶25
     </@>
     <@>
       ¶26
-      | /manuscripts/shuen-iii-26.pdf
+      | /manuscripts/sun-tzu-iii-26.pdf
       | Translation manuscript for Vol. III ¶26
     </@>
     <@>
       ¶27
-      | /manuscripts/shuen-iii-27.pdf
+      | /manuscripts/sun-tzu-iii-27.pdf
       | Translation manuscript for Vol. III ¶27
     </@>
     <@>
       ¶28
-      | /manuscripts/shuen-iii-28.pdf
+      | /manuscripts/sun-tzu-iii-28.pdf
       | Translation manuscript for Vol. III ¶28
     </@>
     <@>
       ¶29
-      | /manuscripts/shuen-iii-29.pdf
+      | /manuscripts/sun-tzu-iii-29.pdf
       | Translation manuscript for Vol. III ¶29
     </@>
     <@>
       ¶30
-      | /manuscripts/shuen-iii-30.pdf
+      | /manuscripts/sun-tzu-iii-30.pdf
       | Translation manuscript for Vol. III ¶30
     </@>
     <@>
       ¶31
-      | /manuscripts/shuen-iii-31.pdf
+      | /manuscripts/sun-tzu-iii-31.pdf
       | Translation manuscript for Vol. III ¶31
     </@>
     <@>
       ¶32
-      | /manuscripts/shuen-iii-32.pdf
+      | /manuscripts/sun-tzu-iii-32.pdf
       | Translation manuscript for Vol. III ¶32
     </@>
     <@>
       ¶33
-      | /manuscripts/shuen-iii-33.pdf
+      | /manuscripts/sun-tzu-iii-33.pdf
       | Translation manuscript for Vol. III ¶33
     </@>
     <@>
       ¶34
-      | /manuscripts/shuen-iii-34.pdf
+      | /manuscripts/sun-tzu-iii-34.pdf
       | Translation manuscript for Vol. III ¶34
     </@>
     <@>
       ¶35
-      | /manuscripts/shuen-iii-35.pdf
+      | /manuscripts/sun-tzu-iii-35.pdf
       | Translation manuscript for Vol. III ¶35
     </@>
     <@>
       ¶36
-      | /manuscripts/shuen-iii-36.pdf
+      | /manuscripts/sun-tzu-iii-36.pdf
       | Translation manuscript for Vol. III ¶36
     </@>
   </li>
@@ -706,7 +702,7 @@
 
 <#t>
   《孫子算經》 |
-  "Master~孫<^> Shu"n | Sun | Sun </^>'s Computational Classic"
+  "<^e>Sun~Tzuu</^e>'s Computational Classic"
 </#t>
 
 <p>
@@ -718,21 +714,21 @@
     
     <@i>
       《序》~"Preface"
-      | /pages/master-shuen-preface.html
-      | "Master <^e>Shu"n</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+      | /pages/sun-tzu-preface.html
+      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
     </@i>
     
     <@i>
       《卷上》~"Volume~I"
-      | /pages/master-shuen-i.html
-      | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+      | /pages/sun-tzu-i.html
+      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
     </@i>
     
     <li>
       <@>
         《卷中》~"Volume~II"
-        | /pages/master-shuen-ii.html
-        | "Master <^e>Shu"n</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+        | /pages/sun-tzu-ii.html
+        | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
       </@>
       <:r>(work in progress)</:r>
     </li>
@@ -746,13 +742,9 @@
 </#n>
 
 <*c>
-  "Master~孫's Computational Classic"
-  | shuen
-  | ``{Master~Sh{\"u}n's} {Computational} {Classic}''
-  | If typesetting Chinese is inconvenient,
-    you may use "<^e>Shu"n</^e>" instead of 孫.
-    If typesetting the umlaut is also inconvenient,
-    you may use "Shuen" instead of "<^e>Shu"n</^e>".
+  "<^e>Sun~Tzuu</^e>'s Computational Classic"
+  | sun-tzu
+  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}''
 </*c>
 
 <*f></*f>

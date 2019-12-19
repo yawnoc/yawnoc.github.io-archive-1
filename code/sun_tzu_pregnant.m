@@ -1,10 +1,10 @@
 ################################################################
-# shuen_pregnant.m
+# sun_tzu_pregnant.m
 ################################################################
-# 孫子算經 Master Shün's Computational Classic
+# 孫子算經 Sun Tzu's Computational Classic
 # Sex determination algorithm in Volume III Paragraph 36:
-#   https://yawnoc.github.io/pages/master-shuen-iii.html#36
-#   https://yawnoc.github.io/manuscripts/shuen-iii-36.pdf
+#   https://yawnoc.github.io/pages/sun-tzu-iii.html#36
+#   https://yawnoc.github.io/manuscripts/sun-tzu-iii-36.pdf
 # Released into the public domain (CC0):
 #   https://creativecommons.org/publicdomain/zero/1.0/
 # ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
@@ -78,4 +78,4 @@ for n = 1 : num_years
   table(1 + n, 2 : end) = arrayfun (@(m) determine_sex(y, m), months);
 endfor
 
-csvwrite ("shuen-pregnant.csv", table)
+csvwrite ("sun-tzu-pregnant.csv", table)

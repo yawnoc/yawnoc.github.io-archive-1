@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
 ################################################################
-# shuen_sqrt.py
+# sun_tzu_sqrt.py
 ################################################################
-# 孫子算經 Master Shün's Computational Classic
+# 孫子算經 Sun Tzu's Computational Classic
 # Square root algorithm in Volume II Paragraph 19:
-#   https://yawnoc.github.io/pages/master-shuen-ii.html#19
-#   https://yawnoc.github.io/manuscripts/shuen-ii-19.pdf
+#   https://yawnoc.github.io/pages/sun-tzu-ii.html#19
+#   https://yawnoc.github.io/manuscripts/sun-tzu-ii-19.pdf
 # Released into the public domain (CC0):
 #   https://creativecommons.org/publicdomain/zero/1.0/
 # ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
@@ -23,7 +23,7 @@ def digits_to_int(digits_list):
     total = total * 10 + digit
   return total
 
-def shuen_sqrt(x, print_details = False):
+def sun_tzu_sqrt(x, print_details = False):
   
   # Number of digits of radicand, N
   N = math.floor(math.log10(x)) + 1
@@ -84,7 +84,7 @@ def shuen_sqrt(x, print_details = False):
   R = d
   
   # Square root
-  sqrt_shuen = U + R / L
+  sqrt_sun_tzu = U + R / L
   
   # Actual square root
   sqrt_actual = math.sqrt(x)
@@ -95,18 +95,18 @@ def shuen_sqrt(x, print_details = False):
     print(f'Straight divisors: {pqr_list}')
     print(f'Answer saith: {U} + {R}/{L}')
     
-    error_abs = sqrt_shuen - sqrt_actual
-    error_rel = sqrt_shuen/sqrt_actual - 1
+    error_abs = sqrt_sun_tzu - sqrt_actual
+    error_rel = sqrt_sun_tzu/sqrt_actual - 1
     print(f'Absolute error: {error_abs:.2g}')
     print(f'Relative error: {error_rel * 100:.2g} %')
   
   # Return value
-  return sqrt_shuen
+  return sqrt_sun_tzu
 
 def main(args):
   
   x = args.x
-  shuen_sqrt(x, True)
+  sun_tzu_sqrt(x, True)
 
 if __name__ == '__main__':
   
