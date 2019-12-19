@@ -1,8 +1,8 @@
 <*>
-  "Record of {the} Lion's Pavilion, Mount~<^e>T'aai P'ing</^e>": 《太平山獅子亭記》
-  | 20190407 | 20191031 | dr
+  "Record of {the} Lion's Pavilion, Victoria~Peak": 《太平山獅子亭記》
+  | 20190407 | 20191219 | dr
   | An English translation of 《太平山獅子亭記》, or \
-    "Record of {the} Lion's Pavilion, Mount~<^e>T'aai P'ing</^e>", \
+    "Record of {the} Lion's Pavilion, Victoria~Peak", \
     the text on a plaque in the Lion's Pavilion, Victoria Peak, Hong Kong.
 </*>
 
@@ -16,8 +16,7 @@
 
 <h1>
   《太平山獅子亭記》 or<br>
-  "Record of {the} Lion's Pavilion,
-  Mount~太平<^> T'aai P'ing | T'ai P'ing | Tai Ping </^>"
+  "Record of {the} Lion's Pavilion, Victoria~Peak"
 </h1>
 
 <*p></*p>
@@ -91,33 +90,28 @@
 
 <#t>
   《太平山獅子亭記》 |
-  "Record of {the} Lion's Pavilion,
-  Mount~太平<^> T'aai P'ing | T'ai P'ing | Tai Ping </^>"
+  "Record of {the} Lion's Pavilion, Victoria~Peak"
 </#t>
-<ul>
-  <li>太平山：
-    Mount~太平<^> T'aai P'ing | T'ai P'ing | Tai Ping </^>；
-    literally Mount~Peace;
-    or Mount~Tranquility<br>
-    Victoria~Peak, or simply The~Peak.
-  </li>
-</ul>
 
 <#t>
   太平山，古稱鼇峰，南臨大海，北與九龍諸山遥遥相望，岡巒連綿，林木蔚茂，風景絶美。 |
-  Mount~太平<^> T'aai P'ing | T'ai P'ing | Tai Ping </^>,
-  {in} ancient {times} referred to {as} 鼇<^> Ngou | Ao | Ao </^>~Peak,
+  Mount~Tranquility, {in} ancient {times} referred to {as}
+  {the} Peak of the Great Sea Turtle,
   overlooks {the} great sea {unto the} south,
   {and is in} far, far mutual looking {unto the} north
-  with {the} multiple mountains of 九龍<^> Kau Lung | Chiu Lung | Jiu Long </^>;
+  with {the} multiple mountains of Kowloon;
   {its} ridges {and} small, pointed hills {are} connected {and} unbroken,
   {its} woods {and} trees thriving {and} flourishing,
   {and its} sights {and} scenery absolutely beautiful.
 </#t>
 <ul>
+  <li>太平山：
+    Victoria Peak；
+    literally Mount~Tranquility;
+    or Mount~Peace
+  </li>
   <li>鼇：海中大鱉也；
-    {a} great turtle of {the} sea
-    (according to legend)<br>
+    the Great Sea Turtle (according to legend)<br>
       鼇，牛刀切，
       <^cm> ngou4 | a/o </^cm>
   </li>
@@ -128,10 +122,6 @@
   <li>臨：居高臨下；臨，視也；
     overlooks;
     or looks down from above
-  </li>
-  <li>九龍：
-    Nine Dragons<br>
-    Kowloon.
   </li>
   <li>岡：山脊也；
     ridges (as in mountain ridges);
@@ -589,7 +579,7 @@
 
 <#t>
   爰書，是以記之。 |
-  {A} prisoner's document: this to record these {things}.
+  {A} prisoner's document: this to record it.
 </#t>
 <ul>
   <li>爰書：
@@ -607,11 +597,9 @@
 </ul>
 
 <*c>
-  "Record of {the} Lion's Pavilion, Mount~太平"
+  "Record of {the} Lion's Pavilion, Victoria~Peak"
   | pavilion
-  | ``{Record} of \emph{the} {Lion's} {Pavilion}, {Mount~T'aai Ping}''
-  | If typesetting Chinese is inconvenient,
-    you may use "<^e>T'aai P'ing</^e>" instead of 太平.
+  | ``{Record} of \emph{the} {Lion's} {Pavilion}, {Victoria}~{Peak}''
 </*c>
 
 <*f></*f>
