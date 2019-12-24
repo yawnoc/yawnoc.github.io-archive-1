@@ -822,7 +822,7 @@ def replace_all_assisting_romanisations(string):
 #     | /pages/conway-cantonese-romanisation.html
 #     | Conway's Custom Romanisation for Cantonese
 #   </@>:~<^e>{cantonese}</^e>,
-#   Mandarin~<^e>{mandarin}</^e>\
+#   Mandarin:~<^e>{mandarin}</^e>\
 #   [, [full gov] Mandarin (統讀):~<^e>{government}</^e>]
 # where [full gov] is Government-regulated if [gov] is g and
 # nominally-Communist if [gov] is n
@@ -874,7 +874,7 @@ def replace_cantonese_mandarin_romanisation(match_object):
       | /pages/conway-cantonese-romanisation.html
       | Conway's Custom Romanisation for Cantonese
     </@>:~<^e>{cantonese}</^e>,
-    Mandarin~<^e>{mandarin}</^e>{gov_spec}'''
+    Mandarin:~<^e>{mandarin}</^e>{gov_spec}'''
   )
   
   return processed_string
