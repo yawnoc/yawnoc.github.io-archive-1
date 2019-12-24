@@ -421,7 +421,7 @@
   </tr>
   
   <tr>
-    <th rowspan="3">Favoured merger initial</th>
+    <th rowspan="3">Favoured post-merger initial</th>
     <td class="centred-text" colspan="5"><:v><^e>ts</^e></:v></td>
     <td class="centred-text" colspan="6"><:v><^e>ch</^e></:v></td>
   </tr>
@@ -453,17 +453,20 @@
 
 <p>
   <strong>I have decided to keep the pre-merger distinctions
-  in my romanisation system for historical purposes
-  (following the consonant given in
+  in my romanisation system for historical purposes,
+  using the consonant given in
   <@>
     《分韻撮要》
     | https://ytenx.org/pyonh/
     | 韻典網：《分韻撮要》
   </@>
-  unless noted otherwise),
-  but if you want to sound like a modern Hongkonger,
-  read words using the appropriate favoured merger initial
-  from the table above.</strong>
+  unless noted otherwise.</strong>
+</p>
+<p>
+  <strong>However, unless you want to sound really weird,
+  I suggest pronouncing words using the
+  appropriate favoured post-merger initial listed in the table above,
+  rather than the pre-merger initial.</strong>
 </p>
 
 
@@ -947,7 +950,12 @@
     <td>ing</td>
     <td>ing</td>
     <td>ing</td>
-    <td>[<:h>ing</:h> as in s<:h>ing</:h>], in a general Australian accent</td>
+    <td>
+      halfway between [<:h>i</:h> as in t<:h>i</:h>n]
+      and [<:h>e</:h> as in t<:h>e</:h>n],
+      both in a general Australian accent,
+      followed by [<:h>ng</:h> as in si<:h>ng</:h>]
+    </td>
   </tr>
   
   <tr>
@@ -984,7 +992,9 @@
     <td>ik</td>
     <td>ik</td>
     <td>
-      [<:h>i</:h> as in s<:h>i</:h>ng], in a general Australian accent,
+      halfway between [<:h>i</:h> as in t<:h>i</:h>n]
+      and [<:h>e</:h> as in t<:h>e</:h>n],
+      both in a general Australian accent,
       followed by [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C
     </td>
   </tr>
