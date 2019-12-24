@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20191219 | dmr
+  | 20190609 | 20191221 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -206,10 +206,10 @@
   </li>
   <li>
     1~尺<^> ch'ek | ch'ih | chi </^>~=\
-      ~10~寸<^> ch'u"n | ts'un | cun </^>
+      ~10~寸<^> ts'u"n | ts'un | cun </^>
   </li>
   <li>
-    1~寸<^> ch'u"n | ts'un | cun </^>~=\
+    1~寸<^> ts'u"n | ts'un | cun </^>~=\
       ~10~分<^> fan | fe^n | fen </^>
   </li>
 </ul>
@@ -239,10 +239,10 @@
   </li>
   <li>
     1~斗<^> tau | tou | dou </^>~=\
-      ~10~升<^> sing | she^ng | sheng </^>
+      ~10~升<^> shing | she^ng | sheng </^>
   </li>
   <li>
-    1~升<^> sing | she^ng | sheng </^>~=\
+    1~升<^> shing | she^ng | sheng </^>~=\
       ~10~合<^> kap | ko | ge </^>
   </li>
   <li>
@@ -735,7 +735,7 @@
   Now there be grain,
   one<:n>1</:n>~斗<^> tau | tou | dou </^>.
   {We} ask: how much be {this in} coarse grain?<br>
-  Answer saith: six<:n>6</:n>~升<^> sing | she^ng | sheng </^>.
+  Answer saith: six<:n>6</:n>~升<^> shing | she^ng | sheng </^>.
 </#t>
 <ul>
   <li>
@@ -752,9 +752,9 @@
   術曰：置粟一斗，十升。以糲米率三十乘之，得三百升為實。以粟率五十為法，除之，即得。 |
   Method saith: put {down the} grain,
   one<:n>1</:n>~斗<^> tau | tou | dou </^>, {or}
-  ten<:n>10</:n>~升<^> sing | she^ng | sheng </^>.
+  ten<:n>10</:n>~升<^> shing | she^ng | sheng </^>.
   Multiplying it by {the} coarse grain rate, thirty<:n>30</:n>,
-  resulteth in three hundred<:n>300</:n>~升<^> sing | she^ng | sheng </^>
+  resulteth in three hundred<:n>300</:n>~升<^> shing | she^ng | sheng </^>
   as {the} dividend.
   Use {the} grain rate, fifty<:n>50</:n>, as {the} divisor.
   Dividing them, {we} are done.
@@ -830,13 +830,13 @@
   答曰：一斗一升五十分升之一十七。 |
   Now there be grain,
     two<:n>2</:n>~斗<^> tau | tou | dou </^> {and}
-    one<:n>1</:n>~升<^> sing | she^ng | sheng </^>.
+    one<:n>1</:n>~升<^> shing | she^ng | sheng </^>.
   {We} ask: how much be {this in} fine grain?<br>
   Answer saith:
     one<:n>1</:n>~斗<^> tau | tou | dou </^>,
-    one<:n>1</:n>~升<^> sing | she^ng | sheng </^> {and}
+    one<:n>1</:n>~升<^> shing | she^ng | sheng </^> {and}
     seventeen fiftieths<:n>17/50</:n> of {a}
-    升<^> sing | she^ng | sheng </^>.
+    升<^> shing | she^ng | sheng </^>.
 </#t>
 <ul>
   <li>
@@ -857,7 +857,7 @@
   </li>
   <li>五十分升之一十七：
     literally seventeen<:n>17</:n> of fifty shares<:n>/50</:n>
-    of {a} 升<^> sing | she^ng | sheng </^>
+    of {a} 升<^> shing | she^ng | sheng </^>
   </li>
 </ul>
 
@@ -865,10 +865,10 @@
   術曰：置粟二十一升。以粺米率二十七乘之，得五百六十七升為實。\
   以粟率五十為法，除之。不盡，以法而命分。 |
   Method saith: put {down the} grain,
-  twenty-one<:n>21</:n>~升<^> sing | she^ng | sheng </^>.
+  twenty-one<:n>21</:n>~升<^> shing | she^ng | sheng </^>.
   Multiplying it by {the} fine grain rate, twenty-seven<:n>27</:n>,
   resulteth in five hundred {and} sixty-seven<:n>567</:n>\
-  ~升<^> sing | she^ng | sheng </^> as {the} dividend.
+  ~升<^> shing | she^ng | sheng </^> as {the} dividend.
   Use {the} grain rate, fifty<:n>50</:n>, as {the} divisor.
   Divide them.
   {For the} remainder, name {the} fraction using {the} divisor.
@@ -887,13 +887,13 @@
   答曰：二斗一升五分升之三。 |
   Now there be grain,
     four<:n>4</:n>~斗<^> tau | tou | dou </^> {and}
-    five<:n>5</:n>~升<^> sing | she^ng | sheng </^>.
+    five<:n>5</:n>~升<^> shing | she^ng | sheng </^>.
   {We} ask: how much be {this in} intricate grain?<br>
   Answer saith:
     two<:n>2</:n>~斗<^> tau | tou | dou </^>,
-    one<:n>1</:n>~升<^> sing | she^ng | sheng </^> {and}
+    one<:n>1</:n>~升<^> shing | she^ng | sheng </^> {and}
     three fifths<:n>3/5</:n> of {a}
-    升<^> sing | she^ng | sheng </^>.
+    升<^> shing | she^ng | sheng </^>.
 </#t>
 <ul>
   <li>
@@ -909,11 +909,11 @@
 <#t>
   術曰：置粟四十五升。以二約糳米率二十四，得一十二，乘之，得五百四十升為實。 |
   Method saith: put {down the} grain, forty-five<:n>45</:n>~\
-  升<^> sing | she^ng | sheng </^>.
+  升<^> shing | she^ng | sheng </^>.
   Reducing {the} intricate grain rate, twenty-four<:n>24</:n>,
   by two<:n>2</:n>, resulteth in twelve<:n>12</:n>;
   multiplying them resulteth in five hundred {and} forty<:n>540</:n>~\
-  升<^> sing | she^ng | sheng </^> as {the} dividend.
+  升<^> shing | she^ng | sheng </^> as {the} dividend.
 </#t>
 <ul>
   <li>以二約：
@@ -954,11 +954,11 @@
   答曰：三斗三升一合八勺。 |
   Now there be grain,
     seven<:n>7</:n>~斗<^> tau | tou | dou </^> {and}
-    nine<:n>9</:n>~升<^> sing | she^ng | sheng </^>.
+    nine<:n>9</:n>~升<^> shing | she^ng | sheng </^>.
   {We} ask: how much be {this in} poppy seed?<br>
   Answer saith:
     three<:n>3</:n>~斗<^> tau | tou | dou </^>,
-    three<:n>3</:n>~升<^> sing | she^ng | sheng </^>,
+    three<:n>3</:n>~升<^> shing | she^ng | sheng </^>,
     one<:n>1</:n>~合<^> kap | ko | ge </^> {and}
     eight<:n>8</:n>~勺<^> choek | shao | shao </^>.
 </#t>
@@ -981,10 +981,10 @@
   術曰：置七斗九升。以御米率二十一乘之，得一千六百五十九升為實。以粟率五十除之，即得。 |
   Method saith: put {down the}
     seven<:n>7</:n>~斗<^> tau | tou | dou </^> {and}
-    nine<:n>9</:n>~升<^> sing | she^ng | sheng </^>.
+    nine<:n>9</:n>~升<^> shing | she^ng | sheng </^>.
   Multiplying it by {the} poppy seed rate, twenty-one<:n>21</:n>,
   resulteth in one thousand, six hundred {and} fifty-nine<:n>1659</:n>\
-  ~升<^> sing | she^ng | sheng </^> as {the} dividend.
+  ~升<^> shing | she^ng | sheng </^> as {the} dividend.
   Dividing it by {the} grain rate, fifty<:n>50</:n>,
   {we} are done.
 </#t>
@@ -1095,9 +1095,9 @@
   Answer saith: one hundred {and} fifty-one thousand,
   four hundred {and} seventy-four<:n>151474</:n>\
     ~斛<^> huk | hu | hu </^>,
-  seven<:n>7</:n>~升<^> sing | she^ng | sheng </^>
+  seven<:n>7</:n>~升<^> shing | she^ng | sheng </^>
   {and} eleven twenty-sevenths<:n>11/27</:n> of {a}
-  升<^> sing | she^ng | sheng </^>.
+  升<^> shing | she^ng | sheng </^>.
 </#t>
 
 <#t>
@@ -1142,7 +1142,7 @@
   以斛法一尺六寸二分除之，即得。 |
   Dividing it by {the} 斛<^> huk | hu | hu </^> divisor,
     one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-    six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
+    six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
     two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
   {we} are done.
 </#t>
@@ -1150,7 +1150,7 @@
   <li>斛法一尺六寸二分：
     {the} 斛<^> huk | hu | hu </^> divisor,
       one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-      six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
+      six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
       two<:n>2</:n>~分<^> fan | fe^n | fen </^><br>
     The "斛<^> huk | hu | hu </^> divisor" gives the conversion between
     the volume unit cubic~尺<^> ch'ek | ch'ih | chi </^>
@@ -1166,7 +1166,7 @@
     (though they still knew how to do area and volume conversions correctly).
     Here, by
       "one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-      six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
+      six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
       two<:n>2</:n>~分<^> fan | fe^n | fen </^>",
     which is the length 1.62~尺<^> ch'ek | ch'ih | chi </^>,
     they actually meant the volume
@@ -1182,7 +1182,7 @@
       </$$>
     so parsing
       尺<^> ch'ek | ch'ih | chi </^>,
-      寸<^> ch'u"n | ts'un | cun </^> and
+      寸<^> ts'u"n | ts'un | cun </^> and
       分<^> fan | fe^n | fen </^>
     individually as cubic units doesn't make sense.
   </li>
@@ -1234,9 +1234,9 @@
   fifty-three thousand, six hundred {and} sixty-six<:n>53666</:n>\
     ~斛<^> huk | hu | hu </^>,
   six<:n>6</:n>~斗<^> tau | tou | dou </^>,
-  six<:n>6</:n>~升<^> sing | she^ng | sheng </^>
+  six<:n>6</:n>~升<^> shing | she^ng | sheng </^>
   {and} two thirds<:n>2/3</:n> of {a}
-  升<^> sing | she^ng | sheng </^>.
+  升<^> shing | she^ng | sheng </^>.
 </#t>
 <ul>
   <li>
@@ -1282,7 +1282,7 @@
   以斛法一尺六寸二分除之，即得。 |
   Dividing it by {the} 斛<^> huk | hu | hu </^> divisor,
     one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-    six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
+    six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
     two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
   {we} are done.
 </#t>
@@ -1378,7 +1378,7 @@
   以斛法一尺六寸二分除之，即得。 |
   Dividing it by {the} 斛<^> huk | hu | hu </^> divisor,
     one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-    six<:n>6</:n>~寸<^> ch'u"n | ts'un | cun </^> {and}
+    six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
     two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
   {we} are done.
 </#t>
@@ -1590,7 +1590,7 @@
   Now there be {a} wooden cube {of edge}
     three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>,
   {and we} wish {that each} cube {of edge}
-    five<:n>5</:n>~寸<^> ch'u"n | ts'un | cun </^>
+    five<:n>5</:n>~寸<^> ts'u"n | ts'un | cun </^>
     {thereof be} made into one<:n>1</:n> pillow.
   {We} ask: how many result?
 </#t>

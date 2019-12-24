@@ -1,5 +1,5 @@
 <*>
-  Conway's Custom Romanisation for Cantonese | 20190407 | 20191103 | d
+  Conway's Custom Romanisation for Cantonese | 20190407 | 20191221 | d
   | Conway's custom romanisation system for Cantonese, \
     with English approximations and a diagram of the nine tones.
 </*>
@@ -278,7 +278,7 @@
   <tr>
     <td>將</td>
     <td>[ts]</td>
-    <td class="not-applicable"><:v><^e>ts</^e></:v></td>
+    <td><:v><^e>ts</^e></:v></td>
     <td rowspan="2">z</td>
     <td rowspan="2">j</td>
     <td rowspan="2">j</td>
@@ -300,7 +300,7 @@
   <tr>
     <td>槍</td>
     <td>[tsʰ]</td>
-    <td class="not-applicable"><:v><^e>ts'</^e></:v></td>
+    <td><:v><^e>ts'</^e></:v></td>
     <td rowspan="2">c</td>
     <td rowspan="2">ch</td>
     <td rowspan="2">ch</td>
@@ -422,12 +422,12 @@
   
   <tr>
     <th rowspan="3">Favoured merger initial</th>
-    <td class="centred-text not-applicable" colspan="5"><:v><^e>ts</^e></:v></td>
+    <td class="centred-text" colspan="5"><:v><^e>ts</^e></:v></td>
     <td class="centred-text" colspan="6"><:v><^e>ch</^e></:v></td>
   </tr>
   
   <tr>
-    <td class="centred-text not-applicable" colspan="5"><:v><^e>ts'</^e></:v></td>
+    <td class="centred-text" colspan="5"><:v><^e>ts'</^e></:v></td>
     <td class="centred-text" colspan="6"><:v><^e>ch'</^e></:v></td>
   </tr>
   
@@ -441,39 +441,30 @@
 <p>
   The \{<:v><^e>s</^e></:v>~vs~<:v><^e>sh</^e></:v>\} tendency
   is the strongest. I have never heard anyone pronounce 書,
-    <^e><:h>sh</:h>u"</^e> (i.e.~[ɕyː]),
-    as <^e><:h>s</:h>u"</^e> (i.e.~[syː]),
-  and yet the vast majority of people will pronounce 石
-    as <^e><:h>s</:h>ek</^e> (i.e.~[sɛːk̚])
-    rather than <^e><:h>sh</:h>ek</^e> (i.e.~[ɕɛːk̚]).
+    <^e><:h>sh</:h>u"</^e>~/~[ɕyː],
+    as <^e><:h>s</:h>u"</^e>~/~[syː],
+  and yet the vast majority of people will pronounce 石,
+    <^e><:h>sh</:h>ek</^e>~/~[ɕɛːk̚],
+    as <^e><:h>s</:h>ek</^e>~/~[sɛːk̚].
   The \{<:v><^e>ts</^e></:v>~vs~<:v><^e>ch</^e></:v>\}
   and \{<:v><^e>ts'</^e></:v>~vs~<:v><^e>ch'</^e></:v>\} tendencies
-  are not as strong, so for the purpose of my romanisation system
-  I have decided to not use <:v><^e>ts</^e></:v> and <:v><^e>ts'</^e></:v>
-  (which is why they are greyed out in the tables above).
-  That is,
+  are not as strong.
 </p>
 
-<ol>
-  
-  <li>
-    For \{<:v><^e>ts</^e></:v>~vs~<:v><^e>ch</^e></:v>\}
-    I always use <:v><^e>ch</^e></:v>,
-  </li>
-  
-  <li>
-    For \{<:v><^e>ts'</^e></:v>~vs~<:v><^e>ch'</^e></:v>\}
-    I always use <:v><^e>ch'</^e></:v>, and
-  </li>
-  
-  <li>
-    For \{<:v><^e>s</^e></:v>~vs~<:v><^e>sh</^e></:v>\}
-    I use <:v><^e>sh</^e></:v>
-    if followed by the vowel <:v><^e>u"</^e></:v> (i.e.~[yː]),
-    otherwise <:v><^e>s</^e></:v>.
-  </li>
-  
-</ol>
+<p>
+  <strong>I have decided to keep the pre-merger distinctions
+  in my romanisation system for historical purposes
+  (following the consonant given in
+  <@>
+    《分韻撮要》
+    | https://ytenx.org/pyonh/
+    | 韻典網：《分韻撮要》
+  </@>
+  unless noted otherwise),
+  but if you want to sound like a modern Hongkonger,
+  read words using the appropriate favoured merger initial
+  from the table above.</strong>
+</p>
 
 
 <@2> Finals (韻) | finals </@2>
@@ -1869,8 +1860,8 @@
   
   <tr>
     <td>姐姐</td>
-    <td><^e>che<:h>2</:h>~che<:h>2</:h></^e></td>
-    <td><^e>che<:h>4</:h>~che<:h>1</:h></^e></td>
+    <td><^e>tse<:h>2</:h>~tse<:h>2</:h></^e></td>
+    <td><^e>tse<:h>4</:h>~tse<:h>1</:h></^e></td>
   </tr>
   
   <tr>
@@ -1890,8 +1881,8 @@
   
   <tr>
     <td>長沙灣</td>
-    <td><^e>ch'oeng4~saa1~waan<:h>1</:h></^e></td>
-    <td><^e>ch'oeng4~saa1~waan<:h>4</:h></^e></td>
+    <td><^e>ch'oeng4~shaa1~waan<:h>1</:h></^e></td>
+    <td><^e>ch'oeng4~shaa1~waan<:h>4</:h></^e></td>
   </tr>
   
   <tr>
@@ -1913,28 +1904,32 @@
     <td>打~<:v><^e>t</^e></:v></td>
     <td>家~<:v><^e>k</^e></:v></td>
     <td>瓜~<:v><^e>kw</^e></:v></td>
-    <td>將張~<:v><^e>ch</^e></:v></td>
+    <td>將~<:v><^e>ts</^e></:v></td>
+    <td>張~<:v><^e>ch</^e></:v></td>
   </tr>
   <tr>
     <td>怕~<:v><^e>p'</^e></:v></td>
     <td>他~<:v><^e>t'</^e></:v></td>
     <td>卡~<:v><^e>k'</^e></:v></td>
     <td>誇~<:v><^e>k'w</^e></:v></td>
-    <td>槍昌~<:v><^e>ch'</^e></:v></td>
+    <td>槍~<:v><^e>ts'</^e></:v></td>
+    <td>昌~<:v><^e>ch'</^e></:v></td>
   </tr>
   <tr>
     <td>媽~<:v><^e>m</^e></:v></td>
     <td>那~<:v><^e>n</^e></:v></td>
     <td>牙~<:v><^e>ng</^e></:v></td>
     <td>華~<:v><^e>w</^e></:v></td>
-    <td>相傷~<:v><^e>s</^e></:v></td>
+    <td>相~<:v><^e>s</^e></:v></td>
+    <td>傷~<:v><^e>sh</^e></:v></td>
   </tr>
   <tr>
     <td>花~<:v><^e>f</^e></:v></td>
     <td>啦~<:v><^e>l</^e></:v></td>
     <td>蝦~<:v><^e>h</^e></:v></td>
     <td>也~<:v><^e>y</^e></:v></td>
-    <td>雪說~<:v><^e>sh</^e></:v></td>
+    <td></td>
+    <td></td>
   </tr>
 </table></!c>
 
@@ -2126,9 +2121,9 @@
 <ul>
   <li>
     <^e>
-      san1 t'ai2 faat8 foo1,
-      sau6 chee1 foo6 mou5,
-      pat7 kam2 wai2 soeng1,
+      shan1 t'ai2 faat8 foo1,
+      shau6 chee1 foo6 mou5,
+      pat7 kam2 wai2 shoeng1,
       haau3 chee1 ch'ee2 yaa5.
     </^e>
   </li>
@@ -2143,7 +2138,7 @@
       t'een1 tei6 yu"n4 wong4,
       yu"5 chau6 hung4 fong1.
       yat9 yu"t9 ying4 chak7,
-      san4 suk7 leet9 choeng1.
+      shan4 suk7 leet9 choeng1.
     </^e>
   </li>
 </ul>
@@ -2155,7 +2150,7 @@
   <li>
     <^e>
       foo4 chat7 yee5 toi6 hing1,
-      yeen4 yan1 chuk9 yik9.
+      yeen4 yan1 tsuk9 yik9.
     </^e>
   </li>
 </ul>
@@ -2178,8 +2173,8 @@
 <ul>
   <li>
     <^e>
-      yat9 yat9 ch_u"3 loeng4 chau1,
-      sang1 kor1 ch_t7 mei6 yau1.
+      yat9 yat9 ts_u"3 loeng4 chau1,
+      shang1 kor1 ts_t7 mei6 yau1.
     </^e>
   </li>
 </ul>
@@ -2201,8 +2196,8 @@
 <ul>
   <li>
     <^e>
-      ch'eep8 ch'ung4 mou4 ch'or3 ch'u"3,
-      t'aan3 ngor5 chee6 cheeu1 pou3 ying3,
+      ts'eep8 ts'ung4 mou4 ts'or3 ch'u"3,
+      t'aan3 ngor5 tsee6 cheeu1 pou3 ying3,
       yu"n3 k_u"3 p'at7 foo1 peen3 sing3.
     </^e>
   </li>
@@ -2214,7 +2209,7 @@
 <ul>
   <li>
     <^e>
-      ch'ing2 mat9 k'aau3 kan6 ch'e1 moon4.
+      ts'ing2 mat9 k'aau3 kan6 ch'e1 moon4.
     </^e>
   </li>
 </ul>
@@ -2226,7 +2221,7 @@
   <li>
     <^e>
       haa6 yat7 chaam6: kau2 lung4 t'ong4,
-      sing4 haak8 hor2 yee5 chu"n2 sing4 
+      shing4 haak8 hor2 yee5 chu"n2 shing4 
       kau2 kwong2 tung1 t'eet8.
     </^e>
   </li>

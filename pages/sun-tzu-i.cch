@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
-  | 20190609 | 20191219 | dmr
+  | 20190609 | 20191221 | dmr
   | An annotated English translation of Volume~I of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -271,8 +271,8 @@
   ten<:n>10</:n>~釐<^> lei | li | li </^>
     make one~分<^> fan | fe^n | fen </^>;<br>
   ten<:n>10</:n>~分<^> fan | fe^n | fen </^>
-    make one~寸<^> ch'u"n | ts'un | cun </^>;
-  ten<:n>10</:n>~寸<^> ch'u"n | ts'un | cun </^>
+    make one~寸<^> ts'u"n | ts'un | cun </^>;
+  ten<:n>10</:n>~寸<^> ts'u"n | ts'un | cun </^>
     make one~尺<^> ch'ek | ch'ih | chi </^>;<br>
   ten<:n>10</:n>~尺<^> ch'ek | ch'ih | chi </^>
     make one~丈<^> choeng | chang | zhang </^>;
@@ -535,7 +535,7 @@
   thirty<:n>30</:n>~斤<^> kan | chin | jin </^>
     make one~鈞<^> kwan | chu"n | jun </^>;
   four<:n>4</:n>~鈞<^> kwan | chu"n | jun </^>
-    make one~石<^> sek | shih | shi </^>.
+    make one~石<^> shek | shih | shi </^>.
 </#t>
 <ul>
   <li>絫，魯水切，
@@ -555,7 +555,7 @@
   <li>鈞，音均，
       <^cm> kwan1 | ju=n </^cm>
   </li>
-  <li>石<^> sek | shih | shi </^>：
+  <li>石<^> shek | shih | shi </^>：
     literally stone;
     or rock
   </li>
@@ -675,16 +675,16 @@
   Six<:n>6</:n>~粟<^> suk | su | su </^>
     make one~圭<^> kwai | kuei | gui </^>;
   ten<:n>10</:n>~圭<^> kwai | kuei | gui </^>
-    make one~撮<^> ch'u"t | ts'o | cuo </^>;<br>
-  ten<:n>10</:n>~撮<^> ch'u"t | ts'o | cuo </^>
+    make one~撮<^> ts'u"t | ts'o | cuo </^>;<br>
+  ten<:n>10</:n>~撮<^> ts'u"t | ts'o | cuo </^>
     make one~抄<^> ch'aau | ch'ao | chao </^>;
   ten<:n>10</:n>~抄<^> ch'aau | ch'ao | chao </^>
     make one~勺<^> choek | shao | shao </^>;<br>
   ten<:n>10</:n>~勺<^> choek | shao | shao </^>
     make one~合<^> kap | ko | ge </^>;
   ten<:n>10</:n>~合<^> kap | ko | ge </^>
-    make one~升<^> sing | she^ng | sheng </^>;<br>
-  ten<:n>10</:n>~升<^> sing | she^ng | sheng </^>
+    make one~升<^> shing | she^ng | sheng </^>;<br>
+  ten<:n>10</:n>~升<^> shing | she^ng | sheng </^>
     make one~斗<^> tau | tou | dou </^>;
   ten<:n>10</:n>~斗<^> tau | tou | dou </^>
     make one~斛<^> huk | hu | hu </^>.
@@ -693,10 +693,10 @@
   <li>圭，古攜切，音閨，
       <^cm> kwai1 | gui= </^cm>
   </li>
-  <li>撮<^> ch'u"t | ts'o | cuo </^>：
+  <li>撮<^> ts'u"t | ts'o | cuo </^>：
     literally pinch (two or three fingers)<br>
       撮，寸入聲，
-      <^cm> ch'u"t8 | cuo= </^cm>
+      <^cm> ts'u"t8 | cuo= </^cm>
   </li>
   <li>抄，初交切，
       <^cm> ch'aau1 | cha=o </^cm>
@@ -741,7 +741,7 @@
 </$$>
 
 <p>
-  升 (<^e>sing1</^e>/<^e>she=ng</^e>) is of the order one litre.
+  升 (<^e>shing1</^e>/<^e>she=ng</^e>) is of the order one litre.
 </p>
 <p>
   <@>
@@ -749,7 +749,7 @@
     | https://ctext.org/sunzi-suan-jing#n52059
     | ctext.org database page
   </@>
-  has 撮<^> ch'u"t | ts'o | cuo </^>
+  has 撮<^> ts'u"t | ts'o | cuo </^>
   and 抄<^> ch'aau | ch'ao | chao </^> the other way around.
   The order given here is that in Versions~A, B and~D,
   and it is consistent with the order in
@@ -816,8 +816,8 @@
     make one~圭<^> kwai | kuei | gui </^>;<br>
   ten<:n>10</:n>~圭<^> kwai | kuei | gui </^>,
   sixty<:n>60</:n>~粟<^> suk | su | su </^>,
-    make one~撮<^> ch'u"t | ts'o | cuo </^>;<br>
-  ten<:n>10</:n>~撮<^> ch'u"t | ts'o | cuo </^>,
+    make one~撮<^> ts'u"t | ts'o | cuo </^>;<br>
+  ten<:n>10</:n>~撮<^> ts'u"t | ts'o | cuo </^>,
   six hundred<:n>600</:n>~粟<^> suk | su | su </^>,
     make one~抄<^> ch'aau | ch'ao | chao </^>;<br>
   ten<:n>10</:n>~抄<^> ch'aau | ch'ao | chao </^>,
@@ -828,8 +828,8 @@
     make one~合<^> kap | ko | ge </^>;<br>
   ten<:n>10</:n>~合<^> kap | ko | ge </^>,
   sixty myriad<:n>60~×~10<sup>4</sup></:n>~粟<^> suk | su | su </^>,
-    make one~升<^> sing | she^ng | sheng </^>;<br>
-  ten<:n>10</:n>~升<^> sing | she^ng | sheng </^>,
+    make one~升<^> shing | she^ng | sheng </^>;<br>
+  ten<:n>10</:n>~升<^> shing | she^ng | sheng </^>,
   six hundred myriad<:n>600~×~10<sup>4</sup></:n>~粟<^> suk | su | su </^>,
     make one~斗<^> tau | tou | dou </^>;<br>
   ten<:n>10</:n>~斗<^> tau | tou | dou </^>,
@@ -856,7 +856,7 @@
     six<:n>6</:n>~億<^> yik | i | yi </^>~\
     粟<^> suk | su | su </^>;<br>
   {an} hundred<:n>100</:n>~斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~兆<^> seeu | chao | zhao </^>~\
+    six<:n>6</:n>~兆<^> sheeu | chao | zhao </^>~\
     粟<^> suk | su | su </^>;<br>
   {a} thousand<:n>1000</:n>~斛<^> huk | hu | hu </^>,
     six<:n>6</:n>~京<^> king | ching | jing </^>~\
@@ -865,7 +865,7 @@
     six<:n>6</:n>~陔<^> koi | kai | gai </^>~\
     粟<^> suk | su | su </^>;<br>
   ten myriad<:n>10~×~10<sup>4</sup></:n>~斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~秭<^> chee | tzuu | zi </^>~\
+    six<:n>6</:n>~秭<^> tsee | tzuu | zi </^>~\
     粟<^> suk | su | su </^>;<br>
   {an} hundred myriad<:n>100~×~10<sup>4</sup></:n>~\
       斛<^> huk | hu | hu </^>,
@@ -885,7 +885,7 @@
       <^cm> koi1 | ga=i1 </^cm>
   </li>
   <li>秭，音姊，
-      <^cm> chee2 | ziv </^cm>
+      <^cm> tsee2 | ziv </^cm>
   </li>
 </ul>
 
@@ -905,12 +905,12 @@
     粟<^> suk | su | su </^>;<br>
   {an} hundred<:n>100</:n>~億<^> yik | i | yi </^>~\
       斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~載<^> choi | tsai | zai </^>~\
+    six<:n>6</:n>~載<^> tsoi | tsai | zai </^>~\
     粟<^> suk | su | su </^>.
 </#t>
 <ul>
   <li>載，上聲，
-      <^cm> choi2 | zavi </^cm>
+      <^cm> tsoi2 | zavi </^cm>
   </li>
 </ul>
 
@@ -952,18 +952,18 @@
     {is} called {a}~億<^> yik | i | yi </^>;
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
       億<^> yik | i | yi </^>
-    {is} called {a}~兆<^> seeu | chao | zhao </^>;<br>
+    {is} called {a}~兆<^> sheeu | chao | zhao </^>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      兆<^> seeu | chao | zhao </^>
+      兆<^> sheeu | chao | zhao </^>
     {is} called {a}~京<^> king | ching | jing </^>;
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
       京<^> king | ching | jing </^>
     {is} called {a}~陔<^> koi | kai | gai </^>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
       陔<^> koi | kai | gai </^>
-    {is} called {a}~秭<^> chee | tzuu | zi </^>;
+    {is} called {a}~秭<^> tsee | tzuu | zi </^>;
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      秭<^> chee | tzuu | zi </^>
+      秭<^> tsee | tzuu | zi </^>
     {is} called {a}~壤<^> yoeng | jang | rang </^>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
       壤<^> yoeng | jang | rang </^>
@@ -976,7 +976,7 @@
     {is} called {a}~正<^> ching | che^ng | zheng </^>;
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
       正<^> ching | che^ng | zheng </^>
-    {is} called {a}~載<^> choi | tsai | zai </^>.
+    {is} called {a}~載<^> tsoi | tsai | zai </^>.
 </#t>
 <ul>
   <li>
@@ -1027,7 +1027,7 @@
     <td>10<sup>8</sup></td>
   </tr>
   <tr>
-    <td>兆<^> seeu | chao | zhao </^></td>
+    <td>兆<^> sheeu | chao | zhao </^></td>
     <td>10<sup>9</sup></td>
     <td>10<sup>16</sup></td>
     <td>10<sup>12</sup></td>
@@ -1045,7 +1045,7 @@
     <td>10<sup>20</sup></td>
   </tr>
   <tr>
-    <td>秭<^> chee | tzuu | zi </^></td>
+    <td>秭<^> tsee | tzuu | zi </^></td>
     <td>10<sup>12</sup></td>
     <td>10<sup>40</sup></td>
     <td>10<sup>24</sup></td>
@@ -1075,7 +1075,7 @@
     <td>10<sup>40</sup></td>
   </tr>
   <tr>
-    <td>載<^> choi | tsai | zai </^></td>
+    <td>載<^> tsoi | tsai | zai </^></td>
     <td>10<sup>17</sup></td>
     <td>10<sup>80</sup></td>
     <td>10<sup>44</sup></td>
@@ -1083,7 +1083,7 @@
 </table></!cc>
 
 <p>
-  Note that 兆<^> seeu | chao | zhao </^> is also used for
+  Note that 兆<^> sheeu | chao | zhao </^> is also used for
   the SI Prefix mega~(10<sup>6</sup>). Confusing eh?
 </p>
 
@@ -1207,11 +1207,11 @@
   黃金方寸重一斤。<br>
   白金方寸重一十四兩。<br>
   玉方寸重一十二兩。 |
-  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of gold weigheth
+  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of gold weigheth
     one<:n>1</:n>~斤<^> kan | chin | jin </^>.<br>
-  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of silver weigheth
+  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of silver weigheth
     fourteen<:n>14</:n>~兩<^> loeng | liang | liang </^>.<br>
-  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of jade weigheth
+  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of jade weigheth
     twelve<:n>12</:n>~兩<^> loeng | liang | liang </^>.
 </#t>
 <ul>
@@ -1247,14 +1247,14 @@
   鉛方寸重九兩半。<br>
   鐵方寸重六兩。<br>
   石方寸重三兩。 |
-  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of copper weigheth
+  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of copper weigheth
     seven<:n>7</:n>~兩<^> loeng | liang | liang </^> {and a} half<:n>½</:n>.<br>
-  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of lead weigheth
+  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of lead weigheth
     nine<:n>9</:n>~兩<^> loeng | liang | liang </^>
     {and a} half<:n>½</:n>.<br>
-  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of iron weigheth
+  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of iron weigheth
     six<:n>6</:n>~兩<^> loeng | liang | liang </^>.<br>
-  {Each} cubic~寸<^> ch'u"n | ts'un | cun </^> of stone weigheth
+  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of stone weigheth
     three<:n>3</:n>~兩<^> loeng | liang | liang </^>.
 </#t>
 <ul>
@@ -1557,7 +1557,7 @@
 </$$>
 <p>
   (Recall 兩<^> loeng | liang | liang </^> is of the order 30~g
-  and 寸<^> ch'u"n | ts'un | cun </^> is of the order one inch.)
+  and 寸<^> ts'u"n | ts'un | cun </^> is of the order one inch.)
 </p>
 
 <;sh> 1 | 7 | Rod calculus: vertical \&~horizontal forms </;sh>
@@ -2325,7 +2325,7 @@
 
 <p>
   The next line I have bracketed, for it is an inline annotation by
-  李淳風<^> Lei S_n-fung | Li Ch'un-fe^ng | Li Chunfeng </^>~{et~al.},
+  李淳風<^> Lei Sh_n-fung | Li Ch'un-fe^ng | Li Chunfeng </^>~{et~al.},
   written in two columns of smaller characters which take up
   half the width of the normal characters; see
   <@>
@@ -2464,9 +2464,9 @@
   <li><:y><:g>糳</:g>：精細米也；</:y>
     <:y><:g>intricate grain</:g></:y><br>
       糳，
-      <^cm> chok8; also chok9 | zuo\ </^cm><br>
-    All of the old rime dictionaries have 陰入, chok8,
-    whereas modern dictionaries have 陽入, chok9.
+      <^cm> tsok8; also tsok9 | zuo\ </^cm><br>
+    All of the old rime dictionaries have 陰入, tsok8,
+    whereas modern dictionaries have 陽入, tsok9.
   </li>
 </ul>
 
