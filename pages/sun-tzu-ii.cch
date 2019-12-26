@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20191224 | dmr
+  | 20190609 | 20191226 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -2208,11 +2208,7 @@
 </#t>
 
 <$$>
-  \begin{aligned}
-    p &:= 2 p \\
-      &= 2 \times 40000 \\
-      &= 80000
-  \end{aligned}
+  p := 2 p = 2 \times 40000 = 80000
 </$$>
 
 <div class="centred-svg">
@@ -2249,6 +2245,158 @@
   <rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
 </svg>
 </div>
+
+<#t>
+  方法一退，下法再退。 |
+  {The} upright divisor retreateth once;
+  {the} lower divisor retreateth again.
+</#t>
+<ul>
+  <li>
+    Versions~\
+    <@>
+      A
+      | https://archive.org/details/02094034.cn/page/n40
+      | 02094034.cn at archive.org
+    </@>
+    and~\
+    <@>
+      C
+      | https://ctext.org/sunzi-suan-jing#n52186
+      | ctext.org database page
+    </@>
+    are missing 方法 in 方法一退.
+  </li>
+  <li>再：
+    again;
+    or twice
+  </li>
+</ul>
+
+<$$>
+  \begin{aligned}
+    p &:= p / 10 = 80000 / 10 = 8000 \\
+    L &:= L / 10^2 = 10000 / 100 = 100
+  \end{aligned}
+</$$>
+
+<div class="centred-svg">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
+  <!-- 上商 -->
+  <text x="-1" y="0" font-size="0.8">\上商</text>
+  <!-- a -->
+  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+  <!-- 4 -->
+  <text x="4" y="0" font-size="0.8">4</text>
+  <!-- d -->
+  <text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+  <!-- 實 -->
+  <text x="-1" y="1" font-size="0.8">\實</text>
+  <!-- 74567 -->
+  <text x="2" y="1" font-size="0.8">7</text>
+  <text x="3" y="1" font-size="0.8">4</text>
+  <text x="4" y="1" font-size="0.8">5</text>
+  <text x="5" y="1" font-size="0.8">6</text>
+  <text x="6" y="1" font-size="0.8">7</text>
+  <!-- p -->
+  <text class="maths-italic" x="-3" y="2" font-size="0.8">p</text>
+  <!-- 方法 -->
+  <text x="-1" y="2" font-size="0.8">\方法</text>
+  <!-- 8000 -->
+  <text x="3" y="2" font-size="0.8">8</text>
+  <!-- L -->
+  <text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
+  <!-- 下法 -->
+  <text x="-1" y="3" font-size="0.8">\下法</text>
+  <!-- 100 -->
+  <text x="4" y="3" font-size="0.8">1</text>
+  <!-- 方法一退 -->
+  <path class="step" d="M 2 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
+  <!-- 下法再退 -->
+  <path class="step" d="M 2 3 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" marker-end="url(#arrowhead)"/>
+  <!-- Rectangular border -->
+  <rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
+</svg>
+</div>
+
+<#t>
+  復置上商八十，以次前商。 |
+  Put again {for the} upper quotient eighty<:n>80</:n>,
+  to be next {after the} quotient {digit} before.
+</#t>
+
+<p>
+  The <b>tens digit of the upper quotient</b>~(上商)
+  is the largest <$>b</$> such that <$>b (p + b L) \le d</$>,
+  or
+</p>
+<$$>
+  b (8000 + 100 b) \le 74567,
+</$$>
+<p>
+  i.e.
+</p>
+<$$>
+  b := 8.
+</$$>
+
+<div class="centred-svg">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
+  <!-- 上商 -->
+  <text x="-1" y="0" font-size="0.8">\上商</text>
+  <!-- a -->
+  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+  <!-- 4 -->
+  <text x="4" y="0" font-size="0.8">4</text>
+  <!-- b -->
+  <text class="maths-italic" x="5" y="-1.3" font-size="0.8">b</text>
+  <!-- 8 -->
+  <text x="5" y="0" font-size="0.8">8</text>
+  <!-- d -->
+  <text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+  <!-- 實 -->
+  <text x="-1" y="1" font-size="0.8">\實</text>
+  <!-- 74567 -->
+  <text x="2" y="1" font-size="0.8">7</text>
+  <text x="3" y="1" font-size="0.8">4</text>
+  <text x="4" y="1" font-size="0.8">5</text>
+  <text x="5" y="1" font-size="0.8">6</text>
+  <text x="6" y="1" font-size="0.8">7</text>
+  <!-- p -->
+  <text class="maths-italic" x="-3" y="2" font-size="0.8">p</text>
+  <!-- 方法 -->
+  <text x="-1" y="2" font-size="0.8">\方法</text>
+  <!-- 8000 -->
+  <text x="3" y="2" font-size="0.8">8</text>
+  <!-- L -->
+  <text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
+  <!-- 下法 -->
+  <text x="-1" y="3" font-size="0.8">\下法</text>
+  <!-- 100 -->
+  <text x="4" y="3" font-size="0.8">1</text>
+  <!-- Rectangular border -->
+  <rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
+</svg>
+</div>
+
+<#t>
+  副置八百於方法之下，下法之上，名為廉法。 |
+  Subsidiarily, put {down} eight hundred<:n>800</:n>
+  below {the} upright divisor, {and} above {the} lower divisor;
+  {its} name be {the} incorrupt divisor.
+</#t>
+<ul>
+  <li>廉：
+    incorrupt
+  </li>
+</ul>
+
+<p>
+  The second straight divisor is the <b>incorrupt divisor</b>~(廉法)
+</p>
+<$$>
+  q := b L = 8 \times 100 = 800.
+</$$>
 
 <.>
   This paragraph is not yet complete.

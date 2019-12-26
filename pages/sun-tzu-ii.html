@@ -32,7 +32,7 @@
 </h1>
 <p class="page-properties">
 First created:&nbsp;20190609<br>
-Last modified:&nbsp;<b>20191224</b><br>
+Last modified:&nbsp;<b>20191226</b><br>
 Also known as <i>Sunzi Suanjing</i>: Volume&nbsp;II.
 </p>
 <h2 id="volumes"><a class="self-link" href="#volumes"></a>
@@ -2155,11 +2155,7 @@ this is better written
 <i>The</i> removal finished, double <i>the</i> upright divisor.
 </div>
 <div class="maths">
-\begin{aligned}
-  p &amp;:= 2 p \\
-    &amp;= 2 \times 40000 \\
-    &amp;= 80000
-\end{aligned}
+p := 2 p = 2 \times 40000 = 80000
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
@@ -2181,6 +2177,113 @@ this is better written
 <text x="2" y="3" font-size="0.8">1</text>
 <rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
 </svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">方法一退，下法再退。</span>
+<hr>
+<i>The</i> upright divisor retreateth once;
+<i>the</i> lower divisor retreateth again.
+</div>
+<ul>
+<li>
+Versions&nbsp;<a href="https://archive.org/details/02094034.cn/page/n40" title="02094034.cn at archive.org">A</a>
+and&nbsp;<a href="https://ctext.org/sunzi-suan-jing#n52186" title="ctext.org database page">C</a>
+are missing <span lang="zh-Hant">方法</span> in <span lang="zh-Hant">方法一退</span>.
+</li>
+<li><span lang="zh-Hant">再：</span>
+again;
+or twice
+</li>
+</ul>
+<div class="maths">
+\begin{aligned}
+  p &amp;:= p / 10 = 80000 / 10 = 8000 \\
+  L &amp;:= L / 10^2 = 10000 / 100 = 100
+\end{aligned}
+</div>
+<div class="centred-svg">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="2" y="1" font-size="0.8">7</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">5</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">p</text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="3" y="2" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
+<text x="-1" y="3" font-size="0.8">下法</text>
+<text x="4" y="3" font-size="0.8">1</text>
+<path class="step" d="M 2 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
+<path class="step" d="M 2 3 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" marker-end="url(#arrowhead)"/>
+<rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">復置上商八十，以次前商。</span>
+<hr>
+Put again <i>for the</i> upper quotient eighty<span class="numeral">&nbsp;(80)</span>,
+to be next <i>after the</i> quotient <i>digit</i> before.
+</div>
+<p>
+The <b>tens digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)
+is the largest <span class="maths">b</span> such that <span class="maths">b (p + b L) \le d</span>,
+or
+</p>
+<div class="maths">
+b (8000 + 100 b) \le 74567,
+</div>
+<p>
+i.e.
+</p>
+<div class="maths">
+b := 8.
+</div>
+<div class="centred-svg">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="5" y="-1.3" font-size="0.8">b</text>
+<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="2" y="1" font-size="0.8">7</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">5</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">p</text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="3" y="2" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
+<text x="-1" y="3" font-size="0.8">下法</text>
+<text x="4" y="3" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
+</svg>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">副置八百於方法之下，下法之上，名為廉法。</span>
+<hr>
+Subsidiarily, put <i>down</i> eight hundred<span class="numeral">&nbsp;(800)</span>
+below <i>the</i> upright divisor, <i>and</i> above <i>the</i> lower divisor;
+<i>its</i> name be <i>the</i> incorrupt divisor.
+</div>
+<ul>
+<li><span lang="zh-Hant">廉：</span>
+incorrupt
+</li>
+</ul>
+<p>
+The second straight divisor is the <b>incorrupt divisor</b>&nbsp;(<span lang="zh-Hant">廉法</span>)
+</p>
+<div class="maths">
+q := b L = 8 \times 100 = 800.
 </div>
 <p class="note">
 This paragraph is not yet complete.
