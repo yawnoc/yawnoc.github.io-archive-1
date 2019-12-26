@@ -37,48 +37,46 @@ def sun_tzu_sqrt(x, print_details = False):
   # Dividend (實), d
   d = x
   
-  # Upper quotient (上商) digits, a, b, c, etc.
-  abc_list = []
+  # Upper quotient (上商) digits, a_1, a_2, ..., a_n
+  a_list = []
   
-  # Straight divisors (方廉隅法), p, q, r, etc.
-  pqr_list = []
+  # Straight divisors (方廉隅法), s_1, s_2, ..., s_n
+  s_list = []
   
-  while True:
+  for i in range(1, 1 + n):
     
-    # Determine largest integer alpha such that
-    #   alpha (p + q + r + etc. + alpha L) <= d
-    # and append to upper quotient (上商) digits
-    alpha = 0
+    # Determine newest digit of the upper quotient (上商)
+    # the largest integer a_i such that
+    #   a_i [(s_1 + ... + s_{i-1}) + a_i L] <= d
+    a_i = 0
     while True:
-      alpha_next = alpha + 1
-      if alpha_next * (sum(pqr_list) + alpha_next * L) > d:
+      a_i_next = a_i + 1
+      if a_i_next * (sum(s_list) + a_i_next * L) > d:
         break
       else:
-        alpha = alpha_next
-    abc_list.append(alpha)
+        a_i = a_i_next
+    a_list.append(a_i)
     
     # Determine newest straight divisor (方廉隅法)
-    rho = alpha * L
-    pqr_list.append(rho)
+    s_i = a_i * L
+    s_list.append(s_i)
     
     # Update dividend (實)
-    d -= alpha * sum(pqr_list)
+    d -= a_i * sum(s_list)
     
     # Update newest straight divisor (方廉隅法)
-    pqr_list[-1] *= 2
+    s_list[-1] *= 2
     
-    # If not done yet, step to next place; otherwise break
-    if L > 1:
-      pqr_list = [rho // 10 for rho in pqr_list]
+    # Retreat
+    if i < n:
+      s_list = [s // 10 for s in s_list]
       L = L // 100
-    else:
-      break
     
   # Upper quotient (上商), U
-  U = digits_to_int(abc_list)
+  U = digits_to_int(a_list)
   
   # Lower divisor (下法), L
-  L = sum(pqr_list)
+  L = sum(s_list)
   
   # Remainder (不盡), R
   R = d
@@ -92,7 +90,7 @@ def sun_tzu_sqrt(x, print_details = False):
   # Print results and errors
   if print_details:
     
-    print(f'Straight divisors: {pqr_list}')
+    print(f'Straight divisors: {s_list}')
     print(f'Answer saith: {U} + {R}/{L}')
     
     error_abs = sqrt_sun_tzu - sqrt_actual

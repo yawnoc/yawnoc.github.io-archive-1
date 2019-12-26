@@ -2035,25 +2035,27 @@
 
 <p>
   The <b>hundreds digit of the upper quotient</b>~(上商)
-  is the largest <$>a</$> such that <$>a^2 L \le d</$>,
+  is the largest <$>a_1</$> such that <$>{a_1}^2 L \le d</$>,
   or
 </p>
 <$$>
-  10000 a^2 \le 234567,
+  10000 {a_1}^2 \le 234567,
 </$$>
 <p>
   i.e.
 </p>
 <$$>
-  a := 4.
+  a_1 := 4.
 </$$>
 
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 5">
   <!-- 上商 -->
   <text x="-1" y="0" font-size="0.8">\上商</text>
-  <!-- a -->
-  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+  <!-- a_1 -->
+  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">\
+    a<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 4 -->
   <text x="4" y="0" font-size="0.8">4</text>
   <!-- d -->
@@ -2089,9 +2091,9 @@
     (morally) upright<br>
     方法 is one of three named divisors whose names relate to integrity:
     <ul>
-      <li>方法： upright divisor</li>
-      <li>廉法： incorrupt divisor</li>
-      <li>隅法： honest divisor</li>
+      <li>方法： upright divisor (<$>s_1</$>)</li>
+      <li>廉法： incorrupt divisor (<$>s_2</$>)</li>
+      <li>隅法： honest divisor (<$>s_3</$>)</li>
     </ul>
     These shall henceforth be referred to as the <b>straight divisors</b>
     (straight as in 'straight copper' vs 'bent copper').
@@ -2102,15 +2104,17 @@
   The first straight divisor is the <b>upright divisor</b>~(方法)
 </p>
 <$$>
-  p := a L = 4 \times 10000 = 40000.
+  s_1 := a_1 L = 4 \times 10000 = 40000.
 </$$>
 
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
   <!-- 上商 -->
   <text x="-1" y="0" font-size="0.8">\上商</text>
-  <!-- a -->
-  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+  <!-- a_1 -->
+  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">\
+    a<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 4 -->
   <text x="4" y="0" font-size="0.8">4</text>
   <!-- d -->
@@ -2124,8 +2128,10 @@
   <text x="4" y="1" font-size="0.8">5</text>
   <text x="5" y="1" font-size="0.8">6</text>
   <text x="6" y="1" font-size="0.8">7</text>
-  <!-- p -->
-  <text class="maths-italic" x="-3" y="2" font-size="0.8">p</text>
+  <!-- s_1 -->
+  <text class="maths-italic" x="-3" y="2" font-size="0.8">\
+    s<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 方法 -->
   <text x="-1" y="2" font-size="0.8">\方法</text>
   <!-- 40000 -->
@@ -2157,11 +2163,11 @@
 <p>
   As written, the text says <$>d := d - 400^2</$>,
   but for the purpose of understanding how this step fits in with the others,
-  this is better written
+  this is best written
 </p>
 <$$>
   \begin{aligned}
-    d &:= d - a p \\
+    d &:= d - a_1 s_1 \\
       &= 234567 - 4 \times 40000 \\
       &= 74567.
   \end{aligned}
@@ -2171,8 +2177,10 @@
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
   <!-- 上商 -->
   <text x="-1" y="0" font-size="0.8">\上商</text>
-  <!-- a -->
-  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+  <!-- a_1 -->
+  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">\
+    a<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 4 -->
   <text x="4" y="0" font-size="0.8">4</text>
   <!-- d -->
@@ -2185,8 +2193,10 @@
   <text x="4" y="1" font-size="0.8">5</text>
   <text x="5" y="1" font-size="0.8">6</text>
   <text x="6" y="1" font-size="0.8">7</text>
-  <!-- p -->
-  <text class="maths-italic" x="-3" y="2" font-size="0.8">p</text>
+  <!-- s_1 -->
+  <text class="maths-italic" x="-3" y="2" font-size="0.8">\
+    s<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 方法 -->
   <text x="-1" y="2" font-size="0.8">\方法</text>
   <!-- 40000 -->
@@ -2208,15 +2218,17 @@
 </#t>
 
 <$$>
-  p := 2 p = 2 \times 40000 = 80000
+  s_1 := 2 s_1 = 2 \times 40000 = 80000
 </$$>
 
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
   <!-- 上商 -->
   <text x="-1" y="0" font-size="0.8">\上商</text>
-  <!-- a -->
-  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+  <!-- a_1 -->
+  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">\
+    a<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 4 -->
   <text x="4" y="0" font-size="0.8">4</text>
   <!-- d -->
@@ -2229,8 +2241,10 @@
   <text x="4" y="1" font-size="0.8">5</text>
   <text x="5" y="1" font-size="0.8">6</text>
   <text x="6" y="1" font-size="0.8">7</text>
-  <!-- p -->
-  <text class="maths-italic" x="-3" y="2" font-size="0.8">p</text>
+  <!-- s_1 -->
+  <text class="maths-italic" x="-3" y="2" font-size="0.8">\
+    s<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 方法 -->
   <text x="-1" y="2" font-size="0.8">\方法</text>
   <!-- 80000 -->
@@ -2275,7 +2289,7 @@
 
 <$$>
   \begin{aligned}
-    p &:= p / 10 = 80000 / 10 = 8000 \\
+    s_1 &:= s_1 / 10 = 80000 / 10 = 8000 \\
     L &:= L / 10^2 = 10000 / 100 = 100
   \end{aligned}
 </$$>
@@ -2284,8 +2298,10 @@
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
   <!-- 上商 -->
   <text x="-1" y="0" font-size="0.8">\上商</text>
-  <!-- a -->
-  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+  <!-- a_1 -->
+  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">\
+    a<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 4 -->
   <text x="4" y="0" font-size="0.8">4</text>
   <!-- d -->
@@ -2298,8 +2314,10 @@
   <text x="4" y="1" font-size="0.8">5</text>
   <text x="5" y="1" font-size="0.8">6</text>
   <text x="6" y="1" font-size="0.8">7</text>
-  <!-- p -->
-  <text class="maths-italic" x="-3" y="2" font-size="0.8">p</text>
+  <!-- s_1 -->
+  <text class="maths-italic" x="-3" y="2" font-size="0.8">\
+    s<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 方法 -->
   <text x="-1" y="2" font-size="0.8">\方法</text>
   <!-- 8000 -->
@@ -2327,29 +2345,33 @@
 
 <p>
   The <b>tens digit of the upper quotient</b>~(上商)
-  is the largest <$>b</$> such that <$>b (p + b L) \le d</$>,
+  is the largest <$>a_2</$> such that <$>a_2 (s_1 + a_2 L) \le d</$>,
   or
 </p>
 <$$>
-  b (8000 + 100 b) \le 74567,
+  a_2 (8000 + 100 a_2) \le 74567,
 </$$>
 <p>
   i.e.
 </p>
 <$$>
-  b := 8.
+  a_2 := 8.
 </$$>
 
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
   <!-- 上商 -->
   <text x="-1" y="0" font-size="0.8">\上商</text>
-  <!-- a -->
-  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a</text>
+  <!-- a_1 -->
+  <text class="maths-italic" x="4" y="-1.3" font-size="0.8">\
+    a<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 4 -->
   <text x="4" y="0" font-size="0.8">4</text>
-  <!-- b -->
-  <text class="maths-italic" x="5" y="-1.3" font-size="0.8">b</text>
+  <!-- a_2 -->
+  <text class="maths-italic" x="5" y="-1.3" font-size="0.8">\
+    a<tspan font-size="0.5" dy="0.25em">2</tspan>\
+  </text>
   <!-- 8 -->
   <text x="5" y="0" font-size="0.8">8</text>
   <!-- d -->
@@ -2362,8 +2384,10 @@
   <text x="4" y="1" font-size="0.8">5</text>
   <text x="5" y="1" font-size="0.8">6</text>
   <text x="6" y="1" font-size="0.8">7</text>
-  <!-- p -->
-  <text class="maths-italic" x="-3" y="2" font-size="0.8">p</text>
+  <!-- s_1 -->
+  <text class="maths-italic" x="-3" y="2" font-size="0.8">\
+    s<tspan font-size="0.5" dy="0.25em">1</tspan>\
+  </text>
   <!-- 方法 -->
   <text x="-1" y="2" font-size="0.8">\方法</text>
   <!-- 8000 -->
@@ -2395,7 +2419,7 @@
   The second straight divisor is the <b>incorrupt divisor</b>~(廉法)
 </p>
 <$$>
-  q := b L = 8 \times 100 = 800.
+  s_2 := a_2 L = 8 \times 100 = 800.
 </$$>
 
 <.>
