@@ -27,7 +27,7 @@
 <h1>Python: a regex converter from CCH to HTML</h1>
 <p class="page-properties">
 First created:&nbsp;20190720<br>
-Last modified:&nbsp;<b>20191221</b><br>
+Last modified:&nbsp;<b>20191227</b><br>
 <b>Code:</b>
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch.py" title="GitHub: cch.py"><code>cch.py</code></a>
 </p>
@@ -762,7 +762,7 @@ For example, this page's preamble is
 </p>
 <pre>
 &lt;*&gt;
-  Python: a regex converter from CCH to HTML | 20190720 | 20191221 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20191227 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 &lt;/*&gt;
@@ -1349,6 +1349,12 @@ Literal closing <a href="#conway-italics" title="Conway italics">curly bracket</
 <th colspan="4">Various symbols</th>
 </tr>
 <tr>
+<td><code>\!</code></td>
+<td><code></code></td>
+<td></td>
+<td>Literal empty string</td>
+</tr>
+<tr>
 <td><code>~</code></td>
 <td><code>&amp;nbsp;</code></td>
 <td>&nbsp;</td>
@@ -1525,6 +1531,7 @@ and consecutive runs of
 of <code>{type}</code> not <code>n</code> containing these,
 are automatically wrapped in <code>&lt;span lang="zh-Hant"&gt;</code> tags.
 <a href="#escapes" title="Escapes">Precede runs by a backslash</a> to prevent this.
+Literal empty strings <code>\!</code> may be used to split runs.
 </p>
 <ul>
 <li>
@@ -1533,7 +1540,8 @@ are automatically wrapped in <code>&lt;span lang="zh-Hant"&gt;</code> tags.
 《禮記\.禮運》大道之行也，天下為公。&lt;br&gt;
 \《禮記\.禮運》大道之行也，天下為公。&lt;br&gt;
 黑、&lt;:r&gt;赤&lt;/:r&gt;、&lt;:g&gt;翠&lt;/:g&gt;、&lt;:b&gt;青&lt;/:b&gt;、&lt;:v&gt;紫&lt;/:v&gt;、&lt;:y&gt;黃&lt;/:y&gt;、\
-  &lt;:h&gt;顯&lt;/:h&gt;、&lt;:t&gt;思&lt;/:t&gt;。
+  &lt;:h&gt;顯&lt;/:h&gt;、&lt;:t&gt;思&lt;/:t&gt;。&lt;br&gt;
+前\!後
 </pre>
 </li>
 <li>
@@ -1541,14 +1549,16 @@ are automatically wrapped in <code>&lt;span lang="zh-Hant"&gt;</code> tags.
 <pre>
 &lt;span lang="zh-Hant"&gt;《禮記・禮運》大道之行也，天下為公。&lt;/span&gt;&lt;br&gt;
 《禮記・禮運》大道之行也，天下為公。&lt;br&gt;
-&lt;span lang="zh-Hant"&gt;黑、&lt;span class="red"&gt;赤&lt;/span&gt;、&lt;span class="green"&gt;翠&lt;/span&gt;、&lt;span class="blue"&gt;青&lt;/span&gt;、&lt;span class="violet"&gt;紫&lt;/span&gt;、&lt;span class="lightyellow"&gt;黃&lt;/span&gt;、&lt;span class="highlighted-part"&gt;顯&lt;/span&gt;、&lt;span class="thought"&gt;思&lt;/span&gt;。&lt;/span&gt;
+&lt;span lang="zh-Hant"&gt;黑、&lt;span class="red"&gt;赤&lt;/span&gt;、&lt;span class="green"&gt;翠&lt;/span&gt;、&lt;span class="blue"&gt;青&lt;/span&gt;、&lt;span class="violet"&gt;紫&lt;/span&gt;、&lt;span class="lightyellow"&gt;黃&lt;/span&gt;、&lt;span class="highlighted-part"&gt;顯&lt;/span&gt;、&lt;span class="thought"&gt;思&lt;/span&gt;。&lt;/span&gt;&lt;br&gt;
+&lt;span lang="zh-Hant"&gt;前&lt;/span&gt;&lt;span lang="zh-Hant"&gt;後&lt;/span&gt;
 </pre>
 </li>
 <li>
 <b>Rendered</b><br>
 <span lang="zh-Hant">《禮記・禮運》大道之行也，天下為公。</span><br>
 《禮記・禮運》大道之行也，天下為公。<br>
-<span lang="zh-Hant">黑、<span class="red">赤</span>、<span class="green">翠</span>、<span class="blue">青</span>、<span class="violet">紫</span>、<span class="lightyellow">黃</span>、<span class="highlighted-part">顯</span>、<span class="thought">思</span>。</span>
+<span lang="zh-Hant">黑、<span class="red">赤</span>、<span class="green">翠</span>、<span class="blue">青</span>、<span class="violet">紫</span>、<span class="lightyellow">黃</span>、<span class="highlighted-part">顯</span>、<span class="thought">思</span>。</span><br>
+<span lang="zh-Hant">前</span><span lang="zh-Hant">後</span>
 </li>
 </ul>
 <footer>

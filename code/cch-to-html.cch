@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20191221 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20191227 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -936,7 +936,7 @@
 </p>
 <``>
   <*>
-    Python: a regex converter from CCH to HTML | 20190720 | 20191221 | dmr
+    Python: a regex converter from CCH to HTML | 20190720 | 20191227 | dmr
     | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
       written in Python.
   </*>
@@ -1579,6 +1579,13 @@
   </tr>
   
   <tr>
+    <td><`>\!</`></td>
+    <td><`></`></td>
+    <td>\!</td>
+    <td>Literal empty string</td>
+  </tr>
+  
+  <tr>
     <td><`>~</`></td>
     <td><`>&nbsp;</`></td>
     <td>~</td>
@@ -1792,6 +1799,7 @@
   of <`>{type}</`> not <`>n</`> containing these,
   are automatically wrapped in <`><span lang="zh-Hant"></`> tags.
   <@> Precede runs by a backslash | #escapes | Escapes </@> to prevent this.
+  Literal empty strings <`>\!</`> may be used to split runs.
 </p>
 
 <ul>
@@ -1802,7 +1810,8 @@
       《禮記\.禮運》大道之行也，天下為公。<br>
       \《禮記\.禮運》大道之行也，天下為公。<br>
       黑、<:r>赤</:r>、<:g>翠</:g>、<:b>青</:b>、<:v>紫</:v>、<:y>黃</:y>、\
-        <:h>顯</:h>、<:t>思</:t>。
+        <:h>顯</:h>、<:t>思</:t>。<br>
+      前\!後
     </``>
   </li>
   
@@ -1811,7 +1820,8 @@
     <``>
       <span lang="zh-Hant">《禮記・禮運》大道之行也，天下為公。</span><br>
       《禮記・禮運》大道之行也，天下為公。<br>
-      <span lang="zh-Hant">黑、<span class="red">赤</span>、<span class="green">翠</span>、<span class="blue">青</span>、<span class="violet">紫</span>、<span class="lightyellow">黃</span>、<span class="highlighted-part">顯</span>、<span class="thought">思</span>。</span>
+      <span lang="zh-Hant">黑、<span class="red">赤</span>、<span class="green">翠</span>、<span class="blue">青</span>、<span class="violet">紫</span>、<span class="lightyellow">黃</span>、<span class="highlighted-part">顯</span>、<span class="thought">思</span>。</span><br>
+      <span lang="zh-Hant">前</span><span lang="zh-Hant">後</span>
     </``>
   </li>
   
@@ -1820,7 +1830,8 @@
       《禮記\.禮運》大道之行也，天下為公。<br>
       \《禮記\.禮運》大道之行也，天下為公。<br>
       黑、<:r>赤</:r>、<:g>翠</:g>、<:b>青</:b>、<:v>紫</:v>、<:y>黃</:y>、\
-        <:h>顯</:h>、<:t>思</:t>。
+        <:h>顯</:h>、<:t>思</:t>。<br>
+      前\!後
   </li>
   
 </ul>

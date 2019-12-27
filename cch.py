@@ -109,6 +109,7 @@
 #   ~               \~              (literal tilde)
 #   {               \{              (literal opening curly bracket)
 #   }               \}              (literal closing curly bracket)
+#   {empty string}  \!              (literal empty string)
 #   &nbsp;          ~               (non-breaking space)
 #   {U+30FB}        \.              (・ U+30FB KATAKANA MIDDLE DOT)
 #   {Chinese run}   \{Chinese run}  (literal Chinese run (no language span))
@@ -2385,6 +2386,29 @@ def replace_all_conway_literal_curly_brackets(string):
   return string
 
 ################################################################
+# Replace Conway literal empty strings with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   \!
+
+# Raw regular expression for unprocessed string:
+#   \\!
+
+# Processed string:
+#   {empty string}
+
+def replace_all_conway_literal_empty_strings(string):
+  
+  processed_string = ''
+  
+  return re.sub(
+    r'\\!',
+    create_temporary_replacement_string(processed_string),
+    string
+  )
+
+################################################################
 # Replace Conway literal Chinese runs with temporary replacements
 ################################################################
 
@@ -2664,6 +2688,9 @@ def unescape_conway(string):
   # Unescape \{ as {
   # Unescape \} as }
   string = replace_all_conway_literal_curly_brackets(string)
+  
+  # Unescape \! as {empty string}
+  string = replace_all_conway_literal_empty_strings(string)
   
   # Unescape ~ as &nbsp;
   string = re.sub('~', '&nbsp;', string)
