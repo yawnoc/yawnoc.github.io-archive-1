@@ -9,7 +9,6 @@
   <@ih></@ih>
   <@it></@it>
   <@i> Manuscript | #manuscript | </@i>
-  <@in></@in>
   <@ic></@ic>
 </=h>
 
@@ -23,12 +22,51 @@
 </*p>
 
 
-<@2> Introduction | introduction </@2>
+<@2> Volume navigation | volumes </@2>
 
 
 <@@>
-  <@d> Translation | translation </@d>
+  <@d> Introduction | introduction </@d>
 </@@>
+
+<#n>
+  
+  <b>《孫子算經》</b><br>
+  <b>"<^e>Sun~Tzuu</^e>'s Computational Classic"</b>
+  
+  <ul>
+    
+    <@i>
+      《序》~"Preface"
+      | /pages/sun-tzu-preface.html
+      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+    </@i>
+    
+    <@i>
+      《卷上》~"Volume~I"
+      | /pages/sun-tzu-i.html
+      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+    </@i>
+    
+    <@i>
+      《卷中》~"Volume~II" <:v>(incomplete)</:v>
+      | /pages/sun-tzu-ii.html
+      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+    </@i>
+    
+    <li>
+      <:r>\!《卷下》~"Volume~III"</:r>
+      <:r>(haven't started)</:r>
+    </li>
+    
+  </ul>
+  
+</#n>
+
+
+<@2> Introduction | introduction </@2>
+
+
 <p>
   《孫子算經》, or
   <@>
@@ -695,51 +733,6 @@
   [manuscript] link above each of the paragraphs themselves.
 </p>
 
-
-
-<@2> Translation | translation </@2>
-
-
-<#t>
-  《孫子算經》 |
-  "<^e>Sun~Tzuu</^e>'s Computational Classic"
-</#t>
-
-<p>
-  The text is too large for a single page; see the links below.
-</p>
-
-<#n>
-  <ul>
-    
-    <@i>
-      《序》~"Preface"
-      | /pages/sun-tzu-preface.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
-    </@i>
-    
-    <@i>
-      《卷上》~"Volume~I"
-      | /pages/sun-tzu-i.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
-    </@i>
-    
-    <li>
-      <@>
-        《卷中》~"Volume~II"
-        | /pages/sun-tzu-ii.html
-        | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-      </@>
-      <:r>(work in progress)</:r>
-    </li>
-    
-    <li>
-      《卷下》~"Volume~III"
-      <:r>(haven't started)</:r>
-    </li>
-    
-  </ul>
-</#n>
 
 <*c>
   "<^e>Sun~Tzuu</^e>'s Computational Classic"
