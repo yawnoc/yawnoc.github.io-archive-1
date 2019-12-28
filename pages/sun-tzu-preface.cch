@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
-  | 20190609 | 20191219 | dr
+  | 20190609 | 20191228 | dr
   | An annotated English translation of the preface to Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -143,17 +143,14 @@
   <li>經緯：
     {the} warp {and} woof;
     also literally {the} meridians {and} parallels<br>
-    Here,
     <@>
-      "warp {and} woof"
+      "Warp {and} woof"
       | https://en.wiktionary.org/wiki/warp_and_woof
       | Wiktionary: warp and woof
     </@>
-    translates surprisingly well, both in
-    the literal sense (longways and sideways threads) 
-    and in the figurative sense (fundamental structure).
-    If every phrase were like this, translation would be straightforward.
-    (Unfortunately this is not the case.)
+    translates well, both
+    literally (longways and sideways threads) 
+    and figuratively (fundamental structure).
   </li>
 </ul>
 
