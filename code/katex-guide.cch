@@ -1,6 +1,6 @@
 <*>
   How to render mathematical equations using KaTeX
-  | 20190529 | 20191031 | d
+  | 20190529 | 20191230 | d
   | A step-by-step guide demonstrating how to render mathematical equations \
     using KaTeX (CSS and JavaScript only) in webpages.
 </*>
@@ -180,7 +180,8 @@
 </p>
 <``>
 {
-  '\\del' : '\\mathop{}\\!\\boldsymbol{\\nabla}',
+  '\\vec' : '\\boldsymbol{\\mathbf{#1}}',
+  '\\del' : '\\mathop{}\\!\\vec{\\nabla}',
   '\\dotp': '\\boldsymbol{\\cdot}',
   '\\ee'  : '\\mathrm{e}',
   '\\eps' : '\\varepsilon',
@@ -188,7 +189,6 @@
   '\\pd'  : '\\mathop{}\\!\\partial',
   '\\td'  : '\\mathop{}\\!\\mathrm{d}',
   '\\unit': '\\mathop{}\\!\\text{#1}',
-  '\\vec' : '\\mathbf{#1}',
   '\\veca': '\\mathop{}\\!\\vec{a}'
 }
 </``>

@@ -280,7 +280,8 @@ function dateRender() {
 function mathsRender() {
   // Conway's commonly used macros
   const MACROS = {
-    '\\del' : '\\mathop{}\\!\\boldsymbol{\\nabla}',
+    '\\vec' : '\\boldsymbol{\\mathbf{#1}}',
+    '\\del' : '\\mathop{}\\!\\vec{\\nabla}',
     '\\dotp': '\\boldsymbol{\\cdot}',
     '\\ee'  : '\\mathrm{e}',
     '\\eps' : '\\varepsilon',
@@ -288,7 +289,6 @@ function mathsRender() {
     '\\pd'  : '\\mathop{}\\!\\partial',
     '\\td'  : '\\mathop{}\\!\\mathrm{d}',
     '\\unit': '\\mathop{}\\!\\text{#1}',
-    '\\vec' : '\\mathbf{#1}',
     '\\veca': '\\mathop{}\\!\\vec{a}'
   };
   // For all elements with class "maths"

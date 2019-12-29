@@ -26,7 +26,7 @@
 <h1>How to render mathematical equations using KaTeX</h1>
 <p class="page-properties">
 First created:&nbsp;20190529<br>
-Last modified:&nbsp;<b>20191031</b><br>
+Last modified:&nbsp;<b>20191230</b><br>
 <b>Demo:</b>
 <a href="/katex-example.html" title="katex-example.html"><code>katex-example.html</code></a>
 </p>
@@ -132,7 +132,8 @@ The following macros are defined automatically
 </p>
 <pre>
 {
-  '\\del' : '\\mathop{}\\!\\boldsymbol{\\nabla}',
+  '\\vec' : '\\boldsymbol{\\mathbf{#1}}',
+  '\\del' : '\\mathop{}\\!\\vec{\\nabla}',
   '\\dotp': '\\boldsymbol{\\cdot}',
   '\\ee'  : '\\mathrm{e}',
   '\\eps' : '\\varepsilon',
@@ -140,7 +141,6 @@ The following macros are defined automatically
   '\\pd'  : '\\mathop{}\\!\\partial',
   '\\td'  : '\\mathop{}\\!\\mathrm{d}',
   '\\unit': '\\mathop{}\\!\\text{#1}',
-  '\\vec' : '\\mathbf{#1}',
   '\\veca': '\\mathop{}\\!\\vec{a}'
 }
 </pre>
