@@ -179,18 +179,22 @@
   <@> <`>conway-render.js</`> | \/conway-render.js | conway-render.js </@>):
 </p>
 <``>
-{
-  '\\vec' : '\\boldsymbol{\\mathbf{#1}}',
-  '\\del' : '\\mathop{}\\!\\vec{\\nabla}',
-  '\\dotp': '\\boldsymbol{\\cdot}',
-  '\\ee'  : '\\mathrm{e}',
-  '\\eps' : '\\varepsilon',
-  '\\ii'  : '\\mathrm{i}',
-  '\\pd'  : '\\mathop{}\\!\\partial',
-  '\\td'  : '\\mathop{}\\!\\mathrm{d}',
-  '\\unit': '\\mathop{}\\!\\text{#1}',
-  '\\veca': '\\mathop{}\\!\\vec{a}'
-}
+  {
+    '\\colr': '\\color{red}',
+    '\\colg': '\\color{green}',
+    '\\colb': '\\color{blue}',
+    '\\colv': '\\color{darkviolet}',
+    '\\vec' : '\\boldsymbol{\\mathbf{#1}}',
+    '\\del' : '\\mathop{}\\!\\vec{\\nabla}',
+    '\\dotp': '\\boldsymbol{\\cdot}',
+    '\\ee'  : '\\mathrm{e}',
+    '\\eps' : '\\varepsilon',
+    '\\ii'  : '\\mathrm{i}',
+    '\\pd'  : '\\mathop{}\\!\\partial',
+    '\\td'  : '\\mathop{}\\!\\mathrm{d}',
+    '\\unit': '\\mathop{}\\!\\text{#1}',
+    '\\veca': '\\mathop{}\\!\\vec{a}'
+  }
 </``>
 
 <p>

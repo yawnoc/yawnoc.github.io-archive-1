@@ -280,6 +280,10 @@ function dateRender() {
 function mathsRender() {
   // Conway's commonly used macros
   const MACROS = {
+    '\\colr': '\\color{red}',
+    '\\colg': '\\color{green}',
+    '\\colb': '\\color{blue}',
+    '\\colv': '\\color{darkviolet}',
     '\\vec' : '\\boldsymbol{\\mathbf{#1}}',
     '\\del' : '\\mathop{}\\!\\vec{\\nabla}',
     '\\dotp': '\\boldsymbol{\\cdot}',

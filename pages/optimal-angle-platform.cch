@@ -229,12 +229,12 @@
       \right] \\
     &=
       \frac{2h}{C}
-      {\color{blue}
+      {\colb
         \left(
           \beta + \sqrt{\beta^2 + C}
         \right)
       }
-      {\color{red}
+      {\colr
         \left[
           \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
         - \beta
@@ -254,8 +254,8 @@
     <$$>
       \frac{\pd R}{\pd\phi}
       = \frac{2h}{C}
-        {\color{blue} \left( \sqrt{C} \right)}
-        {\color{red} \left[ -\beta \right]}
+        {\colb \left( \sqrt{C} \right)}
+        {\colr \left[ -\beta \right]}
       = - 2\beta \cdot \frac{h}{\sqrt{C}},
     </$$>
     which vanishes assuming <$>h</$> is finite.
@@ -272,7 +272,7 @@
         \frac{\pd R}{\pd\phi}
         &=
           \frac{2h}{C}
-          {\color{blue}
+          {\colb
             \left(
               \beta
             + (-\beta)
@@ -282,7 +282,7 @@
               \right)
             \right)
           }
-          {\color{red}
+          {\colr
             \left[
               \frac{1 - \beta^2}{-\beta}
             + \frac{\beta^2}{-\beta}
@@ -290,12 +290,12 @@
           } \\
         &=
           \frac{2h}{C}
-          {\color{blue}
+          {\colb
             \left(
             - \frac{C}{2 \beta}
             \right)
           }
-          {\color{red}
+          {\colr
             \left[
             - \frac{1}{\beta}
             \right]
@@ -310,7 +310,7 @@
   </li>
   
   <li>
-    If <$>\color{red}
+    If <$>\colr
       \left[
         \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
       - \beta
