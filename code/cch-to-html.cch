@@ -936,17 +936,6 @@
   
 </ul>
 
-<p>
-  For example, this page's preamble is
-</p>
-<``>
-  <*>
-    Python: a regex converter from CCH to HTML | 20190720 | 20191227 | dmr
-    | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
-      written in Python.
-  </*>
-</``>
-
 <@3> Page properties tag | page-properties </@3>
 
 <#>
