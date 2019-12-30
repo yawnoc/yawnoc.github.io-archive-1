@@ -65,8 +65,7 @@
   <-t></-t>
   <-m></-m>
   line, polyline {
-    stroke: black;
-    vector-effect: non-scaling-stroke;
+    <-s></-s>
   }
   polyline {
     fill: none;

@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20191227 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20191230 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -523,8 +523,13 @@
 </#>
 
 <p>
-  Pre-defined abbreviations for SVG font styles,
-  for text (<`>{type}</`>~<`>t</`>) and maths (<`>{type}</`>~<`>m</`>).
+  Pre-defined abbreviations for SVG styles,
+  for
+    strokes (<`>{type}</`>~<`>s</`>),
+    text (<`>{type}</`>~<`>t</`>),
+    maths (<`>{type}</`>~<`>m</`>),
+    line colour (<`>{type}</`>~<`>lc</`>) and
+    text colour (<`>{type}</`>~<`>tc</`>).
   Must be used inside an
   <@> SVG style container tag | #svg-style-container </@>.
 </p>

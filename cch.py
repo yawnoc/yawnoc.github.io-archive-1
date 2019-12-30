@@ -526,12 +526,15 @@ def replace_assisting_romanisation_radio(string):
 
 # Unprocessed string:
 #   <-{type}></-{type}>
-# where {type} is one of t or m
+# where {type} is one of s, t, m, lc, tc
 
 # Raw regular expressions for unprocessed string:
 #   <\-t></\-t>
 #   <\-m></\-m>
 
+# Processed string for {type} s:
+#   stroke: black;
+#   vector-effect: non-scaling-stroke;
 # Processed string for {type} t:
 #   text {
 #     font-family: sans-serif;
@@ -560,9 +563,49 @@ def replace_assisting_romanisation_radio(string):
 #   .maths-roman {
 #     font-family: "KaTeX_Main-Regular";
 #   }
+# Processed string for {type} lc:
+#   line.red {
+#     stroke: red;
+#     stroke-width: 3;
+#   }
+#   line.green {
+#     stroke: green;
+#     stroke-width: 3;
+#   }
+#   line.blue {
+#     stroke: blue;
+#     stroke-width: 3;
+#   }
+#   line.violet {
+#     stroke: darkviolet;
+#     stroke-width: 3;
+#   }
+# Processed string for {type} tc:
+#   text.red {
+#     fill: red;
+#   }
+#   text.green {
+#     fill: green;
+#   }
+#   text.blue {
+#     fill: blue;
+#   }
+#   text.violet {
+#     fill: darkviolet;
+#   }
 # where all curly brackets are literal
 
 def replace_all_svg_style_abbreviations(string):
+  
+  processed_string = de_indent('''\
+    stroke: black;
+    vector-effect: non-scaling-stroke;'''
+  )
+  string = re.sub(
+    r'<\-s></\-s>',
+    escape_python_backslash(processed_string),
+    string
+  )
   
   processed_string = de_indent('''\
     text {
@@ -570,7 +613,6 @@ def replace_all_svg_style_abbreviations(string):
       text-anchor: middle;
     }'''
   )
-  
   string = re.sub(
     r'<\-t></\-t>',
     escape_python_backslash(processed_string),
@@ -601,9 +643,52 @@ def replace_all_svg_style_abbreviations(string):
       font-family: "KaTeX_Main-Regular";
     }'''
   )
-  
   string = re.sub(
     r'<\-m></\-m>',
+    escape_python_backslash(processed_string),
+    string
+  )
+  
+  processed_string = de_indent('''\
+    line.red {
+      stroke: red;
+      stroke-width: 3;
+    }
+    line.green {
+      stroke: green;
+      stroke-width: 3;
+    }
+    line.blue {
+      stroke: blue;
+      stroke-width: 3;
+    }
+    line.violet {
+      stroke: darkviolet;
+      stroke-width: 3;
+    }'''
+  )
+  string = re.sub(
+    r'<\-lc></\-lc>',
+    escape_python_backslash(processed_string),
+    string
+  )
+  
+  processed_string = de_indent('''\
+    text.red {
+      fill: red;
+    }
+    text.green {
+      fill: green;
+    }
+    text.blue {
+      fill: blue;
+    }
+    text.violet {
+      fill: darkviolet;
+    }'''
+  )
+  string = re.sub(
+    r'<\-tc></\-tc>',
     escape_python_backslash(processed_string),
     string
   )

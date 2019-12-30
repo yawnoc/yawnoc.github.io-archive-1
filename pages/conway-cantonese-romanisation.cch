@@ -1593,8 +1593,7 @@
 
 <-->
   line {
-    stroke: black;
-    vector-effect: non-scaling-stroke;
+    <-s></-s>
   }
   <-t></-t>
 </-->

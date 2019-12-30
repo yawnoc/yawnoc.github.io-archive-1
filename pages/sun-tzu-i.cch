@@ -72,8 +72,7 @@
     stroke-width: 2;
   }
   circle, line, path.notm {
-    stroke: black;
-    vector-effect: non-scaling-stroke;
+    <-s></-s>
   }
   circle, path.notm {
     fill: none;

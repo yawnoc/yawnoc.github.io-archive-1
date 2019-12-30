@@ -84,8 +84,7 @@
   <-t></-t>
   <-m></-m>
   line, path {
-    stroke: black;
-    vector-effect: non-scaling-stroke;
+    <-s></-s>
   }
 </-->
 

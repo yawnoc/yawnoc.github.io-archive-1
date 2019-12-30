@@ -92,37 +92,10 @@
   <-t></-t>
   <-m></-m>
   line {
-    stroke: black;
-    vector-effect: non-scaling-stroke;
+    <-s></-s>
   }
-  line.blue {
-    stroke: blue;
-    stroke-width: 3;
-  }
-  line.green {
-    stroke: green;
-    stroke-width: 3;
-  }
-  line.violet {
-    stroke: darkviolet;
-    stroke-width: 3;
-  }
-  line.red {
-    stroke: red;
-    stroke-width: 3;
-  }
-  text.blue {
-    fill: blue;
-  }
-  text.green {
-    fill: green;
-  }
-  text.violet {
-    fill: darkviolet;
-  }
-  text.red {
-    fill: red;
-  }
+  <-lc></-lc>
+  <-tc></-tc>
 </-->
 
 

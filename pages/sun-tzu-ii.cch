@@ -71,8 +71,7 @@
   <-m></-m>
   path.step {
     fill: none;
-    stroke: black;
-    vector-effect: non-scaling-stroke;
+    <-s></-s>
   }
   rect.border {
     fill: none;
