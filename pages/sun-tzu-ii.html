@@ -32,7 +32,7 @@
 </h1>
 <p class="page-properties">
 First created:&nbsp;20190609<br>
-Last modified:&nbsp;<b>20191229</b><br>
+Last modified:&nbsp;<b>20191231</b><br>
 Also known as <i>Sunzi Suanjing</i>: Volume&nbsp;II.
 </p>
 <h2 id="volumes"><a class="self-link" href="#volumes"></a>
@@ -93,6 +93,18 @@ fill: none;
 stroke: grey;
 stroke-width: 1;
 vector-effect: non-scaling-stroke;
+}
+text.red {
+fill: red;
+}
+text.green {
+fill: green;
+}
+text.blue {
+fill: blue;
+}
+text.violet {
+fill: darkviolet;
 }
 </style></svg>
 <h2 id="translation"><a class="self-link" href="#translation"></a>
@@ -1921,37 +1933,37 @@ in this instance giving
 \sqrt{234567 \unit{步}^2} \approx 484 \tfrac{311}{968} \unit{步}.
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">術曰：置積二十三萬四千五百六十七步為實。</span>
+<span lang="zh-Hant">術曰：<span class="blue">置積</span>二十三萬四千五百六十七步為<span class="blue">實</span>。</span>
 <hr>
-Method saith: put <i>down the</i> area,
+Method saith: <span class="blue">put <i>down the</i> area</span>,
 two hundred <i>and</i> thirty-four thousand, five hundred <i>and</i> sixty-seven<span class="numeral">&nbsp;(234567)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>,
-as <i>the</i> dividend.
+as <span class="blue"><i>the</i> dividend</span>.
 </div>
 <p>
-The radicand is called the <b>dividend</b>&nbsp;(<span lang="zh-Hant">實</span>),
+The radicand is called the <span class="blue"><b>dividend</b>&nbsp;(<span lang="zh-Hant">實</span>)</span>,
 </p>
 <div class="maths">
-d := 234567.
+{\colb d} := {\colb 234567}.
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -0.25 10.5 2">
-<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
-<text x="-1" y="1" font-size="0.8">實</text>
-<text x="1" y="1" font-size="0.8">2</text>
-<text x="2" y="1" font-size="0.8">3</text>
-<text x="3" y="1" font-size="0.8">4</text>
-<text x="4" y="1" font-size="0.8">5</text>
-<text x="5" y="1" font-size="0.8">6</text>
-<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic blue" x="-3" y="1" font-size="0.8">d</text>
+<text class="blue" x="-1" y="1" font-size="0.8">實</text>
+<text class="blue" x="1" y="1" font-size="0.8">2</text>
+<text class="blue" x="2" y="1" font-size="0.8">3</text>
+<text class="blue" x="3" y="1" font-size="0.8">4</text>
+<text class="blue" x="4" y="1" font-size="0.8">5</text>
+<text class="blue" x="5" y="1" font-size="0.8">6</text>
+<text class="blue" x="6" y="1" font-size="0.8">7</text>
 <rect class="border" x="-2.25" y="0" width="9" height="1.5"/>
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">次借一算為下法。步之，超一位，至百而止。</span>
+<span lang="zh-Hant">次<span class="red">借一算為下法</span>。<span class="red">步之，超一位，至百而止</span>。</span>
 <hr>
-Next, borrow one rod, <i>to</i> be <i>the</i> lower divisor.
-Step it <i>forth</i>, jumping over one place,
-<i>even</i> unto <i>the</i> hundreds<span class="numeral">&nbsp;(100s)</span>, and stop.
+Next, <span class="red">borrow one rod, <i>to</i> be <i>the</i> lower divisor</span>.
+<span class="red">Step it <i>forth</i>, jumping over one place,
+<i>even</i> unto <i>the</i> hundreds<span class="numeral">&nbsp;(100s)</span>, and stop</span>.
 </div>
 <ul>
 <li><span lang="zh-Hant">超：跳也；</span>
@@ -1973,10 +1985,10 @@ n := \left\lceil \frac{N}{2} \right\rceil = 3.
 </div>
 <p>
 We then take <span class="maths">n - 1 = 2</span> double steps
-for the <b>lower divisor</b>&nbsp;(<span lang="zh-Hant">下法</span>)
+for the <span class="red"><b>lower divisor</b>&nbsp;(<span lang="zh-Hant">下法</span>)</span>
 </p>
 <div class="maths">
-L := (10 ^ {n - 1}) ^ 2 = 10^4.
+{\colr L} := (10 ^ {n - 1}) ^ 2 = {\colr 10^4}.
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -0.25 10.5 3">
@@ -1996,19 +2008,19 @@ orient="auto-start-reverse">
 <text x="4" y="1" font-size="0.8">5</text>
 <text x="5" y="1" font-size="0.8">6</text>
 <text x="6" y="1" font-size="0.8">7</text>
-<text class="maths-italic" x="-3" y="2" font-size="0.8">L</text>
-<text x="-1" y="2" font-size="0.8">下法</text>
-<text x="2" y="2" font-size="0.8">1</text>
+<text class="maths-italic red" x="-3" y="2" font-size="0.8">L</text>
+<text class="red" x="-1" y="2" font-size="0.8">下法</text>
+<text class="red" x="2" y="2" font-size="0.8">1</text>
 <path class="step" d="M 6 2 m -0.1 -0.3 a 2 2 0 0 0 -1.7 0" marker-end="url(#arrowhead)"/>
 <path class="step" d="M 4 2 m -0.1 -0.3 a 2 2 0 0 0 -1.5 0" marker-end="url(#arrowhead)"/>
 <rect class="border" x="-2.25" y="0" width="9" height="2.5"/>
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">上商置四百於實之上。</span>
+<span lang="zh-Hant"><span class="green">上商置四百</span>於實之上。</span>
 <hr>
-<i>For the</i> upper quotient,
-put <i>down</i> four hundred<span class="numeral">&nbsp;(400)</span> above <i>the</i> dividend.
+<span class="green"><i>For the</i> upper quotient,
+put <i>down</i> four hundred<span class="numeral">&nbsp;(400)</span></span> above <i>the</i> dividend.
 </div>
 <ul>
 <li>
@@ -2022,24 +2034,25 @@ The integer part of the square root to be computed.
 </li>
 </ul>
 <p>
-The <b>hundreds digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)
-is the largest <span class="maths">a_1</span> such that <span class="maths">{a_1}^2 L \le d</span>,
+The <span class="green"><b>hundreds digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)</span>
+is the largest <span class="maths">\colg a_1</span> such that
+<span class="maths">{\colg a_1}^2 {\colr L} \le {\colb d}</span>,
 or
 </p>
 <div class="maths">
-10000 {a_1}^2 \le 234567,
+{\colr 10000} {\colg a_1}^2 \le {\colb 234567},
 </div>
 <p>
 i.e.
 </p>
 <div class="maths">
-a_1 := 4.
+{\colg a_1} := {\colg 4}.
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 5">
-<text x="-1" y="0" font-size="0.8">上商</text>
-<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
-<text x="4" y="0" font-size="0.8">4</text>
+<text class="green" x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic green" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="green" x="4" y="0" font-size="0.8">4</text>
 <text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
 <text x="-1" y="1" font-size="0.8">實</text>
 <text x="1" y="1" font-size="0.8">2</text>
@@ -2055,11 +2068,11 @@ a_1 := 4.
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">副置四萬於實之下，下法之上，名為方法。</span>
+<span lang="zh-Hant">副<span class="violet">置四萬</span>於實之下，下法之上，名為<span class="violet">方法</span>。</span>
 <hr>
-Subsidiarily, put <i>down</i> forty thousand<span class="numeral">&nbsp;(40000)</span>
+Subsidiarily, <span class="violet">put <i>down</i> forty thousand<span class="numeral">&nbsp;(40000)</span></span>
 below <i>the</i> dividend, <i>and</i> above <i>the</i> lower divisor;
-<i>its</i> name be <i>the</i> upright divisor.
+<i>its</i> name be <span class="violet"><i>the</i> upright divisor</span>.
 </div>
 <ul>
 <li><span lang="zh-Hant">方：</span>
@@ -2075,10 +2088,13 @@ These shall henceforth be referred to as the <b>straight divisors</b>
 </li>
 </ul>
 <p>
-The first straight divisor is the <b>upright divisor</b>&nbsp;(<span lang="zh-Hant">方法</span>)
+The first straight divisor is the <span class="violet"><b>upright divisor</b>&nbsp;(<span lang="zh-Hant">方法</span>)</span>
 </p>
 <div class="maths">
-s_1 := a_1 L = 4 \times 10000 = 40000.
+{\colv s_1}
+:= {\colg a_1} {\colr L}
+= {\colg 4} \times {\colr 10000}
+= {\colv 40000}.
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
@@ -2093,9 +2109,9 @@ s_1 := a_1 L = 4 \times 10000 = 40000.
 <text x="4" y="1" font-size="0.8">5</text>
 <text x="5" y="1" font-size="0.8">6</text>
 <text x="6" y="1" font-size="0.8">7</text>
-<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
-<text x="-1" y="2" font-size="0.8">方法</text>
-<text x="2" y="2" font-size="0.8">4</text>
+<text class="maths-italic violet" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="violet" x="-1" y="2" font-size="0.8">方法</text>
+<text class="violet" x="2" y="2" font-size="0.8">4</text>
 <text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
 <text x="-1" y="3" font-size="0.8">下法</text>
 <text x="2" y="3" font-size="0.8">1</text>
@@ -2103,10 +2119,10 @@ s_1 := a_1 L = 4 \times 10000 = 40000.
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">命上商四百除實。</span>
+<span lang="zh-Hant"><span class="green">命上商四百</span><span class="blue">除實</span>。</span>
 <hr>
-Command <i>the</i> upper quotient's four hundred<span class="numeral">&nbsp;(400)</span>,
-<i>and</i> remove <i>this</i> from <i>the</i> dividend.
+<span class="green">Command <i>the</i> upper quotient's four hundred<span class="numeral">&nbsp;(400)</span></span>,
+<span class="blue"><i>and</i> remove <i>this</i> from <i>the</i> dividend</span>.
 </div>
 <ul>
 <li><span lang="zh-Hant">除：</span>
@@ -2116,15 +2132,17 @@ repeatedly removing the divisor from the dividend.
 </li>
 </ul>
 <p>
-As written, the text says <span class="maths">d := d - 400^2</span>,
+As written, the text says
+<span class="maths">{\colb d} := {\colb d} - {\colg 400^2}</span>,
 but for the purpose of understanding how this step fits in with the others,
 this is best written
 </p>
 <div class="maths">
 \begin{aligned}
-  d &amp;:= d - a_1 s_1 \\
-    &amp;= 234567 - 4 \times 40000 \\
-    &amp;= 74567.
+  {\colb d}
+  &amp;:= {\colb d} - {\colg a_1} {\colv s_1} \\
+  &amp;= {\colb 234567} - {\colg 4} \times {\colv 40000} \\
+  &amp;= {\colb 74567}.
 \end{aligned}
 </div>
 <div class="centred-svg">
@@ -2132,13 +2150,13 @@ this is best written
 <text x="-1" y="0" font-size="0.8">上商</text>
 <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
 <text x="4" y="0" font-size="0.8">4</text>
-<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text class="maths-italic blue" x="-3" y="1" font-size="0.8">d</text>
 <text x="-1" y="1" font-size="0.8">實</text>
-<text x="2" y="1" font-size="0.8">7</text>
-<text x="3" y="1" font-size="0.8">4</text>
-<text x="4" y="1" font-size="0.8">5</text>
-<text x="5" y="1" font-size="0.8">6</text>
-<text x="6" y="1" font-size="0.8">7</text>
+<text class="blue" x="2" y="1" font-size="0.8">7</text>
+<text class="blue" x="3" y="1" font-size="0.8">4</text>
+<text class="blue" x="4" y="1" font-size="0.8">5</text>
+<text class="blue" x="5" y="1" font-size="0.8">6</text>
+<text class="blue" x="6" y="1" font-size="0.8">7</text>
 <text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
 <text x="-1" y="2" font-size="0.8">方法</text>
 <text x="2" y="2" font-size="0.8">4</text>
@@ -2149,12 +2167,12 @@ this is best written
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">除訖，倍方法。</span>
+<span lang="zh-Hant">除訖，<span class="violet">倍方法</span>。</span>
 <hr>
-<i>The</i> removal finished, double <i>the</i> upright divisor.
+<i>The</i> removal finished, <span class="violet">double <i>the</i> upright divisor</span>.
 </div>
 <div class="maths">
-s_1 := 2 s_1 = 2 \times 40000 = 80000
+{\colv s_1} := 2 s_1 = 2 \times 40000 = {\colv 80000}
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
@@ -2168,9 +2186,9 @@ s_1 := 2 s_1 = 2 \times 40000 = 80000
 <text x="4" y="1" font-size="0.8">5</text>
 <text x="5" y="1" font-size="0.8">6</text>
 <text x="6" y="1" font-size="0.8">7</text>
-<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
-<text x="-1" y="2" font-size="0.8">方法</text>
-<text x="2" y="2" font-size="0.8">8</text>
+<text class="maths-italic violet" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="violet" x="-1" y="2" font-size="0.8">方法</text>
+<text class="violet" x="2" y="2" font-size="0.8">8</text>
 <text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
 <text x="-1" y="3" font-size="0.8">下法</text>
 <text x="2" y="3" font-size="0.8">1</text>
@@ -2178,10 +2196,10 @@ s_1 := 2 s_1 = 2 \times 40000 = 80000
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">方法一退，下法再退。</span>
+<span lang="zh-Hant"><span class="violet">方法一退</span>，<span class="red">下法再退</span>。</span>
 <hr>
-<i>The</i> upright divisor retreateth once;
-<i>the</i> lower divisor retreateth again.
+<span class="violet"><i>The</i> upright divisor retreateth once</span>;
+<span class="red"><i>the</i> lower divisor retreateth again</span>.
 </div>
 <ul>
 <li>
@@ -2196,8 +2214,8 @@ or twice
 </ul>
 <div class="maths">
 \begin{aligned}
-  s_1 &amp;:= s_1 / 10 = 80000 / 10 = 8000 \\
-  L &amp;:= L / 10^2 = 10000 / 100 = 100
+  {\colv s_1} &amp;:= s_1 / 10 = 80000 / 10 = {\colv 8000} \\
+  {\colr L} &amp;:= L / 10^2 = 10000 / 100 = {\colr 100}
 \end{aligned}
 </div>
 <div class="centred-svg">
@@ -2212,44 +2230,45 @@ or twice
 <text x="4" y="1" font-size="0.8">5</text>
 <text x="5" y="1" font-size="0.8">6</text>
 <text x="6" y="1" font-size="0.8">7</text>
-<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
-<text x="-1" y="2" font-size="0.8">方法</text>
-<text x="3" y="2" font-size="0.8">8</text>
-<text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
-<text x="-1" y="3" font-size="0.8">下法</text>
-<text x="4" y="3" font-size="0.8">1</text>
+<text class="maths-italic violet" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="violet" x="-1" y="2" font-size="0.8">方法</text>
+<text class="violet" x="3" y="2" font-size="0.8">8</text>
+<text class="maths-italic red" x="-3" y="3" font-size="0.8">L</text>
+<text class="red" x="-1" y="3" font-size="0.8">下法</text>
+<text class="red" x="4" y="3" font-size="0.8">1</text>
 <path class="step" d="M 2 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
 <path class="step" d="M 2 3 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" marker-end="url(#arrowhead)"/>
 <rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">復置上商八十，以次前商。</span>
+<span lang="zh-Hant">復<span class="green">置上商八十</span>，以次前商。</span>
 <hr>
-Put again <i>for the</i> upper quotient eighty<span class="numeral">&nbsp;(80)</span>,
+<span class="green">Put</span> again <span class="green"><i>for the</i> upper quotient eighty<span class="numeral">&nbsp;(80)</span></span>,
 to be next <i>after the</i> quotient <i>digit</i> before.
 </div>
 <p>
-The <b>tens digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)
-is the largest <span class="maths">a_2</span> such that <span class="maths">a_2 (s_1 + a_2 L) \le d</span>,
+The <span class="green"><b>tens digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)</span>
+is the largest <span class="maths">\colg a_2</span> such that
+<span class="maths">{\colg a_2} ({\colv s_1} + {\colg a_2} {\colr L}) \le {\colb d}</span>,
 or
 </p>
 <div class="maths">
-a_2 (8000 + 100 a_2) \le 74567,
+{\colg a_2} ({\colv 8000} + {\colr 100} {\colg a_2}) \le {\colb 74567},
 </div>
 <p>
 i.e.
 </p>
 <div class="maths">
-a_2 := 8.
+{\colg a_2} := {\colg 8}.
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6">
-<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="green" x="-1" y="0" font-size="0.8">上商</text>
 <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
 <text x="4" y="0" font-size="0.8">4</text>
-<text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
-<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic green" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="green" x="5" y="0" font-size="0.8">8</text>
 <text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
 <text x="-1" y="1" font-size="0.8">實</text>
 <text x="2" y="1" font-size="0.8">7</text>
@@ -2267,11 +2286,11 @@ a_2 := 8.
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">副置八百於方法之下，下法之上，名為廉法。</span>
+<span lang="zh-Hant">副<span class="violet">置八百</span>於方法之下，下法之上，名為<span class="violet">廉法</span>。</span>
 <hr>
-Subsidiarily, put <i>down</i> eight hundred<span class="numeral">&nbsp;(800)</span>
+Subsidiarily, <span class="violet">put <i>down</i> eight hundred<span class="numeral">&nbsp;(800)</span></span>
 below <i>the</i> upright divisor, <i>and</i> above <i>the</i> lower divisor;
-<i>its</i> name be <i>the</i> incorrupt divisor.
+<i>its</i> name be <span class="violet"><i>the</i> incorrupt divisor</span>.
 </div>
 <ul>
 <li><span lang="zh-Hant">廉：</span>
@@ -2279,10 +2298,13 @@ incorrupt
 </li>
 </ul>
 <p>
-The second straight divisor is the <b>incorrupt divisor</b>&nbsp;(<span lang="zh-Hant">廉法</span>)
+The second straight divisor is the <span class="violet"><b>incorrupt divisor</b>&nbsp;(<span lang="zh-Hant">廉法</span>)</span>
 </p>
 <div class="maths">
-s_2 := a_2 L = 8 \times 100 = 800.
+{\colv s_2}
+:= {\colg a_2} {\colr L}
+= {\colg 8} \times {\colr 100}
+= {\colv 800}.
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7">
@@ -2299,11 +2321,11 @@ s_2 := a_2 L = 8 \times 100 = 800.
 <text x="5" y="1" font-size="0.8">6</text>
 <text x="6" y="1" font-size="0.8">7</text>
 <text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
-<text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="maths-italic violet" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
 <text x="-1" y="2" font-size="0.8">方法</text>
 <text x="3" y="2" font-size="0.8">8</text>
-<text x="-1" y="3" font-size="0.8">廉法</text>
-<text x="4" y="3" font-size="0.8">8</text>
+<text class="violet" x="-1" y="3" font-size="0.8">廉法</text>
+<text class="violet" x="4" y="3" font-size="0.8">8</text>
 <text class="maths-italic" x="-3" y="4" font-size="0.8">L</text>
 <text x="-1" y="4" font-size="0.8">下法</text>
 <text x="4" y="4" font-size="0.8">1</text>
@@ -2311,11 +2333,11 @@ s_2 := a_2 L = 8 \times 100 = 800.
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">方、廉各命上商八十，以除實。</span>
+<span lang="zh-Hant"><span class="violet">方、廉各命</span><span class="green">上商八十</span>，以<span class="blue">除實</span>。</span>
 <hr>
-Each of <i>the</i> upright <i>and the</i> incorrupt
-commandeth <i>the</i> upper quotient's eighty<span class="numeral">&nbsp;(80)</span>,
-to be removed from <i>the</i> dividend.
+<span class="violet">Each of <i>the</i> upright <i>and the</i> incorrupt commandeth</span>
+<span class="green"><i>the</i> upper quotient's eighty<span class="numeral">&nbsp;(80)</span></span>,
+to be <span class="blue">removed from <i>the</i> dividend</span>.
 </div>
 <ul>
 <li>
@@ -2326,9 +2348,10 @@ are missing <span lang="zh-Hant">實</span>.
 </ul>
 <div class="maths">
 \begin{aligned}
-  d &amp;:= d - a_2 (s_1 + s_2) \\
-    &amp;= 74567 - 8 \times (8000 + 800) \\
-    &amp;= 4167
+  {\colb d}
+  &amp;:= {\colb d} - {\colg a_2} {\colv (s_1 + s_2)} \\
+  &amp;= {\colb 74567} - {\colg 8} \times {\colv (8000 + 800)} \\
+  &amp;= {\colb 4167}
 \end{aligned}
 </div>
 <div class="centred-svg">
@@ -2338,12 +2361,12 @@ are missing <span lang="zh-Hant">實</span>.
 <text x="4" y="0" font-size="0.8">4</text>
 <text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
 <text x="5" y="0" font-size="0.8">8</text>
-<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
-<text x="-1" y="1" font-size="0.8">實</text>
-<text x="3" y="1" font-size="0.8">4</text>
-<text x="4" y="1" font-size="0.8">1</text>
-<text x="5" y="1" font-size="0.8">6</text>
-<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic blue" x="-3" y="1" font-size="0.8">d</text>
+<text class="blue" x="-1" y="1" font-size="0.8">實</text>
+<text class="blue" x="3" y="1" font-size="0.8">4</text>
+<text class="blue" x="4" y="1" font-size="0.8">1</text>
+<text class="blue" x="5" y="1" font-size="0.8">6</text>
+<text class="blue" x="6" y="1" font-size="0.8">7</text>
 <text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
 <text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
 <text x="-1" y="2" font-size="0.8">方法</text>
@@ -2357,9 +2380,9 @@ are missing <span lang="zh-Hant">實</span>.
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">除訖，倍廉法，上從方法。</span>
+<span lang="zh-Hant">除訖，<span class="violet">倍廉法</span>，上從方法。</span>
 <hr>
-<i>The</i> removal finished, double <i>the</i> incorrupt divisor,
+<i>The</i> removal finished, <span class="violet">double <i>the</i> incorrupt divisor</span>,
 <i>which</i> followeth <i>the</i> upright divisor above.
 </div>
 <ul>
@@ -2370,7 +2393,7 @@ are missing <span lang="zh-Hant">除</span>.
 </li>
 </ul>
 <div class="maths">
-s_2 := 2 s_2 = 2 \times 800 = 1600
+{\colv s_2} := 2 s_2 = 2 \times 800 = {\colv 1600}
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7">
@@ -2386,12 +2409,12 @@ s_2 := 2 s_2 = 2 \times 800 = 1600
 <text x="5" y="1" font-size="0.8">6</text>
 <text x="6" y="1" font-size="0.8">7</text>
 <text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
-<text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="maths-italic violet" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
 <text x="-1" y="2" font-size="0.8">方法</text>
 <text x="3" y="2" font-size="0.8">8</text>
-<text x="-1" y="3" font-size="0.8">廉法</text>
-<text x="3" y="3" font-size="0.8">1</text>
-<text x="4" y="3" font-size="0.8">6</text>
+<text class="violet" x="-1" y="3" font-size="0.8">廉法</text>
+<text class="violet" x="3" y="3" font-size="0.8">1</text>
+<text class="violet" x="4" y="3" font-size="0.8">6</text>
 <text class="maths-italic" x="-3" y="4" font-size="0.8">L</text>
 <text x="-1" y="4" font-size="0.8">下法</text>
 <text x="4" y="4" font-size="0.8">1</text>
@@ -2399,10 +2422,10 @@ s_2 := 2 s_2 = 2 \times 800 = 1600
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">方法一退，下法再退。</span>
+<span lang="zh-Hant"><span class="violet">方法一退</span>，<span class="red">下法再退</span>。</span>
 <hr>
-<i>The</i> upright divisor retreateth once;
-<i>the</i> lower divisor retreateth again.
+<span class="violet"><i>The</i> upright divisor retreateth once</span>;
+<span class="red"><i>the</i> lower divisor retreateth again</span>.
 </div>
 <ul>
 <li>
@@ -2418,9 +2441,9 @@ in its retreat.
 </ul>
 <div class="maths">
 \begin{aligned}
-  s_1 &amp;:= s_1 / 10 = 8000 / 10 = 800 \\
-  s_2 &amp;:= s_2 / 10 = 1600 / 10 = 160 \\
-  L &amp;:= L / 10^2 = 100 / 100 = 1
+  {\colv s_1} &amp;:= s_1 / 10 = 8000 / 10 = {\colv 800} \\
+  {\colv s_2} &amp;:= s_2 / 10 = 1600 / 10 = {\colv 160} \\
+  {\colr L} &amp;:= L / 10^2 = 100 / 100 = {\colr 1}
 \end{aligned}
 </div>
 <div class="centred-svg">
@@ -2436,16 +2459,16 @@ in its retreat.
 <text x="4" y="1" font-size="0.8">1</text>
 <text x="5" y="1" font-size="0.8">6</text>
 <text x="6" y="1" font-size="0.8">7</text>
-<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
-<text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
-<text x="-1" y="2" font-size="0.8">方法</text>
-<text x="4" y="2" font-size="0.8">8</text>
-<text x="-1" y="3" font-size="0.8">廉法</text>
-<text x="4" y="3" font-size="0.8">1</text>
-<text x="5" y="3" font-size="0.8">6</text>
-<text class="maths-italic" x="-3" y="4" font-size="0.8">L</text>
-<text x="-1" y="4" font-size="0.8">下法</text>
-<text x="6" y="4" font-size="0.8">1</text>
+<text class="maths-italic violet" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic violet" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="violet" x="-1" y="2" font-size="0.8">方法</text>
+<text class="violet" x="4" y="2" font-size="0.8">8</text>
+<text class="violet" x="-1" y="3" font-size="0.8">廉法</text>
+<text class="violet" x="4" y="3" font-size="0.8">1</text>
+<text class="violet" x="5" y="3" font-size="0.8">6</text>
+<text class="maths-italic red" x="-3" y="4" font-size="0.8">L</text>
+<text class="red" x="-1" y="4" font-size="0.8">下法</text>
+<text class="red" x="6" y="4" font-size="0.8">1</text>
 <path class="step" d="M 3 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
 <path class="step" d="M 3 3 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
 <path class="step" d="M 4 4 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" marker-end="url(#arrowhead)"/>
@@ -2453,34 +2476,35 @@ in its retreat.
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">復置上商四，以次前。</span>
+<span lang="zh-Hant">復<span class="green">置上商四</span>，以次前。</span>
 <hr>
-Put again <i>for the</i> upper quotient four<span class="numeral">&nbsp;(4)</span>,
+<span class="green">Put</span> again <span class="green"><i>for the</i> upper quotient four<span class="numeral">&nbsp;(4)</span></span>,
 to be next <i>after the digit</i> before.
 </div>
 <p>
-The <b>ones digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)
-is the largest <span class="maths">a_3</span> such that <span class="maths">a_3 (s_1 + s_2 + a_3 L) \le d</span>,
+The <span class="green"><b>ones digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)</span>
+is the largest <span class="maths">\colg a_3</span> such that
+<span class="maths">{\colg a_3} ({\colv s_1} + {\colv s_2} + {\colg a_3} {\colr L}) \le {\colb d}</span>,
 or
 </p>
 <div class="maths">
-a_3 (800 + 160 + a_3) \le 4167,
+{\colg a_3} ({\colv 800} + {\colv 160} + {\colg a_3}) \le {\colb 4167},
 </div>
 <p>
 i.e.
 </p>
 <div class="maths">
-a_3 := 4.
+{\colg a_3} := {\colg 4}.
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7">
-<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="green" x="-1" y="0" font-size="0.8">上商</text>
 <text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
 <text x="4" y="0" font-size="0.8">4</text>
 <text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
 <text x="5" y="0" font-size="0.8">8</text>
-<text class="maths-italic" x="6" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">3</tspan></text>
-<text x="6" y="0" font-size="0.8">4</text>
+<text class="maths-italic green" x="6" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text class="green" x="6" y="0" font-size="0.8">4</text>
 <text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
 <text x="-1" y="1" font-size="0.8">實</text>
 <text x="3" y="1" font-size="0.8">4</text>
@@ -2501,11 +2525,11 @@ a_3 := 4.
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">副置四於方法之下，下法之上，名曰隅法。</span>
+<span lang="zh-Hant">副<span class="violet">置四</span>於方法之下，下法之上，名曰<span class="violet">隅法</span>。</span>
 <hr>
-Subsidiarily, put <i>down</i> four<span class="numeral">&nbsp;(4)</span>
+Subsidiarily, <span class="violet">put <i>down</i> four<span class="numeral">&nbsp;(4)</span></span>
 below <i>the</i> upright divisor, <i>and</i> above <i>the</i> lower divisor;
-<i>its</i> name <i>be</i> called <i>the</i> honest divisor.
+<i>its</i> name <i>be</i> called <span class="violet"><i>the</i> honest divisor</span>.
 </div>
 <ul>
 <li><span lang="zh-Hant">隅：廉也；</span>
@@ -2513,10 +2537,10 @@ honest
 </li>
 </ul>
 <p>
-The third straight divisor is the <b>honest divisor</b>&nbsp;(<span lang="zh-Hant">隅法</span>)
+The third straight divisor is the <span class="violet"><b>honest divisor</b>&nbsp;(<span lang="zh-Hant">隅法</span>)</span>
 </p>
 <div class="maths">
-s_3 := a_3 L = 4 \times 1 = 4.
+{\colv s_3} := a_3 L = 4 \times 1 = {\colv 4}.
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8">
@@ -2535,14 +2559,14 @@ s_3 := a_3 L = 4 \times 1 = 4.
 <text x="6" y="1" font-size="0.8">7</text>
 <text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
 <text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
-<text class="maths-italic" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text class="maths-italic violet" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
 <text x="-1" y="2" font-size="0.8">方法</text>
 <text x="4" y="2" font-size="0.8">8</text>
 <text x="-1" y="3" font-size="0.8">廉法</text>
 <text x="4" y="3" font-size="0.8">1</text>
 <text x="5" y="3" font-size="0.8">6</text>
-<text x="-1" y="4" font-size="0.8">隅法</text>
-<text x="6" y="4" font-size="0.8">4</text>
+<text class="violet" x="-1" y="4" font-size="0.8">隅法</text>
+<text class="violet" x="6" y="4" font-size="0.8">4</text>
 <text class="maths-italic" x="-3" y="5" font-size="0.8">L</text>
 <text x="-1" y="5" font-size="0.8">下法</text>
 <text x="6" y="5" font-size="0.8">1</text>
@@ -2550,11 +2574,11 @@ s_3 := a_3 L = 4 \times 1 = 4.
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">方、廉、隅各命上商四，以除實。</span>
+<span lang="zh-Hant"><span class="violet">方、廉、隅各命</span><span class="green">上商四</span>，以<span class="blue">除實</span>。</span>
 <hr>
-Each of <i>the</i> upright, <i>the</i> incorrupt <i>and the</i> honest
-commandeth <i>the</i> upper quotient's four<span class="numeral">&nbsp;(4)</span>,
-to be removed from <i>the</i> dividend.
+<span class="violet">Each of <i>the</i> upright, <i>the</i> incorrupt <i>and the</i> honest commandeth</span>
+<span class="green"><i>the</i> upper quotient's four<span class="numeral">&nbsp;(4)</span></span>,
+to be <span class="blue">removed from <i>the</i> dividend</span>.
 </div>
 <ul>
 <li>
@@ -2564,9 +2588,10 @@ is missing <span lang="zh-Hant">以</span>.
 </ul>
 <div class="maths">
 \begin{aligned}
-  d &amp;:= d - a_3 (s_1 + s_2 + s_3) \\
-    &amp;= 4167 - 4 \times (800 + 160 + 4) \\
-    &amp;= 311
+  {\colb d}
+  &amp;:= {\colb d} - {\colg a_3} {\colv (s_1 + s_2 + s_3)} \\
+  &amp;= {\colb 4167} - {\colg 4} \times {\colv (800 + 160 + 4)} \\
+  &amp;= {\colb 311}
 \end{aligned}
 </div>
 <div class="centred-svg">
@@ -2578,11 +2603,11 @@ is missing <span lang="zh-Hant">以</span>.
 <text x="5" y="0" font-size="0.8">8</text>
 <text class="maths-italic" x="6" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">3</tspan></text>
 <text x="6" y="0" font-size="0.8">4</text>
-<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
-<text x="-1" y="1" font-size="0.8">實</text>
-<text x="4" y="1" font-size="0.8">3</text>
-<text x="5" y="1" font-size="0.8">1</text>
-<text x="6" y="1" font-size="0.8">1</text>
+<text class="maths-italic blue" x="-3" y="1" font-size="0.8">d</text>
+<text class="blue" x="-1" y="1" font-size="0.8">實</text>
+<text class="blue" x="4" y="1" font-size="0.8">3</text>
+<text class="blue" x="5" y="1" font-size="0.8">1</text>
+<text class="blue" x="6" y="1" font-size="0.8">1</text>
 <text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
 <text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
 <text class="maths-italic" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
@@ -2600,9 +2625,9 @@ is missing <span lang="zh-Hant">以</span>.
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">除訖，倍隅法，從方法。</span>
+<span lang="zh-Hant">除訖，<span class="violet">倍隅法</span>，從方法。</span>
 <hr>
-<i>The</i> removal finished, double <i>the</i> honest divisor,
+<i>The</i> removal finished, <span class="violet">double <i>the</i> honest divisor</span>,
 <i>which</i> followeth <i>the</i> upright divisor.
 </div>
 <ul>
@@ -2612,7 +2637,7 @@ is missing <span lang="zh-Hant">倍隅法，從方法</span>.
 </li>
 </ul>
 <div class="maths">
-s_3 := 2 s_3 = 2 \times 4 = 8
+{\colv s_3} := 2 s_3 = 2 \times 4 = {\colv 8}
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8">
@@ -2630,14 +2655,14 @@ s_3 := 2 s_3 = 2 \times 4 = 8
 <text x="6" y="1" font-size="0.8">1</text>
 <text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
 <text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
-<text class="maths-italic" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text class="maths-italic violet" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
 <text x="-1" y="2" font-size="0.8">方法</text>
 <text x="4" y="2" font-size="0.8">8</text>
 <text x="-1" y="3" font-size="0.8">廉法</text>
 <text x="4" y="3" font-size="0.8">1</text>
 <text x="5" y="3" font-size="0.8">6</text>
-<text x="-1" y="4" font-size="0.8">隅法</text>
-<text x="6" y="4" font-size="0.8">8</text>
+<text class="violet" x="-1" y="4" font-size="0.8">隅法</text>
+<text class="violet" x="6" y="4" font-size="0.8">8</text>
 <text class="maths-italic" x="-3" y="5" font-size="0.8">L</text>
 <text x="-1" y="5" font-size="0.8">下法</text>
 <text x="6" y="5" font-size="0.8">1</text>
@@ -2645,45 +2670,80 @@ s_3 := 2 s_3 = 2 \times 4 = 8
 </svg>
 </div>
 <div class="boxed translation">
-<span lang="zh-Hant">上商得四百八十四，下法得九百六十八，不盡三百一十一。</span>
+<span lang="zh-Hant"><span class="green">上商得四百八十四</span>，<span class="violet">下法得九百六十八</span>，<span class="blue">不盡三百一十一</span>。</span>
 <hr>
-<i>The</i> upper quotient resulteth in
-four hundred <i>and</i> eighty-four<span class="numeral">&nbsp;(484)</span>,
-<i>and the</i> lower divisors result in
-nine hundred <i>and</i> sixty-eight<span class="numeral">&nbsp;(968)</span>,
-<i>with</i> remainder
-three hundred <i>and</i> eleven<span class="numeral">&nbsp;(311)</span>.
+<span class="green"><i>The</i> upper quotient resulteth in
+four hundred <i>and</i> eighty-four<span class="numeral">&nbsp;(484)</span></span>,
+<span class="violet"><i>and the</i> lower divisors result in
+nine hundred <i>and</i> sixty-eight<span class="numeral">&nbsp;(968)</span></span>,
+<span class="blue"><i>with</i> remainder
+three hundred <i>and</i> eleven<span class="numeral">&nbsp;(311)</span></span>.
 </div>
 <ul>
 <li><span lang="zh-Hant">下法：</span>
 lower divisors<br>
 Confusingly, this refers not to the lower divisor&nbsp;(<span lang="zh-Hant">下法</span>),
-currently <span class="maths">L = 1</span>,
+currently <span class="maths">\colr L = 1</span>,
 but to the total of the three straight divisors,
-upright (<span class="maths">s_1</span>), incorrupt (<span class="maths">s_2</span>) and honest (<span class="maths">s_3</span>).
+upright (<span class="maths">\colv s_1</span>),
+incorrupt (<span class="maths">\colv s_2</span>) and
+honest (<span class="maths">\colv s_3</span>).
 </li>
 </ul>
 <div class="maths">
 \begin{aligned}
-  U &amp;:= 100 a_1 + 10 a_2 + a_3 = 484 \\
-  L &amp;:= s_1 + s_2 + s_3 = 968 \\
-  R &amp;:= d = 311
+  {\colg U} &amp;:= {\colg 100 a_1 + 10 a_2 + a_3} = {\colg 484} \\
+  {\colv L} &amp;:= {\colv s_1 + s_2 + s_3} = {\colv 968} \\
+  {\colb R} &amp;:= {\colb d} = {\colb 311}
 \end{aligned}
 </div>
+<p>
+The final arrangement of counting rods is thus:
+</p>
+<div class="centred-svg">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8">
+<text class="green" x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic green" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="green" x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic green" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="green" x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic green" x="6" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text class="green" x="6" y="0" font-size="0.8">4</text>
+<text class="maths-italic blue" x="-3" y="1" font-size="0.8">d</text>
+<text class="blue" x="-1" y="1" font-size="0.8">實</text>
+<text class="blue" x="4" y="1" font-size="0.8">3</text>
+<text class="blue" x="5" y="1" font-size="0.8">1</text>
+<text class="blue" x="6" y="1" font-size="0.8">1</text>
+<text class="maths-italic violet" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic violet" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="maths-italic violet" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text class="violet" x="-1" y="2" font-size="0.8">方法</text>
+<text class="violet" x="4" y="2" font-size="0.8">8</text>
+<text class="violet" x="-1" y="3" font-size="0.8">廉法</text>
+<text class="violet" x="4" y="3" font-size="0.8">1</text>
+<text class="violet" x="5" y="3" font-size="0.8">6</text>
+<text class="violet" x="-1" y="4" font-size="0.8">隅法</text>
+<text class="violet" x="6" y="4" font-size="0.8">8</text>
+<text class="maths-italic red" x="-3" y="5" font-size="0.8">L</text>
+<text class="red" x="-1" y="5" font-size="0.8">下法</text>
+<text class="red" x="6" y="5" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="6.5"/>
+</svg>
+</div>
 <div class="boxed translation">
-<span lang="zh-Hant">是為方四百八十四步九百六十八分步之三百一十一。</span>
+<span lang="zh-Hant">是為方<span class="green">四百八十四</span>步<span class="violet">九百六十八分</span>步之<span class="blue">三百一十一</span>。</span>
 <hr>
 This be <i>a</i> square <i>of edge</i>
-four hundred <i>and</i> eighty-four<span class="numeral">&nbsp;(484)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>
-<i>and</i> three hundred <i>and</i> eleven
-nine hundred <i>and</i> sixty-eighths<span class="numeral">&nbsp;(311/968)</span>
+<span class="green">four hundred <i>and</i> eighty-four<span class="numeral">&nbsp;(484)</span></span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>
+<i>and</i> <span class="blue">three hundred <i>and</i> eleven</span>
+<span class="violet">nine hundred <i>and</i> sixty-eighths</span><span class="numeral">&nbsp;(311/968)</span>
 of <i>a</i> <span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>.
 </div>
 <div class="maths">
 \begin{aligned}
   \sqrt{234567 \unit{步}^2}
-  &amp;\approx \left( U + \frac{R}{L} \right) \unit{步} \\
-  &amp;= 484 \tfrac{311}{968} \unit{步}
+  &amp;\approx \left( {\colg U} + \frac{\colb R}{\colv L} \right) \unit{步} \\
+  &amp;= {\colg 484} \tfrac{\colb 311}{\colv 968} \unit{步}
 \end{aligned}
 </div>
 <div class="end">
