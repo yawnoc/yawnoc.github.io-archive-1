@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20191231 | dmr
+  | 20190609 | 20200102 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -289,7 +289,7 @@
   {and the} twelve<:n>12</:n> shares above.
   Put subsidiarily {the} two places,
   {and} diminish {the} greater by {the} lesser.
-  {For the} equal quantity {we} obtain six<:n>6</:n>
+  {For the} equal quantity {there} resulteth six<:n>6</:n>
   as {the} divisor, {and} reducing them, {we} are done.
 </#t>
 <ul>
@@ -320,7 +320,7 @@
 <ul>
   <li>以少減多，等數得六：
     diminish {the} greater by {the} lesser.
-    {For the} equal quantity {we} obtain six<:n>6</:n><br>
+    {For the} equal quantity {there} resulteth six<:n>6</:n><br>
     In my opinion this description of the algorithm lacks clarity;
     there isn't any instruction here to <strong>repeat</strong> the subtraction
     <strong>until</strong> you get the equal quantity~6.
