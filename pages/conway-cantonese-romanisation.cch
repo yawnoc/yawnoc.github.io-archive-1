@@ -1,5 +1,5 @@
 <*>
-  Conway's Custom Romanisation for Cantonese | 20190407 | 20191221 | d
+  Conway's Custom Romanisation for Cantonese | 20190407 | 20200103 | d
   | Conway's custom romanisation system for Cantonese, \
     with English approximations and a diagram of the nine tones.
 </*>
@@ -349,6 +349,14 @@
   
 </table></!>
 
+<@4>
+  On
+    \{<^e><:h>ts</:h></^e> vs <^e><:h>ch</:h></^e>\},
+    \{<^e><:h>ts'</:h></^e> vs <^e><:h>ch'</:h></^e>\} and
+    \{<^e><:h>s</:h></^e> vs <^e><:h>sh</:h></^e>\}
+  | ts-vs-ch
+</@4>
+
 <p>
   Modern Cantonese has merged the initials in the pairs
     \{將~<^e><:h>ts</:h>oeng</^e> vs 張~<^e><:h>ch</:h>oeng</^e>\},
@@ -448,7 +456,7 @@
     as <^e><:h>s</:h>ek</^e>~/~[sɛːk̚].
   The \{<:v><^e>ts</^e></:v>~vs~<:v><^e>ch</^e></:v>\}
   and \{<:v><^e>ts'</^e></:v>~vs~<:v><^e>ch'</^e></:v>\} tendencies
-  are not as strong.
+  are not as strong, but still prevalent.
 </p>
 
 <p>
