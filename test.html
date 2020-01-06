@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Test page</title>
+</head>
+<body>
+  <h1>Test page</h1>
+  <h2>Default dx</h2>
+  <div>
+    <svg width="240px" viewBox="0 -2 10 2">
+      <path d="M 0,-2 L 0,0 L 10,0"/>
+      <text font-size="2" x="0" y="0">A</text>
+    </svg>
+  </div>
+  <h2>dx="2"</h2>
+  <div>
+    <svg width="240px" viewBox="0 -2 10 2">
+      <path d="M 0,-2 L 0,0 L 10,0"/>
+      <text font-size="2" x="0" y="0" dx="2">A</text>
+    </svg>
+  </div>
+  <h2>dx="2em"</h2>
+  <div>
+    <svg width="240px" viewBox="0 -2 10 2">
+      <path d="M 0,-2 L 0,0 L 10,0"/>
+      <text font-size="2" x="0" y="0" dx="2em">A</text>
+    </svg>
+  </div>
+  <svg width="0px" height="0px">
+    <style>
+      path {
+        fill: none;
+        stroke: black;
+        vector-effect: non-scaling-stroke;
+      }
+    </style>
+  </svg>
+</body>
+</html>
