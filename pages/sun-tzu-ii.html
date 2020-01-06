@@ -32,7 +32,7 @@
 </h1>
 <p class="page-properties">
 First created:&nbsp;20190609<br>
-Last modified:&nbsp;<b>20200102</b><br>
+Last modified:&nbsp;<b>20200106</b><br>
 Also known as <i>Sunzi Suanjing</i>: Volume&nbsp;II.
 </p>
 <h2 id="volumes"><a class="self-link" href="#volumes"></a>
@@ -2540,7 +2540,10 @@ honest
 The third straight divisor is the <span class="violet"><b>honest divisor</b>&nbsp;(<span lang="zh-Hant">隅法</span>)</span>
 </p>
 <div class="maths">
-{\colv s_3} := a_3 L = 4 \times 1 = {\colv 4}.
+{\colv s_3}
+:= {\colg a_3} {\colr L}
+= {\colg 4} \times {\colr 1}
+= {\colv 4}.
 </div>
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8">
@@ -2739,13 +2742,134 @@ This be <i>a</i> square <i>of edge</i>
 <span class="violet">nine hundred <i>and</i> sixty-eighths</span><span class="numeral">&nbsp;(311/968)</span>
 of <i>a</i> <span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>.
 </div>
+<p>
+Thus the algorithm gives
+</p>
 <div class="maths">
 \begin{aligned}
   \sqrt{234567 \unit{步}^2}
   &amp;\approx \left( {\colg U} + \frac{\colb R}{\colv L} \right) \unit{步} \\
-  &amp;= {\colg 484} \tfrac{\colb 311}{\colv 968} \unit{步}
+  &amp;= {\colg 484} \tfrac{\colb 311}{\colv 968} \unit{步},
 \end{aligned}
 </div>
+<p>
+which has relative error <span class="maths">2.2 \times 10^{-7}</span>.
+</p>
+<h4 id="sqrt"><a class="self-link" href="#sqrt"></a>
+Summary of Sun&nbsp;Tzŭ's square root algorithm
+</h4>
+<p>
+In general, to compute the square root of the positive integer <span class="maths">x</span>:
+</p>
+<ol class="sparse-list">
+<li>
+Compute the number of digits of <span class="maths">x</span>:
+<div class="maths">
+N := \lfloor \log_{10} x \rfloor + 1
+</div>
+</li>
+<li>
+Compute the number of digits of the <span class="green">upper quotient&nbsp;(<span lang="zh-Hant">上商</span>)</span>,
+which is the integer part of <span class="maths">\sqrt{x}</span>:
+<div class="maths">
+n := \left\lceil \frac{N}{2} \right\rceil
+</div>
+</li>
+<li>
+Initialise the <span class="red">lower divisor&nbsp;(<span lang="zh-Hant">下法</span>)</span>:
+<div class="maths">
+{\colr L} := (10 ^ {n - 1}) ^ 2
+</div>
+</li>
+<li>
+Initialise the <span class="blue">dividend&nbsp;(<span lang="zh-Hant">實</span>)</span>:
+<div class="maths">
+{\colb d} := x
+</div>
+</li>
+<li>
+<span class="small-caps">For</span> <span class="maths">i = 1, 2, \dots, n</span>:
+<ul class="sparse-list">
+<li>
+Determine the <span class="green"><span class="maths">i</span>th digit of the upper quotient&nbsp;(<span lang="zh-Hant">上商</span>)</span>,
+the largest integer <span class="maths">\colg a_i</span> such that
+<div class="maths">
+{\colg a_i} [
+  ({\colv s_1} + \dots + {\colv s_{i-1}})
+  + {\colg a_i} {\colr L}
+] \le {\colb d}.
+</div>
+</li>
+<li>
+Determine the <span class="violet"><span class="maths">i</span>th straight divisor</span>:
+<div class="maths">
+{\colv s_i} := {\colg a_i} {\colr L}
+</div>
+<p>
+(The first three are named:
+<span class="maths">\colv s_1</span> upright&nbsp;(<span lang="zh-Hant">方</span>),
+<span class="maths">\colv s_2</span> incorrupt&nbsp;(<span lang="zh-Hant">廉</span>), and
+<span class="maths">\colv s_3</span> honest&nbsp;(<span lang="zh-Hant">隅</span>).)
+</p>
+</li>
+<li>
+Update the <span class="blue">dividend&nbsp;(<span lang="zh-Hant">實</span>)</span>:
+<div class="maths">
+{\colb d} :=
+{\colb d} - {\colg a_i} [
+  ({\colv s_1} + \dots + {\colv s_{i-1}})
+  + {\colv s_i}
+]
+</div>
+</li>
+<li>
+Double the <span class="violet"><span class="maths">i</span>th straight divisor</span>:
+<div class="maths">
+{\colv s_i} := 2 s_i
+</div>
+</li>
+<li>
+<span class="small-caps">If</span> <span class="maths">i &lt; n</span>:
+<ul>
+<li>
+Retreat the divisors:
+<div class="maths">
+\begin{aligned}
+  {\colv s_1} &amp;:= s_1 / 10 \\
+              &amp;\quad \vdots \\
+  {\colv s_i} &amp;:= s_i / 10 \\
+  {\colr L}   &amp;:= L / 10^2
+\end{aligned}
+</div>
+</li>
+</ul>
+<span class="small-caps">End&nbsp;If</span>
+</li>
+</ul>
+<span class="small-caps">End&nbsp;For</span>
+</li>
+<li>
+Compute
+the <span class="green">upper quotient&nbsp;(<span lang="zh-Hant">上商</span>)</span>,
+the <span class="violet">sum of the straight divisors</span>,
+and the <span class="blue">remainder&nbsp;(<span lang="zh-Hant">不盡</span>)</span>:
+<div class="maths">
+\begin{aligned}
+  {\colg U} &amp;:= {\colg 10^{n-1} a_1 + 10^{n-2} a_2 + \dots + a_n} \\
+  {\colv L} &amp;:= {\colv s_1 + s_2 + \dots + s_n} \\
+  {\colb R} &amp;:= {\colb d}
+\end{aligned}
+</div>
+</li>
+<li>
+<span class="small-caps">Return</span>
+<span class="maths">{\colg U} + {\colb R} / {\colv L}</span>.
+</li>
+</ol>
+<p>
+For an implementation in Python, see
+<a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/code/sun_tzu_sqrt.py" title="Python: Sun&nbsp;Tzŭ square root algorithm"><code>/code/sun_tzu_sqrt.py</code></a>.
+</p>
 <div class="end">
 <span class="red">WORK IN PROGRESS</span>
 </div>

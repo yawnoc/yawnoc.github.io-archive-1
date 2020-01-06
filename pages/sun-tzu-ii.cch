@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20200102 | dmr
+  | 20190609 | 20200106 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -2837,7 +2837,10 @@
   The third straight divisor is the <:v><b>honest divisor</b>~(隅法)</:v>
 </p>
 <$$>
-  {\colv s_3} := a_3 L = 4 \times 1 = {\colv 4}.
+  {\colv s_3}
+  := {\colg a_3} {\colr L}
+  = {\colg 4} \times {\colr 1}
+  = {\colv 4}.
 </$$>
 
 <div class="centred-svg">
@@ -3194,13 +3197,142 @@
     of {a} 步<^> pou | pu | bu </^>.
 </#t>
 
+<p>
+  Thus the algorithm gives
+</p>
 <$$>
   \begin{aligned}
     \sqrt{234567 \unit{步}^2}
     &\approx \left( {\colg U} + \frac{\colb R}{\colv L} \right) \unit{步} \\
-    &= {\colg 484} \tfrac{\colb 311}{\colv 968} \unit{步}
+    &= {\colg 484} \tfrac{\colb 311}{\colv 968} \unit{步},
   \end{aligned}
 </$$>
+<p>
+  which has relative error <$>2.2 \times 10^{-7}</$>.
+</p>
+
+<@4>
+  Summary of <^e>Sun~Tzuu</^e>'s square root algorithm
+  | sqrt
+</@4>
+
+<p>
+  In general, to compute the square root of the positive integer <$>x</$>:
+</p>
+<ol class="sparse-list">
+  <li>
+    Compute the number of digits of <$>x</$>:
+    <$$>
+      N := \lfloor \log_{10} x \rfloor + 1
+    </$$>
+  </li>
+  <li>
+    Compute the number of digits of the <:g>upper quotient~(上商)</:g>,
+    which is the integer part of <$>\sqrt{x}</$>:
+    <$$>
+      n := \left\lceil \frac{N}{2} \right\rceil
+    </$$>
+  </li>
+  <li>
+    Initialise the <:r>lower divisor~(下法)</:r>:
+    <$$>
+      {\colr L} := (10 ^ {n - 1}) ^ 2
+    </$$>
+  </li>
+  <li>
+    Initialise the <:b>dividend~(實)</:b>:
+    <$$>
+      {\colb d} := x
+    </$$>
+  </li>
+  <li>
+    <span class="small-caps">For</span> <$>i = 1, 2, \dots, n</$>:
+    <ul class="sparse-list">
+      <li>
+        Determine the <:g><$>i</$>th digit of the upper quotient~(上商)</:g>,
+        the largest integer <$>\colg a_i</$> such that
+        <$$>
+          {\colg a_i} [
+            ({\colv s_1} + \dots + {\colv s_{i-1}})
+            + {\colg a_i} {\colr L}
+          ] \le {\colb d}.
+        </$$>
+      </li>
+      <li>
+        Determine the <:v><$>i</$>th straight divisor</:v>:
+        <$$>
+          {\colv s_i} := {\colg a_i} {\colr L}
+        </$$>
+        <p>
+          (The first three are named:
+            <$>\colv s_1</$> upright~(方),
+            <$>\colv s_2</$> incorrupt~(廉), and
+            <$>\colv s_3</$> honest~(隅).\
+          )
+        </p>
+      </li>
+      <li>
+        Update the <:b>dividend~(實)</:b>:
+        <$$>
+          {\colb d} :=
+          {\colb d} - {\colg a_i} [
+            ({\colv s_1} + \dots + {\colv s_{i-1}})
+            + {\colv s_i}
+          ]
+        </$$>
+      </li>
+      <li>
+        Double the <:v><$>i</$>th straight divisor</:v>:
+        <$$>
+          {\colv s_i} := 2 s_i
+        </$$>
+      </li>
+      <li>
+        <span class="small-caps">If</span> <$>i < n</$>:
+        <ul>
+          <li>
+            Retreat the divisors:
+            <$$>
+              \begin{aligned}
+                {\colv s_1} &:= s_1 / 10 \\
+                            &\quad \vdots \\
+                {\colv s_i} &:= s_i / 10 \\
+                {\colr L}   &:= L / 10^2
+              \end{aligned}
+            </$$>
+          </li>
+        </ul>
+        <span class="small-caps">End~If</span>
+      </li>
+    </ul>
+    <span class="small-caps">End~For</span>
+  </li>
+  <li>
+    Compute
+      the <:g>upper quotient~(上商)</:g>,
+      the <:v>sum of the straight divisors</:v>,
+      and the <:b>remainder~(不盡)</:b>:
+    <$$>
+      \begin{aligned}
+        {\colg U} &:= {\colg 10^{n-1} a_1 + 10^{n-2} a_2 + \dots + a_n} \\
+        {\colv L} &:= {\colv s_1 + s_2 + \dots + s_n} \\
+        {\colb R} &:= {\colb d}
+      \end{aligned}
+    </$$>
+  </li>
+  <li>
+    <span class="small-caps">Return</span>
+    <$>{\colg U} + {\colb R} / {\colv L}</$>.
+  </li>
+</ol>
+<p>
+  For an implementation in Python, see
+  <@>
+    <`>/code/sun_tzu_sqrt.py</`>
+    | \/code/sun_tzu_sqrt.py
+    | Python: <^e>Sun~Tzuu</^e> square root algorithm
+  </@>.
+</p>
 
 
 <div class="end">
