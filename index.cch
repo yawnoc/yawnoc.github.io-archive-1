@@ -1,5 +1,5 @@
 <*>
-  | 20190309 | 20200103 | d
+  | 20190309 | 20200107 | d
   | Assorted musings of Conway, mostly applied maths and Literary Chinese.
 </*>
 
@@ -302,13 +302,16 @@
 <ul class="site-history">
   
   <li><span>20200101:</span>
-    A stoppage at today's march, shortly before it was 腰斬ed by police:<br>
-    <+>
-      /images/demonstration-20200101-hennessy.jpg
-      | 1 January 2020 demonstration,
-        Hennessy Road before Canal Road Flyover, Hong Kong
-      | 香港人！撐落去！
-    </+>
+    A stoppage at today's march, shortly before it was 腰斬ed by police:
+    <div class="centred-flex dense">
+      <+>
+        /images/demonstration-20200101-hennessy.jpg
+        | 1 January 2020 demonstration,
+          Hennessy Road before Canal Road Flyover, Hong Kong
+        | 香港人！撐落去！
+        | 480
+      </+>
+    </div>
     I believe I appear in
     <@>
       this timelapse
