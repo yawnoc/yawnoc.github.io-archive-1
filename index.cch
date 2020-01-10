@@ -47,7 +47,7 @@
   
   <tr><td>
     <@>
-      <b>A <:t>cynic's</:t> 7.30 (and other programs)</b>
+      <b>A cynic's 7.30 (and other programs)</b>
       | /cynicism/7-30.html
       | A cynic's 7.30 (and other programs)
     </@>
@@ -368,11 +368,7 @@
   
   <li><span>20190830:</span>
     New series:
-    <@>
-      A <:t>cynic's</:t> 7.30
-      | /cynicism/7-30.html
-      | A cynic's 7.30
-    </@>.
+    <@> A cynic's 7.30 | /cynicism/7-30.html | </@>.
   </li>
   
   <li><span>20190822:</span>

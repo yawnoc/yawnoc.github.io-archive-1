@@ -784,10 +784,6 @@ td ul {
   font-family: 'Comic_Neue', sans-serif;
 }
 
-nav .thought, ul.site-history li:first-child .thought {
-  background: transparent;
-}
-
 /* Whitespace */
 
 .collapsed-no-wrapping {
