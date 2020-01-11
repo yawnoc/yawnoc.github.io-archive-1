@@ -14,11 +14,18 @@ import os
 import re
 
 # Get list of all HTML pages
+EXCLUDED_PAGES = [
+  f'{file_name}.html'
+    for file_name in [
+      'googlefe5d4ec3587d5f3a',
+      'test'
+    ]
+]
 sitemap = [
   os.path.join(path, name)
     for path, _, files in os.walk('.')
       for name in files
-        if name.endswith('.html') and name != 'googlefe5d4ec3587d5f3a.html'
+        if name.endswith('.html') and name not in EXCLUDED_PAGES
 ]
 
 # Convert list to newline-separated string
