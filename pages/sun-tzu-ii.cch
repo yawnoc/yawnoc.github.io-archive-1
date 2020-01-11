@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20200106 | dmr
+  | 20190609 | 20200111 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -186,7 +186,10 @@
     <td class="heading">Volume of a rectangular prism</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶19 | #19 | Vol. II ¶19 </@></td>
+    <td class="centred-text">
+      <@> ¶19 | #19 | Vol. II ¶19 </@>
+      <@> ¶20 | #20 | Vol. II ¶20 </@>
+    </td>
     <td class="heading">Rod calculus: square root algorithm</td>
   </tr>
 </table></!>
@@ -3333,6 +3336,233 @@
     | Python: <^e>Sun~Tzuu</^e> square root algorithm
   </@>.
 </p>
+
+<;sh> 2 | 20 | Rod calculus: square root algorithm </;sh>
+<;s@@> 2 | 20 | 42 | 156 | 52189 | 20 | 54 </;s@@>
+
+<#t>
+  今有積三萬五千步。問為圓幾何？ |
+  Now there be area,
+  thirty-five thousand<:n>35000</:n>~步<^> pou | pu | bu </^>.
+  {We} ask: be {this a} circle {of circumference} how much?
+</#t>
+
+<#t>
+  答曰：六百四十八步一千二百九十六分步之九十六。 |
+  Answer saith:
+    six hundred {and} forty-eight<:n>648</:n>~步<^> pou | pu | bu </^>
+    {and} ninety-six
+      one thousand, two hundred {and} ninety-sixths<:n>96/1296</:n>
+    of {a} 步<^> pou | pu | bu </^>.
+</#t>
+
+<#t>
+  術曰：置積三萬五千步。以一十二乘之，得四十二萬為<:b>實</:b>。 |
+  Method saith: put {down the} area,
+    thirty-five thousand<:n>35000</:n>~步<^> pou | pu | bu </^>.
+  Multiplying it by twelve<:n>12</:n>, resulteth in
+    four hundred {and} twenty thousand<:n>420000</:n>
+  as <:b>{the} dividend</:b>.
+</#t>
+<ul>
+  <li>
+    <@>
+      Version~C
+      | https://ctext.org/sunzi-suan-jing#n52189
+      | ctext.org database page
+    </@>
+    has 四十二萬步 for 四十二萬.
+  </li>
+</ul>
+
+<p>
+  In modern notation
+  (but taking <$>\pi \approx 3</$> i.e. <$>4\pi \approx 12</$>
+  as per <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | </@>),
+  the circumference of a circle of area <$>A = 35000 \unit{步}^2</$> is
+</p>
+<$$>
+  \begin{aligned}
+    C &\approx \sqrt{12 A} \\
+      &= \sqrt{420000} \unit{步}.
+  \end{aligned}
+</$$>
+<p>
+  The balance of this paragraph involves extracting the square root of~420000.
+  For a fully annotated and diagrammed walkthrough of
+  <^e>Sun~Tzuu</^e>'s square root algorithm,
+  see the previous <@> ¶19 | /pages/sun-tzu-ii.html#19 | Vol.~II ¶19 </@>
+  and the
+  <@>
+    pseudocode summary
+    | #sqrt
+    | Summary of <^e>Sun~Tzuu</^e>'s square root algorithm
+  </@>,
+  whose detail I will not be repeating here.
+</p>
+
+<#t>
+  次<:r>借一算為下法</:r>。<:r>步之，超一位，至百而止</:r>。 |
+  Next, <:r>borrow one rod, {to} be {the} lower divisor</:r>.
+  <:r>Step it {forth}, jumping over one place,
+  {even} unto {the} hundreds<:n>100s</:n>, and stop</:r>.
+</#t>
+
+<#t>
+  <:g>上商置六百</:g>於實之上。 |
+  <:g>{For the} upper quotient,
+  put {down} six hundred<:n>600</:n></:g> above {the} dividend.
+</#t>
+<ul>
+  <li>
+    <@>
+      Version~A
+      | https://archive.org/details/02094034.cn/page/n42
+      | 02094034.cn at archive.org
+    </@>
+    erroneously has 餘於 for 於.
+  </li>
+</ul>
+
+<#t>
+  副<:v>置六萬</:v>於實之下，下法之上，名為<:v>方法</:v>。 |
+  Subsidiarily, <:v>put {down} sixty thousand<:n>60000</:n></:v>
+  below {the} dividend, {and} above {the} lower divisor;
+  {its} name be <:v>{the} upright divisor</:v>.
+</#t>
+
+<#t>
+  <:g>命上商六百</:g><:b>除實</:b>。 |
+  <:g>Command {the} upper quotient's six hundred<:n>600</:n></:g>,
+  <:b>{and} remove {this} from {the} dividend</:b>.
+</#t>
+
+<#t>
+  除訖，<:v>倍方法</:v>。 |
+  {The} removal finished, <:v>double {the} upright divisor</:v>.
+</#t>
+
+<#t>
+  <:v>方法一退</:v>，<:r>下法再退</:r>。 |
+  <:v>{The} upright divisor retreateth once</:v>;
+  <:r>{the} lower divisor retreateth again</:r>.
+</#t>
+
+<#t>
+  復<:g>置上商四十</:g>，以次前商。 |
+  <:g>Put</:g> again <:g>{for the} upper quotient forty<:n>40</:n></:g>,
+  to be next {after the} quotient {digit} before.
+</#t>
+
+<#t>
+  副<:v>置四百</:v>於方法之下，下法之上，名為<:v>廉法</:v>。 |
+  Subsidiarily, <:v>put {down} four hundred<:n>400</:n></:v>
+  below {the} upright divisor, {and} above {the} lower divisor;
+  {its} name be <:v>{the} incorrupt divisor</:v>.
+</#t>
+
+<#t>
+  <:v>方、廉各命</:v><:g>上商四十</:g>，以<:b>除實</:b>。 |
+  <:v>Each of {the} upright {and the} incorrupt commandeth</:v>
+  <:g>{the} upper quotient's forty<:n>40</:n></:g>,
+  to be <:b>removed from {the} dividend</:b>.
+</#t>
+<ul>
+  <li>
+    Versions~\
+    <@>
+      A
+      | https://archive.org/details/02094034.cn/page/n42
+      | 02094034.cn at archive.org
+    </@>
+    and~\
+    <@>
+      C
+      | https://ctext.org/sunzi-suan-jing#n52189
+      | ctext.org database page
+    </@>
+    are missing 四十 after 上商.
+  </li>
+</ul>
+
+<#t>
+  除訖，<:v>倍廉法</:v>，從方法。 |
+  {The} removal finished, <:v>double {the} incorrupt divisor</:v>,
+  {which} followeth {the} upright divisor.
+</#t>
+
+<#t>
+  <:v>方法一退</:v>，<:r>下法再退</:r>。 |
+  <:v>{The} upright divisor retreateth once</:v>;
+  <:r>{the} lower divisor retreateth again</:r>.
+</#t>
+
+<#t>
+  復<:g>置上商八</:g>，次前商。 |
+  <:g>Put</:g> again <:g>{for the} upper quotient eight<:n>8</:n></:g>,
+  next {after the} quotient {digit} before.
+</#t>
+
+<#t>
+  副<:v>置八</:v>於方法之下，下法之上，名為<:v>隅法</:v>。 |
+  Subsidiarily, <:v>put {down} eight<:n>8</:n></:v>
+  below {the} upright divisor, {and} above {the} lower divisor;
+  {its} name be <:v>{the} honest divisor</:v>.
+</#t>
+
+<#t>
+  <:v>方、廉、隅各命</:v><:g>上商八</:g>，以<:b>除實</:b>。 |
+  <:v>Each of {the} upright, {the} incorrupt {and the} honest commandeth</:v>
+  <:g>{the} upper quotient's eight<:n>8</:n></:g>,
+  to be <:b>removed from {the} dividend</:b>.
+</#t>
+<ul>
+  <li>
+    <@>
+      Version~C
+      | https://ctext.org/sunzi-suan-jing#n52189
+      | ctext.org database page
+    </@>
+    erroneously has 上前 for 上商八.
+  </li>
+</ul>
+
+<#t>
+  除訖，<:v>倍隅法</:v>，從方法。 |
+  {The} removal finished, <:v>double {the} honest divisor</:v>,
+  {which} followeth {the} upright divisor.
+</#t>
+
+<#t>
+  <:g>上商得六百四十八</:g>，<:v>下法得一千二百九十六</:v>，<:b>不盡九十六</:b>。 |
+  <:g>{The} upper quotient resulteth in
+    six hundred {and} forty-eight<:n>648</:n></:g>,
+  <:v>{and the} lower divisors result in
+    one thousand, two hundred {and} ninety-six<:n>1296</:n></:v>,
+  <:b>{with} remainder ninety-six<:n>96</:n></:b>.
+</#t>
+<ul>
+  <li>
+    <@>
+      Version~A
+      | https://archive.org/details/02094034.cn/page/n42
+      | 02094034.cn at archive.org
+    </@>
+    is missing 得 after 上商,
+    and erroneously has 一千二百九十七 for 一千二百九十六 both here
+    and in the line to follow.
+  </li>
+</ul>
+
+<#t>
+  是為方<:g>六百四十八</:g>步<:v>一千二百九十六分</:v>步之<:b>九十六</:b>。 |
+  This be {a} circumference of
+    <:g>six hundred {and} forty-eight<:n>648</:n></:g>~\
+      步<^> pou | pu | bu </^>
+    {and} <:b>ninety-six</:b>
+      <:v>one thousand, two hundred {and} ninety-sixths</:v><:n>96/1296</:n>
+    of {a} 步<^> pou | pu | bu </^>.
+</#t>
 
 
 <div class="end">

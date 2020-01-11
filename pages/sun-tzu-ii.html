@@ -32,7 +32,7 @@
 </h1>
 <p class="page-properties">
 First created:&nbsp;20190609<br>
-Last modified:&nbsp;<b>20200106</b><br>
+Last modified:&nbsp;<b>20200111</b><br>
 Also known as <i>Sunzi Suanjing</i>: Volume&nbsp;II.
 </p>
 <h2 id="volumes"><a class="self-link" href="#volumes"></a>
@@ -216,7 +216,10 @@ are not part of the original text.
 <td class="heading">Volume of a rectangular prism</td>
 </tr>
 <tr>
-<td class="centred-text"><a href="#19" title="Vol. II ¶19">¶19</a></td>
+<td class="centred-text">
+<a href="#19" title="Vol. II ¶19">¶19</a>
+<a href="#20" title="Vol. II ¶20">¶20</a>
+</td>
 <td class="heading">Rod calculus: square root algorithm</td>
 </tr>
 </table></div>
@@ -2870,6 +2873,210 @@ and the <span class="blue">remainder&nbsp;(<span lang="zh-Hant">不盡</span>)</
 For an implementation in Python, see
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/code/sun_tzu_sqrt.py" title="Python: Sun&nbsp;Tzŭ square root algorithm"><code>/code/sun_tzu_sqrt.py</code></a>.
 </p>
+<h4 id="20"><a class="self-link" href="#20"></a>
+Vol.&nbsp;II&nbsp;¶20.
+<span class="heading">Rod calculus: square root algorithm</span>
+</h4>
+<div class="links">
+<a href="#paragraphs" title="Volume II: Paragraph navigation">[▲&thinsp;Paragraphs]</a>
+<a href="/manuscripts/sun-tzu-ii-20.pdf" title="Translation manuscript for Vol. II ¶20">[manuscript]</a>
+<a href="https://archive.org/details/02094034.cn/page/n42" title="Version A: 02094034.cn at archive.org">A42</a>
+<a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=156" title="Version B: 《文淵閣四庫全書》第0797冊 at Wikimedia Commons">B156(151)</a>
+<a href="https://ctext.org/sunzi-suan-jing#n52189" title="Version C: ctext.org database page">C52189(2.20)</a>
+<a href="https://ctext.org/library.pl?if=en&amp;file=86926&amp;page=54" title="Version D: 《知不足齋叢書》本 at ctext.org library">D54</a>
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">今有積三萬五千步。問為圓幾何？</span>
+<hr>
+Now there be area,
+thirty-five thousand<span class="numeral">&nbsp;(35000)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>.
+<i>We</i> ask: be <i>this a</i> circle <i>of circumference</i> how much?
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">答曰：六百四十八步一千二百九十六分步之九十六。</span>
+<hr>
+Answer saith:
+six hundred <i>and</i> forty-eight<span class="numeral">&nbsp;(648)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>
+<i>and</i> ninety-six
+one thousand, two hundred <i>and</i> ninety-sixths<span class="numeral">&nbsp;(96/1296)</span>
+of <i>a</i> <span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">術曰：置積三萬五千步。以一十二乘之，得四十二萬為<span class="blue">實</span>。</span>
+<hr>
+Method saith: put <i>down the</i> area,
+thirty-five thousand<span class="numeral">&nbsp;(35000)</span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>.
+Multiplying it by twelve<span class="numeral">&nbsp;(12)</span>, resulteth in
+four hundred <i>and</i> twenty thousand<span class="numeral">&nbsp;(420000)</span>
+as <span class="blue"><i>the</i> dividend</span>.
+</div>
+<ul>
+<li>
+<a href="https://ctext.org/sunzi-suan-jing#n52189" title="ctext.org database page">Version&nbsp;C</a>
+has <span lang="zh-Hant">四十二萬步</span> for <span lang="zh-Hant">四十二萬</span>.
+</li>
+</ul>
+<p>
+In modern notation
+(but taking <span class="maths">\pi \approx 3</span> i.e. <span class="maths">4\pi \approx 12</span>
+as per <a href="/pages/sun-tzu-i.html#5" title="Vol.&nbsp;I ¶5">Vol.&nbsp;I ¶5</a>),
+the circumference of a circle of area <span class="maths">A = 35000 \unit{步}^2</span> is
+</p>
+<div class="maths">
+\begin{aligned}
+  C &amp;\approx \sqrt{12 A} \\
+    &amp;= \sqrt{420000} \unit{步}.
+\end{aligned}
+</div>
+<p>
+The balance of this paragraph involves extracting the square root of&nbsp;420000.
+For a fully annotated and diagrammed walkthrough of
+Sun&nbsp;Tzŭ's square root algorithm,
+see the previous <a href="/pages/sun-tzu-ii.html#19" title="Vol.&nbsp;II ¶19">¶19</a>
+and the
+<a href="#sqrt" title="Summary of Sun&nbsp;Tzŭ's square root algorithm">pseudocode summary</a>,
+whose detail I will not be repeating here.
+</p>
+<div class="boxed translation">
+<span lang="zh-Hant">次<span class="red">借一算為下法</span>。<span class="red">步之，超一位，至百而止</span>。</span>
+<hr>
+Next, <span class="red">borrow one rod, <i>to</i> be <i>the</i> lower divisor</span>.
+<span class="red">Step it <i>forth</i>, jumping over one place,
+<i>even</i> unto <i>the</i> hundreds<span class="numeral">&nbsp;(100s)</span>, and stop</span>.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant"><span class="green">上商置六百</span>於實之上。</span>
+<hr>
+<span class="green"><i>For the</i> upper quotient,
+put <i>down</i> six hundred<span class="numeral">&nbsp;(600)</span></span> above <i>the</i> dividend.
+</div>
+<ul>
+<li>
+<a href="https://archive.org/details/02094034.cn/page/n42" title="02094034.cn at archive.org">Version&nbsp;A</a>
+erroneously has <span lang="zh-Hant">餘於</span> for <span lang="zh-Hant">於</span>.
+</li>
+</ul>
+<div class="boxed translation">
+<span lang="zh-Hant">副<span class="violet">置六萬</span>於實之下，下法之上，名為<span class="violet">方法</span>。</span>
+<hr>
+Subsidiarily, <span class="violet">put <i>down</i> sixty thousand<span class="numeral">&nbsp;(60000)</span></span>
+below <i>the</i> dividend, <i>and</i> above <i>the</i> lower divisor;
+<i>its</i> name be <span class="violet"><i>the</i> upright divisor</span>.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant"><span class="green">命上商六百</span><span class="blue">除實</span>。</span>
+<hr>
+<span class="green">Command <i>the</i> upper quotient's six hundred<span class="numeral">&nbsp;(600)</span></span>,
+<span class="blue"><i>and</i> remove <i>this</i> from <i>the</i> dividend</span>.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">除訖，<span class="violet">倍方法</span>。</span>
+<hr>
+<i>The</i> removal finished, <span class="violet">double <i>the</i> upright divisor</span>.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant"><span class="violet">方法一退</span>，<span class="red">下法再退</span>。</span>
+<hr>
+<span class="violet"><i>The</i> upright divisor retreateth once</span>;
+<span class="red"><i>the</i> lower divisor retreateth again</span>.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">復<span class="green">置上商四十</span>，以次前商。</span>
+<hr>
+<span class="green">Put</span> again <span class="green"><i>for the</i> upper quotient forty<span class="numeral">&nbsp;(40)</span></span>,
+to be next <i>after the</i> quotient <i>digit</i> before.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">副<span class="violet">置四百</span>於方法之下，下法之上，名為<span class="violet">廉法</span>。</span>
+<hr>
+Subsidiarily, <span class="violet">put <i>down</i> four hundred<span class="numeral">&nbsp;(400)</span></span>
+below <i>the</i> upright divisor, <i>and</i> above <i>the</i> lower divisor;
+<i>its</i> name be <span class="violet"><i>the</i> incorrupt divisor</span>.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant"><span class="violet">方、廉各命</span><span class="green">上商四十</span>，以<span class="blue">除實</span>。</span>
+<hr>
+<span class="violet">Each of <i>the</i> upright <i>and the</i> incorrupt commandeth</span>
+<span class="green"><i>the</i> upper quotient's forty<span class="numeral">&nbsp;(40)</span></span>,
+to be <span class="blue">removed from <i>the</i> dividend</span>.
+</div>
+<ul>
+<li>
+Versions&nbsp;<a href="https://archive.org/details/02094034.cn/page/n42" title="02094034.cn at archive.org">A</a>
+and&nbsp;<a href="https://ctext.org/sunzi-suan-jing#n52189" title="ctext.org database page">C</a>
+are missing <span lang="zh-Hant">四十</span> after <span lang="zh-Hant">上商</span>.
+</li>
+</ul>
+<div class="boxed translation">
+<span lang="zh-Hant">除訖，<span class="violet">倍廉法</span>，從方法。</span>
+<hr>
+<i>The</i> removal finished, <span class="violet">double <i>the</i> incorrupt divisor</span>,
+<i>which</i> followeth <i>the</i> upright divisor.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant"><span class="violet">方法一退</span>，<span class="red">下法再退</span>。</span>
+<hr>
+<span class="violet"><i>The</i> upright divisor retreateth once</span>;
+<span class="red"><i>the</i> lower divisor retreateth again</span>.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">復<span class="green">置上商八</span>，次前商。</span>
+<hr>
+<span class="green">Put</span> again <span class="green"><i>for the</i> upper quotient eight<span class="numeral">&nbsp;(8)</span></span>,
+next <i>after the</i> quotient <i>digit</i> before.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant">副<span class="violet">置八</span>於方法之下，下法之上，名為<span class="violet">隅法</span>。</span>
+<hr>
+Subsidiarily, <span class="violet">put <i>down</i> eight<span class="numeral">&nbsp;(8)</span></span>
+below <i>the</i> upright divisor, <i>and</i> above <i>the</i> lower divisor;
+<i>its</i> name be <span class="violet"><i>the</i> honest divisor</span>.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant"><span class="violet">方、廉、隅各命</span><span class="green">上商八</span>，以<span class="blue">除實</span>。</span>
+<hr>
+<span class="violet">Each of <i>the</i> upright, <i>the</i> incorrupt <i>and the</i> honest commandeth</span>
+<span class="green"><i>the</i> upper quotient's eight<span class="numeral">&nbsp;(8)</span></span>,
+to be <span class="blue">removed from <i>the</i> dividend</span>.
+</div>
+<ul>
+<li>
+<a href="https://ctext.org/sunzi-suan-jing#n52189" title="ctext.org database page">Version&nbsp;C</a>
+erroneously has <span lang="zh-Hant">上前</span> for <span lang="zh-Hant">上商八</span>.
+</li>
+</ul>
+<div class="boxed translation">
+<span lang="zh-Hant">除訖，<span class="violet">倍隅法</span>，從方法。</span>
+<hr>
+<i>The</i> removal finished, <span class="violet">double <i>the</i> honest divisor</span>,
+<i>which</i> followeth <i>the</i> upright divisor.
+</div>
+<div class="boxed translation">
+<span lang="zh-Hant"><span class="green">上商得六百四十八</span>，<span class="violet">下法得一千二百九十六</span>，<span class="blue">不盡九十六</span>。</span>
+<hr>
+<span class="green"><i>The</i> upper quotient resulteth in
+six hundred <i>and</i> forty-eight<span class="numeral">&nbsp;(648)</span></span>,
+<span class="violet"><i>and the</i> lower divisors result in
+one thousand, two hundred <i>and</i> ninety-six<span class="numeral">&nbsp;(1296)</span></span>,
+<span class="blue"><i>with</i> remainder ninety-six<span class="numeral">&nbsp;(96)</span></span>.
+</div>
+<ul>
+<li>
+<a href="https://archive.org/details/02094034.cn/page/n42" title="02094034.cn at archive.org">Version&nbsp;A</a>
+is missing <span lang="zh-Hant">得</span> after <span lang="zh-Hant">上商</span>,
+and erroneously has <span lang="zh-Hant">一千二百九十七</span> for <span lang="zh-Hant">一千二百九十六</span> both here
+and in the line to follow.
+</li>
+</ul>
+<div class="boxed translation">
+<span lang="zh-Hant">是為方<span class="green">六百四十八</span>步<span class="violet">一千二百九十六分</span>步之<span class="blue">九十六</span>。</span>
+<hr>
+This be <i>a</i> circumference of
+<span class="green">six hundred <i>and</i> forty-eight<span class="numeral">&nbsp;(648)</span></span>&nbsp;<span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>
+<i>and</i> <span class="blue">ninety-six</span>
+<span class="violet">one thousand, two hundred <i>and</i> ninety-sixths</span><span class="numeral">&nbsp;(96/1296)</span>
+of <i>a</i> <span lang="zh-Hant">步</span><span class="romanisation romanisation-conway">&nbsp;(pou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(pu)</span><span class="romanisation romanisation-pinyin">&nbsp;(bu)</span>.
+</div>
 <div class="end">
 <span class="red">WORK IN PROGRESS</span>
 </div>
