@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
-  | 20190609 | 20191221 | dmr
+  | 20190609 | 20200112 | dmr
   | An annotated English translation of Volume~I of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -2695,10 +2695,15 @@
   六千五百六十一，九人分之，問人得幾何？<br>
   答曰：七百二十九。 |
   Six thousand, five hundred {and} sixty-one<:n>6561</:n>:
-  {with} nine<:n>9</:n> people sharing it,
-  {we} ask: how much receiveth {each} person?<br>
+  {with} nine<:n>9</:n> men sharing it,
+  {we} ask: how much receiveth {each} man?<br>
   Answer saith: seven hundred {and} twenty-nine<:n>729</:n>.
 </#t>
+<ul>
+  <li>人：
+    (generic) man; or person
+  </li>
+</ul>
 <$$>
   6561 \div 9 = 729
 </$$>
@@ -2708,7 +2713,7 @@
   Method saith:
   first put six thousand, five hundred {and} sixty-one<:n>6561</:n>
   upon {the} middle places as {the} dividend;
-  below, display {the} nine<:n>9</:n> people as {the} divisor.
+  below, display {the} nine<:n>9</:n> men as {the} divisor.
 </#t>
 
 <#t>
@@ -2771,7 +2776,7 @@
   {The} middle places {now} all exhausted,
   put away {the} lower place.
   That which resulteth {in the} upper places is that received of
-  {each} person.
+  {each} man.
 </#t>
 <ul>
   <li>
@@ -2876,8 +2881,8 @@
   Eight nines<:n>8~×~9</:n> {are} seventy-two<:n>72</:n>,
   {which}, multiplied with itself, resulteth in
   five thousand, one hundred {and} eighty-four<:n>5184</:n>.
-  {With} eight<:n>8</:n> people sharing it,
-  {each} person receiveth six hundred {and} forty-eight<:n>648</:n>.
+  {With} eight<:n>8</:n> men sharing it,
+  {each} man receiveth six hundred {and} forty-eight<:n>648</:n>.
 </#t>
 <ul>
   <li>
@@ -2903,8 +2908,8 @@
   Seven nines<:n>7~×~9</:n> {are} sixty-three<:n>63</:n>,
   {which}, multiplied with itself, resulteth in
   three thousand, nine hundred {and} sixty-nine<:n>3969</:n>.
-  {With} seven<:n>7</:n> people sharing it,
-  {each} person receiveth five hundred {and} sixty-seven<:n>567</:n>.
+  {With} seven<:n>7</:n> men sharing it,
+  {each} man receiveth five hundred {and} sixty-seven<:n>567</:n>.
 </#t>
 <ul>
   <li>
@@ -2930,8 +2935,8 @@
   Six nines<:n>6~×~9</:n> {are} fifty-four<:n>54</:n>,
   {which}, multiplied with itself, resulteth in
   two thousand, nine hundred {and} sixteen<:n>2916</:n>.
-  {With} six<:n>6</:n> people sharing it,
-  {each} person receiveth four hundred {and} eighty-six<:n>486</:n>.
+  {With} six<:n>6</:n> men sharing it,
+  {each} man receiveth four hundred {and} eighty-six<:n>486</:n>.
 </#t>
 
 <#t>
@@ -2939,8 +2944,8 @@
   Five nines<:n>5~×~9</:n> {are} forty-five<:n>45</:n>,
   {which}, multiplied with itself, resulteth in
   two thousand {and} twenty-five<:n>2025</:n>.
-  {With} five<:n>5</:n> people sharing it,
-  {each} person receiveth four hundred {and} five<:n>405</:n>.
+  {With} five<:n>5</:n> men sharing it,
+  {each} man receiveth four hundred {and} five<:n>405</:n>.
 </#t>
 
 <#t>
@@ -2948,7 +2953,7 @@
   Four nines<:n>4~×~9</:n> {are} thirty-six<:n>36</:n>,
   {which}, multiplied with itself, resulteth in
   one thousand, two hundred {and} ninety-six<:n>1296</:n>.
-  {With} four<:n>4</:n> people sharing it, {each} person receiveth
+  {With} four<:n>4</:n> men sharing it, {each} man receiveth
   three hundred {and} twenty-four<:n>324</:n>.
 </#t>
 <ul>
@@ -2982,7 +2987,7 @@
   Three nines<:n>3~×~9</:n> {are} twenty-seven<:n>27</:n>,
   {which}, multiplied with itself, resulteth in
   seven hundred {and} twenty-nine<:n>729</:n>.
-  {With} three<:n>3</:n> people sharing it, {each} person receiveth
+  {With} three<:n>3</:n> men sharing it, {each} man receiveth
   two hundred {and} forty-three<:n>243</:n>.
 </#t>
 
@@ -2991,7 +2996,7 @@
   Two nines<:n>2~×~9</:n> {are} eighteen<:n>18</:n>,
   {which}, multiplied with itself, resulteth in
   three hundred {and} twenty-four<:n>324</:n>.
-  {With} two<:n>2</:n> people sharing it, {each} person receiveth
+  {With} two<:n>2</:n> men sharing it, {each} man receiveth
   one hundred {and} sixty-two<:n>162</:n>.
 </#t>
 
@@ -2999,7 +3004,7 @@
   一九如九，自相乘，得八十一。一人得八十一。 |
   One nine<:n>1~×~9</:n> {is} as nine<:n>9</:n>,
   {which}, multiplied with itself, resulteth in eighty-one<:n>81</:n>.
-  One person receiveth eighty-one<:n>81</:n>.
+  One man receiveth eighty-one<:n>81</:n>.
 </#t>
 
 <#t>
@@ -3009,7 +3014,7 @@
   {which}, multiplied with itself, resulteth in
   one hundred {and} sixty-four thousand {and}
     twenty-five<:n>164025</:n>.
-  {With} nine<:n>9</:n> people sharing it, {each} person receiveth
+  {With} nine<:n>9</:n> men sharing it, {each} man receiveth
   eighteen thousand, two hundred {and} twenty-five<:n>18225</:n>.
 </#t>
 <ul>
@@ -3019,7 +3024,7 @@
     In English, preceding material lies above, since English is written
     left-to-right, top-to-bottom.<br>
     In Chinese, preceding material lies to the right, since
-    (at least classically) Chinese is written right-to-left, top-to-bottom.
+    (at least classically) Chinese is written top-to-bottom, right-to-left.
   </li>
   <li>
     <@>
@@ -3072,7 +3077,7 @@
   Eight eights<:n>8~×~8</:n> {are} sixty-four<:n>64</:n>,
   {which}, multiplied with itself, resulteth in
   four thousand {and} ninety-six<:n>4096</:n>.
-  {With} eight<:n>8</:n> people sharing it, {each} person receiveth
+  {With} eight<:n>8</:n> men sharing it, {each} man receiveth
   five hundred {and} twelve<:n>512</:n>.
 </#t>
 <ul>
@@ -3091,7 +3096,7 @@
   Seven eights<:n>7~×~8</:n> {are} fifty-six<:n>56</:n>,
   {which}, multiplied with itself, resulteth in
   three thousand, one hundred {and} thirty-six<:n>3136</:n>.
-  {With} seven<:n>7</:n> people sharing it, {each} person receiveth
+  {With} seven<:n>7</:n> men sharing it, {each} man receiveth
   four hundred {and} forty-eight<:n>448</:n>.
 </#t>
 
@@ -3100,7 +3105,7 @@
   Six eights<:n>6~×~8</:n> {are} forty-eight<:n>48</:n>,
   {which}, multiplied with itself, resulteth in
   two thousand, three hundred {and} four<:n>2304</:n>.
-  {With} six<:n>6</:n> people sharing it, {each} person receiveth
+  {With} six<:n>6</:n> men sharing it, {each} man receiveth
   three hundred {and} eighty-four<:n>384</:n>.
 </#t>
 
@@ -3109,7 +3114,7 @@
   Five eights<:n>5~×~8</:n> {are} forty<:n>40</:n>,
   {which}, multiplied with itself, resulteth in
   one thousand six hundred<:n>1600</:n>.
-  {With} five<:n>5</:n> people sharing it, {each} person receiveth
+  {With} five<:n>5</:n> men sharing it, {each} man receiveth
   three hundred {and} twenty<:n>320</:n>.
 </#t>
 
@@ -3118,7 +3123,7 @@
   Four eights<:n>4~×~8</:n> {are} thirty-two<:n>32</:n>,
   {which}, multiplied with itself, resulteth in
   one thousand {and} twenty-four<:n>1024</:n>.
-  {With} four<:n>4</:n> people sharing it, {each} person receiveth
+  {With} four<:n>4</:n> men sharing it, {each} man receiveth
   two hundred {and} fifty-six<:n>256</:n>.
 </#t>
 
@@ -3127,7 +3132,7 @@
   Three eights<:n>3~×~8</:n> {are} twenty-four<:n>24</:n>,
   {which}, multiplied with itself, resulteth in
   five hundred {and} seventy-six<:n>576</:n>.
-  {With} three<:n>3</:n> people sharing it, {each} person receiveth
+  {With} three<:n>3</:n> men sharing it, {each} man receiveth
   one hundred {and} ninety-two<:n>192</:n>.
 </#t>
 
@@ -3136,7 +3141,7 @@
   Two eights<:n>2~×~8</:n> {are} sixteen<:n>16</:n>,
   {which}, multiplied with itself, resulteth in
   two hundred {and} fifty-six<:n>256</:n>.
-  {With} two<:n>2</:n> people sharing it, {each} person receiveth
+  {With} two<:n>2</:n> men sharing it, {each} man receiveth
   one hundred {and} twenty-eight<:n>128</:n>.
 </#t>
 
@@ -3144,7 +3149,7 @@
   一八如八，自相乘，得六十四。一人得六十四。 |
   One eight<:n>1~×~8</:n> {is} as eight<:n>8</:n>,
   {which}, multiplied with itself, resulteth in sixty-four<:n>64</:n>.
-  One person receiveth sixty-four<:n>64</:n>.
+  One man receiveth sixty-four<:n>64</:n>.
 </#t>
 
 <#t>
@@ -3153,7 +3158,7 @@
   {in} one strand, result in two hundred {and} eighty-eight<:n>288</:n>,
   {which}, multiplied with itself, resulteth in
   eighty-two thousand, nine hundred {and} forty-four<:n>82944</:n>.
-  {With} eight<:n>8</:n> people sharing it, {each} person receiveth
+  {With} eight<:n>8</:n> men sharing it, {each} man receiveth
   ten thousand, three hundred {and} sixty-eight<:n>10368</:n>.
 </#t>
 
@@ -3187,7 +3192,7 @@
   Seven sevens<:n>7~×~7</:n> {are} forty-nine<:n>49</:n>,
   {which}, multiplied with itself, resulteth in
   two thousand, four hundred {and} one<:n>2401</:n>.
-  {With} seven<:n>7</:n> people sharing it, {each} person receiveth
+  {With} seven<:n>7</:n> men sharing it, {each} man receiveth
   three hundred {and} forty-three<:n>343</:n>.
 </#t>
 
@@ -3196,7 +3201,7 @@
   Six sevens<:n>6~×~7</:n> {are} forty-two<:n>42</:n>,
   {which}, multiplied with itself, resulteth in
   one thousand, seven hundred {and} sixty-four<:n>1764</:n>.
-  {With} six<:n>6</:n> people sharing it, {each} person receiveth
+  {With} six<:n>6</:n> men sharing it, {each} man receiveth
   two hundred {and} ninety-four<:n>294</:n>.
 </#t>
 
@@ -3205,7 +3210,7 @@
   Five sevens<:n>5~×~7</:n> {are} thirty-five<:n>35</:n>,
   {which}, multiplied with itself, resulteth in
   one thousand, two hundred {and} twenty-five<:n>1225</:n>.
-  {With} five<:n>5</:n> people sharing it, {each} person receiveth
+  {With} five<:n>5</:n> men sharing it, {each} man receiveth
   two hundred {and} forty-five<:n>245</:n>.
 </#t>
 
@@ -3214,7 +3219,7 @@
   Four sevens<:n>4~×~7</:n> {are} twenty-eight<:n>28</:n>,
   {which}, multiplied with itself, resulteth in
   seven hundred {and} eighty-four<:n>784</:n>.
-  {With} four<:n>4</:n> people sharing it, {each} person receiveth
+  {With} four<:n>4</:n> men sharing it, {each} man receiveth
   one hundred {and} ninety-six<:n>196</:n>.
 </#t>
 
@@ -3223,7 +3228,7 @@
   Three sevens<:n>3~×~7</:n> {are} twenty-one<:n>21</:n>,
   {which}, multiplied with itself, resulteth in
   four hundred {and} forty-one<:n>441</:n>.
-  {With} three<:n>3</:n> people sharing it, {each} person receiveth
+  {With} three<:n>3</:n> men sharing it, {each} man receiveth
   one hundred {and} forty-seven<:n>147</:n>.
 </#t>
 
@@ -3232,8 +3237,8 @@
   Two sevens<:n>2~×~7</:n> {are} fourteen<:n>14</:n>,
   {which}, multiplied with itself, resulteth in
   one hundred {and} ninety-six<:n>196</:n>.
-  {With} two<:n>2</:n> people sharing it,
-  {each} person receiveth ninety-eight<:n>98</:n>.
+  {With} two<:n>2</:n> men sharing it,
+  {each} man receiveth ninety-eight<:n>98</:n>.
 </#t>
 <ul>
   <li>
@@ -3250,7 +3255,7 @@
   一七如七，自相乘，得四十九。一人得四十九。 |
   One seven<:n>1~×~7</:n> {is} as seven<:n>7</:n>,
   {which}, multiplied with itself, resulteth in forty-nine<:n>49</:n>.
-  One person receiveth forty-nine<:n>49</:n>.
+  One man receiveth forty-nine<:n>49</:n>.
 </#t>
 
 <#t>
@@ -3259,7 +3264,7 @@
   {in} one strand, result in one hundred {and} ninety-six<:n>196</:n>,
   {which}, multiplied with itself, resulteth in
   thirty-eight thousand, four hundred {and} sixteen<:n>38416</:n>.
-  {With} seven<:n>7</:n> people sharing it, {each} person receiveth
+  {With} seven<:n>7</:n> men sharing it, {each} man receiveth
   five thousand, four hundred {and} eighty-eight<:n>5488</:n>.
 </#t>
 
@@ -3283,7 +3288,7 @@
   Six sixes<:n>6~×~6</:n> {are} thirty-six<:n>36</:n>,
   {which}, multiplied with itself, resulteth in
   one thousand, two hundred {and} ninety-six<:n>1296</:n>.
-  {With} six<:n>6</:n> people sharing it, {each} person receiveth
+  {With} six<:n>6</:n> men sharing it, {each} man receiveth
   two hundred {and} sixteen<:n>216</:n>.
 </#t>
 
@@ -3291,7 +3296,7 @@
   五六三十，自相乘，得九百。五人分之，人得一百八十。 |
   Five sixes<:n>5~×~6</:n> {are} thirty<:n>30</:n>,
   {which}, multiplied with itself, resulteth in nine hundred<:n>900</:n>.
-  {With} five<:n>5</:n> people sharing it, {each} person receiveth
+  {With} five<:n>5</:n> men sharing it, {each} man receiveth
   one hundred {and} eighty<:n>180</:n>.
 </#t>
 
@@ -3300,7 +3305,7 @@
   Four sixes<:n>4~×~6</:n> {are} twenty-four<:n>24</:n>,
   {which}, multiplied with itself, resulteth in
   five hundred {and} seventy-six<:n>576</:n>.
-  {With} four<:n>4</:n> people sharing it, {each} person receiveth
+  {With} four<:n>4</:n> men sharing it, {each} man receiveth
   one hundred {and} forty-four<:n>144</:n>.
 </#t>
 
@@ -3309,7 +3314,7 @@
   Three sixes<:n>3~×~6</:n> {are} eighteen<:n>18</:n>,
   {which}, multiplied with itself, resulteth in
   three hundred {and} twenty-four<:n>324</:n>.
-  {With} three<:n>3</:n> people sharing it, {each} person receiveth
+  {With} three<:n>3</:n> men sharing it, {each} man receiveth
   one hundred {and} eight<:n>108</:n>.
 </#t>
 
@@ -3318,8 +3323,8 @@
   Two sixes<:n>2~×~6</:n> {are} twelve<:n>12</:n>,
   {which}, multiplied with itself, resulteth in
   one hundred {and} forty-four<:n>144</:n>.
-  {With} two<:n>2</:n> people sharing it,
-  {each} person receiveth seventy-two<:n>72</:n>.
+  {With} two<:n>2</:n> men sharing it,
+  {each} man receiveth seventy-two<:n>72</:n>.
 </#t>
 
 <#t>
@@ -3327,7 +3332,7 @@
   One six<:n>1~×~6</:n> {is} as six<:n>6</:n>,
   {which}, multiplied with itself, resulteth in
   thirty-six<:n>36</:n>.
-  One person receiveth thirty-six<:n>36</:n>.
+  One man receiveth thirty-six<:n>36</:n>.
 </#t>
 
 <#t>
@@ -3336,7 +3341,7 @@
   {in} one strand, result in one hundred {and} twenty-six<:n>126</:n>,
   {which}, multiplied with itself, resulteth in
   fifteen thousand, eight hundred {and} seventy-six<:n>15876</:n>.
-  {With} six<:n>6</:n> people sharing it, {each} person receiveth
+  {With} six<:n>6</:n> men sharing it, {each} man receiveth
   two thousand, six hundred {and} forty-six<:n>2646</:n>.
 </#t>
 
@@ -3358,7 +3363,7 @@
   Five fives<:n>5~×~5</:n> {are} twenty-five<:n>25</:n>,
   {which}, multiplied with itself, resulteth in
   six hundred {and} twenty-five<:n>625</:n>.
-  {With} five<:n>5</:n> people sharing it, {each} person receiveth
+  {With} five<:n>5</:n> men sharing it, {each} man receiveth
   one hundred {and} twenty-five<:n>125</:n>.
 </#t>
 
@@ -3366,7 +3371,7 @@
   四五二十，自相乘，得四百。四人分之，人得一百。 |
   Four fives<:n>4~×~5</:n> {are} twenty<:n>20</:n>,
   {which}, multiplied with itself, resulteth in four hundred<:n>400</:n>.
-  {With} four<:n>4</:n> people sharing it, {each} person receiveth
+  {With} four<:n>4</:n> men sharing it, {each} man receiveth
   one hundred<:n>100</:n>.
 </#t>
 
@@ -3375,7 +3380,7 @@
   Three fives<:n>3~×~5</:n> {are} fifteen<:n>15</:n>,
   {which}, multiplied with itself, resulteth in
   two hundred {and} twenty-five<:n>225</:n>.
-  {With} three<:n>3</:n> people sharing it, {each} person receiveth
+  {With} three<:n>3</:n> men sharing it, {each} man receiveth
   seventy-five<:n>75</:n>.
 </#t>
 
@@ -3384,7 +3389,7 @@
   Two fives<:n>2~×~5</:n> {are} ten<:n>10</:n>,
   {which}, multiplied with itself, resulteth in
   one hundred<:n>100</:n>.
-  {With} two<:n>2</:n> people sharing it, {each} person receiveth
+  {With} two<:n>2</:n> men sharing it, {each} man receiveth
   fifty<:n>50</:n>.
 </#t>
 
@@ -3393,7 +3398,7 @@
   One five<:n>1~×~5</:n> {is} as five<:n>5</:n>,
   {which}, multiplied with itself, resulteth in
   twenty-five<:n>25</:n>.
-  One person receiveth twenty-five<:n>25</:n>.
+  One man receiveth twenty-five<:n>25</:n>.
 </#t>
 
 <#t>
@@ -3402,7 +3407,7 @@
   {in} one strand, result in seventy-five<:n>75</:n>,
   {which}, multiplied with itself, resulteth in
   five thousand, six hundred {and} twenty-five<:n>5625</:n>.
-  {With} five<:n>5</:n> people sharing it, {each} person receiveth
+  {With} five<:n>5</:n> men sharing it, {each} man receiveth
   one thousand, one hundred {and} twenty-five<:n>1125</:n>.
 </#t>
 
@@ -3426,7 +3431,7 @@
   Four fours<:n>4~×~4</:n> {are} sixteen<:n>16</:n>,
   {which}, multiplied with itself, resulteth in
   two hundred {and} fifty-six<:n>256</:n>.
-  {With} four<:n>4</:n> people sharing it, {each} person receiveth
+  {With} four<:n>4</:n> men sharing it, {each} man receiveth
   sixty-four<:n>64</:n>.
 </#t>
 
@@ -3435,7 +3440,7 @@
   Three fours<:n>3~×~4</:n> {are} twelve<:n>12</:n>,
   {which}, multiplied with itself, resulteth in
   one hundred {and} forty-four<:n>144</:n>.
-  {With} three<:n>3</:n> people sharing it, {each} person receiveth
+  {With} three<:n>3</:n> men sharing it, {each} man receiveth
   forty-eight<:n>48</:n>.
 </#t>
 
@@ -3443,7 +3448,7 @@
   二四如八，自相乘，得六十四。二人分之，人得三十二。 |
   Two fours<:n>2~×~4</:n> {are} as eight<:n>8</:n>,
   {which}, multiplied with itself, resulteth in sixty-four<:n>64</:n>.
-  {With} two<:n>2</:n> people sharing it, {each} person receiveth
+  {With} two<:n>2</:n> men sharing it, {each} man receiveth
   thirty-two<:n>32</:n>.
 </#t>
 
@@ -3451,7 +3456,7 @@
   一四如四，自相乘，得一十六。一人得一十六。 |
   One four<:n>1~×~4</:n> {is} as four<:n>4</:n>,
   {which}, multiplied with itself, resulteth in sixteen<:n>16</:n>.
-  One person receiveth sixteen<:n>16</:n>.
+  One man receiveth sixteen<:n>16</:n>.
 </#t>
 
 <#t>
@@ -3460,7 +3465,7 @@
   {in} one strand, result in forty<:n>40</:n>,
   {which}, multiplied with itself, resulteth in
   one thousand six hundred<:n>1600</:n>.
-  {With} four<:n>4</:n> people sharing it, {each} person receiveth
+  {With} four<:n>4</:n> men sharing it, {each} man receiveth
   four hundred<:n>400</:n>.
 </#t>
 
@@ -3484,7 +3489,7 @@
   Three threes<:n>3~×~3</:n> {are} as nine<:n>9</:n>,
   {which}, multiplied with itself, resulteth in
   eighty-one<:n>81</:n>.
-  {With} three<:n>3</:n> people sharing it, {each} person receiveth
+  {With} three<:n>3</:n> men sharing it, {each} man receiveth
   twenty-seven<:n>27</:n>.
 </#t>
 <ul>
@@ -3503,7 +3508,7 @@
   Two threes<:n>2~×~3</:n> {are} as six<:n>6</:n>,
   {which}, multiplied with itself, resulteth in
   thirty-six<:n>36</:n>.
-  {With} two<:n>2</:n> people sharing it, {each} person receiveth
+  {With} two<:n>2</:n> men sharing it, {each} man receiveth
   eighteen<:n>18</:n>.
 </#t>
 <ul>
@@ -3522,7 +3527,7 @@
   One three<:n>1~×~3</:n> {is} as three<:n>3</:n>,
   {which}, multiplied with itself, resulteth in
   nine<:n>9</:n>.
-  One person receiveth nine<:n>9</:n>.
+  One man receiveth nine<:n>9</:n>.
 </#t>
 
 <#t>
@@ -3531,7 +3536,7 @@
   {in} one strand, result in eighteen<:n>18</:n>,
   {which}, multiplied with itself, resulteth in
   three hundred {and} twenty-four<:n>324</:n>.
-  {With} three<:n>3</:n> people sharing it, {each} person receiveth
+  {With} three<:n>3</:n> men sharing it, {each} man receiveth
   one hundred {and} eight<:n>108</:n>.
 </#t>
 
@@ -3554,7 +3559,7 @@
   二二如四，自相乘，得一十六。二人分之，人得八。 |
   Two twos<:n>2~×~2</:n> {are} as four<:n>4</:n>,
   {which}, multiplied with itself, resulteth in sixteen<:n>16</:n>.
-  {With} two<:n>2</:n> people sharing it, {each} person receiveth
+  {With} two<:n>2</:n> men sharing it, {each} man receiveth
   eight<:n>8</:n>.
 </#t>
 
@@ -3563,7 +3568,7 @@
   One two<:n>1~×~2</:n> {is} as two<:n>2</:n>,
   {which}, multiplied with itself, resulteth in
   four<:n>4</:n>.
-  One person receiveth four<:n>4</:n>.
+  One man receiveth four<:n>4</:n>.
 </#t>
 
 <#t>
@@ -3571,7 +3576,7 @@
   {The} two twos<:n>2~×~2, 1~×~2</:n> above,
   {in} one strand, result in six<:n>6</:n>,
   {which}, multiplied with itself, resulteth in thirty-six<:n>36</:n>.
-  {With} two<:n>2</:n> people sharing it, {each} person receiveth
+  {With} two<:n>2</:n> men sharing it, {each} man receiveth
   eighteen<:n>18</:n>.
 </#t>
 <ul>
@@ -3621,7 +3626,7 @@
   {which}, multiplied with itself, resulteth in
     one million, three hundred {and} thirty-four thousand {and}
     twenty-five<:n>1334025</:n>.
-  {With} nine<:n>9</:n> people sharing it, {each} person receiveth
+  {With} nine<:n>9</:n> men sharing it, {each} man receiveth
   one hundred {and} forty-eight thousand,
     two hundred {and} twenty-five<:n>148225</:n>.
 </#t>
@@ -3682,7 +3687,7 @@
   以九乘一十二，得一百八。六人分之，人得一十八。 |
   Multiplying twelve<:n>12</:n> by nine<:n>9</:n> resulteth in
   one hundred {and} eight<:n>108</:n>.
-  {With} six<:n>6</:n> people sharing it, {each} person receiveth
+  {With} six<:n>6</:n> men sharing it, {each} man receiveth
   eighteen<:n>18</:n>.
 </#t>
 
@@ -3690,7 +3695,7 @@
   以二十七乘三十六，得九百七十二。一十八人分之，人得五十四。 |
   Multiplying thirty-six<:n>36</:n> by twenty-seven<:n>27</:n> resulteth in
   nine hundred {and} seventy-two<:n>972</:n>.
-  {With} eighteen<:n>18</:n> people sharing it, {each} person receiveth
+  {With} eighteen<:n>18</:n> men sharing it, {each} man receiveth
   fifty-four<:n>54</:n>.
 </#t>
 
@@ -3699,8 +3704,8 @@
   Multiplying one hundred {and} eight<:n>108</:n>
   by eighty-one<:n>81</:n> resulteth in
   eight thousand, seven hundred {and} forty-eight<:n>8748</:n>.
-  {With} fifty-four<:n>54</:n> people sharing it,
-  {each} person receiveth
+  {With} fifty-four<:n>54</:n> men sharing it,
+  {each} man receiveth
   one hundred {and} sixty-two<:n>162</:n>.
 </#t>
 <ul>
@@ -3720,8 +3725,8 @@
   by two hundred {and} forty-three<:n>243</:n>
   resulteth in seventy-eight thousand, seven hundred {and}
   thirty-two<:n>78732</:n>.
-  {With} one hundred {and} sixty-two<:n>162</:n> people sharing it,
-  {each} person receiveth
+  {With} one hundred {and} sixty-two<:n>162</:n> men sharing it,
+  {each} man receiveth
   four hundred {and} eighty-six<:n>486</:n>.
 </#t>
 
@@ -3732,7 +3737,7 @@
   resulteth in seven hundred {and} eight thousand, five hundred {and}
   eighty-eight<:n>708588</:n>.
   {With} four hundred {and}
-  eighty-six<:n>486</:n> people sharing it, {each} person receiveth
+  eighty-six<:n>486</:n> men sharing it, {each} man receiveth
   one thousand, four hundred {and}
   fifty-eight<:n>1458</:n>.
 </#t>
@@ -3745,7 +3750,7 @@
   resulteth in six million, three hundred {and} seventy-seven thousand,
   two hundred {and} ninety-two<:n>6377292</:n>.
   {With} one thousand, four hundred {and}
-  fifty-eight<:n>1458</:n> people sharing it, {each} person receiveth
+  fifty-eight<:n>1458</:n> men sharing it, {each} man receiveth
   four thousand, three hundred {and} seventy-four<:n>4374</:n>.
 </#t>
 <ul>
@@ -3769,7 +3774,7 @@
   three hundred {and} ninety-five thousand,
   six hundred {and} twenty-eight<:n>57395628</:n>.
   {With} four thousand, three hundred {and}
-  seventy-four<:n>4374</:n> people sharing it, {each} person receiveth
+  seventy-four<:n>4374</:n> men sharing it, {each} man receiveth
   thirteen thousand, one hundred {and} twenty-two<:n>13122</:n>.
 </#t>
 
@@ -3782,7 +3787,7 @@
   five hundred {and} sixty thousand,
   six hundred {and} fifty-two<:n>516560652</:n>.
   {With} thirteen thousand, one hundred {and}
-  twenty-two<:n>13122</:n> people sharing it, {each} person receiveth
+  twenty-two<:n>13122</:n> men sharing it, {each} man receiveth
   thirty-nine thousand, three hundred {and} sixty-six<:n>39366</:n>.
 </#t>
 
@@ -3795,7 +3800,7 @@
   resulteth in four billion, six hundred {and} forty-nine million,
   forty-five thousand, eight hundred {and} sixty-eight<:n>4649045868</:n>.
   {With} thirty-nine thousand, three hundred {and}
-  sixty-six<:n>39366</:n> people sharing it, {each} person receiveth
+  sixty-six<:n>39366</:n> men sharing it, {each} man receiveth
   one hundred {and} eighteen thousand {and} ninety-eight<:n>118098</:n>.
 </#t>
 
@@ -3811,7 +3816,7 @@
   four hundred {and} twelve thousand, eight hundred {and}
   twelve<:n>41841412812</:n>.
   {With} one hundred {and} eighteen thousand {and}
-  ninety-eight<:n>118098</:n> people sharing it, {each} person receiveth
+  ninety-eight<:n>118098</:n> men sharing it, {each} man receiveth
   three hundred {and} fifty-four thousand,
   two hundred {and} ninety-four<:n>354294</:n>.
 </#t>
@@ -3830,7 +3835,7 @@
   eight<:n>376572715308</:n>.
   {With} three hundred {and} fifty-four thousand,
   two hundred {and} ninety-four<:n>354294</:n>
-  people sharing it, {each} person receiveth one million,
+  men sharing it, {each} man receiveth one million,
   sixty-two thousand, eight hundred {and}
   eighty-two<:n>1062882</:n>.
 </#t>
