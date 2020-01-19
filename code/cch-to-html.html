@@ -27,7 +27,7 @@
 <h1>Python: a regex converter from CCH to HTML</h1>
 <p class="page-properties">
 First created:&nbsp;20190720<br>
-Last modified:&nbsp;<b>20191230</b><br>
+Last modified:&nbsp;<b>20200119</b><br>
 <b>Code:</b>
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch.py" title="GitHub: cch.py"><code>cch.py</code></a>
 </p>
@@ -809,7 +809,7 @@ Cite this page
 <ul>
 <li>Text:
 <p>
-Conway&nbsp;(2019).
+Conway&nbsp;(2020).
 <i>Python: a regex converter from CCH to HTML</i>.
 &lt;https://yawnoc.github.io/code/cch-to-html.html&gt;
 [Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
@@ -819,7 +819,7 @@ Conway&nbsp;(2019).
 <pre>
 @misc{conway-cch,
   author = {Conway},
-  year = {2019},
+  year = {2020},
   title = {{Python}: a regex converter from {CCH} to {HTML}},
   howpublished = {\url{https://yawnoc.github.io/code/cch-to-html.html}},
   note = {[Accessed <span class="date">d~month~yyyy</span>]}
@@ -830,7 +830,7 @@ Conway&nbsp;(2019).
 <pre>
 @online{conway-cch,
   author = {Conway},
-  year = {2019},
+  year = {2020},
   title = {{Python}: a regex converter from {CCH} to {HTML}},
   url = {https://yawnoc.github.io/code/cch-to-html.html},
   urldate = {<span class="date">yyyy-mm-dd</span>}
@@ -955,8 +955,8 @@ between a host and a guest, which comprises of
     I am the host; my words and thoughts are in blue.
   &lt;/~h&gt;
   &lt;~ht&gt;
-    (Thoughts are in &lt;@&gt; Comic Neue | http://comicneue.com/ &lt;/@&gt;,
-    against a beige background.)
+    \{Thoughts are in &lt;@&gt; Comic Neue | http://comicneue.com/ &lt;/@&gt;,
+    against a beige background.\}
   &lt;/~ht&gt;
 
   &lt;+g&gt; /images/dialogue-guest.png | Guest &lt;/+g&gt;
@@ -964,15 +964,15 @@ between a host and a guest, which comprises of
     I am the guest; my words are thoughts are in black.
   &lt;/~g&gt;
   &lt;~gt&gt;
-    (My thoughts are against a beige background also,
+    \{My thoughts are against a beige background also,
     and our images are automatically framed in our respectively colours.
     Also words and thoughts can span multiple paragraphs each,
     and will wrap around the image
-    of the corresponding speaker or thinker.)
+    of the corresponding speaker or thinker.\}
   &lt;/~gt&gt;
   &lt;~gt&gt;
-    (The dialogue is automatically concluded with "END"
-    in a &lt;`&gt;&lt;div&gt;&lt;/`&gt; tag.)
+    \{The dialogue is automatically concluded with "END"
+    in a &lt;`&gt;&lt;div&gt;&lt;/`&gt; tag.\}
   &lt;/~gt&gt;
 
 &lt;/~~&gt;
@@ -986,23 +986,23 @@ between a host and a guest, which comprises of
 I am the host; my words and thoughts are in blue.
 </p>
 <p class="dialogue-host thought">
-(Thoughts are in <a href="http://comicneue.com/">Comic Neue</a>,
-against a beige background.)
+{Thoughts are in <a href="http://comicneue.com/">Comic Neue</a>,
+against a beige background.}
 </p>
 <img class="dialogue-guest" src="/images/dialogue-guest.png" alt="Guest">
 <p class="dialogue-guest">
 I am the guest; my words are thoughts are in black.
 </p>
 <p class="dialogue-guest thought">
-(My thoughts are against a beige background also,
+{My thoughts are against a beige background also,
 and our images are automatically framed in our respectively colours.
 Also words and thoughts can span multiple paragraphs each,
 and will wrap around the image
-of the corresponding speaker or thinker.)
+of the corresponding speaker or thinker.}
 </p>
 <p class="dialogue-guest thought">
-(The dialogue is automatically concluded with "END"
-in a <code>&lt;div&gt;</code> tag.)
+{The dialogue is automatically concluded with "END"
+in a <code>&lt;div&gt;</code> tag.}
 </p>
 <div class="end">END</div>
 </div>
@@ -1558,7 +1558,7 @@ Literal empty strings <code>\!</code> may be used to split runs.
 </ul>
 <footer>
 <hr>
-©&nbsp;2019&nbsp;Conway.
+©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20191230 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20200119 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -1113,8 +1113,8 @@
           I am the host; my words and thoughts are in blue.
         </~h>
         <~ht>
-          (Thoughts are in <@> Comic Neue | http://comicneue.com/ </@>,
-          against a beige background.)
+          \{Thoughts are in <@> Comic Neue | http://comicneue.com/ </@>,
+          against a beige background.\}
         </~ht>
         
         <+g> /images/dialogue-guest.png | Guest </+g>
@@ -1122,15 +1122,15 @@
           I am the guest; my words are thoughts are in black.
         </~g>
         <~gt>
-          (My thoughts are against a beige background also,
+          \{My thoughts are against a beige background also,
           and our images are automatically framed in our respectively colours.
           Also words and thoughts can span multiple paragraphs each,
           and will wrap around the image
-          of the corresponding speaker or thinker.)
+          of the corresponding speaker or thinker.\}
         </~gt>
         <~gt>
-          (The dialogue is automatically concluded with "END"
-          in a <`><div></`> tag.)
+          \{The dialogue is automatically concluded with "END"
+          in a <`><div></`> tag.\}
         </~gt>
         
       </~~>
@@ -1146,8 +1146,8 @@
           I am the host; my words and thoughts are in blue.
         </~h>
         <~ht>
-          (Thoughts are in <@> Comic Neue | http://comicneue.com/ </@>,
-          against a beige background.)
+          \{Thoughts are in <@> Comic Neue | http://comicneue.com/ </@>,
+          against a beige background.\}
         </~ht>
         
         <+g> /images/dialogue-guest.png | Guest </+g>
@@ -1155,15 +1155,15 @@
           I am the guest; my words are thoughts are in black.
         </~g>
         <~gt>
-          (My thoughts are against a beige background also,
+          \{My thoughts are against a beige background also,
           and our images are automatically framed in our respectively colours.
           Also words and thoughts can span multiple paragraphs each,
           and will wrap around the image
-          of the corresponding speaker or thinker.)
+          of the corresponding speaker or thinker.\}
         </~gt>
         <~gt>
-          (The dialogue is automatically concluded with "END"
-          in a <`><div></`> tag.)
+          \{The dialogue is automatically concluded with "END"
+          in a <`><div></`> tag.\}
         </~gt>
         
       </~~>
