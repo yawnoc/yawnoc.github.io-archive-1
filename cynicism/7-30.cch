@@ -1,4 +1,4 @@
-<*> A cynic's 7.30 (and other programs) | 20190830 | 20191015 </*>
+<*> A cynic's 7.30 (and other programs) | 20190830 | 20200119 </*>
 
 <=h>
   <@ih></@ih>
@@ -14,7 +14,12 @@
   with proper speech and thought bubbles,
   but I don't think I can pull that off with just HTML and CSS.
   So if you see
-  <:t>highlighted text in <@> Comic Neue | http://comicneue.com/ | </@></:t>,
+  <:t>\
+    \{\
+      highlighted and curly-bracketed text
+      in <@> Comic Neue | http://comicneue.com/ | </@>\
+    \}\
+  </:t>,
   it's supposed to be in a thought bubble.
 </p>
 
