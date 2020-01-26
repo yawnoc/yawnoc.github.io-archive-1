@@ -3082,7 +3082,10 @@ def cch_to_html(file_name):
   file_name = re.sub(r'\\', '/', file_name)
   
   # Remove current directory leading dot slash
-  file_name = re.sub('^\./', '', file_name)
+  file_name = re.sub(r'^\./', '', file_name)
+  
+  # Remove trailing "." or ".cch" if provided
+  file_name = re.sub(r'\.(cch)?$', '', file_name)
   
   # ----------------------------------------------------------------
   # Whether we are building index.html
