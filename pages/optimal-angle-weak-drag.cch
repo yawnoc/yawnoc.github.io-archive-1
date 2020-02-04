@@ -530,7 +530,7 @@
 <p>
   You might be wondering why I stopped at order <$>B^2</$>.
   Initially I thought that integration could be performed to arbitrary order
-  (although the amount of algebra required grows {very} quickly).
+  (although the amount of algebra required grows <em>very</em> quickly).
   However I was wrong; it turns out that the following integrals
   appear at cubic order, which have no closed-form expression:
 </p>
