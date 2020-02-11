@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20200119 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20200212 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -1615,9 +1615,9 @@
   </tr>
   
   <tr>
-    <td><`>\*</`></td>
+    <td><`>\LORD</`></td>
     <td>(very long)</td>
-    <td>\*</td>
+    <td>\LORD</td>
     <td>"Lord" in small caps</td>
   </tr>
   
