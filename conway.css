@@ -642,6 +642,13 @@ span.small-caps {
   font-variant: small-caps;
 }
 
+/* Translation type (or, lit.) */
+
+span.translation-type {
+  color: #727272;
+  font-family: serif;
+}
+
 /* ---------------------------------------------------------------- */
 /* Tables                                                           */
 /* ---------------------------------------------------------------- */
