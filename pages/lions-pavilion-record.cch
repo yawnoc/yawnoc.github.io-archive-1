@@ -1,6 +1,6 @@
 <*>
   "Record of {the} Lion's Pavilion, Victoria~Peak": 《太平山獅子亭記》
-  | 20190407 | 20191221 | dr
+  | 20190407 | 202002xx | dr
   | An English translation of 《太平山獅子亭記》, or \
     "Record of {the} Lion's Pavilion, Victoria~Peak", \
     the text on a plaque in the Lion's Pavilion, Victoria Peak, Hong Kong.
@@ -15,7 +15,7 @@
 </=h>
 
 <h1>
-  《太平山獅子亭記》 or<br>
+  《太平山獅子亭記》 \or<br>
   "Record of {the} Lion's Pavilion, Victoria~Peak"
 </h1>
 
@@ -95,7 +95,7 @@
 
 <#t>
   太平山，古稱鼇峰，南臨大海，北與九龍諸山遥遥相望，岡巒連綿，林木蔚茂，風景絶美。 |
-  Mount~Tranquility, {in} ancient {times} referred to {as}
+  Victoria Peak, {in} ancient {times} referred to {as}
   {the} Peak of the Great Sea Turtle,
   overlooks {the} great sea {unto the} south,
   {and is in} far, far mutual looking {unto the} north
@@ -107,35 +107,34 @@
 <ul>
   <li>太平山：
     Victoria Peak；
-    literally Mount~Tranquility;
-    or Mount~Peace
+    \lit Mount~Tranquility;
+    \or Mount~Peace
   </li>
   <li>鼇：海中大鱉也；
-    the Great Sea Turtle (according to legend)<br>
+    the Great Sea Turtle<br>
       鼇，牛刀切，
       <^cm> ngou4 | a/o </^cm>
   </li>
   <li>峰：
     Peak;
-    or Summit
+    \or Summit
   </li>
   <li>臨：居高臨下；臨，視也；
-    overlooks;
-    or looks down from above
+    overlooks
   </li>
   <li>岡：山脊也；
-    ridges (as in mountain ridges);
-    literally mountain backs
+    ridges;
+    \lit mountain backs
   </li>
   <li>巒：山小而銳；又山綿連曰巒；
     small, pointed hills;
-    also unbroken {and} connected hills<br>
+    \or unbroken {and} connected hills<br>
       巒，落元切，音鑾，
       <^cm> lu"n4 | lua/n </^cm>
   </li>
   <li>蔚：茂也；
     thriving;
-    or flourishing<br>
+    \or flourishing<br>
       蔚，威畏切，音尉，
       <^cm> wai3 | we\i </^cm>
   </li>
@@ -145,23 +144,23 @@
   我獅子會，建亭於芬尼徑側，為主亭一，前亭五，如北辰居中，而五星拱之。 |
   We {the} Lions Club, built {the} Pavilion
   to {the} side of Findlay~Path,
-  composed of one main Pavilion {and} five fore Pavilions,
-  like {the} North Star abiding in {the} centre
-  with {the} Five Planets surrounding it.
+  composed of one main Pavilion, {and} five fore Pavilions,
+  like {the} North Star abiding in {the} centre,
+  with {the} Five Planets going round it.
 </#t>
 <ul>
   <li>建：
     built;
-    or constructed
+    \or constructed
   </li>
   <li>主：
-    main; or primary
+    main; \or primary
   </li>
   <li>北辰：
     North Star
   </li>
   <li>居：
-    abiding in; or dwelling in
+    abiding in; \or dwelling in
   </li>
   <li>五星：
     {the} Five Planets<br>
@@ -169,7 +168,7 @@
     i.e.~Venus, Jupiter, Mercury, Mars and Saturn respectively.
   </li>
   <li>拱，拱翊，環衛也：
-    surrounding (in support or defence)<br>
+    going round<br>
     The line 如北辰居中，而五星拱之
     is a nod to Confucius in
     <@>
@@ -182,7 +181,7 @@
       {The} Master said,
       "{He who} governeth using virtue
       {is} like {the} North Star, abiding in its place with
-      {the} multitude of stars surrounding in defence of it."
+      {the} multitude of stars going round it."
     </#t>
     Here, 共 is interchangeable with 拱.
   </li>
@@ -209,17 +208,7 @@
     drawing-decorated<br>
       畫，去聲，
       <^cm> waa6 | hua\ </^cm><br>
-    Initially I was unsure of the reading of 畫 in Cantonese.
-    In literary contexts, the character 畫 has two pronunciations,
-    入聲~(<^e>waak9</^e>) for "draw", "divide", "plan", etc., and
-    去聲~(<^e>waa6</^e>) for "drawing", "painting", etc.
-    Yet when explicitly a noun, the latter of these is vernacularised into
-    上聲~(<^e>waa2</^e>).
-    Now in the case of 畫檻,
-    畫 means "decorated {with} drawings",
-    so I believe it should be read in 去聲~(<^e>waa6</^e>).
-    My line of thinking is confirmed by at least three
-    singers' rendering of the similar phrase 畫欄 as <^e>waa6 laan4</^e>,
+    Compare 畫欄, <^e>waa6 laan4</^e>,
     in the line 畫欄風擺竹橫斜 of 《再世紅梅記\.脫穽救裴》:
     <ol>
       <@i>
@@ -249,7 +238,7 @@
   </li>
   <li>檻：
     balustrades;
-    or rails<br>
+    \or rails<br>
       檻，音艦，
       <^cm> laam6 | jia\n </^cm>
   </li>
@@ -258,13 +247,8 @@
       Moon Gate
       | https://en.wikipedia.org/wiki/Moon_gate
       | Wikipedia: Moon gate
-    </@>; or Moon Entrance<br>
-    This is the circular opening found in much
-    traditional Chinese architecture.
-  </li>
-  <li>古：
-    old;
-    or ancient
+    </@>;
+    \or Moon Entrance
   </li>
 </ul>
 
@@ -272,11 +256,12 @@
   春秋佳日，中西人士聨翩蒞止，登斯亭也。 |
   {On a} good spring {or} autumn day,
   {both} Chinese {and} Western people continuously flock {here to} visit,
-  ascending {up to} this Pavilion.
+  ascending to this Pavilion.
 </#t>
 <ul>
   <li>聨翩：接連不斷；翩，疾飛也；
-    continuously flock; literally rapidly fly together<br>
+    continuously flock;
+    \lit rapidly fly together<br>
       翩，音篇，
       <^cm> p'een1 | pia=n </^cm><br>
     "Flock" preserves the connotation with bird flight.
@@ -291,8 +276,8 @@
 <#t>
   可俯瞰維多利亞海港南北两岸，其間朝暉夕陰，晴光雨色，千變萬化，殆如畫圖。 |
   {One} can face downwards {and} overlook {the} two shores,
-  southern {and} northern, of Victoria~Harbour.
-  Amidst these, {the} morning sunshine {and the} even darkness,
+  southern {and} northern, of Victoria~Harbour;
+  amidst these, {the} morning sunshine {and the} even darkness,
   {and the} clear light {and the} rainy hues,
   {undergo a} thousand changes {and a} myriad tranformations,
   as {in} paintings {and} drawings.
@@ -300,12 +285,12 @@
 <ul>
   <li>瞰：視也；又俯視曰瞰；
     overlook;
-    or look<br>
+    \or look at<br>
       瞰，音磡，
       <^cm> ham3 | ka\n </^cm>
   </li>
   <li>晴：
-    clear (as in weather); or fine
+    clear; \or fine
   </li>
   <li>殆<br>
     Not really sure. Looking through the meanings listed in
@@ -316,7 +301,7 @@
     </@>:
     <ol>
       <li>危也；
-        perilous; or endangered<br>
+        perilous; \or endangered<br>
         <:r>Nah.</:r>
       </li>
       <li>近也；
@@ -328,7 +313,7 @@
         <:r>Nah.</:r>
       </li>
       <li>將也，幾也；
-        almost; or nearly<br>
+        almost; \or nearly<br>
         <:v>Maybe?</:v>
       </li>
       <li>
@@ -365,11 +350,11 @@
   </li>
   <li>賞：
     appreciate;
-    or admire
+    \or admire
   </li>
   <li>怪石：
     oddly-{shaped} rocks;
-    literally strange rocks<br>
+    \lit strange rocks<br>
     I note that 怪石 may also mean "rocks like jade":
     怪石，似玉也, from
     <@>
@@ -390,12 +375,12 @@
 
 <#t>
   而遠近松風，又如笙竽合奏，耳目所接，無一而不足快。亦遊息之佳所也。 |
-  And {the} far {and} near wind {through} the pine tree
+  And {the} far {and} near wind {through} the pine tree,
   {is} also like the 笙<^> shang | she^ng | sheng </^>
   {and} the 竽<^> yu" | yu" | yu </^> playing {in} ensemble;
   {among} that which the ear {and} the eye receiveth,
   not one {thing} {is} not sufficient {or} pleasing.
-  {It is} also {an} excellent place {for}
+  {It is} also {a} good place {for}
   travel {and} rest.
 </#t>
 <ul>
@@ -417,14 +402,14 @@
 
 <#t>
   亭之建，倡自一九七三年。 |
-  {The} construction of {the} Pavilion {was}
-  suggested in {the} year 1973.
+  {The} construction of {the} Pavilion,
+  {was} suggested in {the} year 1973.
 </#t>
 <ul>
   <li>倡：
     suggested;
-    or {first} suggested;
-    or {first} advocated for
+    \or {first} suggested;
+    \or {first} advocated for
   </li>
 </ul>
 
@@ -440,7 +425,7 @@
 <ul>
   <li>先後：
     {one} after {the} other;
-    literally before {and} after
+    \lit before {and} after
   </li>
   <li>蒙：
     received from<br>
@@ -493,12 +478,12 @@
   {It was} completed in September of {the} year 1976,
   {and on the} 3rd day of this month,
   {the} ceremony of receiving {was} performed by
-  Chairman 沙利士<^> Shaa-lei-see | Sha-li-shih | Shalishi </^>
-  of {the} City Administration Authority.
+  Chairman Sales of {the} Urban Council.
 </#t>
 <ul>
   <li>市政局：
-    literally City Administration Authority<br>
+    Urban Council;
+    \lit City Administration Authority<br>
     <@>
       Urban Council
       | https://en.wikipedia.org/wiki/Urban_Council
@@ -519,41 +504,46 @@
 <#t>
   吾聞獅子得金精之剛，聲吼如雷，天地皆動。 |
   I hear {that the} lion receiveth
-  {the} strength of {the} essence of {the} west;
+  {the} strength of {the} essence of metal;
   {its} sounds {and} roars {are} like thunder:
   all Heaven {and} Earth {are} moved {by it}.
 </#t>
 <ul>
   <li>金精：
-    {the} essence of {the} west<br>
-    Metal~(金) is the element associated with
+    {the} essence of metal<br>
+    Perhaps "essence of {the} west",
+    since metal~(金) is the element associated with
     the cardinal direction west.
   </li>
   <li>剛：
-    strength; or toughness
+    strength;
+    \or toughness
   </li>
 </ul>
 
 <#t>
   今兹之舉，賴諸君子如響斯應，相輔相成，其力不啻雄獅。 |
   {This} deed, here {and} now,
-  dependeth upon {the} multiple gentlemen,
+  dependeth upon {the} multiple gentlemen
   {having} sounded {a} response {to the calls},
   mutually assisting {and} mutually fulfilling,
-  their efforts no less than {that of the} mighty lion.
+  their efforts no less than {the} mighty lion's.
 </#t>
 <ul>
   <li>今兹：
-    here {and} now; literally now {and} here
+    here {and} now; \lit. now {and} here
   </li>
   <li>舉：
-    deed; or {commendable} action
+    deed; \or {commendable} action
   </li>
   <li>力：
-    efforts; literally strength
+    efforts;
+    \lit strength
   </li>
   <li>啻：
-    less than; literally only; or merely<br>
+    less than;
+    \lit only;
+    \or merely<br>
       啻，音翅，
       <^cm> ch'ee3 | chi\ </^cm>
   </li>
@@ -564,16 +554,16 @@
   {I} especially hope {for the}
   traveller {who} cometh, {to} also {have an}
   healthy step {and an} energetic spirit,
-  {and} look back {and} look forth
+  looking back {and} looking forth
   according to {his} own {will},
   and {be the} same as {a} lion.
 </#t>
 <ul>
   <li>望：
-    hope; or wish
+    hope; \or wish
   </li>
   <li>神：
-    spirit; or mind
+    spirit; \or mind
   </li>
 </ul>
 
@@ -584,7 +574,7 @@
 <ul>
   <li>爰書：
     {a} prisoner's document;
-    or {my writing is but a} prisoner's document<br>
+    \or {my writing is but a} prisoner's document<br>
       爰，云官切，又羽元切，
       <^cm> woon4; also yu"n4 | yua/n </^cm><br>
     《分韻撮要》 gives <^e>woon4</^e> (my preferred reading),
