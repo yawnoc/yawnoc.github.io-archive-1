@@ -123,8 +123,8 @@
 #   {yawnoc URL}    \=              (GitHub: yawnoc)
 #   <i>             {               (Conway italics opening tag)
 #   </i>            }               (Conway italics closing tag)
-#   \or             <...>or</...>   (translation type "or")
-#   \lit            <...>lit.</...> (translation type "lit.")
+#   \or             <...>or</...>   (alternative type "or")
+#   \lit            <...>lit.</...> (alternative type "lit.")
 # \ and | are called functional Conway literals.
 # ~, { and } are called special Conway literals.
 # ----------------------------------------------------------------
@@ -2812,17 +2812,17 @@ def unescape_conway(string):
   # Unescape \= as https://github.com/yawnoc
   string = re.sub(r'\\=', 'https://github.com/yawnoc', string)
   
-  # Unescape \or as <span class="translation-type">or</span>
+  # Unescape \or as <span class="alternative-type">or</span>
   string = re.sub(
     r'\\or',
-    '<span class="translation-type">or</span>',
+    '<span class="alternative-type">or</span>',
     string
   )
   
-  # Unescape \lit as <span class="translation-type">lit.</span>
+  # Unescape \lit as <span class="alternative-type">lit.</span>
   string = re.sub(
     r'\\lit',
-    '<span class="translation-type">lit.</span>',
+    '<span class="alternative-type">lit.</span>',
     string
   )
   

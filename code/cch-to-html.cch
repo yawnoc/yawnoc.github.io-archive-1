@@ -1649,14 +1649,14 @@
     <td><`>\or</`></td>
     <td>(very long)</td>
     <td>\or</td>
-    <td>Translation type "or"</td>
+    <td>Alternative type "or"</td>
   </tr>
   
   <tr>
     <td><`>\lit</`></td>
     <td>(very long)</td>
     <td>\lit</td>
-    <td>Translation type "lit."</td>
+    <td>Alternative type "lit."</td>
   </tr>
   
   <tr>

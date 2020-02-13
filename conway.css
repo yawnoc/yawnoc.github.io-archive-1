@@ -603,6 +603,13 @@ svg.embedded-styles {
 /* Spans                                                            */
 /* ---------------------------------------------------------------- */
 
+/* Alternative type (usually "or", "lit." for translations) */
+
+span.alternative-type {
+  color: #727272;
+  font-family: serif;
+}
+
 /* Highlighted part (of words, phonetics etc.) */
 
 span.highlighted-part {
@@ -640,13 +647,6 @@ span.romanisation-conway {
 
 span.small-caps {
   font-variant: small-caps;
-}
-
-/* Translation type (or, lit.) */
-
-span.translation-type {
-  color: #727272;
-  font-family: serif;
 }
 
 /* ---------------------------------------------------------------- */
