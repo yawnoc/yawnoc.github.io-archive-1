@@ -734,7 +734,15 @@ td ul {
   display: none;
 }
 
-/* Sparse list (i.e. one whose items are less densely packed) */
+/* List item spacing */
+
+li {
+  padding-bottom: 0.27em;
+}
+
+table li, div li {
+  padding-bottom: 0;
+}
 
 .sparse-list {
   padding-top: 0.5em;
