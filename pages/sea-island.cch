@@ -1,6 +1,6 @@
 <*>
   "{The} Sea Island Computational Classic": 《海島算經》
-  | 20190420 | 20191221 | dmr
+  | 20190420 | 202002xx | dmr
   | An annotated English translation of the first problem in Haidao Suanjing, \
     《海島算經》, or "{The} Sea Island Computational Classic".
 </*>
@@ -14,7 +14,7 @@
 </=h>
 
 <h1>
-  《海島算經》 or<br>
+  《海島算經》 \or<br>
   "{The} Sea Island Computational Classic"
 </h1>
 
@@ -190,17 +190,18 @@
     three<:n>3</:n>~丈<^> choeng | chang | zhang </^></:r>,
   {one} in front of {the} other, <:g>mutually separated by
     {a} thousand<:n>1000</:n>~步<^> pou | pu | bu </^></:g>,
-  {and} make {the} rear pole three-in-line
+  {and} make {the} rear pole mutually straight {the} three
   with {the} front pole {and the island}.
 </#t>
 <ul>
   <li>表：標也；
     poles;
-    or pillars;
-    literally markers
+    \or pillars;
+    \lit markers
   </li>
   <li>齊：
-    {the} same; or uniform
+    {the} same;
+    \or uniform
   </li>
   <li>丈<^> choeng | chang | zhang </^><br>
     A unit of distance, of the order two metres.
@@ -208,16 +209,16 @@
   </li>
   <li>前後：
     {one} in front of {the} other;
-    literally front {and} rear
+    \lit front {and} rear
   </li>
   <li>步<^> pou | pu | bu </^>：
-    literally steps;
-    or paces<br>
+    \lit steps;
+    \or paces<br>
     A unit of distance, of the order one metre.
   </li>
   <li>參相直：
-    three-in-line;
-    literally mutually straight, {the} three of {them}<br>
+    mutually straight {the} three;
+    \or three-in-line<br>
     參 means 三, three (<^e>saam1</^e>/<^e>sa=n</^e>).
   </li>
 </ul>
@@ -245,19 +246,19 @@
   從前表<:b>卻行一百二十三步</:b>，人目著地<:r>取望島峯</:r>，與表末參合。 |
   <:b>Walking back one hundred {and} twenty-three<:n>123</:n>~\
     步<^> pou | pu | bu </^></:b> from {the} front pole,
-  {a} person's eye on {the} ground,
+  {a} man's eye on {the} ground,
     <:r>taking {a} look at {the} peak of {the} island</:r>,
-  meeteth with {the} tip of {the} pole, {the} three of {them}.
+  meeteth {the} three with {the} tip of {the} pole.
 </#t>
 <ul>
   <li>著地：
     on {the} ground;
-    or on ground {level};
-    literally contacting {the} ground
+    \or on ground {level};
+    \lit contacting {the} ground
   </li>
   <li>峯：
     peak;
-    or summit
+    \or summit
   </li>
   <li>
     In other words, the three of them
@@ -288,9 +289,9 @@
   從後表<:b>卻行一百二十七步</:b>，人目着地<:r>取望島峯</:r>，亦與表末參合。 |
   <:b>Walking back one hundred {and} twenty-seven<:n>127</:n>~\
     步<^> pou | pu | bu </^></:b>
-  from {the} rear pole, {a} person's eye on {the} ground,
+  from {the} rear pole, {a} man's eye on {the} ground,
   <:r>taking {a} look at {the} peak of {the} island</:r>,
-  also meeteth with {the} tip of {the} pole, {the} three of {them}.
+  also meeteth {the} three with {the} tip of {the} pole.
 </#t>
 
 <div class="centred-svg">
@@ -313,7 +314,7 @@
 
 <#t>
   問<:b>島高</:b>及<:r>去表</:r>各幾何？ |
-  {We} ask: how much {are} each of <:b>{the} height of {the} island</:b>,
+  {We} ask: how much {are} each of <:b>{the} height of {the} island</:b>
   and <:r>{its} distance from {the front} pole</:r>?
 </#t>
 
@@ -322,7 +323,7 @@
   Answer saith: {the} height of {the} island {is}
     <:b>four<:n>4</:n>~里<^> lei | li | li </^>
     fifty-five<:n>55</:n>~步<^> pou | pu | bu </^></:b>, {and the}
-  distance from {the front} pole
+  distance from {the front} pole,
     <:r>one hundred {and} two<:n>102</:n>~里<^> lei | li | li </^>
     one hundred {and} fifty<:n>150</:n>~步<^> pou | pu | bu </^></:r>.
 </#t>
@@ -332,27 +333,20 @@
   </li>
   <li>一百二：
     one hundred {and} two<:n>102</:n><br>
-    (Remember I {emphasise} words not in the original Chinese.)
+    (Remember I {distinguish} words not in the original Chinese.)
     <ul>
       <li>
-        In modern Chinese, one must say
-        一百零二,
+        In modern Chinese, one must say 一百零二,
         "one hundred oh two", to mean~102.
-        If one just says 一百二
-        or 百二,
-        this means~120;
-        the~二 refers to
-        the next significant digit
+        If one just says 一百二 or 百二, this means~120;
+        the~二 refers to the next significant digit
         (as in <$>1.2 \times 100 = 120</$>).
       </li>
       <li>
-        In Literary Chinese you might see
-        一百又二
-        or 一百有二,
+        In Literary Chinese you might see 一百又二 or 一百有二,
         "one hundred and two", but the "and" is not necessary.
-        Thus 一百二 or
-        百二 means~102
-        rather than~120; this is preserved in modern Japanese.
+        Thus 一百二 or 百二 means~102 rather than~120;
+        this is preserved in modern Japanese.
       </li>
     </ul>
   </li>
@@ -363,13 +357,13 @@
   Method saith: use {the} pole height times
   {the} pole separation as {the} dividend, {and the}
   mutual excess as {the} divisor, {and} divide them.
-  {Unto} that which {is} obtained, add {the} pole height,
-  that is, {we} obtain {the} height of {the} island.
+  {Unto} that obtained add {the} pole height,
+  that is {we} obtain {the} height of {the} island.
 </#t>
 <ul>
   <li>實：
     dividend;
-    or numerator
+    \or numerator
   </li>
   <li>間：
     separation<br>
@@ -378,14 +372,14 @@
   </li>
   <li>相多：
     mutual excess;
-    or difference<br>
+    \or difference<br>
     It is not immediately obvious, but <b>"mutual excess" refers to
     the difference between the backward walking distances
     from the two poles.</b>
   </li>
   <li>法：
     divisor;
-    or denominator<br>
+    \or denominator<br>
     <$$>
       \frac{\text{實}}{\text{法}} = \frac{\text{[dividend]}}{\text{[divisor]}}
     </$$>
@@ -433,13 +427,13 @@
   use {the} front pole backward walk times {the} pole separation
     as {the} dividend,
   {and the} mutual excess as {the} divisor.
-  Divide them {to} obtain {the} number of 里<^> lei | li | li </^>
+  Divide them, {to} obtain {the} number of 里<^> lei | li | li </^>
     {that the} island {is} separated from {the front} pole.
 </#t>
 <ul>
   <li>遠近：
     distance;
-    literally far-closeness
+    \lit far-closeness
   </li>
   <li>
     In modern notation,
@@ -659,7 +653,7 @@
   <:g>戊爲人目</:g>，<:v>戊丙甲爲前表望島峯</:v>。 |
   <:b><$>CD</$> is {the} front pole</:b>;
   <:r><$>ED</$> is {the} front {walk's} separation from {the} pole</:r>;
-  <:g><$>E</$> is {the} person's eye</:g>;
+  <:g><$>E</$> is {the} man's eye</:g>;
   <:v><$>ECA</$> is {the} front pole's
   looking at {the} peak of {the} island</:v>.
 </#t>
@@ -704,7 +698,7 @@
   <:g>辛爲人目</:g>，<:v>辛己甲爲後表望島峯</:v>。 |
   <:b><$>FG</$> is {the} rear pole</:b>;
   <:r><$>HG</$> is {the} rear {walk's} separation from {the} pole</:r>;
-  <:g><$>H</$> is {the} person's eye</:g>;
+  <:g><$>H</$> is {the} man's eye</:g>;
   <:v><$>HFA</$> is {the} rear pole's looking at
     {the} peak of {the} island</:v>.
 </#t>
@@ -752,13 +746,13 @@
 
 <#t>
   與<:b>庚戊丁乙</:b>平行<:r>作己丙辰</:r>，則<:g>辰乙與丙丁、己庚俱等</:g>。 |
-  <:r>Construct <$>FCO</$></:r> parallel with <:b><$>GEDB</$></:b>;
-  thus <:g><$>OB</$> {is} equal with both <$>CD</$> {and} <$>FG</$></:g>.
+  <:r>Constructing <$>FCO</$></:r> parallel with <:b><$>GEDB</$></:b>,
+  <:g><$>OB</$> {is} equal with both <$>CD</$> {and} <$>FG</$></:g>.
 </#t>
 <ul>
   <li>俱：
     both;
-    literally all
+    \lit all
   </li>
 </ul>
 
@@ -813,8 +807,8 @@
 
 <#t>
   與<:b>丙戊</:b>平行<:r>作己壬</:r>，則<:g>壬庚與戊丁等</:g>。 |
-  <:r>Construct <$>FI</$></:r> parallel with <:b><$>CE</$></:b>;
-  thus <:g><$>IG</$> {is} equal with <$>ED</$></:g>.
+  <:r>Constructing <$>FI</$></:r> parallel with <:b><$>CE</$></:b>,
+  <:g><$>IG</$> {is} equal with <$>ED</$></:g>.
 </#t>
 
 <div class="centred-svg">
@@ -872,8 +866,8 @@
 <ul>
   <li>同式：
     similar;
-    literally same form;
-    or same style
+    \lit same form;
+    \or same style
   </li>
 </ul>
 
@@ -981,14 +975,14 @@
 <#t>
   己庚辛形，分<:b>己庚壬形，同己庚句</:b>，而<:r>辛壬爲股較</:r>。 |
   {The} shape <$>FGH</$> {is} split into <:b>{the} shape <$>FGI</$>
-  {having the} same minor cathetus  <$>FG</$></:b>,
+  {of the} same minor cathetus  <$>FG</$></:b>,
   with <:r><$>HI</$> as {the} major cathetus chariot-beam</:r>.
 </#t>
 
 <ul>
   <li>句：
     minor cathetus;
-    or shorter leg (of a right-angled triangle)<br>
+    \or shorter leg (of a right-angled triangle)<br>
     Variant of 勾.<br>
     A <@>
       cathetus
@@ -999,7 +993,7 @@
   </li>
   <li>股：
     major cathetus;
-    or longer leg (of a right-angled triangle)<br>
+    \or longer leg (of a right-angled triangle)<br>
     Surveying the sea island from distances much greater than its height,
     the horizontal lengths will be much greater than
     the vertical lengths.
@@ -1076,7 +1070,7 @@
 <#t>
   甲辰己形，分<:b>甲辰丙形，同甲辰句</:b>，而<:r>己丙爲股較</:r>。 |
   {The} shape <$>AOF</$> {is} split into <:b>{the} shape <$>AOC</$>
-  {having the} same minor cathetus  <$>AO</$></:b>,
+  {of the} same minor cathetus  <$>AO</$></:b>,
   with <:r><$>FC</$> as {the} major cathetus chariot-beam</:r>.
 </#t>
 
@@ -1131,9 +1125,9 @@
   以<:b>小股較辛壬</:b>比<:r>小句己庚</:r>，\
   若<:g>大股較己丙</:g>比<:v>大句甲辰</:v>。 |
   Using <:b>{the} small major cathetus chariot-beam <$>HI</$></:b>
-  {to} compare to <:r>{the} small minor cathetus <$>FG</$></:r>,
+  {to} compare unto <:r>{the} small minor cathetus <$>FG</$></:r>,
   {is} like <:g>{the} large major cathetus chariot-beam <$>FC</$></:g>
-  compared to <:v>{the} large minor cathetus <$>AO</$></:v>.
+  compared unto <:v>{the} large minor cathetus <$>AO</$></:v>.
 </#t>
 <ul>
   <li>
@@ -1204,8 +1198,8 @@
 <#t>
   既得<:v>甲辰</:v>，加<:r>表高辰乙</:r>（即<:r>丙丁</:r>），得甲乙，爲島高。 |
   Having obtained <:v><$>AO</$></:v>,
-  add <:r>{the} pole height <$>OB</$></:r> (which is <:r><$>CD</$></:r>)
-  {to} obtain <$>AB</$>, {which} is {the} height of {the} island.
+  add <:r>{the} pole height <$>OB</$></:r> (which is <:r><$>CD</$></:r>),
+  {to} obtain <$>AB</$>, being {the} height of {the} island.
 </#t>
 <ul>
   <li>
@@ -1298,10 +1292,10 @@
   <:b>小股較辛壬</:b>比<:r>分股壬庚</:r>，\
   若<:g>大股較己丙</:g>比<:v>分股丙辰</:v>（即<:v>丁乙</:v>），\
   得<:v>島去前表之遠</:v>。 |
-  <:b>{The} small major cathetus chariot-beam <$>HI</$></:b> compared to
+  <:b>{The} small major cathetus chariot-beam <$>HI</$></:b> compared unto
   <:r>{the} split major cathetus <$>IG</$></:r>,
   {is} like
-  <:g>{the} large major cathetus chariot-beam <$>FC</$></:g> compared to
+  <:g>{the} large major cathetus chariot-beam <$>FC</$></:g> compared unto
   <:v>{the} split major cathetus <$>CO</$></:v>
   (which is <:v><$>DB</$></:v>);
   {we} obtain <:v>{the} distance {that the} island {is} separated
