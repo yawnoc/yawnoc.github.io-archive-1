@@ -606,7 +606,7 @@ svg.embedded-styles {
 /* Alternative type (usually "or", "lit." for translations) */
 
 span.alternative-type {
-  color: #727272;
+  color: grey;
   font-family: serif;
 }
 
