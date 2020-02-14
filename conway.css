@@ -740,7 +740,7 @@ li {
   padding-bottom: 0.27em;
 }
 
-table li, div li {
+div li, nav li, table li {
   padding-bottom: 0;
 }
 
