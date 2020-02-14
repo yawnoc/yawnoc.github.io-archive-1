@@ -1,9 +1,9 @@
 <*>
-  "Q{\&}A {with} Confucius: {the} Little Child's Discourse":
+  "Q~{\&}~A {with} Confucius: {the} Little Child's Discourse":
   《孔子問答：小兒論》
-  | 20190407 | 20200116 | dr
+  | 20190407 | 202002xx | dr
   | An English translation of 《孔子問答：小兒論》, or \
-    "Q{\&}A {with} Confucius: {the} Little Child's Discourse". \
+    "Q~{\&}~A {with} Confucius: {the} Little Child's Discourse". \
     Basically Confucius getting his arse whooped by a little kid.
 </*>
 
@@ -16,8 +16,8 @@
 </=h>
 
 <h1>
-  《孔子問答：小兒論》 or<br>
-  "Q{\&}A {with} Confucius: {the} Little Child's Discourse"
+  《孔子問答：小兒論》 \or<br>
+  "Q~{\&}~A {with} Confucius: {the} Little Child's Discourse"
 </h1>
 
 <*p></*p>
@@ -50,8 +50,7 @@
     | 《三字經》
   </@> meaning
   "仲尼<^> Chung-nei | Chung-ni | Zhongni </^> of old,
-  {had} 項橐<^> Hong T'ok | Hsiang T'o | Xiang Tuo </^>
-  {for his} teacher".
+  {had} teacher 項橐<^> Hong T'ok | Hsiang T'o | Xiang Tuo </^>".
 </p>
 
 <p>
@@ -82,7 +81,7 @@
   although the almanac uses 句 even for mid-sentence pauses,
   and only uses 讀 (very sparingly) for lists; see
   <@>
-    the actual first page of the text in the almanac
+    the actual first page of the almanac text
     | /images/little-childs-discourse-1.jpg
     | 小兒論
   </@>.
@@ -95,27 +94,28 @@
 
 <#t>
   《孔子問答：小兒論》 |
-  "Q{\&}A {with} Confucius:
+  "Q~{\&}~A {with} Confucius:
   {the} Little Child's Discourse"
 </#t>
 <ul>
   <li>問答：
-    Q{\&}A; or questions {and} answers;
-    or asking {and} replying
+    Q~{\&}~A;
+    \or questions {and} answers;
+    \or asking {and} replying
   </li>
   <li>小：
     little;
-    or small
+    \or small
   </li>
   <li>論：
     discourse;
-    also theory
+    \or theory
   </li>
 </ul>
 
 <#t>
   孔子，名丘，字仲尼，設敎於魯國之西。 |
-  Confucius, named 丘<^> Yau | Ch'iu | Qiu </^>
+  Confucius, named 丘<^> Yau | Ch'iu | Qiu </^>,
   {and} styled 仲尼<^> Chung-nei | Chung-ni | Zhongni </^>,
   established {a} teaching in {the} west
   of {the} nation of 魯<^> Lou | Lu | Lu </^>.
@@ -123,7 +123,7 @@
 <ul>
   <li>孔子：
     Confucius;
-    literally Master~孔<^> Hung | K'ung | Kong </^>
+    \lit Master~孔<^> Hung | K'ung | Kong </^>
   </li>
   <li>字：
     styled<br>
@@ -150,14 +150,15 @@
 
 <#t>
   一日率諸弟子，御車出遊，路逢數兒嬉戲，中有一兒不戲。 |
-  One day {he} led {his} many disciples out {for} travel, driving {his} chariot.
-  {Along the} road {they} encountered several children playing;
+  One day {he} led {his} many disciples,
+  driving {his} chariot out {for} travel.
+  {Along the} road {they} encountered several children playing,
   {and} amidst {them} there was one child {who} played not.
 </#t>
 <ul>
   <li>御：使馬也；
     driving<br>
-    Literally "using horses".
+    Driving horses of course.
   </li>
   <li>車：
     chariot<br>
@@ -198,7 +199,7 @@
   </li>
   <li>縫：
     mend;
-    literally stitch
+    \lit stitch
   </li>
   <li>門中：門，家門；
     {those} amidst {the} family<br>
@@ -206,7 +207,7 @@
   </li>
   <li>功：
     achievement;
-    or (good) end result
+    \or (good) result
   </li>
   <li>豈：
     how<br>
@@ -241,14 +242,14 @@
   </li>
   <li>片：
     pieces;
-    literally slices
+    \lit slices
   </li>
 </ul>
 
 <#t>
   孔子責之曰：「何不避車乎？」 |
-  {And} Confucius rebuked him, saying,
-    "Wherefore avoidest {thou} not {the path of my} chariot?"
+  Confucius rebuked him, saying,
+    "Wherefore avoidest {thou} not {my} chariot?"
 </#t>
 
 <#t>
@@ -261,30 +262,26 @@
 <ul>
   <li>當：
     ought to;
-    or should
+    \or should
   </li>
 </ul>
 
 <#t>
   孔子乃勒車論道，下車而問焉：「汝年尚幼，何多詐乎？」 |
   Confucius thus restrained {his} chariot
-  {to} reason with {him}, alighting {his} chariot and asking,
-    "Thou {art} still young {in} years; wherefore {so} much cunning?"
+  {to} reason, alighting {his} chariot and asking,
+    "Thy years {be} yet young; wherefore {so} much cunning?"
 </#t>
 <ul>
   <li>論道：
-    reason with;
-    literally debate logic with<br>
-    Similar to 講道理, meaning "talk {some} sense with".
-    My initial interpretation of 論道 when reading the text was
-      "argue for {the right of} way";
-    while probably not the intended meaning,
-    I like it so much I've included it here.
+    reason;
+    \lit debate logic<br>
+    Maybe "argue for {the right of} way".
   </li>
   <li>詐：
     cunning;
-    literally trickery;
-    or deception<br>
+    \lit trickery;
+    \or deception<br>
     Here I think Confucius is referring to the child's wit;
     I don't see how the child is tricking or deceiving Confucius in any way.
   </li>
@@ -309,7 +306,7 @@
   </li>
   <li>三歲：
     three years;
-    or to {the} age of three
+    \or to {the} age of three
   </li>
   <li>畎：田中溝也；
     ditch (in a field)<br>
@@ -318,33 +315,33 @@
   </li>
   <li>天生：
     naturally;
-    literally born of nature;
-    or born of Heaven
+    \lit born of nature;
+    \or born of Heaven
   </li>
   <li>豈謂：
     how be {this};
-    literally how speak of {this as}
+    \lit how speak of {this as}
   </li>
 </ul>
 
 <#t>
   孔子曰：「汝居何鄉、何里、何姓、何名、何字？」 |
   Confucius said,
-    "Dwellest thou in what hometown {and} what village?
-    What surname, what name {and} what style name {hast thou}?"
+    "Dwellest thou in what hometown, {and} what village;
+    {and} what surname, what name, {and} what style name {hast thou}?"
 </#t>
 
 <#t>
   小兒答曰：「吾居敝鄉、賤地、姓項、名橐、未有字也。」 |
   {The} little child replied, saying,
-    "I dwell in {a} shabby hometown {and a} lowly village,
-    {and am} surnamed 項<^> Hong | Hsiang | Xiang </^>
+    "I dwell in {a} shabby hometown, {and a} lowly village,
+    {and am} surnamed 項<^> Hong | Hsiang | Xiang </^>,
     {and} named 橐<^> T'ok | T'o | Tuo </^>,
     {and am} yet to have {a} style name."
 </#t>
 <ul>
   <li>敝：
-    shabby; or worn-out<br>
+    shabby; \or worn-out<br>
     Both 敝 and 賤 can be used
     as a self-deprecating substitute for "I" or "my".
   </li>
@@ -361,7 +358,8 @@
   </li>
   <li>汝意下如何：
     what {be} thy thoughts {upon this};
-    or <@> what sayest thou | https://youtu.be/f_4-rCROcsM | What say you? </@>
+    \or
+      <@> what sayest thou | https://youtu.be/f_4-rCROcsM | What say you? </@>
   </li>
 </ul>
 
@@ -374,24 +372,25 @@
 <ul>
   <li>慈：
     loving;
-    or kind<br>
-    The ideal father is strict (嚴) in that
+    \or kind<br>
+    The quintessential father is strict (嚴) in that
     in addition to providing for his children,
     he ought not to fail in teaching them (as in
     <@>
       養不教，父之過
       | https://ctext.org/three-character-classic#n90568
       | 《三字經》
-    </@> meaning "{to} provide for {but} not teach,
+    </@>,
+    "{to} provide for {but} not teach,
     {is the} mistake of {the} father").
-    The ideal mother is loving (慈).
+    The quintessential mother is kind/loving (慈).
     In literary Chinese the words 嚴 and 慈 can, even on their own,
     mean father and mother respectively.
   </li>
   <li>養：
     provide for;
-    or support;
-    or feed
+    \or support;
+    \or feed
   </li>
 </ul>
 
@@ -408,13 +407,17 @@
     Often used as an honorific.
   </li>
   <li>順：
-    obey; or go along with; or follow
+    obey;
+    \or go along with;
+    \or follow
   </li>
   <li>明：高明；
-    brilliant; or wise
+    brilliant;
+    \or wise
   </li>
   <li>暇：閒也；
-    spare time; or free time
+    spare time;
+    \or free time
   </li>
 </ul>
 
@@ -466,10 +469,12 @@
     The emperor.
   </li>
   <li>理：
-    administered; or managed
+    administered;
+    \or managed
   </li>
   <li>侯：
-    lords; or marquesses<br>
+    lords;
+    \or marquesses<br>
     See
     <@>
       諸侯
@@ -478,7 +483,8 @@
     </@>.
   </li>
   <li>妨：
-    harm; also obstruct
+    harm;
+    \or obstruct
   </li>
   <li>士儒：
     scholars {and} academics<br>
@@ -489,12 +495,12 @@
   </li>
   <li>學問：
     scholarship;
-    or learning;
-    literally learning {and} enquiry
+    \or learning;
+    \lit learning {and} enquiry
   </li>
   <li>弛：放也，棄也，廢也；
     abandoned;
-    literally slackened
+    \lit slackened
   </li>
 </ul>
 
@@ -511,7 +517,7 @@
 <ul>
   <li>小人：
     the little man;
-    or the despicable man<br>
+    \or the despicable man<br>
     In Confucianism, 小人 is a person of low moral character,
     always seeking quick personal gain.
     The opposite of 小人 is 君子 (gentleman),
@@ -528,20 +534,22 @@
   </li>
   <li>失時：
     out of season;
-    literally missing {the} season
+    \lit missing {the} season
   </li>
 </ul>
 
 <#t>
   孔子曰：「吾欲與汝平却天下，汝意下如何？」 |
   Confucius said,
-    "I wish to flatten away {all} under Heaven with thee:
+    "I wish to level out {all} under Heaven with thee:
     what {be} thy thoughts {upon this}?"
 </#t>
 <ul>
   <li>平却：
-    flatten away; or level out<br>
-    Alternatively, 平 may mean "fair" (as in fairness, or egalitarianism).
+    level out;
+    \or flatten away<br>
+    Alternatively, 平 may mean "make fair",
+    as in fairness, and egalitarianism.
   </li>
   <li>天下：
     {all} under Heaven<br>
@@ -560,7 +568,7 @@
 <#t>
   小兒答曰：「天下不可平也。或有高山，或有江湖。或有王侯，或有奴婢。 |
   {The} little child replied, saying,
-    "{All} under Heaven cannot {be} flattened.
+    "{All} under Heaven cannot {be} levelled.
     Perhaps there be high mountains;
     perhaps there be rivers {and} lakes;
     perhaps there be kings {and} lords;
@@ -571,15 +579,15 @@
   平却高山，鳥獸無依。塡却江湖，魚鱉無歸。\
   除却王侯，民多是非。絶却奴婢，君子使誰？\
   天下蕩蕩，豈可平乎？」 |
-    "Flatten away {the} high mountains,
+    "Level out {the} high mountains,
       {and the} birds {and} beasts {shall} have nothing {to} lean upon;
-    fill away {the} rivers {and} lakes,
+    fill out {the} rivers {and} lakes,
       {and the} fishes {and} turtles {shall} have no home;
-    remove away {the} kings {and} lords,
+    remove out {the} kings {and} lords,
       {and} the people {shall have} many quarrels;
     cut off {the} manservants {and} maidservants,
       {and} whom {shall} the rulers employ?
-    Vast {be all} under Heaven: how can {it be} flattened?"
+    Vast {be all} under Heaven: how can {it be} levelled?"
 </#t>
 <ul>
   <li>鱉：龜屬；
@@ -589,11 +597,11 @@
   </li>
   <li>無歸：
     no home;
-    or nothing {to} return to
+    \or nothing {to} return to
   </li>
   <li>絶却：
     cut off;
-    literally cut away
+    \lit cut out
   </li>
   <li>君子：
     rulers<br>
@@ -603,7 +611,7 @@
   </li>
   <li>使：
     employ;
-    or use
+    \or use
   </li>
   <li>蕩蕩：大也，廣遠也；
     vast
@@ -624,15 +632,15 @@
 <ul>
   <li>火：
     fire;
-    also light
+    \or light
   </li>
   <li>山：
     mountain;
-    also hill
+    \or hill
   </li>
   <li>枝：
     twig;
-    also branch
+    \or branch
   </li>
 </ul>
 
@@ -659,7 +667,7 @@
   </li>
   <li>駒：馬二歲曰駒；
     foal;
-    literally horse {under} two years
+    \lit horse {under} two years
   </li>
   <li>雄：
     male bird<br>
@@ -688,7 +696,8 @@
     火 may mean both "fire" and "light".
   </li>
   <li>土山：
-    the dirt hill; or the earth hill<br>
+    the dirt hill;
+    \or the earth hill<br>
     Similarly this works because 
     山 may mean both "mountain" and "hill".
   </li>
@@ -710,7 +719,7 @@
     </@>.
   </li>
   <li>玉女：
-    fairy lady; literally jade lady<br>
+    fairy lady; \lit jade lady<br>
     The female equivalent of 仙人.
   </li>
 </ul>
@@ -745,17 +754,18 @@
 </#t>
 <ul>
   <li>綱：
-    principle; or crux
+    principle; \or crux
   </li>
   <li>陰陽：
     Dark {and} Light;
-    or Shade {and} Sun; or Female {and} Male<br>
+    \or Shade {and} Sun;
+    \or Female {and} Male<br>
     Usually rendered
     <@>
       "yin {and} yang"
       | https://en.wikipedia.org/wiki/Yin_and_yang
       | Wikipedia: Yin and yang
-    </@> in Western literature.
+    </@>.
   </li>
 </ul>
 
@@ -810,7 +820,7 @@
       One governeth {the} sun, {and the} sun {hath} number ten;
       therefore humans {are} born {of a term of} ten months.
     </#t>
-    (Here "months" are 28-day months,
+    (Presumably "months" are 28-day months,
     so that ten months make forty weeks, a full term.)
     Being a physicist, I take a very dim view of such works
     (involving arbitrary associations etc.).
@@ -849,10 +859,11 @@
   The rain {arriveth} from {the} town of 郊<^> Kaau | Chiao | Jiao </^>.
   The clouds emergeth from {the} mountains.
   The fog ariseth from {the} ground.
-  Heaven {and} Earth {are} mutually separated {in} excess of
+  Heaven {and} Earth {are} mutually separated,
+   {in} excess of
     thousands {upon} thousands {and}
     myriads {upon} myriads of 里<^> lei | li | li </^>.
-  East, west, south {and} north all have adherence unto {these}."
+  East, west, south, {and} north, all have adherence unto {these}."
 </#t>
 <ul>
   <li>蒼梧<^> Ts'ong Ng | Ts'ang Wu | Cang Wu </^>：地名，舜葬處<br>
@@ -869,7 +880,7 @@
   </li>
   <li>寄：
     adherence unto;
-    or dependence upon<br>
+    \or dependence upon<br>
     請多多指教, for I am unsure about this one.
   </li>
 </ul>
@@ -884,34 +895,34 @@
 <ul>
   <li>親：
     close;
-    or loving
+    \or loving
   </li>
 </ul>
 
 <#t>
   小兒答曰：「父母是親，夫婦不親。」 |
   {The} little child replied, saying,
-    "Father {and} mother are {more} close {unto their children}, {and}
-    husband {and} wife {are} not {as} close."
+    "Father {and} mother are {more} close {unto their children};
+    husband {and} wife, not {as} close."
 </#t>
 
 <#t>
   孔子曰：「夫婦生則同衾，死則同穴，何得不親？」 |
   Confucius said,
-    "Husband {and} wife {are in the} same bed quilt {in} life,
+    "Husband {and} wife {are under the} same bed quilt {in} life,
     {and the} same grave {in} death: how can {they be} not {as} close?"
 </#t>
 <ul>
   <li>衾：
     bed quilt;
-    or blanket
+    \or blanket
   </li>
 </ul>
 
 <#t>
   小兒答曰：「人生無婦，如車無輪。無輪再造，必得其新。婦死更索，又得其新。 |
   {The} little child replied, saying,
-    "{A} man losing {his} wife {in} life
+    "{A} man losing {his} wife {in} life,
     {is} like {a} chariot losing {its} wheel.
     {Should a} wheel {be} lost, remake {it}:
     surely {a} new {one shall be} obtained.
@@ -928,13 +939,16 @@
 
 <#t>
   賢家之女，必配貴夫。十間之室，須得棟樑。 |
-  "{A} daughter of {a} worthy family
+  "{A} daughter of {a} worthy family,
   {shall} surely {be} matched with the worthy man.
-  {The} bedchambers of ten partitions must get pillars {and} roof beams.
+  {The} bedchambers of ten partitions,
+  must get pillars {and} roof beams.
 </#t>
 <ul>
   <li>貴：
-    worthy; or honourable; literally noble<br>
+    worthy;
+    \or honourable;
+    \lit noble<br>
     Perhaps "venerable" as in "commanding respect"
     would also work, but 貴 has no connotation with age.
     Rendering both 賢 and 貴 as "worthy" is not desirable,
@@ -947,18 +961,18 @@
     <ul>
       <li>十間：
         many families;
-        literally ten partitions<br>
+        \lit ten partitions<br>
           間，去聲，
           <^cm> kaan3 | jia\n </^cm>
       </li>
       <li>室：
         women;
-        literally bedchambers<br>
+        \lit bedchambers<br>
         In other contexts, 室 may mean wife or concubine.
       </li>
       <li>棟樑：
         upholding {men};
-        literally pillars {and} roof beams<br>
+        \lit pillars {and} roof beams<br>
         Those worthy of bearing great responsibility.
       </li>
     </ul>
@@ -967,11 +981,12 @@
 
 <#t>
   三窗六牗，不如一户之光。衆星朗朗，不如孤月獨明。父母之恩，奚可失也？」 |
-  "{Yet the light of} three windows {and} six casements {is} not as
-  {the} light of one {particular} window.
+  "{Yet the light of} three windows {and} six casements,
+  {is} not as {the} light of one {particular} window.
   {The} multitude of stars bright,
   {are} not as {the} lone moon, radiant by itself.
-  How can {the} affection of father {and} mother {be} lost?"
+  {The} affection of father {and} mother:
+  how can {it be} lost?"
 </#t>
 <ul>
   <li>牗：窗也；
@@ -987,7 +1002,8 @@
   </li>
   <li>恩：
     affection;
-    or love
+    \or kindness;
+    \or love
   </li>
 </ul>
 
@@ -1005,7 +1021,7 @@
     橐<^> T'ok | T'o | Tuo </^> wisheth now to request
     {the} advice of Master {in} one asking,
     {to} teach 橐<^> T'ok | T'o | Tuo </^> with clarity,
-    {and} hopeth {and} asketh {that Master} doth not abandon {this request}."
+    {and} hopeth {and} asketh {that Master} doth not forsake {this request}."
 </#t>
 <ul>
   <li>橐<^> T'ok | T'o | Tuo </^><br>
@@ -1018,7 +1034,7 @@
   </li>
   <li>求敎：
     request {the} advice;
-    or {earnestly} request {the} advice
+    \or {earnestly} request {the} advice
   </li>
   <li>言：問也；
     <@>
@@ -1029,7 +1045,7 @@
   </li>
   <li>明：
     clarity;
-    or illustration
+    \or illustration
   </li>
   <li>幸：冀也；
     hopeth
@@ -1038,19 +1054,19 @@
 
 <#t>
   小兒曰：「鵝鴨何以能浮？鴻雁何以能鳴？松柏何以冬青？」 |
-  {And the} little child said,
+  {The} little child said,
     "Why {are} geese {and} ducks able to float?
     Why {are} swans {and} wild geese able to sound?
     Why {are} pine trees {and} cypress trees evergreen?"
 </#t>
 <ul>
   <li>浮：
-    float; or drift
+    float;
+    \or drift
   </li>
   <li>鴻雁：
     swans {and} wild geese<br>
-    Arguably 鴻雁
-    could also be the single bird
+    Arguably 鴻雁 could also be the single bird
     <@>
       "swan goose"
       | https://en.wikipedia.org/wiki/Swan_goose
@@ -1059,7 +1075,7 @@
   </li>
   <li>冬青：
     evergreen;
-    literally green {in} winter
+    \lit green {in} winter
   </li>
 </ul>
 
@@ -1073,17 +1089,17 @@
 <ul>
   <li>足方：
     webbed feet;
-    literally square feet
+    \lit square feet
   </li>
   <li>堅：
     strong;
-    or firm
+    \or firm
   </li>
 </ul>
 
 <#t>
   小兒答曰：「不然。魚鱉能浮，豈皆足方？蝦蟆能鳴，豈因頸長？綠竹冬青，豈因心堅？」 |
-  {And the} little child replied, saying,
+  {The} little child replied, saying,
     "Not so.
     Fishes {and} turtles can float: how {have they} all webbed feet?
     The toad can sound: how {be this} because of {a} long neck?
@@ -1101,8 +1117,8 @@
 
 <#t>
   小兒又問曰：「天上零零有幾星？」 |
-  {And the} little child asked again, saying,
-    "How many stars are there, scattered, {in the} heavens above?"
+  {The} little child asked again, saying,
+    "How many stars are there, scattered {in the} heavens above?"
 </#t>
 <ul>
   <li>零零：
@@ -1120,12 +1136,14 @@
 
 <#t>
   小兒曰：「地下碌碌有幾屋？」 |
-  {And the} little child said,
-    "How many houses are there, ordinary, {on the} earth below?"
+  {The} little child said,
+    "How many houses are there, ordinary {on the} earth below?"
 </#t>
 <ul>
   <li>碌碌：
-    ordinary; or common; or everyday<br>
+    ordinary;
+    \or common;
+    \or everyday<br>
     Note that 零 (<^e>ling4</^e>/<^e>li/ng</^e>)
       rhymes with 星 (<^e>sing1</^e>/<^e>xi=ng</^e>),
     and 碌 (<^e>luk7</^e>/<^e>lu\</^e>)
@@ -1143,9 +1161,9 @@
 
 <#t>
   小兒曰：「若論眼前之事，眉毛中有幾枝？」 |
-  {And the} little child said,
+  {The} little child said,
     "If {we shall} discuss matters before {our very} eyes,
-    how many {hairs} are there amidst {mine} eyebrow?"
+    how many {hairs} are there amidst {my} brow?"
 </#t>
 
 <#t>
@@ -1153,7 +1171,7 @@
   Confucius smiled and replied not,
   {and} turned back {and} spake unto {his} many disciples, saying,
     "The young ought to {be} feared!
-    {For} how know {we}, {that} those who come {after us},
+    {For} how know {we} {that} those who come {after us},
     {be} not as {we who are} now?"
 </#t>
 <ul>
@@ -1169,27 +1187,30 @@
       子曰：「後生可畏，焉知來者之不如今也？四十、五十而無聞焉，斯亦不足畏也已。」 |
       {The} Master said,
         "The young ought to {be} feared;
-        {for} how know {we}, {that} those who come {after us},
+        {for} how know {we} {that} those who come {after us},
         {be} not as {we who are} now?
         {By} forty {or} fifty and {be they} unheard of,
         then {be they} not worthy of fear."
     </#t>
     <ul>
       <li>後生：
-        the young; literally the after-born<br>
+        the young;
+        \lit the after-born<br>
         This constrasts with 先生, literally "former-born",
         which classically was a polite address to an older, wiser person.
         This usage survives today in Cantonese,
         and also Japanese ({sensei}), where 先生 means teacher.
       </li>
       <li>畏：
-        feared; or respected<br>
+        feared;
+        \or respected<br>
         Here, I do not mean fear as in being afraid,
         but rather reverence and respect, as in fearing God.
         "{Is} formidable" is also a good rendering of 可畏.
       </li>
       <li>不如：
-        not as; or not {as good} as
+        not as;
+        \or not {as good} as
       </li>
     </ul>
     The almanac erroneously has 焉能求者 for 焉知來者;
@@ -1223,15 +1244,15 @@
 <ul>
   <li>欺：
     bully;
-    or pick on
+    \or pick on
   </li>
   <li>過：
     surpasseth;
-    or exceedeth
+    \or exceedeth
   </li>
   <li>論：
     discourseth;
-    or debateth
+    \or debateth
   </li>
   <li>分明：
     clearly<br>
@@ -1245,14 +1266,14 @@
   </li>
   <li>現：
     manifested;
-    or appeared
+    \or appeared
   </li>
 </ul>
 
 <*c>
-  "Q{\&}A {with} Confucius: {the} Little Child's Discourse"
+  "Q~{\&}~A {with} Confucius: {the} Little Child's Discourse"
   | child
-  | ``{Q\emph{\&}A} \emph{with} {Confucius}: \emph{the} {Little} {Child's} {Discourse}''
+  | ``{Q}~\emph{\&}~{A} \emph{with} {Confucius}: \emph{the} {Little} {Child's} {Discourse}''
 </*c>
 
 <*f></*f>
