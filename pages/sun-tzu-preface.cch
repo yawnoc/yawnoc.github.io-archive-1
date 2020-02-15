@@ -123,7 +123,7 @@
 <ul>
   <li>算：
     Computation;
-    or Mathematics
+    \or Mathematics
   </li>
 </ul>
 
@@ -142,7 +142,7 @@
 <ul>
   <li>經緯：
     {the} warp {and} woof;
-    also literally {the} meridians {and} parallels<br>
+    \or {the} meridians {and} parallels<br>
     <@>
       "Warp {and} woof"
       | https://en.wiktionary.org/wiki/warp_and_woof
@@ -171,11 +171,12 @@
   </li>
   <li>本末：
     {the} beginning {and} end;
-    also literally {the} base {and} tip
+    \or {the} base {and} tip
   </li>
   <li>陰陽：
     Dark {and} Light;
-    or Shade {and} Sun; or Female {and} Male<br>
+    \or Shade {and} Sun;
+    \or Female {and} Male<br>
     <@>
       "Yin {and} Yang"
       | https://en.wikipedia.org/wiki/Yin_and_yang
@@ -229,7 +230,7 @@
   </li>
   <li>準：平也；又均也；
     evenness;
-    or levelness
+    \or levelness
   </li>
 </ul>
 
@@ -240,8 +241,8 @@
 </#t>
 <ul>
   <li>萬物：
-    literally {the} myriad things;
-    everything
+    everything;
+    \lit {the} myriad things
   </li>
   <li>六藝：
     {the} Six Arts<br>
@@ -266,19 +267,17 @@
   </li>
   <li>群：
     amassed;
-    literally crowded
+    \lit crowded
   </li>
   <li>倫：
     kinds;
-    or types
+    \or types
   </li>
   <li>二氣：
     {the} Two Breaths<br>
     陰氣 and 陽氣.
-    Recall
-    陰 and 陽 are
-    "Dark {and} Light", "Shade {and} Sun", or
-    "Female {and} Male".
+    Recall 陰 and 陽 are
+    "Dark {and} Light", "Shade {and} Sun", or "Female {and} Male".
     <@>
       氣
       | https://en.wikipedia.org/wiki/Qi
@@ -302,7 +301,7 @@
 <ul>
   <li>寒暑：
     winter {and} summer;
-    literally cold {and} heat
+    \lit cold {and} heat
   </li>
   <li>迭：更也；
     alternating
@@ -322,16 +321,17 @@
 <ul>
   <li>天道：
     Physics;
-    literally {the} laws of Nature;
-    or {the} way of Heaven
+    \lit {the} laws of Nature;
+    \or {the} way of Heaven
   </li>
-  <li>兆基<br>
+  <li>兆基：
+    foundations<br>
     According to 《國語辭典》 this means 開創基業,
     roughly "opening/beginning/foundation".
   </li>
   <li>地理：
     Geography;
-    literally {the} science of Earth
+    \lit {the} science of Earth
   </li>
   <li>從橫：
     meridians {and} parallels (of latitude)<br>
@@ -343,7 +343,7 @@
   </li>
   <li>長短：
     length;
-    literally length {and} shortness
+    \lit length {and} shortness
   </li>
 </ul>
 
@@ -369,15 +369,15 @@
   </li>
   <li>符驗：
     corroboration;
-    literally corroboration {by} talisman
+    \lit corroboration {by} talisman
   </li>
   <li>道德：
     morality;
-    or ethics
+    \or ethics
   </li>
   <li>理：
     reasoning;
-    or logic
+    \or logic
   </li>
 </ul>
 
@@ -394,7 +394,7 @@
 <ul>
   <li>規矩：
     {the} rules;
-    literally the compass {and} the set square
+    \lit the compass {and} the set square
   </li>
   <li>尺丈<^> ch'ek choeng | ch'ih chang | chi zhang </^><br>
     Units of length, see
@@ -413,7 +413,7 @@
 <ul>
   <li>重輕：
     heavy {and} light;
-    also important {and} unimportant
+    \or important {and} unimportant
   </li>
   <li>毫釐<^> hou lei | hao li | hao li </^><br>
     Small units of length, see
@@ -462,7 +462,7 @@
   </li>
   <li>盈：過曰盈；
     beyond;
-    literally in excess of
+    \lit in excess of
   </li>
 </ul>
 
