@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
-  | 20190609 | 20200215 | dr
+  | 20190609 | 20200216 | dr
   | An annotated English translation of the preface to Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -448,12 +448,13 @@
 
 <#t>
   散之不可勝究，斂之不盈掌握。 |
-  Scattering it, {one} cannot {be} able to investigate {it},
+  Scattering it, {it} cannot {be} able to {be} investigated,
   {yet} gathering it, {it is} not beyond grasp.
 </#t>
 <ul>
   <li>勝：
-    {be} able to<br>
+    able to {be};
+    \or completely<br>
       勝，平聲，
       <^cmg> shing1 | she=ng | she\ng </^cmg>
   </li>
@@ -513,7 +514,7 @@
   夫欲學之者必務量能揆己，志在所專。 |
   Those who wish to learn it must seek to
   gauge {one's} abilities {and} measure oneself,
-  {and put one's} will unto that which {one} focuseth upon.
+  {and put one's} will into that focused upon.
 </#t>
 <ul>
   <li>量：
