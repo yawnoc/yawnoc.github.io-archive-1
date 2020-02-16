@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20200111 | dmr
+  | 20190609 | 20200216 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -14,7 +14,7 @@
 </=h>
 
 <h1>
-  《孫子算經\.卷中》 or<br>
+  《孫子算經\.卷中》 \or<br>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II"
 </h1>
 
@@ -280,8 +280,8 @@
 <ul>
   <li>一十八分之一十二：
     twelve eighteenths<:n>12/18</:n>;
-    literally twelve<:n>12</:n> of eighteen shares<:n>/18</:n>;
-    or twelve<:n>12</:n> of eighteen portions<:n>/18</:n>
+    \lit twelve<:n>12</:n> of eighteen shares<:n>/18</:n>;
+    \or twelve<:n>12</:n> of eighteen portions<:n>/18</:n>
   </li>
 </ul>
 
@@ -291,8 +291,8 @@
   put {the} eighteen<:n>18</:n> shares below,
   {and the} twelve<:n>12</:n> shares above.
   Put subsidiarily {the} two places,
-  {and} diminish {the} greater by {the} lesser.
-  {For the} equal quantity {there} resulteth six<:n>6</:n>
+  {and} diminish {the} greater by {the} lesser;
+  {for the} equal quantity {there} resulteth six<:n>6</:n>
   as {the} divisor, {and} reducing them, {we} are done.
 </#t>
 <ul>
@@ -390,11 +390,11 @@
     <ul>
       <li>約：
         reducing;
-        or simplifying
+        \or simplifying
       </li>
       <li>全：
         whole;
-        or intact
+        \or intact
       </li>
       <li>動有參差：
         have unevenness {in their} motions<br>
@@ -418,7 +418,7 @@
       further subtract {them} from each other,
       seeking their {being} equal.
       Reduce them using {the} equal quantity.
-        (<:y>{To} reduce them {with the} equal quantity
+        (<:y>{To} reduce them {with the} equal quantity,
         is {to} divide {them}.
         Those of them which {have been} mutually subtracted,
         {are} all repeated pilings of {the} equal quantity.
@@ -427,7 +427,8 @@
     </#t>
     <ul>
       <li>重疊：
-        repeated pilings; or overlappings<br>
+        repeated pilings; 
+        \or overlappings<br>
         I think this means "multiples".
       </li>
     </ul>
@@ -463,7 +464,7 @@
     has 十一 for 一十一.
   </li>
   <li><$>b</$> 分之 <$>a</$>:
-    literally <$>a</$> of <$>b</$> shares<br>
+    \lit <$>a</$> of <$>b</$> shares<br>
     I have rendered fractions literally from here up to and including
     <@> ¶4 | #4 | Vol. II ¶4 </@>, as there will be references to
     the numerator 「之 <$>a</$>」, "<$>a</$> of" and
@@ -537,7 +538,7 @@
 
 <#t>
   母互乘子，五分之一得九，九分之八得四十，以少減多，餘三十一為實。\
-  母相乘得四十五，為法。 |
+  母相乘得四十五為法。 |
   {The} denominators {are} mutually multiplied
   with {the} numerators:
   {for the} one of five shares<:n>1/5</:n>
@@ -583,7 +584,8 @@
 </#t>
 <ul>
   <li>而平：
-    that {they be} level; or that {it be} fair
+    that {they be} level;
+    \or that {it be} fair
   </li>
 </ul>
 
@@ -696,8 +698,8 @@
 
 <#t>
   等數得九，約訖。 |
-  {For their} equal quantity {there} resulteth nine<:n>9</:n> .
-  Finish reducing {them}.
+  {For their} equal quantity {there} resulteth nine<:n>9</:n>;
+  finish reducing {them}.
 </#t>
 <ul>
   <li>等數：
@@ -861,7 +863,7 @@
       Mandarin: <^e>ba\i</^e>
   </li>
   <li>五十分升之一十七：
-    literally seventeen<:n>17</:n> of fifty shares<:n>/50</:n>
+    \lit seventeen<:n>17</:n> of fifty shares<:n>/50</:n>
     of {a} 升<^> shing | she^ng | sheng </^>
   </li>
 </ul>
@@ -874,8 +876,8 @@
   Multiplying it by {the} fine grain rate, twenty-seven<:n>27</:n>,
   resulteth in five hundred {and} sixty-seven<:n>567</:n>\
   ~升<^> shing | she^ng | sheng </^> as {the} dividend.
-  Use {the} grain rate, fifty<:n>50</:n>, as {the} divisor.
-  Divide them.
+  Use {the} grain rate, fifty<:n>50</:n>, as {the} divisor,
+  {and} divide them.
   {For the} remainder, name {the} fraction using {the} divisor.
 </#t>
 <$$>
@@ -978,7 +980,8 @@
   </li>
   <li>御米：
     poppy seed;
-    literally imperial grain; or royal grain
+    \lit imperial grain;
+    \or royal grain
   </li>
 </ul>
 
@@ -1011,14 +1014,14 @@
   six<:n>6</:n>~丈<^> choeng | chang | zhang </^>
     east-{to}-west,
   {and we} wish to build it with bricks.
-  Every two<:n>2</:n>~尺<^> ch'ek | ch'ih | chi </^> of area
+  Every two<:n>2</:n>~尺<^> ch'ek | ch'ih | chi </^> of area,
   useth five<:n>5</:n> bricks.
   {We} ask: how many amounteth {this} to?
 </#t>
 <ul>
   <li>南北：
     north-{to}-south;
-    literally south-{to}-north
+    \lit south-{to}-north
   </li>
   <li>
     <@>
@@ -1750,8 +1753,10 @@
   Method saith: put {down the} embankment's
   upper width, three<:n>3</:n>~丈<^> choeng | chang | zhang </^>, {and the}
   lower width, five<:n>5</:n>~丈<^> choeng | chang | zhang </^>.
-  Combining them resulteth in eight<:n>8</:n>~丈<^> choeng | chang | zhang </^>.
-  Halving it resulteth in four<:n>4</:n>~丈<^> choeng | chang | zhang </^>.
+  Combining them,
+    resulteth in eight<:n>8</:n>~丈<^> choeng | chang | zhang </^>.
+  Halving it,
+    resulteth in four<:n>4</:n>~丈<^> choeng | chang | zhang </^>.
 </#t>
 <ul>
   <li>法：
@@ -1950,7 +1955,8 @@
 </#t>
 <ul>
   <li>超：跳也；
-    jumping over; or skipping<br>
+    jumping over;
+    \or skipping<br>
     Taking double steps, so that 100 is in fact 10000.
   </li>
 </ul>
@@ -2158,7 +2164,7 @@
 
 <#t>
   <:g>命上商四百</:g><:b>除實</:b>。 |
-  <:g>Command {the} upper quotient's four hundred<:n>400</:n></:g>,
+  <:g>Name {the} upper quotient's four hundred<:n>400</:n></:g>,
   <:b>{and} remove {this} from {the} dividend</:b>.
 </#t>
 <ul>
@@ -2294,7 +2300,7 @@
   </li>
   <li>再：
     again;
-    or twice
+    \or twice
   </li>
 </ul>
 
@@ -2492,7 +2498,7 @@
 
 <#t>
   <:v>方、廉各命</:v><:g>上商八十</:g>，以<:b>除實</:b>。 |
-  <:v>Each of {the} upright {and the} incorrupt commandeth</:v>
+  <:v>Each of {the} upright {and the} incorrupt nameth</:v>
   <:g>{the} upper quotient's eighty<:n>80</:n></:g>,
   to be <:b>removed from {the} dividend</:b>.
 </#t>
@@ -2915,7 +2921,7 @@
 
 <#t>
   <:v>方、廉、隅各命</:v><:g>上商四</:g>，以<:b>除實</:b>。 |
-  <:v>Each of {the} upright, {the} incorrupt {and the} honest commandeth</:v>
+  <:v>Each of {the} upright, {the} incorrupt {and the} honest nameth</:v>
   <:g>{the} upper quotient's four<:n>4</:n></:g>,
   to be <:b>removed from {the} dividend</:b>.
 </#t>
@@ -3433,7 +3439,7 @@
 
 <#t>
   <:g>命上商六百</:g><:b>除實</:b>。 |
-  <:g>Command {the} upper quotient's six hundred<:n>600</:n></:g>,
+  <:g>Name {the} upper quotient's six hundred<:n>600</:n></:g>,
   <:b>{and} remove {this} from {the} dividend</:b>.
 </#t>
 
@@ -3463,7 +3469,7 @@
 
 <#t>
   <:v>方、廉各命</:v><:g>上商四十</:g>，以<:b>除實</:b>。 |
-  <:v>Each of {the} upright {and the} incorrupt commandeth</:v>
+  <:v>Each of {the} upright {and the} incorrupt nameth</:v>
   <:g>{the} upper quotient's forty<:n>40</:n></:g>,
   to be <:b>removed from {the} dividend</:b>.
 </#t>
@@ -3512,7 +3518,7 @@
 
 <#t>
   <:v>方、廉、隅各命</:v><:g>上商八</:g>，以<:b>除實</:b>。 |
-  <:v>Each of {the} upright, {the} incorrupt {and the} honest commandeth</:v>
+  <:v>Each of {the} upright, {the} incorrupt {and the} honest nameth</:v>
   <:g>{the} upper quotient's eight<:n>8</:n></:g>,
   to be <:b>removed from {the} dividend</:b>.
 </#t>
