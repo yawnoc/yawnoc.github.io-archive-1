@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
-  | 20190609 | 20200112 | dmr
+  | 20190609 | 20200216 | dmr
   | An annotated English translation of Volume~I of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -13,7 +13,7 @@
 </=h>
 
 <h1>
-  《孫子算經\.卷上》 or<br>
+  《孫子算經\.卷上》 \or<br>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I"
 </h1>
 
@@ -231,9 +231,9 @@
   度之所起，起於忽。欲知其忽，蠶吐絲為忽。 |
   {Of} that which measuring of length beginneth from:
   beginneth {it} from 忽<^> fat | hu | hu </^>.
-  {If one} wisheth to know {the size of}
-  忽<^> fat | hu | hu </^>: the silkworm spitteth silk,
-  {which} be {of thickness} 忽<^> fat | hu | hu </^>.
+  Wishing to know {the size of}
+  忽<^> fat | hu | hu </^>: the silkworm spitteth silk
+  being {of thickness} 忽<^> fat | hu | hu </^>.
 </#t>
 <ul>
   <li>度：
@@ -243,7 +243,7 @@
   </li>
   <li>起：
     beginneth from;
-    literally ariseth from
+    \lit ariseth from
   </li>
   <li>
     <@>
@@ -279,10 +279,10 @@
 </#t>
 <ul>
   <li>絲<^> see | ssuu | si </^>：
-    literally thread of silk
+    \lit thread of silk
   </li>
   <li>毫<^> hou | hao | hao </^>：
-    literally fine hair
+    \lit fine hair
   </li>
 </ul>
 
@@ -305,7 +305,7 @@
     erroneously has 五十引為一端.
   </li>
   <li>步<^> pou | pu | bu </^>：
-    literally step; or pace
+    \lit step; \or pace
   </li>
 </ul>
 
@@ -458,7 +458,7 @@
 <ul>
   <li>稱：
     measuring of weight;
-    or weighing<br>
+    \or weighing<br>
       稱，
       <^cm> 去聲~ch'ing3 | 平聲~che=ng </^cm><br>
     Here 稱 is the verb "weigh", and
@@ -512,7 +512,7 @@
     </ul>
   </li>
   <li>黍<^> shu" | shu | shu </^>：
-    literally millet<br>
+    \lit millet<br>
       黍，音暑，
       <^cm> shu"2 | shuv </^cm>
   </li>
@@ -554,8 +554,8 @@
       <^cm> kwan1 | ju=n </^cm>
   </li>
   <li>石<^> shek | shih | shi </^>：
-    literally stone;
-    or rock
+    \lit stone;
+    \or rock
   </li>
 </ul>
 
@@ -656,7 +656,7 @@
       <^cm> loeng4 | lia/ng </^cm>
   </li>
   <li>粟：
-    literally grain<br>
+    \lit grain<br>
       粟，相玉切，
       <^cm> suk7 | su\ </^cm>
   </li>
@@ -692,7 +692,7 @@
       <^cm> kwai1 | gui= </^cm>
   </li>
   <li>撮<^> ts'u"t | ts'o | cuo </^>：
-    literally pinch (two or three fingers)<br>
+    \lit pinch (two \or three fingers)<br>
       撮，寸入聲，
       <^cm> ts'u"t8 | cuo= </^cm>
   </li>
@@ -850,7 +850,7 @@
   十萬斛六秭粟，<br>
   百萬斛六壤粟，<br>
   千萬斛六溝粟， |
-  Ten<:n>10</:n>~斛<^> huk | hu | hu </^>, {is}
+  Ten<:n>10</:n>~斛<^> huk | hu | hu </^> {is}
     six<:n>6</:n>~億<^> yik | i | yi </^>~\
     粟<^> suk | su | su </^>;<br>
   {an} hundred<:n>100</:n>~斛<^> huk | hu | hu </^>,
@@ -892,8 +892,8 @@
   十億斛六正粟，<br>
   百億斛六載粟。 |
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      斛<^> huk | hu | hu </^>,
-  {which} is one~億<^> yik | i | yi </^>~\
+      斛<^> huk | hu | hu </^>
+  make one~億<^> yik | i | yi </^>~\
       斛<^> huk | hu | hu </^>,
     six<:n>6</:n>~澗<^> kaan | chien | jian </^>~\
     粟<^> suk | su | su </^>;<br>
@@ -1102,7 +1102,7 @@
 <ul>
   <li>邪：
     diagonal;
-    literally incline<br>
+    \lit incline<br>
     Here, 邪 is interchangeable
     with 斜.
   </li>
@@ -1215,7 +1215,7 @@
 <ul>
   <li>黃金：
     gold;
-    literally yellow metal
+    \lit yellow metal
   </li>
   <li>
     <@>
@@ -1227,7 +1227,7 @@
   </li>
   <li>白金：
     silver;
-    literally white metal
+    \lit white metal
   </li>
   <li>
     For jade,
@@ -1271,7 +1271,7 @@
   </li>
   <li>石：
     stone;
-    or rock
+    \or rock
   </li>
 </ul>
 
@@ -1567,7 +1567,8 @@
 </#t>
 <ul>
   <li>位：
-    {the} places (as in place values)
+    {the} places;
+    \or place {values}
   </li>
 </ul>
 
@@ -1583,7 +1584,7 @@
     correspond to each other.
 </#t>
 <ul>
-  <li>從：<br>
+  <li>從<br>
     Variant of 縱.
   </li>
   <li>僵：偃也；
@@ -1993,7 +1994,7 @@
   </li>
   <li>至：
     unto;
-    or till
+    \or till
   </li>
 </ul>
 
@@ -2042,29 +2043,29 @@
 </p>
 
 <#t>
-  以上命下，所得之數列於中位。言十即過，不滿自如。 |
-  Command the lower with the upper.
-  {The} quantities which result
-  {are} arranged in {a} row, in {the} middle places.
-  {And} tens<:n>10s</:n> are carried,
+  以上命下，所得之數，列於中位。言十即過，不滿自如。 |
+  Name the lower with the upper.
+  {The} quantities which result,
+  {are} arranged in {a} row in {the} middle places.
+  Tens<:n>10s</:n> are carried,
   {but those} not reaching {ten<:n>10</:n>},
   {left} as themselves.
 </#t>
 <ul>
   <li>命：
-    command<br>
-    Really this means "operate on".
+    name<br>
+    Or maybe "command/order" as in "operate on".
   </li>
   <li>列：
     arranged in {a} row;
-    or displayed
+    \or displayed
   </li>
   <li>言<br>
     Pretty sure this is a speech-assist word, with no meaning.
   </li>
   <li>過：
     carried;
-    literally passed
+    \lit passed
   </li>
 </ul>
 
@@ -2186,7 +2187,7 @@
 <#t>
   上下相乘，至盡則已。 |
   The upper {and} the lower {are} mutually multiplied,
-  finishing {when} reaching exhaustion.
+  finishing {upon} reaching exhaustion.
 </#t>
 <ul>
   <li>
@@ -2199,7 +2200,7 @@
   </li>
   <li>盡：
     exhaustion;
-    or {the} end
+    \or {the} end
   </li>
 </ul>
 
@@ -2209,14 +2210,14 @@
 <#t>
   凡除之法，與乘正異。<br>
   乘得在中央，除得在上方。 |
-  {The} method of all division {is} directly opposite to multiplication.<br>
+  {The} method of all division, {is} directly opposite to multiplication.<br>
   {The} result of multiplication {is placed} in {the} middle;
   {the} result of division, in {the} above.
 </#t>
 <ul>
   <li>異：
     opposite;
-    literally different
+    \lit different
   </li>
 </ul>
 
@@ -2244,18 +2245,18 @@
   以六除百，當進之二等，令在正百下；<br>
   以六除一，則法多而實少，不可除，故當退就十位。 |
   {To} divide {an} hundred<:n>100</:n> by six<:n>6</:n>,
-  {we} ought advance it two ranks,
+  {we} ought to advance it two ranks,
   making {it} be directly below {the} hundred<:n>100</:n>;<br>
   {now} dividing one<:n>1</:n> by six<:n>6</:n>,
   {the} divisor {is} more, and {the} dividend less:
   {it} cannot divide;
-  therefore {we} ought retreat {and} assume {the}
+  therefore {we} ought to retreat {and} assume {the}
   tens<:n>10s</:n> place.
 </#t>
 <ul>
   <li>等：
     ranks;
-    or classes
+    \or classes
   </li>
   <li>在正<br>
     Like the vernacular 喺正,
@@ -2301,7 +2302,7 @@
 <#t>
   若實多法少，自當百之，不當復退。 |
   If {the} dividend {be} more {and the} divisor less,
-  {we} ought naturally centuple<:n>100~×</:n> it,
+  {we} naturally ought to centuple<:n>100~×</:n> it,
   {and} ought not retreat back.
 </#t>
 
@@ -2372,7 +2373,7 @@
 <ul>
   <li>命：
     name;
-    or designate
+    \or designate
   </li>
 </ul>
 
@@ -2536,7 +2537,7 @@
 <ul>
   <li>分：
     shares;
-    or portions<br>
+    \or portions<br>
     In Chinese, the fraction <$>\dfrac{a}{b}</$>
     is referred to as <$>b</$> 分之 <$>a</$>, literally
     "<$>a</$> of <$>b</$> shares".
@@ -2701,7 +2702,8 @@
 </#t>
 <ul>
   <li>人：
-    (generic) man; or person
+    (generic) man;
+    \or person
   </li>
 </ul>
 <$$>
@@ -2712,14 +2714,14 @@
   術曰：先置六千五百六十一於中位為實，下列九人為法。 |
   Method saith:
   first put six thousand, five hundred {and} sixty-one<:n>6561</:n>
-  upon {the} middle places as {the} dividend;
-  below, display {the} nine<:n>9</:n> men as {the} divisor.
+  upon {the} middle places as {the} dividend,
+  {and} below display {the} nine<:n>9</:n> men as {the} divisor.
 </#t>
 
 <#t>
   上位置七百，以上七呼下九，七九六十三，即除中位六千三百。 |
-  {In the} upper places put seven hundred<:n>700</:n>;
-  calling {the} lower nine<:n>9</:n> with {the} upper seven<:n>7</:n>:
+  {In the} upper places put seven hundred<:n>700</:n>,
+  {and} calling {the} lower nine<:n>9</:n> with {the} upper seven<:n>7</:n>:
   seven nines<:n>7~×~9</:n> {are} sixty-three<:n>63</:n>, that is,
   remove from {the} middle places six thousand three hundred<:n>6300</:n>.
 </#t>
@@ -2737,8 +2739,8 @@
 <#t>
   退下位一等，即上位置二十，以上二呼下九，二九十八，即除中位一百八十。 |
   Retreat {the} lower place {by} one rank,
-  then {in the} upper places put twenty<:n>20</:n>;
-  calling {the} lower nine<:n>9</:n>
+  then {in the} upper places put twenty<:n>20</:n>,
+  {and} calling {the} lower nine<:n>9</:n>
   with {the} upper two<:n>2</:n>:
   two nines<:n>2~×~9</:n> {are} eighteen<:n>18</:n>, that is,
   remove from {the} middle places
@@ -2758,7 +2760,7 @@
 <#t>
   又更退下位一等，即上位更置九，即以上九呼下九，九九八十一，即除中位八十一。 |
   And retreat again {the} lower place {by} one rank,
-  then {in the} upper places put further {a} nine<:n>9</:n>;
+  then {in the} upper places put further {a} nine<:n>9</:n>,
   then calling {the} lower nine<:n>9</:n> with {the} upper nine<:n>9</:n>:
   nine nines<:n>9~×~9</:n> {are} eighty-one<:n>81</:n>, that is,
   remove from {the} middle places eighty-one<:n>81</:n>.
@@ -3020,7 +3022,7 @@
 <ul>
   <li>右：
     above;
-    literally {to the} right<br>
+    \lit {to the} right<br>
     In English, preceding material lies above, since English is written
     left-to-right, top-to-bottom.<br>
     In Chinese, preceding material lies to the right, since
