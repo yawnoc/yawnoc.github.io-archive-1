@@ -262,6 +262,19 @@
     | /code/cch-to-html.html
     | Python: a regex converter from CCH to HTML
   </@i>
+  <li>
+    Links to ping the sitemap:
+    <@>
+      Google
+      | http://www.google.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt
+      | Ping sitemap (Google)
+    </@>
+    <@>
+      Bing
+      | http://www.bing.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt
+      | Ping sitemap (Bing)
+    </@>
+  </li>
 </ul>
 
 <@3> Mathematical stuff | code-maths </@3>
