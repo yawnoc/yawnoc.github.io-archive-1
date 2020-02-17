@@ -266,12 +266,12 @@
     Links to ping the sitemap:
     <@>
       Google
-      | http://www.google.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt
+      | https://www.google.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt
       | Ping sitemap (Google)
     </@>
     <@>
       Bing
-      | http://www.bing.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt
+      | https://www.bing.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt
       | Ping sitemap (Bing)
     </@>
   </li>
