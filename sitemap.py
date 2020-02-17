@@ -29,7 +29,8 @@ sitemap = [
 ]
 
 # Convert list to newline-separated string
-sitemap = '\n'.join(sitemap)
+NEWLINE = '\n'
+sitemap = NEWLINE.join(sitemap) + NEWLINE
 
 # Convert Windows backslashes to forward slashes
 sitemap = re.sub(r'\\', '/', sitemap)
