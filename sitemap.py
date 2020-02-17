@@ -13,6 +13,16 @@
 import os
 import re
 
+NEWLINE = '\n'
+
+# Convert list to newline-separated string
+def list_to_string(list_):
+  return NEWLINE.join(list_) + NEWLINE
+
+# Convert newline-separated string to list
+def string_to_list(string):
+  return string.split(NEWLINE)
+
 # Get list of all HTML pages
 EXCLUDED_PAGES = [
   f'{file_name}.html'
@@ -28,9 +38,8 @@ sitemap = [
         if name.endswith('.html') and name not in EXCLUDED_PAGES
 ]
 
-# Convert list to newline-separated string
-NEWLINE = '\n'
-sitemap = NEWLINE.join(sitemap) + NEWLINE
+# Convert sitemap from list to newline-separated string
+sitemap = list_to_string(sitemap)
 
 # Convert Windows backslashes to forward slashes
 sitemap = re.sub(r'\\', '/', sitemap)
@@ -41,6 +50,11 @@ sitemap = re.sub(r'\./index.html', './', sitemap)
 # Replace . with actual root
 ROOT = 'https://yawnoc.github.io'
 sitemap = re.sub(r'^\.', ROOT, sitemap, flags = re.MULTILINE)
+
+# Sort sitemap
+sitemap = string_to_list(sitemap)
+sitemap.sort()
+sitemap = list_to_string(sitemap)
 
 # Write to sitemap.txt
 with open('sitemap.txt', 'w', encoding = 'utf-8') as sitemap_file:
