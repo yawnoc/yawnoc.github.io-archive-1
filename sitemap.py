@@ -39,8 +39,8 @@ sitemap = re.sub(r'\\', '/', sitemap)
 sitemap = re.sub(r'\./index.html', './', sitemap)
 
 # Replace . with actual root
-root = 'https://yawnoc.github.io'
-sitemap = re.sub(r'^\.', root, sitemap, flags = re.MULTILINE)
+ROOT = 'https://yawnoc.github.io'
+sitemap = re.sub(r'^\.', ROOT, sitemap, flags = re.MULTILINE)
 
 # Write to sitemap.txt
 with open('sitemap.txt', 'w', encoding = 'utf-8') as sitemap_file:
