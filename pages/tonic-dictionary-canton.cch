@@ -88,7 +88,7 @@
 <!c><table>
   
   <tr>
-    <th>Williams</th>
+    <th colspan="2">Williams</th>
     <th>Conway</th>
     <th>Jyutping</th>
   </tr>
@@ -96,11 +96,12 @@
   <!-- Page 1: aa -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~1</td>
+    <td class="centred-text" colspan="4">Page~1</td>
   </tr>
   
   <tr>
-    <!-- (1) aa -->
+    <td>(1)</td>
+    <!-- aa -->
     <td>
       <@>
         á
@@ -114,11 +115,12 @@
   <!-- Page 2: ai aai -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~2</td>
+    <td class="centred-text" colspan="4">Page~2</td>
   </tr>
   
   <tr>
-    <!-- (2) ai -->
+    <td>(2)</td>
+    <!-- ai -->
     <td>
       <@>
         ai
@@ -130,7 +132,8 @@
   </tr>
   
   <tr>
-    <!-- (3) aai -->
+    <td>(3)</td>
+    <!-- aai -->
     <td>
       <@>
         ái
@@ -144,11 +147,12 @@
   <!-- Page 3: ak aak am -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~3</td>
+    <td class="centred-text" colspan="4">Page~3</td>
   </tr>
   
   <tr>
-    <!-- (4) ak -->
+    <td>(4)</td>
+    <!-- ak -->
     <td>
       <@>
         ak
@@ -160,7 +164,8 @@
   </tr>
   
   <tr>
-    <!-- (5) aak -->
+    <td>(5)</td>
+    <!-- aak -->
     <td>
       <@>
         ák
@@ -172,7 +177,8 @@
   </tr>
   
   <tr>
-    <!-- (6) am -->
+    <td>(6)</td>
+    <!-- am -->
     <td>
       <@>
         am
@@ -186,11 +192,12 @@
   <!-- Page 4: aam aan ang aang ap -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~4</td>
+    <td class="centred-text" colspan="4">Page~4</td>
   </tr>
   
   <tr>
-    <!-- (7) aam -->
+    <td>(7)</td>
+    <!-- aam -->
     <td>
       <@>
         ám
@@ -202,7 +209,8 @@
   </tr>
   
   <tr>
-    <!-- (8) aan -->
+    <td>(8)</td>
+    <!-- aan -->
     <td>
       <@>
         án
@@ -214,7 +222,8 @@
   </tr>
   
   <tr>
-    <!-- (9) ang -->
+    <td>(9)</td>
+    <!-- ang -->
     <td>
       <@>
         ang
@@ -226,7 +235,8 @@
   </tr>
   
   <tr>
-    <!-- (10) aang -->
+    <td>(10)</td>
+    <!-- aang -->
     <td>
       <@>
         áng
@@ -238,7 +248,8 @@
   </tr>
   
   <tr>
-    <!-- (11) ap -->
+    <td>(11)</td>
+    <!-- ap -->
     <td>
       <@>
         ap
@@ -252,11 +263,12 @@
   <!-- Page 5: aap at aat -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~5</td>
+    <td class="centred-text" colspan="4">Page~5</td>
   </tr>
   
   <tr>
-    <!-- (12) aap -->
+    <td>(12)</td>
+    <!-- aap -->
     <td>
       <@>
         áp
@@ -268,7 +280,8 @@
   </tr>
   
   <tr>
-    <!-- (13) at -->
+    <td>(13)</td>
+    <!-- at -->
     <td>
       <@>
         at
@@ -280,7 +293,8 @@
   </tr>
   
   <tr>
-    <!-- (14) aat -->
+    <td>(14)</td>
+    <!-- aat -->
     <td>
       <@>
         át
@@ -294,11 +308,12 @@
   <!-- Page 6: au aau -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~6</td>
+    <td class="centred-text" colspan="4">Page~6</td>
   </tr>
   
   <tr>
-    <!-- (15) au -->
+    <td>(15)</td>
+    <!-- au -->
     <td>
       <@>
         au
@@ -310,7 +325,8 @@
   </tr>
   
   <tr>
-    <!-- (16) aau -->
+    <td>(16)</td>
+    <!-- aau -->
     <td>
       <@>
         áu
@@ -331,7 +347,7 @@
 <!c><table>
   
   <tr>
-    <th>Williams</th>
+    <th colspan="2">Williams</th>
     <th>Conway</th>
     <th>Jyutping</th>
   </tr>
@@ -339,11 +355,12 @@
   <!-- Page 7: chaa -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~7</td>
+    <td class="centred-text" colspan="4">Page~7</td>
   </tr>
   
   <tr>
-    <!-- (17) chaa -->
+    <td>(17)</td>
+    <!-- chaa -->
     <td>
       <@>
         chá
@@ -357,11 +374,12 @@
   <!-- Page 8: ch'aa -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~8</td>
+    <td class="centred-text" colspan="4">Page~8</td>
   </tr>
   
   <tr>
-    <!-- (18) ch'aa -->
+    <td>(18)</td>
+    <!-- ch'aa -->
     <td>
       <@>
         ch'á
@@ -375,11 +393,12 @@
   <!-- Page 9: chai -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~9</td>
+    <td class="centred-text" colspan="4">Page~9</td>
   </tr>
   
   <tr>
-    <!-- (19) chai -->
+    <td>(19)</td>
+    <!-- chai -->
     <td>
       <@>
         chai
@@ -393,11 +412,12 @@
   <!-- Page 10: chaai -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~10</td>
+    <td class="centred-text" colspan="4">Page~10</td>
   </tr>
   
   <tr>
-    <!-- (20) chaai -->
+    <td>(20)</td>
+    <!-- chaai -->
     <td>
       <@>
         chái
@@ -411,11 +431,12 @@
   <!-- Page 11: ch'aai -->
   
   <tr>
-    <td class="centred-text" colspan="3">Page~11</td>
+    <td class="centred-text" colspan="4">Page~11</td>
   </tr>
   
   <tr>
-    <!-- (21) ch'aai -->
+    <td>(21)</td>
+    <!-- ch'aai -->
     <td>
       <@>
         ch'ái
