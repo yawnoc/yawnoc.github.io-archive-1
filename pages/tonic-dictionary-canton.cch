@@ -76,6 +76,7 @@
 
 <=>
   <@i> A | #a | </@i>
+  <@i> C | #c | </@i>
   <li><:r>WORK IN PROGRESS</:r></li>
 </=>
 
@@ -318,6 +319,57 @@
     </td>
     <td><^e>aau</^e></td>
     <td>aau</td>
+  </tr>
+  
+</table></!c>
+
+<@3> C | c </@3>
+<@@>
+  <@u> Links A to Z | links | </@u>
+</@@>
+
+<!c><table>
+  
+  <tr>
+    <th>Williams</th>
+    <th>Conway</th>
+    <th>Jyutping</th>
+  </tr>
+  
+  <!-- Page 7: chaa -->
+  
+  <tr>
+    <td class="centred-text" colspan="3">Page~7</td>
+  </tr>
+  
+  <tr>
+    <!-- (17) chaa -->
+    <td>
+      <@>
+        chá
+        | https://archive.org/details/tonicdictionaryo00will/page/6 |
+      </@>
+    </td>
+    <td><^e>chaa</^e></td>
+    <td>zaa</td>
+  </tr>
+  
+  <!-- Page 8: ch'aa -->
+  
+  <tr>
+    <td class="centred-text" colspan="3">Page~8</td>
+  </tr>
+  
+  <tr>
+    <!-- (18) ch'aa -->
+    <td>
+      <@>
+        ch'á
+        | https://archive.org/details/tonicdictionaryo00will/page/8 |
+      </@>
+    </td>
+    <td><^e>ch'aa</^e></td>
+    <td>caa</td>
   </tr>
   
 </table></!c>
