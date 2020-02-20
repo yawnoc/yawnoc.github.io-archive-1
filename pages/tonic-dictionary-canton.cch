@@ -92,7 +92,7 @@
     <th>Jyutping</th>
   </tr>
   
-  <!-- 1: aa -->
+  <!-- Page 1: aa -->
   
   <tr>
     <td class="centred-text" colspan="3">Page~1</td>
@@ -109,7 +109,7 @@
     <td>aa</td>
   </tr>
   
-  <!-- 2: ai aai -->
+  <!-- Page 2: ai aai -->
   
   <tr>
     <td class="centred-text" colspan="3">Page~2</td>
@@ -137,7 +137,7 @@
     <td>aai</td>
   </tr>
   
-  <!-- 3: ak aak am -->
+  <!-- Page 3: ak aak am -->
   
   <tr>
     <td class="centred-text" colspan="3">Page~3</td>
@@ -176,7 +176,7 @@
     <td>am</td>
   </tr>
   
-  <!-- 4: aam aan ang aang ap -->
+  <!-- Page 4: aam aan ang aang ap -->
   
   <tr>
     <td class="centred-text" colspan="3">Page~4</td>
@@ -237,7 +237,7 @@
     <td>ap</td>
   </tr>
   
-  <!-- 5: aap at aat -->
+  <!-- Page 5: aap at aat -->
   
   <tr>
     <td class="centred-text" colspan="3">Page~5</td>
@@ -276,7 +276,7 @@
     <td>aat</td>
   </tr>
   
-  <!-- 6: au aau -->
+  <!-- Page 6: au aau -->
   
   <tr>
     <td class="centred-text" colspan="3">Page~6</td>
