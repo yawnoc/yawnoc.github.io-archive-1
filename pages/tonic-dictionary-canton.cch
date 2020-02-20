@@ -1,6 +1,6 @@
 <*>
   Quick links for Williams' {Tonic Dictionary} of Cantonese
-  | 20200220 | 20200220 | d
+  | 20200220 | 20200221 | d
   | Quick links for each syllable of Samuel Wells Williams' \
     {A Tonic Dictionary Of The Chinese Language In The Canton Dialect} \
     《英華分韻撮要》
@@ -445,6 +445,153 @@
     </td>
     <td><^e>ch'aai</^e></td>
     <td>caai</td>
+  </tr>
+  
+  <!-- Page 12: chak ch'ak chaak -->
+  
+  <tr>
+    <td class="centred-text" colspan="4">Page~12</td>
+  </tr>
+  
+  <tr>
+    <td>(22)</td>
+    <!-- chak -->
+    <td>
+      <@>
+        chak
+        | https://archive.org/details/tonicdictionaryo00will/page/n51/mode/1up |
+      </@>
+    </td>
+    <td><^e>chak</^e></td>
+    <td>zak</td>
+  </tr>
+  
+  <tr>
+    <td>(23)</td>
+    <!-- ch'ak -->
+    <td>
+      <@>
+        ch'ak
+        | https://archive.org/details/tonicdictionaryo00will/page/n51/mode/1up |
+      </@>
+    </td>
+    <td><^e>ch'ak</^e></td>
+    <td>cak</td>
+  </tr>
+  
+  <tr>
+    <td>(24)</td>
+    <!-- chaak -->
+    <td>
+      <@>
+        chák
+        | https://archive.org/details/tonicdictionaryo00will/page/n51/mode/1up |
+      </@>
+    </td>
+    <td><^e>chaak</^e></td>
+    <td>zaak</td>
+  </tr>
+  
+  <!-- Page 13: ch'aak -->
+  
+  <tr>
+    <td class="centred-text" colspan="4">Page~13</td>
+  </tr>
+  
+  <tr>
+    <td>(25)</td>
+    <!-- ch'aak -->
+    <td>
+      <@>
+        ch'ák
+        | https://archive.org/details/tonicdictionaryo00will/page/n52/mode/1up |
+      </@>
+    </td>
+    <td><^e>ch'aak</^e></td>
+    <td>caak</td>
+  </tr>
+  
+  <!-- Page 14: cham-->
+  
+  <tr>
+    <td class="centred-text" colspan="4">Page~14</td>
+  </tr>
+  
+  <tr>
+    <td>(26)</td>
+    <!-- cham -->
+    <td>
+      <@>
+        cham
+        | https://archive.org/details/tonicdictionaryo00will/page/n53/mode/1up |
+      </@>
+    </td>
+    <td><^e>cham</^e></td>
+    <td>zam</td>
+  </tr>
+  
+  <!-- Page 15: ch'am chaam-->
+  
+  <tr>
+    <td class="centred-text" colspan="4">Page~15</td>
+  </tr>
+  
+  <tr>
+    <td>(27)</td>
+    <!-- ch'am -->
+    <td>
+      <@>
+        ch'am
+        | https://archive.org/details/tonicdictionaryo00will/page/n54/mode/1up |
+      </@>
+    </td>
+    <td><^e>ch'am</^e></td>
+    <td>cam</td>
+  </tr>
+  
+  <tr>
+    <td>(28)</td>
+    <!-- chaam -->
+    <td>
+      <@>
+        chák
+        | https://archive.org/details/tonicdictionaryo00will/page/n54/mode/1up |
+      </@>
+    </td>
+    <td><^e>chaam</^e></td>
+    <td>zaam</td>
+  </tr>
+  
+  <!-- Page 16: ch'aam chan-->
+  
+  <tr>
+    <td class="centred-text" colspan="4">Page~16</td>
+  </tr>
+  
+  <tr>
+    <td>(29)</td>
+    <!-- ch'aam -->
+    <td>
+      <@>
+        ch'ám
+        | https://archive.org/details/tonicdictionaryo00will/page/n55/mode/1up |
+      </@>
+    </td>
+    <td><^e>ch'aam</^e></td>
+    <td>caam</td>
+  </tr>
+  
+  <tr>
+    <td>(30)</td>
+    <!-- chan -->
+    <td>
+      <@>
+        chan
+        | https://archive.org/details/tonicdictionaryo00will/page/n55/mode/1up |
+      </@>
+    </td>
+    <td><^e>chan</^e></td>
+    <td>zan</td>
   </tr>
   
 </table></!c>
