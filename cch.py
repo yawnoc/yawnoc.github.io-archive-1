@@ -1742,7 +1742,7 @@ def replace_page_properties(string):
 #     <li>Text:
 #       <p>
 #         Conway~({year last modified}).
-#         【{text heading}】.
+#         {text heading}.
 #         \<{url}\>
 #         [Accessed <span class="date">d~month~yyyy</span>]
 #       </p>
@@ -1771,8 +1771,8 @@ def replace_page_properties(string):
 #     </li>
 #   </ul>
 # where the square brackets for [Accessed ...] are literal,
-# and, for readability, 【 and 】 stand for { and } (for Conway italics),
-# and 《 and 》 stand for \{ and \} (which should render as literal { and })
+# and, for readability,《 and 》 stand for \{ and \}
+# (which should render as literal { and })
 
 def replace_cite_this_page(string):
   
@@ -1809,7 +1809,7 @@ def replace_cite_this_page(string):
       <li>Text:
         <p>
           Conway~({year_last_modified}).
-          【{text_heading}】.
+          {text_heading}.
           \<{url}\>
           [Accessed <span class="date">d~month~yyyy</span>]
         </p>
@@ -1839,15 +1839,11 @@ def replace_cite_this_page(string):
     </ul>'''
   )
   
-  # NOTE: doubled curly brackets are required for replacing 【, 】, 《 and 》 below
+  # NOTE: doubled curly brackets are required for replacing 《 and 》 below
   # since processed_string will be passed to str.format().
   # The replacements must be performed before str.format() because
-  # the strings inserted by str.format() may contain 【, 】, 《 and 》,
+  # the strings inserted by str.format() may contain 《 and 》,
   # which we have only used for readability of the code above.
-  
-  # Conway italics: 【 and 】 to { and }
-  processed_string = re.sub('【', '{{', processed_string)
-  processed_string = re.sub('】', '}}', processed_string)
   
   # Conway-escaped italic brackets: 《 and 》 to \{ and \}
   processed_string = re.sub('《', r'\\{{', processed_string)
