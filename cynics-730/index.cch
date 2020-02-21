@@ -1,8 +1,9 @@
-<*> A cynic's 7.30 (and other programs) | 20190830 | 20200119 </*>
+<*> A cynic's 7.30 (and other programs) | 20190830 | 20200119 | d </*>
 
 <=h>
   <@ih></@ih>
   <@it></@it>
+  <@ic></@ic>
 </=h>
 
 <h1>A cynic's 7.30 (and other programs)</h1>
@@ -69,5 +70,11 @@
   </li>
   
 </ul>
+
+<*c>
+  A cynic's 7.30 (and other programs)
+  | cynics-730
+  | A cynic's 7.30 (and other programs)
+</*c>
 
 <*f></*f>
