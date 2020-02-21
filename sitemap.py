@@ -21,7 +21,7 @@ def list_to_string(list_):
 
 # Convert newline-separated string to list
 def string_to_list(string):
-  return string.split(NEWLINE)
+  return string.strip().split(NEWLINE)
 
 # Get list of all HTML pages
 EXCLUDED_PAGES = [
