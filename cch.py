@@ -1667,7 +1667,7 @@ def replace_preamble(string):
 #     <b>See also:</b>~[see also]][<br>
 #     [misc]]
 #   </p>
-# where {last modified} links to #history if building index.html
+# where {last modified} links to #history if building the root index.html
 
 def replace_page_properties(string):
   
@@ -1701,7 +1701,7 @@ def replace_page_properties(string):
       {misc}'''
     )
   
-  if is_index:
+  if is_root_index:
     last_modified_spec = (
       f'<@> <b>{last_modified}</b> | #history | Site history </@>'
     )
@@ -1886,7 +1886,7 @@ def replace_cite_this_page(string):
 # where the dash in the year range is U+2013 EN DASH,
 # [–year last modified] is only included if {year last modified}
 # is greater than {year first created},
-# and a default [ending remark] is used if building index.html.
+# and a default [ending remark] is used if building the root index.html.
 
 def replace_footer(string):
   
@@ -1904,7 +1904,7 @@ def replace_footer(string):
   argument_list += [''] * (num_arguments - num_supplied_arguments)
   copyright_exception, ending_remark = argument_list[:num_arguments]
   
-  if is_index:
+  if is_root_index:
     next_year = int(year_last_modified) + 1
     ending_remark = de_indent(f'''\
       And if the current year is greater than~{year_last_modified}:
@@ -3082,7 +3082,7 @@ def replace_all_temporary_replacements(string):
 
 def cch_to_html(file_name):
   
-  global is_index, url
+  global is_root_index, url
   global E000, E000_RUN, TEMPORARY_REPLACEMENT_REGEX
   global temporary_replacement_counter, temporary_replacement_dictionary
   
@@ -3100,18 +3100,19 @@ def cch_to_html(file_name):
   file_name = re.sub(r'\.(cch)?$', '', file_name)
   
   # ----------------------------------------------------------------
-  # Whether we are building index.html
+  # Whether we are building the root index.html
   # ----------------------------------------------------------------
   
-  is_index = file_name == 'index'
+  is_root_index = file_name == 'index'
   
   # ----------------------------------------------------------------
   # Canonical URL for Cite this page
   # ----------------------------------------------------------------
   
-  url = 'https://yawnoc.github.io/'
-  if not is_index:
-    url += f'{file_name}.html'
+  url = f'https://yawnoc.github.io/{file_name}.html'
+  
+  # Canonicalise /index.html as /
+  url = re.sub(r'\/index.html', '/', url)
   
   # ----------------------------------------------------------------
   # Import contents (markup) of CCH file
