@@ -3,11 +3,11 @@ https://yawnoc.github.io/code/cch-to-html.html
 https://yawnoc.github.io/code/katex-guide.html
 https://yawnoc.github.io/code/sun-tzu-animations.html
 https://yawnoc.github.io/code/unicode-maths.html
-https://yawnoc.github.io/cynicism/7-30-20190828-tehan-naplan.html
-https://yawnoc.github.io/cynicism/7-30-20190903-albanese-donation.html
-https://yawnoc.github.io/cynicism/7-30-20191014-taylor-snowy.html
-https://yawnoc.github.io/cynicism/7-30.html
-https://yawnoc.github.io/cynicism/bolt-20190910-liu-association.html
+https://yawnoc.github.io/cynics-730/
+https://yawnoc.github.io/cynics-730/2019/bolt-liu-association.html
+https://yawnoc.github.io/cynics-730/2019/sales-albanese-donation.html
+https://yawnoc.github.io/cynics-730/2019/sales-taylor-snowy.html
+https://yawnoc.github.io/cynics-730/2019/sales-tehan-naplan.html
 https://yawnoc.github.io/katex-example.html
 https://yawnoc.github.io/pages/conway-cantonese-romanisation.html
 https://yawnoc.github.io/pages/daytime.html
