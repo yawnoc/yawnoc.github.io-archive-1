@@ -44,8 +44,8 @@ sitemap = list_to_string(sitemap)
 # Convert Windows backslashes to forward slashes
 sitemap = re.sub(r'\\', '/', sitemap)
 
-# Canonicalise ./index.html as ./
-sitemap = re.sub(r'\./index.html', './', sitemap)
+# Canonicalise /index.html as /
+sitemap = re.sub(r'/index.html', '/', sitemap)
 
 # Replace . with actual root
 ROOT = 'https://yawnoc.github.io'
