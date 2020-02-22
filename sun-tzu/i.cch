@@ -2098,7 +2098,7 @@
 
 <div class="centred-flex">
   <+>
-    /images/sun-tzu-multiply-1989-64.gif
+    /sun-tzu/code/multiply-1989-64.gif
     | <^e>Sun~Tzuu</^e> multiplication: 1989 × 64
   </+>
 </div>
@@ -2259,7 +2259,7 @@
 </ul>
 <div class="centred-flex">
   <+>
-    /images/sun-tzu-divide-100-6.gif
+    /sun-tzu/code/divide-100-6.gif
     | <^e>Sun~Tzuu</^e> division: 100 ÷ 6
   </+>
 </div>
@@ -2670,7 +2670,7 @@
 </p>
 <div class="centred-flex">
   <+>
-    /images/sun-tzu-multiply-81-81.gif
+    /sun-tzu/code/multiply-81-81.gif
     | <^e>Sun~Tzuu</^e> multiplication: 81 × 81
   </+>
 </div>
@@ -2802,7 +2802,7 @@
 </p>
 <div class="centred-flex">
   <+>
-    /images/sun-tzu-divide-6561-9.gif
+    /sun-tzu/code/divide-6561-9.gif
     | <^e>Sun~Tzuu</^e> division: 6561 ÷ 9
   </+>
 </div>
