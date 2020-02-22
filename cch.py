@@ -17,7 +17,7 @@
 # To be kept in the root directory.
 # ----------------------------------------------------------------
 # Basic documentation on how CCH works:
-#   https://yawnoc.github.io/code/cch-to-html.html
+#   https://yawnoc.github.io/code/cch.html
 # ----------------------------------------------------------------
 # Released into the public domain (CC0):
 #   https://creativecommons.org/publicdomain/zero/1.0/

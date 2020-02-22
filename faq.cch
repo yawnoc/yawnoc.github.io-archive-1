@@ -120,7 +120,7 @@
   which gets converted to standard HTML (<`>.html</`>) via my custom-written
   <@>
     Python converter
-    | /code/cch-to-html.html
+    | /code/cch.html
     | Python: a regex converter from CCH to HTML
   </@>.
   For example, this page was generated from the CCH file

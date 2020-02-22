@@ -166,7 +166,7 @@
   (unless you are using
   <@>
     my concise HTML
-    | /code/cch-to-html.html
+    | /code/cch.html
     | Python: a regex converter from CCH to HTML
   </@>,
   in which case you can use <`><$> {...} </$></`> for inline equations

@@ -146,17 +146,17 @@
 <p>
   This page
   <@>
-    <`>cch-to-html.html</`> 
-    | \/code/cch-to-html.html
-    | GitHub: cch-to-html.html
+    <`>cch.html</`> 
+    | \/code/cch.html
+    | GitHub: cch.html
   </@>
   was generated from
   <@>
-    <`>cch-to-html.cch</`>
-    | \/code/cch-to-html.cch
-    | GitHub: cch-to-html.cch
+    <`>cch.cch</`>
+    | \/code/cch.cch
+    | GitHub: cch.cch
   </@>
-  by running <`>cch.py code/cch-to-html</`>,
+  by running <`>cch.py code/cch</`>,
   and it serves as both the documentation and an example.
 </p>
 
