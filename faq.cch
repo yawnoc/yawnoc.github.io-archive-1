@@ -124,7 +124,7 @@
     | Python: a regex converter from CCH to HTML
   </@>.
   For example, this page was generated from the CCH file
-  <@> <`>faq.cch</`> | \/pages/faq.cch | faq.cch </@>.
+  <@> <`>faq.cch</`> | \/faq.cch | faq.cch </@>.
 </p>
 
 <@3>
