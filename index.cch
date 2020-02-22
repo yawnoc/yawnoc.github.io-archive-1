@@ -114,23 +114,23 @@
     <@>
       《孫子算經》 \or<br>
       <b>"<^e>Sun~Tzuu</^e>'s Computational Classic"</b>
-      | /pages/sun-tzu.html
+      | /sun-tzu/
       | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
     </@>
     <ul>
       <@i>
         《序》~"Preface"
-        | /pages/sun-tzu-preface.html
+        | /sun-tzu/preface.html
         | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
       </@i>
       <@i>
         《卷上》~"Volume~I"
-        | /pages/sun-tzu-i.html
+        | /sun-tzu/i.html
         | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
       </@i>
       <@i>
         《卷中》~"Volume~II" <:v>(incomplete)</:v>
-        | /pages/sun-tzu-ii.html
+        | /sun-tzu/ii.html
         | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
       </@i>
       <li>
@@ -368,7 +368,7 @@
     Completed
     <@>
       handwritten translation manuscript
-      | /pages/sun-tzu.html#manuscript
+      | /sun-tzu/#manuscript
       | Translation manuscript for
         "<^e>Sun~Tzuu</^e>'s Computational Classic:" 《孫子算經》
     </@>
@@ -392,7 +392,7 @@
     Completed
     <@>
       handwritten translation manuscript
-      | /pages/sun-tzu.html#manuscript
+      | /sun-tzu/#manuscript
       | Translation manuscript for
         "<^e>Sun~Tzuu</^e>'s Computational Classic:" 《孫子算經》
     </@>
@@ -403,7 +403,7 @@
     Completed
     <@>
       handwritten translation manuscript
-      | /pages/sun-tzu.html#manuscript
+      | /sun-tzu/#manuscript
       | Translation manuscript for
         "<^e>Sun~Tzuu</^e>'s Computational Classic:" 《孫子算經》
     </@>
@@ -414,7 +414,7 @@
     Began
     <@>
       "<^e>Sun~Tzuu</^e>'s Computational Classic"
-      | /pages/sun-tzu.html
+      | /sun-tzu/#manuscript
       | "<^e>Sun~Tzuu</^e>'s Computational Classic:" 《孫子算經》
     </@>,
     an ongoing translation effort which will probably take until

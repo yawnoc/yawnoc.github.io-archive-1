@@ -5,7 +5,7 @@
 ################################################################
 # 孫子算經 Sun Tzu's Computational Classic
 # Square root algorithm in Volume II Paragraph 19:
-#   https://yawnoc.github.io/pages/sun-tzu-ii.html#19
+#   https://yawnoc.github.io/sun-tzu/ii.html#19
 #   https://yawnoc.github.io/manuscripts/sun-tzu-ii-19.pdf
 # Released into the public domain (CC0):
 #   https://creativecommons.org/publicdomain/zero/1.0/

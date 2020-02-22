@@ -35,18 +35,18 @@
   <@>
     《孫子算經》 \or<br>
     "<^e>Sun~Tzuu</^e>'s Computational Classic"
-    | /pages/sun-tzu.html
+    | /sun-tzu/
     | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
   </@>
   <ul>
     <@i>
       《序》~"Preface"
-      | /pages/sun-tzu-preface.html
+      | /sun-tzu/preface.html
       | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
     </@i>
     <@i>
       《卷上》~"Volume~I"
-      | /pages/sun-tzu-i.html
+      | /sun-tzu/i.html
       | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
     </@i>
     <li>
@@ -192,7 +192,7 @@
 
 <p>
   For units of <b>length</b>, see
-  <@> Vol.~I ¶1 | /pages/sun-tzu-i.html#1 | Vol. I ¶1 </@>.
+  <@> Vol.~I ¶1 | /sun-tzu/i.html#1 | Vol. I ¶1 </@>.
 </p>
 <ul>
   <li>
@@ -229,7 +229,7 @@
 </ul>
 <p>
   For units of <b>capacity</b>, see
-  <@> Vol.~I ¶3 | /pages/sun-tzu-i.html#3 | Vol. I ¶3 </@>.
+  <@> Vol.~I ¶3 | /sun-tzu/i.html#3 | Vol. I ¶3 </@>.
 </p>
 <ul>
   <li>
@@ -1209,7 +1209,7 @@
 
 <p>
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
-  <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | Vol. I ¶5 </@>.
 </p>
 
 <;sh> 2 | 11 | Volume of a rectangular prism </;sh>
@@ -1402,7 +1402,7 @@
 </$$>
 <p>
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
-  <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | Vol. I ¶5 </@>.
 </p>
 
 <;sh> 2 | 13 | Area of a circle </;sh>
@@ -1418,7 +1418,7 @@
 </#t>
 <p>
   Here <$>\pi \approx 3</$>, see
-  <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | Vol. I ¶5 </@>.
 </p>
 
 <#t>
@@ -1580,7 +1580,7 @@
 </$$>
 <p>
   Here <$>\sqrt{2} \approx 7/5</$>, see
-  <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | Vol. I ¶5 </@>.
 </p>
 
 
@@ -3378,7 +3378,7 @@
 <p>
   In modern notation
   (but taking <$>\pi \approx 3</$> i.e. <$>4\pi \approx 12</$>
-  as per <@> Vol.~I ¶5 | /pages/sun-tzu-i.html#5 | </@>),
+  as per <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | </@>),
   the circumference of a circle of area <$>A = 35000 \unit{步}^2</$> is
 </p>
 <$$>
@@ -3391,7 +3391,7 @@
   The balance of this paragraph involves extracting the square root of~420000.
   For a fully annotated and diagrammed walkthrough of
   <^e>Sun~Tzuu</^e>'s square root algorithm,
-  see the previous <@> ¶19 | /pages/sun-tzu-ii.html#19 | Vol.~II ¶19 </@>
+  see the previous <@> ¶19 | /sun-tzu/ii.html#19 | Vol.~II ¶19 </@>
   and the
   <@>
     pseudocode summary
