@@ -24,7 +24,7 @@ https://yawnoc.github.io/mao-separatism.html
 https://yawnoc.github.io/math/daytime.html
 https://yawnoc.github.io/math/projectile-raised-platform.html
 https://yawnoc.github.io/math/projectile-weak-drag.html
-https://yawnoc.github.io/pages/sun-tzu-i.html
-https://yawnoc.github.io/pages/sun-tzu-ii.html
-https://yawnoc.github.io/pages/sun-tzu-preface.html
-https://yawnoc.github.io/pages/sun-tzu.html
+https://yawnoc.github.io/sun-tzu/
+https://yawnoc.github.io/sun-tzu/i.html
+https://yawnoc.github.io/sun-tzu/ii.html
+https://yawnoc.github.io/sun-tzu/preface.html
