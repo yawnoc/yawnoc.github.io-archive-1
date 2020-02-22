@@ -10,6 +10,7 @@ https://yawnoc.github.io/cynics-730/2019/bolt-liu-association.html
 https://yawnoc.github.io/cynics-730/2019/sales-albanese-donation.html
 https://yawnoc.github.io/cynics-730/2019/sales-taylor-snowy.html
 https://yawnoc.github.io/cynics-730/2019/sales-tehan-naplan.html
+https://yawnoc.github.io/faq.html
 https://yawnoc.github.io/katex-example.html
 https://yawnoc.github.io/lit/fox-tiger.html
 https://yawnoc.github.io/lit/gunbai-poetry.html
@@ -19,11 +20,10 @@ https://yawnoc.github.io/lit/lion-pavilion.html
 https://yawnoc.github.io/lit/little-child.html
 https://yawnoc.github.io/lit/need-to-win.html
 https://yawnoc.github.io/lit/sea-island.html
+https://yawnoc.github.io/mao-separatism.html
 https://yawnoc.github.io/math/daytime.html
 https://yawnoc.github.io/math/projectile-raised-platform.html
 https://yawnoc.github.io/math/projectile-weak-drag.html
-https://yawnoc.github.io/pages/faq.html
-https://yawnoc.github.io/pages/mao-27-chinas.html
 https://yawnoc.github.io/pages/sun-tzu-i.html
 https://yawnoc.github.io/pages/sun-tzu-ii.html
 https://yawnoc.github.io/pages/sun-tzu-preface.html
