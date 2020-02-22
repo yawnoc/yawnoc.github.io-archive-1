@@ -222,7 +222,7 @@
 
 <*c>
   "{The} Fox Falsely Assumes {the} Tiger's Authority"
-  | fox
+  | fox-tiger
   | ``\emph{The} {Fox} {Falsely} {Assumes} \emph{the} {Tiger's} {Authority}''
 </*c>
 
