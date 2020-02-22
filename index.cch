@@ -1,5 +1,5 @@
 <*>
-  | 20190309 | 20200216 | d
+  | 20190309 | 20200222 | d
   | Assorted musings of Conway, mostly applied maths and Literary Chinese.
 </*>
 
@@ -313,6 +313,11 @@
 
 
 <ul class="site-history">
+  
+  <li><span>20200222:</span>
+    Site restructured (by topic, with shorter URLs).
+    Apologies for the broken links.
+  </li>
   
   <li><span>20200127:</span>
     Yep, looks like SARS~II is coming. God save!
