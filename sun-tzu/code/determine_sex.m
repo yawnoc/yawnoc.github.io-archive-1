@@ -1,5 +1,5 @@
 ################################################################
-# pregnant.m
+# determine_sex.m
 ################################################################
 # 孫子算經 Sun Tzu's Computational Classic
 # Sex determination algorithm in Volume III Paragraph 36:
@@ -60,22 +60,3 @@ function male = determine_sex (years, months)
   male = mod (remainder, 2);
   
 endfunction
-
-
-years = 16 : 58;
-months = 7 : 9;
-
-num_years = length (years);
-num_months = length (months);
-
-table = zeros (1 + num_years, 1 + num_months);
-
-table(1, :) = [NaN, months];
-table(2 : end, 1) = years';
-
-for n = 1 : num_years
-  y = years(n);
-  table(1 + n, 2 : end) = arrayfun (@(m) determine_sex(y, m), months);
-endfor
-
-csvwrite ("pregnant.csv", table)
