@@ -564,7 +564,7 @@
 
 <*c>
   "The Need to Win"
-  | importance
+  | need-to-win
   | ``The {Need} to {Win}''
 </*c>
 
