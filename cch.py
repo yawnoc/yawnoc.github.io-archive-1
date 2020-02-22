@@ -907,7 +907,7 @@ def replace_all_assisting_romanisations(string):
 # Processed string:
 #   <@>
 #     Cantonese
-#     | /pages/conway-cantonese-romanisation.html
+#     | /cantonese/conway-romanisation.html
 #     | Conway's Custom Romanisation for Cantonese
 #   </@>:~<^e>{cantonese}</^e>,
 #   Mandarin:~<^e>{mandarin}</^e>\
@@ -959,7 +959,7 @@ def replace_cantonese_mandarin_romanisation(match_object):
   processed_string = de_indent(f'''\
     <@>
       Cantonese
-      | /pages/conway-cantonese-romanisation.html
+      | /cantonese/conway-romanisation.html
       | Conway's Custom Romanisation for Cantonese
     </@>:~<^e>{cantonese}</^e>,
     Mandarin:~<^e>{mandarin}</^e>{gov_spec}'''

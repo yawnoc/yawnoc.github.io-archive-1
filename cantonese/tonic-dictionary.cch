@@ -18,7 +18,7 @@
 <*p>
   <@>
     Conway's Custom Romanisation for Cantonese
-    | /pages/conway-cantonese-romanisation.html
+    | /cantonese/conway-romanisation.html
     |
   </@>
 </*p>
@@ -48,7 +48,7 @@
   The equivalent romanisations in
   <@>
     my own system
-    | /pages/conway-cantonese-romanisation.html
+    | /cantonese/conway-romanisation.html
     | Conway's Custom Romanisation for Cantonese
   </@>
   and in
@@ -64,7 +64,7 @@
     \{<^e><:h>ts</:h></^e> vs <^e><:h>ch</:h></^e>\},
     \{<^e><:h>ts'</:h></^e> vs <^e><:h>ch'</:h></^e>\} and
     \{<^e><:h>s</:h></^e> vs <^e><:h>sh</:h></^e>\}
-    | /pages/conway-cantonese-romanisation.html#ts-vs-ch
+    | /cantonese/conway-romanisation.html#ts-vs-ch
     | On \
       \{<^e>ts</^e> vs <^e>ch</^e>\}, \
       \{<^e>ts'</^e> vs <^e>ch'</^e>\} and \

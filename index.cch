@@ -34,7 +34,7 @@
   <tr><td>
     <@>
       <b>Conway's Custom Romanisation for Cantonese</b>
-      | /pages/conway-cantonese-romanisation.html
+      | /cantonese/conway-romanisation.html
       | Conway's Custom Romanisation for Cantonese
     </@>
     <.>Used in this site.</.>
@@ -346,7 +346,7 @@
     now distinguished in my
     <@>
       romanisation system
-      | /pages/conway-cantonese-romanisation.html
+      | /cantonese/conway-romanisation.html
       | Conway's Custom Romanisation for Cantonese
     </@>.
   </li>
