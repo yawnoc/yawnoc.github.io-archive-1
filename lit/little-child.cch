@@ -82,7 +82,7 @@
   and only uses 讀 (very sparingly) for lists; see
   <@>
     the actual first page of the almanac text
-    | /images/little-childs-discourse-1.jpg
+    | almanac-little-child-1.jpg
     | 小兒論
   </@>.
 </p>
@@ -230,12 +230,12 @@
     <div class="centred-flex">
       <@>
         <+>
-          /images/little-childs-discourse-1-illustration-small.jpg
+          almanac-little-child-1-small.jpg
           | A little child with Confucius,
             before two other children building a wall.
           | 豈爲好事？故乃不戲。
         </+>
-        | /images/little-childs-discourse-1.jpg
+        | almanac-little-child-1.jpg
         | 小兒論
       </@>
     </div>

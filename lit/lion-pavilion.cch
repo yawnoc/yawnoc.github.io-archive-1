@@ -37,7 +37,7 @@
   but the text is clearly legible in the
   <@>
     full-size version
-    | /images/lions-pavilion-record.jpg
+    | lion-pavilion.jpg
     | Full-size picture of plaque
   </@>,
   despite it having been compressed.
@@ -46,11 +46,11 @@
 <div class="centred-flex">
   <@>
     <+>
-      /images/lions-pavilion-record-small.jpg
+      lion-pavilion-small.jpg
       | Plaque text: 《太平山獅子亭記》
       | A plaque in the Lion's Pavilion, Victoria Peak, Hong Kong.
     </+>
-    | /images/lions-pavilion-record.jpg
+    | lion-pavilion.jpg
     | Full-size picture of plaque
   </@>
 </div>
