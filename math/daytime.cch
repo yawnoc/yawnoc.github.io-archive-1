@@ -145,7 +145,7 @@
 
 <div class="centred-flex">
   <+>
-    /images/equatorial-coordinates-solar-year.png
+    equatorial-coordinates-solar-year.png
     | The earth lies at the centre of the equatorial coordinate system,
       and spins once about its own axis in a day.
       The equator is in the xy-plane; the north pole is the positive z-axis.
@@ -200,7 +200,7 @@
 
 <div class="centred-flex">
   <+>
-    /images/equatorial-coordinates-spherical.png
+    equatorial-coordinates-spherical.png
     | r is the distance from the origin, the centre of the earth.
       θ is the angle from the north pole, the z-axis.
       ϕ is the angle east from the x-axis.
@@ -243,7 +243,7 @@
 
 <div class="centred-flex">
   <+>
-    /images/equatorial-ecliptic-coordinates.png
+    equatorial-ecliptic-coordinates.png
     | The ecliptic coordinate axes (with tildes) are tilted with respect to
       the equatorial coordinate axes by tilt τ about the positive x-axis,
       in a right-handed sense.
@@ -428,7 +428,7 @@
 
 <div class="centred-flex">
   <+>
-    /images/equatorial-coordinates-spherical-basis.png
+    equatorial-coordinates-spherical-basis.png
     | The local spherical basis has r-vector pointing up,
       θ-vector pointing south and ϕ-vector pointing east.
     | Equatorial spherical coordinates
@@ -666,7 +666,7 @@
 
 <div class="centred-flex">
   <+>
-    /images/earth-polar-regions.png
+    earth-polar-regions.png
     | Midnight sun and polar night possible where abs(δ) \> π/2 − τ.
       The Arctic Circle is δ = π/2 − τ.
       The Antarctic Circle is δ = −(π/2 − τ).
@@ -710,7 +710,7 @@
 
 <div class="centred-flex">
   <+>
-    /images/sun-components.png
+    sun-components.png
     | After scaling out by the tilt-reduced unit radius ρ,
       the local components of the direction from the observer towards the sun
       are U (up), S (south) and E (east).
