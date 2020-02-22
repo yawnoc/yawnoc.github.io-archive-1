@@ -19,7 +19,7 @@ https://yawnoc.github.io/lit/lion-pavilion.html
 https://yawnoc.github.io/lit/little-child.html
 https://yawnoc.github.io/lit/need-to-win.html
 https://yawnoc.github.io/lit/sea-island.html
-https://yawnoc.github.io/mao-separatism.html
+https://yawnoc.github.io/mao-on-separatism.html
 https://yawnoc.github.io/math/daytime.html
 https://yawnoc.github.io/math/projectile-raised-platform.html
 https://yawnoc.github.io/math/projectile-weak-drag.html
