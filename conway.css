@@ -18,7 +18,7 @@ a:hover {
 /* External links (yawnoc GitHub to be counted as internal) */
 
 a[href^="http"]:not([href^="https://github.com/yawnoc"]) {
-  background-image: url(/images/external-link.svg);
+  background-image: url(/res/external-link.svg);
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 12px 12px;
@@ -46,7 +46,7 @@ h2 a.self-link {
 }
 
 h3 a.self-link {
-  background-image: url(/images/self-link.svg);
+  background-image: url(/res/self-link.svg);
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 16px 16px;
@@ -54,7 +54,7 @@ h3 a.self-link {
 }
 
 h4 a.self-link {
-  background-image: url(/images/self-link.svg);
+  background-image: url(/res/self-link.svg);
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 12px 12px;

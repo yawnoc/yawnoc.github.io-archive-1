@@ -1108,7 +1108,7 @@
     <``>
       <~~>
         
-        <+h> /images/dialogue-host.png | Host </+h>
+        <+h> /res/dialogue-host.png | Host </+h>
         <~h>
           I am the host; my words and thoughts are in blue.
         </~h>
@@ -1117,7 +1117,7 @@
           against a light-pink background.\}
         </~ht>
         
-        <+g> /images/dialogue-guest.png | Guest </+g>
+        <+g> /res/dialogue-guest.png | Guest </+g>
         <~g>
           I am the guest; my words are thoughts are in black.
         </~g>
@@ -1141,7 +1141,7 @@
     <b>Rendered</b>
       <~~>
         
-        <+h> /images/dialogue-host.png | Host </+h>
+        <+h> /res/dialogue-host.png | Host </+h>
         <~h>
           I am the host; my words and thoughts are in blue.
         </~h>
@@ -1150,7 +1150,7 @@
           against a light-pink background.\}
         </~ht>
         
-        <+g> /images/dialogue-guest.png | Guest </+g>
+        <+g> /res/dialogue-guest.png | Guest </+g>
         <~g>
           I am the guest; my words are thoughts are in black.
         </~g>
