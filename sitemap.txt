@@ -3,7 +3,6 @@ https://yawnoc.github.io/cantonese/conway-romanisation.html
 https://yawnoc.github.io/cantonese/tonic-dictionary.html
 https://yawnoc.github.io/code/cch-to-html.html
 https://yawnoc.github.io/code/katex-guide.html
-https://yawnoc.github.io/code/sun-tzu-animations.html
 https://yawnoc.github.io/code/unicode-maths.html
 https://yawnoc.github.io/cynics-730/
 https://yawnoc.github.io/cynics-730/2019/bolt-liu-association.html
@@ -25,6 +24,7 @@ https://yawnoc.github.io/math/daytime.html
 https://yawnoc.github.io/math/projectile-raised-platform.html
 https://yawnoc.github.io/math/projectile-weak-drag.html
 https://yawnoc.github.io/sun-tzu/
+https://yawnoc.github.io/sun-tzu/code/animations.html
 https://yawnoc.github.io/sun-tzu/i.html
 https://yawnoc.github.io/sun-tzu/ii.html
 https://yawnoc.github.io/sun-tzu/preface.html
