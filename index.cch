@@ -73,7 +73,7 @@
   <tr><td>
     <@>
       <b>Daytime: dependence on latitude and season</b>
-      | /pages/daytime.html
+      | /math/daytime.html
       | Daytime: dependence on latitude and season
     </@>
     <.>
@@ -84,7 +84,7 @@
   <tr><td>
     <@>
       <b>Projectile motion: optimal launch angle for weak quadratic drag</b>
-      | /pages/optimal-angle-weak-drag.html
+      | /math/projectile-weak-drag.html
       | Projectile motion: optimal launch angle for weak quadratic drag
     </@>
     <.>
@@ -96,7 +96,7 @@
   <tr><td>
     <@>
       <b>Projectile motion: optimal launch angle from a platform</b>
-      | /pages/optimal-angle-platform.html
+      | /math/projectile-raised-platform.html
       | Projectile motion: optimal launch angle from a platform
     </@>
     <.>Launching projectiles from a raised platform.</.>
