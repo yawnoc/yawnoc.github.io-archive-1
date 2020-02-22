@@ -1,4 +1,6 @@
 https://yawnoc.github.io/
+https://yawnoc.github.io/cantonese/conway-romanisation.html
+https://yawnoc.github.io/cantonese/tonic-dictionary.html
 https://yawnoc.github.io/code/cch-to-html.html
 https://yawnoc.github.io/code/katex-guide.html
 https://yawnoc.github.io/code/sun-tzu-animations.html
@@ -20,11 +22,9 @@ https://yawnoc.github.io/lit/sea-island.html
 https://yawnoc.github.io/math/daytime.html
 https://yawnoc.github.io/math/projectile-raised-platform.html
 https://yawnoc.github.io/math/projectile-weak-drag.html
-https://yawnoc.github.io/pages/conway-cantonese-romanisation.html
 https://yawnoc.github.io/pages/faq.html
 https://yawnoc.github.io/pages/mao-27-chinas.html
 https://yawnoc.github.io/pages/sun-tzu-i.html
 https://yawnoc.github.io/pages/sun-tzu-ii.html
 https://yawnoc.github.io/pages/sun-tzu-preface.html
 https://yawnoc.github.io/pages/sun-tzu.html
-https://yawnoc.github.io/pages/tonic-dictionary-canton.html
