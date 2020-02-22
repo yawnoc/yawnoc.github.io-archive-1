@@ -1,6 +1,6 @@
 <*>
   Quick links for Williams' {Tonic Dictionary} of Cantonese
-  | 20200220 | 20200221 | d
+  | 20200220 | 20200222 | d
   | Quick links for each syllable of Samuel Wells Williams' \
     {A Tonic Dictionary Of The Chinese Language In The Canton Dialect} \
     《英華分韻撮要》
@@ -94,7 +94,6 @@
   </tr>
   
   <!-- Page 1: aa -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~1</td>
   </tr>
@@ -113,7 +112,6 @@
   </tr>
   
   <!-- Page 2: ai aai -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~2</td>
   </tr>
@@ -145,7 +143,6 @@
   </tr>
   
   <!-- Page 3: ak aak am -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~3</td>
   </tr>
@@ -190,7 +187,6 @@
   </tr>
   
   <!-- Page 4: aam aan ang aang ap -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~4</td>
   </tr>
@@ -261,7 +257,6 @@
   </tr>
   
   <!-- Page 5: aap at aat -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~5</td>
   </tr>
@@ -306,7 +301,6 @@
   </tr>
   
   <!-- Page 6: au aau -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~6</td>
   </tr>
@@ -353,7 +347,6 @@
   </tr>
   
   <!-- Page 7: chaa -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~7</td>
   </tr>
@@ -372,7 +365,6 @@
   </tr>
   
   <!-- Page 8: ch'aa -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~8</td>
   </tr>
@@ -391,7 +383,6 @@
   </tr>
   
   <!-- Page 9: chai -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~9</td>
   </tr>
@@ -410,7 +401,6 @@
   </tr>
   
   <!-- Page 10: chaai -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~10</td>
   </tr>
@@ -429,7 +419,6 @@
   </tr>
   
   <!-- Page 11: ch'aai -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~11</td>
   </tr>
@@ -448,7 +437,6 @@
   </tr>
   
   <!-- Page 12: chak ch'ak chaak -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~12</td>
   </tr>
@@ -493,7 +481,6 @@
   </tr>
   
   <!-- Page 13: ch'aak -->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~13</td>
   </tr>
@@ -512,7 +499,6 @@
   </tr>
   
   <!-- Page 14: cham-->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~14</td>
   </tr>
@@ -531,7 +517,6 @@
   </tr>
   
   <!-- Page 15: ch'am chaam-->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~15</td>
   </tr>
@@ -563,7 +548,6 @@
   </tr>
   
   <!-- Page 16: ch'aam chan-->
-  
   <tr>
     <td class="centred-text" colspan="4">Page~16</td>
   </tr>
@@ -592,6 +576,42 @@
     </td>
     <td><^e>chan</^e></td>
     <td>zan</td>
+  </tr>
+  
+  <!-- Page 17: ch'an-->
+  <tr>
+    <td class="centred-text" colspan="4">Page~17</td>
+  </tr>
+  
+  <tr>
+    <td>(31)</td>
+    <!-- ch'an -->
+    <td>
+      <@>
+        ch'an
+        | https://archive.org/details/tonicdictionaryo00will/page/n56/mode/1up |
+      </@>
+    </td>
+    <td><^e>ch'an</^e></td>
+    <td>can</td>
+  </tr>
+  
+  <!-- Page 19: chaan-->
+  <tr>
+    <td class="centred-text" colspan="4">Page~19</td>
+  </tr>
+  
+  <tr>
+    <td>(32)</td>
+    <!-- chaan -->
+    <td>
+      <@>
+        chán
+        | https://archive.org/details/tonicdictionaryo00will/page/n58/mode/1up |
+      </@>
+    </td>
+    <td><^e>chaan</^e></td>
+    <td>zaan</td>
   </tr>
   
 </table></!c>
