@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 ################################################################
-# sun_tzu_sqrt.py
+# sqrt.py
 ################################################################
 # 孫子算經 Sun Tzu's Computational Classic
 # Square root algorithm in Volume II Paragraph 19:

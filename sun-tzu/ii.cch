@@ -3331,8 +3331,8 @@
 <p>
   For an implementation in Python, see
   <@>
-    <`>/code/sun_tzu_sqrt.py</`>
-    | \/code/sun_tzu_sqrt.py
+    <`>/sun-tzu/code/sqrt.py</`>
+    | \/sun-tzu/code/sqrt.py
     | Python: <^e>Sun~Tzuu</^e> square root algorithm
   </@>.
 </p>
