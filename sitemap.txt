@@ -17,12 +17,12 @@ https://yawnoc.github.io/lit/lion-pavilion.html
 https://yawnoc.github.io/lit/little-child.html
 https://yawnoc.github.io/lit/need-to-win.html
 https://yawnoc.github.io/lit/sea-island.html
+https://yawnoc.github.io/math/daytime.html
+https://yawnoc.github.io/math/projectile-raised-platform.html
+https://yawnoc.github.io/math/projectile-weak-drag.html
 https://yawnoc.github.io/pages/conway-cantonese-romanisation.html
-https://yawnoc.github.io/pages/daytime.html
 https://yawnoc.github.io/pages/faq.html
 https://yawnoc.github.io/pages/mao-27-chinas.html
-https://yawnoc.github.io/pages/optimal-angle-platform.html
-https://yawnoc.github.io/pages/optimal-angle-weak-drag.html
 https://yawnoc.github.io/pages/sun-tzu-i.html
 https://yawnoc.github.io/pages/sun-tzu-ii.html
 https://yawnoc.github.io/pages/sun-tzu-preface.html
