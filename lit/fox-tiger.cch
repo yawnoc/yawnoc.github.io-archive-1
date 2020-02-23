@@ -1,6 +1,6 @@
 <*>
   "{The} Fox Falsely Assumes {the} Tiger's Authority": 《狐假虎威》
-  | 20190407 | 20200215 | dr
+  | 20190407 | 20200223 | dr
   | An English translation of 《狐假虎威》, or \
     "{The} Fox Falsely Assumes {the} Tiger's Authority".
 </*>
@@ -186,7 +186,7 @@
 <#t>
   今王之地方五千里，帶甲百萬，而專屬之昭奚恤； |
   "Today King's territory {spanneth a}
-  circumference of five thousand~里<^> lei | li | li</^>,
+  circumference of five thousand miles,
   {with} armour-donning {soldiers a} million,
   and exclusively subordinate {are} they
   unto 昭奚恤<^> Ch'eeu Hai-s_t | Chao Hsi-hsu" | Zhao Xixu </^>;
@@ -199,8 +199,14 @@
   <li>方：
     circumference
   </li>
-  <li>里<^> lei | li | li</^><br>
-    A unit of distance, of the order half a kilometre.
+  <li>里<^> lei | li | li </^>：
+    miles<br>
+    A
+    <@>
+      unit of distance
+      | https://en.wikipedia.org/wiki/Li_(unit)
+      | Wikipedia: Li (unit)
+    </@>, of the order half a kilometre.
   </li>
   <li>百萬：
     {a} million;

@@ -1,7 +1,7 @@
 <*>
   "Q~{\&}~A {with} Confucius: {the} Little Child's Discourse":
   《孔子問答：小兒論》
-  | 20190407 | 20200215 | dr
+  | 20190407 | 20200223 | dr
   | An English translation of 《孔子問答：小兒論》, or \
     "Q~{\&}~A {with} Confucius: {the} Little Child's Discourse". \
     Basically Confucius getting his arse whooped by a little kid.
@@ -787,12 +787,18 @@
   From whence arriveth the rain?
   From whence emergeth the clouds?
   From whence ariseth the fog?
-  How many thousands {and} myriads of 里<^> lei | li | li </^>
+  How many thousands {and} myriads of miles
   {are} Heaven {and} Earth mutually separated?"
 </#t>
 <ul>
-  <li>里<^> lei | li | li </^><br>
-    A unit of distance, of the order half a kilometre.
+  <li>里<^> lei | li | li </^>：
+    miles<br>
+    A
+    <@>
+      unit of distance
+      | https://en.wikipedia.org/wiki/Li_(unit)
+      | Wikipedia: Li (unit)
+    </@>, of the order half a kilometre.
   </li>
 </ul>
 
@@ -862,7 +868,7 @@
   Heaven {and} Earth {are} mutually separated,
    {in} excess of
     thousands {upon} thousands {and}
-    myriads {upon} myriads of 里<^> lei | li | li </^>.
+    myriads {upon} myriads of miles.
   East, west, south, {and} north, all have adherence unto {these}."
 </#t>
 <ul>
