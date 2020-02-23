@@ -224,10 +224,9 @@
 <#t>
   度之所起，起於忽。欲知其忽，蠶吐絲為忽。 |
   {Of} that which measuring of length beginneth from:
-  beginneth {it} from 忽<^> fat | hu | hu </^>.
-  Wishing to know {the size of}
-  忽<^> fat | hu | hu </^>: the silkworm spitteth silk
-  being {of thickness} 忽<^> fat | hu | hu </^>.
+  beginneth {it} from floss.
+  Wishing to know {the size of} floss:
+  {the} silk spat of the silkworm be floss.
 </#t>
 <ul>
   <li>度：
@@ -238,6 +237,17 @@
   <li>起：
     beginneth from;
     \lit ariseth from
+  </li>
+  <li>忽<^> fat | hu | hu </^>：
+    floss<br>
+    1/100,000 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
+    <@>
+      Its entry in 《康熙字典》
+      | https://ctext.org/kangxi-zidian/61/4#n326385
+      | 《康熙字典\.忽》
+    </@>
+    has 忽，蜘蛛網也, "floss, {a} spider's web",
+    quoting 《劉德曰》, or "劉德<^> Lau Tak | Liu Te^ | Liu De</^>'s sayings".
   </li>
   <li>
     <@>
@@ -254,42 +264,95 @@
   十毫為一釐，十釐為一分，<br>
   十分為一寸，十寸為一尺，<br>
   十尺為一丈，十丈為一引； |
-  Ten<:n>10</:n>~忽<^> fat | hu | hu </^>
-    make one~絲<^> see | ssuu | si </^>;
-  ten<:n>10</:n>~絲<^> see | ssuu | si </^>
-    make one~毫<^> hou | hao | hao </^>;<br>
-  ten<:n>10</:n>~毫<^> hou | hao | hao </^>
-    make one~釐<^> lei | li | li </^>;
-  ten<:n>10</:n>~釐<^> lei | li | li </^>
-    make one~分<^> fan | fe^n | fen </^>;<br>
-  ten<:n>10</:n>~分<^> fan | fe^n | fen </^>
-    make one~寸<^> ts'u"n | ts'un | cun </^>;
-  ten<:n>10</:n>~寸<^> ts'u"n | ts'un | cun </^>
-    make one~尺<^> ch'ek | ch'ih | chi </^>;<br>
-  ten<:n>10</:n>~尺<^> ch'ek | ch'ih | chi </^>
-    make one~丈<^> choeng | chang | zhang </^>;
-  ten<:n>10</:n>~丈<^> choeng | chang | zhang </^>
-    make one~引<^> yan | yin | yin </^>.
+  Ten<:n>10</:n> flosses make one thread;
+  ten<:n>10</:n> threads make one mil;<br>
+  ten<:n>10</:n> mils make one cent;
+  ten<:n>10</:n> cents make one tenth;<br>
+  ten<:n>10</:n> tenths make one inch;
+  ten<:n>10</:n> inches make one rule;<br>
+  ten<:n>10</:n> rules make one rod;
+  ten<:n>10</:n> rods make one draw.
 </#t>
 <ul>
   <li>絲<^> see | ssuu | si </^>：
-    \lit thread of silk
+    (silk) thread<br>
+    1/10,000 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
   </li>
   <li>毫<^> hou | hao | hao </^>：
-    \lit fine hair
+    mil;
+    \or thou;
+    \lit fine hair<br>
+    1/1,000 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
+    Similar to the imperial
+    <@>
+      mil or thou
+      | https://en.wikipedia.org/wiki/Thousandth_of_an_inch
+      | Wikipedia: Thousandth of an inch
+    </@>.
+  </li>
+  <li>釐<^> lei | li | li </^>：
+    cent<br>
+    1/100 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
+  </li>
+  <li>分<^> fan | fe^n | fen </^>：
+    tenth<br>
+    1/10 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
+  </li>
+  <li>寸<^> ts'u"n | ts'un | cun </^>：
+    inch<br>
+    The
+    <@>
+      Chinese inch
+      | https://en.wikipedia.org/wiki/Cun_(unit)
+      | Wikipedia: Cun (unit)
+    </@>,
+    of the same order of magnitude as the imperial inch,
+    and used figuratively as the inch is in English
+    to denote a small distance,
+    so I am happy to simply render it as "inch".
+  </li>
+  <li>尺<^> ch'ek | ch'ih | chi </^>：
+    rule;
+    \or ruler;
+    \or covid<br>
+    10~Chinese inches.
+    This is of the order one foot,
+    but I have not rendered this as "foot"
+    because there is no such connotation.
+    Some translate this as "cubit",
+    but a cubit is more like one and a half feet, or even two.
+    The term "covid" appears to have been used in colonial Hong Kong,
+    but I can't seem to find much about it on the internet...
+    thanks a lot, WHO.
+  </li>
+  <li>丈<^> choeng | chang | zhang </^>：
+    rod;
+    \or staff;
+    \or measure<br>
+    Difficult to render because Chinese dictionaries
+    simply define it as 10~尺<^> ch'ek | ch'ih | chi </^>,
+    with the meanings "elder male",
+    from the interchangeable 杖 or "walking stick",
+    and "to measure/survey land".
+    I have chosen "rod" for its few letters and monosyllabicity.
+    Also Moses had one.
+  </li>
+  <li>引<^> yan | yin | yin </^>：
+    \lit draw;
+    \or pull
   </li>
 </ul>
 
 <#t>
   五十尺為一端；四十尺為一匹；六尺為一步。 |
-  Fifty<:n>50</:n>~尺<^> ch'ek | ch'ih | chi </^>
-    make one~端<^> tu"n | tuan | duan </^>;
-  forty<:n>40</:n>~尺<^> ch'ek | ch'ih | chi </^>
-    make one~匹<^> p'at | p'i | pi </^>;
-  six<:n>6</:n>~尺<^> ch'ek | ch'ih | chi </^>
-    make one~步<^> pou | pu | bu </^>.
+  Fifty<:n>50</:n> rules make one end;
+  forty<:n>40</:n> rules make one length;
+  six<:n>6</:n> rules make one pace.
 </#t>
 <ul>
+  <li>端<^> tu"n | tuan | duan </^>：
+    \lit end
+  </li>
   <li>
     <@>
       Version~B
@@ -298,58 +361,99 @@
     </@>
     erroneously has 五十引為一端.
   </li>
+  <li>匹<^> p'at | p'i | pi </^>：
+    length<br>
+    This is the only unit rendering which I am unsatisfied with.
+    匹 is the classifier for cloth, 一匹布 being "one length of cloth".
+  </li>
   <li>步<^> pou | pu | bu </^>：
-    \lit step; \or pace
+    pace;
+    \or step
   </li>
 </ul>
 
 <#t>
   二百四十步為一畝。 |
-  Two hundred {and} forty<:n>240</:n>~步<^> pou | pu | bu </^>
-    make one~畝<^> mau | mu | mu </^>.
+  Two hundred {and} forty<:n>240</:n> paces make one field.
 </#t>
 <ul>
-  <li>步<^> pou | pu | bu </^><br>
-    畝<^> mau | mu | mu </^> is a unit of area.
-    Classical Chinese mathematics did not have a fully developed notion
-    of dimensional analysis; square~步<^> pou | pu | bu </^>
-    were simply referred to as 步<^> pou | pu | bu </^>.
+  <li>畝<^> mau | mu | mu </^>：
+    \lit field<br>
+    A unit of area equal to 240 square paces~(步<^> pou | pu | bu </^>).
+    Classical Chinese mathematics did not have
+    a fully developed notion of dimensional analysis,
+    so 'square paces' were simply referred to as 'paces'.
   </li>
 </ul>
 
 <#t>
   三百步為一里。 |
-  Three hundred<:n>300</:n>~步<^> pou | pu | bu </^>
-    make one~里<^> lei | li | li </^>.
+  Three hundred<:n>300</:n> paces make one mile.
 </#t>
+<ul>
+  <li>里<^> lei | li | li </^>：
+    mile<br>
+    The
+    <@>
+      Chinese mile
+      | https://en.wikipedia.org/wiki/Li_(unit)
+      | Wikipedia: Li (unit)
+    </@>,
+    of the order half a kilometre.
+    While this is much shorter than the imperial mile,
+    it is figuratively used as the mile is in English
+    to denote a large distance,
+    so I am happy to simply render it as "mile".
+  </li>
+</ul>
 
 <p>
-  In summary:
+  I can't be bothered looking up a reputable source
+  for the precise length of a 尺<^> ch'ek | ch'ih | chi </^> or "rule"
+  when <^e>Sun~Tzuu</^e>'s Computational Classic was first written,
+  but using 0.3~metres as an estimate,
+  we have:
 </p>
 <$$>
   \begin{alignedat}{2}
-    \unit{忽} &={} & 10^{-6} & \unit{尺} \\
-    \unit{絲} &={} & 10^{-5} & \unit{尺} \\
-    \unit{毫} &={} & 10^{-4} & \unit{尺} \\
-    \unit{釐} &={} & 10^{-3} & \unit{尺} \\
-    \unit{分} &={} & 10^{-2} & \unit{尺} \\
-    \unit{寸} &={} & 10^{-1} & \unit{尺} \\
-    \unit{尺} &={} &       1 & \unit{尺} \\
-    \unit{丈} &={} &      10 & \unit{尺} \\
-    \unit{引} &={} &     100 & \unit{尺} \\
-    \unit{端} &={} &      50 & \unit{尺} \\
-    \unit{匹} &={} &      40 & \unit{尺} \\
-    \unit{步} &={} &       6 & \unit{尺} \\
-    \unit{畝} &={} &     240 & \unit{步}^2 = 8640 \unit{尺}^2 \\
-    \unit{里} &={} &     300 & \unit{步}   = 1800 \unit{尺}
+    1 \unit{floss} &={} & 10^{-6} & \unit{rules} \sim 0.3 \unit{μm} \\
+    1 \unit{thread} &={} & 10^{-5} & \unit{rules} \sim 3 \unit{μm} \\
+    1 \unit{mil} &={} & 10^{-4} & \unit{rules} \sim 30. \unit{μm} \\
+    1 \unit{cent} &={} & 10^{-3} & \unit{rules} \sim 0.3 \unit{mm} \\
+    1 \unit{tenth} &={} & 10^{-2} & \unit{rules} \sim 3 \unit{mm} \\
+    1 \unit{inch} &={} & 10^{-1} & \unit{rules} \sim 30 \unit{mm} \\
+    1 \unit{rule} &={} & 1 & \unit{rule} \ \sim 0.3 \unit{m} \\
+    1 \unit{rod} &={} & 10 & \unit{rules} \sim 3 \unit{m} \\
+    1 \unit{draw} &={} & 100 & \unit{rules} \sim 30 \unit{m} \\
+    1 \unit{end} &={} & 50 & \unit{rules} \sim 15 \unit{m} \\
+    1 \unit{length} &={} & 40 & \unit{rules} \sim 12 \unit{m} \\
+    1 \unit{pace} &={} & 6 & \unit{rules} \sim 1.8 \unit{m} \\
+    1 \unit{field} &={} & 240 & \unit{paces}^2 \sim 780 \unit{m}^2 \\
+    1 \unit{mile} &={} & 300 & \unit{paces} \sim 540 \unit{m}
   \end{alignedat}
 </$$>
+<p>
+  Silk is around 12~μm in thickness
+  (<@>
+    UAF
+    | https://www.uaf.edu/lars/qiviut/fine-fibers/
+    | Fine Fibers
+  </@>,
+  <@>
+    Luong~{et~al.}~(2014)
+    | https://www.researchgate.net/publication/263089345_Investigation_of_the_Silk_Fiber_Extraction_Process_from_the_Vietnam_Natural_Bombyx_Mori_Silkworm_Cocoon
+    | Investigation of the Silk Fiber Extraction Process from the Vietnam Natural Bombyx Mori Silkworm Cocoon
+  </@>),
+  so 忽<^> fat | hu | hu </^>, "floss", is much too thin,
+  and 絲<^> see | ssuu | si </^>, "(silk) thread", still a little thin.
+  Thus 蠶吐絲為忽 is an exaggeration of the thinness of silk.
+  But my job is only to translate the text as it is, not to correct it.
+</p>
 
 <p>
-  尺 (<^e>ch'ek8</^e>/<^e>chiv</^e>) is of the order one foot.
-</p>
-<p>
-  By the later part of the Ts'ing Dynasty, it becomes 14⅝~inches.
+  By the later part of the <^e>Ts'ing</^e> Dynasty,
+  one 尺<^> ch'ek | ch'ih | chi </^> or "rule"
+  is about 14⅝~inches in Hong Kong.
   Reading through historical versions of the
   <@>
     Weights and Measures Ordinance
@@ -401,44 +505,21 @@
 
 <p>
   Eventually the 尺<^> ch'ek | ch'ih | chi </^> is given the
-  equivalent definition 尺~=~0.371475~metre,
+  equivalent definition of 0.371475~metres,
   used unto this day in Hong Kong; see
   <@>
     Cap.~68 Weights and Measures Ordinance
     | https://www.elegislation.gov.hk/hk/cap68
     | Hong Kong e-Legislation: Cap. 68
   </@>.
+  (Floor plans are reckoned in imperial feet though, written "呎".)
 </p>
 
 <p>
-  Of course 尺<^> ch'ek | ch'ih | chi </^> did not have this value
-  when 《孫子算經》 was first written,
-  but using <$>\unit{尺} \sim 0.3 \unit{m}</$> as an estimate, we have
-</p>
-<$$>
-\begin{aligned}
-  \unit{忽} & \sim  0.3 \unit{μm} \\
-  \unit{絲} & \sim  3   \unit{μm} \\
-  \unit{毫} & \sim 30   \unit{μm}.
-\end{aligned}
-</$$>
-
-<p>
-  Silk is around 12~μm in thickness
-  (<@>
-    UAF
-    | https://www.uaf.edu/lars/qiviut/fine-fibers/
-    | Fine Fibers
-  </@>,
-  <@>
-    Luong~{et~al.}~(2014)
-    | https://www.researchgate.net/publication/263089345_Investigation_of_the_Silk_Fiber_Extraction_Process_from_the_Vietnam_Natural_Bombyx_Mori_Silkworm_Cocoon
-    | Investigation of the Silk Fiber Extraction Process from the Vietnam Natural Bombyx Mori Silkworm Cocoon
-  </@>),
-  so 忽<^> fat | hu | hu </^> is much too thin,
-  and 絲<^> see | ssuu | si </^> still a little thin.
-  Thus 蠶吐絲為忽 is an exaggeration of the thinness of silk.
-  But my job is only to translate the text as it is, not to correct it.
+  Taiwan uses a 尺<^> ch'ek | ch'ih | chi </^> from the Japanese occupation
+  equal to 10/33 of a metre, i.e.~0.3030...~(ugh) metres,
+  and Mainland China uses a metric-based 尺<^> ch'ek | ch'ih | chi </^>
+  equal to 1/3 of a metre, i.e.~0.3333...~(ugh) metres.
 </p>
 
 <;sh> 1 | 2 | Units of weight (or mass) </;sh>
@@ -447,7 +528,7 @@
 <#t>
   稱之所起，起於黍。 |
   {Of} that which measuring of weight beginneth from:
-  beginneth {it} from 黍<^> shu" | shu | shu </^>.
+  beginneth {it} from millet.
 </#t>
 <ul>
   <li>稱：
@@ -499,16 +580,14 @@
             corresponding to the verb "weigh".
             This comes with an example from 《易\.謙卦》: 君子以稱物平施,
             "the gentleman, by weighing {up} things,
-            gives (or applies) {them} evenly".
+            gives (\or applies) {them} evenly".
           </li>
         </ol>
       </li>
     </ul>
   </li>
   <li>黍<^> shu" | shu | shu </^>：
-    \lit millet<br>
-      黍，音暑，
-      <^cm> shu"2 | shuv </^cm>
+    \lit millet
   </li>
 </ul>
 
@@ -516,25 +595,71 @@
   十黍為一絫，十絫為一銖，<br>
   二十四銖為一兩，十六兩為一斤，<br>
   三十斤為一鈞，四鈞為一石。 |
-  Ten<:n>10</:n>~黍<^> shu" | shu | shu </^>
-    make one~絫<^> l_u" | lei | lei </^>;
-  ten<:n>10</:n>~絫<^> l_u" | lei | lei </^>
-    make one~銖<^> chu" | chu | zhu </^>;<br>
-  twenty-four<:n>24</:n>~銖<^> chu" | chu | zhu </^>
-    make one~兩<^> loeng | liang | liang </^>;
-  sixteen<:n>16</:n>~兩<^> loeng | liang | liang </^>
-    make one~斤<^> kan | chin | jin </^>;<br>
-  thirty<:n>30</:n>~斤<^> kan | chin | jin </^>
-    make one~鈞<^> kwan | chu"n | jun </^>;
-  four<:n>4</:n>~鈞<^> kwan | chu"n | jun </^>
-    make one~石<^> shek | shih | shi </^>.
+  Ten<:n>10</:n> millets make one pile;
+  ten<:n>10</:n> piles make one dram;<br>
+  twenty-four<:n>24</:n> drams make one tael;
+  sixteen<:n>16</:n> taels make one catty;<br>
+  thirty<:n>30</:n> catties make one quarter;
+  four<:n>4</:n> quarters make one stone.
 </#t>
 <ul>
-  <li>絫，魯水切，
-      <^cm> l_u"5 | levi </^cm>
+  <li>絫<^> l_u" | lei | lei </^>：
+    pile<br>
+    Difficult to render because Chinese dictionaries
+    simply define it as 10~黍<^> shu" | shu | shu </^>.
+    I have taken "pile" from the interchangeable 累, "to accumulate/pile/heap".
   </li>
-  <li>銖，音朱，
-      <^cm> chu"1 | zhu= </^cm>
+  <li>銖<^> chu" | chu | zhu </^>：
+    dram<br>
+    Of the order one gram.
+    According to
+    <@>
+      Williams' {Tonic Dictionary}
+      | https://archive.org/details/tonicdictionaryo00will/page/30/mode/1up
+      | A Tonic Dictionary of the Chinese language in the Canton dialect
+    </@>,
+    "a small ancient silver coin",
+    so I have chosen "dram" after the eponymous
+    <@>
+      ancient Greek coin and weight
+      | https://en.wikipedia.org/wiki/Dram_(unit)
+      | Wikipedia: Dram (unit)
+    </@>,
+    which is of similar magnitude.
+  </li>
+  <li>兩<^> loeng | liang | liang </^>：
+    tael<br>
+    (Oh at last, a unit with a name
+    <@>
+      already established in English
+      | https://en.wikipedia.org/wiki/Tael
+      | Wikipedia: Tael
+    </@>.)
+    One sixteenth<:n>1/16</:n> of a catty,
+    except in Mainland China,
+    where it has been metricised to a tenth<:n>1/10</:n>,
+    thus ruining the phrase 半斤八兩, "half {a} catty {is} eight taels".
+  </li>
+  <li>斤<^> kan | chin | jin </^>：
+    catty<br>
+    (Hooray, another unit with a name
+    <@>
+      already established in English
+      | https://en.wikipedia.org/wiki/Catty
+      | Wikipedia: Catty
+    </@>.)
+    Of the order one pound, or half a kilogram.
+  </li>
+  <li>鈞<^> kwan | chu"n | jun </^>：
+    quarter<br>
+    A quarter of the 石<^> shek | shih | shi </^> or "stone" below,
+    and of similar weight to the
+    <@>
+      imperial quarter
+      | https://en.wikipedia.org/wiki/Quarter_(unit)#Weight
+      | Wikipedia Quarter (unit)
+    </@>
+    (28~pounds).
   </li>
   <li>
     <@>
@@ -544,35 +669,49 @@
     </@>
     erroneously has 鉤 for 鈞.
   </li>
-  <li>鈞，音均，
-      <^cm> kwan1 | ju=n </^cm>
-  </li>
   <li>石<^> shek | shih | shi </^>：
-    \lit stone;
-    \or rock
+    \lit stone<br>
+    This is a literal rendering.
+    The Chinese stone is of the order 120~pounds,
+    making it closer to the
+    <@>
+      imperial hundredweight
+      | https://en.wikipedia.org/wiki/Hundredweight
+      | Wikipedia: Hundredweight
+    </@>
+    than the <em>much</em> lighter imperial stone (14~pounds).
   </li>
 </ul>
 
 <p>
-  In summary:
+  I can't be bothered looking up a reputable source
+  for the precise weight of a catty
+  when <^e>Sun~Tzuu</^e>'s Computational Classic was first written,
+  but using 500~grams as an estimate,
+  we have:
 </p>
 <$$>
   \begin{alignedat}{2}
-    \unit{黍} &={} & \tfrac{1}{38400} & \unit{斤} \\
-    \unit{絫} &={} & \tfrac{1}{ 3840} & \unit{斤} \\
-    \unit{銖} &={} & \tfrac{1}{  384} & \unit{斤} \\
-    \unit{兩} &={} & \tfrac{1}{   16} & \unit{斤} \\
-    \unit{斤} &={} &               1  & \unit{斤} \\
-    \unit{鈞} &={} &              30  & \unit{斤} \\
-    \unit{石} &={} &             120  & \unit{斤}
+    1 \unit{millet (黍)} &={} & \tfrac{1}{38400} & \unit{catties}
+      \sim 0.01 \unit{g} \\
+    1 \unit{pile (絫)} &={} & \tfrac{1}{3840} & \unit{catties}
+      \sim 0.1 \unit{g} \\
+    1 \unit{dram (銖)} &={} & \tfrac{1}{384} & \unit{catties}
+      \sim 1 \unit{g} \\
+    1 \unit{tael (兩)} &={} & \tfrac{1}{16} & \unit{catties}
+      \sim 30 \unit{g} \\
+    1 \unit{catty (斤)} &={} & 1 & \unit{catty} \ \ 
+      \sim 500 \unit{g} \\
+    1 \unit{quarter (鈞)} &={} & 30 & \unit{catties}
+      \sim 15 \unit{kg} \\
+    1 \unit{stone (石)} &={} & 120 & \unit{catties}
+      \sim 60 \unit{kg}
   \end{alignedat}
 </$$>
 
 <p>
-  斤 (<^e>kan1</^e>/<^e>ji=n</^e>) is of the order one pound.
-</p>
-<p>
-  By the later part of the Ts'ing Dynasty, it becomes 1⅓~pounds.
+  By the later part of the <^e>Ts'ing Dynasty</^e>,
+  one 斤<^> kan | chin | jin </^> or catty is about 1⅓~pounds.
   As with length units,
   <@>
     Ordinance No.~22 of~1844 (PDF)
@@ -581,12 +720,7 @@
   </@>
   of Hong Kong gives the relevant conversions
   between the Chinese units themselves
-  (here,
-    candareen 分~=~10<sup>−2</sup>~兩, and
-    mace 錢~=~10<sup>−1</sup>~兩,
-  are used rather than
-    絫<^> l_u" | lei | lei </^> and
-    銖<^> chu" | chu | zhu </^>):
+  (here, candareen and mace are used rather than "piles" and "drams"):
 </p>
 <div class="centred-flex">
   <+>
@@ -625,15 +759,21 @@
 </div>
 
 <p>
-  Eventually the 斤<^> kan | chin | jin </^> is given the
-  {almost} equivalent definition 斤~=~0.60478982~kg,
-  used unto this day in Hong Kong; see
+  Eventually the 斤<^> kan | chin | jin </^> or catty is given the
+  <em>almost</em> equivalent definition of 0.60478982~kg,
+  used unto this day in Hong Kong street markets; see
   <@>
     Cap.~68 Weights and Measures Ordinance
     | https://www.elegislation.gov.hk/hk/cap68
     | Hong Kong e-Legislation: Cap. 68
   </@>.
 </p>
+
+<div class="end">
+  <:r><b>Note.</b>
+  I am halfway through rendering the previously untranslated units
+  into English. Please bear with me.</:r>
+</div>
 
 <;sh> 1 | 3 | Units of capacity </;sh>
 <;s@@> 1 | 3 | 4 | 146 | 52059 | 2 | 12 </;s@@>
@@ -653,9 +793,6 @@
     \lit grain<br>
       粟，相玉切，
       <^cm> suk7 | su\ </^cm>
-  </li>
-  <li>銖，音朱，
-      <^cm> chu"1 | zhu= </^cm>
   </li>
 </ul>
 
