@@ -9,7 +9,6 @@
   <@ih></@ih>
   <@it></@it>
   <@i> Paragraphs | #paragraphs | Volume II: Paragraph navigation </@i>
-  <@i> Units | #units | Unit conversions </@i>
   <@ic></@ic>
 </=h>
 
@@ -187,79 +186,6 @@
     <td class="heading">Rod calculus: square root algorithm</td>
   </tr>
 </table></!>
-
-<@4> Unit conversions | units </@4>
-
-<p>
-  For units of <b>length</b>, see
-  <@> Vol.~I ¶1 | /sun-tzu/i.html#1 | Vol. I ¶1 </@>.
-</p>
-<ul>
-  <li>
-    1~丈<^> choeng | chang | zhang </^>~=\
-      ~10~尺<^> ch'ek | ch'ih | chi </^>
-  </li>
-  <li>
-    1~步<^> pou | pu | bu </^>~=\
-      ~6~尺<^> ch'ek | ch'ih | chi </^>
-  </li>
-  <li>
-    1~尺<^> ch'ek | ch'ih | chi </^>~=\
-      ~10~寸<^> ts'u"n | ts'un | cun </^>
-  </li>
-  <li>
-    1~寸<^> ts'u"n | ts'un | cun </^>~=\
-      ~10~分<^> fan | fe^n | fen </^>
-  </li>
-</ul>
-<p>
-  Note that
-  畝<^> mau | mu | mu </^> and 頃<^> k'ing | ch'ing | qing </^>
-  are units of <b>area</b>.
-</p>
-<ul>
-  <li>
-    1~畝<^> mau | mu | mu </^>~=\
-      ~240~步<^> pou | pu | bu </^><sup>2</sup>
-  </li>
-  <li>
-    1~頃<^> k'ing | ch'ing | qing </^>~=\
-      ~100~畝<^> mau | mu | mu </^>
-  </li>
-</ul>
-<p>
-  For units of <b>capacity</b>, see
-  <@> Vol.~I ¶3 | /sun-tzu/i.html#3 | Vol. I ¶3 </@>.
-</p>
-<ul>
-  <li>
-    1~斛<^> huk | hu | hu </^>~=\
-      ~10~斗<^> tau | tou | dou </^>
-  </li>
-  <li>
-    1~斗<^> tau | tou | dou </^>~=\
-      ~10~升<^> shing | she^ng | sheng </^>
-  </li>
-  <li>
-    1~升<^> shing | she^ng | sheng </^>~=\
-      ~10~合<^> kap | ko | ge </^>
-  </li>
-  <li>
-    1~合<^> kap | ko | ge </^>~=\
-      ~10~勺<^> choek | shao | shao </^>
-  </li>
-</ul>
-
-<p>
-  The <b>conversion between capacity and volume</b> units
-  is first given in <@> ¶10 | #10 | Vol. II ¶10 </@>.
-</p>
-<ul>
-  <li>
-    1~斛<^> huk | hu | hu </^>~=\
-      ~1.62~尺<^> ch'ek | ch'ih | chi </^><sup>3</sup>
-  </li>
-</ul>
 
 <;sh> 2 | 1 | Reducing fractions </;sh>
 <;s@@> 2 | 1 | 26 | 153 | 52130 | 1 | 39 </;s@@>
