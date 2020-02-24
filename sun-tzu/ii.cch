@@ -942,15 +942,13 @@
 <#t>
   今有粟七斗九升。問為御米幾何？<br>
   答曰：三斗三升一合八勺。 |
-  Now there be grain,
-    seven<:n>7</:n>~斗<^> tau | tou | dou </^> {and}
-    nine<:n>9</:n>~升<^> shing | she^ng | sheng </^>.
+  Now there be grain, seven<:n>7</:n> pecks {and} nine<:n>9</:n> quarts.
   {We} ask: how much be {this in} poppy seed?<br>
   Answer saith:
-    three<:n>3</:n>~斗<^> tau | tou | dou </^>,
-    three<:n>3</:n>~升<^> shing | she^ng | sheng </^>,
-    one<:n>1</:n>~合<^> kap | ko | ge </^> {and}
-    eight<:n>8</:n>~勺<^> choek | shao | shao </^>.
+    three<:n>3</:n> pecks,
+    three<:n>3</:n> quarts,
+    one<:n>1</:n> gill {and}
+    eight<:n>8</:n> ladles.
 </#t>
 <ul>
   <li>
@@ -971,18 +969,18 @@
 <#t>
   術曰：置七斗九升。以御米率二十一乘之，得一千六百五十九升為實。以粟率五十除之，即得。 |
   Method saith: put {down the}
-    seven<:n>7</:n>~斗<^> tau | tou | dou </^> {and}
-    nine<:n>9</:n>~升<^> shing | she^ng | sheng </^>.
+    seven<:n>7</:n> pecks {and}
+    nine<:n>9</:n> quarts.
   Multiplying it by {the} poppy seed rate, twenty-one<:n>21</:n>,
-  resulteth in one thousand, six hundred {and} fifty-nine<:n>1659</:n>\
-  ~升<^> shing | she^ng | sheng </^> as {the} dividend.
+  resulteth in one thousand, six hundred {and} fifty-nine<:n>1659</:n> quarts
+  as {the} dividend.
   Dividing it by {the} grain rate, fifty<:n>50</:n>,
   {we} are done.
 </#t>
 <$$>
   V
-  = \frac{79 \unit{升} \times 21}{50}
-  = 33.18 \unit{升}
+  = \frac{79 \unit{quarts} \times 21}{50}
+  = 33.18 \unit{quarts}
 </$$>
 
 <;sh> 2 | 9 | Area of a rectangle </;sh>
