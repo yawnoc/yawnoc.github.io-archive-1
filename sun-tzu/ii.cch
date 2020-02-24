@@ -1,6 +1,6 @@
 <*>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
-  | 20190609 | 20200216 | dmr
+  | 20190609 | 20200225 | dmr
   | An annotated English translation of Volume~II of Sunzi Suanjing, \
     《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
 </*>
@@ -733,10 +733,9 @@
 <#t>
   今有粟一斗。問為糲米幾何？<br>
   答曰：六升。 |
-  Now there be grain,
-  one<:n>1</:n>~斗<^> tau | tou | dou </^>.
+  Now there be grain, one peck.
   {We} ask: how much be {this in} coarse grain?<br>
-  Answer saith: six<:n>6</:n>~升<^> shing | she^ng | sheng </^>.
+  Answer saith: six<:n>6</:n> quarts.
 </#t>
 <ul>
   <li>
@@ -752,13 +751,12 @@
 <#t>
   術曰：置粟一斗，十升。以糲米率三十乘之，得三百升為實。以粟率五十為法，除之，即得。 |
   Method saith: put {down the} grain,
-  one<:n>1</:n>~斗<^> tau | tou | dou </^>, {or}
-  ten<:n>10</:n>~升<^> shing | she^ng | sheng </^>.
+  one<:n>1</:n> peck, {or} ten<:n>10</:n> quarts.
   Multiplying it by {the} coarse grain rate, thirty<:n>30</:n>,
-  resulteth in three hundred<:n>300</:n>~升<^> shing | she^ng | sheng </^>
+  resulteth in three hundred<:n>300</:n> quarts
   as {the} dividend.
-  Use {the} grain rate, fifty<:n>50</:n>, as {the} divisor.
-  Dividing them, {we} are done.
+  Use {the} grain rate, fifty<:n>50</:n>, as {the} divisor,
+  {and} dividing them, {we} are done.
 </#t>
 <p>
   In modern notation, with <$>V</$> for volume and <$>r</$> for rate:
@@ -772,8 +770,8 @@
     }{
       r(\text{there be})
     } \\[2ex]
-    &= \frac{10 \unit{升} \times 30}{50} \\[2ex]
-    &= 6 \unit{升}
+    &= \frac{10 \unit{quarts} \times 30}{50} \\[2ex]
+    &= 6 \unit{quarts}
   \end{aligned}
 </$$>
 <ul>
