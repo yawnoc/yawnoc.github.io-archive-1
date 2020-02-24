@@ -1540,11 +1540,9 @@
 
 <#t>
   今有木方三尺，欲方五寸作枕一枚。問得幾何？ |
-  Now there be {a} wooden cube {of edge}
-    three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-  {and we} wish {that each} cube {of edge}
-    five<:n>5</:n>~寸<^> ts'u"n | ts'un | cun </^>
-    {thereof be} made into one<:n>1</:n> pillow.
+  Now there be {a} wooden cube {of edge} three<:n>3</:n> rules,
+  {and we} wish {that each} cube {of edge} five<:n>5</:n> inches {thereof be}
+  made into one<:n>1</:n> pillow.
   {We} ask: how many result?
 </#t>
 <ul>
@@ -1574,37 +1572,34 @@
 
 <#t>
   術曰：置方三尺，自相乘，得九尺。以高三尺乘之，得二十七尺。 |
-  Method saith: put {down the} cube's {edge},
-    three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-  {which}, multiplied with itself, resulteth in
-    nine<:n>9</:n>~尺<^> ch'ek | ch'ih | chi </^>.
-  Multiplying it by {the} height,
-    three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-  resulteth in
-    twenty-seven<:n>27</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  Method saith: put {down the} cube's {edge}, three<:n>3</:n> rules,
+  {which}, multiplied with itself, resulteth in nine<:n>9</:n> rules.
+  Multiplying it by {the} height, three<:n>3</:n> rules,
+  resulteth in twenty-seven<:n>27</:n> rules.
 </#t>
 
 <#t>
   以一尺木八枕乘之，即得。 |
   Multiplying it by eight<:n>8</:n> pillows {for each}
-    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^> of wood,
+    one<:n>1</:n> rule of wood,
   {we} are done.
 </#t>
 <ul>
   <li>一尺：
-    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^><br>
-    This is a cubic 尺<^> ch'ek | ch'ih | chi </^>,
-    as are the 27~尺<^> ch'ek | ch'ih | chi </^> above.
+    one<:n>1</:n> rule<br>
+    This is a <strong>cubic</strong> rule,
+    as are the 27~rules above.
   </li>
 </ul>
 <p>
   In modern notation, the number of pillows is
 </p>
 <$$>
-  (3 \unit{尺})^3 \times \frac{8}{1 \unit{尺}^3} = 216,
+  (3 \unit{rules})^3 \times \frac{8}{1 \unit{rule}^3} = 216,
 </$$>
 <p>
-  where we have used the fact that <$>1 \unit{尺} = 2 \times 5 \unit{寸}</$>,
+  where we have used the fact that
+  <$>1 \unit{rule} = 2 \times 5 \unit{inches}</$>,
   and that <$>2^3 = 8</$>.
 </p>
 
