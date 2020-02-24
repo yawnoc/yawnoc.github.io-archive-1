@@ -1824,17 +1824,17 @@
   今有積二十三萬四千五百六十七步。問為方幾何？ |
   Now there be area,
   two hundred {and} thirty-four thousand, five hundred {and} sixty-seven\
-    <:n>234567</:n>~步<^> pou | pu | bu </^>.
+    <:n>234567</:n> paces.
   {We} ask: be {this a} square {of edge} how much?
 </#t>
 
 <#t>
   答曰：四百八十四步九百六十八分步之三百一十一。 |
   Answer saith:
-    four hundred {and} eighty-four<:n>484</:n>~步<^> pou | pu | bu </^>
+    four hundred {and} eighty-four<:n>484</:n> paces
     {and} three hundred {and} eleven
       nine hundred {and} sixty-eighths<:n>311/968</:n>
-    of {a} 步<^> pou | pu | bu </^>.
+    of {a} pace.
 </#t>
 
 <p>
@@ -1842,14 +1842,14 @@
   in this instance giving
 </p>
 <$$>
-  \sqrt{234567 \unit{步}^2} \approx 484 \tfrac{311}{968} \unit{步}.
+  \sqrt{234567 \unit{paces}^2} \approx 484 \tfrac{311}{968} \unit{paces}.
 </$$>
 
 <#t>
   術曰：<:b>置積</:b>二十三萬四千五百六十七步為<:b>實</:b>。 |
   Method saith: <:b>put {down the} area</:b>,
   two hundred {and} thirty-four thousand, five hundred {and} sixty-seven\
-    <:n>234567</:n>~步<^> pou | pu | bu </^>,
+    <:n>234567</:n> paces,
   as <:b>{the} dividend</:b>.
 </#t>
 <p>
@@ -3135,11 +3135,10 @@
 <#t>
   是為方<:g>四百八十四</:g>步<:v>九百六十八分</:v>步之<:b>三百一十一</:b>。 |
   This be {a} square {of edge}
-    <:g>four hundred {and} eighty-four<:n>484</:n></:g>~\
-      步<^> pou | pu | bu </^>
+    <:g>four hundred {and} eighty-four<:n>484</:n></:g> paces
     {and} <:b>three hundred {and} eleven</:b>
       <:v>nine hundred {and} sixty-eighths</:v><:n>311/968</:n>
-    of {a} 步<^> pou | pu | bu </^>.
+    of {a} pace.
 </#t>
 
 <p>
@@ -3147,9 +3146,9 @@
 </p>
 <$$>
   \begin{aligned}
-    \sqrt{234567 \unit{步}^2}
-    &\approx \left( {\colg U} + \frac{\colb R}{\colv L} \right) \unit{步} \\
-    &= {\colg 484} \tfrac{\colb 311}{\colv 968} \unit{步},
+    \sqrt{234567 \unit{paces}^2}
+    &\approx \left( {\colg U} + \frac{\colb R}{\colv L} \right) \unit{paces} \\
+    &= {\colg 484} \tfrac{\colb 311}{\colv 968} \unit{paces},
   \end{aligned}
 </$$>
 <p>
