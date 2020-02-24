@@ -1267,28 +1267,24 @@
 <#t>
   今有圓窖，周五丈四尺，深一丈八尺。問受粟幾何？ |
   Now there be {a} circular cellar, of circumference
-    five<:n>5</:n>~丈<^> choeng | chang | zhang </^> {and}
-    four<:n>4</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+    five<:n>5</:n> rods {and} four<:n>4</:n> rules,
   {and} depth
-    one<:n>1</:n>~丈<^> choeng | chang | zhang </^> {and}
-    eight<:n>8</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+    one<:n>1</:n> rod {and} eight<:n>8</:n> rules.
   {We} ask: how much grain beareth {it}?
 </#t>
 
 <#t>
   答曰：二千七百斛。 |
   Answer saith:
-  two thousand seven hundred<:n>2700</:n>~斛<^> huk | hu | hu </^>.
+  two thousand seven hundred<:n>2700</:n> barrels.
 </#t>
 
 <#t>
   術曰：先置周五丈四尺，自相乘，得二千九百一十六尺。 |
   Method saith: First put {down the} circumference,
-    five<:n>5</:n>~丈<^> choeng | chang | zhang </^> {and}
-    four<:n>4</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+    five<:n>5</:n> rods {and} four<:n>4</:n> rules,
   {which}, multiplied with itself, resulteth in
-  two thousand, nine hundred {and} sixteen<:n>2916</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>.
+  two thousand, nine hundred {and} sixteen<:n>2916</:n> rules.
 </#t>
 <ul>
   <li>
@@ -1316,42 +1312,37 @@
 <#t>
   以深一丈八尺乘之，得五萬二千四百八十八尺。 |
   Multiplying it by {the} depth,
-    one<:n>1</:n>~丈<^> choeng | chang | zhang </^> {and}
-    eight<:n>8</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+    one<:n>1</:n> rod {and} eight<:n>8</:n> rules,
   resulteth in
-    fifty-two thousand, four hundred {and} eighty-eight<:n>52488</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>.
+    fifty-two thousand, four hundred {and} eighty-eight<:n>52488</:n> rules.
 </#t>
 
 <#t>
   以一十二除之，得四千三百七十四尺。 |
   Dividing it by twelve, resulteth in
-    four thousand, three hundred {and} seventy-four<:n>4374</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>.
+    four thousand, three hundred {and} seventy-four<:n>4374</:n> rules.
 </#t>
 
 <#t>
   以斛法一尺六寸二分除之，即得。 |
-  Dividing it by {the} 斛<^> huk | hu | hu </^> divisor,
-    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-    six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
-    two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
+  Dividing it by {the} barrel divisor,
+    one<:n>1</:n> rule, six<:n>6</:n> inches {and} two<:n>2</:n> tenths,
   {we} are done.
 </#t>
 
 <p>
   In modern notation, the volume (capacity) of a cylinder of circumference
-  <$>C = 54 \unit{尺}</$> and depth <$>H = 18 \unit{尺}</$> is
+  <$>C = 54 \unit{rules}</$> and depth <$>H = 18 \unit{rules}</$> is
 </p>
 <$$>
   \begin{aligned}
     V
     &\approx \frac{C^2 H}{12} \\[2ex]
     &=
-      \frac{(54 \unit{尺})^2 (18 \unit{尺})}{12}
+      \frac{(54 \unit{rules})^2 (18 \unit{rules})}{12}
         \div
-      \frac{1.62 \unit{尺}^3}{\unit{斛}} \\[2ex]
-    &= 2700 \unit{斛}.
+      \frac{1.62 \unit{rules}^3}{\unit{barrel}} \\[2ex]
+    &= 2700 \unit{barrels}.
   \end{aligned}
 </$$>
 <p>
