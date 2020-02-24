@@ -694,21 +694,21 @@
   we have:
 </p>
 <$$>
-  \begin{alignedat}{2}
+  \begin{alignedat}{3}
     1 \unit{millet (黍)} &={} & \tfrac{1}{38400} & \unit{catties}
-      \sim 0.01 \unit{g} \\
+      && \sim 0.01 \unit{g} \\
     1 \unit{pile (絫)} &={} & \tfrac{1}{3840} & \unit{catties}
-      \sim 0.1 \unit{g} \\
+      && \sim 0.1 \unit{g} \\
     1 \unit{dram (銖)} &={} & \tfrac{1}{384} & \unit{catties}
-      \sim 1 \unit{g} \\
+      && \sim 1 \unit{g} \\
     1 \unit{tael (兩)} &={} & \tfrac{1}{16} & \unit{catties}
-      \sim 30 \unit{g} \\
-    1 \unit{catty (斤)} &={} & 1 & \unit{catty} \ \ 
-      \sim 500 \unit{g} \\
+      && \sim 30 \unit{g} \\
+    1 \unit{catty (斤)} &={} & 1 & \unit{catty}
+      && \sim 500 \unit{g} \\
     1 \unit{quarter (鈞)} &={} & 30 & \unit{catties}
-      \sim 15 \unit{kg} \\
+      && \sim 15 \unit{kg} \\
     1 \unit{stone (石)} &={} & 120 & \unit{catties}
-      \sim 60 \unit{kg}
+      && \sim 60 \unit{kg}
   \end{alignedat}
 </$$>
 
