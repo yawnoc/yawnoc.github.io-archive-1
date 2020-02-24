@@ -1273,12 +1273,6 @@
   the SI Prefix mega~(10<sup>6</sup>). Confusing eh?
 </p>
 
-<div class="end">
-  <:r><b>Note.</b>
-  I am halfway through rendering the previously untranslated units
-  into English. Please bear with me.</:r>
-</div>
-
 <;sh> 1 | 5 | <$>\pi \approx 3</$>, <$>\sqrt{2} \approx 7/5</$> </;sh>
 <;s@@> 1 | 5 | 6 | 147 | 52061 | 4 | 13 </;s@@>
 
@@ -1399,12 +1393,9 @@
   黃金方寸重一斤。<br>
   白金方寸重一十四兩。<br>
   玉方寸重一十二兩。 |
-  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of gold weigheth
-    one<:n>1</:n>~斤<^> kan | chin | jin </^>.<br>
-  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of silver weigheth
-    fourteen<:n>14</:n>~兩<^> loeng | liang | liang </^>.<br>
-  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of jade weigheth
-    twelve<:n>12</:n>~兩<^> loeng | liang | liang </^>.
+  {Each} cubic inch of gold weigheth one<:n>1</:n> catty.<br>
+  {Each} cubic inch of silver weigheth fourteen<:n>14</:n> taels.<br>
+  {Each} cubic inch of jade weigheth twelve<:n>12</:n> taels.
 </#t>
 <ul>
   <li>黃金：
@@ -1439,15 +1430,12 @@
   鉛方寸重九兩半。<br>
   鐵方寸重六兩。<br>
   石方寸重三兩。 |
-  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of copper weigheth
-    seven<:n>7</:n>~兩<^> loeng | liang | liang </^> {and a} half<:n>½</:n>.<br>
-  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of lead weigheth
-    nine<:n>9</:n>~兩<^> loeng | liang | liang </^>
-    {and a} half<:n>½</:n>.<br>
-  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of iron weigheth
-    six<:n>6</:n>~兩<^> loeng | liang | liang </^>.<br>
-  {Each} cubic~寸<^> ts'u"n | ts'un | cun </^> of stone weigheth
-    three<:n>3</:n>~兩<^> loeng | liang | liang </^>.
+  {Each} cubic inch of copper weigheth
+    seven<:n>7</:n> taels {and a} half<:n>½</:n>.<br>
+  {Each} cubic inch of lead weigheth
+    nine<:n>9</:n> taels {and a} half<:n>½</:n>.<br>
+  {Each} cubic inch of iron weigheth six<:n>6</:n> taels.<br>
+  {Each} cubic inch of stone weigheth three<:n>3</:n> taels.
 </#t>
 <ul>
   <li>銅：
@@ -1474,7 +1462,7 @@
   For the modern density of~鐵 I have used cast iron,
   since that value is available, and the Chinese
   probably couldn't get pure iron back then.
-  石 stone I have excluded from the analysis
+  石~(stone) I have excluded from the analysis
   since it does not adequately pinpoint a specific material.
 </p>
 
@@ -1483,7 +1471,7 @@
     <th>Material</th>
     <th>
       《孫子算經》<br>
-      <$>\rho_\text{s} / (\unit{兩} \unit{寸}^{-3})</$>
+      <$>\rho_\text{s} / (\unit{taels} \unit{inch}^{-3})</$>
     </th>
     <th>
       Modern value<br>
@@ -1491,7 +1479,7 @@
     </th>
     <th>
       <$>\dfrac{
-        \rho_\text{s} / (\unit{兩} \unit{寸}^{-3})
+        \rho_\text{s} / (\unit{taels} \unit{inch}^{-3})
       }{
         \rho_\text{m} / (\unit{g} \unit{cm}^{-3})
       }</$>
@@ -1679,7 +1667,8 @@
     transform = "rotate(-90 -2.4 -8.5)">\
     ρ<tspan class="maths-roman" font-size="0.8" dy="0.25em">s</tspan>\
       <tspan dy="-0.25em">\,/</tspan>\
-    (\兩 \寸\
+    (<tspan class="maths-roman">taels</tspan> \
+    <tspan class="maths-roman">inch</tspan>\
       <tspan font-size="0.8" dy="-0.4em">−3</tspan>\
     <tspan dx="0.1em" dy="0.32em">)</tspan>
   </text>
@@ -1724,11 +1713,11 @@
 </div>
 
 <p>
-  Discarding the outliers 銀~silver and 玉~jade
+  Discarding the outliers 銀~(silver) and 玉~(jade)
   and forcing a least squares fit through the origin, we get
 </p>
 <$$>
-  \frac{\rho_\text{s}}{\unit{兩} \unit{寸}^{-3}}
+  \frac{\rho_\text{s}}{\unit{taels} \unit{inch}^{-3}}
   = 0.834229 \cdot \frac{\rho_\text{m}}{\unit{g} \unit{cm}^{-3}}
 </$$>
 <p>
@@ -1745,11 +1734,13 @@
   and modern density units:
 </p>
 <$$>
-  \unit{兩} \unit{寸}^{-3} = (1.1987 \pm 0.0064) \unit{g} \unit{cm}^{-3}
+  1 \unit{tael} \unit{inch}^{-3} = (1.1987 \pm 0.0064) \unit{g} \unit{cm}^{-3}
 </$$>
 <p>
-  (Recall 兩<^> loeng | liang | liang </^> is of the order 30~g
-  and 寸<^> ts'u"n | ts'un | cun </^> is of the order one inch.)
+  (Recall that one tael, 兩<^> loeng | liang | liang </^>,
+  is of the order 30~g
+  and one inch, 寸<^> ts'u"n | ts'un | cun </^>,
+  is of the order one imperial inch.)
 </p>
 
 <;sh> 1 | 7 | Rod calculus: vertical \&~horizontal forms </;sh>
