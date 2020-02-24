@@ -880,15 +880,11 @@
 <#t>
   今有粟四斗五升。問為糳米幾何？<br>
   答曰：二斗一升五分升之三。 |
-  Now there be grain,
-    four<:n>4</:n>~斗<^> tau | tou | dou </^> {and}
-    five<:n>5</:n>~升<^> shing | she^ng | sheng </^>.
+  Now there be grain, four<:n>4</:n> pecks {and} five<:n>5</:n> quarts.
   {We} ask: how much be {this in} intricate grain?<br>
   Answer saith:
-    two<:n>2</:n>~斗<^> tau | tou | dou </^>,
-    one<:n>1</:n>~升<^> shing | she^ng | sheng </^> {and}
-    three fifths<:n>3/5</:n> of {a}
-    升<^> shing | she^ng | sheng </^>.
+    two<:n>2</:n> pecks, one<:n>1</:n> quart {and}
+    three fifths<:n>3/5</:n> of {a} quart.
 </#t>
 <ul>
   <li>
@@ -903,12 +899,11 @@
 
 <#t>
   術曰：置粟四十五升。以二約糳米率二十四，得一十二，乘之，得五百四十升為實。 |
-  Method saith: put {down the} grain, forty-five<:n>45</:n>~\
-  升<^> shing | she^ng | sheng </^>.
+  Method saith: put {down the} grain, forty-five<:n>45</:n> quarts.
   Reducing {the} intricate grain rate, twenty-four<:n>24</:n>,
   by two<:n>2</:n>, resulteth in twelve<:n>12</:n>;
-  multiplying them resulteth in five hundred {and} forty<:n>540</:n>~\
-  升<^> shing | she^ng | sheng </^> as {the} dividend.
+  multiplying them resulteth in five hundred {and} forty<:n>540</:n> quarts
+  as {the} dividend.
 </#t>
 <ul>
   <li>以二約：
@@ -937,8 +932,8 @@
 
 <$$>
   V
-  = \frac{45 \unit{升} \times 24 \div 2}{50 \div 2}
-  = 21 \tfrac{3}{5} \unit{升}
+  = \frac{45 \unit{quarts} \times 24 \div 2}{50 \div 2}
+  = 21 \tfrac{3}{5} \unit{quarts}
 </$$>
 
 <;sh> 2 | 8 | Volume conversions for grain </;sh>
