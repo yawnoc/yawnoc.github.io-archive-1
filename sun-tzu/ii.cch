@@ -1187,27 +1187,19 @@
 <#t>
   今有方窖，廣四丈六尺，長五丈四尺，深三丈五尺。問受粟幾何？ |
   Now there be {a} rectangular cellar,
-  of width
-    four<:n>4</:n>~丈<^> choeng | chang | zhang </^> {and}
-    six<:n>6</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-  length
-    five<:n>5</:n>~丈<^> choeng | chang | zhang </^> {and}
-    four<:n>4</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-  {and} depth
-    three<:n>3</:n>~丈<^> choeng | chang | zhang </^> {and}
-    five<:n>5</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  of width four<:n>4</:n> rods {and} six<:n>6</:n> rules,
+  length five<:n>5</:n> rods {and} four<:n>4</:n> rules,
+  {and} depth three<:n>3</:n> rods {and} five<:n>5</:n> rules.
   {We} ask: how much grain beareth {it}?
 </#t>
 
 <#t>
   答曰：五萬三千六百六十六斛六斗六升三分升之二。 |
   Answer saith:
-  fifty-three thousand, six hundred {and} sixty-six<:n>53666</:n>\
-    ~斛<^> huk | hu | hu </^>,
-  six<:n>6</:n>~斗<^> tau | tou | dou </^>,
-  six<:n>6</:n>~升<^> shing | she^ng | sheng </^>
-  {and} two thirds<:n>2/3</:n> of {a}
-  升<^> shing | she^ng | sheng </^>.
+  fifty-three thousand, six hundred {and} sixty-six<:n>53666</:n> barrels,
+  six<:n>6</:n> pecks,
+  six<:n>6</:n> quarts
+  {and} two thirds<:n>2/3</:n> of {a} quart.
 </#t>
 <ul>
   <li>
@@ -1229,50 +1221,43 @@
 <#t>
   術曰：置廣四丈六尺、長五丈四尺，相乘，得二千四百八十四尺。 |
   Method saith: put {down the} width,
-    four<:n>4</:n>~丈<^> choeng | chang | zhang </^> {and}
-    six<:n>6</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+    four<:n>4</:n> rods {and} six<:n>6</:n> rules,
   {and the} length,
-    five<:n>5</:n>~丈<^> choeng | chang | zhang </^> {and}
-    four<:n>4</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+    five<:n>5</:n> rods {and} four<:n>4</:n> rules,
   {which}, multiplied with each other,
-  result in two thousand, four hundred {and} eighty-four<:n>2484</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>.
+  result in two thousand, four hundred {and} eighty-four<:n>2484</:n> rules.
 </#t>
 
 <#t>
   以深三丈五尺乘之，得八萬六千九百四十尺。 |
   Multiplying it by {the} depth,
-    three<:n>3</:n>~丈<^> choeng | chang | zhang </^> {and}
-    five<:n>5</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+    three<:n>3</:n> rods {and} five<:n>5</:n> rules,
   resulteth in
-    eighty-six thousand, nine hundred {and} forty<:n>86940</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>.
+    eighty-six thousand, nine hundred {and} forty<:n>86940</:n> rules.
 </#t>
 
 <#t>
   以斛法一尺六寸二分除之，即得。 |
-  Dividing it by {the} 斛<^> huk | hu | hu </^> divisor,
-    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-    six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
-    two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
+  Dividing it by {the} barrel divisor,
+    one<:n>1</:n> rule, six<:n>6</:n> inches {and} two<:n>2</:n> tenths,
   {we} are done.
 </#t>
 
 <p>
   In modern notation, the volume (capacity) of a rectangular prism of
-  width <$>W = 46 \unit{尺}</$>, length <$>L = 54 \unit{尺}</$> and
-  depth <$>H = 35 \unit{尺}</$> is
+  width <$>W = 46 \unit{rules}</$>, length <$>L = 54 \unit{rules}</$> and
+  depth <$>H = 35 \unit{rules}</$> is
 </p>
 <$$>
   \begin{aligned}
     V
     &= W L H \\
     &=
-      46 \unit{尺} \times 54 \unit{尺} \times 35 \unit{尺}
+      46 \unit{rules} \times 54 \unit{rules} \times 35 \unit{rules}
         \div
-      \frac{1.62 \unit{尺}^3}{\unit{斛}} \\[2ex]
-    &= 53666 \tfrac{2}{3} \unit{斛} \\
-    &= 53666 \unit{斛} + 6 \unit{斗} + 6 \tfrac{2}{3} \unit{升}.
+      \frac{1.62 \unit{rules}^3}{\unit{barrel}} \\[2ex]
+    &= 53666 \tfrac{2}{3} \unit{barrels} \\
+    &= 53666 \unit{barrels} + 6 \unit{pecks} + 6 \tfrac{2}{3} \unit{quarts}.
   \end{aligned}
 </$$>
 
