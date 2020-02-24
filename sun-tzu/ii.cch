@@ -1060,11 +1060,8 @@
 <#t>
   今有圓窖，下周二百八十六尺，深三丈六尺。問受粟幾何？ |
   Now there be {a} circular cellar, of lower circumference
-  two hundred {and} eighty-six<:n>286</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>,
-  {and} depth
-    three<:n>3</:n>~丈<^> choeng | chang | zhang </^> {and}
-    six<:n>6</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  two hundred {and} eighty-six<:n>286</:n> rules,
+  {and} depth three<:n>3</:n> rods {and} six<:n>6</:n> rules.
   {We} ask: how much grain beareth {it}?
 </#t>
 <ul>
@@ -1078,31 +1075,25 @@
 <#t>
   答曰：一十五萬一千四百七十四斛七升二十七分升之一十一。 |
   Answer saith: one hundred {and} fifty-one thousand,
-  four hundred {and} seventy-four<:n>151474</:n>\
-    ~斛<^> huk | hu | hu </^>,
-  seven<:n>7</:n>~升<^> shing | she^ng | sheng </^>
-  {and} eleven twenty-sevenths<:n>11/27</:n> of {a}
-  升<^> shing | she^ng | sheng </^>.
+  four hundred {and} seventy-four<:n>151474</:n> barrels,
+  seven<:n>7</:n> quarts
+  {and} eleven twenty-sevenths<:n>11/27</:n> of {a} quart.
 </#t>
 
 <#t>
   術曰：置周二百八十六尺，自相乘，得八萬一千七百九十六尺。 |
   Method saith: put {down the} circumference,
-  two hundred {and} eighty-six<:n>286</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>, {which},
+  two hundred {and} eighty-six<:n>286</:n> rules, {which},
   multiplied with itself, resulteth in
-  eighty-one thousand, seven hundred {and} ninety-six<:n>81796</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>.
+  eighty-one thousand, seven hundred {and} ninety-six<:n>81796</:n> rules.
 </#t>
 
 <#t>
   以深三丈六尺乘之，得二百九十四萬四千六百五十六尺。 |
   Multiplying it by {the} depth,
-  three<:n>3</:n>~丈<^> choeng | chang | zhang </^> {and}
-    six<:n>6</:n>~尺<^> ch'ek | ch'ih | chi </^>,
+  three<:n>3</:n> rods {and} six<:n>6</:n> rules,
   resulteth in two million, nine hundred {and} forty-four thousand,
-  six hundred {and} fifty-six<:n>2944656</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>.
+  six hundred {and} fifty-six<:n>2944656</:n> rules.
 </#t>
 <ul>
   <li>
@@ -1120,73 +1111,68 @@
   以一十二除之，得二十四萬五千三百八十八尺。 |
   Dividing it by twelve<:n>12</:n>, resulteth in
   two hundred {and} forty-five thousand, three hundred {and}
-  eighty-eight<:n>245388</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  eighty-eight<:n>245388</:n> rules.
 </#t>
 
 <#t>
   以斛法一尺六寸二分除之，即得。 |
-  Dividing it by {the} 斛<^> huk | hu | hu </^> divisor,
-    one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-    six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
-    two<:n>2</:n>~分<^> fan | fe^n | fen </^>,
+  Dividing it by {the} barrel divisor,
+    one<:n>1</:n> rule, six<:n>6</:n> inches {and} two<:n>2</:n> tenths,
   {we} are done.
 </#t>
 <ul>
   <li>斛法一尺六寸二分：
-    {the} 斛<^> huk | hu | hu </^> divisor,
-      one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-      six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
-      two<:n>2</:n>~分<^> fan | fe^n | fen </^><br>
-    The "斛<^> huk | hu | hu </^> divisor" gives the conversion between
-    the volume unit cubic~尺<^> ch'ek | ch'ih | chi </^>
-    and the capacity unit 斛<^> huk | hu | hu </^>.
+    {the} barrel divisor,
+      one<:n>1</:n> rule, six<:n>6</:n> inches {and} two<:n>2</:n> tenths<br>
+    The "barrel divisor" gives the conversion between
+    the volume unit cubic rule~(尺<^> ch'ek | ch'ih | chi </^>)
+    and the capacity unit barrel~(斛<^> huk | hu | hu </^>).
     In modern (dimensionally consistent) notation, we would write
     <$$>
-      1 = \frac{1.62 \unit{尺}^3}{\unit{斛}}.
+      1 = \frac{1.62 \unit{rules}^3}{\unit{barrel}}.
     </$$>
     Recall the Chinese did not have a fully developed notion
-    of dimensional analysis, so square~尺<^> ch'ek | ch'ih | chi </^>
-    and cubic~尺<^> ch'ek | ch'ih | chi </^> were simply referred to as
-    尺<^> ch'ek | ch'ih | chi </^>
+    of dimensional analysis, so "square rules"
+    and "cubic rules" were simply referred to as "rules"
     (though they still knew how to do area and volume conversions correctly).
-    Here, by
-      "one<:n>1</:n>~尺<^> ch'ek | ch'ih | chi </^>,
-      six<:n>6</:n>~寸<^> ts'u"n | ts'un | cun </^> {and}
-      two<:n>2</:n>~分<^> fan | fe^n | fen </^>",
-    which is the length 1.62~尺<^> ch'ek | ch'ih | chi </^>,
-    they actually meant the volume
-      1.62~<strong>cubic</strong>~尺<^> ch'ek | ch'ih | chi </^>.
+    Here,
+      "one<:n>1</:n> rule, six<:n>6</:n> inches {and} two<:n>2</:n> tenths",
+    which is the length "1.62~rules",
+    actually means the volume 1.62~<strong>cubic</strong>~rules.
     But
       <$$>
         \begin{aligned}
-          1.62 \unit{尺}^3
-          &= (1 \unit{尺} + 6 \unit{寸} + 2 \unit{分}) \cdot \unit{尺}^2 \\
-          &= 1 \unit{尺}^3 + 600 \unit{寸}^3 + 20000 \unit{分}^3 \\
-          &\ne 1 \unit{尺}^3 + 6 \unit{寸}^3 + 2 \unit{分}^3,
+          1.62 \unit{rules}^3
+          &=
+            (1 \unit{rule} + 6 \unit{inches} + 2 \unit{tenths})
+              \cdot
+            1 \unit{rule}^2 \\
+          &= 1 \unit{rule}^3 + 600 \unit{inches}^3 + 20000 \unit{tenths}^3 \\
+          &\ne 1 \unit{rule}^3 + 6 \unit{inches}^3 + 2 \unit{tenths}^3,
         \end{aligned}
       </$$>
     so parsing
-      尺<^> ch'ek | ch'ih | chi </^>,
-      寸<^> ts'u"n | ts'un | cun </^> and
-      分<^> fan | fe^n | fen </^>
+      rule~(尺<^> ch'ek | ch'ih | chi </^>),
+      inch~(寸<^> ts'u"n | ts'un | cun </^>) and
+      tenth~(分<^> fan | fe^n | fen </^>)
     individually as cubic units doesn't make sense.
   </li>
 </ul>
 
 <p>
   In modern notation, the volume (capacity) of a cylinder of circumference
-  <$>C = 286 \unit{尺}</$> and depth <$>H = 36 \unit{尺}</$> is
+  <$>C = 286 \unit{rules}</$> and depth <$>H = 36 \unit{rules}</$> is
 </p>
 <$$>
 \begin{aligned}
   V
   &\approx \frac{C^2 H}{12} \\[2ex]
   &=
-    \frac{(286 \unit{尺})^2 (36 \unit{尺})}{12}
+    \frac{(286 \unit{rules})^2 (36 \unit{rules})}{12}
       \div
-    \frac{1.62 \unit{尺}^3}{\unit{斛}} \\[2ex]
-  &= 151474 \tfrac{2}{27} \unit{斛} \\
-  &= 151474 \unit{斛} + 7 \tfrac{11}{27} \unit{升}.
+    \frac{1.62 \unit{rules}^3}{\unit{barrel}} \\[2ex]
+  &= 151474 \tfrac{2}{27} \unit{barrels} \\
+  &= 151474 \unit{barrels} + 7 \tfrac{11}{27} \unit{quarts}.
 \end{aligned}
 </$$>
 
