@@ -989,13 +989,10 @@
 <#t>
   今有屋基，南北三丈，東西六丈，欲以甎砌之。凡積二尺，用甎五枚。問計幾何？ |
   Now there be {an} house foundation,
-  three<:n>3</:n>~丈<^> choeng | chang | zhang </^>
-    north-{to}-south,
-  {and}
-  six<:n>6</:n>~丈<^> choeng | chang | zhang </^>
-    east-{to}-west,
+    three<:n>3</:n> rods north-{to}-south, {and}
+    six<:n>6</:n> rods east-{to}-west,
   {and we} wish to build it with bricks.
-  Every two<:n>2</:n>~尺<^> ch'ek | ch'ih | chi </^> of area,
+  Every two<:n>2</:n> rules of area,
   useth five<:n>5</:n> bricks.
   {We} ask: how many amounteth {this} to?
 </#t>
@@ -1026,34 +1023,33 @@
 <#t>
   術曰：置東西六丈，以南北三丈乘之，得一千八百尺。以五乘之，得九千尺。以二除之，即得。 |
   Method saith: put {down the}
-    six<:n>6</:n>~丈<^> choeng | chang | zhang </^> east-{to}-west.
+    six<:n>6</:n> rods east-{to}-west.
   Multiplying it by {the}
-    three<:n>3</:n>~丈<^> choeng | chang | zhang </^> north-{to}-south,
-  resulteth in one thousand eight hundred<:n>1800</:n>\
-    ~尺<^> ch'ek | ch'ih | chi </^>.
+    three<:n>3</:n> rods north-{to}-south,
+  resulteth in one thousand eight hundred<:n>1800</:n> rules.
   Multiplying it by five<:n>5</:n>, resulteth in
-  nine thousand<:n>9000</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  nine thousand<:n>9000</:n> rules.
   Dividing it by two<:n>2</:n>, {we} are done.
 </#t>
 <ul>
   <li>九千尺：
-    nine thousand<:n>9000</:n>~尺<^> ch'ek | ch'ih | chi </^><br>
-    This is area, but what we would call
-    square~尺<^> ch'ek | ch'ih | chi </^>
-    were simply referred to as 尺<^> ch'ek | ch'ih | chi </^>.
+    nine thousand<:n>9000</:n> rules<br>
+    This is area, but what we would call "square rules"
+    were simply referred to as "rules".
   </li>
 </ul>
 
 <p>
   In modern notation, the number of bricks required to fill
-  a rectangle of length <$>L = 3 \unit{丈}</$> and width <$>W = 6 \unit{丈}</$>
-  at number density <$>\rho = 5 / (2 \unit{尺}^2)</$> is
+  a rectangle of length <$>L = 3 \unit{rods}</$>
+  and width <$>W = 6 \unit{rods}</$>
+  at number density <$>\rho = 5 / (2 \unit{rules}^2)</$> is
 </p>
 <$$>
   \begin{aligned}
     N
     &= L W \rho \\
-    &= 3 \unit{丈} \times 6 \unit{丈} \times \frac{5}{2 \unit{尺}^2} \\
+    &= 3 \unit{rods} \times 6 \unit{rods} \times \frac{5}{2 \unit{rules}^2} \\
     &= 4500.
   \end{aligned}
 </$$>
