@@ -1355,11 +1355,11 @@
 
 <#t>
   今有圓田，周三百步，徑一百步。問得田幾何？ |
-  Now there be {a} circular field, of circumference
-    three hundred<:n>300</:n>~步<^> pou | pu | bu </^>,
+  Now there be {a} circular farmland, of circumference
+    three hundred<:n>300</:n> paces,
   {and} diameter
-    one hundred<:n>100</:n>~步<^> pou | pu | bu </^>.
-  {We} ask: how much field resulteth?
+    one hundred<:n>100</:n> paces.
+  {We} ask: how much farmland resulteth?
 </#t>
 <p>
   Here <$>\pi \approx 3</$>, see
@@ -1368,54 +1368,54 @@
 
 <#t>
   答曰：三十一畝奇六十步。 |
-  Answer saith: thirty-one<:n>31</:n>~畝<^> mau | mu | mu </^>,
-  remainder sixty<:n>60</:n>~步<^> pou | pu | bu </^>.
+  Answer saith: thirty-one<:n>31</:n> fields,
+  remainder sixty<:n>60</:n> paces.
 </#t>
 <ul>
   <li>奇：
     remainder<br>
     奇，音羈，
     <^cm> kei1 | ji= </^cm><br>
-    To convert from square~步<^> pou | pu | bu </^>
-    to the area unit 畝<^> mau | mu | mu </^>,
-    one divides by the conversion factor <$>240 \unit{步}^2 / \unit{畝}</$>
-    (called the "畝<^> mau | mu | mu </^> divisor" below).
-    This is why the answer refers to a "remainder".
+    To convert area from square paces
+    to the field, 畝<^> mau | mu | mu </^>,
+    one divides by the conversion factor
+      <$>240 \unit{paces}^2 / \unit{field}</$>
+    (called the "field divisor" below).
+    This is why answer saith refers to a "remainder".
   </li>
 </ul>
 <p>
-  In modern notation, the area is <$>31 \unit{畝} + 60 \unit{步}^2</$>.
+  In modern notation, the area is <$>31 \unit{fields} + 60 \unit{paces}^2</$>.
 </p>
 
 <#t>
   術曰：先置周三百步，半之，得一百五十步。又置徑一百步，半之，得五十步。\
   相乘，得七千五百步。 |
   Method saith: first put {down the} circumference,
-    three hundred<:n>300</:n>~步<^> pou | pu | bu </^>;
+    three hundred<:n>300</:n> paces;
   halving it, resulteth in
-    one hundred {and} fifty<:n>150</:n>~步<^> pou | pu | bu </^>.
+    one hundred {and} fifty<:n>150</:n> paces.
   Also put {down the} diameter,
-    one hundred<:n>100</:n>~步<^> pou | pu | bu </^>;
+    one hundred<:n>100</:n> paces;
   halving it, resulteth in
-    fifty<:n>50</:n>~步<^> pou | pu | bu </^>.
+    fifty<:n>50</:n> paces.
   {These}, multiplied with each other, result in
-    seven thousand five hundred<:n>7500</:n>~步<^> pou | pu | bu </^>.
+    seven thousand five hundred<:n>7500</:n> paces.
 </#t>
 
 <#t>
   以畝法二百四十步除之，即得。 |
-  Dividing it by {the} 畝<^> mau | mu | mu </^> divisor,
-    two hundred {and} forty<:n>240</:n>~步<^> pou | pu | bu </^>,
+  Dividing it by {the} field divisor,
+    two hundred {and} forty<:n>240</:n> paces,
   {we} are done.
 </#t>
 
 <#t>
   又術：周自相乘，得九萬步。以一十二除之，得七千五百步。 |
   Also {a} method: {the} circumference, multiplied with itself,
-  resulteth in
-    ninety thousand<:n>90000</:n>~步<^> pou | pu | bu </^>.
+  resulteth in ninety thousand<:n>90000</:n> paces.
   Dividing it by twelve<:n>12</:n>, resulteth in
-    seven thousand five hundred<:n>7500</:n>~步<^> pou | pu | bu </^>.
+    seven thousand five hundred<:n>7500</:n> paces.
 </#t>
 <ul>
   <li>
@@ -1430,8 +1430,8 @@
 
 <#t>
   以畝法除之，得畝數。 |
-  Dividing it by {the} 畝<^> mau | mu | mu </^> divisor,
-  resulteth in {the} number of 畝<^> mau | mu | mu </^>.
+  Dividing it by {the} field divisor,
+  resulteth in {the} number of fields.
 </#t>
 
 <#t>
@@ -1439,15 +1439,15 @@
   Also {a} method: {the} diameter, multiplied {with} itself,
   resulteth in ten thousand<:n>10000</:n>.
   Multiplying it by three<:n>3</:n>, resulteth in
-    thirty thousand<:n>30000</:n>~步<^> pou | pu | bu </^>.
+    thirty thousand<:n>30000</:n> paces.
   Dividing it {by} four<:n>4</:n>, resulteth in
-    seven thousand five hundred<:n>7500</:n>~步<^> pou | pu | bu </^>.
+    seven thousand five hundred<:n>7500</:n> paces.
 </#t>
 
 <#t>
   以畝法除之，得畝數。 |
-  Dividing it by {the} 畝<^> mau | mu | mu </^> divisor,
-  resulteth in {the} number of 畝<^> mau | mu | mu </^>.
+  Dividing it by {the} field divisor,
+  resulteth in {the} number of fields.
 </#t>
 <p>
   In modern notation (and taking <$>\pi \approx 3</$>),
