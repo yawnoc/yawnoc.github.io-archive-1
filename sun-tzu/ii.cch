@@ -3284,23 +3284,23 @@
 <#t>
   今有積三萬五千步。問為圓幾何？ |
   Now there be area,
-  thirty-five thousand<:n>35000</:n>~步<^> pou | pu | bu </^>.
+  thirty-five thousand<:n>35000</:n> paces.
   {We} ask: be {this a} circle {of circumference} how much?
 </#t>
 
 <#t>
   答曰：六百四十八步一千二百九十六分步之九十六。 |
   Answer saith:
-    six hundred {and} forty-eight<:n>648</:n>~步<^> pou | pu | bu </^>
+    six hundred {and} forty-eight<:n>648</:n> paces
     {and} ninety-six
       one thousand, two hundred {and} ninety-sixths<:n>96/1296</:n>
-    of {a} 步<^> pou | pu | bu </^>.
+    of {a} pace.
 </#t>
 
 <#t>
   術曰：置積三萬五千步。以一十二乘之，得四十二萬為<:b>實</:b>。 |
   Method saith: put {down the} area,
-    thirty-five thousand<:n>35000</:n>~步<^> pou | pu | bu </^>.
+    thirty-five thousand<:n>35000</:n> paces.
   Multiplying it by twelve<:n>12</:n>, resulteth in
     four hundred {and} twenty thousand<:n>420000</:n>
   as <:b>{the} dividend</:b>.
@@ -3320,12 +3320,12 @@
   In modern notation
   (but taking <$>\pi \approx 3</$> i.e. <$>4\pi \approx 12</$>
   as per <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | </@>),
-  the circumference of a circle of area <$>A = 35000 \unit{步}^2</$> is
+  the circumference of a circle of area <$>A = 35000 \unit{paces}^2</$> is
 </p>
 <$$>
   \begin{aligned}
     C &\approx \sqrt{12 A} \\
-      &= \sqrt{420000} \unit{步}.
+      &= \sqrt{420000} \unit{paces}.
   \end{aligned}
 </$$>
 <p>
@@ -3498,11 +3498,10 @@
 <#t>
   是為方<:g>六百四十八</:g>步<:v>一千二百九十六分</:v>步之<:b>九十六</:b>。 |
   This be {a} circumference of
-    <:g>six hundred {and} forty-eight<:n>648</:n></:g>~\
-      步<^> pou | pu | bu </^>
+    <:g>six hundred {and} forty-eight<:n>648</:n></:g> paces
     {and} <:b>ninety-six</:b>
       <:v>one thousand, two hundred {and} ninety-sixths</:v><:n>96/1296</:n>
-    of {a} 步<^> pou | pu | bu </^>.
+    of {a} pace.
 </#t>
 
 
