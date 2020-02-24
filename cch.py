@@ -1278,11 +1278,11 @@ def replace_all_boxed_translations(string):
 #   \1  {arguments}: {volume} | {paragraph} | {content}
 
 # Processed string:
-#   <@4>
+#   <@3>
 #     Vol.~{capital roman volume}~¶{paragraph}.
 #     <span class="heading">{content}</span>
 #     | {paragraph}
-#   </@4>
+#   </@3>
 # where the paragraph symbol is U+00B6 PILCROW SIGN
 
 # ----------------------------------------------------------------
@@ -1309,11 +1309,11 @@ def replace_sun_tzu_heading(match_object):
   capital_roman_volume = int(volume) * 'I'
   
   processed_string = de_indent(f'''\
-    <@4>
+    <@3>
       Vol.~{capital_roman_volume}~¶{paragraph}.
       <span class="heading">{content}</span>
       | {paragraph}
-    </@4>'''
+    </@3>'''
   )
   
   return processed_string
