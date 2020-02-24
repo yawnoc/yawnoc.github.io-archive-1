@@ -548,7 +548,7 @@
     <@>
       《康熙字典》
       | https://ctext.org/kangxi-zidian/115/9#n339745
-      | 《康熙字典》稱
+      | 《康熙字典\.稱》
     </@> does not resolve this:
     <ul>
       <li>
@@ -953,8 +953,8 @@
 
 <#t>
   斛得六千萬粟。所以得知者， |
-  {An} 斛<^> huk | hu | hu </^> resulteth in six thousand myriad\
-  <:n>6000~×~10<sup>4</sup></:n>~粟<^> suk | su | su </^>.
+  {A} barrel resulteth in
+  six thousand myriad<:n>6000~×~10<sup>4</sup></:n> grains.
   {And} that by which {one} getteth to know {this}:
 </#t>
 <ul>
@@ -973,37 +973,34 @@
   十合六十萬粟為一升，<br>
   十升六百萬粟為一斗，<br>
   十斗六千萬粟為一斛。 |
-  six<:n>6</:n>~粟<^> suk | su | su </^>
-    make one~圭<^> kwai | kuei | gui </^>;<br>
-  ten<:n>10</:n>~圭<^> kwai | kuei | gui </^>,
-  sixty<:n>60</:n>~粟<^> suk | su | su </^>,
-    make one~撮<^> ts'u"t | ts'o | cuo </^>;<br>
-  ten<:n>10</:n>~撮<^> ts'u"t | ts'o | cuo </^>,
-  six hundred<:n>600</:n>~粟<^> suk | su | su </^>,
-    make one~抄<^> ch'aau | ch'ao | chao </^>;<br>
-  ten<:n>10</:n>~抄<^> ch'aau | ch'ao | chao </^>,
-  six thousand<:n>6000</:n>~粟<^> suk | su | su </^>,
-    make one~勺<^> choek | shao | shao </^>;<br>
-  ten<:n>10</:n>~勺<^> choek | shao | shao </^>,
-  six myriad<:n>6~×~10<sup>4</sup></:n>~粟<^> suk | su | su </^>,
-    make one~合<^> kap | ko | ge </^>;<br>
-  ten<:n>10</:n>~合<^> kap | ko | ge </^>,
-  sixty myriad<:n>60~×~10<sup>4</sup></:n>~粟<^> suk | su | su </^>,
-    make one~升<^> shing | she^ng | sheng </^>;<br>
-  ten<:n>10</:n>~升<^> shing | she^ng | sheng </^>,
-  six hundred myriad<:n>600~×~10<sup>4</sup></:n>~粟<^> suk | su | su </^>,
-    make one~斗<^> tau | tou | dou </^>;<br>
-  ten<:n>10</:n>~斗<^> tau | tou | dou </^>,
-  six thousand myriad<:n>6000~×~10<sup>4</sup></:n>~粟<^> suk | su | su </^>,
-    make one~斛<^> huk | hu | hu </^>.
+  six<:n>6</:n> grains make one tablet;<br>
+  ten<:n>10</:n> tablets,
+    sixty<:n>60</:n> grains,
+    make one pinch;<br>
+  ten<:n>10</:n> pinches,
+    six hundred<:n>600</:n> grains,
+    make one grab;<br>
+  ten<:n>10</:n> grabs,
+    six thousand<:n>6000</:n> grains,
+    make one ladle;<br>
+  ten<:n>10</:n> ladles,
+    six myriad<:n>6~×~10<sup>4</sup></:n> grains,
+    make one gill;<br>
+  ten<:n>10</:n> gills,
+    sixty myriad<:n>60~×~10<sup>4</sup></:n> grains,
+    make one quart;<br>
+  ten<:n>10</:n> quarts,
+    six hundred myriad<:n>600~×~10<sup>4</sup></:n> grains,
+    make one peck;<br>
+  ten<:n>10</:n> pecks,
+    six thousand myriad<:n>6000~×~10<sup>4</sup></:n> grains,
+    make one barrel.
 </#t>
 
 <p>
-  Thus
+  Here we first encounter named powers of ten starting from 10<sup>8</sup>,
+  which I have rendered literally:
 </p>
-<$$>
-  \unit{斛} = 6000 \times 10^4 \unit{粟}.
-</$$>
 
 <#t>
   十斛六億粟，<br>
@@ -1013,40 +1010,44 @@
   十萬斛六秭粟，<br>
   百萬斛六壤粟，<br>
   千萬斛六溝粟， |
-  Ten<:n>10</:n>~斛<^> huk | hu | hu </^> {is}
-    six<:n>6</:n>~億<^> yik | i | yi </^>~\
-    粟<^> suk | su | su </^>;<br>
-  {an} hundred<:n>100</:n>~斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~兆<^> sheeu | chao | zhao </^>~\
-    粟<^> suk | su | su </^>;<br>
-  {a} thousand<:n>1000</:n>~斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~京<^> king | ching | jing </^>~\
-    粟<^> suk | su | su </^>;<br>
-  {a} myriad<:n>10<sup>4</sup></:n>~斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~陔<^> koi | kai | gai </^>~\
-    粟<^> suk | su | su </^>;<br>
-  ten myriad<:n>10~×~10<sup>4</sup></:n>~斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~秭<^> tsee | tzuu | zi </^>~\
-    粟<^> suk | su | su </^>;<br>
-  {an} hundred myriad<:n>100~×~10<sup>4</sup></:n>~\
-      斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~壤<^> yoeng | jang | rang </^>~\
-    粟<^> suk | su | su </^>;<br>
-  {a} thousand myriad<:n>1000~×~10<sup>4</sup></:n>~\
-      斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~溝<^> k'au | kou | gou </^>~\
-    粟<^> suk | su | su </^>;
+  Ten<:n>10</:n> barrels {be}
+    six square-myriad<:n>6~×~10<sup>8</sup></:n> grains;<br>
+  {an} hundred<:n>100</:n> barrels,
+    six multitude<:n>6~×~10<sup>9</sup></:n> grains;<br>
+  {a} thousand<:n>1000</:n> barrels,
+    six capital<:n>6~×~10<sup>10</sup></:n> grains;<br>
+  {a} myriad<:n>10<sup>4</sup></:n> barrels,
+    six terrace<:n>6~×~10<sup>11</sup></:n> grains;<br>
+  ten myriad<:n>10~×~10<sup>4</sup></:n> barrels,
+    six haystack<:n>6~×~10<sup>12</sup></:n> grains;<br>
+  {an} hundred myriad<:n>100~×~10<sup>4</sup></:n> barrels,
+    six soil<:n>6~×~10<sup>13</sup></:n> grains;<br>
+  {a} thousand myriad<:n>1000~×~10<sup>4</sup></:n> barrels,
+    six ditch<:n>6~×~10<sup>14</sup></:n> grains;
 </#t>
 <ul>
-  <li>
-    A~億<^> yik | i | yi </^> is a myriad myriad,
-    i.e.~10<sup>4</sup>~×~10<sup>4</sup>~=~10<sup>8</sup>.
+  <li>億<^> yik | i | yi </^>：
+    square-myriad
   </li>
-  <li>陔，音該，
-      <^cm> koi1 | ga=i1 </^cm>
+  <li>兆<^> sheeu | chao | zhao </^>：
+    multitude<br>
+    Effectively a formal version of "zillion".
   </li>
-  <li>秭，音姊，
-      <^cm> tsee2 | ziv </^cm>
+  <li>京<^> king | ching | jing </^>：
+    \lit capital
+  </li>
+  <li>陔<^> koi | kai | gai </^>：
+    \lit terrace
+  </li>
+  <li>秭<^> tsee | tzuu | zi </^>：
+    \lit haystack<br>
+    More accurately, "grainstack".
+  </li>
+  <li>壤<^> yoeng | jang | rang </^>：
+    \lit soil
+  </li>
+  <li>溝<^> k'au | kou | gou </^>：
+    \lit ditch
   </li>
 </ul>
 
@@ -1054,24 +1055,37 @@
   萬萬斛為一億斛六澗粟，<br>
   十億斛六正粟，<br>
   百億斛六載粟。 |
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      斛<^> huk | hu | hu </^>
-  make one~億<^> yik | i | yi </^>~\
-      斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~澗<^> kaan | chien | jian </^>~\
-    粟<^> suk | su | su </^>;<br>
-  ten<:n>10</:n>~億<^> yik | i | yi </^>~\
-      斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~正<^> ching | che^ng | zheng </^>~\
-    粟<^> suk | su | su </^>;<br>
-  {an} hundred<:n>100</:n>~億<^> yik | i | yi </^>~\
-      斛<^> huk | hu | hu </^>,
-    six<:n>6</:n>~載<^> tsoi | tsai | zai </^>~\
-    粟<^> suk | su | su </^>.
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n> barrels
+  make one square-myriad<:n>10<sup>8</sup></:n> barrels,
+    six stream<:n>6~×~10<sup>15</sup></:n> grains;<br>
+  ten square-myriad<:n>10~×~10<sup>8</sup></:n> barrels,
+    six right<:n>6~×~10<sup>16</sup></:n> grains;<br>
+  {an} hundred square-myriad<:n>100~×~10<sup>8</sup></:n> barrels,
+    six carry<:n>6~×~10<sup>17</sup></:n> grains.
 </#t>
 <ul>
-  <li>載，上聲，
-      <^cm> tsoi2 | zavi </^cm>
+  <li>澗<^> kaan | chien | jian </^>：
+    \lit (mountain) stream
+  </li>
+  <li>正<^> ching | che^ng | zheng </^>：
+    \lit right
+  </li>
+  <li>載<^> tsoi | tsai | zai </^>：
+    \lit carry<br>
+    Since this is a noun,
+    it should be read in 上聲, i.e.~<^e>tsoi2</^e>/<^e>zavi</^e>.
+    An explanation for its use to denote a large power of ten
+    is quoted in
+    <@>
+      《康熙字典\.秭》
+      | https://ctext.org/kangxi-zidian/115/5#n339588
+      | 《康熙字典\.注》
+    </@>:
+    載地不能載也, or "{a} carry {even the} Earth cannot carry"
+    (here the second "carry" is a verb,
+    read in the usual 去聲, i.e.~<^e>tsoi3</^e>/<^e>za\i</^e>).
+    For context, the usual phrase is 天覆地載,
+    "Heaven covereth {and} Earth carrieth".
   </li>
 </ul>
 
@@ -1081,22 +1095,28 @@
 </p>
 <$$>
 \begin{aligned}
-  \unit{億} &= 10^8    \\
-  \unit{兆} &= 10^9    \\
-  \unit{京} &= 10^{10} \\
-  \unit{陔} &= 10^{11} \\
-  \unit{秭} &= 10^{12} \\
-  \unit{壤} &= 10^{13} \\
-  \unit{溝} &= 10^{14} \\
-  \unit{澗} &= 10^{15} \\
-  \unit{正} &= 10^{16} \\
-  \unit{載} &= 10^{17}
+  \unit{square-myriad (億)} &= 10^8 \\
+  \unit{multitude (兆)} &= 10^9 \\
+  \unit{capital (京)} &= 10^{10} \\
+  \unit{terrace (陔)} &= 10^{11} \\
+  \unit{haystack (秭)} &= 10^{12} \\
+  \unit{soil (壤)} &= 10^{13} \\
+  \unit{ditch (溝)} &= 10^{14} \\
+  \unit{stream (澗)} &= 10^{15} \\
+  \unit{right (正)} &= 10^{16} \\
+  \unit{carry (載)} &= 10^{17}
 \end{aligned}
 </$$>
 
 <p>
   However, the <@> next paragraph | #4 | Vol. I ¶4 </@> uses a "long scale".
 </p>
+
+<div class="end">
+  <:r><b>Note.</b>
+  I am halfway through rendering the previously untranslated units
+  into English. Please bear with me.</:r>
+</div>
 
 <;sh> 1 | 4 | Names of large numbers </;sh>
 <;s@@> 1 | 4 | 6 | 147 | 52060 | 3 | 13 </;s@@>
