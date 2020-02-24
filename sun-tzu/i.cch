@@ -302,7 +302,7 @@
     inch<br>
     The
     <@>
-      Chinese inch
+      <b>Chinese inch</b>
       | https://en.wikipedia.org/wiki/Cun_(unit)
       | Wikipedia: Cun (unit)
     </@>,
@@ -634,7 +634,7 @@
       already established in English
       | https://en.wikipedia.org/wiki/Tael
       | Wikipedia: Tael
-    </@>.)
+    </@>.)<br>
     One sixteenth<:n>1/16</:n> of a catty,
     except in Mainland China,
     where it has been metricised to a tenth<:n>1/10</:n>,
@@ -647,7 +647,7 @@
       already established in English
       | https://en.wikipedia.org/wiki/Catty
       | Wikipedia: Catty
-    </@>.)
+    </@>.)<br>
     Of the order one pound, or half a kilogram.
   </li>
   <li>鈞<^> kwan | chu"n | jun </^>：
@@ -660,6 +660,9 @@
       | Wikipedia Quarter (unit)
     </@>
     (28~pounds).
+    Difficult to render otherwise
+    since Chinese dictionaries simply define it
+    as 30~斤<^> kan | chin | jin </^>.
   </li>
   <li>
     <@>
@@ -769,19 +772,13 @@
   </@>.
 </p>
 
-<div class="end">
-  <:r><b>Note.</b>
-  I am halfway through rendering the previously untranslated units
-  into English. Please bear with me.</:r>
-</div>
-
 <;sh> 1 | 3 | Units of capacity </;sh>
 <;s@@> 1 | 3 | 4 | 146 | 52059 | 2 | 12 </;s@@>
 
 <#t>
   量之所起，起於粟。 |
   {Of} that which measuring of capacity beginneth from:
-  beginneth {it} from 粟<^> suk | su | su </^>.
+  beginneth {it} from grain.
 </#t>
 <ul>
   <li>量：
@@ -789,10 +786,9 @@
       量，平聲，
       <^cm> loeng4 | lia/ng </^cm>
   </li>
-  <li>粟：
+  <li>粟<^> suk | su | su </^>：
     \lit grain<br>
-      粟，相玉切，
-      <^cm> suk7 | su\ </^cm>
+    1/600,000 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
   </li>
 </ul>
 
@@ -801,85 +797,121 @@
   十撮為一抄，十抄為一勺，<br>
   十勺為一合，十合為一升，<br>
   十升為一斗，十斗為一斛。 |
-  Six<:n>6</:n>~粟<^> suk | su | su </^>
-    make one~圭<^> kwai | kuei | gui </^>;
-  ten<:n>10</:n>~圭<^> kwai | kuei | gui </^>
-    make one~撮<^> ts'u"t | ts'o | cuo </^>;<br>
-  ten<:n>10</:n>~撮<^> ts'u"t | ts'o | cuo </^>
-    make one~抄<^> ch'aau | ch'ao | chao </^>;
-  ten<:n>10</:n>~抄<^> ch'aau | ch'ao | chao </^>
-    make one~勺<^> choek | shao | shao </^>;<br>
-  ten<:n>10</:n>~勺<^> choek | shao | shao </^>
-    make one~合<^> kap | ko | ge </^>;
-  ten<:n>10</:n>~合<^> kap | ko | ge </^>
-    make one~升<^> shing | she^ng | sheng </^>;<br>
-  ten<:n>10</:n>~升<^> shing | she^ng | sheng </^>
-    make one~斗<^> tau | tou | dou </^>;
-  ten<:n>10</:n>~斗<^> tau | tou | dou </^>
-    make one~斛<^> huk | hu | hu </^>.
+  Six<:n>6</:n> grains make one tablet;
+  ten<:n>10</:n> tablets make one pinch;<br>
+  ten<:n>10</:n> pinches make one grab;
+  ten<:n>10</:n> grabs make one ladle;<br>
+  ten<:n>10</:n> ladles make one gill;
+  ten<:n>10</:n> gills make one quart;<br>
+  ten<:n>10</:n> quarts make one peck;
+  ten<:n>10</:n> pecks make one barrel.
 </#t>
 <ul>
-  <li>圭，古攜切，音閨，
-      <^cm> kwai1 | gui= </^cm>
+  <li>圭<^> kwai | kuei | gui </^>：
+    \lit (jade) tablet<br>
+    1/100,000 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
   </li>
   <li>撮<^> ts'u"t | ts'o | cuo </^>：
-    \lit pinch (two or three fingers)<br>
-      撮，寸入聲，
-      <^cm> ts'u"t8 | cuo= </^cm>
+    \lit (two- or three-finger) pinch;
+    \or pugil<br>
+    1/10,000 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
   </li>
-  <li>抄，初交切，
-      <^cm> ch'aau1 | cha=o </^cm>
+  <li>抄<^> ch'aau | ch'ao | chao </^>：
+    grab<br>
+    1/1,000 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
+    Others render this as "handful",
+    but that sounds too big in my opinion.
   </li>
-  <li>勺，
-      <^cm> choek8; also ch'oek8 | sha/o </^cm>
+  <li>勺<^> choek | shao | shao </^>：
+    ladle<br>
+    1/100 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
   </li>
-  <li>合，葛合切，
-      <^cm> kap8 | gev </^cm>
+  <li>合<^> kap | ko | ge </^>：
+    gill<br>
+    1/10 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
+    Similar in size to the
+    <@>
+      imperial gill
+      | https://en.wikipedia.org/wiki/Gill_(unit)
+      | Wikipedia: Gill (unit)
+    </@>.
+    Note the Chinese pronunciation 葛合切, i.e.~<^e>kap8</^e>/<^e>gev</^e>.
+    In English, "gill" is read [dʒɪl], i.e.~with a soft 'g'.
   </li>
-  <li>斛，紅入聲，
-      <^cm> huk9 | hu/ </^cm>
+  <li>升<^> shing | she^ng | sheng </^>：
+    quart<br>
+    The <b>Chinese litre</b>,
+    of the same order of magnitude as the metric litre.
+    I have avoided rendering it "litre"
+    so as to keep SI units free,
+    and have instead chosen "quart",
+    after the similarly sized
+    <@>
+      imperial quart
+      | https://en.wikipedia.org/wiki/Quart#Imperial_quart
+      | Wikipedia: Quart
+    </@>.
+  </li>
+  <li>斗<^> tau | tou | dou </^>：
+    peck<br>
+    10~Chinese litres,
+    of similar to the imperial peck.
+    A person of integrity will not 為五斗米折腰,
+    or "bow down (\lit bend {at the} waist) for five pecks of grain".
+  </li>
+  <li>斛<^> huk | hu | hu </^>：
+    barrel<br>
+    100~Chinese litres.
+    <@>
+      James Legge
+      | https://ctext.org/zhuangzi/cutting-open-satchels?searchu=%E7%82%BA%E4%B9%8B%E6%96%97%E6%96%9B%E4%BB%A5%E9%87%8F%E4%B9%8B%EF%BC%8C%E5%89%87%E4%B8%A6%E8%88%87%E6%96%97%E6%96%9B%E8%80%8C%E7%AB%8A%E4%B9%8B%EF%BC%9B
+      | ctext.org: 為之斗斛以量之，則並與斗斛而竊之
+    </@>
+    uses "bushel", but that is too small (only about 40~litres).
   </li>
 </ul>
 
 <p>
-  In summary:
+  I can't be bothered looking up a reputable source
+  for the precise volume of a 升<^> shing | she^ng | sheng </^>
+  when <^e>Sun~Tzuu</^e>'s Computational Classic was first written,
+  but using 1~litre as an estimate,
+  we have:
 </p>
 <$$>
   \begin{alignedat}{2}
-    \unit{粟} &={} & \tfrac{1}{6} \times 10^{-5} & \unit{升} \\
-    \unit{圭} &={} & 10^{-5} & \unit{升} \\
-    \unit{撮} &={} & 10^{-4} & \unit{升} \\
-    \unit{抄} &={} & 10^{-3} & \unit{升} \\
-    \unit{勺} &={} & 10^{-2} & \unit{升} \\
-    \unit{合} &={} & 10^{-1} & \unit{升} \\
-    \unit{升} &={} &      1  & \unit{升} \\
-    \unit{斗} &={} &     10  & \unit{升} \\
-    \unit{斛} &={} &    100  & \unit{升}
+    1 \unit{grain (粟)} &={}
+      & \tfrac{1}{6} \times 10^{-5} & \unit{quarts} \sim 2 \unit{μL} \\
+    1 \unit{tablet (圭)} &={} & 10^{-5} & \unit{quarts} \sim 10 \unit{μL} \\
+    1 \unit{pinch (撮)} &={} & 10^{-4} & \unit{quarts} \sim 0.1 \unit{mL} \\
+    1 \unit{grab (抄)} &={} & 10^{-3} & \unit{quarts} \sim 1 \unit{mL} \\
+    1 \unit{ladel (勺)} &={} & 10^{-2} & \unit{quarts} \sim 10 \unit{mL} \\
+    1 \unit{gill (合)} &={} & 10^{-1} & \unit{quarts} \sim 100 \unit{mL} \\
+    1 \unit{quart (升)} &={} & 1 & \unit{quart} \ \sim 1 \unit{L} \\
+    1 \unit{peck (斗)} &={} & 10 & \unit{quarts} \sim 10 \unit{L} \\
+    1 \unit{barrel (斛)} &={} & 100 & \unit{quarts} \sim 100 \unit{L}
   \end{alignedat}
 </$$>
 
 <p>
   In <@> Vol.~II ¶10 | /sun-tzu/ii.html#10 | Vol. II ¶10 </@>,
   the conversion between
-  the capacity unit 斛<^> huk | hu | hu </^>
-  and the volume unit cubic~尺<^> ch'ek | ch'ih | chi </^>
+  the capacity unit "barrel", 斛<^> huk | hu | hu </^>,
+  and the volume unit "cubic rule", 尺<^> ch'ek | ch'ih | chi </^>,
   is given as
 </p>
 <$$>
-  \unit{斛} = 1.62 \unit{尺}^3.
+  1 \unit{barrel} = 1.62 \unit{rules}^3.
 </$$>
 
-<p>
-  升 (<^e>shing1</^e>/<^e>she=ng</^e>) is of the order one litre.
-</p>
 <p>
   <@>
     Version~C
     | https://ctext.org/sunzi-suan-jing#n52059
     | ctext.org database page
   </@>
-  has 撮<^> ts'u"t | ts'o | cuo </^>
-  and 抄<^> ch'aau | ch'ao | chao </^> the other way around.
+  has "pinches" (撮<^> ts'u"t | ts'o | cuo </^>)
+  and "grabs" (抄<^> ch'aau | ch'ao | chao </^>) the other way around.
   The order given here is that in Versions~A, B and~D,
   and it is consistent with the order in
   <@>
@@ -887,14 +919,14 @@
     | http://oelawhk.lib.hku.hk/archive/files/9c24f167a27b616a75db9691574eb925.pdf
     | Ordinance No. 22 of 1844 (1890 Edition)
   </@>,
-  which has all of the above units as well as
+  which has all of the above units as well as the "cup",
+  龠<^> yoek | yu"eh | yue</^>,
+  equal to 5~ladles.
 </p>
-<$$>
-  \unit{龠} = 5 \unit{勺} = 5 \times 10^{-2} \unit{升}.
-</$$>
 
 <p>
-  I think 5~斗 below should read 10~斗:
+  I think 5~斗<^> tau | tou | dou </^> below
+  should read 10~斗<^> tau | tou | dou </^>:
 </p>
 <div class="centred-flex">
   <+>
