@@ -827,15 +827,11 @@
 <#t>
   今有粟二斗一升。問為粺米幾何？<br>
   答曰：一斗一升五十分升之一十七。 |
-  Now there be grain,
-    two<:n>2</:n>~斗<^> tau | tou | dou </^> {and}
-    one<:n>1</:n>~升<^> shing | she^ng | sheng </^>.
+  Now there be grain, two<:n>2</:n> pecks {and} one<:n>1</:n> quart.
   {We} ask: how much be {this in} fine grain?<br>
   Answer saith:
-    one<:n>1</:n>~斗<^> tau | tou | dou </^>,
-    one<:n>1</:n>~升<^> shing | she^ng | sheng </^> {and}
-    seventeen fiftieths<:n>17/50</:n> of {a}
-    升<^> shing | she^ng | sheng </^>.
+    one<:n>1</:n> peck, one<:n>1</:n> quart {and}
+    seventeen fiftieths<:n>17/50</:n> of {a} quart.
 </#t>
 <ul>
   <li>
@@ -856,7 +852,7 @@
   </li>
   <li>五十分升之一十七：
     \lit seventeen<:n>17</:n> of fifty shares<:n>/50</:n>
-    of {a} 升<^> shing | she^ng | sheng </^>
+    of {a} quart
   </li>
 </ul>
 
@@ -864,18 +860,18 @@
   術曰：置粟二十一升。以粺米率二十七乘之，得五百六十七升為實。\
   以粟率五十為法，除之。不盡，以法而命分。 |
   Method saith: put {down the} grain,
-  twenty-one<:n>21</:n>~升<^> shing | she^ng | sheng </^>.
+  twenty-one<:n>21</:n> quarts.
   Multiplying it by {the} fine grain rate, twenty-seven<:n>27</:n>,
-  resulteth in five hundred {and} sixty-seven<:n>567</:n>\
-  ~升<^> shing | she^ng | sheng </^> as {the} dividend.
+  resulteth in five hundred {and} sixty-seven<:n>567</:n> quarts
+  as {the} dividend.
   Use {the} grain rate, fifty<:n>50</:n>, as {the} divisor,
   {and} divide them.
   {For the} remainder, name {the} fraction using {the} divisor.
 </#t>
 <$$>
   V
-  = \frac{21 \unit{升} \times 27}{50}
-  = 11 \tfrac{17}{50} \unit{升}
+  = \frac{21 \unit{quarts} \times 27}{50}
+  = 11 \tfrac{17}{50} \unit{quarts}
 </$$>
 
 <;sh> 2 | 7 | Volume conversions for grain </;sh>
