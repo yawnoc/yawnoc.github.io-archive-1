@@ -1112,12 +1112,6 @@
   However, the <@> next paragraph | #4 | Vol. I ¶4 </@> uses a "long scale".
 </p>
 
-<div class="end">
-  <:r><b>Note.</b>
-  I am halfway through rendering the previously untranslated units
-  into English. Please bear with me.</:r>
-</div>
-
 <;sh> 1 | 4 | Names of large numbers </;sh>
 <;s@@> 1 | 4 | 6 | 147 | 52060 | 3 | 13 </;s@@>
 
@@ -1130,34 +1124,34 @@
   萬萬澗曰正，萬萬正曰載。 |
   {In the} method of all large numbers:<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
-    {is} called {a}~億<^> yik | i | yi </^>;
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      億<^> yik | i | yi </^>
-    {is} called {a}~兆<^> sheeu | chao | zhao </^>;<br>
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      兆<^> sheeu | chao | zhao </^>
-    {is} called {a}~京<^> king | ching | jing </^>;
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      京<^> king | ching | jing </^>
-    {is} called {a}~陔<^> koi | kai | gai </^>;<br>
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      陔<^> koi | kai | gai </^>
-    {is} called {a}~秭<^> tsee | tzuu | zi </^>;
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      秭<^> tsee | tzuu | zi </^>
-    {is} called {a}~壤<^> yoeng | jang | rang </^>;<br>
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      壤<^> yoeng | jang | rang </^>
-    {is} called {a}~溝<^> k'au | kou | gou </^>;
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      溝<^> k'au | kou | gou </^>
-    {is} called {a}~澗<^> kaan | chien | jian </^>;<br>
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      澗<^> kaan | chien | jian </^>
-    {is} called {a}~正<^> ching | che^ng | zheng </^>;
-  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>~\
-      正<^> ching | che^ng | zheng </^>
-    {is} called {a}~載<^> tsoi | tsai | zai </^>.
+    {is} called {a} square-myriad<:n>10<sup>8</sup></:n>;
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
+      square-myriad<:n>10<sup>8</sup></:n>
+    {is} called {a} multitude<:n>10<sup>16</sup></:n>;<br>
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
+      multitude<:n>10<sup>16</sup></:n>
+    {is} called {a} capital<:n>10<sup>24</sup></:n>;
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
+      capital<:n>10<sup>24</sup></:n>
+    {is} called {a} terrace<:n>10<sup>32</sup></:n>;<br>
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
+      terrace<:n>10<sup>32</sup></:n>
+    {is} called {a} haystack<:n>10<sup>40</sup></:n>;
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
+      haystack<:n>10<sup>40</sup></:n>
+    {is} called {a} soil<:n>10<sup>48</sup></:n>;<br>
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
+      soil<:n>10<sup>48</sup></:n>
+    {is} called {a} ditch<:n>10<sup>56</sup></:n>;
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
+      ditch<:n>10<sup>56</sup></:n>
+    {is} called {a} stream<:n>10<sup>64</sup></:n>;<br>
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
+      stream<:n>10<sup>64</sup></:n>
+    {is} called {a} right<:n>10<sup>72</sup></:n>;
+  {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
+      right<:n>10<sup>72</sup></:n>
+    {is} called {a} carry<:n>10<sup>80</sup></:n>.
 </#t>
 <ul>
   <li>
@@ -1175,18 +1169,18 @@
   by a factor of 10<sup>8</sup>:
 </p>
 <$$>
-  \begin{aligned}
-    \unit{億} &= 10^8    \\
-    \unit{兆} &= 10^{16} \\
-    \unit{京} &= 10^{24} \\
-    \unit{陔} &= 10^{32} \\
-    \unit{秭} &= 10^{40} \\
-    \unit{壤} &= 10^{48} \\
-    \unit{溝} &= 10^{56} \\
-    \unit{澗} &= 10^{64} \\
-    \unit{正} &= 10^{72} \\
-    \unit{載} &= 10^{80}
-  \end{aligned}
+\begin{aligned}
+  \unit{square-myriad (億)} &= 10^8 \\
+  \unit{multitude (兆)} &= 10^{16} \\
+  \unit{capital (京)} &= 10^{24} \\
+  \unit{terrace (陔)} &= 10^{32} \\
+  \unit{haystack (秭)} &= 10^{40} \\
+  \unit{soil (壤)} &= 10^{48} \\
+  \unit{ditch (溝)} &= 10^{56} \\
+  \unit{stream (澗)} &= 10^{64} \\
+  \unit{right (正)} &= 10^{72} \\
+  \unit{carry (載)} &= 10^{80}
+\end{aligned}
 </$$>
 <p>
   However in modern usage, a "medium scale" is used where
@@ -1197,66 +1191,77 @@
 <!cc><table>
   <tr>
     <th>Quantity</th>
+    <th>Rendering</th>
     <th><@> ¶3 | #3 | Vol. I ¶3</@></th>
     <th><@> ¶4 | #4 | Vol. I ¶4</@></th>
     <th>Modern</th>
   </tr>
   <tr>
     <td>億<^> yik | i | yi </^></td>
+    <td>square-myriad</td>
     <td>10<sup>8</sup></td>
     <td>10<sup>8</sup></td>
     <td>10<sup>8</sup></td>
   </tr>
   <tr>
     <td>兆<^> sheeu | chao | zhao </^></td>
+    <td>multitude</td>
     <td>10<sup>9</sup></td>
     <td>10<sup>16</sup></td>
     <td>10<sup>12</sup></td>
   </tr>
   <tr>
     <td>京<^> king | ching | jing </^></td>
+    <td>capital</td>
     <td>10<sup>10</sup></td>
     <td>10<sup>24</sup></td>
     <td>10<sup>16</sup></td>
   </tr>
   <tr>
     <td>陔<^> koi | kai | gai </^></td>
+    <td>terrace</td>
     <td>10<sup>11</sup></td>
     <td>10<sup>32</sup></td>
     <td>10<sup>20</sup></td>
   </tr>
   <tr>
     <td>秭<^> tsee | tzuu | zi </^></td>
+    <td>haystack</td>
     <td>10<sup>12</sup></td>
     <td>10<sup>40</sup></td>
     <td>10<sup>24</sup></td>
   </tr>
   <tr>
     <td>壤<^> yoeng | jang | rang </^></td>
+    <td>soil</td>
     <td>10<sup>13</sup></td>
     <td>10<sup>48</sup></td>
     <td>10<sup>28</sup></td>
   </tr>
   <tr>
     <td>溝<^> k'au | kou | gou </^></td>
+    <td>ditch</td>
     <td>10<sup>14</sup></td>
     <td>10<sup>56</sup></td>
     <td>10<sup>32</sup></td>
   </tr>
   <tr>
     <td>澗<^> kaan | chien | jian </^></td>
+    <td>stream</td>
     <td>10<sup>15</sup></td>
     <td>10<sup>64</sup></td>
     <td>10<sup>36</sup></td>
   </tr>
   <tr>
     <td>正<^> ching | che^ng | zheng </^></td>
+    <td>right</td>
     <td>10<sup>16</sup></td>
     <td>10<sup>72</sup></td>
     <td>10<sup>40</sup></td>
   </tr>
   <tr>
     <td>載<^> tsoi | tsai | zai </^></td>
+    <td>carry</td>
     <td>10<sup>17</sup></td>
     <td>10<sup>80</sup></td>
     <td>10<sup>44</sup></td>
@@ -1264,9 +1269,15 @@
 </table></!cc>
 
 <p>
-  Note that 兆<^> sheeu | chao | zhao </^> is also used for
+  Note that 兆<^> sheeu | chao | zhao </^>, "multitude", is also used for
   the SI Prefix mega~(10<sup>6</sup>). Confusing eh?
 </p>
+
+<div class="end">
+  <:r><b>Note.</b>
+  I am halfway through rendering the previously untranslated units
+  into English. Please bear with me.</:r>
+</div>
 
 <;sh> 1 | 5 | <$>\pi \approx 3</$>, <$>\sqrt{2} \approx 7/5</$> </;sh>
 <;s@@> 1 | 5 | 6 | 147 | 52061 | 4 | 13 </;s@@>
