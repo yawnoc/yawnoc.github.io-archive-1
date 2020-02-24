@@ -1772,11 +1772,11 @@
 <#t>
   今有溝，廣十丈，深五丈，長二十丈，欲以千尺作一方。問得幾何？ |
   Now there be {a} ditch, of
-    width ten<:n>10</:n>~丈<^> choeng | chang | zhang </^>,
-    depth five<:n>5</:n>~丈<^> choeng | chang | zhang </^>, {and}
-    length twenty<:n>20</:n>~丈<^> choeng | chang | zhang </^>,
+    width ten<:n>10</:n> rods,
+    depth five<:n>5</:n> rods, {and}
+    length twenty<:n>20</:n> rods,
   {and we} wish to consider
-    {a} thousand<:n>1000</:n>~尺<^> ch'ek | ch'ih | chi </^>
+    {a} thousand<:n>1000</:n> rules
   as one block.
   {We} ask: how many result?
 </#t>
@@ -1788,16 +1788,11 @@
 
 <#t>
   術曰：置廣一十丈。以深五丈乘之，得五千尺。又以長二十丈乘之，得一百萬尺。 |
-  Method saith: put {down the} width,
-    ten<:n>10</:n>~丈<^> choeng | chang | zhang </^>.
-  Multiplying it by {the} depth,
-    five<:n>5</:n>~丈<^> choeng | chang | zhang </^>,
-  resulteth in
-    five thousand<:n>5000</:n>~尺<^> ch'ek | ch'ih | chi </^>.
-  Also multiplying it by {the} length,
-    twenty<:n>20</:n>~丈<^> choeng | chang | zhang </^>,
-  resulteth in
-    one million<:n>1000000</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  Method saith: put {down the} width, ten<:n>10</:n> rods.
+  Multiplying it by {the} depth, five<:n>5</:n> rods,
+  resulteth in five thousand<:n>5000</:n> rules.
+  Also multiplying it by {the} length, twenty<:n>20</:n> rods,
+  resulteth in one million<:n>1000000</:n> rules.
 </#t>
 
 <#t>
@@ -1807,17 +1802,17 @@
 
 <p>
   In modern notation, the volume of a rectangular prism of
-  width <$>W = 10 \unit{丈}</$>, depth <$>H = 5 \unit{丈}</$> and
-  length <$>L = 20 \unit{丈}</$> is
+  width <$>W = 10 \unit{rods}</$>, depth <$>H = 5 \unit{rods}</$> and
+  length <$>L = 20 \unit{rods}</$> is
 </p>
 <$$>
   \begin{aligned}
     V
     &= W H L \\
     &=
-      100 \unit{尺} \times 50 \unit{尺} \times 200 \unit{尺}
+      100 \unit{rules} \times 50 \unit{rules} \times 200 \unit{rules}
         \div
-      \frac{1000 \unit{尺}^3}{\unit{block}} \\[2ex]
+      \frac{1000 \unit{rules}^3}{\unit{block}} \\[2ex]
     &= 1000 \unit{blocks}.
   \end{aligned}
 </$$>
