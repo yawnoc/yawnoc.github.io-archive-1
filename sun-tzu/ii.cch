@@ -1610,33 +1610,29 @@
   今有索長五千七百九十四步，欲使作方。問幾何？<br>
   答曰：一千四百四十八步三尺。 |
   Now there be rope, of length
-    five thousand, seven hundred {and} ninety-four<:n>5794</:n>\
-    ~步<^> pou | pu | bu </^>,
+    five thousand, seven hundred {and} ninety-four<:n>5794</:n> paces,
   {and we} wish to make {it} be {a} square.
   {We} ask: how much {be its edge}?<br>
-  Answer saith: one thousand, four hundred {and} forty-eight<:n>1448</:n>\
-    ~步<^> pou | pu | bu </^>
-    {and} three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+  Answer saith:
+    one thousand, four hundred {and} forty-eight<:n>1448</:n> paces
+    {and} three<:n>3</:n> rules.
 </#t>
 
 <#t>
   術曰：置索長五千七百九十四步。以四除之，得一千四百四十八步，餘二步。 |
   Method saith: put {down the} rope's length,
-    five thousand, seven hundred {and} ninety-four<:n>5794</:n>\
-    ~步<^> pou | pu | bu </^>.
+    five thousand, seven hundred {and} ninety-four<:n>5794</:n> paces.
   Dividing it by four, resulteth in
-    one thousand, four hundred {and} forty-eight<:n>1448</:n>\
-    ~步<^> pou | pu | bu </^>,
-    remainder two<:n>2</:n>~步<^> pou | pu | bu </^>.
+    one thousand, four hundred {and} forty-eight<:n>1448</:n> paces,
+    remainder two<:n>2</:n> paces.
 
 </#t>
 <#t>
   以六因之，得一丈二尺。以四除之，得三尺。 |
   Multiplying it by six, resulteth in
-    one<:n>1</:n>~丈<^> choeng | chang | zhang </^> {and}
-    two<:n>2</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+    one<:n>1</:n> rod {and} two<:n>2</:n> rules.
   Dividing it by four, resulteth in
-    three<:n>3</:n>~尺<^> ch'ek | ch'ih | chi </^>.
+    three<:n>3</:n> rules.
 </#t>
 <ul>
   <li>因：
@@ -1660,9 +1656,14 @@
 </p>
 <$$>
   \begin{aligned}
-    \frac{5794 \unit{步}}{4}
-    &= 1448 \unit{步} + \frac{2 \unit{步}}{4} \times \frac{6 \unit{尺}}{\unit{步}} \\[2ex]
-    &= 1448 \unit{步} + 3 \unit{尺}.
+    \frac{5794 \unit{paces}}{4}
+    &=
+      1448 \unit{paces}
+        +
+      \frac{2 \unit{paces}}{4}
+        \times
+      \frac{6 \unit{rules}}{\unit{pace}} \\[2ex]
+    &= 1448 \unit{paces} + 3 \unit{rules}.
   \end{aligned}
 </$$>
 
