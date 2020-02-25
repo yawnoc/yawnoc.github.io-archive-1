@@ -249,7 +249,7 @@
     <strong>until</strong> you get the equal quantity~6.
     A better description is found in 《九章算術》,
     "Nine Chapters {on} Computational Methods",
-    in the chapter 〈方田〉, 'Rectangular Farmland',
+    in the chapter 〈方田〉, 'Rectangular Fields',
     which has the same problem of reducing
     <@>
       12/18
@@ -1281,11 +1281,11 @@
 
 <#t>
   今有圓田，周三百步，徑一百步。問得田幾何？ |
-  Now there be {a} circular farmland, of circumference
+  Now there be {a} circular field, of circumference
     three hundred<:n>300</:n> paces,
   {and} diameter
     one hundred<:n>100</:n> paces.
-  {We} ask: how much farmland resulteth?
+  {We} ask: how much field resulteth?
 </#t>
 <p>
   Here <$>\pi \approx 3</$>, see
@@ -1388,7 +1388,7 @@
 
 <#t>
   今有方田，桑生中央。從角至桑一百四十七步。問為田幾何？ |
-  Now there be {a} square farmland,
+  Now there be {a} square field,
   {with a} mulberry tree growing {in the} centre.
   From {a} corner unto {the} mulberry tree:
     one hundred {and} forty-seven<:n>147</:n> paces.
