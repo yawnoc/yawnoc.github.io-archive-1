@@ -1398,21 +1398,29 @@
 <#t>
   答曰：一頃八十三畝奇一百八十步。 |
   Answer saith:
-    one<:n>1</:n> oxgang {and}
+    one<:n>1</:n> yardland {and}
     eighty-three<:n>83</:n> acres,
     remainder one hundred {and} eighty<:n>180</:n> paces.
 </#t>
 <ul>
   <li>頃<^> k'ing | ch'ing | qing </^>：
-    oxgang<br>
-    Difficult to render.
-    The
+    yardland<br>
+    100 Chinese acres.
+    Difficult to render, and I have chosen "yardland"
+    because it sounds more natural,
+    even though the
     <@>
       imperial oxgang
       | https://en.wikipedia.org/wiki/Oxgang
       | Wikipedia: Oxgang
     </@>
-    is of the same order of magnitude (6~hectares).
+    (which is only half an
+    <@>
+      imperial yardland or virgate
+      | https://en.wikipedia.org/wiki/Virgate
+      | Wikipedia: Virgate
+    </@>)
+    is closer in size.
   </li>
 </ul>
 
@@ -1452,7 +1460,7 @@
         \div
       \frac{240 \unit{paces}^2}{\unit{acre}} \\[2ex]
     &= 183 \unit{acres} + 180 \unit{paces}^2 \\
-    &= 1 \unit{oxgang} + 83 \unit{acres} + 180 \unit{paces}^2.
+    &= 1 \unit{yardland} + 83 \unit{acres} + 180 \unit{paces}^2.
   \end{aligned}
 </$$>
 <p>
