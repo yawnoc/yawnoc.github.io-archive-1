@@ -1294,7 +1294,7 @@
 
 <#t>
   答曰：三十一畝奇六十步。 |
-  Answer saith: thirty-one<:n>31</:n> fields,
+  Answer saith: thirty-one<:n>31</:n> acres,
   remainder sixty<:n>60</:n> paces.
 </#t>
 <ul>
@@ -1303,15 +1303,15 @@
     奇，音羈，
     <^cm> kei1 | ji= </^cm><br>
     To convert area from square paces
-    to the field, 畝<^> mau | mu | mu </^>,
+    to acres, 畝<^> mau | mu | mu </^>,
     one divides by the conversion factor
-      <$>240 \unit{paces}^2 / \unit{field}</$>
-    (called the "field divisor" below).
+      <$>240 \unit{paces}^2 / \unit{acre}</$>
+    (called the "acre divisor" below).
     This is why answer saith refers to a "remainder".
   </li>
 </ul>
 <p>
-  In modern notation, the area is <$>31 \unit{fields} + 60 \unit{paces}^2</$>.
+  In modern notation, the area is <$>31 \unit{acres} + 60 \unit{paces}^2</$>.
 </p>
 
 <#t>
@@ -1331,7 +1331,7 @@
 
 <#t>
   以畝法二百四十步除之，即得。 |
-  Dividing it by {the} field divisor,
+  Dividing it by {the} acre divisor,
     two hundred {and} forty<:n>240</:n> paces,
   {we} are done.
 </#t>
@@ -1356,8 +1356,8 @@
 
 <#t>
   以畝法除之，得畝數。 |
-  Dividing it by {the} field divisor,
-  resulteth in {the} number of fields.
+  Dividing it by {the} acre divisor,
+  resulteth in {the} number of acres.
 </#t>
 
 <#t>
@@ -1372,8 +1372,8 @@
 
 <#t>
   以畝法除之，得畝數。 |
-  Dividing it by {the} field divisor,
-  resulteth in {the} number of fields.
+  Dividing it by {the} acre divisor,
+  resulteth in {the} number of acres.
 </#t>
 <p>
   In modern notation (and taking <$>\pi \approx 3</$>),
@@ -1399,7 +1399,7 @@
   答曰：一頃八十三畝奇一百八十步。 |
   Answer saith:
     one<:n>1</:n> oxgang {and}
-    eighty-three<:n>83</:n> fields,
+    eighty-three<:n>83</:n> acres,
     remainder one hundred {and} eighty<:n>180</:n> paces.
 </#t>
 <ul>
@@ -1450,9 +1450,9 @@
     &=
       \left( 2 \times 147 \unit{paces} \times \frac{5}{7} \right)^2
         \div
-      \frac{240 \unit{paces}^2}{\unit{field}} \\[2ex]
-    &= 183 \unit{field} + 180 \unit{paces}^2 \\
-    &= 1 \unit{oxgang} + 83 \unit{fields} + 180 \unit{paces}^2.
+      \frac{240 \unit{paces}^2}{\unit{acre}} \\[2ex]
+    &= 183 \unit{acres} + 180 \unit{paces}^2 \\
+    &= 1 \unit{oxgang} + 83 \unit{acres} + 180 \unit{paces}^2.
   \end{aligned}
 </$$>
 <p>
