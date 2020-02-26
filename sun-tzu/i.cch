@@ -260,17 +260,21 @@
 </ul>
 
 <#t>
-  十忽為一絲，十絲為一毫，<br>
-  十毫為一釐，十釐為一分，<br>
-  十分為一寸，十寸為一尺，<br>
-  十尺為一丈，十丈為一引； |
-  Ten<:n>10</:n> flosses make one thread;
+  十忽為一絲，<br>
+  十絲為一毫，<br>
+  十毫為一釐，<br>
+  十釐為一分，<br>
+  十分為一寸，<br>
+  十寸為一尺，<br>
+  十尺為一丈，<br>
+  十丈為一引； |
+  Ten<:n>10</:n> flosses make one thread;<br>
   ten<:n>10</:n> threads make one mil;<br>
-  ten<:n>10</:n> mils make one cent;
+  ten<:n>10</:n> mils make one cent;<br>
   ten<:n>10</:n> cents make one tenth;<br>
-  ten<:n>10</:n> tenths make one inch;
+  ten<:n>10</:n> tenths make one inch;<br>
   ten<:n>10</:n> inches make one rule;<br>
-  ten<:n>10</:n> rules make one rod;
+  ten<:n>10</:n> rules make one rod;<br>
   ten<:n>10</:n> rods make one draw.
 </#t>
 <ul>
@@ -351,9 +355,11 @@
 </ul>
 
 <#t>
-  五十尺為一端；四十尺為一匹；六尺為一步。 |
-  Fifty<:n>50</:n> rules make one end;
-  forty<:n>40</:n> rules make one length;
+  五十尺為一端；<br>
+  四十尺為一匹；<br>
+  六尺為一步。 |
+  Fifty<:n>50</:n> rules make one end;<br>
+  forty<:n>40</:n> rules make one length;<br>
   six<:n>6</:n> rules make one pace.
 </#t>
 <ul>
@@ -609,14 +615,17 @@
 </ul>
 
 <#t>
-  十黍為一絫，十絫為一銖，<br>
-  二十四銖為一兩，十六兩為一斤，<br>
-  三十斤為一鈞，四鈞為一石。 |
-  Ten<:n>10</:n> millets make one pile;
+  十黍為一絫，<br>
+  十絫為一銖，<br>
+  二十四銖為一兩，<br>
+  十六兩為一斤，<br>
+  三十斤為一鈞，<br>
+  四鈞為一石。 |
+  Ten<:n>10</:n> millets make one pile;<br>
   ten<:n>10</:n> piles make one dram;<br>
-  twenty-four<:n>24</:n> drams make one tael;
+  twenty-four<:n>24</:n> drams make one tael;<br>
   sixteen<:n>16</:n> taels make one catty;<br>
-  thirty<:n>30</:n> catties make one quarter;
+  thirty<:n>30</:n> catties make one quarter;<br>
   four<:n>4</:n> quarters make one stone.
 </#t>
 <ul>
@@ -810,17 +819,21 @@
 </ul>
 
 <#t>
-  六粟為一圭，十圭為一撮，<br>
-  十撮為一抄，十抄為一勺，<br>
-  十勺為一合，十合為一升，<br>
-  十升為一斗，十斗為一斛。 |
-  Six<:n>6</:n> grains make one tablet;
+  六粟為一圭，<br>
+  十圭為一撮，<br>
+  十撮為一抄，<br>
+  十抄為一勺，<br>
+  十勺為一合，<br>
+  十合為一升，<br>
+  十升為一斗，<br>
+  十斗為一斛。 |
+  Six<:n>6</:n> grains make one tablet;<br>
   ten<:n>10</:n> tablets make one pinch;<br>
-  ten<:n>10</:n> pinches make one grab;
+  ten<:n>10</:n> pinches make one grab;<br>
   ten<:n>10</:n> grabs make one ladle;<br>
-  ten<:n>10</:n> ladles make one gill;
+  ten<:n>10</:n> ladles make one gill;<br>
   ten<:n>10</:n> gills make one quart;<br>
-  ten<:n>10</:n> quarts make one peck;
+  ten<:n>10</:n> quarts make one peck;<br>
   ten<:n>10</:n> pecks make one barrel.
 </#t>
 <ul>
@@ -1134,38 +1147,43 @@
 
 <#t>
   凡大數之法，<br>
-  萬萬曰億，萬萬億曰兆，<br>
-  萬萬兆曰京，萬萬京曰陔，<br>
-  萬萬陔曰秭，萬萬秭曰壤，<br>
-  萬萬壤曰溝，萬萬溝曰澗，<br>
-  萬萬澗曰正，萬萬正曰載。 |
+  萬萬曰億，<br>
+  萬萬億曰兆，<br>
+  萬萬兆曰京，<br>
+  萬萬京曰陔，<br>
+  萬萬陔曰秭，<br>
+  萬萬秭曰壤，<br>
+  萬萬壤曰溝，<br>
+  萬萬溝曰澗，<br>
+  萬萬澗曰正，<br>
+  萬萬正曰載。 |
   {In the} method of all large numbers:<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
-    {is} called {a} square-myriad<:n>10<sup>8</sup></:n>;
+    {is} called {a} square-myriad<:n>10<sup>8</sup></:n>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       square-myriad<:n>10<sup>8</sup></:n>
     {is} called {a} multitude<:n>10<sup>16</sup></:n>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       multitude<:n>10<sup>16</sup></:n>
-    {is} called {a} capital<:n>10<sup>24</sup></:n>;
+    {is} called {a} capital<:n>10<sup>24</sup></:n>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       capital<:n>10<sup>24</sup></:n>
     {is} called {a} terrace<:n>10<sup>32</sup></:n>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       terrace<:n>10<sup>32</sup></:n>
-    {is} called {a} haystack<:n>10<sup>40</sup></:n>;
+    {is} called {a} haystack<:n>10<sup>40</sup></:n>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       haystack<:n>10<sup>40</sup></:n>
     {is} called {a} soil<:n>10<sup>48</sup></:n>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       soil<:n>10<sup>48</sup></:n>
-    {is} called {a} ditch<:n>10<sup>56</sup></:n>;
+    {is} called {a} ditch<:n>10<sup>56</sup></:n>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       ditch<:n>10<sup>56</sup></:n>
     {is} called {a} stream<:n>10<sup>64</sup></:n>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       stream<:n>10<sup>64</sup></:n>
-    {is} called {a} right<:n>10<sup>72</sup></:n>;
+    {is} called {a} right<:n>10<sup>72</sup></:n>;<br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       right<:n>10<sup>72</sup></:n>
     {is} called {a} carry<:n>10<sup>80</sup></:n>.
