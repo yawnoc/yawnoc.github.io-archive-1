@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20200222 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20200226 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -277,7 +277,7 @@
 <@3> HTML comment tag | html-comment </@3>
 
 <#>
-  <`> {whitespace} <!-- {content} --> </`>
+  <`> {horizontal whitespace} <!-- {content} --> </`>
 </#>
 
 <p>

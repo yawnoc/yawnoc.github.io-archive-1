@@ -278,17 +278,17 @@ def replace_all_inline_code(string):
 ################################################################
 
 # Unprocessed string:
-#   {whitespace} <!-- {content} -->
+#   {horizontal whitespace} <!-- {content} -->
 
 # Raw regular expression for unprocessed string:
-#   \s*<!\-\-[\s\S]*?\-\->
+#   [^\S\n]*<!\-\-[\s\S]*?\-\->
 
 # Processed string:
 #   {empty string}
 
 def remove_all_html_comments(string):
   
-  return re.sub(r'\s*<!\-\-[\s\S]*?\-\->', '', string)
+  return re.sub(r'[^\S\n]*<!\-\-[\s\S]*?\-\->', '', string)
 
 ################################################################
 # Replace display maths with temporary replacements
