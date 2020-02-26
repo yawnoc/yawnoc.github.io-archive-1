@@ -2011,7 +2011,6 @@ def replace_all_assisting_numerals(string):
 #   <:v>  </:v>
 #   <:y>  </:y>
 #   <:h>  </:h>
-#   <:n>  </:n>
 #   <:t>  </:t>
 
 # Processed string for {type} r:
@@ -2031,9 +2030,6 @@ def replace_all_assisting_numerals(string):
 
 # Processed string for {type} h:
 #   <span class="highlighted-part">{content}</span>
-
-# Processed string for {type} n:
-#   <span class="numeral">~({content})</span>
 
 # Processed string for {type} t:
 #   <span class="thought">{content}</span>
@@ -2057,9 +2053,6 @@ def replace_all_formatted_spans(string):
   
   string = re.sub('<:h>', '<span class="highlighted-part">', string)
   string = re.sub('</:h>', '</span>', string)
-  
-  string = re.sub('<:n>', '<span class="numeral">~(', string)
-  string = re.sub('</:n>', ')</span>', string)
   
   string = re.sub('<:t>', '<span class="thought">', string)
   string = re.sub('</:t>', '</span>', string)

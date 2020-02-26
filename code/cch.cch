@@ -1098,11 +1098,6 @@
     <td><:h>highlighted part</:h></td>
   </tr>
   <tr>
-    <td><`>n</`></td>
-    <td><`>ten<:n>10</:n></`></td>
-    <td>ten<:n>10</:n></td>
-  </tr>
-  <tr>
     <td><`>t</`></td>
     <td><`><:t>thought</:t></`></td>
     <td><:t>thought</:t></td>
