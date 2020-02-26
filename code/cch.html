@@ -60,6 +60,7 @@ Last modified:&nbsp;<b>20200226</b><br>
 <li><a href="#cite-this-page" title="Cite this page tag"><code>&lt;*c&gt;</code></a></li>
 <li><a href="#footer" title="Footer tag"><code>&lt;*f&gt;</code></a></li>
 <li><a href="#single-argument" title="Single-argument tags"><b>1-arg:</b></a></li>
+<li><a href="#assisting-numeral" title="Assisting numeral tag"><code>&lt;_&gt;</code></a></li>
 <li><a href="#formatted-span" title="Formatted span tag"><code>&lt;:r&gt;</code></a></li>
 <li><a href="#boxed-division" title="Boxed division tag"><code>&lt;#&gt;</code></a></li>
 <li><a href="#dialogue-division" title="Dialogue division tag"><code>&lt;~~&gt;</code></a></li>
@@ -508,7 +509,7 @@ Converted to <code>&lt;span&gt;</code> tags controlled by the
 <a href="#assisting-romanisation-radio" title="Assisting romanisation radio tag">assisting romanisation radio</a>,
 where all arguments are unescaped after the manner of the
 <a href="#text-romanisation" title="Text romanisation tag">text romanisation tag</a>.
-The leading horizontal whitespace is stripped.
+The preceding horizontal whitespace is stripped.
 </p>
 <ul>
 <li>
@@ -859,6 +860,38 @@ supplied to the <a href="#preamble" title="Preamble tag">preamble</a>.
 <h2 id="single-argument"><a class="self-link" href="#single-argument"></a>
 Single-argument tags
 </h2>
+<h3 id="assisting-numeral"><a class="self-link" href="#assisting-numeral"></a>
+Assisting numeral tag
+</h3>
+<div class="boxed">
+<code>{horizontal whitespace} &lt;_&gt; {content} &lt;/_&gt;</code>
+</div>
+<p>
+Converted to a <code>&lt;span&gt;</code> tag, with simple markup for
+exponents (<code>^</code>),
+minus signs (<code>-</code>), and
+times symbols (<code>*</code>)
+in <code>{content}</code>.
+The preceding horizontal whitespace is stripped.
+</p>
+<ul>
+<li>
+<b>CCH</b>
+<pre>
+Tiny &lt;_&gt; 3 * 10^-12 &lt;/_&gt;.
+</pre>
+</li>
+<li>
+<b>HTML</b>
+<pre>
+Tiny&lt;span class="numeral"&gt;&amp;nbsp;(3 × 10&lt;sup&gt;−12&lt;/sup&gt;)&lt;/span&gt;.
+</pre>
+</li>
+<li>
+<b>Rendered</b><br>
+Tiny<span class="numeral">&nbsp;(3 × 10<sup>−12</sup>)</span>.
+</li>
+</ul>
 <h3 id="formatted-span"><a class="self-link" href="#formatted-span"></a>
 Formatted span tag
 </h3>

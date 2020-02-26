@@ -84,6 +84,7 @@
   
   <@i> <b>1-arg:</b> | #single-argument | Single-argument tags </@i>
   
+  <@i> <`><_></`> | #assisting-numeral | Assisting numeral tag </@i>
   <@i> <`><:r></`> | #formatted-span | Formatted span tag </@i>
   <@i> <`><#></`> | #boxed-division | Boxed division tag </@i>
   <@i> <`><~~></`> | #dialogue-division | Dialogue division tag </@i>
@@ -634,7 +635,7 @@
   </@>,
   where all arguments are unescaped after the manner of the
   <@> text romanisation tag | #text-romanisation | Text romanisation tag </@>.
-  The leading horizontal whitespace is stripped.
+  The preceding horizontal whitespace is stripped.
 </p>
 
 <ul>
@@ -1009,6 +1010,45 @@
 
 
 <@2> Single-argument tags | single-argument </@2>
+
+
+<@3> Assisting numeral tag | assisting-numeral </@3>
+
+<#>
+  <`>{horizontal whitespace} <_> {content} </_></`>
+</#>
+
+<p>
+  Converted to a <`><span></`> tag, with simple markup for
+    exponents (<`>^</`>),
+    minus signs (<`>-</`>), and
+    times symbols (<`>*</`>)
+  in <`>{content}</`>.
+  The preceding horizontal whitespace is stripped.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      Tiny <_> 3 * 10^-12 </_>.
+    </``>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      Tiny<span class="numeral">&nbsp;(3 × 10<sup>−12</sup>)</span>.
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b> <br>
+      Tiny <_> 3 * 10^-12 </_>.
+  </li>
+  
+</ul>
 
 
 <@3> Formatted span tag | formatted-span </@3>
