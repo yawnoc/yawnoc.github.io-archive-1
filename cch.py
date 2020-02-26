@@ -843,10 +843,10 @@ def replace_all_images(string):
 ################################################################
 
 # Unprocessed string:
-#   <^> {conway} | {wadegiles} | {pinyin} </^>
+#   {horizontal whitespace} <^> {conway} | {wadegiles} | {pinyin} </^>
 
 # Raw regular expression for unprocessed string:
-#   <\^>([\s\S]*?)</\^>
+#   [^\S\n]*<\^>([\s\S]*?)</\^>
 #   \1  {arguments}: {conway} | {wadegiles} | {pinyin}
 
 # Processed string:
@@ -889,7 +889,11 @@ def replace_assisting_romanisation(match_object):
 
 def replace_all_assisting_romanisations(string):
   
-  return re.sub(r'<\^>([\s\S]*?)</\^>', replace_assisting_romanisation, string)
+  return re.sub(
+    r'[^\S\n]*<\^>([\s\S]*?)</\^>',
+    replace_assisting_romanisation,
+    string
+  )
 
 ################################################################
 # Replace Cantonese & Mandarin romanisations

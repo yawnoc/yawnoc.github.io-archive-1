@@ -622,7 +622,7 @@
 <@3> Assisting romanisation tag | assisting-romanisation </@3>
 
 <#>
-  <`><^> {conway} | {wadegiles} | {pinyin} </^></`>
+  <`>{horizontal whitespace} <^> {conway} | {wadegiles} | {pinyin} </^></`>
 </#>
 
 <p>
@@ -634,6 +634,7 @@
   </@>,
   where all arguments are unescaped after the manner of the
   <@> text romanisation tag | #text-romanisation | Text romanisation tag </@>.
+  The leading horizontal whitespace is stripped.
 </p>
 
 <ul>
@@ -641,13 +642,13 @@
   <li>
     <b>CCH</b>
     <``>
-      絲<^> see1 | ssuu1 | si= </^>
+      絲 <^> see1 | ssuu1 | si= </^>
     </``>
   </li>
   
   <li>
     <b>Rendered</b><br>
-      絲<^> see1 | ssuu1 | si= </^>
+      絲 <^> see1 | ssuu1 | si= </^>
   </li>
   
 </ul>
