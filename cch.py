@@ -487,7 +487,7 @@ def replace_all_item_anchor_abbreviations(string):
 
 # Processed string:
 #   <div class="romanisation-radio">
-#     Romanisation~(<kbd>F2</kbd>):~音標<^>yam peeu | yin piao | yin biao</^><br>
+#     Romanisation~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^> <br>
 #     <input type="radio" name="romanisation" id="romanisation-none" value="none">
 #       <label for="romanisation-none">None</label>
 #     <input type="radio" name="romanisation" id="romanisation-conway" value="conway">
@@ -503,7 +503,7 @@ def replace_assisting_romanisation_radio(string):
   
   processed_string = de_indent('''\
     <div class="romanisation-radio">
-      Romanisation~(<kbd>F2</kbd>):~音標<^>yam peeu | yin piao | yin biao</^><br>
+      Romanisation~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^> <br>
       <input type="radio" name="romanisation" id="romanisation-none" value="none">
         <label for="romanisation-none">None</label>
       <input type="radio" name="romanisation" id="romanisation-conway" value="conway">
@@ -1666,7 +1666,7 @@ def replace_preamble(string):
 
 # Processed string:
 #   <p class="page-properties">
-#     First created:~{first created}<br>
+#     First created:~{first created} <br>
 #     Last modified:~<b>{last modified}</b>[<br>
 #     <b>See also:</b>~[see also]][<br>
 #     [misc]]
@@ -1714,7 +1714,7 @@ def replace_page_properties(string):
   
   processed_string = de_indent(f'''\
     <p class="page-properties">
-      First created:~{first_created}<br>
+      First created:~{first_created} <br>
       Last modified:~{last_modified_spec}'''
       f'{see_also_spec}'
       f'{misc_spec}' '''
