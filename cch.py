@@ -3008,8 +3008,8 @@ def remove_unnecessary_whitespace(string):
   # so that subsequent whitespace removal does not affect them)
   string = replace_all_preformatted(string)
   
-  # Remove horizontal whitespace before line break elements
-  string = re.sub(r'[^\S\n]*(?=<br>)', '', string)
+  # Remove horizontal whitespace around line break elements
+  string = re.sub(r'[^\S\n]*<br>[^\S\n]*', '<br>', string)
   
   # Remove leading whitespace and empty lines
   string = re.sub(r'^[\s]+', '', string, flags = re.MULTILINE)
