@@ -262,7 +262,7 @@
       | 〈方田〉
     </@>.
     The <:y>bracketed portions</:y> below are inline two-column annotations by
-    劉徽<^> Lau Fai | Liu Hui | Liu Hui </^>, see the
+    劉徽 <^> Lau Fai | Liu Hui | Liu Hui </^>, see the
     <@>
       《四部叢刊初編》
       | https://ctext.org/library.pl?if=en&file=77747&page=13
@@ -319,7 +319,7 @@
       <li>動有參差：
         have unevenness {in their} motions <br>
         This is a literal rendering. I think
-        劉徽<^> Lau Fai | Liu Hui | Liu Hui </^> is trying to say that
+        劉徽 <^> Lau Fai | Liu Hui | Liu Hui </^> is trying to say that
         different representations of fractions lead to inconsistencies
         (so first reduce them before doing any other calculations).
       </li>
@@ -1051,8 +1051,8 @@
     {the} barrel divisor,
       one<:n>1</:n> rule, six<:n>6</:n> inches {and} two<:n>2</:n> tenths <br>
     The "barrel divisor" gives the conversion between
-    the volume unit cubic rule~(尺<^> ch'ek | ch'ih | chi </^>)
-    and the capacity unit barrel~(斛<^> huk | hu | hu </^>).
+    the volume unit cubic rule~(尺 <^> ch'ek | ch'ih | chi </^>)
+    and the capacity unit barrel~(斛 <^> huk | hu | hu </^>).
     In modern (dimensionally consistent) notation, we would write
     <$$>
       1 = \frac{1.62 \unit{rules}^3}{\unit{barrel}}.
@@ -1078,9 +1078,9 @@
         \end{aligned}
       </$$>
     so parsing
-      rule~(尺<^> ch'ek | ch'ih | chi </^>),
-      inch~(寸<^> ts'u"n | ts'un | cun </^>) and
-      tenth~(分<^> fan | fe^n | fen </^>)
+      rule~(尺 <^> ch'ek | ch'ih | chi </^>),
+      inch~(寸 <^> ts'u"n | ts'un | cun </^>) and
+      tenth~(分 <^> fan | fe^n | fen </^>)
     individually as cubic units doesn't make sense.
   </li>
 </ul>
@@ -1303,7 +1303,7 @@
     奇，音羈，
     <^cm> kei1 | ji= </^cm> <br>
     To convert area from square paces
-    to acres, 畝<^> mau | mu | mu </^>,
+    to acres, 畝 <^> mau | mu | mu </^>,
     one divides by the conversion factor
       <$>240 \unit{paces}^2 / \unit{acre}</$>
     (called the "acre divisor" below).
@@ -1403,7 +1403,7 @@
     remainder one hundred {and} eighty<:n>180</:n> paces.
 </#t>
 <ul>
-  <li>頃<^> k'ing | ch'ing | qing </^>：
+  <li>頃 <^> k'ing | ch'ing | qing </^>：
     yardland <br>
     100 Chinese acres.
     Difficult to render, and I have chosen "yardland"
