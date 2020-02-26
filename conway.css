@@ -119,6 +119,7 @@ div.boxed {
 
 li div.boxed {
   font-size: medium;
+  border: 2px solid #ddd;
 }
 
 @media print {
@@ -288,6 +289,11 @@ div.translation hr { /* https://stackoverflow.com/a/4151770 */
   color: black;
   height: 1px;
   margin: 0.25em 0;
+}
+
+li div.translation hr {
+  background-color: #ddd;
+  color: #ddd;
 }
 
 /* ---------------------------------------------------------------- */
