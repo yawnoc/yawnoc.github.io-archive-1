@@ -1731,7 +1731,7 @@
 
 <#t>
   以一千除之，即得。 |
-  Dividing it by one thousand, {we} are done.
+  Dividing it by one thousand<:n>1000</:n>, {we} are done.
 </#t>
 
 <p>
