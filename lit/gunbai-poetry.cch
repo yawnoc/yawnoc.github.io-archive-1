@@ -66,16 +66,16 @@
 
 <#t>
   <div class="centred-flex"><div>
-    盛年不重來，<br>
-    一日難再晨。<br>
-    及時當勉勵，<br>
+    盛年不重來， <br>
+    一日難再晨。 <br>
+    及時當勉勵， <br>
     歲月不待人。
   </div></div>
   |
   <div class="centred-flex"><div>
-    {The} years of prime come not once more;<br>
-    {A} day cannot dawn again.<br>
-    {In} good time ought {we} spur,<br>
+    {The} years of prime come not once more; <br>
+    {A} day cannot dawn again. <br>
+    {In} good time ought {we} spur, <br>
     {For} years {and} months await not man.
   </div></div>
 </#t>

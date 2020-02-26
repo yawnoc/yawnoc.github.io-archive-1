@@ -268,7 +268,7 @@
   </li>
   
   <li>
-    <b>Rendered</b><br>
+    <b>Rendered</b> <br>
       <`> if x == 1 && y < 0 </`>
   </li>
   
@@ -374,7 +374,7 @@
   </li>
   
   <li>
-    <b>Rendered</b><br>
+    <b>Rendered</b> <br>
       <$> 1 + 1 < 3 </$>
   </li>
   
@@ -607,7 +607,7 @@
   </li>
   
   <li>
-    <b>Rendered</b><br>
+    <b>Rendered</b> <br>
       <+>
         /favicon-32x32.png
         | Site favicon: two crescents
@@ -647,7 +647,7 @@
   </li>
   
   <li>
-    <b>Rendered</b><br>
+    <b>Rendered</b> <br>
       絲 <^> see1 | ssuu1 | si= </^>
   </li>
   
@@ -668,14 +668,14 @@
   <li>
     <b>CCH</b>
     <``>
-      惡，平聲， <^cm> woo1 | wu= </^cm><br>
+      惡，平聲， <^cm> woo1 | wu= </^cm> <br>
       勝，平聲， <^cmg> shing1 | she=ng | she\ng </^cmg>
     </``>
   </li>
   
   <li>
-    <b>Rendered</b><br>
-      惡，平聲， <^cm> woo1 | wu= </^cm><br>
+    <b>Rendered</b> <br>
+      惡，平聲， <^cm> woo1 | wu= </^cm> <br>
       勝，平聲， <^cmg> shing1 | she=ng | she\ng </^cmg>
   </li>
   
@@ -703,7 +703,7 @@
   </li>
   
   <li>
-    <b>Rendered</b><br>
+    <b>Rendered</b> <br>
       <@d> Link division tag | link-division </@d>
   </li>
   
@@ -773,13 +773,13 @@
         This link, with "quotes", {italics} and \{literal curly brackets\},
         has no title.
         | https://en.wikipedia.org/wiki/Main_Page
-      </@><br>
+      </@> <br>
       <@>
         This link, with "quotes", {italics} and \{literal curly brackets\},
         has the same title as its content (with proper escaping).
         | https://en.wikipedia.org/wiki/Main_Page
         |
-      </@><br>
+      </@> <br>
       <@>
         This link, with "quotes", {italics} and \{literal curly brackets\},
         has a custom title.
@@ -790,18 +790,18 @@
   </li>
   
   <li>
-    <b>Rendered</b><br>
+    <b>Rendered</b> <br>
       <@>
         This link, with "quotes", {italics} and \{literal curly brackets\},
         has no title.
         | https://en.wikipedia.org/wiki/Main_Page
-      </@><br>
+      </@> <br>
       <@>
         This link, with "quotes", {italics} and \{literal curly brackets\},
         has the same title as its content (with proper escaping).
         | https://en.wikipedia.org/wiki/Main_Page
         |
-      </@><br>
+      </@> <br>
       <@>
         This link, with "quotes", {italics} and \{literal curly brackets\},
         has a custom title.
@@ -1715,7 +1715,7 @@
   </li>
   
   <li>
-    <b>Rendered</b><br>
+    <b>Rendered</b> <br>
       An {italicised} word, followed by
       {an italicised phrase containing a {nested-italic} part}.
   </li>
@@ -1755,8 +1755,8 @@
                     A more heavily indented line.
       </pre>
       <p>
-        A line with leading whitespace.<br>
-            A line followed by a blank line.<br>
+        A line with leading whitespace. <br>
+            A line followed by a blank line. <br>
             
         A line ending in a backslash\
             (stuff originally on the next line).
@@ -1786,8 +1786,8 @@
                     A more heavily indented line.
       </pre>
       <p>
-        A line with leading whitespace.<br>
-            A line followed by a blank line.<br>
+        A line with leading whitespace. <br>
+            A line followed by a blank line. <br>
             
         A line ending in a backslash\
             (stuff originally on the next line).
@@ -1819,10 +1819,10 @@
   <li>
     <b>CCH</b>
     <``>
-      《禮記\.禮運》大道之行也，天下為公。<br>
-      \《禮記\.禮運》大道之行也，天下為公。<br>
+      《禮記\.禮運》大道之行也，天下為公。 <br>
+      \《禮記\.禮運》大道之行也，天下為公。 <br>
       黑、<:r>赤</:r>、<:g>翠</:g>、<:b>青</:b>、<:v>紫</:v>、<:y>黃</:y>、\
-        <:h>顯</:h>、<:t>思</:t>。<br>
+        <:h>顯</:h>、<:t>思</:t>。 <br>
       前\!後
     </``>
   </li>
@@ -1838,11 +1838,11 @@
   </li>
   
   <li>
-    <b>Rendered</b><br>
-      《禮記\.禮運》大道之行也，天下為公。<br>
-      \《禮記\.禮運》大道之行也，天下為公。<br>
+    <b>Rendered</b> <br>
+      《禮記\.禮運》大道之行也，天下為公。 <br>
+      \《禮記\.禮運》大道之行也，天下為公。 <br>
       黑、<:r>赤</:r>、<:g>翠</:g>、<:b>青</:b>、<:v>紫</:v>、<:y>黃</:y>、\
-        <:h>顯</:h>、<:t>思</:t>。<br>
+        <:h>顯</:h>、<:t>思</:t>。 <br>
       前\!後
   </li>
   

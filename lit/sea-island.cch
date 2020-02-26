@@ -14,7 +14,7 @@
 </=h>
 
 <h1>
-  《海島算經》 \or<br>
+  《海島算經》 \or <br>
   "{The} Sea Island Computational Classic"
 </h1>
 
@@ -203,7 +203,7 @@
     \or uniform
   </li>
   <li>丈<^> choeng | chang | zhang </^>：
-    rod; \or measure<br>
+    rod; \or measure <br>
     A unit of distance, of the order three metres.
     Note that <$>3 \unit{rods} = 5 \unit{paces}</$>.
   </li>
@@ -213,12 +213,12 @@
   </li>
   <li>步<^> pou | pu | bu </^>：
     paces;
-    \or steps<br>
+    \or steps <br>
     A unit of distance, of the order two metres.
   </li>
   <li>參相直：
     mutually straight {the} three;
-    \or three-in-line<br>
+    \or three-in-line <br>
     參 means 三, three (<^e>saam1</^e>/<^e>sa=n</^e>).
   </li>
 </ul>
@@ -328,7 +328,7 @@
 </#t>
 <ul>
   <li>里<^> lei | li | li </^>：
-    miles<br>
+    miles <br>
     A
     <@>
       unit of distance
@@ -338,7 +338,7 @@
     Note that <$>1 \unit{mile} = 300 \unit{paces}</$>.
   </li>
   <li>一百二：
-    one hundred {and} two<:n>102</:n><br>
+    one hundred {and} two<:n>102</:n> <br>
     (Remember I {distinguish} words not in the original Chinese.)
     <ul>
       <li>
@@ -372,20 +372,20 @@
     \or numerator
   </li>
   <li>間：
-    separation<br>
+    separation <br>
       間，去聲，
       <^cm> kaan3 | jia\n </^cm>
   </li>
   <li>相多：
     mutual excess;
-    \or difference<br>
+    \or difference <br>
     It is not immediately obvious, but <b>"mutual excess" refers to
     the difference between the backward walking distances
     from the two poles.</b>
   </li>
   <li>法：
     divisor;
-    \or denominator<br>
+    \or denominator <br>
     <$$>
       \frac{\text{實}}{\text{法}} = \frac{\text{[dividend]}}{\text{[divisor]}}
     </$$>
@@ -988,8 +988,8 @@
 <ul>
   <li>句：
     minor cathetus;
-    \or shorter leg (of a right-angled triangle)<br>
-    Variant of 勾.<br>
+    \or shorter leg (of a right-angled triangle) <br>
+    Variant of 勾. <br>
     A <@>
       cathetus
       | https://en.wikipedia.org/wiki/Cathetus
@@ -999,7 +999,7 @@
   </li>
   <li>股：
     major cathetus;
-    \or longer leg (of a right-angled triangle)<br>
+    \or longer leg (of a right-angled triangle) <br>
     Surveying the sea island from distances much greater than its height,
     the horizontal lengths will be much greater than
     the vertical lengths.
@@ -1009,9 +1009,9 @@
     <:b>minor catheti~(句)</:b>.
   </li>
   <li>較：
-    <:r>(horizontal) chariot-beam</:r><br>
+    <:r>(horizontal) chariot-beam</:r> <br>
       較，入聲，音覺，
-      <^cm> kok8 | jia\o </^cm><br>
+      <^cm> kok8 | jia\o </^cm> <br>
     If I understand
     <@>
       the entry in 《康熙字典》

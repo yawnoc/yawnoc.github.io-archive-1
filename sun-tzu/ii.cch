@@ -13,7 +13,7 @@
 </=h>
 
 <h1>
-  《孫子算經\.卷中》 \or<br>
+  《孫子算經\.卷中》 \or <br>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II"
 </h1>
 
@@ -32,7 +32,7 @@
 <#n>
   
   <@>
-    《孫子算經》 \or<br>
+    《孫子算經》 \or <br>
     "<^e>Sun~Tzuu</^e>'s Computational Classic"
     | /sun-tzu/
     | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
@@ -191,10 +191,10 @@
 <;s@@> 2 | 1 | 26 | 153 | 52130 | 1 | 39 </;s@@>
 
 <#t>
-  今有一十八分之一十二。問約之得幾何？<br>
+  今有一十八分之一十二。問約之得幾何？ <br>
   答曰：三分之二。 |
   Now there be twelve eighteenths<:n>12/18</:n>.
-  {We} ask: how much resulteth, {upon} reducing it?<br>
+  {We} ask: how much resulteth, {upon} reducing it? <br>
   Answer saith: two thirds<:n>2/3</:n>.
 </#t>
 <ul>
@@ -243,7 +243,7 @@
 <ul>
   <li>以少減多，等數得六：
     diminish {the} greater by {the} lesser.
-    {For the} equal quantity {there} resulteth six<:n>6</:n><br>
+    {For the} equal quantity {there} resulteth six<:n>6</:n> <br>
     In my opinion this description of the algorithm lacks clarity;
     there isn't any instruction here to <strong>repeat</strong> the subtraction
     <strong>until</strong> you get the equal quantity~6.
@@ -269,17 +269,17 @@
     </@>
     version. Punctuation for these <:y>bracketed annotations</:y> is mine:
     <#t>
-      今有十八分之十二。問約之得幾何？<br>
+      今有十八分之十二。問約之得幾何？ <br>
       答曰：三分之二。 |
       Now there be twelve eighteenths<:n>12/18</:n>.
-      {We} ask: how much resulteth, {upon} reducing it?<br>
+      {We} ask: how much resulteth, {upon} reducing it? <br>
       Answer saith: two thirds<:n>2/3</:n>.
     </#t>
     <#t>
-      又有九十一分之四十九。問約之得幾何？<br>
+      又有九十一分之四十九。問約之得幾何？ <br>
       答曰：十三分之七。 |
       Also there be forty-nine ninety-firsts<:n>49/91</:n>.
-      {We} ask: how much resulteth, {upon} reducing it?<br>
+      {We} ask: how much resulteth, {upon} reducing it? <br>
       Answer saith: seven thirteenths<:n>7/13</:n>.
     </#t>
     <#t>
@@ -317,13 +317,13 @@
         \or intact
       </li>
       <li>動有參差：
-        have unevenness {in their} motions<br>
+        have unevenness {in their} motions <br>
         This is a literal rendering. I think
         劉徽<^> Lau Fai | Liu Hui | Liu Hui </^> is trying to say that
         different representations of fractions lead to inconsistencies
         (so first reduce them before doing any other calculations).
       </li>
-      <li>諸<br>
+      <li>諸 <br>
         Contraction of 之於 (I think).
       </li>
     </ul>
@@ -348,7 +348,7 @@
     <ul>
       <li>重疊：
         repeated pilings; 
-        \or overlappings<br>
+        \or overlappings <br>
         I think this means "multiples".
       </li>
     </ul>
@@ -359,11 +359,11 @@
 <;s@@> 2 | 2 | 26 | 153 | 52133 | 2 | 39 </;s@@>
 
 <#t>
-  今有三分之一、五分之二。問合之二得幾何？<br>
+  今有三分之一、五分之二。問合之二得幾何？ <br>
   答曰：一十五分之一十一。 |
   Now there be one of three shares<:n>1/3</:n>
   {and} two of five shares<:n>2/5</:n>.
-  {We} ask: how much resulteth, {upon} joining them two?<br>
+  {We} ask: how much resulteth, {upon} joining them two? <br>
   Answer saith: eleven of fifteen shares<:n>11/15</:n>.
 </#t>
 <ul>
@@ -384,7 +384,7 @@
     has 十一 for 一十一.
   </li>
   <li><$>b</$> 分之 <$>a</$>:
-    \lit <$>a</$> of <$>b</$> shares<br>
+    \lit <$>a</$> of <$>b</$> shares <br>
     I have rendered fractions literally from here up to and including
     <@> ¶4 | #4 | Vol. II ¶4 </@>, as there will be references to
     the numerator 「之 <$>a</$>」, "<$>a</$> of" and
@@ -430,7 +430,7 @@
 </#t>
 <ul>
   <li>不滿法：
-    {The dividend} reacheth not {the} divisor<br>
+    {The dividend} reacheth not {the} divisor <br>
     This is saying that 11~\<~15, i.e.~the fraction~11/15 is proper
     (so no further division is necessary).
   </li>
@@ -440,11 +440,11 @@
 <;s@@> 2 | 3 | 28 | 153 | 52136 | 3 | 40 </;s@@>
 
 <#t>
-  今有九分之八，減其五分之一。問餘幾何？<br>
+  今有九分之八，減其五分之一。問餘幾何？ <br>
   答曰：四十五分之三十一。 |
   Now there be eight of nine shares<:n>8/9</:n>,
   {and we} diminish of it one of five shares<:n>1/5</:n>.
-  {We} ask: how much remaineth?<br>
+  {We} ask: how much remaineth? <br>
   Answer saith: thirty-one of forty-five shares<:n>31/45</:n>.
 </#t>
 
@@ -572,7 +572,7 @@
     erroneously has 母互乘于 for 母互乘子.
   </li>
   <li>平實：
-    level dividend<br>
+    level dividend <br>
     <$>L = aBC + bCA + cAB = 63</$>.
   </li>
 </ul>
@@ -601,7 +601,7 @@
 </#t>
 <ul>
   <li>未并者：
-    those not yet combined<br>
+    those not yet combined <br>
     These are the individual terms <$>aBC</$>, <$>bCA</$> and <$>cAB</$>,
     before they were combined subsidiarily to make the level dividend <$>L</$>.
   </li>
@@ -623,7 +623,7 @@
 </#t>
 <ul>
   <li>等數：
-    equal quantity<br>
+    equal quantity <br>
     Greatest common divisor (gcd) is called an "equal quantity"
     because it is determined by repeated subtraction until an equal quantity
     is obtained, see <@> ¶1 | #1 | Vol. II ¶1 </@>.
@@ -657,10 +657,10 @@
 <;s@@> 2 | 5 | 30 | 153 | 52142 | 5 | 42 </;s@@>
 
 <#t>
-  今有粟一斗。問為糲米幾何？<br>
+  今有粟一斗。問為糲米幾何？ <br>
   答曰：六升。 |
   Now there be grain, one peck.
-  {We} ask: how much be {this in} coarse grain?<br>
+  {We} ask: how much be {this in} coarse grain? <br>
   Answer saith: six<:n>6</:n> quarts.
 </#t>
 <ul>
@@ -751,10 +751,10 @@
 <;s@@> 2 | 6 | 30 | 153 | 52145 | 6 | 42 </;s@@>
 
 <#t>
-  今有粟二斗一升。問為粺米幾何？<br>
+  今有粟二斗一升。問為粺米幾何？ <br>
   答曰：一斗一升五十分升之一十七。 |
   Now there be grain, two<:n>2</:n> pecks {and} one<:n>1</:n> quart.
-  {We} ask: how much be {this in} fine grain?<br>
+  {We} ask: how much be {this in} fine grain? <br>
   Answer saith:
     one<:n>1</:n> peck, one<:n>1</:n> quart {and}
     seventeen fiftieths<:n>17/50</:n> of {a} quart.
@@ -769,7 +769,7 @@
     erroneously has 稗 for 粺, both here and below.
   </li>
   <li>粺：
-    fine grain<br>
+    fine grain <br>
       粺，
       Cantonese:
       《分韻撮要》 <^e>p'ei4</^e>;
@@ -804,10 +804,10 @@
 <;s@@> 2 | 7 | 30 | 154 | 52148 | 7 | 43 </;s@@>
 
 <#t>
-  今有粟四斗五升。問為糳米幾何？<br>
+  今有粟四斗五升。問為糳米幾何？ <br>
   答曰：二斗一升五分升之三。 |
   Now there be grain, four<:n>4</:n> pecks {and} five<:n>5</:n> quarts.
-  {We} ask: how much be {this in} intricate grain?<br>
+  {We} ask: how much be {this in} intricate grain? <br>
   Answer saith:
     two<:n>2</:n> pecks, one<:n>1</:n> quart {and}
     three fifths<:n>3/5</:n> of {a} quart.
@@ -833,7 +833,7 @@
 </#t>
 <ul>
   <li>以二約：
-    reducing by two<br>
+    reducing by two <br>
     The intricate grain rate~24 here and the (normal) grain rate~50 below
     are reduced by their greatest common divisor, <$>\gcd (24, 50) = 2</$>.
   </li>
@@ -849,7 +849,7 @@
 </#t>
 <ul>
   <li>不盡，以等數約之：
-    {for the} remainder, reduce it by {the} equal quantity<br>
+    {for the} remainder, reduce it by {the} equal quantity <br>
     The division 540~÷~25 leaves remainder 15/25.
     Their "equal quantity" (see <@> ¶1 | #1 | Vol. II ¶1 </@>)
     is <$>\gcd (15, 25) = 5</$>, by which the fraction is reduced to~3/5.
@@ -866,10 +866,10 @@
 <;s@@> 2 | 8 | 30 | 154 | 52151 | 8 | 44 </;s@@>
 
 <#t>
-  今有粟七斗九升。問為御米幾何？<br>
+  今有粟七斗九升。問為御米幾何？ <br>
   答曰：三斗三升一合八勺。 |
   Now there be grain, seven<:n>7</:n> pecks {and} nine<:n>9</:n> quarts.
-  {We} ask: how much be {this in} poppy seed?<br>
+  {We} ask: how much be {this in} poppy seed? <br>
   Answer saith:
     three<:n>3</:n> pecks,
     three<:n>3</:n> quarts,
@@ -936,7 +936,7 @@
     erroneously has ●~(<code>U+25CF</code>)
     for both instances of 甎.
   </li>
-  <li>枚<br>
+  <li>枚 <br>
     Classifier for bricks, omitted in the English.
   </li>
 </ul>
@@ -959,7 +959,7 @@
 </#t>
 <ul>
   <li>九千尺：
-    nine thousand<:n>9000</:n> rules<br>
+    nine thousand<:n>9000</:n> rules <br>
     This is area, but what we would call "square rules"
     were simply referred to as "rules".
   </li>
@@ -992,7 +992,7 @@
 </#t>
 <ul>
   <li>窖：地藏也；
-    cellar<br>
+    cellar <br>
     窖，居效切，
     <^cm> kaau3 | jia\o </^cm>
   </li>
@@ -1049,7 +1049,7 @@
 <ul>
   <li>斛法一尺六寸二分：
     {the} barrel divisor,
-      one<:n>1</:n> rule, six<:n>6</:n> inches {and} two<:n>2</:n> tenths<br>
+      one<:n>1</:n> rule, six<:n>6</:n> inches {and} two<:n>2</:n> tenths <br>
     The "barrel divisor" gives the conversion between
     the volume unit cubic rule~(尺<^> ch'ek | ch'ih | chi </^>)
     and the capacity unit barrel~(斛<^> huk | hu | hu </^>).
@@ -1299,9 +1299,9 @@
 </#t>
 <ul>
   <li>奇：
-    remainder<br>
+    remainder <br>
     奇，音羈，
-    <^cm> kei1 | ji= </^cm><br>
+    <^cm> kei1 | ji= </^cm> <br>
     To convert area from square paces
     to acres, 畝<^> mau | mu | mu </^>,
     one divides by the conversion factor
@@ -1404,7 +1404,7 @@
 </#t>
 <ul>
   <li>頃<^> k'ing | ch'ing | qing </^>：
-    yardland<br>
+    yardland <br>
     100 Chinese acres.
     Difficult to render, and I have chosen "yardland"
     because it sounds more natural,
@@ -1494,7 +1494,7 @@
     </@>
     have 高三尺 after 木方三尺.
   </li>
-  <li>枚<br>
+  <li>枚 <br>
     Classifier, omitted in the English.
   </li>
 </ul>
@@ -1520,7 +1520,7 @@
 </#t>
 <ul>
   <li>一尺：
-    one<:n>1</:n> rule<br>
+    one<:n>1</:n> rule <br>
     This is a <strong>cubic</strong> rule,
     as are the 27~rules above.
   </li>
@@ -1541,12 +1541,12 @@
 <;s@@> 2 | 16 | 38 | 155 | 52177 | 16 | 50 </;s@@>
 
 <#t>
-  今有索長五千七百九十四步，欲使作方。問幾何？<br>
+  今有索長五千七百九十四步，欲使作方。問幾何？ <br>
   答曰：一千四百四十八步三尺。 |
   Now there be rope, of length
     five thousand, seven hundred {and} ninety-four<:n>5794</:n> paces,
   {and we} wish to make {it} be {a} square.
-  {We} ask: how much {be its edge}?<br>
+  {We} ask: how much {be its edge}? <br>
   Answer saith:
     one thousand, four hundred {and} forty-eight<:n>1448</:n> paces
     {and} three<:n>3</:n> rules.
@@ -1570,7 +1570,7 @@
 </#t>
 <ul>
   <li>因：
-    multiplying<br>
+    multiplying <br>
     As in times tables, 九因歌, "{the} Song of Nine Multiples".
   </li>
 </ul>
@@ -1619,7 +1619,7 @@
 </#t>
 <ul>
   <li>一千尺：
-    one thousand<:n>1000</:n> rules<br>
+    one thousand<:n>1000</:n> rules <br>
     These are <strong>cubic</strong> rules.
   </li>
 </ul>
@@ -1639,7 +1639,7 @@
 </#t>
 <ul>
   <li>法：
-    method<br>
+    method <br>
     <@>
       Version~B
       | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=155
@@ -1826,7 +1826,7 @@
 <ul>
   <li>超：跳也；
     jumping over;
-    \or skipping<br>
+    \or skipping <br>
     Taking double steps, so that 100 is in fact 10000.
   </li>
 </ul>
@@ -1909,7 +1909,7 @@
     have just 商 for 上商.
   </li>
   <li>上商：
-    upper quotient<br>
+    upper quotient <br>
     The integer part of the square root to be computed.
   </li>
 </ul>
@@ -1970,7 +1970,7 @@
 </#t>
 <ul>
   <li>方：
-    (morally) upright<br>
+    (morally) upright <br>
     方法 is one of three named divisors whose names relate to integrity:
     <ul>
       <li>方法： upright divisor (<$>s_1</$>)</li>
@@ -2039,7 +2039,7 @@
 </#t>
 <ul>
   <li>除：
-    remove {this} from<br>
+    remove {this} from <br>
     This is also the word for division. Division was thought of as
     repeatedly removing the divisor from the dividend.
   </li>
@@ -2978,7 +2978,7 @@
 </#t>
 <ul>
   <li>下法：
-    lower divisors<br>
+    lower divisors <br>
     Confusingly, this refers not to the lower divisor~(下法),
     currently <$>\colr L = 1</$>,
     but to the total of the three straight divisors,

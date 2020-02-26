@@ -13,7 +13,7 @@
 </=h>
 
 <h1>
-  《孫子算經\.卷上》 \or<br>
+  《孫子算經\.卷上》 \or <br>
   "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I"
 </h1>
 
@@ -32,7 +32,7 @@
 <#n>
   
   <@>
-    《孫子算經》 \or<br>
+    《孫子算經》 \or <br>
     "<^e>Sun~Tzuu</^e>'s Computational Classic"
     | /sun-tzu/
     | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
@@ -230,7 +230,7 @@
 </#t>
 <ul>
   <li>度：
-    measuring of length<br>
+    measuring of length <br>
       度，入聲，
       <^cmg> tok9 | duo\ | duo/ </^cmg>
   </li>
@@ -239,7 +239,7 @@
     \lit ariseth from
   </li>
   <li>忽<^> fat | hu | hu </^>：
-    floss<br>
+    floss <br>
     1/100,000 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
     <@>
       Its entry in 《康熙字典》
@@ -260,32 +260,32 @@
 </ul>
 
 <#t>
-  十忽為一絲，<br>
-  十絲為一毫，<br>
-  十毫為一釐，<br>
-  十釐為一分，<br>
-  十分為一寸，<br>
-  十寸為一尺，<br>
-  十尺為一丈，<br>
+  十忽為一絲， <br>
+  十絲為一毫， <br>
+  十毫為一釐， <br>
+  十釐為一分， <br>
+  十分為一寸， <br>
+  十寸為一尺， <br>
+  十尺為一丈， <br>
   十丈為一引； |
-  Ten<:n>10</:n> flosses make one thread;<br>
-  ten<:n>10</:n> threads make one mil;<br>
-  ten<:n>10</:n> mils make one cent;<br>
-  ten<:n>10</:n> cents make one tenth;<br>
-  ten<:n>10</:n> tenths make one inch;<br>
-  ten<:n>10</:n> inches make one rule;<br>
-  ten<:n>10</:n> rules make one rod;<br>
+  Ten<:n>10</:n> flosses make one thread; <br>
+  ten<:n>10</:n> threads make one mil; <br>
+  ten<:n>10</:n> mils make one cent; <br>
+  ten<:n>10</:n> cents make one tenth; <br>
+  ten<:n>10</:n> tenths make one inch; <br>
+  ten<:n>10</:n> inches make one rule; <br>
+  ten<:n>10</:n> rules make one rod; <br>
   ten<:n>10</:n> rods make one draw.
 </#t>
 <ul>
   <li>絲<^> see | ssuu | si </^>：
-    (silk) thread<br>
+    (silk) thread <br>
     1/10,000 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
   </li>
   <li>毫<^> hou | hao | hao </^>：
     mil;
     \or thou;
-    \lit fine hair<br>
+    \lit fine hair <br>
     1/1,000 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
     Similar to the imperial
     <@>
@@ -295,15 +295,15 @@
     </@>.
   </li>
   <li>釐<^> lei | li | li </^>：
-    cent<br>
+    cent <br>
     1/100 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
   </li>
   <li>分<^> fan | fe^n | fen </^>：
-    tenth<br>
+    tenth <br>
     1/10 of the Chinese inch, 寸<^> ts'u"n | ts'un | cun </^>.
   </li>
   <li>寸<^> ts'u"n | ts'un | cun </^>：
-    inch<br>
+    inch <br>
     The
     <@>
       <b>Chinese inch</b>
@@ -318,7 +318,7 @@
   <li>尺<^> ch'ek | ch'ih | chi </^>：
     rule;
     \or ruler;
-    \or covid<br>
+    \or covid <br>
     10~Chinese inches.
     This is of the order one foot,
     but I have not rendered this as "foot"
@@ -332,7 +332,7 @@
   <li>丈<^> choeng | chang | zhang </^>：
     rod;
     \or staff;
-    \or measure<br>
+    \or measure <br>
     Difficult to render because Chinese dictionaries
     simply define it as 10~尺<^> ch'ek | ch'ih | chi </^>,
     with the meanings "elder male",
@@ -355,11 +355,11 @@
 </ul>
 
 <#t>
-  五十尺為一端；<br>
-  四十尺為一匹；<br>
+  五十尺為一端； <br>
+  四十尺為一匹； <br>
   六尺為一步。 |
-  Fifty<:n>50</:n> rules make one end;<br>
-  forty<:n>40</:n> rules make one length;<br>
+  Fifty<:n>50</:n> rules make one end; <br>
+  forty<:n>40</:n> rules make one length; <br>
   six<:n>6</:n> rules make one pace.
 </#t>
 <ul>
@@ -375,7 +375,7 @@
     erroneously has 五十引為一端.
   </li>
   <li>匹<^> p'at | p'i | pi </^>：
-    length<br>
+    length <br>
     This is the only unit rendering which I am unsatisfied with.
     匹 is the classifier for cloth, 一匹布 being "one length of cloth".
   </li>
@@ -392,7 +392,7 @@
 <ul>
   <li>畝<^> mau | mu | mu </^>：
     acre;
-    \lit field<br>
+    \lit field <br>
     This is area, what today would be called
     240 <strong>square</strong> paces.
     Classical Chinese mathematics did not have
@@ -415,7 +415,7 @@
 </#t>
 <ul>
   <li>里<^> lei | li | li </^>：
-    mile<br>
+    mile <br>
     The
     <@>
       Chinese mile
@@ -556,9 +556,9 @@
 <ul>
   <li>稱：
     measuring of weight;
-    \or weighing<br>
+    \or weighing <br>
       稱，
-      <^cm> 去聲~ch'ing3 | 平聲~che=ng </^cm><br>
+      <^cm> 去聲~ch'ing3 | 平聲~che=ng </^cm> <br>
     Here 稱 is the verb "weigh", and
     Cantonese and Mandarin disagree on whether it should be read in
     去聲 (<^e>ch'ing3</^e>/<^e>che\ng</^e>) or
@@ -615,28 +615,28 @@
 </ul>
 
 <#t>
-  十黍為一絫，<br>
-  十絫為一銖，<br>
-  二十四銖為一兩，<br>
-  十六兩為一斤，<br>
-  三十斤為一鈞，<br>
+  十黍為一絫， <br>
+  十絫為一銖， <br>
+  二十四銖為一兩， <br>
+  十六兩為一斤， <br>
+  三十斤為一鈞， <br>
   四鈞為一石。 |
-  Ten<:n>10</:n> millets make one pile;<br>
-  ten<:n>10</:n> piles make one dram;<br>
-  twenty-four<:n>24</:n> drams make one tael;<br>
-  sixteen<:n>16</:n> taels make one catty;<br>
-  thirty<:n>30</:n> catties make one quarter;<br>
+  Ten<:n>10</:n> millets make one pile; <br>
+  ten<:n>10</:n> piles make one dram; <br>
+  twenty-four<:n>24</:n> drams make one tael; <br>
+  sixteen<:n>16</:n> taels make one catty; <br>
+  thirty<:n>30</:n> catties make one quarter; <br>
   four<:n>4</:n> quarters make one stone.
 </#t>
 <ul>
   <li>絫<^> l_u" | lei | lei </^>：
-    pile<br>
+    pile <br>
     Difficult to render because Chinese dictionaries
     simply define it as 10~黍<^> shu" | shu | shu </^>.
     I have taken "pile" from the interchangeable 累, "to accumulate/pile/heap".
   </li>
   <li>銖<^> chu" | chu | zhu </^>：
-    dram<br>
+    dram <br>
     Of the order one gram.
     According to
     <@>
@@ -654,30 +654,30 @@
     which is of similar magnitude.
   </li>
   <li>兩<^> loeng | liang | liang </^>：
-    tael<br>
+    tael <br>
     (Oh at last, a unit with a name
     <@>
       already established in English
       | https://en.wikipedia.org/wiki/Tael
       | Wikipedia: Tael
-    </@>.)<br>
+    </@>.) <br>
     One sixteenth<:n>1/16</:n> of a catty,
     except in Mainland China,
     where it has been metricised to a tenth<:n>1/10</:n>,
     thus ruining the phrase 半斤八兩, "half {a} catty {is} eight taels".
   </li>
   <li>斤<^> kan | chin | jin </^>：
-    catty<br>
+    catty <br>
     (Hooray, another unit with a name
     <@>
       already established in English
       | https://en.wikipedia.org/wiki/Catty
       | Wikipedia: Catty
-    </@>.)<br>
+    </@>.) <br>
     Of the order one pound, or half a kilogram.
   </li>
   <li>鈞<^> kwan | chu"n | jun </^>：
-    quarter<br>
+    quarter <br>
     A quarter of the 石<^> shek | shih | shi </^> or "stone" below,
     and of similar weight to the
     <@>
@@ -699,7 +699,7 @@
     erroneously has 鉤 for 鈞.
   </li>
   <li>石<^> shek | shih | shi </^>：
-    \lit stone<br>
+    \lit stone <br>
     This is a literal rendering.
     The Chinese stone is of the order 120~pounds,
     making it closer to the
@@ -808,56 +808,56 @@
 </#t>
 <ul>
   <li>量：
-    measuring of capacity<br>
+    measuring of capacity <br>
       量，平聲，
       <^cm> loeng4 | lia/ng </^cm>
   </li>
   <li>粟<^> suk | su | su </^>：
-    \lit grain<br>
+    \lit grain <br>
     1/600,000 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
   </li>
 </ul>
 
 <#t>
-  六粟為一圭，<br>
-  十圭為一撮，<br>
-  十撮為一抄，<br>
-  十抄為一勺，<br>
-  十勺為一合，<br>
-  十合為一升，<br>
-  十升為一斗，<br>
+  六粟為一圭， <br>
+  十圭為一撮， <br>
+  十撮為一抄， <br>
+  十抄為一勺， <br>
+  十勺為一合， <br>
+  十合為一升， <br>
+  十升為一斗， <br>
   十斗為一斛。 |
-  Six<:n>6</:n> grains make one tablet;<br>
-  ten<:n>10</:n> tablets make one pinch;<br>
-  ten<:n>10</:n> pinches make one grab;<br>
-  ten<:n>10</:n> grabs make one ladle;<br>
-  ten<:n>10</:n> ladles make one gill;<br>
-  ten<:n>10</:n> gills make one quart;<br>
-  ten<:n>10</:n> quarts make one peck;<br>
+  Six<:n>6</:n> grains make one tablet; <br>
+  ten<:n>10</:n> tablets make one pinch; <br>
+  ten<:n>10</:n> pinches make one grab; <br>
+  ten<:n>10</:n> grabs make one ladle; <br>
+  ten<:n>10</:n> ladles make one gill; <br>
+  ten<:n>10</:n> gills make one quart; <br>
+  ten<:n>10</:n> quarts make one peck; <br>
   ten<:n>10</:n> pecks make one barrel.
 </#t>
 <ul>
   <li>圭<^> kwai | kuei | gui </^>：
-    \lit (jade) tablet<br>
+    \lit (jade) tablet <br>
     1/100,000 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
   </li>
   <li>撮<^> ts'u"t | ts'o | cuo </^>：
     \lit (two- or three-finger) pinch;
-    \or pugil<br>
+    \or pugil <br>
     1/10,000 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
   </li>
   <li>抄<^> ch'aau | ch'ao | chao </^>：
-    grab<br>
+    grab <br>
     1/1,000 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
     Others render this as "handful",
     but that sounds too big in my opinion.
   </li>
   <li>勺<^> choek | shao | shao </^>：
-    ladle<br>
+    ladle <br>
     1/100 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
   </li>
   <li>合<^> kap | ko | ge </^>：
-    gill<br>
+    gill <br>
     1/10 of the Chinese litre, 升<^> shing | she^ng | sheng </^>.
     Similar in size to the
     <@>
@@ -869,7 +869,7 @@
     In English, "gill" is read [dʒɪl], i.e.~with a soft 'g'.
   </li>
   <li>升<^> shing | she^ng | sheng </^>：
-    quart<br>
+    quart <br>
     The <b>Chinese litre</b>,
     of the same order of magnitude as the metric litre.
     I have avoided rendering it "litre"
@@ -883,14 +883,14 @@
     </@>.
   </li>
   <li>斗<^> tau | tou | dou </^>：
-    peck<br>
+    peck <br>
     10~Chinese litres,
     of similar to the imperial peck.
     A person of integrity will not 為五斗米折腰,
     or "bow down (\lit bend {at the} waist) for five pecks of grain".
   </li>
   <li>斛<^> huk | hu | hu </^>：
-    barrel<br>
+    barrel <br>
     100~Chinese litres.
     <@>
       James Legge
@@ -995,33 +995,33 @@
   </li>
 </ul>
 <#t>
-  六粟為一圭，<br>
-  十圭六十粟為一撮，<br>
-  十撮六百粟為一抄，<br>
-  十抄六千粟為一勺，<br>
-  十勺六萬粟為一合，<br>
-  十合六十萬粟為一升，<br>
-  十升六百萬粟為一斗，<br>
+  六粟為一圭， <br>
+  十圭六十粟為一撮， <br>
+  十撮六百粟為一抄， <br>
+  十抄六千粟為一勺， <br>
+  十勺六萬粟為一合， <br>
+  十合六十萬粟為一升， <br>
+  十升六百萬粟為一斗， <br>
   十斗六千萬粟為一斛。 |
-  six<:n>6</:n> grains make one tablet;<br>
+  six<:n>6</:n> grains make one tablet; <br>
   ten<:n>10</:n> tablets,
     sixty<:n>60</:n> grains,
-    make one pinch;<br>
+    make one pinch; <br>
   ten<:n>10</:n> pinches,
     six hundred<:n>600</:n> grains,
-    make one grab;<br>
+    make one grab; <br>
   ten<:n>10</:n> grabs,
     six thousand<:n>6000</:n> grains,
-    make one ladle;<br>
+    make one ladle; <br>
   ten<:n>10</:n> ladles,
     six myriad<:n>6~×~10<sup>4</sup></:n> grains,
-    make one gill;<br>
+    make one gill; <br>
   ten<:n>10</:n> gills,
     sixty myriad<:n>60~×~10<sup>4</sup></:n> grains,
-    make one quart;<br>
+    make one quart; <br>
   ten<:n>10</:n> quarts,
     six hundred myriad<:n>600~×~10<sup>4</sup></:n> grains,
-    make one peck;<br>
+    make one peck; <br>
   ten<:n>10</:n> pecks,
     six thousand myriad<:n>6000~×~10<sup>4</sup></:n> grains,
     make one barrel.
@@ -1033,25 +1033,25 @@
 </p>
 
 <#t>
-  十斛六億粟，<br>
-  百斛六兆粟，<br>
-  千斛六京粟，<br>
-  萬斛六陔粟，<br>
-  十萬斛六秭粟，<br>
-  百萬斛六壤粟，<br>
+  十斛六億粟， <br>
+  百斛六兆粟， <br>
+  千斛六京粟， <br>
+  萬斛六陔粟， <br>
+  十萬斛六秭粟， <br>
+  百萬斛六壤粟， <br>
   千萬斛六溝粟， |
   Ten<:n>10</:n> barrels {be}
-    six square-myriad<:n>6~×~10<sup>8</sup></:n> grains;<br>
+    six square-myriad<:n>6~×~10<sup>8</sup></:n> grains; <br>
   {an} hundred<:n>100</:n> barrels,
-    six multitude<:n>6~×~10<sup>9</sup></:n> grains;<br>
+    six multitude<:n>6~×~10<sup>9</sup></:n> grains; <br>
   {a} thousand<:n>1000</:n> barrels,
-    six capital<:n>6~×~10<sup>10</sup></:n> grains;<br>
+    six capital<:n>6~×~10<sup>10</sup></:n> grains; <br>
   {a} myriad<:n>10<sup>4</sup></:n> barrels,
-    six terrace<:n>6~×~10<sup>11</sup></:n> grains;<br>
+    six terrace<:n>6~×~10<sup>11</sup></:n> grains; <br>
   ten myriad<:n>10~×~10<sup>4</sup></:n> barrels,
-    six haystack<:n>6~×~10<sup>12</sup></:n> grains;<br>
+    six haystack<:n>6~×~10<sup>12</sup></:n> grains; <br>
   {an} hundred myriad<:n>100~×~10<sup>4</sup></:n> barrels,
-    six soil<:n>6~×~10<sup>13</sup></:n> grains;<br>
+    six soil<:n>6~×~10<sup>13</sup></:n> grains; <br>
   {a} thousand myriad<:n>1000~×~10<sup>4</sup></:n> barrels,
     six ditch<:n>6~×~10<sup>14</sup></:n> grains;
 </#t>
@@ -1060,7 +1060,7 @@
     square-myriad
   </li>
   <li>兆<^> sheeu | chao | zhao </^>：
-    multitude<br>
+    multitude <br>
     Effectively a formal version of "zillion".
   </li>
   <li>京<^> king | ching | jing </^>：
@@ -1070,7 +1070,7 @@
     \lit terrace
   </li>
   <li>秭<^> tsee | tzuu | zi </^>：
-    \lit haystack<br>
+    \lit haystack <br>
     More accurately, "grainstack".
   </li>
   <li>壤<^> yoeng | jang | rang </^>：
@@ -1082,14 +1082,14 @@
 </ul>
 
 <#t>
-  萬萬斛為一億斛六澗粟，<br>
-  十億斛六正粟，<br>
+  萬萬斛為一億斛六澗粟， <br>
+  十億斛六正粟， <br>
   百億斛六載粟。 |
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n> barrels
   make one square-myriad<:n>10<sup>8</sup></:n> barrels,
-    six stream<:n>6~×~10<sup>15</sup></:n> grains;<br>
+    six stream<:n>6~×~10<sup>15</sup></:n> grains; <br>
   ten square-myriad<:n>10~×~10<sup>8</sup></:n> barrels,
-    six right<:n>6~×~10<sup>16</sup></:n> grains;<br>
+    six right<:n>6~×~10<sup>16</sup></:n> grains; <br>
   {an} hundred square-myriad<:n>100~×~10<sup>8</sup></:n> barrels,
     six carry<:n>6~×~10<sup>17</sup></:n> grains.
 </#t>
@@ -1101,7 +1101,7 @@
     \lit right
   </li>
   <li>載<^> tsoi | tsai | zai </^>：
-    \lit carry<br>
+    \lit carry <br>
     Since this is a noun,
     it should be read in 上聲, i.e.~<^e>tsoi2</^e>/<^e>zavi</^e>.
     An explanation for its use to denote a large power of ten
@@ -1146,44 +1146,44 @@
 <;s@@> 1 | 4 | 6 | 147 | 52060 | 3 | 13 </;s@@>
 
 <#t>
-  凡大數之法，<br>
-  萬萬曰億，<br>
-  萬萬億曰兆，<br>
-  萬萬兆曰京，<br>
-  萬萬京曰陔，<br>
-  萬萬陔曰秭，<br>
-  萬萬秭曰壤，<br>
-  萬萬壤曰溝，<br>
-  萬萬溝曰澗，<br>
-  萬萬澗曰正，<br>
+  凡大數之法， <br>
+  萬萬曰億， <br>
+  萬萬億曰兆， <br>
+  萬萬兆曰京， <br>
+  萬萬京曰陔， <br>
+  萬萬陔曰秭， <br>
+  萬萬秭曰壤， <br>
+  萬萬壤曰溝， <br>
+  萬萬溝曰澗， <br>
+  萬萬澗曰正， <br>
   萬萬正曰載。 |
-  {In the} method of all large numbers:<br>
+  {In the} method of all large numbers: <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
-    {is} called {a} square-myriad<:n>10<sup>8</sup></:n>;<br>
+    {is} called {a} square-myriad<:n>10<sup>8</sup></:n>; <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       square-myriad<:n>10<sup>8</sup></:n>
-    {is} called {a} multitude<:n>10<sup>16</sup></:n>;<br>
+    {is} called {a} multitude<:n>10<sup>16</sup></:n>; <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       multitude<:n>10<sup>16</sup></:n>
-    {is} called {a} capital<:n>10<sup>24</sup></:n>;<br>
+    {is} called {a} capital<:n>10<sup>24</sup></:n>; <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       capital<:n>10<sup>24</sup></:n>
-    {is} called {a} terrace<:n>10<sup>32</sup></:n>;<br>
+    {is} called {a} terrace<:n>10<sup>32</sup></:n>; <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       terrace<:n>10<sup>32</sup></:n>
-    {is} called {a} haystack<:n>10<sup>40</sup></:n>;<br>
+    {is} called {a} haystack<:n>10<sup>40</sup></:n>; <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       haystack<:n>10<sup>40</sup></:n>
-    {is} called {a} soil<:n>10<sup>48</sup></:n>;<br>
+    {is} called {a} soil<:n>10<sup>48</sup></:n>; <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       soil<:n>10<sup>48</sup></:n>
-    {is} called {a} ditch<:n>10<sup>56</sup></:n>;<br>
+    {is} called {a} ditch<:n>10<sup>56</sup></:n>; <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       ditch<:n>10<sup>56</sup></:n>
-    {is} called {a} stream<:n>10<sup>64</sup></:n>;<br>
+    {is} called {a} stream<:n>10<sup>64</sup></:n>; <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       stream<:n>10<sup>64</sup></:n>
-    {is} called {a} right<:n>10<sup>72</sup></:n>;<br>
+    {is} called {a} right<:n>10<sup>72</sup></:n>; <br>
   {a} myriad myriad<:n>10<sup>4</sup>~×~10<sup>4</sup></:n>
       right<:n>10<sup>72</sup></:n>
     {is} called {a} carry<:n>10<sup>80</sup></:n>.
@@ -1312,20 +1312,20 @@
 <;s@@> 1 | 5 | 6 | 147 | 52061 | 4 | 13 </;s@@>
 
 <#t>
-  周三徑一；方五邪七。<br>
-  見邪求方，五之，七而一；<br>
+  周三徑一；方五邪七。 <br>
+  見邪求方，五之，七而一； <br>
   見方求邪，七之，五而一。 |
   {The} circumference three<:n>3</:n>: {the} diameter one<:n>1</:n>.
-  {The} square's {edge} five<:n>5</:n>: {the} diagonal seven<:n>7</:n>.<br>
+  {The} square's {edge} five<:n>5</:n>: {the} diagonal seven<:n>7</:n>. <br>
   Seeing {the} diagonal {and} seeking {the} square's {edge},
-    quintuple<:n>5~×</:n> it, {and make} seven<:n>7</:n> {as} one.<br>
+    quintuple<:n>5~×</:n> it, {and make} seven<:n>7</:n> {as} one. <br>
   Seeing {the} square's {edge} {and} seeking {the} diagonal,
     septuple<:n>7~×</:n> it, {and make} five<:n>5</:n> {as} one.
 </#t>
 <ul>
   <li>邪：
     diagonal;
-    \lit incline<br>
+    \lit incline <br>
     Here, 邪 is interchangeable
     with 斜.
   </li>
@@ -1334,11 +1334,11 @@
       quintuple<:n>5~×</:n>
       | https://en.wiktionary.org/wiki/quintuple#Verb
       | (Verb) to multiply something by five
-    </@> it<br>
+    </@> it <br>
     Multiply by five.
   </li>
   <li>七而一：
-    {make} seven<:n>7</:n> {as} one<br>
+    {make} seven<:n>7</:n> {as} one <br>
     Divide by seven.
   </li>
 </ul>
@@ -1425,11 +1425,11 @@
 <;s@@> 1 | 6 | 6 | 147 | 52062 | 5 | 13 </;s@@>
 
 <#t>
-  黃金方寸重一斤。<br>
-  白金方寸重一十四兩。<br>
+  黃金方寸重一斤。 <br>
+  白金方寸重一十四兩。 <br>
   玉方寸重一十二兩。 |
-  {Each} cubic inch of gold weigheth one<:n>1</:n> catty.<br>
-  {Each} cubic inch of silver weigheth fourteen<:n>14</:n> taels.<br>
+  {Each} cubic inch of gold weigheth one<:n>1</:n> catty. <br>
+  {Each} cubic inch of silver weigheth fourteen<:n>14</:n> taels. <br>
   {Each} cubic inch of jade weigheth twelve<:n>12</:n> taels.
 </#t>
 <ul>
@@ -1461,15 +1461,15 @@
 </ul>
 
 <#t>
-  銅方寸重七兩半。<br>
-  鉛方寸重九兩半。<br>
-  鐵方寸重六兩。<br>
+  銅方寸重七兩半。 <br>
+  鉛方寸重九兩半。 <br>
+  鐵方寸重六兩。 <br>
   石方寸重三兩。 |
   {Each} cubic inch of copper weigheth
-    seven<:n>7</:n> taels {and a} half<:n>½</:n>.<br>
+    seven<:n>7</:n> taels {and a} half<:n>½</:n>. <br>
   {Each} cubic inch of lead weigheth
-    nine<:n>9</:n> taels {and a} half<:n>½</:n>.<br>
-  {Each} cubic inch of iron weigheth six<:n>6</:n> taels.<br>
+    nine<:n>9</:n> taels {and a} half<:n>½</:n>. <br>
+  {Each} cubic inch of iron weigheth six<:n>6</:n> taels. <br>
   {Each} cubic inch of stone weigheth three<:n>3</:n> taels.
 </#t>
 <ul>
@@ -1505,11 +1505,11 @@
   <tr>
     <th>Material</th>
     <th>
-      《孫子算經》<br>
+      《孫子算經》 <br>
       <$>\rho_\text{s} / (\unit{taels} \unit{inch}^{-3})</$>
     </th>
     <th>
-      Modern value<br>
+      Modern value <br>
       <$>\rho_\text{m} / (\unit{g} \unit{cm}^{-3})</$>
     </th>
     <th>
@@ -1804,7 +1804,7 @@
     correspond to each other.
 </#t>
 <ul>
-  <li>從<br>
+  <li>從 <br>
     Variant of 縱.
   </li>
   <li>僵：偃也；
@@ -1812,7 +1812,7 @@
       prostrate
       | https://en.wiktionary.org/wiki/prostrate#Adjective
       | (Adjective) lying flat, face-down.
-    </@><br>
+    </@> <br>
     Not to be confused with prostate.
   </li>
   <li>
@@ -2186,7 +2186,7 @@
 </#t>
 <ul>
   <li>重：
-    {a} stack<br>
+    {a} stack <br>
       重，平聲，
       <^cm> ch'ung4 | cho/ng </^cm>
   </li>
@@ -2273,14 +2273,14 @@
 </#t>
 <ul>
   <li>命：
-    name<br>
+    name <br>
     Or maybe "command/order" as in "operate on".
   </li>
   <li>列：
     arranged in {a} row;
     \or displayed
   </li>
-  <li>言<br>
+  <li>言 <br>
     Pretty sure this is a speech-assist word, with no meaning.
   </li>
   <li>過：
@@ -2290,16 +2290,16 @@
 </ul>
 
 <#t>
-  上位乘訖者，先去之。<br>
+  上位乘訖者，先去之。 <br>
   下位乘訖者，則俱退之。 |
   {The} upper places which {one hath} finished multiplying:
-  remove them first.<br>
+  remove them first. <br>
   {The} lower places which {one hath} finished multiplying:
   retreat them all.
 </#t>
 <ul>
   <li>訖：終也，了也；
-    finished<br>
+    finished <br>
       訖，居迄切，
       <^cm> kat7 | qi\ </^cm>
   </li>
@@ -2347,7 +2347,7 @@
   fives<:n>5s</:n>, not single.
 </#t>
 <ul>
-  <li>六不積<br>
+  <li>六不積 <br>
     This is saying that 6 is displayed as either
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Vertical 6 -->
@@ -2379,7 +2379,7 @@
       <polyline class="points" points="0,0.25" marker-end="url(#rodh1)"/>
     </svg>.
   </li>
-  <li>五不隻<br>
+  <li>五不隻 <br>
     This is saying that 5 is displayed as either
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Vertical 5 -->
@@ -2428,9 +2428,9 @@
 <;s@@> 1 | 9 | 8 | 147 | 52065 | 8 | 15 </;s@@>
 
 <#t>
-  凡除之法，與乘正異。<br>
+  凡除之法，與乘正異。 <br>
   乘得在中央，除得在上方。 |
-  {The} method of all division, {is} directly opposite to multiplication.<br>
+  {The} method of all division, {is} directly opposite to multiplication. <br>
   {The} result of multiplication {is placed} in {the} middle;
   {the} result of division, in {the} above.
 </#t>
@@ -2462,11 +2462,11 @@
 </p>
 
 <#t>
-  以六除百，當進之二等，令在正百下；<br>
+  以六除百，當進之二等，令在正百下； <br>
   以六除一，則法多而實少，不可除，故當退就十位。 |
   {To} divide {an} hundred<:n>100</:n> by six<:n>6</:n>,
   {we} ought to advance it two ranks,
-  making {it} be directly below {the} hundred<:n>100</:n>;<br>
+  making {it} be directly below {the} hundred<:n>100</:n>; <br>
   {now} dividing one<:n>1</:n> by six<:n>6</:n>,
   {the} divisor {is} more, and {the} dividend less:
   {it} cannot divide;
@@ -2478,7 +2478,7 @@
     ranks;
     \or classes
   </li>
-  <li>在正<br>
+  <li>在正 <br>
     Like the vernacular 喺正,
     <^e>hai2 cheng3</^e>.
   </li>
@@ -2608,32 +2608,32 @@
 
 <#t>
   以<:y>粟</:y>求<:y><:r>糲</:r><:b>米</:b></:y>，\
-    三之，五而一。<br>
+    三之，五而一。 <br>
   以<:y><:r>糲</:r><:b>米</:b></:y>求<:y>粟</:y>，\
-    五之，三而一。<br>
+    五之，三而一。 <br>
   以<:y><:r>糲</:r><:b>米</:b></:y>求<:y><:v>飯</:v></:y>，\
-    五之，二而一。<br>
+    五之，二而一。 <br>
   以<:y>粟<:b>米</:b></:y>求<:y><:r>糲</:r><:v>飯</:v></:y>，\
-    六之，四而一。<br>
+    六之，四而一。 <br>
   以<:y><:r>糲</:r><:v>飯</:v></:y>求<:y><:r>糲</:r><:b>米</:b></:y>，\
-    二之，五而一。<br>
+    二之，五而一。 <br>
   以<:y><:g>糳</:g><:b>米</:b></:y>求<:y><:v>飯</:v></:y>，\
     八之，四而一。 |
   Seeking <:y><:r>coarse</:r> <:b>grain</:b></:y>
   with <:y>grain</:y>:
-    triple<:n>3~×</:n> it, {and make} five<:n>5</:n> {as} one.<br>
+    triple<:n>3~×</:n> it, {and make} five<:n>5</:n> {as} one. <br>
   Seeking <:y>grain</:y>
   with <:y><:r>coarse</:r> <:b>grain</:b></:y>:
-    quintuple<:n>5~×</:n> it, {and make} three<:n>3</:n> {as} one.<br>
+    quintuple<:n>5~×</:n> it, {and make} three<:n>3</:n> {as} one. <br>
   Seeking <:y><:r>{coarse}</:r> <:v>rice</:v></:y>
   with <:y><:r>coarse</:r> <:b>grain</:b></:y>:
-    quintuple<:n>5~×</:n> it, {and make} two<:n>2</:n> {as} one.<br>
+    quintuple<:n>5~×</:n> it, {and make} two<:n>2</:n> {as} one. <br>
   Seeking <:y><:r>coarse</:r> <:v>rice</:v></:y>
   with <:y><:b>grain</:b></:y>:
-    sextuple<:n>6~×</:n> it, {and make} four<:n>4</:n> {as} one.<br>
+    sextuple<:n>6~×</:n> it, {and make} four<:n>4</:n> {as} one. <br>
   Seeking <:y><:r>coarse</:r> <:b>grain</:b></:y>
   with <:y><:r>coarse</:r> <:v>rice</:v></:y>:
-    double<:n>2~×</:n> it, {and make} five<:n>5</:n> {as} one.<br>
+    double<:n>2~×</:n> it, {and make} five<:n>5</:n> {as} one. <br>
   Seeking <:y><:g>{intricate}</:g> <:v>rice</:v></:y>
   with <:y><:g>intricate</:g> <:b>grain</:b></:y>:
     octuple<:n>8~×</:n> it, {and make} four<:n>4</:n> {as} one.
@@ -2648,19 +2648,19 @@
     erroneously has 米粟求糲米 for 以粟求糲米.
   </li>
   <li><:y>粟：</:y>
-    <:y>grain</:y><br>
+    <:y>grain</:y> <br>
     As opposed to
     <:y><:r>糲</:r></:y>, <:y><:r>"coarse grain"</:r></:y>, or
     <:y><:g>糳</:g></:y>, <:y><:g>"intricate grain"</:g></:y>,
     to follow.
   </li>
   <li><:y><:r>糲</:r>：米不精也；</:y>
-    <:y><:r>coarse grain</:r></:y><br>
+    <:y><:r>coarse grain</:r></:y> <br>
       糲，力制切，音勵，
       <^cm> lai6 | li\ </^cm>
   </li>
   <li><:y>粟<:b>米</:b>：</:y>
-    <:y><:b>grain</:b></:y><br>
+    <:y><:b>grain</:b></:y> <br>
     <strong>This is not a nice paragraph to render into English</strong>
     (hence the colours).
     I am overloading the word <b>"grain"</b> with both
@@ -2681,9 +2681,9 @@
     erroneously has 绺 for 糳.
   </li>
   <li><:y><:g>糳</:g>：精細米也；</:y>
-    <:y><:g>intricate grain</:g></:y><br>
+    <:y><:g>intricate grain</:g></:y> <br>
       糳，
-      <^cm> tsok8; also tsok9 | zuo\ </^cm><br>
+      <^cm> tsok8; also tsok9 | zuo\ </^cm> <br>
     All of the old rime dictionaries have 陰入, tsok8,
     whereas modern dictionaries have 陽入, tsok9.
   </li>
@@ -2726,38 +2726,38 @@
 <;s@@> 1 | 11 | 8 | 148 | 52067 | 10 | 16 </;s@@>
 
 <#t>
-  十分減一者，以二乘，二十除。<br>
-  減二者，以四乘，二十除。<br>
-  減三者，以六乘，二十除。<br>
-  減四者，以八乘，二十除。<br>
-  減五者，以十乘，二十除。<br>
-  減六者，以十二乘，二十除。<br>
-  減七者，以十四乘，二十除。<br>
-  減八者，以十六乘，二十除。<br>
+  十分減一者，以二乘，二十除。 <br>
+  減二者，以四乘，二十除。 <br>
+  減三者，以六乘，二十除。 <br>
+  減四者，以八乘，二十除。 <br>
+  減五者，以十乘，二十除。 <br>
+  減六者，以十二乘，二十除。 <br>
+  減七者，以十四乘，二十除。 <br>
+  減八者，以十六乘，二十除。 <br>
   減九者，以十八乘，二十除。 |
   Subtracting one<:n>1</:n> of ten<:n>10</:n> shares:
-    multiply by two<:n>2</:n>, {and} divide {by} twenty<:n>20</:n>;<br>
+    multiply by two<:n>2</:n>, {and} divide {by} twenty<:n>20</:n>; <br>
   subtracting two<:n>2</:n>:
-    multiply by four<:n>4</:n>, {and} divide {by} twenty<:n>20</:n>;<br>
+    multiply by four<:n>4</:n>, {and} divide {by} twenty<:n>20</:n>; <br>
   subtracting three<:n>3</:n>:
-    multiply by six<:n>6</:n>, {and} divide {by} twenty<:n>20</:n>;<br>
+    multiply by six<:n>6</:n>, {and} divide {by} twenty<:n>20</:n>; <br>
   subtracting four<:n>4</:n>:
-    multiply by eight<:n>8</:n>, {and} divide {by} twenty<:n>20</:n>;<br>
+    multiply by eight<:n>8</:n>, {and} divide {by} twenty<:n>20</:n>; <br>
   subtracting five<:n>5</:n>:
-    multiply by ten<:n>10</:n>, {and} divide {by} twenty<:n>20</:n>;<br>
+    multiply by ten<:n>10</:n>, {and} divide {by} twenty<:n>20</:n>; <br>
   subtracting six<:n>6</:n>:
-    multiply by twelve<:n>12</:n>, {and} divide {by} twenty<:n>20</:n>;<br>
+    multiply by twelve<:n>12</:n>, {and} divide {by} twenty<:n>20</:n>; <br>
   subtracting seven<:n>7</:n>:
-    multiply by fourteen<:n>14</:n>, {and} divide {by} twenty<:n>20</:n>;<br>
+    multiply by fourteen<:n>14</:n>, {and} divide {by} twenty<:n>20</:n>; <br>
   subtracting eight<:n>8</:n>:
-    multiply by sixteen<:n>16</:n>, {and} divide {by} twenty<:n>20</:n>;<br>
+    multiply by sixteen<:n>16</:n>, {and} divide {by} twenty<:n>20</:n>; <br>
   subtracting nine<:n>9</:n>:
     multiply by eighteen<:n>18</:n>, {and} divide {by} twenty<:n>20</:n>.
 </#t>
 <ul>
   <li>分：
     shares;
-    \or portions<br>
+    \or portions <br>
     In Chinese, the fraction <$>\dfrac{a}{b}</$>
     is referred to as <$>b</$> 分之 <$>a</$>, literally
     "<$>a</$> of <$>b</$> shares".
@@ -2782,19 +2782,19 @@
 <;sh> 1 | 12 | Some equivalent fractions </;sh>
 <;s@@> 1 | 12 | 10 | 148 | 52068 | 11 | 17 </;s@@>
 <#t>
-  九分減一者，以二乘，十八除。<br>
-  八分減一者，以二乘，十六除。<br>
-  七分減一者，以二乘，十四除。<br>
-  六分減一者，以二乘，十二除。<br>
+  九分減一者，以二乘，十八除。 <br>
+  八分減一者，以二乘，十六除。 <br>
+  七分減一者，以二乘，十四除。 <br>
+  六分減一者，以二乘，十二除。 <br>
   五分減一者，以二乘，十除。 |
   Subtracting one<:n>1</:n> of nine<:n>9</:n> shares:
-    multiply by two<:n>2</:n>, {and} divide {by} eighteen<:n>18</:n>;<br>
+    multiply by two<:n>2</:n>, {and} divide {by} eighteen<:n>18</:n>; <br>
   subtracting one<:n>1</:n> of eight<:n>8</:n> shares:
-    multiply by two<:n>2</:n>, {and} divide {by} sixteen<:n>16</:n>;<br>
+    multiply by two<:n>2</:n>, {and} divide {by} sixteen<:n>16</:n>; <br>
   subtracting one<:n>1</:n> of seven<:n>7</:n> shares:
-    multiply by two<:n>2</:n>, {and} divide {by} fourteen<:n>14</:n>;<br>
+    multiply by two<:n>2</:n>, {and} divide {by} fourteen<:n>14</:n>; <br>
   subtracting one<:n>1</:n> of six<:n>6</:n> shares:
-    multiply by two<:n>2</:n>, {and} divide {by} twelve<:n>12</:n>;<br>
+    multiply by two<:n>2</:n>, {and} divide {by} twelve<:n>12</:n>; <br>
   subtracting one<:n>1</:n> of five<:n>5</:n> shares:
     multiply by two<:n>2</:n>, {and} divide {by} ten<:n>10</:n>.
 </#t>
@@ -2814,10 +2814,10 @@
 <;s@@> 1 | 13 | 10 | 148 | 52073 | 16 | 17 </;s@@>
 
 <#t>
-  九九八十一，自相乘，得幾何？<br>
+  九九八十一，自相乘，得幾何？ <br>
   答曰：六千五百六十一。 |
   Nine nines<:n>9~×~9</:n> {are} eighty-one<:n>81</:n>, {which},
-  multiplied with itself, resulteth in how much?<br>
+  multiplied with itself, resulteth in how much? <br>
   Answer saith: six thousand, five hundred {and} sixty-one<:n>6561</:n>.
 </#t>
 <$$>
@@ -2832,7 +2832,7 @@
   Method saith: put into {a} stack {the} places.
 </#t>
 <ul>
-  <li>重置其位<br>
+  <li>重置其位 <br>
     See <@> ¶8 | #8 | Vol. I ¶8 </@>.
   </li>
 </ul>
@@ -2913,11 +2913,11 @@
 <;s@@> 1 | 14 | 10 | 148 | 52074 | 17 | 18 </;s@@>
 
 <#t>
-  六千五百六十一，九人分之，問人得幾何？<br>
+  六千五百六十一，九人分之，問人得幾何？ <br>
   答曰：七百二十九。 |
   Six thousand, five hundred {and} sixty-one<:n>6561</:n>:
   {with} nine<:n>9</:n> men sharing it,
-  {we} ask: how much receiveth {each} man?<br>
+  {we} ask: how much receiveth {each} man? <br>
   Answer saith: seven hundred {and} twenty-nine<:n>729</:n>.
 </#t>
 <ul>
@@ -2987,7 +2987,7 @@
 </#t>
 <ul>
   <li>更：
-    again; also further<br>
+    again; also further <br>
       更，去聲，
       <^cm> kang3 | ge\ng </^cm>
   </li>
@@ -3242,9 +3242,9 @@
 <ul>
   <li>右：
     above;
-    \lit {to the} right<br>
+    \lit {to the} right <br>
     In English, preceding material lies above, since English is written
-    left-to-right, top-to-bottom.<br>
+    left-to-right, top-to-bottom. <br>
     In Chinese, preceding material lies to the right, since
     (at least classically) Chinese is written top-to-bottom, right-to-left.
   </li>
@@ -3835,7 +3835,7 @@
 </#t>
 <ul>
   <li>長：
-    augmenteth<br>
+    augmenteth <br>
       長，上聲，
       <^cm> choeng2 | zhavng </^cm>
   </li>
@@ -4063,13 +4063,13 @@
 </#t>
 
 <div class="end">
-  <span>END of Volume~I</span><br>
+  <span>END of Volume~I</span> <br>
   Previous:
   <@>
     《序》~"Preface"
     | /sun-tzu/preface.html
     | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
-  </@><br>
+  </@> <br>
   Next:
   <@>
     《卷中》~"Volume~II"

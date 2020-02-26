@@ -788,7 +788,7 @@
 <!c><table class="collapsed-no-wrapping">
   
   <tr>
-    <th rowspan="2">Location<br>(<$>\delta</$>)</th>
+    <th rowspan="2">Location <br> (<$>\delta</$>)</th>
     <th colspan="3">Daytime</th>
   </tr>
   
@@ -804,7 +804,7 @@
         Hong Kong
         | https://www.timeanddate.com/sun/hong-kong/hong-kong
         | timeanddate.com: Hong Kong
-      </@><br>
+      </@> <br>
       (+22°19')
     </td>
     <td>13\,hr\,26'\,41"</td>
@@ -818,7 +818,7 @@
         Perth
         | https://www.timeanddate.com/sun/australia/perth
         | timeanddate.com: Perth
-      </@><br>
+      </@> <br>
       (−31°57')
     </td>
     <td>10\,hr\,\_8'\,18"</td>
@@ -945,7 +945,7 @@
 <!c><table class="collapsed-no-wrapping">
   
   <tr>
-    <th rowspan="2">Location<br>(<$>\delta</$>)</th>
+    <th rowspan="2">Location <br> (<$>\delta</$>)</th>
     <th colspan="3">Daytime</th>
   </tr>
   
@@ -961,7 +961,7 @@
         Hong Kong
         | https://www.timeanddate.com/sun/hong-kong/hong-kong
         | timeanddate.com: Hong Kong
-      </@><br>
+      </@> <br>
       (+22°19')
     </td>
     <td>13\,hr\,26'\,41"</td>
@@ -975,7 +975,7 @@
         Perth
         | https://www.timeanddate.com/sun/australia/perth
         | timeanddate.com: Perth
-      </@><br>
+      </@> <br>
       (−31°57')
     </td>
     <td>10\,hr\,\_8'\,18"</td>
@@ -1002,8 +1002,8 @@
   
   <tr>
     <td>
-      <:b>timeanddate.com</:b><br>
-      Model (Error)<br>
+      <:b>timeanddate.com</:b> <br>
+      Model (Error) <br>
       <:y>Model with correction (Error)</:y>.
     </td>
   </tr>
@@ -1017,9 +1017,9 @@
 <!c><table class="collapsed-no-wrapping">
   
   <tr>
-    <th rowspan="2">Location<br>(<$>\delta</$>)</th>
+    <th rowspan="2">Location <br> (<$>\delta</$>)</th>
     <th rowspan="2">Daytime</th>
-    <th rowspan="2">Sun's altitude<br>at noon</th>
+    <th rowspan="2">Sun's altitude <br>at noon</th>
     <th colspan="2">Sun's bearing at</th>
   </tr>
   
@@ -1034,21 +1034,21 @@
         Station Nord
         | https://www.timeanddate.com/sun/greenland/station-nord
         | timeanddate.com: Station Nord
-      </@><br>
+      </@> <br>
       (+81°36')
     </td>
     <td>
-      <:b>24\,hr</:b><br>
-      24\,hr<br>
+      <:b>24\,hr</:b> <br>
+      24\,hr <br>
       <:y>24\,hr</:y>
     </td>
     <td>
-      <:b>31.0°</:b><br>
-      30.8° (−0.2°)<br>
+      <:b>31.0°</:b> <br>
+      30.8° (−0.2°) <br>
       ~
     </td>
     <td class="centred-text" colspan="2">
-      N/A<br>
+      N/A <br>
       (midnight sun)
     </td>
   </tr>
@@ -1059,27 +1059,27 @@
         Reykjavik
         | https://www.timeanddate.com/sun/iceland/reykjavik
         | timeanddate.com: Reykjavik
-      </@><br>
+      </@> <br>
       (+64°9')
     </td>
     <td>
-      <:b>20\,hr\,26'\,51"</:b><br>
-      19\,hr\,47' (−3.2%)<br>
+      <:b>20\,hr\,26'\,51"</:b> <br>
+      19\,hr\,47' (−3.2%) <br>
       <:y>20\,hr\,19' (−0.6%)</:y>
     </td>
     <td>
-      <:b>48.4°</:b><br>
-      48.3° (−0.1°)<br>
+      <:b>48.4°</:b> <br>
+      48.3° (−0.1°) <br>
       ~
     </td>
     <td>
-      <:b>24°</:b><br>
-      29.0° (+5.°)<br>
+      <:b>24°</:b> <br>
+      29.0° (+5.°) <br>
       <:y>25.4° (+1.°)</:y>
     </td>
     <td>
-      <:b>335°</:b><br>
-      331.0° (−4.°)<br>
+      <:b>335°</:b> <br>
+      331.0° (−4.°) <br>
       <:y>334.6° (−0.°)</:y>
     </td>
   </tr>
@@ -1090,27 +1090,27 @@
         London
         | https://www.timeanddate.com/sun/uk/london
         | timeanddate.com: London
-      </@><br>
+      </@> <br>
       (+51°30')
     </td>
     <td>
-      <:b>16\,hr\,25'\,57"</:b><br>
-      16\,hr\,10' (−1.6%)<br>
+      <:b>16\,hr\,25'\,57"</:b> <br>
+      16\,hr\,10' (−1.6%) <br>
       <:y>16\,hr\,24' (−0.2%)</:y>
     </td>
     <td>
-      <:b>61.1°</:b><br>
-      60.9° (−0.2°)<br>
+      <:b>61.1°</:b> <br>
+      60.9° (−0.2°) <br>
       ~
     </td>
     <td>
-      <:b>51°</:b><br>
-      52.2° (+1.°)<br>
+      <:b>51°</:b> <br>
+      52.2° (+1.°) <br>
       <:y>50.9° (−0.°)</:y>
     </td>
     <td>
-      <:b>309°</:b><br>
-      307.8° (−1.°)<br>
+      <:b>309°</:b> <br>
+      307.8° (−1.°) <br>
       <:y>309.1° (+0.°)</:y>
     </td>
   </tr>
@@ -1121,27 +1121,27 @@
         Hong Kong
         | https://www.timeanddate.com/sun/hong-kong/hong-kong
         | timeanddate.com: Hong Kong
-      </@><br>
+      </@> <br>
       (+22°19')
     </td>
     <td>
-      <:b>13\,hr\,26'\,41"</:b><br>
-      13\,hr\,18' (−1.1%)<br>
+      <:b>13\,hr\,26'\,41"</:b> <br>
+      13\,hr\,18' (−1.1%) <br>
       <:y>13\,hr\,26' (−0.1%)</:y>
     </td>
     <td>
-      <:b>89.7°</:b><br>
-      89.9° (+0.2°)<br>
+      <:b>89.7°</:b> <br>
+      89.9° (+0.2°) <br>
       ~
     </td>
     <td>
-      <:b>65°</:b><br>
-      65.7° (+1.°)<br>
+      <:b>65°</:b> <br>
+      65.7° (+1.°) <br>
       <:y>65.3° (+0.°)</:y>
     </td>
     <td>
-      <:b>295°</:b><br>
-      294.3° (−1.°)<br>
+      <:b>295°</:b> <br>
+      294.3° (−1.°) <br>
       <:y>294.7° (−0.°)</:y>
     </td>
   </tr>
@@ -1152,27 +1152,27 @@
         Singapore
         | https://www.timeanddate.com/sun/singapore/singapore
         | timeanddate.com: Singapore
-      </@><br>
+      </@> <br>
       (+1°17')
     </td>
     <td>
-      <:b>12\,hr\,11'\,31"</:b><br>
-      12\,hr\,\_4' (−1.0%)<br>
+      <:b>12\,hr\,11'\,31"</:b> <br>
+      12\,hr\,\_4' (−1.0%) <br>
       <:y>12\,hr\,11' (−0.1%)</:y>
     </td>
     <td>
-      <:b>68.7°</:b><br>
-      68.9° (+0.2°)<br>
+      <:b>68.7°</:b> <br>
+      68.9° (+0.2°) <br>
       ~
     </td>
     <td>
-      <:b>67°</:b><br>
-      67.6° (+1.°)<br>
+      <:b>67°</:b> <br>
+      67.6° (+1.°) <br>
       <:y>67.6° (+1.°)</:y>
     </td>
     <td>
-      <:b>293°</:b><br>
-      292.4° (−1.°)<br>
+      <:b>293°</:b> <br>
+      292.4° (−1.°) <br>
       <:y>292.4° (−1.°)</:y>
     </td>
   </tr>
@@ -1183,27 +1183,27 @@
         Perth
         | https://www.timeanddate.com/sun/australia/perth
         | timeanddate.com: Perth
-      </@><br>
+      </@> <br>
       (−31°57')
     </td>
     <td>
-      <:b>10\,hr\,\_8'\,18"</:b><br>
-      10\,hr\,\_1' (−1.2%)<br>
+      <:b>10\,hr\,\_8'\,18"</:b> <br>
+      10\,hr\,\_1' (−1.2%) <br>
       <:y>10\,hr\,10' (+0.3%)</:y>
     </td>
     <td>
-      <:b>35.5°</:b><br>
-      35.6° (+0.1°)<br>
+      <:b>35.5°</:b> <br>
+      35.6° (+0.1°) <br>
       ~
     </td>
     <td>
-      <:b>64°</:b><br>
-      63.3° (−1.°)<br>
+      <:b>64°</:b> <br>
+      63.3° (−1.°) <br>
       <:y>63.9° (−0.°)</:y>
     </td>
     <td>
-      <:b>296°</:b><br>
-      296.7° (+1.°)<br>
+      <:b>296°</:b> <br>
+      296.7° (+1.°) <br>
       <:y>296.1° (+0.°)</:y>
     </td>
   </tr>
@@ -1211,30 +1211,30 @@
   <tr>
     <td class="centred-text">
       <@>
-        Enderby Land<br>@6630103
+        Enderby Land <br>@6630103
         | https://www.timeanddate.com/sun/@6630103
         | timeanddate.com: Enderby Land
-      </@><br>
+      </@> <br>
       (−67°30')
     </td>
     <td>
-      <:b>\_2\,hr\,\_3'\,28"</:b><br>
-      \_0\,hr\,41' (−\_67%)<br>
+      <:b>\_2\,hr\,\_3'\,28"</:b> <br>
+      \_0\,hr\,41' (−\_67%) <br>
       \_<:y>4\,hr\,14' (+106%)</:y>
     </td>
     <td>
-      <:b>\_0.4°</:b><br>
-      \_0.1° (−0.3°)<br>
+      <:b>\_0.4°</:b> <br>
+      \_0.1° (−0.3°) <br>
       ~
     </td>
     <td>
-      <:b>14°</:b><br>
-      \_4.7° (−\_9°)<br>
+      <:b>14°</:b> <br>
+      \_4.7° (−\_9°) <br>
       <:y>29.1° (+15°)</:y>
     </td>
     <td>
-      <:b>346°</:b><br>
-      355.3° (+\_9°)<br>
+      <:b>346°</:b> <br>
+      355.3° (+\_9°) <br>
       <:y>330.9° (−15°)</:y>
     </td>
   </tr>
@@ -1245,21 +1245,21 @@
         Concordia Station
         | https://www.timeanddate.com/sun/antarctica/concordia-station
         | timeanddate.com: Concordia Station
-      </@><br>
+      </@> <br>
       (−75°6')
     </td>
     <td>
-      \_<:b>0\,hr</:b><br>
-      \_0\,hr<br>
+      \_<:b>0\,hr</:b> <br>
+      \_0\,hr <br>
       \_<:y>0\,hr</:y>
     </td>
     <td>
-      <:b>−7.7°</:b><br>
-      −7.5° (+0.2°)<br>
+      <:b>−7.7°</:b> <br>
+      −7.5° (+0.2°) <br>
       ~
     </td>
     <td class="centred-text" colspan="2">
-      N/A<br>
+      N/A <br>
       (polar night)
     </td>
   </tr>
@@ -1521,7 +1521,7 @@
   </li>
   
   <li>
-    Location: 41°16'S<br>
+    Location: 41°16'S <br>
     Time of year: 41~days before the northern spring (or March) equinox
     <``>
       sun (-[41, 16], -41, "day");

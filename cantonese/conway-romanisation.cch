@@ -629,8 +629,8 @@
       [<:h>ar</:h> as in c<:h>ar</:h>],
       in a general Australian accent with strictly no R consonant,
       followed by [<:h>t</:h> as in a<:h>t</:h>las]
-      with no audibly released T<br>
-        ~~<b>OR</b><br>
+      with no audibly released T <br>
+        ~~<b>OR</b> <br>
       [<:h>art</:h> as in c<:h>art</:h>wheel] with no audibly released T,
       in a general Australian accent with strictly no R consonant
     </td>
@@ -647,8 +647,8 @@
       [<:h>ar</:h> as in c<:h>ar</:h>],
       in a general Australian accent with strictly no R consonant,
       followed by [<:h>c</:h> as in do<:h>c</:h>tor]
-      with no audibly released C<br>
-        ~~<b>OR</b><br>
+      with no audibly released C <br>
+        ~~<b>OR</b> <br>
       [<:h>arc</:h> as in <:h>arc</:h>tangent] with no audibly released C,
       in a general Australian accent with strictly no R consonant
     </td>
@@ -755,8 +755,8 @@
     <td>
       [<:h>u</:h> as in c<:h>u</:h>t], in a general Australian accent,
       followed by [<:h>t</:h> as in a<:h>t</:h>las]
-      with no audibly released T<br>
-        ~~<b>OR</b><br>
+      with no audibly released T <br>
+        ~~<b>OR</b> <br>
       [<:h>ut</:h> as in b<:h>ut</:h>ler] with no audibly released T,
       in a general Australian accent
     </td>
@@ -870,8 +870,8 @@
     <td>
       [<:h>e</:h> as in y<:h>e</:h>ah], in a general Australian accent,
       but slightly longer, followed by
-      [<:h>p</:h> as in co<:h>p</:h>ter] with no audibly released P<br>
-        ~~<b>OR</b><br>
+      [<:h>p</:h> as in co<:h>p</:h>ter] with no audibly released P <br>
+        ~~<b>OR</b> <br>
       [<:h>ep</:h> as in s<:h>ep</:h>tic] with no audibly released P,
       in a general Australian accent, but longer
     </td>
@@ -887,8 +887,8 @@
     <td>
       [<:h>e</:h> as in y<:h>e</:h>ah], in a general Australian accent,
       but slightly longer, followed by
-      [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C<br>
-        ~~<b>OR</b><br>
+      [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C <br>
+        ~~<b>OR</b> <br>
       [<:h>ec</:h> as in s<:h>ec</:h>tor] with no audibly released C,
       in a general Australian accent, but longer
     </td>
@@ -1117,8 +1117,8 @@
       [<:h>or</:h> as in n<:h>or</:h>],
       in a general Australian accent with strictly no R consonant,
       followed by [<:h>t</:h> as in a<:h>t</:h>las]
-      with no audibly released T<br>
-        ~~<b>OR</b><br>
+      with no audibly released T <br>
+        ~~<b>OR</b> <br>
       [<:h>ort</:h> as in f<:h>ort</:h>let] with no audibly released T,
       in a general Australian accent with strictly no R consonant
     </td>
@@ -1233,8 +1233,8 @@
     <td>
       [<:h>oo</:h> as in t<:h>oo</:h>k], in a general Australian accent,
       followed by
-      [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C<br>
-        ~~<b>OR</b><br>
+      [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C <br>
+        ~~<b>OR</b> <br>
       [<:h>ook</:h> as in b<:h>ook</:h>token] with no audibly released K,
       in a general Australian accent
     </td>
@@ -1267,8 +1267,8 @@
     <td>eu</td>
     <td>euh</td>
     <td>
-      [<:h>ö</:h> as in H<:h>ö</:h>lle], in German<br>
-        ~~<b>OR</b><br>
+      [<:h>ö</:h> as in H<:h>ö</:h>lle], in German <br>
+        ~~<b>OR</b> <br>
       [<:h>eu</:h> as in j<:h>eu</:h>ne], in French
     </td>
   </tr>
@@ -1891,7 +1891,7 @@
     <td>後尾</td>
     <td><^e>hau<:h>6</:h>~mei<:h>5</:h></^e></td>
     <td>
-      <^e>hau6~mei<:h>1</:h></^e><br>
+      <^e>hau6~mei<:h>1</:h></^e> <br>
       <^e>hau<:h>1</:h>~mei<:h>1</:h></^e>
     </td>
   </tr>
@@ -2073,16 +2073,16 @@
 
 <!cc><table>
   <tr>
-    <th>陰<br>平</th>
-    <th>陰<br>上</th>
-    <th>陰<br>去</th>
-    <th>陽<br>平</th>
-    <th>陽<br>上</th>
-    <th>陽<br>去</th>
+    <th>陰 <br> 平</th>
+    <th>陰 <br> 上</th>
+    <th>陰 <br> 去</th>
+    <th>陽 <br> 平</th>
+    <th>陽 <br> 上</th>
+    <th>陽 <br> 去</th>
     <td class="no-border"></td>
-    <th>高<br>陰<br>入</th>
-    <th>低<br>陰<br>入</th>
-    <th>陽<br>入</th>
+    <th>高 <br> 陰 <br> 入</th>
+    <th>低 <br> 陰 <br> 入</th>
+    <th>陽 <br> 入</th>
   </tr>
   <tr>
     <th>1</th>
