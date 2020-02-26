@@ -1956,7 +1956,7 @@ def replace_footer(string):
 ################################################################
 
 # Unprocessed string:
-#   {horizontal whitespace} <_> {content} </_>
+#   {horizontal whitespace} <_>{content}</_>
 
 # Raw regular expression for unprocessed string:
 #   [^\S\n]<_>([\s\S]*?)</_>
@@ -1964,8 +1964,8 @@ def replace_footer(string):
 
 # Processed string:
 #   <span class="numeral">~({math-processed content})</span>
-# with processing as follows:
-#   1.  All whitespace is removed
+# with processing of {content} as follows:
+#   1.  Horizontal whitespace around ^ and * is removed
 #   2.  ^{exponent} is converted to <sup>{exponent}</sup>
 #   3.  - is converted to − (U+2212 MINUS SIGN)
 #   4.  * is converted to × (U+00D7 MULTIPLICATION SIGN)
@@ -1979,7 +1979,7 @@ def replace_assisting_numeral(match_object):
   
   content = match_object.group(1)
   
-  content = re.sub(r'\s', '', content)
+  content = re.sub(r'[^\S\n]*([*^])[^\S\n]*', r'\1', content)
   content = re.sub(r'\^([+-]?[0-9]*)', r'<sup>\1</sup>', content)
   content = re.sub(r'\-', '−', content)
   content = re.sub(r'\*', ' × ', content)

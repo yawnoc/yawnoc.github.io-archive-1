@@ -1015,7 +1015,7 @@
 <@3> Assisting numeral tag | assisting-numeral </@3>
 
 <#>
-  <`>{horizontal whitespace} <_> {content} </_></`>
+  <`>{horizontal whitespace} <_>{content}</_></`>
 </#>
 
 <p>
@@ -1032,7 +1032,7 @@
   <li>
     <b>CCH</b>
     <``>
-      Tiny <_> 3 * 10^-12 </_>.
+      Tiny <_>3 * 10^-12</_>.
     </``>
   </li>
   
@@ -1045,7 +1045,7 @@
   
   <li>
     <b>Rendered</b> <br>
-      Tiny <_> 3 * 10^-12 </_>.
+      Tiny <_>3 * 10^-12</_>.
   </li>
   
 </ul>
