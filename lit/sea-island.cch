@@ -413,14 +413,6 @@
           }{
             127 \unit{paces} - 123 \unit{paces}
           } + 5 \unit{paces} \\[2ex]
-        &=
-          \frac{
-            5 \unit{paces} \cdot 1000 \unit{paces}
-          }{
-            4 \unit{paces}
-          } + 5 \unit{paces} \\[2ex]
-        &= 1255 \unit{paces} \\
-        &= 4 \cdot 300 \unit{paces} + 55 \unit{paces} \\
         &= 4 \unit{miles} + 55 \unit{paces}.
       \end{aligned}
     </$$>
@@ -464,14 +456,6 @@
           }{
             127 \unit{paces} - 123 \unit{paces}
           } \\[2ex]
-        &=
-          \frac{
-            123000 \unit{paces}^2
-          }{
-            4 \unit{paces}
-          } \\[2ex]
-        &= 30750 \unit{paces} \\
-        &= 102 \cdot 300 \unit{paces} + 150 \unit{paces} \\
         &= 102 \unit{miles} + 150 \unit{paces}.
       \end{aligned}
     </$$>
