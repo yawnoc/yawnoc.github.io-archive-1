@@ -1,6 +1,6 @@
 <*>
   "{The} Sea Island Computational Classic": 《海島算經》
-  | 20190420 | 20200223 | dmr
+  | 20190420 | 20200227 | dmr
   | An annotated English translation of the first problem in Haidao Suanjing, \
     《海島算經》, or "{The} Sea Island Computational Classic".
 </*>
@@ -165,17 +165,17 @@
   <!-- ground BH except DG -->
   <line x1="0" y1="0" x2="3" y2="0"/>
   <line x1="5.5" y1="0" x2="7.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line class="red" x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dy="-0.5em">front</text>
   <text class="maths-roman red" x="3" y="-0.5" font-size="0.3" dx="0em" dy="-0.5em"
     transform="rotate(-90 3 -0.5)">3 rods</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line class="red" x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dy="-0.5em">rear</text>
   <text class="maths-roman red" x="5.5" y="-0.5" font-size="0.3" dx="0em" dy="1.3em"
     transform="rotate(-90 5.5 -0.5)">3 rods</text>
-  <!-- pole separation DG -->
+  <!-- post separation DG -->
   <line class="green" x1="3" y1="0" x2="5.5" y2="0"/>
   <text class="maths-roman green" x="4.25" y="0" font-size="0.3" dy="-0.5em">1000 paces</text>
 </svg>
@@ -185,16 +185,16 @@
   今有望<:b>海島</:b>，立<:r>兩表</:r>，<:r>齊高三丈</:r>，\
   前後<:g>相去千步</:g>，令後表與前表參相直。 |
   Now there be {a} looking at {a} <:b>sea island</:b>;
-  erect <:r>two poles</:r>, <:r>{of the} same height
+  erect <:r>two posts</:r>, <:r>{of the} same height
     three <_>3</_> rods</:r>,
   {one} in front of {the} other, <:g>mutually separated by
     {a} thousand <_>1000</_> paces</:g>,
-  {and} make {the} rear pole mutually straight {the} three
-  with {the} front pole {and the island}.
+  {and} make {the} rear post mutually straight {the} three
+  with {the} front post {and the island}.
 </#t>
 <ul>
   <li>表：標也；
-    poles;
+    posts;
     \or pillars;
     \lit markers
   </li>
@@ -230,13 +230,13 @@
   <!-- ground BH except DE -->
   <line x1="0" y1="0" x2="3" y2="0"/>
   <line x1="4.2" y1="0" x2="7.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <!-- front line of sight ACE -->
   <line class="red" x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <!-- front pole backward walk DE -->
+  <!-- front post backward walk DE -->
   <line class="blue" x1="3" y1="0" x2="4.2" y2="0"/>
   <text class="maths-roman blue" x="3.6" y="0" font-size="0.3" dy="1.2em">123 paces</text>
 </svg>
@@ -245,10 +245,10 @@
 <#t>
   從前表<:b>卻行一百二十三步</:b>，人目著地<:r>取望島峯</:r>，與表末參合。 |
   <:b>Walking back one hundred {and} twenty-three <_>123</_> paces</:b>
-    from {the} front pole,
+    from {the} front post,
   {a} man's eye on {the} ground,
     <:r>taking {a} look at {the} peak of {the} island</:r>,
-  meeteth {the} three with {the} tip of {the} pole.
+  meeteth {the} three with {the} tip of {the} post.
 </#t>
 <ul>
   <li>著地：
@@ -262,7 +262,7 @@
   </li>
   <li>
     In other words, the three of them
-    (the island's peak, the pole's tip and the person's eye)
+    (the island's peak, the post's tip and the person's eye)
     are in a straight line.
   </li>
 </ul>
@@ -273,13 +273,13 @@
   <line x1="0" y1="-3.5" x2="0" y2="0"/>
   <!-- ground BH except GH -->
   <line x1="0" y1="0" x2="5.5" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <!-- rear line of sight AFH -->
   <line class="red" x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <!-- rear pole backward walk GH -->
+  <!-- rear post backward walk GH -->
   <line class="blue" x1="5.5" y1="0" x2="7.7" y2="0"/>
   <text class="maths-roman blue" x="6.6" y="0" font-size="0.3" dy="1.2em">127 paces</text>
 </svg>
@@ -288,9 +288,9 @@
 <#t>
   從後表<:b>卻行一百二十七步</:b>，人目着地<:r>取望島峯</:r>，亦與表末參合。 |
   <:b>Walking back one hundred {and} twenty-seven <_>127</_> paces</:b>
-  from {the} rear pole, {a} man's eye on {the} ground,
+  from {the} rear post, {a} man's eye on {the} ground,
   <:r>taking {a} look at {the} peak of {the} island</:r>,
-  also meeteth {the} three with {the} tip of {the} pole.
+  also meeteth {the} three with {the} tip of {the} post.
 </#t>
 
 <div class="centred-svg">
@@ -301,12 +301,12 @@
     transform="rotate(-90 0 -1.75)">island height?</text>
   <!-- ground BH except BD -->
   <line x1="3" y1="0" x2="7.7" y2="0"/>
-  <!-- distance from front pole BD -->
+  <!-- distance from front post BD -->
   <line class="red" x1="0" y1="0" x2="3" y2="0"/>
   <text class="red" x="1.5" y="0" font-size="0.3" dy="-0.5em">distance?</text>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
 </svg>
 </div>
@@ -314,7 +314,7 @@
 <#t>
   問<:b>島高</:b>及<:r>去表</:r>各幾何？ |
   {We} ask: how much {are} each of <:b>{the} height of {the} island</:b>
-  and <:r>{its} distance from {the front} pole</:r>?
+  and <:r>{its} distance from {the front} post</:r>?
 </#t>
 
 <#t>
@@ -322,7 +322,7 @@
   Answer saith: {the} height of {the} island {is}
     <:b>four <_>4</_> miles {and}
     fifty-five <_>55</_> paces</:b>, {and the}
-  distance from {the front} pole,
+  distance from {the front} post,
     <:r>one hundred {and} two <_>102</_> miles {and}
     one hundred {and} fifty <_>150</_> paces</:r>.
 </#t>
@@ -360,10 +360,10 @@
 
 <#t>
   術曰：以表高乘表間爲實；相多爲法，除之。所得加表高，即得島高。 |
-  Method saith: use {the} pole height times
-  {the} pole separation as {the} dividend, {and the}
+  Method saith: use {the} post height times
+  {the} post separation as {the} dividend, {and the}
   mutual excess as {the} divisor, {and} divide them.
-  {Unto} that obtained add {the} pole height,
+  {Unto} that obtained add {the} post height,
   that is {we} obtain {the} height of {the} island.
 </#t>
 <ul>
@@ -381,7 +381,7 @@
     \or difference <br>
     It is not immediately obvious, but <b>"mutual excess" refers to
     the difference between the backward walking distances
-    from the two poles.</b>
+    from the two posts.</b>
   </li>
   <li>法：
     divisor;
@@ -403,10 +403,10 @@
         \text{[island height]}
         &=
           \frac{
-            \text{[pole height]} \cdot \text{[pole separation]}
+            \text{[post height]} \cdot \text{[post separation]}
           }{
             \text{[mutual excess]}
-          } + \text{[pole height]} \\[2ex]
+          } + \text{[post height]} \\[2ex]
         &=
           \frac{
             3 \unit{rods} \cdot 1000 \unit{paces}
@@ -428,13 +428,13 @@
 </ul>
 <#t>
   求前表去島遠近者：以前表卻行乘表間爲實；相多爲法。除之，得島去表里數。 |
-  Those seeking {the} distance {that the} front pole {is} separated
+  Those seeking {the} distance {that the} front post {is} separated
     from {the} island:
-  use {the} front pole backward walk times {the} pole separation
+  use {the} front post backward walk times {the} post separation
     as {the} dividend,
   {and the} mutual excess as {the} divisor.
   Divide them, {to} obtain {the} number of miles
-    {that the} island {is} separated from {the front} pole.
+    {that the} island {is} separated from {the front} post.
 </#t>
 <ul>
   <li>遠近：
@@ -449,12 +449,12 @@
     or
     <$$>
       \begin{aligned}
-        \text{[island-pole separation]}
+        \text{[island-post separation]}
         &=
           \frac{
-            \text{[front pole backward walk]}
+            \text{[front post backward walk]}
               \cdot
-            \text{[pole separation]}
+            \text{[post separation]}
           }{
             \text{[mutual excess]}
           } \\[2ex]
@@ -528,14 +528,14 @@
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
-    p           pole height                             1
+    p           post height                             1
     h           island height                           3.5
-    d           distance from front pole                3
-    s           pole separation                         2.5
-    f           front pole backward walk                1.2
+    d           distance from front post                3
+    s           post separation                         2.5
+    f           front post backward walk                1.2
                   f / p == (f + d) / h
                   f == d/h / (1/p - 1/h)
-    r           rear pole backward walk                 2.2
+    r           rear post backward walk                 2.2
                   r / p == (r + s + d) / h
                   r == (s+d)/h / (1/p - 1/h)
     BH          horizontal range d + s + r              7.7
@@ -573,19 +573,19 @@
   <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
   <!-- ground BH -->
   <line x1="0" y1="0" x2="7.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF -->
+  <!-- post height line OF -->
   <line x1="0" y1="-1" x2="5.5" y2="-1"/>
   <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
   <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
@@ -639,7 +639,7 @@
   <!-- ground BH except DE -->
   <line x1="0" y1="0" x2="3" y2="0"/>
   <line x1="4.2" y1="0" x2="7.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line class="blue" x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
@@ -657,10 +657,10 @@
 <#t>
   <:b>丙丁爲前表</:b>，<:r>戊丁爲前去表</:r>，\
   <:g>戊爲人目</:g>，<:v>戊丙甲爲前表望島峯</:v>。 |
-  <:b><$>CD</$> is {the} front pole</:b>;
-  <:r><$>ED</$> is {the} front {walk's} separation from {the} pole</:r>;
+  <:b><$>CD</$> is {the} front post</:b>;
+  <:r><$>ED</$> is {the} front {walk's} separation from {the} post</:r>;
   <:g><$>E</$> is {the} man's eye</:g>;
-  <:v><$>ECA</$> is {the} front pole's
+  <:v><$>ECA</$> is {the} front post's
   looking at {the} peak of {the} island</:v>.
 </#t>
 
@@ -674,13 +674,13 @@
   <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
   <!-- ground BH except HG -->
   <line x1="0" y1="0" x2="5.5" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line class="blue" x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
@@ -694,7 +694,7 @@
   <line class="violet" x1="0" y1="-3.5" x2="7.7" y2="0"/>
   <text class="green" x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
   <text class="maths-italic green" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
-  <!-- rear pole backward walk HG -->
+  <!-- rear post backward walk HG -->
   <line class="red" x1="5.5" y1="0" x2="7.7" y2="0"/>
 </svg>
 </div>
@@ -702,10 +702,10 @@
 <#t>
   <:b>己庚爲後表</:b>，<:r>辛庚爲後去表</:r>，\
   <:g>辛爲人目</:g>，<:v>辛己甲爲後表望島峯</:v>。 |
-  <:b><$>FG</$> is {the} rear pole</:b>;
-  <:r><$>HG</$> is {the} rear {walk's} separation from {the} pole</:r>;
+  <:b><$>FG</$> is {the} rear post</:b>;
+  <:r><$>HG</$> is {the} rear {walk's} separation from {the} post</:r>;
   <:g><$>H</$> is {the} man's eye</:g>;
-  <:v><$>HFA</$> is {the} rear pole's looking at
+  <:v><$>HFA</$> is {the} rear post's looking at
     {the} peak of {the} island</:v>.
 </#t>
 
@@ -723,19 +723,19 @@
   <line x1="5.5" y1="0" x2="7.7" y2="0"/>
   <!-- GEDB -->
   <line class="blue" x1="0" y1="0" x2="5.5" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line class="green" x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line class="green" x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF -->
+  <!-- post height line OF -->
   <line class="red" x1="0" y1="-1" x2="5.5" y2="-1"/>
   <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
   <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
@@ -778,19 +778,19 @@
   <line class="green" x1="3" y1="0" x2="4.2" y2="0"/>
   <!-- IG -->
   <line class="green" x1="5.5" y1="0" x2="6.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF -->
+  <!-- post height line OF -->
   <line x1="0" y1="-1" x2="5.5" y2="-1"/>
   <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
   <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
@@ -831,19 +831,19 @@
   <line x1="0" y1="0" x2="5.5" y2="0"/>
   <!-- GH -->
   <line class="blue" x1="5.5" y1="0" x2="7.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line class="blue" x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF -->
+  <!-- post height line OF -->
   <line class="red" x1="0" y1="-1" x2="5.5" y2="-1"/>
   <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
   <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
@@ -892,19 +892,19 @@
   <line x1="6.7" y1="0" x2="7.7" y2="0"/>
   <!-- GI -->
   <line class="blue" x1="5.5" y1="0" x2="6.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line class="blue" x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF except OC -->
+  <!-- post height line OF except OC -->
   <line x1="3" y1="-1" x2="5.5" y2="-1"/>
   <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
   <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
@@ -947,19 +947,19 @@
   <line class="blue" x1="5.5" y1="0" x2="6.7" y2="0"/>
   <!-- HI -->
   <line class="red" x1="6.7" y1="0" x2="7.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line class="blue" x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF -->
+  <!-- post height line OF -->
   <line x1="0" y1="-1" x2="5.5" y2="-1"/>
   <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
   <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
@@ -1038,19 +1038,19 @@
   <line class="blue" x1="0" y1="-3.5" x2="0" y2="-1"/>
   <!-- ground BH -->
   <line x1="0" y1="0" x2="7.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF except OC -->
+  <!-- post height line OF except OC -->
   <line class="red" x1="3" y1="-1" x2="5.5" y2="-1"/>
   <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
   <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
@@ -1094,19 +1094,19 @@
   <line x1="0" y1="0" x2="6.7" y2="0"/>
   <!-- HI -->
   <line class="blue" x1="6.7" y1="0" x2="7.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line class="red" x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF except FC -->
+  <!-- post height line OF except FC -->
   <line x1="0" y1="-1" x2="3" y2="-1"/>
   <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
   <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
@@ -1168,19 +1168,19 @@
   <line x1="0" y1="0" x2="6.7" y2="0"/>
   <!-- HI -->
   <line class="blue" x1="6.7" y1="0" x2="7.7" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line class="red" x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line class="red" x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF except FC -->
+  <!-- post height line OF except FC -->
   <line x1="0" y1="-1" x2="3" y2="-1"/>
   <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
   <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
@@ -1204,7 +1204,7 @@
 <#t>
   既得<:v>甲辰</:v>，加<:r>表高辰乙</:r>（即<:r>丙丁</:r>），得甲乙，爲島高。 |
   Having obtained <:v><$>AO</$></:v>,
-  add <:r>{the} pole height <$>OB</$></:r> (which is <:r><$>CD</$></:r>),
+  add <:r>{the} post height <$>OB</$></:r> (which is <:r><$>CD</$></:r>),
   {to} obtain <$>AB</$>, being {the} height of {the} island.
 </#t>
 <ul>
@@ -1223,12 +1223,12 @@
         \text{[island height]}
         &=
           \frac{
-            \text{\colr [pole height]}
+            \text{\colr [post height]}
               \cdot
-            \text{\colg [pole separation]}
+            \text{\colg [post separation]}
           }{
             \text{\colb [mutual excess]}
-          } + \text{\colr [pole height]}.
+          } + \text{\colr [post height]}.
       \end{aligned}
     </$$>
     Remember
@@ -1238,8 +1238,8 @@
         &= {\colb HI} \\
         &= HG - IG \\
         &= HG - ED \\
-        &= \text{[rear pole backward walk]}
-         - \text{[front pole backward walk]}.
+        &= \text{[rear post backward walk]}
+         - \text{[front post backward walk]}.
       \end{aligned}
     </$$>
   </li>
@@ -1261,19 +1261,19 @@
   <line class="red" x1="5.5" y1="0" x2="6.7" y2="0"/>
   <!-- DB -->
   <line class="violet" x1="0" y1="0" x2="3" y2="0"/>
-  <!-- front pole CD -->
+  <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
   <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
   <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
   <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
-  <!-- rear pole FG -->
+  <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
   <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
   <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
   <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
   <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
-  <!-- pole height line OF except CO -->
+  <!-- post height line OF except CO -->
   <line class="green" x1="3" y1="-1" x2="5.5" y2="-1"/>
   <!-- CO -->
   <line class="violet" x1="0" y1="-1" x2="3" y2="-1"/>
@@ -1305,7 +1305,7 @@
   <:v>{the} split major cathetus <$>CO</$></:v>
   (which is <:v><$>DB</$></:v>);
   {we} obtain <:v>{the} distance {that the} island {is} separated
-  from {the} front pole</:v>.
+  from {the} front post</:v>.
 </#t>
 <ul>
   <li>
@@ -1322,12 +1322,12 @@
           }{
             \colb HI
           } \\[2ex]
-        \text{\colv [island-pole separation]}
+        \text{\colv [island-post separation]}
         &=
           \frac{
-            \text{\colr [front pole backward walk]}
+            \text{\colr [front post backward walk]}
               \cdot
-            \text{\colg [pole separation]}
+            \text{\colg [post separation]}
           }{
             \text{\colb [mutual excess]}
           }.
