@@ -1,5 +1,5 @@
 <*>
-  Conway's Custom Romanisation for Cantonese | 20190407 | 20200220 | d
+  Conway's Custom Romanisation for Cantonese | 20190407 | 20200229 | d
   | Conway's custom romanisation system for Cantonese, \
     with English approximations and a diagram of the nine tones.
 </*>
@@ -436,18 +436,18 @@
   
   <tr>
     <th rowspan="3">Favoured post-merger initial</th>
-    <td class="centred-text" colspan="5"><:v><^e>ts</^e></:v></td>
-    <td class="centred-text" colspan="6"><:v><^e>ch</^e></:v></td>
+    <td class="centred-text" colspan="5"><:r><^e>ts</^e></:r></td>
+    <td class="centred-text" colspan="6"><:r><^e>ch</^e></:r></td>
   </tr>
   
   <tr>
-    <td class="centred-text" colspan="5"><:v><^e>ts'</^e></:v></td>
-    <td class="centred-text" colspan="6"><:v><^e>ch'</^e></:v></td>
+    <td class="centred-text" colspan="5"><:r><^e>ts'</^e></:r></td>
+    <td class="centred-text" colspan="6"><:r><^e>ch'</^e></:r></td>
   </tr>
   
   <tr>
-    <td class="centred-text" colspan="10"><:v><^e>s</^e></:v></td>
-    <td class="centred-text"><:v><^e>sh</^e></:v></td>
+    <td class="centred-text" colspan="10"><:r><^e>s</^e></:r></td>
+    <td class="centred-text"><:r><^e>sh</^e></:r></td>
   </tr>
   
 </table></!c>
@@ -459,28 +459,33 @@
     as <^e><:h>s</:h>u"</^e>~/~[syː],
   and yet the vast majority of people will pronounce 石,
     <^e><:h>sh</:h>ek</^e>~/~[ɕɛːk̚],
-    as <^e><:h>s</:h>ek</^e>~/~[sɛːk̚].
+    as <^e><:h><:r>s</:r></:h>ek</^e>~/~[sɛːk̚],
+  myself included.
   The \{<:v><^e>ts</^e></:v>~vs~<:v><^e>ch</^e></:v>\}
   and \{<:v><^e>ts'</^e></:v>~vs~<:v><^e>ch'</^e></:v>\} tendencies
   are not as strong, but still prevalent.
 </p>
 
 <#n>
-  I have decided to keep the pre-merger distinctions
-  in my romanisation system for historical purposes,
-  using the consonant given in
+  I have decided to preserve the pre-merger distinctions
+  in my romanisation system for historical purposes.
+  <:y>Unless noted otherwise,
+  Cantonese romanisations written down in this site
+  shall use the <:v>pre-merger consonant</:v> given in
   <@>
     《分韻撮要》
     | https://ytenx.org/pyonh/
     | 韻典網：《分韻撮要》
-  </@>
-  unless noted otherwise.
+  </@>.</:y>
 </#n>
 <#n>
-  However, unless you want to sound really weird,
-  I suggest pronouncing words using the
-  appropriate favoured post-merger initial listed in the table above,
-  rather than the pre-merger initial.
+  <:y>However, unless you want to sound really weird,
+  I still suggest pronouncing words out loud using the
+  appropriate <:r>favoured post-merger initial</:r> listed in the table above,
+  rather than the <:v>pre-merger initial</:g></:y>,
+  e.g.~<^e><:r>s</:r>aang <:r>ch'</:r>oi</^e>
+  rather than <^e><:v>sh</:v>aang <:v>ts'</:v>oi</^e>
+  for 生菜.
 </#n>
 
 
