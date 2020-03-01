@@ -27,7 +27,7 @@
 <h1>Python: a regex converter from CCH to HTML</h1>
 <p class="page-properties">
 First created:&nbsp;20190720<br>
-Last modified:&nbsp;<b>20200226</b><br>
+Last modified:&nbsp;<b>20200302</b><br>
 <b>Code:</b>
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch.py" title="GitHub: cch.py"><code>cch.py</code></a>
 </p>
@@ -36,6 +36,7 @@ Last modified:&nbsp;<b>20200226</b><br>
 <li><a href="#display-code" title="Display code tag"><code>&lt;``&gt;</code></a></li>
 <li><a href="#inline-code" title="Inline code tag"><code>&lt;`&gt;</code></a></li>
 <li><a href="#html-comment" title="HTML comment tag"><code>&lt;!-- --&gt;</code></a></li>
+<li><a href="#html-script" title="HTML script tag"><code>&lt;script&gt;</code></a></li>
 <li><a href="#display-maths" title="Display maths tag"><code>&lt;$$&gt;</code></a></li>
 <li><a href="#inline-maths" title="Inline maths tag"><code>&lt;$&gt;</code></a></li>
 <li><a href="#inline-maths-definition" title="Inline maths definition tag"><code>&lt;$d&gt;</code></a></li>
@@ -211,6 +212,16 @@ HTML comment tag
 <p>
 Removed. (You can comment as much as you like in the CCH source file
 without increasing the size of the output HTML file.)
+</p>
+<h3 id="html-script"><a class="self-link" href="#html-script"></a>
+HTML script tag
+</h3>
+<div class="boxed">
+<code> &lt;script&gt; {content} &lt;/script&gt; </code>
+</div>
+<p>
+<a href="#whitespace" title="Whitespace">Whitespace is removed</a>,
+but <code>{content}</code> is otherwise unchanged.
 </p>
 <h3 id="display-maths"><a class="self-link" href="#display-maths"></a>
 Display maths tag

@@ -292,6 +292,41 @@ def remove_all_html_comments(string):
   return re.sub(r'[^\S\n]*<!\-\-[\s\S]*?\-\->', '', string)
 
 ################################################################
+# Replace HTML script elements with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   <script> {content} </script>
+
+# Raw regular expression for unprocessed string:
+#   <script>([\s\S]*?)</script>
+#   \1  {content}
+
+# Processed string:
+#   <script> {whitespace-stripped content} </script>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_html_script(match_object):
+  
+  content = match_object.group(1)
+  content = remove_unnecessary_whitespace(content)
+  
+  processed_string = f'<script>{content}</script>'
+  
+  return create_temporary_replacement_string(processed_string)
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_html_scripts(string):
+  
+  return re.sub(r'<script>([\s\S]*?)</script>', replace_html_script, string)
+
+################################################################
 # Replace display maths with temporary replacements
 ################################################################
 
@@ -3224,6 +3259,7 @@ def cch_to_html(file_name):
   markup = replace_all_display_code(markup)
   markup = replace_all_inline_code(markup)
   markup = remove_all_html_comments(markup)
+  markup = replace_all_html_scripts(markup)
   markup = replace_all_display_maths(markup)
   markup = replace_all_inline_maths(markup)
   markup = replace_all_inline_maths_definitions(markup)
@@ -3294,7 +3330,7 @@ def cch_to_html(file_name):
   markup = apply_conway_italics(markup)
   
   # ----------------------------------------------------------------
-  # Remove unnecessary Whitespace
+  # Remove unnecessary whitespace
   # ----------------------------------------------------------------
   
   markup = remove_unnecessary_whitespace(markup)

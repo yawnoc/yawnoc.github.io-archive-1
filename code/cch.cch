@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20200226 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20200302 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -24,6 +24,7 @@
   <@i> <code>\<``\></code> | #display-code | Display code tag </@i>
   <@i> <code>\<`\></code> | #inline-code | Inline code tag </@i>
   <@i> <`><!-- --></`> | #html-comment | HTML comment tag </@i>
+  <@i> <`><script></`> | #html-script | HTML script tag </@i>
   <@i> <`><$$></`> | #display-maths | Display maths tag </@i>
   <@i> <`><$></`> | #inline-maths | Inline maths tag </@i>
   <@i>
@@ -284,6 +285,17 @@
 <p>
   Removed. (You can comment as much as you like in the CCH source file
   without increasing the size of the output HTML file.) <!-- Like so. -->
+</p>
+
+<@3> HTML script tag | html-script </@3>
+
+<#>
+  <`> <script> {content} </script> </`>
+</#>
+
+<p>
+  <@> Whitespace is removed | #whitespace | Whitespace </@>,
+  but <`>{content}</`> is otherwise unchanged.
 </p>
 
 <@3> Display maths tag | display-maths </@3>
