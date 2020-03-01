@@ -1,0 +1,38 @@
+<*> Strikethrough generator | 20200302 | 20200302 </*>
+
+<=h>
+  <@ih></@ih>
+  <@it></@it>
+</=h>
+
+<h1>Strikethrough generator</h1>
+
+<*p></*p>
+
+<p>
+  Convenient for use in emails.
+</p>
+
+<textarea
+  autofocus
+  oninput="passToOutput(value)"
+  placeholder="Enter input here"
+  style="padding: 0.3em 0.5em; width: 95%;"
+>
+</textarea>
+
+<#n>
+  <s id="output">Output shall appear here</s>
+</#n>
+
+<*f></*f>
+
+<script>
+function passToOutput(string) {
+  output.textContent = (
+    /\S/.test(string)
+    ? string
+    : 'Output shall appear here'
+  )
+}
+</script>
