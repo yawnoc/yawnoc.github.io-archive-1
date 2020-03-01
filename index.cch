@@ -1,5 +1,5 @@
 <*>
-  | 20190309 | 20200223 | d
+  | 20190309 | 20200302 | d
   | Assorted musings of Conway, mostly applied maths and Literary Chinese.
 </*>
 
@@ -300,12 +300,14 @@
     | /sun-tzu/code/animations.html
     |
   </@i>
-  <li>
-    <@> Unicode mathematical symbols | /code/unicode-maths.html | </@>
-    <span class="note">
-      (technically not code, but useful for typing emails)
-    </span>
-  </li>
+</ul>
+
+<@3> Useful for typing emails | code-email </@3>
+
+<ul>
+  <@i>
+    Unicode mathematical symbols | /code/unicode-maths.html |
+  </@i>
 </ul>
 
 
@@ -1540,9 +1542,10 @@ yawnoc，香港人，望落去鬼鬼地。
 
 曰：
   白話叫爸媽，
-  行文稱父母。
-  舊時謂爹娘，
-  文言曰嚴慈。
+  行文書父母。
+  敬禮稱尊堂，
+  文言謂嚴慈。
+  尚在跪爹娘，
   歸西拜考妣。
 
 十零歲，老嫲始以痴呆。
@@ -1629,6 +1632,13 @@ yawnoc，香港人，望落去鬼鬼地。
   雪粉未亡心
   濃愁幾時化
   淡酒何日沉
+
+################################################################
+
+曰：既謂木者，塌木於林中而無人聞之，其塌可有聲乎？
+答曰：無聲。聲者，音波至耳而有所覺也，無耳則無聲也。
+又問曰：慕人於世上而無人知之，其慕可有義乎？
+答曰：無義。猶空也。
 
 ################################################################
 
