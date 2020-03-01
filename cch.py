@@ -25,11 +25,11 @@
 ################################################################
 
 ################################################################
-# Tags in canonical order
+# Elements in canonical order
 ################################################################
-#   Tag             Name                              Descendants
+#   Element         Name                              Descendants
 # ----------------------------------------------------------------
-# Supreme tags
+# Supreme elements
 # ----------------------------------------------------------------
 # These are immune to any processing below it.
 #   <``>            display_code
@@ -39,17 +39,17 @@
 #   <$>             inline_maths
 #   <$d>            inline_maths_definition
 # ----------------------------------------------------------------
-# Zero-argument tags
+# Zero-argument elements
 # ----------------------------------------------------------------
 #   <@i{type}>      item_anchor_abbreviation          <@i>
 #   <^^>            assisting_romanisation_radio      <^>
 #   <-{type}>       svg_style_abbreviation
 # ----------------------------------------------------------------
-# Multiple-argument tags
+# Multiple-argument elements
 # ----------------------------------------------------------------
 # Arguments are to be separated by the pipe character |.
 # Use \| for a literal pipe.
-# Nesting is allowed provided the inner tag is strictly higher in this list.
+# Nesting is allowed provided the inner element appears higher in this list.
 #   <+{pos}>        dialogue_image                    <+>
 #   <+>             image
 #   <^>             assisting_romanisation            <^e>
@@ -66,9 +66,9 @@
 #   <*c>            cite_this_page                    <@{level}>
 #   <*f>            footer
 # <@{dir}>, <@{level}>, <@> require a second pass, since they are descendants
-# of multiple-argument tags which are lower down than themselves.
+# of multiple-argument elements which are lower down than themselves.
 # ----------------------------------------------------------------
-# Single-argument tags
+# Single-argument elements
 # ----------------------------------------------------------------
 #   <_>             assisting_numeral
 #   <:{type}>       formatted_span
@@ -106,7 +106,7 @@
 # Conway
 # ----------------------------------------------------------------
 #   \               \\              (literal backslash)
-#   |               \|              (literal pipe in a Multiple-argument tag)
+#   |               \|              (literal pipe)
 #   ~               \~              (literal tilde)
 #   {               \{              (literal opening curly bracket)
 #   }               \}              (literal closing curly bracket)
@@ -129,7 +129,7 @@
 # \ and | are called functional Conway literals.
 # ~, { and } are called special Conway literals.
 # ----------------------------------------------------------------
-# Romanisation (for text romanisation tags)
+# Romanisation (for text romanisation elements)
 # ----------------------------------------------------------------
 # Conway only
 #   œ               oe              (œ U+0153 LATIN SMALL LIGATURE OE)
@@ -179,7 +179,8 @@
 # Whitespace (for lighter HTML)
 ################################################################
 # Unnecessary whitespace is removed:
-# 1. Preformatted tags are de-indented (but not affected by the removals below)
+# 1. Preformatted element are de-indented
+#    (but not affected by the removals below)
 # 2. Leading whitespace and empty lines are removed
 # 3. Newlines preceded immediately by a backslash are removed
 #    (i.e. backslash is the line continuation character)
@@ -3078,7 +3079,7 @@ def replace_all_preformatted(string):
 
 def remove_unnecessary_whitespace(string):
   
-  # De-indent preformatted tags (and temporarily replace them
+  # De-indent preformatted elements (and temporarily replace them
   # so that subsequent whitespace removal does not affect them)
   string = replace_all_preformatted(string)
   
@@ -3208,7 +3209,7 @@ def cch_to_html(file_name):
   
   # To prevent unwanted replacements affecting portions {m} of markup
   # which must NOT be touched after they have been processed into strings {p}
-  # (e.g. CCH display code tags),
+  # (e.g. CCH display code elements),
   # we replace the portions {m} with temporary replacement strings {t},
   # and store the processed strings {p} inside a replacement dictionary,
   # using keys the temporary replacement strings {t}
@@ -3253,7 +3254,7 @@ def cch_to_html(file_name):
   ################################################################
   
   # ----------------------------------------------------------------
-  # Replace all Supreme tags
+  # Replace all Supreme elements
   # ----------------------------------------------------------------
   
   markup = replace_all_display_code(markup)
@@ -3265,7 +3266,7 @@ def cch_to_html(file_name):
   markup = replace_all_inline_maths_definitions(markup)
   
   # ----------------------------------------------------------------
-  # Replace all Zero-argument tags
+  # Replace all Zero-argument elements
   # ----------------------------------------------------------------
   
   markup = replace_all_item_anchor_abbreviations(markup)
@@ -3273,7 +3274,7 @@ def cch_to_html(file_name):
   markup = replace_all_svg_style_abbreviations(markup)
   
   # ----------------------------------------------------------------
-  # Replace all Multiple-argument tags
+  # Replace all Multiple-argument elements
   # ----------------------------------------------------------------
   
   markup = replace_all_dialogue_images(markup)
@@ -3293,7 +3294,7 @@ def cch_to_html(file_name):
   markup = replace_footer(markup)
   
   # ----------------------------------------------------------------
-  # Replace all Multiple-argument tags which require a second pass
+  # Replace all Multiple-argument elements which require a second pass
   # ----------------------------------------------------------------
   
   markup = replace_all_directed_triangle_anchors(markup)
@@ -3301,7 +3302,7 @@ def cch_to_html(file_name):
   markup = replace_all_anchors(markup)
   
   # ----------------------------------------------------------------
-  # Replace all Single-argument tags
+  # Replace all Single-argument elements
   # ----------------------------------------------------------------
   
   markup = replace_all_assisting_numerals(markup)
