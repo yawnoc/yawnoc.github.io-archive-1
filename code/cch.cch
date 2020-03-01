@@ -19,84 +19,100 @@
 
 <=>
   
-  <@i> <b>Supreme:</b> | #supreme | Supreme tags </@i>
+  <@i> <b>Supreme:</b> | #supreme | Supreme elements </@i>
   
-  <@i> <code>\<``\></code> | #display-code | Display code tag </@i>
-  <@i> <code>\<`\></code> | #inline-code | Inline code tag </@i>
-  <@i> <`><!-- --></`> | #html-comment | HTML comment tag </@i>
-  <@i> <`><script></`> | #html-script | HTML script tag </@i>
-  <@i> <`><$$></`> | #display-maths | Display maths tag </@i>
-  <@i> <`><$></`> | #inline-maths | Inline maths tag </@i>
+  <@i> <code>\<``\></code> | #display-code | Display code element </@i>
+  <@i> <code>\<`\></code> | #inline-code | Inline code element </@i>
+  <@i> <`><!-- --></`> | #html-comment | HTML comment element </@i>
+  <@i> <`><script></`> | #html-script | HTML script element </@i>
+  <@i> <`><$$></`> | #display-maths | Display maths element </@i>
+  <@i> <`><$></`> | #inline-maths | Inline maths element </@i>
   <@i>
-    <`><$d></`> | #inline-maths-definition | Inline maths definition tag
+    <`><$d></`> | #inline-maths-definition | Inline maths definition element
   </@i>
   
-  <@i> <b>0-arg:</b> | #zero-argument | Zero-argument tags </@i>
+  <@i> <b>0-arg:</b> | #zero-argument | Zero-argument elements </@i>
   
   <@i>
     <`><@ih></`>
     | #item-anchor-abbreviation
-    | Item anchor abbreviation tag
+    | Item anchor abbreviation element
   </@i>
   <@i>
     <`><^^></`>
     | #assisting-romanisation-radio
-    | Assisting romanisation radio tag
+    | Assisting romanisation radio element
   </@i>
   <@i>
     <`><-t></`>
     | #svg-style-abbreviation
-    | SVG style abbreviation tag
+    | SVG style abbreviation element
   </@i>
   
-  <@i> <b>Multi-arg:</b> | #multiple-argument | Multiple-argument tags </@i>
+  <@i>
+    <b>Multi-arg:</b>
+    | #multiple-argument
+    | Multiple-argument elements
+  </@i>
   
-  <@i> <`><+h></`> | #dialogue-image | Dialogue image tag </@i>
-  <@i> <`><+></`> | #image | Image tag </@i>
-  <@i> <`><^></`> | #assisting-romanisation |  Assisting romanisation tag </@i>
+  <@i> <`><+h></`> | #dialogue-image | Dialogue image element </@i>
+  <@i> <`><+></`> | #image | Image element </@i>
+  <@i>
+    <`><^></`>
+    | #assisting-romanisation
+    | Assisting romanisation element
+  </@i>
   <@i>
     <`><^cm></`>
     | #cantonese-mandarin-romanisation
-    | Cantonese \& Mandarin romanisation tag
+    | Cantonese \& Mandarin romanisation element
   </@i>
   <@i>
     <`><@u></`>
     | #directed-triangle-anchor
-    |  Directed triangle anchor tag
+    |  Directed triangle anchor element
   </@i>
-  <@i> <`><@i></`> | #item-anchor | Item anchor tag </@i>
+  <@i> <`><@i></`> | #item-anchor | Item anchor element </@i>
   <@i>
     <`><@2></`>
     | #heading-self-link-anchor
-    | Heading self-link anchor tag
+    | Heading self-link anchor element
   </@i>
-  <@i> <`><@></`> | #anchor | Anchor tag </@i>
-  <@i> <`><#t></`> | #boxed-translation | Boxed translation tag </@i>
-  <@i> <`><;sh></`> | #sun-tzu-heading | <^e>Sun~Tzuu</^e> heading tag </@i>
+  <@i> <`><@></`> | #anchor | Anchor element </@i>
+  <@i> <`><#t></`> | #boxed-translation | Boxed translation element </@i>
+  <@i>
+    <`><;sh></`>
+    | #sun-tzu-heading
+    | <^e>Sun~Tzuu</^e> heading element
+  </@i>
   <@i>
     <`><;s@@></`>
     | #sun-tzu-link-division
-    | <^e>Sun~Tzuu</^e> link division tag
+    | <^e>Sun~Tzuu</^e> link division element
   </@i>
-  <@i> <`><*></`> | #preamble | Preamble tag </@i>
-  <@i> <`><*p></`> | #page-properties | Page properties tag </@i>
-  <@i> <`><*c></`> | #cite-this-page | Cite this page tag </@i>
-  <@i> <`><*f></`> | #footer | Footer tag </@i>
+  <@i> <`><*></`> | #preamble | Preamble element </@i>
+  <@i> <`><*p></`> | #page-properties | Page properties element </@i>
+  <@i> <`><*c></`> | #cite-this-page | Cite this page element </@i>
+  <@i> <`><*f></`> | #footer | Footer element </@i>
   
-  <@i> <b>1-arg:</b> | #single-argument | Single-argument tags </@i>
+  <@i> <b>1-arg:</b> | #single-argument | Single-argument elements </@i>
   
-  <@i> <`><_></`> | #assisting-numeral | Assisting numeral tag </@i>
-  <@i> <`><:r></`> | #formatted-span | Formatted span tag </@i>
-  <@i> <`><#></`> | #boxed-division | Boxed division tag </@i>
-  <@i> <`><~~></`> | #dialogue-division | Dialogue division tag </@i>
-  <@i> <`><~h></`> | #dialogue-paragraph | Dialogue paragraph tag </@i>
-  <@i> <`><@@></`> | #link-division | Link division tag </@i>
-  <@i> <`><=h></`> | #header-navigation-bar | Header navigation bar tag </@i>
-  <@i> <`><=></`> | #navigation-bar | Navigation bar tag </@i>
-  <@i> <`><.></`> | #note-paragraph | Note paragraph tag </@i>
-  <@i> <`><!></`> | #overflowing-division | Overflowing division tag </@i>
-  <@i> <`><--></`> | #svg-style-container | SVG style container tag </@i>
-  <@i> <`><^e></`> | #text-romanisation | Text romanisation tag </@i>
+  <@i> <`><_></`> | #assisting-numeral | Assisting numeral element </@i>
+  <@i> <`><:r></`> | #formatted-span | Formatted span element </@i>
+  <@i> <`><#></`> | #boxed-division | Boxed division element </@i>
+  <@i> <`><~~></`> | #dialogue-division | Dialogue division element </@i>
+  <@i> <`><~h></`> | #dialogue-paragraph | Dialogue paragraph element </@i>
+  <@i> <`><@@></`> | #link-division | Link division element </@i>
+  <@i>
+    <`><=h></`>
+    | #header-navigation-bar
+    | Header navigation bar element
+  </@i>
+  <@i> <`><=></`> | #navigation-bar | Navigation bar element </@i>
+  <@i> <`><.></`> | #note-paragraph | Note paragraph element </@i>
+  <@i> <`><!></`> | #overflowing-division | Overflowing division element </@i>
+  <@i> <`><--></`> | #svg-style-container | SVG style container element </@i>
+  <@i> <`><^e></`> | #text-romanisation | Text romanisation element </@i>
   
   <@i> <b>Escapes</b> | #escapes | Escapes </@i>
   
@@ -121,8 +137,8 @@
 <p>
   CCH consists mostly of HTML-like tags,
   but with names starting with a punctuation character.
-  By design, CCH tags are more readable and require fewer keystrokes
-  than normal HTML tags (and Notepad++ is able to auto-complete both),
+  By design, CCH is more readable and require fewer keystrokes
+  than normal HTML (and Notepad++ is able to auto-complete tags for both),
   mostly by using pipe-delimited arguments rather than HTML attributes.
   For instance compare the CCH code
 </p>
@@ -140,8 +156,8 @@
   Also CCH has many convenient backslash-escaped abbreviations;
   e.g.~<`>\<</`> gets converted to the HTML~<`>&lt;</`>
   and renders as~\<.
-  CCH can be used in conjunction with normal HTML tags
-  (except the <`><head></`> tag and a few others
+  CCH can be used in conjunction with normal HTML elements
+  (except the <`><head></`> element and a few others
   which are generated automatically).
 </p>
 
@@ -173,41 +189,41 @@
 </p>
 
 
-<@2> Supreme tags | supreme </@2>
+<@2> Supreme elements | supreme </@2>
 
 
 <p>
-  Each of these tags is immune to any other tags or processing
+  Each of these elements is immune to any other elements or processing
   lower than it in this page.
   For example, the normal
   <@>
-    HTML comment tag <`><!-- --></`>
+    HTML comment element <`><!-- --></`>
     | #html-comment
-    | HTML comment tag
+    | HTML comment element
   </@>
   yields to the
   <@>
-    display code tag <code>\<``\> \{content\} \</``\></code>
+    display code element <code>\<``\> \{content\} \</``\></code>
     | #display-code
-    | Display code tag
+    | Display code element
   </@>
   and the
   <@>
-    inline code tag <code>\<`\> \{content\} \</`\></code>
+    inline code element <code>\<`\> \{content\} \</`\></code>
     | #inline-code
-    | Inline code tag
+    | Inline code element
   </@>,
   but prevails over all else.
 </p>
 
-<@3> Display code tag | display-code </@3>
+<@3> Display code element | display-code </@3>
 
 <#>
   <code>\<``\> \{content\} \</``\></code>
 </#>
 
 <p>
-  Converted to a <`><pre></`> tag,
+  Converted to a <`><pre></`> element,
   with automatic escaping of <`>&</`>, <`><</`> and <`>></`>,
   and automatic de-indentation, for <`>{content}</`>.
 </p>
@@ -241,14 +257,14 @@
   
 </ul>
 
-<@3> Inline code tag | inline-code </@3>
+<@3> Inline code element | inline-code </@3>
 
 <#>
   <code>\<`\> \{content\} \</`\></code>
 </#>
 
 <p>
-  Converted to a <`><code></`> tag,
+  Converted to a <`><code></`> element,
   with automatic escaping of <`>&</`>, <`><</`> and <`>></`>
   for <`>{content}</`>.
 </p>
@@ -276,7 +292,7 @@
   
 </ul>
 
-<@3> HTML comment tag | html-comment </@3>
+<@3> HTML comment element | html-comment </@3>
 
 <#>
   <`> {horizontal whitespace} <!-- {content} --> </`>
@@ -287,7 +303,7 @@
   without increasing the size of the output HTML file.) <!-- Like so. -->
 </p>
 
-<@3> HTML script tag | html-script </@3>
+<@3> HTML script element | html-script </@3>
 
 <#>
   <`> <script> {content} </script> </`>
@@ -298,14 +314,14 @@
   but <`>{content}</`> is otherwise unchanged.
 </p>
 
-<@3> Display maths tag | display-maths </@3>
+<@3> Display maths element | display-maths </@3>
 
 <#>
   <`><$$> {content} </$$></`>
 </#>
 
 <p>
-  Converted to a <`><div class="maths"></`> tag for a
+  Converted to a <`><div class="maths"></`> element for a
   <@>
     KaTeX
     | /code/katex-guide.html
@@ -353,14 +369,14 @@
   
 </ul>
 
-<@3> Inline maths tag | inline-maths </@3>
+<@3> Inline maths element | inline-maths </@3>
 
 <#>
   <`><$> {content} </$></`>
 </#>
 
 <p>
-  Converted to a <`><span class="maths"></`> tag for a
+  Converted to a <`><span class="maths"></`> element for a
   <@>
     KaTeX
     | /code/katex-guide.html
@@ -393,14 +409,14 @@
   
 </ul>
 
-<@3> Inline maths definition tag | inline-maths-definition </@3>
+<@3> Inline maths definition element | inline-maths-definition </@3>
 
 <#>
   <`><$d> {content} </$d></`>
 </#>
 
 <p>
-  Converted to a <`><span class="maths embedded-definitions"></`> tag,
+  Converted to a <`><span class="maths embedded-definitions"></`> element,
   with automatic escaping of <`>&</`>, <`><</`> and <`>></`>
   for <`>{content}</`>.
   This does not display, and should be used to hold
@@ -431,11 +447,11 @@
 </ul>
 
 
-<@2> Zero-argument tags | zero-argument </@2>
+<@2> Zero-argument elements | zero-argument </@2>
 
 
 
-<@3> Item anchor abbreviation tag | item-anchor-abbreviation </@3>
+<@3> Item anchor abbreviation element | item-anchor-abbreviation </@3>
 
 <#>
   <`><@i{type}></@i{type}></`>
@@ -443,7 +459,7 @@
 
 <p>
   Pre-defined abbreviations for
-  <@> item anchors | #item-anchor | Item anchor tag </@>.
+  <@> item anchors | #item-anchor | Item anchor element </@>.
 </p>
 
 <!c><table>
@@ -502,7 +518,7 @@
   </=h>
 </``>
 
-<@3> Assisting romanisation radio tag | assisting-romanisation-radio </@3>
+<@3> Assisting romanisation radio element | assisting-romanisation-radio </@3>
 
 <#>
   <`><^^></^^></`>
@@ -516,7 +532,7 @@
   <@>
     assisting romanisations
     | #assisting-romanisation
-    | Assisting romanisation tag
+    | Assisting romanisation element
   </@>.
 </p>
 
@@ -529,7 +545,7 @@
   
 </ul>
 
-<@3> SVG style abbreviation tag | svg-style-abbreviation </@3>
+<@3> SVG style abbreviation element | svg-style-abbreviation </@3>
 
 <#>
   <`><-{type}></-{type}></`>
@@ -544,11 +560,11 @@
     line colour (<`>{type}</`>~<`>lc</`>) and
     text colour (<`>{type}</`>~<`>tc</`>).
   Must be used inside an
-  <@> SVG style container tag | #svg-style-container </@>.
+  <@> SVG style container element | #svg-style-container </@>.
 </p>
 
 
-<@2> Multiple-argument tags | multiple-argument </@2>
+<@2> Multiple-argument elements | multiple-argument </@2>
 
 
 <p>
@@ -557,34 +573,38 @@
   <`>\|</`>.
 </p>
 <p>
-  Tags may be nested provided the inner tag occurs
+  Elements may be nested provided the inner element occurs
   strictly higher in this list
-  (except the <@> preamble | #preamble | Preamble tag </@>,
+  (except the <@> preamble | #preamble | Preamble element </@>,
   which must be supplied at the very beginning of the CCH source file).
 </p>
 
 
-<@3> Dialogue image tag | dialogue-image </@3>
+<@3> Dialogue image element | dialogue-image </@3>
 
 <#>
   <`><+{pos}> {src} | {alt} </+{pos}></`>
 </#>
 
 <p>
-  Converted to an <`><img></`> tag
+  Converted to an <`><img></`> element
   for the host (<`>{pos}</`>~<`>h</`>) or the guest (<`>{pos}</`>~<`>g</`>),
   and to be used inside a
-  <@> dialogue division tag | #dialogue-division | Dialogue division tag </@>.
+  <@>
+    dialogue division element
+    | #dialogue-division
+    | Dialogue division element
+  </@>.
 </p>
 
-<@3> Image tag | image </@3>
+<@3> Image element | image </@3>
 
 <#>
   <`><+> {src} | {alt} [| title [| width [| class]]] </+></`>
 </#>
 
 <p>
-  Converted to an <`><img></`> tag.
+  Converted to an <`><img></`> element.
   Passing the empty string (or only whitespace) to
   any of <`>[title]</`>, <`>[width]</`> or <`>[class]</`>
   is equivalent to omitting them.
@@ -632,21 +652,25 @@
   
 </ul>
 
-<@3> Assisting romanisation tag | assisting-romanisation </@3>
+<@3> Assisting romanisation element | assisting-romanisation </@3>
 
 <#>
   <`>{horizontal whitespace} <^> {conway} | {wadegiles} | {pinyin} </^></`>
 </#>
 
 <p>
-  Converted to <`><span></`> tags controlled by the
+  Converted to <`><span></`> elements controlled by the
   <@>
     assisting romanisation radio
     | #assisting-romanisation-radio
-    | Assisting romanisation radio tag
+    | Assisting romanisation radio element
   </@>,
   where all arguments are unescaped after the manner of the
-  <@> text romanisation tag | #text-romanisation | Text romanisation tag </@>.
+  <@>
+    text romanisation element
+    | #text-romanisation
+    | Text romanisation element
+  </@>.
   The preceding horizontal whitespace is stripped.
 </p>
 
@@ -666,7 +690,10 @@
   
 </ul>
 
-<@3> Cantonese \& Mandarin romanisation tag | cantonese-mandarin-romanisation </@3>
+<@3>
+  Cantonese \& Mandarin romanisation element
+  | cantonese-mandarin-romanisation
+</@3>
 
 <#>
   <`><^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]></`>
@@ -694,16 +721,18 @@
   
 </ul>
 
-<@3> Directed triangle anchor tag | directed-triangle-anchor </@3>
+<@3> Directed triangle anchor element | directed-triangle-anchor </@3>
 
 <#>
   <`><@{dir}> {content} | {id} [| title] </@{dir}></`>
 </#>
 
 <p>
-  Converted to the equivalent <@> anchor tag | #anchor | Anchor tag </@>
+  Converted to the equivalent
+  <@> anchor element | #anchor | Anchor element </@>
   with an upward or downward triangle if <`>{dir}</`> is <`>u</`> or <`>d</`>.
-  Usually used in <@> link divisions | #link-division | Link division tag </@>.
+  Usually used in
+  <@> link divisions | #link-division | Link division element </@>.
 </p>
 
 <ul>
@@ -711,34 +740,35 @@
   <li>
     <b>CCH</b>
     <``>
-      <@d> Link division tag | link-division </@d>
+      <@d> Link division element | link-division </@d>
     </``>
   </li>
   
   <li>
     <b>Rendered</b> <br>
-      <@d> Link division tag | link-division </@d>
+      <@d> Link division element | link-division </@d>
   </li>
   
 </ul>
 
-<@3> Item anchor tag | item-anchor </@3>
+<@3> Item anchor element | item-anchor </@3>
 
 <#>
   <`><@i> {content} | {href} [| title] </@i></`>
 </#>
 
 <p>
-  Converted to the equivalent <@> anchor tag | #anchor | Anchor tag </@>
-  wrapped inside a list item <`><li></`> tag, usually to be used inside
+  Converted to the equivalent
+  <@> anchor element | #anchor | Anchor element </@>
+  wrapped inside a list item <`><li></`> element, usually to be used inside
   <@>
-    navigation bar tags
+    navigation bar elements
     | #header-navigation-bar
-    |  Header navigation bar tag
+    |  Header navigation bar element
   </@>.
 </p>
 
-<@3> Heading self-link anchor tag | heading-self-link-anchor </@3>
+<@3> Heading self-link anchor element | heading-self-link-anchor </@3>
 
 <#>
   <`><@{level}> {content} | {id} </@{level}></`>
@@ -765,14 +795,14 @@
   
 </ul>
 
-<@3> Anchor tag | anchor </@3>
+<@3> Anchor element | anchor </@3>
 
 <#>
   <`><@> {content} | {href} [| title] </@></`>
 </#>
 
 <p>
-  Converted to an <`><a></`> tag.
+  Converted to an <`><a></`> element.
   If the empty string (or only whitespace) is passed to <`>[title]</`>,
   the title defaults to <`>{content}</`> with all the necessary escaping.
 </p>
@@ -825,14 +855,14 @@
   
 </ul>
 
-<@3> Boxed translation tag | boxed-translation </@3>
+<@3> Boxed translation element | boxed-translation </@3>
 
 <#>
   <`><#t[size]> {chinese} | {english} </#t[size]></`>
 </#>
 
 <p>
-  Converted to a <`><div class="boxed translation"></`> tag,
+  Converted to a <`><div class="boxed translation"></`> element,
   with the additional class <`>not-large</`>
   if <`>[size]</`> is supplied as <`>n</`>.
 </p>
@@ -857,7 +887,7 @@
   
 </ul>
 
-<@3> <^e>Sun~Tzuu</^e> heading tag | sun-tzu-heading </@3>
+<@3> <^e>Sun~Tzuu</^e> heading element | sun-tzu-heading </@3>
 
 <#>
   <`><;sh> {volume} | {paragraph} | {content} </;sh></`>
@@ -879,7 +909,7 @@
   
 </ul>
 
-<@3> <^e>Sun~Tzuu</^e> link division tag | sun-tzu-link-division </@3>
+<@3> <^e>Sun~Tzuu</^e> link division element | sun-tzu-link-division </@3>
 
 <#>
   <`><;s@@> {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@></`>
@@ -901,7 +931,7 @@
   
 </ul>
 
-<@3> Preamble tag | preamble </@3>
+<@3> Preamble element | preamble </@3>
 
 <#>
   <`><*> {title} | {first created} | {last modified} [| rendering] [| description] </*></`>
@@ -913,7 +943,7 @@
 </p>
 <p>
   Automatically generates the <`><!DOCTYPE html></`> declaration
-  and the <`><head></`> and <`><body></`> tags.
+  and the <`><head></`> and <`><body></`> elements.
 </p>
 
 <ul>
@@ -925,32 +955,33 @@
   <li>
     <`>{first created}</`> and <`>{last modified}</`>
     are stored for use later in the
-    <@> page properties | #page-properties | Page properties tag </@>
-    and <@> footer (copyright) | #footer | Footer tag </@> tags,
+    <@> page properties | #page-properties | Page properties element </@>
+    and <@> footer (copyright) | #footer | Footer element </@> elements,
   </li>
   
   <li>
     <`>[rendering]</`> loads the relevant CSS and Javascript required
     for displaying today's date in the
-    <@> Cite this page | #cite-this-page | Cite this page tag </@>,
-    for KaTeX <@> maths equations | #display-maths | Display maths tag </@>
+    <@> Cite this page | #cite-this-page | Cite this page element </@>,
+    for KaTeX <@> maths equations | #display-maths | Display maths element </@>
     and for
     <@>
       assisting romanisations
       | #assisting-romanisation
-      | Assisting romanisation tag
+      | Assisting romanisation element
     </@>,
     if the supplied string contains
     <`>d</`>, <`>m</`> and <`>r</`> respectively, and
   </li>
   
   <li>
-    <`>[description]</`> is the text which appears in the description meta tag.
+    <`>[description]</`> is the text which appears
+    in the description meta element.
   </li>
   
 </ul>
 
-<@3> Page properties tag | page-properties </@3>
+<@3> Page properties element | page-properties </@3>
 
 <#>
   <`><*p> [see also] [| misc] </*p></`>
@@ -962,10 +993,10 @@
 <p>
   Automatically generates the page properties paragraph,
   using the <`>{first created}</`> and <`>{last modified}</`> dates
-  supplied to the <@> preamble | #preamble | Preamble tag </@>.
+  supplied to the <@> preamble | #preamble | Preamble element </@>.
 </p>
 
-<@3> Cite this page tag | cite-this-page </@3>
+<@3> Cite this page element | cite-this-page </@3>
 
 <#>
   <`><*c> {text heading} | {tex key} | {tex heading} [| inconvenience message] </*c></`>
@@ -1004,7 +1035,7 @@
   
 </ul>
 
-<@3> Footer tag | footer </@3>
+<@3> Footer element | footer </@3>
 
 <#>
   <`><*f> [copyright exception] [| ending remark] </*f></`>
@@ -1014,24 +1045,24 @@
   Only the first occurrence is replaced.
 </p>
 <p>
-  Converted to a <`><footer></`> tag,
+  Converted to a <`><footer></`> element,
   with the copyright year range automatically determined from
   <`>{first created}</`> and <`>{last modified}</`>
-  supplied to the <@> preamble | #preamble | Preamble tag </@>.
+  supplied to the <@> preamble | #preamble | Preamble element </@>.
 </p>
 
 
-<@2> Single-argument tags | single-argument </@2>
+<@2> Single-argument elements | single-argument </@2>
 
 
-<@3> Assisting numeral tag | assisting-numeral </@3>
+<@3> Assisting numeral element | assisting-numeral </@3>
 
 <#>
   <`>{horizontal whitespace} <_>{content}</_></`>
 </#>
 
 <p>
-  Converted to a <`><span></`> tag, with simple markup for
+  Converted to a <`><span></`> element, with simple markup for
     exponents (<`>^</`>),
     minus signs (<`>-</`>), and
     times symbols (<`>*</`>)
@@ -1063,14 +1094,14 @@
 </ul>
 
 
-<@3> Formatted span tag | formatted-span </@3>
+<@3> Formatted span element | formatted-span </@3>
 
 <#>
   <`><:{type}>{content}</:{type}></`>
 </#>
 
 <p>
-  Converted to <`><span></`> tags with various types of formatting.
+  Converted to <`><span></`> elements with various types of formatting.
 </p>
 
 <!c><table>
@@ -1116,14 +1147,14 @@
   </tr>
 </table></!c>
 
-<@3> Boxed division tag | boxed-division </@3>
+<@3> Boxed division element | boxed-division </@3>
 
 <#>
   <`><#[type]>{content}</#[type]></`>
 </#>
 
 <p>
-  Converted to boxed <`><div></`> tag, with centred or not-large text
+  Converted to boxed <`><div></`> element, with centred or not-large text
   if <`>[type]</`> is supplied as <`>c</`> or <`>n</`>.
 </p>
 
@@ -1136,17 +1167,21 @@
   </#>
 </``>
 
-<@3> Dialogue division tag | dialogue-division </@3>
+<@3> Dialogue division element | dialogue-division </@3>
 
 <#>
   <`><~~>{content}</~~></`>
 </#>
 
 <p>
-  Converted to a <`><div></`> tag, for holding a dialogue
+  Converted to a <`><div></`> element, for holding a dialogue
   between a host and a guest, which comprises of
-  <@> dialogue images | #dialogue-image | Dialogue image tag </@> and
-  <@> dialogue paragraphs | #dialogue-paragraph | Dialogue paragraph tag </@>.
+  <@> dialogue images | #dialogue-image | Dialogue image element </@> and
+  <@>
+    dialogue paragraphs
+    | #dialogue-paragraph
+    | Dialogue paragraph element
+  </@>.
 </p>
 
 <ul>
@@ -1178,7 +1213,7 @@
         </~gt>
         <~gt>
           \{The dialogue is automatically concluded with "END"
-          in a <`><div></`> tag.\}
+          in a <`><div></`> element.\}
         </~gt>
         
       </~~>
@@ -1211,7 +1246,7 @@
         </~gt>
         <~gt>
           \{The dialogue is automatically concluded with "END"
-          in a <`><div></`> tag.\}
+          in a <`><div></`> element.\}
         </~gt>
         
       </~~>
@@ -1219,31 +1254,35 @@
   
 </ul>
 
-<@3> Dialogue paragraph tag | dialogue-paragraph </@3>
+<@3> Dialogue paragraph element | dialogue-paragraph </@3>
 
 <#>
   <`><~{pos}[type]>{content}</~{pos}[type]></`>
 </#>
 
 <p>
-  Converted to a <`><p></`> tag for the host's (<`>{pos}</`>~<`>h</`>)
+  Converted to a <`><p></`> element for the host's (<`>{pos}</`>~<`>h</`>)
   or the guest's (<`>{pos}</`>~<`>g</`>) words in a dialogue,
   or thoughts if <`>[type]</`> is supplied as <`>t</`>, and to be used inside a
-  <@> dialogue division tag | #dialogue-division | Dialogue division tag </@>.
+  <@>
+    dialogue division element
+    | #dialogue-division
+    | Dialogue division element
+  </@>.
 </p>
 
-<@3> Link division tag | link-division </@3>
+<@3> Link division element | link-division </@3>
 
 <#>
   <`><@@>{content}</@@></`>
 </#>
 
 <p>
-  Converted to a <`><div class="links"></`> tag, for holding
-  <@> anchor tags | #anchor | Anchor tag </@>.
+  Converted to a <`><div class="links"></`> element, for holding
+  <@> anchor elements | #anchor | Anchor element </@>.
 </p>
 
-<@3> Header navigation bar tag | header-navigation-bar </@3>
+<@3> Header navigation bar element | header-navigation-bar </@3>
 
 <#>
   <`><=h>{content}</=h></`>
@@ -1251,32 +1290,32 @@
 
 <p>
   Converted to the equivalent
-  <@> navigation bar tag | #navigation-bar | Navigation bar tag </@>
-  wrapped inside a <`><header></`> tag,
+  <@> navigation bar element | #navigation-bar | Navigation bar element </@>
+  wrapped inside a <`><header></`> element,
   and usually to be filled with
-  <@> item anchors | #item-anchor | Item anchor tag </@>.
+  <@> item anchors | #item-anchor | Item anchor element </@>.
 </p>
 
-<@3> Navigation bar tag | navigation-bar </@3>
+<@3> Navigation bar element | navigation-bar </@3>
 
 <#>
   <`><=>{content}</=></`>
 </#>
 
 <p>
-  Converted to a <`><nav></`> tag containing a <`><ul></`> tag,
+  Converted to a <`><nav></`> element containing a <`><ul></`> element,
   and usually to be filled with
-  <@> item anchors | #item-anchor | Item anchor tag </@>.
+  <@> item anchors | #item-anchor | Item anchor element </@>.
 </p>
 
-<@3> Note paragraph tag | note-paragraph </@3>
+<@3> Note paragraph element | note-paragraph </@3>
 
 <#>
   <`><.>{content}</.></`>
 </#>
 
 <p>
-  Converted to a <`><p class="note"></`> tag.
+  Converted to a <`><p class="note"></`> element.
 </p>
 
 <ul>
@@ -1299,36 +1338,36 @@
   
 </ul>
 
-<@3> Overflowing division tag | overflowing-division </@3>
+<@3> Overflowing division element | overflowing-division </@3>
 
 <#>
   <`><![type]>{content}</![type]></`>
 </#>
 
 <p>
-  Converted to a <`><div class="overflowing"></`> tag,
-  wrapped inside a <`><div class="centred-flex"></`> tag
+  Converted to a <`><div class="overflowing"></`> element,
+  wrapped inside a <`><div class="centred-flex"></`> element
     for <`>[type]</`>~<`>c</`>,
   and with additional class <`>centred-text</`>
-    and wrapped inside a <`><div class="centred-flex"></`> tag
+    and wrapped inside a <`><div class="centred-flex"></`> element
     for <`>[type]</`>~<`>cc</`>.
 </p>
 
-<@3> SVG style container tag | svg-style-container </@3>
+<@3> SVG style container element | svg-style-container </@3>
 
 <#>
   <`><-->{content}</--></`>
 </#>
 
 <p>
-  Converted to a <`><style></`> tag wrapped inside
-  a <`><svg class="embedded-styles"></`> tag,
+  Converted to a <`><style></`> element wrapped inside
+  a <`><svg class="embedded-styles"></`> element,
   with all the necessary escaping automatically performed
   for the <@> special Conway literals | #escapes | Escapes </@>
   <`>~</`>, <`>{</`> and <`>}</`>.
 </p>
 
-<@3> Text romanisation tag | text-romanisation </@3>
+<@3> Text romanisation element | text-romanisation </@3>
 
 <#>
   <`><^e> {content} </^e></`>
@@ -1339,9 +1378,9 @@
   with the corresponding entries in the Rendered column
   (these conversions are used for the arguments of
   <@>
-    assisting romanisations tags
+    assisting romanisations elements
     | #assisting-romanisation
-    | Assisting romanisation tag
+    | Assisting romanisation element
   </@>):
 </p>
 
@@ -1729,7 +1768,7 @@
 
 <p>
   A backslash before a run of Chinese characters
-  prevents automatic surrounding by a <`><span lang="zh-Hant"></`> tag.
+  prevents automatic surrounding by a <`><span lang="zh-Hant"></`> element.
   (Here \. <`>U+30FB KATAKANA MIDDLE DOT</`> is considered a Chinese character.)
 </p>
 
@@ -1774,7 +1813,7 @@
 
 <ol>
   <li>
-    <`><pre></`> tags are de-indented
+    <`><pre></`> elements are de-indented
     (but not affected by the subsequent removals),
   </li>
   <li>
@@ -1853,10 +1892,10 @@
   <@>
     formatted spans
     | #formatted-span
-    | Formatted span tag
+    | Formatted span element
   </@>
   of <`>{type}</`> not <`>n</`> containing these,
-  are automatically wrapped in <`><span lang="zh-Hant"></`> tags.
+  are automatically wrapped in a <`><span lang="zh-Hant"></`> element.
   <@> Precede runs by a backslash | #escapes | Escapes </@> to prevent this.
   Literal empty strings <`>\!</`> may be used to split runs.
 </p>
