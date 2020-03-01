@@ -1894,7 +1894,7 @@
     | #formatted-span
     | Formatted span element
   </@>
-  of <`>{type}</`> not <`>n</`> containing these,
+  containing these,
   are automatically wrapped in a <`><span lang="zh-Hant"></`> element.
   <@> Precede runs by a backslash | #escapes | Escapes </@> to prevent this.
   Literal empty strings <`>\!</`> may be used to split runs.

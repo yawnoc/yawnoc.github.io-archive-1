@@ -190,7 +190,7 @@
 # Language spans
 ################################################################
 # Runs of Chinese characters and ・ (U+30FB KATAKANA MIDDLE DOT),
-# and consecutive runs of formatted spans of {type} not n containing these,
+# and consecutive runs of formatted spans containing these,
 # are automatically wrapped in a lang="zh-Hant" span,
 # unless the runs of Chinese are preceded immediately by a backslash.
 ################################################################
@@ -2959,7 +2959,7 @@ def unescape_romanisations(string):
 
 # Unprocessed string:
 #   Repetitions of [<span class="{class}">...]{Chinese run}[...</span>]
-# This allows for all formatted spans except {type} n.
+# This allows for all formatted spans.
 # No check is performed for mismatched tags.
 
 # Raw regular expression for unprocessed string:
