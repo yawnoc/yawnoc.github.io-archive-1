@@ -4,6 +4,7 @@
     padding: 0.5em;
     width: 100%;
   }
+  | passInputToOutput()
 </*>
 
 <=h>
@@ -24,23 +25,25 @@
 <#n>
 <textarea
   autofocus
-  oninput="passToOutput(value)"
+  id="input"
+  oninput="passInputToOutput()"
   placeholder="Enter input here"
 >
 </textarea>
 </#n>
 
 <#n>
-  <s id="output">Output shall appear here</s>
+  <s id="output"></s>
 </#n>
 
 <*f></*f>
 
 <script>
-function passToOutput(string) {
+function passInputToOutput() {
+  let inputString = document.getElementById('input').value
   output.textContent = (
-    /\S/.test(string)
-    ? string
+    /\S/.test(inputString)
+    ? inputString
     : 'Output shall appear here'
   )
 }

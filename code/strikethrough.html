@@ -12,6 +12,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <link rel="stylesheet" href="/conway.min.css">
+<script defer src="/conway-render.min.js"></script>
 <title>Strikethrough generator — Conway's site</title>
 <style>textarea {
 box-sizing: border-box;
@@ -19,7 +20,7 @@ padding: 0.5em;
 width: 100%;
 }</style>
 </head>
-<body>
+<body onload="passInputToOutput()">
 <header><nav><ul>
 <li><a href="/" title="Home page">Home</a></li>
 <li><a href="#" title="Jump back to top">Top</a></li>
@@ -36,22 +37,24 @@ Convenient for use in emails.
 <div class="boxed not-large">
 <textarea
 autofocus
-oninput="passToOutput(value)"
+id="input"
+oninput="passInputToOutput()"
 placeholder="Enter input here"
 >
 </textarea>
 </div>
 <div class="boxed not-large">
-<s id="output">Output shall appear here</s>
+<s id="output"></s>
 </div>
 <footer>
 <hr>
 ©&nbsp;2020&nbsp;Conway.
 </footer>
-<script>function passToOutput(string) {
+<script>function passInputToOutput() {
+let inputString = document.getElementById('input').value
 output.textContent = (
-/\S/.test(string)
-? string
+/\S/.test(inputString)
+? inputString
 : 'Output shall appear here'
 )
 }
