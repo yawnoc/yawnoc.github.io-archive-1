@@ -1088,7 +1088,7 @@ Code (GNU Octave) for computing modelled quantities
 ##    "concordia-station"
 
 function sun_info = sun (delta_spec, varargin)
-
+  
   ## Parse specification for delta
   if (isscalar (delta_spec))
     delta_pd = delta_spec;
@@ -1111,7 +1111,7 @@ function sun_info = sun (delta_spec, varargin)
     endif
     delta_pd = delta_deg + delta_min / 60;
   endif
-
+  
   ## Parse specification for y_big
   if (numel (varargin) &lt; 2)
     y_big_pd = varargin{1};
@@ -1122,27 +1122,27 @@ function sun_info = sun (delta_spec, varargin)
     error ("Invalid specification for year angle.");
   endif
   y_big_pd = mod (y_big_pd, 360);
-
+  
   ## Axial tilt
   tau_pd = 23 + 26 / 60;
-
+  
   ## Refraction angle (for sunrise and sunset)
   alpha_ref_pd = 50 / 60;
-
+  
   ## Tilt-reduced quantities
   comp_x = cosd (y_big_pd);
   comp_y = cosd (tau_pd) * sind (y_big_pd);
   rho = norm ([comp_x, comp_y]);
   phi_pd = atan2d (comp_y, comp_x);
-
+  
   ## Argument to arcsine, i.e. tan(tau) tan(delta) sin(phi)
   arg_asin = tand (tau_pd) * tand (delta_pd) * sind (phi_pd);
-
+  
   ## Daytime
   t_big_ph = 12 + 24 / pi * asin (arg_asin);
   t_big_ph = real (t_big_ph);
   t_big_hr_min = to_base_60 (t_big_ph);
-
+  
   ## Sunrise and sunset bearings
   comp_s = -tand (tau_pd) * secd (delta_pd) * sind (phi_pd);
   comp_e_rise = sqrt (1 - arg_asin^2);
@@ -1154,12 +1154,12 @@ function sun_info = sun (delta_spec, varargin)
     beta_rise_pd = NaN;
     beta_set_pd  = NaN;
   endif
-
+  
   ## Noon altitude
   comp_u = cosd (delta_pd) + tand (tau_pd) * sind (delta_pd) * sind (phi_pd);
   comp_s = sind (delta_pd) - tand (tau_pd) * cosd (delta_pd) * sind (phi_pd);
   alpha_noon_pd = atan2d (comp_u, abs (comp_s));
-
+  
   ## Daytime correction due to refraction
   eps_set = (
     tand (alpha_ref_pd) / cosd (delta_pd)
@@ -1170,7 +1170,7 @@ function sun_info = sun (delta_spec, varargin)
   t_big_ph_corn = real (t_big_ph_corn);
   t_big_hr_min_corn = to_base_60 (t_big_ph_corn);
   t_big_hr_min_cord = to_base_60 (t_big_ph + t_big_ph_corn);
-
+  
   ## Sunrise and sunset bearings correction due to refraction
   d_minus_phi_set = pi / 2 + asin (arg_asin);
   d_minus_phi_rise = -d_minus_phi_set;
@@ -1191,7 +1191,7 @@ function sun_info = sun (delta_spec, varargin)
     beta_rise_pd_cord = NaN;
     beta_set_pd_cord  = NaN;
   endif
-
+  
   ## Display quantities
   if (ischar (delta_spec))
     delta_str = [...
@@ -1247,7 +1247,7 @@ function sun_info = sun (delta_spec, varargin)
     "----------------------------------------------------------------\n"
   ];
   disp (str);
-
+  
   ## Return structure
   sun_info = struct (
     "rho", rho,
@@ -1262,18 +1262,18 @@ function sun_info = sun (delta_spec, varargin)
     "beta_rise_pd_cord", beta_rise_pd_cord,
     "beta_set_pd_cord", beta_set_pd_cord
   );
-
+  
 endfunction
 
 ## Subfunction for conversion to base 60 (e.g. _ph to [_hr, _min], where
 ## _ph, _hr, _min mean "per hour", "hours", "minutes").
 
 function q_hr_min = to_base_60 (q_ph)
-
+  
   q_hr = fix (q_ph);
   q_min = round ((q_ph - q_hr) * 60);
   q_hr_min = [q_hr, q_min];
-
+  
 endfunction
 </pre>
 <p>Usage examples:</p>
