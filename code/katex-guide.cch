@@ -1,6 +1,6 @@
 <*>
   How to render mathematical equations using KaTeX
-  | 20190529 | 20191230 | d
+  | 20190529 | 20200302 | d
   | A step-by-step guide demonstrating how to render mathematical equations \
     using KaTeX (CSS and JavaScript only) in webpages.
 </*>
@@ -230,6 +230,7 @@
   </head>
   <body onload="mathsRender();">
   <h1>KaTeX equation rendering: an (almost) minimal example</h1>
+  <noscript>Enable Javascript for equation rendering to work.</noscript>
   <p>
     <a
       href="https://yawnoc.github.io/code/katex-guide.html"
