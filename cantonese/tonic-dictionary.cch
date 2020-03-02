@@ -17,7 +17,7 @@
 
 <*p>
   <@>
-    Conway's Custom Romanisation for Cantonese
+    Conway's Custom \Rom for Cantonese
     | /cantonese/conway-romanisation.html
     |
   </@>
@@ -45,11 +45,11 @@
 </p>
 
 <p>
-  The equivalent romanisations in
+  The equivalent \roms in
   <@>
     my own system
     | /cantonese/conway-romanisation.html
-    | Conway's Custom Romanisation for Cantonese
+    | Conway's Custom \Rom for Cantonese
   </@>
   and in
   <@>
@@ -58,7 +58,7 @@
     | Wikipedia: Jyutping
   </@>
   are listed alongside for comparison.
-  Note that Jyutping (like all contemporary romanisation systems)
+  Note that Jyutping (like all contemporary \rom systems)
   <@>
     merges
     \{<^e><:h>ts</:h></^e> vs <^e><:h>ch</:h></^e>\},

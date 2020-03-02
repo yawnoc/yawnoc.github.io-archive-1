@@ -33,9 +33,9 @@
   
   <tr><td>
     <@>
-      <b>Conway's Custom Romanisation for Cantonese</b>
+      <b>Conway's Custom \Rom for Cantonese</b>
       | /cantonese/conway-romanisation.html
-      | Conway's Custom Romanisation for Cantonese
+      | Conway's Custom \Rom for Cantonese
     </@>
     <.>Used in this site.</.>
   </td></tr>
@@ -355,9 +355,9 @@
     \{<^e><:h>s</:h></^e> vs <^e><:h>sh</:h></^e>\}
     now distinguished in my
     <@>
-      romanisation system
+      \rom system
       | /cantonese/conway-romanisation.html
-      | Conway's Custom Romanisation for Cantonese
+      | Conway's Custom \Rom for Cantonese
     </@>.
   </li>
   

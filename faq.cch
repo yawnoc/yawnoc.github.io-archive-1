@@ -25,7 +25,7 @@
     Oh... that's a bit macabre.
     | #death |
   </@i>
-  <@i> Does your site use cookies? | #cookies-romanisation | </@i>
+  <@i> Does your site use cookies? | #cookies-\rom | </@i>
   <@i> How did you set up the site favicon? | #favicon | </@i>
 </ul>
 
@@ -146,11 +146,11 @@
   At the time of writing the latter is more probable. Fear changes nothing.
 </p>
 
-<@3> Does your site use cookies? | cookies-romanisation </@3>
+<@3> Does your site use cookies? | cookies-\rom </@3>
 
 <p>
-  A single cookie called <`>romanisation</`> is used
-  to remember your romanisation preference.
+  A single cookie called <code>\rom</code> is used
+  to remember your \rom preference.
   Unless you tamper with it, its value will only be one of
   <`>none</`>, <`>conway</`>, <`>wadegiles</`> or <`>pinyin</`>.
   I do not track you.

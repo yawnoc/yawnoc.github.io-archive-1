@@ -40,8 +40,8 @@
   </@i>
   <@i>
     <`><^^></`>
-    | #assisting-romanisation-radio
-    | Assisting romanisation radio element
+    | #assisting-\rom-radio
+    | Assisting \rom radio element
   </@i>
   <@i>
     <`><-t></`>
@@ -59,13 +59,13 @@
   <@i> <`><+></`> | #image | Image element </@i>
   <@i>
     <`><^></`>
-    | #assisting-romanisation
-    | Assisting romanisation element
+    | #assisting-\rom
+    | Assisting \rom element
   </@i>
   <@i>
     <`><^cm></`>
-    | #cantonese-mandarin-romanisation
-    | Cantonese \& Mandarin romanisation element
+    | #cantonese-mandarin-\rom
+    | Cantonese \& Mandarin \rom element
   </@i>
   <@i>
     <`><@u></`>
@@ -112,7 +112,7 @@
   <@i> <`><.></`> | #note-paragraph | Note paragraph element </@i>
   <@i> <`><!></`> | #overflowing-division | Overflowing division element </@i>
   <@i> <`><--></`> | #svg-style-container | SVG style container element </@i>
-  <@i> <`><^e></`> | #text-romanisation | Text romanisation element </@i>
+  <@i> <`><^e></`> | #text-\rom | Text \rom element </@i>
   
   <@i> <b>Escapes</b> | #escapes | Escapes </@i>
   
@@ -518,7 +518,7 @@
   </=h>
 </``>
 
-<@3> Assisting romanisation radio element | assisting-romanisation-radio </@3>
+<@3> Assisting \rom radio element | assisting-\rom-radio </@3>
 
 <#>
   <`><^^></^^></`>
@@ -530,9 +530,9 @@
 <p>
   Converted to the radio controller for
   <@>
-    assisting romanisations
-    | #assisting-romanisation
-    | Assisting romanisation element
+    assisting \roms
+    | #assisting-\rom
+    | Assisting \rom element
   </@>.
 </p>
 
@@ -652,7 +652,7 @@
   
 </ul>
 
-<@3> Assisting romanisation element | assisting-romanisation </@3>
+<@3> Assisting \rom element | assisting-\rom </@3>
 
 <#>
   <`>{horizontal whitespace} <^> {conway} | {wadegiles} | {pinyin} </^></`>
@@ -661,15 +661,15 @@
 <p>
   Converted to <`><span></`> elements controlled by the
   <@>
-    assisting romanisation radio
-    | #assisting-romanisation-radio
-    | Assisting romanisation radio element
+    assisting \rom radio
+    | #assisting-\rom-radio
+    | Assisting \rom radio element
   </@>,
   where all arguments are unescaped after the manner of the
   <@>
-    text romanisation element
-    | #text-romanisation
-    | Text romanisation element
+    text \rom element
+    | #text-\rom
+    | Text \rom element
   </@>.
   The preceding horizontal whitespace is stripped.
 </p>
@@ -691,8 +691,8 @@
 </ul>
 
 <@3>
-  Cantonese \& Mandarin romanisation element
-  | cantonese-mandarin-romanisation
+  Cantonese \& Mandarin \rom element
+  | cantonese-mandarin-\rom
 </@3>
 
 <#>
@@ -966,9 +966,9 @@
     for KaTeX <@> maths equations | #display-maths | Display maths element </@>
     and for
     <@>
-      assisting romanisations
-      | #assisting-romanisation
-      | Assisting romanisation element
+      assisting \roms
+      | #assisting-\rom
+      | Assisting \rom element
     </@>,
     if the supplied string contains
     <`>d</`>, <`>m</`> and <`>r</`> respectively,
@@ -1375,7 +1375,7 @@
   <`>~</`>, <`>{</`> and <`>}</`>.
 </p>
 
-<@3> Text romanisation element | text-romanisation </@3>
+<@3> Text \rom element | text-\rom </@3>
 
 <#>
   <`><^e> {content} </^e></`>
@@ -1386,9 +1386,9 @@
   with the corresponding entries in the Rendered column
   (these conversions are used for the arguments of
   <@>
-    assisting romanisations elements
-    | #assisting-romanisation
-    | Assisting romanisation element
+    assisting \roms elements
+    | #assisting-\rom
+    | Assisting \rom element
   </@>):
 </p>
 

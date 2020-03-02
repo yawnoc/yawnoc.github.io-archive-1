@@ -21,7 +21,7 @@
 
 <*p>
   <@>
-    Conway's Custom Romanisation for Cantonese
+    Conway's Custom \Rom for Cantonese
     | /cantonese/conway-romanisation.html
     |
   </@>
@@ -123,7 +123,7 @@
     | https://en.wikipedia.org/wiki/Gwoyeu_Romatzyh
     | Wikipedia: Gwoyeu Romatzyh
   </@>,
-  a romanisation system for Mandarin which uses spelling,
+  a \rom system for Mandarin which uses spelling,
   rather than diacritics, to indicate different tones.)
 </p>
 

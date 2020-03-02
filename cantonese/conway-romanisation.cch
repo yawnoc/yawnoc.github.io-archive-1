@@ -1,6 +1,6 @@
 <*>
-  Conway's Custom Romanisation for Cantonese | 20190407 | 20200229 | d
-  | Conway's custom romanisation system for Cantonese, \
+  Conway's Custom \Rom for Cantonese | 20190407 | 20200229 | d
+  | Conway's custom \rom system for Cantonese, \
     with English approximations and a diagram of the nine tones.
 </*>
 
@@ -10,7 +10,7 @@
   <@ic></@ic>
 </=h>
 
-<h1>Conway's Custom Romanisation for Cantonese</h1>
+<h1>Conway's Custom \Rom for Cantonese</h1>
 
 <*p>
   <@> Python: Cantonese Diceware | \=/cantonese-diceware </@>
@@ -25,7 +25,7 @@
 </=>
 
 <p>
-  This is my custom romanisation system for Cantonese,
+  This is my custom \rom system for Cantonese,
   as spoken and perceived by me.
 </p>
 
@@ -383,7 +383,7 @@
 </blockquote>
 
 <p>
-  The pre-merger distinctions are remnant only in most romanisations
+  The pre-merger distinctions are remnant only in most \roms
   of district names in Hong Kong, e.g.
 </p>
 <ul>
@@ -405,7 +405,7 @@
   
 </ul>
 <p>
-  Not all district romanisations follow the pre-merger consonants correctly though,
+  Not all district \roms follow the pre-merger consonants correctly though,
   e.g.~灣仔 should really be Wan <:h>Ts</:h>ai (not Wan <:h>Ch</:h>ai),
   and 彩虹 should be <:h>Ts</:h>oi Hung (not <:h>Ch</:h>oi Hung).
 </p>
@@ -468,9 +468,9 @@
 
 <#n>
   I have decided to preserve the pre-merger distinctions
-  in my romanisation system for historical purposes.
+  in my \rom system for historical purposes.
   <:y>Unless noted otherwise,
-  Cantonese romanisations written down in this site
+  Cantonese \roms written down in this site
   shall use the <:v>pre-merger consonant</:v> given in
   <@>
     《分韻撮要》
@@ -2256,9 +2256,9 @@
 </ul>
 
 <*c>
-  Conway's Custom Romanisation for Cantonese
-  | cantonese-romanisation
-  | {Conway's} {Custom} {Romanisation} for {Cantonese}
+  Conway's Custom \Rom for Cantonese
+  | cantonese-\rom
+  | {Conway's} {Custom} {\Rom} for {Cantonese}
 </*c>
 
 <*f></*f>
