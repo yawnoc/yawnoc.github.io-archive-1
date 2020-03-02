@@ -526,7 +526,8 @@ def replace_all_item_anchor_abbreviations(string):
 # Processed string:
 #   <div class="romanisation-radio">
 #     <,>romanisation toggling</,>
-#     Romanisation~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^> <br>
+#     Romanisation~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^>
+#     <br>
 #     <input type="radio" name="romanisation" id="romanisation-none" value="none">
 #       <label for="romanisation-none">None</label>
 #     <input type="radio" name="romanisation" id="romanisation-conway" value="conway">
@@ -540,10 +541,11 @@ def replace_all_item_anchor_abbreviations(string):
 
 def replace_assisting_romanisation_radio(string):
   
-  processed_string = de_indent('''\
+  processed_string = '''
     <div class="romanisation-radio">
       <,>romanisation toggling</,>
-      Romanisation~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^> <br>
+      Romanisation~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^>
+      <br>
       <input type="radio" name="romanisation" id="romanisation-none" value="none">
         <label for="romanisation-none">None</label>
       <input type="radio" name="romanisation" id="romanisation-conway" value="conway">
@@ -552,8 +554,8 @@ def replace_assisting_romanisation_radio(string):
         <label for="romanisation-wadegiles">Wade–Giles</label>
       <input type="radio" name="romanisation" id="romanisation-pinyin" value="pinyin">
         <label for="romanisation-pinyin">Pinyin</label>
-    </div>'''
-  )
+    </div>
+  '''
   
   return re.sub(
     r'<\^\^></\^\^>',
@@ -639,29 +641,29 @@ def replace_assisting_romanisation_radio(string):
 
 def replace_all_svg_style_abbreviations(string):
   
-  processed_string = de_indent('''\
+  processed_string = '''
     stroke: black;
-    vector-effect: non-scaling-stroke;'''
-  )
+    vector-effect: non-scaling-stroke;
+  '''
   string = re.sub(
     r'<\-s></\-s>',
     escape_python_backslash(processed_string),
     string
   )
   
-  processed_string = de_indent('''\
+  processed_string = '''
     text {
       font-family: sans-serif;
       text-anchor: middle;
-    }'''
-  )
+    }
+  '''
   string = re.sub(
     r'<\-t></\-t>',
     escape_python_backslash(processed_string),
     string
   )
   
-  processed_string = de_indent('''\
+  processed_string = '''
     @font-face {
       font-display: swap;
       font-family: "KaTeX_Math-Italic";
@@ -683,15 +685,15 @@ def replace_all_svg_style_abbreviations(string):
     }
     .maths-roman {
       font-family: "KaTeX_Main-Regular";
-    }'''
-  )
+    }
+  '''
   string = re.sub(
     r'<\-m></\-m>',
     escape_python_backslash(processed_string),
     string
   )
   
-  processed_string = de_indent('''\
+  processed_string = '''
     line.red {
       stroke: red;
       stroke-width: 3;
@@ -707,15 +709,15 @@ def replace_all_svg_style_abbreviations(string):
     line.violet {
       stroke: darkviolet;
       stroke-width: 3;
-    }'''
-  )
+    }
+  '''
   string = re.sub(
     r'<\-lc></\-lc>',
     escape_python_backslash(processed_string),
     string
   )
   
-  processed_string = de_indent('''\
+  processed_string = '''
     text.red {
       fill: red;
     }
@@ -727,8 +729,8 @@ def replace_all_svg_style_abbreviations(string):
     }
     text.violet {
       fill: darkviolet;
-    }'''
-  )
+    }
+  '''
   string = re.sub(
     r'<\-tc></\-tc>',
     escape_python_backslash(processed_string),
@@ -1006,8 +1008,8 @@ def replace_cantonese_mandarin_romanisation(match_object):
       | /cantonese/conway-romanisation.html
       | Conway's Custom Romanisation for Cantonese
     </@>:~<^e>{cantonese}</^e>,
-    Mandarin:~<^e>{mandarin}</^e>{gov_spec}'''
-  )
+    Mandarin:~<^e>{mandarin}</^e>{gov_spec}
+  ''')
   
   return processed_string
 
@@ -1158,11 +1160,11 @@ def replace_heading_self_link_anchor(match_object):
   
   id_ = escape_attribute_value(id_)
   
-  processed_string = de_indent(f'''\
+  processed_string = f'''
     <h{level} id="{id_}"><a class="self-link" href="#{id_}"></a>
       {content}
-    </h{level}>'''
-  )
+    </h{level}>
+  '''
   
   return processed_string
 
@@ -1288,13 +1290,13 @@ def replace_boxed_translation(match_object):
   num_arguments = num_required_arguments
   chinese, english = argument_list[:num_arguments]
   
-  processed_string = de_indent(f'''\
+  processed_string = f'''
     <div class="boxed{size_spec} translation">
       {chinese}
       <hr>
       {english}
-    </div>'''
-  )
+    </div>
+  '''
   
   return processed_string
 
@@ -1352,13 +1354,13 @@ def replace_sun_tzu_heading(match_object):
   
   capital_roman_volume = int(volume) * 'I'
   
-  processed_string = de_indent(f'''\
+  processed_string = f'''
     <@3>
       Vol.~{capital_roman_volume}~¶{paragraph}.
       <span class="heading">{content}</span>
       | {paragraph}
-    </@3>'''
-  )
+    </@3>
+  '''
   
   return processed_string
 
@@ -1443,62 +1445,62 @@ def replace_sun_tzu_link_division(match_object):
   capital_roman_volume = int(volume) * 'I'
   small_roman_volume = int(volume) * 'i'
   
-  paragraphs_link = de_indent(f'''\
+  paragraphs_link = f'''
     <@u>
       Paragraphs
       | paragraphs
       | Volume {capital_roman_volume}: Paragraph navigation
-    </@u>'''
-  )
+    </@u>
+  '''
   
-  manuscript_link = de_indent(f'''\
+  manuscript_link = f'''
     <@>
       [manuscript]
       | /manuscripts/sun-tzu-{small_roman_volume}-{paragraph}.pdf
       | Translation manuscript for Vol. {capital_roman_volume} ¶{paragraph}
-    </@>'''
-  )
+    </@>
+  '''
   
   if a_p == '':
     version_a_link = ''
   else:
-    version_a_link = de_indent(f'''\
+    version_a_link = f'''
       <@>
         A{a_p}
         | https://archive.org/details/02094034.cn/page/n{a_p}
         | Version A: 02094034.cn at archive.org
-      </@>'''
-    )
+      </@>
+    '''
   
   if b_p == '':
     version_b_link = ''
   else:
     b_p_minus_5 = int(b_p) - 5
-    version_b_link = de_indent(f'''\
+    version_b_link = f'''
       <@>
         B{b_p}({b_p_minus_5})
         | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page={b_p}
         | Version B: 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-      </@>'''
-    )
+      </@>
+    '''
   
-  version_c_link = de_indent(f'''\
+  version_c_link = f'''
     <@>
       C{c_p}({volume}.{c_q})
       | https://ctext.org/sunzi-suan-jing#n{c_p}
       | Version C: ctext.org database page
-    </@>'''
-  )
+    </@>
+  '''
   
-  version_d_link = de_indent(f'''\
+  version_d_link = f'''
     <@>
       D{d_p}
       | https://ctext.org/library.pl?if=en&file=86926&page={d_p}
       | Version D: 《知不足齋叢書》本 at ctext.org library
-    </@>'''
-  )
+    </@>
+  '''
   
-  processed_string = de_indent(f'''\
+  processed_string = f'''
     <@@>
       {paragraphs_link}
       {manuscript_link}
@@ -1506,8 +1508,8 @@ def replace_sun_tzu_link_division(match_object):
       {version_b_link}
       {version_c_link}
       {version_d_link}
-    </@@>'''
-  )
+    </@@>
+  '''
   
   return processed_string
 
@@ -1640,10 +1642,10 @@ def replace_preamble(string):
   )
   
   if require_maths:
-    maths_css_js = de_indent('''\
+    maths_css_js = '''
       <link rel="stylesheet" href="/conway-katex.min.css">
-      <script defer src="/conway-katex.min.js"></script>'''
-    )
+      <script defer src="/conway-katex.min.js"></script>
+    '''
   else:
     maths_css_js = ''
   
@@ -1677,7 +1679,7 @@ def replace_preamble(string):
     css = escape_conway_special_literals(css)
     embedded_css = f'<style>{css}</style>'
   
-  processed_string_beginning = de_indent(f'''\
+  processed_string_beginning = f'''
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -1699,13 +1701,11 @@ def replace_preamble(string):
       {embedded_css}
     </head>
     <body{onload_spec}>
-    '''
-  )
+  '''
   
-  processed_string_end = de_indent('''
+  processed_string_end = '''
     </body>
     </html>'''
-  )
   
   string = preamble_regex.sub('', string, count = 1)
   string = string.strip()
@@ -1758,7 +1758,7 @@ def replace_page_properties(string):
   if see_also == '':
     see_also_spec = ''
   else:
-    see_also_spec = de_indent(
+    see_also_spec = (
       '<br>' f'''
       <b>See also:</b>~{see_also}'''
     )
@@ -1766,7 +1766,7 @@ def replace_page_properties(string):
   if misc == '':
     misc_spec = ''
   else:
-    misc_spec = de_indent(
+    misc_spec = (
       '<br>' f'''
       {misc}'''
     )
@@ -1779,19 +1779,19 @@ def replace_page_properties(string):
     last_modified_spec = f'<b>{last_modified}</b>'
   
   if require_maths:
-    equation_rendering_noscript = de_indent('''
+    equation_rendering_noscript = '''
       <,>
         <@>
           equation rendering
           | /code/katex-guide.html
           | How to render mathematical equations using KaTeX
         </@>
-      </,>'''
-    )
+      </,>
+    '''
   else:
     equation_rendering_noscript = ''
   
-  processed_string = de_indent(f'''\
+  processed_string = (f'''
     <p class="page-properties">
       First created:~{first_created} <br>
       Last modified:~{last_modified_spec}'''
@@ -1887,7 +1887,7 @@ def replace_cite_this_page(string):
   # in order for <span class="date">d\~month\~yyyy</span> to actually render
   # today's date, rather than appear literally
   
-  processed_string = de_indent('''\
+  processed_string = '''
     <@2> Cite this page | cite </@2>
     <ul>
       <li>Text:
@@ -1920,8 +1920,8 @@ def replace_cite_this_page(string):
           》
         </pre>
       </li>
-    </ul>'''
-  )
+    </ul>
+  '''
   
   # NOTE: doubled curly brackets are required for replacing 《 and 》 below
   # since processed_string will be passed to str.format().
@@ -1990,12 +1990,12 @@ def replace_footer(string):
   
   if is_root_index:
     next_year = int(year_last_modified) + 1
-    ending_remark = de_indent(f'''\
+    ending_remark = f'''
       And if the current year is greater than~{year_last_modified}:
       no, the footer is not "out of date".
       It means that I haven't thought up or gotten around to adding content
-      since~{next_year}; possibly I have died.'''
-    )
+      since~{next_year}; possibly I have died.
+    '''
   
   year_range = year_first_created
   
@@ -2010,12 +2010,12 @@ def replace_footer(string):
   if ending_remark == '':
     ending_remark_spec = ''
   else:
-    ending_remark_spec = de_indent(
-      '<br>' f'''
-      {ending_remark}'''
-    )
+    ending_remark_spec = f'''
+      <br>
+      {ending_remark}
+    '''
   
-  processed_string = de_indent(f'''\
+  processed_string = (f'''
     <footer>
       <hr>
       ©~{year_range}~Conway'''
