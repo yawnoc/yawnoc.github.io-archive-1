@@ -7,7 +7,9 @@
 
 <h1>Strikethrough generator</h1>
 
-<*p></*p>
+<*p> |
+  <,>the generator</,>
+</*p>
 
 <p>
   Convenient for use in emails.
