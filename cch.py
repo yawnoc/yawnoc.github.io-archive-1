@@ -1579,6 +1579,7 @@ def replace_preamble(string):
   
   global first_created, last_modified
   global year_first_created, year_last_modified
+  global require_maths
   
   preamble_regex = re.compile(r'<\*>([\s\S]*?)</\*>')
   preamble_match_object = preamble_regex.match(string)
@@ -1710,8 +1711,11 @@ def replace_preamble(string):
 #     Last modified:~<b>{last modified}</b>[<br>
 #     <b>See also:</b>~[see also]][<br>
 #     [misc]]
+#     [equation rendering noscript]
 #   </p>
 # where {last modified} links to #history if building the root index.html
+# and [equation rendering noscript] is included
+# if [rendering] in preamble contains m
 
 def replace_page_properties(string):
   
@@ -1752,12 +1756,26 @@ def replace_page_properties(string):
   else:
     last_modified_spec = f'<b>{last_modified}</b>'
   
+  if require_maths:
+    equation_rendering_noscript = de_indent('''
+      <,>
+        <@>
+          equation rendering
+          | /code/katex-guide.html
+          | How to render mathematical equations using KaTeX
+        </@>
+      </,>'''
+    )
+  else:
+    equation_rendering_noscript = ''
+  
   processed_string = de_indent(f'''\
     <p class="page-properties">
       First created:~{first_created} <br>
       Last modified:~{last_modified_spec}'''
       f'{see_also_spec}'
-      f'{misc_spec}' '''
+      f'{misc_spec}'
+      f'{equation_rendering_noscript}' '''
     </p>'''
   )
   
