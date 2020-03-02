@@ -1532,14 +1532,16 @@ def replace_all_sun_tzu_link_divisions(string):
 
 # Unprocessed string:
 #   <*>
-#     {title} | {first created} | {last modified} [| rendering] [| description]
+#     {title} | {first created} | {last modified}
+#     [| rendering [| description [| css ]]]
 #   </*>
 # where [rendering] is specified by including or excluding d, m and r
 
 # Raw regular expression for unprocessed string:
 #   <\*>([\s\S]*?)</\*>
 #   \1  {arguments}:
-#     {title} | {first created} | {last modified} [| rendering] [| description]
+#     {title} | {first created} | {last modified}
+#     [| rendering [| description [| css ]]]
 
 # Processed string (beginning):
 #   <!DOCTYPE html>
@@ -1561,6 +1563,9 @@ def replace_all_sun_tzu_link_divisions(string):
 #     <script defer src="/conway-katex.min.js"></script>]
 #     [<script defer src="/conway-render.min.js"></script>]
 #     <title>[title — ]Conway's site</title>
+#     [<style>
+#       [Conway-special-literal-escaped CSS]
+#     </style>]
 #   </head>
 #   <body[ onload="[dateRender();] [mathsRender();] [romanisationInitialise();]"]>
 # where description is omitted if [description] is {empty string},
@@ -1585,7 +1590,8 @@ def replace_preamble(string):
   preamble_match_object = preamble_regex.match(string)
   assert preamble_match_object is not None, (
     'Preamble '
-    '<*> {title} | {first created} | {last modified} [| rendering] [| description] </*> '
+    '<*> {title} | {first created} | {last modified} '
+    '[| rendering [| description [| css ]]] </*> '
     'must be supplied at the very beginning of markup'
   )
   
@@ -1597,16 +1603,15 @@ def replace_preamble(string):
   
   assert num_supplied_arguments >= num_required_arguments, (
     'Preamble '
-    '<*> '
-      '{title} | {first created} | {last modified} [| rendering] [| description] '
-    '</*> '
+    '<*> {title} | {first created} | {last modified} '
+    '[| rendering [| description [| css ]]] </*> '
     f'requires at least {num_required_arguments} pipe-delimited arguments; '
     f'only {num_supplied_arguments} supplied'
   )
   
-  num_arguments = num_required_arguments + 2
+  num_arguments = num_required_arguments + 3
   argument_list += [''] * (num_arguments - num_supplied_arguments)
-  title, first_created, last_modified, rendering, description = (
+  title, first_created, last_modified, rendering, description, css = (
     argument_list[:num_arguments]
   )
   
@@ -1656,6 +1661,12 @@ def replace_preamble(string):
     rendering_js = ''
     onload_spec = ''
   
+  if css == '':
+    embedded_css = ''
+  else:
+    css = escape_conway_special_literals(css)
+    embedded_css = f'<style>{css}</style>'
+  
   processed_string_beginning = de_indent(f'''\
     <!DOCTYPE html>
     <html lang="en">
@@ -1675,6 +1686,7 @@ def replace_preamble(string):
       {maths_css_js}
       {rendering_js}
       <title>{title_with_dash}Conway's site</title>
+      {embedded_css}
     </head>
     <body{onload_spec}>
     '''

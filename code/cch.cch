@@ -934,7 +934,7 @@
 <@3> Preamble element | preamble </@3>
 
 <#>
-  <`><*> {title} | {first created} | {last modified} [| rendering] [| description] </*></`>
+  <`><*> {title} | {first created} | {last modified} [| rendering [| description [| css ]]] </*></`>
 </#>
 
 <p>
@@ -971,12 +971,16 @@
       | Assisting romanisation element
     </@>,
     if the supplied string contains
-    <`>d</`>, <`>m</`> and <`>r</`> respectively, and
+    <`>d</`>, <`>m</`> and <`>r</`> respectively,
   </li>
   
   <li>
     <`>[description]</`> is the text which appears
-    in the description meta element.
+    in the description meta element, and
+  </li>
+  
+  <li>
+    <`>[css]</`> specifies embedded CSS.
   </li>
   
 </ul>

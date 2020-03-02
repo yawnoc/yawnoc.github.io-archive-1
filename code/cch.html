@@ -746,7 +746,7 @@ Sun&nbsp;Tzŭ link division element
 Preamble element
 </h3>
 <div class="boxed">
-<code>&lt;*&gt; {title} | {first created} | {last modified} [| rendering] [| description] &lt;/*&gt;</code>
+<code>&lt;*&gt; {title} | {first created} | {last modified} [| rendering [| description [| css ]]] &lt;/*&gt;</code>
 </div>
 <p>
 Must be supplied at the very beginning of the CCH source file.
@@ -774,11 +774,14 @@ for KaTeX <a href="#display-maths" title="Display maths element">maths equations
 and for
 <a href="#assisting-romanisation" title="Assisting romanisation element">assisting romanisations</a>,
 if the supplied string contains
-<code>d</code>, <code>m</code> and <code>r</code> respectively, and
+<code>d</code>, <code>m</code> and <code>r</code> respectively,
 </li>
 <li>
 <code>[description]</code> is the text which appears
-in the description meta element.
+in the description meta element, and
+</li>
+<li>
+<code>[css]</code> specifies embedded CSS.
 </li>
 </ul>
 <h3 id="page-properties"><a class="self-link" href="#page-properties"></a>
