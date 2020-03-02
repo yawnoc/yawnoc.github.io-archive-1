@@ -934,7 +934,7 @@
 <@3> Preamble element | preamble </@3>
 
 <#>
-  <`><*> {title} | {first created} | {last modified} [| rendering [| description [| css ]]] </*></`>
+  <`><*> {title} | {first created} | {last modified} [| rendering [| description [| css [| js]]]] </*></`>
 </#>
 
 <p>
@@ -980,9 +980,13 @@
   </li>
   
   <li>
-    <`>[css]</`> specifies embedded CSS.
+    <`>[css]</`> specifies embedded CSS, and
   </li>
   
+  
+  <li>
+    <`>[js]</`> specifies <`>body onload</`> JavaScript.
+  </li>
 </ul>
 
 <@3> Page properties element | page-properties </@3>

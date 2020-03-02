@@ -1533,7 +1533,7 @@ def replace_all_sun_tzu_link_divisions(string):
 # Unprocessed string:
 #   <*>
 #     {title} | {first created} | {last modified}
-#     [| rendering [| description [| css ]]]
+#     [| rendering [| description [| css [| js ]]]]
 #   </*>
 # where [rendering] is specified by including or excluding d, m and r
 
@@ -1541,7 +1541,7 @@ def replace_all_sun_tzu_link_divisions(string):
 #   <\*>([\s\S]*?)</\*>
 #   \1  {arguments}:
 #     {title} | {first created} | {last modified}
-#     [| rendering [| description [| css ]]]
+#     [| rendering [| description [| css [| js ]]]]
 
 # Processed string (beginning):
 #   <!DOCTYPE html>
@@ -1567,7 +1567,7 @@ def replace_all_sun_tzu_link_divisions(string):
 #       [Conway-special-literal-escaped CSS]
 #     </style>]
 #   </head>
-#   <body[ onload="[dateRender();] [mathsRender();] [romanisationInitialise();]"]>
+#   <body[ onload="[dateRender();] [mathsRender();] [romanisationInitialise();] [js]"]>
 # where description is omitted if [description] is {empty string},
 # "/conway-katex.min.*" are loaded if [rendering] contains m,
 # "/conway-render.min.js" is loaded if [rendering] contains any of d, m or r,
@@ -1591,7 +1591,7 @@ def replace_preamble(string):
   assert preamble_match_object is not None, (
     'Preamble '
     '<*> {title} | {first created} | {last modified} '
-    '[| rendering [| description [| css ]]] </*> '
+    '[| rendering [| description [| css [| js ]]]] </*> '
     'must be supplied at the very beginning of markup'
   )
   
@@ -1604,14 +1604,14 @@ def replace_preamble(string):
   assert num_supplied_arguments >= num_required_arguments, (
     'Preamble '
     '<*> {title} | {first created} | {last modified} '
-    '[| rendering [| description [| css ]]] </*> '
+    '[| rendering [| description [| css [| js ]]]] </*> '
     f'requires at least {num_required_arguments} pipe-delimited arguments; '
     f'only {num_supplied_arguments} supplied'
   )
   
-  num_arguments = num_required_arguments + 3
+  num_arguments = num_required_arguments + 4
   argument_list += [''] * (num_arguments - num_supplied_arguments)
-  title, first_created, last_modified, rendering, description, css = (
+  title, first_created, last_modified, rendering, description, css, js = (
     argument_list[:num_arguments]
   )
   
@@ -1631,7 +1631,13 @@ def replace_preamble(string):
   require_date = 'd' in rendering
   require_maths = 'm' in rendering
   require_romanisation = 'r' in rendering
-  require_rendering = require_date or require_maths or require_romanisation
+  require_js = js != ''
+  require_onload = (
+    require_date
+    or require_maths
+    or require_romanisation
+    or require_js
+  )
   
   if require_maths:
     maths_css_js = de_indent('''\
@@ -1646,7 +1652,7 @@ def replace_preamble(string):
   else:
     meta_description = f'<meta name="description" content="{description}">'
   
-  if require_rendering:
+  if require_onload:
     rendering_js = '<script defer src="/conway-render.min.js"></script>'
     onload_functions = ''
     if require_date:
@@ -1655,6 +1661,10 @@ def replace_preamble(string):
       onload_functions += ' mathsRender();'
     if require_romanisation:
       onload_functions += ' romanisationInitialise();'
+    if require_js:
+      js = escape_conway_special_literals(js)
+      js = escape_attribute_value(js)
+      onload_functions += js
     onload_functions = onload_functions.lstrip()
     onload_spec = f' onload="{onload_functions}"'
   else:
