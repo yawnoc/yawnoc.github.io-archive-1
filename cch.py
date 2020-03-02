@@ -70,6 +70,7 @@
 # ----------------------------------------------------------------
 # Single-argument elements
 # ----------------------------------------------------------------
+#   <,>             html_noscript
 #   <_>             assisting_numeral
 #   <:{type}>       formatted_span
 #   <#[type]>       boxed_division
@@ -1988,6 +1989,42 @@ def replace_footer(string):
   )
 
 ################################################################
+# Replace HTML noscript elements
+################################################################
+
+# Unprocessed string:
+#   <,>{content}</,>
+
+# Raw regular expression for unprocessed string:
+#   <\,>([\s\S]*?)</\,>
+#   \1  {content}
+
+# Processed string:
+#   <noscript>Enable Javascript for {content} to work.</noscript>
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_html_noscript(match_object):
+  
+  content = match_object.group(1)
+  
+  processed_string = (
+    f'<noscript>Enable Javascript for {content} to work.</noscript>'
+  )
+  
+  return processed_string
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_html_noscripts(string):
+  
+  return re.sub(r'<\,>([\s\S]*?)</\,>', replace_html_noscript, string)
+
+################################################################
 # Replace assisting numerals
 ################################################################
 
@@ -3305,6 +3342,7 @@ def cch_to_html(file_name):
   # Replace all Single-argument elements
   # ----------------------------------------------------------------
   
+  markup = replace_all_html_noscripts(markup)
   markup = replace_all_assisting_numerals(markup)
   markup = replace_all_formatted_spans(markup)
   markup = replace_all_boxed_divisions(markup)
