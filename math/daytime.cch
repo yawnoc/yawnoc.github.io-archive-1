@@ -1318,7 +1318,7 @@
   ##    "perth"
   ##    "enderby-land"
   ##    "concordia-station"
-
+  
   function sun_info = sun (delta_spec, varargin)
     
     ## Parse specification for delta
@@ -1496,10 +1496,10 @@
     );
     
   endfunction
-
+  
   ## Subfunction for conversion to base 60 (e.g. _ph to [_hr, _min], where
   ## _ph, _hr, _min mean "per hour", "hours", "minutes").
-
+  
   function q_hr_min = to_base_60 (q_ph)
     
     q_hr = fix (q_ph);
@@ -1553,7 +1553,7 @@
     "enderby-land",
     "concordia-station"
   };
-
+  
   for n = 1 : numel (places)
     sun (places{n}, 108, "day");
   endfor
