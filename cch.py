@@ -182,11 +182,14 @@
 # Whitespace (for lighter HTML)
 ################################################################
 # Unnecessary whitespace is removed:
-# 1. Preformatted element are de-indented
-#    (but not affected by the removals below)
-# 2. Leading whitespace and empty lines are removed
-# 3. Newlines preceded immediately by a backslash are removed
+# 1. Preformatted elements are de-indented
+#    (but not affected by the subsequent removals)
+# 2. Horizontal whitespace around line break elements is removed
+# 3. Leading whitespace is removed
+# 4. Empty lines are removed
+# 5. Newlines immediately following a backslash are removed
 #    (i.e. backslash is the line continuation character)
+# 6. Newlines immediately preceding line break elements are removed
 ################################################################
 
 ################################################################
