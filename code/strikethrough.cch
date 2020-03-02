@@ -3,6 +3,7 @@
     box-sizing: border-box;
     display: block;
     padding: 0.5em;
+    resize: vertical;
     width: 100%;
   }
   | passInputToOutput()
