@@ -14,9 +14,7 @@
 
 <h1>Strikethrough generator</h1>
 
-<*p> |
-  <,>the generator</,>
-</*p>
+<*p></*p>
 
 <p>
   Convenient for use in emails.
@@ -33,6 +31,7 @@
 </#n>
 
 <#n>
+  <,>the generator</,>
   <s id="output"></s>
 </#n>
 
