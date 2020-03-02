@@ -12,12 +12,10 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <link rel="stylesheet" href="/conway.min.css">
-<link rel="stylesheet" href="/conway-katex.min.css">
-<script defer src="/conway-katex.min.js"></script>
 <script defer src="/conway-render.min.js"></script>
 <title>FAQ — Conway's site</title>
 </head>
-<body onload="dateRender(); mathsRender(); romanisationInitialise();">
+<body onload="dateRender();">
 <header><nav><ul>
 <li><a href="/" title="Home page">Home</a></li>
 <li><a href="#" title="Jump back to top">Top</a></li>
@@ -25,8 +23,7 @@
 <h1>FAQ</h1>
 <p class="page-properties">
 First created:&nbsp;20190801<br>
-Last modified:&nbsp;<b>20191228</b>
-<noscript>Enable Javascript for <a href="/code/katex-guide.html" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
+Last modified:&nbsp;<b>20200302</b>
 </p>
 <p>
 <a href="#general" title="General"><b>General</b></a>
@@ -38,7 +35,6 @@ Last modified:&nbsp;<b>20191228</b>
 instead of the default yawnoc.github.io?">Why don't you get yourself a custom domain
 instead of the default yawnoc.github.io?</a></li>
 <li><a href="#death" title="Oh... that's a bit macabre.">Oh... that's a bit macabre.</a></li>
-<li><a href="#broken-no-javascript" title="Why are citation date, maths equations &amp; romanisation toggling broken?">Why are citation date, maths equations &amp; romanisation toggling broken?</a></li>
 <li><a href="#cookies-romanisation" title="Does your site use cookies?">Does your site use cookies?</a></li>
 <li><a href="#favicon" title="How did you set up the site favicon?">How did you set up the site favicon?</a></li>
 </ul>
@@ -117,45 +113,6 @@ I do not fear death for my own sake.
 I might die some time later today, or I may have many decades yet.
 At the time of writing the latter is more probable. Fear changes nothing.
 </p>
-<h3 id="broken-no-javascript"><a class="self-link" href="#broken-no-javascript"></a>
-Why are citation date, maths equations &amp; romanisation toggling broken?
-</h3>
-<p>
-JavaScript is required. Tests for your browser:
-</p>
-<ul>
-<li>
-Today's date:&nbsp;<span class="date">d&nbsp;month&nbsp;yyyy</span>
-<p class="note">
-(Should display today's date, rather than "d&nbsp;month&nbsp;yyyy".)
-</p>
-</li>
-<li>
-An equation: <span class="maths">\td \log x = \td x / x</span>
-<p class="note">
-(Should render nicely, rather than stay as the unrendered source code
-"\td \log x = \td x / x".)
-</p>
-</li>
-<li>
-A romanisation: <span lang="zh-Hant">大學</span><span class="romanisation romanisation-conway">&nbsp;(taai hok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(ta hsüeh)</span><span class="romanisation romanisation-pinyin">&nbsp;(da xue)</span>
-<p class="note">
-(Should change on <kbd>F2</kbd> or using the radio below.)
-</p>
-<div class="romanisation-radio">
-<noscript>Enable Javascript for romanisation toggling to work.</noscript>
-Romanisation&nbsp;(<kbd>F2</kbd>):&nbsp;<span lang="zh-Hant">音標</span><span class="romanisation romanisation-conway">&nbsp;(yam peeu)</span><span class="romanisation romanisation-wadegiles">&nbsp;(yin piao)</span><span class="romanisation romanisation-pinyin">&nbsp;(yin biao)</span><br>
-<input type="radio" name="romanisation" id="romanisation-none" value="none">
-<label for="romanisation-none">None</label>
-<input type="radio" name="romanisation" id="romanisation-conway" value="conway">
-<label for="romanisation-conway">Conway</label>
-<input type="radio" name="romanisation" id="romanisation-wadegiles" value="wadegiles">
-<label for="romanisation-wadegiles">Wade–Giles</label>
-<input type="radio" name="romanisation" id="romanisation-pinyin" value="pinyin">
-<label for="romanisation-pinyin">Pinyin</label>
-</div>
-</li>
-</ul>
 <h3 id="cookies-romanisation"><a class="self-link" href="#cookies-romanisation"></a>
 Does your site use cookies?
 </h3>
@@ -418,7 +375,7 @@ Altogether there are nine tones numerically, covering all four classes:
 </ol>
 <footer>
 <hr>
-©&nbsp;2019&nbsp;Conway.
+©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
 </html>

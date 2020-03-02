@@ -1,4 +1,4 @@
-<*> FAQ | 20190801 | 20191228 | dmr </*>
+<*> FAQ | 20190801 | 20200302 | d </*>
 
 <=h>
   <@ih></@ih>
@@ -24,10 +24,6 @@
   <@i>
     Oh... that's a bit macabre.
     | #death |
-  </@i>
-  <@i>
-    Why are citation date, maths equations \& romanisation toggling broken?
-    | #broken-no-javascript |
   </@i>
   <@i> Does your site use cookies? | #cookies-romanisation | </@i>
   <@i> How did you set up the site favicon? | #favicon | </@i>
@@ -149,37 +145,6 @@
   I might die some time later today, or I may have many decades yet.
   At the time of writing the latter is more probable. Fear changes nothing.
 </p>
-
-<@3>
-  Why are citation date, maths equations \& romanisation toggling broken?
-  | broken-no-javascript
-</@3>
-
-<p>
-  JavaScript is required. Tests for your browser:
-</p>
-<ul>
-  <li>
-    Today's date:~<span class="date">d~month~yyyy</span>
-    <.>
-      (Should display today's date, rather than "d~month~yyyy".)
-    </.>
-  </li>
-  <li>
-    An equation: <$>\td \log x = \td x / x</$>
-    <.>
-      (Should render nicely, rather than stay as the unrendered source code
-      "\td \log x = \td x / x".)
-    </.>
-  </li>
-  <li>
-    A romanisation: 大學 <^> taai hok | ta hsu"eh | da xue </^>
-    <.>
-      (Should change on <kbd>F2</kbd> or using the radio below.)
-    </.>
-    <^^></^^>
-  </li>
-</ul>
 
 <@3> Does your site use cookies? | cookies-romanisation </@3>
 
