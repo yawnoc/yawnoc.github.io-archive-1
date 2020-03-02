@@ -825,7 +825,8 @@ def replace_all_dialogue_images(string):
 #   \1  {arguments}: {src} | {alt} [| title [| width [| class]]]
 
 # Processed string:
-#   <img[ class="[class]"] src="{src}" alt="{alt}"[ title="[title]"][ width="[width]"]>
+#   <img[ class="[class]"] src="{src}" alt="{alt}"\
+#     [ title="[title]"][ width="[width]"]>
 # where an empty [title], [width] or [class] is equivalent to an omitted one
 
 # ----------------------------------------------------------------
@@ -1007,14 +1008,14 @@ def replace_cantonese_mandarin_romanisation(match_object):
     )
     gov_spec = f', {full_gov} Mandarin (統讀):~<^e>{government}</^e>'
   
-  processed_string = de_indent(f'''\
+  processed_string = f'''
     <@>
       Cantonese
       | /cantonese/conway-romanisation.html
       | Conway's Custom \Rom for Cantonese
     </@>:~<^e>{cantonese}</^e>,
     Mandarin:~<^e>{mandarin}</^e>{gov_spec}
-  ''')
+  '''
   
   return processed_string
 
@@ -1710,7 +1711,8 @@ def replace_preamble(string):
   
   processed_string_end = '''
     </body>
-    </html>'''
+    </html>
+  '''
   
   string = preamble_regex.sub('', string, count = 1)
   string = string.strip()
@@ -1763,18 +1765,18 @@ def replace_page_properties(string):
   if see_also == '':
     see_also_spec = ''
   else:
-    see_also_spec = (
-      '<br>' f'''
-      <b>See also:</b>~{see_also}'''
-    )
+    see_also_spec = f'''
+      <br>
+      <b>See also:</b>~{see_also}
+    '''
   
   if misc == '':
     misc_spec = ''
   else:
-    misc_spec = (
-      '<br>' f'''
-      {misc}'''
-    )
+    misc_spec = f'''
+      <br>
+      {misc}
+    '''
   
   if is_root_index:
     last_modified_spec = (
@@ -1796,15 +1798,15 @@ def replace_page_properties(string):
   else:
     equation_rendering_noscript = ''
   
-  processed_string = (f'''
+  processed_string = f'''
     <p class="page-properties">
       First created:~{first_created} <br>
-      Last modified:~{last_modified_spec}'''
-      f'{see_also_spec}'
-      f'{misc_spec}'
-      f'{equation_rendering_noscript}' '''
-    </p>'''
-  )
+      Last modified:~{last_modified_spec}
+      {see_also_spec}
+      {misc_spec}
+      {equation_rendering_noscript}
+    </p>
+  '''
   
   return page_properties_regex.sub(
     escape_python_backslash(processed_string),
@@ -2020,14 +2022,13 @@ def replace_footer(string):
       {ending_remark}
     '''
   
-  processed_string = (f'''
+  processed_string = f'''
     <footer>
       <hr>
-      ©~{year_range}~Conway'''
-      f'{copyright_exception_spec}.'
-      f'{ending_remark_spec}' '''
-    </footer>'''
-  )
+      ©~{year_range}~Conway{copyright_exception_spec}.
+      {ending_remark_spec}
+    </footer>
+  '''
   
   return footer_regex.sub(
     escape_python_backslash(processed_string),
