@@ -1525,17 +1525,20 @@ Whitespace
 (but not affected by the subsequent removals),
 </li>
 <li>
-Horizontal whitespace around line break elements is removed,
+Horizontal whitespace around <code>&lt;br&gt;</code> elements is removed,
 </li>
 <li>
 Leading whitespace is removed,
 </li>
 <li>
-Empty lines are removed, and
+Empty lines are removed,
 </li>
 <li>
-Line breaks preceded immediately by a backslash are removed
-(i.e.&nbsp;backslash is the line continuation character).
+Newlines immediately following a backslash are removed
+(i.e.&nbsp;backslash is the line continuation character), and
+</li>
+<li>
+Newlines immediately preceding <code>&lt;br&gt;</code> elements are removed.
 </li>
 </ol>
 <ul>

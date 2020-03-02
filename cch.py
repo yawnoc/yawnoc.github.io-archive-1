@@ -3169,9 +3169,12 @@ def remove_unnecessary_whitespace(string):
   # Remove leading whitespace and empty lines
   string = re.sub(r'^[\s]+', '', string, flags = re.MULTILINE)
   
-  # Remove newlines preceded immediately by a backslash
+  # Remove newlines immediately following a backslash
   # (i.e. backslash is the line continuation character)
   string = re.sub(r'\\\n', '', string)
+  
+  # Remove newlines immediately preceding line break elements
+  string = re.sub(r'\n<br>', '<br>', string)
   
   return string
 
