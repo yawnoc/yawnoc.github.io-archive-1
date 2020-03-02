@@ -203,7 +203,7 @@
 import argparse
 import os
 import re
-from textwrap import dedent as de_indent
+from os.path import commonprefix as longest_common_prefix
 
 ################################################################
 # Replace display code with temporary replacements
@@ -3172,6 +3172,40 @@ def remove_unnecessary_whitespace(string):
   # Remove newlines preceded immediately by a backslash
   # (i.e. backslash is the line continuation character)
   string = re.sub(r'\\\n', '', string)
+  
+  return string
+
+################################################################
+# De-indent string
+################################################################
+
+# A custom implementation of textwrap.dedent, which I am not using
+# because it ignores ALL non-empty whitespace-only lines.
+# In my case I only ignore non-empty whitespace-only lines
+# at the very start and very end of the string.
+
+def de_indent(string):
+  
+  # Ignore non-empty whitespace-only line at the very start
+  string = re.sub(r'^[^\S\n]*\n', '\n', string)
+  
+  # Ignore non-empty whitespace-only line at the very end
+  string = re.sub(r'\n[^\S\n]*$', '\n', string)
+  
+  # List of all indents, either
+  # 1. Non-empty leading horizontal whitespace; or
+  # 2. The leading empty string on a non-empty line.
+  indent_list = re.findall(
+    r'^[^\S\n]+|^(?=[^\n])',
+    string,
+    flags = re.MULTILINE
+  )
+  
+  # Determine longest common indent
+  indent = longest_common_prefix(indent_list)
+  
+  # Remove longest common indent
+  string = re.sub(f'^{indent}', '', string, flags = re.MULTILINE)
   
   return string
 
