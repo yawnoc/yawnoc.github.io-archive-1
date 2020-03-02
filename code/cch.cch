@@ -1755,6 +1755,20 @@
   </tr>
   
   <tr>
+    <td><`>\rom</`></td>
+    <td>romanisation</td>
+    <td>\rom</td>
+    <td>"\rom"</td>
+  </tr>
+  
+  <tr>
+    <td><`>\Rom</`></td>
+    <td>Romanisation</td>
+    <td>\Rom</td>
+    <td>"\Rom"</td>
+  </tr>
+  
+  <tr>
     <th colspan="4">Conway literal Chinese run</th>
   </tr>
   

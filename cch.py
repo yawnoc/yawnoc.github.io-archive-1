@@ -127,6 +127,8 @@
 #   </i>            }               (Conway italics closing tag)
 #   \or             <...>or</...>   (alternative type "or")
 #   \lit            <...>lit.</...> (alternative type "lit.")
+#   \rom            romanisation    ("romanisation")
+#   \Rom            Romanisation    ("Romanisation")
 # \ and | are called functional Conway literals.
 # ~, { and } are called special Conway literals.
 # ----------------------------------------------------------------
@@ -2980,6 +2982,12 @@ def unescape_conway(string):
     '<span class="alternative-type">lit.</span>',
     string
   )
+  
+  # Unescape \rom as romanisation
+  string = re.sub(r'\\rom', 'romanisation', string)
+  
+  # Unescape \Rom as Romanisation
+  string = re.sub(r'\\Rom', 'Romanisation', string)
   
   return(string)
 
