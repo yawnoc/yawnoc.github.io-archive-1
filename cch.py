@@ -2013,7 +2013,7 @@ def replace_footer(string):
 ################################################################
 
 # Unprocessed string:
-#   <,>{content}</,>
+#   <,> {content} </,>
 
 # Raw regular expression for unprocessed string:
 #   <\,>([\s\S]*?)</\,>
@@ -2029,6 +2029,7 @@ def replace_footer(string):
 def replace_html_noscript(match_object):
   
   content = match_object.group(1)
+  content = content.strip()
   
   processed_string = (
     f'<noscript>Enable Javascript for {content} to work.</noscript>'
