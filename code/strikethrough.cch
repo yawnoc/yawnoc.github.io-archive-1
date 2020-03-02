@@ -1,4 +1,7 @@
 <*> Strikethrough generator | 20200302 | 20200302 | | |
+  div.boxed {
+    padding: 0.4em;
+  }
   textarea {
     box-sizing: border-box;
     display: block;
