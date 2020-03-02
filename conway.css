@@ -465,6 +465,7 @@ kbd {
 noscript {
   color: red;
   display: block;
+  font-size: small;
 }
 
 /* ---------------------------------------------------------------- */
