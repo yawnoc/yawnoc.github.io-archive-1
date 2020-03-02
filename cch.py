@@ -187,9 +187,10 @@
 # 2. Horizontal whitespace around line break elements is removed
 # 3. Leading whitespace is removed
 # 4. Empty lines are removed
-# 5. Newlines immediately following a backslash are removed
+# 5. Trailing whitespace is removed
+# 6. Newlines immediately following a backslash are removed
 #    (i.e. backslash is the line continuation character)
-# 6. Newlines immediately preceding line break elements are removed
+# 7. Newlines immediately preceding line break elements are removed
 ################################################################
 
 ################################################################
@@ -3178,6 +3179,9 @@ def remove_unnecessary_whitespace(string):
   
   # Remove leading whitespace and empty lines
   string = re.sub(r'^[\s]+', '', string, flags = re.MULTILINE)
+  
+  # Remove trailing whitespace
+  string = re.sub(r'[\s]+$', '', string, flags = re.MULTILINE)
   
   # Remove newlines immediately following a backslash
   # (i.e. backslash is the line continuation character)

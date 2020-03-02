@@ -1848,6 +1848,9 @@
     Empty lines are removed,
   </li>
   <li>
+    Trailing whitespace is removed,
+  </li>
+  <li>
     Newlines immediately following a backslash are removed
     (i.e.~backslash is the line continuation character), and
   </li>
