@@ -525,6 +525,7 @@ def replace_all_item_anchor_abbreviations(string):
 
 # Processed string:
 #   <div class="romanisation-radio">
+#     <,>romanisation toggling</,>
 #     Romanisation~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^> <br>
 #     <input type="radio" name="romanisation" id="romanisation-none" value="none">
 #       <label for="romanisation-none">None</label>
@@ -541,6 +542,7 @@ def replace_assisting_romanisation_radio(string):
   
   processed_string = de_indent('''\
     <div class="romanisation-radio">
+      <,>romanisation toggling</,>
       Romanisation~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^> <br>
       <input type="radio" name="romanisation" id="romanisation-none" value="none">
         <label for="romanisation-none">None</label>
