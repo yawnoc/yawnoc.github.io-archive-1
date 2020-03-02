@@ -1,4 +1,10 @@
-<*> Strikethrough generator | 20200302 | 20200302 </*>
+<*> Strikethrough generator | 20200302 | 20200302 | | |
+  textarea {
+    box-sizing: border-box;
+    padding: 0.5em;
+    width: 100%;
+  }
+</*>
 
 <=h>
   <@ih></@ih>
@@ -20,7 +26,6 @@
   autofocus
   oninput="passToOutput(value)"
   placeholder="Enter input here"
-  style="box-sizing:border-box; padding: 0.3em 0.5em; width: 100%;"
 >
 </textarea>
 </#n>
