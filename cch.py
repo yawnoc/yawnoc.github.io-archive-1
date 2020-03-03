@@ -1640,12 +1640,8 @@ def replace_preamble(string):
   require_maths = 'm' in rendering
   require_romanisation = 'r' in rendering
   require_js = js != ''
-  require_onload = (
-    require_date
-    or require_maths
-    or require_romanisation
-    or require_js
-  )
+  require_rendering = require_date or require_maths or require_romanisation
+  require_onload = require_rendering or require_js
   
   if require_maths:
     maths_css_js = '''
@@ -1660,8 +1656,12 @@ def replace_preamble(string):
   else:
     meta_description = f'<meta name="description" content="{description}">'
   
-  if require_onload:
+  if require_rendering:
     rendering_js = '<script defer src="/conway-render.min.js"></script>'
+  else:
+    rendering_js = ''
+  
+  if require_onload:
     onload_functions = ''
     if require_date:
       onload_functions += ' dateRender();'
@@ -1676,7 +1676,6 @@ def replace_preamble(string):
     onload_functions = onload_functions.lstrip()
     onload_spec = f' onload="{onload_functions}"'
   else:
-    rendering_js = ''
     onload_spec = ''
   
   if css == '':
