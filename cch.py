@@ -36,6 +36,7 @@
 #   <`>             inline_code
 #   <!-- -->        html_comment
 #   <script>        html_script
+#   <% %>           user_defined_definition
 #   <$$>            display_maths
 #   <$>             inline_maths
 #   <$d>            inline_maths_definition
@@ -334,6 +335,69 @@ def replace_html_script(match_object):
 def replace_all_html_scripts(string):
   
   return re.sub(r'<script>([\s\S]*?)</script>', replace_html_script, string)
+
+################################################################
+# Store user-defined definitions (of user-defined replacements)
+################################################################
+
+# Unprocessed string:
+#   <% {old string} {new string} %>
+# where {old string} cannot contain whitespace
+# and neither {old string} nor {new string} can contain {U+E000}
+# which is used in temporary replacements
+
+# Raw regular expression for unprocessed string:
+#   <%\s*([^\s{E000}]+)\s+([^{E000}]*?)%>
+#   \1  {old string}
+#   \2  {new string}
+
+# Processed string:
+#   {empty string}
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def store_user_defined_definition(match_object):
+  
+  global user_defined_replacement_dictionary
+  
+  old_string = match_object.group(1)
+  new_string = match_object.group(2)
+  new_string = new_string.strip()
+  
+  user_defined_replacement_dictionary[old_string] = new_string
+  
+  return ''
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def store_all_user_defined_definitions(string):
+  
+  return re.sub(
+    rf'<%\s*([^\s{E000}]+)\s+([^{E000}]*?)%>',
+    store_user_defined_definition,
+    string
+  )
+
+################################################################
+# Apply user-defined replacements (defined by user-defined definitions)
+################################################################
+
+def apply_all_user_defined_replacements(string):
+  
+  for old_string in user_defined_replacement_dictionary:
+    
+    new_string = user_defined_replacement_dictionary[old_string]
+    string = re.sub(
+      re.escape(old_string),
+      escape_python_backslash(new_string),
+      string
+    )
+  
+  return string
 
 ################################################################
 # Replace display maths with temporary replacements
@@ -3299,6 +3363,7 @@ def cch_to_html(file_name):
   global is_root_index, url
   global E000, E000_RUN, TEMPORARY_REPLACEMENT_REGEX
   global temporary_replacement_counter, temporary_replacement_dictionary
+  global user_defined_replacement_dictionary
   
   # ----------------------------------------------------------------
   # Canonicalise file name
@@ -3381,6 +3446,13 @@ def cch_to_html(file_name):
   temporary_replacement_counter = 0
   temporary_replacement_dictionary = {}
   
+  # ----------------------------------------------------------------
+  # User-defined replacements
+  # ----------------------------------------------------------------
+  
+  # Initialise global variable
+  user_defined_replacement_dictionary = {}
+  
   ################################################################
   # START of processing markup
   ################################################################
@@ -3393,6 +3465,8 @@ def cch_to_html(file_name):
   markup = replace_all_inline_code(markup)
   markup = remove_all_html_comments(markup)
   markup = replace_all_html_scripts(markup)
+  markup = store_all_user_defined_definitions(markup)
+  markup = apply_all_user_defined_replacements(markup)
   markup = replace_all_display_maths(markup)
   markup = replace_all_inline_maths(markup)
   markup = replace_all_inline_maths_definitions(markup)
