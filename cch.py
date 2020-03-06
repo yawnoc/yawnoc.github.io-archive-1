@@ -31,10 +31,11 @@
 # ----------------------------------------------------------------
 # Supreme elements
 # ----------------------------------------------------------------
-# These are immune to any processing below it.
+# These are immune to any processing below them.
 #   <``>            display_code
 #   <`>             inline_code
 #   <!-- -->        html_comment
+#   <script>        html_script
 #   <$$>            display_maths
 #   <$>             inline_maths
 #   <$d>            inline_maths_definition
