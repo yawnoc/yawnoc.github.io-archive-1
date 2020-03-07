@@ -1525,11 +1525,14 @@ def replace_all_sun_tzu_headings(string):
 ################################################################
 
 # Unprocessed string:
-#   <;s@@> {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@>
+#   <;s@@>
+#     {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p}
+#   </;s@@>
 
 # Raw regular expression for unprocessed string:
 #   <;s@@>([\s\S]*?)</;s@@>
-#   \1  {arguments}: {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p}
+#   \1  {arguments}:
+#         {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p}
 
 # Processed string:
 #   <@@>
@@ -1550,7 +1553,12 @@ def replace_all_sun_tzu_headings(string):
 #     </@>]
 #     [<@>
 #       B{b p}({b p minus 5})
-#       | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page={b p}
+#       | https://commons.wikimedia.org/w/index.php\
+#           ?title=\
+#             File%3A\
+#             %E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8\
+#             _0797%E5%86%8A.djvu\
+#           &page={b p}
 #       | Version B: 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
 #     </@>]
 #     <@>
@@ -1625,14 +1633,19 @@ def replace_sun_tzu_link_division(match_object):
     version_b_link = ''
   else:
     b_p_minus_5 = int(b_p) - 5
-    version_b_link = f'''
+    version_b_link = rf'''
       <@>
         B{b_p}({b_p_minus_5})
-        | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page={b_p}
+        | https://commons.wikimedia.org/w/index.php\
+            ?title=\
+              File%3A\
+              %E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8\
+              _0797%E5%86%8A.djvu\
+            &page={b_p}
         | Version B: 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
       </@>
     '''
-  
+      
   version_c_link = f'''
     <@>
       C{c_p}({volume}.{c_q})
@@ -1699,16 +1712,20 @@ def replace_all_sun_tzu_link_divisions(string):
 #   <html lang="en">
 #   <head>
 #     <meta charset="utf-8">
-#     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-#     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-#     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+#     <link rel="apple-touch-icon"
+#       sizes="180x180" href="/apple-touch-icon.png">
+#     <link rel="icon" type="image/png"
+#       sizes="32x32" href="/favicon-32x32.png">
+#     <link rel="icon" type="image/png"
+#       sizes="16x16" href="/favicon-16x16.png">
 #     <link rel="manifest" href="/site.webmanifest">
 #     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 #     <meta name="author" content="Conway">
 #     [<meta name="description" content="[description]">]
 #     <meta name="msapplication-TileColor" content="#00aba9">
 #     <meta name="theme-color" content="#ffffff">
-#     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+#     <meta name="viewport"
+#       content="width=device-width, initial-scale=1, minimum-scale=1">
 #     <link rel="stylesheet" href="/conway.min.css">
 #     [<link rel="stylesheet" href="/conway-katex.min.css">
 #     <script defer src="/conway-katex.min.js"></script>]
@@ -1718,7 +1735,11 @@ def replace_all_sun_tzu_link_divisions(string):
 #       [Conway-special-literal-escaped CSS]
 #     </style>]
 #   </head>
-#   <body[ onload="[dateRender();] [mathsRender();] [romanisationInitialise();] [js]"]>
+#   <body[ onload="
+#     [dateRender();]
+#     [mathsRender();]
+#     [romanisationInitialise();]
+#     [js]"]>
 # where description is omitted if [description] is {empty string},
 # "/conway-katex.min.*" are loaded if [rendering] contains m,
 # "/conway-render.min.js" is loaded if [rendering] contains any of d, m or r,
@@ -1840,16 +1861,20 @@ def replace_preamble(string):
     <html lang="en">
     <head>
       <meta charset="utf-8">
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="apple-touch-icon"
+        sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png"
+        sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png"
+        sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/site.webmanifest">
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
       <meta name="author" content="Conway">
       {meta_description}
       <meta name="msapplication-TileColor" content="#00aba9">
       <meta name="theme-color" content="#ffffff">
-      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+      <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1">
       <link rel="stylesheet" href="/conway.min.css">
       {maths_css_js}
       {rendering_js}
@@ -2951,14 +2976,16 @@ CHINESE_CHARACTER_RANGE = (
   # ----------------------------------------------------------------
   # U+2FF0 to U+2FFF (Ideographic Description Characters)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/Ideographic_Description_Characters
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   Ideographic_Description_Characters
   
   '\u2FF0-\u2FFF'     # All
   
   # ----------------------------------------------------------------
   # U+3000 to U+303F (CJK Symbols and Punctuation)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Symbols_and_Punctuation
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   CJK_Symbols_and_Punctuation
   
   '\u3000-\u3002'     # Ideographic space (　), comma (、) and full stop (。)
   '\u3005'            # Ideographic iteration mark (々)
@@ -2986,7 +3013,8 @@ CHINESE_CHARACTER_RANGE = (
   # ----------------------------------------------------------------
   # U+3400 to U+4DBF (CJK Unified Ideographs Extension A)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_A
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   CJK_Unified_Ideographs_Extension_A
   
   '\u3400-\u4DBF'     # All
   
@@ -3014,14 +3042,16 @@ CHINESE_CHARACTER_RANGE = (
   # ----------------------------------------------------------------
   # U+F900 to U+FAFF (CJK Compatibility Ideographs)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Compatibility_Ideographs
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   CJK_Compatibility_Ideographs
   
   '\uF900-\uFAFF'     # All
   
   # ----------------------------------------------------------------
   # U+FF00 to U+FFEF (Halfwidth and Fullwidth Forms)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/Halfwidth_and_Fullwidth_Forms
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   Halfwidth_and_Fullwidth_Forms
   
   '\uFF01-\uFF1F'     # Fullwidth punctuation and digits
   '\uFF3B-\uFF3E'     # Fullwidth punctuation
@@ -3030,42 +3060,48 @@ CHINESE_CHARACTER_RANGE = (
   # ----------------------------------------------------------------
   # U+20000 to U+2A6DF (CJK Unified Ideographs Extension B)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_B
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   CJK_Unified_Ideographs_Extension_B
   
   '\U00020000-\U0002A6DF'   # All
   
   # ----------------------------------------------------------------
   # U+2A700 to U+2B73F (CJK Unified Ideographs Extension C)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_C
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   CJK_Unified_Ideographs_Extension_C
   
   '\U0002A700-\U0002B73F'   # All
   
   # ----------------------------------------------------------------
   # U+2B740 to U+2B81F (CJK Unified Ideographs Extension D)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_D
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   CJK_Unified_Ideographs_Extension_D
   
   '\U0002B740-\U0002B81F'   # All
   
   # ----------------------------------------------------------------
   # U+2B820 to U+2CEAF (CJK Unified Ideographs Extension E)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_E
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   CJK_Unified_Ideographs_Extension_E
   
   '\U0002B820-\U0002CEAF'   # All
   
   # ----------------------------------------------------------------
   # U+2CEB0 to U+2EBEF (CJK Unified Ideographs Extension F)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Unified_Ideographs_Extension_F
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   CJK_Unified_Ideographs_Extension_F
   
   '\U0002CEB0-\U0002EBEF'   # All
   
   # ----------------------------------------------------------------
   # U+2F800 to U+2FA1F (CJK Compatibility Ideographs Supplement)
   # ----------------------------------------------------------------
-  # https://en.wiktionary.org/wiki/Appendix:Unicode/CJK_Compatibility_Ideographs_Supplement
+  # https://en.wiktionary.org/wiki/Appendix:Unicode/\
+  #   CJK_Compatibility_Ideographs_Supplement
   
   '\U0002F800-\U0002FA1F'   # All
 
