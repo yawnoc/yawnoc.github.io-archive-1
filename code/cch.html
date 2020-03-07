@@ -27,7 +27,7 @@
 <h1>Python: a regex converter from CCH to HTML</h1>
 <p class="page-properties">
 First created:&nbsp;20190720<br>
-Last modified:&nbsp;<b>20200302</b><br>
+Last modified:&nbsp;<b>20200307</b><br>
 <b>Code:</b>
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch.py" title="GitHub: cch.py"><code>cch.py</code></a>
 <noscript>Enable Javascript for <a href="/code/katex-guide.html" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
@@ -38,6 +38,7 @@ Last modified:&nbsp;<b>20200302</b><br>
 <li><a href="#inline-code" title="Inline code element"><code>&lt;`&gt;</code></a></li>
 <li><a href="#html-comment" title="HTML comment element"><code>&lt;!-- --&gt;</code></a></li>
 <li><a href="#html-script" title="HTML script element"><code>&lt;script&gt;</code></a></li>
+<li><a href="#user-defined-definition" title="User-defined definition element"><code>&lt;% %&gt;</code></a></li>
 <li><a href="#display-maths" title="Display maths element"><code>&lt;$$&gt;</code></a></li>
 <li><a href="#inline-maths" title="Inline maths element"><code>&lt;$&gt;</code></a></li>
 <li><a href="#inline-maths-definition" title="Inline maths definition element"><code>&lt;$d&gt;</code></a></li>
@@ -224,6 +225,71 @@ HTML script element
 <a href="#whitespace" title="Whitespace">Whitespace is removed</a>,
 but <code>{content}</code> is otherwise unchanged.
 </p>
+<h3 id="user-defined-definition"><a class="self-link" href="#user-defined-definition"></a>
+User-defined definition element
+</h3>
+<div class="boxed">
+<code>&lt;% [old string] {new string} %&gt;</code>
+</div>
+<p>
+The most powerful element of all.
+</p>
+<ul>
+<li>
+<code>[old string]</code> is the string to be replaced,
+for which the square brackets are literal, and
+</li>
+<li>
+<code>{new string}</code> is the replacement string.
+</li>
+</ul>
+<p>
+<code>[old string]</code> cannot contain \, &lt; or &gt;.
+It is recommended that neither <code>[old string]</code> nor <code>{new string}</code>
+contain manual insertions of the private-use character <code>U+E000</code>,
+since that character is used internally for replacements.
+</p>
+<p>
+First the converter reads and removes all the definitions;
+then it applies the replacements in this order.
+Nesting will work as long as newer definitions do not reference older ones.
+Only one definition per <code>[old string]</code> is permitted;
+any subsequent definitions for the same <code>[old string]</code>
+will result in an error message.
+</p>
+<p>
+To write <code>[old string]</code> literally,
+use the literal empty string escape <code>\!</code>,
+as in <code>[\!old string]</code>.
+</p>
+<ul>
+<li>
+<b>CCH</b>
+<pre>
+&lt;% [cch-good] [cch] is good %&gt;
+&lt;% [cch] Conway's concise HTML %&gt;
+
+[cch-good]. &lt;br&gt;
+A literal [\!cch] rendered in [cch]. &lt;br&gt;
+Definitions may be given after calls: [y]. &lt;br&gt;
+
+&lt;% [y] yes %&gt;
+
+[dupes] are bad.
+
+&lt;% [dupes] Duplicate definitions %&gt;
+&lt;% [dupes] This re-definition will cause an error %&gt;
+</pre>
+</li>
+<li>
+<b>Rendered</b><br>
+Conway's concise HTML is good.<br>
+A literal [cch] rendered in Conway's concise HTML.<br>
+Definitions may be given after calls: yes.<br>
+Duplicate definitions are bad.
+<span class="cch-error">CCH error: User-defined replacement for [dupes] defined twice.</span>
+</li>
+</ul>
 <h3 id="display-maths"><a class="self-link" href="#display-maths"></a>
 Display maths element
 </h3>

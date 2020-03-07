@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20200302 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20200307 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -25,6 +25,9 @@
   <@i> <code>\<`\></code> | #inline-code | Inline code element </@i>
   <@i> <`><!-- --></`> | #html-comment | HTML comment element </@i>
   <@i> <`><script></`> | #html-script | HTML script element </@i>
+  <@i>
+    <`><% %></`> | #user-defined-definition | User-defined definition element
+  </@i>
   <@i> <`><$$></`> | #display-maths | Display maths element </@i>
   <@i> <`><$></`> | #inline-maths | Inline maths element </@i>
   <@i>
@@ -313,6 +316,88 @@
   <@> Whitespace is removed | #whitespace | Whitespace </@>,
   but <`>{content}</`> is otherwise unchanged.
 </p>
+
+<@3> User-defined definition element | user-defined-definition </@3>
+
+<#>
+  <`><% [old string] {new string} %></`>
+</#>
+
+<p>
+  The most powerful element of all.
+</p>
+
+<ul>
+  <li>
+    <`>[old string]</`> is the string to be replaced,
+    for which the square brackets are literal, and
+  </li>
+  <li>
+    <`>{new string}</`> is the replacement string.
+  </li>
+</ul>
+
+<p>
+  <`>[old string]</`> cannot contain \\, \< or \>.
+  It is recommended that neither <`>[old string]</`> nor <`>{new string}</`>
+  contain manual insertions of the private-use character <`>U+E000</`>,
+  since that character is used internally for replacements.
+</p>
+
+<p>
+  First the converter reads and removes all the definitions;
+  then it applies the replacements in this order.
+  Nesting will work as long as newer definitions do not reference older ones.
+  Only one definition per <`>[old string]</`> is permitted;
+  any subsequent definitions for the same <`>[old string]</`>
+  will result in an error message.
+</p>
+
+<p>
+  To write <`>[old string]</`> literally,
+  use the literal empty string escape <`>\!</`>,
+  as in <`>[\!old string]</`>.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <% [cch-good] [cch] is good %>
+      <% [cch] Conway's concise HTML %>
+      
+      [cch-good]. <br>
+      A literal [\!cch] rendered in [cch]. <br>
+      Definitions may be given after calls: [y]. <br>
+      
+      <% [y] yes %>
+      
+      [dupes] are bad.
+      
+      <% [dupes] Duplicate definitions %>
+      <% [dupes] This re-definition will cause an error %>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b> <br>
+      <% [cch-good] [cch] is good %>
+      <% [cch] Conway's concise HTML %>
+      
+      [cch-good]. <br>
+      A literal [\!cch] rendered in [cch]. <br>
+      Definitions may be given after calls: [y]. <br>
+      
+      <% [y] yes %>
+      
+      [dupes] are bad.
+      
+      <% [dupes] Duplicate definitions %>
+      <% [dupes] This re-definition will cause an error %>
+  </li>
+  
+</ul>
 
 <@3> Display maths element | display-maths </@3>
 
