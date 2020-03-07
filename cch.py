@@ -3356,7 +3356,7 @@ def remove_unnecessary_whitespace(string):
   string = re.sub(r'\n<br>', '<br>', string)
   
   # Replace whitespace before attributes with a canonical single space
-  string = re.sub(r'[\s]+?(?=[\S]+?="[^=]*?")', ' ', string)
+  string = re.sub(r'[\s]+?(?=[\S]+?="[^"]*?")', ' ', string)
   
   return string
 
