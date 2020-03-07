@@ -1938,10 +1938,13 @@
   </li>
   <li>
     Newlines immediately following a backslash are removed
-    (i.e.~backslash is the line continuation character), and
+    (i.e.~backslash is the line continuation character),
   </li>
   <li>
-    Newlines immediately preceding <`><br></`> elements are removed.
+    Newlines immediately preceding <`><br></`> elements are removed, and
+  </li>
+  <li>
+    Horizontal whitespace before attributes is canonicalised as a single space.
   </li>
 </ol>
 
