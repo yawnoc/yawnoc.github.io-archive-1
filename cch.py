@@ -415,6 +415,11 @@ def store_user_defined_definition(match_object):
   new_string = match_object.group(2)
   new_string = new_string.strip()
   
+  if old_string in user_defined_replacement_dictionary:
+    return cch_error_span(
+      f'User-defined replacement for {old_string} defined twice.'
+    )
+  
   user_defined_replacement_dictionary[old_string] = new_string
   
   return ''
