@@ -1279,7 +1279,7 @@
 <*c>
   "Q~{\&}~A {with} Confucius: {the} Little Child's Discourse"
   | little-child
-  | ``{Q}~\emph{\&}~{A} \emph{with} {Confucius}: \emph{the} {Little} {Child's} {Discourse}''
+  | ``{Q}~\emph{\\\&}~{A} \emph{with} {Confucius}: \emph{the} {Little} {Child's} {Discourse}''
 </*c>
 
 <*f></*f>
