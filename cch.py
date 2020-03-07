@@ -1807,6 +1807,7 @@ def replace_preamble(string):
     if require_romanisation:
       onload_functions += ' romanisationInitialise();'
     if require_js:
+      js = escape_user_defined_definitions(js)
       js = escape_conway_special_literals(js)
       js = escape_attribute_value(js)
       onload_functions += js
@@ -1818,6 +1819,7 @@ def replace_preamble(string):
   if css == '':
     embedded_css = ''
   else:
+    css = escape_user_defined_definitions(css)
     css = escape_conway_special_literals(css)
     embedded_css = f'<style>{css}</style>'
   
@@ -2027,6 +2029,7 @@ def replace_cite_this_page(string):
   num_arguments = num_required_arguments
   text_heading, tex_key, tex_heading = argument_list[:num_arguments]
   
+  tex_heading = escape_user_defined_definitions(tex_heading)
   tex_heading = escape_conway_special_literals(tex_heading)
   
   # NOTE: <pre> ... </pre> must be used rather than <``> ... </``>
@@ -2576,6 +2579,7 @@ def replace_all_overflowing_divisions(string):
 def replace_svg_style_container(match_object):
   
   content = match_object.group(1)
+  content = escape_user_defined_definitions(content)
   content = escape_conway_special_literals(content)
   
   processed_string = (
