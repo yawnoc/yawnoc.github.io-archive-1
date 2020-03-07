@@ -214,6 +214,54 @@ import re
 from os.path import commonprefix as longest_common_prefix
 
 ################################################################
+# CCH error
+################################################################
+
+# ----------------------------------------------------------------
+# Error span
+# ----------------------------------------------------------------
+
+def cch_error_span(error_message):
+  
+  error_message = error_message.strip()
+  error_message = de_indent(error_message)
+  error_message = escape_html(error_message)
+  error_message = escape_conway_special_literals(error_message)
+  
+  return f'<span class="cch-error">CCH error: {error_message}</span>'
+
+# ----------------------------------------------------------------
+# Error page with navigation bar link to CCH documentation
+# ----------------------------------------------------------------
+
+def cch_error_page(error_message, element_id, element_title):
+  
+  element_id = escape_attribute_value(element_id)
+  element_title = escape_attribute_value(element_title)
+  
+  return f'''
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="/conway.min.css">
+      <title>CCH error</title>
+    </head>
+    <body>
+      <=h>
+        <li>
+          <a
+            href="/code/cch.html#{element_id}"
+            title="{element_title}"\
+          >{element_title} help</a>
+        </li>
+      </=h>
+      {cch_error_span(error_message)}
+    </body>
+    </html>
+  '''
+
+################################################################
 # Replace display code with temporary replacements
 ################################################################
 
@@ -858,11 +906,12 @@ def replace_dialogue_image(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 2
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Dialogue image <+{pos}> {src} | {alt} </+{pos}> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Dialogue image <+{pos}> {src} | {alt} </+{pos}> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   num_arguments = num_required_arguments
   src, alt = argument_list[:num_arguments]
@@ -907,11 +956,12 @@ def replace_image(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 2
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Image <+> {src} | {alt} [| title [| width [| class]]] </+> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Image <+> {src} | {alt} [| title [| width [| class]]] </+> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   num_arguments = num_required_arguments + 3
   argument_list += [''] * (num_arguments - num_supplied_arguments)
@@ -980,11 +1030,12 @@ def replace_assisting_romanisation(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 3
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Assisting \rom <^> {conway} | {wadegiles} | {pinyin} </^> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Assisting \rom <^> {conway} | {wadegiles} | {pinyin} </^> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   num_arguments = num_required_arguments
   conway, wadegiles, pinyin = argument_list[:num_arguments]
@@ -1053,12 +1104,13 @@ def replace_cantonese_mandarin_romanisation(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 2
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Cantonese & Mandarin romanisation '
-    '<^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Cantonese & Mandarin romanisation '
+      '<^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   num_arguments = num_required_arguments + 1
   argument_list += [''] * (num_arguments - num_supplied_arguments)
@@ -1067,11 +1119,12 @@ def replace_cantonese_mandarin_romanisation(match_object):
   if gov == '':
     gov_spec = ''
   else:
-    assert government != '', (
-      'Cantonese & Mandarin romanisation '
-      '<^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]> '
-      'requires non-empty [government] if [gov] is supplied'
-    )
+    if government == '':
+      return cch_error_span(
+        'Cantonese & Mandarin romanisation '
+        '<^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]> '
+        'requires non-empty [government] if [gov] is supplied'
+      )
     gov_spec = f', {full_gov} Mandarin (統讀):~<^e>{government}</^e>'
   
   processed_string = f'''
@@ -1135,12 +1188,13 @@ def replace_directed_triangle_anchor(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 2
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Directed-triangle anchor '
-    '<@{dir}> {content} | {id} [| title] </@{dir}> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Directed-triangle anchor '
+      '<@{dir}> {content} | {id} [| title] </@{dir}> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   content, id_ = argument_list[:num_required_arguments]
   if num_supplied_arguments > num_required_arguments:
@@ -1221,11 +1275,12 @@ def replace_heading_self_link_anchor(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 2
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Heading self-link anchor <@{level}> {content} | {id} </@{level}> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Heading self-link anchor <@{level}> {content} | {id} </@{level}> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   num_arguments = num_required_arguments
   content, id_ = argument_list[:num_arguments]
@@ -1279,12 +1334,13 @@ def replace_anchor(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 2
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Anchor <@> {content} | {href} [| title] </@> '
-    'or Item anchor <@i> {content} | {href} [| title] </@i>'
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Anchor <@> {content} | {href} [| title] </@> '
+      'or Item anchor <@i> {content} | {href} [| title] </@i>'
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   content, href = argument_list[:num_required_arguments]
   if num_supplied_arguments > num_required_arguments:
@@ -1353,11 +1409,12 @@ def replace_boxed_translation(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 2
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Boxed translation <#t[size]> {chinese} | {english} </#t[size]> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Boxed translation <#t[size]> {chinese} | {english} </#t[size]> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   num_arguments = num_required_arguments
   chinese, english = argument_list[:num_arguments]
@@ -1415,11 +1472,12 @@ def replace_sun_tzu_heading(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 3
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Sun Tzu heading <;sh> {volume} | {paragraph} | {content} </;sh> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Sun Tzu heading <;sh> {volume} | {paragraph} | {content} </;sh> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   num_arguments = num_required_arguments
   volume, paragraph, content = argument_list[:num_arguments]
@@ -1504,12 +1562,13 @@ def replace_sun_tzu_link_division(match_object):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 7
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Sun Tzu link division <;s@@> '
-    '{volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_span(
+      'Sun Tzu link division <;s@@> '
+      '{volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied'
+    )
   
   num_arguments = num_required_arguments
   volume, paragraph, a_p, b_p, c_p, c_q, d_p = argument_list[:num_arguments]
@@ -1662,12 +1721,15 @@ def replace_preamble(string):
   
   preamble_regex = re.compile(r'<\*>([\s\S]*?)</\*>')
   preamble_match_object = preamble_regex.match(string)
-  assert preamble_match_object is not None, (
-    'Preamble '
-    '<*> {title} | {first created} | {last modified} '
-    '[| rendering [| description [| css [| js ]]]] </*> '
-    'must be supplied at the very beginning of markup'
-  )
+  if preamble_match_object is None:
+    return cch_error_page(
+      'Preamble '
+      '<*> {title} | {first created} | {last modified} '
+      '[| rendering [| description [| css [| js ]]]] </*> '
+      'must be supplied at the very beginning of markup',
+      'preamble',
+      'Preamble element'
+    )
   
   arguments = preamble_match_object.group(1)
   argument_list = split_by_pipe(arguments)
@@ -1675,13 +1737,16 @@ def replace_preamble(string):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 3
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Preamble '
-    '<*> {title} | {first created} | {last modified} '
-    '[| rendering [| description [| css [| js ]]]] </*> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_page(
+      'Preamble '
+      '<*> {title} | {first created} | {last modified} '
+      '[| rendering [| description [| css [| js ]]]] </*> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied',
+      'preamble',
+      'Preamble element'
+    )
   
   num_arguments = num_required_arguments + 4
   argument_list += [''] * (num_arguments - num_supplied_arguments)
@@ -1943,12 +2008,15 @@ def replace_cite_this_page(string):
   num_supplied_arguments = len(argument_list)
   num_required_arguments = 3
   
-  assert num_supplied_arguments >= num_required_arguments, (
-    'Cite this page '
-    '<*c> {text heading} | {tex key} | {tex heading} </*c> '
-    f'requires at least {num_required_arguments} pipe-delimited arguments; '
-    f'only {num_supplied_arguments} supplied'
-  )
+  if num_supplied_arguments < num_required_arguments:
+    return cch_error_page(
+      'Cite this page '
+      '<*c> {text heading} | {tex key} | {tex heading} </*c> '
+      f'requires at least {num_required_arguments} pipe-delimited arguments; '
+      f'only {num_supplied_arguments} supplied',
+      'cite-this-page',
+      'Cite this page element'
+    )
   
   num_arguments = num_required_arguments
   text_heading, tex_key, tex_heading = argument_list[:num_arguments]
