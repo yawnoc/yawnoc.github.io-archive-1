@@ -1944,7 +1944,7 @@
     Newlines immediately preceding <`><br></`> elements are removed, and
   </li>
   <li>
-    Horizontal whitespace before attributes is canonicalised as a single space.
+    Whitespace before attributes is replaced with a canonical single space.
   </li>
 </ol>
 

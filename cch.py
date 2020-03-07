@@ -3355,8 +3355,8 @@ def remove_unnecessary_whitespace(string):
   # Remove newlines immediately preceding line break elements
   string = re.sub(r'\n<br>', '<br>', string)
   
-  # Canonicalise horizontal whitespace before attributes as a single space
-  string = re.sub(r'[^\S\n]+?(?=[\S]+?="[^=]*?")', ' ', string)
+  # Replace whitespace before attributes with a canonical single space
+  string = re.sub(r'[\s]+?(?=[\S]+?="[^=]*?")', ' ', string)
   
   return string
 
