@@ -226,6 +226,7 @@ def cch_error_span(error_message):
   error_message = error_message.strip()
   error_message = de_indent(error_message)
   error_message = escape_html(error_message)
+  error_message = escape_user_defined_definitions(error_message)
   error_message = escape_conway_special_literals(error_message)
   
   return f'<span class="cch-error">CCH error: {error_message}</span>'
@@ -2666,6 +2667,15 @@ def escape_html(string):
   string = re.sub('>', '&gt;', string)
   
   return string
+
+################################################################
+# Escape user-defined definitions
+################################################################
+
+def escape_user_defined_definitions(string):
+  
+  # Escape [ as [\!
+  return re.sub(r'\[', r'[\!', string)
 
 ################################################################
 # Replace Conway literal backslashes with temporary replacements
