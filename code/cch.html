@@ -251,8 +251,9 @@ since that character is used internally for replacements.
 </p>
 <p>
 First the converter reads and removes all the definitions;
-then it applies the replacements in this order.
-Nesting will work as long as newer definitions do not reference older ones.
+then it applies the replacements in <em>reverse</em> order.
+Therefore nesting will work as long as
+the referenced definition appears higher up in the markup.
 Only one definition per <code>[old string]</code> is permitted;
 any subsequent definitions for the same <code>[old string]</code>
 will result in an error message.
@@ -266,11 +267,11 @@ as in <code>[\!old string]</code>.
 <li>
 <b>CCH</b>
 <pre>
-&lt;% [cch-good] [cch] is good %&gt;
 &lt;% [cch] Conway's concise HTML %&gt;
+&lt;% [cch-good] [cch] is good %&gt;
 
 [cch-good]. &lt;br&gt;
-A literal [\!cch] rendered in [cch]. &lt;br&gt;
+A literal [\!cch] rendered from [cch]. &lt;br&gt;
 Definitions may be given after calls: [y]. &lt;br&gt;
 
 &lt;% [y] yes %&gt;
@@ -284,7 +285,7 @@ Definitions may be given after calls: [y]. &lt;br&gt;
 <li>
 <b>Rendered</b><br>
 Conway's concise HTML is good.<br>
-A literal [cch] rendered in Conway's concise HTML.<br>
+A literal [cch] rendered from Conway's concise HTML.<br>
 Definitions may be given after calls: yes.<br>
 Duplicate definitions are bad.
 <span class="cch-error">CCH error: User-defined replacement for [dupes] defined twice.</span>

@@ -346,8 +346,9 @@
 
 <p>
   First the converter reads and removes all the definitions;
-  then it applies the replacements in this order.
-  Nesting will work as long as newer definitions do not reference older ones.
+  then it applies the replacements in <em>reverse</em> order.
+  Therefore nesting will work as long as
+  the referenced definition appears higher up in the markup.
   Only one definition per <`>[old string]</`> is permitted;
   any subsequent definitions for the same <`>[old string]</`>
   will result in an error message.
@@ -364,11 +365,11 @@
   <li>
     <b>CCH</b>
     <``>
-      <% [cch-good] [cch] is good %>
       <% [cch] Conway's concise HTML %>
+      <% [cch-good] [cch] is good %>
       
       [cch-good]. <br>
-      A literal [\!cch] rendered in [cch]. <br>
+      A literal [\!cch] rendered from [cch]. <br>
       Definitions may be given after calls: [y]. <br>
       
       <% [y] yes %>
@@ -382,11 +383,11 @@
   
   <li>
     <b>Rendered</b> <br>
-      <% [cch-good] [cch] is good %>
       <% [cch] Conway's concise HTML %>
+      <% [cch-good] [cch] is good %>
       
       [cch-good]. <br>
-      A literal [\!cch] rendered in [cch]. <br>
+      A literal [\!cch] rendered from [cch]. <br>
       Definitions may be given after calls: [y]. <br>
       
       <% [y] yes %>

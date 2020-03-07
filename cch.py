@@ -429,11 +429,25 @@ def store_user_defined_definition(match_object):
 
 def store_all_user_defined_definitions(string):
   
-  return re.sub(
+  global user_defined_replacement_dictionary
+  
+  string = re.sub(
     rf'<%\s*(\[[^\\<>]+?\])([\s\S]*?)%>',
     store_user_defined_definition,
     string
   )
+  
+  user_defined_replacement_dictionary = (
+    dict(
+      reversed(
+        list(
+          user_defined_replacement_dictionary.items()
+        )
+      )
+    )
+  )
+  
+  return string
 
 ################################################################
 # Apply user-defined replacements (defined by user-defined definitions)
