@@ -391,12 +391,12 @@ def replace_all_html_scripts(string):
 # Unprocessed string:
 #   <% [old string] {new string} %>
 # where the square brackets for [old string] are literal
-# and [old string] cannot contain < or >
+# and [old string] cannot contain backslash, < or >
 # and neither [old string] nor {new string} can contain {U+E000}
 # which is used in temporary replacements
 
 # Raw regular expression for unprocessed string:
-#   <%\s*(\[[^<>{E000}]+?\])([^{E000}]*?)%>
+#   <%\s*(\[[^\\<>{E000}]+?\])([^{E000}]*?)%>
 #   \1  [old string]
 #   \2  {new string}
 
@@ -426,7 +426,7 @@ def store_user_defined_definition(match_object):
 def store_all_user_defined_definitions(string):
   
   return re.sub(
-    rf'<%\s*(\[[^<>{E000}]+?\])([^{E000}]*?)%>',
+    rf'<%\s*(\[[^\\<>{E000}]+?\])([^{E000}]*?)%>',
     store_user_defined_definition,
     string
   )
