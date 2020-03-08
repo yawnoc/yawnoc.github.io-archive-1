@@ -24,16 +24,16 @@
 </p>
 
 
-<% [pages.h] Stuff to read %>
+<% [pages.h] | Stuff to read %>
 <@2> [pages.h] | pages </@2>
 
 
-<% [general.h] General material %>
+<% [general.h] | General material %>
 <@3> [general.h] | general </@3>
 
 <table>
   
-  <% [rom.h] Conway's Custom \Rom for Cantonese %>
+  <% [rom.h] | Conway's Custom \Rom for Cantonese %>
   <tr><td>
     <@>
       <b>[rom.h]</b>
@@ -43,13 +43,13 @@
     <.>Used in this site.</.>
   </td></tr>
   
-  <% [faq.h] FAQ %>
+  <% [faq.h] | FAQ %>
   <tr><td>
     <@> <b>[faq.h]</b> | /faq.html | [faq.h] </@>
     <.>"What does Conway do in his spare time?"</.>
   </td></tr>
   
-  <% [cynics-730.h] A cynic's 7.30 (and other programs) %>
+  <% [cynics-730.h] | A cynic's 7.30 (and other programs) %>
   <tr><td>
     <@>
       <b>[cynics-730.h]</b>
@@ -59,8 +59,8 @@
     <.>Mind reading: Australian politics.</.>
   </td></tr>
   
-  <% [mao.h] Mao on separatism: 27~Chinas %>
-  <% [mao.h-with-ch] [mao.h]: 長沙《大公報》一九二零年九月三日——湖南共和國 %>
+  <% [mao.h] | Mao on separatism: 27~Chinas %>
+  <% [mao.h-with-ch] | [mao.h]: 長沙《大公報》一九二零年九月三日——湖南共和國 %>
   <tr><td>
     <@>
       <b>[mao.h]</b>
@@ -73,12 +73,12 @@
   
 </table>
 
-<% [applied.h] Applied mathematics, or physics %>
+<% [applied.h] | Applied mathematics, or physics %>
 <@3> [applied.h] | applied </@3>
 
 <table>
   
-  <% [daytime.h] Daytime: dependence on latitude and season %>
+  <% [daytime.h] | Daytime: dependence on latitude and season %>
   <tr><td>
     <@>
       <b>[daytime.h]</b>
@@ -92,7 +92,7 @@
   </td></tr>
   
   <%
-    [weak-drag.h]
+    [weak-drag.h] |
     Projectile motion: optimal launch angle for weak quadratic drag
   %>
   <tr><td>
@@ -107,7 +107,7 @@
     </.>
   </td></tr>
   
-  <% [platform.h] Projectile motion: optimal launch angle from a platform %>
+  <% [platform.h] | Projectile motion: optimal launch angle from a platform %>
   <tr><td>
     <@>
       <b>[platform.h]</b>
@@ -119,19 +119,19 @@
   
 </table>
 
-<% [literary.h] English translations of Literary Chinese %>
+<% [literary.h] | English translations of Literary Chinese %>
 <@3> [literary.h] | literary </@3>
 
 <@4> Mathematics | literary-maths </@4>
 
 <table>
   
-  <% [sun-tzu] <^e>Sun~Tzuu</^e> %>
-  <% [sun-tzu-classic] [sun-tzu]'s Computational Classic %>
-  <% [pref] Preface %>
-  <% [vol-i] Volume~I %>
-  <% [vol-ii] Volume~II %>
-  <% [vol-iii] Volume~III %>
+  <% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
+  <% [sun-tzu-classic] | [sun-tzu]'s Computational Classic %>
+  <% [pref] | Preface %>
+  <% [vol-i] | Volume~I %>
+  <% [vol-ii] | Volume~II %>
+  <% [vol-iii] | Volume~III %>
   <tr><td>
     <@>
       《孫子算經》 \or <br>
@@ -166,7 +166,7 @@
     </.>
   </td></tr>
   
-  <% [sea-island.h] "{The} Sea Island Computational Classic" %>
+  <% [sea-island.h] | "{The} Sea Island Computational Classic" %>
   <tr><td>
     <@>
       《海島算經》 \or <br>
@@ -183,7 +183,7 @@
 
 <table>
   
-  <% [gunbai.h] Poetry on a sumo umpire's fan %>
+  <% [gunbai.h] | Poetry on a sumo umpire's fan %>
   <tr><td>
     <@>
       <b>[gunbai.h]</b>
@@ -195,7 +195,7 @@
     </.>
   </td></tr>
   
-  <% [hk-mobil.h] "Memorial {unto the} Mobilisation, Hong Kong" %>
+  <% [hk-mobil.h] | "Memorial {unto the} Mobilisation, Hong Kong" %>
   <tr><td>
     <@>
       《香港出師表》 \or <br>
@@ -222,7 +222,7 @@
   </td></tr>
   
   <%
-    [little-child.h]
+    [little-child.h] |
     "Q~{\&}~A {with} Confucius: {the} Little Child's Discourse"
   %>
   <tr><td>
@@ -235,7 +235,7 @@
     <.>Confucius getting his arse whooped by a little kid.</.>
   </td></tr>
   
-  <% [lion-pavilion.h] "Record of {the} Lion's Pavilion, Victoria~Peak" %>
+  <% [lion-pavilion.h] | "Record of {the} Lion's Pavilion, Victoria~Peak" %>
   <tr><td>
     <@>
       《太平山獅子亭記》 \or <br>
@@ -248,7 +248,7 @@
     </.>
   </td></tr>
   
-  <% [fox-tiger.h] "{The} Fox Feigneth {the} Tiger's Authority" %>
+  <% [fox-tiger.h] | "{The} Fox Feigneth {the} Tiger's Authority" %>
   <tr><td>
     <@>
       《狐假虎威》 \or <br>
@@ -259,7 +259,7 @@
     <.>The original second half of {The Gruffalo}.</.>
   </td></tr>
   
-  <% [lion-eating.h] "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions" %>
+  <% [lion-eating.h] | "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions" %>
   <tr><td>
     <@>
       《施氏食獅史》 \or <br>
@@ -273,7 +273,7 @@
 </table>
 
 
-<% [code.h] Useful code %>
+<% [code.h] | Useful code %>
 <@2> [code.h] | code </@2>
 
 
@@ -286,21 +286,21 @@
 
 <ul>
   
-  <% [katex.h] How to render mathematical equations using KaTeX %>
+  <% [katex.h] | How to render mathematical equations using KaTeX %>
   <@i>
     <b>[katex.h]</b>
     | /code/katex-guide.html
     | [katex.h]
   </@i>
   
-  <% [cch.h] Python: a regex converter from CCH to HTML %>
+  <% [cch.h] | Python: a regex converter from CCH to HTML %>
   <@i>
     <b>[cch.h]</b>
     | /code/cch.html
     | [cch.h]
   </@i>
   
-  <% [sitemap.url] https://yawnoc.github.io/sitemap.txt %>
+  <% [sitemap.url] | https://yawnoc.github.io/sitemap.txt %>
   <li>
     Links to ping the sitemap:
     <@>
@@ -321,21 +321,21 @@
 
 <ul>
   
-  <% [big-two.h] Python: Big Two (鋤大弟) scoring statistics %>
+  <% [big-two.h] | Python: Big Two (鋤大弟) scoring statistics %>
   <@i>
     <b>[big-two.h]</b>
     | \=/big-two-stats
     | [big-two.h]
   </@i>
   
-  <% [cant-diceware.h] Python: Cantonese Diceware %>
+  <% [cant-diceware.h] | Python: Cantonese Diceware %>
   <@i>
     <b>[cant-diceware.h]</b>
     | \=/cantonese-diceware
     | [cant-diceware.h]
   </@i>
   
-  <% [sun-tzu-sqrt.h] Python: [sun-tzu] square root algorithm %>
+  <% [sun-tzu-sqrt.h] | Python: [sun-tzu] square root algorithm %>
   <@i>
     <b>[sun-tzu-sqrt.h]</b>
     | \/sun-tzu/code/sqrt.py
@@ -343,7 +343,7 @@
   </@i>
   
   <%
-    [sun-tzu-anim.h]
+    [sun-tzu-anim.h] |
     Mathematica: [sun-tzu] multiplication \& division animations
   %>
   <@i>
@@ -405,12 +405,12 @@
     Good luck spotting me.
   </li>
   
-  <% [ts]  <^e><:h>ts</:h></^e> %>
-  <% [ch]  <^e><:h>ch</:h></^e> %>
-  <% [ts'] <^e><:h>ts'</:h></^e> %>
-  <% [ch'] <^e><:h>ch'</:h></^e> %>
-  <% [s]   <^e><:h>s</:h></^e> %>
-  <% [sh]  <^e><:h>sh</:h></^e> %>
+  <% [ts]  | <^e><:h>ts</:h></^e> %>
+  <% [ch]  | <^e><:h>ch</:h></^e> %>
+  <% [ts'] | <^e><:h>ts'</:h></^e> %>
+  <% [ch'] | <^e><:h>ch'</:h></^e> %>
+  <% [s]   | <^e><:h>s</:h></^e> %>
+  <% [sh]  | <^e><:h>sh</:h></^e> %>
   <li><span>20191221:</span>
     \{[ts] vs [ch]\}, \{[ts'] vs [ch']\} and \{[s] vs [sh]\}
     now distinguished in my
@@ -436,7 +436,7 @@
   </li>
   
   <%
-    [sun-tzu-manuscript.a]
+    [sun-tzu-manuscript.a] |
     <@>
       handwritten translation manuscript
       | /sun-tzu/#manuscript
