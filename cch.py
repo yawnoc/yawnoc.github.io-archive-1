@@ -226,7 +226,7 @@ def cch_error_span(error_message):
   error_message = error_message.strip()
   error_message = de_indent(error_message)
   error_message = escape_html(error_message)
-  error_message = escape_user_defined_definitions(error_message)
+  error_message = escape_user_defined_old_strings(error_message)
   error_message = escape_conway_special_literals(error_message)
   
   return f'<span class="cch-error">CCH error: {error_message}</span>'
@@ -390,13 +390,14 @@ def replace_all_html_scripts(string):
 ################################################################
 
 # Unprocessed string:
-#   <% [old string] {new string} %>
-# where the square brackets for [old string] are literal
-# and [old string] cannot contain backslash, < or >
+#   <% {old string} | {new string} %>
+# where {old string} cannot contain \, |, ~, < or >
+# and must begin with two non-whitespace characters
+# (to make it escapable using the literal empty string escape \!)
 
 # Raw regular expression for unprocessed string:
-#   <%\s*(\[[^\\<>]+?\])([\s\S]*?)%>
-#   \1  [old string]
+#   <%[\s]*([^\s\\|~<>]{2}[^\\|~<>]*?)[\s]*\|([\s\S]*?)%>
+#   \1  {old string}
 #   \2  {new string}
 
 # Processed string:
@@ -432,7 +433,7 @@ def store_all_user_defined_definitions(string):
   global user_defined_replacement_dictionary
   
   string = re.sub(
-    rf'<%\s*(\[[^\\<>]+?\])([\s\S]*?)%>',
+    r'<%[\s]*([^\s\\|~<>]{2}[^\\|~<>]*?)[\s]*\|([\s\S]*?)%>',
     store_user_defined_definition,
     string
   )
@@ -461,6 +462,28 @@ def apply_all_user_defined_replacements(string):
     string = re.sub(
       re.escape(old_string),
       escape_python_backslash(new_string),
+      string
+    )
+  
+  return string
+
+################################################################
+# Escape user-defined old strings
+################################################################
+
+def escape_user_defined_old_strings(string):
+  
+  for old_string in user_defined_replacement_dictionary:
+    
+    # Escape each user-defined {old string}
+    # by inserting a literal empty string escape \! after the first character
+    # ({old string} must begin with two non-whitespace characters
+    # as per the specification for user-defined definition elements <% %>)
+    escaped_old_string = old_string[0] + r'\!' + old_string[1:]
+    
+    string = re.sub(
+      re.escape(old_string),
+      escape_python_backslash(escaped_old_string),
       string
     )
   
@@ -1840,7 +1863,7 @@ def replace_preamble(string):
     if require_romanisation:
       onload_functions += ' romanisationInitialise();'
     if require_js:
-      js = escape_user_defined_definitions(js)
+      js = escape_user_defined_old_strings(js)
       js = escape_conway_special_literals(js)
       js = escape_attribute_value(js)
       onload_functions += js
@@ -1852,7 +1875,7 @@ def replace_preamble(string):
   if css == '':
     embedded_css = ''
   else:
-    css = escape_user_defined_definitions(css)
+    css = escape_user_defined_old_strings(css)
     css = escape_conway_special_literals(css)
     embedded_css = f'<style>{css}</style>'
   
@@ -2066,7 +2089,7 @@ def replace_cite_this_page(string):
   num_arguments = num_required_arguments
   text_heading, tex_key, tex_heading = argument_list[:num_arguments]
   
-  tex_heading = escape_user_defined_definitions(tex_heading)
+  tex_heading = escape_user_defined_old_strings(tex_heading)
   tex_heading = escape_conway_special_literals(tex_heading)
   
   # NOTE: <pre> ... </pre> must be used rather than <``> ... </``>
@@ -2616,7 +2639,7 @@ def replace_all_overflowing_divisions(string):
 def replace_svg_style_container(match_object):
   
   content = match_object.group(1)
-  content = escape_user_defined_definitions(content)
+  content = escape_user_defined_old_strings(content)
   content = escape_conway_special_literals(content)
   
   processed_string = (
@@ -2708,15 +2731,6 @@ def escape_html(string):
   string = re.sub('>', '&gt;', string)
   
   return string
-
-################################################################
-# Escape user-defined definitions
-################################################################
-
-def escape_user_defined_definitions(string):
-  
-  # Escape [ as [\!
-  return re.sub(r'\[', r'[\!', string)
 
 ################################################################
 # Replace Conway literal backslashes with temporary replacements

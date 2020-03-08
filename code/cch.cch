@@ -320,7 +320,7 @@
 <@3> User-defined definition element | user-defined-definition </@3>
 
 <#>
-  <`><% [old string] {new string} %></`>
+  <`><% {old string} | {new string} %></`>
 </#>
 
 <p>
@@ -329,8 +329,7 @@
 
 <ul>
   <li>
-    <`>[old string]</`> is the string to be replaced,
-    for which the square brackets are literal, and
+    <`>{old string}</`> is the string to be replaced, and
   </li>
   <li>
     <`>{new string}</`> is the replacement string.
@@ -338,10 +337,18 @@
 </ul>
 
 <p>
-  <`>[old string]</`> cannot contain \\, \< or \>.
-  It is recommended that neither <`>[old string]</`> nor <`>{new string}</`>
+  <`>{old string}</`> cannot contain \\, \|, \~, \< or \>,
+  and must begin with two non-whitespace characters
+  (to make it escapable using the literal empty string escape <`>\!</`>).
+</p>
+
+<p>
+  It is recommended that neither <`>{old string}</`> nor <`>{new string}</`>
   contain manual insertions of the private-use character <`>U+E000</`>,
   since that character is used internally for replacements.
+  It is most probably possible to break the converter
+  by supplying replacements which interfere with other CCH replacements;
+  do so at your own peril.
 </p>
 
 <p>
@@ -349,15 +356,15 @@
   then it applies the replacements in <em>reverse</em> order.
   Therefore nesting will work as long as
   the referenced definition appears higher up in the markup.
-  Only one definition per <`>[old string]</`> is permitted;
-  any subsequent definitions for the same <`>[old string]</`>
+  Only one definition per <`>{old string}</`> is permitted;
+  any subsequent definitions for the same <`>{old string}</`>
   will result in an error message.
 </p>
 
 <p>
-  To write <`>[old string]</`> literally,
-  use the literal empty string escape <`>\!</`>,
-  as in <`>[\!old string]</`>.
+  To write an <`>{old string}</`> literally,
+  use a literal empty string escape <`>\!</`>
+  between any two of its non-whitespace characters.
 </p>
 
 <ul>
@@ -365,37 +372,37 @@
   <li>
     <b>CCH</b>
     <``>
-      <% [cch] Conway's concise HTML %>
-      <% [cch-good] [cch] is good %>
+      <% [cch] | Conway's concise HTML %>
+      <% [cch-good] | [cch] is good %>
       
       [cch-good]. <br>
       A literal [\!cch] rendered from [cch]. <br>
       Definitions may be given after calls: [y]. <br>
       
-      <% [y] yes %>
+      <% [y] | yes %>
       
       [dupes] are bad.
       
-      <% [dupes] Duplicate definitions %>
-      <% [dupes] This re-definition will cause an error %>
+      <% [dupes] | Duplicate definitions %>
+      <% [dupes] | This re-definition will cause an error %>
     </``>
   </li>
   
   <li>
     <b>Rendered</b> <br>
-      <% [cch] Conway's concise HTML %>
-      <% [cch-good] [cch] is good %>
+      <% [cch] | Conway's concise HTML %>
+      <% [cch-good] | [cch] is good %>
       
       [cch-good]. <br>
       A literal [\!cch] rendered from [cch]. <br>
       Definitions may be given after calls: [y]. <br>
       
-      <% [y] yes %>
+      <% [y] | yes %>
       
       [dupes] are bad.
       
-      <% [dupes] Duplicate definitions %>
-      <% [dupes] This re-definition will cause an error %>
+      <% [dupes] | Duplicate definitions %>
+      <% [dupes] | This re-definition will cause an error %>
   </li>
   
 </ul>

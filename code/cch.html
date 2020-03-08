@@ -229,57 +229,63 @@ but <code>{content}</code> is otherwise unchanged.
 User-defined definition element
 </h3>
 <div class="boxed">
-<code>&lt;% [old string] {new string} %&gt;</code>
+<code>&lt;% {old string} | {new string} %&gt;</code>
 </div>
 <p>
 The most powerful element of all.
 </p>
 <ul>
 <li>
-<code>[old string]</code> is the string to be replaced,
-for which the square brackets are literal, and
+<code>{old string}</code> is the string to be replaced, and
 </li>
 <li>
 <code>{new string}</code> is the replacement string.
 </li>
 </ul>
 <p>
-<code>[old string]</code> cannot contain \, &lt; or &gt;.
-It is recommended that neither <code>[old string]</code> nor <code>{new string}</code>
+<code>{old string}</code> cannot contain \, |, ~, &lt; or &gt;,
+and must begin with two non-whitespace characters
+(to make it escapable using the literal empty string escape <code>\!</code>).
+</p>
+<p>
+It is recommended that neither <code>{old string}</code> nor <code>{new string}</code>
 contain manual insertions of the private-use character <code>U+E000</code>,
 since that character is used internally for replacements.
+It is most probably possible to break the converter
+by supplying replacements which interfere with other CCH replacements;
+do so at your own peril.
 </p>
 <p>
 First the converter reads and removes all the definitions;
 then it applies the replacements in <em>reverse</em> order.
 Therefore nesting will work as long as
 the referenced definition appears higher up in the markup.
-Only one definition per <code>[old string]</code> is permitted;
-any subsequent definitions for the same <code>[old string]</code>
+Only one definition per <code>{old string}</code> is permitted;
+any subsequent definitions for the same <code>{old string}</code>
 will result in an error message.
 </p>
 <p>
-To write <code>[old string]</code> literally,
-use the literal empty string escape <code>\!</code>,
-as in <code>[\!old string]</code>.
+To write an <code>{old string}</code> literally,
+use a literal empty string escape <code>\!</code>
+between any two of its non-whitespace characters.
 </p>
 <ul>
 <li>
 <b>CCH</b>
 <pre>
-&lt;% [cch] Conway's concise HTML %&gt;
-&lt;% [cch-good] [cch] is good %&gt;
+&lt;% [cch] | Conway's concise HTML %&gt;
+&lt;% [cch-good] | [cch] is good %&gt;
 
 [cch-good]. &lt;br&gt;
 A literal [\!cch] rendered from [cch]. &lt;br&gt;
 Definitions may be given after calls: [y]. &lt;br&gt;
 
-&lt;% [y] yes %&gt;
+&lt;% [y] | yes %&gt;
 
 [dupes] are bad.
 
-&lt;% [dupes] Duplicate definitions %&gt;
-&lt;% [dupes] This re-definition will cause an error %&gt;
+&lt;% [dupes] | Duplicate definitions %&gt;
+&lt;% [dupes] | This re-definition will cause an error %&gt;
 </pre>
 </li>
 <li>
