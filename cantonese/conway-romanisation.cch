@@ -17,10 +17,10 @@
 </*p>
 
 <=>
-  <@i> Initials | #initials | Initials (聲) </@i>
-  <@i> Finals | #finals | Finals (韻) </@i>
-  <@i> Tones | #tones | Nine tones (九聲) with tone diagram </@i>
-  <@i> Compact tables | #compact | Compact reference tables </@i>
+  <@i> Initials | #initials | [initials.h] </@i>
+  <@i> Finals | #finals | [finals.h] </@i>
+  <@i> Tones | #tones | [tones.h] </@i>
+  <@i> Compact tables | #compact | [compact.h] </@i>
   <@i> Examples | #examples | </@i>
 </=>
 
@@ -30,338 +30,376 @@
 </p>
 
 
-<@2> Initials (聲) | initials </@2>
+<% [initials.h] Initials (聲) %>
+<@2> [initials.h] | initials </@2>
 
 
 <=>
   <@i>
-    (<^e>p p' m f</^e>) | #labial | Labial
+    (<^e>p p' m f</^e>) | #labial | [labial.h]
   </@i>
   <@i>
-    (<^e>t t' n l</^e>) | #plain | Plain dental/alveolar
+    (<^e>t t' n l</^e>) | #plain | [plain.h]
   </@i>
   <@i>
-    (<^e>k k' ng h kw k'w w</^e>) | #velar-glottal | Velar and glottal
+    (<^e>k k' ng h kw k'w w</^e>) | #velar-glottal | [velar-glottal.h]
   </@i>
   <@i>
     (<^e>ts ch ts' ch' s sh y</^e>)
     | #sibilant-palatal
-    | Sibilant dental/alveolar and palatal
+    | [sibilant-palatal.h]
   </@i>
 </=>
 
-<@3> Labial | labial </@3>
-<@@>
-  <@u> Initials | initials | Initials (聲) </@u>
-</@@>
-
-<!><table>
-  
-  <tr>
-    <th>聲</th>
+<%
+  [up: initials]
+  <@@>
+    <@u> Initials | initials | [initials.h] </@u>
+  </@@>
+%>
+<%
+  [roms.th]
     <th>IPA</th>
     <th>Conway</th>
     <th>Jyutping</th>
     <th>Yale</th>
     <th>S.~Lau</th>
     <th>Conway's damn good approximation</th>
+%>
+<%
+  [initials-header.tr]
+  <tr>
+    <th>聲</th>
+    [roms.th]
   </tr>
+%>
+
+<% [labial.h] Labial %>
+<@3> [labial.h] | labial </@3>
+[up: initials]
+
+<!><table>
   
+  [initials-header.tr]
+  
+  <!--
+    [`{...}`] for violet Conway romanisation
+    [:{...}:] for highlighted parts
+  -->
+  
+  <% [`p`] <:v><^e>p</^e></:v> %>
+  <% [:p:] <:h>p</:h> %>
   <tr>
     <td>巴</td>
     <td>[p]</td>
-    <td><:v><^e>p</^e></:v></td>
+    <td>[`p`]</td>
     <td>b</td>
     <td>b</td>
     <td>b</td>
-    <td>[<:h>p</:h> as in s<:h>p</:h>y]</td>
+    <td>[[:p:] as in s[:p:]y]</td>
   </tr>
   
+  <% [`p'`] <:v><^e>p'</^e></:v> %>
   <tr>
     <td>怕</td>
     <td>[pʰ]</td>
-    <td><:v><^e>p'</^e></:v></td>
+    <td>[`p'`]</td>
     <td>p</td>
     <td>p</td>
     <td>p</td>
-    <td>[<:h>p</:h> as in <:h>p</:h>ie]</td>
+    <td>[[:p:] as in [:p:]ie]</td>
   </tr>
   
+  <% [`m`] <:v><^e>m</^e></:v> %>
+  <% [:m:] <:h>m</:h> %>
   <tr>
     <td>媽</td>
     <td>[m]</td>
-    <td><:v><^e>m</^e></:v></td>
+    <td>[`m`]</td>
     <td>m</td>
     <td>m</td>
     <td>m</td>
-    <td>[<:h>m</:h> as in <:h>m</:h>y]</td>
+    <td>[[:m:] as in [:m:]y]</td>
   </tr>
   
+  <% [`f`] <:v><^e>f</^e></:v> %>
+  <% [:f:] <:h>f</:h> %>
   <tr>
     <td>花</td>
     <td>[f]</td>
-    <td><:v><^e>f</^e></:v></td>
+    <td>[`f`]</td>
     <td>f</td>
     <td>f</td>
     <td>f</td>
-    <td>[<:h>f</:h> as in <:h>f</:h>ee]</td>
+    <td>[[:f:] as in [:f:]ee]</td>
   </tr>
   
 </table></!>
 
-<@3> Plain dental/alveolar | plain </@3>
-<@@>
-  <@u> Initials | initials | Initials (聲) </@u>
-</@@>
+<% [plain.h] Plain dental/alveolar %>
+<@3> [plain.h] | plain </@3>
+[up: initials]
 
 <!><table>
   
-  <tr>
-    <th>聲</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [initials-header.tr]
   
+  <% [`t`] <:v><^e>t</^e></:v> %>
+  <% [:t:] <:h>t</:h> %>
   <tr>
     <td>打</td>
     <td>[t]</td>
-    <td><:v><^e>t</^e></:v></td>
+    <td>[`t`]</td>
     <td>d</td>
     <td>d</td>
     <td>d</td>
-    <td>[<:h>t</:h> as in s<:h>t</:h>y]</td>
+    <td>[[:t:] as in s[:t:]y]</td>
   </tr>
   
+  <% [`t'`] <:v><^e>t'</^e></:v> %>
   <tr>
     <td>他</td>
     <td>[tʰ]</td>
-    <td><:v><^e>t'</^e></:v></td>
+    <td>[`t'`]</td>
     <td>t</td>
     <td>t</td>
     <td>t</td>
-    <td>[<:h>t</:h> as in <:h>t</:h>ie], in Received Pronunciation</td>
+    <td>[[:t:] as in [:t:]ie], in Received Pronunciation</td>
   </tr>
   
+  <% [`n`] <:v><^e>n</^e></:v> %>
+  <% [:n:] <:h>n</:h> %>
   <tr>
     <td>那</td>
     <td>[n]</td>
-    <td><:v><^e>n</^e></:v></td>
+    <td>[`n`]</td>
     <td>n</td>
     <td>n</td>
     <td>n</td>
-    <td>[<:h>n</:h> as in <:h>n</:h>igh]</td>
+    <td>[[:n:] as in [:n:]igh]</td>
   </tr>
   
+  <% [`l`] <:v><^e>l</^e></:v> %>
+  <% [:l:] <:h>l</:h> %>
   <tr>
     <td>啦</td>
     <td>[l]</td>
-    <td><:v><^e>l</^e></:v></td>
+    <td>[`l`]</td>
     <td>l</td>
     <td>l</td>
     <td>l</td>
-    <td>[<:h>l</:h> as in <:h>l</:h>ie]</td>
+    <td>[[:l:] as in [:l:]ie]</td>
   </tr>
   
 </table></!>
 
-<@3> Velar and glottal | velar-glottal </@3>
-<@@>
-  <@u> Initials | initials | Initials (聲) </@u>
-</@@>
+<% [velar-glottal.h] Velar and glottal %>
+<@3> [velar-glottal.h] | velar-glottal </@3>
+[up: initials]
 
 <!><table>
   
-  <tr>
-    <th>聲</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [initials-header.tr]
   
+  <% [`k`] <:v><^e>k</^e></:v> %>
+  <% [:k:] <:h>k</:h> %>
   <tr>
     <td>家</td>
     <td>[k]</td>
-    <td><:v><^e>k</^e></:v></td>
+    <td>[`k`]</td>
     <td>g</td>
     <td>g</td>
     <td>g</td>
-    <td>[<:h>k</:h> as in s<:h>k</:h>y]</td>
+    <td>[[:k:] as in s[:k:]y]</td>
   </tr>
   
+  <% [`k'`] <:v><^e>k'</^e></:v> %>
   <tr>
     <td>卡</td>
     <td>[kʰ]</td>
-    <td><:v><^e>k'</^e></:v></td>
+    <td>[`k'`]</td>
     <td>k</td>
     <td>k</td>
     <td>k</td>
-    <td>[<:h>k</:h> as in <:h>k</:h>ey]
+    <td>[[:k:] as in [:k:]ey]
     </td>
   </tr>
   
+  <% [`ng`] <:v><^e>ng</^e></:v> %>
+  <% [:ng:] <:h>ng</:h> %>
   <tr>
     <td>牙</td>
     <td>[ŋ]</td>
-    <td><:v><^e>ng</^e></:v></td>
+    <td>[`ng`]</td>
     <td>ng</td>
     <td>ng</td>
     <td>ng</td>
-    <td>[<:h>ng</:h> as in si<:h>ng</:h>er]</td>
+    <td>[[:ng:] as in si[:ng:]er]</td>
   </tr>
   
+  <% [`h`] <:v><^e>h</^e></:v> %>
+  <% [:h:] <:h>h</:h> %>
   <tr>
     <td>蝦</td>
     <td>[h]</td>
-    <td><:v><^e>h</^e></:v></td>
+    <td>[`h`]</td>
     <td>h</td>
     <td>h</td>
     <td>h</td>
-    <td>[<:h>h</:h> as in <:h>h</:h>e]</td>
+    <td>[[:h:] as in [:h:]e]</td>
   </tr>
   
+  <% [`kw`] <:v><^e>kw</^e></:v> %>
+  <% [:qu:] <:h>qu</:h> %>
   <tr>
     <td>瓜</td>
     <td>[kʷ]</td>
-    <td><:v><^e>kw</^e></:v></td>
+    <td>[`kw`]</td>
     <td>gw</td>
     <td>gw</td>
     <td>gw</td>
-    <td>[<:h>qu</:h> as in s<:h>qu</:h>eeze]</td>
+    <td>[[:qu:] as in s[:qu:]eeze]</td>
   </tr>
   
+  <% [`k'w`] <:v><^e>k'w</^e></:v> %>
   <tr>
     <td>誇</td>
     <td>[kʷʰ]</td>
-    <td><:v><^e>k'w</^e></:v></td>
+    <td>[`k'w`]</td>
     <td>kw</td>
     <td>kw</td>
     <td>kw</td>
-    <td>[<:h>qu</:h> as in <:h>qu</:h>een]</td>
+    <td>[[:qu:] as in [:qu:]een]</td>
   </tr>
   
+  <% [`w`] <:v><^e>w</^e></:v> %>
+  <% [:w:] <:h>w</:h> %>
   <tr>
     <td>華</td>
     <td>[w]</td>
-    <td><:v><^e>w</^e></:v></td>
+    <td>[`w`]</td>
     <td>w</td>
     <td>w</td>
     <td>w</td>
-    <td>[<:h>w</:h> as in <:h>w</:h>e]</td>
+    <td>[[:w:] as in [:w:]e]</td>
   </tr>
   
 </table></!>
 
-<@3> Sibilant dental/alveolar and palatal | sibilant-palatal </@3>
-<@@>
-  <@u> Initials | initials | Initials (聲) </@u>
-</@@>
+<% [sibilant-palatal.h] Sibilant dental/alveolar and palatal %>
+<@3> [sibilant-palatal.h] | sibilant-palatal </@3>
+[up: initials]
 
 <!><table>
   
-  <tr>
-    <th>聲</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [initials-header.tr]
   
+  <% [`ts`] <:v><^e>ts</^e></:v> %>
+  <% [:ts:] <:h>ts</:h> %>
+  <% [:Ts:] <:h>Ts</:h> %>
   <tr>
     <td>將</td>
     <td>[ts]</td>
-    <td><:v><^e>ts</^e></:v></td>
+    <td>[`ts`]</td>
     <td rowspan="2">z</td>
     <td rowspan="2">j</td>
     <td rowspan="2">j</td>
-    <td>[<:h>ts</:h> as in lis<:h>ts</:h>]</td>
+    <td>[[:ts:] as in lis[:ts:]]</td>
   </tr>
   
+  <% [`ch`] <:v><^e>ch</^e></:v> %>
+  <% [:ch:] <:h>ch</:h> %>
+  <% [:Ch:] <:h>Ch</:h> %>
   <tr>
     <td>張</td>
     <td>[tɕ]</td>
-    <td><:v><^e>ch</^e></:v></td>
+    <td>[`ch`]</td>
     <td>
-      halfway between [<:h>ts</:h> as in lis<:h>ts</:h>]
-      and [<:h>t</:h> as in s<:h>t</:h>upid],
+      halfway between [[:ts:] as in lis[:ts:]]
+      and [[:t:] as in s[:t:]upid],
       with the latter in a sufficiently broad Australian accent
-      for which the T is sounded like [<:h>ch</:h> as in <:h>ch</:h>ew]
+      for which the T is sounded like [[:ch:] as in [:ch:]ew]
     </td>
   </tr>
   
+  <% [`ts'`] <:v><^e>ts'</^e></:v> %>
   <tr>
     <td>槍</td>
     <td>[tsʰ]</td>
-    <td><:v><^e>ts'</^e></:v></td>
+    <td>[`ts'`]</td>
     <td rowspan="2">c</td>
     <td rowspan="2">ch</td>
     <td rowspan="2">ch</td>
-    <td>[<:h>ts</:h> as in hi<:h>ts</:h>]</td>
+    <td>[[:ts:] as in hi[:ts:]]</td>
   </tr>
   
+  <% [`ch'`] <:v><^e>ch'</^e></:v> %>
   <tr>
     <td>昌</td>
     <td>[tɕʰ]</td>
-    <td><:v><^e>ch'</^e></:v></td>
+    <td>[`ch'`]</td>
     <td>
-      halfway between [<:h>ts</:h> as in hi<:h>ts</:h>]
-      and [<:h>ch</:h> as in hit<:h>ch</:h>]
+      halfway between [[:ts:] as in hi[:ts:]]
+      and [[:ch:] as in hit[:ch:]]
     </td>
   </tr>
   
+  <% [`s`] <:v><^e>s</^e></:v> %>
+  <% [:s:] <:h>s</:h> %>
+  <% [:S:] <:h>S</:h> %>
   <tr>
     <td>相</td>
     <td>[s]</td>
-    <td><:v><^e>s</^e></:v></td>
+    <td>[`s`]</td>
     <td rowspan="2">s</td>
     <td rowspan="2">s</td>
     <td rowspan="2">s</td>
-    <td>[<:h>s</:h> as in <:h>s</:h>igh]</td>
+    <td>[[:s:] as in [:s:]igh]</td>
   </tr>
   
+  <% [`sh`] <:v><^e>sh</^e></:v> %>
+  <% [:sh:] <:h>sh</:h> %>
+  <% [:Sh:] <:h>Sh</:h> %>
   <tr>
     <td>傷</td>
     <td>[ɕ]</td>
-    <td><:v><^e>sh</^e></:v></td>
+    <td>[`sh`]</td>
     <td>
-      halfway between [<:h>s</:h> as in <:h>s</:h>igh]
-      and [<:h>sh</:h> as in <:h>sh</:h>y]
+      halfway between [[:s:] as in [:s:]igh]
+      and [[:sh:] as in [:sh:]y]
     </td>
   </tr>
   
+  <% [`y`] <:v><^e>y</^e></:v> %>
+  <% [:y:] <:h>y</:h> %>
   <tr>
     <td>也</td>
     <td>[j]</td>
-    <td><:v><^e>y</^e></:v></td>
+    <td>[`y`]</td>
     <td>j</td>
     <td>y</td>
     <td>y</td>
-    <td>[<:h>y</:h> as in <:h>y</:h>e]</td>
+    <td>[[:y:] as in [:y:]e]</td>
   </tr>
   
 </table></!>
 
+<% [:ts':] <:h>ts'</:h> %>
+<% [:ch':] <:h>ch'</:h> %>
+
 <@4>
   On
-    \{<^e><:h>ts</:h></^e> vs <^e><:h>ch</:h></^e>\},
-    \{<^e><:h>ts'</:h></^e> vs <^e><:h>ch'</:h></^e>\} and
-    \{<^e><:h>s</:h></^e> vs <^e><:h>sh</:h></^e>\}
+    \{<^e>[:ts:]</^e> vs <^e>[:ch:]</^e>\},
+    \{<^e>[:ts':]</^e> vs <^e>[:ch':]</^e>\} and
+    \{<^e>[:s:]</^e> vs <^e>[:sh:]</^e>\}
   | ts-vs-ch
 </@4>
 
 <p>
   Modern Cantonese has merged the initials in the pairs
-    \{將~<^e><:h>ts</:h>oeng</^e> vs 張~<^e><:h>ch</:h>oeng</^e>\},
-    \{槍~<^e><:h>ts'</:h>oeng</^e> vs 昌~<^e><:h>ch'</:h>oeng</^e>\} and
-    \{相~<^e><:h>s</:h>oeng</^e> vs 傷~<^e><:h>sh</:h>oeng</^e>\}.
+    \{將~<^e>[:ts:]oeng</^e> vs 張~<^e>[:ch:]oeng</^e>\},
+    \{槍~<^e>[:ts':]oeng</^e> vs 昌~<^e>[:ch':]oeng</^e>\} and
+    \{相~<^e>[:s:]oeng</^e> vs 傷~<^e>[:sh:]oeng</^e>\}.
   As noted by
   <@>
     Samuel Wells Williams
@@ -389,25 +427,25 @@
 <ul>
   
   <li>
-    \{<:v><^e>ts</^e></:v>~vs~<:v><^e>ch</^e></:v>\}:
-    將軍澳 (<:h>Ts</:h>eung Kwan O) and 荔枝角 (Lai <:h>Ch</:h>i Kok),
+    \{[`ts`]~vs~[`ch`]\}:
+    將軍澳 ([:Ts:]eung Kwan O) and 荔枝角 (Lai [:Ch:]i Kok),
   </li>
   
   <li>
-    \{<:v><^e>ts'</^e></:v>~vs~<:v><^e>ch'</^e></:v>\}:
-    荃灣 (<:h>Ts</:h>uen Wan) and 東涌 (Tung <:h>Ch</:h>ung), and
+    \{[`ts'`]~vs~[`ch'`]\}:
+    荃灣 ([:Ts:]uen Wan) and 東涌 (Tung [:Ch:]ung), and
   </li>
   
   <li>
-    \{<:v><^e>s</^e></:v>~vs~<:v><^e>sh</^e></:v>\}:
-    西灣河 (<:h>S</:h>ai Wan Ho) and 筲箕灣 (<:h>Sh</:h>au Kei Wan).
+    \{[`s`]~vs~[`sh`]\}:
+    西灣河 ([:S:]ai Wan Ho) and 筲箕灣 ([:Sh:]au Kei Wan).
   </li>
   
 </ul>
 <p>
   Not all district \roms follow the pre-merger consonants correctly though,
-  e.g.~灣仔 should really be Wan <:h>Ts</:h>ai (not Wan <:h>Ch</:h>ai),
-  and 彩虹 should be <:h>Ts</:h>oi Hung (not <:h>Ch</:h>oi Hung).
+  e.g.~灣仔 should really be Wan [:Ts:]ai (not Wan [:Ch:]ai),
+  and 彩虹 should be [:Ts:]oi Hung (not [:Ch:]oi Hung).
 </p>
 
 <p>
@@ -453,16 +491,16 @@
 </table></!c>
 
 <p>
-  The \{<:v><^e>s</^e></:v>~vs~<:v><^e>sh</^e></:v>\} tendency
+  The \{[`s`]~vs~[`sh`]\} tendency
   is the strongest. I have never heard anyone pronounce 書,
-    <^e><:h>sh</:h>u"</^e>~/~[ɕyː],
-    as <^e><:h>s</:h>u"</^e>~/~[syː],
+    <^e>[:sh:]u"</^e>~/~[ɕyː],
+    as <^e>[:s:]u"</^e>~/~[syː],
   and yet the vast majority of people will pronounce 石,
-    <^e><:h>sh</:h>ek</^e>~/~[ɕɛːk̚],
+    <^e>[:sh:]ek</^e>~/~[ɕɛːk̚],
     as <^e><:h><:r>s</:r></:h>ek</^e>~/~[sɛːk̚],
   myself included.
-  The \{<:v><^e>ts</^e></:v>~vs~<:v><^e>ch</^e></:v>\}
-  and \{<:v><^e>ts'</^e></:v>~vs~<:v><^e>ch'</^e></:v>\} tendencies
+  The \{[`ts`]~vs~[`ch`]\}
+  and \{[`ts'`]~vs~[`ch'`]\} tendencies
   are not as strong, but still prevalent.
 </p>
 
@@ -489,151 +527,169 @@
 </#n>
 
 
-<@2> Finals (韻) | finals </@2>
+<% [finals.h] Finals (韻) %>
+<@2> [finals.h] | finals </@2>
 
 
 <=>
-  <@i> (<^e>aa</^e>) | #aa | aː </@i>
-  <@i> (<^e>a</^e>) | #a | ɐ </@i>
-  <@i> (<^e>e</^e>) | #e | ɛː and e </@i>
-  <@i> (<^e>ee i</^e>) | #ee-i | iː and e </@i>
-  <@i> (<^e>or o</^e>) | #or-o | ɔː and o </@i>
-  <@i> (<^e>oo u</^e>) | #oo-u | uː and o </@i>
-  <@i> (<^e>oe</^e>) | #oe | œ </@i>
-  <@i> (<^e>_</^e>) | #_ | ɵ </@i>
-  <@i> (<^e>u"</^e>) | #ue | yː </@i>
-  <@i> (<^e>m ng</^e>) | #m-ng | m̩ and ŋ̍ </@i>
+  <@i> (<^e>aa</^e>) | #aa | [aa.h] </@i>
+  <@i> (<^e>a</^e>) | #a | [a.h] </@i>
+  <@i> (<^e>e</^e>) | #e | [e.h] </@i>
+  <@i> (<^e>ee i</^e>) | #ee-i | [ee-i.h] </@i>
+  <@i> (<^e>or o</^e>) | #or-o | [or-o.h] </@i>
+  <@i> (<^e>oo u</^e>) | #oo-u | [oo-u.h] </@i>
+  <@i> (<^e>oe</^e>) | #oe | [oe.h] </@i>
+  <@i> (<^e>_</^e>) | #_ | [_.h] </@i>
+  <@i> (<^e>u"</^e>) | #ue | [ue.h] </@i>
+  <@i> (<^e>m ng</^e>) | #m-ng | [m-ng.h] </@i>
 </=>
 
 <p>
-  If typesetting of the characters <:v><^e>oe</^e></:v>~(<`>U+0153</`>)
-  and <:v><^e>u"</^e></:v>~(<`>U+00FC</`>) is inconvenient,
+  If typesetting of the characters [`oe`]~(<`>U+0153</`>)
+  and [`u"`]~(<`>U+00FC</`>) is inconvenient,
   you may use the ASCII-only substitutes <:v>oe</:v> and <:v>ue</:v>
   respectively.
 </p>
 
-<@3> aː | aa </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<%
+  [up: finals]
+  <@@>
+    <@u> Finals | finals | Finals (韻) </@u>
+  </@@>
+%>
+<%
+  [finals-header.tr]
+  <tr>
+    <th>韻</th>
+    [roms.th]
+  </tr>
+%>
+
+<% [aa.h] aː %>
+<@3> [aa.h] | aa </@3>
+[up: finals]
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
+  <% [`aa`] <:v><^e>aa</^e></:v> %>
+  <% [:ar:] <:h>ar</:h> %>
   <tr>
     <td>叉</td>
     <td>[aː]</td>
-    <td><:v><^e>aa</^e></:v></td>
+    <td>[`aa`]</td>
     <td>aa</td>
     <td>a</td>
     <td>a</td>
     <td>
-      [<:h>ar</:h> as in c<:h>ar</:h>],
+      [[:ar:] as in c[:ar:]],
       in a general Australian accent with strictly no R consonant
     </td>
   </tr>
   
+  <% [`aai`] <:v><^e>aai</^e></:v> %>
   <tr>
     <td>釵</td>
     <td>[aːi]</td>
-    <td><:v><^e>aai</^e></:v></td>
+    <td>[`aai`]</td>
     <td>aai</td>
     <td>aai</td>
     <td>aai</td>
-    <td>[<:h>y</:h> as in m<:h>y</:h>], in Received Pronunciation</td>
+    <td>[[:y:] as in m[:y:]], in Received Pronunciation</td>
   </tr>
   
+  <% [`aau`] <:v><^e>aau</^e></:v> %>
+  <% [:ow:] <:h>ow</:h> %>
   <tr>
     <td>抄</td>
     <td>[aːu]</td>
-    <td><:v><^e>aau</^e></:v></td>
+    <td>[`aau`]</td>
     <td>aau</td>
     <td>aau</td>
     <td>aau</td>
     <td>
-      [<:h>ow</:h>
+      [[:ow:]
         as in
-      c<:h>ow</:h>],
+      c[:ow:]],
       in Received Pronunciation
     </td>
   </tr>
   
+  <% [`aam`] <:v><^e>aam</^e></:v> %>
+  <% [:arm:] <:h>arm</:h> %>
   <tr>
     <td>參</td>
     <td>[aːm]</td>
-    <td><:v><^e>aam</^e></:v></td>
+    <td>[`aam`]</td>
     <td>aam</td>
     <td>aam</td>
     <td>aam</td>
     <td>
-      [<:h>arm</:h>
+      [[:arm:]
         as in
-      <:h>arm</:h>],
+      [:arm:]],
       in a general Australian accent with strictly no R consonant
     </td>
   </tr>
   
+  <% [`aan`] <:v><^e>aan</^e></:v> %>
+  <% [:arn:] <:h>arn</:h> %>
   <tr>
     <td>餐</td>
     <td>[aːn]</td>
-    <td><:v><^e>aan</^e></:v></td>
+    <td>[`aan`]</td>
     <td>aan</td>
     <td>aan</td>
     <td>aan</td>
     <td>
-      [<:h>arn</:h> as in b<:h>arn</:h>],
+      [[:arn:] as in b[:arn:]],
       in a general Australian accent with strictly no R consonant
     </td>
   </tr>
   
+  <% [`aang`] <:v><^e>aang</^e></:v> %>
   <tr>
     <td>撐</td>
     <td>[aːŋ]</td>
-    <td><:v><^e>aang</^e></:v></td>
+    <td>[`aang`]</td>
     <td>aang</td>
     <td>aang</td>
     <td>aang</td>
     <td>
-      [<:h>ar</:h> as in c<:h>ar</:h>],
+      [[:ar:] as in c[:ar:]],
       in a general Australian accent with strictly no R consonant,
-      followed by [<:h>ng</:h> as in si<:h>ng</:h>]
+      followed by [[:ng:] as in si[:ng:]]
     </td>
   </tr>
   
+  <% [`aap`] <:v><^e>aap</^e></:v> %>
   <tr>
     <td>插</td>
     <td>[aːp̚]</td>
-    <td><:v><^e>aap</^e></:v></td>
+    <td>[`aap`]</td>
     <td>aap</td>
     <td>aap</td>
     <td>aap</td>
     <td>
-      [<:h>ar</:h> as in c<:h>ar</:h>],
+      [[:ar:] as in c[:ar:]],
       in a general Australian accent with strictly no R consonant,
-      followed by [<:h>p</:h> as in co<:h>p</:h>ter] with no audibly released P
+      followed by [[:p:] as in co[:p:]ter] with no audibly released P
     </td>
   </tr>
   
+  <% [`aat`] <:v><^e>aat</^e></:v> %>
   <tr>
     <td>察</td>
     <td>[aːt̚]</td>
-    <td><:v><^e>aat</^e></:v></td>
+    <td>[`aat`]</td>
     <td>aat</td>
     <td>aat</td>
     <td>aat</td>
     <td>
-      [<:h>ar</:h> as in c<:h>ar</:h>],
+      [[:ar:] as in c[:ar:]],
       in a general Australian accent with strictly no R consonant,
-      followed by [<:h>t</:h> as in a<:h>t</:h>las]
+      followed by [[:t:] as in a[:t:]las]
       with no audibly released T <br>
         ~~<b>OR</b> <br>
       [<:h>art</:h> as in c<:h>art</:h>wheel] with no audibly released T,
@@ -641,825 +697,818 @@
     </td>
   </tr>
   
+  <% [`aak`] <:v><^e>aak</^e></:v> %>
+  <% [:c:] <:h>c</:h> %>
+  <% [:arc:] <:h>arc</:h> %>
   <tr>
     <td>拆</td>
     <td>[aːk̚]</td>
-    <td><:v><^e>aak</^e></:v></td>
+    <td>[`aak`]</td>
     <td>aak</td>
     <td>aak</td>
     <td>aak</td>
     <td>
-      [<:h>ar</:h> as in c<:h>ar</:h>],
+      [[:ar:] as in c[:ar:]],
       in a general Australian accent with strictly no R consonant,
-      followed by [<:h>c</:h> as in do<:h>c</:h>tor]
+      followed by [[:c:] as in do[:c:]tor]
       with no audibly released C <br>
         ~~<b>OR</b> <br>
-      [<:h>arc</:h> as in <:h>arc</:h>tangent] with no audibly released C,
+      [[:arc:] as in [:arc:]tangent] with no audibly released C,
       in a general Australian accent with strictly no R consonant
     </td>
   </tr>
   
 </table></!>
 
-<@3> ɐ | a </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<% [a.h] ɐ %>
+<@3> [a.h] | a </@3>
+[up: finals]
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
+  <% [`ai`] <:v><^e>ai</^e></:v> %>
+  <% [:ay:] <:h>ay</:h> %>
   <tr>
     <td>仔</td>
     <td>[ɐi]</td>
-    <td><:v><^e>ai</^e></:v></td>
+    <td>[`ai`]</td>
     <td>ai</td>
     <td>ai</td>
     <td>ai</td>
     <td>
-      [<:h>ay</:h> as in b<:h>ay</:h>],
+      [[:ay:] as in b[:ay:]],
       in a general, perhaps slightly broad Australian accent,
       but with shorter A
     </td>
   </tr>
   
+  <% [`au`] <:v><^e>au</^e></:v> %>
+  <% [:u:] <:h>u</:h> %>
   <tr>
     <td>走</td>
     <td>[ɐu]</td>
-    <td><:v><^e>au</^e></:v></td>
+    <td>[`au`]</td>
     <td>au</td>
     <td>au</td>
     <td>au</td>
     <td>
-      [<:h>u</:h> as in c<:h>u</:h>t],
+      [[:u:] as in c[:u:]t],
       in a general Australian accent,
-      followed by [<:h>u</:h> as in p<:h>u</:h>ll],
+      followed by [[:u:] as in p[:u:]ll],
       in a general Australian accent
     </td>
   </tr>
   
+  <% [`am`] <:v><^e>am</^e></:v> %>
+  <% [:um:] <:h>um</:h> %>
   <tr>
     <td>針</td>
     <td>[ɐm]</td>
-    <td><:v><^e>am</^e></:v></td>
+    <td>[`am`]</td>
     <td>am</td>
     <td>am</td>
     <td>am</td>
-    <td>[<:h>um</:h> as in s<:h>um</:h>], in a general Australian accent</td>
+    <td>[[:um:] as in s[:um:]], in a general Australian accent</td>
   </tr>
   
+  <% [`an`] <:v><^e>an</^e></:v> %>
+  <% [:un:] <:h>un</:h> %>
   <tr>
     <td>真</td>
     <td>[ɐn]</td>
-    <td><:v><^e>an</^e></:v></td>
+    <td>[`an`]</td>
     <td>an</td>
     <td>an</td>
     <td>an</td>
-    <td>[<:h>un</:h> as in s<:h>un</:h>], in a general Australian accent</td>
+    <td>[[:un:] as in s[:un:]], in a general Australian accent</td>
   </tr>
   
+  <% [`ang`] <:v><^e>ang</^e></:v> %>
+  <% [:ung:] <:h>ung</:h> %>
   <tr>
     <td>增</td>
     <td>[ɐŋ]</td>
-    <td><:v><^e>ang</^e></:v></td>
+    <td>[`ang`]</td>
     <td>ang</td>
     <td>ang</td>
     <td>ang</td>
-    <td>[<:h>ung</:h> as in s<:h>ung</:h>], in a general Australian accent</td>
+    <td>[[:ung:] as in s[:ung:]], in a general Australian accent</td>
   </tr>
   
+  <% [`ap`] <:v><^e>ap</^e></:v> %>
   <tr>
     <td>汁</td>
     <td>[ɐp̚]</td>
-    <td><:v><^e>ap</^e></:v></td>
+    <td>[`ap`]</td>
     <td>ap</td>
     <td>ap</td>
     <td>ap</td>
     <td>
-      [<:h>u</:h> as in c<:h>u</:h>t], in a general Australian accent,
-      followed by [<:h>p</:h> as in co<:h>p</:h>ter] with no audibly released P
+      [[:u:] as in c[:u:]t], in a general Australian accent,
+      followed by [[:p:] as in co[:p:]ter] with no audibly released P
     </td>
   </tr>
   
+  <% [`at`] <:v><^e>at</^e></:v> %>
+  <% [:ut:] <:h>ut</:h> %>
   <tr>
     <td>疾</td>
     <td>[ɐt̚]</td>
-    <td><:v><^e>at</^e></:v></td>
+    <td>[`at`]</td>
     <td>at</td>
     <td>at</td>
     <td>at</td>
     <td>
-      [<:h>u</:h> as in c<:h>u</:h>t], in a general Australian accent,
-      followed by [<:h>t</:h> as in a<:h>t</:h>las]
+      [[:u:] as in c[:u:]t], in a general Australian accent,
+      followed by [[:t:] as in a[:t:]las]
       with no audibly released T <br>
         ~~<b>OR</b> <br>
-      [<:h>ut</:h> as in b<:h>ut</:h>ler] with no audibly released T,
+      [[:ut:] as in b[:ut:]ler] with no audibly released T,
       in a general Australian accent
     </td>
   </tr>
   
+  <% [`ak`] <:v><^e>ak</^e></:v> %>
   <tr>
     <td>仄</td>
     <td>[ɐk̚]</td>
-    <td><:v><^e>ak</^e></:v></td>
+    <td>[`ak`]</td>
     <td>ak</td>
     <td>ak</td>
     <td>ak</td>
     <td>
-      [<:h>u</:h> as in c<:h>u</:h>t], in a general Australian accent,
-      followed by [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C
+      [[:u:] as in c[:u:]t], in a general Australian accent,
+      followed by [[:c:] as in do[:c:]tor] with no audibly released C
     </td>
   </tr>
   
 </table></!>
 
-<@3> ɛː and e | e </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<% [e.h] ɛː and e %>
+<@3> [e.h] | e </@3>
+[up: finals]
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
+  <% [`e`] <:v><^e>e</^e></:v> %>
+  <% [:e:] <:h>e</:h> %>
   <tr>
     <td>爹</td>
     <td>[ɛː]</td>
-    <td><:v><^e>e</^e></:v></td>
+    <td>[`e`]</td>
     <td>e</td>
     <td>e</td>
     <td>e</td>
     <td>
-      [<:h>e</:h> as in y<:h>e</:h>ah],
+      [[:e:] as in y[:e:]ah],
       in a general Australian accent, but slightly longer
     </td>
   </tr>
   
+  <% [`ei`] <:v><^e>ei</^e></:v> %>
   <tr>
     <td>地</td>
     <td>[ei]</td>
-    <td><:v><^e>ei</^e></:v></td>
+    <td>[`ei`]</td>
     <td>ei</td>
     <td>ei</td>
     <td>ei</td>
     <td>
-      [<:h>ay</:h> as in b<:h>ay</:h>], in Received Pronunciation,
+      [[:ay:] as in b[:ay:]], in Received Pronunciation,
       but with shorter A and longer Y
     </td>
   </tr>
   
+  <% [`eu`] <:v><^e>eu</^e></:v> %>
   <tr>
     <td>掉</td>
     <td>[ɛːu]</td>
-    <td><:v><^e>eu</^e></:v></td>
+    <td>[`eu`]</td>
     <td>eu</td>
     <td></td>
     <td></td>
     <td>
-      [<:h>e</:h> as in y<:h>e</:h>ah], in a general Australian accent,
+      [[:e:] as in y[:e:]ah], in a general Australian accent,
       followed by
-      [<:h>u</:h> as in p<:h>u</:h>ll], in a general Australian accent
+      [[:u:] as in p[:u:]ll], in a general Australian accent
     </td>
   </tr>
   
+  <% [`em`] <:v><^e>em</^e></:v> %>
+  <% [:em:] <:h>em</:h> %>
   <tr>
     <td>舔</td>
     <td>[ɛːm]</td>
-    <td><:v><^e>em</^e></:v></td>
+    <td>[`em`]</td>
     <td>em</td>
     <td></td>
     <td></td>
     <td>
-      [<:h>em</:h> as in h<:h>em</:h>], in a general Australian accent,
+      [[:em:] as in h[:em:]], in a general Australian accent,
       but longer
     </td>
   </tr>
   
+  <% [`eng`] <:v><^e>eng</^e></:v> %>
   <tr>
     <td>贏</td>
     <td>[ɛːŋ]</td>
-    <td><:v><^e>eng</^e></:v></td>
+    <td>[`eng`]</td>
     <td>eng</td>
     <td>eng</td>
     <td>eng</td>
     <td>
-      [<:h>e</:h> as in y<:h>e</:h>ah], in a general Australian accent,
-      but slightly longer, followed by [<:h>ng</:h> as in si<:h>ng</:h>]
+      [[:e:] as in y[:e:]ah], in a general Australian accent,
+      but slightly longer, followed by [[:ng:] as in si[:ng:]]
     </td>
   </tr>
   
+  <% [`ep`] <:v><^e>ep</^e></:v> %>
+  <% [:ep:] <:h>ep</:h> %>
   <tr>
     <td>夾</td>
     <td>[ɛːp̚]</td>
-    <td><:v><^e>ep</^e></:v></td>
+    <td>[`ep`]</td>
     <td>ep</td>
     <td></td>
     <td></td>
     <td>
-      [<:h>e</:h> as in y<:h>e</:h>ah], in a general Australian accent,
+      [[:e:] as in y[:e:]ah], in a general Australian accent,
       but slightly longer, followed by
-      [<:h>p</:h> as in co<:h>p</:h>ter] with no audibly released P <br>
+      [[:p:] as in co[:p:]ter] with no audibly released P <br>
         ~~<b>OR</b> <br>
-      [<:h>ep</:h> as in s<:h>ep</:h>tic] with no audibly released P,
+      [[:ep:] as in s[:ep:]tic] with no audibly released P,
       in a general Australian accent, but longer
     </td>
   </tr>
   
+  <% [`ek`] <:v><^e>ek</^e></:v> %>
+  <% [:ec:] <:h>ec</:h> %>
   <tr>
     <td>尺</td>
     <td>[ɛːk̚]</td>
-    <td><:v><^e>ek</^e></:v></td>
+    <td>[`ek`]</td>
     <td>ek</td>
     <td>ek</td>
     <td>ek</td>
     <td>
-      [<:h>e</:h> as in y<:h>e</:h>ah], in a general Australian accent,
+      [[:e:] as in y[:e:]ah], in a general Australian accent,
       but slightly longer, followed by
-      [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C <br>
+      [[:c:] as in do[:c:]tor] with no audibly released C <br>
         ~~<b>OR</b> <br>
-      [<:h>ec</:h> as in s<:h>ec</:h>tor] with no audibly released C,
+      [[:ec:] as in s[:ec:]tor] with no audibly released C,
       in a general Australian accent, but longer
     </td>
   </tr>
   
 </table></!>
 
-<@3> iː and e | ee-i </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<% [ee-i.h] iː and e %>
+<@3> [ee-i.h] | ee-i </@3>
+[up: finals]
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
+  <% [`ee`] <:v><^e>ee</^e></:v> %>
+  <% [:ee:] <:h>ee</:h> %>
   <tr>
     <td>而</td>
     <td>[iː]</td>
-    <td><:v><^e>ee</^e></:v></td>
+    <td>[`ee`]</td>
     <td>i</td>
     <td>i</td>
     <td>i</td>
-    <td>[<:h>ee</:h> as in b<:h>ee</:h>], in Received Pronunciation</td>
+    <td>[[:ee:] as in b[:ee:]], in Received Pronunciation</td>
   </tr>
   
+  <% [`eeu`] <:v><^e>eeu</^e></:v> %>
   <tr>
     <td>堯</td>
     <td>[iːu]</td>
-    <td><:v><^e>eeu</^e></:v></td>
+    <td>[`eeu`]</td>
     <td>iu</td>
     <td>iu</td>
     <td>iu</td>
     <td>
-      [<:h>ee</:h> as in b<:h>ee</:h>], in Received Pronunciation,
+      [[:ee:] as in b[:ee:]], in Received Pronunciation,
       followed by
-      [<:h>u</:h> as in p<:h>u</:h>ll], in a general Australian accent
+      [[:u:] as in p[:u:]ll], in a general Australian accent
     </td>
   </tr>
   
+  <% [`eem`] <:v><^e>eem</^e></:v> %>
+  <% [:eem:] <:h>eem</:h> %>
   <tr>
     <td>嚴</td>
     <td>[iːm]</td>
-    <td><:v><^e>eem</^e></:v></td>
+    <td>[`eem`]</td>
     <td>im</td>
     <td>im</td>
     <td>im</td>
-    <td>[<:h>eem</:h> as in s<:h>eem</:h>], in Received Pronunciation</td>
+    <td>[[:eem:] as in s[:eem:]], in Received Pronunciation</td>
   </tr>
   
+  <% [`een`] <:v><^e>een</^e></:v> %>
+  <% [:een:] <:h>een</:h> %>
   <tr>
     <td>言</td>
     <td>[iːn]</td>
-    <td><:v><^e>een</^e></:v></td>
+    <td>[`een`]</td>
     <td>in</td>
     <td>in</td>
     <td>in</td>
-    <td>[<:h>een</:h> as in s<:h>een</:h>], in Received Pronunciation</td>
+    <td>[[:een:] as in s[:een:]], in Received Pronunciation</td>
   </tr>
   
+  <% [`ing`] <:v><^e>ing</^e></:v> %>
+  <% [:i:] <:h>i</:h> %>
   <tr>
     <td>形</td>
     <td>[eŋ]</td>
-    <td><:v><^e>ing</^e></:v></td>
+    <td>[`ing`]</td>
     <td>ing</td>
     <td>ing</td>
     <td>ing</td>
     <td>
-      halfway between [<:h>i</:h> as in t<:h>i</:h>n]
-      and [<:h>e</:h> as in t<:h>e</:h>n],
+      halfway between [[:i:] as in t[:i:]n]
+      and [[:e:] as in t[:e:]n],
       both in a general Australian accent,
-      followed by [<:h>ng</:h> as in si<:h>ng</:h>]
+      followed by [[:ng:] as in si[:ng:]]
     </td>
   </tr>
   
+  <% [`eep`] <:v><^e>eep</^e></:v> %>
   <tr>
     <td>葉</td>
     <td>[iːp̚]</td>
-    <td><:v><^e>eep</^e></:v></td>
+    <td>[`eep`]</td>
     <td>ip</td>
     <td>ip</td>
     <td>ip</td>
     <td>
-      [<:h>ee</:h> as in b<:h>ee</:h>], in Received Pronunciation,
-      followed by [<:h>p</:h> as in co<:h>p</:h>ter] with no audibly released P
+      [[:ee:] as in b[:ee:]], in Received Pronunciation,
+      followed by [[:p:] as in co[:p:]ter] with no audibly released P
     </td>
   </tr>
   
+  <% [`eet`] <:v><^e>eet</^e></:v> %>
   <tr>
     <td>熱</td>
     <td>[iːt̚]</td>
-    <td><:v><^e>eet</^e></:v></td>
+    <td>[`eet`]</td>
     <td>it</td>
     <td>it</td>
     <td>it</td>
     <td>
-      [<:h>ee</:h> as in b<:h>ee</:h>], in Received Pronunciation,
-      followed by [<:h>t</:h> as in a<:h>t</:h>las] with no audibly released T
+      [[:ee:] as in b[:ee:]], in Received Pronunciation,
+      followed by [[:t:] as in a[:t:]las] with no audibly released T
     </td>
   </tr>
   
+  <% [`ik`] <:v><^e>ik</^e></:v> %>
   <tr>
     <td>亦</td>
     <td>[ek̚]</td>
-    <td><:v><^e>ik</^e></:v></td>
+    <td>[`ik`]</td>
     <td>ik</td>
     <td>ik</td>
     <td>ik</td>
     <td>
-      halfway between [<:h>i</:h> as in t<:h>i</:h>n]
-      and [<:h>e</:h> as in t<:h>e</:h>n],
+      halfway between [[:i:] as in t[:i:]n]
+      and [[:e:] as in t[:e:]n],
       both in a general Australian accent,
-      followed by [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C
+      followed by [[:c:] as in do[:c:]tor] with no audibly released C
     </td>
   </tr>
   
 </table></!>
 
-<@3> ɔː and o | or-o </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<% [or-o.h] ɔː and o %>
+<@3> [or-o.h] | or-o </@3>
+[up: finals]
 
 <p>
   Cantonese has no R sound.
-  The letter R only appears in "<:v>or</:v>" to represent the vowel [ɔː],
+  The letter R only appears in "[`or`]" to represent the vowel [ɔː],
   and is <strong>never</strong> sounded as a consonant.
 </p>
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
+  <% [`or`] <:v><^e>or</^e></:v> %>
+  <% [:or:] <:h>or</:h> %>
   <tr>
     <td>歌</td>
     <td>[ɔː]</td>
-    <td><:v><^e>or</^e></:v></td>
+    <td>[`or`]</td>
     <td>o</td>
     <td>o</td>
     <td>oh</td>
     <td>
-      [<:h>or</:h> as in n<:h>or</:h>],
+      [[:or:] as in n[:or:]],
       in a general Australian accent with strictly no R consonant
     </td>
   </tr>
   
+  <% [`oi`] <:v><^e>oi</^e></:v> %>
+  <% [:oy:] <:h>oy</:h> %>
   <tr>
     <td>該</td>
     <td>[ɔːy]</td>
-    <td><:v><^e>oi</^e></:v></td>
+    <td>[`oi`]</td>
     <td>oi</td>
     <td>oi</td>
     <td>oi</td>
     <td>
-      [<:h>oy</:h> as in b<:h>oy</:h>], in a general Australian accent,
+      [[:oy:] as in b[:oy:]], in a general Australian accent,
       but with longer O
     </td>
   </tr>
   
+  <% [`ou`] <:v><^e>ou</^e></:v> %>
   <tr>
     <td>高</td>
     <td>[ou]</td>
-    <td><:v><^e>ou</^e></:v></td>
+    <td>[`ou`]</td>
     <td>ou</td>
     <td>ou</td>
     <td>o</td>
     <td>
-      [<:h>or</:h> as in n<:h>or</:h>],
+      [[:or:] as in n[:or:]],
       in a general Australian accent with strictly no R consonant,
       but much much shorter,
       followed by
-      [<:h>u</:h> as in p<:h>u</:h>ll], in a general Australian accent
+      [[:u:] as in p[:u:]ll], in a general Australian accent
     </td>
   </tr>
   
+  <% [`orn`] <:v><^e>orn</^e></:v> %>
+  <% [:orn:] <:h>orn</:h> %>
   <tr>
     <td>干</td>
     <td>[ɔːn]</td>
-    <td><:v><^e>orn</^e></:v></td>
+    <td>[`orn`]</td>
     <td>on</td>
     <td>on</td>
     <td>on</td>
     <td>
-      [<:h>orn</:h> as in h<:h>orn</:h>],
+      [[:orn:] as in h[:orn:]],
       in a general Australian accent with strictly no R consonant
     </td>
   </tr>
   
+  <% [`ong`] <:v><^e>ong</^e></:v> %>
+  <% [:ong:] <:h>ong</:h> %>
   <tr>
     <td>江</td>
     <td>[ɔːŋ]</td>
-    <td><:v><^e>ong</^e></:v></td>
+    <td>[`ong`]</td>
     <td>ong</td>
     <td>ong</td>
     <td>ong</td>
     <td>
-      [<:h>ong</:h> as in s<:h>ong</:h>], in a general Australian accent,
+      [[:ong:] as in s[:ong:]], in a general Australian accent,
       but longer
     </td>
   </tr>
   
+  <% [`ort`] <:v><^e>ort</^e></:v> %>
+  <% [:ort:] <:h>ort</:h> %>
   <tr>
     <td>葛</td>
     <td>[ɔːt̚]</td>
-    <td><:v><^e>ort</^e></:v></td>
+    <td>[`ort`]</td>
     <td>ot</td>
     <td>ot</td>
     <td>ot</td>
     <td>
-      [<:h>or</:h> as in n<:h>or</:h>],
+      [[:or:] as in n[:or:]],
       in a general Australian accent with strictly no R consonant,
-      followed by [<:h>t</:h> as in a<:h>t</:h>las]
+      followed by [[:t:] as in a[:t:]las]
       with no audibly released T <br>
         ~~<b>OR</b> <br>
-      [<:h>ort</:h> as in f<:h>ort</:h>let] with no audibly released T,
+      [[:ort:] as in f[:ort:]let] with no audibly released T,
       in a general Australian accent with strictly no R consonant
     </td>
   </tr>
   
+  <% [`ok`] <:v><^e>ok</^e></:v> %>
+  <% [:oc:] <:h>oc</:h> %>
   <tr>
     <td>各</td>
     <td>[ɔːk̚]</td>
-    <td><:v><^e>ok</^e></:v></td>
+    <td>[`ok`]</td>
     <td>ok</td>
     <td>ok</td>
     <td>ok</td>
     <td>
-      [<:h>oc</:h> as in d<:h>oc</:h>tor] with no audibly released C,
+      [[:oc:] as in d[:oc:]tor] with no audibly released C,
       in a general Australian accent, but longer
     </td>
   </tr>
   
 </table></!>
 
-<@3> uː and o | oo-u </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<% [oo-u.h] uː and o %>
+<@3> [oo-u.h] | oo-u </@3>
+[up: finals]
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
+  <% [`oo`] <:v><^e>oo</^e></:v> %>
   <tr>
     <td>呼</td>
     <td>[uː]</td>
-    <td><:v><^e>oo</^e></:v></td>
+    <td>[`oo`]</td>
     <td>u</td>
     <td>u</td>
     <td>oo</td>
     <td>
-      [<:h>u</:h> as in p<:h>u</:h>ll], in a general Australian accent,
+      [[:u:] as in p[:u:]ll], in a general Australian accent,
       but longer
     </td>
   </tr>
   
+  <% [`ooi`] <:v><^e>ooi</^e></:v> %>
   <tr>
     <td>灰</td>
     <td>[uːy]</td>
-    <td><:v><^e>ooi</^e></:v></td>
+    <td>[`ooi`]</td>
     <td>ui</td>
     <td>ui</td>
     <td>ooi</td>
     <td>
-      [<:h>u</:h> as in p<:h>u</:h>ll], in a general Australian accent,
+      [[:u:] as in p[:u:]ll], in a general Australian accent,
       but longer, followed by
-      [<:h>y</:h> as in bo<:h>y</:h>], in a general Australian accent
+      [[:y:] as in bo[:y:]], in a general Australian accent
     </td>
   </tr>
   
+  <% [`oon`] <:v><^e>oon</^e></:v> %>
   <tr>
     <td>歡</td>
     <td>[uːn]</td>
-    <td><:v><^e>oon</^e></:v></td>
+    <td>[`oon`]</td>
     <td>un</td>
     <td>un</td>
     <td>oon</td>
     <td>
-      [<:h>u</:h> as in p<:h>u</:h>ll], in a general Australian accent,
-      but longer, followed by [<:h>n</:h> as in si<:h>n</:h>]
+      [[:u:] as in p[:u:]ll], in a general Australian accent,
+      but longer, followed by [[:n:] as in si[:n:]]
     </td>
   </tr>
   
+  <% [`ung`] <:v><^e>ung</^e></:v> %>
+  <% [:oo:] <:h>oo</:h> %>
   <tr>
     <td>風</td>
     <td>[oŋ]</td>
-    <td><:v><^e>ung</^e></:v></td>
+    <td>[`ung`]</td>
     <td>ung</td>
     <td>ung</td>
     <td>ung</td>
     <td>
-      [<:h>oo</:h> as in t<:h>oo</:h>k], in a general Australian accent,
-      followed by [<:h>ng</:h> as in si<:h>ng</:h>]
+      [[:oo:] as in t[:oo:]k], in a general Australian accent,
+      followed by [[:ng:] as in si[:ng:]]
     </td>
   </tr>
   
+  <% [`oot`] <:v><^e>oot</^e></:v> %>
   <tr>
     <td>闊</td>
     <td>[uːt̚]</td>
-    <td><:v><^e>oot</^e></:v></td>
+    <td>[`oot`]</td>
     <td>ut</td>
     <td>ut</td>
     <td>oot</td>
     <td>
-      [<:h>u</:h> as in p<:h>u</:h>ll], in a general Australian accent,
+      [[:u:] as in p[:u:]ll], in a general Australian accent,
       but longer,
-      followed by [<:h>t</:h> as in a<:h>t</:h>las] with no audibly released T
+      followed by [[:t:] as in a[:t:]las] with no audibly released T
     </td>
   </tr>
   
+  <% [`uk`] <:v><^e>uk</^e></:v> %>
+  <% [:ook:] <:h>ook</:h> %>
   <tr>
     <td>福</td>
     <td>[ok̚]</td>
-    <td><:v><^e>uk</^e></:v></td>
+    <td>[`uk`]</td>
     <td>uk</td>
     <td>uk</td>
     <td>uk</td>
     <td>
-      [<:h>oo</:h> as in t<:h>oo</:h>k], in a general Australian accent,
+      [[:oo:] as in t[:oo:]k], in a general Australian accent,
       followed by
-      [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C <br>
+      [[:c:] as in do[:c:]tor] with no audibly released C <br>
         ~~<b>OR</b> <br>
-      [<:h>ook</:h> as in b<:h>ook</:h>token] with no audibly released K,
+      [[:ook:] as in b[:ook:]token] with no audibly released K,
       in a general Australian accent
     </td>
   </tr>
   
 </table></!>
 
-<@3> œ | oe </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<% [oe.h] œ %>
+<@3> [oe.h] | oe </@3>
+[up: finals]
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
+  <% [`oe`] <:v><^e>oe</^e></:v> %>
+  <% [:ö:] <:h>ö</:h> %>
+  <% [:eu:] <:h>eu</:h> %>
   <tr>
     <td>靴</td>
     <td>[œː]</td>
-    <td><:v><^e>oe</^e></:v></td>
+    <td>[`oe`]</td>
     <td>oe</td>
     <td>eu</td>
     <td>euh</td>
     <td>
-      [<:h>ö</:h> as in H<:h>ö</:h>lle], in German <br>
+      [[:ö:] as in H[:ö:]lle], in German <br>
         ~~<b>OR</b> <br>
-      [<:h>eu</:h> as in j<:h>eu</:h>ne], in French
+      [[:eu:] as in j[:eu:]ne], in French
     </td>
   </tr>
   
+  <% [`oeng`] <:v><^e>oeng</^e></:v> %>
   <tr>
     <td>香</td>
     <td>[œːŋ]</td>
-    <td><:v><^e>oeng</^e></:v></td>
+    <td>[`oeng`]</td>
     <td>oeng</td>
     <td>eung</td>
     <td>eung</td>
     <td>
-      [<:h>ö</:h> as in H<:h>ö</:h>lle], in German,
-      followed by [<:h>ng</:h> as in si<:h>ng</:h>]
+      [[:ö:] as in H[:ö:]lle], in German,
+      followed by [[:ng:] as in si[:ng:]]
     </td>
   </tr>
   
+  <% [`oek`] <:v><^e>oek</^e></:v> %>
   <tr>
     <td>卻</td>
     <td>[œːk̚]</td>
-    <td><:v><^e>oek</^e></:v></td>
+    <td>[`oek`]</td>
     <td>oek</td>
     <td>euk</td>
     <td>euk</td>
     <td>
-      [<:h>ö</:h> as in H<:h>ö</:h>lle], in German,
-      followed by [<:h>c</:h> as in do<:h>c</:h>tor] with no audibly released C
+      [[:ö:] as in H[:ö:]lle], in German,
+      followed by [[:c:] as in do[:c:]tor] with no audibly released C
     </td>
   </tr>
   
 </table></!>
 
-<@3> ɵ | _ </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<% [_.h] ɵ %>
+<@3> [_.h] | _ </@3>
+[up: finals]
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
+  <% [`_u"`] <:v><^e>_u"</^e></:v> %>
+  <% [:ü:] <:h>ü</:h> %>
   <tr>
     <td>需</td>
     <td>[ɵy]</td>
-    <td><:v><^e>_u"</^e></:v></td>
+    <td>[`_u"`]</td>
     <td>eoi</td>
     <td>eui</td>
     <td>ui</td>
     <td>
-      [<:h>ö</:h> as in H<:h>ö</:h>lle], in German, but extremely short,
-      followed by [<:h>ü</:h> as in <:h>ü</:h>ber], in German
+      [[:ö:] as in H[:ö:]lle], in German, but extremely short,
+      followed by [[:ü:] as in [:ü:]ber], in German
     </td>
   </tr>
   
+  <% [`_n`] <:v><^e>_n</^e></:v> %>
   <tr>
     <td>詢</td>
     <td>[ɵn]</td>
-    <td><:v><^e>_n</^e></:v></td>
+    <td>[`_n`]</td>
     <td>eon</td>
     <td>eun</td>
     <td>un</td>
     <td>
-      [<:h>ö</:h> as in H<:h>ö</:h>lle], in German, but extremely short,
-      followed by [<:h>n</:h> as in si<:h>n</:h>]
+      [[:ö:] as in H[:ö:]lle], in German, but extremely short,
+      followed by [[:n:] as in si[:n:]]
     </td>
   </tr>
   
+  <% [`_t`] <:v><^e>_t</^e></:v> %>
   <tr>
     <td>戌</td>
     <td>[ɵt̚]</td>
-    <td><:v><^e>_t</^e></:v></td>
+    <td>[`_t`]</td>
     <td>eot</td>
     <td>eut</td>
     <td>ut</td>
     <td>
-      [<:h>ö</:h> as in H<:h>ö</:h>lle], in German, but extremely short,
-      followed by [<:h>t</:h> as in a<:h>t</:h>las] with no audibly released T
+      [[:ö:] as in H[:ö:]lle], in German, but extremely short,
+      followed by [[:t:] as in a[:t:]las] with no audibly released T
     </td>
   </tr>
   
 </table></!>
 
-<@3> yː | ue </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<% [ue.h] yː %>
+<@3> [ue.h] | ue </@3>
+[up: finals]
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
+  <% [`u"`] <:v><^e>u"</^e></:v> %>
   <tr>
     <td>遇</td>
     <td>[yː]</td>
-    <td><:v><^e>u"</^e></:v></td>
+    <td>[`u"`]</td>
     <td>yu</td>
     <td>yu</td>
     <td>ue</td>
-    <td>[<:h>ü</:h> as in <:h>ü</:h>ber], in German</td>
+    <td>[[:ü:] as in [:ü:]ber], in German</td>
   </tr>
   
+  <% [`u"n`] <:v><^e>u"n</^e></:v> %>
   <tr>
     <td>願</td>
     <td>[yːn]</td>
-    <td><:v><^e>u"n</^e></:v></td>
+    <td>[`u"n`]</td>
     <td>yun</td>
     <td>yun</td>
     <td>uen</td>
     <td>
-      [<:h>ü</:h> as in <:h>ü</:h>ber], in German,
-      followed by [<:h>n</:h> as in si<:h>n</:h>]
+      [[:ü:] as in [:ü:]ber], in German,
+      followed by [[:n:] as in si[:n:]]
     </td>
   </tr>
   
+  <% [`u"t`] <:v><^e>u"t</^e></:v> %>
   <tr>
     <td>月</td>
     <td>[yːt̚]</td>
-    <td><:v><^e>u"t</^e></:v></td>
+    <td>[`u"t`]</td>
     <td>yut</td>
     <td>yut</td>
     <td>uet</td>
     <td>
-      [<:h>ü</:h> as in <:h>ü</:h>ber], in German,
-      followed by [<:h>t</:h> as in a<:h>t</:h>las] with no audibly released T
+      [[:ü:] as in [:ü:]ber], in German,
+      followed by [[:t:] as in a[:t:]las] with no audibly released T
     </td>
   </tr>
   
 </table></!>
 
-<@3> m̩ and ŋ̍ | m-ng </@3>
-<@@>
-  <@u> Finals | finals | Finals (韻) </@u>
-</@@>
+<% [m-ng.h] m̩ and ŋ̍ %>
+<@3> [m-ng.h] | m-ng </@3>
+[up: finals]
 
 <!><table>
   
-  <tr>
-    <th>韻</th>
-    <th>IPA</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-    <th>Yale</th>
-    <th>S.~Lau</th>
-    <th>Conway's damn good approximation</th>
-  </tr>
+  [finals-header.tr]
   
   <tr>
     <td>唔</td>
     <td>[m̩]</td>
-    <td><:v><^e>m</^e></:v></td>
+    <td>[`m`]</td>
     <td>m</td>
     <td>m</td>
     <td>m</td>
-    <td>[<:h>m</:h> as in su<:h>m</:h>], but longer</td>
+    <td>[[:m:] as in su[:m:]], but longer</td>
   </tr>
   
   <tr>
     <td>吾</td>
     <td>[ŋ̍]</td>
-    <td><:v><^e>ng</^e></:v></td>
+    <td>[`ng`]</td>
     <td>ng</td>
     <td>ng</td>
     <td>ng</td>
-    <td>[<:h>ng</:h> as in si<:h>ng</:h>], but longer</td>
+    <td>[[:ng:] as in si[:ng:]], but longer</td>
   </tr>
   
 </table></!>
 
 
-<@2> Nine tones (九聲) with tone diagram | tones </@2>
+<% [tones.h] Nine tones (九聲) with tone diagram %>
+<@2> [tones.h] | tones </@2>
 
 
 <!c><table>
@@ -1619,6 +1668,9 @@
 
 <div class="centred-svg">
 <svg class="fit-width" width="480px" viewBox="-5 -7 11.5 6.5">
+  
+  <% [font-size] font-size = "0.4" %>
+  
   <!-- tone 1 陰平 -->
   <line
     x1 = "-2.5"
@@ -1628,10 +1680,11 @@
   <text
     x = "0"
     y = "-5.5"
-    font-size = "0.4"
+    [font-size]
     dy = "-0.5em"
     >tone~1 \陰平
   </text>
+  
   <!-- tone 2 陰上 -->
   <line
     x1 = "-2.5"
@@ -1641,12 +1694,13 @@
   <text
     x = "0"
     y = "-4.4"
-    font-size = "0.4"
+    [font-size]
     dy = "-0.5em"
     transform = "rotate(-23.75 0 -4.4)"
     >tone~2 \陰上
     <!-- arctan (2.2/5) == 23.75 degree -->
   </text>
+  
   <!-- tone 3 陰去 -->
   <line
     x1 = "-2.5"
@@ -1656,10 +1710,11 @@
   <text
     x = "0"
     y = "-3.3"
-    font-size = "0.4"
+    [font-size]
     dy = "-0.5em"
     >tone~3 \陰去
   </text>
+  
   <!-- tone 4 陽平 -->
   <line
     x1 = "-2.5"
@@ -1669,10 +1724,11 @@
   <text
     x = "0"
     y = "-1.1"
-    font-size = "0.4"
+    [font-size]
     dy = "-0.5em"
     >tone~4 \陽平
   </text>
+  
   <!-- tone 5 陽上 -->
   <line
     x1 = "-2.5"
@@ -1682,12 +1738,13 @@
   <text
     x = "-1.3"
     y = "-2.75"
-    font-size = "0.4"
+    [font-size]
     dy = "-0.5em"
     transform = "rotate(-12.41 0 -2.75)"
     >tone~5 \陽上
     <!-- arctan (1.1/5) == 12.41 degree -->
   </text>
+  
   <!-- tone 6 陽去 -->
   <line
     x1 = "-2.5"
@@ -1697,10 +1754,11 @@
   <text
     x = "1.3"
     y = "-2.2"
-    font-size = "0.4"
+    [font-size]
     dy = "-0.5em"
     >tone~6 \陽去
   </text>
+  
   <!-- tone 7 高陰入 -->
   <line
     x1 = "3.75"
@@ -1710,10 +1768,11 @@
   <text
     x = "5"
     y = "-5.5"
-    font-size = "0.4"
+    [font-size]
     dy = "-0.5em"
     >tone~7 \高陰入
   </text>
+  
   <!-- tone 8 低陰入 -->
   <line
     x1 = "3.75"
@@ -1723,10 +1782,11 @@
   <text
     x = "5"
     y = "-3.3"
-    font-size = "0.4"
+    [font-size]
     dy = "-0.5em"
     >tone~8 \低陰入
   </text>
+  
   <!-- tone 9 陽入 -->
   <line
     x1 = "3.75"
@@ -1736,52 +1796,59 @@
   <text
     x = "5"
     y = "-2.2"
-    font-size = "0.4"
+    [font-size]
     dy = "-0.5em"
     >tone~9 \陽入
   </text>
+  
   <!-- pitch num. -->
   <text
     x = "-4"
     y = "-6.6"
-    font-size = "0.4"
+    [font-size]
     >pitch num.
   </text>
+  
   <!-- 5 -->
   <text
     x = "-4"
     y = "-5.5"
-    font-size = "0.4"
+    [font-size]
     >5
   </text>
+  
   <!-- 4 -->
   <text
     x = "-4"
     y = "-4.4"
-    font-size = "0.4"
+    [font-size]
     >4
   </text>
+  
   <!-- 3 -->
   <text
     x = "-4"
     y = "-3.3"
-    font-size = "0.4"
+    [font-size]
     >3
   </text>
+  
   <!-- 2 -->
   <text
     x = "-4"
     y = "-2.2"
-    font-size = "0.4"
+    [font-size]
     >2
   </text>
+  
   <!-- 1 -->
   <text
     x = "-4"
     y = "-1.1"
-    font-size = "0.4"
+    [font-size]
     >1
   </text>
+  
 </svg>
 </div>
 
@@ -1922,40 +1989,41 @@
 </table></!c>
 
 
-<@2> Compact reference tables | compact </@2>
+<% [compact.h] Compact reference tables %>
+<@2> [compact.h] | compact </@2>
 
 
 <h3>Initials (聲)</h3>
 <!c><table>
   <tr>
-    <td>巴~<:v><^e>p</^e></:v></td>
-    <td>打~<:v><^e>t</^e></:v></td>
-    <td>家~<:v><^e>k</^e></:v></td>
-    <td>瓜~<:v><^e>kw</^e></:v></td>
-    <td>將~<:v><^e>ts</^e></:v></td>
-    <td>張~<:v><^e>ch</^e></:v></td>
+    <td>巴~[`p`]</td>
+    <td>打~[`t`]</td>
+    <td>家~[`k`]</td>
+    <td>瓜~[`kw`]</td>
+    <td>將~[`ts`]</td>
+    <td>張~[`ch`]</td>
   </tr>
   <tr>
-    <td>怕~<:v><^e>p'</^e></:v></td>
-    <td>他~<:v><^e>t'</^e></:v></td>
-    <td>卡~<:v><^e>k'</^e></:v></td>
-    <td>誇~<:v><^e>k'w</^e></:v></td>
-    <td>槍~<:v><^e>ts'</^e></:v></td>
-    <td>昌~<:v><^e>ch'</^e></:v></td>
+    <td>怕~[`p'`]</td>
+    <td>他~[`t'`]</td>
+    <td>卡~[`k'`]</td>
+    <td>誇~[`k'w`]</td>
+    <td>槍~[`ts'`]</td>
+    <td>昌~[`ch'`]</td>
   </tr>
   <tr>
-    <td>媽~<:v><^e>m</^e></:v></td>
-    <td>那~<:v><^e>n</^e></:v></td>
-    <td>牙~<:v><^e>ng</^e></:v></td>
-    <td>華~<:v><^e>w</^e></:v></td>
-    <td>相~<:v><^e>s</^e></:v></td>
-    <td>傷~<:v><^e>sh</^e></:v></td>
+    <td>媽~[`m`]</td>
+    <td>那~[`n`]</td>
+    <td>牙~[`ng`]</td>
+    <td>華~[`w`]</td>
+    <td>相~[`s`]</td>
+    <td>傷~[`sh`]</td>
   </tr>
   <tr>
-    <td>花~<:v><^e>f</^e></:v></td>
-    <td>啦~<:v><^e>l</^e></:v></td>
-    <td>蝦~<:v><^e>h</^e></:v></td>
-    <td>也~<:v><^e>y</^e></:v></td>
+    <td>花~[`f`]</td>
+    <td>啦~[`l`]</td>
+    <td>蝦~[`h`]</td>
+    <td>也~[`y`]</td>
     <td></td>
     <td></td>
   </tr>
@@ -1965,83 +2033,35 @@
 
 <!c><table>
   <tr>
-    <td>叉~<:v><^e>aa</^e></:v></td>
+    <td>叉~[`aa`]</td>
     <td></td>
-    <td>爹~<:v><^e>e</^e></:v></td>
-    <td>而~<:v><^e>ee</^e></:v></td>
-    <td>歌~<:v><^e>or</^e></:v></td>
-    <td>呼~<:v><^e>oo</^e></:v></td>
-    <td>靴~<:v><^e>oe</^e></:v></td>
+    <td>爹~[`e`]</td>
+    <td>而~[`ee`]</td>
+    <td>歌~[`or`]</td>
+    <td>呼~[`oo`]</td>
+    <td>靴~[`oe`]</td>
     <td></td>
-    <td>遇~<:v><^e>u"</^e></:v></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>釵~<:v><^e>aai</^e></:v></td>
-    <td>仔~<:v><^e>ai</^e></:v></td>
-    <td>地~<:v><^e>ei</^e></:v></td>
-    <td></td>
-    <td>該~<:v><^e>oi</^e></:v></td>
-    <td>灰~<:v><^e>ooi</^e></:v></td>
-    <td></td>
-    <td>需~<:v><^e>_u"</^e></:v></td>
-    <td></td>
+    <td>遇~[`u"`]</td>
     <td></td>
   </tr>
   <tr>
-    <td>抄~<:v><^e>aau</^e></:v></td>
-    <td>走~<:v><^e>au</^e></:v></td>
-    <td>掉~<:v><^e>eu</^e></:v></td>
-    <td>堯~<:v><^e>eeu</^e></:v></td>
-    <td>高~<:v><^e>ou</^e></:v></td>
+    <td>釵~[`aai`]</td>
+    <td>仔~[`ai`]</td>
+    <td>地~[`ei`]</td>
     <td></td>
+    <td>該~[`oi`]</td>
+    <td>灰~[`ooi`]</td>
     <td></td>
-    <td></td>
+    <td>需~[`_u"`]</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>參~<:v><^e>aam</^e></:v></td>
-    <td>針~<:v><^e>am</^e></:v></td>
-    <td>舔~<:v><^e>em</^e></:v></td>
-    <td>嚴~<:v><^e>eem</^e></:v></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>唔~<:v><^e>m</^e></:v></td>
-  </tr>
-  <tr>
-    <td>餐~<:v><^e>aan</^e></:v></td>
-    <td>真~<:v><^e>an</^e></:v></td>
-    <td></td>
-    <td>言~<:v><^e>een</^e></:v></td>
-    <td>干~<:v><^e>orn</^e></:v></td>
-    <td>歡~<:v><^e>oon</^e></:v></td>
-    <td></td>
-    <td>詢~<:v><^e>_n</^e></:v></td>
-    <td>願~<:v><^e>u"n</^e></:v></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>撐~<:v><^e>aang</^e></:v></td>
-    <td>增~<:v><^e>ang</^e></:v></td>
-    <td>贏~<:v><^e>eng</^e></:v></td>
-    <td>形~<:v><^e>ing</^e></:v></td>
-    <td>江~<:v><^e>ong</^e></:v></td>
-    <td>風~<:v><^e>ung</^e></:v></td>
-    <td>香~<:v><^e>oeng</^e></:v></td>
-    <td></td>
-    <td></td>
-    <td>吾~<:v><^e>ng</^e></:v></td>
-  </tr>
-  <tr>
-    <td>插~<:v><^e>aap</^e></:v></td>
-    <td>汁~<:v><^e>ap</^e></:v></td>
-    <td>夾~<:v><^e>ep</^e></:v></td>
-    <td>葉~<:v><^e>eep</^e></:v></td>
-    <td></td>
+    <td>抄~[`aau`]</td>
+    <td>走~[`au`]</td>
+    <td>掉~[`eu`]</td>
+    <td>堯~[`eeu`]</td>
+    <td>高~[`ou`]</td>
     <td></td>
     <td></td>
     <td></td>
@@ -2049,25 +2069,73 @@
     <td></td>
   </tr>
   <tr>
-    <td>察~<:v><^e>aat</^e></:v></td>
-    <td>疾~<:v><^e>at</^e></:v></td>
+    <td>參~[`aam`]</td>
+    <td>針~[`am`]</td>
+    <td>舔~[`em`]</td>
+    <td>嚴~[`eem`]</td>
     <td></td>
-    <td>熱~<:v><^e>eet</^e></:v></td>
-    <td>葛~<:v><^e>ort</^e></:v></td>
-    <td>闊~<:v><^e>oot</^e></:v></td>
     <td></td>
-    <td>戌~<:v><^e>_t</^e></:v></td>
-    <td>月~<:v><^e>u"t</^e></:v></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>唔~[`m`]</td>
+  </tr>
+  <tr>
+    <td>餐~[`aan`]</td>
+    <td>真~[`an`]</td>
+    <td></td>
+    <td>言~[`een`]</td>
+    <td>干~[`orn`]</td>
+    <td>歡~[`oon`]</td>
+    <td></td>
+    <td>詢~[`_n`]</td>
+    <td>願~[`u"n`]</td>
     <td></td>
   </tr>
   <tr>
-    <td>拆~<:v><^e>aak</^e></:v></td>
-    <td>仄~<:v><^e>ak</^e></:v></td>
-    <td>尺~<:v><^e>ek</^e></:v></td>
-    <td>亦~<:v><^e>ik</^e></:v></td>
-    <td>各~<:v><^e>ok</^e></:v></td>
-    <td>福~<:v><^e>uk</^e></:v></td>
-    <td>卻~<:v><^e>oek</^e></:v></td>
+    <td>撐~[`aang`]</td>
+    <td>增~[`ang`]</td>
+    <td>贏~[`eng`]</td>
+    <td>形~[`ing`]</td>
+    <td>江~[`ong`]</td>
+    <td>風~[`ung`]</td>
+    <td>香~[`oeng`]</td>
+    <td></td>
+    <td></td>
+    <td>吾~[`ng`]</td>
+  </tr>
+  <tr>
+    <td>插~[`aap`]</td>
+    <td>汁~[`ap`]</td>
+    <td>夾~[`ep`]</td>
+    <td>葉~[`eep`]</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>察~[`aat`]</td>
+    <td>疾~[`at`]</td>
+    <td></td>
+    <td>熱~[`eet`]</td>
+    <td>葛~[`ort`]</td>
+    <td>闊~[`oot`]</td>
+    <td></td>
+    <td>戌~[`_t`]</td>
+    <td>月~[`u"t`]</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>拆~[`aak`]</td>
+    <td>仄~[`ak`]</td>
+    <td>尺~[`ek`]</td>
+    <td>亦~[`ik`]</td>
+    <td>各~[`ok`]</td>
+    <td>福~[`uk`]</td>
+    <td>卻~[`oek`]</td>
     <td></td>
     <td></td>
     <td></td>
