@@ -27,7 +27,7 @@
 <h1>Python: a regex converter from CCH to HTML</h1>
 <p class="page-properties">
 First created:&nbsp;20190720<br>
-Last modified:&nbsp;<b>20200307</b><br>
+Last modified:&nbsp;<b>20200309</b><br>
 <b>Code:</b>
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch.py" title="GitHub: cch.py"><code>cch.py</code></a>
 <noscript>Enable Javascript for <a href="/code/katex-guide.html" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
@@ -1625,7 +1625,9 @@ Newlines immediately following a backslash are removed
 Newlines immediately preceding <code>&lt;br&gt;</code> elements are removed, and
 </li>
 <li>
-Whitespace before attributes is replaced with a canonical single space.
+Whitespace for attributes is canonicalised with
+(1)&nbsp;a single space before the attribute name, and
+(2)&nbsp;no whitespace around the equals sign.
 </li>
 </ol>
 <ul>

@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20200307 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20200309 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -1944,7 +1944,9 @@
     Newlines immediately preceding <`><br></`> elements are removed, and
   </li>
   <li>
-    Whitespace before attributes is replaced with a canonical single space.
+    Whitespace for attributes is canonicalised with
+    (1)~a single space before the attribute name, and
+    (2)~no whitespace around the equals sign.
   </li>
 </ol>
 
