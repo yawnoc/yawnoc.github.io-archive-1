@@ -1,7 +1,23 @@
-<*>
-  A cynic's 7.30: Anthony Albanese on donations (3 Sep 2019)
-  | 20190906 | 20200216
-</*>
+<*> A cynic's 7.30: [abc.h-short] | 20190906 | 20200216 </*>
+
+<%
+  [abc.h] |
+  Anthony Albanese discusses the NSW Labor donation scandal
+%>
+<%
+  [abc.h-short] |
+  Anthony Albanese on donations (3 Sep 2019)
+%>
+<%
+  [abc.url] |
+  https://www.abc.net.au/7.30/\
+    anthony-albanese-discusses-the-nsw-labor-donation/\
+    11477046
+%>
+<%
+  [archive.url] |
+  https://web.archive.org/web/20190905152759/[abc.url]
+%>
 
 <=h>
   <@ih></@ih>
@@ -9,7 +25,7 @@
   <@i> More cynicism | /cynics-730/ | A cynic's 7.30 </@i>
 </=h>
 
-<h1>A cynic's 7.30: Anthony Albanese on donations (3 Sep 2019)</h1>
+<h1>A cynic's 7.30: [abc.h-short]</h1>
 
 <*p></*p>
 
@@ -21,28 +37,29 @@
 </#c>
 
 <p>
-  <b>Anthony Albanese discusses the NSW Labor donation scandal.</b>\
+  <b>[abc.h].</b>\
   <br>
-  <@>
-    Original 7.30 interview
-    | https://www.abc.net.au/7.30/anthony-albanese-discusses-the-nsw-labor-donation/11477046
-    | ABC 7.30: Anthony Albanese discusses the NSW Labor donation scandal
-  </@>
-  <@>
-    (archived version)
-    | https://web.archive.org/web/20190905152759/https://www.abc.net.au/7.30/anthony-albanese-discusses-the-nsw-labor-donation/11477046
-    | Web archive: Anthony Albanese discusses the NSW Labor donation scandal
-  </@>
+  <@> Original 7.30 interview | [abc.url] | ABC 7.30: [abc.h] </@>
+  <@> (archived version) | [archive.url] | Web archive: [abc.h] </@>
 </p>
+
+<%
+  [leigh-sales] |
+  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+%>
+<%
+  [anthony-albanese] |
+  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+%>
 
 <~~>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES, PRESENTER </+h>
+  [leigh-sales]
   <~h>
     Anthony Albanese, thank you for coming in.
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE, OPPOSITION LEADER </+g>
+  [anthony-albanese]
   <~g>
     Good to be with you, Leigh.
   </~g>
@@ -53,7 +70,7 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     On another matter, the corruption hearings into donations
     to the New South Wales Labor Party are continuing.
@@ -67,7 +84,7 @@
     of your party headquarters and the way it gets money?
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+  [anthony-albanese]
   <~g>
     Well, quite clearly, people didn't know about it, quite frankly, Leigh.
   </~g>
@@ -80,7 +97,7 @@
     on this very program.
   </~g>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~ht>
     \{All right Mr~Smarty-pants it's just the first question.\}
   </~ht>
@@ -88,7 +105,7 @@
     But I'm not a key elected official of the Labor Party.
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+  [anthony-albanese]
   <~g>
     I didn't even know this function had occurred.
     I'd never met the particular official and didn't know he existed,
@@ -99,7 +116,8 @@
     What we need to do is to make sure that the
     <@>
       ICAC
-      | https://en.wikipedia.org/wiki/Independent_Commission_Against_Corruption_(New_South_Wales)
+      | https://en.wikipedia.org/wiki/\
+        Independent_Commission_Against_Corruption_(New_South_Wales)
       | Wikipedia: Independent Commission Against Corruption (New South Wales)
     </@>
     can undertake its work.
@@ -109,14 +127,14 @@
     to make sure this can never happen again.
   </~g>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Shouldn't there be an audit,
     not just of the New South Wales branch, but of all branches,
     because if it's going on here, how do we know it's not going on elsewhere?
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+  [anthony-albanese]
   <~gt>
     \{Yes of course there should, but I'm not allowed to say that.
     So cue swipe at the Coalition:\}
@@ -132,13 +150,13 @@
     either had to resign from Parliament or go to the crossbench [...].
   </~g>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     But we're talking about Labor.
     Why not be transparent and have an audit? Bring out independent auditors.
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+  [anthony-albanese]
   <~g>
     We have processes
   </~g>
@@ -149,12 +167,12 @@
     We have an audit process.
   </~g>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Well, it clearly hasn't worked.
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+  [anthony-albanese]
   <~g>
     We have an audit process of our federal funding as a national party.
   </~g>
@@ -169,12 +187,12 @@
     and a restructuring to make sure that it can't occur again.
   </~g>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Why just New South Wales though?
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+  [anthony-albanese]
   <~g>
     But we need to ... because it is in New South Wales that this has occurred
   </~g>
@@ -182,12 +200,12 @@
     \{and assuredly, I say to you, not in Federal Labor\}.
   </~gt>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     But how do you know?
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+  [anthony-albanese]
   <~g>
     In terms of, federally, ...
     Because federally we have an absolutely strong audit process
@@ -197,13 +215,13 @@
     the New South Wales branch's audit process, I wouldn't be able to\}.
   </~gt>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Is the party culture to do whatever it takes
     to get as much money as possible through the doors?
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+  [anthony-albanese]
   <~gt>
     \{Oh yes, and it's one of the few things for which
     there's bipartisan consensus too.\}
@@ -238,12 +256,12 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20190903.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Anthony Albanese, thank you.
   </~h>
   
-  <+g> anthony-albanese-20190903.jpg | ANTHONY ALBANESE </+g>
+  [anthony-albanese]
   <~g>
     Thanks.
   </~g>
@@ -252,11 +270,7 @@
 
 <*f>
   except the
-  <@>
-    original interview
-    | https://www.abc.net.au/7.30/anthony-albanese-discusses-the-nsw-labor-donation/11477046
-    | ABC 7.30: Anthony Albanese discusses the NSW Labor donation scandal
-  </@>,
+  <@> original interview | [abc.url] | ABC 7.30: [abc.h] </@>,
   whose copyright belongs to the ABC
   | <:t>\{Curly-bracketed words\}</:t> inserted by me.
 </*f>

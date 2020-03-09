@@ -1,4 +1,23 @@
-<*> A cynic's 7.30: Dan Tehan on NAPLAN (28 Aug 2019) | 20190830 | 20200119 </*>
+<*> A cynic's 7.30: [abc.h-short] | 20190830 | 20200119 </*>
+
+<%
+  [abc.h] |
+  Education Minister Dan Tehan discusses NAPLAN and the latest results
+%>
+<%
+  [abc.h-short] |
+  Dan Tehan on NAPLAN (28 Aug 2019)
+%>
+<%
+  [abc.url] |
+  https://www.abc.net.au/7.30/\
+    education-minister-dan-tehan-discusses-naplan-and/\
+    11458690
+%>
+<%
+  [archive.url] |
+  https://web.archive.org/web/20190829130300/[abc.url]
+%>
 
 <=h>
   <@ih></@ih>
@@ -6,38 +25,39 @@
   <@i> More cynicism | /cynics-730/ | A cynic's 7.30 </@i>
 </=h>
 
-<h1>A cynic's 7.30: Dan Tehan on NAPLAN (28 Aug 2019)</h1>
+<h1>A cynic's 7.30: [abc.h-short]</h1>
 
 <*p></*p>
 
 <p>
-  <b>Education Minister Dan Tehan discusses NAPLAN and the latest results.</b>\
+  <b>[abc.h].</b>\
   <br>
-  <@>
-    Original 7.30 interview
-    | https://www.abc.net.au/7.30/education-minister-dan-tehan-discusses-naplan-and/11458690
-    | ABC 7.30: Education Minister Dan Tehan discusses NAPLAN and the latest results
-  </@>
-  <@>
-    (archived version)
-    | https://web.archive.org/web/20190829130300/https://www.abc.net.au/7.30/education-minister-dan-tehan-discusses-naplan-and/11458690
-    | Web archive: Education Minister Dan Tehan discusses NAPLAN and the latest results
-  </@>
+  <@> Original 7.30 interview | [abc.url] | ABC 7.30: [abc.h] </@>
+  <@> (archived version) | [archive.url] | Web archive: [abc.h] </@>
 </p>
+
+<%
+  [leigh-sales] |
+  <+h> leigh-sales-20190828.jpg | LEIGH SALES </+h>
+%>
+<%
+  [dan-tehan] |
+  <+g> dan-tehan-20190828.jpg | DAN TEHAN </+g>
+%>
 
 <~~>
   
-  <+h> leigh-sales-20190828.jpg | LEIGH SALES, PRESENTER </+h>
+  [leigh-sales]
   <~h>
     Minister thanks for joining us.
   </~h>
   
-  <+g> dan-tehan-20190828.jpg | DAN TEHAN, EDUCATION MINISTER </+g>
+  [dan-tehan]
   <~g>
     It's a pleasure Leigh.
   </~g>
   
-  <+h> leigh-sales-20190828.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Federal Government spending on education
     has increased by $20 billion during the past decade,
@@ -45,7 +65,7 @@
     why?
   </~h>
   
-  <+g> dan-tehan-20190828.jpg | DAN TEHAN </+g>
+  [dan-tehan]
   <~g>
     Well, I think it's important for us to understand that
     it's not just about money
@@ -72,13 +92,13 @@
     \{How good are miracles, eh?\}
   </~gt>
   
-  <+h> leigh-sales-20190828.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     But you say "as we roll this out"...
     you've been in government for six years now.
   </~h>
   
-  <+g> dan-tehan-20190828.jpg | DAN TEHAN </+g>
+  [dan-tehan]
   <~gt>
     \{Oh yeah... umm... time for a casual deflection...\}
   </~gt>
@@ -87,14 +107,14 @@
     and it takes a while to get all the states and territories onboard. [...]
   </~g>
   
-  <+h> leigh-sales-20190828.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     The three biggest states, Victoria, Queensland and New South Wales,
     are all reviewing NAPLAN.
     Is it a matter of time until it's overhauled or dumped?
   </~h>
   
-  <+g> dan-tehan-20190828.jpg | DAN TEHAN </+g>
+  [dan-tehan]
   <~g>
     So [...] we're transitioning NAPLAN from pen and paper to online. [...]
     It might take us two years, but our hope is that we can get that done
@@ -112,7 +132,7 @@
     \{I mean, NAPLAN's totally fit for purpose right now, isn't it?\}
   </~gt>
   
-  <+h> leigh-sales-20190828.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~ht>
     \{Mmm...\}
   </~ht>
@@ -123,7 +143,7 @@
     and do they match your sense of what you see anecdotally [...]?
   </~h>
   
-  <+g> dan-tehan-20190828.jpg | DAN TEHAN </+g>
+  [dan-tehan]
   <~g>
     Yes. All the advice that I'm getting is that the results are comparable,
     and that's come from the experts
@@ -138,7 +158,7 @@
     where their child's at with their education.
   </~g>
   
-  <+h> leigh-sales-20190828.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     But people were told,
     "Swallow your concerns about, say, pressure on children
@@ -147,7 +167,7 @@
     If it hasn't done that so far, then why keep going with it?
   </~h>
   
-  <+g> dan-tehan-20190828.jpg | DAN TEHAN </+g>
+  [dan-tehan]
   <~g>
     Well, [...] the reason we know that we're getting
     a mixed performance when it comes to NAPLAN
@@ -161,7 +181,7 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20190828.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     [...] The Chancellor of the University of Queensland Peter Varghese
     raised this question this week, of:
@@ -173,7 +193,7 @@
     What do you think is the answer to that?
   </~h>
   
-  <+g> dan-tehan-20190828.jpg | DAN TEHAN </+g>
+  [dan-tehan]
   <~g>
     Well can I say, I'm very pleased that Peter Varghese as a Chancellor
     is raising this question
@@ -185,7 +205,7 @@
     [...] and it's something that [...] [university] councils should be asking.
   </~g>
   
-  <+h> leigh-sales-20190828.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~ht>
     \{Well can't you just answer the question?\}
   </~ht>
@@ -194,7 +214,7 @@
     A quarter? A half?
   </~h>
   
-  <+g> dan-tehan-20190828.jpg | DAN TEHAN </+g>
+  [dan-tehan]
   <~g>
     Well Leigh, it varies
   </~g>
@@ -207,12 +227,12 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20190828.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Minister, thanks for speaking to us.
   </~h>
   
-  <+g> dan-tehan-20190828.jpg | DAN TEHAN </+g>
+  [dan-tehan]
   <~g>
     Pleasure Leigh.
   </~g>
@@ -221,11 +241,7 @@
 
 <*f>
   except the
-  <@>
-    original interview
-    | https://www.abc.net.au/7.30/education-minister-dan-tehan-discusses-naplan-and/11458690
-    | ABC 7.30: Education Minister Dan Tehan discusses NAPLAN and the latest results
-  </@>,
+  <@> original interview | [abc.url] | ABC 7.30: [abc.h] </@>,
   whose copyright belongs to the ABC
   | <:t>\{Curly-bracketed words\}</:t> inserted by me.
 </*f>

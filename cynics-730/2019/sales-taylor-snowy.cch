@@ -1,7 +1,26 @@
 <*>
-  A cynic's 7.30: Angus Taylor on Snowy Hydro 2.0 (14 Oct 2019)
+  A cynic's 7.30: [abc.h-short]
   | 20191015 | 20200119
 </*>
+
+<%
+  [abc.h] |
+  Energy Minister Angus Taylor discusses Snowy Hydro 2.0
+%>
+<%
+  [abc.h-short] |
+  Angus Taylor on Snowy Hydro 2.0 (14 Oct 2019)
+%>
+<%
+  [abc.url] |
+  https://www.abc.net.au/7.30/\
+    energy-minister-angus-taylor-discusses-snowy-hydro/\
+    11601830
+%>
+<%
+  [archive.url] |
+  https://web.archive.org/web/20191015125355/[abc.url]
+%>
 
 <=h>
   <@ih></@ih>
@@ -9,44 +28,53 @@
   <@i> More cynicism | /cynics-730/ | A cynic's 7.30 </@i>
 </=h>
 
-<h1>A cynic's 7.30: Angus Taylor on Snowy Hydro 2.0 (14 Oct 2019)</h1>
+<h1>A cynic's 7.30: [abc.h-short]</h1>
 
 <*p></*p>
 
 <p>
-  <b>Energy Minister Angus Taylor discusses Snowy Hydro 2.0.</b>\
+  <b>[abc.h].</b>\
   <br>
   <@>
     Original 7.30 interview
-    | https://www.abc.net.au/7.30/energy-minister-angus-taylor-discusses-snowy-hydro/11601830
-    | ABC 7.30: Energy Minister Angus Taylor discusses Snowy Hydro 2.0
+    | [abc.url]
+    | ABC 7.30: [abc.h]
   </@>
   <@>
     (archived version)
-    | https://web.archive.org/web/20191015125355/https://www.abc.net.au/7.30/energy-minister-angus-taylor-discusses-snowy-hydro/11601830
-    | Web archive: Energy Minister Angus Taylor discusses Snowy Hydro 2.0
+    | [archive.url]
+    | Web archive: [abc.h]
   </@>
 </p>
 
+<%
+  [leigh-sales] |
+  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+%>
+<%
+  [angus-taylor] |
+  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+%>
+
 <~~>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES, PRESENTER </+h>
+  [leigh-sales]
   <~h>
     Minister, thanks for your time.
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR, ENERGY MINISTER </+g>
+  [angus-taylor]
   <~g>
     Thanks for having me, Leigh.
   </~g>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Why wasn't a cost benefit analysis done of Snowy 2.0
     before it was commissioned?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Well... it has been done
   </~g>
@@ -68,7 +96,7 @@
     and Snowy works as a big battery.
   </~g>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     But Minister, this analysis wasn't done
     before the Snowy scheme was announced.
@@ -77,7 +105,7 @@
     without doing a feasibility study first?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Leigh, we made our investment decision
   </~g>
@@ -94,14 +122,14 @@
     and [...] reduce the volatility of those prices.
   </~g>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     On that point, if Snowy 2.0 comes online in 2025,
     how much in percentage terms
     will the average household power bill go down by?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~gt>
     \{I have no idea. Dodge the first:\}
   </~gt>
@@ -114,7 +142,7 @@
     And to put this again into perspective, we know that at peak times of...
   </~g>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     But that— sorry to interrupt you [...],
     I don't know what a megawatt hour is when I look at my power bill.
@@ -122,7 +150,7 @@
     by what percentage is my power bill going to come down by?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~gt>
     \{I have no idea. Dodge the second:\}
   </~gt>
@@ -131,14 +159,14 @@
     as I say $4.4 to $6.8 billion, and that's a very significant...
   </~g>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     No but that doesn't mean anything to me,
     because my bill's in hundreds of dollars,
     so what does my bill go down by?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~gt>
     \{I have no idea. Dodge the third:\}
   </~gt>
@@ -152,13 +180,13 @@
     because I am using it as a rhetorical device.\}
   </~gt>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Why has Snowy 2.0 doubled in cost
     and blown out significantly in terms of time?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Well, it hasn't
   </~g>
@@ -167,12 +195,12 @@
     and 4~years, which I sense is the whole point of your question\}.
   </~gt>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Well, it has. Malcolm Turnbull said it was going to be 4~years originally?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~gt>
     \{Bugger.\}
   </~gt>
@@ -193,7 +221,7 @@
     \{Gee, it's so convenient just ignoring Malcolm Turnbull's numbers eh?\}
   </~gt>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Australians were originally told it would cost $2 billion,
     then less than a year later that doubled.
@@ -206,7 +234,7 @@
     [it is] key policy and therefore it has to happen?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     No, Leigh, the decision was made based on
     the feasibility study in December 2017.
@@ -222,12 +250,12 @@
     quoted by the feasibility study.\}
   </~gt>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     And is there an upper limit to what the Government will chip in?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Well, we intend to achieve the outcomes of the feasibility study
   </~g>
@@ -239,7 +267,7 @@
     that we will achieve those outcomes.
   </~g>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     The CEO of Snowy Hydro, Paul Broad, says that
     because of the amount of government money being spent,
@@ -248,18 +276,18 @@
     Which will it be?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Well, the truth of the matter is,
     it's going to reduce bills by $4.4 to $6.8 billion.
   </~g>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     So does that mean that we'll be paying for it through our taxes?
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     And the reason... Well the rea... Well, no.
   </~g>
@@ -281,14 +309,14 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     But minister, we're talking about government spending
     of a massive scale [...].
     Where does the money come from? It's got to come from somewhere.
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Well, the money comes from...
     the investment is being made by the Government—
@@ -307,13 +335,13 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20191014.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Minister, I'm sure you've got Cabinet tonight.
     Thank you very much for making time to squeeze us in.
   </~h>
   
-  <+g> angus-taylor-20191014.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Thanks for having me, Leigh.
   </~g>
@@ -324,8 +352,8 @@
   except the
   <@>
     original interview
-    | https://www.abc.net.au/7.30/energy-minister-angus-taylor-discusses-snowy-hydro/11601830
-    | ABC 7.30: Energy Minister Angus Taylor discusses Snowy Hydro 2.0
+    | [abc.url]
+    | ABC 7.30: [abc.h]
   </@>,
   whose copyright belongs to the ABC
   | <:t>\{Curly-bracketed words\}</:t> inserted by me.

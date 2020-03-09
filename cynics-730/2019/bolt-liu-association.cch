@@ -1,8 +1,31 @@
-<*>
-  A cynic's Bolt Report: \
+<*> A cynic's Bolt Report: [.h-short] | 20190913 | 20200216 </*>
+
+<%
+  [heraldsun.h] |
+  Gladys Liu car crash interview: on her links to China's dictators
+%>
+<%
+  [heraldsun.url] |
+  https://www.heraldsun.com.au/blogs/andrew-bolt/\
+    gladys-liu-car-crash-interview-on-her-links-to-chinas-dictators/\
+    news-story/2d00bf2a43cc0ca6047cc6873736d067
+%>
+<%
+  [.h] |
+  Gladys Liu discusses membership of various Chinese Associations
+%>
+<%
+  [.h-short] |
   Gladys Liu on Chinese Associations (10 Sep 2019)
-  | 20190913 | 20200216
-</*>
+%>
+<%
+  [youtube.h] |
+  Youtube: Gladys Liu fails to dispel China links
+%>
+<%
+  [youtube.url] |
+  https://youtu.be/qoy8mKRmALA
+%>
 
 <=h>
   <@ih></@ih>
@@ -12,7 +35,7 @@
 
 <h1>
   A cynic's Bolt Report:
-  Gladys Liu on Chinese Associations (10 Sep 2019)
+  [.h-short]
 </h1>
 
 <*p></*p>
@@ -25,22 +48,31 @@
 </#c>
 
 <p>
-  <b>Gladys Liu discusses membership of various Chinese Associations.</b><br>
+  <b>[.h].</b><br>
   <@>
     Original Bolt Report interview
-    | https://www.heraldsun.com.au/blogs/andrew-bolt/gladys-liu-car-crash-interview-on-her-links-to-chinas-dictators/news-story/2d00bf2a43cc0ca6047cc6873736d067
-    | Andrew Bolt Blog Posts: Gladys Liu car crash interview: on her links to China's dictators
+    | [heraldsun.url]
+    | Andrew Bolt Blog Posts: [heraldsun.h]
   </@>
   <@>
     (Youtube)
-    | https://youtu.be/qoy8mKRmALA
-    | Youtube: Gladys Liu fails to dispel China links
+    | [youtube.url]
+    | [youtube.h]
   </@>
 </p>
 
+<%
+  [andrew-bolt] |
+  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+%>
+<%
+  [gladys-liu] |
+  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+%>
+
 <~~>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT, PRESENTER </+h>
+  [andrew-bolt]
   <~h>
     Gladys, thank you so much for your time.
   </~h>
@@ -50,7 +82,7 @@
     one in Guangdong, from between 2003 and 2015, and the other in Shandong?
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU, MEMBER FOR CHISHOLM </+g>
+  [gladys-liu]
   <~g>
     Well, good to be with you Andrew.
   </~g>
@@ -66,17 +98,31 @@
     Guangdong Overseas Exchange Association in~2011.
     <@>
       [ABC News]
-      | https://www.abc.net.au/news/2019-09-11/gladys-liu-admits-to-association-with-guangdong-association/11501088
-      | ABC News: Gladys Liu admits to membership of Guangdong Overseas Exchange Association
+      | [abc-guangdong.url]
+      | ABC News: [abc-guangdong.h]
     </@>
     <@>
       [Archived version]
-      | https://web.archive.org/web/20190912164208/https://www.abc.net.au/news/2019-09-11/gladys-liu-admits-to-association-with-guangdong-association/11501088
-      | Web archive: Gladys Liu admits to membership of Guangdong Overseas Exchange Association
+      | [archive-guangdong.url]
+      | Web archive: [abc-guangdong.h]
     </@>\}
   </~gt>
+  <%
+    [abc-guangdong.h] |
+    Gladys Liu admits to membership of Guangdong Overseas Exchange Association
+  %>
+  <%
+    [abc-guangdong.url] |
+    https://www.abc.net.au/news/2019-09-11/\
+      gladys-liu-admits-to-association-with-guangdong-association/\
+      11501088
+  %>
+  <%
+    [archive-guangdong.url] |
+    https://web.archive.org/web/20190912164208/[abc-guangdong.url]
+  %>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     How can you not recall a membership of twelve years? [...]
   </~h>
@@ -90,7 +136,7 @@
     [...]
   </~g>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     You've been Honorary President also,
     of the Australia Jiangmen General Commerce Association.
@@ -98,7 +144,7 @@
     Was your Association wrong to support that theft?
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+  [gladys-liu]
   <~g>
     Well, as the Honorary President of the organisation,
     that they didn't tell me everything that they do
@@ -124,7 +170,7 @@
     [...]
   </~g>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     [...] Can I just hear, you were also Honorary President of the
     United Chinese Commerce Association.
@@ -137,11 +183,11 @@
     true or not?
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+  [gladys-liu]
   <~g>
     What is that organisation again? I don't think I am. [...]
   </~g>
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     You have been Honorary President of the United Chinese Commerce Association
     and you've forgotten that as well.
@@ -152,17 +198,25 @@
     an Honorary Chairman (榮譽主席) on
     <@>
       UCCA's website
-      | http://uccaai.org/
-      | United Chinese Commerce Association of Australia Incorporated
+      | [ucca.url]
+      | [ucca.h]
     </@>
     <@>
       (archived version)
-      | https://web.archive.org/web/20190912155936/http://uccaai.org/
-      | Web archive: United Chinese Commerce Association of Australia Incorporated
+      | https://web.archive.org/web/20190912155936/[ucca.url]
+      | Web archive: [ucca.h]
     </@>,
     along with her former role as
     "Victorian Premier's Chinese Affairs Director" (維州州長華人事務主任).
   </.>
+  <%
+    [ucca.h] |
+    United Chinese Commerce Association of Australia Incorporated
+  %>
+  <%
+    [ucca.url] |
+    http://uccaai.org/
+  %>
   <~g>
     [...]
   </~g>
@@ -170,13 +224,13 @@
     [...]
   </~h>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     Can you now tell us, in what way should Australia
     be more friendly to China? Can you give some examples?
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+  [gladys-liu]
   <~g>
     ...
   </~g>
@@ -200,7 +254,7 @@
     [...]
   </~g>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     Can I just end by just asking you a couple of things:
     Xi Jinping has made himself dictator for life;
@@ -211,7 +265,7 @@
     do your consider Xi Jinping a dictator?
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+  [gladys-liu]
   <~gt>
     \{Eep!\}
   </~gt>
@@ -220,7 +274,7 @@
     [...] I don't really know and I don't really...
   </~g>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     Gladys, excuse me. You were born in Hong Kong;
     at the moment you have seen in your home place,
@@ -229,7 +283,7 @@
     and you don't have any opinion on Xi Jinping?
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+  [gladys-liu]
   <~g>
     OK. [...] In terms of Hong Kong,
     it is very very sad for anyone to see what has happened
@@ -250,12 +304,12 @@
     Do you hear me? Heroes!"\}
   </~gt>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     But Gladys, simple question: is Xi Jinping a dictator?
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+  [gladys-liu]
   <~gt>
     \{Eep!!\}
   </~gt>
@@ -264,13 +318,13 @@
     But I can tell you about Hong Kong, it is very very sad to see...
   </~g>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     I don't want to know about Hong Kong; I'm asking you about Xi Jinping,
     the dictator of Communist China, and you don't have an opinion about him?
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+  [gladys-liu]
   <~g>
     I do have an opinion, but I'm not going to use the word "dictator"
   </~g>
@@ -285,13 +339,13 @@
     they call it, for China.
   </~g>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     Gladys Liu, are you, in effect, a spokesman
     for the Chinese Communist regime in Australia?
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+  [gladys-liu]
   <~gt>
     \{Aren't we all, except Andrew Hastie and a few others?\}
   </~gt>
@@ -299,12 +353,12 @@
     The simple answer is no. As I said...
   </~g>
   
-  <+h> andrew-bolt-20190910.jpg | ANDREW BOLT </+h>
+  [andrew-bolt]
   <~h>
     Gladys Liu, thank you so much indeed for your time.
   </~h>
   
-  <+g> gladys-liu-20190910.jpg | GLADYS LIU </+g>
+  [gladys-liu]
   <~g>
     Thank you Andrew.
   </~g>
@@ -314,8 +368,8 @@
   except the
   <@>
     original interview
-    | https://www.heraldsun.com.au/blogs/andrew-bolt/gladys-liu-car-crash-interview-on-her-links-to-chinas-dictators/news-story/2d00bf2a43cc0ca6047cc6873736d067
-    | Andrew Bolt Blog Posts: Gladys Liu car crash interview: on her links to China's dictators
+    | [heraldsun.url]
+    | Andrew Bolt Blog Posts: [heraldsun.h]
   </@>,
   whose copyright belongs to Sky News
   | <:t>\{Curly-bracketed words\}</:t> inserted by me.

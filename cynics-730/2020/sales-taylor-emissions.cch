@@ -1,7 +1,26 @@
 <*>
-  A cynic's 7.30: Angus Taylor on emissions \& documents (2 Mar 2020)
+  A cynic's 7.30: [abc.h-short]
   | 20200306 | 20200306
 </*>
+
+<%
+  [abc.h] |
+  Energy Minister Angus Taylor discusses carbon emissions and Clover Moore
+%>
+<%
+  [abc.h-short] |
+  Angus Taylor on emissions \& documents (2 Mar 2020)
+%>
+<%
+  [abc.url] |
+  https://www.abc.net.au/7.30/\
+    energy-minister-angus-taylor-discusses-carbon/\
+    12018866
+%>
+<%
+  [archive.url] |
+  https://web.archive.org/web/20200305133025/[abc.url]
+%>
 
 <=h>
   <@ih></@ih>
@@ -10,38 +29,43 @@
 </=h>
 
 <h1>
-  A cynic's 7.30: Angus Taylor on emissions \& documents (2 Mar 2020)
+  A cynic's 7.30: [abc.h-short]
 </h1>
 
 <*p></*p>
 
 <p>
-  <b>\
-    Energy Minister Angus Taylor discusses carbon emissions and Clover Moore.\
-  </b>
+  <b>[abc.h].</b>
   <br>
   <@>
     Original 7.30 interview
-    | https://www.abc.net.au/7.30/energy-minister-angus-taylor-discusses-carbon/12018866
-    | ABC 7.30: Energy Minister Angus Taylor discusses carbon emissions \
-      and Clover Moore
+    | [abc.url]
+    | ABC 7.30: [abc.h]
   </@>
   <@>
     (archived version)
-    | https://web.archive.org/web/20200305133025/https://www.abc.net.au/7.30/energy-minister-angus-taylor-discusses-carbon/12018866
-    | Web archive: Energy Minister Angus Taylor discusses carbon emissions \
-      and Clover Moore
+    | [archive.url]
+    | Web archive: [abc.h]
   </@>
 </p>
 
+<%
+  [leigh-sales] |
+  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+%>
+<%
+  [angus-taylor] |
+  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+%>
+
 <~~>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES, PRESENTER </+h>
+  [leigh-sales]
   <~h>
     Minister, thanks for your time.
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR, ENERGY MINISTER </+g>
+  [angus-taylor]
   <~g>
     Thanks for having me, Leigh.
   </~g>
@@ -53,7 +77,7 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     On energy policy,
     is the Federal Government going to pay
@@ -61,7 +85,7 @@
     the one that AGL wants to close in 2023?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~gt>
     \{Blame media for asking questions and go to talking points:\}
   </~gt>
@@ -75,23 +99,23 @@
     and [that] industry in Australia continues to prosper and be successful...
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     I notice you're not answering the question.
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     ... in the future is to get [...]
     more supply into the market and avoid supply leaving.
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     Are you going to pay to keep the Liddell power station open?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     So I'm not going to speculate on the outcomes of the Liddell Taskforce
   </~g>
@@ -103,13 +127,13 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
     What do you think is the timeframe
     for Australia to transition away from coal?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~gt>
     \{The same time as it would take
     for every human alive today to be turned into fossil fuel.\}
@@ -119,7 +143,7 @@
     [...] we need to play our part in helping to reduce global emissions.
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      But I'm actually not asking about emissions,
      I just want to ask about coal because
@@ -131,7 +155,7 @@
      in which Australia is going to be getting away from coal?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Well, I understand you're asking that question but
   </~g>
@@ -158,12 +182,12 @@
     with Joel Fitzgibbon last week\}.
   </~gt>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      But I'm asking about coal. I'm just narrowly asking about coal.
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     ... I know you are
   </~g>
@@ -179,24 +203,24 @@
     \{Driving emissions <em>downwards</em>, not upwards I think.\}
   </~gt>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      On your point that the 2030 targets we'll meet easily,
      what's your source for that?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Well, the government department. I mean, we are on track already...
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      But exactly which government department is saying that
      because I've got figures from various government departments?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     My government department. [...]
     We've got a plan laid out to the last tonne
@@ -217,7 +241,7 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      Do you still maintain
      that the falsified document that your office distributed
@@ -225,7 +249,7 @@
      came from its own website?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Yes, I mean my statement on this was clear from the start
     and I'd add to that, Leigh...
@@ -244,14 +268,14 @@
     Who cares about the <em>real</em> culprit over at Sydney City Council?\}
   </~gt>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      How do you explain the inconsistency
      between your story and the metadata produced by the Sydney City Council
      showing that the document as distributed never appeared on their website?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Well, that's a matter for them. [...]
   </~g>
@@ -260,14 +284,14 @@
     but for some reason I don't want an investigation.\}
   </~gt>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      But aren't you bothered [...]?
      You have had a lot of trouble because of this and I'm just wondering,
      aren't you curious yourself as to what that inconsistency is?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Leigh, we've had two independent police forces look at this.
     [...]
@@ -281,7 +305,7 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      But the New South Wales Police referred the matter to the AFP;
      the AFP dropped its investigation.
@@ -296,7 +320,7 @@
     you must be disappointed at the lack of a thorough investigation?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Haha, Leigh, two police forces have looked at this.
     It's been pretty thorough
@@ -307,12 +331,12 @@
     which my office had absolutely nothing to do with\}...
   </~gt>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      They didn't interview you, they didn't interview the Lord Mayor?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Well, that was a choice they made
     but it's very clear what the position is here.
@@ -332,14 +356,14 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      I keep coming back to this. [...]
      You are [...] the face of it, [...] at the front-line of it.
      Why aren't you worried about it?
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Because I've made a very clear statement on it
   </~g>
@@ -358,12 +382,12 @@
     [...]
   </~g>
   
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
+  [leigh-sales]
   <~h>
      Minister, thank you very much for joining us this evening.
   </~h>
   
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
+  [angus-taylor]
   <~g>
     Thanks for having me, Leigh.
   </~g>
@@ -374,9 +398,8 @@
   except the
   <@>
     original 7.30 interview
-    | https://www.abc.net.au/7.30/energy-minister-angus-taylor-discusses-carbon/12018866
-    | ABC 7.30: Energy Minister Angus Taylor discusses carbon emissions \
-      and Clover Moore
+    | [abc.url]
+    | ABC 7.30: [abc.h]
   </@>,
   whose copyright belongs to the ABC
   | <:t>\{Curly-bracketed words\}</:t> inserted by me.
