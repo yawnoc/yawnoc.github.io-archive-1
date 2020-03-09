@@ -1543,7 +1543,7 @@
 </-->
 
 <div class="centred-svg">
-<svg class="fit-width" width="480px" viewBox="-5 -7 11.5 6.5">
+<svg class="fit-width" width="480px" viewBox="-5.5 -7 12 6.5">
   
   <% [font-size] | font-size = "0.4" %>
   
