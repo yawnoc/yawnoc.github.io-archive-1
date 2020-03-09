@@ -14,11 +14,11 @@
 </p>
 
 <ul>
-  <@i> [spare-time.h] | #spare-time | </@i>
+  <@i> [time.h] | #time | </@i>
   <@i> [site.h] | #site | </@i>
-  <@i> [custom-domain.h] | #custom-domain | </@i>
+  <@i> [domain.h] | #domain | </@i>
   <@i> [death.h] | #death | </@i>
-  <@i> [cookies.h] | #cookies-\rom | </@i>
+  <@i> [cookies.h] | #cookies | </@i>
   <@i> [favicon.h] | #favicon | </@i>
 </ul>
 
@@ -26,7 +26,7 @@
   <@> <b>[applied.h]</b> | #applied | [applied.h] </@>
 </p>
 <ul>
-  <@i> [maths-render.h] | #maths-render | </@i>
+  <@i> [equations.h] | #equations | </@i>
 </ul>
 
 <p>
@@ -34,11 +34,11 @@
 </p>
 <ul>
   <@i> [italics.h] | #italics | </@i>
-  <@i> [archaic-verbs.h] | #archaic-verbs | </@i>
-  <@i> [see-yaa.h] | #see-yaa | </@i>
-  <@i> [faan-ts'eet.h] | #faan-ch'eet | </@i>
-  <@i> [t'ung-tuk.h] | #t'ung-tuk | </@i>
-  <@i> [see-sing.h] | #see-sing | </@i>
+  <@i> [archaic.h] | #archaic | </@i>
+  <@i> [this.h] | #this | </@i>
+  <@i> [cut.h] | #cut | </@i>
+  <@i> [pronunciation.h] | #pronunciation | </@i>
+  <@i> [tones.h] | #tones | </@i>
 </ul>
 
 
@@ -46,8 +46,8 @@
 <@2> [general.h] | general </@2>
 
 
-<% [spare-time.h] | What do you do in your spare time? %>
-<@3> [spare-time.h] | spare-time </@3>
+<% [time.h] | What do you do in your spare time? %>
+<@3> [time.h] | time </@3>
 
 <p>
   That depends on what you mean by spare time; a day is quite short really.
@@ -92,11 +92,11 @@
 </p>
 
 <%
-  [custom-domain.h] |
+  [domain.h] |
   Why don't you get yourself a custom domain
   instead of the default yawnoc.github.io?
 %>
-<@3> [custom-domain.h] | custom-domain </@3>
+<@3> [domain.h] | domain </@3>
 
 <p>
   Firstly, I am poor, and secondly, even if I did buy a domain,
@@ -114,7 +114,7 @@
 </p>
 
 <% [cookies.h] | Does your site use cookies? %>
-<@3> [cookies.h] | cookies-\rom </@3>
+<@3> [cookies.h] | cookies </@3>
 
 <p>
   A single cookie called <code>\rom</code> is used
@@ -156,8 +156,8 @@
   and relativity.
 </p>
 
-<% [maths-render.h] | How are the maths equations rendered? %>
-<@3> [maths-render.h] | maths-render </@3>
+<% [equations.h] | How are the maths equations rendered? %>
+<@3> [equations.h] | equations </@3>
 
 <p>
   Using KaTeX. See
@@ -258,8 +258,8 @@
   </li>
 </ol>
 
-<% [archaic-verbs.h] | Wherefore usest thou archaic verb conjugation? %>
-<@3> [archaic-verbs.h] | archaic-verbs </@3>
+<% [archaic.h] | Wherefore usest thou archaic verb conjugation? %>
+<@3> [archaic.h] | archaic </@3>
 
 <p>
   This is stylistic, and in my view
@@ -275,8 +275,8 @@
     <span lang="he" dir="rtl" class="no-wrapping">כה אמר יהוה</span>.
 </p>
 
-<% [see-yaa.h] | But I thought that 是 means "is", and 也, "also". %>
-<@3> [see-yaa.h] | see-yaa </@3>
+<% [this.h] | But I thought that 是 means "is", and 也, "also". %>
+<@3> [this.h] | this </@3>
 
 <p>
   Forget everything you learnt in Mandarin class; that is modern vernacular.
@@ -291,8 +291,8 @@
   Here <:h>是</:h>日 means "<:h>this</:h> day", i.e.~"today".
 </p>
 
-<% [faan-ts'eet.h] | A certain 反切 doesn't work for Mandarin. %>
-<@3> [faan-ts'eet.h] | faan-ch'eet </@3>
+<% [cut.h] | A certain 反切 doesn't work for Mandarin. %>
+<@3> [cut.h] | cut </@3>
 
 <!-- [! !] for no-wrapping span -->
 <% [! | <span class="no-wrapping"> %>
@@ -314,8 +314,8 @@
   Also there is 統讀, or Government-regulated Mandarin.
 </p>
 
-<% [t'ung-tuk.h] | What is 統讀, or Government-regulated Mandarin? %>
-<@3> [t'ung-tuk.h] | t'ung-tuk </@3>
+<% [pronunciation.h] | What is 統讀, or Government-regulated Mandarin? %>
+<@3> [pronunciation.h] | pronunciation </@3>
 
 <p>
   These are government-regulated Mandarin pronunciations
@@ -353,8 +353,8 @@
   (though to be honest, I am only barely literate, if literate at all).
 </p>
 
-<% [see-sing.h] | What do you mean by 四聲, four tones? %>
-<@3> [see-sing.h] | see-sing </@3>
+<% [tones.h] | What do you mean by 四聲, four tones? %>
+<@3> [tones.h] | tones </@3>
 
 <p>
   I <strong>do not</strong> mean the four tones of modern Mandarin,
