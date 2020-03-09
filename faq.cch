@@ -1,4 +1,4 @@
-<*> FAQ | 20190801 | 20200302 | d </*>
+<*> FAQ | 20190801 | 20200309 | d </*>
 
 <=h>
   <@ih></@ih>
@@ -61,8 +61,8 @@
   <@> applied maths problems | #applied | [applied.h] </@>
   and attempt to read
   <@> Literary Chinese | #literary | [literary.h] </@>.
-  I guess now I am burning even more of my time by building this website
-  and making this content freely available online.
+  Now I am burning even more of my time by building this website
+  and to make the content freely available online.
 </p>
 
 <% [site.h] | How is this site built? %>
@@ -76,7 +76,7 @@
     <:g><b>ad-free</b></:g>
   (but unfortunately conway.github.io was already taken, sob).
   I definitely recommend it for building a static website.
-  And no, I do not use Jekyll or other plugins;
+  In my case, I do not use Jekyll or other plugins;
   just straight CSS and JavaScript.
 </p>
 <p>
@@ -150,9 +150,11 @@
 
 <p>
   The <@> applied maths | /#applied | Applied mathematics, or physics </@>
-  I am interested in is really physics, specifically
-  problems in the Newtonian regime which can be modelled in a continuum manner,
-  with none of the complications of quantum mechanics (which I do not understand)
+  I am interested in is really physics,
+  specifically problems in the Newtonian regime
+  which can be modelled in a continuum manner,
+  with none of the complications of
+  quantum mechanics (which I do not understand)
   and relativity.
 </p>
 
@@ -348,9 +350,9 @@
   now imagine having to say "tare drop" instead of "tear drop".
   It is a real pity that the nuances of the Chinese language
   are lost in government-regulated Mandarin; tone patterns (平仄) are ruined.
-  On the other hand if I pronounced 勝任 in Cantonese with 勝 in departing tone,
-  I would certainly be mocked as illiterate
-  (though to be honest, I am only barely literate, if literate at all).
+  On the other hand if you pronounce 勝任 in Cantonese
+  with 勝 in departing tone,
+  you will certainly be regarded as illiterate.
 </p>
 
 <% [tones.h] | What do you mean by 四聲, four tones? %>
@@ -411,4 +413,3 @@
 </ol>
 
 <*f></*f>
-
