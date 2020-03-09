@@ -1,7 +1,4 @@
-<*>
-  A cynic's 7.30: [abc.h-short]
-  | 20191015 | 20200119
-</*>
+<*> A cynic's 7.30: [abc.h-short] | 20191015 | 20200119 </*>
 
 <%
   [abc.h] |
@@ -35,16 +32,8 @@
 <p>
   <b>[abc.h].</b>\
   <br>
-  <@>
-    Original 7.30 interview
-    | [abc.url]
-    | ABC 7.30: [abc.h]
-  </@>
-  <@>
-    (archived version)
-    | [archive.url]
-    | Web archive: [abc.h]
-  </@>
+  <@> Original 7.30 interview | [abc.url] | ABC 7.30: [abc.h] </@>
+  <@> (archived version) | [archive.url] | Web archive: [abc.h] </@>
 </p>
 
 <%
