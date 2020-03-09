@@ -48,7 +48,25 @@
   <li>
     <@>
       [Google books]
-      | https://books.google.com.au/books?id=6GVqDwAAQBAJ&pg=PT304&dq=%22%E6%B9%96%E5%8D%97%E8%87%AA%E6%B2%BB%E8%BF%90%E5%8A%A8%E5%8F%B2%E6%96%99%E9%80%89%E7%BC%96%22+%22%E6%B9%96%E5%8D%97%E5%BB%BA%E8%AE%BE%E9%97%AE%E9%A2%98%E7%9A%84%E6%A0%B9%E6%9C%AC%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E6%B9%96%E5%8D%97%E5%85%B1%E5%92%8C%E5%9B%BD%22&hl=en&sa=X&ved=0ahUKEwjM8qShxOfkAhX-4XMBHS4lCg0Q6AEIKDAA#v=onepage&q=%22%E6%B9%96%E5%8D%97%E8%87%AA%E6%B2%BB%E8%BF%90%E5%8A%A8%E5%8F%B2%E6%96%99%E9%80%89%E7%BC%96%22%20%22%E6%B9%96%E5%8D%97%E5%BB%BA%E8%AE%BE%E9%97%AE%E9%A2%98%E7%9A%84%E6%A0%B9%E6%9C%AC%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E6%B9%96%E5%8D%97%E5%85%B1%E5%92%8C%E5%9B%BD%22&f=false
+      | https://books.google.com.au/books\
+        ?id=6GVqDwAAQBAJ\
+        &pg=PT304\
+        &dq=\
+          %22%E6%B9%96%E5%8D%97%E8%87%AA%E6%B2%BB%E8%BF%90%E5%8A%A8\
+          %E5%8F%B2%E6%96%99%E9%80%89%E7%BC%96%22\
+          +%22%E6%B9%96%E5%8D%97%E5%BB%BA%E8%AE%BE%E9%97%AE%E9%A2%98\
+          %E7%9A%84%E6%A0%B9%E6%9C%AC%E9%97%AE%E9%A2%98%E2%80%94\
+          %E2%80%94%E6%B9%96%E5%8D%97%E5%85%B1%E5%92%8C%E5%9B%BD%22\
+        &hl=en&\
+        sa=X\
+        &ved=0ahUKEwjM8qShxOfkAhX-4XMBHS4lCg0Q6AEIKDAA#v=onepage\
+        &q=\
+          %22%E6%B9%96%E5%8D%97%E8%87%AA%E6%B2%BB%E8%BF%90%E5%8A%A8\
+          %E5%8F%B2%E6%96%99%E9%80%89%E7%BC%96%22\
+          %20%22%E6%B9%96%E5%8D%97%E5%BB%BA%E8%AE%BE%E9%97%AE%E9%A2%98\
+          %E7%9A%84%E6%A0%B9%E6%9C%AC%E9%97%AE%E9%A2%98%E2%80%94\
+          %E2%80%94%E6%B9%96%E5%8D%97%E5%85%B1%E5%92%8C%E5%9B%BD%22\
+        &f=false
       | Google Books: 湖南自治运动史料选编
     </@> <br>
     This is in "Selected Historical Materials of {the} Hunan Autonomy Movement"
@@ -58,16 +76,28 @@
     <`>"湖南自治运动史料选编" "湖南建设问题的根本问题——湖南共和国"</`>.
   </li>
   
+  <%
+    [marxists.h] |
+    湖南建设问题的根本问题——湖南共和国
+  %>
+  <%
+    [marxists.url] |
+    https://www.marxists.org/chinese/maozedong/1968/1-023.htm
+  %>
+  <%
+    [archive.url] |
+    https://web.archive.org/web/20190915090636/[marxists.url]
+  %>
   <li>
     <@>
       [marxists.org]
-      | https://www.marxists.org/chinese/maozedong/1968/1-023.htm
-      | 中文马克思主义文库：湖南建设问题的根本问题——湖南共和国
+      | [marxists.url]
+      | 中文马克思主义文库：[marxists.h]
     </@>
     <@>
       [Archived version]
-      | https://web.archive.org/web/20190915090636/https://www.marxists.org/chinese/maozedong/1968/1-023.htm
-      | Web archive: 湖南建设问题的根本问题——湖南共和国
+      | [archive.url]
+      | Web archive: [marxists.h]
     </@> <br>
     This is taken from the 1968 Wuhan Version of
     "Long Live <^e>Mao Tse^-tung</^e> Thought"
@@ -108,13 +138,15 @@
   </li>
 </ul>
 <p>
-  <:r>Red emphasis</:r> is mine, but remember, these are Mao's words!
+  [:Red emphasis:] is mine, but remember, these are Mao's words!
 </p>
+<% [: | <:r> %>
+<% :] | </:r> %>
 
 <#t>
-  湖南建設問題的根本問題——<:r>湖南共和國</:r> |
+  湖南建設問題的根本問題——[:湖南共和國:] |
   {The} Fundamental Issues of {the} Hunan Development Issue
-  — <:r>{the} Republic of Hunan</:r>
+  — [:{the} Republic of Hunan:]
 </#t>
 
 <#t>
@@ -149,9 +181,9 @@
 </ul>
 
 <#t>
-  我是反對「大中華民國」的，<:r>我是主張「湖南共和國」的</:r>。有什麼理由呢？ |
+  我是反對「大中華民國」的，[:我是主張「湖南共和國」的:]。有什麼理由呢？ |
   I oppose {a} 'Great Republic of China',
-  <:r>{and} I assert {a} 'Republic of Hunan'</:r>.
+  [:{and} I assert {a} 'Republic of Hunan':].
   What reasons have {I}?
 </#t>
 
@@ -190,7 +222,8 @@
 </ul>
 
 <#t>
-  在爭海外殖民地，使半開化未開化之民族變成完全奴隸，窒其生存向上，而惟使恭順馴屈於己。 |
+  在爭海外殖民地，使半開化未開化之民族變成完全奴隸，\
+  窒其生存向上，而惟使恭順馴屈於己。 |
   in contending for colonies overseas,
   causes semi-developed {and} undeveloped peoples {to} become slaves {in} full,
   obstructing their {moving} upwards {in} life, and only makes {them}
@@ -219,7 +252,8 @@
 </#t>
 
 <#t>
-  十八省亂七八糟，造成三個政府、三個國會、二十個以上督軍王、巡按使王、總司令王， |
+  十八省亂七八糟，造成三個政府、三個國會、\
+  二十個以上督軍王、巡按使王、總司令王， |
   {the} eighteen provinces {in} chaos {and} disarray,
   leading to three governments, three National Assemblies,
   {and} above twenty military-governor kings, civil-governor kings, {and}
@@ -286,7 +320,8 @@
 </#t>
 
 <#t>
-  我敢說，是帝國之罪，是大國之罪，是「在世界能夠爭存的國家必定是大國家」一種謬論的罪。 |
+  我敢說，是帝國之罪，是大國之罪，\
+  是「在世界能夠爭存的國家必定是大國家」一種謬論的罪。 |
   I dare say: {it} is {the} crime of imperialism,
   {it} is {the} crime of the Great Nation,
   {and it} is {the} crime of absurd discourses, {the} likes of
@@ -318,7 +353,8 @@
 </ul>
 
 <#t>
-  德國也染成了半紅。波蘭獨立，截克獨立，匈牙利獨立，猶太、阿剌伯、亞美尼亞，都重新建國。 |
+  德國也染成了半紅。波蘭獨立，截克獨立，匈牙利獨立，\
+  猶太、阿剌伯、亞美尼亞，都重新建國。 |
   Germany also {has been} dyed to become half Red.
   Poland {has become} independent, Czecho-{Slovakia} independent,
   {and} Hungary independent;
@@ -338,9 +374,9 @@
 </#t>
 
 <#t>
-  全世界風起雲湧，<:r>「民族自決」高唱入雲</:r>。 |
+  全世界風起雲湧，[:「民族自決」高唱入雲:]。 |
   {In the} whole world, {the} wind stirs {and the} clouds surge;
-  <:r>'people's self-determination' {is} sung loud into {the} clouds</:r>.
+  [:'people's self-determination' {is} sung loud into {the} clouds:].
 </#t>
 <ul>
   <li>高：
@@ -350,9 +386,9 @@
 </ul>
 
 <#t>
-  <:r>打破大國迷夢，知道是野心家欺人的鬼話。</:r> |
-  <:r>Smash {the} illusion of the Great Nation:
-  know {that it} is the ambitionist's lie {for} deceiving others.</:r>
+  [:打破大國迷夢，知道是野心家欺人的鬼話。:] |
+  [:Smash {the} illusion of the Great Nation:
+  know {that it} is the ambitionist's lie {for} deceiving others.:]
 </#t>
 <ul>
   <li>野心家：
@@ -378,7 +414,8 @@
 </#t>
 
 <#t>
-  九年假共和、大戰亂的經驗，迫人不得不醒覺，知道全國的總建設在一個期內完全無望。 |
+  九年假共和、大戰亂的經驗，迫人不得不醒覺，\
+  知道全國的總建設在一個期內完全無望。 |
   {The} experiences of nine years of {a} Fake Republic,
   {and of the} Great War, {have} forced people to not {be} unawake,
   {and to} know {that the} whole nation's collective development, in one term,
@@ -392,19 +429,19 @@
 </ul>
 
 <#t>
-  <:r>最好辦法，是</:r>索性不謀總建設，<:r>索性分裂</:r>，\
-  去謀各省的分建設，<:r>實行「各省人民自決主義」</:r>。 |
-  <:r>{The} best way, is</:r> {that we} may as well
-  not go for collective development: <:r>{we} may as well split up</:r>,
+  [:最好辦法，是:]索性不謀總建設，[:索性分裂:]，\
+  去謀各省的分建設，[:實行「各省人民自決主義」:]。 |
+  [:{The} best way, is:] {that we} may as well
+  not go for collective development: [:{we} may as well split up:],
   to go for {the} separate development of each province,
-  <:r>{and} implement 'self-determinationism of the people of each province'</:r>.
+  [:{and} implement 'self-determinationism of the people of each province':].
 </#t>
 
 <#t>
-  <:r>二十二行省、三特區、兩藩地</:r>，合共二十七個地方，<:r>最好分為二十七國</:r>。 |
-  <:r>Twenty-two provinces, three special regions
-  {and} two bordered lands</:r>, totalling twenty-seven places,
-  <:r>{are} best split into twenty-seven nations</:r>.
+  [:二十二行省、三特區、兩藩地:]，合共二十七個地方，[:最好分為二十七國:]。 |
+  [:Twenty-two provinces, three special regions
+  {and} two bordered lands:], totalling twenty-seven places,
+  [:{are} best split into twenty-seven nations:].
 </#t>
 
 <#t>
@@ -414,12 +451,12 @@
 </#t>
 
 <#t>
-  湖南人沒有別的法子，<:r>唯一的法子是湖南自決自治</:r>，\
-  是湖南人在湖南地域<:r>建設一個「湖南共和國」</:r>。 |
+  湖南人沒有別的法子，[:唯一的法子是湖南自決自治:]，\
+  是湖南人在湖南地域[:建設一個「湖南共和國」:]。 |
   {The} Hunan people have no other way.
-  <:r>{The} only way is Hunan's self-determination {and} autonomy</:r>;
-  {it} is {for the} Hunan people <:r>{to} establish {a}
-  'Republic of Hunan'</:r> in {the} Hunan region.
+  [:{The} only way is Hunan's self-determination {and} autonomy:];
+  {it} is {for the} Hunan people [:{to} establish {a}
+  'Republic of Hunan':] in {the} Hunan region.
 </#t>
 
 <#t>
@@ -437,10 +474,10 @@
 </ul>
 
 <#t>
-  <:r>湖南人沒有把湖南自建為國的決心和勇氣，湖南終究是沒辦法。</:r> |
-  <:r>{If the} Hunan people have not {the} determination and courage
+  [:湖南人沒有把湖南自建為國的決心和勇氣，湖南終究是沒辦法。:] |
+  [:{If the} Hunan people have not {the} determination and courage
   to establish Hunan itself as {a} nation,
-  Hunan {in the} end has no way {forward}.</:r>
+  Hunan {in the} end has no way {forward}.:]
 </#t>
 
 <#t>
@@ -450,7 +487,8 @@
 </#t>
 
 <#t>
-  我頗有一點意思要發表出來，乞吾三千萬同胞的聰聽，希望共起討論這一個頂有意思的大問題。 |
+  我頗有一點意思要發表出來，乞吾三千萬同胞的聰聽，\
+  希望共起討論這一個頂有意思的大問題。 |
   I really have one {more} point of opinion {which} needs to {be} expressed,
   {so I} request {the} clear audience of my thirty million fellow citizens,
   {and} hope to discuss together this big issue of utmost interest.
@@ -476,3 +514,4 @@
 </*c>
 
 <*f></*f>
+
