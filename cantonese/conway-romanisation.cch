@@ -82,13 +82,14 @@
   
   [initials-header.tr]
   
-  <!--
-    [`{...}`] for violet Conway romanisation
-    [:{...}:] for highlighted parts
-  -->
+  <!-- [` `] for violet Conway romanisation -->
+  <% [` | <:v><^e> %>
+  <% `] | </^e></:v> %>
   
-  <% [`p`] | <:v><^e>p</^e></:v> %>
-  <% [:p:] | <:h>p</:h> %>
+  <!-- [: :] for violet Conway romanisation -->
+  <% [: | <:h> %>
+  <% :] | </:h> %>
+  
   <tr>
     <td>巴</td>
     <td>[p]</td>
@@ -99,7 +100,6 @@
     <td>[[:p:] as in s[:p:]y]</td>
   </tr>
   
-  <% [`p'`] | <:v><^e>p'</^e></:v> %>
   <tr>
     <td>怕</td>
     <td>[pʰ]</td>
@@ -110,8 +110,6 @@
     <td>[[:p:] as in [:p:]ie]</td>
   </tr>
   
-  <% [`m`] | <:v><^e>m</^e></:v> %>
-  <% [:m:] | <:h>m</:h> %>
   <tr>
     <td>媽</td>
     <td>[m]</td>
@@ -122,8 +120,6 @@
     <td>[[:m:] as in [:m:]y]</td>
   </tr>
   
-  <% [`f`] | <:v><^e>f</^e></:v> %>
-  <% [:f:] | <:h>f</:h> %>
   <tr>
     <td>花</td>
     <td>[f]</td>
@@ -144,8 +140,6 @@
   
   [initials-header.tr]
   
-  <% [`t`] | <:v><^e>t</^e></:v> %>
-  <% [:t:] | <:h>t</:h> %>
   <tr>
     <td>打</td>
     <td>[t]</td>
@@ -156,7 +150,6 @@
     <td>[[:t:] as in s[:t:]y]</td>
   </tr>
   
-  <% [`t'`] | <:v><^e>t'</^e></:v> %>
   <tr>
     <td>他</td>
     <td>[tʰ]</td>
@@ -167,8 +160,6 @@
     <td>[[:t:] as in [:t:]ie], in Received Pronunciation</td>
   </tr>
   
-  <% [`n`] | <:v><^e>n</^e></:v> %>
-  <% [:n:] | <:h>n</:h> %>
   <tr>
     <td>那</td>
     <td>[n]</td>
@@ -179,8 +170,6 @@
     <td>[[:n:] as in [:n:]igh]</td>
   </tr>
   
-  <% [`l`] | <:v><^e>l</^e></:v> %>
-  <% [:l:] | <:h>l</:h> %>
   <tr>
     <td>啦</td>
     <td>[l]</td>
@@ -201,8 +190,6 @@
   
   [initials-header.tr]
   
-  <% [`k`] | <:v><^e>k</^e></:v> %>
-  <% [:k:] | <:h>k</:h> %>
   <tr>
     <td>家</td>
     <td>[k]</td>
@@ -213,7 +200,6 @@
     <td>[[:k:] as in s[:k:]y]</td>
   </tr>
   
-  <% [`k'`] | <:v><^e>k'</^e></:v> %>
   <tr>
     <td>卡</td>
     <td>[kʰ]</td>
@@ -225,8 +211,6 @@
     </td>
   </tr>
   
-  <% [`ng`] | <:v><^e>ng</^e></:v> %>
-  <% [:ng:] | <:h>ng</:h> %>
   <tr>
     <td>牙</td>
     <td>[ŋ]</td>
@@ -237,8 +221,6 @@
     <td>[[:ng:] as in si[:ng:]er]</td>
   </tr>
   
-  <% [`h`] | <:v><^e>h</^e></:v> %>
-  <% [:h:] | <:h>h</:h> %>
   <tr>
     <td>蝦</td>
     <td>[h]</td>
@@ -249,8 +231,6 @@
     <td>[[:h:] as in [:h:]e]</td>
   </tr>
   
-  <% [`kw`] | <:v><^e>kw</^e></:v> %>
-  <% [:qu:] | <:h>qu</:h> %>
   <tr>
     <td>瓜</td>
     <td>[kʷ]</td>
@@ -261,7 +241,6 @@
     <td>[[:qu:] as in s[:qu:]eeze]</td>
   </tr>
   
-  <% [`k'w`] | <:v><^e>k'w</^e></:v> %>
   <tr>
     <td>誇</td>
     <td>[kʷʰ]</td>
@@ -272,8 +251,6 @@
     <td>[[:qu:] as in [:qu:]een]</td>
   </tr>
   
-  <% [`w`] | <:v><^e>w</^e></:v> %>
-  <% [:w:] | <:h>w</:h> %>
   <tr>
     <td>華</td>
     <td>[w]</td>
@@ -294,9 +271,6 @@
   
   [initials-header.tr]
   
-  <% [`ts`] | <:v><^e>ts</^e></:v> %>
-  <% [:ts:] | <:h>ts</:h> %>
-  <% [:Ts:] | <:h>Ts</:h> %>
   <tr>
     <td>將</td>
     <td>[ts]</td>
@@ -307,9 +281,6 @@
     <td>[[:ts:] as in lis[:ts:]]</td>
   </tr>
   
-  <% [`ch`] | <:v><^e>ch</^e></:v> %>
-  <% [:ch:] | <:h>ch</:h> %>
-  <% [:Ch:] | <:h>Ch</:h> %>
   <tr>
     <td>張</td>
     <td>[tɕ]</td>
@@ -322,7 +293,6 @@
     </td>
   </tr>
   
-  <% [`ts'`] | <:v><^e>ts'</^e></:v> %>
   <tr>
     <td>槍</td>
     <td>[tsʰ]</td>
@@ -333,7 +303,6 @@
     <td>[[:ts:] as in hi[:ts:]]</td>
   </tr>
   
-  <% [`ch'`] | <:v><^e>ch'</^e></:v> %>
   <tr>
     <td>昌</td>
     <td>[tɕʰ]</td>
@@ -344,9 +313,6 @@
     </td>
   </tr>
   
-  <% [`s`] | <:v><^e>s</^e></:v> %>
-  <% [:s:] | <:h>s</:h> %>
-  <% [:S:] | <:h>S</:h> %>
   <tr>
     <td>相</td>
     <td>[s]</td>
@@ -357,9 +323,6 @@
     <td>[[:s:] as in [:s:]igh]</td>
   </tr>
   
-  <% [`sh`] | <:v><^e>sh</^e></:v> %>
-  <% [:sh:] | <:h>sh</:h> %>
-  <% [:Sh:] | <:h>Sh</:h> %>
   <tr>
     <td>傷</td>
     <td>[ɕ]</td>
@@ -370,8 +333,6 @@
     </td>
   </tr>
   
-  <% [`y`] | <:v><^e>y</^e></:v> %>
-  <% [:y:] | <:h>y</:h> %>
   <tr>
     <td>也</td>
     <td>[j]</td>
@@ -573,8 +534,6 @@
   
   [finals-header.tr]
   
-  <% [`aa`] | <:v><^e>aa</^e></:v> %>
-  <% [:ar:] | <:h>ar</:h> %>
   <tr>
     <td>叉</td>
     <td>[aː]</td>
@@ -588,7 +547,6 @@
     </td>
   </tr>
   
-  <% [`aai`] | <:v><^e>aai</^e></:v> %>
   <tr>
     <td>釵</td>
     <td>[aːi]</td>
@@ -599,8 +557,6 @@
     <td>[[:y:] as in m[:y:]], in Received Pronunciation</td>
   </tr>
   
-  <% [`aau`] | <:v><^e>aau</^e></:v> %>
-  <% [:ow:] | <:h>ow</:h> %>
   <tr>
     <td>抄</td>
     <td>[aːu]</td>
@@ -616,8 +572,6 @@
     </td>
   </tr>
   
-  <% [`aam`] | <:v><^e>aam</^e></:v> %>
-  <% [:arm:] | <:h>arm</:h> %>
   <tr>
     <td>參</td>
     <td>[aːm]</td>
@@ -633,8 +587,6 @@
     </td>
   </tr>
   
-  <% [`aan`] | <:v><^e>aan</^e></:v> %>
-  <% [:arn:] | <:h>arn</:h> %>
   <tr>
     <td>餐</td>
     <td>[aːn]</td>
@@ -648,7 +600,6 @@
     </td>
   </tr>
   
-  <% [`aang`] | <:v><^e>aang</^e></:v> %>
   <tr>
     <td>撐</td>
     <td>[aːŋ]</td>
@@ -663,7 +614,6 @@
     </td>
   </tr>
   
-  <% [`aap`] | <:v><^e>aap</^e></:v> %>
   <tr>
     <td>插</td>
     <td>[aːp̚]</td>
@@ -678,7 +628,6 @@
     </td>
   </tr>
   
-  <% [`aat`] | <:v><^e>aat</^e></:v> %>
   <tr>
     <td>察</td>
     <td>[aːt̚]</td>
@@ -697,9 +646,6 @@
     </td>
   </tr>
   
-  <% [`aak`] | <:v><^e>aak</^e></:v> %>
-  <% [:c:] | <:h>c</:h> %>
-  <% [:arc:] | <:h>arc</:h> %>
   <tr>
     <td>拆</td>
     <td>[aːk̚]</td>
@@ -728,8 +674,6 @@
   
   [finals-header.tr]
   
-  <% [`ai`] | <:v><^e>ai</^e></:v> %>
-  <% [:ay:] | <:h>ay</:h> %>
   <tr>
     <td>仔</td>
     <td>[ɐi]</td>
@@ -744,8 +688,6 @@
     </td>
   </tr>
   
-  <% [`au`] | <:v><^e>au</^e></:v> %>
-  <% [:u:] | <:h>u</:h> %>
   <tr>
     <td>走</td>
     <td>[ɐu]</td>
@@ -761,8 +703,6 @@
     </td>
   </tr>
   
-  <% [`am`] | <:v><^e>am</^e></:v> %>
-  <% [:um:] | <:h>um</:h> %>
   <tr>
     <td>針</td>
     <td>[ɐm]</td>
@@ -773,8 +713,6 @@
     <td>[[:um:] as in s[:um:]], in a general Australian accent</td>
   </tr>
   
-  <% [`an`] | <:v><^e>an</^e></:v> %>
-  <% [:un:] | <:h>un</:h> %>
   <tr>
     <td>真</td>
     <td>[ɐn]</td>
@@ -785,8 +723,6 @@
     <td>[[:un:] as in s[:un:]], in a general Australian accent</td>
   </tr>
   
-  <% [`ang`] | <:v><^e>ang</^e></:v> %>
-  <% [:ung:] | <:h>ung</:h> %>
   <tr>
     <td>增</td>
     <td>[ɐŋ]</td>
@@ -797,7 +733,6 @@
     <td>[[:ung:] as in s[:ung:]], in a general Australian accent</td>
   </tr>
   
-  <% [`ap`] | <:v><^e>ap</^e></:v> %>
   <tr>
     <td>汁</td>
     <td>[ɐp̚]</td>
@@ -811,8 +746,6 @@
     </td>
   </tr>
   
-  <% [`at`] | <:v><^e>at</^e></:v> %>
-  <% [:ut:] | <:h>ut</:h> %>
   <tr>
     <td>疾</td>
     <td>[ɐt̚]</td>
@@ -830,7 +763,6 @@
     </td>
   </tr>
   
-  <% [`ak`] | <:v><^e>ak</^e></:v> %>
   <tr>
     <td>仄</td>
     <td>[ɐk̚]</td>
@@ -854,8 +786,6 @@
   
   [finals-header.tr]
   
-  <% [`e`] | <:v><^e>e</^e></:v> %>
-  <% [:e:] | <:h>e</:h> %>
   <tr>
     <td>爹</td>
     <td>[ɛː]</td>
@@ -869,7 +799,6 @@
     </td>
   </tr>
   
-  <% [`ei`] | <:v><^e>ei</^e></:v> %>
   <tr>
     <td>地</td>
     <td>[ei]</td>
@@ -883,7 +812,6 @@
     </td>
   </tr>
   
-  <% [`eu`] | <:v><^e>eu</^e></:v> %>
   <tr>
     <td>掉</td>
     <td>[ɛːu]</td>
@@ -898,8 +826,6 @@
     </td>
   </tr>
   
-  <% [`em`] | <:v><^e>em</^e></:v> %>
-  <% [:em:] | <:h>em</:h> %>
   <tr>
     <td>舔</td>
     <td>[ɛːm]</td>
@@ -913,7 +839,6 @@
     </td>
   </tr>
   
-  <% [`eng`] | <:v><^e>eng</^e></:v> %>
   <tr>
     <td>贏</td>
     <td>[ɛːŋ]</td>
@@ -927,8 +852,6 @@
     </td>
   </tr>
   
-  <% [`ep`] | <:v><^e>ep</^e></:v> %>
-  <% [:ep:] | <:h>ep</:h> %>
   <tr>
     <td>夾</td>
     <td>[ɛːp̚]</td>
@@ -946,8 +869,6 @@
     </td>
   </tr>
   
-  <% [`ek`] | <:v><^e>ek</^e></:v> %>
-  <% [:ec:] | <:h>ec</:h> %>
   <tr>
     <td>尺</td>
     <td>[ɛːk̚]</td>
@@ -975,8 +896,6 @@
   
   [finals-header.tr]
   
-  <% [`ee`] | <:v><^e>ee</^e></:v> %>
-  <% [:ee:] | <:h>ee</:h> %>
   <tr>
     <td>而</td>
     <td>[iː]</td>
@@ -987,7 +906,6 @@
     <td>[[:ee:] as in b[:ee:]], in Received Pronunciation</td>
   </tr>
   
-  <% [`eeu`] | <:v><^e>eeu</^e></:v> %>
   <tr>
     <td>堯</td>
     <td>[iːu]</td>
@@ -1002,8 +920,6 @@
     </td>
   </tr>
   
-  <% [`eem`] | <:v><^e>eem</^e></:v> %>
-  <% [:eem:] | <:h>eem</:h> %>
   <tr>
     <td>嚴</td>
     <td>[iːm]</td>
@@ -1014,8 +930,6 @@
     <td>[[:eem:] as in s[:eem:]], in Received Pronunciation</td>
   </tr>
   
-  <% [`een`] | <:v><^e>een</^e></:v> %>
-  <% [:een:] | <:h>een</:h> %>
   <tr>
     <td>言</td>
     <td>[iːn]</td>
@@ -1026,8 +940,6 @@
     <td>[[:een:] as in s[:een:]], in Received Pronunciation</td>
   </tr>
   
-  <% [`ing`] | <:v><^e>ing</^e></:v> %>
-  <% [:i:] | <:h>i</:h> %>
   <tr>
     <td>形</td>
     <td>[eŋ]</td>
@@ -1043,7 +955,6 @@
     </td>
   </tr>
   
-  <% [`eep`] | <:v><^e>eep</^e></:v> %>
   <tr>
     <td>葉</td>
     <td>[iːp̚]</td>
@@ -1057,7 +968,6 @@
     </td>
   </tr>
   
-  <% [`eet`] | <:v><^e>eet</^e></:v> %>
   <tr>
     <td>熱</td>
     <td>[iːt̚]</td>
@@ -1071,7 +981,6 @@
     </td>
   </tr>
   
-  <% [`ik`] | <:v><^e>ik</^e></:v> %>
   <tr>
     <td>亦</td>
     <td>[ek̚]</td>
@@ -1103,8 +1012,6 @@
   
   [finals-header.tr]
   
-  <% [`or`] | <:v><^e>or</^e></:v> %>
-  <% [:or:] | <:h>or</:h> %>
   <tr>
     <td>歌</td>
     <td>[ɔː]</td>
@@ -1118,8 +1025,6 @@
     </td>
   </tr>
   
-  <% [`oi`] | <:v><^e>oi</^e></:v> %>
-  <% [:oy:] | <:h>oy</:h> %>
   <tr>
     <td>該</td>
     <td>[ɔːy]</td>
@@ -1133,7 +1038,6 @@
     </td>
   </tr>
   
-  <% [`ou`] | <:v><^e>ou</^e></:v> %>
   <tr>
     <td>高</td>
     <td>[ou]</td>
@@ -1150,8 +1054,6 @@
     </td>
   </tr>
   
-  <% [`orn`] | <:v><^e>orn</^e></:v> %>
-  <% [:orn:] | <:h>orn</:h> %>
   <tr>
     <td>干</td>
     <td>[ɔːn]</td>
@@ -1165,8 +1067,6 @@
     </td>
   </tr>
   
-  <% [`ong`] | <:v><^e>ong</^e></:v> %>
-  <% [:ong:] | <:h>ong</:h> %>
   <tr>
     <td>江</td>
     <td>[ɔːŋ]</td>
@@ -1180,8 +1080,6 @@
     </td>
   </tr>
   
-  <% [`ort`] | <:v><^e>ort</^e></:v> %>
-  <% [:ort:] | <:h>ort</:h> %>
   <tr>
     <td>葛</td>
     <td>[ɔːt̚]</td>
@@ -1200,8 +1098,6 @@
     </td>
   </tr>
   
-  <% [`ok`] | <:v><^e>ok</^e></:v> %>
-  <% [:oc:] | <:h>oc</:h> %>
   <tr>
     <td>各</td>
     <td>[ɔːk̚]</td>
@@ -1225,7 +1121,6 @@
   
   [finals-header.tr]
   
-  <% [`oo`] | <:v><^e>oo</^e></:v> %>
   <tr>
     <td>呼</td>
     <td>[uː]</td>
@@ -1239,7 +1134,6 @@
     </td>
   </tr>
   
-  <% [`ooi`] | <:v><^e>ooi</^e></:v> %>
   <tr>
     <td>灰</td>
     <td>[uːy]</td>
@@ -1254,7 +1148,6 @@
     </td>
   </tr>
   
-  <% [`oon`] | <:v><^e>oon</^e></:v> %>
   <tr>
     <td>歡</td>
     <td>[uːn]</td>
@@ -1268,8 +1161,6 @@
     </td>
   </tr>
   
-  <% [`ung`] | <:v><^e>ung</^e></:v> %>
-  <% [:oo:] | <:h>oo</:h> %>
   <tr>
     <td>風</td>
     <td>[oŋ]</td>
@@ -1283,7 +1174,6 @@
     </td>
   </tr>
   
-  <% [`oot`] | <:v><^e>oot</^e></:v> %>
   <tr>
     <td>闊</td>
     <td>[uːt̚]</td>
@@ -1298,8 +1188,6 @@
     </td>
   </tr>
   
-  <% [`uk`] | <:v><^e>uk</^e></:v> %>
-  <% [:ook:] | <:h>ook</:h> %>
   <tr>
     <td>福</td>
     <td>[ok̚]</td>
@@ -1327,9 +1215,6 @@
   
   [finals-header.tr]
   
-  <% [`oe`] | <:v><^e>oe</^e></:v> %>
-  <% [:ö:] | <:h>ö</:h> %>
-  <% [:eu:] | <:h>eu</:h> %>
   <tr>
     <td>靴</td>
     <td>[œː]</td>
@@ -1344,7 +1229,6 @@
     </td>
   </tr>
   
-  <% [`oeng`] | <:v><^e>oeng</^e></:v> %>
   <tr>
     <td>香</td>
     <td>[œːŋ]</td>
@@ -1358,7 +1242,6 @@
     </td>
   </tr>
   
-  <% [`oek`] | <:v><^e>oek</^e></:v> %>
   <tr>
     <td>卻</td>
     <td>[œːk̚]</td>
@@ -1382,8 +1265,6 @@
   
   [finals-header.tr]
   
-  <% [`_u"`] | <:v><^e>_u"</^e></:v> %>
-  <% [:ü:] | <:h>ü</:h> %>
   <tr>
     <td>需</td>
     <td>[ɵy]</td>
@@ -1397,7 +1278,6 @@
     </td>
   </tr>
   
-  <% [`_n`] | <:v><^e>_n</^e></:v> %>
   <tr>
     <td>詢</td>
     <td>[ɵn]</td>
@@ -1411,7 +1291,6 @@
     </td>
   </tr>
   
-  <% [`_t`] | <:v><^e>_t</^e></:v> %>
   <tr>
     <td>戌</td>
     <td>[ɵt̚]</td>
@@ -1435,7 +1314,6 @@
   
   [finals-header.tr]
   
-  <% [`u"`] | <:v><^e>u"</^e></:v> %>
   <tr>
     <td>遇</td>
     <td>[yː]</td>
@@ -1446,7 +1324,6 @@
     <td>[[:ü:] as in [:ü:]ber], in German</td>
   </tr>
   
-  <% [`u"n`] | <:v><^e>u"n</^e></:v> %>
   <tr>
     <td>願</td>
     <td>[yːn]</td>
@@ -1460,7 +1337,6 @@
     </td>
   </tr>
   
-  <% [`u"t`] | <:v><^e>u"t</^e></:v> %>
   <tr>
     <td>月</td>
     <td>[yːt̚]</td>
