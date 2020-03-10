@@ -1,6 +1,12 @@
 <*>
   | 20190309 | 20200302 | d
   | Conway's site: Literary Chinese and applied maths.
+  | ul.site-history li:first-child {
+    background: yellow;
+    }
+    ul.site-history li:first-child > span:first-child {
+      font-weight: bold;
+    }
 </*>
 
 <=h>
