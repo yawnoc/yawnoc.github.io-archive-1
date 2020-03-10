@@ -106,7 +106,7 @@
   </li>
   
   <li>
-    The radius of the earth is negligible compared to the earth–sun distance.
+    The radius of the earth is negligible compared to the earth--sun distance.
   </li>
   
   <li>
@@ -291,7 +291,7 @@
   (R_\text{es} \cos Y, R_\text{es} \sin Y, 0),
 </$$>
 <p>
-  where <$>R_\text{es}</$> is the earth–sun distance,
+  where <$>R_\text{es}</$> is the earth--sun distance,
   and <$>Y</$> is what I call the <b>year angle</b>,
 </p>
 <$$>
@@ -395,7 +395,7 @@
   Now the distance from the origin to the observer is the earth's radius
   <$>R_\text{e}</$>,
   and by assumption this is infinitesimally small
-  compared to the earth–sun distance <$>R_\text{es}</$>.
+  compared to the earth--sun distance <$>R_\text{es}</$>.
   Thus the direction (or unit vector) from the observer towards the sun is
 </p>
 <$$>
