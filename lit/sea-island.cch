@@ -23,6 +23,10 @@
 </*p>
 
 
+<% [丈] | 丈 <^> choeng | chang | zhang </^> %>
+<% [步] | 步 <^> pou | pu | bu </^> %>
+<% [里] | 里 <^> lei | li | li </^> %>
+
 <@2> Introduction | introduction </@2>
 
 
@@ -135,13 +139,13 @@
 </p>
 <ul>
   <li>
-    丈 <^> choeng | chang | zhang </^>, "rod", is of the order three metres,
+    [丈], "rod", is of the order three metres,
   </li>
   <li>
-    步 <^> pou | pu | bu </^>, "pace", is of the order two metres, and
+    [步], "pace", is of the order two metres, and
   </li>
   <li>
-    里 <^> lei | li | li </^>, "mile", is of the order half a kilometre.
+    [里], "mile", is of the order half a kilometre.
   </li>
 </ul>
 <p>
@@ -160,24 +164,24 @@
 <svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4">
   <!-- sea island AB -->
   <line class="blue" x1="0" y1="-3.5" x2="0" y2="0"/>
-  <text class="blue" x="0" y="-1.75" font-size="0.3" dx="0em" dy="-1em"
+  <text class="blue" x="0" y="-1.75" [font-size] dx="0em" dy="-1em"
     transform="rotate(-90 0 -1.75)">sea island</text>
   <!-- ground BH except DG -->
   <line x1="0" y1="0" x2="3" y2="0"/>
   <line x1="5.5" y1="0" x2="7.7" y2="0"/>
   <!-- front post CD -->
   <line class="red" x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dy="-0.5em">front</text>
-  <text class="maths-roman red" x="3" y="-0.5" font-size="0.3" dx="0em" dy="-0.5em"
+  <text x="3" y="-1" [font-size] dy="-0.5em">front</text>
+  <text [mathrm-r] x="3" y="-0.5" [font-size] dx="0em" dy="-0.5em"
     transform="rotate(-90 3 -0.5)">3 rods</text>
   <!-- rear post FG -->
   <line class="red" x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dy="-0.5em">rear</text>
-  <text class="maths-roman red" x="5.5" y="-0.5" font-size="0.3" dx="0em" dy="1.3em"
+  <text x="5.5" y="-1" [font-size] dy="-0.5em">rear</text>
+  <text [mathrm-r] x="5.5" y="-0.5" [font-size] dx="0em" dy="1.3em"
     transform="rotate(-90 5.5 -0.5)">3 rods</text>
   <!-- post separation DG -->
   <line class="green" x1="3" y1="0" x2="5.5" y2="0"/>
-  <text class="maths-roman green" x="4.25" y="0" font-size="0.3" dy="-0.5em">1000 paces</text>
+  <text [mathrm-g] x="4.25" y="0" [font-size] dy="-0.5em">1000 paces</text>
 </svg>
 </div>
 
@@ -202,7 +206,7 @@
     {the} same;
     \or uniform
   </li>
-  <li>丈 <^> choeng | chang | zhang </^>：
+  <li>[丈]：
     rod; \or measure <br>
     A unit of distance, of the order three metres.
     Note that <$>3 \unit{rods} = 5 \unit{paces}</$>.
@@ -211,7 +215,7 @@
     {one} in front of {the} other;
     \lit front {and} rear
   </li>
-  <li>步 <^> pou | pu | bu </^>：
+  <li>[步]：
     paces;
     \or steps <br>
     A unit of distance, of the order two metres.
@@ -238,7 +242,7 @@
   <line class="red" x1="0" y1="-3.5" x2="4.2" y2="0"/>
   <!-- front post backward walk DE -->
   <line class="blue" x1="3" y1="0" x2="4.2" y2="0"/>
-  <text class="maths-roman blue" x="3.6" y="0" font-size="0.3" dy="1.2em">123 paces</text>
+  <text [mathrm-b] x="3.6" y="0" [font-size] dy="1.2em">123 paces</text>
 </svg>
 </div>
 
@@ -281,7 +285,7 @@
   <line class="red" x1="0" y1="-3.5" x2="7.7" y2="0"/>
   <!-- rear post backward walk GH -->
   <line class="blue" x1="5.5" y1="0" x2="7.7" y2="0"/>
-  <text class="maths-roman blue" x="6.6" y="0" font-size="0.3" dy="1.2em">127 paces</text>
+  <text [mathrm-b] x="6.6" y="0" [font-size] dy="1.2em">127 paces</text>
 </svg>
 </div>
 
@@ -297,13 +301,13 @@
 <svg class="fit-width" width="480px" viewBox="-1 -3.7 9.2 4.2">
 <!-- sea island AB -->
   <line class="blue" x1="0" y1="-3.5" x2="0" y2="0"/>
-  <text class="blue" x="0" y="-1.75" font-size="0.3" dx="0em" dy="-1em"
+  <text class="blue" x="0" y="-1.75" [font-size] dx="0em" dy="-1em"
     transform="rotate(-90 0 -1.75)">island height?</text>
   <!-- ground BH except BD -->
   <line x1="3" y1="0" x2="7.7" y2="0"/>
   <!-- distance from front post BD -->
   <line class="red" x1="0" y1="0" x2="3" y2="0"/>
-  <text class="red" x="1.5" y="0" font-size="0.3" dy="-0.5em">distance?</text>
+  <text class="red" x="1.5" y="0" [font-size] dy="-0.5em">distance?</text>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
   <!-- rear post FG -->
@@ -327,7 +331,7 @@
     one hundred {and} fifty <_>150</_> paces</:r>.
 </#t>
 <ul>
-  <li>里 <^> lei | li | li </^>：
+  <li>[里]：
     miles <br>
     A
     <@>
@@ -395,7 +399,8 @@
   <li>
     In modern notation,
     <$$>
-      \text{島高} = \frac{\text{表高} \cdot \text{表間}}{\text{相多}} + \text{表高}
+      \text{島高} =
+      \frac{\text{表高} \cdot \text{表間}}{\text{相多}} + \text{表高}
     </$$>
     or
     <$$>
@@ -547,44 +552,52 @@
   ***********************************************************************
   -->
 
+<% [mathit] | class="maths-italic" %>
+<% [mathit-r] | class="maths-italic red" %>
+<% [mathit-g] | class="maths-italic green" %>
+<% [mathrm-r] | class="maths-roman red" %>
+<% [mathrm-g] | class="maths-roman green" %>
+<% [mathrm-b] | class="maths-roman blue" %>
+<% [font-size] | font-size="0.3" %>
+
 <div class="centred-svg">
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB -->
   <line x1="0" y1="-3.5" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- ground BH -->
   <line x1="0" y1="0" x2="7.7" y2="0"/>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF -->
   <line x1="0" y1="-1" x2="5.5" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- front line of sight ACE -->
   <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- rear line of sight AFH -->
   <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- front line of sight translated unto rear FI -->
   <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
-  <text x="6.7" y="0" font-size="0.3" dy="1.2em">\壬</text>
-  <text class="maths-italic" x="6.7" y="0" font-size="0.3" dy="2.7em">I</text>
+  <text x="6.7" y="0" [font-size] dy="1.2em">\壬</text>
+  <text [mathit] x="6.7" y="0" [font-size] dy="2.7em">I</text>
 </svg>
 </div>
 
@@ -596,10 +609,10 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB -->
   <line class="blue" x1="0" y1="-3.5" x2="0" y2="0"/>
-  <text class="red" x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic red" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text class="red" x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit-r] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- ground BH -->
   <line x1="0" y1="0" x2="7.7" y2="0"/>
 </svg>
@@ -616,23 +629,23 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB -->
   <line x1="0" y1="-3.5" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- ground BH except DE -->
   <line x1="0" y1="0" x2="3" y2="0"/>
   <line x1="4.2" y1="0" x2="7.7" y2="0"/>
   <!-- front post CD -->
   <line class="blue" x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- front line of sight ACE -->
   <line class="violet" x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <text class="green" x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic green" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text class="green" x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit-g] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- front pillar backward walk ED -->
   <line class="red" x1="3" y1="0" x2="4.2" y2="0"/>
 </svg>
@@ -652,32 +665,32 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB -->
   <line x1="0" y1="-3.5" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- ground BH except HG -->
   <line x1="0" y1="0" x2="5.5" y2="0"/>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line class="blue" x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- front line of sight ACE -->
   <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- rear line of sight AFH -->
   <line class="violet" x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text class="green" x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic green" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text class="green" x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit-g] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- rear post backward walk HG -->
   <line class="red" x1="5.5" y1="0" x2="7.7" y2="0"/>
 </svg>
@@ -697,10 +710,10 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB except OB -->
   <line x1="0" y1="-3.5" x2="0" y2="-1"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- OB -->
   <line class="green" x1="0" y1="-1" x2="0" y2="0"/>
   <!-- ground BH except GEDB -->
@@ -709,28 +722,28 @@
   <line class="blue" x1="0" y1="0" x2="5.5" y2="0"/>
   <!-- front post CD -->
   <line class="green" x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line class="green" x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF -->
   <line class="red" x1="0" y1="-1" x2="5.5" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- front line of sight ACE -->
   <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- rear line of sight AFH -->
   <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
 </svg>
 </div>
 
@@ -750,10 +763,10 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB -->
   <line x1="0" y1="-3.5" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- ground BH except IG and ED -->
   <line x1="0" y1="0" x2="3" y2="0"/>
   <line x1="4.2" y1="0" x2="5.5" y2="0"/>
@@ -764,34 +777,34 @@
   <line class="green" x1="5.5" y1="0" x2="6.7" y2="0"/>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF -->
   <line x1="0" y1="-1" x2="5.5" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- front line of sight ACE except CE -->
   <line x1="0" y1="-3.5" x2="3" y2="-1"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- CE -->
   <line class="blue" x1="3" y1="-1" x2="4.2" y2="0"/>
   <!-- rear line of sight AFH -->
   <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- front line of sight translated unto rear FI -->
   <line class="red" x1="5.5" y1="-1" x2="6.7" y2="0"/>
-  <text x="6.7" y="0" font-size="0.3" dy="1.2em">\壬</text>
-  <text class="maths-italic" x="6.7" y="0" font-size="0.3" dy="2.7em">I</text>
+  <text x="6.7" y="0" [font-size] dy="1.2em">\壬</text>
+  <text [mathit] x="6.7" y="0" [font-size] dy="2.7em">I</text>
 </svg>
 </div>
 
@@ -805,10 +818,10 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB except AO -->
   <line x1="0" y1="-1" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- AO -->
   <line class="red" x1="0" y1="-3.5" x2="0" y2="-1"/>
   <!-- ground BH except GH -->
@@ -817,34 +830,34 @@
   <line class="blue" x1="5.5" y1="0" x2="7.7" y2="0"/>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line class="blue" x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF -->
   <line class="red" x1="0" y1="-1" x2="5.5" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- front line of sight ACE -->
   <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- rear line of sight AFH except HF -->
   <line class="red" x1="0" y1="-3.5" x2="5.5" y2="-1"/>
   <!-- HF -->
   <line class="blue" x1="7.7" y1="0" x2="5.5" y2="-1"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- front line of sight translated unto rear FI -->
   <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
-  <text x="6.7" y="0" font-size="0.3" dy="1.2em">\壬</text>
-  <text class="maths-italic" x="6.7" y="0" font-size="0.3" dy="2.7em">I</text>
+  <text x="6.7" y="0" [font-size] dy="1.2em">\壬</text>
+  <text [mathit] x="6.7" y="0" [font-size] dy="2.7em">I</text>
 </svg>
 </div>
 
@@ -865,10 +878,10 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB except AO -->
   <line x1="0" y1="-1" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- AO -->
   <line class="red" x1="0" y1="-3.5" x2="0" y2="-1"/>
   <!-- ground BH except GI -->
@@ -878,36 +891,36 @@
   <line class="blue" x1="5.5" y1="0" x2="6.7" y2="0"/>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line class="blue" x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF except OC -->
   <line x1="3" y1="-1" x2="5.5" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- OC -->
   <line class="red" x1="0" y1="-1" x2="3" y2="-1"/>
   <!-- front line of sight ACE except CA -->
   <line x1="3" y1="-1" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- CA -->
   <line class="red" x1="0" y1="-3.5" x2="3" y2="-1"/>
   <!-- rear line of sight AFH -->
   <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- front line of sight translated unto rear FI -->
   <line class="blue" x1="5.5" y1="-1" x2="6.7" y2="0"/>
-  <text x="6.7" y="0" font-size="0.3" dy="1.2em">\壬</text>
-  <text class="maths-italic" x="6.7" y="0" font-size="0.3" dy="2.7em">I</text>
+  <text x="6.7" y="0" [font-size] dy="1.2em">\壬</text>
+  <text [mathit] x="6.7" y="0" [font-size] dy="2.7em">I</text>
 </svg>
 </div>
 
@@ -921,10 +934,10 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB -->
   <line x1="0" y1="-3.5" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- ground BH except GH -->
   <line x1="0" y1="0" x2="5.5" y2="0"/>
   <!-- GI -->
@@ -933,32 +946,32 @@
   <line class="red" x1="6.7" y1="0" x2="7.7" y2="0"/>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line class="blue" x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF -->
   <line x1="0" y1="-1" x2="5.5" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- front line of sight ACE -->
   <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- rear line of sight AFH -->
   <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- front line of sight translated unto rear FI -->
   <line class="blue" x1="5.5" y1="-1" x2="6.7" y2="0"/>
-  <text x="6.7" y="0" font-size="0.3" dy="1.2em">\壬</text>
-  <text class="maths-italic" x="6.7" y="0" font-size="0.3" dy="2.7em">I</text>
+  <text x="6.7" y="0" [font-size] dy="1.2em">\壬</text>
+  <text [mathit] x="6.7" y="0" [font-size] dy="2.7em">I</text>
 </svg>
 </div>
 
@@ -1014,46 +1027,46 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB except AO -->
   <line x1="0" y1="-1" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- AO -->
   <line class="blue" x1="0" y1="-3.5" x2="0" y2="-1"/>
   <!-- ground BH -->
   <line x1="0" y1="0" x2="7.7" y2="0"/>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF except OC -->
   <line class="red" x1="3" y1="-1" x2="5.5" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- OC -->
   <line class="blue" x1="0" y1="-1" x2="3" y2="-1"/>
   <!-- front line of sight ACE except CA -->
   <line x1="3" y1="-1" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- CA -->
   <line class="blue" x1="0" y1="-3.5" x2="3" y2="-1"/>
   <!-- rear line of sight AFH -->
   <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- front line of sight translated unto rear FI -->
   <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
-  <text x="6.7" y="0" font-size="0.3" dy="1.2em">\壬</text>
-  <text class="maths-italic" x="6.7" y="0" font-size="0.3" dy="2.7em">I</text>
+  <text x="6.7" y="0" [font-size] dy="1.2em">\壬</text>
+  <text [mathit] x="6.7" y="0" [font-size] dy="2.7em">I</text>
 </svg>
 </div>
 
@@ -1068,10 +1081,10 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB except AO -->
   <line x1="0" y1="-1" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- AO -->
   <line class="violet" x1="0" y1="-3.5" x2="0" y2="-1"/>
   <!-- ground BH except HI -->
@@ -1080,34 +1093,34 @@
   <line class="blue" x1="6.7" y1="0" x2="7.7" y2="0"/>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line class="red" x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF except FC -->
   <line x1="0" y1="-1" x2="3" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- FC -->
   <line class="green" x1="3" y1="-1" x2="5.5" y2="-1"/>
   <!-- front line of sight ACE -->
   <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- rear line of sight AFH -->
   <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- front line of sight translated unto rear FI -->
   <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
-  <text x="6.7" y="0" font-size="0.3" dy="1.2em">\壬</text>
-  <text class="maths-italic" x="6.7" y="0" font-size="0.3" dy="2.7em">I</text>
+  <text x="6.7" y="0" [font-size] dy="1.2em">\壬</text>
+  <text [mathit] x="6.7" y="0" [font-size] dy="2.7em">I</text>
 </svg>
 </div>
 
@@ -1142,10 +1155,10 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB except AO -->
   <line class="red" x1="0" y1="-1" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- AO -->
   <line class="violet" x1="0" y1="-3.5" x2="0" y2="-1"/>
   <!-- ground BH except HI -->
@@ -1154,34 +1167,34 @@
   <line class="blue" x1="6.7" y1="0" x2="7.7" y2="0"/>
   <!-- front post CD -->
   <line class="red" x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line class="red" x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF except FC -->
   <line x1="0" y1="-1" x2="3" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- FC -->
   <line class="green" x1="3" y1="-1" x2="5.5" y2="-1"/>
   <!-- front line of sight ACE -->
   <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- rear line of sight AFH -->
   <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- front line of sight translated unto rear FI -->
   <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
-  <text x="6.7" y="0" font-size="0.3" dy="1.2em">\壬</text>
-  <text class="maths-italic" x="6.7" y="0" font-size="0.3" dy="2.7em">I</text>
+  <text x="6.7" y="0" [font-size] dy="1.2em">\壬</text>
+  <text [mathit] x="6.7" y="0" [font-size] dy="2.7em">I</text>
 </svg>
 
 </div>
@@ -1233,10 +1246,10 @@
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5">
   <!-- sea island AB -->
   <line x1="0" y1="-3.5" x2="0" y2="0"/>
-  <text x="0" y="-3.5" font-size="0.3" dx="-1em" dy="0.3em">\甲</text>
-  <text class="maths-italic" x="0" y="-3.5" font-size="0.3" dx="-2.25em" dy="0.3em">A</text>
-  <text x="0" y="0" font-size="0.3" dy="1.2em">\乙</text>
-  <text class="maths-italic" x="0" y="0" font-size="0.3" dy="2.7em">B</text>
+  <text x="0" y="-3.5" [font-size] dx="-1em" dy="0.3em">\甲</text>
+  <text [mathit] x="0" y="-3.5" [font-size] dx="-2.25em" dy="0.3em">A</text>
+  <text x="0" y="0" [font-size] dy="1.2em">\乙</text>
+  <text [mathit] x="0" y="0" [font-size] dy="2.7em">B</text>
   <!-- ground BH except GH and DB -->
   <line x1="3" y1="0" x2="5.5" y2="0"/>
   <!-- HI -->
@@ -1247,34 +1260,34 @@
   <line class="violet" x1="0" y1="0" x2="3" y2="0"/>
   <!-- front post CD -->
   <line x1="3" y1="-1" x2="3" y2="0"/>
-  <text x="3" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\丙</text>
-  <text class="maths-italic" x="3" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">C</text>
-  <text x="3" y="0" font-size="0.3" dy="1.2em">\丁</text>
-  <text class="maths-italic" x="3" y="0" font-size="0.3" dy="2.7em">D</text>
+  <text x="3" y="-1" [font-size] dx="0.4em" dy="-0.5em">\丙</text>
+  <text [mathit] x="3" y="-1" [font-size] dx="0.4em" dy="-1.7em">C</text>
+  <text x="3" y="0" [font-size] dy="1.2em">\丁</text>
+  <text [mathit] x="3" y="0" [font-size] dy="2.7em">D</text>
   <!-- rear post FG -->
   <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
-  <text x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-0.5em">\己</text>
-  <text class="maths-italic" x="5.5" y="-1" font-size="0.3" dx="0.4em" dy="-1.7em">F</text>
-  <text x="5.5" y="0" font-size="0.3" dy="1.2em">\庚</text>
-  <text class="maths-italic" x="5.5" y="0" font-size="0.3" dy="2.7em">G</text>
+  <text x="5.5" y="-1" [font-size] dx="0.4em" dy="-0.5em">\己</text>
+  <text [mathit] x="5.5" y="-1" [font-size] dx="0.4em" dy="-1.7em">F</text>
+  <text x="5.5" y="0" [font-size] dy="1.2em">\庚</text>
+  <text [mathit] x="5.5" y="0" [font-size] dy="2.7em">G</text>
   <!-- post height line OF except CO -->
   <line class="green" x1="3" y1="-1" x2="5.5" y2="-1"/>
   <!-- CO -->
   <line class="violet" x1="0" y1="-1" x2="3" y2="-1"/>
-  <text x="0" y="-1" font-size="0.3" dx="-1em" dy="0.3em">\辰</text>
-  <text class="maths-italic" x="0" y="-1" font-size="0.3" dx="-2.25em" dy="0.3em">O</text>
+  <text x="0" y="-1" [font-size] dx="-1em" dy="0.3em">\辰</text>
+  <text [mathit] x="0" y="-1" [font-size] dx="-2.25em" dy="0.3em">O</text>
   <!-- front line of sight ACE -->
   <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
-  <text x="4.2" y="0" font-size="0.3" dy="1.2em">\戊</text>
-  <text class="maths-italic" x="4.2" y="0" font-size="0.3" dy="2.7em">E</text>
+  <text x="4.2" y="0" [font-size] dy="1.2em">\戊</text>
+  <text [mathit] x="4.2" y="0" [font-size] dy="2.7em">E</text>
   <!-- rear line of sight AFH -->
   <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
-  <text x="7.7" y="0" font-size="0.3" dy="1.2em">\辛</text>
-  <text class="maths-italic" x="7.7" y="0" font-size="0.3" dy="2.7em">H</text>
+  <text x="7.7" y="0" [font-size] dy="1.2em">\辛</text>
+  <text [mathit] x="7.7" y="0" [font-size] dy="2.7em">H</text>
   <!-- front line of sight translated unto rear FI -->
   <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
-  <text x="6.7" y="0" font-size="0.3" dy="1.2em">\壬</text>
-  <text class="maths-italic" x="6.7" y="0" font-size="0.3" dy="2.7em">I</text>
+  <text x="6.7" y="0" [font-size] dy="1.2em">\壬</text>
+  <text [mathit] x="6.7" y="0" [font-size] dy="2.7em">I</text>
 </svg>
 </div>
 
