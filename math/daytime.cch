@@ -16,17 +16,17 @@
 <*p></*p>
 
 <=>
-  <@i> Assumptions | #assumptions | </@i>
-  <@i> Coordinates | #coordinates | Coordinate systems </@i>
-  <@i> Sun's pos. | #sun | Sun's position </@i>
-  <@i> Observer's pos. | #observer | Observer's position </@i>
-  <@i> Direction to sun | #direction | Direction from observer to sun </@i>
-  <@i> Daytime | #daytime | Daytime duration </@i>
-  <@i> Angles | #angles | Assorted angles </@i>
-  <@i> Refraction | #correction | Refraction correction </@i>
-  <@i> Verification | #verification | </@i>
+  <@i> [assumptions.h] | #assumptions | </@i>
+  <@i> Coordinates | #coordinates | [coordinates.h] </@i>
+  <@i> Sun's pos. | #sun | [sun.h] </@i>
+  <@i> Observer's pos. | #observer | [observer.h] </@i>
+  <@i> Direction to sun | #direction | [direction.h] </@i>
+  <@i> Daytime | #daytime | [daytime.h] </@i>
+  <@i> Angles | #angles | [angles.h] </@i>
+  <@i> Refraction | #correction | [correction.h] </@i>
+  <@i> [verification.h] | #verification | </@i>
   <@ir></@ir>
-  <@i> Plots | #plots </@i>
+  <@i> [plots.h] | #plots </@i>
 </=>
 
 <p>
@@ -69,7 +69,8 @@
 </-->
 
 
-<@2> Assumptions | assumptions </@2>
+<% [assumptions.h] | Assumptions %>
+<@2> [assumptions.h] | assumptions </@2>
 
 
 <p>
@@ -135,7 +136,8 @@
 </p>
 
 
-<@2> Coordinate systems | coordinates </@2>
+<% [coordinates.h] | Coordinate systems %>
+<@2> [coordinates.h] | coordinates </@2>
 
 
 <.>
@@ -153,7 +155,8 @@
       (relative to the fixed stars) in a solar year.
       The path of the sun, the ecliptic,
       lies not in the equatorial xy-plane but in the ecliptic plane,
-      which is tilted by tilt τ about the positive x-axis in a right-handed sense.
+      which is tilted by tilt τ about the positive x-axis \
+      in a right-handed sense.
       When the sun crosses the positive x-axis, it is northern spring equinox;
       above the positive y-axis, northern summer solstice;
       the negative x-axis, northern autumnal equinox;
@@ -272,7 +275,8 @@
 </$$>
 
 
-<@2> Sun's position | sun </@2>
+<% [sun.h] | Sun's position %>
+<@2> [sun.h] | sun </@2>
 
 
 <p>
@@ -306,7 +310,8 @@
 </p>
 
 
-<@2> Observer's position | observer </@2>
+<% [observer.h] | Observer's position %>
+<@2> [observer.h] | observer </@2>
 
 
 <p>
@@ -373,7 +378,8 @@
 </$$>
 
 
-<@2> Direction from observer to sun | direction </@2>
+<% [direction.h] | Direction from observer to sun %>
+<@2> [direction.h] | direction </@2>
 
 
 <p>
@@ -499,28 +505,38 @@
   -->
 <div class="centred-svg">
 <svg class="fit-width" width="320px" viewBox="-0.5 -4.1 12 5.1">
+  
+  <% [mathit] | class="maths-italic" %>
+  <% [mathrm] | class="maths-roman" %>
+  <% [font-size] | font-size="0.7" %>
+  
   <!-- hypotenuse (radius) -->
   <line x1="0" y1="0" x2="8" y2="-4" />
-  <text class="maths-italic" x="4" y="-2" font-size="0.7" dy="-0.6em">ρ</text>
+  <text [mathit] x="4" y="-2" [font-size] dy="-0.6em">ρ</text>
+  
   <!-- angle -->
-  <text class="maths-italic" x="1.8" y="-0.3" font-size="0.7">φ</text>
+  <text [mathit] x="1.8" y="-0.3" [font-size]>φ</text>
+  
   <!-- run -->
   <line x1="0" y1="0" x2="8" y2="0" />
-  <text x="4" y="0.8" font-size="0.7">
-    <tspan class="maths-roman">cos</tspan>
-    <tspan class="maths-italic">Y</tspan>
+  <text x="4" y="0.8" [font-size]>
+    <tspan [mathrm]>cos</tspan>
+    <tspan [mathit]>Y</tspan>
   </text>
+  
   <!-- rise -->
   <line x1="8" y1="0" x2="8" y2="-4" />
-  <text x="9.8" y="-1.8" font-size="0.7">
-    <tspan class="maths-roman">cos</tspan>
-    <tspan class="maths-italic">τ</tspan>
-    <tspan class="maths-roman">sin</tspan>
-    <tspan class="maths-italic">Y</tspan>
+  <text x="9.8" y="-1.8" [font-size]>
+    <tspan [mathrm]>cos</tspan>
+    <tspan [mathit]>τ</tspan>
+    <tspan [mathrm]>sin</tspan>
+    <tspan [mathit]>Y</tspan>
   </text>
+  
   <!-- right angle -->
   <line x1="7.5" y1="0" x2="7.5" y2="-0.5" />
   <line x1="7.5" y1="-0.5" x2="8" y2="-0.5" />
+  
 </svg>
 </div>
 
@@ -597,7 +613,8 @@
 </ol>
 
 
-<@2> Daytime duration | daytime </@2>
+<% [daytime.h] | Daytime duration %>
+<@2> [daytime.h] | daytime </@2>
 
 
 <p>
@@ -691,7 +708,8 @@
 </$$>
 
 
-<@2> Assorted angles | angles </@2>
+<% [angles.h] | Assorted angles %>
+<@2> [angles.h] | angles </@2>
 
 
 <p>
@@ -759,7 +777,8 @@
 </p>
 
 
-<@2> Refraction correction | correction </@2>
+<% [correction.h] | Refraction correction %>
+<@2> [correction.h] | correction </@2>
 
 
 <p>
@@ -775,11 +794,16 @@
   \end{aligned}
 </$$>
 
+<%
+  [t&d.url] |
+  https://www.timeanddate.com/
+%>
+
 <p>
   We briefly compare our model for daytime against
   <@>
     timeanddate.com
-    | https://www.timeanddate.com/
+    | [t&d.url]
     | timeanddate.com
   </@>
   (t\&d) for Hong Kong and Perth:
@@ -802,7 +826,7 @@
     <td class="centred-text">
       <@>
         Hong Kong
-        | https://www.timeanddate.com/sun/hong-kong/hong-kong
+        | [t&d.url]sun/hong-kong/hong-kong
         | timeanddate.com: Hong Kong
       </@> <br>
       (+22°19')
@@ -816,7 +840,7 @@
     <td class="centred-text">
       <@>
         Perth
-        | https://www.timeanddate.com/sun/australia/perth
+        | [t&d.url]sun/australia/perth
         | timeanddate.com: Perth
       </@> <br>
       (−31°57')
@@ -867,14 +891,14 @@
   which is possibly(?) referring to
   <@>
     p.~125
-    | https://archive.org/details/AstrophysicalQuantities/page/n134/mode/1up
+    | [allen.url]n134/mode/1up
     | Astrophysical Quantities
   </@>
   (<var>z</var><sub>a</sub>~=~90.0°, <var>z</var><sub>t</sub>~=~90°35',
   i.e.~refraction of 0°35' at the horizon) and
   <@>
     p.~162
-    | https://archive.org/details/AstrophysicalQuantities/page/n171/mode/1up
+    | [allen.url]n171/mode/1up
     | Astrophysical Quantities
   </@>
   (semi-diameter of sun at mean earth distance = 959.63", i.e.~0°16')
@@ -882,16 +906,28 @@
   In any case I think the final angle of 0°50' is reliable;
   <@>
     this Hong Kong Observatory document
-    | http://www.hko.gov.hk/gts/astron2017/2017simp-paths-sun.pdf
-    | HKO: Paths of the Sun throughout the Year (Simplified Version), 2017
+    | [hko-pdf.url]
+    | HKO: [hko-pdf.h]
   </@>
   <@>
     (archived version)
-    | https://web.archive.org/web/20190712080536/http://www.hko.gov.hk/gts/astron2017/2017simp-paths-sun.pdf
-    | Web archive: Paths of the Sun throughout the Year (Simplified Version), 2017
+    | https://web.archive.org/web/20190712080536/[hko-pdf.url]
+    | Web archive: [hko-pdf.h]
   </@>
   uses it for computing sunrise/sunset times.
 </.>
+<%
+  [allen.url] |
+  https://archive.org/details/AstrophysicalQuantities/page/
+%>
+<%
+  [hko-pdf.url] |
+  http://www.hko.gov.hk/gts/astron2017/2017simp-paths-sun.pdf
+%>
+<%
+  [hko-pdf.h] |
+  Paths of the Sun throughout the Year (Simplified Version), 2017
+%>
 
 <p>
   A correction to daytime which accounts for refraction and
@@ -959,7 +995,7 @@
     <td class="centred-text">
       <@>
         Hong Kong
-        | https://www.timeanddate.com/sun/hong-kong/hong-kong
+        | [t&d.url]sun/hong-kong/hong-kong
         | timeanddate.com: Hong Kong
       </@> <br>
       (+22°19')
@@ -973,7 +1009,7 @@
     <td class="centred-text">
       <@>
         Perth
-        | https://www.timeanddate.com/sun/australia/perth
+        | [t&d.url]sun/australia/perth
         | timeanddate.com: Perth
       </@> <br>
       (−31°57')
@@ -986,13 +1022,14 @@
 </table></!c>
 
 
-<@2> Verification | verification </@2>
+<% [verification.h] | Verification %>
+<@2> [verification.h] | verification </@2>
 
 
 <p>
   Here I have extended the 7~July example above to more locations,
   again using values from
-  <@> timeanddate.com | https://www.timeanddate.com/ | </@>
+  <@> timeanddate.com | [t&d.url] | </@>
   for reference (although I haven't bothered with
   adjusting the date of the March equinox for different time zones).
   The entries in the table are of the form
@@ -1032,7 +1069,7 @@
     <td class="centred-text">
       <@>
         Station Nord
-        | https://www.timeanddate.com/sun/greenland/station-nord
+        | [t&d.url]sun/greenland/station-nord
         | timeanddate.com: Station Nord
       </@> <br>
       (+81°36')
@@ -1057,7 +1094,7 @@
     <td class="centred-text">
       <@>
         Reykjavik
-        | https://www.timeanddate.com/sun/iceland/reykjavik
+        | [t&d.url]sun/iceland/reykjavik
         | timeanddate.com: Reykjavik
       </@> <br>
       (+64°9')
@@ -1088,7 +1125,7 @@
     <td class="centred-text">
       <@>
         London
-        | https://www.timeanddate.com/sun/uk/london
+        | [t&d.url]sun/uk/london
         | timeanddate.com: London
       </@> <br>
       (+51°30')
@@ -1119,7 +1156,7 @@
     <td class="centred-text">
       <@>
         Hong Kong
-        | https://www.timeanddate.com/sun/hong-kong/hong-kong
+        | [t&d.url]sun/hong-kong/hong-kong
         | timeanddate.com: Hong Kong
       </@> <br>
       (+22°19')
@@ -1150,7 +1187,7 @@
     <td class="centred-text">
       <@>
         Singapore
-        | https://www.timeanddate.com/sun/singapore/singapore
+        | [t&d.url]sun/singapore/singapore
         | timeanddate.com: Singapore
       </@> <br>
       (+1°17')
@@ -1181,7 +1218,7 @@
     <td class="centred-text">
       <@>
         Perth
-        | https://www.timeanddate.com/sun/australia/perth
+        | [t&d.url]sun/australia/perth
         | timeanddate.com: Perth
       </@> <br>
       (−31°57')
@@ -1212,7 +1249,7 @@
     <td class="centred-text">
       <@>
         Enderby Land <br>@6630103
-        | https://www.timeanddate.com/sun/@6630103
+        | [t&d.url]sun/@6630103
         | timeanddate.com: Enderby Land
       </@> <br>
       (−67°30')
@@ -1243,7 +1280,7 @@
     <td class="centred-text">
       <@>
         Concordia Station
-        | https://www.timeanddate.com/sun/antarctica/concordia-station
+        | [t&d.url]sun/antarctica/concordia-station
         | timeanddate.com: Concordia Station
       </@> <br>
       (−75°6')
@@ -1290,223 +1327,223 @@
 <@3> Code (GNU Octave) for computing modelled quantities | code-model </@3>
 
 <``>
-  ##  ----------------------------------------------------------------
-  ##  sun_info = sun (delta_spec, y_big_pd)
-  ##  ----------------------------------------------------------------
-  ##  Displays and returns quantities for the sun (daytime, noon altitude etc.)
-  ##  using the model given at:
-  ##    https://yawnoc.github.io/math/daytime.html
-  ##  Input:
-  ##    delta_spec is the specification for the latitude north of the equator,
-  ##                      delta, either a scalar (delta / degree),
-  ##                      a list [delta_deg, delta_min]
-  ##                      or one of the strings listed below
-  ##    y_big_pd   is the year angle Y per degree, i.e. Y / degree
-  ##  Alternatively, call sun (delta_spec, t_days, "day"):
-  ##    t_days     is the number of days which has passed since the northern
-  ##               spring (or March) equinox
-  ##  Output:
-  ##    sun_info   is the structure of quantities for the sun
-  ##  Note that Y == 2 pi t / yr, where t is the time which has passed since the
-  ##  northern spring (or March) equinox, and yr == 365.242 day is a solar year.
-  ##  Possible strings for delta_spec are:
-  ##    "station-nord"
-  ##    "reykjavik"
-  ##    "london"
-  ##    "hong-kong"
-  ##    "singapore"
-  ##    "perth"
-  ##    "enderby-land"
-  ##    "concordia-station"
+##  ----------------------------------------------------------------
+##  sun_info = sun (delta_spec, y_big_pd)
+##  ----------------------------------------------------------------
+##  Displays and returns quantities for the sun (daytime, noon altitude etc.)
+##  using the model given at:
+##    https://yawnoc.github.io/math/daytime.html
+##  Input:
+##    delta_spec is the specification for the latitude north of the equator,
+##                      delta, either a scalar (delta / degree),
+##                      a list [delta_deg, delta_min]
+##                      or one of the strings listed below
+##    y_big_pd   is the year angle Y per degree, i.e. Y / degree
+##  Alternatively, call sun (delta_spec, t_days, "day"):
+##    t_days     is the number of days which has passed since the northern
+##               spring (or March) equinox
+##  Output:
+##    sun_info   is the structure of quantities for the sun
+##  Note that Y == 2 pi t / yr, where t is the time which has passed since the
+##  northern spring (or March) equinox, and yr == 365.242 day is a solar year.
+##  Possible strings for delta_spec are:
+##    "station-nord"
+##    "reykjavik"
+##    "london"
+##    "hong-kong"
+##    "singapore"
+##    "perth"
+##    "enderby-land"
+##    "concordia-station"
+
+function sun_info = sun (delta_spec, varargin)
   
-  function sun_info = sun (delta_spec, varargin)
-    
-    ## Parse specification for delta
-    if (isscalar (delta_spec))
-      delta_pd = delta_spec;
-      [delta_deg, delta_min] = num2cell (to_base_60 (delta_pd)){:};
-    else
-      if (ischar (delta_spec))
-        delta_info = struct (
-          "station-nord", [81, 36],
-          "reykjavik", [64, 9],
-          "london", [51, 30],
-          "hong-kong", [22, 19],
-          "singapore", [1, 17],
-          "perth", -[31, 57],
-          "enderby-land", -[67, 30],
-          "concordia-station", -[75, 6]
-        );
-        [delta_deg, delta_min] = num2cell (delta_info.(delta_spec)){:};
-      else
-        [delta_deg, delta_min] = num2cell (delta_spec){:};
-      endif
-      delta_pd = delta_deg + delta_min / 60;
-    endif
-    
-    ## Parse specification for y_big
-    if (numel (varargin) < 2)
-      y_big_pd = varargin{1};
-    elseif (strcmp (varargin{2}, "day"))
-      t_days   = varargin{1};
-      y_big_pd = 360 * t_days / 365.242;
-    else
-      error ("Invalid specification for year angle.");
-    endif
-    y_big_pd = mod (y_big_pd, 360);
-    
-    ## Axial tilt
-    tau_pd = 23 + 26 / 60;
-    
-    ## Refraction angle (for sunrise and sunset)
-    alpha_ref_pd = 50 / 60;
-    
-    ## Tilt-reduced quantities
-    comp_x = cosd (y_big_pd);
-    comp_y = cosd (tau_pd) * sind (y_big_pd);
-    rho = norm ([comp_x, comp_y]);
-    phi_pd = atan2d (comp_y, comp_x);
-    
-    ## Argument to arcsine, i.e. tan(tau) tan(delta) sin(phi)
-    arg_asin = tand (tau_pd) * tand (delta_pd) * sind (phi_pd);
-    
-    ## Daytime
-    t_big_ph = 12 + 24 / pi * asin (arg_asin);
-    t_big_ph = real (t_big_ph);
-    t_big_hr_min = to_base_60 (t_big_ph);
-    
-    ## Sunrise and sunset bearings
-    comp_s = -tand (tau_pd) * secd (delta_pd) * sind (phi_pd);
-    comp_e_rise = sqrt (1 - arg_asin^2);
-    comp_e_set = -sqrt (1 - arg_asin^2);
-    if (abs (arg_asin) <= 1)
-      beta_rise_pd = atan2d (comp_e_rise, -comp_s);
-      beta_set_pd = 360 + atan2d (comp_e_set, -comp_s);
-    else
-      beta_rise_pd = NaN;
-      beta_set_pd  = NaN;
-    endif
-    
-    ## Noon altitude
-    comp_u = cosd (delta_pd) + tand (tau_pd) * sind (delta_pd) * sind (phi_pd);
-    comp_s = sind (delta_pd) - tand (tau_pd) * cosd (delta_pd) * sind (phi_pd);
-    alpha_noon_pd = atan2d (comp_u, abs (comp_s));
-    
-    ## Daytime correction due to refraction
-    eps_set = (
-      tand (alpha_ref_pd) / cosd (delta_pd)
-      * sqrt (1 + tand (tau_pd)^2 * sind (phi_pd)^2) / sqrt (1 - arg_asin^2)
-    );
-    eps_rise = -eps_set;
-    t_big_ph_corn = 24 / pi * eps_set;
-    t_big_ph_corn = real (t_big_ph_corn);
-    t_big_hr_min_corn = to_base_60 (t_big_ph_corn);
-    t_big_hr_min_cord = to_base_60 (t_big_ph + t_big_ph_corn);
-    
-    ## Sunrise and sunset bearings correction due to refraction
-    d_minus_phi_set = pi / 2 + asin (arg_asin);
-    d_minus_phi_rise = -d_minus_phi_set;
-    comp_s_rise = (
-      sind (delta_pd) * cos (d_minus_phi_rise + eps_rise)
-      - tand (tau_pd) * cosd (delta_pd) * sind (phi_pd)
-    );
-    comp_s_set = (
-      sind (delta_pd) * cos (d_minus_phi_set + eps_set)
-      - tand (tau_pd) * cosd (delta_pd) * sind (phi_pd)
-    );
-    comp_e_rise = -sin (d_minus_phi_rise + eps_rise);
-    comp_e_set = -sin (d_minus_phi_set + eps_set);
-    if (abs (arg_asin) <= 1)
-      beta_rise_pd_cord = atan2d (comp_e_rise, -comp_s_rise);
-      beta_set_pd_cord = 360 + atan2d (comp_e_set, -comp_s_set);
-    else
-      beta_rise_pd_cord = NaN;
-      beta_set_pd_cord  = NaN;
-    endif
-    
-    ## Display quantities
+  ## Parse specification for delta
+  if (isscalar (delta_spec))
+    delta_pd = delta_spec;
+    [delta_deg, delta_min] = num2cell (to_base_60 (delta_pd)){:};
+  else
     if (ischar (delta_spec))
-      delta_str = [...
-        "----------------------------------------------------------------\n", ...
-        delta_spec, "\n"
-      ];
+      delta_info = struct (
+        "station-nord", [81, 36],
+        "reykjavik", [64, 9],
+        "london", [51, 30],
+        "hong-kong", [22, 19],
+        "singapore", [1, 17],
+        "perth", -[31, 57],
+        "enderby-land", -[67, 30],
+        "concordia-station", -[75, 6]
+      );
+      [delta_deg, delta_min] = num2cell (delta_info.(delta_spec)){:};
     else
-      delta_str = "";
+      [delta_deg, delta_min] = num2cell (delta_spec){:};
     endif
-    if (arg_asin < -1)
-      arg_asin_str = " (polar night)";
-    elseif (arg_asin > 1)
-      arg_asin_str = " (midnight sun)";
-    else
-      arg_asin_str = "";
-    endif
-    str = [...
-      delta_str, ...
+    delta_pd = delta_deg + delta_min / 60;
+  endif
+  
+  ## Parse specification for y_big
+  if (numel (varargin) < 2)
+    y_big_pd = varargin{1};
+  elseif (strcmp (varargin{2}, "day"))
+    t_days   = varargin{1};
+    y_big_pd = 360 * t_days / 365.242;
+  else
+    error ("Invalid specification for year angle.");
+  endif
+  y_big_pd = mod (y_big_pd, 360);
+  
+  ## Axial tilt
+  tau_pd = 23 + 26 / 60;
+  
+  ## Refraction angle (for sunrise and sunset)
+  alpha_ref_pd = 50 / 60;
+  
+  ## Tilt-reduced quantities
+  comp_x = cosd (y_big_pd);
+  comp_y = cosd (tau_pd) * sind (y_big_pd);
+  rho = norm ([comp_x, comp_y]);
+  phi_pd = atan2d (comp_y, comp_x);
+  
+  ## Argument to arcsine, i.e. tan(tau) tan(delta) sin(phi)
+  arg_asin = tand (tau_pd) * tand (delta_pd) * sind (phi_pd);
+  
+  ## Daytime
+  t_big_ph = 12 + 24 / pi * asin (arg_asin);
+  t_big_ph = real (t_big_ph);
+  t_big_hr_min = to_base_60 (t_big_ph);
+  
+  ## Sunrise and sunset bearings
+  comp_s = -tand (tau_pd) * secd (delta_pd) * sind (phi_pd);
+  comp_e_rise = sqrt (1 - arg_asin^2);
+  comp_e_set = -sqrt (1 - arg_asin^2);
+  if (abs (arg_asin) <= 1)
+    beta_rise_pd = atan2d (comp_e_rise, -comp_s);
+    beta_set_pd = 360 + atan2d (comp_e_set, -comp_s);
+  else
+    beta_rise_pd = NaN;
+    beta_set_pd  = NaN;
+  endif
+  
+  ## Noon altitude
+  comp_u = cosd (delta_pd) + tand (tau_pd) * sind (delta_pd) * sind (phi_pd);
+  comp_s = sind (delta_pd) - tand (tau_pd) * cosd (delta_pd) * sind (phi_pd);
+  alpha_noon_pd = atan2d (comp_u, abs (comp_s));
+  
+  ## Daytime correction due to refraction
+  eps_set = (
+    tand (alpha_ref_pd) / cosd (delta_pd)
+    * sqrt (1 + tand (tau_pd)^2 * sind (phi_pd)^2) / sqrt (1 - arg_asin^2)
+  );
+  eps_rise = -eps_set;
+  t_big_ph_corn = 24 / pi * eps_set;
+  t_big_ph_corn = real (t_big_ph_corn);
+  t_big_hr_min_corn = to_base_60 (t_big_ph_corn);
+  t_big_hr_min_cord = to_base_60 (t_big_ph + t_big_ph_corn);
+  
+  ## Sunrise and sunset bearings correction due to refraction
+  d_minus_phi_set = pi / 2 + asin (arg_asin);
+  d_minus_phi_rise = -d_minus_phi_set;
+  comp_s_rise = (
+    sind (delta_pd) * cos (d_minus_phi_rise + eps_rise)
+    - tand (tau_pd) * cosd (delta_pd) * sind (phi_pd)
+  );
+  comp_s_set = (
+    sind (delta_pd) * cos (d_minus_phi_set + eps_set)
+    - tand (tau_pd) * cosd (delta_pd) * sind (phi_pd)
+  );
+  comp_e_rise = -sin (d_minus_phi_rise + eps_rise);
+  comp_e_set = -sin (d_minus_phi_set + eps_set);
+  if (abs (arg_asin) <= 1)
+    beta_rise_pd_cord = atan2d (comp_e_rise, -comp_s_rise);
+    beta_set_pd_cord = 360 + atan2d (comp_e_set, -comp_s_set);
+  else
+    beta_rise_pd_cord = NaN;
+    beta_set_pd_cord  = NaN;
+  endif
+  
+  ## Display quantities
+  if (ischar (delta_spec))
+    delta_str = [...
       "----------------------------------------------------------------\n", ...
-      "Latitude (delta)                  : " ...
-        num2str(delta_deg), " deg ", ...
-        num2str(abs(delta_min)), " min", "\n", ...
-      "----------------------------------------------------------------\n", ...
-      "Year angle (Y)                    : ", ...
-        sprintf("%5.2f", y_big_pd), " deg", "\n", ...
-      "Tilt-corrected unit radius (rho)  : ", ...
-        num2str(rho), "\n", ...
-      "Tilt-corrected year angle (varphi): ", ...
-        sprintf("%5.2f", phi_pd), " deg", "\n", ...
-      "----------------------------------------------------------------\n", ...
-      "Argument to arcsine               : ", ...
-        num2str(arg_asin), arg_asin_str, "\n", ...
-      "----------------------------------------------------------------\n", ...
-      "Daytime                           : ", ...
-        sprintf("%2d", t_big_hr_min(1)), " hr ", ...
-        sprintf("%2d", t_big_hr_min(2)), " min", "\n", ...
-      " > correction                     : ", ...
-        sprintf("%2d", t_big_hr_min_corn(1)), " hr ", ...
-        sprintf("%2d", t_big_hr_min_corn(2)), " min", "\n", ...
-      " > corrected                      : ", ...
-        sprintf("%2d", t_big_hr_min_cord(1)), " hr ", ...
-        sprintf("%2d", t_big_hr_min_cord(2)), " min", "\n", ...
-      "----------------------------------------------------------------\n", ...
-      "Noon altitude (alpha)             : ", ...
-        sprintf("%5.1f", alpha_noon_pd), " deg", "\n", ...
-      "----------------------------------------------------------------\n", ...
-      "Sunrise and sunset bearings (beta): ", ...
-        sprintf("%5.1f", beta_rise_pd), " deg", " and ", ...
-        sprintf("%5.1f", beta_set_pd), " deg", "\n", ...
-      " > corrected                      : ", ...
-        sprintf("%5.1f", beta_rise_pd_cord), " deg", " and ", ...
-        sprintf("%5.1f", beta_set_pd_cord), " deg", "\n", ...
-      "----------------------------------------------------------------\n"
+      delta_spec, "\n"
     ];
-    disp (str);
-    
-    ## Return structure
-    sun_info = struct (
-      "rho", rho,
-      "phi_pd", phi_pd,
-      "arg_asin", arg_asin,
-      "t_big_hr_min", t_big_hr_min,
-      "beta_rise_pd", beta_rise_pd,
-      "beta_set_pd", beta_set_pd,
-      "alpha_noon_pd", alpha_noon_pd,
-      "t_big_hr_min_corn", t_big_hr_min_corn,
-      "t_big_hr_min_cord", t_big_hr_min_cord,
-      "beta_rise_pd_cord", beta_rise_pd_cord,
-      "beta_set_pd_cord", beta_set_pd_cord
-    );
-    
-  endfunction
+  else
+    delta_str = "";
+  endif
+  if (arg_asin < -1)
+    arg_asin_str = " (polar night)";
+  elseif (arg_asin > 1)
+    arg_asin_str = " (midnight sun)";
+  else
+    arg_asin_str = "";
+  endif
+  str = [...
+    delta_str, ...
+    "----------------------------------------------------------------\n", ...
+    "Latitude (delta)                  : " ...
+      num2str(delta_deg), " deg ", ...
+      num2str(abs(delta_min)), " min", "\n", ...
+    "----------------------------------------------------------------\n", ...
+    "Year angle (Y)                    : ", ...
+      sprintf("%5.2f", y_big_pd), " deg", "\n", ...
+    "Tilt-corrected unit radius (rho)  : ", ...
+      num2str(rho), "\n", ...
+    "Tilt-corrected year angle (varphi): ", ...
+      sprintf("%5.2f", phi_pd), " deg", "\n", ...
+    "----------------------------------------------------------------\n", ...
+    "Argument to arcsine               : ", ...
+      num2str(arg_asin), arg_asin_str, "\n", ...
+    "----------------------------------------------------------------\n", ...
+    "Daytime                           : ", ...
+      sprintf("%2d", t_big_hr_min(1)), " hr ", ...
+      sprintf("%2d", t_big_hr_min(2)), " min", "\n", ...
+    " > correction                     : ", ...
+      sprintf("%2d", t_big_hr_min_corn(1)), " hr ", ...
+      sprintf("%2d", t_big_hr_min_corn(2)), " min", "\n", ...
+    " > corrected                      : ", ...
+      sprintf("%2d", t_big_hr_min_cord(1)), " hr ", ...
+      sprintf("%2d", t_big_hr_min_cord(2)), " min", "\n", ...
+    "----------------------------------------------------------------\n", ...
+    "Noon altitude (alpha)             : ", ...
+      sprintf("%5.1f", alpha_noon_pd), " deg", "\n", ...
+    "----------------------------------------------------------------\n", ...
+    "Sunrise and sunset bearings (beta): ", ...
+      sprintf("%5.1f", beta_rise_pd), " deg", " and ", ...
+      sprintf("%5.1f", beta_set_pd), " deg", "\n", ...
+    " > corrected                      : ", ...
+      sprintf("%5.1f", beta_rise_pd_cord), " deg", " and ", ...
+      sprintf("%5.1f", beta_set_pd_cord), " deg", "\n", ...
+    "----------------------------------------------------------------\n"
+  ];
+  disp (str);
   
-  ## Subfunction for conversion to base 60 (e.g. _ph to [_hr, _min], where
-  ## _ph, _hr, _min mean "per hour", "hours", "minutes").
+  ## Return structure
+  sun_info = struct (
+    "rho", rho,
+    "phi_pd", phi_pd,
+    "arg_asin", arg_asin,
+    "t_big_hr_min", t_big_hr_min,
+    "beta_rise_pd", beta_rise_pd,
+    "beta_set_pd", beta_set_pd,
+    "alpha_noon_pd", alpha_noon_pd,
+    "t_big_hr_min_corn", t_big_hr_min_corn,
+    "t_big_hr_min_cord", t_big_hr_min_cord,
+    "beta_rise_pd_cord", beta_rise_pd_cord,
+    "beta_set_pd_cord", beta_set_pd_cord
+  );
   
-  function q_hr_min = to_base_60 (q_ph)
-    
-    q_hr = fix (q_ph);
-    q_min = round ((q_ph - q_hr) * 60);
-    q_hr_min = [q_hr, q_min];
-    
-  endfunction
+endfunction
+
+## Subfunction for conversion to base 60 (e.g. _ph to [_hr, _min], where
+## _ph, _hr, _min mean "per hour", "hours", "minutes").
+
+function q_hr_min = to_base_60 (q_ph)
+  
+  q_hr = fix (q_ph);
+  q_min = round ((q_ph - q_hr) * 60);
+  q_hr_min = [q_hr, q_min];
+  
+endfunction
 </``>
 
 <p>Usage examples:</p>
@@ -1662,7 +1699,8 @@
 </$$>
 
 
-<@2> Plots | plots </@2>
+<% [plots.h] | Plots %>
+<@2> [plots.h] | plots </@2>
 
 
 <:r>TO BE DONE</:r>
