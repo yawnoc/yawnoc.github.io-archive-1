@@ -141,7 +141,7 @@
 # ----------------------------------------------------------------
 # Conway only
 #   œ       oe      (œ U+0153 LATIN SMALL LIGATURE OE)
-# Wade–Giles only
+# Wade--Giles only
 #   ê       e^      (ê U+00EA LATIN SMALL LETTER E WITH CIRCUMFLEX)
 #   ŭ       uu      (ŭ U+016D LATIN SMALL LETTER U WITH BREVE)
 # Pinyin tone 1 陰平 (dark level) only
@@ -696,11 +696,10 @@ def replace_all_item_anchor_abbreviations(string):
 #     <input type="radio" name="\rom" id="\rom-conway" value="conway">
 #       <label for="\rom-conway">Conway</label>
 #     <input type="radio" name="\rom" id="\rom-wadegiles" value="wadegiles">
-#       <label for="\rom-wadegiles">Wade–Giles</label>
+#       <label for="\rom-wadegiles">Wade--Giles</label>
 #     <input type="radio" name="\rom" id="\rom-pinyin" value="pinyin">
 #       <label for="\rom-pinyin">Pinyin</label>
 #   </div>
-# where the dash in Wade–Giles is U+2013 EN DASH
 
 def replace_assisting_romanisation_radio(string):
   
@@ -714,7 +713,7 @@ def replace_assisting_romanisation_radio(string):
       <input type="radio" name="\rom" id="\rom-conway" value="conway">
         <label for="\rom-conway">Conway</label>
       <input type="radio" name="\rom" id="\rom-wadegiles" value="wadegiles">
-        <label for="\rom-wadegiles">Wade–Giles</label>
+        <label for="\rom-wadegiles">Wade--Giles</label>
       <input type="radio" name="\rom" id="\rom-pinyin" value="pinyin">
         <label for="\rom-pinyin">Pinyin</label>
     </div>
@@ -2174,12 +2173,11 @@ def replace_cite_this_page(string):
 # Processed string:
 #   <footer>
 #     <hr>
-#     ©~{year first created}[–year last modified]~Conway[,
+#     ©~{year first created}[--year last modified]~Conway[,
 #     [copyright exception]].[<br>
 #     [ending remark]]
 #   </footer>
-# where the dash in the year range is U+2013 EN DASH,
-# [–year last modified] is only included if {year last modified}
+# where [--year last modified] is only included if {year last modified}
 # is greater than {year first created},
 # and a default [ending remark] is used if building the root index.html.
 
@@ -2211,7 +2209,7 @@ def replace_footer(string):
   year_range = year_first_created
   
   if int(year_last_modified) > int(year_first_created):
-    year_range += f'–{year_last_modified}'
+    year_range += f'--{year_last_modified}'
   
   if copyright_exception == '':
     copyright_exception_spec = ''
