@@ -111,10 +111,13 @@
 #   \               \\              (literal backslash)
 #   |               \|              (literal pipe)
 #   ~               \~              (literal tilde)
+#   {hyphen run}    \{hyphen run}   (literal hyphen run (2 or more))
 #   {               \{              (literal opening curly bracket)
 #   }               \}              (literal closing curly bracket)
 #   {empty string}  \!              (literal empty string)
 #   &nbsp;          ~               (non-breaking space)
+#   {U+2014}        ---             (— U+2014 EM DASH)
+#   {U+2013}        --              (– U+2013 EN DASH)
 #   {U+30FB}        \.              (・ U+30FB KATAKANA MIDDLE DOT)
 #   {Chinese run}   \{Chinese run}  (literal Chinese run (no language span))
 #   &amp;           \&              (HTML-escaped ampersand)
@@ -132,7 +135,7 @@
 #   \rom            romanisation    ("romanisation")
 #   \Rom            Romanisation    ("Romanisation")
 # \ and | are called functional Conway literals.
-# ~, { and } are called special Conway literals.
+# ~, {hyphen run}, { and } are called special Conway literals.
 # ----------------------------------------------------------------
 # Romanisation (for text romanisation elements)
 # ----------------------------------------------------------------
@@ -2801,6 +2804,43 @@ def replace_all_conway_literal_tildes(string):
   )
 
 ################################################################
+# Replace Conway literal hyphen runs with temporary replacements
+################################################################
+
+# Unprocessed string:
+#   \{hyphen run}
+# where there are 2 or more hyphens
+
+# Raw regular expression for unprocessed string:
+#   \\([-]{2,})
+#   \1  {hyphen run}
+
+# Processed string:
+#   {hyphen run}
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_conway_literal_hyphen_run(match_object):
+  
+  hyphen_run = match_object.group(1)
+  
+  return create_temporary_replacement_string(hyphen_run)
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_conway_literal_hyphen_runs(string):
+  
+  return re.sub(
+    r'\\([-]{2,})',
+    replace_conway_literal_hyphen_run,
+    string
+  )
+
+################################################################
 # Replace Conway literal curly brackets with temporary replacements
 ################################################################
 
@@ -2904,6 +2944,9 @@ def escape_conway_special_literals(string):
   
   # Escape ~ as \~
   string = re.sub(r'~', r'\\~', string)
+  
+  # Escape {hyphen run} (2 or more hyphens) as \{hyphen run}
+  string = re.sub(r'[-]{2,}', r'\\\g<0>', string)
   
   # Escape { as \{
   string = re.sub(r'\{', r'\\{', string)
@@ -3146,6 +3189,9 @@ def unescape_conway(string):
   # Unescape \~ as ~
   string = replace_all_conway_literal_tildes(string)
   
+  # Unescape \{hyphen run} (2 or more hyphens) as {hyphen run}
+  string = replace_all_conway_literal_hyphen_runs(string)
+  
   # Unescape \{ as {
   # Unescape \} as }
   string = replace_all_conway_literal_curly_brackets(string)
@@ -3155,6 +3201,12 @@ def unescape_conway(string):
   
   # Unescape ~ as &nbsp;
   string = re.sub('~', '&nbsp;', string)
+  
+  # Unescape --- as — U+2014 EM DASH
+  string = re.sub('[-]{3}', '—', string)
+  
+  # Unescape -- as – U+2013 EN DASH
+  string = re.sub('[-]{2}', '–', string)
   
   # Unescape \. as ・ U+30FB KATAKANA MIDDLE DOT
   string = unescape_katakana_middle_dot(string)
