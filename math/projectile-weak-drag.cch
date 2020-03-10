@@ -8,9 +8,9 @@
 <=h>
   <@ih></@ih>
   <@it></@it>
-  <@i> Solution | #solution | </@i>
+  <@i> [solution.h] | #solution | </@i>
   <@ir></@ir>
-  <@i> Numerics | #numerics | Numerical verification </@i>
+  <@i> Numerics | #numerics | [numerics.h] </@i>
   <@ic></@ic>
 </=h>
 
@@ -36,7 +36,8 @@
   can be obtained for the optimal launch angle; see
   <@>
     Packel \&~Yuen (2004)
-    | https://www.researchgate.net/publication/228851314_Projectile_Motion_with_Resistance_and_the_Lambert_W_Function
+    | https://www.researchgate.net/publication/\
+      228851314_Projectile_Motion_with_Resistance_and_the_Lambert_W_Function
     | Projectile Motion with Resistance and the Lambert W Function
   </@>.
   However, a more realistic model of air resistance
@@ -77,15 +78,24 @@
 </-->
 
 
-<@2> Solution | solution </@2>
+<% [solution.h] | Solution %>
+<@2> [solution.h] | solution </@2>
 
+
+<%
+  [manuscript.h] |
+  Manuscript for Projectile motion: \
+  optimal launch angle for weak quadratic drag
+%>
+
+<% [manuscript.url] | /manuscripts/resistance.pdf %>
 
 <p>
   <b>Manuscript:</b>
   <@>
     <`>resistance.pdf</`>~(983~KB)
-    | /manuscripts/resistance.pdf
-    | Manuscript for Projectile motion: optimal launch angle for weak quadratic drag
+    | [manuscript.url]
+    | [manuscript.h]
   </@>
 </p>
 
@@ -107,6 +117,10 @@
   -->
 <div class="centred-svg">
 <svg class="fit-width" width="360px" viewBox="-2 -9 14 10">
+  
+  <% [font-size-diagram] | font-size="0.8" %>
+  <% [mathit] | class="maths-italic" %>
+  
   <!-- Marker definitions -->
   <defs>
     <!-- velocity arrowhead -->
@@ -117,15 +131,20 @@
       <path d="M 0, -0.3 L 0, 0.3 L 1, 0 z"/>
     </marker>
   </defs>
+  
   <!-- x-axis -->
   <line x1="0" y1="0" x2="11" y2="0"/>
-  <text class="maths-italic" x="11" y="0" font-size="0.8" dx="0.6em" dy="0.3em">x</text>
+  <text [mathit] x="11" y="0" [font-size-diagram]
+    dx="0.6em" dy="0.3em">x</text>
+  
   <!-- y-axis -->
   <line x1="0" y1="0" x2="0" y2="-8"/>
-  <text class="maths-italic" x="0" y="-8" font-size="0.8" dy="-0.5em">y</text>
+  <text [mathit] x="0" y="-8" [font-size-diagram] dy="-0.5em">y</text>
+  
   <!-- trajectory
     See svg_points_trajectory.m
-    https://github.com/yawnoc/projectile-motion-numerics/blob/master/svg_points_trajectory.m
+    https://github.com/yawnoc/projectile-motion-numerics/
+      blob/master/svg_points_trajectory.m
     -->
   <polyline points="\
     0,-0
@@ -214,13 +233,20 @@
     9.98,-0.0964
     10,-1.12e-015
   "/>
+  
   <!-- launch angle phi -->
-  <text class="maths-italic" x="1.2" y="-0.1" font-size="0.8" dx="-0.5em" dy="-0.35em">ϕ</text>
+  <text [mathit] x="1.2" y="-0.1" [font-size-diagram]
+    dx="-0.5em" dy="-0.35em">ϕ</text>
+  
   <!-- range R -->
-  <text class="maths-italic" x="10" y="0" font-size="0.8" dy="1em">R</text>
+  <text [mathit] x="10" y="0" [font-size-diagram]
+    dy="1em">R</text>
+  
   <!-- velocity vector u -->
   <line x1="0" y1="0" x2="1" y2="-2" marker-end="url(#arrowhead)"/>
-  <text class="maths-italic" x="1" y="-2" font-size="0.8" dx="-0.6em">u</text>
+  <text [mathit] x="1" y="-2" [font-size-diagram]
+    dx="-0.6em">u</text>
+  
 </svg>
 </div>
 
@@ -385,8 +411,8 @@
   although the expressions become very complicated (see
   <@>
     manuscript
-    | /manuscripts/resistance.pdf
-    | Manuscript for Projectile motion: optimal launch angle for weak quadratic drag
+    | [manuscript.url]
+    | [manuscript.h]
   </@>
   for details).
   For brevity, we define the following:
@@ -785,7 +811,8 @@
     \phi_2
       &=
       - \tfrac{1393}{3840}
-      + \tfrac{81}{512} \sqrt{2} \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
+      + \tfrac{81}{512} \sqrt{2}
+        \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
       + \tfrac{17}{2048} \log^2 \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}} \\
       &= 3.290 \degree,
   \end{aligned}
@@ -804,7 +831,8 @@
 </$$>
 
 
-<@2> Numerical verification | numerics </@2>
+<% [numerics.h] | Numerical verification %>
+<@2> [numerics.h] | numerics </@2>
 
 
 <p>
@@ -829,7 +857,8 @@
 </p>
 <!--
   See table_b_phi.m
-  https://github.com/yawnoc/projectile-motion-numerics/blob/master/table_b_phi.m
+  https://github.com/yawnoc/projectile-motion-numerics/
+    blob/master/table_b_phi.m
   -->
 <!c><table>
   <tr>
@@ -1001,6 +1030,7 @@
   -->
 <div class="centred-svg">
 <svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 16">
+  
   <!-- Marker definitions -->
   <defs>
     <!-- Horizontal axis coarse tick -->
@@ -1024,49 +1054,84 @@
       <line x1="-0.25" y1="0" x2="0" y2="0"/>
     </marker>
   </defs>
-  <!-- B-axis -->
-  <line x1="0" y1="-35" x2="21" y2="-35"/>
-  <text class="maths-italic" x="21" y="-35" font-size="1" dx="0.6em" dy="0.3em">B</text>
-  <!-- Horizontal axis coarse ticks -->
-  <polyline class="points" points="0,-35 4,-35 8,-35 12,-35 16,-35 20,-35"
+  
+  <%
+    [ticks-coarse-horizontal] |
     marker-start="url(#htickcoarse)"
     marker-mid="url(#htickcoarse)"
-    marker-end="url(#htickcoarse)"/>
-  <text class="maths-italic" x="0" y="-35" font-size="1" dy="1.35em">0</text>
-  <text class="maths-italic" x="4" y="-35" font-size="1" dy="1.35em">1</text>
-  <text class="maths-italic" x="8" y="-35" font-size="1" dy="1.35em">2</text>
-  <text class="maths-italic" x="12" y="-35" font-size="1" dy="1.35em">3</text>
-  <text class="maths-italic" x="16" y="-35" font-size="1" dy="1.35em">4</text>
-  <text class="maths-italic" x="20" y="-35" font-size="1" dy="1.35em">5</text>
+    marker-end="url(#htickcoarse)"
+  %>
+  <%
+    [ticks-fine-horizontal] |
+    marker-start="url(#htickfine)"
+    marker-mid="url(#htickfine)"
+    marker-end="url(#htickfine)"
+  %>
+  <%
+    [ticks-coarse-vertical] |
+    marker-start="url(#vtickcoarse)"
+    marker-mid="url(#vtickcoarse)"
+    marker-end="url(#vtickcoarse)"
+  %>
+  <%
+    [ticks-fine-vertical] |
+    marker-start="url(#vtickfine)"
+    marker-mid="url(#vtickfine)"
+    marker-end="url(#vtickfine)"
+  %>
+  
+  <% [font-size-plot] | font-size="1" %>
+  
+  <!-- B-axis -->
+  <line x1="0" y1="-35" x2="21" y2="-35"/>
+  <text [mathit] x="21" y="-35" [font-size-plot] dx="0.6em" dy="0.3em">B</text>
+  
+  <!-- Horizontal axis coarse ticks -->
+  <polyline class="points" points="0,-35 4,-35 8,-35 12,-35 16,-35 20,-35"
+    [ticks-coarse-horizontal]/>
+  <text [mathit] x="0" y="-35" [tick-labels-horizontal]>0</text>
+  <text [mathit] x="4" y="-35" [tick-labels-horizontal]>1</text>
+  <text [mathit] x="8" y="-35" [tick-labels-horizontal]>2</text>
+  <text [mathit] x="12" y="-35" [tick-labels-horizontal]>3</text>
+  <text [mathit] x="16" y="-35" [tick-labels-horizontal]>4</text>
+  <text [mathit] x="20" y="-35" [tick-labels-horizontal]>5</text>
+  <%
+    [tick-labels-horizontal] |
+    font-size="1" dy="1.35em"
+  %>
+  
   <!-- Horizontal axis fine ticks -->
   <polyline class="points"
     points="0.8,-35 1.6,-35 2.4,-35 3.2,-35 4.8,-35 5.6,-35 6.4,-35 7.2,-35
       8.8,-35 9.6,-35 10.4,-35 11.2,-35 12.8,-35 13.6,-35 14.4,-35 15.2,-35
       16.8,-35 17.6,-35 18.4,-35 19.2,-35 20.8,-35"
-    marker-start="url(#htickfine)"
-    marker-mid="url(#htickfine)"
-    marker-end="url(#htickfine)"/>
+    [ticks-fine-horizontal]/>
+  
   <!-- phi-axis -->
   <line x1="0" y1="-35" x2="0" y2="-46.8"/>
-  <text class="maths-italic" x="0" y="-46.8" font-size="1" dy="-0.5em">ϕ</text>
+  <text [mathit] x="0" y="-46.8" [font-size-plot] dy="-0.5em">ϕ</text>
+  
   <!-- Vertical axis coarse ticks -->
   <polyline class="points"
     points="0,-35 0,-40 0,-45"
-    marker-start="url(#vtickcoarse)"
-    marker-mid="url(#vtickcoarse)"
-    marker-end="url(#vtickcoarse)"/>
-  <text class="maths-italic" x="0" y="-35" font-size="1" dx="-1.4em" dy="0.3em">35°</text>
-  <text class="maths-italic" x="0" y="-40" font-size="1" dx="-1.4em" dy="0.3em">40°</text>
-  <text class="maths-italic" x="0" y="-45" font-size="1" dx="-1.4em" dy="0.3em">45°</text>
+    [ticks-coarse-vertical]/>
+  <text [mathit] x="0" y="-35" [tick-labels-vertical]>35°</text>
+  <text [mathit] x="0" y="-40" [tick-labels-vertical]>40°</text>
+  <text [mathit] x="0" y="-45" [tick-labels-vertical]>45°</text>
+  <%
+    [tick-labels-vertical] |
+    font-size="1" dx="-1.4em" dy="0.3em"
+  %>
+  
   <!-- Vertical axis fine ticks -->
   <polyline class="points"
     points="0,-36 0,-37 0,-38 0,-39 0,-41 0,-42 0,-43 0,-44 0,-46"
-    marker-start="url(#vtickfine)"
-    marker-mid="url(#vtickfine)"
-    marker-end="url(#vtickfine)"/>
+    [ticks-fine-vertical]/>
+  
   <!-- numerical
     See svg_points_b_phi.m
-    https://github.com/yawnoc/projectile-motion-numerics/blob/master/svg_points_b_phi.m
+    https://github.com/yawnoc/projectile-motion-numerics/
+      blob/master/svg_points_b_phi.m
     -->
   <polyline points="0,-45
   0.4,-44.43
@@ -1120,10 +1185,12 @@
   19.6,-35.4
   20,-35.32
   "/>
-  <text x="10" y="-37.98" font-size="1" dx="2.5em" dy="-0.5em">Numerical</text>
+  <text x="10" y="-37.98" [font-size-plot]
+    dx="2.5em" dy="-0.5em">Numerical</text>
   <!-- asymptotic
     See svg_points_b_phi_asymptotic.m
-    https://github.com/yawnoc/projectile-motion-numerics/blob/master/svg_points_b_phi_asymptotic.m
+    https://github.com/yawnoc/projectile-motion-numerics/
+      blob/master/svg_points_b_phi_asymptotic.m
     -->
   <polyline points="0,-45
   0.2,-44.71
@@ -1168,7 +1235,10 @@
   8,-46.12
   8.2,-46.49
   "/>
-  <text x="8.2" y="-46.49" font-size="1" dx="-3.5em" dy="1em">Asymptotic</text>
+  
+  <text x="8.2" y="-46.49" [font-size-plot]
+    dx="-3.5em" dy="1em">Asymptotic</text>
+  
 </svg>
 </div>
 
@@ -1200,50 +1270,50 @@
   -->
 <div class="centred-svg">
 <svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 21">
+  
   <!-- u/c-axis -->
   <line x1="0" y1="-30" x2="20.5" y2="-30"/>
-  <text class="maths-italic" x="20.5" y="-30" font-size="1" dx="1.2em" dy="0.3em">u\,/\,c</text>
+  <text [mathit] x="20.5" y="-30" [font-size-plot]
+    dx="1.2em" dy="0.3em">u\,/\,c</text>
+  
   <!-- Horizontal axis coarse ticks -->
   <polyline class="points"
     points="0,-30 5,-30 10,-30 15,-30 20,-30"
-    marker-start="url(#htickcoarse)"
-    marker-mid="url(#htickcoarse)"
-    marker-end="url(#htickcoarse)"/>
-  <text class="maths-italic" x="0" y="-30" font-size="1" dy="1.35em">0</text>
-  <text class="maths-italic" x="5" y="-30" font-size="1" dy="1.35em">1</text>
-  <text class="maths-italic" x="10" y="-30" font-size="1" dy="1.35em">2</text>
-  <text class="maths-italic" x="15" y="-30" font-size="1" dy="1.35em">3</text>
-  <text class="maths-italic" x="20" y="-30" font-size="1" dy="1.35em">4</text>
+    [ticks-coarse-horizontal]/>
+  <text [mathit] x="0" y="-30" [tick-labels-horizontal]>0</text>
+  <text [mathit] x="5" y="-30" [tick-labels-horizontal]>1</text>
+  <text [mathit] x="10" y="-30" [tick-labels-horizontal]>2</text>
+  <text [mathit] x="15" y="-30" [tick-labels-horizontal]>3</text>
+  <text [mathit] x="20" y="-30" [tick-labels-horizontal]>4</text>
+  
   <!-- Horizontal axis fine ticks -->
   <polyline class="points"
     points="1,-30 2,-30 3,-30 4,-30 6,-30 7,-30 8,-30 9,-30
       11,-30 12,-30 13,-30 14,-30 16,-30 17,-30 18,-30 19,-30"
-    marker-start="url(#htickfine)"
-    marker-mid="url(#htickfine)"
-    marker-end="url(#htickfine)"/>
+    [ticks-fine-horizontal]/>
+  
   <!-- phi-axis -->
   <line x1="0" y1="-30" x2="0" y2="-46.8"/>
-  <text class="maths-italic" x="0" y="-46.8" font-size="1" dy="-0.5em">ϕ</text>
+  <text [mathit] x="0" y="-46.8" [font-size-plot] dy="-0.5em">ϕ</text>
   <!-- Vertical axis coarse ticks -->
   <polyline class="points"
     points="0,-30 0,-35 0,-40 0,-45"
-    marker-start="url(#vtickcoarse)"
-    marker-mid="url(#vtickcoarse)"
-    marker-end="url(#vtickcoarse)"/>
-  <text class="maths-italic" x="0" y="-30" font-size="1" dx="-1.4em" dy="0.3em">30°</text>
-  <text class="maths-italic" x="0" y="-35" font-size="1" dx="-1.4em" dy="0.3em">35°</text>
-  <text class="maths-italic" x="0" y="-40" font-size="1" dx="-1.4em" dy="0.3em">40°</text>
-  <text class="maths-italic" x="0" y="-45" font-size="1" dx="-1.4em" dy="0.3em">45°</text>
+    [ticks-coarse-vertical]/>
+  <text [mathit] x="0" y="-30" [tick-labels-vertical]>30°</text>
+  <text [mathit] x="0" y="-35" [tick-labels-vertical]>35°</text>
+  <text [mathit] x="0" y="-40" [tick-labels-vertical]>40°</text>
+  <text [mathit] x="0" y="-45" [tick-labels-vertical]>45°</text>
+  
   <!-- Vertical axis fine ticks -->
   <polyline class="points"
     points="0,-31 0,-32 0,-33 0,-34 0,-36 0,-37 0,-38 0,-39
       0,-41 0,-42 0,-43 0,-44 0,-46"
-    marker-start="url(#vtickfine)"
-    marker-mid="url(#vtickfine)"
-    marker-end="url(#vtickfine)"/>
+    [ticks-fine-vertical]/>
+  
   <!-- numerical
     See svg_points_u_phi.m
-    https://github.com/yawnoc/projectile-motion-numerics/blob/master/svg_points_u_phi.m
+    https://github.com/yawnoc/projectile-motion-numerics/
+      blob/master/svg_points_u_phi.m
     -->
   <polyline points="0,-45
   0.5,-44.94
@@ -1287,10 +1357,14 @@
   19.5,-31.06
   20,-30.87
   "/>
-  <text x="10" y="-36.2" font-size="1" dx="2.5em" dy="-0.5em">Numerical</text>
+  
+  <text x="10" y="-36.2" [font-size-plot]
+    dx="2.5em" dy="-0.5em">Numerical</text>
+  
   <!-- asymptotic
     See svg_points_u_phi_asymptotic.m
-    https://github.com/yawnoc/projectile-motion-numerics/blob/master/svg_points_u_phi_asymptotic.m
+    https://github.com/yawnoc/projectile-motion-numerics/
+      blob/master/svg_points_u_phi_asymptotic.m
     -->
   <polyline points="0,-45
   0.25,-44.98
@@ -1323,7 +1397,8 @@
   7,-45.84
   7.25,-46.89
   "/>
-  <text x="7.25" y="-46.89" font-size="1" dx="-3.2em" dy="1em">Asymptotic</text>
+  <text x="7.25" y="-46.89" [font-size-plot]
+    dx="-3.2em" dy="1em">Asymptotic</text>
 </svg>
 </div>
 
