@@ -1753,7 +1753,7 @@ def replace_all_sun_tzu_link_divisions(string):
 #     [<link rel="stylesheet" href="/conway-katex.min.css">
 #     <script defer src="/conway-katex.min.js"></script>]
 #     [<script defer src="/conway-render.min.js"></script>]
-#     <title>[title — ]Conway's site</title>
+#     <title>[title \| ]Conway's site</title>
 #     [<style>
 #       [Conway-special-literal-escaped CSS]
 #     </style>]
@@ -1766,10 +1766,9 @@ def replace_all_sun_tzu_link_divisions(string):
 # where description is omitted if [description] is {empty string},
 # "/conway-katex.min.*" are loaded if [rendering] contains m,
 # "/conway-render.min.js" is loaded if [rendering] contains any of d, m or r,
-# [title — ] is omitted if {title} is {empty string},
-# the dash is U+2014 EM DASH, and [dateRender();], [mathsRender();] and
-# [romanisationInitialise();] are called if and only if [rendering] contains
-# d, m and r respectively.
+# [title \| ] is omitted if {title} is {empty string},
+# and [dateRender();], [mathsRender();] and [romanisationInitialise();]
+# are called if and only if [rendering] contains d, m and r respectively.
 
 # Processed string (end):
 #   </body>
@@ -1825,9 +1824,9 @@ def replace_preamble(string):
   description = escape_attribute_value(description)
   
   if title == '':
-    title_with_dash = ''
+    title_with_pipe = ''
   else:
-    title_with_dash = f'{title} — '
+    title_with_pipe = f'{title} \| '
   
   require_date = 'd' in rendering
   require_maths = 'm' in rendering
@@ -1901,7 +1900,7 @@ def replace_preamble(string):
       <link rel="stylesheet" href="/conway.min.css">
       {maths_css_js}
       {rendering_js}
-      <title>{title_with_dash}Conway's site</title>
+      <title>{title_with_pipe}Conway's site</title>
       {embedded_css}
     </head>
     <body{onload_spec}>
