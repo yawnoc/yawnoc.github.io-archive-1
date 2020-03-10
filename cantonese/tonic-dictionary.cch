@@ -122,28 +122,22 @@
   
   [header.tr]
   
-  <!-- Page 1: aa -->
-  [[1]]
+  [[1]] <!-- aa -->
   
   <tr>
     <td>(1)</td>
     <!-- aa -->
-    <td>
-      <@> [^a/^] | [/1/] | </@>
-    </td>
+    <td><@> [^a/^] | [/1/] | </@></td>
     <td>[^aa^]</td>
     <td>aa</td>
   </tr>
   
-  <!-- Page 2: ai aai -->
-  [[2]]
+  [[2]] <!-- ai aai -->
   
   <tr>
     <td>(2)</td>
     <!-- ai -->
-    <td>
-      <@> [^ai^] | [/2/] | </@>
-    </td>
+    <td><@> [^ai^] | [/2/] | </@></td>
     <td>[^ai^]</td>
     <td>ai</td>
   </tr>
@@ -151,22 +145,17 @@
   <tr>
     <td>(3)</td>
     <!-- aai -->
-    <td>
-      <@> [^a/i^] | [/2/] | </@>
-    </td>
+    <td><@> [^a/i^] | [/2/] | </@></td>
     <td>[^aai^]</td>
     <td>aai</td>
   </tr>
   
-  <!-- Page 3: ak aak am -->
-  [[3]]
+  [[3]] <!-- ak aak am -->
   
   <tr>
     <td>(4)</td>
     <!-- ak -->
-    <td>
-      <@> [^ak^] | [/3/] | </@>
-    </td>
+    <td><@> [^ak^] | [/3/] | </@></td>
     <td>[^ak^]</td>
     <td>ak</td>
   </tr>
@@ -174,9 +163,7 @@
   <tr>
     <td>(5)</td>
     <!-- aak -->
-    <td>
-      <@> [^a/k^] | [/3/] | </@>
-    </td>
+    <td><@> [^a/k^] | [/3/] | </@></td>
     <td>[^aak^]</td>
     <td>aak</td>
   </tr>
@@ -184,22 +171,17 @@
   <tr>
     <td>(6)</td>
     <!-- am -->
-    <td>
-      <@> [^am^] | [/3/] | </@>
-    </td>
+    <td><@> [^am^] | [/3/] | </@></td>
     <td>[^am^]</td>
     <td>am</td>
   </tr>
   
-  <!-- Page 4: aam aan ang aang ap -->
-  [[4]]
+  [[4]] <!-- aam aan ang aang ap -->
   
   <tr>
     <td>(7)</td>
     <!-- aam -->
-    <td>
-      <@> [^a/m^] | [/4/] | </@>
-    </td>
+    <td><@> [^a/m^] | [/4/] | </@></td>
     <td>[^aam^]</td>
     <td>aam</td>
   </tr>
@@ -207,9 +189,7 @@
   <tr>
     <td>(8)</td>
     <!-- aan -->
-    <td>
-      <@> [^a/n^] | [/4/] | </@>
-    </td>
+    <td><@> [^a/n^] | [/4/] | </@></td>
     <td>[^aan^]</td>
     <td>aan</td>
   </tr>
@@ -217,9 +197,7 @@
   <tr>
     <td>(9)</td>
     <!-- ang -->
-    <td>
-      <@> [^ang^] | [/4/] | </@>
-    </td>
+    <td><@> [^ang^] | [/4/] | </@></td>
     <td>[^ang^]</td>
     <td>ang</td>
   </tr>
@@ -227,9 +205,7 @@
   <tr>
     <td>(10)</td>
     <!-- aang -->
-    <td>
-      <@> [^a/ng^] | [/4/] | </@>
-    </td>
+    <td><@> [^a/ng^] | [/4/] | </@></td>
     <td>[^aang^]</td>
     <td>aang</td>
   </tr>
@@ -237,22 +213,17 @@
   <tr>
     <td>(11)</td>
     <!-- ap -->
-    <td>
-      <@> [^ap^] | [/4/] | </@>
-    </td>
+    <td><@> [^ap^] | [/4/] | </@></td>
     <td>[^ap^]</td>
     <td>ap</td>
   </tr>
   
-  <!-- Page 5: aap at aat -->
-  [[5]]
+  [[5]] <!-- aap at aat -->
   
   <tr>
     <td>(12)</td>
     <!-- aap -->
-    <td>
-      <@> [^a/p^] | [/5/] | </@>
-    </td>
+    <td><@> [^a/p^] | [/5/] | </@></td>
     <td>[^aap^]</td>
     <td>aap</td>
   </tr>
@@ -260,9 +231,7 @@
   <tr>
     <td>(13)</td>
     <!-- at -->
-    <td>
-      <@> [^at^] | [/5/] | </@>
-    </td>
+    <td><@> [^at^] | [/5/] | </@></td>
     <td>[^at^]</td>
     <td>at</td>
   </tr>
@@ -270,22 +239,17 @@
   <tr>
     <td>(14)</td>
     <!-- aat -->
-    <td>
-      <@> [^a/t^] | [/5/] | </@>
-    </td>
+    <td><@> [^a/t^] | [/5/] | </@></td>
     <td>[^aat^]</td>
     <td>aat</td>
   </tr>
   
-  <!-- Page 6: au aau -->
-  [[6]]
+  [[6]] <!-- au aau -->
   
   <tr>
     <td>(15)</td>
     <!-- au -->
-    <td>
-      <@> [^au^] | [/6/] | </@>
-    </td>
+    <td><@> [^au^] | [/6/] | </@></td>
     <td>[^au^]</td>
     <td>au</td>
   </tr>
@@ -293,9 +257,7 @@
   <tr>
     <td>(16)</td>
     <!-- aau -->
-    <td>
-      <@> [^a/u^] | [/6/] | </@>
-    </td>
+    <td><@> [^a/u^] | [/6/] | </@></td>
     <td>[^aau^]</td>
     <td>aau</td>
   </tr>
@@ -311,80 +273,62 @@
   
   [header.tr]
   
-  <!-- Page 7: chaa -->
-  [[7]]
+  [[7]] <!-- chaa -->
   
   <tr>
     <td>(17)</td>
     <!-- chaa -->
-    <td>
-      <@> [^cha/^] | [/7/] | </@>
-    </td>
+    <td><@> [^cha/^] | [/7/] | </@></td>
     <td>[^chaa^]</td>
     <td>zaa</td>
   </tr>
   
-  <!-- Page 8: ch'aa -->
-  [[8]]
+  [[8]] <!-- ch'aa -->
   
   <tr>
     <td>(18)</td>
     <!-- ch'aa -->
-    <td>
-      <@> [^ch'a/^] | [/8/] | </@>
-    </td>
+    <td><@> [^ch'a/^] | [/8/] | </@></td>
     <td>[^ch'aa^]</td>
     <td>caa</td>
   </tr>
   
-  <!-- Page 9: chai -->
-  [[9]]
+  [[9]] <!-- chai -->
   
   <tr>
     <td>(19)</td>
     <!-- chai -->
-    <td>
-      <@> [^chai^] | [/n48/] | </@>
-    </td>
+    <td><@> [^chai^] | [/n48/] | </@></td>
     <td>[^chai^]</td>
     <td>zai</td>
   </tr>
   
-  <!-- Page 10: chaai -->
-  [[10]]
+  [[10]] <!-- chaai -->
   
   <tr>
     <td>(20)</td>
     <!-- chaai -->
-    <td>
-      <@> [^cha/i^] | [/n49/] | </@>
-    </td>
+    <td><@> [^cha/i^] | [/n49/] | </@></td>
     <td>[^chaai^]</td>
     <td>zaai</td>
   </tr>
   
-  <!-- Page 11: ch'aai -->
-  [[11]]
+  [[11]] <!-- ch'aai -->
   
   <tr>
     <td>(21)</td>
     <!-- ch'aai -->
-    <td>
-      <@> [^ch'a/i^] | [/n50/] | </@>
-    </td>
+    <td><@> [^ch'a/i^] | [/n50/] | </@></td>
     <td>[^ch'aai^]</td>
     <td>caai</td>
   </tr>
   
-  <!-- Page 12: chak ch'ak chaak -->
-  [[12]]
+  [[12]] <!-- chak ch'ak chaak -->
   
   <tr>
     <td>(22)</td>
     <!-- chak -->
-    <td>
-      <@> [^chak^] | [/n51/] | </@>
-    </td>
+    <td><@> [^chak^] | [/n51/] | </@></td>
     <td>[^chak^]</td>
     <td>zak</td>
   </tr>
@@ -392,9 +336,7 @@
   <tr>
     <td>(23)</td>
     <!-- ch'ak -->
-    <td>
-      <@> [^ch'ak^] | [/n51/] | </@>
-    </td>
+    <td><@> [^ch'ak^] | [/n51/] | </@></td>
     <td>[^ch'ak^]</td>
     <td>cak</td>
   </tr>
@@ -402,48 +344,37 @@
   <tr>
     <td>(24)</td>
     <!-- chaak -->
-    <td>
-      <@> [^cha/k^] | [/n51/] | </@>
-    </td>
+    <td><@> [^cha/k^] | [/n51/] | </@></td>
     <td>[^chaak^]</td>
     <td>zaak</td>
   </tr>
   
-  <!-- Page 13: ch'aak -->
-  [[13]]
+  [[13]] <!-- ch'aak -->
   
   <tr>
     <td>(25)</td>
     <!-- ch'aak -->
-    <td>
-      <@> [^ch'a/k^] | [/n52/] | </@>
-    </td>
+    <td><@> [^ch'a/k^] | [/n52/] | </@></td>
     <td>[^ch'aak^]</td>
     <td>caak</td>
   </tr>
   
-  <!-- Page 14: cham-->
-  [[14]]
+  [[14]] <!-- cham-->
   
   <tr>
     <td>(26)</td>
     <!-- cham -->
-    <td>
-      <@> [^cham^] | [/n53/] | </@>
-    </td>
+    <td><@> [^cham^] | [/n53/] | </@></td>
     <td>[^cham^]</td>
     <td>zam</td>
   </tr>
   
-  <!-- Page 15: ch'am chaam-->
-  [[15]]
+  [[15]] <!-- ch'am chaam-->
   
   <tr>
     <td>(27)</td>
     <!-- ch'am -->
-    <td>
-      <@> [^ch'am^] | [/n54/] | </@>
-    </td>
+    <td><@> [^ch'am^] | [/n54/] | </@></td>
     <td>[^ch'am^]</td>
     <td>cam</td>
   </tr>
@@ -451,22 +382,17 @@
   <tr>
     <td>(28)</td>
     <!-- chaam -->
-    <td>
-      <@> [^cha/m^] | [/n54/] | </@>
-    </td>
+    <td><@> [^cha/m^] | [/n54/] | </@></td>
     <td>[^chaam^]</td>
     <td>zaam</td>
   </tr>
   
-  <!-- Page 16: ch'aam chan-->
-  [[16]]
+  [[16]] <!-- ch'aam chan-->
   
   <tr>
     <td>(29)</td>
     <!-- ch'aam -->
-    <td>
-      <@> [^ch'a/m^] | [/n55/] | </@>
-    </td>
+    <td><@> [^ch'a/m^] | [/n55/] | </@></td>
     <td>[^ch'aam^]</td>
     <td>caam</td>
   </tr>
@@ -474,48 +400,37 @@
   <tr>
     <td>(30)</td>
     <!-- chan -->
-    <td>
-      <@> [^chan^] | [/n55/] | </@>
-    </td>
+    <td><@> [^chan^] | [/n55/] | </@></td>
     <td>[^chan^]</td>
     <td>zan</td>
   </tr>
   
-  <!-- Page 17: ch'an-->
-  [[17]]
+  [[17]] <!-- ch'an-->
   
   <tr>
     <td>(31)</td>
     <!-- ch'an -->
-    <td>
-      <@> [^ch'an^] | [/n56/] | </@>
-    </td>
+    <td><@> [^ch'an^] | [/n56/] | </@></td>
     <td>[^ch'an^]</td>
     <td>can</td>
   </tr>
   
-  <!-- Page 19: chaan-->
-  [[19]]
+  [[19]] <!-- chaan-->
   
   <tr>
     <td>(32)</td>
     <!-- chaan -->
-    <td>
-      <@> [^cha/n^] | [/n58/] | </@>
-    </td>
+    <td><@> [^cha/n^] | [/n58/] | </@></td>
     <td>[^chaan^]</td>
     <td>zaan</td>
   </tr>
   
-  <!-- Page 20: ch'aan chang chaang -->
-  [[20]]
+  [[20]] <!-- ch'aan chang chaang -->
   
   <tr>
     <td>(33)</td>
     <!-- ch'aan -->
-    <td>
-      <@> [^ch'a/n^] | [/n59/] | </@>
-    </td>
+    <td><@> [^ch'a/n^] | [/n59/] | </@></td>
     <td>[^ch'aan^]</td>
     <td>caan</td>
   </tr>
@@ -523,9 +438,7 @@
   <tr>
     <td>(34)</td>
     <!-- chang -->
-    <td>
-      <@> [^chang^] | [/n59/] | </@>
-    </td>
+    <td><@> [^chang^] | [/n59/] | </@></td>
     <td>[^chang^]</td>
     <td>zang</td>
   </tr>
@@ -533,35 +446,27 @@
   <tr>
     <td>(35)</td>
     <!-- chaang -->
-    <td>
-      <@> [^cha/ng^] | [/n59/] | </@>
-    </td>
+    <td><@> [^cha/ng^] | [/n59/] | </@></td>
     <td>[^chaang^]</td>
     <td>zaang</td>
   </tr>
   
-  <!-- Page 21: ch'aang -->
-  [[21]]
+  [[21]] <!-- ch'aang -->
   
   <tr>
     <td>(36)</td>
     <!-- ch'aang -->
-    <td>
-      <@> [^ch'a/ng^] | [/n60/] | </@>
-    </td>
+    <td><@> [^ch'a/ng^] | [/n60/] | </@></td>
     <td>[^ch'aang^]</td>
     <td>caang</td>
   </tr>
   
-  <!-- Page 22: chap chaap -->
-  [[22]]
+  [[22]] <!-- chap chaap -->
   
   <tr>
     <td>(37)</td>
     <!-- chap -->
-    <td>
-      <@> [^chap^] | [/n61/] | </@>
-    </td>
+    <td><@> [^chap^] | [/n61/] | </@></td>
     <td>[^chap^]</td>
     <td>zap</td>
   </tr>
@@ -569,22 +474,17 @@
   <tr>
     <td>(38)</td>
     <!-- chaap -->
-    <td>
-      <@> [^cha/p^] | [/n61/] | </@>
-    </td>
+    <td><@> [^cha/p^] | [/n61/] | </@></td>
     <td>[^chaap^]</td>
     <td>zaap</td>
   </tr>
   
-  <!-- Page 23: ch'aap chat -->
-  [[23]]
+  [[23]] <!-- ch'aap chat -->
   
   <tr>
     <td>(39)</td>
     <!-- ch'aap -->
-    <td>
-      <@> [^ch'a/p^] | [/n62/] | </@>
-    </td>
+    <td><@> [^ch'a/p^] | [/n62/] | </@></td>
     <td>[^ch'aap^]</td>
     <td>caap</td>
   </tr>
@@ -592,22 +492,17 @@
   <tr>
     <td>(40)</td>
     <!-- chat -->
-    <td>
-      <@> [^chat^] | [/n62/] | </@>
-    </td>
+    <td><@> [^chat^] | [/n62/] | </@></td>
     <td>[^chat^]</td>
     <td>zat</td>
   </tr>
   
-  <!-- Page 24: chaat ch'aat -->
-  [[24]]
+  [[24]] <!-- chaat ch'aat -->
   
   <tr>
     <td>(41)</td>
     <!-- chaat -->
-    <td>
-      <@> [^cha/t^] | [/n63/] | </@>
-    </td>
+    <td><@> [^cha/t^] | [/n63/] | </@></td>
     <td>[^chaat^]</td>
     <td>zaat</td>
   </tr>
@@ -615,113 +510,87 @@
   <tr>
     <td>(42)</td>
     <!-- ch'aat -->
-    <td>
-      <@> [^ch'a/t^] | [/n63/] | </@>
-    </td>
+    <td><@> [^ch'a/t^] | [/n63/] | </@></td>
     <td>[^ch'aat^]</td>
     <td>caat</td>
   </tr>
   
-  <!-- Page 25: chau -->
-  [[25]]
+  [[25]] <!-- chau -->
   
   <tr>
     <td>(43)</td>
     <!-- chau -->
-    <td>
-      <@> [^chau^] | [/n64/] | </@>
-    </td>
+    <td><@> [^chau^] | [/n64/] | </@></td>
     <td>[^chau^]</td>
     <td>zau</td>
   </tr>
   
-  <!-- Page 26: ch'au -->
-  [[26]]
+  [[26]] <!-- ch'au -->
   
   <tr>
     <td>(44)</td>
     <!-- ch'au -->
-    <td>
-      <@> [^ch'au^] | [/n65/] | </@>
-    </td>
+    <td><@> [^ch'au^] | [/n65/] | </@></td>
     <td>[^ch'au^]</td>
     <td>cau</td>
   </tr>
   
-  <!-- Page 28: chaau -->
-  [[28]]
+  [[28]] <!-- chaau -->
   
   <tr>
     <td>(45)</td>
     <!-- chaau -->
-    <td>
-      <@> [^cha/u^] | [/n67/] | </@>
-    </td>
+    <td><@> [^cha/u^] | [/n67/] | </@></td>
     <td>[^chaau^]</td>
     <td>zaau</td>
   </tr>
   
-  <!-- Page 29: ch'aau -->
-  [[29]]
+  [[29]] <!-- ch'aau -->
   
   <tr>
     <td>(46)</td>
     <!-- ch'aau -->
-    <td>
-      <@> [^ch'a/u^] | [/n68/] | </@>
-    </td>
+    <td><@> [^ch'a/u^] | [/n68/] | </@></td>
     <td>[^ch'aau^]</td>
     <td>caau</td>
   </tr>
   
-  <!-- Page 30: che -->
-  [[30]]
+  [[30]] <!-- che -->
   
   <tr>
     <td>(47)</td>
     <!-- che -->
-    <td>
-      <@> [^che/^] | [/n69/] | </@>
-    </td>
+    <td><@> [^che/^] | [/n69/] | </@></td>
     <td>[^che^]</td>
     <td>ze</td>
   </tr>
   
-  <!-- Page 31: ch'e -->
-  [[31]]
+  [[31]] <!-- ch'e -->
   
   <tr>
     <td>(48)</td>
     <!-- ch'e -->
-    <td>
-      <@> [^ch'e/^] | [/n70/] | </@>
-    </td>
+    <td><@> [^ch'e/^] | [/n70/] | </@></td>
     <td>[^ch'e^]</td>
     <td>ce</td>
   </tr>
   
-  <!-- Page 32: choek -->
-  [[32]]
+  [[32]] <!-- choek -->
   
   <tr>
     <td>(49)</td>
     <!-- choek -->
-    <td>
-      <@> [^che/uk^] | [/n71/] | </@>
-    </td>
+    <td><@> [^che/uk^] | [/n71/] | </@></td>
     <td>[^choek^]</td>
     <td>zoek</td>
   </tr>
   
-  <!-- Page 33: ch'oek choeng -->
-  [[33]]
+  [[33]] <!-- ch'oek choeng -->
   
   <tr>
     <td>(50)</td>
     <!-- ch'oek -->
-    <td>
-      <@> [^ch'e/uk^] | [/n72/] | </@>
-    </td>
+    <td><@> [^ch'e/uk^] | [/n72/] | </@></td>
     <td>[^ch'oek^]</td>
     <td>coek</td>
   </tr>
@@ -729,74 +598,57 @@
   <tr>
     <td>(51)</td>
     <!-- choeng -->
-    <td>
-      <@> [^che/ung^] | [/n72/] | </@>
-    </td>
+    <td><@> [^che/ung^] | [/n72/] | </@></td>
     <td>[^choeng^]</td>
     <td>zoeng</td>
   </tr>
   
-  <!-- Page 35: ch'oeng -->
-  [[35]]
+  [[35]] <!-- ch'oeng -->
   
   <tr>
     <td>(52)</td>
     <!-- ch'oeng -->
-    <td>
-      <@> [^ch'e/ung^] | [/n74/] | </@>
-    </td>
+    <td><@> [^ch'e/ung^] | [/n74/] | </@></td>
     <td>[^ch'oeng^]</td>
     <td>coeng</td>
   </tr>
   
-  <!-- Page 37: chee -->
-  [[37]]
+  [[37]] <!-- chee -->
   
   <tr>
     <td>(53)</td>
     <!-- chee -->
-    <td>
-      <@> [^chi/^] | [/n76/] | </@>
-    </td>
+    <td><@> [^chi/^] | [/n76/] | </@></td>
     <td>[^chee^]</td>
     <td>zi</td>
   </tr>
   
-  <!-- Page 10*: ch'ee -->
-  [[10*]]
+  [[10*]] <!-- ch'ee -->
   
   <tr>
     <td>(54)</td>
     <!-- ch'ee -->
-    <td>
-      <@> [^ch'i/^] | [/10/] | </@>
-    </td>
+    <td><@> [^ch'i/^] | [/10/] | </@></td>
     <td>[^ch'ee^]</td>
     <td>ci</td>
   </tr>
   
-  <!-- Page 13*: chik -->
-  [[13*]]
+  [[13*]] <!-- chik -->
   
   <tr>
     <td>(55)</td>
     <!-- chik -->
-    <td>
-      <@> [^chik^] | [/13/] | </@>
-    </td>
+    <td><@> [^chik^] | [/13/] | </@></td>
     <td>[^chik^]</td>
     <td>zik</td>
   </tr>
   
-  <!-- Page 14*: ch'ik -->
-  [[14*]]
+  [[14*]] <!-- ch'ik -->
   
   <tr>
     <td>(56)</td>
     <!-- ch'ik -->
-    <td>
-      <@> [^ch'ik^] | [/14/] | </@>
-    </td>
+    <td><@> [^ch'ik^] | [/14/] | </@></td>
     <td>[^ch'ik^]</td>
     <td>cik</td>
   </tr>
