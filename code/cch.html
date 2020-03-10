@@ -27,7 +27,7 @@
 <h1>Python: a regex converter from CCH to HTML</h1>
 <p class="page-properties">
 First created:&nbsp;20190720<br>
-Last modified:&nbsp;<b>20200309</b><br>
+Last modified:&nbsp;<b>20200310</b><br>
 <b>Code:</b>
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch.py" title="GitHub: cch.py"><code>cch.py</code></a>
 <noscript>Enable Javascript for <a href="/code/katex-guide.html" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
@@ -1452,6 +1452,12 @@ while "unescaped form" refers to the HTML it gets converted into.
 <td>Literal tilde</td>
 </tr>
 <tr>
+<td><code>\--</code></td>
+<td><code>--</code></td>
+<td>--</td>
+<td>Literal hyphen run (2 or more)</td>
+</tr>
+<tr>
 <td><code>\{</code></td>
 <td><code>{</code></td>
 <td>{</td>
@@ -1481,6 +1487,18 @@ Literal closing <a href="#conway-italics" title="Conway italics">curly bracket</
 <td><code>&amp;nbsp;</code></td>
 <td>&nbsp;</td>
 <td>Non-breaking space</td>
+</tr>
+<tr>
+<td><code>---</code></td>
+<td><code>—</code></td>
+<td>—</td>
+<td><code>— U+2014 EM DASH</code></td>
+</tr>
+<tr>
+<td><code>--</code></td>
+<td><code>–</code></td>
+<td>–</td>
+<td><code>– U+2013 EN DASH</code></td>
 </tr>
 <tr>
 <td><code>\.</code></td>
