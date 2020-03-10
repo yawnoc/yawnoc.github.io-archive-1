@@ -2,9 +2,14 @@
   Quick links for Williams' {Tonic Dictionary} of Cantonese
   | 20200220 | 20200223 | d
   | Quick links for each syllable of Samuel Wells Williams' \
-    {A Tonic Dictionary Of The Chinese Language In The Canton Dialect} \
+    {[tonic-dictionary.h]} \
     《英華分韻撮要》
 </*>
+
+<%
+  [tonic-dictionary.h] |
+  A Tonic Dictionary Of The Chinese Language In The Canton Dialect
+%>
 
 <=h>
   <@ih></@ih>
@@ -15,22 +20,24 @@
 
 <h1>Quick links for Williams' {Tonic Dictionary} of Cantonese</h1>
 
+<% [conway-rom.h] | Conway's Custom \Rom for Cantonese %>
+<% [conway-rom.url] | /cantonese/conway-romanisation.html %>
+
 <*p>
-  <@>
-    Conway's Custom \Rom for Cantonese
-    | /cantonese/conway-romanisation.html
-    |
-  </@>
+  <@> [conway-rom.h] | [conway-rom.url] | </@>
 </*p>
+
+<!-- [/ /] for archive.org URL with mode/1up -->
+<% [/ | https://archive.org/details/tonicdictionaryo00will/page/ %>
+<% /] | /mode/1up %>
 
 <p>
   Quick links for each syllable
   of
   <@>
-    {A Tonic Dictionary Of The Chinese Language In The Canton Dialect}
-    | https://archive.org/details/tonicdictionaryo00will/page/n6/mode/1up
-    | archive.org: \
-      A Tonic Dictionary Of The Chinese Language In The Canton Dialect
+    {[tonic-dictionary.h]}
+    | [/n6/]
+    | archive.org: [tonic-dictionary.h]
   </@>,
   or 《英華分韻撮要》,
   written by
@@ -46,11 +53,7 @@
 
 <p>
   The equivalent \roms in
-  <@>
-    my own system
-    | /cantonese/conway-romanisation.html
-    | Conway's Custom \Rom for Cantonese
-  </@>
+  <@> my own system | [conway-rom.url] | [conway-rom.h] </@>
   and in
   <@>
     Jyutping
@@ -61,16 +64,20 @@
   Note that Jyutping (like all contemporary \rom systems)
   <@>
     merges
-    \{<^e><:h>ts</:h></^e> vs <^e><:h>ch</:h></^e>\},
-    \{<^e><:h>ts'</:h></^e> vs <^e><:h>ch'</:h></^e>\} and
-    \{<^e><:h>s</:h></^e> vs <^e><:h>sh</:h></^e>\}
-    | /cantonese/conway-romanisation.html#ts-vs-ch
+    \{[^[:ts:]^] vs [^[:ch:]^]\},
+    \{[^[:ts':]^] vs [^[:ch':]^]\} and
+    \{[^[:s:]^] vs [^[:sh:]^]\}
+    | [conway-rom.url]#ts-vs-ch
     | On \
-      \{<^e>ts</^e> vs <^e>ch</^e>\}, \
-      \{<^e>ts'</^e> vs <^e>ch'</^e>\} and \
-      \{<^e>s</^e> vs <^e>sh</^e>\}
+      \{[^ts^] vs [^ch^]\}, \
+      \{[^ts'^] vs [^ch'^]\} and \
+      \{[^s^] vs [^sh^]\}
   </@>.
 </p>
+
+<!-- [: :] for highlighted parts -->
+<% [: | <:h> %>
+<% :] | </:h> %>
 
 <@2> Links A to Z | links </@2>
 
@@ -85,47 +92,59 @@
   <@u> Links A to Z | links | </@u>
 </@@>
 
-<!c><table>
-  
+<!-- [[ ]] for Page row -->
+<%
+  [[ |
+  <tr>
+    <td class="centred-text" colspan="4">Page~
+%>
+<%
+  ]] |
+    </td>
+  </tr>
+%>
+
+<!-- [^ ^] for text romanisations -->
+<% [^ | <^e> %>
+<% ^] | </^e> %>
+
+<!-- Table header row -->
+<%
+  [header.tr] |
   <tr>
     <th colspan="2">Williams</th>
     <th>Conway</th>
     <th>Jyutping</th>
   </tr>
+%>
+
+<!c><table>
+  
+  [header.tr]
   
   <!-- Page 1: aa -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~1</td>
-  </tr>
+  [[1]]
   
   <tr>
     <td>(1)</td>
     <!-- aa -->
     <td>
-      <@>
-        <^e>a/</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/1/mode/1up |
-      </@>
+      <@> [^a/^] | [/1/] | </@>
     </td>
-    <td><^e>aa</^e></td>
+    <td>[^aa^]</td>
     <td>aa</td>
   </tr>
   
   <!-- Page 2: ai aai -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~2</td>
-  </tr>
+  [[2]]
   
   <tr>
     <td>(2)</td>
     <!-- ai -->
     <td>
-      <@>
-        <^e>ai</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/2/mode/1up |
-      </@>
+      <@> [^ai^] | [/2/] | </@>
     </td>
-    <td><^e>ai</^e></td>
+    <td>[^ai^]</td>
     <td>ai</td>
   </tr>
   
@@ -133,30 +152,22 @@
     <td>(3)</td>
     <!-- aai -->
     <td>
-      <@>
-        <^e>a/i</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/2/mode/1up |
-      </@>
+      <@> [^a/i^] | [/2/] | </@>
     </td>
-    <td><^e>aai</^e></td>
+    <td>[^aai^]</td>
     <td>aai</td>
   </tr>
   
   <!-- Page 3: ak aak am -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~3</td>
-  </tr>
+  [[3]]
   
   <tr>
     <td>(4)</td>
     <!-- ak -->
     <td>
-      <@>
-        <^e>ak</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/3/mode/1up |
-      </@>
+      <@> [^ak^] | [/3/] | </@>
     </td>
-    <td><^e>ak</^e></td>
+    <td>[^ak^]</td>
     <td>ak</td>
   </tr>
   
@@ -164,12 +175,9 @@
     <td>(5)</td>
     <!-- aak -->
     <td>
-      <@>
-        <^e>a/k</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/3/mode/1up |
-      </@>
+      <@> [^a/k^] | [/3/] | </@>
     </td>
-    <td><^e>aak</^e></td>
+    <td>[^aak^]</td>
     <td>aak</td>
   </tr>
   
@@ -177,30 +185,22 @@
     <td>(6)</td>
     <!-- am -->
     <td>
-      <@>
-        <^e>am</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/3/mode/1up |
-      </@>
+      <@> [^am^] | [/3/] | </@>
     </td>
-    <td><^e>am</^e></td>
+    <td>[^am^]</td>
     <td>am</td>
   </tr>
   
   <!-- Page 4: aam aan ang aang ap -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~4</td>
-  </tr>
+  [[4]]
   
   <tr>
     <td>(7)</td>
     <!-- aam -->
     <td>
-      <@>
-        <^e>a/m</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/4/mode/1up |
-      </@>
+      <@> [^a/m^] | [/4/] | </@>
     </td>
-    <td><^e>aam</^e></td>
+    <td>[^aam^]</td>
     <td>aam</td>
   </tr>
   
@@ -208,12 +208,9 @@
     <td>(8)</td>
     <!-- aan -->
     <td>
-      <@>
-        <^e>a/n</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/4/mode/1up |
-      </@>
+      <@> [^a/n^] | [/4/] | </@>
     </td>
-    <td><^e>aan</^e></td>
+    <td>[^aan^]</td>
     <td>aan</td>
   </tr>
   
@@ -221,12 +218,9 @@
     <td>(9)</td>
     <!-- ang -->
     <td>
-      <@>
-        <^e>ang</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/4/mode/1up |
-      </@>
+      <@> [^ang^] | [/4/] | </@>
     </td>
-    <td><^e>ang</^e></td>
+    <td>[^ang^]</td>
     <td>ang</td>
   </tr>
   
@@ -234,12 +228,9 @@
     <td>(10)</td>
     <!-- aang -->
     <td>
-      <@>
-        <^e>a/ng</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/4/mode/1up |
-      </@>
+      <@> [^a/ng^] | [/4/] | </@>
     </td>
-    <td><^e>aang</^e></td>
+    <td>[^aang^]</td>
     <td>aang</td>
   </tr>
   
@@ -247,30 +238,22 @@
     <td>(11)</td>
     <!-- ap -->
     <td>
-      <@>
-        <^e>ap</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/4/mode/1up |
-      </@>
+      <@> [^ap^] | [/4/] | </@>
     </td>
-    <td><^e>ap</^e></td>
+    <td>[^ap^]</td>
     <td>ap</td>
   </tr>
   
   <!-- Page 5: aap at aat -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~5</td>
-  </tr>
+  [[5]]
   
   <tr>
     <td>(12)</td>
     <!-- aap -->
     <td>
-      <@>
-        <^e>a/p</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/5/mode/1up |
-      </@>
+      <@> [^a/p^] | [/5/] | </@>
     </td>
-    <td><^e>aap</^e></td>
+    <td>[^aap^]</td>
     <td>aap</td>
   </tr>
   
@@ -278,12 +261,9 @@
     <td>(13)</td>
     <!-- at -->
     <td>
-      <@>
-        <^e>at</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/5/mode/1up |
-      </@>
+      <@> [^at^] | [/5/] | </@>
     </td>
-    <td><^e>at</^e></td>
+    <td>[^at^]</td>
     <td>at</td>
   </tr>
   
@@ -291,30 +271,22 @@
     <td>(14)</td>
     <!-- aat -->
     <td>
-      <@>
-        <^e>a/t</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/5/mode/1up |
-      </@>
+      <@> [^a/t^] | [/5/] | </@>
     </td>
-    <td><^e>aat</^e></td>
+    <td>[^aat^]</td>
     <td>aat</td>
   </tr>
   
   <!-- Page 6: au aau -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~6</td>
-  </tr>
+  [[6]]
   
   <tr>
     <td>(15)</td>
     <!-- au -->
     <td>
-      <@>
-        <^e>au</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/6/mode/1up |
-      </@>
+      <@> [^au^] | [/6/] | </@>
     </td>
-    <td><^e>au</^e></td>
+    <td>[^au^]</td>
     <td>au</td>
   </tr>
   
@@ -322,12 +294,9 @@
     <td>(16)</td>
     <!-- aau -->
     <td>
-      <@>
-        <^e>a/u</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/6/mode/1up |
-      </@>
+      <@> [^a/u^] | [/6/] | </@>
     </td>
-    <td><^e>aau</^e></td>
+    <td>[^aau^]</td>
     <td>aau</td>
   </tr>
   
@@ -340,117 +309,83 @@
 
 <!c><table>
   
-  <tr>
-    <th colspan="2">Williams</th>
-    <th>Conway</th>
-    <th>Jyutping</th>
-  </tr>
+  [header.tr]
   
   <!-- Page 7: chaa -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~7</td>
-  </tr>
+  [[7]]
   
   <tr>
     <td>(17)</td>
     <!-- chaa -->
     <td>
-      <@>
-        <^e>cha/</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/7/mode/1up |
-      </@>
+      <@> [^cha/^] | [/7/] | </@>
     </td>
-    <td><^e>chaa</^e></td>
+    <td>[^chaa^]</td>
     <td>zaa</td>
   </tr>
   
   <!-- Page 8: ch'aa -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~8</td>
-  </tr>
+  [[8]]
   
   <tr>
     <td>(18)</td>
     <!-- ch'aa -->
     <td>
-      <@>
-        <^e>ch'a/</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/8/mode/1up |
-      </@>
+      <@> [^ch'a/^] | [/8/] | </@>
     </td>
-    <td><^e>ch'aa</^e></td>
+    <td>[^ch'aa^]</td>
     <td>caa</td>
   </tr>
   
   <!-- Page 9: chai -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~9</td>
-  </tr>
+  [[9]]
   
   <tr>
     <td>(19)</td>
     <!-- chai -->
     <td>
-      <@>
-        <^e>chai</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n48/mode/1up |
-      </@>
+      <@> [^chai^] | [/n48/] | </@>
     </td>
-    <td><^e>chai</^e></td>
+    <td>[^chai^]</td>
     <td>zai</td>
   </tr>
   
   <!-- Page 10: chaai -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~10</td>
-  </tr>
+  [[10]]
   
   <tr>
     <td>(20)</td>
     <!-- chaai -->
     <td>
-      <@>
-        <^e>cha/i</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n49/mode/1up |
-      </@>
+      <@> [^cha/i^] | [/n49/] | </@>
     </td>
-    <td><^e>chaai</^e></td>
+    <td>[^chaai^]</td>
     <td>zaai</td>
   </tr>
   
   <!-- Page 11: ch'aai -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~11</td>
-  </tr>
+  [[11]]
   
   <tr>
     <td>(21)</td>
     <!-- ch'aai -->
     <td>
-      <@>
-        <^e>ch'a/i</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n50/mode/1up |
-      </@>
+      <@> [^ch'a/i^] | [/n50/] | </@>
     </td>
-    <td><^e>ch'aai</^e></td>
+    <td>[^ch'aai^]</td>
     <td>caai</td>
   </tr>
   
   <!-- Page 12: chak ch'ak chaak -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~12</td>
-  </tr>
+  [[12]]
   
   <tr>
     <td>(22)</td>
     <!-- chak -->
     <td>
-      <@>
-        <^e>chak</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n51/mode/1up |
-      </@>
+      <@> [^chak^] | [/n51/] | </@>
     </td>
-    <td><^e>chak</^e></td>
+    <td>[^chak^]</td>
     <td>zak</td>
   </tr>
   
@@ -458,12 +393,9 @@
     <td>(23)</td>
     <!-- ch'ak -->
     <td>
-      <@>
-        <^e>ch'ak</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n51/mode/1up |
-      </@>
+      <@> [^ch'ak^] | [/n51/] | </@>
     </td>
-    <td><^e>ch'ak</^e></td>
+    <td>[^ch'ak^]</td>
     <td>cak</td>
   </tr>
   
@@ -471,66 +403,48 @@
     <td>(24)</td>
     <!-- chaak -->
     <td>
-      <@>
-        <^e>cha/k</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n51/mode/1up |
-      </@>
+      <@> [^cha/k^] | [/n51/] | </@>
     </td>
-    <td><^e>chaak</^e></td>
+    <td>[^chaak^]</td>
     <td>zaak</td>
   </tr>
   
   <!-- Page 13: ch'aak -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~13</td>
-  </tr>
+  [[13]]
   
   <tr>
     <td>(25)</td>
     <!-- ch'aak -->
     <td>
-      <@>
-        <^e>ch'a/k</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n52/mode/1up |
-      </@>
+      <@> [^ch'a/k^] | [/n52/] | </@>
     </td>
-    <td><^e>ch'aak</^e></td>
+    <td>[^ch'aak^]</td>
     <td>caak</td>
   </tr>
   
   <!-- Page 14: cham-->
-  <tr>
-    <td class="centred-text" colspan="4">Page~14</td>
-  </tr>
+  [[14]]
   
   <tr>
     <td>(26)</td>
     <!-- cham -->
     <td>
-      <@>
-        <^e>cham</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n53/mode/1up |
-      </@>
+      <@> [^cham^] | [/n53/] | </@>
     </td>
-    <td><^e>cham</^e></td>
+    <td>[^cham^]</td>
     <td>zam</td>
   </tr>
   
   <!-- Page 15: ch'am chaam-->
-  <tr>
-    <td class="centred-text" colspan="4">Page~15</td>
-  </tr>
+  [[15]]
   
   <tr>
     <td>(27)</td>
     <!-- ch'am -->
     <td>
-      <@>
-        <^e>ch'am</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n54/mode/1up |
-      </@>
+      <@> [^ch'am^] | [/n54/] | </@>
     </td>
-    <td><^e>ch'am</^e></td>
+    <td>[^ch'am^]</td>
     <td>cam</td>
   </tr>
   
@@ -538,30 +452,22 @@
     <td>(28)</td>
     <!-- chaam -->
     <td>
-      <@>
-        <^e>cha/m</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n54/mode/1up |
-      </@>
+      <@> [^cha/m^] | [/n54/] | </@>
     </td>
-    <td><^e>chaam</^e></td>
+    <td>[^chaam^]</td>
     <td>zaam</td>
   </tr>
   
   <!-- Page 16: ch'aam chan-->
-  <tr>
-    <td class="centred-text" colspan="4">Page~16</td>
-  </tr>
+  [[16]]
   
   <tr>
     <td>(29)</td>
     <!-- ch'aam -->
     <td>
-      <@>
-        <^e>ch'a/m</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n55/mode/1up |
-      </@>
+      <@> [^ch'a/m^] | [/n55/] | </@>
     </td>
-    <td><^e>ch'aam</^e></td>
+    <td>[^ch'aam^]</td>
     <td>caam</td>
   </tr>
   
@@ -569,66 +475,48 @@
     <td>(30)</td>
     <!-- chan -->
     <td>
-      <@>
-        <^e>chan</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n55/mode/1up |
-      </@>
+      <@> [^chan^] | [/n55/] | </@>
     </td>
-    <td><^e>chan</^e></td>
+    <td>[^chan^]</td>
     <td>zan</td>
   </tr>
   
   <!-- Page 17: ch'an-->
-  <tr>
-    <td class="centred-text" colspan="4">Page~17</td>
-  </tr>
+  [[17]]
   
   <tr>
     <td>(31)</td>
     <!-- ch'an -->
     <td>
-      <@>
-        <^e>ch'an</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n56/mode/1up |
-      </@>
+      <@> [^ch'an^] | [/n56/] | </@>
     </td>
-    <td><^e>ch'an</^e></td>
+    <td>[^ch'an^]</td>
     <td>can</td>
   </tr>
   
   <!-- Page 19: chaan-->
-  <tr>
-    <td class="centred-text" colspan="4">Page~19</td>
-  </tr>
+  [[19]]
   
   <tr>
     <td>(32)</td>
     <!-- chaan -->
     <td>
-      <@>
-        <^e>cha/n</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n58/mode/1up |
-      </@>
+      <@> [^cha/n^] | [/n58/] | </@>
     </td>
-    <td><^e>chaan</^e></td>
+    <td>[^chaan^]</td>
     <td>zaan</td>
   </tr>
   
   <!-- Page 20: ch'aan chang chaang -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~20</td>
-  </tr>
+  [[20]]
   
   <tr>
     <td>(33)</td>
     <!-- ch'aan -->
     <td>
-      <@>
-        <^e>ch'a/n</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n59/mode/1up |
-      </@>
+      <@> [^ch'a/n^] | [/n59/] | </@>
     </td>
-    <td><^e>ch'aan</^e></td>
+    <td>[^ch'aan^]</td>
     <td>caan</td>
   </tr>
   
@@ -636,12 +524,9 @@
     <td>(34)</td>
     <!-- chang -->
     <td>
-      <@>
-        <^e>chang</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n59/mode/1up |
-      </@>
+      <@> [^chang^] | [/n59/] | </@>
     </td>
-    <td><^e>chang</^e></td>
+    <td>[^chang^]</td>
     <td>zang</td>
   </tr>
   
@@ -649,48 +534,35 @@
     <td>(35)</td>
     <!-- chaang -->
     <td>
-      <@>
-        <^e>cha/ng</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n59/mode/1up |
-      </@>
+      <@> [^cha/ng^] | [/n59/] | </@>
     </td>
-    <td><^e>chaang</^e></td>
+    <td>[^chaang^]</td>
     <td>zaang</td>
   </tr>
   
   <!-- Page 21: ch'aang -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~21</td>
-  </tr>
+  [[21]]
   
   <tr>
     <td>(36)</td>
     <!-- ch'aang -->
     <td>
-      <@>
-        <^e>ch'a/ng</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n60/mode/1up |
-      </@>
+      <@> [^ch'a/ng^] | [/n60/] | </@>
     </td>
-    <td><^e>ch'aang</^e></td>
+    <td>[^ch'aang^]</td>
     <td>caang</td>
   </tr>
   
   <!-- Page 22: chap chaap -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~22</td>
-  </tr>
+  [[22]]
   
   <tr>
     <td>(37)</td>
     <!-- chap -->
     <td>
-      <@>
-        <^e>chap</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n61/mode/1up |
-      </@>
+      <@> [^chap^] | [/n61/] | </@>
     </td>
-    <td><^e>chap</^e></td>
+    <td>[^chap^]</td>
     <td>zap</td>
   </tr>
   
@@ -698,30 +570,22 @@
     <td>(38)</td>
     <!-- chaap -->
     <td>
-      <@>
-        <^e>cha/p</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n61/mode/1up |
-      </@>
+      <@> [^cha/p^] | [/n61/] | </@>
     </td>
-    <td><^e>chaap</^e></td>
+    <td>[^chaap^]</td>
     <td>zaap</td>
   </tr>
   
   <!-- Page 23: ch'aap chat -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~23</td>
-  </tr>
+  [[23]]
   
   <tr>
     <td>(39)</td>
     <!-- ch'aap -->
     <td>
-      <@>
-        <^e>ch'a/p</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n62/mode/1up |
-      </@>
+      <@> [^ch'a/p^] | [/n62/] | </@>
     </td>
-    <td><^e>ch'aap</^e></td>
+    <td>[^ch'aap^]</td>
     <td>caap</td>
   </tr>
   
@@ -729,30 +593,22 @@
     <td>(40)</td>
     <!-- chat -->
     <td>
-      <@>
-        <^e>chat</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n62/mode/1up |
-      </@>
+      <@> [^chat^] | [/n62/] | </@>
     </td>
-    <td><^e>chat</^e></td>
+    <td>[^chat^]</td>
     <td>zat</td>
   </tr>
   
   <!-- Page 24: chaat ch'aat -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~24</td>
-  </tr>
+  [[24]]
   
   <tr>
     <td>(41)</td>
     <!-- chaat -->
     <td>
-      <@>
-        <^e>cha/t</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n63/mode/1up |
-      </@>
+      <@> [^cha/t^] | [/n63/] | </@>
     </td>
-    <td><^e>chaat</^e></td>
+    <td>[^chaat^]</td>
     <td>zaat</td>
   </tr>
   
@@ -760,156 +616,113 @@
     <td>(42)</td>
     <!-- ch'aat -->
     <td>
-      <@>
-        <^e>ch'a/t</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n63/mode/1up |
-      </@>
+      <@> [^ch'a/t^] | [/n63/] | </@>
     </td>
-    <td><^e>ch'aat</^e></td>
+    <td>[^ch'aat^]</td>
     <td>caat</td>
   </tr>
   
   <!-- Page 25: chau -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~25</td>
-  </tr>
+  [[25]]
   
   <tr>
     <td>(43)</td>
     <!-- chau -->
     <td>
-      <@>
-        <^e>chau</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n64/mode/1up |
-      </@>
+      <@> [^chau^] | [/n64/] | </@>
     </td>
-    <td><^e>chau</^e></td>
+    <td>[^chau^]</td>
     <td>zau</td>
   </tr>
   
   <!-- Page 26: ch'au -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~26</td>
-  </tr>
+  [[26]]
   
   <tr>
     <td>(44)</td>
     <!-- ch'au -->
     <td>
-      <@>
-        <^e>ch'au</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n65/mode/1up |
-      </@>
+      <@> [^ch'au^] | [/n65/] | </@>
     </td>
-    <td><^e>ch'au</^e></td>
+    <td>[^ch'au^]</td>
     <td>cau</td>
   </tr>
   
   <!-- Page 28: chaau -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~28</td>
-  </tr>
+  [[28]]
   
   <tr>
     <td>(45)</td>
     <!-- chaau -->
     <td>
-      <@>
-        <^e>cha/u</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n67/mode/1up |
-      </@>
+      <@> [^cha/u^] | [/n67/] | </@>
     </td>
-    <td><^e>chaau</^e></td>
+    <td>[^chaau^]</td>
     <td>zaau</td>
   </tr>
   
   <!-- Page 29: ch'aau -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~29</td>
-  </tr>
+  [[29]]
   
   <tr>
     <td>(46)</td>
     <!-- ch'aau -->
     <td>
-      <@>
-        <^e>ch'a/u</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n68/mode/1up |
-      </@>
+      <@> [^ch'a/u^] | [/n68/] | </@>
     </td>
-    <td><^e>ch'aau</^e></td>
+    <td>[^ch'aau^]</td>
     <td>caau</td>
   </tr>
   
   <!-- Page 30: che -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~30</td>
-  </tr>
+  [[30]]
   
   <tr>
     <td>(47)</td>
     <!-- che -->
     <td>
-      <@>
-        <^e>che/</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n69/mode/1up |
-      </@>
+      <@> [^che/^] | [/n69/] | </@>
     </td>
-    <td><^e>che</^e></td>
+    <td>[^che^]</td>
     <td>ze</td>
   </tr>
   
   <!-- Page 31: ch'e -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~31</td>
-  </tr>
+  [[31]]
   
   <tr>
     <td>(48)</td>
     <!-- ch'e -->
     <td>
-      <@>
-        <^e>ch'e/</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n70/mode/1up |
-      </@>
+      <@> [^ch'e/^] | [/n70/] | </@>
     </td>
-    <td><^e>ch'e</^e></td>
+    <td>[^ch'e^]</td>
     <td>ce</td>
   </tr>
   
   <!-- Page 32: choek -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~32</td>
-  </tr>
+  [[32]]
   
   <tr>
     <td>(49)</td>
     <!-- choek -->
     <td>
-      <@>
-        <^e>che/uk</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n71/mode/1up |
-      </@>
+      <@> [^che/uk^] | [/n71/] | </@>
     </td>
-    <td><^e>choek</^e></td>
+    <td>[^choek^]</td>
     <td>zoek</td>
   </tr>
   
   <!-- Page 33: ch'oek choeng -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~33</td>
-  </tr>
+  [[33]]
   
   <tr>
     <td>(50)</td>
     <!-- ch'oek -->
     <td>
-      <@>
-        <^e>ch'e/uk</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n72/mode/1up |
-      </@>
+      <@> [^ch'e/uk^] | [/n72/] | </@>
     </td>
-    <td><^e>ch'oek</^e></td>
+    <td>[^ch'oek^]</td>
     <td>coek</td>
   </tr>
   
@@ -917,102 +730,74 @@
     <td>(51)</td>
     <!-- choeng -->
     <td>
-      <@>
-        <^e>che/ung</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n72/mode/1up |
-      </@>
+      <@> [^che/ung^] | [/n72/] | </@>
     </td>
-    <td><^e>choeng</^e></td>
+    <td>[^choeng^]</td>
     <td>zoeng</td>
   </tr>
   
   <!-- Page 35: ch'oeng -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~35</td>
-  </tr>
+  [[35]]
   
   <tr>
     <td>(52)</td>
     <!-- ch'oeng -->
     <td>
-      <@>
-        <^e>ch'e/ung</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n74/mode/1up |
-      </@>
+      <@> [^ch'e/ung^] | [/n74/] | </@>
     </td>
-    <td><^e>ch'oeng</^e></td>
+    <td>[^ch'oeng^]</td>
     <td>coeng</td>
   </tr>
   
   <!-- Page 37: chee -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~37</td>
-  </tr>
+  [[37]]
   
   <tr>
     <td>(53)</td>
     <!-- chee -->
     <td>
-      <@>
-        <^e>chi/</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/n76/mode/1up |
-      </@>
+      <@> [^chi/^] | [/n76/] | </@>
     </td>
-    <td><^e>chee</^e></td>
+    <td>[^chee^]</td>
     <td>zi</td>
   </tr>
   
   <!-- Page 10*: ch'ee -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~10*</td>
-  </tr>
+  [[10*]]
   
   <tr>
     <td>(54)</td>
     <!-- ch'ee -->
     <td>
-      <@>
-        <^e>ch'i/</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/10/mode/1up |
-      </@>
+      <@> [^ch'i/^] | [/10/] | </@>
     </td>
-    <td><^e>ch'ee</^e></td>
+    <td>[^ch'ee^]</td>
     <td>ci</td>
   </tr>
   
   <!-- Page 13*: chik -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~13*</td>
-  </tr>
+  [[13*]]
   
   <tr>
     <td>(55)</td>
     <!-- chik -->
     <td>
-      <@>
-        <^e>chik</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/13/mode/1up |
-      </@>
+      <@> [^chik^] | [/13/] | </@>
     </td>
-    <td><^e>chik</^e></td>
+    <td>[^chik^]</td>
     <td>zik</td>
   </tr>
   
   <!-- Page 14*: ch'ik -->
-  <tr>
-    <td class="centred-text" colspan="4">Page~14*</td>
-  </tr>
+  [[14*]]
   
   <tr>
     <td>(56)</td>
     <!-- ch'ik -->
     <td>
-      <@>
-        <^e>ch'ik</^e>
-        | https://archive.org/details/tonicdictionaryo00will/page/14/mode/1up |
-      </@>
+      <@> [^ch'ik^] | [/14/] | </@>
     </td>
-    <td><^e>ch'ik</^e></td>
+    <td>[^ch'ik^]</td>
     <td>cik</td>
   </tr>
   
