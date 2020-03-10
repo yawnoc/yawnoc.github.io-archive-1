@@ -10,13 +10,13 @@
 <*p></*p>
 
 <=>
-  <@i> Constants | #constants | </@i>
-  <@i> Subscripts | #subscripts | </@i>
-  <@i> Superscripts | #superscripts | </@i>
-  <@i> Arithmetic | #arithmetic | Arithmetic operators </@i>
-  <@i> Relations | #relations | </@i>
-  <@i> Calculus | #calculus | </@i>
-  <@i> Greek | #greek | Greek alphabet </@i>
+  <@i> [constants.h] | #constants | </@i>
+  <@i> [subscripts.h] | #subscripts | </@i>
+  <@i> [superscripts.h] | #superscripts | </@i>
+  <@i> Arithmetic | #arithmetic | [arithmetic.h] </@i>
+  <@i> [relations.h] | #relations | </@i>
+  <@i> [calculus.h] | #calculus | </@i>
+  <@i> Greek | #greek | [greek.h] </@i>
 </=>
 
 <p>
@@ -24,16 +24,22 @@
 </p>
 
 
-<@2> Constants | constants </@2>
+<% [constants.h] | Constants %>
+<@2> [constants.h] | constants </@2>
 
-
-<!><table>
+<%
+  [header.tr] |
   <tr>
     <th>Unicode</th>
     <th>KaTeX</th>
     <th>code</th>
     <th>Description</th>
   </tr>
+%>
+
+
+<!><table>
+  [header.tr]
   <tr>
     <td>°</td>
     <td><$>\degree</$></td>
@@ -91,16 +97,12 @@
 </table></!>
 
 
-<@2> Subscripts | subscripts </@2>
+<% [subscripts.h] | Subscripts %>
+<@2> [subscripts.h] | subscripts </@2>
 
 
 <!><table>
-  <tr>
-    <th>Unicode</th>
-    <th>KaTeX</th>
-    <th>code</th>
-    <th>Description</th>
-  </tr>
+  [header.tr]
   <tr>
     <td>₀ ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉</td>
     <td><$>{_0} {_1} {_2} {_3} {_4} {_5} {_6} {_7} {_8} {_9}</$></td>
@@ -116,16 +118,12 @@
 </table></!>
 
 
-<@2> Superscripts | superscripts </@2>
+<% [superscripts.h] | Superscripts %>
+<@2> [superscripts.h] | superscripts </@2>
 
 
 <!><table>
-  <tr>
-    <th>Unicode</th>
-    <th>KaTeX</th>
-    <th>code</th>
-    <th>Description</th>
-  </tr>
+  [header.tr]
   <tr>
     <td>⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹</td>
     <td><$>{^0} {^1} {^2} {^3} {^4} {^5} {^6} {^7} {^8} {^9}</$></td>
@@ -141,16 +139,12 @@
 </table></!>
 
 
-<@2> Arithmetic operators | arithmetic </@2>
+<% [arithmetic.h] | Arithmetic operators %>
+<@2> [arithmetic.h] | arithmetic </@2>
 
 
 <!><table>
-  <tr>
-    <th>Unicode</th>
-    <th>KaTeX</th>
-    <th>code</th>
-    <th>Description</th>
-  </tr>
+  [header.tr]
   <tr>
     <td>+</td>
     <td><$>+</$></td>
@@ -196,16 +190,12 @@
 </table></!>
 
 
-<@2> Relations | relations </@2>
+<% [relations.h] | Relations %>
+<@2> [relations.h] | relations </@2>
 
 
 <!><table>
-  <tr>
-    <th>Unicode</th>
-    <th>KaTeX</th>
-    <th>code</th>
-    <th>Description</th>
-  </tr>
+  [header.tr]
   <tr>
     <td>=</td>
     <td><$>=</$></td>
@@ -279,16 +269,14 @@
     <td>much greater than</td>
   </tr>
 </table></!>
-<!-- **************************************************************** -->
-<@2> Calculus | calculus </@2>
-<!-- **************************************************************** -->
+
+
+<% [calculus.h] | Calculus %>
+<@2> [calculus.h] | calculus </@2>
+
+
 <!><table>
-  <tr>
-    <th>Unicode</th>
-    <th>KaTeX</th>
-    <th>code</th>
-    <th>Description</th>
-  </tr>
+  [header.tr]
   <tr>
     <td>∂</td>
     <td><$>\pd</$></td>
@@ -314,16 +302,12 @@
 </p>
 
 
-<@2> Greek alphabet | greek </@2>
+<% [greek.h] | Greek alphabet %>
+<@2> [greek.h] | greek </@2>
 
 
 <!><table>
-  <tr>
-    <th>Unicode</th>
-    <th>KaTeX</th>
-    <th>code</th>
-    <th>Description</th>
-  </tr>
+  [header.tr]
   <tr>
     <td>Α α</td>
     <td><$>\Alpha \alpha</$></td>
