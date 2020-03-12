@@ -20,6 +20,11 @@
 <*p></*p>
 
 
+<!-- [/ /] for archive.org URL with mode/1up -->
+<% [/ | https://archive.org/details/sacredbooksofchi028287mbp/page/ %>
+<% /] | /mode/1up %>
+
+
 <@2> Introduction | introduction </@2>
 
 
@@ -80,7 +85,7 @@
   "Yen Yuan asked {K}ung-nî ..." on
   <@>
     Page~15 of {The Texts of Taoism, Part II}
-    | https://archive.org/details/sacredbooksofchi028287mbp/page/n26/mode/1up
+    | [/n26/]
     | The Sacred Books Of China: The Texts Of Taoism, Part II
   </@>.
   As you shall see below, whether the original text
@@ -366,7 +371,7 @@
         (see
         <@>
           footnote~1 of Page~16
-          | https://archive.org/details/sacredbooksofchi028287mbp/page/n27/mode/1up
+          | [/n27/]
           | The Sacred Books Of China: The Texts Of Taoism, Part II
         </@>).
       </li>
