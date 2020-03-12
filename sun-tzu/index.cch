@@ -1,8 +1,8 @@
 <*>
-  "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
+  "[sun-tzu-classic]": 《孫子算經》
   | 20190504 | 20200215 | dm
   | An annotated English translation of Sunzi Suanjing, \
-    《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
+    《孫子算經》, or "[sun-tzu-classic]".
 </*>
 
 <=h>
@@ -15,12 +15,14 @@
 
 <h1>
   《孫子算經》 \or <br>
-  "<^e>Sun~Tzuu</^e>'s Computational Classic"
+  "[sun-tzu-classic]"
 </h1>
 
 <*p> |
   Also known as {Sunzi Suanjing}.
 </*p>
+
+<% [para] | ¶ %>
 
 
 <@2> Volume navigation | volumes </@2>
@@ -32,30 +34,37 @@
 
 <#n>
   <b>《孫子算經》</b> \or <br>
-  <b>"<^e>Sun~Tzuu</^e>'s Computational Classic"</b>
+  <b>"[sun-tzu-classic]"</b>
   <ul>
     <@i>
-      《序》~"Preface"
+      《序》~"[pref]"
       | /sun-tzu/preface.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+      | "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
     </@i>
     <@i>
-      《卷上》~"Volume~I"
+      《卷上》~"[vol-i]"
       | /sun-tzu/i.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+      | "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
     </@i>
     <@i>
-      《卷中》~"Volume~II" <:v>(incomplete)</:v>
+      《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
       | /sun-tzu/ii.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+      | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
     <li>
-      <:r>\!《卷下》~"Volume~III"</:r>
+      <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
     </li>
   </ul>
   
 </#n>
+
+<% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
+<% [sun-tzu-classic] | [sun-tzu]'s Computational Classic %>
+<% [pref] | Preface %>
+<% [vol-i] | Volume~I %>
+<% [vol-ii] | Volume~II %>
+<% [vol-iii] | Volume~III %>
 
 <!--
 
@@ -66,28 +75,28 @@ In each page, remove the its own link, and make that text bold.
   
   <@>
     《孫子算經》 \or <br>
-    "<^e>Sun~Tzuu</^e>'s Computational Classic"
+    "[sun-tzu-classic]"
     | /sun-tzu/
-    | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
+    | "[sun-tzu-classic]": 《孫子算經》
   </@>
   <ul>
     <@i>
-      《序》~"Preface"
+      《序》~"[pref]"
       | /sun-tzu/preface.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+      | "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
     </@i>
     <@i>
-      《卷上》~"Volume~I"
+      《卷上》~"[vol-i]"
       | /sun-tzu/i.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+      | "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
     </@i>
     <@i>
-      《卷中》~"Volume~II" <:v>(incomplete)</:v>
+      《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
       | /sun-tzu/ii.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+      | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
     <li>
-      <:r>\!《卷下》~"Volume~III"</:r>
+      <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
     </li>
   </ul>
@@ -102,7 +111,7 @@ In each page, remove the its own link, and make that text bold.
 <p>
   《孫子算經》, or
   <@>
-    "<^e>Sun~Tzuu</^e>'s Computational Classic"
+    "[sun-tzu-classic]"
     | https://en.wikipedia.org/wiki/Sunzi_Suanjing
     | Wikipedia: Sunzi Suanjing
   </@>,
@@ -118,10 +127,10 @@ In each page, remove the its own link, and make that text bold.
     | Wikipedia: Ten Computational Canons
   </@>.
   Probably written in the 3rd to 5th centuries AD,
-  the author <^e>Sun Tzuu</^e> (孫子)
+  the author [sun-tzu] (孫子)
   is not the same
   <@>
-    <^e>Sun Tzuu</^e>
+    [sun-tzu]
     | https://en.wikipedia.org/wiki/Sun_Tzu
     | Wikipedia: Sun Tzu
   </@>
@@ -139,8 +148,10 @@ In each page, remove the its own link, and make that text bold.
   Apparently
   <@>
     this has been done before
-    | https://books.google.com.au/books/about/Fleeting_Footsteps.html?id=fGYmpWE5UZgC
-    | Fleeting Footsteps: Tracing the Conception of Arithmetic and Algebra in Ancient China
+    | https://books.google.com.au/books/about/Fleeting_Footsteps.html\
+        ?id=fGYmpWE5UZgC
+    | Fleeting Footsteps: \
+        Tracing the Conception of Arithmetic and Algebra in Ancient China
   </@>,
   but I shall <strong>not</strong> read that translation
   (which is behind a paywall anyway) until I have completely finished mine.
@@ -165,7 +176,11 @@ In each page, remove the its own link, and make that text bold.
     | 孫子算經+五曹算經（知不足齋本）
   </@>.</strong>
   The punctuation is based on that in
-  <@> Version~C (ctext.org) | https://ctext.org/sunzi-suan-jing | 《孫子算經》 </@>,
+  <@>
+    Version~C (ctext.org)
+    | https://ctext.org/sunzi-suan-jing
+    | 《孫子算經》
+  </@>,
   but with changes to my liking.
   I have grouped the paragraphs mostly following the line breaks
   of Versions~A, B and~D, with groupings which
@@ -197,13 +212,18 @@ In each page, remove the its own link, and make that text bold.
     <b>B</b>:
     <@>
       《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=144
+      | https://commons.wikimedia.org/w/index.php\
+          ?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%\
+            E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu\
+          &page=144
       | 《文淵閣四庫全書》 0797冊
     </@>
     <#>
       B<:g><$>p</$></:g>(<:g><$>q</$></:g>) shall mean
       <code>
-        https://commons.wikimedia.org/w/index.php?title=File%3A文淵閣四庫全書_0797冊.djvu\&page=<:g><$>p</$></:g>
+        https://commons.wikimedia.org/w/index.php\
+          ?title=File%3A文淵閣四庫全書_0797冊.djvu\
+          \&page=<:g><$>p</$></:g>
       </code> <br>
       corresponding to the printed page number <:g><$>q</$></:g>. <br>
       Note that <$>{\colg p} - {\colg q} = 5</$>.
@@ -293,469 +313,124 @@ In each page, remove the its own link, and make that text bold.
   They are drafts, and as such, do not contain
   edits and corrections I have made since they were scanned.
 </p>
+
+<% [man-for] | Translation manuscript for %>
+<% [man-i.h] | [man-for] Vol. I %>
+<% [man-ii.h] | [man-for] Vol. II %>
+<% [man-iii.h] | [man-for] Vol. III %>
+<% [man.url] | /manuscripts/sun-tzu %>
+
 <ul>
   
   <@i>
     Version referencing system
-    | /manuscripts/sun-tzu-versions.pdf
+    | [man.url]-versions.pdf
     | Referencing system for different versions
   </@i>
   
   <@i>
-    <b>Preface</b>
-    | /manuscripts/sun-tzu-preface.pdf
-    | Translation manuscript for Preface
+    <b>[pref]</b>
+    | [man.url]-preface.pdf
+    | [man-for] [pref]
   </@i>
   <li>
     <b>Volume I:</b>
-    <@>
-      ¶1
-      | /manuscripts/sun-tzu-i-1.pdf
-      | Translation manuscript for Vol. I ¶1
-    </@>
-    <@>
-      ¶2
-      | /manuscripts/sun-tzu-i-2.pdf
-      | Translation manuscript for Vol. I ¶2
-    </@>
-    <@>
-      ¶3
-      | /manuscripts/sun-tzu-i-3.pdf
-      | Translation manuscript for Vol. I ¶3
-    </@>
-    <@>
-      ¶4
-      | /manuscripts/sun-tzu-i-4.pdf
-      | Translation manuscript for Vol. I ¶4
-    </@>
-    <@>
-      ¶5
-      | /manuscripts/sun-tzu-i-5.pdf
-      | Translation manuscript for Vol. I ¶5
-    </@>
-    <@>
-      ¶6
-      | /manuscripts/sun-tzu-i-6.pdf
-      | Translation manuscript for Vol. I ¶6
-    </@>
-    <@>
-      ¶7
-      | /manuscripts/sun-tzu-i-7.pdf
-      | Translation manuscript for Vol. I ¶7
-    </@>
-    <@>
-      ¶8
-      | /manuscripts/sun-tzu-i-8.pdf
-      | Translation manuscript for Vol. I ¶8
-    </@>
-    <@>
-      ¶9
-      | /manuscripts/sun-tzu-i-9.pdf
-      | Translation manuscript for Vol. I ¶9
-    </@>
-    <@>
-      ¶10
-      | /manuscripts/sun-tzu-i-10.pdf
-      | Translation manuscript for Vol. I ¶10
-    </@>
-    <@>
-      ¶11
-      | /manuscripts/sun-tzu-i-11.pdf
-      | Translation manuscript for Vol. I ¶11
-    </@>
-    <@>
-      ¶12
-      | /manuscripts/sun-tzu-i-12.pdf
-      | Translation manuscript for Vol. I ¶12
-    </@>
-    <@>
-      ¶13
-      | /manuscripts/sun-tzu-i-13.pdf
-      | Translation manuscript for Vol. I ¶13
-    </@>
-    <@>
-      ¶14
-      | /manuscripts/sun-tzu-i-14.pdf
-      | Translation manuscript for Vol. I ¶14
-    </@>
-    <@>
-      ¶15
-      | /manuscripts/sun-tzu-i-15.pdf
-      | Translation manuscript for Vol. I ¶15
-    </@>
-    <@>
-      ¶16
-      | /manuscripts/sun-tzu-i-16.pdf
-      | Translation manuscript for Vol. I ¶16
-    </@>
-    <@>
-      ¶17
-      | /manuscripts/sun-tzu-i-17.pdf
-      | Translation manuscript for Vol. I ¶17
-    </@>
-    <@>
-      ¶18
-      | /manuscripts/sun-tzu-i-18.pdf
-      | Translation manuscript for Vol. I ¶18
-    </@>
-    <@>
-      ¶19
-      | /manuscripts/sun-tzu-i-19.pdf
-      | Translation manuscript for Vol. I ¶19
-    </@>
-    <@>
-      ¶20
-      | /manuscripts/sun-tzu-i-20.pdf
-      | Translation manuscript for Vol. I ¶20
-    </@>
-    <@>
-      ¶21
-      | /manuscripts/sun-tzu-i-21.pdf
-      | Translation manuscript for Vol. I ¶21
-    </@>
-    <@>
-      ¶22
-      | /manuscripts/sun-tzu-i-22.pdf
-      | Translation manuscript for Vol. I ¶22
-    </@>
-    <@>
-      ¶23
-      | /manuscripts/sun-tzu-i-23.pdf
-      | Translation manuscript for Vol. I ¶23
-    </@>
-    <@>
-      ¶24
-      | /manuscripts/sun-tzu-i-24.pdf
-      | Translation manuscript for Vol. I ¶24
-    </@>
+    <@> [para]1 | [man.url]-i-1.pdf | [man-i.h] [para]1 </@>
+    <@> [para]2 | [man.url]-i-2.pdf | [man-i.h] [para]2 </@>
+    <@> [para]3 | [man.url]-i-3.pdf | [man-i.h] [para]3 </@>
+    <@> [para]4 | [man.url]-i-4.pdf | [man-i.h] [para]4 </@>
+    <@> [para]5 | [man.url]-i-5.pdf | [man-i.h] [para]5 </@>
+    <@> [para]6 | [man.url]-i-6.pdf | [man-i.h] [para]6 </@>
+    <@> [para]7 | [man.url]-i-7.pdf | [man-i.h] [para]7 </@>
+    <@> [para]8 | [man.url]-i-8.pdf | [man-i.h] [para]8 </@>
+    <@> [para]9 | [man.url]-i-9.pdf | [man-i.h] [para]9 </@>
+    <@> [para]10 | [man.url]-i-10.pdf | [man-i.h] [para]10 </@>
+    <@> [para]11 | [man.url]-i-11.pdf | [man-i.h] [para]11 </@>
+    <@> [para]12 | [man.url]-i-12.pdf | [man-i.h] [para]12 </@>
+    <@> [para]13 | [man.url]-i-13.pdf | [man-i.h] [para]13 </@>
+    <@> [para]14 | [man.url]-i-14.pdf | [man-i.h] [para]14 </@>
+    <@> [para]15 | [man.url]-i-15.pdf | [man-i.h] [para]15 </@>
+    <@> [para]16 | [man.url]-i-16.pdf | [man-i.h] [para]16 </@>
+    <@> [para]17 | [man.url]-i-17.pdf | [man-i.h] [para]17 </@>
+    <@> [para]18 | [man.url]-i-18.pdf | [man-i.h] [para]18 </@>
+    <@> [para]19 | [man.url]-i-19.pdf | [man-i.h] [para]19 </@>
+    <@> [para]20 | [man.url]-i-20.pdf | [man-i.h] [para]20 </@>
+    <@> [para]21 | [man.url]-i-21.pdf | [man-i.h] [para]21 </@>
+    <@> [para]22 | [man.url]-i-22.pdf | [man-i.h] [para]22 </@>
+    <@> [para]23 | [man.url]-i-23.pdf | [man-i.h] [para]23 </@>
+    <@> [para]24 | [man.url]-i-24.pdf | [man-i.h] [para]24 </@>
   </li>
   
   <li>
     <b>Volume II:</b>
-    <@>
-      ¶1
-      | /manuscripts/sun-tzu-ii-1.pdf
-      | Translation manuscript for Vol. II ¶1
-    </@>
-    <@>
-      ¶2
-      | /manuscripts/sun-tzu-ii-2.pdf
-      | Translation manuscript for Vol. II ¶2
-    </@>
-    <@>
-      ¶3
-      | /manuscripts/sun-tzu-ii-3.pdf
-      | Translation manuscript for Vol. II ¶3
-    </@>
-    <@>
-      ¶4
-      | /manuscripts/sun-tzu-ii-4.pdf
-      | Translation manuscript for Vol. II ¶4
-    </@>
-    <@>
-      ¶5
-      | /manuscripts/sun-tzu-ii-5.pdf
-      | Translation manuscript for Vol. II ¶5
-    </@>
-    <@>
-      ¶6
-      | /manuscripts/sun-tzu-ii-6.pdf
-      | Translation manuscript for Vol. II ¶6
-    </@>
-    <@>
-      ¶7
-      | /manuscripts/sun-tzu-ii-7.pdf
-      | Translation manuscript for Vol. II ¶7
-    </@>
-    <@>
-      ¶8
-      | /manuscripts/sun-tzu-ii-8.pdf
-      | Translation manuscript for Vol. II ¶8
-    </@>
-    <@>
-      ¶9
-      | /manuscripts/sun-tzu-ii-9.pdf
-      | Translation manuscript for Vol. II ¶9
-    </@>
-    <@>
-      ¶10
-      | /manuscripts/sun-tzu-ii-10.pdf
-      | Translation manuscript for Vol. II ¶10
-    </@>
-    <@>
-      ¶11
-      | /manuscripts/sun-tzu-ii-11.pdf
-      | Translation manuscript for Vol. II ¶11
-    </@>
-    <@>
-      ¶12
-      | /manuscripts/sun-tzu-ii-12.pdf
-      | Translation manuscript for Vol. II ¶12
-    </@>
-    <@>
-      ¶13
-      | /manuscripts/sun-tzu-ii-13.pdf
-      | Translation manuscript for Vol. II ¶13
-    </@>
-    <@>
-      ¶14
-      | /manuscripts/sun-tzu-ii-14.pdf
-      | Translation manuscript for Vol. II ¶14
-    </@>
-    <@>
-      ¶15
-      | /manuscripts/sun-tzu-ii-15.pdf
-      | Translation manuscript for Vol. II ¶15
-    </@>
-    <@>
-      ¶16
-      | /manuscripts/sun-tzu-ii-16.pdf
-      | Translation manuscript for Vol. II ¶16
-    </@>
-    <@>
-      ¶17
-      | /manuscripts/sun-tzu-ii-17.pdf
-      | Translation manuscript for Vol. II ¶17
-    </@>
-    <@>
-      ¶18
-      | /manuscripts/sun-tzu-ii-18.pdf
-      | Translation manuscript for Vol. II ¶18
-    </@>
-    <@>
-      ¶19
-      | /manuscripts/sun-tzu-ii-19.pdf
-      | Translation manuscript for Vol. II ¶19
-    </@>
-    <@>
-      ¶20
-      | /manuscripts/sun-tzu-ii-20.pdf
-      | Translation manuscript for Vol. II ¶20
-    </@>
-    <@>
-      ¶21
-      | /manuscripts/sun-tzu-ii-21.pdf
-      | Translation manuscript for Vol. II ¶21
-    </@>
-    <@>
-      ¶22
-      | /manuscripts/sun-tzu-ii-22.pdf
-      | Translation manuscript for Vol. II ¶22
-    </@>
-    <@>
-      ¶23
-      | /manuscripts/sun-tzu-ii-23.pdf
-      | Translation manuscript for Vol. II ¶23
-    </@>
-    <@>
-      ¶24
-      | /manuscripts/sun-tzu-ii-24.pdf
-      | Translation manuscript for Vol. II ¶24
-    </@>
-    <@>
-      ¶25
-      | /manuscripts/sun-tzu-ii-25.pdf
-      | Translation manuscript for Vol. II ¶25
-    </@>
-    <@>
-      ¶26
-      | /manuscripts/sun-tzu-ii-26.pdf
-      | Translation manuscript for Vol. II ¶26
-    </@>
-    <@>
-      ¶27
-      | /manuscripts/sun-tzu-ii-27.pdf
-      | Translation manuscript for Vol. II ¶27
-    </@>
-    <@>
-      ¶28
-      | /manuscripts/sun-tzu-ii-28.pdf
-      | Translation manuscript for Vol. II ¶28
-    </@>
+    <@> [para]1 | [man.url]-ii-1.pdf | [man-ii.h] [para]1 </@>
+    <@> [para]2 | [man.url]-ii-2.pdf | [man-ii.h] [para]2 </@>
+    <@> [para]3 | [man.url]-ii-3.pdf | [man-ii.h] [para]3 </@>
+    <@> [para]4 | [man.url]-ii-4.pdf | [man-ii.h] [para]4 </@>
+    <@> [para]5 | [man.url]-ii-5.pdf | [man-ii.h] [para]5 </@>
+    <@> [para]6 | [man.url]-ii-6.pdf | [man-ii.h] [para]6 </@>
+    <@> [para]7 | [man.url]-ii-7.pdf | [man-ii.h] [para]7 </@>
+    <@> [para]8 | [man.url]-ii-8.pdf | [man-ii.h] [para]8 </@>
+    <@> [para]9 | [man.url]-ii-9.pdf | [man-ii.h] [para]9 </@>
+    <@> [para]10 | [man.url]-ii-10.pdf | [man-ii.h] [para]10 </@>
+    <@> [para]11 | [man.url]-ii-11.pdf | [man-ii.h] [para]11 </@>
+    <@> [para]12 | [man.url]-ii-12.pdf | [man-ii.h] [para]12 </@>
+    <@> [para]13 | [man.url]-ii-13.pdf | [man-ii.h] [para]13 </@>
+    <@> [para]14 | [man.url]-ii-14.pdf | [man-ii.h] [para]14 </@>
+    <@> [para]15 | [man.url]-ii-15.pdf | [man-ii.h] [para]15 </@>
+    <@> [para]16 | [man.url]-ii-16.pdf | [man-ii.h] [para]16 </@>
+    <@> [para]17 | [man.url]-ii-17.pdf | [man-ii.h] [para]17 </@>
+    <@> [para]18 | [man.url]-ii-18.pdf | [man-ii.h] [para]18 </@>
+    <@> [para]19 | [man.url]-ii-19.pdf | [man-ii.h] [para]19 </@>
+    <@> [para]20 | [man.url]-ii-20.pdf | [man-ii.h] [para]20 </@>
+    <@> [para]21 | [man.url]-ii-21.pdf | [man-ii.h] [para]21 </@>
+    <@> [para]22 | [man.url]-ii-22.pdf | [man-ii.h] [para]22 </@>
+    <@> [para]23 | [man.url]-ii-23.pdf | [man-ii.h] [para]23 </@>
+    <@> [para]24 | [man.url]-ii-24.pdf | [man-ii.h] [para]24 </@>
+    <@> [para]25 | [man.url]-ii-25.pdf | [man-ii.h] [para]25 </@>
+    <@> [para]26 | [man.url]-ii-26.pdf | [man-ii.h] [para]26 </@>
+    <@> [para]27 | [man.url]-ii-27.pdf | [man-ii.h] [para]27 </@>
+    <@> [para]28 | [man.url]-ii-28.pdf | [man-ii.h] [para]28 </@>
   </li>
   
   <li>
     <b>Volume III:</b>
-    <@>
-      ¶1
-      | /manuscripts/sun-tzu-iii-1.pdf
-      | Translation manuscript for Vol. III ¶1
-    </@>
-    <@>
-      ¶2
-      | /manuscripts/sun-tzu-iii-2.pdf
-      | Translation manuscript for Vol. III ¶2
-    </@>
-    <@>
-      ¶3
-      | /manuscripts/sun-tzu-iii-3.pdf
-      | Translation manuscript for Vol. III ¶3
-    </@>
-    <@>
-      ¶4
-      | /manuscripts/sun-tzu-iii-4.pdf
-      | Translation manuscript for Vol. III ¶4
-    </@>
-    <@>
-      ¶5
-      | /manuscripts/sun-tzu-iii-5.pdf
-      | Translation manuscript for Vol. III ¶5
-    </@>
-    <@>
-      ¶6
-      | /manuscripts/sun-tzu-iii-6.pdf
-      | Translation manuscript for Vol. III ¶6
-    </@>
-    <@>
-      ¶7
-      | /manuscripts/sun-tzu-iii-7.pdf
-      | Translation manuscript for Vol. III ¶7
-    </@>
-    <@>
-      ¶8
-      | /manuscripts/sun-tzu-iii-8.pdf
-      | Translation manuscript for Vol. III ¶8
-    </@>
-    <@>
-      ¶9
-      | /manuscripts/sun-tzu-iii-9.pdf
-      | Translation manuscript for Vol. III ¶9
-    </@>
-    <@>
-      ¶10
-      | /manuscripts/sun-tzu-iii-10.pdf
-      | Translation manuscript for Vol. III ¶10
-    </@>
-    <@>
-      ¶11
-      | /manuscripts/sun-tzu-iii-11.pdf
-      | Translation manuscript for Vol. III ¶11
-    </@>
-    <@>
-      ¶12
-      | /manuscripts/sun-tzu-iii-12.pdf
-      | Translation manuscript for Vol. III ¶12
-    </@>
-    <@>
-      ¶13
-      | /manuscripts/sun-tzu-iii-13.pdf
-      | Translation manuscript for Vol. III ¶13
-    </@>
-    <@>
-      ¶14
-      | /manuscripts/sun-tzu-iii-14.pdf
-      | Translation manuscript for Vol. III ¶14
-    </@>
-    <@>
-      ¶15
-      | /manuscripts/sun-tzu-iii-15.pdf
-      | Translation manuscript for Vol. III ¶15
-    </@>
-    <@>
-      ¶16
-      | /manuscripts/sun-tzu-iii-16.pdf
-      | Translation manuscript for Vol. III ¶16
-    </@>
-    <@>
-      ¶17
-      | /manuscripts/sun-tzu-iii-17.pdf
-      | Translation manuscript for Vol. III ¶17
-    </@>
-    <@>
-      ¶18
-      | /manuscripts/sun-tzu-iii-18.pdf
-      | Translation manuscript for Vol. III ¶18
-    </@>
-    <@>
-      ¶19
-      | /manuscripts/sun-tzu-iii-19.pdf
-      | Translation manuscript for Vol. III ¶19
-    </@>
-    <@>
-      ¶20
-      | /manuscripts/sun-tzu-iii-20.pdf
-      | Translation manuscript for Vol. III ¶20
-    </@>
-    <@>
-      ¶21
-      | /manuscripts/sun-tzu-iii-21.pdf
-      | Translation manuscript for Vol. III ¶21
-    </@>
-    <@>
-      ¶22
-      | /manuscripts/sun-tzu-iii-22.pdf
-      | Translation manuscript for Vol. III ¶22
-    </@>
-    <@>
-      ¶23
-      | /manuscripts/sun-tzu-iii-23.pdf
-      | Translation manuscript for Vol. III ¶23
-    </@>
-    <@>
-      ¶24
-      | /manuscripts/sun-tzu-iii-24.pdf
-      | Translation manuscript for Vol. III ¶24
-    </@>
-    <@>
-      ¶25
-      | /manuscripts/sun-tzu-iii-25.pdf
-      | Translation manuscript for Vol. III ¶25
-    </@>
-    <@>
-      ¶26
-      | /manuscripts/sun-tzu-iii-26.pdf
-      | Translation manuscript for Vol. III ¶26
-    </@>
-    <@>
-      ¶27
-      | /manuscripts/sun-tzu-iii-27.pdf
-      | Translation manuscript for Vol. III ¶27
-    </@>
-    <@>
-      ¶28
-      | /manuscripts/sun-tzu-iii-28.pdf
-      | Translation manuscript for Vol. III ¶28
-    </@>
-    <@>
-      ¶29
-      | /manuscripts/sun-tzu-iii-29.pdf
-      | Translation manuscript for Vol. III ¶29
-    </@>
-    <@>
-      ¶30
-      | /manuscripts/sun-tzu-iii-30.pdf
-      | Translation manuscript for Vol. III ¶30
-    </@>
-    <@>
-      ¶31
-      | /manuscripts/sun-tzu-iii-31.pdf
-      | Translation manuscript for Vol. III ¶31
-    </@>
-    <@>
-      ¶32
-      | /manuscripts/sun-tzu-iii-32.pdf
-      | Translation manuscript for Vol. III ¶32
-    </@>
-    <@>
-      ¶33
-      | /manuscripts/sun-tzu-iii-33.pdf
-      | Translation manuscript for Vol. III ¶33
-    </@>
-    <@>
-      ¶34
-      | /manuscripts/sun-tzu-iii-34.pdf
-      | Translation manuscript for Vol. III ¶34
-    </@>
-    <@>
-      ¶35
-      | /manuscripts/sun-tzu-iii-35.pdf
-      | Translation manuscript for Vol. III ¶35
-    </@>
-    <@>
-      ¶36
-      | /manuscripts/sun-tzu-iii-36.pdf
-      | Translation manuscript for Vol. III ¶36
-    </@>
+    <@> [para]1 | [man.url]-iii-1.pdf | [man-iii.h] [para]1 </@>
+    <@> [para]2 | [man.url]-iii-2.pdf | [man-iii.h] [para]2 </@>
+    <@> [para]3 | [man.url]-iii-3.pdf | [man-iii.h] [para]3 </@>
+    <@> [para]4 | [man.url]-iii-4.pdf | [man-iii.h] [para]4 </@>
+    <@> [para]5 | [man.url]-iii-5.pdf | [man-iii.h] [para]5 </@>
+    <@> [para]6 | [man.url]-iii-6.pdf | [man-iii.h] [para]6 </@>
+    <@> [para]7 | [man.url]-iii-7.pdf | [man-iii.h] [para]7 </@>
+    <@> [para]8 | [man.url]-iii-8.pdf | [man-iii.h] [para]8 </@>
+    <@> [para]9 | [man.url]-iii-9.pdf | [man-iii.h] [para]9 </@>
+    <@> [para]10 | [man.url]-iii-10.pdf | [man-iii.h] [para]10 </@>
+    <@> [para]11 | [man.url]-iii-11.pdf | [man-iii.h] [para]11 </@>
+    <@> [para]12 | [man.url]-iii-12.pdf | [man-iii.h] [para]12 </@>
+    <@> [para]13 | [man.url]-iii-13.pdf | [man-iii.h] [para]13 </@>
+    <@> [para]14 | [man.url]-iii-14.pdf | [man-iii.h] [para]14 </@>
+    <@> [para]15 | [man.url]-iii-15.pdf | [man-iii.h] [para]15 </@>
+    <@> [para]16 | [man.url]-iii-16.pdf | [man-iii.h] [para]16 </@>
+    <@> [para]17 | [man.url]-iii-17.pdf | [man-iii.h] [para]17 </@>
+    <@> [para]18 | [man.url]-iii-18.pdf | [man-iii.h] [para]18 </@>
+    <@> [para]19 | [man.url]-iii-19.pdf | [man-iii.h] [para]19 </@>
+    <@> [para]20 | [man.url]-iii-20.pdf | [man-iii.h] [para]20 </@>
+    <@> [para]21 | [man.url]-iii-21.pdf | [man-iii.h] [para]21 </@>
+    <@> [para]22 | [man.url]-iii-22.pdf | [man-iii.h] [para]22 </@>
+    <@> [para]23 | [man.url]-iii-23.pdf | [man-iii.h] [para]23 </@>
+    <@> [para]24 | [man.url]-iii-24.pdf | [man-iii.h] [para]24 </@>
+    <@> [para]25 | [man.url]-iii-25.pdf | [man-iii.h] [para]25 </@>
+    <@> [para]26 | [man.url]-iii-26.pdf | [man-iii.h] [para]26 </@>
+    <@> [para]27 | [man.url]-iii-27.pdf | [man-iii.h] [para]27 </@>
+    <@> [para]28 | [man.url]-iii-28.pdf | [man-iii.h] [para]28 </@>
+    <@> [para]29 | [man.url]-iii-29.pdf | [man-iii.h] [para]29 </@>
+    <@> [para]30 | [man.url]-iii-30.pdf | [man-iii.h] [para]30 </@>
+    <@> [para]31 | [man.url]-iii-31.pdf | [man-iii.h] [para]31 </@>
+    <@> [para]32 | [man.url]-iii-32.pdf | [man-iii.h] [para]32 </@>
+    <@> [para]33 | [man.url]-iii-33.pdf | [man-iii.h] [para]33 </@>
+    <@> [para]34 | [man.url]-iii-34.pdf | [man-iii.h] [para]34 </@>
+    <@> [para]35 | [man.url]-iii-35.pdf | [man-iii.h] [para]35 </@>
+    <@> [para]36 | [man.url]-iii-36.pdf | [man-iii.h] [para]36 </@>
   </li>
   
 </ul>
@@ -775,25 +450,25 @@ In each page, remove the its own link, and make that text bold.
 
 <#n>
   <b>《孫子算經》</b> \or <br>
-  <b>"<^e>Sun~Tzuu</^e>'s Computational Classic"</b>
+  <b>"[sun-tzu-classic]"</b>
   <ul>
     <@i>
-      《序》~"Preface"
+      《序》~"[pref]"
       | /sun-tzu/preface.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+      | "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
     </@i>
     <@i>
-      《卷上》~"Volume~I"
+      《卷上》~"[vol-i]"
       | /sun-tzu/i.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+      | "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
     </@i>
     <@i>
-      《卷中》~"Volume~II" <:v>(incomplete)</:v>
+      《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
       | /sun-tzu/ii.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+      | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
     <li>
-      <:r>\!《卷下》~"Volume~III"</:r>
+      <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
     </li>
   </ul>
@@ -802,7 +477,7 @@ In each page, remove the its own link, and make that text bold.
 
 
 <*c>
-  "<^e>Sun~Tzuu</^e>'s Computational Classic"
+  "[sun-tzu-classic]"
   | sun-tzu
   | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}''
 </*c>
