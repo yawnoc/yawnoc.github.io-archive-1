@@ -884,6 +884,7 @@
 <% [撮] | 撮 <^> ts'u"t | ts'o | cuo </^> %>
 <% [抄] | 抄 <^> ch'aau | ch'ao | chao </^> %>
 <% [勺] | 勺 <^> choek | shao | shao </^> %>
+<% [龠] | 龠 <^> yoek | yu"eh | yue</^> %>
 <% [合] | 合 <^> kap | ko | ge </^> %>
 <% [升] | 升 <^> shing | she^ng | sheng </^> %>
 <% [斗] | 斗 <^> tau | tou | dou </^> %>
@@ -1044,7 +1045,7 @@
     | Ordinance No. 22 of 1844 (1890 Edition)
   </@>,
   which has all of the above units as well as the "cup",
-  龠 <^> yoek | yu"eh | yue</^>,
+  [龠],
   equal to 5~ladles.
   Here the [斛] is defined as
   5~[斗] rather than 10~[斗]:
@@ -1966,7 +1967,7 @@
       "hundreds <_>100s</_> {and} myriads <_>10000s</_>".
       Now corrected according to
       <@>
-        "夏侯陽 <^> Haa Hau-yoeng | Hsia Hou-yang | Xia Houyang </^>'s
+        "[夏侯陽]'s
         Computational Classic"
         | https://archive.org/details/02094036.cn/page/n6
         | 02094036.cn at archive.org
@@ -1979,6 +1980,8 @@
     Thus I have 萬百 above.
   </li>
 </ul>
+
+<% [夏侯陽] | 夏侯陽 <^> Haa Hau-yoeng | Hsia Hou-yang | Xia Houyang </^> %>
 
 <p>
   This paragraph is referring to the way numerals are displayed in
@@ -2681,11 +2684,13 @@
 
 <p>
   The next line I have bracketed, for it is an inline annotation by
-  李淳風 <^> Lei Sh_n-fung | Li Ch'un-fe^ng | Li Chunfeng </^>~{et~al.},
+  [李淳風]~{et~al.},
   written in two columns of smaller characters which take up
   half the width of the normal characters; see
   <@> Version~D | [version-d.url]15 | [version-d.h] </@>.
 </p>
+
+<% [李淳風] | 李淳風 <^> Lei Sh_n-fung | Li Ch'un-fe^ng | Li Chunfeng </^> %>
 
 <#t>
   （上位有空絕者，法退二位。） |
