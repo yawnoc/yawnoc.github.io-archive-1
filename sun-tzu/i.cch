@@ -547,13 +547,15 @@
   Reading through historical versions of the
   <@>
     Weights and Measures Ordinance
-    | http://oelawhk.lib.hku.hk/exhibits/show/oelawhk/searchresult?stext=weight+measure&x=0&y=0&sfield=TI&edition=1890&no_result=10
+    | http://oelawhk.lib.hku.hk/exhibits/show/oelawhk/searchresult\
+        ?stext=weight+measure&x=0&y=0&sfield=TI&edition=1890&no_result=10
     | Historical Laws of Hong Kong Online
   </@>
   enacted by the British in Hong Kong,
   <@>
     Ordinance No.~22 of~1844 (PDF)
-    | http://oelawhk.lib.hku.hk/archive/files/9c24f167a27b616a75db9691574eb925.pdf
+    | http://oelawhk.lib.hku.hk/archive/files/\
+        9c24f167a27b616a75db9691574eb925.pdf
     | Ordinance No. 22 of 1844 (1890 Edition)
   </@>
   gives the following conversions between Chinese length units
@@ -577,7 +579,8 @@
   Chinese length units with reference to English units in
   <@>
     Ordinance No.~8 of~1885 (PDF)
-    | http://oelawhk.lib.hku.hk/archive/files/52fa22f83069cf6a385779d462a0f6e7.pdf
+    | http://oelawhk.lib.hku.hk/archive/files/\
+        52fa22f83069cf6a385779d462a0f6e7.pdf
     | Ordinance No. 8 of 1885 (1890 Edition)
   </@>,
   more than four decades later:
@@ -872,6 +875,16 @@
 <;sh> 1 | 3 | Units of capacity </;sh>
 <;s@@> 1 | 3 | 4 | 146 | 52059 | 2 | 12 </;s@@>
 
+<% [粟] | 粟 <^> suk | su | su </^> %>
+<% [圭] | 圭 <^> kwai | kuei | gui </^> %>
+<% [撮] | 撮 <^> ts'u"t | ts'o | cuo </^> %>
+<% [抄] | 抄 <^> ch'aau | ch'ao | chao </^> %>
+<% [勺] | 勺 <^> choek | shao | shao </^> %>
+<% [合] | 合 <^> kap | ko | ge </^> %>
+<% [升] | 升 <^> shing | she^ng | sheng </^> %>
+<% [斗] | 斗 <^> tau | tou | dou </^> %>
+<% [斛] | 斛 <^> huk | hu | hu </^> %>
+
 <#t>
   量之所起，起於粟。 |
   {Of} that which measuring of capacity beginneth from:
@@ -883,9 +896,9 @@
       量，平聲，
       <^cm> loeng4 | lia/ng </^cm>
   </li>
-  <li>粟 <^> suk | su | su </^>：
+  <li>[粟]：
     \lit grain <br>
-    1/600,000 of the Chinese litre, 升 <^> shing | she^ng | sheng </^>.
+    1/600,000 of the Chinese litre, [升].
   </li>
 </ul>
 
@@ -908,28 +921,28 @@
   ten <_>10</_> pecks make one barrel.
 </#t>
 <ul>
-  <li>圭 <^> kwai | kuei | gui </^>：
+  <li>[圭]：
     \lit (jade) tablet <br>
-    1/100,000 of the Chinese litre, 升 <^> shing | she^ng | sheng </^>.
+    1/100,000 of the Chinese litre, [升].
   </li>
-  <li>撮 <^> ts'u"t | ts'o | cuo </^>：
+  <li>[撮]：
     \lit (two- or three-finger) pinch;
     \or pugil <br>
-    1/10,000 of the Chinese litre, 升 <^> shing | she^ng | sheng </^>.
+    1/10,000 of the Chinese litre, [升].
   </li>
-  <li>抄 <^> ch'aau | ch'ao | chao </^>：
+  <li>[抄]：
     grab <br>
-    1/1,000 of the Chinese litre, 升 <^> shing | she^ng | sheng </^>.
+    1/1,000 of the Chinese litre, [升].
     Others render this as "handful",
     but that sounds too big in my opinion.
   </li>
-  <li>勺 <^> choek | shao | shao </^>：
+  <li>[勺]：
     ladle <br>
-    1/100 of the Chinese litre, 升 <^> shing | she^ng | sheng </^>.
+    1/100 of the Chinese litre, [升].
   </li>
-  <li>合 <^> kap | ko | ge </^>：
+  <li>[合]：
     gill <br>
-    1/10 of the Chinese litre, 升 <^> shing | she^ng | sheng </^>.
+    1/10 of the Chinese litre, [升].
     Similar in size to the
     <@>
       imperial gill
@@ -939,7 +952,7 @@
     Note the Chinese pronunciation 葛合切, i.e.~<^e>kap8</^e>/<^e>gev</^e>.
     In English, "gill" is read [dʒɪl], i.e.~with a soft 'g'.
   </li>
-  <li>升 <^> shing | she^ng | sheng </^>：
+  <li>[升]：
     quart <br>
     The <b>Chinese litre</b>,
     of the same order of magnitude as the metric litre.
@@ -953,31 +966,37 @@
       | Wikipedia: Quart
     </@>.
   </li>
-  <li>斗 <^> tau | tou | dou </^>：
+  <li>[斗]：
     peck <br>
     10~Chinese litres,
     of similar to the imperial peck.
     A person of integrity will not 為五斗米折腰,
     or "bow down (\lit bend {at the} waist) for five pecks of grain".
   </li>
-  <li>斛 <^> huk | hu | hu </^>：
+  <li>[斛]：
     barrel <br>
     100~Chinese litres.
     <@>
       James Legge
-      | https://ctext.org/zhuangzi/cutting-open-satchels?searchu=%E7%82%BA%E4%B9%8B%E6%96%97%E6%96%9B%E4%BB%A5%E9%87%8F%E4%B9%8B%EF%BC%8C%E5%89%87%E4%B8%A6%E8%88%87%E6%96%97%E6%96%9B%E8%80%8C%E7%AB%8A%E4%B9%8B%EF%BC%9B
+      | https://ctext.org/zhuangzi/cutting-open-satchels\
+          ?searchu=\
+            %E7%82%BA%E4%B9%8B%E6%96%97%E6%96%9B\
+            %E4%BB%A5%E9%87%8F%E4%B9%8B%EF%BC%8C\
+            %E5%89%87%E4%B8%A6%E8%88%87%E6%96%97\
+            %E6%96%9B%E8%80%8C%E7%AB%8A%E4%B9%8B\
+            %EF%BC%9B
       | ctext.org: 為之斗斛以量之，則並與斗斛而竊之
     </@>
     instead uses "bushel", which is only about 40~litres,
     but this is reasonable since later definitions
-    have a 斛 <^> huk | hu | hu </^> being only 50~Chinese litres
+    have a [斛] being only 50~Chinese litres
     (rather than~100).
   </li>
 </ul>
 
 <p>
   I can't be bothered looking up a reputable source
-  for the precise volume of a 升 <^> shing | she^ng | sheng </^>
+  for the precise volume of a [升]
   when [sun-tzu-classic] was first written,
   but using 1~litre as an estimate,
   we have:
@@ -1000,7 +1019,7 @@
 <p>
   In <@> Vol.~II [para]10 | /sun-tzu/ii.html#10 | Vol. II [para]10 </@>,
   the conversion between
-  the capacity unit "barrel", 斛 <^> huk | hu | hu </^>,
+  the capacity unit "barrel", [斛],
   and the volume unit "cubic rule", [尺],
   is given as
 </p>
@@ -1010,20 +1029,21 @@
 
 <p>
   <@> Version~C | [version-c.url]52059 | [version-c.h] </@>
-  has "pinches" (撮 <^> ts'u"t | ts'o | cuo </^>)
-  and "grabs" (抄 <^> ch'aau | ch'ao | chao </^>) the other way around.
+  has "pinches" ([撮])
+  and "grabs" ([抄]) the other way around.
   The order given here is that in Versions~A, B and~D,
   and it is consistent with the order in
   <@>
     Ordinance No.~22 of~1844 (PDF)
-    | http://oelawhk.lib.hku.hk/archive/files/9c24f167a27b616a75db9691574eb925.pdf
+    | http://oelawhk.lib.hku.hk/archive/files/\
+        9c24f167a27b616a75db9691574eb925.pdf
     | Ordinance No. 22 of 1844 (1890 Edition)
   </@>,
   which has all of the above units as well as the "cup",
   龠 <^> yoek | yu"eh | yue</^>,
   equal to 5~ladles.
-  Here the 斛 <^> huk | hu | hu </^> is defined as
-  5~斗 <^> tau | tou | dou </^> rather than 10~斗 <^> tau | tou | dou </^>:
+  Here the [斛] is defined as
+  5~[斗] rather than 10~[斗]:
 </p>
 <div class="centred-flex">
   <+>
@@ -1123,27 +1143,27 @@
     six ditch <_>6 * 10^14</_> grains;
 </#t>
 <ul>
-  <li>億 <^> yik | i | yi </^>：
+  <li>[億]：
     square-myriad
   </li>
-  <li>兆 <^> sheeu | chao | zhao </^>：
+  <li>[兆]：
     multitude <br>
     Effectively a formal version of "zillion".
   </li>
-  <li>京 <^> king | ching | jing </^>：
+  <li>[京]：
     \lit capital
   </li>
-  <li>陔 <^> koi | kai | gai </^>：
+  <li>[陔]：
     \lit terrace
   </li>
-  <li>秭 <^> tsee | tzuu | zi </^>：
+  <li>[秭]：
     \lit haystack <br>
     More accurately, "grainstack".
   </li>
-  <li>壤 <^> yoeng | jang | rang </^>：
+  <li>[壤]：
     \lit soil
   </li>
-  <li>溝 <^> k'au | kou | gou </^>：
+  <li>[溝]：
     \lit ditch
   </li>
 </ul>
@@ -1161,13 +1181,13 @@
     six carry <_>6 * 10^17</_> grains.
 </#t>
 <ul>
-  <li>澗 <^> kaan | chien | jian </^>：
+  <li>[澗]：
     \lit (mountain) stream
   </li>
-  <li>正 <^> ching | che^ng | zheng </^>：
+  <li>[正]：
     \lit right
   </li>
-  <li>載 <^> tsoi | tsai | zai </^>：
+  <li>[載]：
     \lit carry <br>
     Since this is a noun,
     it should be read in 上聲, i.e.~<^e>tsoi2</^e>/<^e>zavi</^e>.
@@ -1211,6 +1231,17 @@
 
 <;sh> 1 | 4 | Names of large numbers </;sh>
 <;s@@> 1 | 4 | 6 | 147 | 52060 | 3 | 13 </;s@@>
+
+<% [億] | 億 <^> yik | i | yi </^> %>
+<% [兆] | 兆 <^> sheeu | chao | zhao </^> %>
+<% [京] | 京 <^> king | ching | jing </^> %>
+<% [陔] | 陔 <^> koi | kai | gai </^> %>
+<% [秭] | 秭 <^> tsee | tzuu | zi </^> %>
+<% [壤] | 壤 <^> yoeng | jang | rang </^> %>
+<% [溝] | 溝 <^> k'au | kou | gou </^> %>
+<% [澗] | 澗 <^> kaan | chien | jian </^> %>
+<% [正] | 正 <^> ching | che^ng | zheng </^> %>
+<% [載] | 載 <^> tsoi | tsai | zai </^> %>
 
 <#t>
   凡大數之法， <br>
@@ -1295,70 +1326,70 @@
     <th>Modern</th>
   </tr>
   <tr>
-    <td>億 <^> yik | i | yi </^></td>
+    <td>[億]</td>
     <td>square-myriad</td>
     <td>10<sup>8</sup></td>
     <td>10<sup>8</sup></td>
     <td>10<sup>8</sup></td>
   </tr>
   <tr>
-    <td>兆 <^> sheeu | chao | zhao </^></td>
+    <td>[兆]</td>
     <td>multitude</td>
     <td>10<sup>9</sup></td>
     <td>10<sup>16</sup></td>
     <td>10<sup>12</sup></td>
   </tr>
   <tr>
-    <td>京 <^> king | ching | jing </^></td>
+    <td>[京]</td>
     <td>capital</td>
     <td>10<sup>10</sup></td>
     <td>10<sup>24</sup></td>
     <td>10<sup>16</sup></td>
   </tr>
   <tr>
-    <td>陔 <^> koi | kai | gai </^></td>
+    <td>[陔]</td>
     <td>terrace</td>
     <td>10<sup>11</sup></td>
     <td>10<sup>32</sup></td>
     <td>10<sup>20</sup></td>
   </tr>
   <tr>
-    <td>秭 <^> tsee | tzuu | zi </^></td>
+    <td>[秭]</td>
     <td>haystack</td>
     <td>10<sup>12</sup></td>
     <td>10<sup>40</sup></td>
     <td>10<sup>24</sup></td>
   </tr>
   <tr>
-    <td>壤 <^> yoeng | jang | rang </^></td>
+    <td>[壤]</td>
     <td>soil</td>
     <td>10<sup>13</sup></td>
     <td>10<sup>48</sup></td>
     <td>10<sup>28</sup></td>
   </tr>
   <tr>
-    <td>溝 <^> k'au | kou | gou </^></td>
+    <td>[溝]</td>
     <td>ditch</td>
     <td>10<sup>14</sup></td>
     <td>10<sup>56</sup></td>
     <td>10<sup>32</sup></td>
   </tr>
   <tr>
-    <td>澗 <^> kaan | chien | jian </^></td>
+    <td>[澗]</td>
     <td>stream</td>
     <td>10<sup>15</sup></td>
     <td>10<sup>64</sup></td>
     <td>10<sup>36</sup></td>
   </tr>
   <tr>
-    <td>正 <^> ching | che^ng | zheng </^></td>
+    <td>[正]</td>
     <td>right</td>
     <td>10<sup>16</sup></td>
     <td>10<sup>72</sup></td>
     <td>10<sup>40</sup></td>
   </tr>
   <tr>
-    <td>載 <^> tsoi | tsai | zai </^></td>
+    <td>[載]</td>
     <td>carry</td>
     <td>10<sup>17</sup></td>
     <td>10<sup>80</sup></td>
@@ -1367,7 +1398,7 @@
 </table></!cc>
 
 <p>
-  Note that 兆 <^> sheeu | chao | zhao </^>, "multitude", is also used for
+  Note that [兆], "multitude", is also used for
   the SI Prefix mega~(10<sup>6</sup>). Confusing eh?
 </p>
 
