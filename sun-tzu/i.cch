@@ -126,6 +126,9 @@
   }
 </-->
 
+<% [mathit] | class="maths-italic" %>
+<% [mathrm] | class="maths-roman" %>
+
 
 <@2> Translation | translation </@2>
 
@@ -1463,14 +1466,17 @@
     h           total height                            2.6
   ***********************************************************************
   -->
+
+<% [font-size-para-5] | font-size="0.4" %>
+
 <div class="centred-svg">
 <svg class="fit-width" width="120px" viewBox="-1.1 -1.5 2.2 2.6">
   <!-- Circumference -->
   <circle r = "1"/>
-  <text class="maths-italic" x="0" y="-1" font-size="0.4" dy="-0.25em">C</text>
+  <text [mathit] x="0" y="-1" [font-size-para-5] dy="-0.25em">C</text>
   <!-- Diameter -->
   <line x1="-1" y1="0" x2="1" y2="0"/>
-  <text class="maths-italic" x="0" y="0" font-size="0.4" dy="-0.25em">d</text>
+  <text [mathit] x="0" y="0" [font-size-para-5] dy="-0.25em">d</text>
 </svg>
 </div>
 
@@ -1503,15 +1509,16 @@
     h           total height                            2.6
   ***********************************************************************
   -->
+
 <div class="centred-svg">
 <svg class="fit-width" width="120px" viewBox="-1.1 -1.1 2.2 2.6">
   <!-- Square -->
   <path class="notm" d="M -1,1 L1,1 L1,-1 L-1,-1 Z"/>
   <!-- Square's edge -->
-  <text class="maths-italic" x="0" y="1" font-size="0.4" dy="0.9em">L</text>
+  <text [mathit] x="0" y="1" [font-size-para-5] dy="0.9em">L</text>
   <!-- Diagonal -->
   <line x1="-1" y1="1" x2="1" y2="-1"/>
-  <text class="maths-italic" x="0" y="0" font-size="0.4" dx="-0.5em">D</text>
+  <text [mathit] x="0" y="0" [font-size-para-5] dx="-0.5em">D</text>
 </svg>
 </div>
 
@@ -1723,6 +1730,9 @@
   -->
 <div class="centred-svg">
 <svg class="fit-width" width="480px" viewBox="-3.5 -18 25.5 22">
+  
+  <% [font-size-para-6-axis] | font-size="0.8" %>
+  
   <!-- Marker definitions -->
   <defs>
     <!-- Horizontal axis coarse tick -->
@@ -1752,59 +1762,86 @@
       <line class="thick" x1="-0.3" y1="0.3" x2="0.3" y2="-0.3"/>
     </marker>
   </defs>
+  
+  <%
+    [ticks-coarse-horizontal] |
+    marker-start="url(#htickcoarse)"
+    marker-mid="url(#htickcoarse)"
+    marker-end="url(#htickcoarse)"
+  %>
+  <%
+    [ticks-fine-horizontal] |
+    marker-start="url(#htickfine)"
+    marker-mid="url(#htickfine)"
+    marker-end="url(#htickfine)"
+  %>
+  <%
+    [ticks-coarse-vertical] |
+    marker-start="url(#vtickcoarse)"
+    marker-mid="url(#vtickcoarse)"
+    marker-end="url(#vtickcoarse)"
+  %>
+  <%
+    [ticks-fine-vertical] |
+    marker-start="url(#vtickfine)"
+    marker-mid="url(#vtickfine)"
+    marker-end="url(#vtickfine)"
+  %>
+  
   <!-- Horizontal axis -->
   <line x1="0" y1="0" x2="20.5" y2="0"/>
-  <text class="maths-italic" x="11" y="2.6" font-size="1">\
-    ρ<tspan class="maths-roman" font-size="0.8" dx="0.05em" dy="0.25em">m</tspan>\
+  <text [mathit] x="11" y="2.6" font-size="1">\
+    ρ<tspan [mathrm] [font-size-para-6-axis] dx="0.05em" dy="0.25em">m</tspan>\
       <tspan dy="-0.2em">\,/</tspan>\
-    (<tspan class="maths-roman">g</tspan> <tspan class="maths-roman">cm</tspan>\
-      <tspan font-size="0.8" dy="-0.4em">−3</tspan>\
+    (<tspan [mathrm]>g</tspan> <tspan [mathrm]>cm</tspan>\
+      <tspan [font-size-para-6-axis] dy="-0.4em">−3</tspan>\
     <tspan dx="0.1em" dy="0.32em">)</tspan>
   </text>
   <!-- Horizontal axis coarse ticks -->
   <polyline class="points" points="5,0 10,0 15,0 20,0"
-    marker-start = "url(#htickcoarse)"
-    marker-mid   = "url(#htickcoarse)"
-    marker-end   = "url(#htickcoarse)"/>
-  <text class="maths-italic" x="5" y="0" font-size="1" dy="1.35em">5</text>
-  <text class="maths-italic" x="10" y="0" font-size="1" dy="1.35em">10</text>
-  <text class="maths-italic" x="15" y="0" font-size="1" dy="1.35em">15</text>
-  <text class="maths-italic" x="20" y="0" font-size="1" dy="1.35em">20</text>
+    [ticks-coarse-horizontal]/>
+  <text [mathit] x="5" y="0" [tick-labels-horizontal]>5</text>
+  <text [mathit] x="10" y="0" [tick-labels-horizontal]>10</text>
+  <text [mathit] x="15" y="0" [tick-labels-horizontal]>15</text>
+  <text [mathit] x="20" y="0" [tick-labels-horizontal]>20</text>
+  <%
+    [tick-labels-horizontal] |
+    font-size="1" dy="1.35em"
+  %>
+  
   <!-- Horizontal axis fine ticks -->
   <polyline class="points"
     points =
      "1,0  2,0  3,0  4,0  6,0  7,0  8,0  9,0
       11,0 12,0 13,0 14,0 16,0 17,0 18,0 19,0"
-    marker-start = "url(#htickfine)"
-    marker-mid   = "url(#htickfine)"
-    marker-end   = "url(#htickfine)"/>
+    [ticks-fine-horizontal]/>
+  
   <!-- Vertical axis -->
   <line x1="0" y1="0" x2="0" y2="-17.5"/>
-  <text class="maths-italic" x="-2.4" y="-8.5" font-size="1"
+  <text [mathit] x="-2.4" y="-8.5" font-size="1"
     transform = "rotate(-90 -2.4 -8.5)">\
-    ρ<tspan class="maths-roman" font-size="0.8" dy="0.25em">s</tspan>\
+    ρ<tspan [mathrm] [font-size-para-6-axis] dy="0.25em">s</tspan>\
       <tspan dy="-0.25em">\,/</tspan>\
-    (<tspan class="maths-roman">taels</tspan> \
-    <tspan class="maths-roman">inch</tspan>\
-      <tspan font-size="0.8" dy="-0.4em">−3</tspan>\
+    (<tspan [mathrm]>taels</tspan> \
+    <tspan [mathrm]>inch</tspan>\
+      <tspan [font-size-para-6-axis] dy="-0.4em">−3</tspan>\
     <tspan dx="0.1em" dy="0.32em">)</tspan>
   </text>
+  
   <!-- Vertical axis coarse ticks -->
   <polyline class="points" points="0,-5 0,-10 0,-15"
-    marker-start = "url(#vtickcoarse)"
-    marker-mid   = "url(#vtickcoarse)"
-    marker-end   = "url(#vtickcoarse)"/>
-  <text class="maths-italic" x="0" y="-5" font-size="1" dx="-1em" dy="0.3em">5</text>
-  <text class="maths-italic" x="0" y="-10" font-size="1" dx="-1.2em" dy="0.3em">10</text>
-  <text class="maths-italic" x="0" y="-15" font-size="1" dx="-1.2em" dy="0.3em">15</text>
+    [ticks-coarse-vertical]/>
+  <text [mathit] x="0" y="-5" font-size="1" dx="-1em" dy="0.3em">5</text>
+  <text [mathit] x="0" y="-10" font-size="1" dx="-1.2em" dy="0.3em">10</text>
+  <text [mathit] x="0" y="-15" font-size="1" dx="-1.2em" dy="0.3em">15</text>
+  
   <!-- Vertical axis fine ticks -->
   <polyline class="points"
     points =
      "0, -1 0, -2 0, -3 0, -4 0, -6 0, -7 0, -8 0,-9
       0,-11 0,-12 0,-13 0,-14 0,-16 0,-17"
-    marker-start = "url(#vtickfine)"
-    marker-mid   = "url(#vtickfine)"
-    marker-end   = "url(#vtickfine)"/>
+    [ticks-fine-vertical]/>
+  
   <!-- Data points -->
   <!-- Gold -->
   <polyline class="points" points="19.29,-16" marker-end="url(#datapoint)"/>
