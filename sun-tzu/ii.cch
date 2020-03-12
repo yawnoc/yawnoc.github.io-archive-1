@@ -2597,7 +2597,8 @@
 <p>
   The <:g><b>ones digit of the upper quotient</b>~(上商)</:g>
   is the largest <$>\colg a_3</$> such that
-  <$>{\colg a_3} ({\colv s_1} + {\colv s_2} + {\colg a_3} {\colr L}) \le {\colb d}</$>,
+  <$>{\colg a_3} ({\colv s_1} + {\colv s_2} + {\colg a_3} {\colr L})
+  \le {\colb d}</$>,
   or
 </p>
 <$$>
