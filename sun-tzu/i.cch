@@ -1,28 +1,31 @@
 <*>
-  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+  "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
   | 20190609 | 20200225 | dmr
-  | An annotated English translation of Volume~I of Sunzi Suanjing, \
-    《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
+  | An annotated English translation of [vol-i] of Sunzi Suanjing, \
+    《孫子算經》, or "[sun-tzu-classic]".
 </*>
 
 <=h>
   <@ih></@ih>
   <@it></@it>
-  <@i> Paragraphs | #paragraphs | Volume I: Paragraph navigation </@i>
+  <@i> Paragraphs | #paragraphs | [paragraphs.h] </@i>
   <@ic></@ic>
 </=h>
 
 <h1>
   《孫子算經\.卷上》 \or <br>
-  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I"
+  "[sun-tzu-classic]: [vol-i]"
 </h1>
 
 <*p> |
-  Also known as {Sunzi Suanjing}: Volume~I.
+  Also known as {Sunzi Suanjing}: [vol-i].
 </*p>
 
+<% [para] | ¶ %>
 
-<@2> Volume navigation | volumes </@2>
+
+<% [volumes.h] | Volume navigation %>
+<@2> [volumes.h] | volumes </@2>
 
 
 <@@>
@@ -33,31 +36,77 @@
   
   <@>
     《孫子算經》 \or <br>
-    "<^e>Sun~Tzuu</^e>'s Computational Classic"
+    "[sun-tzu-classic]"
     | /sun-tzu/
-    | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
+    | "[sun-tzu-classic]": 《孫子算經》
   </@>
   <ul>
     <@i>
-      《序》~"Preface"
+      《序》~"[pref]"
       | /sun-tzu/preface.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+      | "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
     </@i>
     <li>
-      <b>《卷上》~"Volume~I"</b>
+      <b>《卷上》~"[vol-i]"</b>
     </li>
     <@i>
-      《卷中》~"Volume~II" <:v>(incomplete)</:v>
+      《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
       | /sun-tzu/ii.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+      | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
     <li>
-      <:r>\!《卷下》~"Volume~III"</:r>
+      <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
     </li>
   </ul>
   
 </#n>
+
+<% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
+<% [sun-tzu-classic] | [sun-tzu]'s Computational Classic %>
+<% [pref] | Preface %>
+<% [vol-i] | Volume~I %>
+<% [vol-ii] | Volume~II %>
+<% [vol-iii] | Volume~III %>
+
+<%
+  [version-a.url] |
+  https://archive.org/details/02094034.cn/page/n
+%>
+<%
+  [version-a.h] |
+  02094034.cn at archive.org
+%>
+
+<%
+  [version-b.url] |
+  https://commons.wikimedia.org/w/index.php\
+    ?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%\
+      E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu\
+    &page=
+%>
+<%
+  [version-b.h] |
+  《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+%>
+
+<%
+  [version-c.url] |
+  https://ctext.org/sunzi-suan-jing#n
+%>
+<%
+  [version-c.h] |
+  ctext.org database page
+%>
+
+<%
+  [version-d.url] |
+  https://ctext.org/library.pl?if=en&file=86926&page=
+%>
+<%
+  [version-d.h] |
+  《知不足齋叢書》本 at ctext.org library
+%>
 
 <-->
   <-t></-t>
@@ -82,26 +131,27 @@
 
 
 <@@>
-  <@u> Volumes | volumes | Volume navigation </@u>
-  <@d> Vol.~I Paragraphs | paragraphs | Volume I: Paragraph navigation </@d>
+  <@u> Volumes | volumes | [volumes.h] </@u>
+  <@d> Vol.~I Paragraphs | paragraphs | [paragraphs.h] </@d>
 </@@>
 
 <^^></^^>
 
 <#t>
   《孫子算經\.卷上》 |
-  "<^e>Sun~Tzuu</^e>'s Computational Classic:
-  Volume~I"
+  "[sun-tzu-classic]:
+  [vol-i]"
 </#t>
 
 <p>
   Literally "Upper Volume".
 </p>
 
-<@3> Volume~I: Paragraph navigation | paragraphs </@3>
+<% [paragraphs.h] | [vol-i]: Paragraph navigation %>
+<@3> [paragraphs.h] | paragraphs </@3>
 
 <@@>
-  <@u> Volumes | volumes | Volume navigation </@u>
+  <@u> Volumes | volumes | [volumes.h] </@u>
 </@@>
 
 <p>
@@ -110,116 +160,141 @@
   are not part of the original text.
 </p>
 
+<!-- [__ __] for centred table cell -->
+<% [__ | <td class="centred-text"> %>
+<% __] | </td> %>
+
+<!-- [== ==] for heading table cell -->
+<% [== | <td class="heading"> %>
+<% ==] | </td> %>
+
 <!><table>
   <tr>
     <th>Link</th>
     <th class="heading">About</th>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶1 | #1 | Vol. I ¶1 </@></td>
-    <td class="heading">Units of length (or distance)</td>
+    [__<@> [para]1 | #1 | Vol. I [para]1 </@>__]
+    [==Units of length (or distance)==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶2 | #2 | Vol. I ¶2 </@></td>
-    <td class="heading">Units of weight (or mass)</td>
+    [__<@> [para]2 | #2 | Vol. I [para]2 </@>__]
+    [==Units of weight (or mass)==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶3 | #3 | Vol. I ¶3 </@></td>
-    <td class="heading">Units of capacity</td>
+    [__<@> [para]3 | #3 | Vol. I [para]3 </@>__]
+    [==Units of capacity==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶4 | #4 | Vol. I ¶4 </@></td>
-    <td class="heading">Names of large numbers</td>
+    [__<@> [para]4 | #4 | Vol. I [para]4 </@>__]
+    [==Names of large numbers==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶5 | #5 | Vol. I ¶5 </@></td>
-    <td class="heading">
+    [__<@> [para]5 | #5 | Vol. I [para]5 </@>__]
+    [==
       <$>\pi \approx 3</$>,
       <$>\sqrt{2} \approx 7/5</$>
-    </td>
+    ==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶6 | #6 | Vol. I ¶6 </@></td>
-    <td class="heading">Densities of metals~etc.</td>
+    [__<@> [para]6 | #6 | Vol. I [para]6 </@>__]
+    [==Densities of metals~etc.==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶7 | #7 | Vol. I ¶7 </@></td>
-    <td class="heading">Rod calculus: vertical \&~horizontal forms</td>
+    [__<@> [para]7 | #7 | Vol. I [para]7 </@>__]
+    [==Rod calculus: vertical \&~horizontal forms==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶8 | #8 | Vol. I ¶8 </@></td>
-    <td class="heading">Rod calculus: multiplication algorithm</td>
+    [__<@> [para]8 | #8 | Vol. I [para]8 </@>__]
+    [==Rod calculus: multiplication algorithm==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶9 | #9 | Vol. I ¶9 </@></td>
-    <td class="heading">Rod calculus: division algorithm</td>
+    [__<@> [para]9 | #9 | Vol. I [para]9 </@>__]
+    [==Rod calculus: division algorithm==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶10 | #10 | Vol. I ¶10 </@></td>
-    <td class="heading">Volume conversion rates for grain \&~rice</td>
+    [__<@> [para]10 | #10 | Vol. I [para]10 </@>__]
+    [==Volume conversion rates for grain \&~rice==]
   </tr>
   <tr>
-    <td class="centred-text">
-      <@> ¶11 | #11 | Vol. I ¶11 </@>
-      <@> ¶12 | #12 | Vol. I ¶12 </@>
-    </td>
-    <td class="heading">Some equivalent fractions</td>
+    [__
+      <@> [para]11 | #11 | Vol. I [para]11 </@>
+      <@> [para]12 | #12 | Vol. I [para]12 </@>
+    __]
+    [==Some equivalent fractions==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶13 | #13 | Vol. I ¶13 </@></td>
-    <td class="heading">Rod calculus: <$>81 \times 81</$></td>
+    [__<@> [para]13 | #13 | Vol. I [para]13 </@>__]
+    [==Rod calculus: <$>81 \times 81</$>==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶14 | #14 | Vol. I ¶14 </@></td>
-    <td class="heading">Rod calculus: <$>6561 \div 9</$></td>
+    [__<@> [para]14 | #14 | Vol. I [para]14 </@>__]
+    [==Rod calculus: <$>6561 \div 9</$>==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶15 | #15 | Vol. I ¶15 </@>  </td>
-    <td class="heading">Results of multiplication \&~division: multiples of~9</td>
+    [__<@> [para]15 | #15 | Vol. I [para]15 </@>__]
+    [==Results of multiplication \&~division: multiples of~9==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶16 | #16 | Vol. I ¶16 </@></td>
-    <td class="heading">Results of multiplication \&~division: multiples of~8</td>
+    [__<@> [para]16 | #16 | Vol. I [para]16 </@>__]
+    [==Results of multiplication \&~division: multiples of~8==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶17 | #17 | Vol. I ¶17 </@></td>
-    <td class="heading">Results of multiplication \&~division: multiples of~7</td>
+    [__<@> [para]17 | #17 | Vol. I [para]17 </@>__]
+    [==Results of multiplication \&~division: multiples of~7==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶18 | #18 | Vol. I ¶18 </@></td>
-    <td class="heading">Results of multiplication \&~division: multiples of~6</td>
+    [__<@> [para]18 | #18 | Vol. I [para]18 </@>__]
+    [==Results of multiplication \&~division: multiples of~6==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶19 | #19 | Vol. I ¶19 </@></td>
-    <td class="heading">Results of multiplication \&~division: multiples of~5</td>
+    [__<@> [para]19 | #19 | Vol. I [para]19 </@>__]
+    [==Results of multiplication \&~division: multiples of~5==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶20 | #20 | Vol. I ¶20 </@></td>
-    <td class="heading">Results of multiplication \&~division: multiples of~4</td>
+    [__<@> [para]20 | #20 | Vol. I [para]20 </@>__]
+    [==Results of multiplication \&~division: multiples of~4==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶21 | #21 | Vol. I ¶21 </@></td>
-    <td class="heading">Results of multiplication \&~division: multiples of~3</td>
+    [__<@> [para]21 | #21 | Vol. I [para]21 </@>__]
+    [==Results of multiplication \&~division: multiples of~3==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶22 | #22 | Vol. I ¶22 </@></td>
-    <td class="heading">Results of multiplication \&~division: multiples of~2</td>
+    [__<@> [para]22 | #22 | Vol. I [para]22 </@>__]
+    [==Results of multiplication \&~division: multiples of~2==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶23 | #23 | Vol. I ¶23 </@></td>
-    <td class="heading">
+    [__<@> [para]23 | #23 | Vol. I [para]23 </@>__]
+    [==
       Results of multiplication \&~division:
       multiples of~1, and all multiples of~9 through~1 combined
-    </td>
+    ==]
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶24 | #24 | Vol. I ¶24 </@></td>
-    <td class="heading">Results of multiplication \&~division: multiples of powers of~3</td>
+    [__<@> [para]24 | #24 | Vol. I [para]24 </@>__]
+    [==Results of multiplication \&~division: multiples of powers of~3==]
   </tr>
 </table></!>
 
 <;sh> 1 | 1 | Units of length (or distance) </;sh>
 <;s@@> 1 | 1 | 4 | 146 | 52058 | 1 | 11 </;s@@>
+
+<% [忽] | 忽 <^> fat | hu | hu </^> %>
+<% [絲] | 絲 <^> see | ssuu | si </^> %>
+<% [毫] | 毫 <^> hou | hao | hao </^> %>
+<% [釐] | 釐 <^> lei | li | li </^> %>
+<% [分] | 分 <^> fan | fe^n | fen </^> %>
+<% [寸] | 寸 <^> ts'u"n | ts'un | cun </^> %>
+<% [尺] | 尺 <^> ch'ek | ch'ih | chi </^> %>
+<% [丈] | 丈 <^> choeng | chang | zhang </^> %>
+<% [引] | 引 <^> yan | yin | yin </^> %>
+<% [端] | 端 <^> tu"n | tuan | duan </^> %>
+<% [匹] | 匹 <^> p'at | p'i | pi </^> %>
+<% [步] | 步 <^> pou | pu | bu </^> %>
+<% [畝] | 畝 <^> mau | mu | mu </^> %>
+<% [里] | 里 <^> lei | li | li </^> %>
+
+<% [劉德] | 劉德 <^> Lau Tak | Liu Te^ | Liu De</^> %>
 
 <#t>
   度之所起，起於忽。欲知其忽，蠶吐絲為忽。 |
@@ -238,23 +313,19 @@
     beginneth from;
     \lit ariseth from
   </li>
-  <li>忽 <^> fat | hu | hu </^>：
+  <li>[忽]：
     floss <br>
-    1/100,000 of the Chinese inch, 寸 <^> ts'u"n | ts'un | cun </^>.
+    1/100,000 of the Chinese inch, [寸].
     <@>
       Its entry in 《康熙字典》
       | https://ctext.org/kangxi-zidian/61/4#n326385
       | 《康熙字典\.忽》
     </@>
     has 忽，蜘蛛網也, "floss, {a} spider's web",
-    quoting 《劉德曰》, or "劉德 <^> Lau Tak | Liu Te^ | Liu De</^>'s sayings".
+    quoting 《劉德曰》, or "[劉德]'s sayings".
   </li>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52058
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52058 | [version-c.h] </@>
     has 蠶所生，吐絲為忽.
   </li>
 </ul>
@@ -278,15 +349,15 @@
   ten <_>10</_> rods make one draw.
 </#t>
 <ul>
-  <li>絲 <^> see | ssuu | si </^>：
+  <li>[絲]：
     (silk) thread <br>
-    1/10,000 of the Chinese inch, 寸 <^> ts'u"n | ts'un | cun </^>.
+    1/10,000 of the Chinese inch, [寸].
   </li>
-  <li>毫 <^> hou | hao | hao </^>：
+  <li>[毫]：
     mil;
     \or thou;
     \lit fine hair <br>
-    1/1,000 of the Chinese inch, 寸 <^> ts'u"n | ts'un | cun </^>.
+    1/1,000 of the Chinese inch, [寸].
     Similar to the imperial
     <@>
       mil or thou
@@ -294,15 +365,15 @@
       | Wikipedia: Thousandth of an inch
     </@>.
   </li>
-  <li>釐 <^> lei | li | li </^>：
+  <li>[釐]：
     cent <br>
-    1/100 of the Chinese inch, 寸 <^> ts'u"n | ts'un | cun </^>.
+    1/100 of the Chinese inch, [寸].
   </li>
-  <li>分 <^> fan | fe^n | fen </^>：
+  <li>[分]：
     tenth <br>
-    1/10 of the Chinese inch, 寸 <^> ts'u"n | ts'un | cun </^>.
+    1/10 of the Chinese inch, [寸].
   </li>
-  <li>寸 <^> ts'u"n | ts'un | cun </^>：
+  <li>[寸]：
     inch <br>
     The
     <@>
@@ -315,7 +386,7 @@
     to denote a small distance,
     so I am happy to simply render it as "inch".
   </li>
-  <li>尺 <^> ch'ek | ch'ih | chi </^>：
+  <li>[尺]：
     rule;
     \or ruler;
     \or covid <br>
@@ -329,12 +400,12 @@
     but I can't seem to find much about it on the internet...
     thanks a lot, WHO.
   </li>
-  <li>丈 <^> choeng | chang | zhang </^>：
+  <li>[丈]：
     rod;
     \or staff;
     \or measure <br>
     Difficult to render because Chinese dictionaries
-    simply define it as 10~尺 <^> ch'ek | ch'ih | chi </^>,
+    simply define it as 10~[尺],
     with the meanings "elder male",
     from the interchangeable 杖 or "walking stick",
     and "to measure/survey land".
@@ -348,7 +419,7 @@
     of the same order of magnitude and also related to surveying.
     Also Moses had one.
   </li>
-  <li>引 <^> yan | yin | yin </^>：
+  <li>[引]：
     \lit draw;
     \or pull
   </li>
@@ -363,23 +434,19 @@
   six <_>6</_> rules make one pace.
 </#t>
 <ul>
-  <li>端 <^> tu"n | tuan | duan </^>：
+  <li>[端]：
     \lit end
   </li>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=146
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]146 | [version-b.h] </@>
     erroneously has 五十引為一端.
   </li>
-  <li>匹 <^> p'at | p'i | pi </^>：
+  <li>[匹]：
     length <br>
     This is the only unit rendering which I am unsatisfied with.
     匹 is the classifier for cloth, 一匹布 being "one length of cloth".
   </li>
-  <li>步 <^> pou | pu | bu </^>：
+  <li>[步]：
     pace;
     \or step
   </li>
@@ -390,7 +457,7 @@
   Two hundred {and} forty <_>240</_> paces make one acre.
 </#t>
 <ul>
-  <li>畝 <^> mau | mu | mu </^>：
+  <li>[畝]：
     acre;
     \lit field <br>
     This is area, what today would be called
@@ -398,7 +465,7 @@
     Classical Chinese mathematics did not have
     a fully developed notion of dimensional analysis,
     so 'square paces' were simply referred to as 'paces'.
-    While a 畝 <^> mau | mu | mu </^> is only about a fifth of an
+    While a [畝] is only about a fifth of an
     <@>
       imperial acre
       | https://en.wikipedia.org/wiki/Acre
@@ -414,7 +481,7 @@
   Three hundred <_>300</_> paces make one mile.
 </#t>
 <ul>
-  <li>里 <^> lei | li | li </^>：
+  <li>[里]：
     mile <br>
     The
     <@>
@@ -432,8 +499,8 @@
 
 <p>
   I can't be bothered looking up a reputable source
-  for the precise length of a 尺 <^> ch'ek | ch'ih | chi </^> or "rule"
-  when <^e>Sun~Tzuu</^e>'s Computational Classic was first written,
+  for the precise length of a [尺] or "rule"
+  when [sun-tzu-classic] was first written,
   but using 0.3~metres as an estimate,
   we have:
 </p>
@@ -467,15 +534,15 @@
     | https://www.researchgate.net/publication/263089345_Investigation_of_the_Silk_Fiber_Extraction_Process_from_the_Vietnam_Natural_Bombyx_Mori_Silkworm_Cocoon
     | Investigation of the Silk Fiber Extraction Process from the Vietnam Natural Bombyx Mori Silkworm Cocoon
   </@>),
-  so 忽 <^> fat | hu | hu </^>, "floss", is much too thin,
-  and 絲 <^> see | ssuu | si </^>, "(silk) thread", still a little thin.
+  so [忽], "floss", is much too thin,
+  and [絲], "(silk) thread", still a little thin.
   Thus 蠶吐絲為忽 is an exaggeration of the thinness of silk.
   But my job is only to translate the text as it is, not to correct it.
 </p>
 
 <p>
   By the later part of the <^e>Ts'ing</^e> Dynasty,
-  one 尺 <^> ch'ek | ch'ih | chi </^> or "rule"
+  one [尺] or "rule"
   is about 14⅝~inches in Hong Kong.
   Reading through historical versions of the
   <@>
@@ -527,7 +594,7 @@
 </div>
 
 <p>
-  Eventually the 尺 <^> ch'ek | ch'ih | chi </^> is given the
+  Eventually the [尺] is given the
   equivalent definition of 0.371475~metres,
   used unto this day in Hong Kong; see
   <@>
@@ -539,9 +606,9 @@
 </p>
 
 <p>
-  Taiwan uses a 尺 <^> ch'ek | ch'ih | chi </^> from the Japanese occupation
+  Taiwan uses a [尺] from the Japanese occupation
   equal to 10/33 of a metre, i.e.~0.3030...~(ugh) metres,
-  and Mainland China uses a metric-based 尺 <^> ch'ek | ch'ih | chi </^>
+  and Mainland China uses a metric-based [尺]
   equal to 1/3 of a metre, i.e.~0.3333...~(ugh) metres.
 </p>
 
@@ -691,11 +758,7 @@
     as 30~斤 <^> kan | chin | jin </^>.
   </li>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52059
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52059 | [version-c.h] </@>
     erroneously has 鉤 for 鈞.
   </li>
   <li>石 <^> shek | shih | shi </^>：
@@ -715,7 +778,7 @@
 <p>
   I can't be bothered looking up a reputable source
   for the precise weight of a catty
-  when <^e>Sun~Tzuu</^e>'s Computational Classic was first written,
+  when [sun-tzu-classic] was first written,
   but using 500~grams as an estimate,
   we have:
 </p>
@@ -907,7 +970,7 @@
 <p>
   I can't be bothered looking up a reputable source
   for the precise volume of a 升 <^> shing | she^ng | sheng </^>
-  when <^e>Sun~Tzuu</^e>'s Computational Classic was first written,
+  when [sun-tzu-classic] was first written,
   but using 1~litre as an estimate,
   we have:
 </p>
@@ -927,10 +990,10 @@
 </$$>
 
 <p>
-  In <@> Vol.~II ¶10 | /sun-tzu/ii.html#10 | Vol. II ¶10 </@>,
+  In <@> Vol.~II [para]10 | /sun-tzu/ii.html#10 | Vol. II [para]10 </@>,
   the conversion between
   the capacity unit "barrel", 斛 <^> huk | hu | hu </^>,
-  and the volume unit "cubic rule", 尺 <^> ch'ek | ch'ih | chi </^>,
+  and the volume unit "cubic rule", [尺],
   is given as
 </p>
 <$$>
@@ -938,11 +1001,7 @@
 </$$>
 
 <p>
-  <@>
-    Version~C
-    | https://ctext.org/sunzi-suan-jing#n52059
-    | ctext.org database page
-  </@>
+  <@> Version~C | [version-c.url]52059 | [version-c.h] </@>
   has "pinches" (撮 <^> ts'u"t | ts'o | cuo </^>)
   and "grabs" (抄 <^> ch'aau | ch'ao | chao </^>) the other way around.
   The order given here is that in Versions~A, B and~D,
@@ -1139,7 +1198,7 @@
 </$$>
 
 <p>
-  However, the <@> next paragraph | #4 | Vol. I ¶4 </@> uses a "long scale".
+  However, the <@> next paragraph | #4 | Vol. I [para]4 </@> uses a "long scale".
 </p>
 
 <;sh> 1 | 4 | Names of large numbers </;sh>
@@ -1190,11 +1249,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52060
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52060 | [version-c.h] </@>
     erroneously has 萬萬澗日正 for 萬萬澗曰正.
   </li>
 </ul>
@@ -1227,8 +1282,8 @@
   <tr>
     <th>Quantity</th>
     <th>Rendering</th>
-    <th><@> ¶3 | #3 | Vol. I ¶3</@></th>
-    <th><@> ¶4 | #4 | Vol. I ¶4</@></th>
+    <th><@> [para]3 | #3 | Vol. I [para]3</@></th>
+    <th><@> [para]4 | #4 | Vol. I [para]4</@></th>
     <th>Modern</th>
   </tr>
   <tr>
@@ -1438,11 +1493,7 @@
     \lit yellow metal
   </li>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=147
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 白銀 for 白金.
   </li>
   <li>白金：
@@ -1451,11 +1502,7 @@
   </li>
   <li>
     For jade,
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=147
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 一十兩 for 一十二兩.
   </li>
 </ul>
@@ -1479,11 +1526,7 @@
   </li>
   <li>
     For iron,
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=147
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 七兩 for 六兩.
   </li>
   <li>石：
@@ -1620,7 +1663,7 @@
 
 <p>
   Apart from silver and jade, the densities appear to fit quite well,
-  so <^e>Sun~Tzuu</^e>
+  so [sun-tzu]
   either fluked the measurements for gold, copper, lead and iron
   or he was actually a decent experimentalist but buggered up
   the measurements for silver and jade.
@@ -1760,12 +1803,12 @@
 </p>
 
 <p>
-  Assuming that <^e>Sun~Tzuu</^e>'s
+  Assuming that [sun-tzu]'s
   <$>\rho_\text{s}</$> and toady's <$>\rho_\text{m}</$>
   are referring to the same material,
   we <em>should</em> have that <$>\rho_\text{s} = \rho_\text{m}</$>.
   Therefore we obtain the following experimental conversion relation
-  between <^e>Sun~Tzuu</^e>
+  between [sun-tzu]
   and modern density units:
 </p>
 <$$>
@@ -1774,7 +1817,7 @@
 <p>
   (Recall that one tael, 兩 <^> loeng | liang | liang </^>,
   is of the order 30~g
-  and one inch, 寸 <^> ts'u"n | ts'un | cun </^>,
+  and one inch, [寸],
   is of the order one imperial inch.)
 </p>
 
@@ -1818,11 +1861,7 @@
   <li>
     Versions~A \&~D have 百萬 instead of 萬百.
     According to the inline note in
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=147
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>,
+    <@> Version~B | [version-b.url]147 | [version-b.h] </@>,
     this is a transcription error:
     <#t>
       案：「萬百」原本訛作「百萬」。今據《夏侯陽算經》改正。 |
@@ -2204,11 +2243,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=147
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 頭位 for 上位,
     both here and in many of the paragraphs to follow.
   </li>
@@ -2307,7 +2342,7 @@
 
 <p>
   A concrete example of the algorithm does not appear until
-  <@> ¶13 | #13 | Vol. I ¶13 </@>,
+  <@> [para]13 | #13 | Vol. I [para]13 </@>,
   so I will provide my own here. Below is an animation showing
   the multiplication 1989~×~64~=~127296,
   where I have used usual numerals rather than rods (for readability)
@@ -2325,7 +2360,7 @@
 <div class="centred-flex">
   <+>
     /sun-tzu/code/multiply-1989-64.gif
-    | <^e>Sun~Tzuu</^e> multiplication: 1989 × 64
+    | [sun-tzu] multiplication: 1989 × 64
   </+>
 </div>
 
@@ -2336,7 +2371,7 @@
   <@>
     here
     | /sun-tzu/code/animations.html
-    | Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
+    | Mathematica: [sun-tzu] multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
 </p>
@@ -2411,11 +2446,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52064
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52064 | [version-c.h] </@>
     erroneously has 土下 for 上下.
   </li>
   <li>盡：
@@ -2458,7 +2489,7 @@
   and 退, "retreat", means move to the right.
   The first step of the division <$>100 \div 6</$> is given,
   but a full example of the division algorithm does not appear until
-  <@> ¶14 | #14 | Vol. I ¶14 </@>.
+  <@> [para]14 | #14 | Vol. I [para]14 </@>.
 </p>
 
 <#t>
@@ -2486,7 +2517,7 @@
 <div class="centred-flex">
   <+>
     /sun-tzu/code/divide-100-6.gif
-    | <^e>Sun~Tzuu</^e> division: 100 ÷ 6
+    | [sun-tzu] division: 100 ÷ 6
   </+>
 </div>
 
@@ -2495,7 +2526,7 @@
   <@>
     here
     | /sun-tzu/code/animations.html
-    | Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
+    | Mathematica: [sun-tzu] multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
 </p>
@@ -2510,11 +2541,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52065
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52065 | [version-c.h] </@>
     erroneously has 四十七 for 四十.
   </li>
 </ul>
@@ -2547,11 +2574,7 @@
   李淳風 <^> Lei Sh_n-fung | Li Ch'un-fe^ng | Li Chunfeng </^>~{et~al.},
   written in two columns of smaller characters which take up
   half the width of the normal characters; see
-  <@>
-    Version~D
-    | https://ctext.org/library.pl?if=en&file=86926&page=15
-    | 《知不足齋叢書》本 at ctext.org library
-  </@>.
+  <@> Version~D | [version-d.url]15 | [version-d.h] </@>.
 </p>
 
 <#t>
@@ -2561,19 +2584,11 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=147
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 頭位 for 上位.
   </li>
   <li>
-    <@>
-      Version~A
-      | https://archive.org/details/02094034.cn/page/n8
-      | 02094034.cn at archive.org
-    </@>
+    <@> Version~A | [version-a.url]8 | [version-a.h] </@>
     erroneously has 二法 for 二位.
   </li>
 </ul>
@@ -2640,11 +2655,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | https://archive.org/details/02094034.cn/page/n8
-      | 02094034.cn at archive.org
-    </@>
+    <@> Version~A | [version-a.url]8 | [version-a.h] </@>
     erroneously has 米粟求糲米 for 以粟求糲米.
   </li>
   <li><:y>粟：</:y>
@@ -2673,11 +2684,7 @@
     which I am just calling <:y><:v>"rice"</:v></:y> for brevity).
   </li>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52066
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52066 | [version-c.h] </@>
     erroneously has 绺 for 糳.
   </li>
   <li><:y><:g>糳</:g>：精細米也；</:y>
@@ -2777,7 +2784,7 @@
 <p>
   but I have no clue as to why this might be useful,
   and why it is phrased in terms of subtraction.
-  Ditto for <@> the next paragraph | #12 | Vol. I ¶12 </@>.
+  Ditto for <@> the next paragraph | #12 | Vol. I [para]12 </@>.
 </p>
 <;sh> 1 | 12 | Some equivalent fractions </;sh>
 <;s@@> 1 | 12 | 10 | 148 | 52068 | 11 | 17 </;s@@>
@@ -2833,7 +2840,7 @@
 </#t>
 <ul>
   <li>重置其位 <br>
-    See <@> ¶8 | #8 | Vol. I ¶8 </@>.
+    See <@> [para]8 | #8 | Vol. I [para]8 </@>.
   </li>
 </ul>
 
@@ -2860,11 +2867,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=148
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 收上頭位 for 收上位.
   </li>
 </ul>
@@ -2897,7 +2900,7 @@
 <div class="centred-flex">
   <+>
     /sun-tzu/code/multiply-81-81.gif
-    | <^e>Sun~Tzuu</^e> multiplication: 81 × 81
+    | [sun-tzu] multiplication: 81 × 81
   </+>
 </div>
 <p>
@@ -2905,7 +2908,7 @@
   <@>
     here
     | /sun-tzu/code/animations.html
-    | Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
+    | Mathematica: [sun-tzu] multiplication \& division animations
   </@>.
 </p>
 
@@ -2947,11 +2950,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=148
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 上頭位置七百 for 上位置七百.
   </li>
 </ul>
@@ -2968,11 +2967,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=148
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 二九一十八 for 二九十八.
   </li>
 </ul>
@@ -3002,11 +2997,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52074
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52074 | [version-c.h] </@>
     erroneously has 邬 for 並,
     both here and in 並準此 below.
   </li>
@@ -3014,11 +3005,7 @@
     all
   </li>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=148
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 頭位所得 for 上位所得.
   </li>
 </ul>
@@ -3029,7 +3016,7 @@
 <div class="centred-flex">
   <+>
     /sun-tzu/code/divide-6561-9.gif
-    | <^e>Sun~Tzuu</^e> division: 6561 ÷ 9
+    | [sun-tzu] division: 6561 ÷ 9
   </+>
 </div>
 <p>
@@ -3037,7 +3024,7 @@
   <@>
     here
     | /sun-tzu/code/animations.html
-    | Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
+    | Mathematica: [sun-tzu] multiplication \& division animations
   </@>.
 </p>
 
@@ -3069,8 +3056,8 @@
 <;s@@> 1 | 15 | 12 | 148 | 52075 | 18 | 20 </;s@@>
 
 <p>
-  <@> ¶13 | #13 | Vol. I ¶13 </@> above through to
-  <@> ¶22 | #22 | Vol. I ¶22 </@> below
+  <@> [para]13 | #13 | Vol. I [para]13 </@> above through to
+  <@> [para]22 | #22 | Vol. I [para]22 </@> below
   display the results of multiplications and divisions of the form
 </p>
 <$$>
@@ -3081,7 +3068,7 @@
 </$$>
 <p>
   where <$>n = 9, 8, \dots, 2</$> and <$>m = n, \dots, 1</$>.
-  While <@> ¶13 | #13 | Vol. I ¶13 </@> and <@> ¶14 | #14 | Vol. I ¶14 </@>
+  While <@> [para]13 | #13 | Vol. I [para]13 </@> and <@> [para]14 | #14 | Vol. I [para]14 </@>
   above gave worked versions for <$>m = n = 9</$>,
   only the results are listed for the cases below.
   Also displayed for each <$>n = 9, 8, \dots, 2</$> are the divisions
@@ -3095,7 +3082,7 @@
 
 <p>
   This gets rather repetitive (and boring),
-  so you may wish to <@> skip to ¶23 | #23 | Vol. I ¶23 </@>.
+  so you may wish to <@> skip to [para]23 | #23 | Vol. I [para]23 </@>.
 </p>
 
 <#t>
@@ -3108,19 +3095,11 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | https://archive.org/details/02094034.cn/page/n12
-      | 02094034.cn at archive.org
-    </@>
+    <@> Version~A | [version-a.url]12 | [version-a.h] </@>
     erroneously has 得 for 人得.
   </li>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52075
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52075 | [version-c.h] </@>
     erroneously has 六百四十八五 for 六百四十八.
   </li>
 </ul>
@@ -3135,19 +3114,11 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | https://archive.org/details/02094034.cn/page/n12
-      | 02094034.cn at archive.org
-    </@>
+    <@> Version~A | [version-a.url]12 | [version-a.h] </@>
     erroneously has 得 for 人得.
   </li>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52075
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52075 | [version-c.h] </@>
     erroneously has 五百六十七五 for 五百六十七.
   </li>
 </ul>
@@ -3180,26 +3151,16 @@
 </#t>
 <ul>
   <li>
-    <b><@>
-      Version~A
-      | https://archive.org/details/02094034.cn/page/n12
-      | 02094034.cn at archive.org
-    </@> is missing four whole pages</b>
+    <b><@> Version~A | [version-a.url]12 | [version-a.h] </@>\
+    is missing four whole pages</b>
     after 一千二百九十六, from 四人分之 in the line above until
     四人分之 after 四七二十八 in
-    <@> ¶17 | #17 | Vol. I ¶17 </@>.
+    <@> [para]17 | #17 | Vol. I [para]17 </@>.
     These missing pages correspond to
-    <@>
-      D21
-      | https://ctext.org/library.pl?if=en&file=86926&page=21
-      | 《知不足齋叢書》本 at ctext.org library
-    </@>
+    <@> D21 | [version-d.url]21 | [version-d.h] </@>
     through
-    <@>
-      D24
-      | https://ctext.org/library.pl?if=en&file=86926&page=24
-      | 《知不足齋叢書》本 at ctext.org library
-    </@> (inclusive) in Version~D,
+    <@> D24 | [version-d.url]24 | [version-d.h] </@> (inclusive) \
+    in Version~D,
     which has the same page breaks as Version~A.
   </li>
 </ul>
@@ -3249,11 +3210,7 @@
     (at least classically) Chinese is written top-to-bottom, right-to-left.
   </li>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52081
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52081 | [version-c.h] </@>
     erroneously has 二萬八千二百二十五 for 一萬八千二百二十五.
   </li>
 </ul>
@@ -3272,7 +3229,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to ¶23 | #23 | Vol. I ¶23 </@>.
+  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
 </p>
 
 <;sh> 1 | 16 | Results of multiplication \&~division: multiples of~8 </;sh>
@@ -3281,17 +3238,9 @@
 <p>
   <b>This entire paragraph is missing from Version~A;
   it should be between
-  <@>
-    A12
-    | https://archive.org/details/02094034.cn/page/n12
-    | 02094034.cn at archive.org
-  </@>
+  <@> A12 | [version-a.url]12 | [version-a.h] </@>
   and
-  <@>
-    A14
-    | https://archive.org/details/02094034.cn/page/n14
-    | 02094034.cn at archive.org
-  </@>.</b>
+  <@> A14 | [version-a.url]14 | [version-a.h] </@>.</b>
 </p>
 
 <#t>
@@ -3304,11 +3253,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=149
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]149 | [version-b.h] </@>
     has 五百一十二 for 五百十二.
   </li>
 </ul>
@@ -3393,7 +3338,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to ¶23 | #23 | Vol. I ¶23 </@>.
+  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
 </p>
 
 <;sh> 1 | 17 | Results of multiplication \&~division: multiples of~7 </;sh>
@@ -3402,11 +3347,7 @@
 <p>
   <b>Version~A is missing everything in this paragraph up to 四人分之,
   where it
-  <@>
-    resumes
-    | https://archive.org/details/02094034.cn/page/n14
-    | 02094034.cn at archive.org
-  </@>.</b>
+  <@> resumes | [version-a.url]14 | [version-a.h] </@>.</b>
 </p>
 
 <#t>
@@ -3464,11 +3405,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=150
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]150 | [version-b.h] </@>
     has 二七一十四 for 二七十四.
   </li>
 </ul>
@@ -3499,7 +3436,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to ¶23 | #23 | Vol. I ¶23 </@>.
+  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
 </p>
 
 <;sh> 1 | 18 | Results of multiplication \&~division: multiples of~6 </;sh>
@@ -3576,7 +3513,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to ¶23 | #23 | Vol. I ¶23 </@>.
+  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
 </p>
 <;sh> 1 | 19 | Results of multiplication \&~division: multiples of~5 </;sh>
 <;s@@> 1 | 19 | 16 | 150 | 52103 | 46 | 27 </;s@@>
@@ -3642,7 +3579,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to ¶23 | #23 | Vol. I ¶23 </@>.
+  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
 </p>
 
 <;sh> 1 | 20 | Results of multiplication \&~division: multiples of~4 </;sh>
@@ -3700,7 +3637,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to ¶23 | #23 | Vol. I ¶23 </@>.
+  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
 </p>
 
 <;sh> 1 | 21 | Results of multiplication \&~division: multiples of~3 </;sh>
@@ -3716,11 +3653,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | https://archive.org/details/02094034.cn/page/n18
-      | 02094034.cn at archive.org
-    </@>
+    <@> Version~A | [version-a.url]18 | [version-a.h] </@>
     erroneously has 得 for 人得.
   </li>
 </ul>
@@ -3735,11 +3668,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | https://archive.org/details/02094034.cn/page/n18
-      | 02094034.cn at archive.org
-    </@>
+    <@> Version~A | [version-a.url]18 | [version-a.h] </@>
     erroneously has 得 for 人得.
   </li>
 </ul>
@@ -3771,7 +3700,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to ¶23 | #23 | Vol. I ¶23 </@>.
+  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
 </p>
 
 <;sh> 1 | 22 | Results of multiplication \&~division: multiples of~2 </;sh>
@@ -3803,11 +3732,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=151
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]151 | [version-b.h] </@>
     has 人得一十八 for 人得十八.
   </li>
 </ul>
@@ -3854,11 +3779,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52117
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52117 | [version-c.h] </@>
     erroneously has 一百十三萬 for 一百三十三萬.
   </li>
 </ul>
@@ -3886,7 +3807,7 @@
 <;s@@> 1 | 24 | 20 | 151 | 52118 | 61 | 32 </;s@@>
 
 <p>
-  This last paragraph of Volume~I displays the results of
+  This last paragraph of [vol-i] displays the results of
   multiplications and divisions of the form
 </p>
 <$$>
@@ -3899,9 +3820,9 @@
   where <$>n = 1, 2, \dots, 11</$>.
   This gets rather repetitive (and boring), so you may wish to
   <@>
-    skip to Volume~II
+    skip to [vol-ii]
     | /sun-tzu/ii.html
-    | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume II"
+    | "[sun-tzu-classic]: [vol-ii]"
   </@>.
 </p>
 
@@ -3932,11 +3853,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=151
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-    </@>
+    <@> Version~B | [version-b.url]151 | [version-b.h] </@>
     erroneously has 六十二 for 一百六十二.
   </li>
 </ul>
@@ -3977,11 +3894,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing#n52123
-      | ctext.org database page
-    </@>
+    <@> Version~C | [version-c.url]52123 | [version-c.h] </@>
     erroneously has 七千百九十二 for 七千二百九十二.
   </li>
 </ul>
@@ -4063,25 +3976,25 @@
 </#t>
 
 <div class="end">
-  <span>END of Volume~I</span> <br>
+  <span>END of [vol-i]</span> <br>
   Previous:
   <@>
-    《序》~"Preface"
+    《序》~"[pref]"
     | /sun-tzu/preface.html
-    | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+    | "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
   </@> <br>
   Next:
   <@>
-    《卷中》~"Volume~II"
+    《卷中》~"[vol-ii]"
     | /sun-tzu/ii.html
-    | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+    | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
   </@>
 </div>
 
 <*c>
-  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I"
+  "[sun-tzu-classic]: [vol-i]"
   | sun-tzu-i
-  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {Volume~I}''
+  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {[vol-i]}''
 </*c>
 
 <*f></*f>
