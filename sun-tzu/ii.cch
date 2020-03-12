@@ -8,7 +8,7 @@
 <=h>
   <@ih></@ih>
   <@it></@it>
-  <@i> Paragraphs | #paragraphs | [vol-ii]: Paragraph navigation </@i>
+  <@i> Paragraphs | #paragraphs | [paragraphs.h] </@i>
   <@ic></@ic>
 </=h>
 
@@ -133,7 +133,7 @@
 
 <@@>
   <@u> Volumes | volumes | Volume navigation </@u>
-  <@d> Vol.~II Paragraphs | paragraphs | [vol-ii]: Paragraph navigation </@d>
+  <@d> Vol.~II Paragraphs | paragraphs | [paragraphs.h] </@d>
 </@@>
 
 <^^></^^>
@@ -148,7 +148,8 @@
   Literally "Middle Volume".
 </p>
 
-<@3> [vol-ii]: Paragraph navigation | paragraphs </@3>
+<% [paragraphs.h] | [vol-ii]: Paragraph navigation %>
+<@3> [paragraphs.h] | paragraphs </@3>
 
 <@@>
   <@u> Volumes | volumes | Volume navigation </@u>
