@@ -334,7 +334,7 @@ In each page, remove the its own link, and make that text bold.
     | [man-for] [pref]
   </@i>
   <li>
-    <b>Volume I:</b>
+    <b>[vol-i]:</b>
     <@> [para]1 | [man.url]-i-1.pdf | [man-i.h] [para]1 </@>
     <@> [para]2 | [man.url]-i-2.pdf | [man-i.h] [para]2 </@>
     <@> [para]3 | [man.url]-i-3.pdf | [man-i.h] [para]3 </@>
@@ -362,7 +362,7 @@ In each page, remove the its own link, and make that text bold.
   </li>
   
   <li>
-    <b>Volume II:</b>
+    <b>[vol-ii]:</b>
     <@> [para]1 | [man.url]-ii-1.pdf | [man-ii.h] [para]1 </@>
     <@> [para]2 | [man.url]-ii-2.pdf | [man-ii.h] [para]2 </@>
     <@> [para]3 | [man.url]-ii-3.pdf | [man-ii.h] [para]3 </@>
@@ -394,7 +394,7 @@ In each page, remove the its own link, and make that text bold.
   </li>
   
   <li>
-    <b>Volume III:</b>
+    <b>[vol-iii]:</b>
     <@> [para]1 | [man.url]-iii-1.pdf | [man-iii.h] [para]1 </@>
     <@> [para]2 | [man.url]-iii-2.pdf | [man-iii.h] [para]2 </@>
     <@> [para]3 | [man.url]-iii-3.pdf | [man-iii.h] [para]3 </@>
