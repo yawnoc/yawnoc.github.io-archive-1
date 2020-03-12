@@ -535,8 +535,12 @@
   </@>,
   <@>
     Luong~{et~al.}~(2014)
-    | https://www.researchgate.net/publication/263089345_Investigation_of_the_Silk_Fiber_Extraction_Process_from_the_Vietnam_Natural_Bombyx_Mori_Silkworm_Cocoon
-    | Investigation of the Silk Fiber Extraction Process from the Vietnam Natural Bombyx Mori Silkworm Cocoon
+    | https://www.researchgate.net/publication/\
+        263089345_\
+        Investigation_of_the_Silk_Fiber_Extraction_Process_\
+        from_the_Vietnam_Natural_Bombyx_Mori_Silkworm_Cocoon
+    | Investigation of the Silk Fiber Extraction Process \
+      from the Vietnam Natural Bombyx Mori Silkworm Cocoon
   </@>),
   so [忽], "floss", is much too thin,
   and [絲], "(silk) thread", still a little thin.
@@ -822,7 +826,8 @@
   As with length units,
   <@>
     Ordinance No.~22 of~1844 (PDF)
-    | http://oelawhk.lib.hku.hk/archive/files/9c24f167a27b616a75db9691574eb925.pdf
+    | http://oelawhk.lib.hku.hk/archive/files/\
+        9c24f167a27b616a75db9691574eb925.pdf
     | Ordinance No. 22 of 1844 (1890 Edition)
   </@>
   of Hong Kong gives the relevant conversions
@@ -847,7 +852,8 @@
   with reference to English units forty years later, in
   <@>
     Ordinance No.~8 of~1885 (PDF)
-    | http://oelawhk.lib.hku.hk/archive/files/52fa22f83069cf6a385779d462a0f6e7.pdf
+    | http://oelawhk.lib.hku.hk/archive/files/\
+        52fa22f83069cf6a385779d462a0f6e7.pdf
     | Ordinance No. 8 of 1885 (1890 Edition)
   </@>
   (note the typo in the definition of candareen):
@@ -1083,7 +1089,8 @@
   <li>
     Reading ahead, I found it appropriate, in this paragraph and the next,
     to preserve 萬 as "myriad" (meaning 10<sup>4</sup>~=~10000)
-    rather than use English grouping of numbers by three zeroes (i.e.~thousands).
+    rather than use English grouping of numbers by three zeroes \
+    (i.e.~thousands).
   </li>
 </ul>
 <#t>
@@ -1231,7 +1238,8 @@
 </$$>
 
 <p>
-  However, the <@> next paragraph | #4 | Vol. I [para]4 </@> uses a "long scale".
+  However, the <@> next paragraph | #4 | Vol. I [para]4 </@> \
+  uses a "long scale".
 </p>
 
 <;sh> 1 | 4 | Names of large numbers </;sh>
@@ -2901,6 +2909,7 @@
   and why it is phrased in terms of subtraction.
   Ditto for <@> the next paragraph | #12 | Vol. I [para]12 </@>.
 </p>
+
 <;sh> 1 | 12 | Some equivalent fractions </;sh>
 <;s@@> 1 | 12 | 10 | 148 | 52068 | 11 | 17 </;s@@>
 <#t>
@@ -3183,7 +3192,8 @@
 </$$>
 <p>
   where <$>n = 9, 8, \dots, 2</$> and <$>m = n, \dots, 1</$>.
-  While <@> [para]13 | #13 | Vol. I [para]13 </@> and <@> [para]14 | #14 | Vol. I [para]14 </@>
+  While <@> [para]13 | #13 | Vol. I [para]13 </@> \
+  and <@> [para]14 | #14 | Vol. I [para]14 </@>
   above gave worked versions for <$>m = n = 9</$>,
   only the results are listed for the cases below.
   Also displayed for each <$>n = 9, 8, \dots, 2</$> are the divisions
@@ -3306,7 +3316,8 @@
 </#t>
 
 <#t>
-  右九九一條，得四百五，自相乘，得一十六萬四千二十五。九人分之，人得一萬八千二百二十五。 |
+  右九九一條，得四百五，自相乘，得一十六萬四千二十五。\
+  九人分之，人得一萬八千二百二十五。 |
   {The} nine nines <_>9 * 9, 8 * 9, ..., 1 * 9</_> above,
   {in} one strand, result in four hundred {and} five <_>405</_>,
   {which}, multiplied with itself, resulteth in
@@ -3533,7 +3544,8 @@
 </#t>
 
 <#t>
-  右七七一條，得一百九十六，自相乘，得三萬八千四百一十六。七人分之，人得五千四百八十八。 |
+  右七七一條，得一百九十六，自相乘，得三萬八千四百一十六。\
+  七人分之，人得五千四百八十八。 |
   {The} seven sevens <_>7 * 7, 6 * 7, ..., 1 * 7</_> above,
   {in} one strand, result in one hundred {and} ninety-six <_>196</_>,
   {which}, multiplied with itself, resulteth in
@@ -3610,7 +3622,8 @@
 </#t>
 
 <#t>
-  右六六一條，得一百二十六，自相乘，得一萬五千八百七十六。六人分之，人得二千六百四十六。 |
+  右六六一條，得一百二十六，自相乘，得一萬五千八百七十六。\
+  六人分之，人得二千六百四十六。 |
   {The} six sixes <_>6 * 6, 5 * 6, ..., 1 * 6</_> above,
   {in} one strand, result in one hundred {and} twenty-six <_>126</_>,
   {which}, multiplied with itself, resulteth in
@@ -3882,7 +3895,8 @@
 </ul>
 
 <#t>
-  右從九九至一一，總成一千一百五十五，自相乘，得一百三十三萬四千二十五。九人分之，人得一十四萬八千二百二十五。 |
+  右從九九至一一，總成一千一百五十五，自相乘，得一百三十三萬四千二十五。\
+  九人分之，人得一十四萬八千二百二十五。 |
   From nine nines <_>9 * 9</_> unto one one <_>1 * 1</_> above:
   {the} total becometh one thousand, one hundred {and} fifty-five <_>1155</_>,
   {which}, multiplied with itself, resulteth in
@@ -3985,7 +3999,8 @@
 </#t>
 
 <#t>
-  以七百二十九乘九百七十二，得七十萬八千五百八十八。四百八十六人分之，人得一千四百五十八。 |
+  以七百二十九乘九百七十二，得七十萬八千五百八十八。\
+  四百八十六人分之，人得一千四百五十八。 |
   Multiplying nine hundred {and} seventy-two <_>972</_>
   by seven hundred {and} twenty-nine <_>729</_>
   resulteth in seven hundred {and} eight thousand, five hundred {and}
