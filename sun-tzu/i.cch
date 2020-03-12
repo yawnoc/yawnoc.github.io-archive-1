@@ -1732,6 +1732,7 @@
 <svg class="fit-width" width="480px" viewBox="-3.5 -18 25.5 22">
   
   <% [font-size-para-6-axis] | font-size="0.8" %>
+  <% [font-size-para-6-material] | font-size="1" %>
   
   <!-- Marker definitions -->
   <defs>
@@ -1843,26 +1844,36 @@
     [ticks-fine-vertical]/>
   
   <!-- Data points -->
+  <% [data-point] | class="points" marker-end="url(#datapoint)" %>
+  
   <!-- Gold -->
-  <polyline class="points" marker-end="url(#datapoint)" points="19.29,-16"/>
-  <text x="19.29" y="-16" font-size="1" dx="0.8em" dy="1.4em">\金 Gold</text>
+  <polyline [data-point] points="19.29,-16"/>
+  <text x="19.29" y="-16" [font-size-para-6-material]
+    dx="0.8em" dy="1.4em">\金 Gold</text>
   <!-- Silver -->
-  <polyline class="points" marker-end="url(#datapoint)" points="10.5,-14"/>
-  <text x="10.5" y="-14" font-size="1" dy="-0.6em">\銀 Silver</text>
+  <polyline [data-point] points="10.5,-14"/>
+  <text x="10.5" y="-14" [font-size-para-6-material]
+    dy="-0.6em">\銀 Silver</text>
   <!-- Jade -->
-  <polyline class="points" marker-end="url(#datapoint)" points="3,-12"/>
-  <text x="3" y="-12" font-size="1" dy="-0.6em">\玉 Jade</text>
+  <polyline [data-point] points="3,-12"/>
+  <text x="3" y="-12" [font-size-para-6-material]
+    dy="-0.6em">\玉 Jade</text>
   <!-- Copper -->
-  <polyline class="points" marker-end="url(#datapoint)" points="8.79,-7.5"/>
-  <text x="8.79" y="-7.5" font-size="1" dx="-1.5em" dy="-0.7em">\銅 Copper</text>
+  <polyline [data-point] points="8.79,-7.5"/>
+  <text x="8.79" y="-7.5" [font-size-para-6-material]
+    dx="-1.5em" dy="-0.7em">\銅 Copper</text>
   <!-- Lead -->
-  <polyline class="points" marker-end="url(#datapoint)" points="11.35,-9.5"/>
-  <text x="11.35" y="-9.5" font-size="1" dx="-1.4em" dy="-0.6em">\鉛 Lead</text>
+  <polyline [data-point] points="11.35,-9.5"/>
+  <text x="11.35" y="-9.5" [font-size-para-6-material]
+    dx="-1.4em" dy="-0.6em">\鉛 Lead</text>
   <!-- Cast iron -->
-  <polyline class="points" marker-end="url(#datapoint)" points="7.2,-6"/>
-  <text x="7.2" y="-6" font-size="1" dx="2.2em" dy="1.4em">\鐵 Cast iron</text>
+  <polyline [data-point] points="7.2,-6"/>
+  <text x="7.2" y="-6" [font-size-para-6-material]
+    dx="2.2em" dy="1.4em">\鐵 Cast iron</text>
+  
   <!-- Line of best fit (slope 0.834229) -->
   <line x1="0" y1="0" x2="20" y2="-16.68458"/>
+  
 </svg>
 </div>
 
