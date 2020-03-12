@@ -1731,7 +1731,7 @@
 <div class="centred-svg">
 <svg class="fit-width" width="480px" viewBox="-3.5 -18 25.5 22">
   
-  <% [font-size-para-6-axis] | font-size="0.8" %>
+  <% [font-size-para-6-axis-indices] | font-size="0.8" %>
   <% [font-size-para-6-material] | font-size="1" %>
   
   <!-- Marker definitions -->
@@ -1792,10 +1792,12 @@
   <!-- Horizontal axis -->
   <line x1="0" y1="0" x2="20.5" y2="0"/>
   <text [mathit] x="11" y="2.6" font-size="1">\
-    ρ<tspan [mathrm] [font-size-para-6-axis] dx="0.05em" dy="0.25em">m</tspan>\
+    ρ<tspan [mathrm] [font-size-para-6-axis-indices]
+      dx="0.05em" dy="0.25em">m</tspan>\
       <tspan dy="-0.2em">\,/</tspan>\
     (<tspan [mathrm]>g</tspan> <tspan [mathrm]>cm</tspan>\
-      <tspan [font-size-para-6-axis] dy="-0.4em">−3</tspan>\
+      <tspan [font-size-para-6-axis-indices]
+      dy="-0.4em">−3</tspan>\
     <tspan dx="0.1em" dy="0.32em">)</tspan>
   </text>
   <!-- Horizontal axis coarse ticks -->
@@ -1821,11 +1823,13 @@
   <line x1="0" y1="0" x2="0" y2="-17.5"/>
   <text [mathit] x="-2.4" y="-8.5" font-size="1"
     transform = "rotate(-90 -2.4 -8.5)">\
-    ρ<tspan [mathrm] [font-size-para-6-axis] dy="0.25em">s</tspan>\
+    ρ<tspan [mathrm] [font-size-para-6-axis-indices]
+      dy="0.25em">s</tspan>\
       <tspan dy="-0.25em">\,/</tspan>\
     (<tspan [mathrm]>taels</tspan> \
     <tspan [mathrm]>inch</tspan>\
-      <tspan [font-size-para-6-axis] dy="-0.4em">−3</tspan>\
+      <tspan [font-size-para-6-axis-indices]
+      dy="-0.4em">−3</tspan>\
     <tspan dx="0.1em" dy="0.32em">)</tspan>
   </text>
   
