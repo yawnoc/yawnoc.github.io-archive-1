@@ -615,6 +615,14 @@
 <;sh> 1 | 2 | Units of weight (or mass) </;sh>
 <;s@@> 1 | 2 | 4 | 146 | 52059 | 2 | 11 </;s@@>
 
+<% [黍] | 黍 <^> shu" | shu | shu </^> %>
+<% [絫] | 絫 <^> l_u" | lei | lei </^> %>
+<% [銖] | 銖 <^> chu" | chu | zhu </^> %>
+<% [兩] | 兩 <^> loeng | liang | liang </^> %>
+<% [斤] | 斤 <^> kan | chin | jin </^> %>
+<% [鈞] | 鈞 <^> kwan | chu"n | jun </^> %>
+<% [石] | 石 <^> shek | shih | shi </^> %>
+
 <#t>
   稱之所起，起於黍。 |
   {Of} that which measuring of weight beginneth from:
@@ -676,7 +684,7 @@
       </li>
     </ul>
   </li>
-  <li>黍 <^> shu" | shu | shu </^>：
+  <li>[黍]：
     \lit millet
   </li>
 </ul>
@@ -696,13 +704,13 @@
   four <_>4</_> quarters make one stone.
 </#t>
 <ul>
-  <li>絫 <^> l_u" | lei | lei </^>：
+  <li>[絫]：
     pile <br>
     Difficult to render because Chinese dictionaries
-    simply define it as 10~黍 <^> shu" | shu | shu </^>.
+    simply define it as 10~[黍].
     I have taken "pile" from the interchangeable 累, "to accumulate/pile/heap".
   </li>
-  <li>銖 <^> chu" | chu | zhu </^>：
+  <li>[銖]：
     dram <br>
     Of the order one gram.
     According to
@@ -720,7 +728,7 @@
     </@>,
     which is of similar magnitude.
   </li>
-  <li>兩 <^> loeng | liang | liang </^>：
+  <li>[兩]：
     tael <br>
     (Oh at last, a unit with a name
     <@>
@@ -733,7 +741,7 @@
     where it has been metricised to a tenth <_>1/10</_>,
     thus ruining the phrase 半斤八兩, "half {a} catty {is} eight taels".
   </li>
-  <li>斤 <^> kan | chin | jin </^>：
+  <li>[斤]：
     catty <br>
     (Hooray, another unit with a name
     <@>
@@ -743,9 +751,9 @@
     </@>.) <br>
     Of the order one pound, or half a kilogram.
   </li>
-  <li>鈞 <^> kwan | chu"n | jun </^>：
+  <li>[鈞]：
     quarter <br>
-    A quarter of the 石 <^> shek | shih | shi </^> or "stone" below,
+    A quarter of the [石] or "stone" below,
     and of similar weight to the
     <@>
       imperial quarter
@@ -755,13 +763,13 @@
     (28~pounds).
     Difficult to render otherwise
     since Chinese dictionaries simply define it
-    as 30~斤 <^> kan | chin | jin </^>.
+    as 30~[斤].
   </li>
   <li>
     <@> Version~C | [version-c.url]52059 | [version-c.h] </@>
     erroneously has 鉤 for 鈞.
   </li>
-  <li>石 <^> shek | shih | shi </^>：
+  <li>[石]：
     \lit stone <br>
     This is a literal rendering.
     The Chinese stone is of the order 120~pounds,
@@ -803,7 +811,7 @@
 
 <p>
   By the later part of the <^e>Ts'ing Dynasty</^e>,
-  one 斤 <^> kan | chin | jin </^> or catty is about 1⅓~pounds.
+  one [斤] or catty is about 1⅓~pounds.
   As with length units,
   <@>
     Ordinance No.~22 of~1844 (PDF)
@@ -851,7 +859,7 @@
 </div>
 
 <p>
-  Eventually the 斤 <^> kan | chin | jin </^> or catty is given the
+  Eventually the [斤] or catty is given the
   <em>almost</em> equivalent definition of 0.60478982~kg,
   used unto this day in Hong Kong street markets; see
   <@>
@@ -1815,7 +1823,7 @@
   1 \unit{tael} \unit{inch}^{-3} = (1.1987 \pm 0.0064) \unit{g} \unit{cm}^{-3}
 </$$>
 <p>
-  (Recall that one tael, 兩 <^> loeng | liang | liang </^>,
+  (Recall that one tael, [兩],
   is of the order 30~g
   and one inch, [寸],
   is of the order one imperial inch.)
