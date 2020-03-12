@@ -11,6 +11,12 @@
 
 <*p></*p>
 
+<!-- [* *] for Japanese language spans -->
+<% [* | <span lang="ja">\ %>
+<% *] | </span> %>
+
+<% [kimura-yodo] | Kimura Yōdō %>
+
 <p>
   In professional sumo wrestling, the
   <@>
@@ -20,7 +26,7 @@
   </@>
   indicates his decision by pointing a fan, called a
   <@>
-    {gunbai} (<span lang="ja">\軍配</span>)
+    {gunbai} ([*軍配*])
     | https://en.wikipedia.org/wiki/Gunbai
     | Wikipedia: Gunbai
   </@>,
@@ -28,18 +34,19 @@
   Some are decorated with patterns, but others bear calligraphy.
   In particular, the fan carried by umpire
   <@>
-    Kimura Yōdō (<span lang="ja">\木村容堂</span>)
-    | https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9D%91%E5%AE%B9%E5%A0%82_(3%E4%BB%A3)
+    [kimura-yodo] ([*木村容堂*])
+    | https://ja.wikipedia.org/wiki/\
+        %E6%9C%A8%E6%9D%91%E5%AE%B9%E5%A0%82_(3%E4%BB%A3)
     | ウィキペディア：木村容堂 (3代)
   </@>
-  has the lines <span lang="ja">\及時當勉励 \歳月不待人</span>:
+  has the lines [*及時當勉励 \歳月不待人*]:
 </p>
 <div class="centred-flex">
   <+>
     kimura-yodo-gunbai-calligraphy.jpg
-    | Sumo umpire Kimura Yōdō (木村容堂) in yellow outfit,
+    | Sumo umpire [kimura-yodo] (木村容堂) in yellow outfit,
       with gunbai raised, bearing calligraphy: 及時當勉励 歳月不待人
-    | Kimura Yōdō (木村容堂)
+    | [kimura-yodo] (木村容堂)
   </+>
 </div>
 
@@ -51,7 +58,8 @@
   These lines are from
   <@>
     《雜詩》, "Assorted Poems"
-    | https://zh.wikisource.org/zh-hant/%E9%9B%9C%E8%A9%A9_(%E9%99%B6%E6%B7%B5%E6%98%8E)#%E5%85%B6%E4%B8%80
+    | https://zh.wikisource.org/zh-hant/\
+        %E9%9B%9C%E8%A9%A9_(%E9%99%B6%E6%B7%B5%E6%98%8E)#%E5%85%B6%E4%B8%80
     | 維基文庫：雜詩 (陶淵明)
   </@>, by
   <@>
@@ -59,7 +67,7 @@
     | https://en.wikipedia.org/wiki/Tao_Yuanming
     | Wikipedia: Tao Yuanming
   </@>.
-  Kimura Yōdō never points the other side of the fan away from himself,
+  [kimura-yodo] never points the other side of the fan away from himself,
   but I would guess that that side bears the two lines before. All up:
 </p>
 
@@ -101,24 +109,37 @@
   | Poetry on a sumo umpire's fan
 </*c>
 
+<%
+  [twitter.h] |
+  木村容堂さんの写真 @kisaragishow
+%>
+<%
+  [twitter.url] |
+  https://twitter.com/kisaragishow/status/1129576295250030593
+%>
+<%
+  [raw-image.url] |
+  https://pbs.twimg.com/media/D60Ppn4VsAAKlu8.jpg
+%>
+
 <*f>
-  except the image of <span lang="ja">\木村容堂</span>, taken from
+  except the image of [*木村容堂*], taken from
   <@>
     twitter
-    | https://twitter.com/kisaragishow/status/1129576295250030593
-    | Twitter: 木村容堂さんの写真 @kisaragishow
+    | [twitter.url]
+    | Twitter: [twitter.h]
   </@>
   <@>
     (archived version)
-    | https://web.archive.org/web/20191120143813/https:/twitter.com/kisaragishow/status/1129576295250030593
-    | Web archive: 木村容堂さんの写真 @kisaragishow
+    | https://web.archive.org/web/20191120143813/[twitter.url]
+    | Web archive: [twitter.h]
   </@>
   (<@>
     raw image
-    | https://pbs.twimg.com/media/D60Ppn4VsAAKlu8.jpg
+    | [raw-image.url]
   </@>
   <@>
     (archived version)
-    | https://web.archive.org/web/20191120144338/https://pbs.twimg.com/media/D60Ppn4VsAAKlu8.jpg
+    | https://web.archive.org/web/20191120144338/[raw-image.url]
   </@>)
 </*f>
