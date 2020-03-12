@@ -1,6 +1,6 @@
 <*>
   "The Need to Win" | 20190415 | 20200217 | dr
-  | A discussion and translation of Chuang Tzu's alleged "archery" quote, \
+  | A discussion and translation of [chung-tzu]'s alleged "archery" quote, \
     "When an archer is shooting for nothing, he has all his skill..."
 </*>
 
@@ -20,6 +20,8 @@
 <*p></*p>
 
 
+<% [chuang-tzu] | <^e>Chuang Tzuu</^e> %>
+
 <!-- [/ /] for archive.org URL with mode/1up -->
 <% [/ | https://archive.org/details/sacredbooksofchi028287mbp/page/ %>
 <% /] | /mode/1up %>
@@ -29,7 +31,7 @@
 
 
 <p>
-  This "quote" of <^e>Chuang Tzuu</^e>
+  This "quote" of [chuang-tzu]
   begins the chapter "Family" in Tim Winton's {The~Turning}:
 </p>
 <#n><div class="centred-flex"><div>
@@ -66,7 +68,7 @@
   of the source material, rather than translations.
   Merton, a Trappist monk interested in Eastern religions,
   composed these interpretative readings after comparing
-  "four of the best translations of {<^e>Chuang Tzuu</^e>}
+  "four of the best translations of {[chuang-tzu]}
   into western languages, two English, one French, and one German".
 </p>
 
@@ -76,7 +78,7 @@
   or "Understanding Life" in the "Outer Texts" of {Chuang Tzŭ},
   a work traditionally credited to
   <@>
-    <^e>Chuang Tzuu</^e>
+    [chuang-tzu]
     | https://en.wikipedia.org/wiki/Zhuang_Zhou
     | Wikipedia: Zhuang Zhou
   </@> the Taoist philosopher.
