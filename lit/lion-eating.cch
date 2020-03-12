@@ -1,9 +1,9 @@
 <*>
-  "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions": 《施氏食獅史》
+  "{An} History of Mr~[Shih]'s Eating of Lions": 《施氏食獅史》
   | 20190407 | 20200215 | dr
   | An English translation of the Mandarin "lion tongue twister" \
     《施氏食獅史》, "shi shi shi shi shi", or \
-    "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions".
+    "{An} History of Mr~[Shih]'s Eating of Lions".
 </*>
 
 <=h>
@@ -16,7 +16,7 @@
 
 <h1>
   《施氏食獅史》\or <br>
-  "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions"
+  "{An} History of Mr~[Shih]'s Eating of Lions"
 </h1>
 
 <*p>
@@ -28,13 +28,24 @@
 </*p>
 
 
+<%
+  [Shih] |
+  <^e>Shih</^e>
+%>
+<%
+  [趙元任] |
+  趙元任 <^> Cheeu Yu"n-yam | Chao Yu"an-je^n | Zhao Yuanren </^>
+%>
+
+
+
 <@2> Introduction | introduction </@2>
 
 
 <p>
   This is a passage written by
   <@>
-    趙元任 <^> Cheeu Yu"n-yam | Chao Yu"an-je^n | Zhao Yuanren </^>
+    [趙元任]
     | https://en.wikipedia.org/wiki/Yuen_Ren_Chao
     | Wikipedia: Yuen Ren Chao
   </@>,
@@ -70,6 +81,10 @@
   <li>去~(departing)</li>
 </ol>
 
+<!-- [! !] for no-wrapping span -->
+<% [! | <span class="no-wrapping"> %>
+<% !] | </span> %>
+
 <p>
   From the perspective of Western linguistics,
   <@>
@@ -78,15 +93,13 @@
     | Wikipedia: Checked tone
   </@>
   are not separate tones because they are syllables which
-  end abruptly in <span class="no-wrapping">-p</span>,
-  <span class="no-wrapping">-t</span> or <span class="no-wrapping">-k</span>.
+  end abruptly in [!-p!], [!-t!] or [!-k!].
   However, the distinction is important in Chinese poetry,
   where balancing 平聲 (level tone) and 仄聲 (sloping tone, i.e.~上去入)
   is highly desirable.
   Historically, Mandarin and other northern varieties of Chinese
   underwent 入派三聲;
-  after losing the ending consonants <span class="no-wrapping">-p</span>,
-  <span class="no-wrapping">-t</span> and <span class="no-wrapping">-k</span>,
+  after losing the ending consonants [!-p!], [!-t!] and [!-k!],
   entering tone words were redistributed amongst the other three tones.
   To give a contrived example,
 </p>
@@ -108,16 +121,15 @@
 </#c>
 
 <p>
-  Now 趙元任 <^> Cheeu Yu"n-yam | Chao Yu"an-je^n | Zhao Yuanren </^>
-  did not write 《施氏食獅史》 to compare the phonologies of Cantonese and Mandarin,
+  Now [趙元任] did not write 《施氏食獅史》
+  to compare the phonologies of Cantonese and Mandarin,
   but to demonstrate (with an extreme example) why literary Chinese
   should not be romanised.
   In any regional variant, Literary Chinese is a language
   to be read and comprehended with the eyes, rather than heard with the ears,
   though it may still be read aloud.
   (Romanising vernacular Chinese, however, is all right.
-  趙元任 <^> Cheeu Yu"n-yam | Chao Yu"an-je^n | Zhao Yuanren </^>
-  and others developed
+  [趙元任] and others developed
   <@>
     "Gwoyeu Romatzyh"
     | https://en.wikipedia.org/wiki/Gwoyeu_Romatzyh
@@ -136,7 +148,16 @@
   Chinese text taken from
   <@>
     Page~143 of 趙元任's 《語言問題》
-    | https://books.google.com.au/books?id=AQs2KCQharAC&pg=PA143&dq=%E8%AA%9E%E8%A8%80%E5%95%8F%E9%A1%8C+%E6%96%BD%E6%B0%8F%E9%A3%9F%E7%8D%85%E5%8F%B2&hl=en&sa=X&ved=0ahUKEwj7-Jb0zLvhAhUSfH0KHctQAt4Q6AEILzAB#v=onepage&q=%E8%AA%9E%E8%A8%80%E5%95%8F%E9%A1%8C%20%E6%96%BD%E6%B0%8F%E9%A3%9F%E7%8D%85%E5%8F%B2&f=false
+    | https://books.google.com.au/books\
+        ?id=AQs2KCQharAC&pg=PA143\
+        &dq=%E8%AA%9E%E8%A8%80%E5%95%8F%E9%A1%8C+\
+          %E6%96%BD%E6%B0%8F%E9%A3%9F%E7%8D%85%E5%8F%B2\
+        &hl=en\
+        &sa=X\
+        &ved=0ahUKEwj7-Jb0zLvhAhUSfH0KHctQAt4Q6AEILzAB#v=onepage\
+        &q=%E8%AA%9E%E8%A8%80%E5%95%8F%E9%A1%8C%20%E6%96%BD%\
+          E6%B0%8F%E9%A3%9F%E7%8D%85%E5%8F%B2\
+        &f=false
     | 施氏食獅史
   </@>
   (published in 1968 by 臺灣商務印書館).
@@ -144,12 +165,12 @@
 
 <#t>
   《施氏食獅史》 |
-  "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions"
+  "{An} History of Mr~[Shih]'s Eating of Lions"
 </#t>
 <ul>
   <li>施氏：
-    Mr~<^e>Shih</^e>;
-    \lit {he with} surname <^e>Shih</^e>
+    Mr~[Shih];
+    \lit {he with} surname [Shih]
   </li>
   <li>史：
     history;
@@ -159,7 +180,7 @@
 
 <#t>
   石室詩士施氏，嗜獅，誓食十獅。 |
-  {The} poet Mr~<^e>Shih</^e> of {a} stone house:
+  {The} poet Mr~[Shih] of {a} stone house:
   {he} liked lions,
   {and} sware to eat ten lions.
 </#t>
@@ -192,7 +213,7 @@
 
 <#t>
   氏時時適市視獅。 |
-  Mr~{<^e>Shih</^e>} went to {the} market all the time {to} view lions.
+  Mr~{[Shih]} went to {the} market all the time {to} view lions.
 </#t>
 <ul>
   <li>氏 <br>
@@ -211,7 +232,7 @@
 <#t>
   十時，適十獅適市。是時，適施氏適市。 |
   {At} ten o'clock, ten lions {had} just arrived at {the} market.
-  {At} this time, Mr~<^e>Shih</^e> {had also} just arrived at {the} market.
+  {At} this time, Mr~[Shih] {had also} just arrived at {the} market.
 </#t>
 <ul>
   <li>十時：
@@ -236,7 +257,7 @@
 
 <#t>
   氏視是十獅，恃矢勢，使是十獅逝世。 |
-  Mr~{<^e>Shih</^e>} saw these ten lions,
+  Mr~{[Shih]} saw these ten lions,
   {and}, relying on {the} situational {advantage} of the arrow,
   made these ten lions pass away.
 </#t>
@@ -253,20 +274,20 @@
 
 <#t>
   氏拾是十獅屍，適石室。 |
-  Mr~{<^e>Shih</^e>} picked up {the} carcasses of these ten lions,
+  Mr~{[Shih]} picked up {the} carcasses of these ten lions,
   {and} went to {the} stone house.
 </#t>
 
 <#t>
   石室濕，氏使侍拭石室。 |
   {The} stone house wet,
-  Mr~{<^e>Shih</^e>} made {his} servants wipe {the} stone house.
+  Mr~{[Shih]} made {his} servants wipe {the} stone house.
 </#t>
 
 <#t>
   石室拭，氏始試食是十獅屍。 |
   {The} stone house wiped,
-  Mr~{<^e>Shih</^e>} began to try eating {the} carcasses of these ten lions.
+  Mr~{[Shih]} began to try eating {the} carcasses of these ten lions.
 </#t>
 <ul>
   <li>始：
@@ -314,7 +335,7 @@
 </ul>
 
 <*c>
-  "{An} History of Mr~<^e>Shih</^e>'s Eating of Lions"
+  "{An} History of Mr~[Shih]'s Eating of Lions"
   | lion-eating
   | ``\emph{An} {History} of {Mr}~{Shih's} {Eating} of {Lions}''
 </*c>
