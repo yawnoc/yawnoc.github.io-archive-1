@@ -128,6 +128,7 @@
 
 <% [mathit] | class="maths-italic" %>
 <% [mathrm] | class="maths-roman" %>
+<% [point] | class="points" %>
 
 
 <@2> Translation | translation </@2>
@@ -1731,8 +1732,10 @@
 <div class="centred-svg">
 <svg class="fit-width" width="480px" viewBox="-3.5 -18 25.5 22">
   
+  <% [font-size-para-6-axis] | font-size="1" %>
   <% [font-size-para-6-axis-indices] | font-size="0.8" %>
   <% [font-size-para-6-material] | font-size="1" %>
+  <% [font-size-para-6-ticks] | font-size="1" %>
   
   <!-- Marker definitions -->
   <defs>
@@ -1791,7 +1794,7 @@
   
   <!-- Horizontal axis -->
   <line x1="0" y1="0" x2="20.5" y2="0"/>
-  <text [mathit] x="11" y="2.6" font-size="1">\
+  <text [mathit] x="11" y="2.6" [font-size-para-6-axis]>\
     ρ<tspan [mathrm] [font-size-para-6-axis-indices]
       dx="0.05em" dy="0.25em">m</tspan>\
       <tspan dy="-0.2em">\,/</tspan>\
@@ -1801,7 +1804,7 @@
     <tspan dx="0.1em" dy="0.32em">)</tspan>
   </text>
   <!-- Horizontal axis coarse ticks -->
-  <polyline class="points" points="5,0 10,0 15,0 20,0"
+  <polyline [point] points="5,0 10,0 15,0 20,0"
     [ticks-coarse-horizontal]/>
   <text [mathit] x="5" y="0" [tick-labels-horizontal]>5</text>
   <text [mathit] x="10" y="0" [tick-labels-horizontal]>10</text>
@@ -1809,11 +1812,11 @@
   <text [mathit] x="20" y="0" [tick-labels-horizontal]>20</text>
   <%
     [tick-labels-horizontal] |
-    font-size="1" dy="1.35em"
+    [font-size-para-6-ticks] dy="1.35em"
   %>
   
   <!-- Horizontal axis fine ticks -->
-  <polyline class="points"
+  <polyline [point]
     points =
      "1,0  2,0  3,0  4,0  6,0  7,0  8,0  9,0
       11,0 12,0 13,0 14,0 16,0 17,0 18,0 19,0"
@@ -1821,7 +1824,7 @@
   
   <!-- Vertical axis -->
   <line x1="0" y1="0" x2="0" y2="-17.5"/>
-  <text [mathit] x="-2.4" y="-8.5" font-size="1"
+  <text [mathit] x="-2.4" y="-8.5" [font-size-para-6-axis]
     transform = "rotate(-90 -2.4 -8.5)">\
     ρ<tspan [mathrm] [font-size-para-6-axis-indices]
       dy="0.25em">s</tspan>\
@@ -1834,21 +1837,24 @@
   </text>
   
   <!-- Vertical axis coarse ticks -->
-  <polyline class="points" points="0,-5 0,-10 0,-15"
+  <polyline [point] points="0,-5 0,-10 0,-15"
     [ticks-coarse-vertical]/>
-  <text [mathit] x="0" y="-5" font-size="1" dx="-1em" dy="0.3em">5</text>
-  <text [mathit] x="0" y="-10" font-size="1" dx="-1.2em" dy="0.3em">10</text>
-  <text [mathit] x="0" y="-15" font-size="1" dx="-1.2em" dy="0.3em">15</text>
+  <text [mathit] x="0" y="-5" [font-size-para-6-ticks]
+    dx="-1em" dy="0.3em">5</text>
+  <text [mathit] x="0" y="-10" [font-size-para-6-ticks]
+    dx="-1.2em" dy="0.3em">10</text>
+  <text [mathit] x="0" y="-15" [font-size-para-6-ticks]
+    dx="-1.2em" dy="0.3em">15</text>
   
   <!-- Vertical axis fine ticks -->
-  <polyline class="points"
+  <polyline [point]
     points =
      "0, -1 0, -2 0, -3 0, -4 0, -6 0, -7 0, -8 0,-9
       0,-11 0,-12 0,-13 0,-14 0,-16 0,-17"
     [ticks-fine-vertical]/>
   
   <!-- Data points -->
-  <% [data-point] | class="points" marker-end="url(#datapoint)" %>
+  <% [data-point] | [point] marker-end="url(#datapoint)" %>
   
   <!-- Gold -->
   <polyline [data-point] points="19.29,-16"/>
@@ -2034,61 +2040,61 @@
     <!-- Rod calculus vertical 2 -->
     <marker id="rodv2" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="-0.05,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0.05,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="-0.05,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0.05,0" marker-end="url(#rodv1)"/>
     </marker>
     <!-- Rod calculus vertical 3 -->
     <marker id="rodv3" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="-0.1,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0.1,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="-0.1,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0.1,0" marker-end="url(#rodv1)"/>
     </marker>
     <!-- Rod calculus vertical 4 -->
     <marker id="rodv4" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="-0.15,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="-0.05,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0.05,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0.15,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="-0.15,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="-0.05,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0.05,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0.15,0" marker-end="url(#rodv1)"/>
     </marker>
     <!-- Rod calculus vertical 5 -->
     <marker id="rodv5" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="-0.2,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="-0.1,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0.1,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0.2,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="-0.2,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="-0.1,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0.1,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0.2,0" marker-end="url(#rodv1)"/>
     </marker>
     <!-- Rod calculus vertical grouping horizontal 5 -->
     <marker id="rodvg5" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,-0.25" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.25" marker-end="url(#rodh1)"/>
     </marker>
     <!-- Rod calculus vertical 6 -->
     <marker id="rodv6" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,0" marker-end="url(#rodvg5)"/>
-      <polyline class="points" points="0,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodvg5)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodv1)"/>
     </marker>
     <!-- Rod calculus vertical 7 -->
     <marker id="rodv7" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,0" marker-end="url(#rodvg5)"/>
-      <polyline class="points" points="0,0" marker-end="url(#rodv2)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodvg5)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodv2)"/>
     </marker>
     <!-- Rod calculus vertical 8 -->
     <marker id="rodv8" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,0" marker-end="url(#rodvg5)"/>
-      <polyline class="points" points="0,0" marker-end="url(#rodv3)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodvg5)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodv3)"/>
     </marker>
     <!-- Rod calculus vertical 9 -->
     <marker id="rodv9" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,0" marker-end="url(#rodvg5)"/>
-      <polyline class="points" points="0,0" marker-end="url(#rodv4)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodvg5)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodv4)"/>
     </marker>
     <!-- Rod calculus horizontal 1 -->
     <marker id="rodh1" viewBox="-0.5 -0.5 1 1"
@@ -2098,113 +2104,113 @@
     <!-- Rod calculus horizontal 2 -->
     <marker id="rodh2" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,-0.05" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0.05" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.05" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0.05" marker-end="url(#rodh1)"/>
     </marker>
     <!-- Rod calculus horizontal 3 -->
     <marker id="rodh3" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,-0.1" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0.1" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.1" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0.1" marker-end="url(#rodh1)"/>
     </marker>
     <!-- Rod calculus horizontal 4 -->
     <marker id="rodh4" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,-0.15" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,-0.05" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0.05" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0.15" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.15" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.05" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0.05" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0.15" marker-end="url(#rodh1)"/>
     </marker>
     <!-- Rod calculus horizontal 5 -->
     <marker id="rodh5" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,-0.2" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,-0.1" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0.1" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0.2" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.2" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.1" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0.1" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0.2" marker-end="url(#rodh1)"/>
     </marker>
     <!-- Rod calculus horizontal grouping vertical 5 -->
     <marker id="rodhg5" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodv1)"/>
     </marker>
     <!-- Rod calculus horizontal 6 -->
     <marker id="rodh6" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,0" marker-end="url(#rodhg5)"/>
-      <polyline class="points" points="0,0.25" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodhg5)"/>
+      <polyline [point] points="0,0.25" marker-end="url(#rodh1)"/>
     </marker>
     <!-- Rod calculus horizontal 7 -->
     <marker id="rodh7" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,-0.05" marker-end="url(#rodhg5)"/>
-      <polyline class="points" points="0,0.25" marker-end="url(#rodh2)"/>
+      <polyline [point] points="0,-0.05" marker-end="url(#rodhg5)"/>
+      <polyline [point] points="0,0.25" marker-end="url(#rodh2)"/>
     </marker>
     <!-- Rod calculus horizontal 8 -->
     <marker id="rodh8" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,-0.075" marker-end="url(#rodhg5)"/>
-      <polyline class="points" points="0,0.3" marker-end="url(#rodh3)"/>
+      <polyline [point] points="0,-0.075" marker-end="url(#rodhg5)"/>
+      <polyline [point] points="0,0.3" marker-end="url(#rodh3)"/>
     </marker>
     <!-- Rod calculus horizontal 9 -->
     <marker id="rodh9" viewBox="-0.5 -0.5 1 1"
       refX="0" refY="0" markerWidth="1" markerHeight="1">
-      <polyline class="points" points="0,-0.1" marker-end="url(#rodhg5)"/>
-      <polyline class="points" points="0,0.325" marker-end="url(#rodh4)"/>
+      <polyline [point] points="0,-0.1" marker-end="url(#rodhg5)"/>
+      <polyline [point] points="0,0.325" marker-end="url(#rodh4)"/>
     </marker>
   </defs>
   <!-- Rod calculus vertical 1 -->
-  <polyline class="points" points="0,0" marker-end="url(#rodv1)"/>
+  <polyline [point] points="0,0" marker-end="url(#rodv1)"/>
   </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus vertical 2 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodv2)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodv2)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus vertical 3 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodv3)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodv3)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus vertical 4 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodv4)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodv4)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus vertical 5 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodv5)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodv5)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus vertical 6 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodv6)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodv6)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus vertical 7 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodv7)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodv7)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus vertical 8 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodv8)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodv8)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus vertical 9 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodv9)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodv9)"/>
       </svg>
     </td>
   </tr>
@@ -2213,55 +2219,55 @@
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus horizontal 1 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodh1)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodh1)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus horizontal 2 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodh2)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodh2)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus horizontal 3 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodh3)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodh3)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus horizontal 4 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodh4)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodh4)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus horizontal 5 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodh5)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodh5)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus horizontal 6 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodh6)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodh6)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus horizontal 7 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodh7)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodh7)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus horizontal 8 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodh8)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodh8)"/>
       </svg>
     </td>
     <td class="nopad">
       <svg width="36px" viewBox="-0.5 -0.5 1 1">
         <!-- Rod calculus horizontal 9 -->
-        <polyline class="points" points="0,0" marker-end="url(#rodh9)"/>
+        <polyline [point] points="0,0" marker-end="url(#rodh9)"/>
       </svg>
     </td>
   </tr>
@@ -2286,21 +2292,21 @@
   For example, 123456 is displayed as
   <svg class="fit-width" width="216px" viewBox="0.5 -0.3 6 0.6">
     <!-- 123456 -->
-    <polyline class="points" points="1,0" marker-end="url(#rodh1)"/>
-    <polyline class="points" points="2,0" marker-end="url(#rodv2)"/>
-    <polyline class="points" points="3,0" marker-end="url(#rodh3)"/>
-    <polyline class="points" points="4,0" marker-end="url(#rodv4)"/>
-    <polyline class="points" points="5,0" marker-end="url(#rodh5)"/>
-    <polyline class="points" points="6,0" marker-end="url(#rodv6)"/>
+    <polyline [point] points="1,0" marker-end="url(#rodh1)"/>
+    <polyline [point] points="2,0" marker-end="url(#rodv2)"/>
+    <polyline [point] points="3,0" marker-end="url(#rodh3)"/>
+    <polyline [point] points="4,0" marker-end="url(#rodv4)"/>
+    <polyline [point] points="5,0" marker-end="url(#rodh5)"/>
+    <polyline [point] points="6,0" marker-end="url(#rodv6)"/>
   </svg>,
   while 12345 is displayed as
   <svg class="fit-width" width="180px" viewBox="0.5 -0.3 5 0.6">
     <!-- 12345 -->
-    <polyline class="points" points="1,0" marker-end="url(#rodv1)"/>
-    <polyline class="points" points="2,0" marker-end="url(#rodh2)"/>
-    <polyline class="points" points="3,0" marker-end="url(#rodv3)"/>
-    <polyline class="points" points="4,0" marker-end="url(#rodh4)"/>
-    <polyline class="points" points="5,0" marker-end="url(#rodv5)"/>
+    <polyline [point] points="1,0" marker-end="url(#rodv1)"/>
+    <polyline [point] points="2,0" marker-end="url(#rodh2)"/>
+    <polyline [point] points="3,0" marker-end="url(#rodv3)"/>
+    <polyline [point] points="4,0" marker-end="url(#rodh4)"/>
+    <polyline [point] points="5,0" marker-end="url(#rodv5)"/>
   </svg>.
   This is done to avoid ambiguities which would arise if vertical forms
   were placed adjacent to each other.
@@ -2357,13 +2363,13 @@
 <div class="centred-svg">
 <svg class="fit-width" width="180px" viewBox="0.5 -0.5 5 3">
   <!-- 1989 -->
-  <polyline class="points" points="2,0" marker-end="url(#rodh1)"/>
-  <polyline class="points" points="3,0" marker-end="url(#rodv9)"/>
-  <polyline class="points" points="4,0" marker-end="url(#rodh8)"/>
-  <polyline class="points" points="5,0" marker-end="url(#rodv9)"/>
+  <polyline [point] points="2,0" marker-end="url(#rodh1)"/>
+  <polyline [point] points="3,0" marker-end="url(#rodv9)"/>
+  <polyline [point] points="4,0" marker-end="url(#rodh8)"/>
+  <polyline [point] points="5,0" marker-end="url(#rodv9)"/>
   <!-- 64 -->
-  <polyline class="points" points="1,2" marker-end="url(#rodv6)"/>
-  <polyline class="points" points="2,2" marker-end="url(#rodh4)"/>
+  <polyline [point] points="1,2" marker-end="url(#rodv6)"/>
+  <polyline [point] points="2,2" marker-end="url(#rodh4)"/>
 </svg>
 </div>
 
@@ -2477,54 +2483,54 @@
     This is saying that 6 is displayed as either
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Vertical 6 -->
-      <polyline class="points" points="0,0" marker-end="url(#rodv6)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodv6)"/>
     </svg>
     or
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Horizontal 6 -->
-      <polyline class="points" points="0,0" marker-end="url(#rodh6)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodh6)"/>
     </svg>,
     but not
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Bad vertical 6 -->
-      <polyline class="points" points="-0.25,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="-0.15,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="-0.05,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0.05,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0.15,0" marker-end="url(#rodv1)"/>
-      <polyline class="points" points="0.25,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="-0.25,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="-0.15,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="-0.05,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0.05,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0.15,0" marker-end="url(#rodv1)"/>
+      <polyline [point] points="0.25,0" marker-end="url(#rodv1)"/>
     </svg>
     or
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Bad horizontal 6 -->
-      <polyline class="points" points="0,-0.25" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,-0.15" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,-0.05" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0.05" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0.15" marker-end="url(#rodh1)"/>
-      <polyline class="points" points="0,0.25" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.25" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.15" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,-0.05" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0.05" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0.15" marker-end="url(#rodh1)"/>
+      <polyline [point] points="0,0.25" marker-end="url(#rodh1)"/>
     </svg>.
   </li>
   <li>五不隻 <br>
     This is saying that 5 is displayed as either
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Vertical 5 -->
-      <polyline class="points" points="0,0" marker-end="url(#rodv5)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodv5)"/>
     </svg>
     or
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Horizontal 5 -->
-      <polyline class="points" points="0,0" marker-end="url(#rodh5)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodh5)"/>
     </svg>,
     but not
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Bad vertical grouping horizontal 5 -->
-      <polyline class="points" points="0,0" marker-end="url(#rodvg5)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodvg5)"/>
     </svg>
     or
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Bad horizontal grouping vertical 5 -->
-      <polyline class="points" points="0,0" marker-end="url(#rodhg5)"/>
+      <polyline [point] points="0,0" marker-end="url(#rodhg5)"/>
     </svg>
     (since they would look like ones).
   </li>
