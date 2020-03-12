@@ -72,7 +72,8 @@
   <li>
     <@>
       Wikimedia Commons: Lions Pavilion (Victoria Peak)
-      | https://commons.wikimedia.org/wiki/Category:Lions_Pavilion_(Victoria_Peak)
+      | https://commons.wikimedia.org/wiki/Category:\
+          Lions_Pavilion_(Victoria_Peak)
       | Wikimedia Commons: Lions Pavilion (Victoria Peak)
     </@>
   </li>
@@ -94,7 +95,8 @@
 </#t>
 
 <#t>
-  太平山，古稱鼇峰，南臨大海，北與九龍諸山遥遥相望，岡巒連綿，林木蔚茂，風景絶美。 |
+  太平山，古稱鼇峰，南臨大海，北與九龍諸山遥遥相望，\
+  岡巒連綿，林木蔚茂，風景絶美。 |
   Victoria Peak, {in} ancient {times} referred to {as}
   {the} Peak of the Great Sea Turtle,
   overlooks {the} great sea {unto the} south,
@@ -326,7 +328,8 @@
         <:r>Nah.</:r>
       </li>
       <li>
-        叶養里切，音以。《楚辭\.天問》女歧縫裳，而館同爰止。何顚易厥首，而親以逢殆。 <br>
+        叶養里切，音以。\
+        《楚辭\.天問》女歧縫裳，而館同爰止。何顚易厥首，而親以逢殆。 <br>
         <:r>Nah.</:r>
       </li>
     </ol>
@@ -360,7 +363,13 @@
     <@>
       郭璞 <^> Kwok P'ok | Kuo P'u | Guo Pu </^>'s
       annotations of 《山海經》
-      | https://books.google.com.au/books?id=vOxbAAAAcAAJ&pg=PP130&dq=%E5%B1%B1%E6%B5%B7%E7%B6%93+%E6%80%AA%E7%9F%B3&hl=en&sa=X&ved=0ahUKEwj_goLp7obhAhUKbn0KHQDSAk0Q6AEIMDAB#v=onepage&q=%E5%B1%B1%E6%B5%B7%E7%B6%93%20%E6%80%AA%E7%9F%B3&f=false
+      | https://books.google.com.au/books\
+          ?id=vOxbAAAAcAAJ&pg=PP130\
+          &dq=%E5%B1%B1%E6%B5%B7%E7%B6%93+%E6%80%AA%E7%9F%B3\
+          &hl=en\
+          &sa=X&ved=0ahUKEwj_goLp7obhAhUKbn0KHQDSAk0Q6AEIMDAB#v=onepage\
+          &q=%E5%B1%B1%E6%B5%B7%E7%B6%93%20%E6%80%AA%E7%9F%B3\
+          &f=false
       | 怪石
     </@>.
   </li>
@@ -450,7 +459,8 @@
     According to
     <@>
       a separate plaque
-      | https://commons.wikimedia.org/wiki/File:HK_TaiPingShanLionsViewPointPavilion_1976and1992.JPG
+      | https://commons.wikimedia.org/wiki/\
+          File:HK_TaiPingShanLionsViewPointPavilion_1976and1992.JPG
       | Wikimedia Commons: Architect: P. K. Chan 陳百强
     </@>
     his full name is 陳百强 <^>
@@ -582,7 +592,8 @@
     gives <^e>yu"n4</^e>.
     爰書 is an affidavit given by a prisoner, the term supposedly
     derived from the text of the affidavit being changed: 爰，易也，換也。
-    Here the author of the plaque text closes by self-deprecating his own work.
+    Here the author of the plaque text closes \
+    by self-deprecating his own work.
   </li>
 </ul>
 
