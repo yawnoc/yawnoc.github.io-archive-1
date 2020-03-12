@@ -25,6 +25,7 @@
 <!-- [/ /] for archive.org URL with mode/1up -->
 <% [/ | https://archive.org/details/sacredbooksofchi028287mbp/page/ %>
 <% /] | /mode/1up %>
+<% [legge.h] | The Sacred Books Of China: The Texts Of Taoism, Part~II %>
 
 
 <@2> Introduction | introduction </@2>
@@ -86,9 +87,9 @@
   was of course that of the great James Legge; see passage~4,
   "Yen Yuan asked {K}ung-nî ..." on
   <@>
-    Page~15 of {The Texts of Taoism, Part II}
+    Page~15 of {[legge.h]}
     | [/n26/]
-    | The Sacred Books Of China: The Texts Of Taoism, Part II
+    | [legge.h]
   </@>.
   As you shall see below, whether the original text
   actually refers to archery depends on how you interpret the word
@@ -374,7 +375,7 @@
         <@>
           footnote~1 of Page~16
           | [/n27/]
-          | The Sacred Books Of China: The Texts Of Taoism, Part II
+          | [legge.h]
         </@>).
       </li>
     </ul>
