@@ -161,81 +161,89 @@
   are not part of the original text.
 </p>
 
+<!-- [__ __] for centred table cell -->
+<% [__ | <td class="centred-text"> %>
+<% __] | </td> %>
+
+<!-- [== ==] for heading table cell -->
+<% [== | <td class="heading"> %>
+<% ==] | </td> %>
+
 <!><table>
   <tr>
     <th>Link</th>
     <th class="heading">About</th>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶1 | #1 | Vol. II ¶1 </@></td>
+    [__<@> ¶1 | #1 | Vol. II ¶1 </@>__]
     <td class="heading">Reducing fractions</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶2 | #2 | Vol. II ¶2 </@></td>
+    [__<@> ¶2 | #2 | Vol. II ¶2 </@>__]
     <td class="heading">Adding fractions</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶3 | #3 | Vol. II ¶3 </@></td>
+    [__<@> ¶3 | #3 | Vol. II ¶3 </@>__]
     <td class="heading">Subtracting fractions</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶4 | #4 | Vol. II ¶4 </@></td>
+    [__<@> ¶4 | #4 | Vol. II ¶4 </@>__]
     <td class="heading">Redistributing fractions for equality</td>
   </tr>
   <tr>
-    <td class="centred-text">
+    [__
       <@> ¶5 | #5 | Vol. II ¶5 </@>
       <@> ¶6 | #6 | Vol. II ¶6 </@>
       <@> ¶7 | #7 | Vol. II ¶7 </@>
       <@> ¶8 | #8 | Vol. II ¶8 </@>
-    </td>
+    __]
     <td class="heading">Volume conversions for grain</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶9 | #9 | Vol. II ¶9 </@></td>
+    [__<@> ¶9 | #9 | Vol. II ¶9 </@>__]
     <td class="heading">Area of a rectangle</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶10 | #10 | Vol. II ¶10 </@></td>
+    [__<@> ¶10 | #10 | Vol. II ¶10 </@>__]
     <td class="heading">Volume of a cylinder</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶11 | #11 | Vol. II ¶11 </@></td>
+    [__<@> ¶11 | #11 | Vol. II ¶11 </@>__]
     <td class="heading">Volume of a rectangular prism</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶12 | #12 | Vol. II ¶12 </@></td>
+    [__<@> ¶12 | #12 | Vol. II ¶12 </@>__]
     <td class="heading">Volume of a cylinder</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶13 | #13 | Vol. II ¶13 </@></td>
+    [__<@> ¶13 | #13 | Vol. II ¶13 </@>__]
     <td class="heading">Area of a circle</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶14 | #14 | Vol. II ¶14 </@></td>
+    [__<@> ¶14 | #14 | Vol. II ¶14 </@>__]
     <td class="heading">Area of a square of a given circumradius</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶15 | #15 | Vol. II ¶15 </@></td>
+    [__<@> ¶15 | #15 | Vol. II ¶15 </@>__]
     <td class="heading">Dividing a cube into smaller cubes</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶16 | #16 | Vol. II ¶16 </@></td>
+    [__<@> ¶16 | #16 | Vol. II ¶16 </@>__]
     <td class="heading">Side length of a square of a given perimeter</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶17 | #17 | Vol. II ¶17 </@></td>
+    [__<@> ¶17 | #17 | Vol. II ¶17 </@>__]
     <td class="heading">Volume of a trapezoidal prism</td>
   </tr>
   <tr>
-    <td class="centred-text"><@> ¶18 | #18 | Vol. II ¶18 </@></td>
+    [__<@> ¶18 | #18 | Vol. II ¶18 </@>__]
     <td class="heading">Volume of a rectangular prism</td>
   </tr>
   <tr>
-    <td class="centred-text">
+    [__
       <@> ¶19 | #19 | Vol. II ¶19 </@>
       <@> ¶20 | #20 | Vol. II ¶20 </@>
-    </td>
+    __]
     <td class="heading">Rod calculus: square root algorithm</td>
   </tr>
 </table></!>
