@@ -2089,6 +2089,7 @@ def replace_cite_this_page(string):
   text_heading, tex_key, tex_heading = argument_list[:num_arguments]
   
   tex_heading = escape_conway_special_literals(tex_heading)
+  tex_heading = remove_unnecessary_whitespace(tex_heading)
   
   # NOTE: <pre> ... </pre> must be used rather than <``> ... </``>
   # in order for <span class="date">d\~month\~yyyy</span> to actually render
