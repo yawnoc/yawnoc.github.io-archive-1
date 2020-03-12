@@ -1794,6 +1794,8 @@
 <% [font-size-para-sqrt] | font-size="0.8" %>
 <% [font-size-para-sqrt-sub] | font-size="0.5" %>
 
+<% [#arrowhead] | marker-end="url(#arrowhead)" %>
+
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -0.25 10.5 2">
   <!-- d -->
@@ -1875,8 +1877,8 @@
   <!-- 10000 -->
   <text class="red" x="2" y="2" [font-size-para-sqrt]>1</text>
   <!-- 步之，超一位，至百而止。 -->
-  <path class="step" d="M 6 2 m -0.1 -0.3 a 2 2 0 0 0 -1.7 0" marker-end="url(#arrowhead)"/>
-  <path class="step" d="M 4 2 m -0.1 -0.3 a 2 2 0 0 0 -1.5 0" marker-end="url(#arrowhead)"/>
+  <path class="step" d="M 6 2 m -0.1 -0.3 a 2 2 0 0 0 -1.7 0" [#arrowhead]/>
+  <path class="step" d="M 4 2 m -0.1 -0.3 a 2 2 0 0 0 -1.5 0" [#arrowhead]/>
   <!-- Rectangular border -->
   <rect class="border" x="-2.25" y="0" width="9" height="2.5"/>
 </svg>
@@ -2199,9 +2201,9 @@
   <!-- 100 -->
   <text class="red" x="4" y="3" [font-size-para-sqrt]>1</text>
   <!-- 方法一退 -->
-  <path class="step" d="M 2 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
+  <path class="step" d="M 2 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" [#arrowhead]/>
   <!-- 下法再退 -->
-  <path class="step" d="M 2 3 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" marker-end="url(#arrowhead)"/>
+  <path class="step" d="M 2 3 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" [#arrowhead]/>
   <!-- Rectangular border -->
   <rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
 </svg>
@@ -2577,10 +2579,10 @@
   <!-- 1 -->
   <text class="red" x="6" y="4" [font-size-para-sqrt]>1</text>
   <!-- 方法一退 -->
-  <path class="step" d="M 3 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
-  <path class="step" d="M 3 3 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
+  <path class="step" d="M 3 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" [#arrowhead]/>
+  <path class="step" d="M 3 3 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" [#arrowhead]/>
   <!-- 下法再退 -->
-  <path class="step" d="M 4 4 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" marker-end="url(#arrowhead)"/>
+  <path class="step" d="M 4 4 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" [#arrowhead]/>
   <!-- Rectangular border -->
   <rect class="border" x="-2.25" y="-1" width="9" height="5.5"/>
 </svg>
