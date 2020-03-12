@@ -30,8 +30,8 @@
     <@>
       "Demonstration against extradition bill aerial view
       from Wan Chai Hennessy Road 20190616"
-      | https://commons.wikimedia.org/wiki/File:Demonstration_against_extradition_bill_aerial_view_from_Wan_Chai_Hennessy_Road_20190616.jpg
-      | File:Demonstration against extradition bill aerial view from Wan Chai Hennessy Road 20190616.jpg, Wikimedia Commons
+      | [demonstration-image.url]
+      | [demonstration-image.h]
     </@>
     by
     <@>
@@ -40,30 +40,61 @@
       | User talk:Wpcpey, Wikimedia Commons
     </@>,
     licensed under
-    <@>
-      CC~BY-SA~4.0
-      | https://creativecommons.org/licenses/by-sa/4.0/
-      | Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-    </@>.
+    [cc-by-sa-4.a].
   </.>
 </div>
+
+<%
+  [demonstration-image.url] |
+  https://commons.wikimedia.org/wiki/File:\
+    Demonstration_against_extradition_bill_\
+    aerial_view_from_Wan_Chai_Hennessy_Road_20190616.jpg
+%>
+<%
+  [demonstration-image.h] |
+  File:\
+    Demonstration against extradition bill \
+    aerial view from Wan Chai Hennessy Road 20190616.jpg, \
+    Wikimedia Commons
+%>
+<%
+  [cc-by-sa-4.a] |
+  <@>
+    CC~BY-SA~4.0
+    | https://creativecommons.org/licenses/by-sa/4.0/
+    | Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+  </@>
+%>
 
 
 <@2> Translation | translation </@2>
 
 <^^></^^>
 
+<%
+  [facebook.h] |
+  《香港出師表》 by Draword - 畫字
+%>
+<%
+  [facebook.url] |
+  https://www.facebook.com/Draword/photos/a.613162078701902/3027327090618710/
+%>
+<%
+  [archive.url] |
+  https://web.archive.org/web/20190621165547/[facebook.url]
+%>
+
 <p>
   An English translation of
   <@>
     《香港出師表》
-    | https://www.facebook.com/Draword/photos/a.613162078701902/3027327090618710/
-    | Facebook: 《香港出師表》 by Draword - 畫字
+    | [facebook.url]
+    | Facebook: [facebook.h]
   </@>
   <@>
     (archived version)
-    | https://web.archive.org/web/20190621165547/https://www.facebook.com/Draword/photos/a.613162078701902/3027327090618710/
-    | Web archive: 《香港出師表》 by Draword - 畫字
+    | [archive.url]
+    | Web archive: [facebook.h]
   </@>
   by
   <@>
@@ -80,7 +111,8 @@
 </#tn>
 
 <#tn>
-  行動在即，寫左篇出師表。雖係劣改，不過一字一句，都係我一直以黎嘅經歷同諗法。到時見。 |
+  行動在即，寫左篇出師表。\
+  雖係劣改，不過一字一句，都係我一直以黎嘅經歷同諗法。到時見。 |
   Action {is} nigh. {I} have written {a}
   Memorial {unto the} Mobilisation.
   Though {it} be {a} poor edit {of the original},
@@ -115,7 +147,8 @@
 </ul>
 
 <#t>
-  然泛民議員，不懈於內；香港市民，遊行於外者，蓋追烈士之遺志，欲報之於我城也。 |
+  然泛民議員，不懈於內；香港市民，遊行於外者，\
+  蓋追烈士之遺志，欲報之於我城也。 |
   {The} pan-democrat councillors {fight} without slack on {the} inside.
   {The} people of Hong Kong, those rallying on {the} outside,
   do recall {the} determination bequeathed of {our} martyr,
@@ -134,7 +167,8 @@
 </ul>
 
 <#t>
-  誠宜三罷上街，以光義士遺德，恢弘志士之氣。不宜妄自菲薄，互斥其非，以塞抗爭之路也。 |
+  誠宜三罷上街，以光義士遺德，恢弘志士之氣。\
+  不宜妄自菲薄，互斥其非，以塞抗爭之路也。 |
   {We} truly ought to {join the} Three Strikes {and} go upon the streets,
   to illuminate {the} virtue bequeathed of {our} righteous fighter,
   {and to} enlarge {the} spirit of {our} determined fighter;
@@ -149,12 +183,14 @@
 
 <#t>
   勇武和理，俱為一體；守護香港，不宜異同。 |
-  {Whether} courageous {or} peaceful {and} rational: all be {united in} one entity.
+  {Whether} courageous {or} peaceful {and} rational: \
+    all be {united in} one entity.
   {In} protecting Hong Kong: {there} ought not {be} disagreement.
 </#t>
 
 <#t>
-  若有篤灰互隊，及為踢爆者，宜付臉書，論其刑賞，以昭網民平明之理；不宜私怨，使內外不和也。 |
+  若有篤灰互隊，及為踢爆者，宜付臉書，論其刑賞，以昭網民平明之理；\
+  不宜私怨，使內外不和也。 |
   If there be ratting out {and} mutual dobbing,
   and those making exposition {thereof}:
   {we} ought to submit {these to} facebook,
@@ -286,7 +322,8 @@
 </#t>
 
 <#t>
-  文宣、物資、前線、參謀，此悉忠良死節之位，願大家信之任之，則反送中之隆，可計日而待也。 |
+  文宣、物資、前線、參謀，此悉忠良死節之位，\
+  願大家信之任之，則反送中之隆，可計日而待也。 |
   Disseminating, supplying, {manning the} front line, {and} picketing:
   these {are} all positions of loyalty {and} goodness, upheld {unto} death;
   {I} hope everyone {does} keep faith {in} them {and} trust them,
@@ -322,12 +359,14 @@
     By my count at least thrice:
     <@>
       Article~23~(2003)
-      | https://en.wikipedia.org/wiki/National_Security_(Legislative_Provisions)_Bill_2003
+      | https://en.wikipedia.org/wiki/\
+          National_Security_(Legislative_Provisions)_Bill_2003
       | Wikipedia: National Security (Legislative Provisions) Bill 2003
     </@>,
     <@>
       Fake universal suffrage~(2014)
-      | https://en.wikipedia.org/wiki/2014%E2%80%9315_Hong_Kong_electoral_reform
+      | https://en.wikipedia.org/wiki/\
+          2014%E2%80%9315_Hong_Kong_electoral_reform
       | Wikipedia: 2014--15 Hong Kong electoral reform
     </@>,
     and now
@@ -494,8 +533,8 @@
   except the
   <@>
     original Chinese text
-    | https://www.facebook.com/Draword/photos/a.613162078701902/3027327090618710/
-    | Facebook: 《香港出師表》 by Draword - 畫字
+    | [facebook.url]
+    | Facebook: [facebook.h]
   </@>,
   which is by
   <@>
@@ -506,12 +545,8 @@
   and the resized, compressed \& brightened version of the
   <@>
     photo by Wpcpey
-    | https://commons.wikimedia.org/wiki/File:Demonstration_against_extradition_bill_aerial_view_from_Wan_Chai_Hennessy_Road_20190616.jpg
-    | File:Demonstration against extradition bill aerial view from Wan Chai Hennessy Road 20190616.jpg, Wikimedia Commons
+    | [demonstration-image.url]
+    | [demonstration-image.h]
   </@>, which is licensed under
-  <@>
-    CC~BY-SA~4.0
-    | https://creativecommons.org/licenses/by-sa/4.0/
-    | Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-  </@>
+  [cc-by-sa-4.a]
 </*f>
