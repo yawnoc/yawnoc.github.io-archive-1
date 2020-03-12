@@ -27,6 +27,19 @@
 <% /] | /mode/1up %>
 <% [legge.h] | The Sacred Books Of China: The Texts Of Taoism, Part~II %>
 
+<% [顏淵] | 顏淵 <^> Ngaan Yu"n | Yen Yu"an | Yan Yuan </^> %>
+<% [顏回] | 顏回 <^> Ngaan Wooi | Yen Hui | Yan Hui </^> %>
+<% [仲尼] | 仲尼 <^> Chung-nei | Chung-ni | Zhongni </^> %>
+<% [觴深] | 觴深 <^> Shoeng-sham | Shang-she^n | Shangshen </^> %>
+<% [宣穎] | 宣穎 <^> Su"n Wing | Hsu"an Ying | Xuan Ying</^> %>
+<% [郭象] | 郭象 <^> Kwok Tsoeng | Kuo Hsiang | Guo Xiang </^> %>
+<% [注] | 注 <^> chu" | chu | zhu </^> %>
+<% [反{切}] | 反{切} <^> faan {ts'eet} | fan {ch'ieh} | fan {qie} </^> %>
+<% [反切] | 反切 <^> faan ts'eet | fan ch'ieh | fan qie </^> %>
+<% [之樹] | 之樹 <^> chee shu" | chih shu | zhi shu </^> %>
+<% [李] | 李 <^> Lei | Li | Li </^> %>
+<% [康熙] | 康熙 <^> Hong-hei | K'ang-hsi | Kangxi </^> %>
+
 
 <@2> Introduction | introduction </@2>
 
@@ -86,14 +99,9 @@
   One of the English translations of this which Merton read
   was of course that of the great James Legge; see passage~4,
   "Yen Yuan asked {K}ung-nî ..." on
-  <@>
-    Page~15 of {[legge.h]}
-    | [/n26/]
-    | [legge.h]
-  </@>.
+  <@> Page~15 | [/n26/] | [legge.h] </@> of {[legge.h]}.
   As you shall see below, whether the original text
-  actually refers to archery depends on how you interpret the word
-  注 <^> chu" | chu | zhu </^>.
+  actually refers to archery depends on how you interpret the word [注].
 </p>
 
 <p>
@@ -125,22 +133,20 @@
 
 <#t>
   顏淵問仲尼曰：「吾嘗濟乎觴深之淵，津人操舟若神。 |
-  顏淵 <^> Ngaan Yu"n | Yen Yu"an | Yan Yuan </^>
-  asked 仲尼 <^> Chung-nei | Chung-ni | Zhongni </^>, saying,
-    "I once crossed {the} deep waters of
-    觴深 <^> Shoeng-sham | Shang-she^n | Shangshen </^>,
+  [顏淵] asked [仲尼], saying,
+    "I once crossed {the} deep waters of [觴深],
     {and the} men of {the} crossing handled boats like gods.
 </#t>
 <ul>
-  <li>顏淵 <^> Ngaan Yu"n | Yen Yu"an | Yan Yuan </^> <br>
+  <li>[顏淵] <br>
     <@>
       Confucius's favourite disciple
       | https://en.wikipedia.org/wiki/Yan_Hui
       | Wikipedia: Yan Hui
     </@>.
-    Also called 顏回 <^> Ngaan Wooi | Yen Hui | Yan Hui </^>.
+    Also called [顏回].
   </li>
-  <li>仲尼 <^> Chung-nei | Chung-ni | Zhongni </^> <br>
+  <li>[仲尼] <br>
     The
     <@>
       style name (or courtesy name)
@@ -152,7 +158,7 @@
   <li>濟：渡也；
     crossed
   </li>
-  <li>觴深 <^> Shoeng-sham | Shang-she^n | Shangshen </^> <br>
+  <li>[觴深] <br>
     (Proper) name of a body of water. <br>
       觴，音商，
       <^cm> shoeng1 | sha=ng </^cm>
@@ -209,7 +215,7 @@
 
 <#t>
   仲尼曰：「善游者數能，忘水也。 |
-  仲尼 <^> Chung-nei | Chung-ni | Zhongni </^> said,
+  [仲尼] said,
     "Good swimmers {are} able to {upon} repetition:
     {they} forget about {the} water.
 </#t>
@@ -244,8 +250,9 @@
     instances <br>
     This is following the
     <@>
-      annotation of 宣穎 <^> Su"n Wing | Hsu"an Ying | Xuan Ying</^>
-      | https://ctext.org/library.pl?if=en&file=28357&page=22#box(656,532,59,39)
+      annotation of [宣穎]
+      | https://ctext.org/library.pl?if=en&file=28357&page=22\
+          #box(656,532,59,39)
       | 《南華經解》
     </@>,
     which is 方，猶端 (although he may have meant "upright" by that?).
@@ -281,23 +288,19 @@
       <li>
         <@>
           《南華真經\.郭象註》
-          | https://ctext.org/library.pl?if=en&file=77894&page=11#box(118,678,50,70)
+          | https://ctext.org/library.pl?if=en&file=77894&page=11\
+              #box(118,678,50,70)
           | 《南華真經》
         </@>
-        i.e.~《南華真經》 {with} annotations {by}
-        郭象 <^> Kwok Tsoeng | Kuo Hsiang | Guo Xiang </^>
+        i.e.~《南華真經》 {with} annotations {by} [郭象]
         <#t>
           注，之樹反，李云擊也。 |
-          注 <^> chu" | chu | zhu </^>, {hath} 反{切}\
-           <^> faan {ts'eet} | fan {ch'ieh} | fan {qie} </^> {pronunciation}
-          之樹 <^> chee shu" | chih shu | zhi shu </^>,
-          {and} 李 <^> Lei | Li | Li </^> saith {it meaneth} strike.
+          [注], {hath} [反{切}] {pronunciation} [之樹],
+          {and} [李] saith {it meaneth} strike.
         </#t>
         <ul>
           <li>之樹反：
-            {hath} 反{切}\
-             <^> faan {ts'eet} | fan {ch'ieh} | fan {qie} </^> {pronunciation}
-            之樹 <^> chee shu" | chih shu | zhi shu </^> <br>
+            {hath} [反{切}] {pronunciation} [之樹] <br>
             Demonstrating this in Cantonese:
             <ul>
               <li>之
@@ -313,8 +316,7 @@
                 tone~陽<:g>去</:g>
               </li>
             </ul>
-            Therefore their 反切\
-             <^> faan ts'eet | fan ch'ieh | fan qie </^> has
+            Therefore their [反切] has
             initial~<:r><^e>ch</^e></:r>,
             final~<:g><^e>u"</^e></:g>,
             tone~<:r>陰</:r><:g>去</:g>,
@@ -332,7 +334,7 @@
           | https://ctext.org/kangxi-zidian/85/5#n332753
           | 《康熙字典\.注》
         </@>
-        i.e.~康熙 <^> Hong-hei | K'ang-hsi | Kangxi </^>~Dictionary
+        i.e.~[康熙]~Dictionary
         <#t>
           又擊也。 |
           Also strike.
@@ -348,7 +350,8 @@
       <li>
         <@>
           《南華真經註疏》
-          | https://ctext.org/library.pl?if=en&file=88939&page=20#box(196,822,42,46)
+          | https://ctext.org/library.pl?if=en&file=88939&page=20\
+              #box(196,822,42,46)
           | 《南華真經註疏》
         </@>
         i.e.~《南華真經》 {with}
@@ -361,10 +364,11 @@
       <li>
         <@>
           《莊子注》
-          | https://ctext.org/library.pl?if=en&file=53877&page=10#box(500,472,38,48)
+          | https://ctext.org/library.pl?if=en&file=53877&page=10\
+              #box(500,472,38,48)
           | 《莊子注》
         </@>,
-        by 郭象 <^> Kwok Tsoeng | Kuo Hsiang | Guo Xiang </^>
+        by [郭象]
         <#t>
           注，射也，射而賭物曰注。 |
           注, {meaneth} shoot;
