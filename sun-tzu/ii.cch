@@ -1,24 +1,24 @@
 <*>
-  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II": 《孫子算經\.卷中》
+  "[sun-tzu]'s Computational Classic: [vol-ii]": 《孫子算經\.卷中》
   | 20190609 | 20200225 | dmr
-  | An annotated English translation of Volume~II of Sunzi Suanjing, \
-    《孫子算經》, or "<^e>Sun~Tzuu</^e>'s Computational Classic".
+  | An annotated English translation of [vol-ii] of Sunzi Suanjing, \
+    《孫子算經》, or "[sun-tzu]'s Computational Classic".
 </*>
 
 <=h>
   <@ih></@ih>
   <@it></@it>
-  <@i> Paragraphs | #paragraphs | Volume II: Paragraph navigation </@i>
+  <@i> Paragraphs | #paragraphs | [vol-ii]: Paragraph navigation </@i>
   <@ic></@ic>
 </=h>
 
 <h1>
   《孫子算經\.卷中》 \or <br>
-  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II"
+  "[sun-tzu]'s Computational Classic: [vol-ii]"
 </h1>
 
 <*p> |
-  Also known as {Sunzi Suanjing}: Volume~II.
+  Also known as {Sunzi Suanjing}: [vol-ii].
 </*p>
 
 
@@ -33,31 +33,77 @@
   
   <@>
     《孫子算經》 \or <br>
-    "<^e>Sun~Tzuu</^e>'s Computational Classic"
+    "[sun-tzu]'s Computational Classic"
     | /sun-tzu/
-    | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
+    | "[sun-tzu]'s Computational Classic": 《孫子算經》
   </@>
   <ul>
     <@i>
-      《序》~"Preface"
-      | /sun-tzu/preface.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Preface": 《孫子算經\.序》
+      《序》~"[pref]"
+      | /sun-tzu/[pref].html
+      | "[sun-tzu-classic]": 《孫子算經\.序》
     </@i>
     <@i>
-      《卷上》~"Volume~I"
+      《卷上》~"[vol-i]"
       | /sun-tzu/i.html
-      | "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~I": 《孫子算經\.卷上》
+      | "[sun-tzu]'s Computational Classic: [vol-i]": 《孫子算經\.卷上》
     </@i>
     <li>
-      <b>《卷中》~"Volume~II" <:v>(incomplete)</:v></b>
+      <b>《卷中》~"[vol-ii]" <:v>(incomplete)</:v></b>
     </li>
     <li>
-      <:r>\!《卷下》~"Volume~III"</:r>
+      <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
     </li>
   </ul>
   
 </#n>
+
+<% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
+<% [sun-tzu-classic] | [sun-tzu]'s Computational Classic %>
+<% [pref] | Preface %>
+<% [vol-i] | Volume~I %>
+<% [vol-ii] | Volume~II %>
+<% [vol-iii] | Volume~III %>
+
+<%
+  [version-a.url] |
+  https://archive.org/details/02094034.cn/page/n
+%>
+<%
+  [version-a.h] |
+  02094034.cn at archive.org
+%>
+
+<%
+  [version-b.url] |
+  https://commons.wikimedia.org/w/index.php\
+    ?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%\
+      E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu\
+    &page=
+%>
+<%
+  [version-b.h] |
+  《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+%>
+
+<%
+  [version-c.url] |
+  https://ctext.org/sunzi-suan-jing#n
+%>
+<%
+  [version-c.h] |
+  ctext.org database page
+%>
+
+<%
+  [version-d.url] |
+  https://ctext.org/library.pl?if=en&file=86926&page=
+%>
+<%
+  [version-d.h] |
+  《知不足齋叢書》本 at ctext.org library
+%>
 
 <-->
   <-t></-t>
@@ -81,7 +127,7 @@
 
 <@@>
   <@u> Volumes | volumes | Volume navigation </@u>
-  <@d> Vol.~II Paragraphs | paragraphs | Volume II: Paragraph navigation </@d>
+  <@d> Vol.~II Paragraphs | paragraphs | [vol-ii]: Paragraph navigation </@d>
 </@@>
 
 <^^></^^>
@@ -89,14 +135,14 @@
 
 <#t>
   《孫子算經\.卷中》 |
-  "<^e>Sun~Tzuu</^e>'s Computational Classic:
-  Volume~II"
+  "[sun-tzu]'s Computational Classic:
+  [vol-ii]"
 </#t>
 <p>
   Literally "Middle Volume".
 </p>
 
-<@3> Volume~II: Paragraph navigation | paragraphs </@3>
+<@3> [vol-ii]: Paragraph navigation | paragraphs </@3>
 
 <@@>
   <@u> Volumes | volumes | Volume navigation </@u>
@@ -370,16 +416,16 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52133
-      | ctext.org database page
+      | [version-c.url]52133
+      | [version-c.h]
     </@>
     has only 合之 for 合之二.
   </li>
   <li>
     <@>
       Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=153
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+      | [version-b.url]153
+      | [version-b.h]
     </@>
     has 十一 for 一十一.
   </li>
@@ -474,8 +520,8 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52136
-      | ctext.org database page
+      | [version-c.url]52136
+      | [version-c.h]
     </@>
     erroneously has 王十一 for 三十一.
   </li>
@@ -546,7 +592,7 @@
 </$$>
 <p>
   respectively.
-  Of course <^e>Sun~Tzuu</^e>
+  Of course [sun-tzu]
   did not have the luxury of modern mathematical notation:
 </p>
 
@@ -566,8 +612,8 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52139
-      | ctext.org database page
+      | [version-c.url]52139
+      | [version-c.h]
     </@>
     erroneously has 母互乘于 for 母互乘子.
   </li>
@@ -667,8 +713,8 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52142
-      | ctext.org database page
+      | [version-c.url]52142
+      | [version-c.h]
     </@>
     erroneously has 糯米 for 糲米.
   </li>
@@ -763,8 +809,8 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52145
-      | ctext.org database page
+      | [version-c.url]52145
+      | [version-c.h]
     </@>
     erroneously has 稗 for 粺, both here and below.
   </li>
@@ -816,8 +862,8 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52148
-      | ctext.org database page
+      | [version-c.url]52148
+      | [version-c.h]
     </@>
     erroneously has 槃 for 糳, both here and below.
   </li>
@@ -880,8 +926,8 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52148
-      | ctext.org database page
+      | [version-c.url]52148
+      | [version-c.h]
     </@>
     erroneously has 栗 for 粟.
   </li>
@@ -930,8 +976,8 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52154
-      | ctext.org database page
+      | [version-c.url]52154
+      | [version-c.h]
     </@>
     erroneously has ●~(<code>U+25CF</code>)
     for both instances of 甎.
@@ -1026,8 +1072,8 @@
     Only
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52157
-      | ctext.org database page
+      | [version-c.url]52157
+      | [version-c.h]
     </@>
     has 尺 at the end of this sentence.
   </li>
@@ -1131,14 +1177,14 @@
   <li>
     <@>
       Version~A
-      | https://archive.org/details/02094034.cn/page/n34
-      | 02094034.cn at archive.org
+      | [version-a.url]34
+      | [version-a.h]
     </@>
     and
     <@>
       Version~D
-      | https://ctext.org/library.pl?if=en&file=86926&page=46
-      | 《知不足齋叢書》本 at ctext.org library
+      | [version-d.url]46
+      | [version-d.h]
     </@>
     erroneously have 三分升之一 for 三分升之二.
   </li>
@@ -1217,19 +1263,19 @@
     Versions~\
     <@>
       A
-      | https://archive.org/details/02094034.cn/page/n34
-      | 02094034.cn at archive.org
+      | [version-a.url]34
+      | [version-a.h]
     </@>,
     <@>
       B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=154
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+      | [version-b.url]154
+      | [version-b.h]
     </@>
     and~\
     <@>
       D
-      | https://ctext.org/library.pl?if=en&file=86926&page=47
-      | 《知不足齋叢書》本 at ctext.org library
+      | [version-d.url]47
+      | [version-d.h]
     </@>
     are erroneously missing 自 in 自相乘.
   </li>
@@ -1347,8 +1393,8 @@
   <li>
     <@>
       Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=155
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+      | [version-b.url]155
+      | [version-b.h]
     </@>
     has 又術曰 for 又術, both here and below.
   </li>
@@ -1483,14 +1529,14 @@
   <li>
     <@>
       Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=155
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+      | [version-b.url]155
+      | [version-b.h]
     </@>
     and
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52174
-      | ctext.org database page
+      | [version-c.url]52174
+      | [version-c.h]
     </@>
     have 高三尺 after 木方三尺.
   </li>
@@ -1642,14 +1688,14 @@
     method <br>
     <@>
       Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=155
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+      | [version-b.url]155
+      | [version-b.h]
     </@>
     and
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52180
-      | ctext.org database page
+      | [version-c.url]52180
+      | [version-c.h]
     </@>
     have the usual 術 for 法.
   </li>
@@ -1666,8 +1712,8 @@
   <li>
     <@>
       Version~B
-      | https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&page=155
-      | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
+      | [version-b.url]155
+      | [version-b.h]
     </@>
     has the  以二丈 for 以高二丈.
   </li>
@@ -1897,14 +1943,14 @@
     Versions~\
     <@>
       A
-      | https://archive.org/details/02094034.cn/page/n40
-      | 02094034.cn at archive.org
+      | [version-a.url]40
+      | [version-a.h]
     </@>
     and~\
     <@>
       C
-      | https://ctext.org/sunzi-suan-jing#n52186
-      | ctext.org database page
+      | [version-c.url]52186
+      | [version-c.h]
     </@>
     have just 商 for 上商.
   </li>
@@ -2157,14 +2203,14 @@
     Versions~\
     <@>
       A
-      | https://archive.org/details/02094034.cn/page/n40
-      | 02094034.cn at archive.org
+      | [version-a.url]40
+      | [version-a.h]
     </@>
     and~\
     <@>
       C
-      | https://ctext.org/sunzi-suan-jing#n52186
-      | ctext.org database page
+      | [version-c.url]52186
+      | [version-c.h]
     </@>
     are missing 方法 in 方法一退.
   </li>
@@ -2377,14 +2423,14 @@
     Versions~\
     <@>
       A
-      | https://archive.org/details/02094034.cn/page/n40
-      | 02094034.cn at archive.org
+      | [version-a.url]40
+      | [version-a.h]
     </@>
     and~\
     <@>
       C
-      | https://ctext.org/sunzi-suan-jing#n52186
-      | ctext.org database page
+      | [version-c.url]52186
+      | [version-c.h]
     </@>
     are missing 實.
   </li>
@@ -2461,14 +2507,14 @@
     Versions~\
     <@>
       A
-      | https://archive.org/details/02094034.cn/page/n40
-      | 02094034.cn at archive.org
+      | [version-a.url]40
+      | [version-a.h]
     </@>
     and~\
     <@>
       C
-      | https://ctext.org/sunzi-suan-jing#n52186
-      | ctext.org database page
+      | [version-c.url]52186
+      | [version-c.h]
     </@>
     are missing 除.
   </li>
@@ -2540,8 +2586,8 @@
   <li>
     <@>
       Version~A
-      | https://archive.org/details/02094034.cn/page/n40
-      | 02094034.cn at archive.org
+      | [version-a.url]40
+      | [version-a.h]
     </@>
     erroneously has 一退方法 for 方法一退.
   </li>
@@ -2799,8 +2845,8 @@
   <li>
     <@>
       Version~A
-      | https://archive.org/details/02094034.cn/page/n40
-      | 02094034.cn at archive.org
+      | [version-a.url]40
+      | [version-a.h]
     </@>
     is missing 以.
   </li>
@@ -2890,8 +2936,8 @@
   <li>
     <@>
       Version~A
-      | https://archive.org/details/02094034.cn/page/n40
-      | 02094034.cn at archive.org
+      | [version-a.url]40
+      | [version-a.h]
     </@>
     is missing 倍隅法，從方法.
   </li>
@@ -3090,7 +3136,7 @@
 </p>
 
 <@4>
-  Summary of <^e>Sun~Tzuu</^e>'s square root algorithm
+  Summary of [sun-tzu]'s square root algorithm
   | sqrt
 </@4>
 
@@ -3208,7 +3254,7 @@
   <@>
     <`>/sun-tzu/code/sqrt.py</`>
     | \/sun-tzu/code/sqrt.py
-    | Python: <^e>Sun~Tzuu</^e> square root algorithm
+    | Python: [sun-tzu] square root algorithm
   </@>.
 </p>
 
@@ -3243,8 +3289,8 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52189
-      | ctext.org database page
+      | [version-c.url]52189
+      | [version-c.h]
     </@>
     has 四十二萬步 for 四十二萬.
   </li>
@@ -3265,13 +3311,13 @@
 <p>
   The balance of this paragraph involves extracting the square root of~420000.
   For a fully annotated and diagrammed walkthrough of
-  <^e>Sun~Tzuu</^e>'s square root algorithm,
+  [sun-tzu]'s square root algorithm,
   see the previous <@> ¶19 | /sun-tzu/ii.html#19 | Vol.~II ¶19 </@>
   and the
   <@>
     pseudocode summary
     | #sqrt
-    | Summary of <^e>Sun~Tzuu</^e>'s square root algorithm
+    | Summary of [sun-tzu]'s square root algorithm
   </@>,
   whose detail I will not be repeating here.
 </p>
@@ -3292,8 +3338,8 @@
   <li>
     <@>
       Version~A
-      | https://archive.org/details/02094034.cn/page/n42
-      | 02094034.cn at archive.org
+      | [version-a.url]42
+      | [version-a.h]
     </@>
     erroneously has 餘於 for 於.
   </li>
@@ -3347,14 +3393,14 @@
     Versions~\
     <@>
       A
-      | https://archive.org/details/02094034.cn/page/n42
-      | 02094034.cn at archive.org
+      | [version-a.url]42
+      | [version-a.h]
     </@>
     and~\
     <@>
       C
-      | https://ctext.org/sunzi-suan-jing#n52189
-      | ctext.org database page
+      | [version-c.url]52189
+      | [version-c.h]
     </@>
     are missing 四十 after 上商.
   </li>
@@ -3395,8 +3441,8 @@
   <li>
     <@>
       Version~C
-      | https://ctext.org/sunzi-suan-jing#n52189
-      | ctext.org database page
+      | [version-c.url]52189
+      | [version-c.h]
     </@>
     erroneously has 上前 for 上商八.
   </li>
@@ -3420,8 +3466,8 @@
   <li>
     <@>
       Version~A
-      | https://archive.org/details/02094034.cn/page/n42
-      | 02094034.cn at archive.org
+      | [version-a.url]42
+      | [version-a.h]
     </@>
     is missing 得 after 上商,
     and erroneously has 一千二百九十七 for 一千二百九十六 both here
@@ -3444,9 +3490,9 @@
 </div>
 
 <*c>
-  "<^e>Sun~Tzuu</^e>'s Computational Classic: Volume~II"
+  "[sun-tzu]'s Computational Classic: [vol-ii]"
   | sun-tzu-ii
-  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {Volume~II}''
+  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {[vol-ii]}''
 </*c>
 
 <*f></*f>
