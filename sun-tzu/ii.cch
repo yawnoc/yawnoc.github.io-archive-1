@@ -316,7 +316,8 @@
     diminish {the} greater by {the} lesser.
     {For the} equal quantity {there} resulteth six <_>6</_> <br>
     In my opinion this description of the algorithm lacks clarity;
-    there isn't any instruction here to <strong>repeat</strong> the subtraction
+    there isn't any instruction here \
+    to <strong>repeat</strong> the subtraction
     <strong>until</strong> you get the equal quantity~6.
     A better description is found in 《九章算術》,
     "Nine Chapters {on} Computational Methods",
@@ -400,7 +401,7 @@
     </ul>
     <#t>
       可半者半之。不可半者，副置分母、子之數，以少減多，更相減損，求其等也。以等數約之。
-        （<:y>等數約之，即除也。其所以相減者，皆等數之重疊。故以等數約之。</:y>） |
+      （<:y>等數約之，即除也。其所以相減者，皆等數之重疊。故以等數約之。</:y>） |
       those which can {be} halved: halve them.
       Those which cannot {be} halved: put subsidiarily
       {the} quantities of {the} denominator {and the} numerator
@@ -439,19 +440,11 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52133
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52133 | [version-c.h] </@>
     has only 合之 for 合之二.
   </li>
   <li>
-    <@>
-      Version~B
-      | [version-b.url]153
-      | [version-b.h]
-    </@>
+    <@> Version~B | [version-b.url]153 | [version-b.h] </@>
     has 十一 for 一十一.
   </li>
   <li><$>b</$> 分之 <$>a</$>:
@@ -543,11 +536,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52136
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52136 | [version-c.h] </@>
     erroneously has 王十一 for 三十一.
   </li>
 </ul>
@@ -635,11 +624,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52139
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52139 | [version-c.h] </@>
     erroneously has 母互乘于 for 母互乘子.
   </li>
   <li>平實：
@@ -736,11 +721,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52142
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52142 | [version-c.h] </@>
     erroneously has 糯米 for 糲米.
   </li>
 </ul>
@@ -832,11 +813,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52145
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52145 | [version-c.h] </@>
     erroneously has 稗 for 粺, both here and below.
   </li>
   <li>粺：
@@ -885,11 +862,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52148
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52148 | [version-c.h] </@>
     erroneously has 槃 for 糳, both here and below.
   </li>
 </ul>
@@ -949,11 +922,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52148
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52148 | [version-c.h] </@>
     erroneously has 栗 for 粟.
   </li>
   <li>御米：
@@ -999,11 +968,7 @@
     \lit south-{to}-north
   </li>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52154
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52154 | [version-c.h] </@>
     erroneously has ●~(<code>U+25CF</code>)
     for both instances of 甎.
   </li>
@@ -1095,11 +1060,7 @@
 <ul>
   <li>
     Only
-    <@>
-      Version~C
-      | [version-c.url]52157
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52157 | [version-c.h] </@>
     has 尺 at the end of this sentence.
   </li>
 </ul>
@@ -1200,17 +1161,9 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | [version-a.url]34
-      | [version-a.h]
-    </@>
+    <@> Version~A | [version-a.url]34 | [version-a.h] </@>
     and
-    <@>
-      Version~D
-      | [version-d.url]46
-      | [version-d.h]
-    </@>
+    <@> Version~D | [version-d.url]46 | [version-d.h] </@>
     erroneously have 三分升之一 for 三分升之二.
   </li>
 </ul>
@@ -1287,21 +1240,12 @@
   <li>
     Versions~\
     <@>
-      A
-      | [version-a.url]34
-      | [version-a.h]
-    </@>,
+      A | [version-a.url]34 | [version-a.h] </@>,
     <@>
-      B
-      | [version-b.url]154
-      | [version-b.h]
-    </@>
+      B | [version-b.url]154 | [version-b.h] </@>
     and~\
     <@>
-      D
-      | [version-d.url]47
-      | [version-d.h]
-    </@>
+      D | [version-d.url]47 | [version-d.h] </@>
     are erroneously missing 自 in 自相乘.
   </li>
 </ul>
@@ -1416,11 +1360,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | [version-b.url]155
-      | [version-b.h]
-    </@>
+    <@> Version~B | [version-b.url]155 | [version-b.h] </@>
     has 又術曰 for 又術, both here and below.
   </li>
 </ul>
@@ -1552,17 +1492,9 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | [version-b.url]155
-      | [version-b.h]
-    </@>
+    <@> Version~B | [version-b.url]155 | [version-b.h] </@>
     and
-    <@>
-      Version~C
-      | [version-c.url]52174
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52174 | [version-c.h] </@>
     have 高三尺 after 木方三尺.
   </li>
   <li>枚 <br>
@@ -1711,17 +1643,9 @@
 <ul>
   <li>法：
     method <br>
-    <@>
-      Version~B
-      | [version-b.url]155
-      | [version-b.h]
-    </@>
+    <@> Version~B | [version-b.url]155 | [version-b.h] </@>
     and
-    <@>
-      Version~C
-      | [version-c.url]52180
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52180 | [version-c.h] </@>
     have the usual 術 for 法.
   </li>
 </ul>
@@ -1735,11 +1659,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~B
-      | [version-b.url]155
-      | [version-b.h]
-    </@>
+    <@> Version~B | [version-b.url]155 | [version-b.h] </@>
     has the  以二丈 for 以高二丈.
   </li>
 </ul>
@@ -1967,16 +1887,10 @@
   <li>
     Versions~\
     <@>
-      A
-      | [version-a.url]40
-      | [version-a.h]
-    </@>
+      A | [version-a.url]40 | [version-a.h] </@>
     and~\
     <@>
-      C
-      | [version-c.url]52186
-      | [version-c.h]
-    </@>
+      C | [version-c.url]52186 | [version-c.h] </@>
     have just 商 for 上商.
   </li>
   <li>上商：
@@ -2227,16 +2141,10 @@
   <li>
     Versions~\
     <@>
-      A
-      | [version-a.url]40
-      | [version-a.h]
-    </@>
+      A | [version-a.url]40 | [version-a.h] </@>
     and~\
     <@>
-      C
-      | [version-c.url]52186
-      | [version-c.h]
-    </@>
+      C | [version-c.url]52186 | [version-c.h] </@>
     are missing 方法 in 方法一退.
   </li>
   <li>再：
@@ -2447,16 +2355,10 @@
   <li>
     Versions~\
     <@>
-      A
-      | [version-a.url]40
-      | [version-a.h]
-    </@>
+      A | [version-a.url]40 | [version-a.h] </@>
     and~\
     <@>
-      C
-      | [version-c.url]52186
-      | [version-c.h]
-    </@>
+      C | [version-c.url]52186 | [version-c.h] </@>
     are missing 實.
   </li>
 </ul>
@@ -2531,16 +2433,10 @@
   <li>
     Versions~\
     <@>
-      A
-      | [version-a.url]40
-      | [version-a.h]
-    </@>
+      A | [version-a.url]40 | [version-a.h] </@>
     and~\
     <@>
-      C
-      | [version-c.url]52186
-      | [version-c.h]
-    </@>
+      C | [version-c.url]52186 | [version-c.h] </@>
     are missing 除.
   </li>
 </ul>
@@ -2609,11 +2505,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | [version-a.url]40
-      | [version-a.h]
-    </@>
+    <@> Version~A | [version-a.url]40 | [version-a.h] </@>
     erroneously has 一退方法 for 方法一退.
   </li>
   <li>
@@ -2868,11 +2760,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | [version-a.url]40
-      | [version-a.h]
-    </@>
+    <@> Version~A | [version-a.url]40 | [version-a.h] </@>
     is missing 以.
   </li>
 </ul>
@@ -2959,11 +2847,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | [version-a.url]40
-      | [version-a.h]
-    </@>
+    <@> Version~A | [version-a.url]40 | [version-a.h] </@>
     is missing 倍隅法，從方法.
   </li>
 </ul>
@@ -3312,11 +3196,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52189
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52189 | [version-c.h] </@>
     has 四十二萬步 for 四十二萬.
   </li>
 </ul>
@@ -3361,11 +3241,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | [version-a.url]42
-      | [version-a.h]
-    </@>
+    <@> Version~A | [version-a.url]42 | [version-a.h] </@>
     erroneously has 餘於 for 於.
   </li>
 </ul>
@@ -3417,16 +3293,10 @@
   <li>
     Versions~\
     <@>
-      A
-      | [version-a.url]42
-      | [version-a.h]
-    </@>
+      A | [version-a.url]42 | [version-a.h] </@>
     and~\
     <@>
-      C
-      | [version-c.url]52189
-      | [version-c.h]
-    </@>
+      C | [version-c.url]52189 | [version-c.h] </@>
     are missing 四十 after 上商.
   </li>
 </ul>
@@ -3464,11 +3334,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~C
-      | [version-c.url]52189
-      | [version-c.h]
-    </@>
+    <@> Version~C | [version-c.url]52189 | [version-c.h] </@>
     erroneously has 上前 for 上商八.
   </li>
 </ul>
@@ -3489,11 +3355,7 @@
 </#t>
 <ul>
   <li>
-    <@>
-      Version~A
-      | [version-a.url]42
-      | [version-a.h]
-    </@>
+    <@> Version~A | [version-a.url]42 | [version-a.h] </@>
     is missing 得 after 上商,
     and erroneously has 一千二百九十七 for 一千二百九十六 both here
     and in the line to follow.
