@@ -23,6 +23,10 @@
 
 <% [para] | ¶ %>
 
+<!-- [_ _] for text numerals -->
+<% [_ | <_e> %>
+<% _] | </_e> %>
+
 
 <% [volumes.h] | Volume navigation %>
 <@2> [volumes.h] | volumes </@2>
@@ -1088,7 +1092,7 @@
 <ul>
   <li>
     Reading ahead, I found it appropriate, in this paragraph and the next,
-    to preserve 萬 as "myriad" (meaning 10<sup>4</sup>~=~10000)
+    to preserve 萬 as "myriad" (meaning [_10^4_]~=~10000)
     rather than use English grouping of numbers by three zeroes \
     (i.e.~thousands).
   </li>
@@ -1127,7 +1131,7 @@
 </#t>
 
 <p>
-  Here we first encounter named powers of ten starting from 10<sup>8</sup>,
+  Here we first encounter named powers of ten starting from [_10^8_],
   which I have rendered literally:
 </p>
 
@@ -1308,7 +1312,7 @@
 
 <p>
   Here we have a "long scale" where the named quantities go up
-  by a factor of 10<sup>8</sup>:
+  by a factor of [_10^8_]:
 </p>
 <$$>
 \begin{aligned}
@@ -1326,7 +1330,7 @@
 </$$>
 <p>
   However in modern usage, a "medium scale" is used where
-  the named quantities go up by 10<sup>4</sup>.
+  the named quantities go up by [_10^4_].
   In summary:
 </p>
 
@@ -1341,78 +1345,78 @@
   <tr>
     <td>[億]</td>
     <td>square-myriad</td>
-    <td>10<sup>8</sup></td>
-    <td>10<sup>8</sup></td>
-    <td>10<sup>8</sup></td>
+    <td>[_10^8_]</td>
+    <td>[_10^8_]</td>
+    <td>[_10^8_]</td>
   </tr>
   <tr>
     <td>[兆]</td>
     <td>multitude</td>
-    <td>10<sup>9</sup></td>
-    <td>10<sup>16</sup></td>
-    <td>10<sup>12</sup></td>
+    <td>[_10^9_]</td>
+    <td>[_10^16_]</td>
+    <td>[_10^12_]</td>
   </tr>
   <tr>
     <td>[京]</td>
     <td>capital</td>
-    <td>10<sup>10</sup></td>
-    <td>10<sup>24</sup></td>
-    <td>10<sup>16</sup></td>
+    <td>[_10^10_]</td>
+    <td>[_10^24_]</td>
+    <td>[_10^16_]</td>
   </tr>
   <tr>
     <td>[陔]</td>
     <td>terrace</td>
-    <td>10<sup>11</sup></td>
-    <td>10<sup>32</sup></td>
-    <td>10<sup>20</sup></td>
+    <td>[_10^11_]</td>
+    <td>[_10^32_]</td>
+    <td>[_10^20_]</td>
   </tr>
   <tr>
     <td>[秭]</td>
     <td>haystack</td>
-    <td>10<sup>12</sup></td>
-    <td>10<sup>40</sup></td>
-    <td>10<sup>24</sup></td>
+    <td>[_10^12_]</td>
+    <td>[_10^40_]</td>
+    <td>[_10^24_]</td>
   </tr>
   <tr>
     <td>[壤]</td>
     <td>soil</td>
-    <td>10<sup>13</sup></td>
-    <td>10<sup>48</sup></td>
-    <td>10<sup>28</sup></td>
+    <td>[_10^13_]</td>
+    <td>[_10^48_]</td>
+    <td>[_10^28_]</td>
   </tr>
   <tr>
     <td>[溝]</td>
     <td>ditch</td>
-    <td>10<sup>14</sup></td>
-    <td>10<sup>56</sup></td>
-    <td>10<sup>32</sup></td>
+    <td>[_10^14_]</td>
+    <td>[_10^56_]</td>
+    <td>[_10^32_]</td>
   </tr>
   <tr>
     <td>[澗]</td>
     <td>stream</td>
-    <td>10<sup>15</sup></td>
-    <td>10<sup>64</sup></td>
-    <td>10<sup>36</sup></td>
+    <td>[_10^15_]</td>
+    <td>[_10^64_]</td>
+    <td>[_10^36_]</td>
   </tr>
   <tr>
     <td>[正]</td>
     <td>right</td>
-    <td>10<sup>16</sup></td>
-    <td>10<sup>72</sup></td>
-    <td>10<sup>40</sup></td>
+    <td>[_10^16_]</td>
+    <td>[_10^72_]</td>
+    <td>[_10^40_]</td>
   </tr>
   <tr>
     <td>[載]</td>
     <td>carry</td>
-    <td>10<sup>17</sup></td>
-    <td>10<sup>80</sup></td>
-    <td>10<sup>44</sup></td>
+    <td>[_10^17_]</td>
+    <td>[_10^80_]</td>
+    <td>[_10^44_]</td>
   </tr>
 </table></!cc>
 
 <p>
   Note that [兆], "multitude", is also used for
-  the SI Prefix mega~(10<sup>6</sup>). Confusing eh?
+  the SI Prefix mega~([_10^6_]). Confusing eh?
 </p>
 
 <;sh> 1 | 5 | <$>\pi \approx 3</$>, <$>\sqrt{2} \approx 7/5</$> </;sh>
