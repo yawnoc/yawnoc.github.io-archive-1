@@ -39,7 +39,7 @@
 
 <table>
   
-  <% [rom.h] | Conway's Custom \Rom for Cantonese %>
+  <% [rom.h] | Conway's Custom Romanisation for Cantonese %>
   <tr><td>
     <@>
       <b>[rom.h]</b>
@@ -421,7 +421,7 @@
     \{[ts] vs [ch]\}, \{[ts'] vs [ch']\} and \{[s] vs [sh]\}
     now distinguished in my
     <@>
-      \rom system
+      romanisation system
       | /cantonese/conway-romanisation.html
       | [rom.h]
     </@>.

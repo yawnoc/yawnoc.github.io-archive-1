@@ -117,8 +117,8 @@
 <@3> [cookies.h] | cookies </@3>
 
 <p>
-  A single cookie called <code>\rom</code> is used
-  to remember your \rom preference.
+  A single cookie called <code>romanisation</code> is used
+  to remember your romanisation preference.
   Unless you tamper with it, its value will only be one of
   <`>none</`>, <`>conway</`>, <`>wadegiles</`> or <`>pinyin</`>.
   I do not track you.

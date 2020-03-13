@@ -45,8 +45,8 @@
   </@i>
   <@i>
     <`><^^></`>
-    | #assisting-\rom-radio
-    | [assisting-rom-radio.h]
+    | #assisting-romanisation-radio
+    | [assisting-romanisation-radio.h]
   </@i>
   <@i>
     <`><-t></`>
@@ -64,13 +64,13 @@
   <@i> <`><+></`> | #image | [image.h] </@i>
   <@i>
     <`><^></`>
-    | #assisting-\rom
-    | [assisting-rom.h]
+    | #assisting-romanisation
+    | [assisting-romanisation.h]
   </@i>
   <@i>
     <`><^cm></`>
-    | #cantonese-mandarin-\rom
-    | [cantonese-mandarin-rom.h]
+    | #cantonese-mandarin-romanisation
+    | [cantonese-mandarin-romanisation.h]
   </@i>
   <@i>
     <`><@u></`>
@@ -117,7 +117,7 @@
   <@i> <`><.></`> | #note-paragraph | [note-paragraph.h] </@i>
   <@i> <`><!></`> | #overflowing-division | [overflowing-division.h] </@i>
   <@i> <`><--></`> | #svg-style-container | [svg-style-container.h] </@i>
-  <@i> <`><^e></`> | #text-\rom | [text-rom.h] </@i>
+  <@i> <`><^e></`> | #text-romanisation | [text-romanisation.h] </@i>
   <@i> <`><_e></`> | #text-numeral | [text-numeral.h] </@i>
   
   <@i> <b>Escapes</b> | #escapes | [escapes.h] </@i>
@@ -625,8 +625,8 @@
   </=h>
 </``>
 
-<% [assisting-rom-radio.h] | Assisting \rom radio element %>
-<@3> [assisting-rom-radio.h] | assisting-\rom-radio </@3>
+<% [assisting-romanisation-radio.h] | Assisting romanisation radio element %>
+<@3> [assisting-romanisation-radio.h] | assisting-romanisation-radio </@3>
 
 <#>
   <`><^^></^^></`>
@@ -638,9 +638,9 @@
 <p>
   Converted to the radio controller for
   <@>
-    assisting \roms
-    | #assisting-\rom
-    | [assisting-rom.h]
+    assisting romanisations
+    | #assisting-romanisation
+    | [assisting-romanisation.h]
   </@>.
 </p>
 
@@ -770,8 +770,8 @@
   
 </ul>
 
-<% [assisting-rom.h] | Assisting \rom element %>
-<@3> [assisting-rom.h] | assisting-\rom </@3>
+<% [assisting-romanisation.h] | Assisting romanisation element %>
+<@3> [assisting-romanisation.h] | assisting-romanisation </@3>
 
 <#>
   <`>{horizontal whitespace} <^> {conway} | {wadegiles} | {pinyin} </^></`>
@@ -780,15 +780,15 @@
 <p>
   Converted to <`><span></`> elements controlled by the
   <@>
-    assisting \rom radio
-    | #assisting-\rom-radio
-    | [assisting-rom-radio.h]
+    assisting romanisation radio
+    | #assisting-romanisation-radio
+    | [assisting-romanisation-radio.h]
   </@>,
   where all arguments are unescaped after the manner of the
   <@>
-    text \rom element
-    | #text-\rom
-    | [text-rom.h]
+    text romanisation element
+    | #text-romanisation
+    | [text-romanisation.h]
   </@>.
   The preceding horizontal whitespace is stripped.
 </p>
@@ -809,8 +809,8 @@
   
 </ul>
 
-<% [cantonese-mandarin-rom.h] | Cantonese \& Mandarin \rom element %>
-<@3> [cantonese-mandarin-rom.h] | cantonese-mandarin-\rom </@3>
+<% [cantonese-mandarin-romanisation.h] | Cantonese \& Mandarin romanisation element %>
+<@3> [cantonese-mandarin-romanisation.h] | cantonese-mandarin-romanisation </@3>
 
 <#>
   <`><^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]></`>
@@ -1091,9 +1091,9 @@
     for KaTeX <@> maths equations | #display-maths | [display-maths.h] </@>
     and for
     <@>
-      assisting \roms
-      | #assisting-\rom
-      | [assisting-rom.h]
+      assisting romanisations
+      | #assisting-romanisation
+      | [assisting-romanisation.h]
     </@>,
     if the supplied string contains
     <`>d</`>, <`>m</`> and <`>r</`> respectively,
@@ -1513,8 +1513,8 @@
   <`>~</`>, <`>{</`> and <`>}</`>.
 </p>
 
-<% [text-rom.h] | Text \rom element %>
-<@3> [text-rom.h] | text-\rom </@3>
+<% [text-romanisation.h] | Text romanisation element %>
+<@3> [text-romanisation.h] | text-romanisation </@3>
 
 <#>
   <`><^e> {content} </^e></`>
@@ -1525,9 +1525,9 @@
   with the corresponding entries in the Rendered column
   (these conversions are used for the arguments of
   <@>
-    assisting \roms elements
-    | #assisting-\rom
-    | [assisting-rom.h]
+    assisting romanisations elements
+    | #assisting-romanisation
+    | [assisting-romanisation.h]
   </@>):
 </p>
 
@@ -1953,20 +1953,6 @@
     <td>(very long)</td>
     <td>\lit</td>
     <td>Alternative type "lit."</td>
-  </tr>
-  
-  <tr>
-    <td><`>\rom</`></td>
-    <td>romanisation</td>
-    <td>\rom</td>
-    <td>"\rom"</td>
-  </tr>
-  
-  <tr>
-    <td><`>\Rom</`></td>
-    <td>Romanisation</td>
-    <td>\Rom</td>
-    <td>"\Rom"</td>
   </tr>
   
   <tr>

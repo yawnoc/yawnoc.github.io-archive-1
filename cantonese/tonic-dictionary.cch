@@ -20,7 +20,7 @@
 
 <h1>Quick links for Williams' {Tonic Dictionary} of Cantonese</h1>
 
-<% [conway-rom.h] | Conway's Custom \Rom for Cantonese %>
+<% [conway-rom.h] | Conway's Custom Romanisation for Cantonese %>
 <% [conway-rom.url] | /cantonese/conway-romanisation.html %>
 
 <*p>
@@ -52,7 +52,7 @@
 </p>
 
 <p>
-  The equivalent \roms in
+  The equivalent romanisations in
   <@> my own system | [conway-rom.url] | [conway-rom.h] </@>
   and in
   <@>
@@ -61,7 +61,7 @@
     | Wikipedia: Jyutping
   </@>
   are listed alongside for comparison.
-  Note that Jyutping (like all contemporary \rom systems)
+  Note that Jyutping (like all contemporary romanisation systems)
   <@>
     merges
     \{[^[:ts:]^] vs [^[:ch:]^]\},
