@@ -133,9 +133,6 @@
 #   </i>            }               (Conway italics closing tag)
 #   \or             <...>or</...>   (alternative type "or")
 #   \lit            <...>lit.</...> (alternative type "lit.")
-#   \rom            romanisation    ("romanisation")
-#   \Rom            Romanisation    ("Romanisation")
-# \ and | are called functional Conway literals.
 # ~, {hyphen run}, { and } are called special Conway literals.
 # ----------------------------------------------------------------
 # Romanisation (for text romanisation elements)
@@ -689,34 +686,43 @@ def replace_all_item_anchor_abbreviations(string):
 #   <\^\^></\^\^>
 
 # Processed string:
-#   <div class="\rom-radio">
-#     <,>\rom toggling</,>
-#     \Rom~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^> <br>
-#     <input type="radio" name="\rom" id="\rom-none" value="none">
-#       <label for="\rom-none">None</label>
-#     <input type="radio" name="\rom" id="\rom-conway" value="conway">
-#       <label for="\rom-conway">Conway</label>
-#     <input type="radio" name="\rom" id="\rom-wadegiles" value="wadegiles">
-#       <label for="\rom-wadegiles">Wade--Giles</label>
-#     <input type="radio" name="\rom" id="\rom-pinyin" value="pinyin">
-#       <label for="\rom-pinyin">Pinyin</label>
+#   <div class="romanisation-radio">
+#     <,>romanisation toggling</,>
+#     Romanisation~(<kbd>F2</kbd>):~\
+#       音標 <^>yam peeu | yin piao | yin biao</^> <br>
+#     <input type="radio" name="romanisation"
+#         id="romanisation-none" value="none">
+#       <label for="romanisation-none">None</label>
+#     <input type="radio" name="romanisation"
+#         id="romanisation-conway" value="conway">
+#       <label for="romanisation-conway">Conway</label>
+#     <input type="radio" name="romanisation"
+#         id="romanisation-wadegiles" value="wadegiles">
+#       <label for="romanisation-wadegiles">Wade--Giles</label>
+#     <input type="radio" name="romanisation"
+#         id="romanisation-pinyin" value="pinyin">
+#       <label for="romanisation-pinyin">Pinyin</label>
 #   </div>
 
 def replace_assisting_romanisation_radio(string):
   
   processed_string = r'''
-    <div class="\rom-radio">
-      <,>\rom toggling</,>
-      \Rom~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^>
+    <div class="romanisation-radio">
+      <,>romanisation toggling</,>
+      Romanisation~(<kbd>F2</kbd>):~音標 <^>yam peeu | yin piao | yin biao</^>
       <br>
-      <input type="radio" name="\rom" id="\rom-none" value="none">
-        <label for="\rom-none">None</label>
-      <input type="radio" name="\rom" id="\rom-conway" value="conway">
-        <label for="\rom-conway">Conway</label>
-      <input type="radio" name="\rom" id="\rom-wadegiles" value="wadegiles">
-        <label for="\rom-wadegiles">Wade--Giles</label>
-      <input type="radio" name="\rom" id="\rom-pinyin" value="pinyin">
-        <label for="\rom-pinyin">Pinyin</label>
+      <input type="radio" name="romanisation"
+          id="romanisation-none" value="none">
+        <label for="romanisation-none">None</label>
+      <input type="radio" name="romanisation"
+          id="romanisation-conway" value="conway">
+        <label for="romanisation-conway">Conway</label>
+      <input type="radio" name="romanisation"
+          id="romanisation-wadegiles" value="wadegiles">
+        <label for="romanisation-wadegiles">Wade--Giles</label>
+      <input type="radio" name="romanisation"
+          id="romanisation-pinyin" value="pinyin">
+        <label for="romanisation-pinyin">Pinyin</label>
     </div>
   '''
   
@@ -1058,9 +1064,12 @@ def replace_all_images(string):
 #   \1  {arguments}: {conway} | {wadegiles} | {pinyin}
 
 # Processed string:
-#   <span class="\rom \rom-conway">~(<^e>{conway}</^e>)</span>\
-#   <span class="\rom \rom-wadegiles">~(<^e>{wadegiles}</^e>)</span>\
-#   <span class="\rom \rom-pinyin">~(<^e>{pinyin}</^e>)</span>
+#   <span class="romanisation romanisation-conway">\
+#     ~(<^e>{conway}</^e>)</span>\
+#   <span class="romanisation romanisation-wadegiles">\
+#     ~(<^e>{wadegiles}</^e>)</span>\
+#   <span class="romanisation romanisation-pinyin">\
+#     ~(<^e>{pinyin}</^e>)</span>
 
 # ----------------------------------------------------------------
 # Single
@@ -1076,7 +1085,7 @@ def replace_assisting_romanisation(match_object):
   
   if num_supplied_arguments < num_required_arguments:
     return cch_error_span(
-      'Assisting \rom <^> {conway} | {wadegiles} | {pinyin} </^> '
+      'Assisting romanisation <^> {conway} | {wadegiles} | {pinyin} </^> '
       f'requires at least {num_required_arguments} pipe-delimited arguments; '
       f'only {num_supplied_arguments} supplied'
     )
@@ -1085,9 +1094,12 @@ def replace_assisting_romanisation(match_object):
   conway, wadegiles, pinyin = argument_list[:num_arguments]
   
   processed_string = (
-    rf'<span class="\rom \rom-conway">~(<^e>{conway}</^e>)</span>'
-    rf'<span class="\rom \rom-wadegiles">~(<^e>{wadegiles}</^e>)</span>'
-    rf'<span class="\rom \rom-pinyin">~(<^e>{pinyin}</^e>)</span>'
+    '<span class="romanisation romanisation-conway">'
+      f'~(<^e>{conway}</^e>)</span>'
+    '<span class="romanisation romanisation-wadegiles">'
+      f'~(<^e>{wadegiles}</^e>)</span>'
+    '<span class="romanisation romanisation-pinyin">'
+      f'~(<^e>{pinyin}</^e>)</span>'
   )
   
   return processed_string
@@ -1121,7 +1133,7 @@ def replace_all_assisting_romanisations(string):
 #   <@>
 #     Cantonese
 #     | /cantonese/conway-romanisation.html
-#     | Conway's Custom \Rom for Cantonese
+#     | Conway's Custom Romanisation for Cantonese
 #   </@>:~<^e>{cantonese}</^e>,
 #   Mandarin:~<^e>{mandarin}</^e>\
 #   [, [full gov] Mandarin (統讀):~<^e>{government}</^e>]
@@ -1175,7 +1187,7 @@ def replace_cantonese_mandarin_romanisation(match_object):
     <@>
       Cantonese
       | /cantonese/conway-romanisation.html
-      | Conway's Custom \Rom for Cantonese
+      | Conway's Custom Romanisation for Cantonese
     </@>:~<^e>{cantonese}</^e>,
     Mandarin:~<^e>{mandarin}</^e>{gov_spec}
   '''
@@ -3266,12 +3278,6 @@ def unescape_conway(string):
     '<span class="alternative-type">lit.</span>',
     string
   )
-  
-  # Unescape \rom as romanisation
-  string = re.sub(r'\\rom', 'romanisation', string)
-  
-  # Unescape \Rom as Romanisation
-  string = re.sub(r'\\Rom', 'Romanisation', string)
   
   return(string)
 
