@@ -27,7 +27,7 @@
 <h1>Python: a regex converter from CCH to HTML</h1>
 <p class="page-properties">
 First created:&nbsp;20190720<br>
-Last modified:&nbsp;<b>20200310</b><br>
+Last modified:&nbsp;<b>20200313</b><br>
 <b>Code:</b>
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch.py" title="GitHub: cch.py"><code>cch.py</code></a>
 <noscript>Enable Javascript for <a href="/code/katex-guide.html" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
@@ -75,6 +75,7 @@ Last modified:&nbsp;<b>20200310</b><br>
 <li><a href="#overflowing-division" title="Overflowing division element"><code>&lt;!&gt;</code></a></li>
 <li><a href="#svg-style-container" title="SVG style container element"><code>&lt;--&gt;</code></a></li>
 <li><a href="#text-romanisation" title="Text romanisation element"><code>&lt;^e&gt;</code></a></li>
+<li><a href="#text-numeral" title="Text numeral element"><code>&lt;_e&gt;</code></a></li>
 <li><a href="#escapes" title="Escapes"><b>Escapes</b></a></li>
 <li><a href="#conway-italics" title="Conway italics"><b><code>{}</code></b></a></li>
 <li><a href="#whitespace" title="Whitespace"><b>Whitespace</b></a></li>
@@ -965,11 +966,9 @@ Assisting numeral element
 <code>{horizontal whitespace} &lt;_&gt;{content}&lt;/_&gt;</code>
 </div>
 <p>
-Converted to a <code>&lt;span&gt;</code> element, with simple markup for
-exponents (<code>^</code>),
-minus signs (<code>-</code>), and
-times symbols (<code>*</code>)
-in <code>{content}</code>.
+Converted to a <code>&lt;span&gt;</code> element,
+with simple markup for <code>{content}</code> after the manner of the
+<a href="#text-numeral" title="Text numeral element">text numeral element</a>.
 The preceding horizontal whitespace is stripped.
 </p>
 <ul>
@@ -1413,6 +1412,36 @@ with the corresponding entries in the Rendered column
 <td><code>U+00FC</code></td>
 </tr>
 </table></div></div>
+<h3 id="text-numeral"><a class="self-link" href="#text-numeral"></a>
+Text numeral element
+</h3>
+<div class="boxed">
+<code>&lt;_e&gt;{content}&lt;/_e&gt;</code>
+</div>
+<p>
+Simple markup for
+exponents (<code>^</code>),
+minus signs (<code>-</code>), and
+times symbols (<code>*</code>).
+</p>
+<ul>
+<li>
+<b>CCH</b>
+<pre>
+&lt;_e&gt;3 * 10^-12&lt;/_e&gt;
+</pre>
+</li>
+<li>
+<b>HTML</b>
+<pre>
+3 × 10&lt;sup&gt;−12&lt;/sup&gt;
+</pre>
+</li>
+<li>
+<b>Rendered</b><br>
+3 × 10<sup>−12</sup>
+</li>
+</ul>
 <h2 id="escapes"><a class="self-link" href="#escapes"></a>
 Escapes
 </h2>

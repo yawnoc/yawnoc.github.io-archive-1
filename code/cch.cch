@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20200310 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20200313 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -118,6 +118,7 @@
   <@i> <`><!></`> | #overflowing-division | [overflowing-division.h] </@i>
   <@i> <`><--></`> | #svg-style-container | [svg-style-container.h] </@i>
   <@i> <`><^e></`> | #text-\rom | [text-rom.h] </@i>
+  <@i> <`><_e></`> | #text-numeral | [text-numeral.h] </@i>
   
   <@i> <b>Escapes</b> | #escapes | [escapes.h] </@i>
   
@@ -1199,11 +1200,9 @@
 </#>
 
 <p>
-  Converted to a <`><span></`> element, with simple markup for
-    exponents (<`>^</`>),
-    minus signs (<`>-</`>), and
-    times symbols (<`>*</`>)
-  in <`>{content}</`>.
+  Converted to a <`><span></`> element,
+  with simple markup for <`>{content}</`> after the manner of the
+  <@> text numeral element | #text-numeral | [text-numeral.h] </@>.
   The preceding horizontal whitespace is stripped.
 </p>
 
@@ -1737,6 +1736,44 @@
   </tr>
   
 </table></!c>
+
+
+<% [text-numeral.h] | Text numeral element %>
+<@3> [text-numeral.h] | text-numeral </@3>
+
+<#>
+  <`><_e>{content}</_e></`>
+</#>
+
+<p>
+  Simple markup for
+    exponents (<`>^</`>),
+    minus signs (<`>-</`>), and
+    times symbols (<`>*</`>).
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <_e>3 * 10^-12</_e>
+    </``>
+  </li>
+  
+  <li>
+    <b>HTML</b>
+    <``>
+      3 × 10<sup>−12</sup>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b> <br>
+      <_e>3 * 10^-12</_e>
+  </li>
+  
+</ul>
 
 
 <% [escapes.h] | Escapes %>
