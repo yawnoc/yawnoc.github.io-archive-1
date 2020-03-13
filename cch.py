@@ -73,7 +73,7 @@
 # Single-argument elements
 # ----------------------------------------------------------------
 #   <,>             html_noscript
-#   <_>             assisting_numeral
+#   <_>             assisting_numeral                 <_e>
 #   <:{type}>       formatted_span
 #   <#[type]>       boxed_division
 #   <~~>            dialogue_division
@@ -85,6 +85,7 @@
 #   <![type]>       overflowing_division
 #   <-->            svg_style_container
 #   <^e>            text_romanisation
+#   <_e>            text_numeral
 ################################################################
 
 ################################################################
@@ -2280,43 +2281,19 @@ def replace_all_html_noscripts(string):
 # Unprocessed string:
 #   {horizontal whitespace} <_>{content}</_>
 
-# Raw regular expression for unprocessed string:
-#   [^\S\n]<_>([\s\S]*?)</_>
-#   \1  {content}
+# Raw regular expression for unprocessed string
+# (opening and closing tags are decoupled):
+#   [^\S\n]<_>  </_>
 
 # Processed string:
-#   <span class="numeral">~({math-processed content})</span>
-# with processing of {content} as follows:
-#   1.  Horizontal whitespace around ^ and * is removed
-#   2.  ^{exponent} is converted to <sup>{exponent}</sup>
-#   3.  - is converted to − (U+2212 MINUS SIGN)
-#   4.  * is converted to × (U+00D7 MULTIPLICATION SIGN)
-#       surrounded by ' ' (U+205F MEDIUM MATHEMATICAL SPACE) on either side
-
-# ----------------------------------------------------------------
-# Single
-# ----------------------------------------------------------------
-
-def replace_assisting_numeral(match_object):
-  
-  content = match_object.group(1)
-  
-  content = re.sub(r'[^\S\n]*([*^])[^\S\n]*', r'\1', content)
-  content = re.sub(r'\^([+-]?[0-9]*)', r'<sup>\1</sup>', content)
-  content = re.sub(r'\-', '−', content)
-  content = re.sub(r'\*', ' × ', content)
-  
-  processed_string = f'<span class="numeral">~({content})</span>'
-  
-  return processed_string
-
-# ----------------------------------------------------------------
-# All
-# ----------------------------------------------------------------
+#   <span class="numeral">~(<_e>{content}</_e>)</span>
 
 def replace_all_assisting_numerals(string):
   
-  return re.sub(r'[^\S\n]<_>([\s\S]*?)</_>', replace_assisting_numeral, string)
+  string = re.sub('[^\S\n]<_>', '<span class="numeral">~(<_e>', string)
+  string = re.sub('</_>', '</_e>)</span>', string)
+  
+  return string
 
 ################################################################
 # Replace formatted spans
@@ -2693,6 +2670,49 @@ def replace_text_romanisation(match_object):
 def replace_all_text_romanisations(string):
   
   return re.sub(r'<\^e>([\s\S]*?)</\^e>', replace_text_romanisation, string)
+
+################################################################
+# Replace text numerals
+################################################################
+
+# Unprocessed string:
+#   <_e> {content} </_e>
+
+# Raw regular expression for unprocessed string:
+#   <_e>([\s\S]*?)</_e>
+#   \1  {content}
+
+# Processed string:
+#   {math-processed content}
+# with processing of {content} as follows:
+#   1.  Horizontal whitespace around ^ and * is removed
+#   2.  ^{exponent} is converted to <sup>{exponent}</sup>
+#   3.  - is converted to − (U+2212 MINUS SIGN)
+#   4.  * is converted to × (U+00D7 MULTIPLICATION SIGN)
+#       surrounded by ' ' (U+205F MEDIUM MATHEMATICAL SPACE) on either side
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def replace_text_numeral(match_object):
+  
+  content = match_object.group(1)
+  
+  content = re.sub(r'[^\S\n]*([*^])[^\S\n]*', r'\1', content)
+  content = re.sub(r'\^([+-]?[0-9]*)', r'<sup>\1</sup>', content)
+  content = re.sub(r'\-', '−', content)
+  content = re.sub(r'\*', ' × ', content)
+  
+  return content
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def replace_all_text_numerals(string):
+  
+  return re.sub(r'<_e>([\s\S]*?)</_e>', replace_text_numeral, string)
 
 ################################################################
 # Escape Python (for regex replacement strings)
@@ -3729,6 +3749,7 @@ def cch_to_html(file_name):
   markup = replace_all_overflowing_divisions(markup)
   markup = replace_all_svg_style_containers(markup)
   markup = replace_all_text_romanisations(markup)
+  markup = replace_all_text_numerals(markup)
   
   # ----------------------------------------------------------------
   # Unescape all Conway escapes
