@@ -3,6 +3,7 @@ https://yawnoc.github.io/cantonese/conway-romanisation.html
 https://yawnoc.github.io/cantonese/tonic-dictionary.html
 https://yawnoc.github.io/code/cch.html
 https://yawnoc.github.io/code/katex-guide.html
+https://yawnoc.github.io/code/strikethrough.html
 https://yawnoc.github.io/code/unicode-maths.html
 https://yawnoc.github.io/cynics-730/
 https://yawnoc.github.io/cynics-730/2019/bolt-liu-association.html
