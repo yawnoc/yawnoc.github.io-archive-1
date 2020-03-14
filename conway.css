@@ -503,6 +503,10 @@ p.dialogue-host {
   color: blue;
 }
 
+p.thought {
+  padding: 0.7em;
+}
+
 div.dialogue > img + p {
   padding-top: 0.7em;
 }
