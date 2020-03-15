@@ -133,6 +133,7 @@
 #   </i>            }               (Conway italics closing tag)
 #   \or             <...>or</...>   (alternative type "or")
 #   \lit            <...>lit.</...> (alternative type "lit.")
+#   \sic            {sic}           (italicised "sic")
 # ~, {hyphen run}, { and } are called special Conway literals.
 # ----------------------------------------------------------------
 # Romanisation (for text romanisation elements)
@@ -3278,6 +3279,9 @@ def unescape_conway(string):
     '<span class="alternative-type">lit.</span>',
     string
   )
+  
+  # Unescape \sic as {sic}
+  string = re.sub(r'\\sic', '{sic}', string)
   
   return(string)
 
