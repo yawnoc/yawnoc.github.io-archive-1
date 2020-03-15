@@ -120,6 +120,17 @@ body {
 /* Divisions                                                        */
 /* ---------------------------------------------------------------- */
 
+/* Blockquotes */
+
+blockquote div:first-child {
+  margin-bottom: 1.3em;
+}
+
+blockquote div {
+  padding-top: 0;
+  font-size: medium;
+}
+
 /* Boxed */
 
 div.boxed {
