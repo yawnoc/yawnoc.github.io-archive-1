@@ -277,7 +277,8 @@
 </ul>
 
 <#t>
-  術曰：置十八分在下，一十二分在上。副置二位，以少減多，等數得六為法，約之，即得。 |
+  術曰：置十八分在下，一十二分在上。\
+  副置二位，以少減多，等數得六為法，約之，即得。 |
   Method saith:
   put {the} eighteen <_>18</_> shares below,
   {and the} twelve <_>12</_> shares above.
@@ -358,7 +359,8 @@
       約分\
         （<:y>按：約分者，物之數量不可悉全，必以分言之。分之為數，繁則難用。\
         設有四分之二者。繁而言之，亦可為八分之四；約而言之，則二分之一也。\
-        雖則異辭，至於為數，亦同歸爾。法實相推，動有參差，故為術者，先治諸分。</:y>）\
+        雖則異辭，至於為數，亦同歸爾。\
+        法實相推，動有參差，故為術者，先治諸分。</:y>）\
       術曰： |
       {The} Method of Reducing Fractions
         (<:y>Note: Reducing Fractions---
@@ -400,8 +402,11 @@
       </li>
     </ul>
     <#t>
-      可半者半之。不可半者，副置分母、子之數，以少減多，更相減損，求其等也。以等數約之。
-      （<:y>等數約之，即除也。其所以相減者，皆等數之重疊。故以等數約之。</:y>） |
+      可半者半之。\
+      不可半者，副置分母、子之數，以少減多，更相減損，求其等也。\
+      以等數約之。
+      （<:y>等數約之，即除也。\
+      其所以相減者，皆等數之重疊。故以等數約之。</:y>） |
       those which can {be} halved: halve them.
       Those which cannot {be} halved: put subsidiarily
       {the} quantities of {the} denominator {and the} numerator
@@ -727,7 +732,8 @@
 </ul>
 
 <#t>
-  術曰：置粟一斗，十升。以糲米率三十乘之，得三百升為實。以粟率五十為法，除之，即得。 |
+  術曰：置粟一斗，十升。\
+  以糲米率三十乘之，得三百升為實。以粟率五十為法，除之，即得。 |
   Method saith: put {down the} grain,
   one <_>1</_> peck, {or} ten <_>10</_> quarts.
   Multiplying it by {the} coarse grain rate, thirty <_>30</_>,
@@ -933,7 +939,8 @@
 </ul>
 
 <#t>
-  術曰：置七斗九升。以御米率二十一乘之，得一千六百五十九升為實。以粟率五十除之，即得。 |
+  術曰：置七斗九升。\
+  以御米率二十一乘之，得一千六百五十九升為實。以粟率五十除之，即得。 |
   Method saith: put {down the}
     seven <_>7</_> pecks {and}
     nine <_>9</_> quarts.
@@ -983,7 +990,8 @@
 </#t>
 
 <#t>
-  術曰：置東西六丈，以南北三丈乘之，得一千八百尺。以五乘之，得九千尺。以二除之，即得。 |
+  術曰：置東西六丈，以南北三丈乘之，得一千八百尺。\
+  以五乘之，得九千尺。以二除之，即得。 |
   Method saith: put {down the}
     six <_>6</_> rods east-{to}-west.
   Multiplying it by {the}
@@ -1444,7 +1452,8 @@
 </#t>
 
 <#t>
-  以五乘之，得一千四百七十步。以七除之，得二百一十步，自相乘，得四萬四千一百步。 |
+  以五乘之，得一千四百七十步。\
+  以七除之，得二百一十步，自相乘，得四萬四千一百步。 |
   Multiplying it by five <_>5</_>, resulteth in
     one thousand four hundred {and} seventy <_>1470</_> paces.
   Dividing it by seven <_>7</_>, resulteth in
@@ -1749,7 +1758,7 @@
   今有積二十三萬四千五百六十七步。問為方幾何？ |
   Now there be area,
   two hundred {and} thirty-four thousand, five hundred {and} sixty-seven\
-     <_>234567</_> paces.
+    <_>234567</_> paces.
   {We} ask: be {this a} square {of edge} how much?
 </#t>
 
@@ -1774,7 +1783,7 @@
   術曰：<:b>置積</:b>二十三萬四千五百六十七步為<:b>實</:b>。 |
   Method saith: <:b>put {down the} area</:b>,
   two hundred {and} thirty-four thousand, five hundred {and} sixty-seven\
-     <_>234567</_> paces,
+    <_>234567</_> paces,
   as <:b>{the} dividend</:b>.
 </#t>
 <p>
@@ -2930,7 +2939,9 @@
 </div>
 
 <#t>
-  <:g>上商得四百八十四</:g>，<:v>下法得九百六十八</:v>，<:b>不盡三百一十一</:b>。 |
+  <:g>上商得四百八十四</:g>，\
+  <:v>下法得九百六十八</:v>，\
+  <:b>不盡三百一十一</:b>。 |
   <:g>{The} upper quotient resulteth in
     four hundred {and} eighty-four <_>484</_></:g>,
   <:v>{and the} lower divisors result in
@@ -3353,7 +3364,9 @@
 </#t>
 
 <#t>
-  <:g>上商得六百四十八</:g>，<:v>下法得一千二百九十六</:v>，<:b>不盡九十六</:b>。 |
+  <:g>上商得六百四十八</:g>，\
+  <:v>下法得一千二百九十六</:v>，\
+  <:b>不盡九十六</:b>。 |
   <:g>{The} upper quotient resulteth in
     six hundred {and} forty-eight <_>648</_></:g>,
   <:v>{and the} lower divisors result in
