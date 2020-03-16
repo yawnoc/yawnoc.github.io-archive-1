@@ -154,9 +154,15 @@
 <p>
   to the equivalent HTML code
 </p>
-<``>
-  <img class="class-name" src="image.png" alt="Alt text" title="Title text" width="300">
-</``>
+<pre>
+  \<img \
+    class="class-name" \
+    src="image.png" \
+    alt="Alt text" \
+    title="Title text" \
+    width="300"\
+  \>
+</pre>
 
 <p>
   Also CCH has many convenient backslash-escaped abbreviations;
@@ -170,7 +176,7 @@
 <p>
   This page
   <@>
-    <`>cch.html</`> 
+    <`>cch.html</`>
     | \/code/cch.html
     | GitHub: cch.html
   </@>
@@ -185,7 +191,8 @@
 </p>
 
 <p>
-  Finally, I am indebted unto <b>J.H.</b>, without whom this converter would not exist,
+  Finally, I am indebted unto <b>J.H.</b>, \
+  without whom this converter would not exist,
   due to lack of motivation to start writing it (and learn Python).
 </p>
 
@@ -751,11 +758,13 @@
   
   <li>
     <b>HTML</b>
-    <``>
-      <img src="/favicon-32x32.png" alt="Site favicon: two crescents" title="&amp;, &lt;, &gt;, and &quot; are automatically escaped.
-      Alternatively you may use backslash escapes (&amp;, &lt;, &gt;)
-      for the first three of these.">
-    </``>
+    <pre>
+      \<img src="/favicon-32x32.png" \
+        alt="Site favicon: two crescents" \
+        title="\&amp;, \&lt;, \&gt;, and \&quot; are automatically escaped.
+      Alternatively you may use backslash escapes (\&amp;, \&lt;, \&gt;)
+      for the first three of these."\>
+    </pre>
   </li>
   
   <li>
@@ -810,8 +819,14 @@
   
 </ul>
 
-<% [cantonese-mandarin-romanisation.h] | Cantonese \& Mandarin romanisation element %>
-<@3> [cantonese-mandarin-romanisation.h] | cantonese-mandarin-romanisation </@3>
+<%
+  [cantonese-mandarin-romanisation.h] |
+  Cantonese \& Mandarin romanisation element
+%>
+<@3>
+  [cantonese-mandarin-romanisation.h] |
+  cantonese-mandarin-romanisation
+</@3>
 
 <#>
   <`><^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]></`>
@@ -1037,7 +1052,11 @@
 <@3> [sun-tzu-link-division.h] | sun-tzu-link-division </@3>
 
 <#>
-  <`><;s@@> {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} </;s@@></`>
+  <`>
+    <;s@@> \
+      {volume} | {paragraph} | {a p} | {b p} | {c p} | {c q} | {d p} \
+    </;s@@>
+  </`>
 </#>
 
 <ul>
@@ -1060,7 +1079,12 @@
 <@3> [preamble.h] | preamble </@3>
 
 <#>
-  <`><*> {title} | {first created} | {last modified} [| rendering [| description [| css [| js]]]] </*></`>
+  <`>
+    <*> \
+      {title} | {first created} | {last modified} \
+      [| rendering [| description [| css [| js]]]] \
+    </*>
+  </`>
 </#>
 
 <p>
@@ -1135,7 +1159,11 @@
 <@3> [cite-this-page.h] | cite-this-page </@3>
 
 <#>
-  <`><*c> {text heading} | {tex key} | {tex heading} [| inconvenience message] </*c></`>
+  <`>
+    <*c> \
+      {text heading} | {tex key} | {tex heading} [| inconvenience message] \
+    </*c>
+  </`>
 </#>
 
 <p>
@@ -1404,7 +1432,8 @@
 <p>
   Converted to a <`><p></`> element for the host's (<`>{pos}</`>~<`>h</`>)
   or the guest's (<`>{pos}</`>~<`>g</`>) words in a dialogue,
-  or thoughts if <`>[type]</`> is supplied as <`>t</`>, and to be used inside a
+  or thoughts if <`>[type]</`> is supplied as <`>t</`>, \
+  and to be used inside a
   <@>
     dialogue division element
     | #dialogue-division
@@ -1993,7 +2022,8 @@
 <p>
   A backslash before a run of Chinese characters
   prevents automatic surrounding by a <`><span lang="zh-Hant"></`> element.
-  (Here \. <`>U+30FB KATAKANA MIDDLE DOT</`> is considered a Chinese character.)
+  (Here \. <`>U+30FB KATAKANA MIDDLE DOT</`> \
+  is considered a Chinese character.)
 </p>
 
 
@@ -2134,7 +2164,8 @@
   </@>
   containing these,
   are automatically wrapped in a <`><span lang="zh-Hant"></`> element.
-  <@> Precede runs by a backslash | #escapes | [escapes.h] </@> to prevent this.
+  <@> Precede runs by a backslash | #escapes | [escapes.h] </@> \
+  to prevent this.
   Literal empty strings <`>\!</`> may be used to split runs.
 </p>
 
@@ -2153,12 +2184,23 @@
   
   <li>
     <b>HTML</b>
-    <``>
-      <span lang="zh-Hant">《禮記・禮運》大道之行也，天下為公。</span><br>
-      《禮記・禮運》大道之行也，天下為公。<br>
-      <span lang="zh-Hant">黑、<span class="red">赤</span>、<span class="green">翠</span>、<span class="blue">青</span>、<span class="violet">紫</span>、<span class="lightyellow">黃</span>、<span class="highlighted-part">顯</span>、<span class="thought">思</span>。</span><br>
-      <span lang="zh-Hant">前</span><span lang="zh-Hant">後</span>
-    </``>
+    <pre>
+      \<span lang="zh-Hant"\>\
+        《禮記・禮運》大道之行也，天下為公。\
+      \</span\>\<br\>
+      《禮記・禮運》大道之行也，天下為公。\
+        \<br\>
+      \<span lang="zh-Hant"\>黑、\
+        \<span class="red"\>赤\</span\>、\
+        \<span class="green"\>翠\</span\>、\
+        \<span class="blue"\>青\</span\>、\
+        \<span class="violet"\>紫\</span\>、\
+        \<span class="lightyellow"\>黃\</span\>、\
+        \<span class="highlighted-part"\>顯\</span\>、\
+        \<span class="thought"\>思\</span\>。\</span\>\
+        \<br\>
+      \<span lang="zh-Hant"\>前\</span\>\<span lang="zh-Hant"\>後\</span\>
+    </pre>
   </li>
   
   <li>
