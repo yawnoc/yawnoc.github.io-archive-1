@@ -607,7 +607,8 @@
   
   <li>
     <b>Time zones:</b>
-    clock time jumps discontinuously over their boundaries (which are arbitrary),
+    clock time jumps discontinuously over their boundaries \
+    (which are arbitrary),
     whereas local solar time is a smooth function of location.
   </li>
   
