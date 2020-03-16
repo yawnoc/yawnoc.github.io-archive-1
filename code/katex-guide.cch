@@ -222,7 +222,10 @@
   <html lang="en">
   <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1"
+  >
   <link rel="stylesheet" href="conway-katex.css">
   <script defer src="conway-katex.js"></script>
   <script defer src="conway-render.js"></script>
