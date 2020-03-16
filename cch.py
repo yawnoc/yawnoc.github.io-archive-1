@@ -1512,11 +1512,10 @@ def replace_all_boxed_translations(string):
 
 # Processed string:
 #   <@3>
-#     Vol.~{capital roman volume}~¶{paragraph}.
+#     Vol.~{capital roman volume}~\P{paragraph}.
 #     <span class="heading">{content}</span>
 #     | {paragraph}
 #   </@3>
-# where the paragraph symbol is U+00B6 PILCROW SIGN
 
 # ----------------------------------------------------------------
 # Single
@@ -1542,9 +1541,9 @@ def replace_sun_tzu_heading(match_object):
   
   capital_roman_volume = int(volume) * 'I'
   
-  processed_string = f'''
+  processed_string = rf'''
     <@3>
-      Vol.~{capital_roman_volume}~¶{paragraph}.
+      Vol.~{capital_roman_volume}~\P{paragraph}.
       <span class="heading">{content}</span>
       | {paragraph}
     </@3>
@@ -1584,7 +1583,7 @@ def replace_all_sun_tzu_headings(string):
 #     <@>
 #       [manuscript]
 #       | /manuscripts/sun-tzu-{small roman volume}-{paragraph}.pdf
-#       | Translation manuscript for Vol. {capital roman volume} ¶{paragraph}
+#       | Translation manuscript for Vol. {capital roman volume} \P{paragraph}
 #     </@>
 #     [<@>
 #       A{a p}
@@ -1650,11 +1649,11 @@ def replace_sun_tzu_link_division(match_object):
     </@u>
   '''
   
-  manuscript_link = f'''
+  manuscript_link = rf'''
     <@>
       [manuscript]
       | /manuscripts/sun-tzu-{small_roman_volume}-{paragraph}.pdf
-      | Translation manuscript for Vol. {capital_roman_volume} ¶{paragraph}
+      | Translation manuscript for Vol. {capital_roman_volume} \P{paragraph}
     </@>
   '''
   
