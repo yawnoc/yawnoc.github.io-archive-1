@@ -428,14 +428,15 @@
     \lit unclear {in} vision <br>
       殙，呼昆切，
       <^cm> fan1 | hu=n </^cm> <br>
-    In some versions I have seen this written
-    㱪~(<`>U+3C6A</`>) (i.e.~歹 next to 昬,
-    which won't show if your browser font doesn't have it in its character set).
+    In some versions I have seen this written 㱪~(<`>U+3C6A</`>)
+    (i.e.~歹 next to 昬, which won't show
+    if your browser font doesn't have it in its character set).
     Again people don't agree on exactly what this means,
     but I concur with those who say it is a
     <@>
       variant of 惛
-      | https://ctext.org/library.pl?if=en&file=28357&page=22#box(526,153,59,39)
+      | https://ctext.org/library.pl\
+        ?if=en&file=28357&page=22#box(526,153,59,39)
       | 《南華經解》
     </@>.
   </li>
