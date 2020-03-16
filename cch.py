@@ -313,7 +313,7 @@ def replace_all_display_code(string):
 #   \1  {content}
 
 # Processed string:
-#   <code> {HTML-escaped content} </code>
+#   <code> {HTML-escaped, backslash-line-continued content} </code>
 
 # ----------------------------------------------------------------
 # Single
@@ -323,6 +323,7 @@ def replace_inline_code(match_object):
   
   content = match_object.group(1)
   content = escape_html(content)
+  content = remove_backslashed_newlines(content)
   
   processed_string = f'<code>{content}</code>'
   
@@ -3466,8 +3467,6 @@ def replace_all_preformatted(string):
 # Treats backslash as the line continuation character.
 
 def remove_backslashed_newlines(string):
-  
-  string = replace_all_conway_literal_backslashes(string)
   
   string = re.sub(r'\\\n[^\S\n]*', '', string)
   
