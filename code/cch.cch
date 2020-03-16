@@ -291,7 +291,7 @@
   <li>
     <b>HTML</b>
     <``>
-      <code> if x == 1 &amp;&amp; y &lt; 0 </code>
+      <code>if x == 1 &amp;&amp; y &lt; 0</code>
     </``>
   </li>
   
