@@ -1655,8 +1655,8 @@ Whitespace
 </h2>
 <ol>
 <li>
-<code>&lt;pre&gt;</code> elements are de-indented
-(but not affected by the subsequent removals),
+<code>&lt;pre&gt;</code> elements are de-indented &amp; backslash-line-continued
+(but not affected by the other removals),
 </li>
 <li>
 Horizontal whitespace around <code>&lt;br&gt;</code> elements is removed,
@@ -1671,7 +1671,7 @@ Empty lines are removed,
 Trailing whitespace is removed,
 </li>
 <li>
-Newlines immediately following a backslash are removed
+Backslashed newlines are removed
 (i.e.&nbsp;backslash is the line continuation character),
 </li>
 <li>
