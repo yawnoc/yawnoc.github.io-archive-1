@@ -324,6 +324,7 @@ def replace_inline_code(match_object):
   content = match_object.group(1)
   content = escape_html(content)
   content = remove_backslashed_newlines(content)
+  content = content.strip()
   
   processed_string = f'<code>{content}</code>'
   
