@@ -274,7 +274,8 @@
 
 <p>
   Converted to a <`><code></`> element,
-  with automatic escaping of <`>&</`>, <`><</`> and <`>></`>
+  with automatic escaping of <`>&</`>, <`><</`> and <`>></`>,
+  and backslash-line-continuation,
   for <`>{content}</`>.
 </p>
 
