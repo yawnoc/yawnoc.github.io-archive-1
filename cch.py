@@ -3469,7 +3469,7 @@ def remove_backslashed_newlines(string):
   
   string = replace_all_conway_literal_backslashes(string)
   
-  string = re.sub(r'\\\n', '', string)
+  string = re.sub(r'\\\n[^\S\n]*', '', string)
   
   return string
 
