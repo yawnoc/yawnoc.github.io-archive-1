@@ -21,8 +21,6 @@
   Also known as {Sunzi Suanjing}: [vol-i].
 </*p>
 
-<% [para] | ¶ %>
-
 <!-- [_ _] for text numerals -->
 <% [_ | <_e> %>
 <% _] | </_e> %>
@@ -182,104 +180,104 @@
     <th class="heading">About</th>
   </tr>
   <tr>
-    [__<@> [para]1 | #1 | Vol. I [para]1 </@>__]
+    [__<@> \P1 | #1 | Vol. I \P1 </@>__]
     [==Units of length (or distance)==]
   </tr>
   <tr>
-    [__<@> [para]2 | #2 | Vol. I [para]2 </@>__]
+    [__<@> \P2 | #2 | Vol. I \P2 </@>__]
     [==Units of weight (or mass)==]
   </tr>
   <tr>
-    [__<@> [para]3 | #3 | Vol. I [para]3 </@>__]
+    [__<@> \P3 | #3 | Vol. I \P3 </@>__]
     [==Units of capacity==]
   </tr>
   <tr>
-    [__<@> [para]4 | #4 | Vol. I [para]4 </@>__]
+    [__<@> \P4 | #4 | Vol. I \P4 </@>__]
     [==Names of large numbers==]
   </tr>
   <tr>
-    [__<@> [para]5 | #5 | Vol. I [para]5 </@>__]
+    [__<@> \P5 | #5 | Vol. I \P5 </@>__]
     [==
       <$>\pi \approx 3</$>,
       <$>\sqrt{2} \approx 7/5</$>
     ==]
   </tr>
   <tr>
-    [__<@> [para]6 | #6 | Vol. I [para]6 </@>__]
+    [__<@> \P6 | #6 | Vol. I \P6 </@>__]
     [==Densities of metals~etc.==]
   </tr>
   <tr>
-    [__<@> [para]7 | #7 | Vol. I [para]7 </@>__]
+    [__<@> \P7 | #7 | Vol. I \P7 </@>__]
     [==Rod calculus: vertical \&~horizontal forms==]
   </tr>
   <tr>
-    [__<@> [para]8 | #8 | Vol. I [para]8 </@>__]
+    [__<@> \P8 | #8 | Vol. I \P8 </@>__]
     [==Rod calculus: multiplication algorithm==]
   </tr>
   <tr>
-    [__<@> [para]9 | #9 | Vol. I [para]9 </@>__]
+    [__<@> \P9 | #9 | Vol. I \P9 </@>__]
     [==Rod calculus: division algorithm==]
   </tr>
   <tr>
-    [__<@> [para]10 | #10 | Vol. I [para]10 </@>__]
+    [__<@> \P10 | #10 | Vol. I \P10 </@>__]
     [==Volume conversion rates for grain \&~rice==]
   </tr>
   <tr>
     [__
-      <@> [para]11 | #11 | Vol. I [para]11 </@>
-      <@> [para]12 | #12 | Vol. I [para]12 </@>
+      <@> \P11 | #11 | Vol. I \P11 </@>
+      <@> \P12 | #12 | Vol. I \P12 </@>
     __]
     [==Some equivalent fractions==]
   </tr>
   <tr>
-    [__<@> [para]13 | #13 | Vol. I [para]13 </@>__]
+    [__<@> \P13 | #13 | Vol. I \P13 </@>__]
     [==Rod calculus: <$>81 \times 81</$>==]
   </tr>
   <tr>
-    [__<@> [para]14 | #14 | Vol. I [para]14 </@>__]
+    [__<@> \P14 | #14 | Vol. I \P14 </@>__]
     [==Rod calculus: <$>6561 \div 9</$>==]
   </tr>
   <tr>
-    [__<@> [para]15 | #15 | Vol. I [para]15 </@>__]
+    [__<@> \P15 | #15 | Vol. I \P15 </@>__]
     [==Results of multiplication \&~division: multiples of~9==]
   </tr>
   <tr>
-    [__<@> [para]16 | #16 | Vol. I [para]16 </@>__]
+    [__<@> \P16 | #16 | Vol. I \P16 </@>__]
     [==Results of multiplication \&~division: multiples of~8==]
   </tr>
   <tr>
-    [__<@> [para]17 | #17 | Vol. I [para]17 </@>__]
+    [__<@> \P17 | #17 | Vol. I \P17 </@>__]
     [==Results of multiplication \&~division: multiples of~7==]
   </tr>
   <tr>
-    [__<@> [para]18 | #18 | Vol. I [para]18 </@>__]
+    [__<@> \P18 | #18 | Vol. I \P18 </@>__]
     [==Results of multiplication \&~division: multiples of~6==]
   </tr>
   <tr>
-    [__<@> [para]19 | #19 | Vol. I [para]19 </@>__]
+    [__<@> \P19 | #19 | Vol. I \P19 </@>__]
     [==Results of multiplication \&~division: multiples of~5==]
   </tr>
   <tr>
-    [__<@> [para]20 | #20 | Vol. I [para]20 </@>__]
+    [__<@> \P20 | #20 | Vol. I \P20 </@>__]
     [==Results of multiplication \&~division: multiples of~4==]
   </tr>
   <tr>
-    [__<@> [para]21 | #21 | Vol. I [para]21 </@>__]
+    [__<@> \P21 | #21 | Vol. I \P21 </@>__]
     [==Results of multiplication \&~division: multiples of~3==]
   </tr>
   <tr>
-    [__<@> [para]22 | #22 | Vol. I [para]22 </@>__]
+    [__<@> \P22 | #22 | Vol. I \P22 </@>__]
     [==Results of multiplication \&~division: multiples of~2==]
   </tr>
   <tr>
-    [__<@> [para]23 | #23 | Vol. I [para]23 </@>__]
+    [__<@> \P23 | #23 | Vol. I \P23 </@>__]
     [==
       Results of multiplication \&~division:
       multiples of~1, and all multiples of~9 through~1 combined
     ==]
   </tr>
   <tr>
-    [__<@> [para]24 | #24 | Vol. I [para]24 </@>__]
+    [__<@> \P24 | #24 | Vol. I \P24 </@>__]
     [==Results of multiplication \&~division: multiples of powers of~3==]
   </tr>
 </table></!>
@@ -1032,7 +1030,7 @@
 </$$>
 
 <p>
-  In <@> Vol.~II [para]10 | /sun-tzu/ii.html#10 | Vol. II [para]10 </@>,
+  In <@> Vol.~II \P10 | /sun-tzu/ii.html#10 | Vol. II \P10 </@>,
   the conversion between
   the capacity unit "barrel", [斛],
   and the volume unit "cubic rule", [尺],
@@ -1242,7 +1240,7 @@
 </$$>
 
 <p>
-  However, the <@> next paragraph | #4 | Vol. I [para]4 </@> \
+  However, the <@> next paragraph | #4 | Vol. I \P4 </@> \
   uses a "long scale".
 </p>
 
@@ -1338,8 +1336,8 @@
   <tr>
     <th>Quantity</th>
     <th>Rendering</th>
-    <th><@> [para]3 | #3 | Vol. I [para]3</@></th>
-    <th><@> [para]4 | #4 | Vol. I [para]4</@></th>
+    <th><@> \P3 | #3 | Vol. I \P3</@></th>
+    <th><@> \P4 | #4 | Vol. I \P4</@></th>
     <th>Modern</th>
   </tr>
   <tr>
@@ -2467,7 +2465,7 @@
 
 <p>
   A concrete example of the algorithm does not appear until
-  <@> [para]13 | #13 | Vol. I [para]13 </@>,
+  <@> \P13 | #13 | Vol. I \P13 </@>,
   so I will provide my own here. Below is an animation showing
   the multiplication 1989~×~64~=~127296,
   where I have used usual numerals rather than rods (for readability)
@@ -2614,7 +2612,7 @@
   and 退, "retreat", means move to the right.
   The first step of the division <$>100 \div 6</$> is given,
   but a full example of the division algorithm does not appear until
-  <@> [para]14 | #14 | Vol. I [para]14 </@>.
+  <@> \P14 | #14 | Vol. I \P14 </@>.
 </p>
 
 <#t>
@@ -2911,7 +2909,7 @@
 <p>
   but I have no clue as to why this might be useful,
   and why it is phrased in terms of subtraction.
-  Ditto for <@> the next paragraph | #12 | Vol. I [para]12 </@>.
+  Ditto for <@> the next paragraph | #12 | Vol. I \P12 </@>.
 </p>
 
 <;sh> 1 | 12 | Some equivalent fractions </;sh>
@@ -2968,7 +2966,7 @@
 </#t>
 <ul>
   <li>重置其位 <br>
-    See <@> [para]8 | #8 | Vol. I [para]8 </@>.
+    See <@> \P8 | #8 | Vol. I \P8 </@>.
   </li>
 </ul>
 
@@ -3184,8 +3182,8 @@
 <;s@@> 1 | 15 | 12 | 148 | 52075 | 18 | 20 </;s@@>
 
 <p>
-  <@> [para]13 | #13 | Vol. I [para]13 </@> above through to
-  <@> [para]22 | #22 | Vol. I [para]22 </@> below
+  <@> \P13 | #13 | Vol. I \P13 </@> above through to
+  <@> \P22 | #22 | Vol. I \P22 </@> below
   display the results of multiplications and divisions of the form
 </p>
 <$$>
@@ -3196,8 +3194,8 @@
 </$$>
 <p>
   where <$>n = 9, 8, \dots, 2</$> and <$>m = n, \dots, 1</$>.
-  While <@> [para]13 | #13 | Vol. I [para]13 </@> \
-  and <@> [para]14 | #14 | Vol. I [para]14 </@>
+  While <@> \P13 | #13 | Vol. I \P13 </@> \
+  and <@> \P14 | #14 | Vol. I \P14 </@>
   above gave worked versions for <$>m = n = 9</$>,
   only the results are listed for the cases below.
   Also displayed for each <$>n = 9, 8, \dots, 2</$> are the divisions
@@ -3211,7 +3209,7 @@
 
 <p>
   This gets rather repetitive (and boring),
-  so you may wish to <@> skip to [para]23 | #23 | Vol. I [para]23 </@>.
+  so you may wish to <@> skip to \P23 | #23 | Vol. I \P23 </@>.
 </p>
 
 <#t>
@@ -3284,7 +3282,7 @@
     is missing four whole pages</b>
     after 一千二百九十六, from 四人分之 in the line above until
     四人分之 after 四七二十八 in
-    <@> [para]17 | #17 | Vol. I [para]17 </@>.
+    <@> \P17 | #17 | Vol. I \P17 </@>.
     These missing pages correspond to
     <@> D21 | [version-d.url]21 | [version-d.h] </@>
     through
@@ -3359,7 +3357,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
+  Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
 </p>
 
 <;sh> 1 | 16 | Results of multiplication \&~division: multiples of~8 </;sh>
@@ -3468,7 +3466,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
+  Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
 </p>
 
 <;sh> 1 | 17 | Results of multiplication \&~division: multiples of~7 </;sh>
@@ -3567,7 +3565,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
+  Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
 </p>
 
 <;sh> 1 | 18 | Results of multiplication \&~division: multiples of~6 </;sh>
@@ -3645,7 +3643,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
+  Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
 </p>
 <;sh> 1 | 19 | Results of multiplication \&~division: multiples of~5 </;sh>
 <;s@@> 1 | 19 | 16 | 150 | 52103 | 46 | 27 </;s@@>
@@ -3711,7 +3709,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
+  Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
 </p>
 
 <;sh> 1 | 20 | Results of multiplication \&~division: multiples of~4 </;sh>
@@ -3769,7 +3767,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
+  Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
 </p>
 
 <;sh> 1 | 21 | Results of multiplication \&~division: multiples of~3 </;sh>
@@ -3832,7 +3830,7 @@
 </$$>
 
 <p>
-  Bored? <@> Skip to [para]23 | #23 | Vol. I [para]23 </@>.
+  Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
 </p>
 
 <;sh> 1 | 22 | Results of multiplication \&~division: multiples of~2 </;sh>

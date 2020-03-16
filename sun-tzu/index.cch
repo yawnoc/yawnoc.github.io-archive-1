@@ -22,8 +22,6 @@
   Also known as {Sunzi Suanjing}.
 </*p>
 
-<% [para] | ¶ %>
-
 
 <@2> Volume navigation | volumes </@2>
 
@@ -335,102 +333,102 @@ In each page, remove the its own link, and make that text bold.
   </@i>
   <li>
     <b>[vol-i]:</b>
-    <@> [para]1 | [man.url]-i-1.pdf | [man-i.h] [para]1 </@>
-    <@> [para]2 | [man.url]-i-2.pdf | [man-i.h] [para]2 </@>
-    <@> [para]3 | [man.url]-i-3.pdf | [man-i.h] [para]3 </@>
-    <@> [para]4 | [man.url]-i-4.pdf | [man-i.h] [para]4 </@>
-    <@> [para]5 | [man.url]-i-5.pdf | [man-i.h] [para]5 </@>
-    <@> [para]6 | [man.url]-i-6.pdf | [man-i.h] [para]6 </@>
-    <@> [para]7 | [man.url]-i-7.pdf | [man-i.h] [para]7 </@>
-    <@> [para]8 | [man.url]-i-8.pdf | [man-i.h] [para]8 </@>
-    <@> [para]9 | [man.url]-i-9.pdf | [man-i.h] [para]9 </@>
-    <@> [para]10 | [man.url]-i-10.pdf | [man-i.h] [para]10 </@>
-    <@> [para]11 | [man.url]-i-11.pdf | [man-i.h] [para]11 </@>
-    <@> [para]12 | [man.url]-i-12.pdf | [man-i.h] [para]12 </@>
-    <@> [para]13 | [man.url]-i-13.pdf | [man-i.h] [para]13 </@>
-    <@> [para]14 | [man.url]-i-14.pdf | [man-i.h] [para]14 </@>
-    <@> [para]15 | [man.url]-i-15.pdf | [man-i.h] [para]15 </@>
-    <@> [para]16 | [man.url]-i-16.pdf | [man-i.h] [para]16 </@>
-    <@> [para]17 | [man.url]-i-17.pdf | [man-i.h] [para]17 </@>
-    <@> [para]18 | [man.url]-i-18.pdf | [man-i.h] [para]18 </@>
-    <@> [para]19 | [man.url]-i-19.pdf | [man-i.h] [para]19 </@>
-    <@> [para]20 | [man.url]-i-20.pdf | [man-i.h] [para]20 </@>
-    <@> [para]21 | [man.url]-i-21.pdf | [man-i.h] [para]21 </@>
-    <@> [para]22 | [man.url]-i-22.pdf | [man-i.h] [para]22 </@>
-    <@> [para]23 | [man.url]-i-23.pdf | [man-i.h] [para]23 </@>
-    <@> [para]24 | [man.url]-i-24.pdf | [man-i.h] [para]24 </@>
+    <@> \P1 | [man.url]-i-1.pdf | [man-i.h] \P1 </@>
+    <@> \P2 | [man.url]-i-2.pdf | [man-i.h] \P2 </@>
+    <@> \P3 | [man.url]-i-3.pdf | [man-i.h] \P3 </@>
+    <@> \P4 | [man.url]-i-4.pdf | [man-i.h] \P4 </@>
+    <@> \P5 | [man.url]-i-5.pdf | [man-i.h] \P5 </@>
+    <@> \P6 | [man.url]-i-6.pdf | [man-i.h] \P6 </@>
+    <@> \P7 | [man.url]-i-7.pdf | [man-i.h] \P7 </@>
+    <@> \P8 | [man.url]-i-8.pdf | [man-i.h] \P8 </@>
+    <@> \P9 | [man.url]-i-9.pdf | [man-i.h] \P9 </@>
+    <@> \P10 | [man.url]-i-10.pdf | [man-i.h] \P10 </@>
+    <@> \P11 | [man.url]-i-11.pdf | [man-i.h] \P11 </@>
+    <@> \P12 | [man.url]-i-12.pdf | [man-i.h] \P12 </@>
+    <@> \P13 | [man.url]-i-13.pdf | [man-i.h] \P13 </@>
+    <@> \P14 | [man.url]-i-14.pdf | [man-i.h] \P14 </@>
+    <@> \P15 | [man.url]-i-15.pdf | [man-i.h] \P15 </@>
+    <@> \P16 | [man.url]-i-16.pdf | [man-i.h] \P16 </@>
+    <@> \P17 | [man.url]-i-17.pdf | [man-i.h] \P17 </@>
+    <@> \P18 | [man.url]-i-18.pdf | [man-i.h] \P18 </@>
+    <@> \P19 | [man.url]-i-19.pdf | [man-i.h] \P19 </@>
+    <@> \P20 | [man.url]-i-20.pdf | [man-i.h] \P20 </@>
+    <@> \P21 | [man.url]-i-21.pdf | [man-i.h] \P21 </@>
+    <@> \P22 | [man.url]-i-22.pdf | [man-i.h] \P22 </@>
+    <@> \P23 | [man.url]-i-23.pdf | [man-i.h] \P23 </@>
+    <@> \P24 | [man.url]-i-24.pdf | [man-i.h] \P24 </@>
   </li>
   
   <li>
     <b>[vol-ii]:</b>
-    <@> [para]1 | [man.url]-ii-1.pdf | [man-ii.h] [para]1 </@>
-    <@> [para]2 | [man.url]-ii-2.pdf | [man-ii.h] [para]2 </@>
-    <@> [para]3 | [man.url]-ii-3.pdf | [man-ii.h] [para]3 </@>
-    <@> [para]4 | [man.url]-ii-4.pdf | [man-ii.h] [para]4 </@>
-    <@> [para]5 | [man.url]-ii-5.pdf | [man-ii.h] [para]5 </@>
-    <@> [para]6 | [man.url]-ii-6.pdf | [man-ii.h] [para]6 </@>
-    <@> [para]7 | [man.url]-ii-7.pdf | [man-ii.h] [para]7 </@>
-    <@> [para]8 | [man.url]-ii-8.pdf | [man-ii.h] [para]8 </@>
-    <@> [para]9 | [man.url]-ii-9.pdf | [man-ii.h] [para]9 </@>
-    <@> [para]10 | [man.url]-ii-10.pdf | [man-ii.h] [para]10 </@>
-    <@> [para]11 | [man.url]-ii-11.pdf | [man-ii.h] [para]11 </@>
-    <@> [para]12 | [man.url]-ii-12.pdf | [man-ii.h] [para]12 </@>
-    <@> [para]13 | [man.url]-ii-13.pdf | [man-ii.h] [para]13 </@>
-    <@> [para]14 | [man.url]-ii-14.pdf | [man-ii.h] [para]14 </@>
-    <@> [para]15 | [man.url]-ii-15.pdf | [man-ii.h] [para]15 </@>
-    <@> [para]16 | [man.url]-ii-16.pdf | [man-ii.h] [para]16 </@>
-    <@> [para]17 | [man.url]-ii-17.pdf | [man-ii.h] [para]17 </@>
-    <@> [para]18 | [man.url]-ii-18.pdf | [man-ii.h] [para]18 </@>
-    <@> [para]19 | [man.url]-ii-19.pdf | [man-ii.h] [para]19 </@>
-    <@> [para]20 | [man.url]-ii-20.pdf | [man-ii.h] [para]20 </@>
-    <@> [para]21 | [man.url]-ii-21.pdf | [man-ii.h] [para]21 </@>
-    <@> [para]22 | [man.url]-ii-22.pdf | [man-ii.h] [para]22 </@>
-    <@> [para]23 | [man.url]-ii-23.pdf | [man-ii.h] [para]23 </@>
-    <@> [para]24 | [man.url]-ii-24.pdf | [man-ii.h] [para]24 </@>
-    <@> [para]25 | [man.url]-ii-25.pdf | [man-ii.h] [para]25 </@>
-    <@> [para]26 | [man.url]-ii-26.pdf | [man-ii.h] [para]26 </@>
-    <@> [para]27 | [man.url]-ii-27.pdf | [man-ii.h] [para]27 </@>
-    <@> [para]28 | [man.url]-ii-28.pdf | [man-ii.h] [para]28 </@>
+    <@> \P1 | [man.url]-ii-1.pdf | [man-ii.h] \P1 </@>
+    <@> \P2 | [man.url]-ii-2.pdf | [man-ii.h] \P2 </@>
+    <@> \P3 | [man.url]-ii-3.pdf | [man-ii.h] \P3 </@>
+    <@> \P4 | [man.url]-ii-4.pdf | [man-ii.h] \P4 </@>
+    <@> \P5 | [man.url]-ii-5.pdf | [man-ii.h] \P5 </@>
+    <@> \P6 | [man.url]-ii-6.pdf | [man-ii.h] \P6 </@>
+    <@> \P7 | [man.url]-ii-7.pdf | [man-ii.h] \P7 </@>
+    <@> \P8 | [man.url]-ii-8.pdf | [man-ii.h] \P8 </@>
+    <@> \P9 | [man.url]-ii-9.pdf | [man-ii.h] \P9 </@>
+    <@> \P10 | [man.url]-ii-10.pdf | [man-ii.h] \P10 </@>
+    <@> \P11 | [man.url]-ii-11.pdf | [man-ii.h] \P11 </@>
+    <@> \P12 | [man.url]-ii-12.pdf | [man-ii.h] \P12 </@>
+    <@> \P13 | [man.url]-ii-13.pdf | [man-ii.h] \P13 </@>
+    <@> \P14 | [man.url]-ii-14.pdf | [man-ii.h] \P14 </@>
+    <@> \P15 | [man.url]-ii-15.pdf | [man-ii.h] \P15 </@>
+    <@> \P16 | [man.url]-ii-16.pdf | [man-ii.h] \P16 </@>
+    <@> \P17 | [man.url]-ii-17.pdf | [man-ii.h] \P17 </@>
+    <@> \P18 | [man.url]-ii-18.pdf | [man-ii.h] \P18 </@>
+    <@> \P19 | [man.url]-ii-19.pdf | [man-ii.h] \P19 </@>
+    <@> \P20 | [man.url]-ii-20.pdf | [man-ii.h] \P20 </@>
+    <@> \P21 | [man.url]-ii-21.pdf | [man-ii.h] \P21 </@>
+    <@> \P22 | [man.url]-ii-22.pdf | [man-ii.h] \P22 </@>
+    <@> \P23 | [man.url]-ii-23.pdf | [man-ii.h] \P23 </@>
+    <@> \P24 | [man.url]-ii-24.pdf | [man-ii.h] \P24 </@>
+    <@> \P25 | [man.url]-ii-25.pdf | [man-ii.h] \P25 </@>
+    <@> \P26 | [man.url]-ii-26.pdf | [man-ii.h] \P26 </@>
+    <@> \P27 | [man.url]-ii-27.pdf | [man-ii.h] \P27 </@>
+    <@> \P28 | [man.url]-ii-28.pdf | [man-ii.h] \P28 </@>
   </li>
   
   <li>
     <b>[vol-iii]:</b>
-    <@> [para]1 | [man.url]-iii-1.pdf | [man-iii.h] [para]1 </@>
-    <@> [para]2 | [man.url]-iii-2.pdf | [man-iii.h] [para]2 </@>
-    <@> [para]3 | [man.url]-iii-3.pdf | [man-iii.h] [para]3 </@>
-    <@> [para]4 | [man.url]-iii-4.pdf | [man-iii.h] [para]4 </@>
-    <@> [para]5 | [man.url]-iii-5.pdf | [man-iii.h] [para]5 </@>
-    <@> [para]6 | [man.url]-iii-6.pdf | [man-iii.h] [para]6 </@>
-    <@> [para]7 | [man.url]-iii-7.pdf | [man-iii.h] [para]7 </@>
-    <@> [para]8 | [man.url]-iii-8.pdf | [man-iii.h] [para]8 </@>
-    <@> [para]9 | [man.url]-iii-9.pdf | [man-iii.h] [para]9 </@>
-    <@> [para]10 | [man.url]-iii-10.pdf | [man-iii.h] [para]10 </@>
-    <@> [para]11 | [man.url]-iii-11.pdf | [man-iii.h] [para]11 </@>
-    <@> [para]12 | [man.url]-iii-12.pdf | [man-iii.h] [para]12 </@>
-    <@> [para]13 | [man.url]-iii-13.pdf | [man-iii.h] [para]13 </@>
-    <@> [para]14 | [man.url]-iii-14.pdf | [man-iii.h] [para]14 </@>
-    <@> [para]15 | [man.url]-iii-15.pdf | [man-iii.h] [para]15 </@>
-    <@> [para]16 | [man.url]-iii-16.pdf | [man-iii.h] [para]16 </@>
-    <@> [para]17 | [man.url]-iii-17.pdf | [man-iii.h] [para]17 </@>
-    <@> [para]18 | [man.url]-iii-18.pdf | [man-iii.h] [para]18 </@>
-    <@> [para]19 | [man.url]-iii-19.pdf | [man-iii.h] [para]19 </@>
-    <@> [para]20 | [man.url]-iii-20.pdf | [man-iii.h] [para]20 </@>
-    <@> [para]21 | [man.url]-iii-21.pdf | [man-iii.h] [para]21 </@>
-    <@> [para]22 | [man.url]-iii-22.pdf | [man-iii.h] [para]22 </@>
-    <@> [para]23 | [man.url]-iii-23.pdf | [man-iii.h] [para]23 </@>
-    <@> [para]24 | [man.url]-iii-24.pdf | [man-iii.h] [para]24 </@>
-    <@> [para]25 | [man.url]-iii-25.pdf | [man-iii.h] [para]25 </@>
-    <@> [para]26 | [man.url]-iii-26.pdf | [man-iii.h] [para]26 </@>
-    <@> [para]27 | [man.url]-iii-27.pdf | [man-iii.h] [para]27 </@>
-    <@> [para]28 | [man.url]-iii-28.pdf | [man-iii.h] [para]28 </@>
-    <@> [para]29 | [man.url]-iii-29.pdf | [man-iii.h] [para]29 </@>
-    <@> [para]30 | [man.url]-iii-30.pdf | [man-iii.h] [para]30 </@>
-    <@> [para]31 | [man.url]-iii-31.pdf | [man-iii.h] [para]31 </@>
-    <@> [para]32 | [man.url]-iii-32.pdf | [man-iii.h] [para]32 </@>
-    <@> [para]33 | [man.url]-iii-33.pdf | [man-iii.h] [para]33 </@>
-    <@> [para]34 | [man.url]-iii-34.pdf | [man-iii.h] [para]34 </@>
-    <@> [para]35 | [man.url]-iii-35.pdf | [man-iii.h] [para]35 </@>
-    <@> [para]36 | [man.url]-iii-36.pdf | [man-iii.h] [para]36 </@>
+    <@> \P1 | [man.url]-iii-1.pdf | [man-iii.h] \P1 </@>
+    <@> \P2 | [man.url]-iii-2.pdf | [man-iii.h] \P2 </@>
+    <@> \P3 | [man.url]-iii-3.pdf | [man-iii.h] \P3 </@>
+    <@> \P4 | [man.url]-iii-4.pdf | [man-iii.h] \P4 </@>
+    <@> \P5 | [man.url]-iii-5.pdf | [man-iii.h] \P5 </@>
+    <@> \P6 | [man.url]-iii-6.pdf | [man-iii.h] \P6 </@>
+    <@> \P7 | [man.url]-iii-7.pdf | [man-iii.h] \P7 </@>
+    <@> \P8 | [man.url]-iii-8.pdf | [man-iii.h] \P8 </@>
+    <@> \P9 | [man.url]-iii-9.pdf | [man-iii.h] \P9 </@>
+    <@> \P10 | [man.url]-iii-10.pdf | [man-iii.h] \P10 </@>
+    <@> \P11 | [man.url]-iii-11.pdf | [man-iii.h] \P11 </@>
+    <@> \P12 | [man.url]-iii-12.pdf | [man-iii.h] \P12 </@>
+    <@> \P13 | [man.url]-iii-13.pdf | [man-iii.h] \P13 </@>
+    <@> \P14 | [man.url]-iii-14.pdf | [man-iii.h] \P14 </@>
+    <@> \P15 | [man.url]-iii-15.pdf | [man-iii.h] \P15 </@>
+    <@> \P16 | [man.url]-iii-16.pdf | [man-iii.h] \P16 </@>
+    <@> \P17 | [man.url]-iii-17.pdf | [man-iii.h] \P17 </@>
+    <@> \P18 | [man.url]-iii-18.pdf | [man-iii.h] \P18 </@>
+    <@> \P19 | [man.url]-iii-19.pdf | [man-iii.h] \P19 </@>
+    <@> \P20 | [man.url]-iii-20.pdf | [man-iii.h] \P20 </@>
+    <@> \P21 | [man.url]-iii-21.pdf | [man-iii.h] \P21 </@>
+    <@> \P22 | [man.url]-iii-22.pdf | [man-iii.h] \P22 </@>
+    <@> \P23 | [man.url]-iii-23.pdf | [man-iii.h] \P23 </@>
+    <@> \P24 | [man.url]-iii-24.pdf | [man-iii.h] \P24 </@>
+    <@> \P25 | [man.url]-iii-25.pdf | [man-iii.h] \P25 </@>
+    <@> \P26 | [man.url]-iii-26.pdf | [man-iii.h] \P26 </@>
+    <@> \P27 | [man.url]-iii-27.pdf | [man-iii.h] \P27 </@>
+    <@> \P28 | [man.url]-iii-28.pdf | [man-iii.h] \P28 </@>
+    <@> \P29 | [man.url]-iii-29.pdf | [man-iii.h] \P29 </@>
+    <@> \P30 | [man.url]-iii-30.pdf | [man-iii.h] \P30 </@>
+    <@> \P31 | [man.url]-iii-31.pdf | [man-iii.h] \P31 </@>
+    <@> \P32 | [man.url]-iii-32.pdf | [man-iii.h] \P32 </@>
+    <@> \P33 | [man.url]-iii-33.pdf | [man-iii.h] \P33 </@>
+    <@> \P34 | [man.url]-iii-34.pdf | [man-iii.h] \P34 </@>
+    <@> \P35 | [man.url]-iii-35.pdf | [man-iii.h] \P35 </@>
+    <@> \P36 | [man.url]-iii-36.pdf | [man-iii.h] \P36 </@>
   </li>
   
 </ul>

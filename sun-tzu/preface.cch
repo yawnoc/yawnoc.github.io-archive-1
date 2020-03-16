@@ -20,8 +20,6 @@
   Also known as {Sunzi Suanjing}: [pref].
 </*p>
 
-<% [para] | ¶ %>
-
 <@2> Volume navigation | volumes </@2>
 
 
@@ -411,7 +409,7 @@
   <li>[尺丈]：
     {the} rule {and the} rod <br>
     Units of length, see
-    <@> Vol.~I~[para]1 | /sun-tzu/i.html#1 | Vol. I [para]1 </@>.
+    <@> Vol.~I~\P1 | /sun-tzu/i.html#1 | Vol. I \P1 </@>.
     One [尺] or rule is of the order one foot,
     and one [丈] or rod is equal to ten rules.
   </li>
@@ -433,14 +431,14 @@
   <li>[毫釐]：
     mils {and} cents <br>
     Small units of length
-    (see <@> Vol.~I~[para]1 | /sun-tzu/i.html#1 | Vol. I [para]1 </@>),
+    (see <@> Vol.~I~\P1 | /sun-tzu/i.html#1 | Vol. I \P1 </@>),
     respectively a thousandth <_>1/1000</_> and a hundredth <_>1/100</_>
     of the Chinese inch, [寸].
   </li>
   <li>[黍絫]：
     millets {and} piles <br>
     Small units of weight,
-    (see <@> Vol.~I~[para]2 | /sun-tzu/i.html#2 | Vol. I [para]2 </@>),
+    (see <@> Vol.~I~\P2 | /sun-tzu/i.html#2 | Vol. I \P2 </@>),
     respectively a hundredth <_>1/100</_> and a tenth <_>1/10</_>
     of the Chinese dram, [銖],
     which is of the order one gram.

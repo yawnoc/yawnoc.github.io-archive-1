@@ -185,74 +185,74 @@
     <th class="heading">About</th>
   </tr>
   <tr>
-    [__<@> ¶1 | #1 | Vol. II ¶1 </@>__]
+    [__<@> \P1 | #1 | Vol. II \P1 </@>__]
     [==Reducing fractions==]
   </tr>
   <tr>
-    [__<@> ¶2 | #2 | Vol. II ¶2 </@>__]
+    [__<@> \P2 | #2 | Vol. II \P2 </@>__]
     [==Adding fractions==]
   </tr>
   <tr>
-    [__<@> ¶3 | #3 | Vol. II ¶3 </@>__]
+    [__<@> \P3 | #3 | Vol. II \P3 </@>__]
     [==Subtracting fractions==]
   </tr>
   <tr>
-    [__<@> ¶4 | #4 | Vol. II ¶4 </@>__]
+    [__<@> \P4 | #4 | Vol. II \P4 </@>__]
     [==Redistributing fractions for equality==]
   </tr>
   <tr>
     [__
-      <@> ¶5 | #5 | Vol. II ¶5 </@>
-      <@> ¶6 | #6 | Vol. II ¶6 </@>
-      <@> ¶7 | #7 | Vol. II ¶7 </@>
-      <@> ¶8 | #8 | Vol. II ¶8 </@>
+      <@> \P5 | #5 | Vol. II \P5 </@>
+      <@> \P6 | #6 | Vol. II \P6 </@>
+      <@> \P7 | #7 | Vol. II \P7 </@>
+      <@> \P8 | #8 | Vol. II \P8 </@>
     __]
     [==Volume conversions for grain==]
   </tr>
   <tr>
-    [__<@> ¶9 | #9 | Vol. II ¶9 </@>__]
+    [__<@> \P9 | #9 | Vol. II \P9 </@>__]
     [==Area of a rectangle==]
   </tr>
   <tr>
-    [__<@> ¶10 | #10 | Vol. II ¶10 </@>__]
+    [__<@> \P10 | #10 | Vol. II \P10 </@>__]
     [==Volume of a cylinder==]
   </tr>
   <tr>
-    [__<@> ¶11 | #11 | Vol. II ¶11 </@>__]
+    [__<@> \P11 | #11 | Vol. II \P11 </@>__]
     [==Volume of a rectangular prism==]
   </tr>
   <tr>
-    [__<@> ¶12 | #12 | Vol. II ¶12 </@>__]
+    [__<@> \P12 | #12 | Vol. II \P12 </@>__]
     [==Volume of a cylinder==]
   </tr>
   <tr>
-    [__<@> ¶13 | #13 | Vol. II ¶13 </@>__]
+    [__<@> \P13 | #13 | Vol. II \P13 </@>__]
     [==Area of a circle==]
   </tr>
   <tr>
-    [__<@> ¶14 | #14 | Vol. II ¶14 </@>__]
+    [__<@> \P14 | #14 | Vol. II \P14 </@>__]
     [==Area of a square of a given circumradius==]
   </tr>
   <tr>
-    [__<@> ¶15 | #15 | Vol. II ¶15 </@>__]
+    [__<@> \P15 | #15 | Vol. II \P15 </@>__]
     [==Dividing a cube into smaller cubes==]
   </tr>
   <tr>
-    [__<@> ¶16 | #16 | Vol. II ¶16 </@>__]
+    [__<@> \P16 | #16 | Vol. II \P16 </@>__]
     [==Side length of a square of a given perimeter==]
   </tr>
   <tr>
-    [__<@> ¶17 | #17 | Vol. II ¶17 </@>__]
+    [__<@> \P17 | #17 | Vol. II \P17 </@>__]
     [==Volume of a trapezoidal prism==]
   </tr>
   <tr>
-    [__<@> ¶18 | #18 | Vol. II ¶18 </@>__]
+    [__<@> \P18 | #18 | Vol. II \P18 </@>__]
     [==Volume of a rectangular prism==]
   </tr>
   <tr>
     [__
-      <@> ¶19 | #19 | Vol. II ¶19 </@>
-      <@> ¶20 | #20 | Vol. II ¶20 </@>
+      <@> \P19 | #19 | Vol. II \P19 </@>
+      <@> \P20 | #20 | Vol. II \P20 </@>
     __]
     [==Rod calculus: square root algorithm==]
   </tr>
@@ -450,7 +450,7 @@
   <li><$>b</$> 分之 <$>a</$>:
     \lit <$>a</$> of <$>b</$> shares <br>
     I have rendered fractions literally from here up to and including
-    <@> ¶4 | #4 | Vol. II ¶4 </@>, as there will be references to
+    <@> \P4 | #4 | Vol. II \P4 </@>, as there will be references to
     the numerator 「之 <$>a</$>」, "<$>a</$> of" and
     the denominator 「<$>b</$> 分」, "<$>b</$> shares"
     to follow.
@@ -682,7 +682,7 @@
     equal quantity <br>
     Greatest common divisor (gcd) is called an "equal quantity"
     because it is determined by repeated subtraction until an equal quantity
-    is obtained, see <@> ¶1 | #1 | Vol. II ¶1 </@>.
+    is obtained, see <@> \P1 | #1 | Vol. II \P1 </@>.
   </li>
 </ul>
 
@@ -771,7 +771,7 @@
       | https://ctext.org/library.pl?if=en&file=77747&page=54
     </@>
     version).
-    The portion thereof which is relevant to this paragraph~(¶5) through~¶8:
+    The portion thereof which is relevant to this paragraph~(\P5) through~\P8:
     <#t>
       粟米之法：\
       粟率五十；\
@@ -895,7 +895,7 @@
   <li>不盡，以等數約之：
     {for the} remainder, reduce it by {the} equal quantity <br>
     The division 540~÷~25 leaves remainder 15/25.
-    Their "equal quantity" (see <@> ¶1 | #1 | Vol. II ¶1 </@>)
+    Their "equal quantity" (see <@> \P1 | #1 | Vol. II \P1 </@>)
     is <$>\gcd (15, 25) = 5</$>, by which the fraction is reduced to~3/5.
   </li>
 </ul>
@@ -1136,7 +1136,7 @@
 
 <p>
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
-  <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I \P5 | /sun-tzu/i.html#5 | Vol. I \P5 </@>.
 </p>
 
 <;sh> 2 | 11 | Volume of a rectangular prism </;sh>
@@ -1288,7 +1288,7 @@
 </$$>
 <p>
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
-  <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I \P5 | /sun-tzu/i.html#5 | Vol. I \P5 </@>.
 </p>
 
 <;sh> 2 | 13 | Area of a circle </;sh>
@@ -1304,7 +1304,7 @@
 </#t>
 <p>
   Here <$>\pi \approx 3</$>, see
-  <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I \P5 | /sun-tzu/i.html#5 | Vol. I \P5 </@>.
 </p>
 
 <#t>
@@ -1476,7 +1476,7 @@
 </$$>
 <p>
   Here <$>\sqrt{2} \approx 7/5</$>, see
-  <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | Vol. I ¶5 </@>.
+  <@> Vol.~I \P5 | /sun-tzu/i.html#5 | Vol. I \P5 </@>.
 </p>
 
 
@@ -3211,7 +3211,7 @@
 <p>
   In modern notation
   (but taking <$>\pi \approx 3</$> i.e. <$>4\pi \approx 12</$>
-  as per <@> Vol.~I ¶5 | /sun-tzu/i.html#5 | </@>),
+  as per <@> Vol.~I \P5 | /sun-tzu/i.html#5 | </@>),
   the circumference of a circle of area <$>A = 35000 \unit{paces}^2</$> is
 </p>
 <$$>
@@ -3224,7 +3224,7 @@
   The balance of this paragraph involves extracting the square root of~420000.
   For a fully annotated and diagrammed walkthrough of
   [sun-tzu]'s square root algorithm,
-  see the previous <@> ¶19 | /sun-tzu/ii.html#19 | Vol.~II ¶19 </@>
+  see the previous <@> \P19 | /sun-tzu/ii.html#19 | Vol.~II \P19 </@>
   and the
   <@>
     pseudocode summary
