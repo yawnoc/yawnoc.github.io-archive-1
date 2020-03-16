@@ -187,13 +187,13 @@
 # Whitespace (for lighter HTML)
 ################################################################
 # Unnecessary whitespace is removed:
-# 1. Preformatted elements are de-indented
-#    (but not affected by the subsequent removals)
+# 1. Preformatted elements are de-indented & backslash-line-continued
+#    (but not affected by the other removals)
 # 2. Horizontal whitespace around line break elements is removed
 # 3. Leading whitespace is removed
 # 4. Empty lines are removed
 # 5. Trailing whitespace is removed
-# 6. Newlines immediately following a backslash are removed
+# 6. Backslashed newlines are removed
 #    (i.e. backslash is the line continuation character)
 # 7. Newlines immediately preceding line break elements are removed
 ################################################################
@@ -3435,7 +3435,7 @@ def remove_conway_italics(string):
 #   \1  {content}
 
 # Processed string:
-#   <pre> {de-indented content} </pre>
+#   <pre> {de-indented, backslash-line-continued content} </pre>
 
 # ----------------------------------------------------------------
 # Single
@@ -3445,6 +3445,7 @@ def replace_preformatted(match_object):
   
   content = match_object.group(1)
   content = de_indent(content)
+  content = remove_backslashed_newlines(content)
   
   processed_string = f'<pre>{content}</pre>'
   
@@ -3459,12 +3460,27 @@ def replace_all_preformatted(string):
   return re.sub(r'<pre>([\s\S]*?)</pre>', replace_preformatted, string)
 
 ################################################################
+# Remove backslashed newlines
+################################################################
+
+# Treats backslash as the line continuation character.
+
+def remove_backslashed_newlines(string):
+  
+  string = replace_all_conway_literal_backslashes(string)
+  
+  string = re.sub(r'\\\n', '', string)
+  
+  return string
+
+################################################################
 # Remove unnecessary whitespace
 ################################################################
 
 def remove_unnecessary_whitespace(string):
   
-  # De-indent preformatted elements (and temporarily replace them
+  # De-indent & backslash-line-continue (i.e. remove backslashed newlines from)
+  # preformatted elements (and temporarily replace them
   # so that subsequent whitespace removal does not affect them)
   string = replace_all_preformatted(string)
   
@@ -3477,9 +3493,9 @@ def remove_unnecessary_whitespace(string):
   # Remove trailing whitespace
   string = re.sub(r'[\s]+$', '', string, flags = re.MULTILINE)
   
-  # Remove newlines immediately following a backslash
+  # Remove backslashed newlines
   # (i.e. backslash is the line continuation character)
-  string = re.sub(r'\\\n', '', string)
+  string = remove_backslashed_newlines(string)
   
   # Remove newlines immediately preceding line break elements
   string = re.sub(r'\n<br>', '<br>', string)
