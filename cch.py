@@ -125,6 +125,7 @@
 #   &lt;            \<              (HTML-escaped less than)
 #   &gt;            \>              (HTML-escaped greater than)
 #   LORD            \LORD           (Lord in small caps)
+#   {U+00B6}        \P              (¶ U+00B6 PILCROW SIGN)
 #   &numsp;         \_              (figure space for use in numerical tables)
 #   &thinsp;        \,              (thin space)
 #   {master URL}    \/              (GitHub: yawnoc.github.io master root)
@@ -3253,6 +3254,9 @@ def unescape_conway(string):
   
   # Unescape \LORD as Lord in small caps;
   string = re.sub(r'\\LORD', '<span class="small-caps">Lord</span>', string)
+  
+  # Unescape \P as ¶ U+00B6 PILCROW SIGN
+  string = re.sub(r'\\P', '¶', string)
   
   # Unescape \_ as &numsp;
   string = re.sub(r'\\_', '&numsp;', string)

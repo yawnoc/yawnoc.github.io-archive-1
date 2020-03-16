@@ -1918,6 +1918,13 @@
   </tr>
   
   <tr>
+    <td><`>\P</`></td>
+    <td><`>¶</`></td>
+    <td>\P</td>
+    <td><`>¶ U+00B6 PILCROW SIGN</`></td>
+  </tr>
+  
+  <tr>
     <td><`>\_</`></td>
     <td><`>&numsp;</`></td>
     <td>\_</td>
