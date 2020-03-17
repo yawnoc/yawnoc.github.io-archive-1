@@ -142,9 +142,9 @@
   <text [mathit] x="0" y="-8" [font-size-diagram] dy="-0.5em">y</text>
   
   <!-- trajectory
-    See svg_points_trajectory.m
+    See svg_points_trajectory_script.m
     https://github.com/yawnoc/projectile-motion-numerics/
-      blob/master/svg_points_trajectory.m
+      blob/master/svg_points_trajectory_script.m
     -->
   <polyline points="\
     0,-0
@@ -231,7 +231,7 @@
     9.86,-0.615
     9.92,-0.357
     9.98,-0.0964
-    10,-1.12e-015
+    10,-3.29e-16
   "/>
   
   <!-- launch angle phi -->
@@ -856,9 +856,9 @@
   with those from the asymptotic <@> result above | #result | Result </@>:
 </p>
 <!--
-  See table_b_phi.m
+  See table_b_phi_script.m
   https://github.com/yawnoc/projectile-motion-numerics/
-    blob/master/table_b_phi.m
+    blob/master/table_b_phi_script.m
   -->
 <!c><table>
   <tr>
@@ -1129,9 +1129,9 @@
     [ticks-fine-vertical]/>
   
   <!-- numerical
-    See svg_points_b_phi.m
+    See svg_points_b_phi_script.m
     https://github.com/yawnoc/projectile-motion-numerics/
-      blob/master/svg_points_b_phi.m
+      blob/master/svg_points_b_phi_script.m
     -->
   <polyline points="0,-45
   0.4,-44.43
@@ -1188,9 +1188,9 @@
   <text x="10" y="-37.98" [font-size-plot]
     dx="2.5em" dy="-0.5em">Numerical</text>
   <!-- asymptotic
-    See svg_points_b_phi_asymptotic.m
+    See svg_points_b_phi_asymptotic_script.m
     https://github.com/yawnoc/projectile-motion-numerics/
-      blob/master/svg_points_b_phi_asymptotic.m
+      blob/master/svg_points_b_phi_asymptotic_script.m
     -->
   <polyline points="0,-45
   0.2,-44.71
@@ -1311,9 +1311,9 @@
     [ticks-fine-vertical]/>
   
   <!-- numerical
-    See svg_points_u_phi.m
+    See svg_points_u_phi_script.m
     https://github.com/yawnoc/projectile-motion-numerics/
-      blob/master/svg_points_u_phi.m
+      blob/master/svg_points_u_phi_script.m
     -->
   <polyline points="0,-45
   0.5,-44.94
