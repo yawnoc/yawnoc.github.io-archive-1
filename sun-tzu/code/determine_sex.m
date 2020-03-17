@@ -30,7 +30,16 @@ function male = determine_sex (years, months)
     return
   endif
   
-  # 所餘，以天除一，地除二，人除三，四時除四，五行除五，六律除六，七星除七，八風除八，九州除九。
+  # 所餘，以
+  #   天除一，
+  #   地除二，
+  #   人除三，
+  #   四時除四，
+  #   五行除五，
+  #   六律除六，
+  #   七星除七，
+  #   八風除八，
+  #   九州除九。
   # {Of} that which remaineth,
   # {for} Heaven remove one,
   # {for} Earth remove two,
