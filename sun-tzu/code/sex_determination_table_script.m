@@ -14,4 +14,4 @@ for n = 1 : num_years
   table(1 + n, 2 : end) = arrayfun (@(m) determine_sex(y, m), months);
 endfor
 
-csvwrite ("determine_sex_table.csv", table)
+csvwrite ("sex_determination_table.csv", table)
