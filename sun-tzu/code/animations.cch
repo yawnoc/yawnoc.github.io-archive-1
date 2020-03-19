@@ -1,6 +1,6 @@
 <*>
-  Mathematica: <^e>Sun~Tzuu</^e> multiplication \& division animations
-  | 20190526 | 20191219 | m
+  Mathematica: [sun-tzu] multiplication \& division animations
+  | 20190526 | 20200320 | m
   | Mathematica code generating animations for the \
     Sunzi Suanjing multiplication \& division algorithms.
 </*>
@@ -12,20 +12,31 @@
   <@i> Division | #division | Division </@i>
 </=h>
 
+<% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
+
 <h1>
   Mathematica:
-  <^e>Sun~Tzuu</^e> multiplication \& division animations
+  [sun-tzu] multiplication \& division animations
 </h1>
 
 <*p></*p>
 
 <p>
+  <b>GitHub repository:</b>
+  <@>
+    <`>sun-tzu-arithmetic</`>
+    | \=/sun-tzu-arithmetic
+    | GitHub: [sun-tzu] arithmetic animations
+  </@>
+</p>
+
+<p>
   Mathematica code for the animations in my
   <@>
     translation of
-    "<^e>Sun~Tzuu</^e>'s Computational Classic"
+    "[sun-tzu]'s Computational Classic"
     | /sun-tzu/
-    | "<^e>Sun~Tzuu</^e>'s Computational Classic": 《孫子算經》
+    | "[sun-tzu]'s Computational Classic": 《孫子算經》
   </@>;
   see Vol.~I <@> ¶8 | /sun-tzu/i.html#8 | Vol. I ¶8 </@>
   \&~<@> ¶13 | /sun-tzu/i.html#13 | Vol. I ¶13 </@> (multiplication)
@@ -33,9 +44,35 @@
   \&~<@> ¶14 | /sun-tzu/i.html#14 | Vol. I ¶14 </@> (division).
 </p>
 
+<p>
+  First change to the directory of
+  <@>
+    <`>SunTzu.wl</`>
+    | \=/sun-tzu-arithmetic/blob/master/SunTzu.wl
+    | GitHub: SunTzu.wl
+  </@>,
+  then load the package
+</p>
+<``>
+  << SunTzu`
+</``>
+<p>
+  and run the following:
+</p>
+
 
 <@2> Multiplication | multiplication </@2>
 
+
+<``>
+  {
+    {81, 81},
+    {1989, 64},
+    {1024, 1024},
+    {246, 97531}
+  } /.
+    {x_, y_} :> MultiplyAnimation[x, y, Export -> True]
+</``>
 
 <!cc><table>
   <tr>
@@ -48,197 +85,43 @@
     <td>
       <+>
         /sun-tzu/code/multiply-81-81.gif
-        | <^e>Sun~Tzuu</^e> multiplication: 81 × 81
+        | [sun-tzu] multiplication: 81 × 81
       </+>
     </td>
     <td>
       <+>
         /sun-tzu/code/multiply-1989-64.gif
-        | <^e>Sun~Tzuu</^e> multiplication: 1989 × 64
+        | [sun-tzu] multiplication: 1989 × 64
       </+>
     </td>
     <td>
       <+>
         /sun-tzu/code/multiply-1024-1024.gif
-        | <^e>Sun~Tzuu</^e> multiplication: 1024 × 1024
+        | [sun-tzu] multiplication: 1024 × 1024
       </+>
     </td>
     <td>
       <+>
         /sun-tzu/code/multiply-246-97531.gif
-        | <^e>Sun~Tzuu</^e> multiplication: 246 × 97531
+        | [sun-tzu] multiplication: 246 × 97531
       </+>
     </td>
   </tr>
 </table></!cc>
-<``>
-  suntzumultiply[upper_Integer, lower_Integer] :=
-    Module[
-     {upperdigits, lowerdigits,
-      pmax, qmax,
-      middle,
-      bound,
-      rowfun, gridfun,
-      frames,
-      up, lo, res
-     },
-      (* List of digits *)
-      upperdigits = IntegerDigits[upper];
-      lowerdigits = IntegerDigits[lower];
-      (* Exponent (pmax for upper, qmax for lower) *)
-      pmax = Length[upperdigits] - 1;
-      qmax = Length[lowerdigits] - 1;
-      (* Middle number *)
-      middle = 0;
-      (* Upper bound for number of digits of the product *)
-      bound = pmax + qmax + 2;
-      (* Function for row of grid (with tra trailing spaces) *)
-      rowfun[arg_]                   := rowfun[arg, 0];
-      rowfun[0, tra_]                := rowfun[{}, tra];
-      rowfun[0, tra_, False]         := rowfun[{0}, tra];
-      rowfun[int_Integer, tra_, ___] := rowfun[IntegerDigits[int], tra];
-      rowfun[digits_List, tra_Integer] :=
-        PadLeft[
-          Join[digits, ConstantArray[Null, tra]],
-          bound,
-          Null
-        ];
-      (* Function for grid *)
-      gridfun[rows__List, rules___Rule] :=
-        Grid[
-          List[rows],
-          Background -> {None, None, {rules}},
-          Dividers   -> {False, {2 -> True, -2 -> True}},
-          ItemSize   -> All,
-          ItemStyle  -> Large
-        ];
-      (* Grid rows are:
-         upper,
-         temporary (result of product of digits),
-         middle, and
-         lower.
-       *)
-      (* From most significant to least significant:
-         the upper places are p = pmax, ..., 1, 0;
-         the lower places are q = qmax, ..., 1, 0.
-       *)
-      (* Reap frames for animation *)
-      frames =
-        Last @ Last @ Reap[
-          (* Loop through upper places *)
-          Do[
-            (* Frame (initial) *)
-            Sow @ gridfun[
-              rowfun[upperdigits],
-              rowfun[0],
-              rowfun[middle],
-              rowfun[lowerdigits, p],
-              {{1, 1},
-               {bound - pmax,
-                bound - p - 1
-               }
-              } -> Gray (* finished upper digits *)
-            ];
-            (* Loop through lower places *)
-            Do[
-              (* Frame (highlight digits being multiplied) *)
-              Sow @ gridfun[
-                rowfun[upperdigits],
-                rowfun[0],
-                rowfun[middle],
-                rowfun[lowerdigits, p],
-                {{1, 1},
-                 {bound - pmax,
-                  bound - p - 1
-                 }
-                }                    -> Gray,   (* finished upper digits *)
-                {1, bound - p}       -> Yellow, (* upper digit *)
-                {4, bound - (p + q)} -> Yellow  (* lower digit *)
-              ];
-              (* Multiply upper and lower digit *)
-              up  = upperdigits[[pmax + 1 - p]];
-              lo  = lowerdigits[[qmax + 1 - q]];
-              res = up * lo;
-              (* Frame (also highlight result of digits being multiplied) *)
-              Sow @ gridfun[
-                rowfun[upperdigits],
-                rowfun[res, p + q, False],
-                rowfun[middle],
-                rowfun[lowerdigits, p],
-                {{1, 1},
-                 {bound - pmax,
-                  bound - p - 1
-                 }
-                }                    -> Gray,   (* finished upper digits *)
-                {1, bound - p}       -> Yellow, (* upper digit *)
-                {{2, 2},
-                 {bound - (p + q) - (Length @ IntegerDigits[res] - 1),
-                  bound - (p + q)
-                 }
-                }                    -> Cyan,   (* temporary result *)
-                {4, bound - (p + q)} -> Yellow  (* lower digit *)
-              ];
-              (* Add unto middle number (accounting for place) *)
-              middle += res * 10 ^ (p + q);
-              (* Frame (highlight digits which have been multiplied) *)
-              Sow @ gridfun[
-                rowfun[upperdigits],
-                rowfun[0],
-                rowfun[middle],
-                rowfun[lowerdigits, p],
-                {{1, 1},
-                 {bound - pmax,
-                  bound - p - 1
-                 }
-                }                    -> Gray,   (* finished upper digits *)
-                {1, bound - p}       -> Yellow, (* upper digit *)
-                {4, bound - (p + q)} -> Yellow  (* lower digit *)
-              ];
-            , {q, qmax, 0, -1}];
-          , {p, pmax, 0, -1}];
-          (* Frame (final) *)
-          Sow @ gridfun[
-            rowfun[upperdigits],
-            rowfun[0],
-            rowfun[middle],
-            rowfun[lowerdigits, 0],
-            {{1, 1},
-             {bound - pmax,
-              bound
-             }
-            } -> Gray, (* finished upper digits *)
-            {{3, 3},
-             {bound - (Length @ IntegerDigits[middle] - 1),
-              bound
-             }
-            } -> Green, (* final product *)
-            {{4, 4},
-             {bound - qmax,
-              bound
-             }
-            } -> Gray (* finished lower digits *)
-          ];
-        ];
-      (* Export animation *)
-      Export[
-        "multiply-" <> ToString[upper] <> "-" <> ToString[lower] <> ".gif",
-        frames,
-        "DisplayDurations" -> 2
-      ];
-      (* Return product *)
-      middle
-    ];
-</``>
-<``>
-  suntzumultiply[81, 81]
-  suntzumultiply[1989, 64]
-  suntzumultiply[1024, 1024]
-  suntzumultiply[246, 97531]
-</``>
 
 
 <@2> Division | division </@2>
 
+
+<``>
+  {
+    {100, 6},
+    {1989, 64},
+    {6561, 9},
+    {97531, 4}
+  } /.
+    {x_, y_} :> DivideAnimation[x, y, Export -> True]
+</``>
 
 <!cc><table>
   <tr>
@@ -251,212 +134,28 @@
     <td>
       <+>
         /sun-tzu/code/divide-100-6.gif
-        | <^e>Sun~Tzuu</^e> division: 100 ÷ 6
+        | [sun-tzu] division: 100 ÷ 6
       </+>
     </td>
     <td>
       <+>
         /sun-tzu/code/divide-1989-64.gif
-        | <^e>Sun~Tzuu</^e> division: 1989 ÷ 64
+        | [sun-tzu] division: 1989 ÷ 64
       </+>
     </td>
     <td>
       <+>
         /sun-tzu/code/divide-6561-9.gif
-        | <^e>Sun~Tzuu</^e> division: 6561 ÷ 9
+        | [sun-tzu] division: 6561 ÷ 9
       </+>
     </td>
     <td>
       <+>
         /sun-tzu/code/divide-97531-4.gif
-        | <^e>Sun~Tzuu</^e> division: 97531 ÷ 4
+        | [sun-tzu] division: 97531 ÷ 4
       </+>
     </td>
   </tr>
 </table></!cc>
-<``>
-  suntzudivide[dividend_Integer, divisor_Integer] :=
-    Module[
-     {upper, middle,
-      middledigits, lowerdigits,
-      pmax, qmax,
-      bound,
-      rowfun, gridfun,
-      frames,
-      mi, up, res
-     },
-      (* Upper and middle numbers *)
-      upper  = 0;
-      middle = dividend;
-      (* List of digits *)
-      middledigits = IntegerDigits[dividend];
-      lowerdigits  = IntegerDigits[divisor];
-      (* Exponent (pmax for middle, qmax for divisor) *)
-      pmax = Length[middledigits] - 1;
-      qmax = Length[lowerdigits]  - 1;
-      (* Upper bound for number of digits in the grid *)
-      bound = pmax + qmax + 1;
-      (* Function for row of grid (with tra trailing spaces) *)
-      rowfun[arg_]                   := rowfun[arg, 0];
-      rowfun[0, tra_]                := rowfun[{}, tra];
-      rowfun[0, tra_, False]         := rowfun[{0}, tra];
-      rowfun[int_Integer, tra_, ___] := rowfun[IntegerDigits[int], tra];
-      rowfun[digits_List, tra_Integer] :=
-        PadLeft[
-          Join[digits, ConstantArray[Null, tra]],
-          bound,
-          Null
-        ];
-      (* Function for grid *)
-      gridfun[rows__List, rules___Rule] :=
-        Grid[
-          List[rows],
-          Background -> {None, None, {rules}},
-          Dividers   -> {False, {2 -> True, -2 -> True}},
-          ItemSize   -> All,
-          ItemStyle  -> Large
-        ];
-      (* Grid rows are:
-         upper,
-         temporary (result to be subtracted),
-         middle, and
-         lower.
-       *)
-      (* From most significant to least significant:
-         the middle places are p = pmax, ..., 1, 0.
-       *)
-      (* Reap frames for animation *)
-      frames =
-        Last @ Last @ Reap[
-          (* Loop through middle places *)
-          Do[
-            (* Frame (initial) *)
-            Sow @ gridfun[
-              rowfun[upper / 10 ^ (p + 1), p + 1],
-              rowfun[0],
-              rowfun[middle],
-              rowfun[divisor, p],
-              {{4, 4},
-               {bound - (p + qmax),
-                bound - p
-               }
-              } -> Yellow (* divisor *)
-            ];
-            (* Determine upper digit and update upper number *)
-            mi = Quotient[middle, 10 ^ p];
-            up = Quotient[mi, divisor];
-            upper += up * 10 ^ p;
-            (* Frame (highlight those being multiplied) *)
-            Sow @ gridfun[
-              rowfun[upper / 10 ^ p, p, False],
-              rowfun[0],
-              rowfun[middle],
-              rowfun[divisor, p],
-              {1, bound - p} -> Yellow, (* upper digit *)
-              {{4, 4},
-               {bound - (p + qmax),
-                bound - p
-               }
-              }              -> Yellow (* divisor *)
-            ];
-            (* Multiply upper digit and divisor *)
-            res = up * divisor;
-            (* Frame (also highlight result of multiplication) *)
-            Sow @ gridfun[
-              rowfun[upper / 10 ^ p, p, False],
-              rowfun[res, p, False],
-              rowfun[middle],
-              rowfun[divisor, p],
-              {1, bound - p} -> Yellow, (* upper digit *)
-              {{2, 2},
-               {bound - p - (Length @ IntegerDigits[res] - 1),
-                bound - p
-               }
-              }              -> Cyan, (* temporary result *)
-              {{4, 4},
-               {bound - (p + qmax),
-                bound - p
-               }
-              }              -> Yellow (* divisor *)
-            ];
-            (* Subtract from middle number (accounting for place) *)
-            middle -= res * 10 ^ p;
-            (* Frame (highlight those which have been multiplied) *)
-            Sow @ gridfun[
-              rowfun[upper / 10 ^ p, p, False],
-              rowfun[0],
-              rowfun[middle],
-              rowfun[divisor, p],
-              {1, bound - p} -> Yellow, (* upper digit *)
-              {{4, 4},
-               {bound - (p + qmax),
-                bound - p
-               }
-              }              -> Yellow (* divisor *)
-            ];
-          , {p, pmax, 0, -1}];
-          (* Frame (final) *)
-          If[
-            middle == 0,
-            (* if remainder is zero: *)
-            Sow @ gridfun[
-              rowfun[upper],
-              rowfun[0],
-              rowfun[0],
-              rowfun[divisor],
-              {{1, 1},
-               {bound - (Length @ IntegerDigits[upper] - 1),
-                bound}
-              }                               -> Green, (* final quotient *)
-              {{4, 4}, {bound - qmax, bound}} -> Gray   (* finished divisor *)
-            ];
-            ,
-            (* otherwise: *)
-            Sow @ gridfun[
-              rowfun[upper],
-              rowfun[0],
-              rowfun[middle],
-              rowfun[divisor],
-              {{1, 1},
-               {bound - (Length @ IntegerDigits[upper] - 1),
-                bound}
-              }                               -> Green, (* final quotient *)
-              {{3, 3},
-               {bound - (Length @ IntegerDigits[middle] - 1),
-                bound}
-              }                               -> Pink, (* final remainder *)
-              {{4, 4}, {bound - qmax, bound}} -> Pink  (* divisor *)
-            ]
-          ]
-        ];
-      (* Export animation *)
-      Export[
-        "divide-" <> ToString[dividend] <> "-" <> ToString[divisor] <> ".gif",
-        frames,
-        "DisplayDurations" -> 2
-      ];
-      (* Return result of division *)
-      If[
-        middle == 0,
-        (* if remainder is zero: *)
-        upper,
-        (* otherwise: *)
-        Inactive[Plus][upper, Inactive[Divide][middle, divisor]]
-      ]
-    ];
-</``>
-<``>
-  suntzudivide[100, 6]
-  suntzudivide[1989, 64]
-  suntzudivide[6561, 9]
-  suntzudivide[97531, 4]
-</``>
 
-<*f> |
-  The code above and the animations produced therefrom are released into the
-  <@>
-    public domain (CC0)
-    | https://creativecommons.org/publicdomain/zero/1.0/
-    | CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-  </@>.
-</*f>
+<*f></*f>
