@@ -1,5 +1,5 @@
 <*>
-  | 20190309 | 20200302 | d
+  | 20190309 | 20200319 | d
   | Conway's site: Literary Chinese and applied maths.
   | ul.site-history li:first-child {
     background: yellow;
@@ -46,13 +46,11 @@
       | /cantonese/conway-romanisation.html
       | [rom.h]
     </@>
-    <.>Used in this site.</.>
   </td></tr>
   
   <% [faq.h] | FAQ %>
   <tr><td>
     <@> <b>[faq.h]</b> | /faq.html | [faq.h] </@>
-    <.>"What does Conway do in his spare time?"</.>
   </td></tr>
   
   <% [cynics-730.h] | A cynic's 7.30 (and other programs) %>
@@ -380,11 +378,6 @@
 
 <ul class="site-history">
   
-  <li><span>20200222:</span>
-    Site restructured (by topic, with shorter URLs).
-    Apologies for the broken links.
-  </li>
-  
   <li><span>20200127:</span>
     Yep, looks like SARS~II is coming. God save!
   </li>
@@ -411,40 +404,10 @@
     Good luck spotting me.
   </li>
   
-  <% [ts]  | <^e><:h>ts</:h></^e> %>
-  <% [ch]  | <^e><:h>ch</:h></^e> %>
-  <% [ts'] | <^e><:h>ts'</:h></^e> %>
-  <% [ch'] | <^e><:h>ch'</:h></^e> %>
-  <% [s]   | <^e><:h>s</:h></^e> %>
-  <% [sh]  | <^e><:h>sh</:h></^e> %>
-  <li><span>20191221:</span>
-    \{[ts] vs [ch]\}, \{[ts'] vs [ch']\} and \{[s] vs [sh]\}
-    now distinguished in my
-    <@>
-      romanisation system
-      | /cantonese/conway-romanisation.html
-      | [rom.h]
-    </@>.
-  </li>
-  
-  <li><span>20191208:</span>
-    800,000 today. <br>
-    In 2003 it took just 500,000 to shelve
-    <@>
-      Article~23
-      | https://en.wikipedia.org/wiki/Hong_Kong_Basic_Law_Article_23
-      | Wikipedia: Hong Kong Basic Law Article 23
-    </@>.
-    This year? A couple million, followed by another 13~weeks, of
-    people being smote by triads/gangs,
-    smote/gassed/sprayed/shot by coppers, etc.
-    How much more until a proper independent commission of inquiry?
-  </li>
-  
   <%
     [sun-tzu-manuscript.a] |
     <@>
-      handwritten translation manuscript
+      handwritten translation manuscripts
       | /sun-tzu/#manuscript
       | Translation manuscript for "[sun-tzu-classic]": 《孫子算經》
     </@>
@@ -452,7 +415,7 @@
   
   <li><span>20191129:</span>
     Completed [sun-tzu-manuscript.a]
-    for [vol-iii] of "[sun-tzu-classic]".
+    for all three volumes of "[sun-tzu-classic]".
     The entire translation should be available in web (HTML) format
     by the end of 2020 (currently I am halfway through [vol-ii] typing it up).
   </li>
@@ -466,14 +429,6 @@
   <li><span>20190830:</span>
     New series:
     <@> A cynic's 7.30 | /cynics-730/ | [cynics-730.h] </@>.
-  </li>
-  
-  <li><span>20190822:</span>
-    Completed [sun-tzu-manuscript.a] for [vol-ii] of "[sun-tzu-classic]".
-  </li>
-  
-  <li><span>20190605:</span>
-    Completed [sun-tzu-manuscript.a] for [vol-i] of "[sun-tzu-classic]".
   </li>
   
   <li><span>20190504:</span>
@@ -1535,16 +1490,6 @@ even in the rendered home page of Conway's site.
 And although this egg shall at first appear in an huge diff,
 the commits which follow shall bury this diff ever deeper,
 until its place is known only unto the archaeologists.
-
-Now the reader will ask, saying,
-  Wherefore hast thou written this egg?
-  What {is} this {that} thou hast done?
-
-And Conway shall answer, saying,
-  At the time of writing, I am utterly unable to fall asleep.
-  Given that my mind is on fire, why not etch some words into a text,
-  that ye might be entertained?
-  For this be better than pouring thoughts down an abyss.
 
 +++++++++++++++++++++++++++++++:-----------------------------------------------
 ++++++++++++++++++++++++++++++:------------------------------------------------
