@@ -3955,7 +3955,7 @@
 
 <#t>
   以九乘一十二，得一百八。六人分之，人得一十八。 |
-  Multiplying twelve <_>12</_> by nine <_>9</_> resulteth in
+  Multiplying twelve <_>12</_> by nine <_>9</_>, resulteth in
   one hundred {and} eight <_>108</_>.
   {With} six <_>6</_> men sharing it, {each} man receiveth
   eighteen <_>18</_>.
@@ -3963,7 +3963,7 @@
 
 <#t>
   以二十七乘三十六，得九百七十二。一十八人分之，人得五十四。 |
-  Multiplying thirty-six <_>36</_> by twenty-seven <_>27</_> resulteth in
+  Multiplying thirty-six <_>36</_> by twenty-seven <_>27</_>, resulteth in
   nine hundred {and} seventy-two <_>972</_>.
   {With} eighteen <_>18</_> men sharing it, {each} man receiveth
   fifty-four <_>54</_>.
@@ -3972,7 +3972,7 @@
 <#t>
   以八十一乘一百八，得八千七百四十八。五十四人分之，人得一百六十二。 |
   Multiplying one hundred {and} eight <_>108</_>
-  by eighty-one <_>81</_> resulteth in
+  by eighty-one <_>81</_>, resulteth in
   eight thousand, seven hundred {and} forty-eight <_>8748</_>.
   {With} fifty-four <_>54</_> men sharing it,
   {each} man receiveth
@@ -3989,7 +3989,7 @@
   以二百四十三乘三百二十四，得七萬八千七百三十二。\
   一百六十二人分之，人得四百八十六。 |
   Multiplying three hundred {and} twenty-four <_>324</_>
-  by two hundred {and} forty-three <_>243</_>
+  by two hundred {and} forty-three <_>243</_>,
   resulteth in seventy-eight thousand, seven hundred {and}
   thirty-two <_>78732</_>.
   {With} one hundred {and} sixty-two <_>162</_> men sharing it,
@@ -4001,7 +4001,7 @@
   以七百二十九乘九百七十二，得七十萬八千五百八十八。\
   四百八十六人分之，人得一千四百五十八。 |
   Multiplying nine hundred {and} seventy-two <_>972</_>
-  by seven hundred {and} twenty-nine <_>729</_>
+  by seven hundred {and} twenty-nine <_>729</_>,
   resulteth in seven hundred {and} eight thousand, five hundred {and}
   eighty-eight <_>708588</_>.
   {With} four hundred {and}
@@ -4014,7 +4014,7 @@
   以二千一百八十七乘二千九百一十六，得六百三十七萬七千二百九十二。\
   一千四百五十八人分之，人得四千三百七十四。 |
   Multiplying two thousand, nine hundred {and} sixteen <_>2916</_>
-  by two thousand, one hundred {and} eighty-seven <_>2187</_>
+  by two thousand, one hundred {and} eighty-seven <_>2187</_>,
   resulteth in six million, three hundred {and} seventy-seven thousand,
   two hundred {and} ninety-two <_>6377292</_>.
   {With} one thousand, four hundred {and}
@@ -4033,7 +4033,7 @@
   四千三百七十四人分之，人得一萬三千一百二十二。 |
   Multiplying eight thousand, seven hundred {and}
   forty-eight <_>8748</_>
-  by six thousand, five hundred {and} sixty-one <_>6561</_>
+  by six thousand, five hundred {and} sixty-one <_>6561</_>,
   resulteth in fifty-seven million,
   three hundred {and} ninety-five thousand,
   six hundred {and} twenty-eight <_>57395628</_>.
@@ -4047,7 +4047,7 @@
   得五億一千六百五十六萬六百五十二。\
   一萬三千一百二十二人分之，人得三萬九千三百六十六。 |
   Multiplying twenty-six thousand, two hundred {and} forty-four <_>26244</_>
-  by nineteen thousand, six hundred {and} eighty-three <_>19683</_>
+  by nineteen thousand, six hundred {and} eighty-three <_>19683</_>,
   resulteth in five hundred {and} sixteen million,
   five hundred {and} sixty thousand,
   six hundred {and} fifty-two <_>516560652</_>.
@@ -4062,7 +4062,7 @@
   三萬九千三百六十六人分之，人得一十一萬八千九十八。 |
   Multiplying seventy-eight thousand, seven hundred {and}
   thirty-two <_>78732</_>
-  by fifty-nine thousand {and} forty-nine <_>59049</_>
+  by fifty-nine thousand {and} forty-nine <_>59049</_>,
   resulteth in four billion, six hundred {and} forty-nine million,
   forty-five thousand, eight hundred {and} sixty-eight <_>4649045868</_>.
   {With} thirty-nine thousand, three hundred {and}
@@ -4077,7 +4077,7 @@
   Multiplying two hundred {and} thirty-six thousand,
   one hundred {and} ninety-six <_>236196</_>
   by one hundred {and} seventy-seven thousand,
-  one hundred {and} forty-seven <_>177147</_>
+  one hundred {and} forty-seven <_>177147</_>,
   resulteth in forty-one billion, eight hundred {and} forty-one million,
   four hundred {and} twelve thousand, eight hundred {and}
   twelve <_>41841412812</_>.
@@ -4094,7 +4094,7 @@
   Multiplying seven hundred {and} eight thousand,
   five hundred {and} eighty-eight <_>708588</_>
   by five hundred {and} thirty-one thousand,
-  four hundred {and} forty-one <_>531441</_>
+  four hundred {and} forty-one <_>531441</_>,
   resulteth in three hundred {and} seventy-six billion,
   five hundred {and} seventy-two million,
   seven hundred {and} fifteen thousand, three hundred {and}
