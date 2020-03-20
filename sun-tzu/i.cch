@@ -1,6 +1,6 @@
 <*>
   "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
-  | 20190609 | 20200316 | dmr
+  | 20190609 | 20200320 | dmr
   | An annotated English translation of [vol-i] of Sunzi Suanjing, \
     《孫子算經》, or "[sun-tzu-classic]".
 </*>
@@ -725,7 +725,7 @@
   </li>
   <li>[銖]：
     dram <br>
-    Of the order one gram.
+    Of the order two grams.
     According to
     <@>
       Williams' {Tonic Dictionary}
@@ -800,25 +800,25 @@
   I can't be bothered looking up a reputable source
   for the precise weight of a catty
   when [sun-tzu-classic] was first written,
-  but using 500~grams as an estimate,
+  but using 600~grams as an estimate,
   we have:
 </p>
 <$$>
   \begin{alignedat}{3}
     1 \unit{millet (黍)} &={} & \tfrac{1}{38400} & \unit{catties}
-      && \sim 0.01 \unit{g} \\
+      && \sim 0.02 \unit{g} \\
     1 \unit{pile (絫)} &={} & \tfrac{1}{3840} & \unit{catties}
-      && \sim 0.1 \unit{g} \\
+      && \sim 0.2 \unit{g} \\
     1 \unit{dram (銖)} &={} & \tfrac{1}{384} & \unit{catties}
-      && \sim 1 \unit{g} \\
+      && \sim 2 \unit{g} \\
     1 \unit{tael (兩)} &={} & \tfrac{1}{16} & \unit{catties}
-      && \sim 30 \unit{g} \\
+      && \sim 40 \unit{g} \\
     1 \unit{catty (斤)} &={} & 1 & \unit{catty}
-      && \sim 500 \unit{g} \\
+      && \sim 600 \unit{g} \\
     1 \unit{quarter (鈞)} &={} & 30 & \unit{catties}
-      && \sim 15 \unit{kg} \\
+      && \sim 18 \unit{kg} \\
     1 \unit{stone (石)} &={} & 120 & \unit{catties}
-      && \sim 60 \unit{kg}
+      && \sim 72 \unit{kg}
   \end{alignedat}
 </$$>
 
@@ -1921,12 +1921,6 @@
 <$$>
   1 \unit{tael} \unit{inch}^{-3} = (1.1987 \pm 0.0064) \unit{g} \unit{cm}^{-3}
 </$$>
-<p>
-  (Recall that one tael, [兩],
-  is of the order 30~g
-  and one inch, [寸],
-  is of the order one imperial inch.)
-</p>
 
 <;sh> 1 | 7 | Rod calculus: vertical \&~horizontal forms </;sh>
 <;s@@> 1 | 7 | 6 | 147 | 52063 | 6 | 14 </;s@@>
