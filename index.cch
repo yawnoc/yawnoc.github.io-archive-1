@@ -9,6 +9,8 @@
     }
 </*>
 
+<!-- KaTeX currently at v0.11.1 -->
+
 <=h>
   <@it></@it>
   <@i> Pages | #pages | [pages.h] </@i>
