@@ -12,7 +12,7 @@
   Section 2
   ----------------------------------------------------------------
   Edited from copy-tex.js found at:
-    https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/copy-tex.js
+    https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.js
   Edited so that delimiters are \[ and \] rather than $$ and $$.
 */
 
