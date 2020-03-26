@@ -48,11 +48,13 @@
       | /cantonese/conway-romanisation.html
       | [rom.h]
     </@>
+    <.>Used in this site.</.>
   </td></tr>
   
   <% [faq.h] | FAQ %>
   <tr><td>
     <@> <b>[faq.h]</b> | /faq.html | [faq.h] </@>
+    <.>Frequently asked questions.</.>
   </td></tr>
   
   <% [cynics-730.h] | A cynic's 7.30 (and other programs) %>
