@@ -1,5 +1,5 @@
 <*>
-  Conway's Custom Romanisation for Cantonese | 20190407 | 20200229 | d
+  Conway's Custom Romanisation for Cantonese | 20190407 | 20200326 | d
   | Conway's custom romanisation system for Cantonese, \
     with English approximations and a diagram of the nine tones.
 </*>
@@ -483,9 +483,9 @@
   <:y>However, unless you want to sound really weird,
   I still suggest pronouncing words out loud using the
   appropriate <:r>favoured post-merger initial</:r> listed in the table above,
-  rather than the <:v>pre-merger initial</:g></:y>,
-  e.g.~[^<:r>s</:r>aang <:r>ch'</:r>oi^]
-  rather than [^<:v>sh</:v>aang <:v>ts'</:v>oi^]
+  rather than the <:v>pre-merger initial</:v></:y>,
+  e.g.~[^[:<:r>s</:r>:]aang [:<:r>ch'</:r>:]oi^]
+  rather than [^[:<:v>sh</:v>:]aang [:<:v>ts'</:v>:]oi^]
   for 生菜.
 </#n>
 
@@ -2088,6 +2088,16 @@
 
 <@2> Examples | examples </@2>
 
+<p>
+  First with <:v>pre-merger initials</:v> (rarely heard today),
+  then with <:r>favoured post-merger initials</:r>.
+  See
+  <@>
+    On \{[^ts^] vs [^ch^]\}, \{[^ts'^] vs [^ch'^]\} and \{[^s^] vs [^sh^]\}
+    | #ts-vs-ch
+    |
+  </@>.
+</p>
 
 <#>
   身體髮膚，受之父母，不敢毀傷，孝之始也。
@@ -2095,10 +2105,18 @@
 <ul>
   <li>
     [^
-      shan1 t'ai2 faat8 foo1,
-      shau6 chee1 foo6 mou5,
-      pat7 kam2 wai2 shoeng1,
-      haau3 chee1 ch'ee2 yaa5.
+      <:v>sh</:v>an1 t'ai2 faat8 foo1,
+      <:v>sh</:v>au6 <:v>ch</:v>ee1 foo6 mou5,
+      pat7 kam2 wai2 <:v>sh</:v>oeng1,
+      haau3 <:v>ch</:v>ee1 <:v>ch'</:v>ee2 yaa5.
+    ^]
+  </li>
+  <li>
+    [^
+      <:r>s</:r>an1 t'ai2 faat8 foo1,
+      <:r>s</:r>au6 <:r>ts</:r>ee1 foo6 mou5,
+      pat7 kam2 wai2 <:r>s</:r>oeng1,
+      haau3 <:r>ts</:r>ee1 <:r>ts'</:r>ee2 yaa5.
     ^]
   </li>
 </ul>
@@ -2110,9 +2128,17 @@
   <li>
     [^
       t'een1 tei6 yu"n4 wong4,
-      yu"5 chau6 hung4 fong1.
-      yat9 yu"t9 ying4 chak7,
-      shan4 suk7 leet9 choeng1.
+      yu"5 <:v>ch</:v>au6 hung4 fong1.
+      yat9 yu"t9 ying4 <:v>ch</:v>ak7,
+      <:v>sh</:v>an4 <:v>s</:v>uk7 leet9 <:v>ch</:v>oeng1.
+    ^]
+  </li>
+  <li>
+    [^
+      t'een1 tei6 yu"n4 wong4,
+      yu"5 <:r>ts</:r>au6 hung4 fong1.
+      yat9 yu"t9 ying4 <:r>ts</:r>ak7,
+      <:r>s</:r>an4 <:r>s</:r>uk7 leet9 <:r>ch</:r>oeng1.
     ^]
   </li>
 </ul>
@@ -2123,8 +2149,14 @@
 <ul>
   <li>
     [^
-      foo4 chat7 yee5 toi6 hing1,
-      yeen4 yan1 tsuk9 yik9.
+      foo4 <:v>ch</:v>at7 yee5 toi6 hing1,
+      yeen4 yan1 <:v>ts</:v>uk9 yik9.
+    ^]
+  </li>
+  <li>
+    [^
+      foo4 <:r>ts</:r>at7 yee5 toi6 hing1,
+      yeen4 yan1 <:r>ch</:r>uk9 yik9.
     ^]
   </li>
 </ul>
@@ -2135,8 +2167,14 @@
 <ul>
   <li>
     [^
-      k'wai4 shu"1 keem3,
-      chai6 king1 waa4.
+      k'wai4 <:v>sh</:v>u"1 keem3,
+      <:v>ch</:v>ai6 king1 waa4.
+    ^]
+  </li>
+  <li>
+    [^
+      k'wai4 <:r>sh</:r>u"1 keem3,
+      <:r>ts</:r>ai6 king1 waa4.
     ^]
   </li>
 </ul>
@@ -2147,8 +2185,14 @@
 <ul>
   <li>
     [^
-      yat9 yat9 ts_u"3 loeng4 chau1,
-      shang1 kor1 ts_t7 mei6 yau1.
+      yat9 yat9 <:v>ts</:v>_u"3 loeng4 <:v>ch</:v>au1,
+      <:v>sh</:v>ang1 kor1 <:v>ts</:v>_t7 mei6 yau1.
+    ^]
+  </li>
+  <li>
+    [^
+      yat9 yat9 <:r>ch</:r>_u"3 loeng4 <:r>ts</:r>au1,
+      <:r>s</:r>ang1 kor1 <:r>ch</:r>_t7 mei6 yau1.
     ^]
   </li>
 </ul>
@@ -2170,9 +2214,16 @@
 <ul>
   <li>
     [^
-      ts'eep8 ts'ung4 mou4 ts'or3 ch'u"3,
-      t'aan3 ngor5 tsee6 cheeu1 pou3 ying3,
-      yu"n3 k_u"3 p'at7 foo1 peen3 sing3.
+      <:v>ts'</:v>eep8 <:v>ts'</:v>ung4 mou4 <:v>ts'</:v>or3 <:v>ch'</:v>u"3,
+      t'aan3 ngor5 <:v>ts</:v>ee6 <:v>ch</:v>eeu1 pou3 ying3,
+      yu"n3 k_u"3 p'at7 foo1 peen3 <:v>s</:v>ing3.
+    ^]
+  </li>
+  <li>
+    [^
+      <:r>ts'</:r>eep8 <:r>ch'</:r>ung4 mou4 <:r>ch'</:r>or3 <:r>ch'</:r>u"3,
+      t'aan3 ngor5 <:r>ts</:r>ee6 <:r>ts</:r>eeu1 pou3 ying3,
+      yu"n3 k_u"3 p'at7 foo1 peen3 <:r>s</:r>ing3.
     ^]
   </li>
 </ul>
@@ -2183,7 +2234,12 @@
 <ul>
   <li>
     [^
-      ts'ing2 mat9 k'aau3 kan6 ch'e1 moon4.
+      <:v>ts'</:v>ing2 mat9 k'aau3 kan6 <:v>ch'</:v>e1 moon4.
+    ^]
+  </li>
+  <li>
+    [^
+      <:r>ts'</:r>ing2 mat9 k'aau3 kan6 <:r>ts'</:r>e1 moon4.
     ^]
   </li>
 </ul>
@@ -2194,8 +2250,15 @@
 <ul>
   <li>
     [^
-      haa6 yat7 chaam6: kau2 lung4 t'ong4,
-      shing4 haak8 hor2 yee5 chu"n2 shing4
+      haa6 yat7 <:v>ch</:v>aam6: kau2 lung4 t'ong4,
+      <:v>sh</:v>ing4 haak8 hor2 yee5 <:v>ch</:v>u"n2 <:v>sh</:v>ing4
+      kau2 kwong2 tung1 t'eet8.
+    ^]
+  </li>
+  <li>
+    [^
+      haa6 yat7 <:r>ts</:r>aam6: kau2 lung4 t'ong4,
+      <:r>s</:r>ing4 haak8 hor2 yee5 <:r>ch</:r>u"n2 <:r>s</:r>ing4
       kau2 kwong2 tung1 t'eet8.
     ^]
   </li>
