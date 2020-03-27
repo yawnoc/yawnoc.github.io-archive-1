@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20200327 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20200328 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -27,6 +27,11 @@
   <@i> <code>\<`\></code> | #inline-code | [inline-code.h] </@i>
   <@i> <`><!-- --></`> | #html-comment | [html-comment.h] </@i>
   <@i> <`><script></`> | #html-script | [html-script.h] </@i>
+  <@i>
+    <`><? ?></`>
+    | #user-defined-regex-replacement
+    | [user-defined-regex-replacement.h]
+  </@i>
   <@i>
     <`><% %></`> | #user-defined-replacement | [user-defined-replacement.h]
   </@i>
@@ -333,16 +338,81 @@
   but <`>{content}</`> is otherwise unchanged.
 </p>
 
+<%
+  [user-defined-regex-replacement.h]
+  | User-defined regex replacement element
+%>
+<@3> [user-defined-regex-replacement.h] | user-defined-regex-replacement </@3>
+
+<#>
+  <`><? {pattern} | {replacement} ?></`>
+</#>
+
+<p>
+  The most powerful element of all.
+</p>
+<p>
+  <`>{pattern}</`> cannot contain a pipe surrounded by whitespace,
+  while the separating pipe must be surrounded by whitespace.
+</p>
+
+<p>
+  I recommend leaving the private-use character <`>U+E000</`> untouched,
+  since it is used internally for replacements.
+  It is certainly possible to break the converter
+  by supplying replacements which interfere with other CCH replacements;
+  do so at your own peril.
+</p>
+
+<p>
+  First the converter reads and removes all the replacement definitions;
+  then it applies the replacements in <em>reverse</em> order.
+  Therefore nesting will work as long as
+  the referenced definition appears higher up in the markup.
+  Only one definition per <`>{pattern}</`> is permitted;
+  any subsequent definitions for the same <`>{pattern}</`>
+  will result in an error message.
+</p>
+
+<ul>
+  
+  <li>
+    <b>CCH</b>
+    <``>
+      <? __([\s\S]*?)__ | __\1__\1__ ?>
+      
+      __main__ <br>
+      __(anything, really)__ <br>
+      
+      (dupes) are bad.
+      
+      <? \(dupes\) | Duplicate definitions ?>
+      <? \(dupes\) | This re-definition will cause an error ?>
+    </``>
+  </li>
+  
+  <li>
+    <b>Rendered</b> <br>
+      <? __([\s\S]*?)__ | __\1__\1__ ?>
+      
+      __main__ <br>
+      __(anything, really)__ <br>
+      
+      (dupes) are bad.
+      
+      <? \(dupes\) | Duplicate definitions ?>
+      <? \(dupes\) | This re-definition will cause an error ?>
+  </li>
+  
+</ul>
+
+
 <% [user-defined-replacement.h] | User-defined replacement element %>
 <@3> [user-defined-replacement.h] | user-defined-replacement </@3>
 
 <#>
   <`><% {old string} | {new string} %></`>
 </#>
-
-<p>
-  The most powerful element of all.
-</p>
 
 <ul>
   <li>
@@ -360,22 +430,13 @@
 </p>
 
 <p>
-  It is recommended that neither <`>{old string}</`> nor <`>{new string}</`>
-  contain manual insertions of the private-use character <`>U+E000</`>,
-  since that character is used internally for replacements.
-  It is most probably possible to break the converter
-  by supplying replacements which interfere with other CCH replacements;
-  do so at your own peril.
-</p>
-
-<p>
-  First the converter reads and removes all the replacement definitions;
-  then it applies the replacements in <em>reverse</em> order.
-  Therefore nesting will work as long as
-  the referenced definition appears higher up in the markup.
-  Only one definition per <`>{old string}</`> is permitted;
-  any subsequent definitions for the same <`>{old string}</`>
-  will result in an error message.
+  Works as per the
+  <@>
+    regex replacement element <`><? ?></`>
+    | #user-defined-regex-replacement
+    | [user-defined-regex-replacement.h]
+  </@>,
+  only without the regex.
 </p>
 
 <p>
