@@ -27,7 +27,7 @@
 <h1>Python: a regex converter from CCH to HTML</h1>
 <p class="page-properties">
 First created:&nbsp;20190720<br>
-Last modified:&nbsp;<b>20200316</b><br>
+Last modified:&nbsp;<b>20200327</b><br>
 <b>Code:</b>
 <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch.py" title="GitHub: cch.py"><code>cch.py</code></a>
 <noscript>Enable Javascript for <a href="/code/katex-guide.html" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
@@ -38,7 +38,7 @@ Last modified:&nbsp;<b>20200316</b><br>
 <li><a href="#inline-code" title="Inline code element"><code>&lt;`&gt;</code></a></li>
 <li><a href="#html-comment" title="HTML comment element"><code>&lt;!-- --&gt;</code></a></li>
 <li><a href="#html-script" title="HTML script element"><code>&lt;script&gt;</code></a></li>
-<li><a href="#user-defined-definition" title="User-defined definition element"><code>&lt;% %&gt;</code></a></li>
+<li><a href="#user-defined-replacement" title="User-defined replacement element"><code>&lt;% %&gt;</code></a></li>
 <li><a href="#display-maths" title="Display maths element"><code>&lt;$$&gt;</code></a></li>
 <li><a href="#inline-maths" title="Inline maths element"><code>&lt;$&gt;</code></a></li>
 <li><a href="#inline-maths-definition" title="Inline maths definition element"><code>&lt;$d&gt;</code></a></li>
@@ -227,8 +227,8 @@ HTML script element
 <a href="#whitespace" title="Whitespace">Whitespace is removed</a>,
 but <code>{content}</code> is otherwise unchanged.
 </p>
-<h3 id="user-defined-definition"><a class="self-link" href="#user-defined-definition"></a>
-User-defined definition element
+<h3 id="user-defined-replacement"><a class="self-link" href="#user-defined-replacement"></a>
+User-defined replacement element
 </h3>
 <div class="boxed">
 <code>&lt;% {old string} | {new string} %&gt;</code>
@@ -258,7 +258,7 @@ by supplying replacements which interfere with other CCH replacements;
 do so at your own peril.
 </p>
 <p>
-First the converter reads and removes all the definitions;
+First the converter reads and removes all the replacement definitions;
 then it applies the replacements in <em>reverse</em> order.
 Therefore nesting will work as long as
 the referenced definition appears higher up in the markup.

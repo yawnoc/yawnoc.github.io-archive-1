@@ -36,7 +36,7 @@
 #   <`>             inline_code
 #   <!-- -->        html_comment
 #   <script>        html_script
-#   <% %>           user_defined_definition
+#   <% %>           user_defined_replacement
 #   <$$>            display_maths
 #   <$>             inline_maths
 #   <$d>            inline_maths_definition
@@ -391,7 +391,7 @@ def replace_all_html_scripts(string):
   return re.sub(r'<script>([\s\S]*?)</script>', replace_html_script, string)
 
 ################################################################
-# Store user-defined definitions (of user-defined replacements)
+# Store user-defined replacement definitions
 ################################################################
 
 # Unprocessed string:
@@ -412,7 +412,7 @@ def replace_all_html_scripts(string):
 # Single
 # ----------------------------------------------------------------
 
-def store_user_defined_definition(match_object):
+def store_user_defined_replacement(match_object):
   
   global user_defined_replacement_dictionary
   
@@ -433,13 +433,13 @@ def store_user_defined_definition(match_object):
 # All
 # ----------------------------------------------------------------
 
-def store_all_user_defined_definitions(string):
+def store_all_user_defined_replacements(string):
   
   global user_defined_replacement_dictionary
   
   string = re.sub(
     r'<%[\s]*([^\s\\|~<>]{2}[^\\|~<>]*?)[\s]*\|([\s\S]*?)%>',
-    store_user_defined_definition,
+    store_user_defined_replacement,
     string
   )
   
@@ -456,7 +456,7 @@ def store_all_user_defined_definitions(string):
   return string
 
 ################################################################
-# Apply user-defined replacements (defined by user-defined definitions)
+# Apply user-defined replacements
 ################################################################
 
 def apply_all_user_defined_replacements(string):
@@ -483,7 +483,7 @@ def escape_user_defined_old_strings(string):
     # Escape each user-defined {old string}
     # by inserting a literal empty string escape \! after the first character
     # ({old string} must begin with two non-whitespace characters
-    # as per the specification for user-defined definition elements <% %>)
+    # as per the specification for user-defined replacement elements <% %>)
     escaped_old_string = old_string[0] + r'\!' + old_string[1:]
     
     string = re.sub(
@@ -3719,7 +3719,7 @@ def cch_to_html(file_name):
   markup = replace_all_inline_code(markup)
   markup = remove_all_html_comments(markup)
   markup = replace_all_html_scripts(markup)
-  markup = store_all_user_defined_definitions(markup)
+  markup = store_all_user_defined_replacements(markup)
   markup = apply_all_user_defined_replacements(markup)
   markup = replace_all_display_maths(markup)
   markup = replace_all_inline_maths(markup)

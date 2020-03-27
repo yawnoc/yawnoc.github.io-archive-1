@@ -1,5 +1,5 @@
 <*>
-  Python: a regex converter from CCH to HTML | 20190720 | 20200316 | dmr
+  Python: a regex converter from CCH to HTML | 20190720 | 20200327 | dmr
   | A regex converter from Conway's concise HTML (CCH) to standard (HTML), \
     written in Python.
 </*>
@@ -28,7 +28,7 @@
   <@i> <`><!-- --></`> | #html-comment | [html-comment.h] </@i>
   <@i> <`><script></`> | #html-script | [html-script.h] </@i>
   <@i>
-    <`><% %></`> | #user-defined-definition | [user-defined-definition.h]
+    <`><% %></`> | #user-defined-replacement | [user-defined-replacement.h]
   </@i>
   <@i> <`><$$></`> | #display-maths | [display-maths.h] </@i>
   <@i> <`><$></`> | #inline-maths | [inline-maths.h] </@i>
@@ -333,8 +333,8 @@
   but <`>{content}</`> is otherwise unchanged.
 </p>
 
-<% [user-defined-definition.h] | User-defined definition element %>
-<@3> [user-defined-definition.h] | user-defined-definition </@3>
+<% [user-defined-replacement.h] | User-defined replacement element %>
+<@3> [user-defined-replacement.h] | user-defined-replacement </@3>
 
 <#>
   <`><% {old string} | {new string} %></`>
@@ -369,7 +369,7 @@
 </p>
 
 <p>
-  First the converter reads and removes all the definitions;
+  First the converter reads and removes all the replacement definitions;
   then it applies the replacements in <em>reverse</em> order.
   Therefore nesting will work as long as
   the referenced definition appears higher up in the markup.
