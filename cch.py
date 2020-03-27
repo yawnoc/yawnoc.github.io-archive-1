@@ -229,10 +229,12 @@ def cch_error_span(error_message):
   error_message = error_message.strip()
   error_message = de_indent(error_message)
   error_message = escape_html(error_message)
-  error_message = escape_user_defined_old_strings(error_message)
-  error_message = escape_conway_special_literals(error_message)
   
-  return f'<span class="cch-error">CCH error: {error_message}</span>'
+  processed_string = (
+    f'<span class="cch-error">CCH error: {error_message}</span>'
+  )
+  
+  return create_temporary_replacement_string(processed_string)
 
 # ----------------------------------------------------------------
 # Error page with navigation bar link to CCH documentation
