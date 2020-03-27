@@ -36,6 +36,7 @@
 #   <`>             inline_code
 #   <!-- -->        html_comment
 #   <script>        html_script
+#   <? ?>           user_defined_regex_replacement
 #   <% %>           user_defined_replacement
 #   <$$>            display_maths
 #   <$>             inline_maths
@@ -391,6 +392,99 @@ def replace_html_script(match_object):
 def replace_all_html_scripts(string):
   
   return re.sub(r'<script>([\s\S]*?)</script>', replace_html_script, string)
+
+################################################################
+# Store user-defined regex replacement definitions
+################################################################
+
+# Unprocessed string:
+#   <? {pattern} | {substitute} ?>
+# where {pattern} cannot contain a pipe surrounded by whitespace
+# and the separating pipe must be surrounded by whitespace
+
+# Raw regular expression for unprocessed string:
+#   <\?[\s]*([\s\S]*?)\s\|\s([\s\S]*?)\?>
+#   \1  {pattern}
+#   \2  {substitute}
+
+# Processed string:
+#   {empty string}
+
+# ----------------------------------------------------------------
+# Single
+# ----------------------------------------------------------------
+
+def store_user_defined_regex_replacement(match_object):
+  
+  global user_defined_regex_replacement_dictionary
+  
+  pattern = match_object.group(1)
+  replacement = match_object.group(2)
+  
+  pattern = pattern.strip()
+  replacement = replacement.strip()
+  
+  if pattern in user_defined_regex_replacement_dictionary:
+    return cch_error_span(
+      f'User-defined regex replacement for pattern {pattern} defined twice'
+    )
+  
+  try:
+    re.compile(pattern)
+  except:
+    return cch_error_span(
+      f'User-defined regex replacement pattern {pattern} invalid'
+    )
+  
+  try:
+    re.sub(pattern, replacement, '')
+  except:
+    return cch_error_span(
+      f'User-defined regex replacement string {replacement} invalid'
+    )
+  
+  user_defined_regex_replacement_dictionary[pattern] = replacement
+  
+  return ''
+
+# ----------------------------------------------------------------
+# All
+# ----------------------------------------------------------------
+
+def store_all_user_defined_regex_replacements(string):
+  
+  global user_defined_regex_replacement_dictionary
+  
+  string = re.sub(
+    r'<\?[\s]*([\s\S]*?)\s\|\s([\s\S]*?)\?>',
+    store_user_defined_regex_replacement,
+    string
+  )
+  
+  user_defined_regex_replacement_dictionary = (
+    dict(
+      reversed(
+        list(
+          user_defined_regex_replacement_dictionary.items()
+        )
+      )
+    )
+  )
+  
+  return string
+
+################################################################
+# Apply user-defined regex replacements
+################################################################
+
+def apply_all_user_defined_regex_replacements(string):
+  
+  for pattern in user_defined_regex_replacement_dictionary:
+    
+    replacement = user_defined_regex_replacement_dictionary[pattern]
+    string = re.sub(pattern, replacement, string)
+  
+  return string
 
 ################################################################
 # Store user-defined replacement definitions
@@ -3597,6 +3691,7 @@ def cch_to_html(file_name):
   global is_root_index, url
   global E000, E000_RUN, TEMPORARY_REPLACEMENT_REGEX
   global temporary_replacement_counter, temporary_replacement_dictionary
+  global user_defined_regex_replacement_dictionary
   global user_defined_replacement_dictionary
   
   # ----------------------------------------------------------------
@@ -3681,10 +3776,11 @@ def cch_to_html(file_name):
   temporary_replacement_dictionary = {}
   
   # ----------------------------------------------------------------
-  # User-defined replacements
+  # User-defined replacements (regex and plain)
   # ----------------------------------------------------------------
   
-  # Initialise global variable
+  # Initialise global variables
+  user_defined_regex_replacement_dictionary = {}
   user_defined_replacement_dictionary = {}
   
   ################################################################
@@ -3699,6 +3795,8 @@ def cch_to_html(file_name):
   markup = replace_all_inline_code(markup)
   markup = remove_all_html_comments(markup)
   markup = replace_all_html_scripts(markup)
+  markup = store_all_user_defined_regex_replacements(markup)
+  markup = apply_all_user_defined_regex_replacements(markup)
   markup = store_all_user_defined_replacements(markup)
   markup = apply_all_user_defined_replacements(markup)
   markup = replace_all_display_maths(markup)
