@@ -19,123 +19,70 @@
   <@> <`>cch.py</`> | \/cch.py | GitHub: cch.py </@>
 </*p>
 
+<!-- href and title (heading) -->
+<? #\{(\S*?)\} | #\1 | [\1.h] ?>
+
 <=>
   
-  <@i> <b>Supreme:</b> | #supreme | [supreme.h] </@i>
+  <@i> <b>Supreme:</b> | #{supreme} </@i>
   
-  <@i> <code>\<``\></code> | #display-code | [display-code.h] </@i>
-  <@i> <code>\<`\></code> | #inline-code | [inline-code.h] </@i>
-  <@i> <`><!-- --></`> | #html-comment | [html-comment.h] </@i>
-  <@i> <`><script></`> | #html-script | [html-script.h] </@i>
-  <@i>
-    <`><? ?></`>
-    | #user-defined-regex-replacement
-    | [user-defined-regex-replacement.h]
-  </@i>
-  <@i>
-    <`><% %></`> | #user-defined-replacement | [user-defined-replacement.h]
-  </@i>
-  <@i> <`><$$></`> | #display-maths | [display-maths.h] </@i>
-  <@i> <`><$></`> | #inline-maths | [inline-maths.h] </@i>
-  <@i>
-    <`><$d></`> | #inline-maths-definition | [inline-maths-definition.h]
-  </@i>
+  <@i> <code>\<``\></code> | #{display-code} </@i>
+  <@i> <code>\<`\></code> | #{inline-code} </@i>
+  <@i> <`><!-- --></`> | #{html-comment} </@i>
+  <@i> <`><script></`> | #{html-script} </@i>
+  <@i> <`><? ?></`> | #{user-defined-regex-replacement} </@i>
+  <@i> <`><% %></`> | #{user-defined-replacement} </@i>
+  <@i> <`><$$></`> | #{display-maths} </@i>
+  <@i> <`><$></`> | #{inline-maths} </@i>
+  <@i> <`><$d></`> | #{inline-maths-definition} </@i>
   
-  <@i> <b>0-arg:</b> | #zero-argument | [zero-argument.h] </@i>
+  <@i> <b>0-arg:</b> | #{zero-argument} </@i>
   
-  <@i>
-    <`><@ih></`>
-    | #item-anchor-abbreviation
-    | [item-anchor-abbreviation.h]
-  </@i>
-  <@i>
-    <`><^^></`>
-    | #assisting-romanisation-radio
-    | [assisting-romanisation-radio.h]
-  </@i>
-  <@i>
-    <`><-t></`>
-    | #svg-style-abbreviation
-    | [svg-style-abbreviation.h]
-  </@i>
+  <@i> <`><@ih></`> | #{item-anchor-abbreviation} </@i>
+  <@i> <`><^^></`> | #{assisting-romanisation-radio} </@i>
+  <@i> <`><-t></`> | #{svg-style-abbreviation} </@i>
   
-  <@i>
-    <b>Multi-arg:</b>
-    | #multiple-argument
-    | [multiple-argument.h]
-  </@i>
+  <@i> <b>Multi-arg:</b> | #{multiple-argument} </@i>
   
-  <@i> <`><+h></`> | #dialogue-image | [dialogue-image.h] </@i>
-  <@i> <`><+></`> | #image | [image.h] </@i>
-  <@i>
-    <`><^></`>
-    | #assisting-romanisation
-    | [assisting-romanisation.h]
-  </@i>
-  <@i>
-    <`><^cm></`>
-    | #cantonese-mandarin-romanisation
-    | [cantonese-mandarin-romanisation.h]
-  </@i>
-  <@i>
-    <`><@u></`>
-    | #directed-triangle-anchor
-    |  [directed-triangle-anchor.h]
-  </@i>
-  <@i> <`><@i></`> | #item-anchor | [item-anchor.h] </@i>
-  <@i>
-    <`><@2></`>
-    | #heading-self-link-anchor
-    | [heading-self-link-anchor.h]
-  </@i>
-  <@i> <`><@></`> | #anchor | [anchor.h] </@i>
-  <@i> <`><#t></`> | #boxed-translation | [boxed-translation.h] </@i>
-  <@i>
-    <`><;sh></`>
-    | #sun-tzu-heading
-    | [sun-tzu-heading.h]
-  </@i>
-  <@i>
-    <`><;s@@></`>
-    | #sun-tzu-link-division
-    | [sun-tzu-link-division.h]
-  </@i>
-  <@i> <`><*></`> | #preamble | [preamble.h] </@i>
-  <@i> <`><*p></`> | #page-properties | [page-properties.h] </@i>
-  <@i> <`><*c></`> | #cite-this-page | [cite-this-page.h] </@i>
-  <@i> <`><*f></`> | #footer | [footer.h] </@i>
+  <@i> <`><+h></`> | #{dialogue-image} </@i>
+  <@i> <`><+></`> | #{image} </@i>
+  <@i> <`><^></`> | #{assisting-romanisation} </@i>
+  <@i> <`><^cm></`> | #{cantonese-mandarin-romanisation} </@i>
+  <@i> <`><@u></`> | #{directed-triangle-anchor} </@i>
+  <@i> <`><@i></`> | #{item-anchor} </@i>
+  <@i> <`><@2></`> | #{heading-self-link-anchor} </@i>
+  <@i> <`><@></`> | #{anchor} </@i>
+  <@i> <`><#t></`> | #{boxed-translation} </@i>
+  <@i> <`><;sh></`> | #{sun-tzu-heading} </@i>
+  <@i> <`><;s@@></`> | #{sun-tzu-link-division} </@i>
+  <@i> <`><*></`> | #{preamble} </@i>
+  <@i> <`><*p></`> | #{page-properties} </@i>
+  <@i> <`><*c></`> | #{cite-this-page} </@i>
+  <@i> <`><*f></`> | #{footer} </@i>
   
-  <@i> <b>1-arg:</b> | #single-argument | [single-argument.h] </@i>
+  <@i> <b>1-arg:</b> | #{single-argument} </@i>
   
-  <@i> <`><_></`> | #assisting-numeral | [assisting-numeral.h] </@i>
-  <@i> <`><:r></`> | #formatted-span | [formatted-span.h] </@i>
-  <@i> <`><#></`> | #boxed-division | [boxed-division.h] </@i>
-  <@i> <`><~~></`> | #dialogue-division | [dialogue-division.h] </@i>
-  <@i> <`><~h></`> | #dialogue-paragraph | [dialogue-paragraph.h] </@i>
-  <@i> <`><@@></`> | #link-division | [link-division.h] </@i>
-  <@i>
-    <`><=h></`>
-    | #header-navigation-bar
-    | [header-navigation-bar.h]
-  </@i>
-  <@i> <`><=></`> | #navigation-bar | [navigation-bar.h] </@i>
-  <@i> <`><.></`> | #note-paragraph | [note-paragraph.h] </@i>
-  <@i> <`><!></`> | #overflowing-division | [overflowing-division.h] </@i>
-  <@i> <`><--></`> | #svg-style-container | [svg-style-container.h] </@i>
-  <@i> <`><^e></`> | #text-romanisation | [text-romanisation.h] </@i>
-  <@i> <`><_e></`> | #text-numeral | [text-numeral.h] </@i>
+  <@i> <`><_></`> | #{assisting-numeral} </@i>
+  <@i> <`><:r></`> | #{formatted-span} </@i>
+  <@i> <`><#></`> | #{boxed-division} </@i>
+  <@i> <`><~~></`> | #{dialogue-division} </@i>
+  <@i> <`><~h></`> | #{dialogue-paragraph} </@i>
+  <@i> <`><@@></`> | #{link-division} </@i>
+  <@i> <`><=h></`> | #{header-navigation-bar} </@i>
+  <@i> <`><=></`> | #{navigation-bar} </@i>
+  <@i> <`><.></`> | #{note-paragraph} </@i>
+  <@i> <`><!></`> | #{overflowing-division} </@i>
+  <@i> <`><--></`> | #{svg-style-container} </@i>
+  <@i> <`><^e></`> | #{text-romanisation} </@i>
+  <@i> <`><_e></`> | #{text-numeral} </@i>
   
-  <@i> <b>Escapes</b> | #escapes | [escapes.h] </@i>
+  <@i> <b>Escapes</b> | #{escapes} </@i>
   
-  <@i> <b><`>{}</`></b> | #conway-italics | [conway-italics.h] </@i>
+  <@i> <b><`>{}</`></b> | #{conway-italics} </@i>
   
-  <@i> <b>Whitespace</b> | #whitespace | [whitespace.h] </@i>
+  <@i> <b>Whitespace</b> | #{whitespace} </@i>
   
-  <@i>
-    <b><`>lang</`>~spans</b>
-    | #automatic-chinese-span
-    | [automatic-chinese-span.h]
-  </@i>
+  <@i> <b><`>lang</`>~spans</b> | #{automatic-chinese-span} </@i>
   
 </=>
 
@@ -217,20 +164,17 @@
   For example, the normal
   <@>
     HTML comment element <`><!-- --></`>
-    | #html-comment
-    | [html-comment.h]
+    | #{html-comment}
   </@>
   yields to the
   <@>
     display code element <code>\<``\> \{content\} \</``\></code>
-    | #display-code
-    | [display-code.h]
+    | #{display-code}
   </@>
   and the
   <@>
     inline code element <code>\<`\> \{content\} \</`\></code>
-    | #inline-code
-    | [inline-code.h]
+    | #{inline-code}
   </@>,
   but prevails over all else.
 </p>
@@ -334,7 +278,7 @@
 </#>
 
 <p>
-  <@> Whitespace is removed | #whitespace | [whitespace.h] </@>,
+  <@> Whitespace is removed | #{whitespace} </@>,
   but <`>{content}</`> is otherwise unchanged.
 </p>
 
@@ -433,8 +377,7 @@
   Works as per the
   <@>
     regex replacement element <`><? ?></`>
-    | #user-defined-regex-replacement
-    | [user-defined-regex-replacement.h]
+    | #{user-defined-regex-replacement}
   </@>,
   only without the regex.
 </p>
@@ -635,7 +578,7 @@
 
 <p>
   Pre-defined abbreviations for
-  <@> item anchors | #item-anchor | [item-anchor.h] </@>.
+  <@> item anchors | #{item-anchor} </@>.
 </p>
 
 <!c><table>
@@ -708,8 +651,7 @@
   Converted to the radio controller for
   <@>
     assisting romanisations
-    | #assisting-romanisation
-    | [assisting-romanisation.h]
+    | #{assisting-romanisation}
   </@>.
 </p>
 
@@ -740,8 +682,7 @@
   Must be used inside an
   <@>
     SVG style container element
-    | #svg-style-container
-    | [svg-style-container.h]
+    | #{svg-style-container}
   </@>.
 </p>
 
@@ -754,13 +695,13 @@
 <p>
   Arguments are to be delimited by the pipe character <`>|</`>.
   For a literal pipe, \
-  use the <@> backslash escape | #escapes | [escapes.h] </@>
+  use the <@> backslash escape | #{escapes} </@>
   <`>\|</`>.
 </p>
 <p>
   Elements may be nested provided the inner element occurs
   strictly higher in this list
-  (except the <@> preamble | #preamble | [preamble.h] </@>,
+  (except the <@> preamble | #{preamble} </@>,
   which must be supplied at the very beginning of the CCH source file).
 </p>
 
@@ -778,8 +719,7 @@
   and to be used inside a
   <@>
     dialogue division element
-    | #dialogue-division
-    | [dialogue-division.h]
+    | #{dialogue-division}
   </@>.
 </p>
 
@@ -852,14 +792,12 @@
   Converted to <`><span></`> elements controlled by the
   <@>
     assisting romanisation radio
-    | #assisting-romanisation-radio
-    | [assisting-romanisation-radio.h]
+    | #{assisting-romanisation-radio}
   </@>,
   where all arguments are unescaped after the manner of the
   <@>
     text romanisation element
-    | #text-romanisation
-    | [text-romanisation.h]
+    | #{text-romanisation}
   </@>.
   The preceding horizontal whitespace is stripped.
 </p>
@@ -924,10 +862,10 @@
 
 <p>
   Converted to the equivalent
-  <@> anchor element | #anchor | [anchor.h] </@>
+  <@> anchor element | #{anchor} </@>
   with an upward or downward triangle if <`>{dir}</`> is <`>u</`> or <`>d</`>.
   Usually used in
-  <@> link divisions | #link-division | [link-division.h] </@>.
+  <@> link divisions | #{link-division} </@>.
 </p>
 
 <ul>
@@ -955,12 +893,11 @@
 
 <p>
   Converted to the equivalent
-  <@> anchor element | #anchor | [anchor.h] </@>
+  <@> anchor element | #{anchor} </@>
   wrapped inside a list item <`><li></`> element, usually to be used inside
   <@>
     navigation bar elements
-    | #header-navigation-bar
-    | [header-navigation-bar.h]
+    | #{header-navigation-bar}
   </@>.
 </p>
 
@@ -1166,20 +1103,19 @@
   <li>
     <`>{first created}</`> and <`>{last modified}</`>
     are stored for use later in the
-    <@> page properties | #page-properties | [page-properties.h] </@>
-    and <@> footer (copyright) | #footer | [footer.h] </@> elements,
+    <@> page properties | #{page-properties} </@>
+    and <@> footer (copyright) | #{footer} </@> elements,
   </li>
   
   <li>
     <`>[rendering]</`> loads the relevant CSS and Javascript required
     for displaying today's date in the
-    <@> Cite this page | #cite-this-page | [cite-this-page.h] </@>,
-    for KaTeX <@> maths equations | #display-maths | [display-maths.h] </@>
+    <@> Cite this page | #{cite-this-page} </@>,
+    for KaTeX <@> maths equations | #{display-maths} </@>
     and for
     <@>
       assisting romanisations
-      | #assisting-romanisation
-      | [assisting-romanisation.h]
+      | #{assisting-romanisation}
     </@>,
     if the supplied string contains
     <`>d</`>, <`>m</`> and <`>r</`> respectively,
@@ -1213,7 +1149,7 @@
 <p>
   Automatically generates the page properties paragraph,
   using the <`>{first created}</`> and <`>{last modified}</`> dates
-  supplied to the <@> preamble | #preamble | [preamble.h] </@>.
+  supplied to the <@> preamble | #{preamble} </@>.
 </p>
 
 <% [cite-this-page.h] | Cite this page element %>
@@ -1274,7 +1210,7 @@
   Converted to a <`><footer></`> element,
   with the copyright year range automatically determined from
   <`>{first created}</`> and <`>{last modified}</`>
-  supplied to the <@> preamble | #preamble | [preamble.h] </@>.
+  supplied to the <@> preamble | #{preamble} </@>.
 </p>
 
 
@@ -1292,7 +1228,7 @@
 <p>
   Converted to a <`><span></`> element,
   with simple markup for <`>{content}</`> after the manner of the
-  <@> text numeral element | #text-numeral | [text-numeral.h] </@>.
+  <@> text numeral element | #{text-numeral} </@>.
   The preceding horizontal whitespace is stripped.
 </p>
 
@@ -1405,11 +1341,10 @@
 <p>
   Converted to a <`><div></`> element, for holding a dialogue
   between a host and a guest, which comprises of
-  <@> dialogue images | #dialogue-image | [dialogue-image.h] </@> and
+  <@> dialogue images | #{dialogue-image} </@> and
   <@>
     dialogue paragraphs
-    | #dialogue-paragraph
-    | [dialogue-paragraph.h]
+    | #{dialogue-paragraph}
   </@>.
 </p>
 
@@ -1497,8 +1432,7 @@
   and to be used inside a
   <@>
     dialogue division element
-    | #dialogue-division
-    | [dialogue-division.h]
+    | #{dialogue-division}
   </@>.
 </p>
 
@@ -1511,7 +1445,7 @@
 
 <p>
   Converted to a <`><div class="links"></`> element, for holding
-  <@> anchor elements | #anchor | [anchor.h] </@>.
+  <@> anchor elements | #{anchor} </@>.
 </p>
 
 <% [header-navigation-bar.h] | Header navigation bar element %>
@@ -1523,10 +1457,10 @@
 
 <p>
   Converted to the equivalent
-  <@> navigation bar element | #navigation-bar | [navigation-bar.h] </@>
+  <@> navigation bar element | #{navigation-bar} </@>
   wrapped inside a <`><header></`> element,
   and usually to be filled with
-  <@> item anchors | #item-anchor | [item-anchor.h] </@>.
+  <@> item anchors | #{item-anchor} </@>.
 </p>
 
 <% [navigation-bar.h] | Navigation bar element %>
@@ -1539,7 +1473,7 @@
 <p>
   Converted to a <`><nav></`> element containing a <`><ul></`> element,
   and usually to be filled with
-  <@> item anchors | #item-anchor | [item-anchor.h] </@>.
+  <@> item anchors | #{item-anchor} </@>.
 </p>
 
 <% [note-paragraph.h] | Note paragraph element %>
@@ -1600,7 +1534,7 @@
   Converted to a <`><style></`> element wrapped inside
   a <`><svg class="embedded-styles"></`> element,
   with all the necessary escaping automatically performed
-  for the <@> special Conway literals | #escapes | [escapes.h] </@>
+  for the <@> special Conway literals | #{escapes} </@>
   <`>~</`>, <`>{</`> and <`>}</`>.
 </p>
 
@@ -1617,8 +1551,7 @@
   (these conversions are used for the arguments of
   <@>
     assisting romanisations elements
-    | #assisting-romanisation
-    | [assisting-romanisation.h]
+    | #{assisting-romanisation}
   </@>):
 </p>
 
@@ -1927,7 +1860,7 @@
     <td>\{</td>
     <td>
       Literal opening \
-      <@> curly bracket | #conway-italics | [conway-italics.h] </@>
+      <@> curly bracket | #{conway-italics} </@>
     </td>
   </tr>
   
@@ -1937,7 +1870,7 @@
     <td>\}</td>
     <td>
       Literal closing \
-      <@> curly bracket | #conway-italics | [conway-italics.h] </@>
+      <@> curly bracket | #{conway-italics} </@>
     </td>
   </tr>
   
@@ -2072,8 +2005,7 @@
       Prevent
       <@>
         language span
-        | #automatic-chinese-span
-        | [automatic-chinese-span.h]
+        | #{automatic-chinese-span}
       </@>
     </td>
   </tr>
@@ -2095,7 +2027,7 @@
 <p>
   Curly brackets are automatically converted to italics tags.
   For literal curly brackets use the
-  <@> backslash escapes | #escapes | [escapes.h] </@> <`>\{</`> and <`>\}</`>.
+  <@> backslash escapes | #{escapes} </@> <`>\{</`> and <`>\}</`>.
 </p>
 
 <ul>
@@ -2220,12 +2152,11 @@
   and consecutive runs of
   <@>
     formatted spans
-    | #formatted-span
-    | [formatted-span.h]
+    | #{formatted-span}
   </@>
   containing these,
   are automatically wrapped in a <`><span lang="zh-Hant"></`> element.
-  <@> Precede runs by a backslash | #escapes | [escapes.h] </@> \
+  <@> Precede runs by a backslash | #{escapes} </@> \
   to prevent this.
   Literal empty strings <`>\!</`> may be used to split runs.
 </p>
