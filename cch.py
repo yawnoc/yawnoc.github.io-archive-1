@@ -475,28 +475,6 @@ def apply_all_user_defined_replacements(string):
   return string
 
 ################################################################
-# Escape user-defined old strings
-################################################################
-
-def escape_user_defined_old_strings(string):
-  
-  for old_string in user_defined_replacement_dictionary:
-    
-    # Escape each user-defined {old string}
-    # by inserting a literal empty string escape \! after the first character
-    # ({old string} must begin with two non-whitespace characters
-    # as per the specification for user-defined replacement elements <% %>)
-    escaped_old_string = old_string[0] + r'\!' + old_string[1:]
-    
-    string = re.sub(
-      re.escape(old_string),
-      escape_python_backslash(escaped_old_string),
-      string
-    )
-  
-  return string
-
-################################################################
 # Replace display maths with temporary replacements
 ################################################################
 
