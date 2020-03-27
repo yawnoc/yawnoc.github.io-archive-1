@@ -424,7 +424,7 @@ def store_user_defined_replacement(match_object):
   
   if old_string in user_defined_replacement_dictionary:
     return cch_error_span(
-      f'User-defined replacement for old string {old_string} defined twice.'
+      f'User-defined replacement for old string {old_string} defined twice'
     )
   
   user_defined_replacement_dictionary[old_string] = new_string
