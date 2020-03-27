@@ -492,12 +492,12 @@ def apply_all_user_defined_regex_replacements(string):
 
 # Unprocessed string:
 #   <% {old string} | {new string} %>
-# where {old string} cannot contain \, |, ~, < or >
+# where {old string} cannot contain \ or |
 # and must begin with two non-whitespace characters
 # (to make it escapable using the literal empty string escape \!)
 
 # Raw regular expression for unprocessed string:
-#   <%[\s]*([^\s\\|~<>]{2}[^\\|~<>]*?)[\s]*\|([\s\S]*?)%>
+#   <%[\s]*([^\s\\|]{2}[^\\|]*?)[\s]*\|([\s\S]*?)%>
 #   \1  {old string}
 #   \2  {new string}
 
@@ -534,7 +534,7 @@ def store_all_user_defined_replacements(string):
   global user_defined_replacement_dictionary
   
   string = re.sub(
-    r'<%[\s]*([^\s\\|~<>]{2}[^\\|~<>]*?)[\s]*\|([\s\S]*?)%>',
+    r'<%[\s]*([^\s\\|]{2}[^\\|]*?)[\s]*\|([\s\S]*?)%>',
     store_user_defined_replacement,
     string
   )

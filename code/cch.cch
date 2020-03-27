@@ -424,7 +424,7 @@
 </ul>
 
 <p>
-  <`>{old string}</`> cannot contain \\, \|, \~, \< or \>,
+  <`>{old string}</`> cannot contain \\ or \|,
   and must begin with two non-whitespace characters
   (to make it escapable using the literal empty string escape <`>\!</`>).
 </p>
