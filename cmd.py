@@ -12,7 +12,7 @@ written for the sole purpose of building his site
 To be kept in the root directory.
 
 Conversion is done entirely using regular expression replacements
-(although dictionaries are used for temporary storage).
+and placeholder dictionaries.
 Unlike John Gruber's markdown, I use fence-style constructs
 to avoid the need for proper parsing.
 
