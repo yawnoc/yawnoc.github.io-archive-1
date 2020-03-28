@@ -75,6 +75,24 @@ def de_indent(string):
   return string
 
 
+def cmd_to_html(cmd, file_name):
+  """
+  Convert CMD to HTML.
+  
+  The file-name argument determines the URL of the resulting page,
+  which is needed to generate the "Cite this page" section.
+  
+  During the conversion, the string is neither CMD nor HTML,
+  and is referred to as "markup".
+  """
+  
+  markup = cmd
+  
+  html = markup
+  
+  return html
+
+
 def cmd_file_to_html_file(cmd_file):
   """
   Run converter on CMD file and generate HTML file.
