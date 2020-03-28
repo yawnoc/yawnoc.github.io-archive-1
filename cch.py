@@ -398,7 +398,7 @@ def replace_all_html_scripts(string):
 ################################################################
 
 # Unprocessed string:
-#   <?[mode] {pattern} | {substitute} ?>
+#   <?[mode] {pattern} | {replacement} ?>
 # where {pattern} cannot contain a pipe surrounded by whitespace,
 # the separating pipe must be surrounded by whitespace,
 # and [mode] is m, otherwise omitted
@@ -407,7 +407,7 @@ def replace_all_html_scripts(string):
 #   <\?(m?)[\s]*([\s\S]*?)\s\|\s([\s\S]*?)\?>
 #   \1  {mode}
 #   \2  {pattern}
-#   \3  {substitute}
+#   \3  {replacement}
 
 # Processed string:
 #   {empty string}
