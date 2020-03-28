@@ -35,6 +35,11 @@ import os
 import re
 
 
+################################################################
+# String processing
+################################################################
+
+
 HORIZONTAL_WHITESPACE_REGEX = r'[^\S\n]'
 
 
@@ -75,6 +80,11 @@ def de_indent(string):
   return string
 
 
+################################################################
+# Converter
+################################################################
+
+
 def cmd_to_html(cmd, file_name):
   """
   Convert CMD to HTML.
@@ -91,6 +101,11 @@ def cmd_to_html(cmd, file_name):
   html = markup
   
   return html
+
+
+################################################################
+# Wrappers
+################################################################
 
 
 def cmd_file_to_html_file(cmd_file):
