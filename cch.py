@@ -36,7 +36,7 @@
 #   <`>             inline_code
 #   <!-- -->        html_comment
 #   <script>        html_script
-#   <? ?>           user_defined_regex_replacement
+#   <?[m] ?>        user_defined_regex_replacement
 #   <% %>           user_defined_replacement
 #   <$$>            display_maths
 #   <$>             inline_maths
@@ -398,14 +398,16 @@ def replace_all_html_scripts(string):
 ################################################################
 
 # Unprocessed string:
-#   <? {pattern} | {substitute} ?>
-# where {pattern} cannot contain a pipe surrounded by whitespace
-# and the separating pipe must be surrounded by whitespace
+#   <?[mode] {pattern} | {substitute} ?>
+# where {pattern} cannot contain a pipe surrounded by whitespace,
+# the separating pipe must be surrounded by whitespace,
+# and [mode] is m, otherwise omitted
 
 # Raw regular expression for unprocessed string:
-#   <\?[\s]*([\s\S]*?)\s\|\s([\s\S]*?)\?>
-#   \1  {pattern}
-#   \2  {substitute}
+#   <\?(m?)[\s]*([\s\S]*?)\s\|\s([\s\S]*?)\?>
+#   \1  {mode}
+#   \2  {pattern}
+#   \3  {substitute}
 
 # Processed string:
 #   {empty string}
@@ -418,9 +420,14 @@ def store_user_defined_regex_replacement(match_object):
   
   global user_defined_regex_replacement_dictionary
   
-  pattern = match_object.group(1)
-  replacement = match_object.group(2)
+  mode = match_object.group(1)
+  pattern = match_object.group(2)
+  replacement = match_object.group(3)
   
+  if mode == 'm':
+    flags = re.MULTILINE
+  else:
+    flags = 0
   pattern = pattern.strip()
   replacement = replacement.strip()
   
@@ -430,20 +437,20 @@ def store_user_defined_regex_replacement(match_object):
     )
   
   try:
-    re.compile(pattern)
+    re.compile(pattern, flags = flags)
   except:
     return cch_error_span(
       f'User-defined regex replacement pattern {pattern} invalid'
     )
   
   try:
-    re.sub(pattern, replacement, '')
+    re.sub(pattern, replacement, '', flags = flags)
   except:
     return cch_error_span(
       f'User-defined regex replacement string {replacement} invalid'
     )
   
-  user_defined_regex_replacement_dictionary[pattern] = replacement
+  user_defined_regex_replacement_dictionary[pattern] = [replacement, flags]
   
   return ''
 
@@ -456,7 +463,7 @@ def store_all_user_defined_regex_replacements(string):
   global user_defined_regex_replacement_dictionary
   
   string = re.sub(
-    r'<\?[\s]*([\s\S]*?)\s\|\s([\s\S]*?)\?>',
+    r'<\?(m?)[\s]*([\s\S]*?)\s\|\s([\s\S]*?)\?>',
     store_user_defined_regex_replacement,
     string
   )
@@ -481,8 +488,8 @@ def apply_all_user_defined_regex_replacements(string):
   
   for pattern in user_defined_regex_replacement_dictionary:
     
-    replacement = user_defined_regex_replacement_dictionary[pattern]
-    string = re.sub(pattern, replacement, string)
+    replacement, flags = user_defined_regex_replacement_dictionary[pattern]
+    string = re.sub(pattern, replacement, string, flags = flags)
   
   return string
 
