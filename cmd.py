@@ -30,6 +30,8 @@ ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
 """
 
 
+import argparse
+import os
 import re
 from os.path import commonprefix as longest_common_prefix
 
@@ -72,3 +74,42 @@ def de_indent(string):
   )
   
   return string
+
+
+def main(cmd_file):
+  
+  if cmd_file == '':
+    cmd_file_list = [
+      os.path.join(path, name)
+        for path, _, files in os.walk('.')
+          for name in files
+            if name.endswith('.cmd')
+    ]
+  else:
+    cmd_file_list = [cmd_file]
+  
+  for cmd_file in cmd_file_list:
+    cmd_to_html(cmd_file)
+
+
+if __name__ == '__main__':
+  
+  DESCRIPTION_TEXT = '''Convert CMD (Conway's markdown) to HTML.'''
+  parser = argparse.ArgumentParser(description=DESCRIPTION_TEXT)
+  
+  CMD_FILE_HELP_TEXT = '''
+    Name of CMD file to be converted.
+    Omit to convert all CMD files.
+  '''
+  parser.add_argument(
+    'cmd_file',
+    help=CMD_FILE_HELP_TEXT,
+    nargs='?',
+    default=''
+  )
+  
+  arguments = parser.parse_args()
+  
+  cmd_file = arguments.cmd_file
+  
+  main(cmd_file)
