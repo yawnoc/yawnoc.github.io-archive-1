@@ -232,12 +232,13 @@ but <code>{content}</code> is otherwise unchanged.
 User-defined regex replacement element
 </h3>
 <div class="boxed">
-<code>&lt;? {pattern} | {replacement} ?&gt;</code>
+<code>&lt;?[mode] {pattern} | {replacement} ?&gt;</code>
 </div>
 <p>
 The most powerful element of all.
 </p>
 <p>
+Multiline regex is used if <code>[mode]</code> is supplied as <code>m</code>.
 <code>{pattern}</code> cannot contain a pipe surrounded by whitespace,
 while the separating pipe must be surrounded by whitespace.
 </p>

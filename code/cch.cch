@@ -289,13 +289,14 @@
 <@3> [user-defined-regex-replacement.h] | user-defined-regex-replacement </@3>
 
 <#>
-  <`><? {pattern} | {replacement} ?></`>
+  <`><?[mode] {pattern} | {replacement} ?></`>
 </#>
 
 <p>
   The most powerful element of all.
 </p>
 <p>
+  Multiline regex is used if <`>[mode]</`> is supplied as <`>m</`>.
   <`>{pattern}</`> cannot contain a pipe surrounded by whitespace,
   while the separating pipe must be surrounded by whitespace.
 </p>
