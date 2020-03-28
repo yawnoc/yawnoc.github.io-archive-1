@@ -10,6 +10,23 @@
   <@ic></@ic>
 </=h>
 
+<!--
+  #{href}
+  #href | [href.h]
+-->
+<? #\{(\S*?)\} | #\1 | [\1.h] ?>
+
+<!--
+  #n{href} title
+  <% [href.h] | title %>
+  <@n> [href.h] | href </@n>
+-->
+<?m
+  ^#([23])\{(\S*?)\}([\s\S]*?)$ |
+  <% [\2.h] | \3 %>
+  <@\1> [\2.h] | \2 </@\1>
+?>
+
 <% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
 
 <h1>Python: a regex converter from CCH to HTML</h1>
@@ -18,9 +35,6 @@
   <b>Code:</b>
   <@> <`>cch.py</`> | \/cch.py | GitHub: cch.py </@>
 </*p>
-
-<!-- href and title (heading) -->
-<? #\{(\S*?)\} | #\1 | [\1.h] ?>
 
 <=>
   
@@ -154,8 +168,7 @@
 </p>
 
 
-<% [supreme.h] | Supreme elements %>
-<@2> [supreme.h] | supreme </@2>
+#2{supreme} Supreme elements
 
 
 <p>
@@ -179,8 +192,7 @@
   but prevails over all else.
 </p>
 
-<% [display-code.h] | Display code element %>
-<@3> [display-code.h] | display-code </@3>
+#3{display-code} Display code element
 
 <#>
   <code>\<``\> \{content\} \</``\></code>
@@ -221,8 +233,7 @@
   
 </ul>
 
-<% [inline-code.h] | Inline code element %>
-<@3> [inline-code.h] | inline-code </@3>
+#3{inline-code} Inline code element
 
 <#>
   <code>\<`\> \{content\} \</`\></code>
@@ -258,8 +269,7 @@
   
 </ul>
 
-<% [html-comment.h] | HTML comment element %>
-<@3> [html-comment.h] | html-comment </@3>
+#3{html-comment} HTML comment element
 
 <#>
   <`> {horizontal whitespace} <!-- {content} --> </`>
@@ -270,8 +280,7 @@
   without increasing the size of the output HTML file.) <!-- Like so. -->
 </p>
 
-<% [html-script.h] | HTML script element %>
-<@3> HTML script element | html-script </@3>
+#3{html-script} HTML script element
 
 <#>
   <`> <script> {content} </script> </`>
@@ -282,11 +291,7 @@
   but <`>{content}</`> is otherwise unchanged.
 </p>
 
-<%
-  [user-defined-regex-replacement.h]
-  | User-defined regex replacement element
-%>
-<@3> [user-defined-regex-replacement.h] | user-defined-regex-replacement </@3>
+#3{user-defined-regex-replacement} User-defined regex replacement element
 
 <#>
   <`><?[mode] {pattern} | {replacement} ?></`>
@@ -352,8 +357,7 @@
 </ul>
 
 
-<% [user-defined-replacement.h] | User-defined replacement element %>
-<@3> [user-defined-replacement.h] | user-defined-replacement </@3>
+#3{user-defined-replacement} User-defined replacement element
 
 <#>
   <`><% {old string} | {new string} %></`>
@@ -429,8 +433,7 @@
   
 </ul>
 
-<% [display-maths.h] | Display maths element %>
-<@3> [display-maths.h] | display-maths </@3>
+#3{display-maths} Display maths element
 
 <#>
   <`><$$> {content} </$$></`>
@@ -485,8 +488,7 @@
   
 </ul>
 
-<% [inline-maths.h] | Inline maths element %>
-<@3> [inline-maths.h] | inline-maths </@3>
+#3{inline-maths} Inline maths element
 
 <#>
   <`><$> {content} </$></`>
@@ -526,8 +528,7 @@
   
 </ul>
 
-<% [inline-maths-definition.h] | Inline maths definition element %>
-<@3> [inline-maths-definition.h] | inline-maths-definition </@3>
+#3{inline-maths-definition} Inline maths definition element
 
 <#>
   <`><$d> {content} </$d></`>
@@ -565,13 +566,11 @@
 </ul>
 
 
-<% [zero-argument.h] | Zero-argument elements %>
-<@2> [zero-argument.h] | zero-argument </@2>
+#2{zero-argument} Zero-argument elements
 
 
 
-<% [item-anchor-abbreviation.h] | Item anchor abbreviation element %>
-<@3> [item-anchor-abbreviation.h] | item-anchor-abbreviation </@3>
+#3{item-anchor-abbreviation} Item anchor abbreviation element
 
 <#>
   <`><@i{type}></@i{type}></`>
@@ -638,8 +637,7 @@
   </=h>
 </``>
 
-<% [assisting-romanisation-radio.h] | Assisting romanisation radio element %>
-<@3> [assisting-romanisation-radio.h] | assisting-romanisation-radio </@3>
+#3{assisting-romanisation-radio} Assisting romanisation radio element
 
 <#>
   <`><^^></^^></`>
@@ -665,8 +663,7 @@
   
 </ul>
 
-<% [svg-style-abbreviation.h] | SVG style abbreviation element %>
-<@3> [svg-style-abbreviation.h] | svg-style-abbreviation </@3>
+#3{svg-style-abbreviation} SVG style abbreviation element
 
 <#>
   <`><-{type}></-{type}></`>
@@ -689,8 +686,7 @@
 
 
 
-<% [multiple-argument.h] | Multiple-argument elements %>
-<@2> [multiple-argument.h] | multiple-argument </@2>
+#2{multiple-argument} Multiple-argument elements
 
 
 <p>
@@ -707,8 +703,7 @@
 </p>
 
 
-<% [dialogue-image.h] | Dialogue image element %>
-<@3> [dialogue-image.h] | dialogue-image </@3>
+#3{dialogue-image} Dialogue image element
 
 <#>
   <`><+{pos}> {src} | {alt} </+{pos}></`>
@@ -724,8 +719,7 @@
   </@>.
 </p>
 
-<% [image.h] | Image element %>
-<@3> [image.h] | image </@3>
+#3{image} Image element
 
 <#>
   <`><+> {src} | {alt} [| title [| width [| class]]] </+></`>
@@ -782,8 +776,7 @@
   
 </ul>
 
-<% [assisting-romanisation.h] | Assisting romanisation element %>
-<@3> [assisting-romanisation.h] | assisting-romanisation </@3>
+#3{assisting-romanisation} Assisting romanisation element
 
 <#>
   <`>{horizontal whitespace} <^> {conway} | {wadegiles} | {pinyin} </^></`>
@@ -819,14 +812,7 @@
   
 </ul>
 
-<%
-  [cantonese-mandarin-romanisation.h] |
-  Cantonese \& Mandarin romanisation element
-%>
-<@3>
-  [cantonese-mandarin-romanisation.h] |
-  cantonese-mandarin-romanisation
-</@3>
+#3{cantonese-mandarin-romanisation} Cantonese \& Mandarin romanisation element
 
 <#>
   <`><^cm[gov]> {cantonese} | {mandarin} [| government] </^cm[gov]></`>
@@ -854,8 +840,7 @@
   
 </ul>
 
-<% [directed-triangle-anchor.h] | Directed triangle anchor element %>
-<@3> [directed-triangle-anchor.h] | directed-triangle-anchor </@3>
+#3{directed-triangle-anchor} Directed triangle anchor element
 
 <#>
   <`><@{dir}> {content} | {id} [| title] </@{dir}></`>
@@ -885,8 +870,7 @@
   
 </ul>
 
-<% [item-anchor.h] | Item anchor element %>
-<@3> [item-anchor.h] | item-anchor </@3>
+#3{item-anchor} Item anchor element
 
 <#>
   <`><@i> {content} | {href} [| title] </@i></`>
@@ -902,8 +886,7 @@
   </@>.
 </p>
 
-<% [heading-self-link-anchor.h] | Heading self-link anchor element %>
-<@3> [heading-self-link-anchor.h] | heading-self-link-anchor </@3>
+#3{heading-self-link-anchor} Heading self-link anchor element
 
 <#>
   <`><@{level}> {content} | {id} </@{level}></`>
@@ -930,8 +913,7 @@
   
 </ul>
 
-<% [anchor.h] | Anchor element %>
-<@3> [anchor.h] | anchor </@3>
+#3{anchor} Anchor element
 
 <#>
   <`><@> {content} | {href} [| title] </@></`>
@@ -991,8 +973,7 @@
   
 </ul>
 
-<% [boxed-translation.h] | Boxed translation element %>
-<@3> [boxed-translation.h] | boxed-translation </@3>
+#3{boxed-translation} Boxed translation element
 
 <#>
   <`><#t[size]> {chinese} | {english} </#t[size]></`>
@@ -1024,8 +1005,7 @@
   
 </ul>
 
-<% [sun-tzu-heading.h] | [sun-tzu] heading element %>
-<@3> [sun-tzu-heading.h] | sun-tzu-heading </@3>
+#3{sun-tzu-heading} [sun-tzu] heading element
 
 <#>
   <`><;sh> {volume} | {paragraph} | {content} </;sh></`>
@@ -1047,8 +1027,7 @@
   
 </ul>
 
-<% [sun-tzu-link-division.h] | [sun-tzu] link division element %>
-<@3> [sun-tzu-link-division.h] | sun-tzu-link-division </@3>
+#3{sun-tzu-link-division} [sun-tzu] link division element
 
 <#>
   <`>
@@ -1074,8 +1053,7 @@
   
 </ul>
 
-<% [preamble.h] | Preamble element %>
-<@3> [preamble.h] | preamble </@3>
+#3{preamble} Preamble element
 
 <#>
   <`>
@@ -1137,8 +1115,7 @@
   </li>
 </ul>
 
-<% [page-properties.h] | Page properties element %>
-<@3> [page-properties.h] | page-properties </@3>
+#3{page-properties} Page properties element
 
 <#>
   <`><*p> [see also] [| misc] </*p></`>
@@ -1153,8 +1130,7 @@
   supplied to the <@> preamble | #{preamble} </@>.
 </p>
 
-<% [cite-this-page.h] | Cite this page element %>
-<@3> [cite-this-page.h] | cite-this-page </@3>
+#3{cite-this-page} Cite this page element
 
 <#>
   <`>
@@ -1197,8 +1173,7 @@
   
 </ul>
 
-<% [footer.h] | Footer element %>
-<@3> [footer.h] | footer </@3>
+#3{footer} Footer element
 
 <#>
   <`><*f> [copyright exception] [| ending remark] </*f></`>
@@ -1215,12 +1190,10 @@
 </p>
 
 
-<% [single-argument.h] | Single-argument elements %>
-<@2> [single-argument.h] | single-argument </@2>
+#2{single-argument} Single-argument elements
 
 
-<% [assisting-numeral.h] | Assisting numeral element %>
-<@3> [assisting-numeral.h] | assisting-numeral </@3>
+#3{assisting-numeral} Assisting numeral element
 
 <#>
   <`>{horizontal whitespace} <_>{content}</_></`>
@@ -1257,8 +1230,7 @@
 </ul>
 
 
-<% [formatted-span.h] | Formatted span element %>
-<@3> [formatted-span.h] | formatted-span </@3>
+#3{formatted-span} Formatted span element
 
 <#>
   <`><:{type}>{content}</:{type}></`>
@@ -1311,8 +1283,7 @@
   </tr>
 </table></!c>
 
-<% [boxed-division.h] | Boxed division element %>
-<@3> [boxed-division.h] | boxed-division </@3>
+#3{boxed-division} Boxed division element
 
 <#>
   <`><#[type]>{content}</#[type]></`>
@@ -1332,8 +1303,7 @@
   </#>
 </``>
 
-<% [dialogue-division.h] | Dialogue division element %>
-<@3> [dialogue-division.h] | dialogue-division </@3>
+#3{dialogue-division} Dialogue division element
 
 <#>
   <`><~~>{content}</~~></`>
@@ -1419,8 +1389,7 @@
   
 </ul>
 
-<% [dialogue-paragraph.h] | Dialogue paragraph element %>
-<@3> [dialogue-paragraph.h] | dialogue-paragraph </@3>
+#3{dialogue-paragraph} Dialogue paragraph element
 
 <#>
   <`><~{pos}[type]>{content}</~{pos}[type]></`>
@@ -1437,8 +1406,7 @@
   </@>.
 </p>
 
-<% [link-division.h] | Link division element %>
-<@3> [link-division.h] | link-division </@3>
+#3{link-division} Link division element
 
 <#>
   <`><@@>{content}</@@></`>
@@ -1449,8 +1417,7 @@
   <@> anchor elements | #{anchor} </@>.
 </p>
 
-<% [header-navigation-bar.h] | Header navigation bar element %>
-<@3> [header-navigation-bar.h] | header-navigation-bar </@3>
+#3{header-navigation-bar} Header navigation bar element
 
 <#>
   <`><=h>{content}</=h></`>
@@ -1464,8 +1431,7 @@
   <@> item anchors | #{item-anchor} </@>.
 </p>
 
-<% [navigation-bar.h] | Navigation bar element %>
-<@3> [navigation-bar.h] | navigation-bar </@3>
+#3{navigation-bar} Navigation bar element
 
 <#>
   <`><=>{content}</=></`>
@@ -1477,8 +1443,7 @@
   <@> item anchors | #{item-anchor} </@>.
 </p>
 
-<% [note-paragraph.h] | Note paragraph element %>
-<@3> [note-paragraph.h] | note-paragraph </@3>
+#3{note-paragraph} Note paragraph element
 
 <#>
   <`><.>{content}</.></`>
@@ -1508,8 +1473,7 @@
   
 </ul>
 
-<% [overflowing-division.h] | Overflowing division element %>
-<@3> [overflowing-division.h] | overflowing-division </@3>
+#3{overflowing-division} Overflowing division element
 
 <#>
   <`><![type]>{content}</![type]></`>
@@ -1524,8 +1488,7 @@
     for <`>[type]</`>~<`>cc</`>.
 </p>
 
-<% [svg-style-container.h] | SVG style container element %>
-<@3> [svg-style-container.h] | svg-style-container </@3>
+#3{svg-style-container} SVG style container element
 
 <#>
   <`><-->{content}</--></`>
@@ -1539,8 +1502,7 @@
   <`>~</`>, <`>{</`> and <`>}</`>.
 </p>
 
-<% [text-romanisation.h] | Text romanisation element %>
-<@3> [text-romanisation.h] | text-romanisation </@3>
+#3{text-romanisation} Text romanisation element
 
 <#>
   <`><^e> {content} </^e></`>
@@ -1763,8 +1725,7 @@
 </table></!c>
 
 
-<% [text-numeral.h] | Text numeral element %>
-<@3> [text-numeral.h] | text-numeral </@3>
+#3{text-numeral} Text numeral element
 
 <#>
   <`><_e>{content}</_e></`>
@@ -1801,8 +1762,7 @@
 </ul>
 
 
-<% [escapes.h] | Escapes %>
-<@2> [escapes.h] | escapes </@2>
+#2{escapes} Escapes
 
 
 <p>
@@ -2021,8 +1981,7 @@
 </p>
 
 
-<% [conway-italics.h] | Conway italics %>
-<@2> [conway-italics.h] | conway-italics </@2>
+#2{conway-italics} Conway italics
 
 
 <p>
@@ -2058,8 +2017,7 @@
 </ul>
 
 
-<% [whitespace.h] | Whitespace %>
-<@2> Whitespace | whitespace </@2>
+#2{whitespace} Whitespace
 
 <ol>
   <li>
@@ -2144,8 +2102,7 @@
 </ul>
 
 
-<% [automatic-chinese-span.h] | Automatic Chinese language spans %>
-<@2> [automatic-chinese-span.h] | automatic-chinese-span </@2>
+#2{automatic-chinese-span} Automatic Chinese language spans
 
 <p>
   Runs of Chinese characters
