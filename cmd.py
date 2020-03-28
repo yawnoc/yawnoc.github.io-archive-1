@@ -89,7 +89,7 @@ def cmd_file_to_html_file(cmd_file):
   file_name = re.sub(r'^\./', '', file_name)
   file_name = re.sub(r'\.(cmd)?$', '', file_name)
   
-  # Read CMD (Conway's markdown) from CMD file
+  # Read CMD from CMD file
   with open(f'{file_name}.cmd', 'r', encoding='utf-8') as opened_cmd_file:
     cmd = opened_cmd_file.read()
   
@@ -120,8 +120,8 @@ def main(cmd_file):
 if __name__ == '__main__':
   
   DESCRIPTION_TEXT = '''
-    Convert CMD (Conway's markdown) to HTML
-    and output to cmd_file.html.
+    Convert Conway's markdown (CMD) to HTML
+    and write to cmd_file.html.
   '''
   parser = argparse.ArgumentParser(description=DESCRIPTION_TEXT)
   
