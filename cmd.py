@@ -119,7 +119,10 @@ def main(cmd_file):
 
 if __name__ == '__main__':
   
-  DESCRIPTION_TEXT = '''Convert CMD (Conway's markdown) to HTML.'''
+  DESCRIPTION_TEXT = '''
+    Convert CMD (Conway's markdown) to HTML
+    and output to cmd_file.html.
+  '''
   parser = argparse.ArgumentParser(description=DESCRIPTION_TEXT)
   
   CMD_FILE_HELP_TEXT = '''
@@ -129,6 +132,7 @@ if __name__ == '__main__':
   parser.add_argument(
     'cmd_file',
     help=CMD_FILE_HELP_TEXT,
+    metavar='cmd_file[.[cmd]]',
     nargs='?',
     default=''
   )
