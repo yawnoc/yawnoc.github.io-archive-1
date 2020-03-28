@@ -80,6 +80,21 @@ def de_indent(string):
   return string
 
 
+def escape_html_syntax_characters(string):
+  """
+  Escape the three HTML syntax characters &, <, >.
+    & becomes &amp;
+    < becomes &lt;
+    > becomes &gt;
+  """
+  
+  string = re.sub('&', '&amp;', string)
+  string = re.sub('<', '&lt;', string)
+  string = re.sub('>', '&gt;', string)
+  
+  return string
+
+
 ################################################################
 # Converter
 ################################################################
