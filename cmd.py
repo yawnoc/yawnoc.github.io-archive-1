@@ -33,7 +33,6 @@ ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
 import argparse
 import os
 import re
-from os.path import commonprefix as longest_common_prefix
 
 
 HORIZONTAL_WHITESPACE_REGEX = r'[^\S\n]'
@@ -65,7 +64,7 @@ def de_indent(string):
   )
   
   # Remove longest common indentation
-  longest_common_indentation = longest_common_prefix(indentation_list)
+  longest_common_indentation = os.path.commonprefix(indentation_list)
   string = re.sub(
     f'^{longest_common_indentation}',
     '',
