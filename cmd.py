@@ -75,6 +75,32 @@ def de_indent(string):
   return string
 
 
+def cmd_file_to_html_file(cmd_file):
+  """
+  Run converter on CMD file and generate HTML file.
+  """
+  
+  # Canonicalise file name:
+  # (1) Convert Windows backslashes to forward slashes
+  # (2) Remove leading dot-slash for current directory
+  # (3) Remove trailing "." or ".cmd" extension if given
+  file_name = cmd_file
+  file_name = re.sub(r'\\', '/', file_name)
+  file_name = re.sub(r'^\./', '', file_name)
+  file_name = re.sub(r'\.(cmd)?$', '', file_name)
+  
+  # Read CMD (Conway's markdown) from CMD file
+  with open(f'{file_name}.cmd', 'r', encoding='utf-8') as opened_cmd_file:
+    cmd = opened_cmd_file.read()
+  
+  # Convert CMD to HTML
+  html = cmd_to_html(cmd, file_name)
+  
+  # Write HTML to HTML file
+  with open(f'{file_name}.html', 'w', encoding='utf-8') as opened_html_file:
+    opened_html_file.write(html)
+
+
 def main(cmd_file):
   
   if cmd_file == '':
@@ -88,7 +114,7 @@ def main(cmd_file):
     cmd_file_list = [cmd_file]
   
   for cmd_file in cmd_file_list:
-    cmd_to_html(cmd_file)
+    cmd_file_to_html_file(cmd_file)
 
 
 if __name__ == '__main__':
