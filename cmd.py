@@ -113,13 +113,13 @@ class PlaceholderStorage:
   
   There are many instances in which
   a portion of the markup should not be altered
-  by any of the replacements to follow.
+  by any replacements in the processing to follow.
   To make these portions of markup immune to further alteration,
   they are temporarily replaced by placeholder strings
   which ought to have the following properties:
   (1) Not appearing in the original markup
-  (2) Not appearing as a result of the replacements to follow
-  (3) Not changing as a result of the replacements to follow
+  (2) Not appearing as a result of the processing to follow
+  (3) Not changing as a result of the processing to follow
   (4) Not confusable with adjacent characters
   (5) Being uniquely identifiable
   Properties (2) and (3) are impossible to guarantee
@@ -188,7 +188,7 @@ class PlaceholderStorage:
     
     return placeholder_string
   
-  def replace_placeholder_with_markup(self, string):
+  def replace_placeholders_with_markup(self, string):
     """
     Replace all placeholder strings with their markup portions.
     XX...X{n}X becomes its markup portion as stored in the dictionary.
@@ -212,6 +212,48 @@ class PlaceholderStorage:
     
     return markup_portion
 
+
+################################################################
+# Literals
+################################################################
+
+
+def process_literals(placeholder_storage, markup):
+  """
+  Process CMD literal (! {content} !).
+  
+  (! {content} !) becomes {content}, literally,
+  with HTML syntax-character escaping,
+  and is unaffected by any further processing.
+  Horizontal whitespace around {content} is stripped.
+  For {content} containing "!)", use multiple exclamation marks,
+  e.g. "(!! (! blah !) !!)" for "(! blah !)".
+  """
+  
+  markup = re.sub(
+    r'''
+      \(
+        (?P<exclamation_marks>!+)
+          (?P<content>[\s\S]*?)
+        (?P=exclamation_marks)
+      \)
+    ''',
+    lambda match_object:
+      process_literal_match(placeholder_storage, match_object),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_literal_match(placeholder_storage, match_object):
+  
+  content = match_object.group('content')
+  content = content.strip()
+  content = escape_html_syntax_characters(content)
+  
+  return placeholder_storage.create_placeholder_store_markup(content)
 
 ################################################################
 # Converter
@@ -238,6 +280,12 @@ def cmd_to_html(cmd, file_name):
   # Initialise placeholder storage
   placeholder_marker_occurrences = markup.count(PLACEHOLDER_MARKER)
   placeholder_storage = PlaceholderStorage(placeholder_marker_occurrences)
+  
+  # Process supreme syntax
+  markup = process_literals(placeholder_storage, markup)
+  
+  # Replace placeholders strings with markup portions
+  markup = placeholder_storage.replace_placeholders_with_markup(markup)
   
   ################################################
   # END of conversion
