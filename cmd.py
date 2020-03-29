@@ -218,7 +218,7 @@ class PlaceholderStorage:
 ################################################################
 
 
-def process_literals(placeholder_storage, markup):
+def process_literals(markup, placeholder_storage):
   """
   Process CMD literal (! {content} !).
   
@@ -239,7 +239,7 @@ def process_literals(placeholder_storage, markup):
       \)
     ''',
     lambda match_object:
-      process_literal_match(placeholder_storage, match_object),
+      process_literal_match(match_object, placeholder_storage),
     markup,
     flags=re.VERBOSE
   )
@@ -247,7 +247,7 @@ def process_literals(placeholder_storage, markup):
   return markup
 
 
-def process_literal_match(placeholder_storage, match_object):
+def process_literal_match(match_object, placeholder_storage):
   
   content = match_object.group('content')
   content = content.strip()
@@ -282,7 +282,7 @@ def cmd_to_html(cmd, file_name):
   placeholder_storage = PlaceholderStorage(placeholder_marker_occurrences)
   
   # Process supreme syntax
-  markup = process_literals(placeholder_storage, markup)
+  markup = process_literals(markup, placeholder_storage)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
