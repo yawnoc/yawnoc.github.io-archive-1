@@ -203,7 +203,7 @@ class PlaceholderStorage:
     Convert a match for a placeholder string to its markup portion.
     """
     
-    placeholder_string = match_object.group(0)
+    placeholder_string = match_object.group()
     markup_portion = self.dictionary[placeholder_string]
     
     return markup_portion
