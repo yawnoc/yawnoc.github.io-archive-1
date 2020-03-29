@@ -96,6 +96,120 @@ def escape_html_syntax_characters(string):
 
 
 ################################################################
+# Temporary storage
+################################################################
+
+
+PLACEHOLDER_MARKER = '\uE000'
+
+
+class PlaceholderStorage:
+  """
+  Placeholder storage class for managing temporary replacements.
+  
+  There are many instances in which
+  a portion of the markup should not be altered
+  by any of the replacements to follow.
+  To make these portions of markup immune to further alteration,
+  they are temporarily replaced by placeholder strings
+  which ought to have the following properties:
+  (1) Not appearing in the original markup
+  (2) Not appearing as a result of the replacements to follow
+  (3) Not changing as a result of the replacements to follow
+  (4) Not confusable with adjacent characters
+  (5) Being uniquely identifiable
+  Properties (2) and (3) are impossible to guarantee
+  given that there will be user-supplied regex replacements,
+  but in most situations it will suffice to use strings of the form
+    XX...X{n}X
+  where
+  (a) X is U+E000, the first "Private Use Area" code point,
+      and is referred to as the "placeholder marker"
+  (b) XX...X is a run of length one more
+      than the number of occurrences of X in the original markup
+      (which is usually zero), and
+  (c) {n} is an integer counter which is incremented.
+  Assuming that the user does not supply regex replacements
+  which insert or delete occurrences of X,
+  or insert or delete or change integers,
+  such strings will satisfy properties (1) through (5) above.
+  
+  The portion of markup which should not be altered
+  is stored in a dictionary, with
+    KEYS: the placeholder strings (XX...X{n}X), and
+    VALUES: the respective portions of markup.
+  """
+  
+  def __init__(self, placeholder_marker_occurrences):
+    """
+    Initialise placeholder storage.
+    """
+    
+    self.PLACEHOLDER_MARKER_RUN = (
+      (1 + placeholder_marker_occurrences) * PLACEHOLDER_MARKER
+    )
+    self.PLACEHOLDER_STRING_COMPILED_REGEX = (
+      re.compile(f'{self.PLACEHOLDER_MARKER_RUN}[0-9]+{PLACEHOLDER_MARKER}')
+    )
+    
+    self.dictionary = {}
+    self.counter = 0
+  
+  def create_placeholder(self):
+    """
+    Create a placeholder string for the current counter value.
+    """
+    
+    placeholder_string = (
+      f'{self.PLACEHOLDER_MARKER_RUN}{self.counter}{PLACEHOLDER_MARKER}'
+    )
+    
+    return placeholder_string
+  
+  def create_placeholder_store_markup(self, markup_portion):
+    """
+    Create a placeholder string for, and store, a markup portion.
+    Then increment the counter.
+    
+    Existing placeholders in the markup portion
+    are substituted with their corresponding markup portions
+    before being stored in the dictionary.
+    This ensures that all markup portions in the dictionary
+    are free of placeholders.
+    """
+    
+    placeholder_string = self.create_placeholder()
+    self.dictionary[placeholder_string] = markup_portion
+    self.counter += 1
+    
+    return placeholder_string
+  
+  def replace_placeholder_with_markup(self, string):
+    """
+    Replace all placeholder strings with their markup portions.
+    XX...X{n}X becomes its markup portion as stored in the dictionary.
+    """
+    
+    string = re.sub(
+      self.PLACEHOLDER_STRING_COMPILED_REGEX,
+      self.replace_placeholder_match_with_markup,
+      string
+    )
+    
+    return string
+  
+  def replace_placeholder_match_with_markup(self, match_object):
+    """
+    Convert a match for a placeholder string to its markup portion.
+    """
+    
+    placeholder_string = match_object.group(0)
+    markup_portion = self.dictionary[placeholder_string]
+    
+    return markup_portion
+
+
+################################################################
 # Converter
 ################################################################
 
@@ -112,6 +226,18 @@ def cmd_to_html(cmd, file_name):
   """
   
   markup = cmd
+  
+  ################################################
+  # START of conversion
+  ################################################
+  
+  # Initialise placeholder storage
+  placeholder_marker_occurrences = markup.count(PLACEHOLDER_MARKER)
+  placeholder_storage = PlaceholderStorage(placeholder_marker_occurrences)
+  
+  ################################################
+  # END of conversion
+  ################################################
   
   html = markup
   
