@@ -63,9 +63,13 @@ def de_indent(string):
   # (1) non-empty leading horizontal whitespace, or
   # (2) the leading empty string on a non-empty line.
   indentation_list = re.findall(
-    rf'^{HORIZONTAL_WHITESPACE_REGEX}+|^(?=[^\n])',
+    rf'''
+      ^{HORIZONTAL_WHITESPACE_REGEX}+
+        |
+      ^(?=[^\n])
+    ''',
     string,
-    flags=re.MULTILINE
+    flags=re.MULTILINE|re.VERBOSE
   )
   
   # Remove longest common indentation
