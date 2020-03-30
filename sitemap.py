@@ -1,27 +1,42 @@
 #!/usr/bin/python
 
-################################################################
-# sitemap.py
-################################################################
-# Generates sitemap.txt.
-# To be kept in the root directory.
-# Released into the public domain (CC0):
-#   https://creativecommons.org/publicdomain/zero/1.0/
-# ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
-################################################################
+"""
+----------------------------------------------------------------
+sitemap.py
+----------------------------------------------------------------
+
+Generate sitemap.txt.
+
+To be kept in the root directory.
+
+Released into the public domain (CC0):
+  <https://creativecommons.org/publicdomain/zero/1.0/>
+ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
+"""
+
 
 import os
 import re
 
+
 NEWLINE = '\n'
 
-# Convert list to newline-separated string
+
 def list_to_string(list_):
+  """
+  Convert list to newline-separated string
+  """
+  
   return NEWLINE.join(list_) + NEWLINE
 
-# Convert newline-separated string to list
+
 def string_to_list(string):
+  """
+  Convert newline-separated string to list
+  """
+  
   return string.strip().split(NEWLINE)
+
 
 # Get list of all HTML pages
 EXCLUDED_PAGES = [
