@@ -64,7 +64,7 @@ sitemap = re.sub(r'/index.html', '/', sitemap)
 
 # Replace . with actual root
 ROOT = 'https://yawnoc.github.io'
-sitemap = re.sub(r'^\.', ROOT, sitemap, flags = re.MULTILINE)
+sitemap = re.sub(r'^\.', ROOT, sitemap, flags=re.MULTILINE)
 
 # Sort sitemap
 sitemap = string_to_list(sitemap)
@@ -72,5 +72,5 @@ sitemap.sort()
 sitemap = list_to_string(sitemap)
 
 # Write to sitemap.txt
-with open('sitemap.txt', 'w', encoding = 'utf-8') as sitemap_file:
+with open('sitemap.txt', 'w', encoding='utf-8') as sitemap_file:
   sitemap_file.write(sitemap)
