@@ -1,29 +1,41 @@
 #!/usr/bin/python
 
-################################################################
-# sqrt.py
-################################################################
-# 孫子算經 Sun Tzu's Computational Classic
-# Square root algorithm in Volume II Paragraph 19:
-#   https://yawnoc.github.io/sun-tzu/ii.html#19
-#   https://yawnoc.github.io/manuscripts/sun-tzu-ii-19.pdf
-# Released into the public domain (CC0):
-#   https://creativecommons.org/publicdomain/zero/1.0/
-# ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
-################################################################
+"""
+----------------------------------------------------------------
+sqrt.py
+----------------------------------------------------------------
+
+孫子算經 Sun Tzŭ's Computational Classic
+Square root algorithm in Volume II Paragraph 19:
+  <https://yawnoc.github.io/sun-tzu/ii.html#19>
+
+Released into the public domain (CC0):
+  <https://creativecommons.org/publicdomain/zero/1.0/>
+ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
+"""
+
 
 import argparse
 import math
 
+
 def digits_to_int(digits_list):
+  """
+  Convert a list of digits to an integer.
+  Uses Horner's method.
+  """
   
-  # Horner's method
   total = 0
   for digit in digits_list:
     total = total * 10 + digit
+  
   return total
 
-def sun_tzu_sqrt(x, print_details = False):
+
+def sun_tzu_sqrt(x, print_details=False):
+  """
+  Compute Sun Tzŭ square root.
+  """
   
   # Number of digits of radicand, N
   N = math.floor(math.log10(x)) + 1
@@ -98,20 +110,21 @@ def sun_tzu_sqrt(x, print_details = False):
     print(f'Absolute error: {error_abs:.2g}')
     print(f'Relative error: {error_rel * 100:.2g} %')
   
-  # Return value
   return sqrt_sun_tzu
+
 
 def main(args):
   
   x = args.x
   sun_tzu_sqrt(x, True)
 
+
 if __name__ == '__main__':
   
-  parser = argparse.ArgumentParser(description = 'Computes square root')
+  parser = argparse.ArgumentParser(description='Computes Sun Tzŭ square root')
   parser.add_argument(
     'x',
-    help = 'Radicand (integer to be square rooted)',
-    type = int
+    help='Radicand (integer to be square rooted)',
+    type=int
   )
   main(parser.parse_args())
