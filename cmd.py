@@ -31,6 +31,7 @@ ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
 
 
 import argparse
+import functools
 import os
 import re
 
@@ -238,8 +239,7 @@ def process_literals(placeholder_storage, markup):
         (?P=exclamation_marks)
       \)
     ''',
-    lambda match_object:
-      process_literal_match(placeholder_storage, match_object),
+    functools.partial(process_literal_match, placeholder_storage),
     markup,
     flags=re.VERBOSE
   )
