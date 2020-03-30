@@ -260,11 +260,11 @@ def process_literal_match(placeholder_storage, match_object):
 ################################################################
 
 
-def cmd_to_html(cmd, file_name):
+def cmd_to_html(cmd, cmd_name):
   """
   Convert CMD to HTML.
   
-  The file-name argument determines the URL of the resulting page,
+  The CMD-name argument determines the URL of the resulting page,
   which is needed to generate the "Cite this page" section.
   
   During the conversion, the string is neither CMD nor HTML,
@@ -301,7 +301,7 @@ def cmd_to_html(cmd, file_name):
 ################################################################
 
 
-def cmd_file_to_html_file(cmd_file):
+def cmd_file_to_html_file(cmd_name):
   """
   Run converter on CMD file and generate HTML file.
   """
@@ -310,61 +310,60 @@ def cmd_file_to_html_file(cmd_file):
   # (1) Convert Windows backslashes to forward slashes
   # (2) Remove leading dot-slash for current directory
   # (3) Remove trailing "." or ".cmd" extension if given
-  file_name = cmd_file
-  file_name = re.sub(r'\\', '/', file_name)
-  file_name = re.sub(r'^\./', '', file_name)
-  file_name = re.sub(r'\.(cmd)?$', '', file_name)
+  cmd_name = re.sub(r'\\', '/', cmd_name)
+  cmd_name = re.sub(r'^\./', '', cmd_name)
+  cmd_name = re.sub(r'\.(cmd)?$', '', cmd_name)
   
   # Read CMD from CMD file
-  with open(f'{file_name}.cmd', 'r', encoding='utf-8') as opened_cmd_file:
-    cmd = opened_cmd_file.read()
+  with open(f'{cmd_name}.cmd', 'r', encoding='utf-8') as cmd_file:
+    cmd = cmd_file.read()
   
   # Convert CMD to HTML
-  html = cmd_to_html(cmd, file_name)
+  html = cmd_to_html(cmd, cmd_name)
   
   # Write HTML to HTML file
-  with open(f'{file_name}.html', 'w', encoding='utf-8') as opened_html_file:
-    opened_html_file.write(html)
+  with open(f'{cmd_name}.html', 'w', encoding='utf-8') as html_file:
+    html_file.write(html)
 
 
-def main(cmd_file):
+def main(cmd_name):
   
-  if cmd_file == '':
-    cmd_file_list = [
+  if cmd_name == '':
+    cmd_name_list = [
       os.path.join(path, name)
         for path, _, files in os.walk('.')
           for name in files
             if name.endswith('.cmd')
     ]
   else:
-    cmd_file_list = [cmd_file]
+    cmd_name_list = [cmd_name]
   
-  for cmd_file in cmd_file_list:
-    cmd_file_to_html_file(cmd_file)
+  for cmd_name in cmd_name_list:
+    cmd_file_to_html_file(cmd_name)
 
 
 if __name__ == '__main__':
   
   DESCRIPTION_TEXT = '''
-    Convert Conway's markdown (CMD) to HTML
-    and write to cmd_file.html.
+    Convert Conway's markdown (CMD) to HTML.
   '''
   parser = argparse.ArgumentParser(description=DESCRIPTION_TEXT)
   
-  CMD_FILE_HELP_TEXT = '''
+  CMD_NAME_HELP_TEXT = '''
     Name of CMD file to be converted.
+    Output is cmd_name.html.
     Omit to convert all CMD files.
   '''
   parser.add_argument(
-    'cmd_file',
-    help=CMD_FILE_HELP_TEXT,
-    metavar='cmd_file[.[cmd]]',
+    'cmd_name',
+    help=CMD_NAME_HELP_TEXT,
+    metavar='cmd_name[.[cmd]]',
     nargs='?',
     default=''
   )
   
   arguments = parser.parse_args()
   
-  cmd_file = arguments.cmd_file
+  cmd_name = arguments.cmd_name
   
-  main(cmd_file)
+  main(cmd_name)
