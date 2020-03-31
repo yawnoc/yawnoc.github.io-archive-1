@@ -400,7 +400,7 @@ def process_comments(markup):
 
 
 def process_display_maths(placeholder_storage, markup):
-  """
+  r"""
   Process display maths $$↵ {content} ↵$$.
   
   $$↵ {content} ↵$$ becomes <div class="maths">{content}</div>,
@@ -450,7 +450,7 @@ def process_display_maths_match(placeholder_storage, match_object):
 
 
 def process_inline_maths(placeholder_storage, markup):
-  """
+  r"""
   Process inline maths $ {content} $.
   
   ` {content} ` becomes <span class="maths">{content}</span>,
