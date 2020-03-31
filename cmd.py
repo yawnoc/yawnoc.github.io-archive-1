@@ -433,6 +433,48 @@ def process_display_maths_match(placeholder_storage, match_object):
 
 
 ################################################################
+# Inline maths
+################################################################
+
+
+def process_inline_maths(placeholder_storage, markup):
+  """
+  Process inline maths $ {content} $.
+  
+  ` {content} ` becomes <span class="maths">{content}</span>,
+  with HTML syntax-character escaping for {content}.
+  Horizontal whitespace around {content} is stripped.
+  For {content} containing one or more consecutive dollar signs,
+  e.g. \text{$x = \infinity$ is very big},
+  use a greater number of dollar signs in the delimiters.
+  """
+  
+  markup = re.sub(
+    rf'''
+      (?P<dollar_signs>[$]+)
+        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+      (?P=dollar_signs)
+    ''',
+    functools.partial(process_inline_maths_match, placeholder_storage),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_inline_maths_match(placeholder_storage, match_object):
+  
+  content = match_object.group('content')
+  content = content.strip()
+  content = escape_html_syntax_characters(content)
+  
+  markup = f'<span class="maths">{content}</span>'
+  
+  return placeholder_storage.create_placeholder_store_markup(markup)
+
+
+################################################################
 # Converter
 ################################################################
 
@@ -464,6 +506,7 @@ def cmd_to_html(cmd, cmd_name):
   markup = process_inline_code(placeholder_storage, markup)
   markup = process_comments(markup)
   markup = process_display_maths(placeholder_storage, markup)
+  markup = process_inline_maths(placeholder_storage, markup)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
