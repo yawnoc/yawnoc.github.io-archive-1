@@ -222,7 +222,7 @@ class PlaceholderStorage:
 
 def process_literals(placeholder_storage, markup):
   """
-  Process CMD literal (! {content} !).
+  Process CMD literals (! {content} !).
   
   (! {content} !) becomes {content}, literally,
   with HTML syntax-character escaping.
