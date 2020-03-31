@@ -268,10 +268,10 @@ def process_display_code(placeholder_storage, markup):
   ``↵ {content} ↵`` becomes <pre><code>{content}</code></pre>,
   with HTML syntax-character escaping
   and de-indentation for {content}.
+  Arbitrary horizontal whitespace is allowed
+  before the closing backticks, and is stripped.
   For {content} containing more than two backticks,
   use a greater number of backticks.
-  Arbitrary horizontal whitespace is allowed
-  before the closing backticks.
   """
   
   markup = re.sub(
