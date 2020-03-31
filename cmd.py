@@ -256,6 +256,53 @@ def process_literal_match(placeholder_storage, match_object):
   
   return placeholder_storage.create_placeholder_store_markup(content)
 
+
+################################################################
+# Display code
+################################################################
+
+
+def process_display_code(placeholder_storage, markup):
+  """
+  Process display code ``↵ {content} ↵``.
+  
+  ``↵ {content} ↵`` becomes <pre><code>{content}</code></pre>,
+  with HTML syntax-character escaping
+  and de-indentation for {content}.
+  For {content} containing more than two backticks,
+  use a greater number of backticks.
+  Arbitrary horizontal whitespace is allowed
+  before the closing backticks.
+  """
+  
+  markup = re.sub(
+    rf'''
+      (?P<backticks>`+)
+        \n
+          (?P<content>[\s\S]*?)
+        \n
+        {HORIZONTAL_WHITESPACE_REGEX}*
+      (?P=backticks)
+    ''',
+    functools.partial(process_display_code_match, placeholder_storage),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_display_code_match(placeholder_storage, match_object):
+  
+  content = match_object.group('content')
+  content = de_indent(content)
+  content = escape_html_syntax_characters(content)
+  
+  markup = f'<pre><code>{content}</code></pre>'
+  
+  return placeholder_storage.create_placeholder_store_markup(markup)
+
+
 ################################################################
 # Converter
 ################################################################
@@ -284,6 +331,7 @@ def cmd_to_html(cmd, cmd_name):
   
   # Process supreme syntax
   markup = process_literals(placeholder_storage, markup)
+  markup = process_display_code(placeholder_storage, markup)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
