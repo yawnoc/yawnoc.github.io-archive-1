@@ -371,7 +371,7 @@ def cmd_to_html(cmd, cmd_name):
   placeholder_marker_occurrences = markup.count(PLACEHOLDER_MARKER)
   placeholder_storage = PlaceholderStorage(placeholder_marker_occurrences)
   
-  # Process supreme syntax
+  # Process placeholder-protected syntax
   markup = process_literals(placeholder_storage, markup)
   markup = process_display_code(placeholder_storage, markup)
   markup = process_inline_code(placeholder_storage, markup)
