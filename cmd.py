@@ -384,6 +384,53 @@ def process_comments(markup):
 
 
 ################################################################
+# Display maths
+################################################################
+
+
+def process_display_maths(placeholder_storage, markup):
+  """
+  Process display maths $$↵ {content} ↵$$.
+  
+  $$↵ {content} ↵$$ becomes <div class="maths">{content}</div>,
+  with HTML syntax-character escaping
+  and de-indentation for {content}.
+  Arbitrary horizontal whitespace is allowed
+  before the closing dollar signs, and is stripped.
+  For {content} containing two or more consecutive dollar signs,
+  e.g. \text{\$$d$, i.e.~$d$~dollars},
+  use a greater number of dollar signs in the delimiters.
+  """
+  
+  markup = re.sub(
+    rf'''
+      (?P<dollar_signs>[$]{{2,}})
+        \n
+          (?P<content>[\s\S]*?)
+        \n
+        {HORIZONTAL_WHITESPACE_REGEX}*
+      (?P=dollar_signs)
+    ''',
+    functools.partial(process_display_maths_match, placeholder_storage),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_display_maths_match(placeholder_storage, match_object):
+  
+  content = match_object.group('content')
+  content = de_indent(content)
+  content = escape_html_syntax_characters(content)
+  
+  markup = f'<div class="maths">{content}</div>'
+  
+  return placeholder_storage.create_placeholder_store_markup(markup)
+
+
+################################################################
 # Converter
 ################################################################
 
@@ -414,6 +461,7 @@ def cmd_to_html(cmd, cmd_name):
   markup = process_display_code(placeholder_storage, markup)
   markup = process_inline_code(placeholder_storage, markup)
   markup = process_comments(markup)
+  markup = process_display_maths(placeholder_storage, markup)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
