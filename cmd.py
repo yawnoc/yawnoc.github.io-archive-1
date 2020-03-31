@@ -303,6 +303,47 @@ def process_display_code_match(placeholder_storage, match_object):
 
 
 ################################################################
+# Inline code
+################################################################
+
+
+def process_inline_code(placeholder_storage, markup):
+  """
+  Process inline code ` {content} `.
+  
+  ` {content} ` becomes <code>{content}</code>,
+  with HTML syntax-character escaping for {content}.
+  Horizontal whitespace around {content} is stripped.
+  For {content} containing more than one backtick,
+  use a greater number of backticks.
+  """
+  
+  markup = re.sub(
+    rf'''
+      (?P<backticks>`+)
+        (?P<content>[\s\S]*?)
+      (?P=backticks)
+    ''',
+    functools.partial(process_inline_code_match, placeholder_storage),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_inline_code_match(placeholder_storage, match_object):
+  
+  content = match_object.group('content')
+  content = content.strip()
+  content = escape_html_syntax_characters(content)
+  
+  markup = f'<code>{content}</code>'
+  
+  return placeholder_storage.create_placeholder_store_markup(markup)
+
+
+################################################################
 # Converter
 ################################################################
 
@@ -331,6 +372,7 @@ def cmd_to_html(cmd, cmd_name):
   # Process supreme syntax
   markup = process_literals(placeholder_storage, markup)
   markup = process_display_code(placeholder_storage, markup)
+  markup = process_inline_code(placeholder_storage, markup)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
