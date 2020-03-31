@@ -346,6 +346,44 @@ def process_inline_code_match(placeholder_storage, match_object):
 
 
 ################################################################
+# Comments
+################################################################
+
+
+def process_comments(markup):
+  """
+  Process comments <!-- {content} -->.
+  
+  <!-- {content} --> is removed,
+  along with any preceding horizontal whitespace.
+  Although comments are weaker than literals and code
+  they may still be used to remove them, e.g.
+    (! A <!-- B --> !) becomes A <!-- B --> with HTML escaping,
+  but
+    <!-- A (! B !) --> is removed entirely.
+  Therefore, while the comment syntax is not placeholder-protected,
+  it is nevertheless accorded a place thereamong,
+  for its power is on par therewith.
+  """
+  
+  markup = re.sub(
+    rf'''
+      {HORIZONTAL_WHITESPACE_REGEX}*
+      <!
+        \-\-
+          (?P<content>[\s\S]*?)
+        \-\-
+      >
+    ''',
+    '',
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+################################################################
 # Converter
 ################################################################
 
@@ -375,6 +413,7 @@ def cmd_to_html(cmd, cmd_name):
   markup = process_literals(placeholder_storage, markup)
   markup = process_display_code(placeholder_storage, markup)
   markup = process_inline_code(placeholder_storage, markup)
+  markup = process_comments(markup)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
