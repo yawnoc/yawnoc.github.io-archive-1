@@ -277,7 +277,7 @@ def process_display_code(placeholder_storage, markup):
   
   markup = re.sub(
     rf'''
-      (?P<backticks>`+)
+      (?P<backticks>`{{2,}})
         \n
           (?P<content>[\s\S]*?)
         \n
