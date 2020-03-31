@@ -52,7 +52,7 @@ def de_indent(string):
   Empty lines do not count towards the longest common indentation.
   
   By contrast, textwrap.dedent will remove horizontal whitespace
-  from whitespace-only lines even in the middle of the string,
+  from *any* whitespace-only line, even in the middle of the string,
   which is undesirable.
   """
   
@@ -227,7 +227,9 @@ def process_literals(placeholder_storage, markup):
   (! {content} !) becomes {content}, literally,
   with HTML syntax-character escaping.
   Horizontal whitespace around {content} is stripped.
-  For {content} containing "!)", use multiple exclamation marks,
+  For {content} containing one or more consecutive exclamation marks
+  followed by a closing round bracket,
+  use a greater number of exclamation marks in the delimiters,
   e.g. "(!! (! blah !) !!)" for "(! blah !)".
   """
   
@@ -270,8 +272,8 @@ def process_display_code(placeholder_storage, markup):
   and de-indentation for {content}.
   Arbitrary horizontal whitespace is allowed
   before the closing backticks, and is stripped.
-  For {content} containing more than two backticks,
-  use a greater number of backticks.
+  For {content} containing two or more consecutive backticks,
+  use a greater number of backticks in the delimiters.
   """
   
   markup = re.sub(
@@ -314,8 +316,8 @@ def process_inline_code(placeholder_storage, markup):
   ` {content} ` becomes <code>{content}</code>,
   with HTML syntax-character escaping for {content}.
   Horizontal whitespace around {content} is stripped.
-  For {content} containing more than one backtick,
-  use a greater number of backticks.
+  For {content} containing one or more consecutive backticks,
+  use a greater number of backticks in the delimiters.
   """
   
   markup = re.sub(
