@@ -48,7 +48,7 @@ def de_indent(string):
   """
   De-indent string.
   
-  Horizontal whitespace at the very start and the very end is removed.
+  Trailing horizontal whitespace on the last line is removed.
   Empty lines do not count towards the longest common indentation.
   
   By contrast, textwrap.dedent will remove horizontal whitespace
@@ -56,8 +56,7 @@ def de_indent(string):
   which is undesirable.
   """
   
-  # Remove horizontal whitespace at the very start and the very end
-  string = re.sub(f'^{HORIZONTAL_WHITESPACE_REGEX}*', '', string)
+  # Remove trailing horizontal whitespace on the last line
   string = re.sub(f'{HORIZONTAL_WHITESPACE_REGEX}*$', '', string)
   
   # Get list of all indentations, either
