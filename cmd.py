@@ -252,6 +252,9 @@ def process_literals(placeholder_storage, markup):
 
 
 def process_literal_match(placeholder_storage, match_object):
+  """
+  Process a single CMD-literal match object.
+  """
   
   content = match_object.group('content')
   content = content.strip()
@@ -296,6 +299,9 @@ def process_display_code(placeholder_storage, markup):
 
 
 def process_display_code_match(placeholder_storage, match_object):
+  """
+  Process a single display-code match object.
+  """
   
   content = match_object.group('content')
   content = de_indent(content)
@@ -337,6 +343,9 @@ def process_inline_code(placeholder_storage, markup):
 
 
 def process_inline_code_match(placeholder_storage, match_object):
+  """
+  Process a single inline-code match object.
+  """
   
   content = match_object.group('content')
   content = content.strip()
@@ -422,6 +431,9 @@ def process_display_maths(placeholder_storage, markup):
 
 
 def process_display_maths_match(placeholder_storage, match_object):
+  """
+  Process a single display-maths match object.
+  """
   
   content = match_object.group('content')
   content = de_indent(content)
@@ -464,6 +476,9 @@ def process_inline_maths(placeholder_storage, markup):
 
 
 def process_inline_maths_match(placeholder_storage, match_object):
+  """
+  Process a single inline-maths match object.
+  """
   
   content = match_object.group('content')
   content = content.strip()
