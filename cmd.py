@@ -41,6 +41,8 @@ import re
 ################################################################
 
 
+ANY_CHARACTER_REGEX = r'[\s\S]'
+ANY_STRING_MINIMAL_REGEX = f'{ANY_CHARACTER_REGEX}*?'
 HORIZONTAL_WHITESPACE_REGEX = r'[^\S\n]'
 
 
@@ -234,10 +236,10 @@ def process_literals(placeholder_storage, markup):
   """
   
   markup = re.sub(
-    r'''
+    rf'''
       \(
         (?P<exclamation_marks>!+)
-          (?P<content>[\s\S]*?)
+          (?P<content>{ANY_STRING_MINIMAL_REGEX})
         (?P=exclamation_marks)
       \)
     ''',
@@ -280,7 +282,7 @@ def process_display_code(placeholder_storage, markup):
     rf'''
       (?P<backticks>`{{2,}})
         \n
-          (?P<content>[\s\S]*?)
+          (?P<content>{ANY_STRING_MINIMAL_REGEX})
         \n
         {HORIZONTAL_WHITESPACE_REGEX}*
       (?P=backticks)
@@ -323,7 +325,7 @@ def process_inline_code(placeholder_storage, markup):
   markup = re.sub(
     rf'''
       (?P<backticks>`+)
-        (?P<content>[\s\S]*?)
+        (?P<content>{ANY_STRING_MINIMAL_REGEX})
       (?P=backticks)
     ''',
     functools.partial(process_inline_code_match, placeholder_storage),
@@ -370,9 +372,9 @@ def process_comments(markup):
     rf'''
       {HORIZONTAL_WHITESPACE_REGEX}*
       <!
-        \-\-
-          (?P<content>[\s\S]*?)
-        \-\-
+        [-][-]
+          (?P<content>{ANY_STRING_MINIMAL_REGEX})
+        [-][-]
       >
     ''',
     '',
@@ -406,7 +408,7 @@ def process_display_maths(placeholder_storage, markup):
     rf'''
       (?P<dollar_signs>[$]{{2,}})
         \n
-          (?P<content>[\s\S]*?)
+          (?P<content>{ANY_STRING_MINIMAL_REGEX})
         \n
         {HORIZONTAL_WHITESPACE_REGEX}*
       (?P=dollar_signs)
