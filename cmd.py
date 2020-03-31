@@ -225,8 +225,7 @@ def process_literals(placeholder_storage, markup):
   Process CMD literal (! {content} !).
   
   (! {content} !) becomes {content}, literally,
-  with HTML syntax-character escaping,
-  and is unaffected by any further processing.
+  with HTML syntax-character escaping.
   Horizontal whitespace around {content} is stripped.
   For {content} containing "!)", use multiple exclamation marks,
   e.g. "(!! (! blah !) !!)" for "(! blah !)".
