@@ -263,6 +263,8 @@ class PropertyStorage:
       functools.partial(process_match_by_dictionary, self.dictionary),
       string
     )
+    
+    return string
 
 
 ################################################################
