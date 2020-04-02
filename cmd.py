@@ -554,14 +554,16 @@ def process_preamble(placeholder_storage, property_storage, markup):
   """
   Process the preamble %%↵ {content} ↵%%.
   
-  %%↵ {content} ↵%% becomes the preamble,
+  %%↵ {content} ↵%% becomes the HTML preamble,
   i.e. everything from <!DOCTYPE html> through to <body>.
   {content} is to consist of property specifications
-  of the form %{property name} {property content},
+  of the form %{property name} {property markup},
   which are stored using the property storage class
   and may be referenced by writing %{property name},
   called a property string, anywhere else in the document.
   {property name} cannot contain whitespace or percent signs.
+  If the same property is specified more than once,
+  the latest specification shall prevail.
   The following properties are accorded special treatment:
     %title
     %author
@@ -572,13 +574,27 @@ def process_preamble(placeholder_storage, property_storage, markup):
     %css
     %onload-js
   The following properties are stored
-  based on the values supplied to %date-created and %date-modified:
+  based on the values supplied above:
+    %meta-element-author
+    %meta-element-description
+    %title-element
+    %style-element
+    %body-onload-attribute
     %year-created
     %year-modified
     %year-modified-next
+  The defaults are the following:
+    %title Title
+    %author
+    %date-created yyyy-mm-dd
+    %date-modified yyyy-mm-dd
+    %resources
+    %description
+    %css
+    %onload-js
   Arbitrary horizontal whitespace is allowed
   before the closing percent signs, and is stripped.
-  For {property content} matching a {property name} pattern,
+  For {property markup} matching a {property name} pattern,
   use a CMD literal, e.g. (! a literal %propety-name !).
   For {content} containing two or more consecutive percent signs
   which are not already protected by CMD literals,
