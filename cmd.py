@@ -109,6 +109,22 @@ def escape_html_syntax_characters(string):
 PLACEHOLDER_MARKER = '\uE000'
 
 
+def process_match_by_dictionary(dictionary, match_object):
+  """
+  Proceses a match object according to a dictionary of replacements.
+  
+  If the entire string for the match object
+  is a key in the dictionary,
+  the corresponding value is returned;
+  otherwise the string is returned as is.
+  """
+  
+  match_object_string = match_object.group()
+  replacement_string = dictionary.get(match_object_string, match_object_string)
+  
+  return replacement_string
+
+
 class PlaceholderStorage:
   """
   Placeholder storage class for managing temporary replacements.
@@ -211,8 +227,9 @@ class PlaceholderStorage:
     Convert a match for a placeholder string to its markup portion.
     """
     
-    placeholder_string = match_object.group()
-    markup_portion = self.dictionary[placeholder_string]
+    markup_portion = (
+      process_match_by_dictionary(self.dictionary, match_object)
+    )
     
     return markup_portion
 
