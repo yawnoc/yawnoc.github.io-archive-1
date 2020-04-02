@@ -219,22 +219,11 @@ class PlaceholderStorage:
     
     string = re.sub(
       self.PLACEHOLDER_STRING_COMPILED_REGEX,
-      self.replace_placeholder_match_with_markup,
+      functools.partial(process_match_by_dictionary, self.dictionary),
       string
     )
     
     return string
-  
-  def replace_placeholder_match_with_markup(self, match_object):
-    """
-    Convert a match for a placeholder string to its markup portion.
-    """
-    
-    markup_portion = (
-      process_match_by_dictionary(self.dictionary, match_object)
-    )
-    
-    return markup_portion
 
 
 class PropertyStorage:
