@@ -490,6 +490,68 @@ def process_inline_maths_match(placeholder_storage, match_object):
 
 
 ################################################################
+# Preamble
+################################################################
+
+
+def process_preamble(placeholder_storage, property_storage, markup):
+  """
+  Process preamble %%↵ {content} ↵%%.
+  
+  %%↵ {content} ↵%% becomes the preamble,
+  i.e. everything from <!DOCTYPE html> through to <body>.
+  {content} is to consist of property specifications
+  of the form %{property name} {property content},
+  which are stored using the property storage class
+  and may be referenced by writing %{property name}
+  anywhere else in the document.
+  {property name} cannot contain whitespace or percent signs.
+  The following properties are accorded special treatment:
+    %title
+    %author
+    %date-created
+    %date-modified
+    %resources
+    %description
+    %css
+    %onload-js
+  The following properties are stored
+  based on the values supplied to %date-created and %date-modified:
+    %year-created
+    %year-modified
+    %year-modified-next
+  Arbitrary horizontal whitespace is allowed
+  before the closing percent signs, and is stripped.
+  For {property content} matching a {property name} pattern,
+  use a CMD literal, e.g. (! a literal %propety-name !).
+  For {content} containing two or more consecutive percent signs
+  which are not already protected by CMD literals,
+  use a greater number of percent signs in the delimiters.
+  
+  Only the first occurrence in the markup is replaced.
+  """
+  
+  markup = re.sub(
+    rf'''
+      (?P<percent_signs>%{{2,}})
+        \n
+          (?P<content>{ANY_STRING_MINIMAL_REGEX})
+        \n
+        {HORIZONTAL_WHITESPACE_REGEX}*
+      (?P=percent_signs)
+    ''',
+    functools.partial(process_preamble_match,
+      placeholder_storage, property_storage
+    ),
+    markup,
+    count=1,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+################################################################
 # Converter
 ################################################################
 
