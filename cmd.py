@@ -108,9 +108,6 @@ def escape_html_syntax_characters(string):
 
 PLACEHOLDER_MARKER = '\uE000'
 
-NOT_WHITESPACE_OR_PERCENT_REGEX = r'[^\s%]'
-PROPERTY_STRING_COMPILED_REGEX = f'%{NOT_WHITESPACE_OR_PERCENT_REGEX}+'
-
 
 def process_match_by_dictionary(dictionary, match_object):
   """
@@ -226,6 +223,10 @@ class PlaceholderStorage:
     return string
 
 
+NOT_WHITESPACE_OR_PERCENT_REGEX = r'[^\s%]'
+PROPERTY_NAME_REGEX = f'{NOT_WHITESPACE_OR_PERCENT_REGEX}+'
+
+
 class PropertyStorage:
   """
   Property storage class.
@@ -259,7 +260,7 @@ class PropertyStorage:
     """
     
     string = re.sub(
-      PROPERTY_STRING_COMPILED_REGEX,
+      f'%{PROPERTY_NAME_REGEX}',
       functools.partial(process_match_by_dictionary, self.dictionary),
       string
     )
