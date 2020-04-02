@@ -108,6 +108,9 @@ def escape_html_syntax_characters(string):
 
 PLACEHOLDER_MARKER = '\uE000'
 
+NOT_WHITESPACE_OR_PERCENT_REGEX = r'[^\s%]'
+PROPERTY_STRING_COMPILED_REGEX = f'%{NOT_WHITESPACE_OR_PERCENT_REGEX}+'
+
 
 def process_match_by_dictionary(dictionary, match_object):
   """
@@ -232,6 +235,45 @@ class PlaceholderStorage:
     )
     
     return markup_portion
+
+
+class PropertyStorage:
+  """
+  Property storage class.
+  
+  Properties are specified in the preamble
+  in the form %{property name} {property markup},
+  where {property name} cannot contain whitespace or percent signs.
+  
+  Properties are stored in a dictionary with
+    KEYS: %{property name}
+    VALUES: {property markup}
+  """
+  
+  def __init__(self):
+    """
+    Initialise property storage.
+    """
+    
+    self.dictionary = {}
+  
+  def store_markup(self, property_name, property_markup):
+    """
+    Store property markup in the dictionary.
+    """
+    
+    self.dictionary[f'%{property_name}'] = property_markup
+  
+  def replace_property_strings_with_markup(self, string):
+    """
+    Replace all property strings with their markup.
+    """
+    
+    string = re.sub(
+      PROPERTY_STRING_COMPILED_REGEX,
+      functools.partial(process_match_by_dictionary, self.dictionary),
+      string
+    )
 
 
 ################################################################
