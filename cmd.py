@@ -329,7 +329,7 @@ def process_inline_code(placeholder_storage, markup):
   """
   
   markup = re.sub(
-    rf'''
+    f'''
       (?P<backticks>`+)
         (?P<content>{ANY_STRING_MINIMAL_REGEX})
       (?P=backticks)
@@ -378,7 +378,7 @@ def process_comments(markup):
   """
   
   markup = re.sub(
-    rf'''
+    f'''
       {HORIZONTAL_WHITESPACE_REGEX}*
       <!
         [-][-]
@@ -462,7 +462,7 @@ def process_inline_maths(placeholder_storage, markup):
   """
   
   markup = re.sub(
-    rf'''
+    f'''
       (?P<dollar_signs>[$]+)
         (?P<content>{ANY_STRING_MINIMAL_REGEX})
       (?P=dollar_signs)
