@@ -627,6 +627,9 @@ def cmd_to_html(cmd, cmd_name):
   placeholder_marker_occurrences = markup.count(PLACEHOLDER_MARKER)
   placeholder_storage = PlaceholderStorage(placeholder_marker_occurrences)
   
+  # Initialise property storage
+  property_storage = PropertyStorage()
+  
   # Process placeholder-protected syntax
   markup = process_literals(placeholder_storage, markup)
   markup = process_display_code(placeholder_storage, markup)
@@ -634,6 +637,9 @@ def cmd_to_html(cmd, cmd_name):
   markup = process_comments(markup)
   markup = process_display_maths(placeholder_storage, markup)
   markup = process_inline_maths(placeholder_storage, markup)
+  
+  # Replace property strings with their markup
+  markup = property_storage.replace_property_strings_with_markup(markup)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
