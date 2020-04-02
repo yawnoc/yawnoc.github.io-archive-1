@@ -234,6 +234,7 @@ class PropertyStorage:
   Properties are specified in the preamble
   in the form %{property name} {property markup},
   where {property name} cannot contain whitespace or percent signs.
+  %{property name} is called a property string.
   
   Properties are stored in a dictionary with
     KEYS: %{property name}
@@ -554,8 +555,8 @@ def process_preamble(placeholder_storage, property_storage, markup):
   {content} is to consist of property specifications
   of the form %{property name} {property content},
   which are stored using the property storage class
-  and may be referenced by writing %{property name}
-  anywhere else in the document.
+  and may be referenced by writing %{property name},
+  called a property string, anywhere else in the document.
   {property name} cannot contain whitespace or percent signs.
   The following properties are accorded special treatment:
     %title
