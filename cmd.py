@@ -548,7 +548,7 @@ def process_inline_maths_match(placeholder_storage, match_object):
 
 def process_preamble(placeholder_storage, property_storage, markup):
   """
-  Process preamble %%↵ {content} ↵%%.
+  Process the preamble %%↵ {content} ↵%%.
   
   %%↵ {content} ↵%% becomes the preamble,
   i.e. everything from <!DOCTYPE html> through to <body>.
