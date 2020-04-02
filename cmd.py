@@ -329,7 +329,8 @@ def process_display_code(placeholder_storage, markup):
   and de-indentation for {content}.
   Arbitrary horizontal whitespace is allowed
   before the closing backticks, and is stripped.
-  For {content} containing two or more consecutive backticks,
+  For {content} containing two or more consecutive backticks
+  which are not already protected by CMD literals,
   use a greater number of backticks in the delimiters.
   """
   
@@ -376,7 +377,8 @@ def process_inline_code(placeholder_storage, markup):
   ` {content} ` becomes <code>{content}</code>,
   with HTML syntax-character escaping for {content}.
   Horizontal whitespace around {content} is stripped.
-  For {content} containing one or more consecutive backticks,
+  For {content} containing one or more consecutive backticks
+  which are not already protected by CMD literals,
   use a greater number of backticks in the delimiters.
   """
   
@@ -460,7 +462,8 @@ def process_display_maths(placeholder_storage, markup):
   and de-indentation for {content}.
   Arbitrary horizontal whitespace is allowed
   before the closing dollar signs, and is stripped.
-  For {content} containing two or more consecutive dollar signs,
+  For {content} containing two or more consecutive dollar signs
+  which are not already protected by CMD literals,
   e.g. \text{\$$d$, i.e.~$d$~dollars},
   use a greater number of dollar signs in the delimiters.
   """
@@ -508,7 +511,8 @@ def process_inline_maths(placeholder_storage, markup):
   ` {content} ` becomes <span class="maths">{content}</span>,
   with HTML syntax-character escaping for {content}.
   Horizontal whitespace around {content} is stripped.
-  For {content} containing one or more consecutive dollar signs,
+  For {content} containing one or more consecutive dollar signs
+  which are not already protected by CMD literals,
   e.g. \text{$x = \infinity$ is very big},
   use a greater number of dollar signs in the delimiters.
   """
