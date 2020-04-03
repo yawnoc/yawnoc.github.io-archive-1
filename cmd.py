@@ -737,7 +737,10 @@ def process_preamble_match(
   # Derived property %meta-element-author
   author = property_storage.get_property_markup('author')
   author = escape_html_attribute_value(author)
-  meta_element_author = f'<meta name="author" content="{author}">'
+  if author == '':
+    meta_element_author = ''
+  else:
+    meta_element_author = f'<meta name="author" content="{author}">'
   property_storage.store_property_markup(
     'meta-element-author',
     meta_element_author
