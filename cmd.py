@@ -322,13 +322,11 @@ def process_literal_match(placeholder_storage, match_object):
 
 def process_display_code(placeholder_storage, markup):
   """
-  Process display code ``↵ {content} ↵``.
+  Process display code ``↵ {content} ``.
   
-  ``↵ {content} ↵`` becomes <pre><code>{content}</code></pre>,
+  ``↵ {content} `` becomes <pre><code>{content}</code></pre>,
   with HTML syntax-character escaping
   and de-indentation for {content}.
-  Arbitrary horizontal whitespace is allowed
-  before the closing backticks, and is stripped.
   For {content} containing two or more consecutive backticks
   which are not already protected by CMD literals,
   use a greater number of backticks in the delimiters.
@@ -339,8 +337,6 @@ def process_display_code(placeholder_storage, markup):
       (?P<backticks>`{{2,}})
         \n
           (?P<content>{ANY_STRING_MINIMAL_REGEX})
-        \n
-        {HORIZONTAL_WHITESPACE_REGEX}*
       (?P=backticks)
     ''',
     functools.partial(process_display_code_match, placeholder_storage),
@@ -455,13 +451,11 @@ def process_comments(markup):
 
 def process_display_maths(placeholder_storage, markup):
   r"""
-  Process display maths $$↵ {content} ↵$$.
+  Process display maths $$↵ {content} $$.
   
-  $$↵ {content} ↵$$ becomes <div class="maths">{content}</div>,
+  $$↵ {content} $$ becomes <div class="maths">{content}</div>,
   with HTML syntax-character escaping
   and de-indentation for {content}.
-  Arbitrary horizontal whitespace is allowed
-  before the closing dollar signs, and is stripped.
   For {content} containing two or more consecutive dollar signs
   which are not already protected by CMD literals,
   e.g. \text{\$$d$, i.e.~$d$~dollars},
@@ -473,8 +467,6 @@ def process_display_maths(placeholder_storage, markup):
       (?P<dollar_signs>[$]{{2,}})
         \n
           (?P<content>{ANY_STRING_MINIMAL_REGEX})
-        \n
-        {HORIZONTAL_WHITESPACE_REGEX}*
       (?P=dollar_signs)
     ''',
     functools.partial(process_display_maths_match, placeholder_storage),
