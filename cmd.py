@@ -544,9 +544,9 @@ def process_inline_maths_match(placeholder_storage, match_object):
 
 def process_preamble(placeholder_storage, property_storage, markup):
   """
-  Process the preamble %%↵ {content} ↵%%.
+  Process the preamble %%↵ {content} %%.
   
-  %%↵ {content} ↵%% becomes the HTML preamble,
+  %%↵ {content} %% becomes the HTML preamble,
   i.e. everything from <!DOCTYPE html> through to <body>.
   {content} is to consist of property specifications
   of the form %{property name} {property markup},
@@ -584,8 +584,6 @@ def process_preamble(placeholder_storage, property_storage, markup):
     %description
     %css
     %onload-js
-  Arbitrary horizontal whitespace is allowed
-  before the closing percent signs, and is stripped.
   For {property markup} matching a {property name} pattern,
   use a CMD literal, e.g. (! a literal %propety-name !).
   For {content} containing two or more consecutive percent signs
@@ -599,9 +597,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
     rf'''
       (?P<percent_signs>%{{2,}})
         \n
-          (?P<content>{ANY_STRING_MINIMAL_REGEX})
-        \n
-        {HORIZONTAL_WHITESPACE_REGEX}*
+        (?P<content>{ANY_STRING_MINIMAL_REGEX})
       (?P=percent_signs)
     ''',
     functools.partial(process_preamble_match,
