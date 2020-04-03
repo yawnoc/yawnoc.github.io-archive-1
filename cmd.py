@@ -588,7 +588,8 @@ def process_preamble(placeholder_storage, property_storage, markup):
   {property name} cannot contain whitespace or percent signs.
   If the same property is specified more than once,
   the latest specification shall prevail.
-  The following properties are accorded special treatment:
+  The following properties, called original properties,
+  are accorded special treatment:
     %title
     %author
     %date-created
@@ -597,8 +598,8 @@ def process_preamble(placeholder_storage, property_storage, markup):
     %description
     %css
     %onload-js
-  The following properties are stored
-  based on the values supplied above:
+  The following properties, called derived properties,
+  are computed based on the supplied original properties:
     %meta-element-author
     %meta-element-description
     %title-element
@@ -607,7 +608,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
     %year-created
     %year-modified
     %year-modified-next
-  The defaults are the following:
+  The following defaults exist for original properties:
     %title Title
     %author
     %date-created yyyy-mm-dd
