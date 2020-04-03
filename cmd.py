@@ -670,7 +670,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
   Only the first occurrence in the markup is replaced.
   """
   
-  markup = re.sub(
+  markup, preamble_count = re.subn(
     rf'''
       (?P<percent_signs>%{{2,}})
         \n
@@ -685,22 +685,24 @@ def process_preamble(placeholder_storage, property_storage, markup):
     flags=re.VERBOSE
   )
   
-  markup = de_indent(f'''\
-    <!DOCTYPE html>
-    <html%html-lang-attribute>
-      <head>
-        <meta charset="utf-8">
-        %meta-element-author
-        %meta-element-description
-        %resources
-        %title-element
-        %style-element
-      </head>
-      <body%body-onload-attribute>
-        {markup}
-      </body>
-    </html>
-  ''')
+  if preamble_count > 0:
+    
+    markup = de_indent(f'''\
+      <!DOCTYPE html>
+      <html%html-lang-attribute>
+        <head>
+          <meta charset="utf-8">
+          %meta-element-author
+          %meta-element-description
+          %resources
+          %title-element
+          %style-element
+        </head>
+        <body%body-onload-attribute>
+          {markup}
+        </body>
+      </html>
+    ''')
   
   return markup
 
