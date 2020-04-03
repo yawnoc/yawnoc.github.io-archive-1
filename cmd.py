@@ -633,6 +633,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
   the latest specification shall prevail.
   The following properties, called original properties,
   are accorded special treatment:
+    %lang
     %title
     %author
     %date-created
@@ -643,6 +644,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
     %onload-js
   The following properties, called derived properties,
   are computed based on the supplied original properties:
+    %html-lang-attribute
     %meta-element-author
     %meta-element-description
     %title-element
@@ -686,7 +688,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
   
   markup = de_indent(f'''\
     <!DOCTYPE html>
-    <html lang="en">
+    <html%html-lang-attribute>
       <head>
         <meta charset="utf-8">
         %meta-element-author
@@ -705,6 +707,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
 
 
 DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS = de_indent('''\
+  %lang en
   %title Title
   %author
   %date-created yyyy-mm-dd
@@ -734,6 +737,14 @@ def process_preamble_match(
   content = DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS + content
   
   property_storage.read_specifications_store_markup(content)
+  
+  # Derived property %html-lang-attribute
+  lang = property_storage.get_property_markup('lang')
+  lang = escape_html_attribute_value(lang)
+  html_lang_attribute = f' lang="{lang}"'
+  property_storage.store_property_markup(
+    'html-lang-attribute', html_lang_attribute
+  )
   
   # Derived property %meta-element-author
   author = property_storage.get_property_markup('author')
