@@ -255,8 +255,7 @@ class PlaceholderStorage:
     return string
 
 
-NOT_WHITESPACE_OR_PERCENT_REGEX = r'[^\s%]'
-PROPERTY_NAME_REGEX = f'{NOT_WHITESPACE_OR_PERCENT_REGEX}+'
+PROPERTY_NAME_REGEX = '[a-zA-Z0-9-]+'
 
 
 class PropertyStorage:
@@ -265,7 +264,7 @@ class PropertyStorage:
   
   Properties are specified in the preamble
   in the form %{property name} {property markup},
-  where {property name} cannot contain whitespace or percent signs.
+  where {property name} may only contain letters, digits, and hyphens.
   %{property name} is called a property string.
   
   Properties are stored in a dictionary with
@@ -628,7 +627,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
   which are stored using the property storage class
   and may be referenced by writing %{property name},
   called a property string, anywhere else in the document.
-  {property name} cannot contain whitespace or percent signs.
+  {property name} may only contain letters, digits, and hyphens.
   If the same property is specified more than once,
   the latest specification shall prevail.
   The following properties, called original properties,
