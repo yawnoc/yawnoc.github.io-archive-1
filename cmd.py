@@ -746,6 +746,20 @@ def process_preamble_match(
     meta_element_author
   )
   
+  # Derived property %meta-element-description
+  description = property_storage.get_property_markup('description')
+  description = escape_html_attribute_value(description)
+  if description == '':
+    meta_element_description = ''
+  else:
+    meta_element_description = (
+      f'<meta name="description" content="{description}">'
+    )
+  property_storage.store_property_markup(
+    'meta-element-description',
+    meta_element_description
+  )
+  
   return ''
 
 
