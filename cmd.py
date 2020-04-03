@@ -336,7 +336,7 @@ def process_display_code(placeholder_storage, markup):
     rf'''
       (?P<backticks>`{{2,}})
         \n
-          (?P<content>{ANY_STRING_MINIMAL_REGEX})
+        (?P<content>{ANY_STRING_MINIMAL_REGEX})
       (?P=backticks)
     ''',
     functools.partial(process_display_code_match, placeholder_storage),
@@ -466,7 +466,7 @@ def process_display_maths(placeholder_storage, markup):
     rf'''
       (?P<dollar_signs>[$]{{2,}})
         \n
-          (?P<content>{ANY_STRING_MINIMAL_REGEX})
+        (?P<content>{ANY_STRING_MINIMAL_REGEX})
       (?P=dollar_signs)
     ''',
     functools.partial(process_display_maths_match, placeholder_storage),
