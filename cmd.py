@@ -373,7 +373,7 @@ def process_literals(placeholder_storage, markup):
   
   (! {content} !) becomes {content}, literally,
   with HTML syntax-character escaping.
-  Horizontal whitespace around {content} is stripped.
+  Whitespace around {content} is stripped.
   For {content} containing one or more consecutive exclamation marks
   followed by a closing round bracket,
   use a greater number of exclamation marks in the delimiters,
@@ -465,7 +465,7 @@ def process_inline_code(placeholder_storage, markup):
   
   ` {content} ` becomes <code>{content}</code>,
   with HTML syntax-character escaping for {content}.
-  Horizontal whitespace around {content} is stripped.
+  Whitespace around {content} is stripped.
   For {content} containing one or more consecutive backticks
   which are not already protected by CMD literals,
   use a greater number of backticks in the delimiters.
@@ -595,7 +595,7 @@ def process_inline_maths(placeholder_storage, markup):
   
   ` {content} ` becomes <span class="maths">{content}</span>,
   with HTML syntax-character escaping for {content}.
-  Horizontal whitespace around {content} is stripped.
+  Whitespace around {content} is stripped.
   For {content} containing one or more consecutive dollar signs
   which are not already protected by CMD literals,
   e.g. \text{$x = \infinity$ is very big},
