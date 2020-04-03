@@ -760,6 +760,11 @@ def process_preamble_match(
     meta_element_description
   )
   
+  # Derived property %title-element
+  title = property_storage.get_property_markup('title')
+  title_element = f'<title>{title}</title>'
+  property_storage.store_property_markup('title-element', title_element)
+  
   return ''
 
 
