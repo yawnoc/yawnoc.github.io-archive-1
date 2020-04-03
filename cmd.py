@@ -807,8 +807,10 @@ def process_whitespace(markup):
   """
   Process whitespace.
   
-  Leading and trailing horizontal whitespace is removed.
-  
+  (1) Leading and trailing horizontal whitespace is removed.
+  (2) Empty lines are removed.
+      (In the implementation, consecutive newlines
+      are normalised to a single newline.)
   """
   
   markup = re.sub(
@@ -821,6 +823,8 @@ def process_whitespace(markup):
     markup,
     flags=re.MULTILINE|re.VERBOSE
   )
+  
+  markup = re.sub(r'[\n]+', r'\n', markup)
   
   return markup
 
