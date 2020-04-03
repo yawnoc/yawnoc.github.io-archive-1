@@ -141,6 +141,25 @@ def get_value_by_dictionary(dictionary, key):
   return value
 
 
+def replace_by_dictionary(dictionary, string, regex=False):
+  """
+  Apply a dictionary of replacements to a string.
+  """
+  
+  for key in dictionary:
+    
+    if regex == False:
+      key = re.escape(key)
+    
+    string = re.sub(
+      key,
+      functools.partial(process_match_by_dictionary, dictionary),
+      string
+    )
+  
+  return string
+
+
 def process_match_by_dictionary(dictionary, match_object):
   """
   Proceses a match object according to a dictionary of replacements.
@@ -900,6 +919,38 @@ def process_whitespace(markup):
 
 
 ################################################################
+# Punctuation
+################################################################
+
+
+PUNCTUATION_REPLACEMENT_DICTIONARY = {
+  '~': '&nbsp;',
+  r'\_': '&numsp;',
+  r'\,': '&thinsp;',
+  '---': '—',
+  '--': '–',
+  r'\P': '¶',
+}
+
+
+def process_punctuation(markup):
+  """
+  Process punctuation.
+    ~   becomes &nbsp;
+    \_  becomes &numsp;
+    \,  becomes &thinsp;
+    --- becomes — U+2014 EM DASH
+    --  becomes – U+2013 EN DASH
+    \P  becomes ¶ U+00B6 PILCROW SIGN
+  Most of these are based on LaTeX syntax.
+  """
+  
+  markup = replace_by_dictionary(PUNCTUATION_REPLACEMENT_DICTIONARY, markup)
+  
+  return markup
+
+
+################################################################
 # Converter
 ################################################################
 
@@ -944,6 +995,9 @@ def cmd_to_html(cmd, cmd_name):
   
   # Process whitespace
   markup = process_whitespace(markup)
+  
+  # Process punctuation
+  markup = process_punctuation(markup)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
