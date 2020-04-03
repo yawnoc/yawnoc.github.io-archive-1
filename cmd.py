@@ -652,6 +652,9 @@ def process_preamble(placeholder_storage, property_storage, markup):
     %year-created
     %year-modified
     %year-modified-next
+  In particular, the year properties are taken
+  from the first 4 characters of the appropriate date properties.
+  (NOTE: This will break come Y10K.)
   The following defaults exist for original properties:
     %title Title
     %author
@@ -795,6 +798,29 @@ def process_preamble_match(
     body_onload_attribute = f' onload="{onload_js}"'
   property_storage.store_property_markup(
     'body-onload-attribute', body_onload_attribute
+  )
+  
+  # Derived property %year-created
+  date_created = property_storage.get_property_markup('date-created')
+  year_created = date_created[:4]
+  property_storage.store_property_markup(
+    'year-created', year_created
+  )
+  
+  # Derived property %year-modified
+  date_modified = property_storage.get_property_markup('date-modified')
+  year_modified = date_modified[:4]
+  property_storage.store_property_markup(
+    'year-modified', year_modified
+  )
+  
+  # Derived property %year-modified-next
+  try:
+    year_modified_next = f'{int(year_modified) + 1}'
+  except ValueError:
+    year_modified_next = '????'
+  property_storage.store_property_markup(
+    'year-modified-next', year_modified_next
   )
   
   return ''
