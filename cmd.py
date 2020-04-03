@@ -954,6 +954,7 @@ def process_whitespace(markup):
   (2) Empty lines are removed.
       (In the implementation, consecutive newlines
       are normalised to a single newline.)
+  (3) Backslash line continuation is effected.
   """
   
   markup = re.sub(
@@ -966,8 +967,8 @@ def process_whitespace(markup):
     markup,
     flags=re.MULTILINE|re.VERBOSE
   )
-  
   markup = re.sub(r'[\n]+', r'\n', markup)
+  markup = re.sub(r'\\\n', '', markup)
   
   return markup
 
