@@ -784,6 +784,17 @@ def process_preamble_match(
     style_element = f'<style>{css}</style>'
   property_storage.store_property_markup('style-element', style_element)
   
+  # Derived property %body-onload-attribute
+  onload_js = property_storage.get_property_markup('onload-js')
+  onload_js = escape_html_attribute_value(onload_js)
+  if onload_js == '':
+    body_onload_attribute = ''
+  else:
+    body_onload_attribute = f' onload="{onload_js}"'
+  property_storage.store_property_markup(
+    'body-onload-attribute', body_onload_attribute
+  )
+  
   return ''
 
 
