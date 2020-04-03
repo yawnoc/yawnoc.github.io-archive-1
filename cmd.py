@@ -942,6 +942,39 @@ def process_preamble_match(
 
 
 ################################################################
+# Punctuation
+################################################################
+
+
+PUNCTUATION_REPLACEMENT_DICTIONARY = {
+  r'\\': '<br>',
+  '~': '&nbsp;',
+  r'\_': '&numsp;',
+  r'\,': '&thinsp;',
+  '---': '—',
+  '--': '–',
+  r'\P': '¶',
+}
+
+
+def process_punctuation(markup):
+  """
+  Process punctuation.
+    ~   becomes &nbsp;
+    \_  becomes &numsp;
+    \,  becomes &thinsp;
+    --- becomes — U+2014 EM DASH
+    --  becomes – U+2013 EN DASH
+    \P  becomes ¶ U+00B6 PILCROW SIGN
+  Most of these are based on LaTeX syntax.
+  """
+  
+  markup = replace_by_dictionary(PUNCTUATION_REPLACEMENT_DICTIONARY, markup)
+  
+  return markup
+
+
+################################################################
 # Whitespace
 ################################################################
 
@@ -971,39 +1004,6 @@ def process_whitespace(markup):
   markup = re.sub(r'[\n]+', r'\n', markup)
   markup = re.sub(r'\\\n', '', markup)
   markup = re.sub(r'[\s]+(?=<br>)', '', markup)
-  
-  return markup
-
-
-################################################################
-# Punctuation
-################################################################
-
-
-PUNCTUATION_REPLACEMENT_DICTIONARY = {
-  r'\\': '<br>',
-  '~': '&nbsp;',
-  r'\_': '&numsp;',
-  r'\,': '&thinsp;',
-  '---': '—',
-  '--': '–',
-  r'\P': '¶',
-}
-
-
-def process_punctuation(markup):
-  """
-  Process punctuation.
-    ~   becomes &nbsp;
-    \_  becomes &numsp;
-    \,  becomes &thinsp;
-    --- becomes — U+2014 EM DASH
-    --  becomes – U+2013 EN DASH
-    \P  becomes ¶ U+00B6 PILCROW SIGN
-  Most of these are based on LaTeX syntax.
-  """
-  
-  markup = replace_by_dictionary(PUNCTUATION_REPLACEMENT_DICTIONARY, markup)
   
   return markup
 
