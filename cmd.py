@@ -690,7 +690,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
   
   if preamble_count > 0:
     
-    markup = de_indent(f'''\
+    markup = f'''\
       <!DOCTYPE html>
       <html%html-lang-attribute>
         <head>
@@ -705,12 +705,12 @@ def process_preamble(placeholder_storage, property_storage, markup):
           {markup}
         </body>
       </html>
-    ''')
+    '''
   
   return markup
 
 
-DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS = de_indent('''\
+DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS = '''
   %lang en
   %title Title
   %author
@@ -720,7 +720,7 @@ DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS = de_indent('''\
   %description
   %css
   %onload-js
-''')
+'''
 
 
 def process_preamble_match(
