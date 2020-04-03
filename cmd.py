@@ -955,6 +955,7 @@ def process_whitespace(markup):
       (In the implementation, consecutive newlines
       are normalised to a single newline.)
   (3) Backslash line continuation is effected.
+  (4) Whitespace before line break elements <br> are removed.
   """
   
   markup = re.sub(
@@ -969,6 +970,7 @@ def process_whitespace(markup):
   )
   markup = re.sub(r'[\n]+', r'\n', markup)
   markup = re.sub(r'\\\n', '', markup)
+  markup = re.sub(r'[\s]+(?=<br>)', '', markup)
   
   return markup
 
