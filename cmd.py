@@ -641,6 +641,8 @@ def process_preamble(placeholder_storage, property_storage, markup):
     %description
     %css
     %onload-js
+    %footer-copyright-remark
+    %footer-remark
   The following properties, called derived properties,
   are computed based on the supplied original properties:
     %html-lang-attribute
@@ -652,6 +654,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
     %year-created
     %year-modified
     %year-modified-next
+    %footer-element
   In particular, the year properties are taken
   from the first 4 characters of the appropriate date properties.
   (NOTE: This will break come Y10K.)
@@ -720,6 +723,8 @@ DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS = '''
   %description
   %css
   %onload-js
+  %footer-copyright-remark
+  %footer-remark
 '''
 
 
@@ -821,6 +826,43 @@ def process_preamble_match(
     year_modified_next = '????'
   property_storage.store_property_markup(
     'year-modified-next', year_modified_next
+  )
+  
+  # Derived property %footer-element
+  year_range = year_created
+  try:
+    if int(year_modified) > int(year_created):
+      year_range += f'--{year_modified}'
+  except ValueError:
+    pass
+  if author == '':
+    author_markup = ''
+  else:
+    author_markup = f'~{author}'
+  footer_copyright_remark = (
+    property_storage.get_property_markup('footer-copyright-remark')
+  )
+  if footer_copyright_remark == '':
+    footer_copyright_remark_markup = ''
+  else:
+    footer_copyright_remark_markup = f', {footer_copyright_remark}'
+  footer_remark = property_storage.get_property_markup('footer-remark')
+  if footer_remark == '':
+    footer_remark_markup = ''
+  else:
+    footer_remark_markup = f'''
+      <br>
+      {footer_remark}
+    '''
+  footer_element = f'''
+    <footer>
+      <hr>
+      ©~{year_range}{author_markup}{footer_copyright_remark_markup}.
+      {footer_remark_markup}
+    </footer>
+  '''
+  property_storage.store_property_markup(
+    'footer-element', footer_element
   )
   
   return ''
