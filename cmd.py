@@ -280,12 +280,55 @@ class PropertyStorage:
     
     self.dictionary = {}
   
-  def store_markup(self, property_name, property_markup):
+  def store_property_markup(self, property_name, property_markup):
     """
-    Store property markup in the dictionary.
+    Store markup for a property.
     """
     
-    self.dictionary[f'%{property_name}'] = property_markup
+    property_string = f'%{property_name}'
+    self.dictionary[property_string] = property_markup
+  
+  def get_property_markup(self, property_name):
+    """
+    Get property markup for a property.
+    """
+    
+    property_string = f'%{property_name}'
+    property_markup = (
+      replace_string_by_dictionary(self.dictionary, property_string)
+    )
+    
+    return property_markup
+  
+  def read_specifications_store_markup(self, preamble_content):
+    """
+    Read and store property specifications.
+    """
+    
+    re.sub(
+      f'''
+        %(?P<property_name>{PROPERTY_NAME_REGEX})
+        (?P<property_markup>{ANY_STRING_MINIMAL_REGEX})
+        (?=%|$)
+      ''',
+      self.process_specification_match,
+      preamble_content,
+      flags=re.VERBOSE
+    )
+  
+  def process_specification_match(self, match_object):
+    """
+    Process a single property-specification match object.
+    """
+    
+    property_name = match_object.group('property_name')
+    
+    property_markup = match_object.group('property_markup')
+    property_markup = property_markup.strip()
+    
+    self.store_property_markup(property_name, property_markup)
+    
+    return ''
   
   def replace_property_strings_with_markup(self, string):
     """
@@ -641,7 +684,57 @@ def process_preamble(placeholder_storage, property_storage, markup):
     flags=re.VERBOSE
   )
   
+  markup = de_indent(f'''\
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        %meta-element-author
+        %meta-element-description
+        %resources
+        %title-element
+        %style-element
+      </head>
+      <body%body-onload-attribute>
+        {markup}
+      </body>
+    </html>
+  ''')
+  
   return markup
+
+
+DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS = de_indent('''\
+  %title Title
+  %author
+  %date-created yyyy-mm-dd
+  %date-modified yyyy-mm-dd
+  %resources
+  %description
+  %css
+  %onload-js
+''')
+
+
+def process_preamble_match(
+  placeholder_storage, property_storage, match_object
+):
+  """
+  Process a single preamble match object.
+  
+  (1) The default property specifications
+      for original properties are prepended as defaults
+      (which will be overwritten by the supplied properties).
+  (2) The properties are stored.
+  (3) The derived properties are computed and stored.
+  (4) Finally the preamble is removed.
+  """
+  
+  content = match_object.group('content')
+  content = DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS + content
+  
+  property_storage.read_specifications_store_markup(content)
+  
+  return ''
 
 
 ################################################################
@@ -680,6 +773,9 @@ def cmd_to_html(cmd, cmd_name):
   markup = process_comments(markup)
   markup = process_display_maths(placeholder_storage, markup)
   markup = process_inline_maths(placeholder_storage, markup)
+  
+  # Process preamble
+  markup = process_preamble(placeholder_storage, property_storage, markup)
   
   # Replace property strings with their markup
   markup = property_storage.replace_property_strings_with_markup(markup)
