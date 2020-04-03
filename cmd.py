@@ -109,6 +109,20 @@ def escape_html_syntax_characters(string):
 PLACEHOLDER_MARKER = '\uE000'
 
 
+def replace_string_by_dictionary(dictionary, string):
+  """
+  Replace a string according to a dictionary of replacements.
+  
+  If the string is a key in the dictionary,
+  the corresponding value is returned;
+  otherwise the string is returned as is.
+  """
+  
+  replacement_string = dictionary.get(string, string)
+  
+  return replacement_string
+
+
 def process_match_by_dictionary(dictionary, match_object):
   """
   Proceses a match object according to a dictionary of replacements.
@@ -119,8 +133,8 @@ def process_match_by_dictionary(dictionary, match_object):
   otherwise the string is returned as is.
   """
   
-  match_object_string = match_object.group()
-  replacement_string = dictionary.get(match_object_string, match_object_string)
+  match_string = match_object.group()
+  replacement_string = replace_string_by_dictionary(dictionary, match_string)
   
   return replacement_string
 
