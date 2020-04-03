@@ -988,7 +988,10 @@ def process_whitespace(markup):
       (In the implementation, consecutive newlines
       are normalised to a single newline.)
   (3) Backslash line continuation is effected.
-  (4) Whitespace before line break elements <br> are removed.
+  (4) Whitespace before line break elements <br> is removed.
+  (5) Whitespace for attributes is canonicalised:
+      (a) a single space is used before the attribute name, and
+      (b) no whitespace is used around the equals sign.
   """
   
   markup = re.sub(
@@ -1004,6 +1007,19 @@ def process_whitespace(markup):
   markup = re.sub(r'[\n]+', r'\n', markup)
   markup = re.sub(r'\\\n', '', markup)
   markup = re.sub(r'[\s]+(?=<br>)', '', markup)
+  markup = re.sub(
+    r'''
+      [\s]+?
+        (?P<attribute_name>[\S]+?)
+      [\s]*?
+        =
+      [\s]*?
+        (?P<quoted_attribute_value>"[^"]*?")
+    ''',
+    r' \g<attribute_name>=\g<quoted_attribute_value>',
+    markup,
+    flags=re.VERBOSE
+  )
   
   return markup
 
