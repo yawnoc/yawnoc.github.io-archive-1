@@ -799,6 +799,33 @@ def process_preamble_match(
 
 
 ################################################################
+# Whitespace
+################################################################
+
+
+def process_whitespace(markup):
+  """
+  Process whitespace.
+  
+  Leading and trailing horizontal whitespace is removed.
+  
+  """
+  
+  markup = re.sub(
+    f'''
+      ^{HORIZONTAL_WHITESPACE_REGEX}+
+        |
+      {HORIZONTAL_WHITESPACE_REGEX}+$
+    ''',
+    '',
+    markup,
+    flags=re.MULTILINE|re.VERBOSE
+  )
+  
+  return markup
+
+
+################################################################
 # Converter
 ################################################################
 
@@ -840,6 +867,9 @@ def cmd_to_html(cmd, cmd_name):
   
   # Replace property strings with their markup
   markup = property_storage.replace_property_strings_with_markup(markup)
+  
+  # Process whitespace
+  markup = process_whitespace(markup)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
