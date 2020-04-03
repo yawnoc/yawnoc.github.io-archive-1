@@ -631,6 +631,59 @@ def process_inline_maths_match(placeholder_storage, match_object):
 
 
 ################################################################
+# Inclusions
+################################################################
+
+
+def process_inclusions(placeholder_storage, markup):
+  """
+  Process inclusions (+ {file_name} +).
+  
+  (+ {file_name} +) includes the content of the file {file_name}.
+  For {file_name} containing one or more consecutive plus signs
+  followed by a closing round bracket,
+  use a greater number of plus signs in the delimiters,
+
+  """
+  
+  markup = re.sub(
+    f'''
+      [(]
+        (?P<plus_signs>[+]+)
+          (?P<file_name>{ANY_STRING_MINIMAL_REGEX})
+        (?P=plus_signs)
+      [)]
+    ''',
+    functools.partial(process_inclusion_match, placeholder_storage),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_inclusion_match(placeholder_storage, match_object):
+  """
+  Process a single inclusion match object.
+  """
+  
+  file_name = match_object.group('file_name')
+  file_name = file_name.strip()
+  
+  with open(file_name, 'r', encoding='utf-8') as file:
+    content = file.read()
+  
+  content = process_literals(placeholder_storage, content)
+  content = process_display_code(placeholder_storage, content)
+  content = process_inline_code(placeholder_storage, content)
+  content = process_comments(content)
+  content = process_display_maths(placeholder_storage, content)
+  content = process_inline_maths(placeholder_storage, content)
+  
+  return content
+
+
+################################################################
 # Preamble
 ################################################################
 
@@ -986,6 +1039,9 @@ def cmd_to_html(cmd, cmd_name):
   markup = process_comments(markup)
   markup = process_display_maths(placeholder_storage, markup)
   markup = process_inline_maths(placeholder_storage, markup)
+  
+  # Process inclusions
+  markup = process_inclusions(placeholder_storage, markup)
   
   # Process preamble
   markup = process_preamble(placeholder_storage, property_storage, markup)
