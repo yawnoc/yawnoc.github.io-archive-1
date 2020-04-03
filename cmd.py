@@ -753,8 +753,7 @@ def process_preamble_match(
   else:
     meta_element_author = f'<meta name="author" content="{author}">'
   property_storage.store_property_markup(
-    'meta-element-author',
-    meta_element_author
+    'meta-element-author', meta_element_author
   )
   
   # Derived property %meta-element-description
@@ -767,8 +766,7 @@ def process_preamble_match(
       f'<meta name="description" content="{description}">'
     )
   property_storage.store_property_markup(
-    'meta-element-description',
-    meta_element_description
+    'meta-element-description', meta_element_description
   )
   
   # Derived property %title-element
@@ -782,7 +780,9 @@ def process_preamble_match(
     style_element = ''
   else:
     style_element = f'<style>{css}</style>'
-  property_storage.store_property_markup('style-element', style_element)
+  property_storage.store_property_markup(
+    'style-element', style_element
+  )
   
   # Derived property %body-onload-attribute
   onload_js = property_storage.get_property_markup('onload-js')
