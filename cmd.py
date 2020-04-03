@@ -381,12 +381,12 @@ def process_literals(placeholder_storage, markup):
   """
   
   markup = re.sub(
-    rf'''
-      \(
+    f'''
+      [(]
         (?P<exclamation_marks>!+)
           (?P<content>{ANY_STRING_MINIMAL_REGEX})
         (?P=exclamation_marks)
-      \)
+      [)]
     ''',
     functools.partial(process_literal_match, placeholder_storage),
     markup,
