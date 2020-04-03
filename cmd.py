@@ -31,6 +31,7 @@ ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
 
 
 import argparse
+import fnmatch
 import functools
 import os
 import re
@@ -1099,16 +1100,42 @@ def cmd_file_to_html_file(cmd_name):
 
 def main(cmd_name):
   
+  # Read CMD ignore patterns from .cmdignore
+  try:
+    with open('.cmdignore', 'r', encoding='utf-8') as cmd_ignore_file:
+      cmd_ignore_content = cmd_ignore_file.read()
+  except FileNotFoundError:
+    cmd_ignore_content = ''
+  
+  # Convert to a list and ensure leading ./
+  cmd_ignore_pattern_list = cmd_ignore_content.split()
+  cmd_ignore_pattern_list = [
+    re.sub('^(?![.]/)', './', cmd_ignore_pattern)
+      for cmd_ignore_pattern in cmd_ignore_pattern_list
+  ]
+  
+  # Get list of CMD files to be converted
   if cmd_name == '':
+    # Get list of all CMD files
     cmd_name_list = [
       os.path.join(path, name)
         for path, _, files in os.walk('.')
           for name in files
-            if name.endswith('.cmd')
+            if fnmatch.fnmatch(name, '*.cmd')
+    ]
+    # Filter out ignored CMD files
+    cmd_name_list = [
+      cmd_name
+        for cmd_name in cmd_name_list
+          if not any(
+            fnmatch.fnmatch(cmd_name, cmd_ignore_pattern)
+              for cmd_ignore_pattern in cmd_ignore_pattern_list
+          )
     ]
   else:
     cmd_name_list = [cmd_name]
   
+  # Convert CMD files
   for cmd_name in cmd_name_list:
     cmd_file_to_html_file(cmd_name)
 
@@ -1123,7 +1150,8 @@ if __name__ == '__main__':
   CMD_NAME_HELP_TEXT = '''
     Name of CMD file to be converted.
     Output is cmd_name.html.
-    Omit to convert all CMD files.
+    Omit to convert all CMD files,
+    except those listed in .cmdignore.
   '''
   parser.add_argument(
     'cmd_name',
