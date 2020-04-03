@@ -688,6 +688,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
     <!DOCTYPE html>
     <html lang="en">
       <head>
+        <meta charset="utf-8">
         %meta-element-author
         %meta-element-description
         %resources
