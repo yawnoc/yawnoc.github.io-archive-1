@@ -101,6 +101,24 @@ def escape_html_syntax_characters(string):
   return string
 
 
+def escape_html_attribute_value(string):
+  """
+  Escape the characters &, <, >, " in an attribute value.
+    & becomes &amp;
+    < becomes &lt;
+    > becomes &gt;
+    " becomes &quot;
+  CMD shall always delimit attribute values by double quotes " ",
+  never single quotes ' '.
+  Therefore single quotes are not escaped as &apos;
+  """
+  
+  string = escape_html_syntax_characters(string)
+  string = re.sub('"', '&quot;', string)
+  
+  return string
+
+
 ################################################################
 # Temporary storage
 ################################################################
