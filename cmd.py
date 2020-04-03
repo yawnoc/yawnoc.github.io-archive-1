@@ -923,8 +923,8 @@ def process_preamble_match(
   if footer_remark == '':
     footer_remark_markup = ''
   else:
-    footer_remark_markup = f'''
-      <br>
+    footer_remark_markup = rf'''
+      \\
       {footer_remark}
     '''
   footer_element = f'''
@@ -981,6 +981,7 @@ def process_whitespace(markup):
 
 
 PUNCTUATION_REPLACEMENT_DICTIONARY = {
+  r'\\': '<br>',
   '~': '&nbsp;',
   r'\_': '&numsp;',
   r'\,': '&thinsp;',
@@ -1053,11 +1054,11 @@ def cmd_to_html(cmd, cmd_name):
   # Replace property strings with their markup
   markup = property_storage.replace_property_strings_with_markup(markup)
   
-  # Process whitespace
-  markup = process_whitespace(markup)
-  
   # Process punctuation
   markup = process_punctuation(markup)
+  
+  # Process whitespace
+  markup = process_whitespace(markup)
   
   # Replace placeholders strings with markup portions
   markup = placeholder_storage.replace_placeholders_with_markup(markup)
