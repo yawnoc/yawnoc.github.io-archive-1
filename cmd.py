@@ -765,6 +765,14 @@ def process_preamble_match(
   title_element = f'<title>{title}</title>'
   property_storage.store_property_markup('title-element', title_element)
   
+  # Derived property %style-element
+  css = property_storage.get_property_markup('css')
+  if css == '':
+    style_element = ''
+  else:
+    style_element = f'<style>{css}</style>'
+  property_storage.store_property_markup('style-element', style_element)
+  
   return ''
 
 
