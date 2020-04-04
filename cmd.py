@@ -1060,10 +1060,9 @@ def cmd_to_html(cmd, cmd_name):
   markup = process_inline_maths(placeholder_storage, markup)
   markup = process_inclusions(placeholder_storage, markup)
   
-  # Initialise property storage
-  property_storage = PropertyStorage()
   
   # Process preamble
+  property_storage = PropertyStorage()
   markup = process_preamble(property_storage, markup)
   
   # Process punctuation
