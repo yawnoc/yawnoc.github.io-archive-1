@@ -376,9 +376,8 @@ class RegexReplacementStorage:
   Regex replacement storage class.
   
   Regex replacements are specified in the form
-  {% {pattern} % {replacement} %}.
-  
-  Properties are stored in a dictionary with
+  {% {pattern} % {replacement} %},
+  and are stored in a dictionary with
     KEYS: {pattern}
     VALUES: {replacement}
   """
