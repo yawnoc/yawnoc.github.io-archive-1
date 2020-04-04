@@ -1166,6 +1166,61 @@ def process_preamble_match(property_storage, match_object):
 
 
 ################################################################
+# Headings
+################################################################
+
+
+def process_headings(markup):
+  """
+  Process headings #[id] {content} #.
+  
+  #[id] {content} # becomes <h1 id="[id]">{content}</h1>,
+  Whitespace around {content} is stripped.
+  For <h2> to <h6>, use 2 to 6 delimiting hashes respectively.
+  For {content} containing the delimiting number of
+  or more consecutive hashes, use CMD literals.
+  """
+  
+  markup = re.sub(
+    f'''
+      (?P<hashes>[#]{{1,6}})
+        (?P<id_>[\S]*)
+        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+      (?P=hashes)
+    ''',
+    process_heading_match,
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_heading_match(match_object):
+  """
+  Process a single heading match object.
+  """
+  
+  hashes = match_object.group('hashes')
+  level = len(hashes)
+  tag_name = f'h{level}'
+  
+  id_ = match_object.group('id_')
+  id_ = escape_html_attribute_value(id_)
+  if id_ == '':
+    id_attribute = ''
+  else:
+    id_attribute = f' id="{id_}"'
+  
+  content = match_object.group('content')
+  content = content.strip()
+  
+  markup = f'<{tag_name}{id_attribute}>{content}</{tag_name}>'
+  
+  return markup
+
+
+################################################################
 # Punctuation
 ################################################################
 
@@ -1298,6 +1353,9 @@ def cmd_to_html(cmd, cmd_name):
   # Process preamble
   property_storage = PropertyStorage()
   markup = process_preamble(property_storage, markup)
+  
+  # Process block-level syntax
+  markup = process_headings(markup)
   
   # Process punctuation
   markup = process_punctuation(markup)
