@@ -1186,6 +1186,7 @@ def process_headings(markup):
   
   markup = re.sub(
     f'''
+      ^{HORIZONTAL_WHITESPACE_REGEX}*
       (?P<hashes>[#]{{1,6}})
         (?P<id_>[\S]*)
         (?P<content>{ANY_STRING_MINIMAL_REGEX})
@@ -1193,7 +1194,7 @@ def process_headings(markup):
     ''',
     process_heading_match,
     markup,
-    flags=re.VERBOSE
+    flags=re.MULTILINE|re.VERBOSE
   )
   
   return markup
