@@ -1222,6 +1222,104 @@ def process_heading_match(match_object):
 
 
 ################################################################
+# Blocks
+################################################################
+
+
+BLOCK_DELIMITER_DICTIONARY = {
+  '/': 'p',
+  '|': 'div',
+  '"': 'blockquote',
+  '=': 'ul',
+  '+': 'ol',
+}
+BLOCK_DELIMITERS_STRING = ''.join(BLOCK_DELIMITER_DICTIONARY.keys())
+BLOCK_DELIMITER_REGEX = f'[{BLOCK_DELIMITERS_STRING}]'
+
+LIST_TAG_NAMES = ['ul', 'ol']
+
+
+def process_blocks(markup):
+  """
+  Process blocks XX[id] [class]↵ {content} XX.
+  
+  The following delimiters (X) are used:
+    Non-lists
+      /  <p>
+      |  <div>
+      "  <blockquote>
+    Lists
+      =  <ul>
+      +  <ol>
+  XX[id] [class]↵ {content} XX becomes
+  <tag_name id="[id]" class="class">{content}</tag_name>,
+  where each attribute is omitted if it is empty.
+  For {content} containing two or more consecutive Xs
+  which are not already protected by CMD literals,
+  use a greater number of Xs in the delimiters.
+  
+  For list blocks, {content} is split into list items <li>
+  according to the leading occurrences of the following symbols:
+    -
+    +
+    *
+    1. (or any run of digits followed by a full stop)
+  """
+  
+  markup = re.sub(
+    f'''
+      (?P<delimiters>(?P<delimiter>{BLOCK_DELIMITER_REGEX})(?P=delimiter)+)
+        (?P<id_>[\S]*)
+        (?P<class_>[^\n]*)
+        \n
+        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+      (?P=delimiters)
+    ''',
+    process_block_match,
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_block_match(match_object):
+  """
+  Process a single block match object.
+  """
+  
+  delimiter = match_object.group('delimiter')
+  tag_name = BLOCK_DELIMITER_DICTIONARY[delimiter]
+  is_list = tag_name in LIST_TAG_NAMES
+  
+  id_ = match_object.group('id_')
+  id_ = escape_html_attribute_value(id_)
+  if id_ == '':
+    id_attribute = ''
+  else:
+    id_attribute = f' id="{id_}"'
+  
+  class_ = match_object.group('class_')
+  class_ = class_.strip()
+  class_ = escape_html_attribute_value(class_)
+  if class_ == '':
+    class_attribute = ''
+  else:
+    class_attribute = f' class="{class_}"'
+  
+  content = match_object.group('content')
+  
+  if is_list:
+    content = process_list_content(content)
+  
+  markup = (
+    f'<{tag_name}{id_attribute}{class_attribute}>{content}</{tag_name}>'
+  )
+  
+  return markup
+
+
+################################################################
 # Punctuation
 ################################################################
 
@@ -1357,6 +1455,9 @@ def cmd_to_html(cmd, cmd_name):
   
   # Process headings
   markup = process_headings(markup)
+  
+  # Process blocks
+  markup = process_blocks(markup)
   
   # Process punctuation
   markup = process_punctuation(markup)
