@@ -130,7 +130,7 @@ PLACEHOLDER_MARKER = '\uE000'
 
 def get_value_by_dictionary(dictionary, key):
   """
-  Get the value for a key according to a dictionary.
+  Get the value for a key in a dictionary.
   
   If the key is in the dictionary,
   the corresponding value is returned;
