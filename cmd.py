@@ -733,6 +733,7 @@ def process_preamble(property_storage, markup):
   from the first 4 characters of the appropriate date properties.
   (NOTE: This will break come Y10K.)
   The following defaults exist for original properties:
+    %lang en
     %title Title
     %author
     %date-created yyyy-mm-dd
@@ -741,6 +742,8 @@ def process_preamble(property_storage, markup):
     %description
     %css
     %onload-js
+    %footer-copyright-remark
+    %footer-remark
   For {property markup} matching a {property name} pattern,
   use a CMD literal, e.g. (! a literal %propety-name !).
   For {content} containing two or more consecutive percent signs
