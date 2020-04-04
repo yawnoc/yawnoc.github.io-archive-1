@@ -784,6 +784,7 @@ def process_preamble(property_storage, markup):
         </body>
       </html>
     '''
+    markup = property_storage.replace_property_strings_with_markup(markup)
   
   return markup
 
@@ -1064,9 +1065,6 @@ def cmd_to_html(cmd, cmd_name):
   
   # Process preamble
   markup = process_preamble(property_storage, markup)
-  
-  # Replace property strings with their markup
-  markup = property_storage.replace_property_strings_with_markup(markup)
   
   # Process punctuation
   markup = process_punctuation(markup)
