@@ -1309,6 +1309,9 @@ def process_block_match(match_object):
   
   content = match_object.group('content')
   
+  # Process nested blocks
+  content = process_blocks(content)
+  
   if is_list:
     content = process_list_content(content)
   
