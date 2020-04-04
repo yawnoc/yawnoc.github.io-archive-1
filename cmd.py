@@ -1274,7 +1274,7 @@ def process_blocks(markup):
       =  <ul>
       +  <ol>
   XX[id] [class]↵ {content} XX becomes
-  <tag_name id="[id]" class="class">{content}</tag_name>,
+  <tag_name id="[id]" class="class">↵{content}</tag_name>,
   where each attribute is omitted if it is empty.
   For {content} containing two or more consecutive Xs
   which are not already protected by CMD literals,
@@ -1341,7 +1341,7 @@ def process_block_match(match_object):
     content = process_list_content(content)
   
   markup = (
-    f'<{tag_name}{id_attribute}{class_attribute}>{content}</{tag_name}>'
+    f'<{tag_name}{id_attribute}{class_attribute}>\n{content}</{tag_name}>'
   )
   
   return markup
