@@ -146,6 +146,23 @@ def replace_by_ordinary_dictionary(dictionary, string):
   return string
 
 
+def replace_by_regex_dictionary(dictionary, string):
+  """
+  Apply a dictionary of regex replacements to a string.
+  """
+  
+  for pattern in dictionary:
+    
+    replacement = dictionary[pattern]
+    
+    string = re.sub(
+      pattern,
+      replacement,
+      string,
+      flags=re.MULTILINE|re.VERBOSE
+    )
+
+
 def process_match_by_ordinary_dictionary(dictionary, match_object):
   """
   Process a match object using a dictionary of ordinary replacements.
