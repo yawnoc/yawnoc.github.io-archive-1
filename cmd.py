@@ -135,11 +135,11 @@ def replace_by_ordinary_dictionary(dictionary, string):
   
   for pattern in dictionary:
     
-    pattern = re.escape(pattern)
+    replacement = dictionary[pattern]
     
     string = re.sub(
-      pattern,
-      functools.partial(process_match_by_ordinary_dictionary, dictionary),
+      re.escape(pattern),
+      replacement,
       string
     )
   
@@ -166,6 +166,11 @@ def replace_by_regex_dictionary(dictionary, string):
 def process_match_by_ordinary_dictionary(dictionary, match_object):
   """
   Process a match object using a dictionary of ordinary replacements.
+  To be passed in the form
+    functools.partial(process_match_by_ordinary_dictionary, dictionary)
+  as the replacement-function argument to re.sub,
+  so that an ordinary replacement dictionary can be used
+  to process a regex match object.
   
   If the entire string for the match object
   is a key (pattern) in the dictionary,
