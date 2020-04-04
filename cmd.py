@@ -406,6 +406,41 @@ class RegexReplacementStorage:
     return string
 
 
+class OrdinaryReplacementStorage:
+  """
+  Ordinary replacement storage class.
+  
+  Ordinary replacements are specified in the form
+  {: {pattern} : {replacement} :},
+  and are stored in a dictionary with
+    KEYS: {pattern}
+    VALUES: {replacement}
+  """
+  
+  def __init__(self):
+    """
+    Initialise ordinary replacement storage.
+    """
+    
+    self.dictionary = {}
+  
+  def store_replacement(self, pattern, replacement):
+    """
+    Store a replacement.
+    """
+    
+    self.dictionary[pattern] = replacement
+  
+  def replace_patterns(self, string):
+    """
+    Replace all patterns with their replacements.
+    """
+    
+    string = replace_by_ordinary_dictionary(self.dictionary, string)
+    
+    return string
+
+
 ################################################################
 # Literals
 ################################################################
@@ -745,7 +780,7 @@ def process_regex_replacements(regex_replacement_storage, markup):
   
   All regex replacement specifications are read and stored
   using the regex replacement storage class.
-  If the same pattern is specified in more than once,
+  If the same pattern is specified more than once,
   the latest specification shall prevail.
   They are then applied to the markup in reverse order.
   
@@ -753,17 +788,12 @@ def process_regex_replacements(regex_replacement_storage, markup):
     Malicious user-defined regex replacements
     will break normal CMD syntax.
     To avoid breaking placeholder storage,
-    do not use regex to tamper with placeholder strings.
+    do not use replacements to tamper with placeholder strings.
     To avoid breaking properties,
-    do not use regex to tamper with property strings.
+    do not use replacements to tamper with property strings.
   """
   
   markup = re.sub(
-  #  f'''
-  #    (?P<pattern>{ANY_STRING_MINIMAL_REGEX})
-  #    aaa
-  #    (?P<replacement>{ANY_STRING_MINIMAL_REGEX})
-  # ''',
     f'''
       [{{]
         (?P<percent_signs>%+)
@@ -797,6 +827,77 @@ def process_regex_replacement_match(regex_replacement_storage, match_object):
   replacement = replacement.strip()
   
   regex_replacement_storage.store_replacement(pattern, replacement)
+  
+  return ''
+
+
+################################################################
+# Ordinary replacements
+################################################################
+
+
+def process_ordinary_replacements(ordinary_replacement_storage, markup):
+  """
+  Process ordinary replacements {: {pattern} : {replacement} :}.
+  
+  Whitespace around {pattern} and {replacement} is stripped.
+  For {pattern} or {replacement} containing
+  one or more consecutive colons,
+  use a greater number of colons in the delimiters.
+  For {pattern} or {replacement} matching any of the syntax above,
+  which should not be processed using that syntax, use CMD literals.
+  
+  All ordinary replacement specifications are read and stored
+  using the ordinary replacement storage class.
+  If the same pattern is specified more than once,
+  the latest specification shall prevail.
+  They are then applied to the markup in reverse order.
+  
+  WARNING:
+    Malicious user-defined ordinary replacements
+    will break normal CMD syntax.
+    To avoid breaking placeholder storage,
+    do not use replacements to tamper with placeholder strings.
+    To avoid breaking properties,
+    do not use replacements to tamper with property strings.
+  """
+  
+  markup = re.sub(
+    f'''
+      [{{]
+        (?P<colons>:+)
+          (?P<pattern>{ANY_STRING_MINIMAL_REGEX})
+        (?P=colons)
+          (?P<replacement>{ANY_STRING_MINIMAL_REGEX})
+        (?P=colons)
+      [}}]
+    ''',
+    functools.partial(process_ordinary_replacement_match,
+      ordinary_replacement_storage
+    ),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  markup = ordinary_replacement_storage.replace_patterns(markup)
+  
+  return markup
+
+
+def process_ordinary_replacement_match(
+  ordinary_replacement_storage, match_object
+):
+  """
+  Process a single ordinary-replacement match object.
+  """
+  
+  pattern = match_object.group('pattern')
+  pattern = pattern.strip()
+  
+  replacement = match_object.group('replacement')
+  replacement = replacement.strip()
+  
+  ordinary_replacement_storage.store_replacement(pattern, replacement)
   
   return ''
 
@@ -1181,6 +1282,10 @@ def cmd_to_html(cmd, cmd_name):
   # Process regex replacements
   regex_replacement_storage = RegexReplacementStorage()
   markup = process_regex_replacements(regex_replacement_storage, markup)
+  
+  # Process ordinary replacements
+  ordinary_replacement_storage = OrdinaryReplacementStorage()
+  markup = process_ordinary_replacements(ordinary_replacement_storage, markup)
   
   # Process preamble
   property_storage = PropertyStorage()
