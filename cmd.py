@@ -1175,6 +1175,7 @@ def process_headings(markup):
   Process headings #[id] {content} #.
   
   #[id] {content} # becomes <h1 id="[id]">{content}</h1>,
+  where the id attribute is omitted if it is empty.
   Whitespace around {content} is stripped.
   For <h2> to <h6>, use 2 to 6 delimiting hashes respectively.
   For {content} containing the delimiting number of
@@ -1354,7 +1355,7 @@ def cmd_to_html(cmd, cmd_name):
   property_storage = PropertyStorage()
   markup = process_preamble(property_storage, markup)
   
-  # Process block-level syntax
+  # Process headings
   markup = process_headings(markup)
   
   # Process punctuation
