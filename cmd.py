@@ -67,9 +67,9 @@ def de_indent(string):
   # (2) the leading empty string on a non-empty line.
   indentation_list = re.findall(
     rf'''
-      ^{HORIZONTAL_WHITESPACE_REGEX}+
+      ^  {HORIZONTAL_WHITESPACE_REGEX} +
         |
-      ^(?=[^\n])
+      ^  (?=  [^\n]  )
     ''',
     string,
     flags=re.MULTILINE|re.VERBOSE
@@ -346,9 +346,10 @@ class PropertyStorage:
     
     re.sub(
       f'''
-        %(?P<property_name>{PROPERTY_NAME_REGEX})
-        (?P<property_markup>{ANY_STRING_MINIMAL_REGEX})
-        (?=%|$)
+        %
+        (?P<property_name>  {PROPERTY_NAME_REGEX}  )
+          (?P<property_markup>  {ANY_STRING_MINIMAL_REGEX}  )
+        (?=  %  |  $  )
       ''',
       self.process_specification_match,
       preamble_content,
@@ -474,12 +475,12 @@ def process_literals(placeholder_storage, markup):
   """
   
   markup = re.sub(
-    f'''
-      [(]
-        (?P<exclamation_marks>!+)
-          (?P<content>{ANY_STRING_MINIMAL_REGEX})
+    rf'''
+      \(
+        (?P<exclamation_marks>  ! +  )
+          (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
         (?P=exclamation_marks)
-      [)]
+      \)
     ''',
     functools.partial(process_literal_match, placeholder_storage),
     markup,
@@ -520,9 +521,9 @@ def process_display_code(placeholder_storage, markup):
   
   markup = re.sub(
     rf'''
-      (?P<backticks>`{{2,}})
+      (?P<backticks>  ` {{2,}}  )
         \n
-        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+        (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=backticks)
     ''',
     functools.partial(process_display_code_match, placeholder_storage),
@@ -566,8 +567,8 @@ def process_inline_code(placeholder_storage, markup):
   
   markup = re.sub(
     f'''
-      (?P<backticks>`+)
-        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+      (?P<backticks>  ` +  )
+        (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=backticks)
     ''',
     functools.partial(process_inline_code_match, placeholder_storage),
@@ -615,10 +616,10 @@ def process_comments(markup):
   
   markup = re.sub(
     f'''
-      {HORIZONTAL_WHITESPACE_REGEX}*
+      {HORIZONTAL_WHITESPACE_REGEX} *
       <!
         [-][-]
-          (?P<content>{ANY_STRING_MINIMAL_REGEX})
+          (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
         [-][-]
       >
     ''',
@@ -650,9 +651,9 @@ def process_display_maths(placeholder_storage, markup):
   
   markup = re.sub(
     rf'''
-      (?P<dollar_signs>[$]{{2,}})
+      (?P<dollar_signs>  [$] {{2,}}  )
         \n
-        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+        (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=dollar_signs)
     ''',
     functools.partial(process_display_maths_match, placeholder_storage),
@@ -697,8 +698,8 @@ def process_inline_maths(placeholder_storage, markup):
   
   markup = re.sub(
     f'''
-      (?P<dollar_signs>[$]+)
-        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+      (?P<dollar_signs> [$]  +  )
+        (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=dollar_signs)
     ''',
     functools.partial(process_inline_maths_match, placeholder_storage),
@@ -742,12 +743,12 @@ def process_inclusions(placeholder_storage, markup):
   """
   
   markup = re.sub(
-    f'''
-      [(]
-        (?P<plus_signs>[+]+)
-          (?P<file_name>{ANY_STRING_MINIMAL_REGEX})
+    rf'''
+      \(
+        (?P<plus_signs>  [+] +  )
+          (?P<file_name>  {ANY_STRING_MINIMAL_REGEX}  )
         (?P=plus_signs)
-      [)]
+      \)
     ''',
     functools.partial(process_inclusion_match, placeholder_storage),
     markup,
@@ -814,14 +815,14 @@ def process_regex_replacements(
   """
   
   markup = re.sub(
-    f'''
-      [{{]
-        (?P<percent_signs>%+)
-          (?P<pattern>{ANY_STRING_MINIMAL_REGEX})
+    rf'''
+      \{{
+        (?P<percent_signs>  % +  )
+          (?P<pattern>  {ANY_STRING_MINIMAL_REGEX}  )
         (?P=percent_signs)
-          (?P<replacement>{ANY_STRING_MINIMAL_REGEX})
+          (?P<replacement>  {ANY_STRING_MINIMAL_REGEX}  )
         (?P=percent_signs)
-      [}}]
+      \}}
     ''',
     functools.partial(process_regex_replacement_match,
       placeholder_storage,
@@ -885,14 +886,14 @@ def process_ordinary_replacements(ordinary_replacement_storage, markup):
   """
   
   markup = re.sub(
-    f'''
-      [{{]
-        (?P<colons>:+)
-          (?P<pattern>{ANY_STRING_MINIMAL_REGEX})
+    rf'''
+      \{{
+        (?P<colons>  [:] +  )
+          (?P<pattern>  {ANY_STRING_MINIMAL_REGEX}  )
         (?P=colons)
-          (?P<replacement>{ANY_STRING_MINIMAL_REGEX})
+          (?P<replacement>  {ANY_STRING_MINIMAL_REGEX}  )
         (?P=colons)
-      [}}]
+      \}}
     ''',
     functools.partial(process_ordinary_replacement_match,
       ordinary_replacement_storage
@@ -996,9 +997,9 @@ def process_preamble(property_storage, markup):
   
   markup, preamble_count = re.subn(
     rf'''
-      (?P<percent_signs>%{{2,}})
+      (?P<percent_signs>  % {{2,}}  )
         \n
-        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+        (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=percent_signs)
     ''',
     functools.partial(process_preamble_match, property_storage),
@@ -1203,11 +1204,11 @@ def process_headings(markup):
   """
   
   markup = re.sub(
-    f'''
-      ^{HORIZONTAL_WHITESPACE_REGEX}*
-      (?P<hashes>[#]{{1,6}})
-        (?P<id_>[\S]*)
-        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+    rf'''
+      ^  {HORIZONTAL_WHITESPACE_REGEX} *
+      (?P<hashes>  [#] {{1,6}}  )
+        (?P<id_>  [\S] *  )
+        (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=hashes)
     ''',
     process_heading_match,
@@ -1288,12 +1289,15 @@ def process_blocks(markup):
   """
   
   markup = re.sub(
-    f'''
-      (?P<delimiters>(?P<delimiter>{BLOCK_DELIMITER_REGEX})(?P=delimiter)+)
-        (?P<id_>[\S]*)
-        (?P<class_>[^\n]*)
+    rf'''
+      (?P<delimiters>
+        (?P<delimiter>  {BLOCK_DELIMITER_REGEX}  )
+        (?P=delimiter) +
+      )
+        (?P<id_>  [\S] *  )
+        (?P<class_>  [^\n] *  )
         \n
-        (?P<content>{ANY_STRING_MINIMAL_REGEX})
+        (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=delimiters)
     ''',
     process_block_match,
@@ -1357,14 +1361,14 @@ def process_list_content(content):
   
   # Replace delimiters with </li>↵<li>
   content = re.sub(
-    f'''
+    rf'''
       ^{HORIZONTAL_WHITESPACE_REGEX}*
       (
         [-+*]
           |
-        [0-9]+[.]
+        [0-9] +  [.]
       )
-      [\s]*
+      [\s] *
     ''',
     '</li>\n<li>',
     content,
@@ -1441,9 +1445,9 @@ def process_whitespace(markup):
   
   markup = re.sub(
     f'''
-      ^{HORIZONTAL_WHITESPACE_REGEX}+
+      ^  {HORIZONTAL_WHITESPACE_REGEX} +
         |
-      {HORIZONTAL_WHITESPACE_REGEX}+$
+      {HORIZONTAL_WHITESPACE_REGEX} +  $
     ''',
     '',
     markup,
@@ -1454,12 +1458,12 @@ def process_whitespace(markup):
   markup = re.sub(r'[\s]+(?=<br>)', '', markup)
   markup = re.sub(
     r'''
-      [\s]+?
-        (?P<attribute_name>[\S]+?)
-      [\s]*?
+      [\s] +?
+        (?P<attribute_name>  [\S] +?  )
+      [\s] *?
         =
-      [\s]*?
-        (?P<quoted_attribute_value>"[^"]*?")
+      [\s] *?
+        (?P<quoted_attribute_value>  "  [^"] *?  ")
     ''',
     r' \g<attribute_name>=\g<quoted_attribute_value>',
     markup,
