@@ -1372,10 +1372,11 @@ def process_list_content(content):
   )
   
   # Delete extra first </li>
-  content = re.sub('</li>', '', content, count=1)
+  content, delete_count = re.subn('</li>', '', content, count=1)
   
-  # Append missing </li> at the end
-  content = content + '</li>\n'
+  # Append missing </li> at the end if there is at least one item
+  if delete_count > 0:
+    content = content + '</li>\n'
   
   return content
 
