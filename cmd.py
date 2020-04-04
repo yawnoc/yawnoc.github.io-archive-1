@@ -1259,7 +1259,7 @@ def process_blocks(markup):
   use a greater number of Xs in the delimiters.
   
   For list blocks, {content} is split into list items <li>
-  according to the leading occurrences of the following symbols:
+  according to the leading occurrences of the following delimiters:
     -
     +
     *
@@ -1317,6 +1317,43 @@ def process_block_match(match_object):
   )
   
   return markup
+
+
+def process_list_content(content):
+  """
+  Process list content.
+  
+  {content} is split into list items <li>
+  according to the leading occurrences of the following delimiters:
+    -
+    +
+    *
+    1. (or any run of digits followed by a full stop)
+  """
+  
+  # Replace delimiters with </li>↵<li>
+  content = re.sub(
+    f'''
+      ^{HORIZONTAL_WHITESPACE_REGEX}*
+      (
+        [-+*]
+          |
+        [0-9]+[.]
+      )
+      [\s]*
+    ''',
+    '</li>\n<li>',
+    content,
+    flags=re.MULTILINE|re.VERBOSE
+  )
+  
+  # Delete extra first </li>
+  content = re.sub('</li>', '', content, count=1)
+  
+  # Append missing </li> at the end
+  content = content + '</li>\n'
+  
+  return content
 
 
 ################################################################
