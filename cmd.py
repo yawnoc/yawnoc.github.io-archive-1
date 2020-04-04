@@ -161,6 +161,8 @@ def replace_by_regex_dictionary(dictionary, string):
       string,
       flags=re.MULTILINE|re.VERBOSE
     )
+  
+  return string
 
 
 def process_match_by_ordinary_dictionary(dictionary, match_object):
