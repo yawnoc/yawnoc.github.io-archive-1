@@ -1387,6 +1387,7 @@ def process_list_content(content):
 
 PUNCTUATION_REPLACEMENT_DICTIONARY = {
   r'\\': '<br>',
+  r'\ ': ' ',
   '~': '&nbsp;',
   r'\_': '&numsp;',
   r'\,': '&thinsp;',
@@ -1397,8 +1398,10 @@ PUNCTUATION_REPLACEMENT_DICTIONARY = {
 
 
 def process_punctuation(markup):
-  """
+  r"""
   Process punctuation.
+    \\  becomes <br>
+    \   becomes   U+0020 SPACE
     ~   becomes &nbsp;
     \_  becomes &numsp;
     \,  becomes &thinsp;
