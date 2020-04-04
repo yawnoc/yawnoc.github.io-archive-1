@@ -142,40 +142,38 @@ def get_value_by_dictionary(dictionary, key):
   return value
 
 
-def replace_by_dictionary(dictionary, string, use_regex=False):
+def replace_by_ordinary_dictionary(dictionary, string):
   """
-  Apply a dictionary of replacements to a string.
+  Apply a dictionary of ordinary replacements to a string.
   """
   
   for pattern in dictionary:
     
-    if use_regex == False:
-      pattern = re.escape(pattern)
+    pattern = re.escape(pattern)
     
     string = re.sub(
       pattern,
-      functools.partial(process_match_by_dictionary, dictionary),
-      string,
-      flags=re.MULTILINE|re.VERBOSE
+      functools.partial(process_match_by_ordinary_dictionary, dictionary),
+      string
     )
   
   return string
 
 
-def process_match_by_dictionary(dictionary, match_object):
+def process_match_by_ordinary_dictionary(dictionary, match_object):
   """
-  Proceses a match object according to a dictionary of replacements.
+  Process a match object using a dictionary of ordinary replacements.
   
   If the entire string for the match object
-  is a key in the dictionary,
-  the corresponding value is returned;
+  is a key (pattern) in the dictionary,
+  the corresponding value (replacement) is returned;
   otherwise the string is returned as is.
   """
   
   match_string = match_object.group()
-  replacement_string = get_value_by_dictionary(dictionary, match_string)
+  replacement = dictionary.get(match_string, match_string)
   
-  return replacement_string
+  return replacement
 
 
 class PlaceholderStorage:
@@ -210,7 +208,7 @@ class PlaceholderStorage:
   such strings will satisfy properties (1) through (5) above.
   
   The portion of markup which should not be altered
-  is stored in a dictionary, with
+  is stored in a dictionary of ordinary replacements, with
     KEYS: the placeholder strings (XX...X{n}X), and
     VALUES: the respective portions of markup.
   """
@@ -269,7 +267,7 @@ class PlaceholderStorage:
     
     string = re.sub(
       self.PLACEHOLDER_STRING_COMPILED_REGEX,
-      functools.partial(process_match_by_dictionary, self.dictionary),
+      functools.partial(process_match_by_ordinary_dictionary, self.dictionary),
       string
     )
     
@@ -288,7 +286,8 @@ class PropertyStorage:
   where {property name} may only contain letters, digits, and hyphens.
   %{property name} is called a property string.
   
-  Properties are stored in a dictionary with
+  Properties are stored in a dictionary of ordinary replacements,
+  with
     KEYS: %{property name}
     VALUES: {property markup}
   """
@@ -357,7 +356,7 @@ class PropertyStorage:
     
     string = re.sub(
       f'%{PROPERTY_NAME_REGEX}',
-      functools.partial(process_match_by_dictionary, self.dictionary),
+      functools.partial(process_match_by_ordinary_dictionary, self.dictionary),
       string
     )
     
@@ -970,7 +969,9 @@ def process_punctuation(markup):
   Most of these are based on LaTeX syntax.
   """
   
-  markup = replace_by_dictionary(PUNCTUATION_REPLACEMENT_DICTIONARY, markup)
+  markup = (
+    replace_by_ordinary_dictionary(PUNCTUATION_REPLACEMENT_DICTIONARY, markup)
+  )
   
   return markup
 
