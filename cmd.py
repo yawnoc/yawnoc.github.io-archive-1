@@ -715,14 +715,16 @@ def process_inline_maths_match(placeholder_storage, match_object):
 
 
 def process_inclusions(placeholder_storage, markup):
-  """
+  r"""
   Process inclusions (+ {file_name} +).
   
   (+ {file_name} +) includes the content of the file {file_name}.
   For {file_name} containing one or more consecutive plus signs
   followed by a closing round bracket,
   use a greater number of plus signs in the delimiters,
-
+  
+  Unlike nested \input in LaTeX,
+  nested inclusions are not processed.
   """
   
   markup = re.sub(
