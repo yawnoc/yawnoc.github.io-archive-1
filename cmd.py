@@ -750,7 +750,7 @@ def process_preamble(property_storage, markup):
   which are not already protected by CMD literals,
   use a greater number of percent signs in the delimiters.
   
-  Only the first occurrence in the markup is replaced.
+  Only the first occurrence in the markup is processed.
   """
   
   markup, preamble_count = re.subn(
