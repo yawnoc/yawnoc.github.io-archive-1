@@ -767,7 +767,9 @@ def process_inclusion_match(placeholder_storage, match_object):
 ################################################################
 
 
-def process_regex_replacements(regex_replacement_storage, markup):
+def process_regex_replacements(
+  placeholder_storage, regex_replacement_storage, markup
+):
   """
   Process regex replacements {% {pattern} % {replacement} %}.
   
@@ -775,7 +777,7 @@ def process_regex_replacements(regex_replacement_storage, markup):
   For {pattern} or {replacement} containing
   one or more consecutive percent signs,
   use a greater number of percent signs in the delimiters.
-  For {pattern} or {replacement} matching any of the syntax above,
+  For {pattern} matching any of the syntax above,
   which should not be processed using that syntax, use CMD literals.
   
   All regex replacement specifications are read and stored
@@ -804,6 +806,7 @@ def process_regex_replacements(regex_replacement_storage, markup):
       [}}]
     ''',
     functools.partial(process_regex_replacement_match,
+      placeholder_storage,
       regex_replacement_storage
     ),
     markup,
@@ -815,13 +818,16 @@ def process_regex_replacements(regex_replacement_storage, markup):
   return markup
 
 
-def process_regex_replacement_match(regex_replacement_storage, match_object):
+def process_regex_replacement_match(
+  placeholder_storage, regex_replacement_storage, match_object
+):
   """
   Process a single regex-replacement match object.
   """
   
   pattern = match_object.group('pattern')
   pattern = pattern.strip()
+  pattern = placeholder_storage.replace_placeholders_with_markup(pattern)
   
   replacement = match_object.group('replacement')
   replacement = replacement.strip()
@@ -844,8 +850,6 @@ def process_ordinary_replacements(ordinary_replacement_storage, markup):
   For {pattern} or {replacement} containing
   one or more consecutive colons,
   use a greater number of colons in the delimiters.
-  For {pattern} or {replacement} matching any of the syntax above,
-  which should not be processed using that syntax, use CMD literals.
   
   All ordinary replacement specifications are read and stored
   using the ordinary replacement storage class.
@@ -1281,7 +1285,9 @@ def cmd_to_html(cmd, cmd_name):
   
   # Process regex replacements
   regex_replacement_storage = RegexReplacementStorage()
-  markup = process_regex_replacements(regex_replacement_storage, markup)
+  markup = process_regex_replacements(
+    placeholder_storage, regex_replacement_storage, markup
+  )
   
   # Process ordinary replacements
   ordinary_replacement_storage = OrdinaryReplacementStorage()
