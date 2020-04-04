@@ -1057,8 +1057,6 @@ def cmd_to_html(cmd, cmd_name):
   markup = process_comments(markup)
   markup = process_display_maths(placeholder_storage, markup)
   markup = process_inline_maths(placeholder_storage, markup)
-  
-  # Process inclusions
   markup = process_inclusions(placeholder_storage, markup)
   
   # Process preamble
