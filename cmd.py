@@ -947,6 +947,7 @@ def process_preamble(property_storage, markup):
   are accorded special treatment:
     %lang
     %title
+    %title-suffix
     %author
     %date-created
     %date-modified
@@ -974,6 +975,7 @@ def process_preamble(property_storage, markup):
   The following defaults exist for original properties:
     %lang en
     %title Title
+    %title-suffix
     %author
     %date-created yyyy-mm-dd
     %date-modified yyyy-mm-dd
@@ -1031,6 +1033,7 @@ def process_preamble(property_storage, markup):
 DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS = '''
   %lang en
   %title Title
+  %title-suffix
   %author
   %date-created yyyy-mm-dd
   %date-modified yyyy-mm-dd
@@ -1094,7 +1097,8 @@ def process_preamble_match(property_storage, match_object):
   
   # Derived property %title-element
   title = property_storage.get_property_markup('title')
-  title_element = f'<title>{title}</title>'
+  title_suffix = property_storage.get_property_markup('title-suffix')
+  title_element = f'<title>{title}{title_suffix}</title>'
   property_storage.store_property_markup('title-element', title_element)
   
   # Derived property %style-element
