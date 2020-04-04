@@ -87,6 +87,17 @@ def de_indent(string):
   return string
 
 
+def escape_python_backslash(string):
+  r"""
+  Escape a Python backslash into a double backslash.
+    \ becomes \\
+  """
+  
+  string = re.sub(r'\\', r'\\\\', string)
+  
+  return string
+
+
 def escape_html_syntax_characters(string):
   """
   Escape the three HTML syntax characters &, <, >.
@@ -136,6 +147,7 @@ def replace_by_ordinary_dictionary(dictionary, string):
   for pattern in dictionary:
     
     replacement = dictionary[pattern]
+    replacement = escape_python_backslash(replacement)
     
     string = re.sub(
       re.escape(pattern),
