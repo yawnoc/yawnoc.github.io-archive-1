@@ -142,20 +142,25 @@ def get_value_by_dictionary(dictionary, key):
   return value
 
 
-def replace_by_dictionary(dictionary, string, regex=False):
+def replace_by_dictionary(dictionary, string, regex=False, multiline=False):
   """
   Apply a dictionary of replacements to a string.
   """
   
-  for key in dictionary:
+  for pattern in dictionary:
     
     if regex == False:
-      key = re.escape(key)
+      pattern = re.escape(pattern)
+    
+    flags = re.VERBOSE
+    if multiline:
+      flags = flags | re.MULTILINE
     
     string = re.sub(
-      key,
+      pattern,
       functools.partial(process_match_by_dictionary, dictionary),
-      string
+      string,
+      flags=flags
     )
   
   return string
