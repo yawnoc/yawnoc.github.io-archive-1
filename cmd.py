@@ -690,7 +690,7 @@ def process_inclusion_match(placeholder_storage, match_object):
 ################################################################
 
 
-def process_preamble(placeholder_storage, property_storage, markup):
+def process_preamble(property_storage, markup):
   """
   Process the preamble %%↵ {content} %%.
   
@@ -757,9 +757,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
         (?P<content>{ANY_STRING_MINIMAL_REGEX})
       (?P=percent_signs)
     ''',
-    functools.partial(process_preamble_match,
-      placeholder_storage, property_storage
-    ),
+    functools.partial(process_preamble_match, property_storage),
     markup,
     count=1,
     flags=re.VERBOSE
@@ -802,9 +800,7 @@ DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS = '''
 '''
 
 
-def process_preamble_match(
-  placeholder_storage, property_storage, match_object
-):
+def process_preamble_match(property_storage, match_object):
   """
   Process a single preamble match object.
   
@@ -1066,7 +1062,7 @@ def cmd_to_html(cmd, cmd_name):
   markup = process_inclusions(placeholder_storage, markup)
   
   # Process preamble
-  markup = process_preamble(placeholder_storage, property_storage, markup)
+  markup = process_preamble(property_storage, markup)
   
   # Replace property strings with their markup
   markup = property_storage.replace_property_strings_with_markup(markup)
