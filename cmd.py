@@ -128,20 +128,6 @@ def escape_html_attribute_value(string):
 PLACEHOLDER_MARKER = '\uE000'
 
 
-def get_value_by_dictionary(dictionary, key):
-  """
-  Get the value for a key in a dictionary.
-  
-  If the key is in the dictionary,
-  the corresponding value is returned;
-  otherwise the key is returned as is.
-  """
-  
-  value = dictionary.get(key, key)
-  
-  return value
-
-
 def replace_by_ordinary_dictionary(dictionary, string):
   """
   Apply a dictionary of ordinary replacements to a string.
@@ -313,9 +299,7 @@ class PropertyStorage:
     """
     
     property_string = f'%{property_name}'
-    property_markup = (
-      get_value_by_dictionary(self.dictionary, property_string)
-    )
+    property_markup = self.dictionary[property_string]
     
     return property_markup
   
