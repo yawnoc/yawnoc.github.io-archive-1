@@ -401,7 +401,8 @@ class RegexReplacementStorage:
     Replace all patterns with their replacements.
     """
     
-    string = replace_by_regex_dictionary(self.dictionary, string)
+    reversed_dictionary = dict(reversed(list(self.dictionary.items())))
+    string = replace_by_regex_dictionary(reversed_dictionary, string)
     
     return string
 
@@ -436,7 +437,8 @@ class OrdinaryReplacementStorage:
     Replace all patterns with their replacements.
     """
     
-    string = replace_by_ordinary_dictionary(self.dictionary, string)
+    reversed_dictionary = dict(reversed(list(self.dictionary.items())))
+    string = replace_by_ordinary_dictionary(reversed_dictionary, string)
     
     return string
 
