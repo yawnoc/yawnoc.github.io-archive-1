@@ -142,14 +142,14 @@ def get_value_by_dictionary(dictionary, key):
   return value
 
 
-def replace_by_dictionary(dictionary, string, regex=False):
+def replace_by_dictionary(dictionary, string, use_regex=False):
   """
   Apply a dictionary of replacements to a string.
   """
   
   for pattern in dictionary:
     
-    if regex == False:
+    if use_regex == False:
       pattern = re.escape(pattern)
     
     string = re.sub(
