@@ -772,6 +772,8 @@ def process_regex_replacements(
 ):
   """
   Process regex replacements {% {pattern} % {replacement} %}.
+  Python regex syntax is used,
+  and the flags re.MULTILINE and re.VERBOSE are enabled.
   
   Whitespace around {pattern} and {replacement} is stripped.
   For {pattern} or {replacement} containing
