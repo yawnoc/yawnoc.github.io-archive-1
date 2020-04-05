@@ -124,22 +124,32 @@ def escape_html_quotes(string):
   return string
 
 
-def escape_html_attribute_value(string):
+def escape_html_attribute_value(placeholder_storage, string):
   """
   Escape the characters &, <, >, " in an attribute value.
-    & becomes &amp;
-    < becomes &lt;
-    > becomes &gt;
-    " becomes &quot;
+  
+  Since the string may contain placeholder strings
+  (for instance from CMD literals),
+  in which the three HTML syntax characters &, <, >
+  are already escaped, but the quote " is not:
+  (1) The three HTML syntax characters &, <, > are escaped.
+  (2) The placeholder strings are replaced with their markup.
+  (3) If the string is empty, an empty string is returned.
+  (4) The quote " is escaped.
+  (5) The string is stored into a new placeholder.
+  
   CMD shall always delimit attribute values by double quotes " ",
   never single quotes ' '.
   Therefore single quotes are not escaped as &apos;
   """
   
   string = escape_html_syntax_characters(string)
+  string = placeholder_storage.replace_placeholders_with_markup(string)
+  if string == '':
+    return string
   string = escape_html_quotes(string)
   
-  return string
+  return placeholder_storage.create_placeholder_store_markup(string)
 
 
 ################################################################
@@ -941,7 +951,7 @@ def process_ordinary_replacement_match(
 ################################################################
 
 
-def process_preamble(property_storage, markup):
+def process_preamble(placeholder_storage, property_storage, markup):
   """
   Process the preamble %%↵ {content} %%.
   
@@ -1013,7 +1023,9 @@ def process_preamble(property_storage, markup):
         (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=percent_signs)
     ''',
-    functools.partial(process_preamble_match, property_storage),
+    functools.partial(process_preamble_match,
+      placeholder_storage, property_storage
+    ),
     markup,
     count=1,
     flags=re.VERBOSE
@@ -1058,7 +1070,9 @@ DEFAULT_ORIGINAL_PROPERTY_SPECIFICATIONS = '''
 '''
 
 
-def process_preamble_match(property_storage, match_object):
+def process_preamble_match(
+  placeholder_storage, property_storage, match_object
+):
   """
   Process a single preamble match object.
   
@@ -1077,7 +1091,7 @@ def process_preamble_match(property_storage, match_object):
   
   # Derived property %html-lang-attribute
   lang = property_storage.get_property_markup('lang')
-  lang = escape_html_attribute_value(lang)
+  lang = escape_html_attribute_value(placeholder_storage, lang)
   html_lang_attribute = f' lang="{lang}"'
   property_storage.store_property_markup(
     'html-lang-attribute', html_lang_attribute
@@ -1085,7 +1099,7 @@ def process_preamble_match(property_storage, match_object):
   
   # Derived property %meta-element-author
   author = property_storage.get_property_markup('author')
-  author = escape_html_attribute_value(author)
+  author = escape_html_attribute_value(placeholder_storage, author)
   if author == '':
     meta_element_author = ''
   else:
@@ -1096,7 +1110,7 @@ def process_preamble_match(property_storage, match_object):
   
   # Derived property %meta-element-description
   description = property_storage.get_property_markup('description')
-  description = escape_html_attribute_value(description)
+  description = escape_html_attribute_value(placeholder_storage, description)
   if description == '':
     meta_element_description = ''
   else:
@@ -1125,7 +1139,7 @@ def process_preamble_match(property_storage, match_object):
   
   # Derived property %body-onload-attribute
   onload_js = property_storage.get_property_markup('onload-js')
-  onload_js = escape_html_attribute_value(onload_js)
+  onload_js = escape_html_attribute_value(placeholder_storage, onload_js)
   if onload_js == '':
     body_onload_attribute = ''
   else:
@@ -1202,7 +1216,7 @@ def process_preamble_match(property_storage, match_object):
 ################################################################
 
 
-def process_headings(markup):
+def process_headings(placeholder_storage, markup):
   """
   Process headings #[id] {content} #.
   
@@ -1222,7 +1236,7 @@ def process_headings(markup):
         (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=hashes)
     ''',
-    process_heading_match,
+    functools.partial(process_heading_match, placeholder_storage),
     markup,
     flags=re.MULTILINE|re.VERBOSE
   )
@@ -1230,7 +1244,7 @@ def process_headings(markup):
   return markup
 
 
-def process_heading_match(match_object):
+def process_heading_match(placeholder_storage, match_object):
   """
   Process a single heading match object.
   """
@@ -1240,7 +1254,7 @@ def process_heading_match(match_object):
   tag_name = f'h{level}'
   
   id_ = match_object.group('id_')
-  id_ = escape_html_attribute_value(id_)
+  id_ = escape_html_attribute_value(placeholder_storage, id_)
   if id_ == '':
     id_attribute = ''
   else:
@@ -1272,7 +1286,7 @@ BLOCK_DELIMITER_REGEX = f'[{BLOCK_DELIMITERS_STRING}]'
 LIST_TAG_NAMES = ['ul', 'ol']
 
 
-def process_blocks(markup):
+def process_blocks(placeholder_storage, markup):
   """
   Process blocks XX[id] [class]↵ {content} XX.
   
@@ -1311,7 +1325,7 @@ def process_blocks(markup):
         (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=delimiters)
     ''',
-    process_block_match,
+    functools.partial(process_block_match, placeholder_storage),
     markup,
     flags=re.VERBOSE
   )
@@ -1319,7 +1333,7 @@ def process_blocks(markup):
   return markup
 
 
-def process_block_match(match_object):
+def process_block_match(placeholder_storage, match_object):
   """
   Process a single block match object.
   """
@@ -1329,7 +1343,7 @@ def process_block_match(match_object):
   is_list = tag_name in LIST_TAG_NAMES
   
   id_ = match_object.group('id_')
-  id_ = escape_html_attribute_value(id_)
+  id_ = escape_html_attribute_value(placeholder_storage, id_)
   if id_ == '':
     id_attribute = ''
   else:
@@ -1337,7 +1351,7 @@ def process_block_match(match_object):
   
   class_ = match_object.group('class_')
   class_ = class_.strip()
-  class_ = escape_html_attribute_value(class_)
+  class_ = escape_html_attribute_value(placeholder_storage, class_)
   if class_ == '':
     class_attribute = ''
   else:
@@ -1346,7 +1360,7 @@ def process_block_match(match_object):
   content = match_object.group('content')
   
   # Process nested blocks
-  content = process_blocks(content)
+  content = process_blocks(placeholder_storage, content)
   
   if is_list:
     content = process_list_content(content)
@@ -1511,6 +1525,7 @@ def cmd_to_html(cmd, cmd_name):
   placeholder_storage = PlaceholderStorage(placeholder_marker_occurrences)
   
   # Process placeholder-protected syntax
+  # (i.e. syntax where the content is protected by a placeholder)
   markup = process_literals(placeholder_storage, markup)
   markup = process_display_code(placeholder_storage, markup)
   markup = process_inline_code(placeholder_storage, markup)
@@ -1531,13 +1546,13 @@ def cmd_to_html(cmd, cmd_name):
   
   # Process preamble
   property_storage = PropertyStorage()
-  markup = process_preamble(property_storage, markup)
+  markup = process_preamble(placeholder_storage, property_storage, markup)
   
   # Process headings
-  markup = process_headings(markup)
+  markup = process_headings(placeholder_storage, markup)
   
   # Process blocks
-  markup = process_blocks(markup)
+  markup = process_blocks(placeholder_storage, markup)
   
   # Process punctuation
   markup = process_punctuation(markup)
