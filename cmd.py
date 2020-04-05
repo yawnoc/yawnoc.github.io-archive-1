@@ -501,6 +501,65 @@ class OrdinaryReplacementStorage:
     return string
 
 
+class LinkDefinitionStorage:
+  """
+  Link definition storage class.
+  
+  Definitions for reference-style links are specified in the form
+  @@[{label}] [class]↵ {href} [title] @@,
+  and are stored in a dictionary with
+    KEYS: {label}
+    VALUES: {attributes}
+  where {attributes} is the sequence of attributes
+  built from [class], {href}, and [title].
+  {label} is case insensitive,
+  and is stored canonically in lower case.
+  """
+  
+  def __init__(self):
+    """
+    Initialise link definition storage.
+    """
+    
+    self.dictionary = {}
+  
+  def store_link_definition_attributes(self,
+    placeholder_storage, label, class_, href, title
+  ):
+    """
+    Store attributes for a link definition.
+    """
+    
+    label = label.lower()
+    
+    class_attribute = build_html_attribute(
+      placeholder_storage, 'class', class_
+    )
+    href_attribute = build_html_attribute(
+      placeholder_storage, 'href', href
+    )
+    title_attribute = build_html_attribute(
+      placeholder_storage, 'title', title
+    )
+    
+    attributes = class_attribute + href_attribute + title_attribute
+    
+    self.dictionary[label] = attributes
+  
+  def get_link_definition_attributes(self, label):
+    """
+    Get attributes for a link definition.
+    
+    If no link is defined for the given label, return None.
+    """
+    
+    label = label.lower()
+    
+    attributes = self.dictionary.get(label, None)
+    
+    return attributes
+
+
 ################################################################
 # Literals
 ################################################################
@@ -1454,6 +1513,179 @@ def process_list_content(content):
 
 
 ################################################################
+# Links
+################################################################
+
+
+def process_links(placeholder_storage, link_definition_storage, markup):
+  """
+  Process links.
+  
+  Reference-style:
+    DEFINITION: @@[{label}] [class]↵ {href} [title] @@
+    LINK: [{content}][[label]]
+  A single space may be included between [{content}] and [[label]].
+  The referencing string {label} is case insensitive
+  (this is handled by the link definition storage class).
+  If a link is supplied with an empty [label],
+  {content} is used as the label for that link.
+  
+  [{content}][[label]] becomes <a{attributes}>{content}</a>,
+  where {attributes} is the sequence of attributes
+  built from [class], {href}, and [title].
+  
+  Whitespace around {content} and [label] is stripped.
+  For links whose {content} or [label] contains
+  one or more closing square brackets, use CMD literals.
+  For definitions whose {label}, [class], {href}, or [title]
+  contains two or more consecutive at signs
+  which are not already protected by CMD literals,
+  use a greater number of at signs in the delimiters.
+  
+  Inline-style:
+    LINK: [{content}]({href} [title])
+  (NOTE:
+    Unlike John Gruber's markdown, [title] is not surrounded by quotes.
+    If quotes are supplied to [title],
+    they are automatically escaped as &quot;.
+  )
+  
+  [{content}]({href} [title]) becomes
+  <a href="{href}" title="[title]">{content}</a>.
+  
+  Whitespace around {content} is stripped.
+  For {content}, {href}, or [title] containing
+  one or more closing square or round brackets, use CMD literals.
+  
+  All (reference-style) link definitions are read and stored
+  using the link definition storage class.
+  If the same label (which is case insensitive)
+  is specified more than once,
+  the latest specification shall prevail.
+  """
+  
+  # Reference-style link definitions
+  markup = re.sub(
+    rf'''
+      (?P<at_signs>  @  {{2,}})
+        \[
+          (?P<label>  {ANY_STRING_MINIMAL_REGEX}  )
+        \]
+        (?P<class_>  [^\n] *  )
+      \n
+      [\s] *
+        (?P<href>  [\S] *  )
+        (?P<title>  {ANY_STRING_MINIMAL_REGEX}  )
+      (?P=at_signs)
+    ''',
+    functools.partial(process_link_definition_match,
+      placeholder_storage,
+      link_definition_storage
+    ),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  # Reference-style links
+  markup = re.sub(
+    rf'''
+      \[
+        (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
+      \]
+      [ ] ?
+      \[
+        (?P<label>  {ANY_STRING_MINIMAL_REGEX}  )
+      \]
+    ''',
+    functools.partial(process_reference_link_match, link_definition_storage),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  # Inline-style links
+  markup = re.sub(
+    rf'''
+      \[
+        (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
+      \]
+      \(
+        (?P<href>  [\S] *  )
+        (?P<title>  {ANY_STRING_MINIMAL_REGEX}  )
+      \)
+    ''',
+    functools.partial(process_inline_link_match, placeholder_storage),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_link_definition_match(
+  placeholder_storage, link_definition_storage, match_object
+):
+  """
+  Process a single link-definition match object.
+  """
+  
+  label = match_object.group('label')
+  class_ = match_object.group('class_')
+  href = match_object.group('href')
+  title = match_object.group('title')
+  
+  link_definition_storage.store_link_definition_attributes(
+    placeholder_storage, label, class_, href, title
+  )
+  
+  return ''
+
+
+def process_reference_link_match(link_definition_storage, match_object):
+  """
+  Process a single reference-style-link match object.
+  
+  If no link is defined for the given label,
+  returned the entire string for the matched object as is.
+  """
+  
+  content = match_object.group('content')
+  content = content.strip()
+  
+  label = match_object.group('label')
+  label = label.strip()
+  if label == '':
+    label = content
+  
+  attributes = link_definition_storage.get_link_definition_attributes(label)
+  if attributes is None:
+    match_string = match_object.group()
+    return match_string
+  
+  markup = f'<a{attributes}>{content}</a>'
+  
+  return markup
+
+
+def process_inline_link_match(placeholder_storage, match_object):
+  """
+  Process a single inline-style-link match object.
+  """
+  
+  content = match_object.group('content')
+  content = content.strip()
+  
+  href = match_object.group('href')
+  href_attribute = build_html_attribute(placeholder_storage, 'href', href)
+  
+  title = match_object.group('title')
+  title_attribute = build_html_attribute(placeholder_storage, 'title', title)
+  
+  markup = f'<a{href_attribute}{title_attribute}>{content}</a>'
+  
+  return markup
+
+
+################################################################
 # Punctuation
 ################################################################
 
@@ -1596,6 +1828,10 @@ def cmd_to_html(cmd, cmd_name):
   
   # Process blocks
   markup = process_blocks(placeholder_storage, markup)
+  
+  # Process inline syntax
+  link_definition_storage = LinkDefinitionStorage()
+  markup = process_links(placeholder_storage, link_definition_storage, markup)
   
   # Process punctuation
   markup = process_punctuation(markup)
