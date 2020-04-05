@@ -511,7 +511,8 @@ def process_literals(placeholder_storage, markup):
   Process CMD literals (! {content} !).
   
   (! {content} !) becomes {content}, literally,
-  with HTML syntax-character escaping.
+  with HTML syntax-character escaping
+  and de-indentation for {content}.
   Whitespace around {content} is stripped.
   For {content} containing one or more consecutive exclamation marks
   followed by a closing round bracket,
@@ -541,6 +542,7 @@ def process_literal_match(placeholder_storage, match_object):
   """
   
   content = match_object.group('content')
+  content = de_indent(content)
   content = content.strip()
   content = escape_html_syntax_characters(content)
   
