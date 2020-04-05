@@ -127,22 +127,25 @@ def escape_html_quotes(string):
 def escape_html_attribute_value(placeholder_storage, string):
   """
   Escape the characters &, <, >, " in an attribute value.
+  Surrounding whitespace not protected by a placeholder is stripped.
   
   Since the string may contain placeholder strings
   (for instance from CMD literals),
   in which the three HTML syntax characters &, <, >
   are already escaped, but the quote " is not:
-  (1) The three HTML syntax characters &, <, > are escaped.
-  (2) The placeholder strings are replaced with their markup.
-  (3) If the string is empty, an empty string is returned.
-  (4) The quote " is escaped.
-  (5) The string is stored into a new placeholder.
+  (1) Leading and trailing whitespace is stripped.
+  (2) The three HTML syntax characters &, <, > are escaped.
+  (3) The placeholder strings are replaced with their markup.
+  (4) If the string is empty, an empty string is returned.
+  (5) The quote " is escaped.
+  (6) The string is stored into a new placeholder.
   
   CMD shall always delimit attribute values by double quotes " ",
   never single quotes ' '.
   Therefore single quotes are not escaped as &apos;
   """
   
+  string = string.strip()
   string = escape_html_syntax_characters(string)
   string = placeholder_storage.replace_placeholders_with_markup(string)
   if string == '':
