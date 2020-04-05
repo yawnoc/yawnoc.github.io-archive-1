@@ -155,6 +155,27 @@ def escape_html_attribute_value(placeholder_storage, string):
   return placeholder_storage.create_placeholder_store_markup(string)
 
 
+def build_html_attribute(
+  placeholder_storage, attribute_name, attribute_value
+):
+  """
+  Builds an HTML attribute  {attribute_name}="{attribute_value}",
+  with a leading space and the necessary escaping for {attribute_value}.
+  If {attribute_value} is empty, the empty string is returned.
+  """
+  
+  attribute_value = escape_html_attribute_value(
+    placeholder_storage, attribute_value
+  )
+  
+  if attribute_value == '':
+    attribute = ''
+  else:
+    attribute = f' {attribute_name}="{attribute_value}"'
+  
+  return attribute
+
+
 ################################################################
 # Temporary storage
 ################################################################
@@ -567,19 +588,10 @@ def process_display_code_match(placeholder_storage, match_object):
   """
   
   id_ = match_object.group('id_')
-  id_ = escape_html_attribute_value(placeholder_storage, id_)
-  if id_ == '':
-    id_attribute = ''
-  else:
-    id_attribute = f' id="{id_}"'
+  id_attribute = build_html_attribute(placeholder_storage, 'id', id_)
   
   class_ = match_object.group('class_')
-  class_ = class_.strip()
-  class_ = escape_html_attribute_value(placeholder_storage, class_)
-  if class_ == '':
-    class_attribute = ''
-  else:
-    class_attribute = f' class="{class_}"'
+  class_attribute = build_html_attribute(placeholder_storage, 'class', class_)
   
   content = match_object.group('content')
   content = de_indent(content)
@@ -1112,8 +1124,9 @@ def process_preamble_match(
   
   # Derived property %html-lang-attribute
   lang = property_storage.get_property_markup('lang')
-  lang = escape_html_attribute_value(placeholder_storage, lang)
-  html_lang_attribute = f' lang="{lang}"'
+  html_lang_attribute = build_html_attribute(
+    placeholder_storage, 'lang', lang
+  )
   property_storage.store_property_markup(
     'html-lang-attribute', html_lang_attribute
   )
@@ -1241,8 +1254,7 @@ def process_headings(placeholder_storage, markup):
   """
   Process headings #[id] {content} #.
   
-  #[id] {content} # becomes <h1 id="[id]">{content}</h1>,
-  where the id attribute is omitted if it is empty.
+  #[id] {content} # becomes <h1 id="[id]">{content}</h1>.
   Whitespace around {content} is stripped.
   For <h2> to <h6>, use 2 to 6 delimiting hashes respectively.
   For {content} containing the delimiting number of
@@ -1275,11 +1287,7 @@ def process_heading_match(placeholder_storage, match_object):
   tag_name = f'h{level}'
   
   id_ = match_object.group('id_')
-  id_ = escape_html_attribute_value(placeholder_storage, id_)
-  if id_ == '':
-    id_attribute = ''
-  else:
-    id_attribute = f' id="{id_}"'
+  id_attribute = build_html_attribute(placeholder_storage, 'id', id_)
   
   content = match_object.group('content')
   content = content.strip()
@@ -1320,8 +1328,7 @@ def process_blocks(placeholder_storage, markup):
       =  <ul>
       +  <ol>
   XX[id] [class]↵ {content} XX becomes
-  <tag_name id="[id]" class="class">↵{content}</tag_name>,
-  where each attribute is omitted if it is empty.
+  <tag_name id="[id]" class="class">↵{content}</tag_name>.
   For {content} containing two or more consecutive Xs
   which are not already protected by CMD literals,
   use a greater number of Xs in the delimiters.
@@ -1364,19 +1371,10 @@ def process_block_match(placeholder_storage, match_object):
   is_list = tag_name in LIST_TAG_NAMES
   
   id_ = match_object.group('id_')
-  id_ = escape_html_attribute_value(placeholder_storage, id_)
-  if id_ == '':
-    id_attribute = ''
-  else:
-    id_attribute = f' id="{id_}"'
+  id_attribute = build_html_attribute(placeholder_storage, 'id', id_)
   
   class_ = match_object.group('class_')
-  class_ = class_.strip()
-  class_ = escape_html_attribute_value(placeholder_storage, class_)
-  if class_ == '':
-    class_attribute = ''
-  else:
-    class_attribute = f' class="{class_}"'
+  class_attribute = build_html_attribute(placeholder_storage, 'class', class_)
   
   content = match_object.group('content')
   
