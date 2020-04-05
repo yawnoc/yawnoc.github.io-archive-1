@@ -701,6 +701,11 @@ def process_display_maths(placeholder_storage, markup):
   which are not already protected by CMD literals,
   e.g. \text{\$$d$, i.e.~$d$~dollars},
   use a greater number of dollar signs in the delimiters.
+  
+  This is to be used with some sort of Javascript code
+  which renders equations based on the class "maths".
+  If MathML support becomes widespread in the future,
+  this ought to be replaced with some MathML converter.
   """
   
   markup = re.sub(
@@ -748,6 +753,11 @@ def process_inline_maths(placeholder_storage, markup):
   which are not already protected by CMD literals,
   e.g. \text{$x = \infinity$ is very big},
   use a greater number of dollar signs in the delimiters.
+  
+  This is to be used with some sort of Javascript code
+  which renders equations based on the class "maths".
+  If MathML support becomes widespread in the future,
+  this ought to be replaced with some MathML converter.
   """
   
   markup = re.sub(
