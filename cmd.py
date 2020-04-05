@@ -113,6 +113,17 @@ def escape_html_syntax_characters(string):
   return string
 
 
+def escape_html_quotes(string):
+  """
+  Escape the HTML double quote ".
+    " becomes &quot;
+  """
+  
+  string = re.sub('"', '&quot;', string)
+  
+  return string
+
+
 def escape_html_attribute_value(string):
   """
   Escape the characters &, <, >, " in an attribute value.
@@ -126,7 +137,7 @@ def escape_html_attribute_value(string):
   """
   
   string = escape_html_syntax_characters(string)
-  string = re.sub('"', '&quot;', string)
+  string = escape_html_quotes(string)
   
   return string
 
