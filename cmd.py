@@ -530,9 +530,10 @@ def process_literal_match(placeholder_storage, match_object):
 
 def process_display_code(placeholder_storage, markup):
   """
-  Process display code ``↵ {content} ``.
+  Process display code ``[id] [class]↵ {content} ``.
   
-  ``↵ {content} `` becomes <pre><code>{content}</code></pre>,
+  ``[id] [class]↵ {content} `` becomes
+  <pre id="[id]" class="[class]"><code>{content}</code></pre>,
   with HTML syntax-character escaping
   and de-indentation for {content}.
   For {content} containing two or more consecutive backticks
@@ -543,6 +544,8 @@ def process_display_code(placeholder_storage, markup):
   markup = re.sub(
     rf'''
       (?P<backticks>  ` {{2,}}  )
+        (?P<id_>  [\S] *  )
+        (?P<class_>  [^\n] *  )
         \n
         (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=backticks)
@@ -560,11 +563,26 @@ def process_display_code_match(placeholder_storage, match_object):
   Process a single display-code match object.
   """
   
+  id_ = match_object.group('id_')
+  id_ = escape_html_attribute_value(placeholder_storage, id_)
+  if id_ == '':
+    id_attribute = ''
+  else:
+    id_attribute = f' id="{id_}"'
+  
+  class_ = match_object.group('class_')
+  class_ = class_.strip()
+  class_ = escape_html_attribute_value(placeholder_storage, class_)
+  if class_ == '':
+    class_attribute = ''
+  else:
+    class_attribute = f' class="{class_}"'
+  
   content = match_object.group('content')
   content = de_indent(content)
   content = escape_html_syntax_characters(content)
   
-  markup = f'<pre><code>{content}</code></pre>'
+  markup = f'<pre{id_attribute}{class_attribute}><code>{content}</code></pre>'
   
   return placeholder_storage.create_placeholder_store_markup(markup)
 
