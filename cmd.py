@@ -692,9 +692,10 @@ def process_comments(markup):
 
 def process_display_maths(placeholder_storage, markup):
   r"""
-  Process display maths $$↵ {content} $$.
+  Process display maths $$[id] [class]↵ {content} $$.
   
-  $$↵ {content} $$ becomes <div class="maths">{content}</div>,
+  $$[id] [class]↵ {content} $$ becomes
+  <div id="[id]" class="maths [class]">{content}</div>,
   with HTML syntax-character escaping
   and de-indentation for {content}.
   For {content} containing two or more consecutive dollar signs
@@ -711,6 +712,8 @@ def process_display_maths(placeholder_storage, markup):
   markup = re.sub(
     rf'''
       (?P<dollar_signs>  [$] {{2,}}  )
+        (?P<id_>  [\S] *  )
+        (?P<class_>  [^\n] *  )
         \n
         (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=dollar_signs)
@@ -728,11 +731,20 @@ def process_display_maths_match(placeholder_storage, match_object):
   Process a single display-maths match object.
   """
   
+  id_ = match_object.group('id_')
+  id_attribute = build_html_attribute(placeholder_storage, 'id', id_)
+  
+  class_ = match_object.group('class_')
+  class_ = class_.strip()
+  class_attribute = build_html_attribute(
+    placeholder_storage, 'class', f'maths {class_}'
+  )
+  
   content = match_object.group('content')
   content = de_indent(content)
   content = escape_html_syntax_characters(content)
   
-  markup = f'<div class="maths">{content}</div>'
+  markup = f'<div{id_attribute}{class_attribute}>{content}</div>'
   
   return placeholder_storage.create_placeholder_store_markup(markup)
 
