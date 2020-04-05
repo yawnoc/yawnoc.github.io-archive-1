@@ -523,7 +523,7 @@ class ImageDefinitionStorage:
     
     self.dictionary = {}
   
-  def store_image_definition_attributes(self,
+  def store_definition_attributes(self,
     placeholder_storage, label, class_, src, title, width
   ):
     """
@@ -551,7 +551,7 @@ class ImageDefinitionStorage:
     
     self.dictionary[label] = attributes
   
-  def get_image_definition_attributes(self, label):
+  def get_definition_attributes(self, label):
     """
     Get attributes for an image definition.
     
@@ -587,7 +587,7 @@ class LinkDefinitionStorage:
     
     self.dictionary = {}
   
-  def store_link_definition_attributes(self,
+  def store_definition_attributes(self,
     placeholder_storage, label, class_, href, title
   ):
     """
@@ -610,7 +610,7 @@ class LinkDefinitionStorage:
     
     self.dictionary[label] = attributes
   
-  def get_link_definition_attributes(self, label):
+  def get_definition_attributes(self, label):
     """
     Get attributes for a link definition.
     
@@ -1702,7 +1702,7 @@ def process_image_definition_match(
   title = match_object.group('title')
   width = match_object.group('width')
   
-  image_definition_storage.store_image_definition_attributes(
+  image_definition_storage.store_definition_attributes(
     placeholder_storage, label, class_, src, title, width
   )
   
@@ -1725,7 +1725,7 @@ def process_reference_image_match(
   label = match_object.group('label')
   label = label.strip()
   
-  attributes = image_definition_storage.get_image_definition_attributes(label)
+  attributes = image_definition_storage.get_definition_attributes(label)
   if attributes is None:
     match_string = match_object.group()
     return match_string
@@ -1875,7 +1875,7 @@ def process_link_definition_match(
   href = match_object.group('href')
   title = match_object.group('title')
   
-  link_definition_storage.store_link_definition_attributes(
+  link_definition_storage.store_definition_attributes(
     placeholder_storage, label, class_, href, title
   )
   
@@ -1898,7 +1898,7 @@ def process_reference_link_match(link_definition_storage, match_object):
   if label == '':
     label = content
   
-  attributes = link_definition_storage.get_link_definition_attributes(label)
+  attributes = link_definition_storage.get_definition_attributes(label)
   if attributes is None:
     match_string = match_object.group()
     return match_string
