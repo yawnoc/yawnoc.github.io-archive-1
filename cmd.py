@@ -501,6 +501,70 @@ class OrdinaryReplacementStorage:
     return string
 
 
+class ImageDefinitionStorage:
+  """
+  Image definition storage class.
+  
+  Definitions for reference-style images are specified in the form
+  @@![{label}] [class]↵ {src} [title] @@[width],
+  and are stored in a dictionary with
+    KEYS: {label}
+    VALUES: {attributes}
+  where {attributes} is the sequence of attributes
+  built from [class], {src}, [title], and [width].
+  {label} is case insensitive,
+  and is stored canonically in lower case.
+  """
+  
+  def __init__(self):
+    """
+    Initialise image definition storage.
+    """
+    
+    self.dictionary = {}
+  
+  def store_image_definition_attributes(self,
+    placeholder_storage, label, class_, src, title, width
+  ):
+    """
+    Store attributes for an image definition.
+    """
+    
+    label = label.lower()
+    
+    class_attribute = build_html_attribute(
+      placeholder_storage, 'class', class_
+    )
+    src_attribute = build_html_attribute(
+      placeholder_storage, 'src', src
+    )
+    title_attribute = build_html_attribute(
+      placeholder_storage, 'title', title
+    )
+    width_attribute = build_html_attribute(
+      placeholder_storage, 'width', width
+    )
+    
+    attributes = (
+      class_attribute + src_attribute + title_attribute + width_attribute
+    )
+    
+    self.dictionary[label] = attributes
+  
+  def get_image_definition_attributes(self, label):
+    """
+    Get attributes for an image definition.
+    
+    If no image is defined for the given label, return None.
+    """
+    
+    label = label.lower()
+    
+    attributes = self.dictionary.get(label, None)
+    
+    return attributes
+
+
 class LinkDefinitionStorage:
   """
   Link definition storage class.
@@ -1513,6 +1577,184 @@ def process_list_content(content):
 
 
 ################################################################
+# Images
+################################################################
+
+
+def process_images(placeholder_storage, image_definition_storage, markup):
+  """
+  Process images.
+  
+  Reference-style:
+    DEFINITION: @@![{label}] [class]↵ {src} [title] @@[width]
+    LINK: ![{alt}][[label]]
+  A single space may be included between [{alt}] and [[label]].
+  The referencing string {label} is case insensitive
+  (this is handled by the image definition storage class).
+  
+  ![{alt}][[label]] becomes <img alt="alt"{attributes}>,
+  where {attributes} is the sequence of attributes
+  built from [class], {src}, [title], and [width].
+  
+  Whitespace around [label] is stripped.
+  For images whose {alt} or [label] contains
+  one or more closing square brackets, use CMD literals.
+  For definitions whose {label}, [class], {src}, or [title]
+  contains two or more consecutive at signs
+  which are not already protected by CMD literals,
+  use a greater number of at signs in the delimiters.
+  
+  Inline-style:
+    LINK: ![{alt}]({src} [title])
+  (NOTE:
+    Unlike John Gruber's markdown, [title] is not surrounded by quotes.
+    If quotes are supplied to [title],
+    they are automatically escaped as &quot;.
+  )
+  
+  ![{alt}]({src} [title]) becomes
+  <img alt="{alt}" src="{src}" title="[title]">.
+  
+  For {alt}, {src}, or [title] containing
+  one or more closing square or round brackets, use CMD literals.
+  
+  All (reference-style) image definitions are read and stored
+  using the image definition storage class.
+  If the same label (which is case insensitive)
+  is specified more than once,
+  the latest specification shall prevail.
+  """
+  
+  # Reference-style image definitions
+  markup = re.sub(
+    rf'''
+      (?P<at_signs>  @  {{2,}})
+        !
+        \[
+          (?P<label>  {ANY_STRING_MINIMAL_REGEX}  )
+        \]
+        (?P<class_>  [^\n] *  )
+      \n
+      [\s] *
+        (?P<src>  [\S] *  )
+        (?P<title>  {ANY_STRING_MINIMAL_REGEX}  )
+      (?P=at_signs)
+        (?P<width>  [0-9] *  )
+    ''',
+    functools.partial(process_image_definition_match,
+      placeholder_storage,
+      image_definition_storage
+    ),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  # Reference-style images
+  markup = re.sub(
+    rf'''
+      !
+      \[
+        (?P<alt>  {ANY_STRING_MINIMAL_REGEX}  )
+      \]
+      [ ] ?
+      \[
+        (?P<label>  {ANY_STRING_MINIMAL_REGEX}  )
+      \]
+    ''',
+    functools.partial(process_reference_image_match,
+      placeholder_storage,
+      image_definition_storage
+    ),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  # Inline-style images
+  markup = re.sub(
+    rf'''
+      !
+      \[
+        (?P<alt>  {ANY_STRING_MINIMAL_REGEX}  )
+      \]
+      \(
+        (?P<src>  [\S] *  )
+        (?P<title>  {ANY_STRING_MINIMAL_REGEX}  )
+      \)
+    ''',
+    functools.partial(process_inline_image_match, placeholder_storage),
+    markup,
+    flags=re.VERBOSE
+  )
+  
+  return markup
+
+
+def process_image_definition_match(
+  placeholder_storage, image_definition_storage, match_object
+):
+  """
+  Process a single image-definition match object.
+  """
+  
+  label = match_object.group('label')
+  class_ = match_object.group('class_')
+  src = match_object.group('src')
+  title = match_object.group('title')
+  width = match_object.group('width')
+  
+  image_definition_storage.store_image_definition_attributes(
+    placeholder_storage, label, class_, src, title, width
+  )
+  
+  return ''
+
+
+def process_reference_image_match(
+  placeholder_storage, image_definition_storage, match_object
+):
+  """
+  Process a single reference-style-image match object.
+  
+  If no image is defined for the given label,
+  returned the entire string for the matched object as is.
+  """
+  
+  alt = match_object.group('alt')
+  alt_attribute = build_html_attribute(placeholder_storage, 'alt', alt)
+  
+  label = match_object.group('label')
+  label = label.strip()
+  
+  attributes = image_definition_storage.get_image_definition_attributes(label)
+  if attributes is None:
+    match_string = match_object.group()
+    return match_string
+  
+  markup = f'<img{alt_attribute}{attributes}>'
+  
+  return markup
+
+
+def process_inline_image_match(placeholder_storage, match_object):
+  """
+  Process a single inline-style-image match object.
+  """
+  
+  alt = match_object.group('alt')
+  alt_attribute = build_html_attribute(placeholder_storage, 'alt', alt)
+  
+  src = match_object.group('src')
+  src_attribute = build_html_attribute(placeholder_storage, 'src', src)
+  
+  title = match_object.group('title')
+  title_attribute = build_html_attribute(placeholder_storage, 'title', title)
+  
+  markup = f'<img{alt_attribute}{src_attribute}{title_attribute}>'
+  
+  return markup
+
+
+################################################################
 # Links
 ################################################################
 
@@ -1829,7 +2071,13 @@ def cmd_to_html(cmd, cmd_name):
   # Process blocks
   markup = process_blocks(placeholder_storage, markup)
   
-  # Process inline syntax
+  # Process images
+  image_definition_storage = ImageDefinitionStorage()
+  markup = process_images(
+    placeholder_storage, image_definition_storage, markup
+  )
+  
+  # Process links
   link_definition_storage = LinkDefinitionStorage()
   markup = process_links(placeholder_storage, link_definition_storage, markup)
   
