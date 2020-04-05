@@ -631,7 +631,7 @@ def process_display_code(placeholder_storage, markup):
       (?P<backticks>  ` {{2,}}  )
         (?P<id_>  [\S] *  )
         (?P<class_>  [^\n] *  )
-        \n
+      \n
         (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=backticks)
     ''',
@@ -775,7 +775,7 @@ def process_display_maths(placeholder_storage, markup):
       (?P<dollar_signs>  [$] {{2,}}  )
         (?P<id_>  [\S] *  )
         (?P<class_>  [^\n] *  )
-        \n
+      \n
         (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=dollar_signs)
     ''',
@@ -1135,7 +1135,7 @@ def process_preamble(placeholder_storage, property_storage, markup):
   markup, preamble_count = re.subn(
     rf'''
       (?P<percent_signs>  % {{2,}}  )
-        \n
+      \n
         (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=percent_signs)
     ''',
@@ -1432,7 +1432,7 @@ def process_blocks(placeholder_storage, markup):
       )
         (?P<id_>  [\S] *  )
         (?P<class_>  [^\n] *  )
-        \n
+      \n
         (?P<content>  {ANY_STRING_MINIMAL_REGEX}  )
       (?P=delimiters)
     ''',
