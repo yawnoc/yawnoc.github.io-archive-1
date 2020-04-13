@@ -1,0 +1,191 @@
+/*
+  ----------------------------------------------------------------
+  Sections
+  ----------------------------------------------------------------
+  Body
+  Blockquotes
+  Footer
+  Links
+  Lists
+  Navigation bar
+  Page properties
+  Translation
+  
+*/
+
+
+/* ---------------------------------------------------------------- */
+/* Body                                                             */
+/* ---------------------------------------------------------------- */
+
+
+/*
+  Allow breaking of long URLs (overflow-wrap)
+  Leave room at top for navigation bar (padding)
+*/
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  margin: auto auto 1em;
+  overflow-wrap: break-word;
+  padding: 24px 0.7em 0;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Blockquotes                                                      */
+/* ---------------------------------------------------------------- */
+
+
+blockquote {
+  background: #ffffce;
+  border-left: 3px solid grey;
+  padding: 10px;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Footer                                                           */
+/* ---------------------------------------------------------------- */
+
+
+footer {
+  font-size: small;
+  margin-top: 1.5em;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Links                                                            */
+/* ---------------------------------------------------------------- */
+
+
+/* External link icon */
+
+a[href^="http"] {
+  background-image: url(/res/external-link.svg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 0.8em;
+  padding-right: 1em;
+}
+
+
+/* Heading self links */
+
+h2 .self-link {
+  background-image: url(/favicon-32x32.png);
+}
+
+.self-link {
+  background-image: url(/res/self-link.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  padding-left: 1.5em;
+}
+
+
+/* No underline except on hover */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Lists                                                            */
+/* ---------------------------------------------------------------- */
+
+
+ol {
+  padding-left: 2em;
+}
+
+
+ul {
+  padding-left: 1.5em;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Navigation bar                                                   */
+/* ---------------------------------------------------------------- */
+
+
+/*
+  Fixed-header navigation bar (position)
+  Fix navigation bar not covering KaTeX equations (z-index)
+    https://github.com/KaTeX/KaTeX/issues/631
+*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+nav ul {
+  background: #ffff66;
+  border-bottom: 1px solid black;
+  list-style-type: none;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  white-space: nowrap;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 8px;
+  text-align: center;
+}
+
+
+/*
+  Leave room at top for navigation bar when following anchor links
+    https://stackoverflow.com/a/28824157
+*/
+
+:target::before {
+  content: "";
+  display: block;
+  height: 48px;
+  margin: -48px 0 0;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* Page properties                                                  */
+/* ---------------------------------------------------------------- */
+
+
+.page-properties {
+  font-size: small;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Translation                                                      */
+/* ---------------------------------------------------------------- */
+
+
+footer {
+  font-size: small;
+  margin-top: 1.5em;
+}
+
