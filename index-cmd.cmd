@@ -107,6 +107,11 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Email typing
 ####
 
+====
+* [Unicode mathematical symbols](/code/unicode-maths.html)
+* [Strikethrough formatter](/code/strikethrough.html)
+====
+
 
 \cite-this-page[home-page][{Conway's} site]
 
