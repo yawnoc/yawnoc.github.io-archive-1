@@ -57,7 +57,7 @@
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
       \/  url = {\\url-full},
-      \/  urldate = <span class="js-date">yyyy-mm-dd</span>,
+      \/  urldate = {<span class="js-date">yyyy-mm-dd</span>},
       \/}
     </code></pre>
   ====
