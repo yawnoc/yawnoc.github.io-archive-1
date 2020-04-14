@@ -39,7 +39,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ----
 
 
-##pages
+##reads
   Stuff to read
 ##
 
