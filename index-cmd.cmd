@@ -7,6 +7,7 @@
   %date-modified 2020-04-xx
   %resources
     (+ res/main-resources.cmd +)
+    (+ res/rendering-js.cmd +)
   %description Conway's site: Literary Chinese and applied mathematics.
   %footer-remark
     And if the current year is greater than %year-modified:
@@ -14,6 +15,8 @@
     It means that I haven't thought up
     or gotten around to adding content since %year-modified-next;
     possibly I have died.
+  %onload-js
+    renderDate();
 %%
 
 
