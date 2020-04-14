@@ -39,7 +39,7 @@
     Accessed <span class="js-date">yyyy-mm-dd</span>.
     ----
   
-  * BibTex:
+  * BibTeX:
     <pre><code>\\
       \/@misc{conway-\g<tex_key>,
       \/  author = {Conway},
@@ -50,7 +50,7 @@
       \/}
     </code></pre>
   
-  * BibLaTex:
+  * BibLaTeX:
     <pre><code>\\
       \/@online{conway-\g<tex_key>,
       \/  author = {Conway},
