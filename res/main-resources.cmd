@@ -11,4 +11,4 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- Load main CSS -->
-<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/main.min.css">
