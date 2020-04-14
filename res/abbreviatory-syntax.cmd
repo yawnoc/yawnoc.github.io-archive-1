@@ -95,6 +95,6 @@
 
 {:: \link-here:home :: [Home](\/ You are on the home page) ::}
 {:: \link:home :: [Home](/ Home page) ::}
-{:: \link:top :: [Top](# Top) ::}
+{:: \link:top :: [Top](# Jump back to top) ::}
 {:: \link:cite :: [Cite](#cite Cite this page) ::}
 
