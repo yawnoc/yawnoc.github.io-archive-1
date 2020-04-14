@@ -18,9 +18,9 @@
 
 
 [====
-  \nav-link-home-here
-  \nav-link-top
-  \nav-link-cite
+* \link-here:home
+* \link:top
+* \link:cite
 ====]
 
 

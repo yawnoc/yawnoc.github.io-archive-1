@@ -43,8 +43,8 @@
 
 <!-- Header navigation bar links -->
 
-{: \nav-link-home-here : * [Home](\/ You are on the home page) :}
-{: \nav-link-home : * [Home](/ Home page) :}
-{: \nav-link-top : * [Top](# Top) :}
-{: \nav-link-cite : * [Cite](#cite Cite this page) :}
+{:: \link-here:home :: [Home](\/ You are on the home page) ::}
+{:: \link:home :: [Home](/ Home page) ::}
+{:: \link:top :: [Top](# Top) ::}
+{:: \link:cite :: [Cite](#cite Cite this page) ::}
 
