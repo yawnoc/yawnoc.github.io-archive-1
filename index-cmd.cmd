@@ -103,6 +103,21 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Mathematical stuff
 ####
 
+====
+* [Python Big Two (鋤大弟) scoring statistics (GitHub)](
+    https://github.com/yawnoc/big-two-stats
+  )
+* [Python Cantonese Diceware (GitHub)](
+    https://github.com/yawnoc/cantonese-diceware
+  )
+* [Python \sun-tzu square root algorithm (GitHub)](
+    https://github.com/yawnoc/yawnoc.github.io/blob/master/sun-tzu/code/sqrt.py
+  )
+* [Mathematica \sun-tzu multiplication \& division animations](
+    /sun-tzu/code/animations.html
+  )
+====
+
 ####code-emails
   Email typing
 ####
