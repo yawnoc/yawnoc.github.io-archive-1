@@ -4,6 +4,7 @@
   ----------------------------------------------------------------
   Body
   Blockquotes
+  Code
   Footer
   Links
   Lists
@@ -42,6 +43,24 @@ blockquote {
   background: #ffffce;
   border-left: 3px solid grey;
   padding: 10px;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Code                                                             */
+/* ---------------------------------------------------------------- */
+
+
+code {
+  background: #f8f8f8;
+}
+
+
+pre {
+  background: #f8f8f8;
+  border: 1px solid grey;
+  overflow-x: auto;
+  padding: 0.5em;
 }
 
 
