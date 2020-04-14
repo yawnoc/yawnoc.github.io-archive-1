@@ -19,7 +19,7 @@
     ----
     Conway~(%year-modified).
     %title.
-    \\<\\url\\>.
+    \\<\\url-full\\>
     Accessed <span class="js-date">yyyy-mm-dd</span>.
     ----
   
