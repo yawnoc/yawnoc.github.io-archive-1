@@ -73,6 +73,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Useful code
 ###
 
+
 ####code-web
   Website building
 ####
@@ -99,24 +100,29 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   https://www.bing.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt
 @@
 
+
 ####code-maths
   Mathematical stuff
 ####
 
 ====
-* [Python Big Two (鋤大弟) scoring statistics (GitHub)](
+* [\py Big Two (鋤大弟) scoring statistics (GitHub)](
     https://github.com/yawnoc/big-two-stats
   )
-* [Python Cantonese Diceware (GitHub)](
+* [\py Cantonese Diceware (GitHub)](
     https://github.com/yawnoc/cantonese-diceware
   )
-* [Python \sun-tzu square root algorithm (GitHub)](
+* [\py \sun-tzu square root algorithm (GitHub)](
     https://github.com/yawnoc/yawnoc.github.io/blob/master/sun-tzu/code/sqrt.py
   )
-* [Mathematica \sun-tzu multiplication \& division animations](
+* [\ma \sun-tzu multiplication \& division animations](
     /sun-tzu/code/animations.html
   )
 ====
+
+{: \py : (! [Python] !) :}
+{: \ma : (! [Mathematica] !) :}
+
 
 ####code-emails
   Email typing
