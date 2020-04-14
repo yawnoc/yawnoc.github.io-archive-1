@@ -78,7 +78,9 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ####
 
 ====
-* __Conway markdown:__ [Python converter][cmd], [documentation][cmd-docs]
+* __Conway markdown:__
+  [Python converter (GitHub)][cmd],
+  [Documentation (GitHub pages)][cmd-docs]
 * Links to ping the sitemap: [Google], [Bing]
 ====
 
