@@ -5,7 +5,7 @@
   URL
   Cite this page section
   Heading self-link anchors (<h2> through <h6>)
-  Navigation bar [==== ====]
+  Navigation bars [==== ====]
   Navigation bar links
   Sun Tzu
   Romanisation special characters
@@ -85,7 +85,7 @@
 %}
 
 
-<!-- Navigation bar [==== ====] -->
+<!-- Navigation bars [==== ====] -->
 
 <!-- Inside header -->
 {%
