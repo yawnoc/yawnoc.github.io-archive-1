@@ -42,14 +42,39 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ----
 
 
+<!-- Page descriptions class [pd] -->
+{: [pd] : [page-description] :}
+
 ##pages
   Pages to read
 ##
 
-
 ###general
   General material
 ###
+
+====[pages-list]
+* [Conway's Romanisation for Cantonese](/cantonese/conway-romanisation.html)
+  ||||[pd]
+    Wade--Giles-style initials and length-indicative finals.
+  ||||
+
+* [FAQ](/cantonese/conway-romanisation.html)
+  ||||[pd]
+    Frequently asked questions.
+  ||||
+
+* [A cynic's 7.30 (and other programs)](/cynics-730/)
+  ||||[pd]
+    Mind reading: Australian politics.
+  ||||
+
+* [Mao on separatism: 27 Chinas](/mao-on-separatism.html)
+  ||||[pd]
+    Mao in 1920, on why China ought to be split into 27 separate countries.
+  ||||
+
+====
 
 
 ###applied-maths
