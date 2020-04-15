@@ -41,11 +41,11 @@ function replaceTextContent(elem, regex, replacement) {
 
 function renderDate() {
   
-  var NOW = new Date();
+  let dateNow = new Date();
   
-  let yyyy = NOW.getFullYear();
-  let mm = padIntoTwoDigitString(NOW.getMonth() + 1);
-  let dd = padIntoTwoDigitString(NOW.getDate() + 1);
+  let yyyy = dateNow.getFullYear();
+  let mm = padIntoTwoDigitString(dateNow.getMonth() + 1);
+  let dd = padIntoTwoDigitString(dateNow.getDate() + 1);
   
   let date_elements = document.getElementsByClassName("js-date");
   for (let i = 0; i < date_elements.length; i++) {
