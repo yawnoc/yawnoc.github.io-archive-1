@@ -20,11 +20,11 @@
 %%
 
 
-[====
+[[====
 * \link-here:home
 * \link:top
 * \link:cite
-====]
+====]]
 
 
 # Conway's site #

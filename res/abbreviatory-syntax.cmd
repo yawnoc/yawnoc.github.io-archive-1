@@ -5,8 +5,8 @@
   URL
   Cite this page section
   Heading self-link anchors (<h2> through <h6>)
-  Header navigation bar [==== ====]
-  Header navigation bar links
+  Navigation bar [==== ====]
+  Navigation bar links
   Sun Tzu
   Romanisation special characters
   Automatic language declarations for Chinese
@@ -85,11 +85,12 @@
 %}
 
 
-<!-- Header navigation bar [==== ====] -->
+<!-- Navigation bar [==== ====] -->
 
+<!-- Inside header -->
 {%
   ^ [^\S\n]*
-  \[
+  \[{2}
   (?P<equals_signs> [=]{4,} )
 %
   <header>
@@ -100,15 +101,33 @@
 {%
   ^ [^\S\n]*
   (?P<equals_signs> [=]{4,} )
-  \]
+  \]{2}
 %
       \g<equals_signs>
     </nav>
   </header>
 %}
+<!-- Not inside header -->
+{%
+  ^ [^\S\n]*
+  \[
+  (?P<equals_signs> [=]{4,} )
+%
+  <nav>
+    \g<equals_signs>
+%}
+
+{%
+  ^ [^\S\n]*
+  (?P<equals_signs> [=]{4,} )
+  \]
+%
+    \g<equals_signs>
+  </nav>
+%}
 
 
-<!-- Header navigation bar links -->
+<!-- Navigation bar links -->
 
 {:: \link-here:home :: [Home](\/ You are on the home page) ::}
 {:: \link:home :: [Home](/ Home page) ::}
