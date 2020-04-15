@@ -70,8 +70,10 @@ pre {
 
 
 footer {
+  border-top: 2px solid black;
   font-size: small;
   margin-top: 1.5em;
+  padding-top: 0.5em;
 }
 
 
