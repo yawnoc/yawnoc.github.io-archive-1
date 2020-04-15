@@ -22,7 +22,7 @@
 
 /*
   Allow breaking of long URLs (overflow-wrap)
-  Leave room at top for navigation bar (padding)
+  Leave room at top for header navigation bar (padding)
 */
 
 body {
@@ -161,6 +161,10 @@ nav ul {
   overflow: auto;
   padding: 0;
   white-space: nowrap;
+}
+:not(header) > nav ul {
+  border: 1px solid black;
+  white-space: normal;
 }
 
 nav li {
