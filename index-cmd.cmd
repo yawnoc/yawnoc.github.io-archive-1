@@ -93,6 +93,30 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Applied mathematics (or, physics)
 ###
 
+====[plc]
+* [Daytime: dependence on latitude and season](/math/daytime.html)
+  ||||[pd]
+    The sun's path through the sky
+    and the duration of daytime (among other quantities).
+  ||||
+
+* [Projectile motion: optimal launch angle for weak quadratic drag](
+    /math/projectile-weak-drag.html
+  )
+  ||||[pd]
+    Launching projectiles in weak air resistance
+    proportional to the square of speed.
+  ||||
+
+* [Projectile motion: optimal launch angle from a platform](
+    /math/projectile-platform.html
+  )
+  ||||[pd]
+    Launching projectiles from a raised platform.
+  ||||
+
+====
+
 
 ###literary-chinese
   English translations of Literary Chinese
