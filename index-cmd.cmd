@@ -72,14 +72,14 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ####
 
 
-###code
+##code
   Useful code
-###
+##
 
 
-####code-web
+###code-web
   Website building
-####
+###
 
 ====
 * __Conway markdown:__
@@ -104,9 +104,9 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 @@
 
 
-####code-maths
+###code-maths
   Mathematical stuff
-####
+###
 
 ====
 * [\py Big Two (鋤大弟) scoring statistics (GitHub)](
@@ -127,9 +127,9 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 {: \ma : (! [Mathematica] !) :}
 
 
-####code-emails
+###code-emails
   Email typing
-####
+###
 
 ====
 * [Unicode mathematical symbols](/code/unicode-maths.html)
