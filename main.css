@@ -161,7 +161,6 @@ header {
 nav ul {
   background: #ffff66;
   border-bottom: 1px solid black;
-  list-style-type: none;
   margin: 0;
   overflow: auto;
   padding: 0;
@@ -174,13 +173,14 @@ nav ul {
 
 nav li {
   display: inline-block;
+  list-style-type: none;
+  padding: 5px 8px;
 }
 
 nav a {
   display: block;
   font-size: 14px;
   font-weight: bold;
-  padding: 5px 8px;
   text-align: center;
 }
 
