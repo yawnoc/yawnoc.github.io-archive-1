@@ -15,6 +15,17 @@
     It means that I haven't thought up
     or gotten around to adding content since %year-modified-next;
     possibly I have died.
+  %css
+    .page-link-container li {
+      margin-bottom: 0.7em;
+    }
+    .page-link-container a {
+      font-weight: bold;
+    }
+    .page-description {
+      font-size: small;
+      margin: 0.2em 0;
+    }
   %onload-js
     renderDate();
 %%
@@ -42,18 +53,19 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ----
 
 
-<!-- Page descriptions class [pd] -->
-{: [pd] : [page-description] :}
-
 ##pages
   Pages to read
 ##
+
+<!-- Abbreviations for classes -->
+{: [plc] : [page-link-container] :}
+{: [pd] : [page-description] :}
 
 ###general
   General material
 ###
 
-====[pages-list]
+====[plc]
 * [Conway's Romanisation for Cantonese](/cantonese/conway-romanisation.html)
   ||||[pd]
     Wade--Giles-style initials and length-indicative finals.
