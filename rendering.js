@@ -13,13 +13,12 @@
 
 
 /*
-  Pad (with zeroes) into a two-digit string.
-  Assumes input is a one- or two-digit integer or string.
+  Pad integer with zeroes into a two-digit string.
 */
 
 function padIntoTwoDigitString(integer) {
   
-  return ('0' + integer).slice(-2);
+  return integer.toString().padStart(2, '0');
   
 }
 
@@ -44,8 +43,8 @@ function renderDate() {
   let dateNow = new Date();
   
   let yyyy = dateNow.getFullYear();
-  let mm = padIntoTwoDigitString(dateNow.getMonth() + 1);
-  let dd = padIntoTwoDigitString(dateNow.getDate() + 1);
+  let mm = padIntoTwoDigitString(1 + dateNow.getMonth());
+  let dd = padIntoTwoDigitString(1 + dateNow.getDate());
   
   let date_elements = document.getElementsByClassName("js-date");
   for (let i = 0; i < date_elements.length; i++) {
