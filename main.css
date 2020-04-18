@@ -73,12 +73,14 @@ pre {
 /* ---------------------------------------------------------------- */
 
 
-.centred-flex {
+.centred-block {
   display: flex;
   justify-content: center;
 }
 
-.centred-text {
+/* Centred merged cells etc. */
+
+.grouped {
   text-align: center;
 }
 
