@@ -72,6 +72,15 @@ pre {
 /* ---------------------------------------------------------------- */
 
 
+.centred-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.centred-text {
+  text-align: center;
+}
+
 .overflowing {
   overflow-x: auto;
 }
