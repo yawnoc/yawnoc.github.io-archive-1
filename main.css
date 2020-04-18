@@ -7,6 +7,7 @@
   Code
   Divisions
   Footer
+  Headings
   Links
   Lists
   Navigation bar
@@ -102,6 +103,24 @@ footer {
   font-size: small;
   margin-top: 1.5em;
   padding-top: 0.5em;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Headings                                                         */
+/* ---------------------------------------------------------------- */
+
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
 }
 
 
