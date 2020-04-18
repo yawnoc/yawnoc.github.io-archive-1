@@ -4,7 +4,7 @@
   %title Conway's site
   %author Conway
   %date-created 2019-03-09
-  %date-modified 2020-04-xx
+  %date-modified 2020-04-18
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-js.cmd +)

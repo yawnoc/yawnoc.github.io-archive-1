@@ -2,290 +2,222 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="description" content="Conway's site: Literary Chinese and applied mathematics.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
-<meta name="description" content="Conway's site: Literary Chinese and applied maths.">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<script defer src="/conway-render.min.js"></script>
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
 <title>Conway's site</title>
-<style>ul.site-history li:first-child {
-background: yellow;
+<style>.page-link-container > li {
+  margin-bottom: 0.7em;
 }
-ul.site-history li:first-child > span:first-child {
-font-weight: bold;
+.page-link-container > li > a {
+  font-weight: bold;
+}
+.page-description {
+  font-size: small;
+  margin: 0.2em 0;
 }</style>
 </head>
-<body onload="dateRender();">
-<header><nav><ul>
-<li><a href="#" title="Jump back to top">Top</a></li>
-<li><a href="#pages" title="Stuff to read">Pages</a></li>
-<li><a href="#applied" title="Applied mathematics, or physics">Math.</a></li>
-<li><a href="#literary" title="English translations of Literary Chinese">Lit.</a></li>
-<li><a href="#code" title="Useful code">Code</a></li>
-<li><a href="#cite" title="Cite this page">Cite</a></li>
-</ul></nav></header>
+<body onload="renderDate();">
+<header>
+<nav>
+<ul>
+<li><a title="You are on the home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
 <h1>Conway's site</h1>
-<p class="page-properties">
-First created:&nbsp;20190309<br>
-Last modified:&nbsp;<a href="#history" title="Site history"><b>20200327</b></a><br>
+<div class="page-properties">
+First created: 2019-03-09<br>
+Date modified: 2020-04-18<br>
 Feedback welcome: <code>leeconway@protonmail.com</code>
-</p>
+</div>
 <p>
 Assorted musings of a remnant of the 20th&nbsp;century,
-with the cynicism of Daria and the metabolism of Sir&nbsp;Doris the Hamster.
+with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 </p>
-<h2 id="pages"><a class="self-link" href="#pages"></a>
-Stuff to read
-</h2>
-<h3 id="general"><a class="self-link" href="#general"></a>
-General material
-</h3>
-<table>
-<tr><td>
-<a href="/cantonese/conway-romanisation.html" title="Conway's Custom Romanisation for Cantonese"><b>Conway's Custom Romanisation for Cantonese</b></a>
-<p class="note">Used in this site.</p>
-</td></tr>
-<tr><td>
-<a href="/faq.html" title="FAQ"><b>FAQ</b></a>
-<p class="note">Frequently asked questions.</p>
-</td></tr>
-<tr><td>
-<a href="/cynics-730/" title="A cynic's 7.30 (and other programs)"><b>A cynic's 7.30 (and other programs)</b></a>
-<p class="note">Mind reading: Australian politics.</p>
-</td></tr>
-<tr><td>
-<a href="/mao-on-separatism.html" title="Mao on separatism: 27&nbsp;Chinas: 長沙《大公報》一九二零年九月三日——湖南共和國"><b>Mao on separatism: 27&nbsp;Chinas</b></a>
-<p class="note">Mao in 1920, on why China ought to be split
-into 27 separate countries.</p>
-</td></tr>
-</table>
-<h3 id="applied"><a class="self-link" href="#applied"></a>
-Applied mathematics, or physics
-</h3>
-<table>
-<tr><td>
-<a href="/math/daytime.html" title="Daytime: dependence on latitude and season"><b>Daytime: dependence on latitude and season</b></a>
-<p class="note">
+<h2 id="pages"><a class="self-link" href="#pages"></a>Pages to read</h2>
+<h3 id="general"><a class="self-link" href="#general"></a>General material</h3>
+<ul class="page-link-container">
+<li><a href="/cantonese/conway-romanisation.html">Conway's Romanisation for Cantonese</a>
+<div class="page-description">
+Wade–Giles-style initials and length-indicative finals.
+</div>
+</li>
+<li><a href="/faq.html">FAQ</a>
+<div class="page-description">
+Frequently asked questions.
+</div>
+</li>
+<li><a href="/cynics-730/">A cynic's 7.30 (and other programs)</a>
+<div class="page-description">
+Mind reading: Australian politics.
+</div>
+</li>
+<li><a href="/mao-on-separatism.html">Mao on separatism: 27 Chinas</a>
+<div class="page-description">
+Mao in 1920, on why China ought to be split into 27 separate countries.
+</div>
+</li>
+</ul>
+<h3 id="applied-maths"><a class="self-link" href="#applied-maths"></a>Applied mathematics (or, physics)</h3>
+<ul class="page-link-container">
+<li><a href="/math/daytime.html">Daytime: dependence on latitude and season</a>
+<div class="page-description">
 The sun's path through the sky
 and the duration of daytime (among other quantities).
-</p>
-</td></tr>
-<tr><td>
-<a href="/math/projectile-weak-drag.html" title="Projectile motion: optimal launch angle for weak quadratic drag"><b>Projectile motion: optimal launch angle for weak quadratic drag</b></a>
-<p class="note">
+</div>
+</li>
+<li><a href="/math/projectile-weak-drag.html">Projectile motion: optimal launch angle for weak quadratic drag</a>
+<div class="page-description">
 Launching projectiles in weak air resistance
 proportional to the square of speed.
-</p>
-</td></tr>
-<tr><td>
-<a href="/math/projectile-platform.html" title="Projectile motion: optimal launch angle from a platform"><b>Projectile motion: optimal launch angle from a platform</b></a>
-<p class="note">Launching projectiles from a raised platform.</p>
-</td></tr>
-</table>
-<h3 id="literary"><a class="self-link" href="#literary"></a>
-English translations of Literary Chinese
-</h3>
-<h4 id="literary-maths"><a class="self-link" href="#literary-maths"></a>
-Mathematics
-</h4>
-<table>
-<tr><td>
-<a href="/sun-tzu/" title="&quot;Sun&nbsp;Tzŭ's Computational Classic&quot;: 《孫子算經》"><span lang="zh-Hant">《孫子算經》</span> <span class="alternative-type">or</span><br>
-<b>"Sun&nbsp;Tzŭ's Computational Classic"</b></a>
-<ul>
-<li><a href="/sun-tzu/preface.html" title="&quot;Sun&nbsp;Tzŭ's Computational Classic: Preface&quot;: 《孫子算經・序》"><span lang="zh-Hant">《序》</span>&nbsp;"Preface"</a></li>
-<li><a href="/sun-tzu/i.html" title="&quot;Sun&nbsp;Tzŭ's Computational Classic: Volume&nbsp;I&quot;: 《孫子算經・卷上》"><span lang="zh-Hant">《卷上》</span>&nbsp;"Volume&nbsp;I"</a></li>
-<li><a href="/sun-tzu/ii.html" title="&quot;Sun&nbsp;Tzŭ's Computational Classic: Volume&nbsp;II&quot;: 《孫子算經・卷中》"><span lang="zh-Hant">《卷中》</span>&nbsp;"Volume&nbsp;II" <span class="violet">(incomplete)</span></a></li>
-<li>
-<span class="red"><span lang="zh-Hant">《卷下》</span>&nbsp;"Volume&nbsp;III"</span>
-<span class="red">(haven't started)</span>
+</div>
+</li>
+<li><a href="/math/projectile-platform.html">Projectile motion: optimal launch angle from a platform</a>
+<div class="page-description">
+Launching projectiles from a raised platform.
+</div>
 </li>
 </ul>
-<p class="note">
-An annotated translation of the entire
-<i>Sunzi Suanjing</i> (when completed).
-</p>
-</td></tr>
-<tr><td>
-<a href="/lit/sea-island.html" title="&quot;The Sea Island Computational Classic&quot;: 《海島算經》"><span lang="zh-Hant">《海島算經》</span> <span class="alternative-type">or</span><br>
-<b>"<i>The</i> Sea Island Computational Classic"</b></a>
-<p class="note">The first problem in <i>Haidao Suanjing</i>.</p>
-</td></tr>
-</table>
-<h4 id="literary-not-maths"><a class="self-link" href="#literary-not-maths"></a>
-Not mathematics
-</h4>
-<table>
-<tr><td>
-<a href="/lit/gunbai-poetry.html" title="Poetry on a sumo umpire's fan"><b>Poetry on a sumo umpire's fan</b></a>
-<p class="note">
-<span lang="zh-Hant">及時當勉勵，歲月不待人。</span>
-</p>
-</td></tr>
-<tr><td>
-<a href="/lit/hk-mobilisation.html" title="&quot;Memorial unto the Mobilisation, Hong Kong&quot;: 《香港出師表》"><span lang="zh-Hant">《香港出師表》</span> <span class="alternative-type">or</span><br>
-<b>"Memorial <i>unto the</i> Mobilisation, Hong Kong"</b></a>
-<p class="note">
-<span lang="zh-Hant">香港人！加油！</span>
-</p>
-</td></tr>
-<tr><td>
-<a href="/lit/need-to-win.html" title="&quot;The Need to Win&quot;"><b>"The Need to Win"</b> <span class="alternative-type">or</span><br>
-<b>"Attaching Importance to <i>the</i> External"</b></a>
-<p class="note">
+<h3 id="literary-chinese"><a class="self-link" href="#literary-chinese"></a>English translations of Literary Chinese</h3>
+<h4 id="literary-chinese-maths"><a class="self-link" href="#literary-chinese-maths"></a>Mathematics</h4>
+<ul class="page-link-container">
+<li><a href="/sun-tzu"><span lang="zh-Hant">《孫子算經》</span><br>
+"Sun Tzŭ's Computational Classic"</a>
+<ul class="sun-tzu-navigation">
+<li><a href="/sun-tzu/preface.html"><span lang="zh-Hant">《序》</span> "Preface"</a>
+</li>
+<li><a href="/sun-tzu/i.html"><span lang="zh-Hant">《卷上》</span> "Volume&nbsp;I"</a>
+</li>
+<li><a href="/sun-tzu/ii.html"><span lang="zh-Hant">《卷中》</span> "Volume&nbsp;II"</a> (incomplete)
+</li>
+<li><span lang="zh-Hant">《卷下》</span> "Volume&nbsp;III" (haven't started)
+</li>
+</ul>
+<div class="page-description">
+An annotated translation of the entire <i>Sunzi Suanjing</i> (once completed).
+</div>
+</li>
+<li><a href="/lit/sea-island.html"><span lang="zh-Hant">《海島算經》</span><br>
+"<i class="translator-supplied">The</i> Sea Island Computational Classic"</a>
+<div class="page-description">
+The first problem in <i>Haidao Suanjing</i>.
+</div>
+</li>
+</ul>
+<h4 id="literary-chinese-not-maths"><a class="self-link" href="#literary-chinese-not-maths"></a>Not mathematics</h4>
+<ul class="page-link-container">
+<li><a href="/lit/need-to-win.html">"The Need to Win"</a>
+<div class="page-description">
 On <i>The Turning</i> (Tim Winton), quoting Thomas Merton,
 paraphrasing Chuang Tzŭ, on Confucius, on (probably) archery.
-</p>
-</td></tr>
-<tr><td>
-<a href="/lit/little-child.html" title="&quot;Q&nbsp;&amp;&nbsp;A with Confucius: the Little Child's Discourse&quot;: 《孔子問答：小兒論》"><span lang="zh-Hant">《孔子問答：小兒論》</span> <span class="alternative-type">or</span><br>
-<b>"Q&nbsp;<i>&amp;</i>&nbsp;A <i>with</i> Confucius: <i>the</i> Little Child's Discourse"</b></a>
-<p class="note">Confucius getting his arse whooped by a little kid.</p>
-</td></tr>
-<tr><td>
-<a href="/lit/lion-pavilion.html" title="&quot;Record of the Lion's Pavilion, Victoria&nbsp;Peak&quot;: 《太平山獅子亭記》"><span lang="zh-Hant">《太平山獅子亭記》</span> <span class="alternative-type">or</span><br>
-<b>"Record of <i>the</i> Lion's Pavilion, Victoria&nbsp;Peak"</b></a>
-<p class="note">
-The plaque text commemorating the pavilion.
-</p>
-</td></tr>
-<tr><td>
-<a href="/lit/fox-tiger.html" title="&quot;The Fox Feigneth the Tiger's Authority&quot;: 《狐假虎威》"><span lang="zh-Hant">《狐假虎威》</span> <span class="alternative-type">or</span><br>
-<b>"<i>The</i> Fox Feigneth <i>the</i> Tiger's Authority"</b></a>
-<p class="note">The original second half of <i>The Gruffalo</i>.</p>
-</td></tr>
-<tr><td>
-<a href="/lit/lion-eating.html" title="&quot;An History of Mr&nbsp;Shih's Eating of Lions&quot;: 《施氏食獅史》"><span lang="zh-Hant">《施氏食獅史》</span> <span class="alternative-type">or</span><br>
-<b>"<i>An</i> History of Mr&nbsp;Shih's Eating of Lions"</b></a>
-<p class="note">The original Mandarin "lion tongue twister".</p>
-</td></tr>
-</table>
-<h2 id="code"><a class="self-link" href="#code"></a>
-Useful code
-</h2>
-<p class="note">
-No input checking, not optimised, and ABSOLUTELY NO WARRANTY,
-i.e.&nbsp;"GOD SAVE YOU".
-</p>
-<h3 id="code-web"><a class="self-link" href="#code-web"></a>
-Website building
-</h3>
-<ul>
-<li><a href="/code/katex-guide.html" title="How to render mathematical equations using KaTeX"><b>How to render mathematical equations using KaTeX</b></a></li>
-<li><a href="/code/cch.html" title="Python: a regex converter from CCH to HTML"><b>Python: a regex converter from CCH to HTML</b></a></li>
-<li>
-Links to ping the sitemap:
-<a href="https://www.google.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt" title="Ping sitemap (Google)">Google</a>
-<a href="https://www.bing.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt" title="Ping sitemap (Bing)">Bing</a>
-</li>
-</ul>
-<h3 id="code-maths"><a class="self-link" href="#code-maths"></a>
-Mathematical stuff
-</h3>
-<ul>
-<li><a href="https://github.com/yawnoc/big-two-stats" title="Python: Big Two (鋤大弟) scoring statistics"><b>Python: Big Two (<span lang="zh-Hant">鋤大弟</span>) scoring statistics</b></a></li>
-<li><a href="https://github.com/yawnoc/cantonese-diceware" title="Python: Cantonese Diceware"><b>Python: Cantonese Diceware</b></a></li>
-<li><a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/sun-tzu/code/sqrt.py" title="Python: Sun&nbsp;Tzŭ square root algorithm"><b>Python: Sun&nbsp;Tzŭ square root algorithm</b></a></li>
-<li><a href="/sun-tzu/code/animations.html" title="Mathematica: Sun&nbsp;Tzŭ multiplication &amp; division animations">Mathematica: Sun&nbsp;Tzŭ multiplication &amp; division animations</a></li>
-</ul>
-<h3 id="code-email"><a class="self-link" href="#code-email"></a>
-Useful for typing emails
-</h3>
-<ul>
-<li><a href="/code/unicode-maths.html" title="Unicode mathematical symbols">Unicode mathematical symbols</a></li>
-<li><a href="/code/strikethrough.html" title="Strikethrough generator">Strikethrough generator</a></li>
-</ul>
-<h2 id="history"><a class="self-link" href="#history"></a>
-Site history
-</h2>
-<ul class="site-history">
-<li><span>20200127:</span>
-Yep, looks like SARS&nbsp;II is coming. God save!
-</li>
-<li><span>20200101:</span>
-A stoppage at today's march, shortly before it was <span lang="zh-Hant">腰斬</span>ed by police:
-<div class="centred-flex dense">
-<img src="/lit/demonstration-20200101-hennessy.jpg" alt="1 January 2020 demonstration, Hennessy Road before Canal Road Flyover, Hong Kong" title="香港人！撐落去！" width="480">
 </div>
-I believe I appear in
-<a href="https://www.reddit.com/r/HongKong/comments/eixvcs/new_years_day_march_timelapse/" title="reddit: New Year's Day march timelapse">this timelapse</a>,
-shortly before 00:57 (5&nbsp;pm).
-Good luck spotting me.
 </li>
-<li><span>20191129:</span>
-Completed <a href="/sun-tzu/#manuscript" title="Translation manuscript for &quot;Sun&nbsp;Tzŭ's Computational Classic&quot;: 《孫子算經》">handwritten translation manuscripts</a>
-for all three volumes of "Sun&nbsp;Tzŭ's Computational Classic".
-The entire translation should be available in web (HTML) format
-by the end of 2020 (currently I am halfway through Volume&nbsp;II typing it up).
+<li><a href="/lit/little-child.html"><span lang="zh-Hant">《孔子問答：小兒論》</span><br>
+"Q <i class="translator-supplied">&amp;</i> A <i class="translator-supplied">with</i> Confucius: <i class="translator-supplied">the</i> Little Child's Discourse"</a>
+<div class="page-description">
+Confucius getting his arse whooped by a little kid.
+</div>
 </li>
-<li><span>20191031:</span>
-Rewrote the CCH to HTML converter
-<a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/cch.py" title="cch.py"><code>cch.py</code></a>,
-and rebuilt the whole site accordingly.
+<li><a href="/lit/lion-pavilion.html"><span lang="zh-Hant">《太平山獅子亭記》</span><br>
+"Record of <i class="translator-supplied">the</i> Lion's Pavilion, Victoria Peak"</a>
+<div class="page-description">
+Plaque text commemorating the Lion's Pavilion.
+</div>
 </li>
-<li><span>20190830:</span>
-New series:
-<a href="/cynics-730/" title="A cynic's 7.30 (and other programs)">A cynic's 7.30</a>.
+<li><a href="/lit/fox-tiger.html"><span lang="zh-Hant">《狐假虎威》</span><br>
+"<i class="translator-supplied">The</i> Fox Feigneth <i class="translator-supplied">the</i> Tiger's Authority"</a>
+<div class="page-description">
+The original second half of <i>The Gruffalo</i>.
+</div>
 </li>
-<li><span>20190504:</span>
-Began
-<a href="/sun-tzu/" title="&quot;Sun&nbsp;Tzŭ's Computational Classic&quot;: 《孫子算經》">"Sun&nbsp;Tzŭ's Computational Classic"</a>,
-an ongoing translation effort which will probably take until
-the end of this year to complete.
-</li>
-<li><span>20190309:</span>
-Website first created.
+<li><a href="/lit/lion-eating.html"><span lang="zh-Hant">《施氏食獅史》</span><br>
+"<i class="translator-supplied">An</i> History of Mr Shih's Eating of Lions"</a>
+<div class="page-description">
+The original Mandarin "lion tongue twister".
+</div>
 </li>
 </ul>
-<h2 id="cite"><a class="self-link" href="#cite"></a>
-Cite this page
-</h2>
+<h2 id="code"><a class="self-link" href="#code"></a>Useful code</h2>
+<h3 id="code-web"><a class="self-link" href="#code-web"></a>Website building</h3>
+<ul>
+<li><b>Conway markdown:</b>
+<a href="https://github.com/conway-markdown/conway-markdown" title="GitHub: Conway's fence-style markdown (CMD), implemented in Python.">Python converter (GitHub)</a>,
+<a href="https://conway-markdown.github.io/" title="Conway's markdown (CMD)">Documentation (GitHub pages)</a>
+</li>
+<li>Links to ping the sitemap: <a href="https://www.google.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt">Google</a>, <a href="https://www.bing.com/ping?sitemap=https://yawnoc.github.io/sitemap.txt">Bing</a>
+</li>
+</ul>
+<h3 id="code-maths"><a class="self-link" href="#code-maths"></a>Mathematical stuff</h3>
+<ul>
+<li><a href="https://github.com/yawnoc/big-two-stats">[Python] Big Two (<span lang="zh-Hant">鋤大弟</span>) scoring statistics (GitHub)</a>
+</li>
+<li><a href="https://github.com/yawnoc/cantonese-diceware">[Python] Cantonese Diceware (GitHub)</a>
+</li>
+<li><a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/sun-tzu/code/sqrt.py">[Python] Sun Tzŭ square root algorithm (GitHub)</a>
+</li>
+<li><a href="/sun-tzu/code/animations.html">[Mathematica] Sun Tzŭ multiplication &amp; division animations</a>
+</li>
+</ul>
+<h3 id="code-emails"><a class="self-link" href="#code-emails"></a>Email typing</h3>
+<ul>
+<li><a href="/code/unicode-maths.html">Unicode mathematical symbols</a>
+</li>
+<li><a href="/code/strikethrough.html">Strikethrough formatter</a>
+</li>
+</ul>
+<h2 id="cite"><a class="self-link" href="#cite"></a>Cite this page</h2>
 <ul>
 <li>Text:
 <p>
 Conway&nbsp;(2020).
 Conway's site.
 &lt;https://yawnoc.github.io/&gt;
-[Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
+Accessed <span class="js-date">yyyy-mm-dd</span>.
 </p>
 </li>
 <li>BibTeX:
-<pre>
-@misc{conway-home,
+<pre><code>@misc{conway-home-page,
   author = {Conway},
   year = {2020},
   title = {{Conway's} site},
   howpublished = {\url{https://yawnoc.github.io/}},
-  note = {[Accessed <span class="date">d~month~yyyy</span>]}
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 <li>BibLaTeX:
-<pre>
-@online{conway-home,
+<pre><code>@online{conway-home-page,
   author = {Conway},
   year = {2020},
   title = {{Conway's} site},
   url = {https://yawnoc.github.io/},
-  urldate = {<span class="date">yyyy-mm-dd</span>}
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 </ul>
 <footer>
-<hr>
 ©&nbsp;2019–2020&nbsp;Conway.<br>
-And if the current year is greater than&nbsp;2020:
+And if the current year is greater than 2020:
 no, the footer is not "out of date".
-It means that I haven't thought up or gotten around to adding content
-since&nbsp;2021; possibly I have died.
+It means that I haven't thought up
+or gotten around to adding content since 2021;
+possibly I have died.
 </footer>
 </body>
 </html>
