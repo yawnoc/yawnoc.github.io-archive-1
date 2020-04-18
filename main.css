@@ -76,6 +76,7 @@ pre {
 .centred-block {
   display: flex;
   justify-content: center;
+  margin-top: 2em;
 }
 
 /* Centred merged cells etc. */
