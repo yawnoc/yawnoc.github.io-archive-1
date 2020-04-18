@@ -11,6 +11,7 @@
   Romanisation spans
   Romanisation special characters
   Automatic language declarations for Chinese
+  SVG embedded styles
   
 -->
 
@@ -283,4 +284,28 @@
   )+
 %
   <span lang="zh-Hant">\g<0></span>
+%}
+
+
+<!-- SVG embedded styles -->
+
+{:: \svg-style:stroke-declarations ::
+  stroke: black;
+  vector-effect: non-scaling-stroke;
+::}
+
+{:: \svg-style:text-declarations ::
+  font-family: sans-serif;
+  text-anchor: middle;
+::}
+
+<!-- Container -->
+{%
+  \[
+  svg[-]styles/
+    (?P<content> [\s\S]*? )
+  /
+  \]
+%
+  <svg class="embedded-styles"><style>\g<content></style></svg>
 %}
