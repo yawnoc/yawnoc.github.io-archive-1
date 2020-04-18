@@ -15,6 +15,7 @@
   Sun Tzu
   SVG
   Tables
+  Vertical right-to-left script
   Whitespace
   
 */
@@ -313,6 +314,17 @@ th, td {
 .merged-cell {
   text-align: center;
 }
+
+
+/* ---------------------------------------------------------------- */
+/* Vertical right-to-left script                                    */
+/* ---------------------------------------------------------------- */
+
+
+.vertical-rtl {
+  writing-mode: vertical-rl;
+}
+
 
 
 /* ---------------------------------------------------------------- */

@@ -5,7 +5,7 @@
   %title-suffix Conway's site
   %author Conway
   %date-created 2019-04-07
-  %date-modified 2020-04-18
+  %date-modified 2020-04-19
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-js.cmd +)
@@ -1812,16 +1812,16 @@ Here are a few examples:
 ''''
 ^^^
   /
-    ; 陰 \\ 平
-    ; 陰 \\ 上
-    ; 陰 \\ 去
-    ; 陽 \\ 平
-    ; 陽 \\ 上
-    ; 陽 \\ 去
+    ;{vertical-rtl} 陰平
+    ;{vertical-rtl} 陰上
+    ;{vertical-rtl} 陰去
+    ;{vertical-rtl} 陽平
+    ;{vertical-rtl} 陽上
+    ;{vertical-rtl} 陽去
     ;{no-wrapping}[2] 鼻 → 塞
-    ; 高 \\ 陰 \\ 入
-    ; 低 \\ 陰 \\ 入
-    ; 陽 \\ 入
+    ;{vertical-rtl} 高陰入
+    ;{vertical-rtl} 低陰入
+    ;{vertical-rtl} 陽入
   /
     ; 1
     ; 2
