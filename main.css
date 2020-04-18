@@ -11,6 +11,7 @@
   Lists
   Navigation bar
   Page properties
+  Romanisations
   Sun Tzu
   Tables
   
@@ -224,6 +225,24 @@ nav > ul > li > a {
   font-size: small;
 }
 
+
+
+/* ---------------------------------------------------------------- */
+/* Romanisations                                                    */
+/* ---------------------------------------------------------------- */
+
+
+.initial {
+  font-weight: bold;
+}
+
+.pre-merger {
+  color: darkviolet;
+}
+
+.post-merger {
+  color: red;
+}
 
 
 /* ---------------------------------------------------------------- */
