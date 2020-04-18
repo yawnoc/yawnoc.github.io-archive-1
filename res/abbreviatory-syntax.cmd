@@ -8,6 +8,7 @@
   Links
   Navigation bars [==== ====]
   Sun Tzu
+  Romanisation spans
   Romanisation special characters
   Automatic language declarations for Chinese
   
@@ -167,6 +168,32 @@
 <!-- Sun Tzu -->
 
 {: \sun-tzu : Sun Tz(uu) :}
+
+
+<!-- Romanisation spans -->
+
+<!-- Pre-merger initials [^ ] -->
+{%
+  \[
+  [\^]
+  [\s]*
+    (?P<content> [\s\S]*? )
+  [\s]*?
+  \]
+%
+  <span class="pre-merger initial">\g<content></span>
+%}
+<!-- Post-merger initials [_ ] -->
+{%
+  \[
+  [_]
+  [\s]*
+    (?P<content> [\s\S]*? )
+  [\s]*?
+  \]
+%
+  <span class="post-merger initial">\g<content></span>
+%}
 
 
 <!-- Romanisation special characters -->
