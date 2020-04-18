@@ -16,10 +16,10 @@
     or gotten around to adding content since %year-modified-next;
     possibly I have died.
   %css
-    .page-link-container li {
+    .page-link-container > li {
       margin-bottom: 0.7em;
     }
-    .page-link-container a {
+    .page-link-container > li > a {
       font-weight: bold;
     }
     .page-description {
