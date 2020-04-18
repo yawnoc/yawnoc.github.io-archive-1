@@ -25,10 +25,14 @@
 {%
   \\cite-this-page
   \[
+    [\s]*
     (?P<tex_key> [^]]*? )
+    [\s]*?
   \]
   \[
+    [\s]*
     (?P<tex_title> [^]]*? )
+    [\s]*?
   \]
 %
   ##cite Cite this page ##
