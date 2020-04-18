@@ -166,6 +166,9 @@ nav > ul {
   padding: 0;
   white-space: nowrap;
 }
+:not(header) > nav {
+  margin: 1em 0.5em;
+}
 :not(header) > nav > ul {
   border: 1px solid black;
   white-space: normal;
