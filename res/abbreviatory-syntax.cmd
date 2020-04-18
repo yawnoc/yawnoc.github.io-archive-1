@@ -93,6 +93,25 @@
 {:: \link:top :: [Top](# Jump back to top) ::}
 {:: \link:cite :: [Cite](#cite Cite this page) ::}
 
+{:: \link:sun-tzu/preface ::
+  [《序》 "Preface"](/sun-tzu/preface.html)
+::}
+{:: \link:sun-tzu/iii ::
+  《卷下》 "Volume~III" (haven't started)
+::}
+{:: \link:sun-tzu/ii ::
+  [《卷中》 "Volume~II"](/sun-tzu/ii.html) (incomplete)
+::}
+{:: \link:sun-tzu/i ::
+  [《卷上》 "Volume~I"](/sun-tzu/i.html)
+::}
+{:: \link:sun-tzu ::
+  [
+    《孫子算經》 \\
+    "\sun-tzu's Computational Classic"
+  ](/sun-tzu)
+::}
+
 
 <!-- Navigation bars [==== ====] -->
 
@@ -134,6 +153,11 @@
     \g<equals_signs>
   </nav>
 %}
+
+
+<!-- Translator-supplied italics -->
+
+{: _+ : _{translator-supplied} :}
 
 
 <!-- Sun Tzu -->

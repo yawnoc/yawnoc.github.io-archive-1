@@ -127,6 +127,28 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Mathematics
 ####
 
+======{plc}
+* \link:sun-tzu
+  ====
+  * \link:sun-tzu/preface
+  * \link:sun-tzu/i
+  * \link:sun-tzu/ii
+  * \link:sun-tzu/iii
+  ====
+  ||||{pd}
+    An annotated translation of the entire _Sunzi Suanjing_ (once completed).
+  ||||
+
+* [
+    《海島算經》 \\
+    "_+The_ Sea Island Computational Classic"
+  ](/lit/sea-island.html)
+  ||||{pd}
+    The first problem in _Haidao Suanjing_.
+  ||||
+
+======
+
 
 ####literary-chinese-not-maths
   Not mathematics
