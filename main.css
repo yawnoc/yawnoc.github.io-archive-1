@@ -15,6 +15,7 @@
   Sun Tzu
   SVG
   Tables
+  Whitespace
   
 */
 
@@ -311,5 +312,14 @@ th, td {
 
 .merged-cell {
   text-align: center;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Whitespace                                                       */
+/* ---------------------------------------------------------------- */
+
+.no-wrapping {
+  white-space: nowrap;
 }
 
