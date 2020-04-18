@@ -5,12 +5,14 @@
   Body
   Blockquotes
   Code
+  Divisions
   Footer
   Links
   Lists
   Navigation bar
   Page properties
   Sun Tzu
+  Tables
   
 */
 
@@ -61,6 +63,16 @@ pre {
   border: 1px solid grey;
   overflow-x: auto;
   padding: 0.5em;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Divisions                                                        */
+/* ---------------------------------------------------------------- */
+
+
+.overflowing {
+  overflow-x: auto;
 }
 
 
@@ -218,11 +230,35 @@ nav > ul > li > a {
 /* Sun Tzu                                                          */
 /* ---------------------------------------------------------------- */
 
+
 .sun-tzu-navigation {
   margin-top: 0.1em;
 }
 
 .sun-tzu-navigation > li {
   margin-bottom: 0.1em;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* Tables                                                           */
+/* ---------------------------------------------------------------- */
+
+
+table {
+  background-color: white;
+  border-spacing: 0;
+  border-collapse: collapse;
+  white-space: pre-wrap;
+}
+
+th {
+  background-color: lightgrey;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 0.4em;
 }
 
