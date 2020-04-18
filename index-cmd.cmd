@@ -129,7 +129,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 
 ======{plc}
 * \link:sun-tzu
-  ====
+  ===={sun-tzu-navigation}
   * \link:sun-tzu/preface
   * \link:sun-tzu/i
   * \link:sun-tzu/ii

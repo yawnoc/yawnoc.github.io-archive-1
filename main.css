@@ -10,7 +10,7 @@
   Lists
   Navigation bar
   Page properties
-  Translation
+  Sun Tzu
   
 */
 
@@ -207,5 +207,19 @@ nav > ul > li > a {
 
 .page-properties {
   font-size: small;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* Sun Tzu                                                          */
+/* ---------------------------------------------------------------- */
+
+.sun-tzu-navigation {
+  margin-top: 0.1em;
+}
+
+.sun-tzu-navigation > li {
+  margin-bottom: 0.1em;
 }
 
