@@ -81,6 +81,12 @@ pre {
   text-align: center;
 }
 
+.important {
+  border: 2px solid black;
+  margin: 0.7em;
+  padding: 0.4em 0.5em;
+}
+
 .overflowing {
   overflow-x: auto;
 }
