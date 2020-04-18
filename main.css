@@ -13,6 +13,7 @@
   Page properties
   Romanisations
   Sun Tzu
+  SVG
   Tables
   
 */
@@ -273,6 +274,20 @@ nav > ul > li > a {
   margin-bottom: 0.1em;
 }
 
+
+
+/* ---------------------------------------------------------------- */
+/* SVG                                                              */
+/* ---------------------------------------------------------------- */
+
+
+/* SVG styles which do not take up space */
+
+.embedded-styles {
+  height: 0;
+  width: 0;
+  position: absolute;
+}
 
 
 /* ---------------------------------------------------------------- */
