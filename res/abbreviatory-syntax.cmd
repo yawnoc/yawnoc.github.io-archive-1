@@ -5,8 +5,8 @@
   URL
   Cite this page section
   Heading self-link anchors (<h2> through <h6>)
+  Links
   Navigation bars [==== ====]
-  Navigation bar links
   Sun Tzu
   Romanisation special characters
   Automatic language declarations for Chinese
@@ -18,6 +18,7 @@
 <!-- URL -->
 
 {: \url-full : https://yawnoc.github.io/%url :}
+
 
 <!-- Cite this page section -->
 
@@ -85,6 +86,14 @@
 %}
 
 
+<!-- Links -->
+
+{:: \link-here:home :: [Home](\/ You are on the home page) ::}
+{:: \link:home :: [Home](/ Home page) ::}
+{:: \link:top :: [Top](# Jump back to top) ::}
+{:: \link:cite :: [Cite](#cite Cite this page) ::}
+
+
 <!-- Navigation bars [==== ====] -->
 
 <!-- Inside header -->
@@ -125,14 +134,6 @@
     \g<equals_signs>
   </nav>
 %}
-
-
-<!-- Navigation bar links -->
-
-{:: \link-here:home :: [Home](\/ You are on the home page) ::}
-{:: \link:home :: [Home](/ Home page) ::}
-{:: \link:top :: [Top](# Jump back to top) ::}
-{:: \link:cite :: [Cite](#cite Cite this page) ::}
 
 
 <!-- Sun Tzu -->
