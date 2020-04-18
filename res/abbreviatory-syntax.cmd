@@ -127,7 +127,7 @@
   ----------------------------------------------------------------
 -->
 
-{:: \link-here:home :: [Home](\/ You are on the home page) ::}
+{:: \link-here:home :: [Home](#) ::}
 {:: \link:home :: [Home](/ Home page) ::}
 {:: \link:top :: [Top](# Jump back to top) ::}
 {:: \link:cite :: [Cite](#cite Cite this page) ::}
