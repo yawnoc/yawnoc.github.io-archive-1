@@ -80,7 +80,7 @@
     [][\\self-link:\g<id_>]\\
     \g<content>
   \g<hashes>
-  @@[\\self-link:\g<id_>][self-link]
+  @@[\\self-link:\g<id_>]{self-link}
     \\#\g<id_>
   @@
 %}

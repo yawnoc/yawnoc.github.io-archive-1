@@ -41,7 +41,7 @@
 # Conway's site #
 
 
-||||[page-properties]
+||||{page-properties}
 First created: %date-created \\
 Date modified: %date-modified \\
 Feedback welcome: `leeconway@protonmail.com`
@@ -58,31 +58,31 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ##
 
 <!-- Abbreviations for classes -->
-{: [plc] : [page-link-container] :}
-{: [pd] : [page-description] :}
+{: {plc} : {page-link-container} :}
+{: {pd} : {page-description} :}
 
 ###general
   General material
 ###
 
-====[plc]
+===={plc}
 * [Conway's Romanisation for Cantonese](/cantonese/conway-romanisation.html)
-  ||||[pd]
+  ||||{pd}
     Wade--Giles-style initials and length-indicative finals.
   ||||
 
 * [FAQ](/cantonese/conway-romanisation.html)
-  ||||[pd]
+  ||||{pd}
     Frequently asked questions.
   ||||
 
 * [A cynic's 7.30 (and other programs)](/cynics-730/)
-  ||||[pd]
+  ||||{pd}
     Mind reading: Australian politics.
   ||||
 
 * [Mao on separatism: 27 Chinas](/mao-on-separatism.html)
-  ||||[pd]
+  ||||{pd}
     Mao in 1920, on why China ought to be split into 27 separate countries.
   ||||
 
@@ -93,9 +93,9 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Applied mathematics (or, physics)
 ###
 
-====[plc]
+===={plc}
 * [Daytime: dependence on latitude and season](/math/daytime.html)
-  ||||[pd]
+  ||||{pd}
     The sun's path through the sky
     and the duration of daytime (among other quantities).
   ||||
@@ -103,7 +103,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 * [Projectile motion: optimal launch angle for weak quadratic drag](
     /math/projectile-weak-drag.html
   )
-  ||||[pd]
+  ||||{pd}
     Launching projectiles in weak air resistance
     proportional to the square of speed.
   ||||
@@ -111,7 +111,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 * [Projectile motion: optimal launch angle from a platform](
     /math/projectile-platform.html
   )
-  ||||[pd]
+  ||||{pd}
     Launching projectiles from a raised platform.
   ||||
 
