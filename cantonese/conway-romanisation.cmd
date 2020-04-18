@@ -1561,11 +1561,13 @@ in terms of this correspondence:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
+^^^
   /
     ; Place of articulation
     ; Nasal
     ; Stop
     ; Example quoted in 《康熙字典》
+~~~
   /
     , Labial
     , [m]
@@ -1612,10 +1614,12 @@ Here are a few examples:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
+^^^
   /
     ; Phrase
     ; Literary
     ; Vernacularised
+~~~
   /
     , 笛
     , tek[.9.]
