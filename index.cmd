@@ -263,7 +263,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ====
 
 
-\cite-this-page[home-page][{Conway's} site]
+\cite-this-page[][home-page][{Conway's} site]
 
 
 %footer-element

@@ -34,7 +34,21 @@
 -->
 
 {%
-  \\cite-this-page
+  \\cite[-]this[-]page
+  \[
+    [\s]*
+  \]
+%
+  \\cite-this-page[%title]
+%}
+
+{%
+  \\cite[-]this[-]page
+  \[
+    [\s]*
+    (?P<text_title> [^]]*? )
+    [\s]*?
+  \]
   \[
     [\s]*
     (?P<tex_key> [^]]*? )
@@ -51,7 +65,7 @@
   * Text:
     ----
     Conway~(%year-modified).
-    %title.
+    \g<text_title>.
     \\<\\url-full\\>
     Accessed <span class="js-date">yyyy-mm-dd</span>.
     ----
