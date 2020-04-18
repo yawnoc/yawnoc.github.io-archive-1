@@ -79,12 +79,6 @@ pre {
   margin-top: 2em;
 }
 
-/* Centred merged cells etc. */
-
-.grouped {
-  text-align: center;
-}
-
 .important {
   border: 2px solid black;
   margin: 0.7em;
@@ -311,5 +305,11 @@ th {
 th, td {
   border: 1px solid black;
   padding: 0.4em;
+}
+
+/* Centred merged cells */
+
+.merged-cell {
+  text-align: center;
 }
 
