@@ -34,6 +34,8 @@
 [[====
 * \link-here:home
 * \link:top
+* [Math.](#applied-maths  Applied mathematics \(or, physics\))
+* [Lit.](#literary-chinese  English translations of Literary Chinese)
 * \link:cite
 ====]]
 
