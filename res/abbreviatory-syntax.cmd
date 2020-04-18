@@ -17,12 +17,21 @@
 
 
 
-<!-- URL -->
+<!--
+  ----------------------------------------------------------------
+  URL
+  ----------------------------------------------------------------
+-->
 
 {: \url-full : https://yawnoc.github.io/%url :}
 
 
-<!-- Cite this page section -->
+
+<!--
+  ----------------------------------------------------------------
+  Cite this page section
+  ----------------------------------------------------------------
+-->
 
 {%
   \\cite-this-page
@@ -72,7 +81,12 @@
 %}
 
 
-<!-- Heading self-link anchors (<h2> through <h6>) -->
+
+<!--
+  ----------------------------------------------------------------
+  Heading self-link anchors (<h2> through <h6>)
+  ----------------------------------------------------------------
+-->
 
 {%
   ^ [^\S\n]*
@@ -92,7 +106,12 @@
 %}
 
 
-<!-- Links -->
+
+<!--
+  ----------------------------------------------------------------
+  Links
+  ----------------------------------------------------------------
+-->
 
 {:: \link-here:home :: [Home](\/ You are on the home page) ::}
 {:: \link:home :: [Home](/ Home page) ::}
@@ -102,15 +121,19 @@
 {:: \link:sun-tzu/preface ::
   [《序》 "Preface"](/sun-tzu/preface.html)
 ::}
+
 {:: \link:sun-tzu/iii ::
   《卷下》 "Volume~III" (haven't started)
 ::}
+
 {:: \link:sun-tzu/ii ::
   [《卷中》 "Volume~II"](/sun-tzu/ii.html) (incomplete)
 ::}
+
 {:: \link:sun-tzu/i ::
   [《卷上》 "Volume~I"](/sun-tzu/i.html)
 ::}
+
 {:: \link:sun-tzu ::
   [
     《孫子算經》 \\
@@ -119,9 +142,14 @@
 ::}
 
 
-<!-- Navigation bars [==== ====] -->
+<!--
+  ----------------------------------------------------------------
+  Navigation bars [==== ====]
+  ----------------------------------------------------------------
+-->
 
 <!-- Inside header -->
+
 {%
   ^ [^\S\n]*
   \[{2}
@@ -141,7 +169,9 @@
     </nav>
   </header>
 %}
+
 <!-- Not inside header -->
+
 {%
   ^ [^\S\n]*
   \[
@@ -161,19 +191,35 @@
 %}
 
 
-<!-- Translator-supplied italics -->
+
+<!--
+  ----------------------------------------------------------------
+  Translator-supplied italics
+  ----------------------------------------------------------------
+-->
 
 {: _+ : _{translator-supplied} :}
 
 
-<!-- Sun Tzu -->
+
+<!--
+  ----------------------------------------------------------------
+  Sun Tzu
+  ----------------------------------------------------------------
+-->
 
 {: \sun-tzu : Sun Tz(uu) :}
 
 
-<!-- Romanisation spans -->
+
+<!--
+  ----------------------------------------------------------------
+  Romanisation spans
+  ----------------------------------------------------------------
+-->
 
 <!-- Pre-merger initials [^ ] -->
+
 {%
   \[
   [\^]
@@ -184,7 +230,9 @@
 %
   <span class="pre-merger initial">\g<content></span>
 %}
+
 <!-- Post-merger initials [_ ] -->
+
 {%
   \[
   [_]
@@ -197,15 +245,23 @@
 %}
 
 
-<!-- Romanisation special characters -->
+
+<!--
+  ----------------------------------------------------------------
+  Romanisation special characters
+  ----------------------------------------------------------------
+-->
 
 <!-- Common -->
 {: (u")  : ü :}  <!-- U+00FC LATIN SMALL LETTER U WITH DIAERESIS -->
+
 <!-- Conway only -->
 {: (oe)  : œ :}  <!-- U+0153 LATIN SMALL LIGATURE OE -->
+
 <!-- Wade--Giles only -->
 {: (e^)  : ê :}  <!-- U+00EA LATIN SMALL LETTER E WITH CIRCUMFLEX -->
 {: (uu)  : ŭ :}  <!-- U+016D LATIN SMALL LETTER U WITH BREVE -->
+
 <!-- Pinyin tone 1 (陰平 dark level) only -->
 {: (a-)  : ā :}  <!-- U+0101 LATIN SMALL LETTER A WITH MACRON -->
 {: (e-)  : ē :}  <!-- U+0113 LATIN SMALL LETTER E WITH MACRON -->
@@ -213,6 +269,7 @@
 {: (o-)  : ō :}  <!-- U+014D LATIN SMALL LETTER O WITH MACRON -->
 {: (u-)  : ū :}  <!-- U+016B LATIN SMALL LETTER U WITH MACRON -->
 {: (u"-) : ǖ :}  <!-- U+01D6 LATIN SMALL LETTER U WITH DIAERESIS AND MACRON -->
+
 <!-- Pinyin tone 2 (陽平 light level) only -->
 {: (a/)  : á :}  <!-- U+00E1 LATIN SMALL LETTER A WITH ACUTE -->
 {: (e/)  : é :}  <!-- U+00E9 LATIN SMALL LETTER E WITH ACUTE -->
@@ -220,6 +277,7 @@
 {: (o/)  : ó :}  <!-- U+00F3 LATIN SMALL LETTER O WITH ACUTE -->
 {: (u/)  : ú :}  <!-- U+00FA LATIN SMALL LETTER U WITH ACUTE -->
 {: (u"/) : ǘ :}  <!-- U+01D8 LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE -->
+
 <!-- Pinyin tone 3 (上 rising) only -->
 {: (av)  : ǎ :}  <!-- U+01CE LATIN SMALL LETTER A WITH CARON -->
 {: (ev)  : ě :}  <!-- U+011B LATIN SMALL LETTER E WITH CARON -->
@@ -227,6 +285,7 @@
 {: (ov)  : ǒ :}  <!-- U+01D2 LATIN SMALL LETTER O WITH CARON -->
 {: (uv)  : ǔ :}  <!-- U+01D4 LATIN SMALL LETTER U WITH CARON -->
 {: (u"v) : ǚ :}  <!-- U+01DA LATIN SMALL LETTER U WITH DIAERESIS AND CARON -->
+
 <!-- Pinyin tone 4 (去 departing) only -->
 {: (a\)  : à :}  <!-- U+00E0 LATIN SMALL LETTER A WITH GRAVE -->
 {: (e\)  : è :}  <!-- U+00E8 LATIN SMALL LETTER E WITH GRAVE -->
@@ -236,8 +295,11 @@
 {: (u"\) : ǜ :}  <!-- U+01DC LATIN SMALL LETTER U WITH DIAERESIS AND GRAVE -->
 
 
-<!-- Automatic language declarations for Chinese -->
+
 <!--
+  ----------------------------------------------------------------
+  Automatic language declarations for Chinese
+  ----------------------------------------------------------------
   This is a pretty liberal definition of "Chinese".
   See <https://en.wiktionary.org/wiki/Appendix:Unicode>
   and <https://en.wikipedia.org/wiki/Template:CJK_ideographs_in_Unicode>.
@@ -278,16 +340,20 @@
     Stop early at U+3134A (U+3134B onwards not assigned).
   
 -->
+
 {%
-  (
-    [⺀-〿㇀-㇣㐀-鿼豈-龎！-｠𠀀-𱍊]
-  )+
+  [⺀-〿㇀-㇣㐀-鿼豈-龎！-｠𠀀-𱍊] +
 %
   <span lang="zh-Hant">\g<0></span>
 %}
 
 
-<!-- SVG embedded styles -->
+
+<!--
+  ----------------------------------------------------------------
+  SVG embedded styles
+  ----------------------------------------------------------------
+-->
 
 {:: \svg-style:stroke-declarations ::
   stroke: black;
@@ -300,6 +366,7 @@
 ::}
 
 <!-- Container -->
+
 {%
   \[
   svg[-]styles/
@@ -309,3 +376,4 @@
 %
   <svg class="embedded-styles"><style>\g<content></style></svg>
 %}
+
