@@ -43,8 +43,8 @@ function renderDate() {
   let dateNow = new Date();
   
   let yyyy = dateNow.getFullYear();
-  let mm = padIntoTwoDigitString(1 + dateNow.getMonth());
-  let dd = padIntoTwoDigitString(1 + dateNow.getDate());
+  let mm = padIntoTwoDigitString(dateNow.getMonth() + 1);
+  let dd = padIntoTwoDigitString(dateNow.getDate());
   
   let date_elements = document.getElementsByClassName("js-date");
   for (let i = 0; i < date_elements.length; i++) {
