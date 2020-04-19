@@ -146,6 +146,7 @@
 {:: \link:top :: [Top](# Jump back to top) ::}
 {:: \link:translation :: [Translation](#translation Translation) ::}
 {:: \link:cite :: [Cite](#cite Cite this page) ::}
+{:: \link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
 
 {:: \link:sun-tzu/preface ::
   [《序》 "Preface"](/sun-tzu/preface.html)
