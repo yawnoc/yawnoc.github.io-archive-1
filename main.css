@@ -8,6 +8,7 @@
   Divisions
   Footer
   Headings
+  Interviews (Cynic's 7.30)
   Links
   Lists
   Navigation bar
@@ -129,6 +130,36 @@ h2 {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Interviews (Cynic's 7.30)                                        */
+/* ---------------------------------------------------------------- */
+
+
+.interview {
+  font-size: larger;
+  margin: 0 auto 1em;
+  max-width: 30em;
+}
+
+.host {
+  clear: right;
+  color: blue;
+}
+
+.guest {
+  clear: left;
+}
+
+/* Signal END of interview */
+
+.signal {
+  clear: both;
+  font-size: x-large;
+  margin-top: 0.5em;
+  text-align: center;
 }
 
 
