@@ -8,6 +8,13 @@
 %}
 
 
+<!-- Abbreviations for classes -->
+{: {h} : {host} :}
+{: {ht} : {host thought-bubble} :}
+{: {g} : {guest} :}
+{: {gt} : {guest thought-bubble} :}
+
+
 <!-- END of interview \END -->
 {: \END :
   <div class="signal">
