@@ -7,11 +7,12 @@
   Cite this page section
   Heading self-link anchors (<h2> through <h6>)
   Links
-  Navigation bars [==== ====]
-  Translation (parallel text) [.... .... ....]
-  Translator-supplied italics _. _
+  Navigation bars  [==== ====]
+  Translation (parallel text)  [....{[class]} .... ....]
+  Translator-supplied italics  _. _
+  Translation-alternative markers  \or  \lit
   Sun Tzu
-  Romanisation spans [^ ]  [_ ]
+  Romanisation spans  [^ ]  [_ ]
   Romanisation special characters
   Automatic language declarations for Chinese
   SVG embedded styles
@@ -172,7 +173,7 @@
 
 <!--
   ----------------------------------------------------------------
-  Navigation bars [==== ====]
+  Navigation bars  [==== ====]
   ----------------------------------------------------------------
 -->
 
@@ -217,7 +218,7 @@
 
 <!--
   ----------------------------------------------------------------
-  Translation (parallel text) [....{[class]} .... ....]
+  Translation (parallel text)  [....{[class]} .... ....]
   ----------------------------------------------------------------
 -->
 
@@ -251,7 +252,7 @@
 
 <!--
   ----------------------------------------------------------------
-  Translator-supplied italics _. _
+  Translator-supplied italics  _. _
   ----------------------------------------------------------------
 -->
 
@@ -263,6 +264,15 @@
   _{translator-supplied}\g<content>_
 %}
 
+
+<!--
+  ----------------------------------------------------------------
+  Translation-alternative markers  \or  \lit
+  ----------------------------------------------------------------
+-->
+
+{: \or : <span class="alternative-marker">or</span> :}
+{: \lit : <span class="alternative-marker">lit.</span> :}
 
 
 <!--
@@ -277,7 +287,7 @@
 
 <!--
   ----------------------------------------------------------------
-  Romanisation spans [^ ]  [_ ]
+  Romanisation spans  [^ ]  [_ ]
   ----------------------------------------------------------------
 -->
 

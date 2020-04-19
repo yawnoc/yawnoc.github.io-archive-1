@@ -16,7 +16,7 @@
   Sun Tzu
   SVG
   Tables
-  Translation (parallel text)
+  Translation
   Vertical right-to-left script
   Whitespace
   
@@ -339,9 +339,11 @@ th, td {
 
 
 /* ---------------------------------------------------------------- */
-/* Translation (parallel text)                                      */
+/* Translation                                                      */
 /* ---------------------------------------------------------------- */
 
+
+/* Parallel text */
 
 .parallel-text {
   border: 2px solid black;
@@ -358,6 +360,13 @@ th, td {
 
 .front-matter, .back-matter {
   font-size: medium;
+}
+
+/* Translation-alternative markers ("or", "lit.", etc.) */
+
+.alternative-marker {
+  color: grey;
+  font-family: serif;
 }
 
 
