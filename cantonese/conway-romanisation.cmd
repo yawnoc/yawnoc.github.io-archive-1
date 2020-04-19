@@ -2,7 +2,7 @@
 
 %%
   %title Conway's Romanisation for Cantonese
-  %title-suffix \ | Conway's site
+  %title-suffix \title-suffix
   %author Conway
   %date-created 2019-04-07
   %date-modified 2020-04-19
