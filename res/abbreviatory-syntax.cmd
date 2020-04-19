@@ -141,6 +141,7 @@
 {:: \link-here:home :: [Home](#) ::}
 {:: \link:home :: [Home](/ Home page) ::}
 {:: \link:top :: [Top](# Jump back to top) ::}
+{:: \link:translation :: [Translation](#translation Translation) ::}
 {:: \link:cite :: [Cite](#cite Cite this page) ::}
 
 {:: \link:sun-tzu/preface ::
@@ -390,7 +391,7 @@
   text-anchor: middle;
 ::}
 
-<!-- Container -->
+<!-- Container [svg-styles/ /] -->
 
 {%
   \[
