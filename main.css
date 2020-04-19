@@ -90,6 +90,10 @@ pre {
   padding: 0.4em 0.5em;
 }
 
+.statement {
+  text-align: center;
+}
+
 .overflowing {
   overflow-x: auto;
 }
