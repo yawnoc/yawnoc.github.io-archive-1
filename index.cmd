@@ -143,7 +143,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 
 * [
     《海島算經》 \\
-    "_+The_ Sea Island Computational Classic"
+    "_.The_ Sea Island Computational Classic"
   ](/lit/sea-island.html)
   ||||{pd}
     The first problem in _Haidao Suanjing_.
@@ -165,7 +165,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 
 * [
     《孔子問答：小兒論》 \\
-    "Q _+\&_ A _+with_ Confucius: _+the_ Little Child's Discourse"
+    "Q _.\&_ A _.with_ Confucius: _.the_ Little Child's Discourse"
   ](/lit/little-child.html)
   ||||{pd}
     Confucius getting his arse whooped by a little kid.
@@ -173,7 +173,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 
 * [
     《太平山獅子亭記》 \\
-    "Record of _+the_ Lion's Pavilion, Victoria Peak"
+    "Record of _.the_ Lion's Pavilion, Victoria Peak"
   ](/lit/lion-pavilion.html)
   ||||{pd}
      Plaque text commemorating the Lion's Pavilion.
@@ -181,7 +181,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 
 * [
     《狐假虎威》 \\
-    "_+The_ Fox Feigneth _+the_ Tiger's Authority"
+    "_.The_ Fox Feigneth _.the_ Tiger's Authority"
   ](/lit/fox-tiger.html)
   ||||{pd}
      The original second half of _The Gruffalo_.
@@ -189,7 +189,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 
 * [
     《施氏食獅史》 \\
-    "_+An_ History of Mr Shih's Eating of Lions"
+    "_.An_ History of Mr Shih's Eating of Lions"
   ](/lit/lion-eating.html)
   ||||{pd}
      The original Mandarin "lion tongue twister".

@@ -9,9 +9,9 @@
   Links
   Navigation bars [==== ====]
   Translation (parallel text) [.... .... ....]
-  Translator-supplied italics
+  Translator-supplied italics _. _
   Sun Tzu
-  Romanisation spans
+  Romanisation spans [^ ]  [_ ]
   Romanisation special characters
   Automatic language declarations for Chinese
   SVG embedded styles
@@ -251,11 +251,17 @@
 
 <!--
   ----------------------------------------------------------------
-  Translator-supplied italics
+  Translator-supplied italics _. _
   ----------------------------------------------------------------
 -->
 
-{: _+ : _{translator-supplied} :}
+{%
+  [_][.](?= [\S] )
+    (?P<content> [^_] *? )
+  [_]
+%
+  _{translator-supplied}\g<content>_
+%}
 
 
 
@@ -271,7 +277,7 @@
 
 <!--
   ----------------------------------------------------------------
-  Romanisation spans
+  Romanisation spans [^ ]  [_ ]
   ----------------------------------------------------------------
 -->
 
