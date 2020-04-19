@@ -151,18 +151,44 @@ img {
 
 
 .interview {
-  font-size: larger;
+  font-size: large;
   margin: 0 auto 1em;
   max-width: 30em;
 }
 
-.host {
+.interview > img {
+  border: 5px solid;
+  clear: both;
+  display: block;
+  margin-bottom: 0.25em;
+  max-width: 30%;
+}
+
+.interview > img + p {
+  padding-top: 0.7em;
+}
+
+img.host {
+  border-color: blue;
+  float: left;
+  margin-right: 0.75em;
+}
+p.host {
   clear: right;
   color: blue;
 }
 
-.guest {
+img.guest {
+  border-color: black;
+  float: right;
+  margin-left: 0.75em;
+}
+p.guest {
   clear: left;
+}
+
+p.thought-bubble {
+  padding: 0.7em;
 }
 
 /* Signal END of interview */
