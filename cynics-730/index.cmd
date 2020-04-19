@@ -1,5 +1,5 @@
 (+ res/abbreviatory-syntax.cmd +)
-(+ res/thought-bubble-syntax.cmd +)
+(+ res/cynics-730-syntax.cmd +)
 
 %%
   %title A cynic's 7.30 (and other programs)
