@@ -8,7 +8,7 @@
   Heading self-link anchors (<h2> through <h6>)
   Links
   Navigation bars [==== ====]
-  Translation (parallel text) [\\\\ \\\\ \\\\]
+  Translation (parallel text) [.... .... ....]
   Translator-supplied italics
   Sun Tzu
   Romanisation spans
@@ -182,17 +182,15 @@
   ^ [^\S\n]*
   \[{2}
   (?P<equals_signs> [=]{4,} )
+    (?P<content> [\s\S]*? )
+  ^ [^\S\n]*
+  (?P=equals_signs)
+  \]{2}
 %
   <header>
     <nav>
       \g<equals_signs>
-%}
-
-{%
-  ^ [^\S\n]*
-  (?P<equals_signs> [=]{4,} )
-  \]{2}
-%
+        \g<content>
       \g<equals_signs>
     </nav>
   </header>
@@ -204,16 +202,14 @@
   ^ [^\S\n]*
   \[
   (?P<equals_signs> [=]{4,} )
+    (?P<content> [\s\S]*? )
+  ^ [^\S\n]*
+  (?P=equals_signs)
+  \]
 %
   <nav>
     \g<equals_signs>
-%}
-
-{%
-  ^ [^\S\n]*
-  (?P<equals_signs> [=]{4,} )
-  \]
-%
+      \g<content>
     \g<equals_signs>
   </nav>
 %}
@@ -221,7 +217,7 @@
 
 <!--
   ----------------------------------------------------------------
-  Translation (parallel text) [\\\\{[class]} \\\\ \\\\]
+  Translation (parallel text) [....{[class]} .... ....]
   ----------------------------------------------------------------
 -->
 
@@ -229,31 +225,25 @@
 {%
   ^ [^\S\n]*
   \[
-  (?P<backslashes> [\\]{4,} )
+  (?P<full_stops> [.]{4,} )
   (
     \{
       (?P<class> [^}]*? )
     \}
   )?
+    (?P<chinese_content> [\s\S]*? )
+  (?P=full_stops)
+    (?P<english_content> [\s\S]*? )
+  ^ [^\S\n]*
+  (?P=full_stops)
+  \]
 %
   ||||||{translation parallel-text \g<class>}
   ||||{chinese}
-%}
-
-{%
-  ^ [^\S\n]*
-  (?P<backslashes> [\\]{4,} )
-  $
-%
+    \g<chinese_content>
   ||||
   ||||{english}
-%}
-
-{%
-  ^ [^\S\n]*
-  (?P<backslashes> [\\]{4,} )
-  \]
-%
+    \g<english_content>
   ||||
   ||||||
 %}
