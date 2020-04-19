@@ -8,7 +8,7 @@
   Heading self-link anchors (<h2> through <h6>)
   Links
   Navigation bars  [==== ====]
-  Translation (parallel text)  [....{[class]} .... ....]
+  Translation (parallel text)  [..{[class]}↵ .. ..]
   Translator-supplied italics  _. _
   Translation-alternative markers  \or  \lit
   Sun Tzu
@@ -218,7 +218,7 @@
 
 <!--
   ----------------------------------------------------------------
-  Translation (parallel text)  [....{[class]} .... ....]
+  Translation (parallel text)  [..{[class]}↵ .. ..]
   ----------------------------------------------------------------
 -->
 
@@ -226,12 +226,13 @@
 {%
   ^ [^\S\n]*
   \[
-  (?P<full_stops> [.]{4,} )
+  (?P<full_stops> [.]{2,} )
   (
     \{
       (?P<class> [^}]*? )
     \}
   )?
+  \n
     (?P<chinese_content> [\s\S]*? )
   (?P=full_stops)
     (?P<english_content> [\s\S]*? )
