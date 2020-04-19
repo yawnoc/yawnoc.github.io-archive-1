@@ -396,10 +396,25 @@
     [𠀀-𱍊]
     Stop early at U+3134A (U+3134B onwards not assigned).
   
+  The simple delimiters
+    [: :]
+  and line continuation
+    \↵
+  are also allowed.
+  
 -->
 
 {%
-  [⺀-〿㇀-㇣㐀-鿼豈-龎！-｠𠀀-𱍊] +
+  (
+    ( \[: ) ?
+    [⺀-〿㇀-㇣㐀-鿼豈-龎！-｠𠀀-𱍊] +
+    ( :\] ) ?
+    (
+      \\
+      \n
+      [^\S\n] *
+    ) ?
+  )+
 %
   <span lang="zh-Hant">\g<0></span>
 %}
