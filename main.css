@@ -40,7 +40,7 @@ body {
   line-height: 1.4;
   margin: auto auto 1em;
   overflow-wrap: break-word;
-  padding: 24px 0.7em 0;
+  padding: 32px 0.7em 0;
 }
 
 
@@ -120,8 +120,7 @@ footer {
 
 h1 {
   font-size: 1.7em;
-  margin-bottom: 0.5em;
-  margin-top: 0.8em;
+  margin: 0.5em auto;
 }
 
 h2 {
