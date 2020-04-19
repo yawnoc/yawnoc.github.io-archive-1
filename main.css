@@ -8,6 +8,7 @@
   Divisions
   Footer
   Headings
+  Images
   Interviews (Cynic's 7.30)
   Links
   Lists
@@ -129,6 +130,18 @@ h2 {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Images                                                           */
+/* ---------------------------------------------------------------- */
+
+
+img {
+  align-self: center;
+  max-width: 100%;
+  height: auto;
 }
 
 
