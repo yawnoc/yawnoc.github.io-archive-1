@@ -16,6 +16,7 @@
   Sun Tzu
   SVG
   Tables
+  Translation (parallel text)
   Vertical right-to-left script
   Whitespace
   
@@ -334,6 +335,29 @@ th, td {
 
 .merged-cell {
   text-align: center;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Translation (parallel text)                                      */
+/* ---------------------------------------------------------------- */
+
+
+.parallel-text {
+  border: 2px solid black;
+  font-size: large;
+  margin: 0.7em;
+  padding: 0.4em 0.5em;
+}
+
+.parallel-text > :not(:first-child) {
+  border-top: 1px solid black;
+  margin-top: 0.3em;
+  padding-top: 0.3em;
+}
+
+.front-matter, .back-matter {
+  font-size: medium;
 }
 
 

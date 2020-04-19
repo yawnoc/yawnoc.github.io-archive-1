@@ -8,6 +8,8 @@
   Heading self-link anchors (<h2> through <h6>)
   Links
   Navigation bars [==== ====]
+  Translation (parallel text) [\\\\ \\\\ \\\\]
+  Translator-supplied italics
   Sun Tzu
   Romanisation spans
   Romanisation special characters
@@ -174,7 +176,7 @@
   ----------------------------------------------------------------
 -->
 
-<!-- Inside header -->
+<!-- Inside header [[==== ====]] -->
 
 {%
   ^ [^\S\n]*
@@ -196,7 +198,7 @@
   </header>
 %}
 
-<!-- Not inside header -->
+<!-- Not inside header [==== ====] -->
 
 {%
   ^ [^\S\n]*
@@ -216,6 +218,45 @@
   </nav>
 %}
 
+
+<!--
+  ----------------------------------------------------------------
+  Translation (parallel text) [\\\\{[class]} \\\\ \\\\]
+  ----------------------------------------------------------------
+-->
+
+
+{%
+  ^ [^\S\n]*
+  \[
+  (?P<backslashes> [\\]{4,} )
+  (
+    \{
+      (?P<class> [^}]*? )
+    \}
+  )?
+%
+  ||||||{translation parallel-text \g<class>}
+  ||||{chinese}
+%}
+
+{%
+  ^ [^\S\n]*
+  (?P<backslashes> [\\]{4,} )
+  $
+%
+  ||||
+  ||||{english}
+%}
+
+{%
+  ^ [^\S\n]*
+  (?P<backslashes> [\\]{4,} )
+  \]
+%
+  ||||
+  ||||||
+%}
 
 
 <!--
