@@ -2,123 +2,117 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<script defer src="/conway-render.min.js"></script>
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
 <title>A cynic's 7.30 (and other programs) | Conway's site</title>
+<style>.air-date {
+  font-weight: bold;
+}
+li > a {
+  display: block;
+}</style>
 </head>
-<body onload="dateRender();">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-<li><a href="#cite" title="Cite this page">Cite</a></li>
-</ul></nav></header>
+<body onload="renderDate();">
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
 <h1>A cynic's 7.30 (and other programs)</h1>
-<p class="page-properties">
-First created:&nbsp;20190830<br>
-Last modified:&nbsp;<b>20200327</b>
-</p>
+<div class="page-properties">
+First created: 2019-08-30<br>
+Date modified: 2020-03-27
+</div>
 <p>
 Originally the plan was to make comic strips
 with proper speech and thought bubbles,
 but I don't think I can pull that off with just HTML and CSS.
-So if you see
-<span class="thought">{highlighted and curly-bracketed text
-in <a href="http://comicneue.com/" title="Comic Neue">Comic Neue</a>}</span>,
+So if you see <span class="thought-bubble">{highlighted and curly-bracketed text in <a href="http://comicneue.com/">Comic Neue</a>}</span>,
 it's supposed to be in a thought bubble.
 </p>
-<div class="boxed centred-text">
+<div class="important statement">
 You may not care about politics, but politics cares about you.
 And by that I mean: politics is out to screw you.
 </div>
-<h2 id="2020"><a class="self-link" href="#2020"></a>
-2020
-</h2>
-<ul class="sparse-list">
-<li>
-<b>26&nbsp;March&nbsp;2020</b><br>
-<a href="2020/sales-kelly-coronavirus.html" title="Deputy Chief Medical Officer Paul Kelly on the fight to contain coronavirus">Deputy Chief Medical Officer Paul Kelly on the fight to contain coronavirus</a><br>
+<h2 id="2020"><a class="self-link" href="#2020"></a>2020</h2>
+<ul>
+<li><span class="air-date">26&nbsp;March&nbsp;2020</span>
+<a href="2020/sales-kelly-coronavirus.html">Deputy Chief Medical Officer Paul Kelly on the fight to contain coronavirus</a>
 (better entitled "Professor Paul Kelly speaking politician-speak")
 </li>
-<li>
-<b>12&nbsp;March&nbsp;2020</b><br>
-<a href="2020/sales-frydenberg-surplus.html" title="Josh Frydenberg says the Government's surplus prediction was based on 'forecasts at the time'">Josh Frydenberg says the Government's surplus prediction was based on 'forecasts at the time'</a>
+<li><span class="air-date">12&nbsp;March&nbsp;2020</span>
+<a href="2020/sales-frydenberg-surplus.html">Josh Frydenberg says the Government's surplus prediction was based on 'forecasts at the time'</a>
 </li>
-<li>
-<b>3&nbsp;March&nbsp;2020</b><br>
-<a href="2020/sales-morrison-economy.html" title="Scott Morrison says economic plan for coronavirus to be revealed before May budget">Scott Morrison says economic plan for coronavirus to be revealed before May budget</a>
+<li><span class="air-date">3&nbsp;March&nbsp;2020</span>
+<a href="2020/sales-morrison-economy.html">Scott Morrison says economic plan for coronavirus to be revealed before May budget</a>
 </li>
-<li>
-<b>2&nbsp;March&nbsp;2020</b><br>
-<a href="2020/sales-taylor-emissions.html" title="Energy Minister Angus Taylor discusses carbon emissions and Clover Moore">Energy Minister Angus Taylor discusses carbon emissions and Clover Moore</a>
+<li><span class="air-date">2&nbsp;March&nbsp;2020</span>
+<a href="2020/sales-taylor-emissions.html">Energy Minister Angus Taylor discusses carbon emissions and Clover Moore</a>
 </li>
 </ul>
-<h2 id="2019"><a class="self-link" href="#2019"></a>
-2019
-</h2>
-<ul class="sparse-list">
-<li>
-<b>14&nbsp;October&nbsp;2019</b><br>
-<a href="2019/sales-taylor-snowy.html" title="Energy Minister Angus Taylor discusses Snowy Hydro 2.0">Energy Minister Angus Taylor discusses Snowy Hydro 2.0</a>
+<h2 id="2019"><a class="self-link" href="#2019"></a>2019</h2>
+<ul>
+<li><span class="air-date">14&nbsp;October&nbsp;2019</span>
+<a href="2019/sales-taylor-snowy.html">Energy Minister Angus Taylor discusses Snowy Hydro 2.0</a>
 </li>
-<li>
-<b>10&nbsp;September&nbsp;2019 (The Bolt Report, not 7.30)</b><br>
-<a href="2019/bolt-liu-association.html" title="Gladys Liu discusses membership of various Chinese Associations">Gladys Liu discusses membership of various Chinese Associations</a>
+<li><span class="air-date">10&nbsp;September&nbsp;2019</span> (The Bolt Report, not 7.30)
+<a href="2019/bolt-liu-association.html">Gladys Liu discusses membership of various Chinese Associations</a>
 </li>
-<li>
-<b>3&nbsp;September&nbsp;2019</b><br>
-<a href="2019/sales-albanese-donation.html" title="Anthony Albanese discusses the NSW Labor donation scandal">Anthony Albanese discusses the NSW Labor donation scandal</a>
+<li><span class="air-date">3&nbsp;September&nbsp;2019</span>
+<a href="2019/sales-albanese-donation.html">Anthony Albanese discusses the NSW Labor donation scandal</a>
 </li>
-<li>
-<b>28&nbsp;August&nbsp;2019</b><br>
-<a href="2019/sales-tehan-naplan.html" title="Education Minister Dan Tehan discusses NAPLAN and the latest results">Education Minister Dan Tehan discusses NAPLAN and the latest results</a>
+<li><span class="air-date">28&nbsp;August&nbsp;2019</span>
+<a href="2019/sales-tehan-naplan.html">Education Minister Dan Tehan discusses NAPLAN and the latest results</a>
 </li>
 </ul>
-<h2 id="cite"><a class="self-link" href="#cite"></a>
-Cite this page
-</h2>
+<h2 id="cite"><a class="self-link" href="#cite"></a>Cite this page</h2>
 <ul>
 <li>Text:
 <p>
 Conway&nbsp;(2020).
 A cynic's 7.30 (and other programs).
 &lt;https://yawnoc.github.io/cynics-730/&gt;
-[Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
+Accessed <span class="js-date">yyyy-mm-dd</span>.
 </p>
 </li>
 <li>BibTeX:
-<pre>
-@misc{conway-cynics-730,
+<pre><code>@misc{conway-cynics-730,
   author = {Conway},
   year = {2020},
   title = {A cynic's 7.30 (and other programs)},
   howpublished = {\url{https://yawnoc.github.io/cynics-730/}},
-  note = {[Accessed <span class="date">d~month~yyyy</span>]}
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 <li>BibLaTeX:
-<pre>
-@online{conway-cynics-730,
+<pre><code>@online{conway-cynics-730,
   author = {Conway},
   year = {2020},
   title = {A cynic's 7.30 (and other programs)},
   url = {https://yawnoc.github.io/cynics-730/},
-  urldate = {<span class="date">yyyy-mm-dd</span>}
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 </ul>
 <footer>
-<hr>
 ©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
