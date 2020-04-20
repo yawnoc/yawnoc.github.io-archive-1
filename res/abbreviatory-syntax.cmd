@@ -414,11 +414,12 @@
     [𠀀-𱍊]
     Stop early at U+3134A (U+3134B onwards not assigned).
   
-  The simple delimiters
-    [: :]
-  and line continuation
-    \↵
-  are also allowed.
+  Also allowed are the following:
+  
+  * Simple delimiters
+      [: :]
+  * Line continuation
+      \↵
   
 -->
 
