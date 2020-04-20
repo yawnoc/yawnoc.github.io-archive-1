@@ -418,6 +418,10 @@
   
   * Simple delimiters
       [: :]
+  * Double U+2014 EM DASH
+      ——
+  * Double U+2026 HORIZONTAL ELLIPSIS
+      ……
   * Line continuation
       \↵
   
@@ -427,6 +431,8 @@
   (
     ( \[: ) ?
     [⺀-〿㇀-㇣㐀-鿼豈-龎！-｠𠀀-𱍊] +
+    ( —{2} ) ?
+    ( …{2} ) ?
     ( :\] ) ?
     (
       \\
