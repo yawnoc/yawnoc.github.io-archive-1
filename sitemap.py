@@ -42,6 +42,7 @@ def string_to_list(string):
 EXCLUDED_PAGES = [
   f'{file_name}.html'
     for file_name in [
+      '404',
     ]
 ]
 sitemap = [
