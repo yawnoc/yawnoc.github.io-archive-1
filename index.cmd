@@ -7,7 +7,7 @@
   %date-modified 2020-04-18
   %resources
     (+ res/main-resources.cmd +)
-    (+ res/rendering-resources.cmd +)
+    (+ res/rendering-js.cmd +)
   %description Conway's site: Literary Chinese and applied mathematics.
   %footer-remark
     And if the current year is greater than %year-modified:
