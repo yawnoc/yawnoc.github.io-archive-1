@@ -18,7 +18,7 @@
       display: block;
     }
   %onload-js
-    renderDate();
+    \onload-js:date
 %%
 
 

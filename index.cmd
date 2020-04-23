@@ -27,7 +27,7 @@
       margin: 0.2em 0;
     }
   %onload-js
-    renderDate();
+    \onload-js:date
 %%
 
 

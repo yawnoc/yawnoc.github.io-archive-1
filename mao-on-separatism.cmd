@@ -18,7 +18,7 @@
       color: red;
     }
   %onload-js
-    renderDate();
+    \onload-js:date
 %%
 
 
