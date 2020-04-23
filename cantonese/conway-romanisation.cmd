@@ -31,8 +31,6 @@
       font-size: large;
       padding: 0.3em 0.4em;
     }
-  %onload-js
-    \onload-js:date
 %%
 
 

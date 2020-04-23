@@ -26,8 +26,6 @@
       font-size: small;
       margin: 0.2em 0;
     }
-  %onload-js
-    \onload-js:date
 %%
 
 

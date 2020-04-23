@@ -17,8 +17,6 @@
     .red-emphasis {
       color: red;
     }
-  %onload-js
-    \onload-js:date
 %%
 
 

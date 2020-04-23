@@ -2,7 +2,6 @@
   ----------------------------------------------------------------
   Sections
   ----------------------------------------------------------------
-  Body-onload JavaScript
   Title suffix
   URL
   Cite this page section
@@ -19,15 +18,6 @@
   SVG embedded styles
   
 -->
-
-
-<!--
-  ----------------------------------------------------------------
-  Body-onload JavaScript
-  ----------------------------------------------------------------
--->
-
-{:: \onload-js:date :: renderDate(); ::}
 
 
 
@@ -116,6 +106,9 @@
       \/}
     </code></pre>
   ====
+  <script>(!
+    document.addEventListener("DOMContentLoaded",function(){renderDate()})
+  !)</script>
 %}
 
 

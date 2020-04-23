@@ -17,8 +17,6 @@
     li > a {
       display: block;
     }
-  %onload-js
-    \onload-js:date
 %%
 
 
