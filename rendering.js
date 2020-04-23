@@ -3,6 +3,7 @@
   Sections
   ----------------------------------------------------------------
   Render date
+  Render maths
   
 */
 
@@ -52,6 +53,30 @@ function renderDate() {
     replaceTextContent(elem, /yyyy/g, yyyy);
     replaceTextContent(elem, /mm/g, mm);
     replaceTextContent(elem, /dd/g, dd);
+  }
+  
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Render maths                                                     */
+/* ---------------------------------------------------------------- */
+
+
+/*
+  Render maths in the class "js-maths".
+*/
+
+function renderMaths() {
+  
+  let maths_elements = document.getElementsByClassName("js-maths");
+  for (let i = 0; i < maths_elements.length; i++) {
+    let elem = maths_elements[i]
+    katex.render(
+      elem.textContent,
+      elem,
+      {displayMode: elem.tagName == "DIV"}
+    );
   }
   
 }
