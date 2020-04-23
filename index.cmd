@@ -42,8 +42,8 @@
 
 
 ||||{page-properties}
-First created: %date-created \\
-Date modified: %date-modified \\
+First created: %date-created \+
+Date modified: %date-modified \+
 Feedback welcome: `leeconway@protonmail.com`
 ||||
 
@@ -140,7 +140,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   ||||
 
 * [
-    《海島算經》 \\
+    《海島算經》 \+
     "_.The_ Sea Island Computational Classic"
   ](/lit/sea-island.html)
   ||||{pd}
@@ -162,7 +162,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   ||||
 
 * [
-    《孔子問答：小兒論》 \\
+    《孔子問答：小兒論》 \+
     "Q _.\&_ A _.with_ Confucius: _.the_ Little Child's Discourse"
   ](/lit/little-child.html)
   ||||{pd}
@@ -170,7 +170,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   ||||
 
 * [
-    《太平山獅子亭記》 \\
+    《太平山獅子亭記》 \+
     "Record of _.the_ Lion's Pavilion, Victoria Peak"
   ](/lit/lion-pavilion.html)
   ||||{pd}
@@ -178,7 +178,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   ||||
 
 * [
-    《狐假虎威》 \\
+    《狐假虎威》 \+
     "_.The_ Fox Feigneth _.the_ Tiger's Authority"
   ](/lit/fox-tiger.html)
   ||||{pd}
@@ -186,7 +186,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   ||||
 
 * [
-    《施氏食獅史》 \\
+    《施氏食獅史》 \+
     "_.An_ History of Mr Shih's Eating of Lions"
   ](/lit/lion-eating.html)
   ||||{pd}

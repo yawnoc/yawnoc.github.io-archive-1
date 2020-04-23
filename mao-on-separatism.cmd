@@ -32,7 +32,7 @@
 
 
 ||||{page-properties}
-First created: %date-created \\
+First created: %date-created \+
 Date modified: %date-modified
 ||||
 
@@ -68,14 +68,14 @@ as the second appears to have many transcription errors):
 %}
 
 ++++
-1. [Google books] \\
+1. [Google books] \+
   This is in "Selected Historical Materials of _.the_ Hunan Autonomy Movement"
   ([simp/(! 《湖南自治运动史料选编》 !)/])
   by Li Tieming ([simp/(! 李铁明 !)/]),
   locatable by searching Google Books for
   `"湖南自治运动史料选编" "湖南建设问题的根本问题——湖南共和国"`.
 
-2. [marxists.org] ([archived version]) \\
+2. [marxists.org] ([archived version]) \+
   This is taken from the 1968 Wuhan Version of
   "Long Live Mao Ts(e^)-tung Thought"
   ([simp/(! 1968年武汉版《毛泽东思想万岁》 !)/]).
@@ -174,7 +174,7 @@ And who now forbids any mention of self-determination or independence?
 * 一臥：
     rest;
     \lit one rest
-* 兼旬 \\
+* 兼旬 \+
     Double (兼) ten days (旬).
 ====
 
@@ -210,7 +210,7 @@ And who now forbids any mention of self-determination or independence?
 ..]
 ====
 * 一種：
-    \lit one kind of \\
+    \lit one kind of \+
     Omitted in the English.
 * 論：
     discourse;
@@ -286,7 +286,7 @@ And who now forbids any mention of self-determination or independence?
 ..]
 ====
 * 如麻：
-    as _.entangled_ hemp fibre \\
+    as _.entangled_ hemp fibre \+
     As in 亂麻. Version~2 has 如山, "as _.a_ mountain".
 ====
 
@@ -422,7 +422,7 @@ And who now forbids any mention of self-determination or independence?
 ..]
 ====
 * 野心家：
-    ambitionist \\
+    ambitionist \+
     Ambition with the most negative of connotations.
 * 鬼話：
     lie;
@@ -534,7 +534,7 @@ And who now forbids any mention of self-determination or independence?
 ..]
 ====
 * 同胞：
-    fellow citizens \\
+    fellow citizens \+
     Normally "compatriots", but here Mao refers only to
     the thirty million people of his native Hunan province.
 ====

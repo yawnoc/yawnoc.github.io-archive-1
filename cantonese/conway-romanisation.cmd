@@ -46,8 +46,8 @@
 
 
 ||||{page-properties}
-First created: %date-created \\
-Date modified: %date-modified \\
+First created: %date-created \+
+Date modified: %date-modified \+
 See also:
   [\[Python\] Cantonese Diceware (GitHub)](
     https://github.com/yawnoc/cantonese-diceware
@@ -1630,7 +1630,7 @@ Here are a few examples:
     , 後尾
     , hau[.6.]~mei[.5.]
     ,
-      hau6~mei[.1.] \\
+      hau6~mei[.1.] \+
       hau[.1.]~mei[.1.]
   /
     , 今晚

@@ -27,7 +27,7 @@
   ----------------------------------------------------------------
 -->
 
-{: \title-suffix : \ | Conway's site :}
+{: \title-suffix : \\ | Conway's site :}
 
 
 
@@ -169,8 +169,8 @@
 
 {:: \link:sun-tzu ::
   [
-    《孫子算經》 \\
-    "\sun-tzu's Computational Classic"
+    《孫子算經》 \+
+    "\\sun-tzu's Computational Classic"
   ](/sun-tzu)
 ::}
 
