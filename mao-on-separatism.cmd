@@ -8,7 +8,7 @@
   %date-modified 2020-02-15
   %resources
     (+ res/main-resources.cmd +)
-    (+ res/rendering-js.cmd +)
+    (+ res/rendering-resources.cmd +)
   %description
     An English translation of Mao's 1920 suggestion, in (! 長沙《大公報》 !), \
     of dividing China into 27 separate countries, \

@@ -9,7 +9,7 @@
   %date-modified 2020-03-27
   %resources
     (+ res/main-resources.cmd +)
-    (+ res/rendering-js.cmd +)
+    (+ res/rendering-resources.cmd +)
   %css
     .air-date {
       font-weight: bold;
