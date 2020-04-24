@@ -50,6 +50,16 @@
   ----------------------------------------------------------------
 -->
 
+<!-- Default feature "equation rendering" -->
+
+{%
+  \\noscript \[ \]
+%
+  \\noscript[equation rendering]
+%}
+
+<!-- General -->
+
 {%
   \\noscript
   \[
