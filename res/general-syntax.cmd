@@ -158,7 +158,7 @@
 
 {: \page-property-dates :
   First created: %date-created \\+
-  Date modified: %date-modified
+  Last modified: %date-modified
 :}
 
 
