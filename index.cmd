@@ -1,4 +1,4 @@
-(+ res/abbreviatory-syntax.cmd +)
+(+ res/general-syntax.cmd +)
 
 %%
   %title Conway's site

@@ -1,4 +1,4 @@
-(+ res/abbreviatory-syntax.cmd +)
+(+ res/general-syntax.cmd +)
 (+ res/cynics-730-syntax.cmd +)
 
 %%
