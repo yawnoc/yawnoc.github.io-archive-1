@@ -59,12 +59,12 @@ nor kiss ye the arses of tyrants. \+
 
 {: \leigh-sales : ![LEIGH SALES] :}
 @@![leigh sales]{h}
-  leigh-sales-20190903.jpg
+  leigh-sales-2019-09-03.jpg
 @@
 
 {: \anthony-albanese : ![ANTHONY ALBANESE] :}
 @@![anthony albanese]{g}
-  anthony-albanese-20190903.jpg
+  anthony-albanese-2019-09-03.jpg
 @@
 
 ||||{interview}

@@ -51,12 +51,12 @@
 
 {: \leigh-sales : ![LEIGH SALES] :}
 @@![leigh sales]{h}
-  leigh-sales-20191014.jpg
+  leigh-sales-2019-10-14.jpg
 @@
 
 {: \angus-taylor : ![ANGUS TAYLOR] :}
 @@![angus taylor]{g}
-  angus-taylor-20191014.jpg
+  angus-taylor-2019-10-14.jpg
 @@
 
 ||||{interview}

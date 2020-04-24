@@ -55,12 +55,12 @@ Race and place of origin are irrelevant.
 
 {: \andrew-bolt : ![ANDREW BOLT] :}
 @@![andrew bolt]{h}
-  andrew-bolt-20190910.jpg
+  andrew-bolt-2019-09-10.jpg
 @@
 
 {: \gladys-liu : ![GLADYS LIU] :}
 @@![gladys liu]{g}
-  gladys-liu-20190910.jpg
+  gladys-liu-2019-09-10.jpg
 @@
 
 

@@ -51,12 +51,12 @@
 
 {: \leigh-sales : ![LEIGH SALES] :}
 @@![leigh sales]{h}
-  leigh-sales-20200302.jpg
+  leigh-sales-2020-03-02.jpg
 @@
 
 {: \angus-taylor : ![ANGUS TAYLOR] :}
 @@![angus taylor]{g}
-  angus-taylor-20200302.jpg
+  angus-taylor-2020-03-02.jpg
 @@
 
 ||||{interview}

@@ -53,12 +53,12 @@
 
 {: \leigh-sales : ![LEIGH SALES] :}
 @@![leigh sales]{h}
-  leigh-sales-20200303.jpg
+  leigh-sales-2020-03-03.jpg
 @@
 
 {: \scott-morrison : ![SCOTT MORRISON] :}
 @@![scott morrison]{g}
-  scott-morrison-20200303.jpg
+  scott-morrison-2020-03-03.jpg
 @@
 
 ||||{interview}

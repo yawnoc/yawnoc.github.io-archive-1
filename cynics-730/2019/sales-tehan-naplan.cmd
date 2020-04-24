@@ -49,12 +49,12 @@
 
 {: \leigh-sales : ![LEIGH SALES] :}
 @@![leigh sales]{h}
-  leigh-sales-20190828.jpg
+  leigh-sales-2019-08-28.jpg
 @@
 
 {: \dan-tehan : ![DAN TEHAN] :}
 @@![dan tehan]{g}
-  dan-tehan-20190828.jpg
+  dan-tehan-2019-08-28.jpg
 @@
 
 ||||{interview}
