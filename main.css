@@ -13,6 +13,7 @@
   Links
   Lists
   Navigation bar
+  Noscript
   Page properties
   Romanisations
   Sun Tzu
@@ -337,6 +338,17 @@ nav > ul > li > a {
   display: block;
   height: 48px;
   margin: -48px 0 0;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* Noscript                                                         */
+/* ---------------------------------------------------------------- */
+
+
+noscript {
+  color: crimson;
 }
 
 
