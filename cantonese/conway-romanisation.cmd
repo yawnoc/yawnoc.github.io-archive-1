@@ -45,14 +45,12 @@
 # %title #
 
 
-||||{page-properties}
-First created: %date-created \+
-Date modified: %date-modified \+
+[||||
 See also:
   [\[Python\] Cantonese Diceware (GitHub)](
     https://github.com/yawnoc/cantonese-diceware
   )
-||||
+||||]
 
 [====
 * [Initials](#initials)

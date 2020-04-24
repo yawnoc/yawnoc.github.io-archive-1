@@ -26,11 +26,9 @@
 # %title #
 
 
-||||{page-properties}
-First created: %date-created \+
-Date modified: %date-modified \+
+[||||
 See also: [Conway's Custom Romanisation for Cantonese][conway]
-||||
+||||]
 
 @@[conway]
   /cantonese/conway-romanisation.html

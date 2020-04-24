@@ -28,11 +28,9 @@
 # %title #
 
 
-||||{page-properties}
-First created: %date-created \+
-Date modified: %date-modified \+
+[||||
 [Original 7.30 interview][original] ([archived version])
-||||
+||||]
 
 @@[original]
   https://www.abc.net.au/7.30/\

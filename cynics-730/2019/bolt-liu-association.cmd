@@ -28,11 +28,9 @@
 # %title #
 
 
-||||{page-properties}
-First created: %date-created \+
-Date modified: %date-modified \+
+[||||
 [Original Bolt Report interview][original] ([youtube])
-||||
+||||]
 
 @@[original]
   https://www.heraldsun.com.au/blogs/andrew-bolt/\

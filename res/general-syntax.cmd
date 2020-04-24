@@ -5,6 +5,7 @@
   Title suffix
   URL
   Cite this page section
+  Page properties with dates  [|||| ||||]
   Heading self-link anchors (<h2> through <h6>)
   Links
   Navigation bars  [==== ====]
@@ -111,6 +112,54 @@
     document.addEventListener("DOMContentLoaded",function(){renderDate()})
   !)</script>
 %}
+
+
+
+<!--
+  ----------------------------------------------------------------
+  Page properties with dates  [|||| ||||]
+  ----------------------------------------------------------------
+-->
+
+<!-- Empty content -->
+
+{%
+  ^ [^\S\n]*
+  \[
+  (?P<pipes> [|]{4,} )
+    [\s]*?
+  ^ [^\S\n]*
+  (?P=pipes)
+  \]
+%
+  \g<pipes>{page-properties}
+    \\page-property-dates
+  \g<pipes>
+%}
+
+<!-- Non-empty content (requires line break) -->
+
+{%
+  ^ [^\S\n]*
+  \[
+  (?P<pipes> [|]{4,} )
+    (?P<content> [\s\S]*? )
+  ^ [^\S\n]*
+  (?P=pipes)
+  \]
+%
+  \g<pipes>{page-properties}
+    \\page-property-dates \\+
+    \g<content>
+  \g<pipes>
+%}
+
+<!-- Dates -->
+
+{: \page-property-dates :
+  First created: %date-created \\+
+  Date modified: %date-modified
+:}
 
 
 

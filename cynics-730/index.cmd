@@ -30,10 +30,8 @@
 # %title #
 
 
-||||{page-properties}
-First created: %date-created \+
-Date modified: %date-modified
-||||
+[||||
+||||]
 
 ----
 Originally the plan was to make comic strips

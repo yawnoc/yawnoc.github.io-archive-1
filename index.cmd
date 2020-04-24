@@ -41,11 +41,9 @@
 # Conway's site #
 
 
-||||{page-properties}
-First created: %date-created \+
-Date modified: %date-modified \+
+[||||
 Feedback welcome: `leeconway@protonmail.com`
-||||
+||||]
 
 ----
 Assorted musings of a remnant of the 20th~century,
