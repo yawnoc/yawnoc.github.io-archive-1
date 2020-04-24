@@ -6,7 +6,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-08-30
-  %date-modified 2020-03-27
+  %date-modified 2020-04-24
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-js.cmd +)
@@ -74,7 +74,7 @@ And by that I mean: politics is out to screw you.
     2020/sales-kelly-coronavirus.html
   )
   
-  (better entitled "Professor Paul Kelly speaking politician-speak")
+  (or, Professor Paul Kelly speaking politician-speak)
 
 * [.12~March~2020.]
   [
