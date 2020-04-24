@@ -8,7 +8,7 @@
   %date-modified 2020-04-xx
   %resources
     (+ res/main-resources.cmd +)
-    (+ res/rendering-js.cmd +)
+    (+ res/rendering-javascript.cmd +)
     (+ res/maths-resources.cmd +)
 %%
 

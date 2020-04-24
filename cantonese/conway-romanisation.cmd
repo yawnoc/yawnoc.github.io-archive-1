@@ -8,7 +8,7 @@
   %date-modified 2020-04-19
   %resources
     (+ res/main-resources.cmd +)
-    (+ res/rendering-js.cmd +)
+    (+ res/rendering-javascript.cmd +)
   %description
     Conway's Romanisation for Cantonese, \
     with English approximations and a diagram of the nine tones.

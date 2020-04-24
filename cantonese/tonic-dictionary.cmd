@@ -8,7 +8,7 @@
   %date-modified 2020-02-23
   %resources
     (+ res/main-resources.cmd +)
-    (+ res/rendering-js.cmd +)
+    (+ res/rendering-javascript.cmd +)
   %description
     Quick links for each syllable of Samuel Wells Williams' \
     "A Tonic Dictionary Of The Chinese Language In The Canton Dialect" \
