@@ -50,9 +50,6 @@ Date modified: %date-modified \+
 
 ## Energy Minister Angus Taylor discusses Snowy Hydro 2.0 ##
 
-<!-- Literal dollar sign -->
-{: \. : (! $ !) :}
-
 
 {: \leigh-sales : ![LEIGH SALES] :}
 @@![leigh sales]{h}

@@ -21,3 +21,7 @@
     END
   </div>
 :}
+
+
+<!-- Literal dollar sign -->
+{: \. : (! $ !) :}
