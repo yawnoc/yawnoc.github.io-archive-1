@@ -156,7 +156,7 @@ img {
   max-width: 30em;
 }
 
-.interview > img {
+img.host, img.guest {
   border: 5px solid;
   clear: both;
   display: block;
@@ -191,13 +191,20 @@ p.thought-bubble {
   padding: 0.7em;
 }
 
-/* Signal END of interview */
+/* Marker (Excerpt, END, etc.) */
 
-.signal {
+.marker {
+  text-align: center;
+}
+
+.marker:first-child{
+  margin-bottom: 1.3em;
+}
+
+.marker:last-child {
   clear: both;
   font-size: x-large;
   margin-top: 0.5em;
-  text-align: center;
 }
 
 
