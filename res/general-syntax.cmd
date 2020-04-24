@@ -4,6 +4,7 @@
   ----------------------------------------------------------------
   Title suffix
   URL
+  Noscript  \noscript[feature]
   Cite this page section
   Page properties with dates  [|||| ||||]
   Heading self-link anchors (<h2> through <h6>)
@@ -40,6 +41,23 @@
 -->
 
 {: \url-full : https://yawnoc.github.io/%url :}
+
+
+
+<!--
+  ----------------------------------------------------------------
+  Noscript  \noscript[feature]
+  ----------------------------------------------------------------
+-->
+
+{%
+  \\noscript
+  \[
+    (?P<feature> [^]]*? )
+  \]
+%
+  <noscript>Enable JavaScript for \g<feature> to work.</noscript>
+%}
 
 
 
