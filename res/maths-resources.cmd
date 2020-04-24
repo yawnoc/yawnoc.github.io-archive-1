@@ -12,7 +12,6 @@
   crossorigin="anonymous"
   onerror="\
     this.removeAttribute('integrity');\
-    this.removeAttribute('crossorigin');\
     this.removeAttribute('onerror');\
     this.setAttribute('href',\
       '/katex.min.css'\
