@@ -1,395 +1,400 @@
-<*> A cynic's 7.30: [abc.h-short] | 20200306 | 20200306 </*>
+(+ res/abbreviatory-syntax.cmd +)
+(+ res/cynics-730-syntax.cmd +)
 
-<%
-  [abc.h] |
-  Energy Minister Angus Taylor discusses carbon emissions and Clover Moore
-%>
-<%
-  [abc.h-short] |
-  Angus Taylor on emissions \& documents (2 Mar 2020)
-%>
-<%
-  [abc.url] |
+%%
+  %title A cynic's 7.30: \short-title
+  %title-suffix \title-suffix
+  %author Conway
+  %date-created 2020-03-06
+  %date-modified 2020-03-06
+  %resources
+    (+ res/main-resources.cmd +)
+  %footer-copyright-remark
+    except the [original interview][original],
+    whose copyright belongs to the ABC
+  %footer-remark
+    [:{Curly-bracketed words}:] inserted by me.
+%%
+
+{: \short-title : Angus Taylor on emissions \& documents (2 Mar 2020) :}
+
+[[====
+* \link:home
+* \link:top
+* \link:cynicism
+====]]
+
+
+# %title #
+
+
+||||{page-properties}
+First created: %date-created \+
+Date modified: %date-modified \+
+[Original 7.30 interview][original] ([archived version])
+||||
+
+@@[original]
   https://www.abc.net.au/7.30/\
     energy-minister-angus-taylor-discusses-carbon/\
     12018866
-%>
-<%
-  [archive.url] |
-  https://web.archive.org/web/20200305133025/[abc.url]
-%>
+@@
 
-<=h>
-  <@ih></@ih>
-  <@it></@it>
-  <@i> More cynicism | /cynics-730/ | A cynic's 7.30 </@i>
-</=h>
+@@[archived version]
+  https://web.archive.org/web/20200305133025/\
+    https://www.abc.net.au/7.30/\
+      energy-minister-angus-taylor-discusses-carbon/\
+      12018866
+@@
 
-<h1>
-  A cynic's 7.30: [abc.h-short]
-</h1>
 
-<*p></*p>
+## Energy Minister Angus Taylor discusses carbon emissions and Clover Moore ##
 
-<p>
-  <b>[abc.h].</b>
-  <br>
-  <@> Original 7.30 interview | [abc.url] | ABC 7.30: [abc.h] </@>
-  <@> (archived version) | [archive.url] | Web archive: [abc.h] </@>
-</p>
 
-<%
-  [leigh-sales] |
-  <+h> leigh-sales-20200302.jpg | LEIGH SALES </+h>
-%>
-<%
-  [angus-taylor] |
-  <+g> angus-taylor-20200302.jpg | ANGUS TAYLOR </+g>
-%>
+{: \leigh-sales : ![LEIGH SALES] :}
+@@![leigh sales]{h}
+  leigh-sales-20200302.jpg
+@@
 
-<~~>
+{: \angus-taylor : ![ANGUS TAYLOR] :}
+@@![angus taylor]{g}
+  angus-taylor-20200302.jpg
+@@
+
+||||{interview}
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
     Minister, thanks for your time.
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Thanks for having me, Leigh.
-  </~g>
+  ----
   
-  <~h>
+  ----{h}
     [...]
-  </~h>
-  <~g>
+  ----
+  ----{g}
     [...]
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
     On energy policy,
     is the Federal Government going to pay
     to keep the Liddell power station open,
     the one that AGL wants to close in 2023?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~gt>
-    \{Blame media for asking questions and go to talking points:\}
-  </~gt>
-  <~g>
+  \angus-taylor
+  ----{gt}
+    {Blame media for asking questions and go to talking points:}
+  ----
+  ----{g}
     Well, I think everyone's getting a bit ahead of themselves here
     with some speculative reporting, Leigh.
-  </~g>
-  <~g>
+  ----
+  ----{g}
     [...] the way to get prices down to ensure [...]
     affordable reliable energy
     and [that] industry in Australia continues to prosper and be successful...
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
     I notice you're not answering the question.
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     ... in the future is to get [...]
     more supply into the market and avoid supply leaving.
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
     Are you going to pay to keep the Liddell power station open?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     So I'm not going to speculate on the outcomes of the Liddell Taskforce
-  </~g>
-  <~gt>
-    \{because I already have a good idea of what they will be,
-    given what the Taskforce is supposed to be examining\}.
-  </~gt>
-  <~g>
+  ----
+  ----{gt}
+    {because I already have a good idea of what they will be,
+    given what the Taskforce is supposed to be examining}.
+  ----
+  ----{g}
     [...]
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
     What do you think is the timeframe
     for Australia to transition away from coal?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~gt>
-    \{The same time as it would take
-    for every human alive today to be turned into fossil fuel.\}
-  </~gt>
-  <~g>
+  \angus-taylor
+  ----{gt}
+    {The same time as it would take
+    for every human alive today to be turned into fossil fuel.}
+  ----
+  ----{g}
     Well, I mean, it's not about coal, it's about emissions.
     [...] we need to play our part in helping to reduce global emissions.
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      But I'm actually not asking about emissions,
      I just want to ask about coal because
      AGL says coal should be done in about 50~years.
      [...] South~32, BHP, Rio Tinto, they're getting away from coal now.
-  </~h>
-  <~h>
+  ----
+  ----{h}
      [...] as a relevant minister, what do you think is the timeframe
      in which Australia is going to be getting away from coal?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Well, I understand you're asking that question but
-  </~g>
-  <~gt>
-    \{I want to talk about emissions today and not coal,
+  ----
+  ----{gt}
+    {I want to talk about emissions today and not coal,
     even though normally I would want to talk about coal and not emissions,
-    and\}
-  </~gt>
-  <~g>
+    and}
+  ----
+  ----{g}
     the point I'm making to you is it's about emissions
     and emissions come from much more than coal
     and they come from much more than the electricity sector...
-  </~g>
-  <~gt>
-    \{including farting livestock,
+  ----
+  ----{gt}
+    {including farting livestock,
     as comrade Barnaby already discussed
-    in a
-    <@>
-      pleasant chat
-      | https://www.youtube.com/watch?v=Cx9FFWxbVCc
-      | Barnaby Joyce and Joel Fitzgibbon clash \
-        at joint media conference in Parliament House \| 7NEWS
-    </@>
-    with Joel Fitzgibbon last week\}.
-  </~gt>
+    in a [pleasant chat] with Joel Fitzgibbon last week}.
+  ----
+  @@[pleasant chat]
+    https://www.youtube.com/watch?v=Cx9FFWxbVCc
+    Barnaby Joyce and Joel Fitzgibbon clash \
+    at joint media conference in Parliament House | 7NEWS
+  @@
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      But I'm asking about coal. I'm just narrowly asking about coal.
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     ... I know you are
-  </~g>
-  <~gt>
-    \{i.e.~I am effectively giving you the finger\}
-  </~gt>
-  <~g>
+  ----
+  ----{gt}
+    {i.e.~I am effectively giving you the finger}
+  ----
+  ----{g}
     and my point is there's [\sic] many ways to reduce emissions.
     [...] 2020 targets we'll beat easily,
-    2030 targets, <em>and</em> driving emissions beyond that.
-  </~g>
-  <~gt>
-    \{Driving emissions <em>downwards</em>, not upwards I think.\}
-  </~gt>
+    2030 targets, *and* driving emissions beyond that.
+  ----
+  ----{gt}
+    {Driving emissions *downwards*, not upwards I think.}
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      On your point that the 2030 targets we'll meet easily,
      what's your source for that?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Well, the government department. I mean, we are on track already...
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      But exactly which government department is saying that
      because I've got figures from various government departments?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     My government department. [...]
     We've got a plan laid out to the last tonne
     as to how we are going to reach our emissions targets
-  </~g>
-  <~gt>
-    \{a completely inapt rhetorical device,
-    given that mass is a continuous quantity\}.
-  </~gt>
-  <~g>
+  ----
+  ----{gt}
+    {a completely inapt rhetorical device,
+    given that mass is a continuous quantity}.
+  ----
+  ----{g}
     [...]
-  </~g>
+  ----
   
-  <~h>
+  ----{h}
     [...]
-  </~h>
-  <~g>
+  ----
+  ----{g}
     [...]
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      Do you still maintain
      that the falsified document that your office distributed
      about the Sydney City Council's travel bill
      came from its own website?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Yes, I mean my statement on this was clear from the start
     and I'd add to that, Leigh...
-  </~g>
-  <~h>
+  ----
+  ----{h}
     [...]
-  </~h>
-  <~g>
+  ----
+  ----{g}
     [...] This has been considered and closed by two independent police forces.
     We had the AFP Commissioner today saying
     the matter is finalised, full stop.
-  </~g>
-  <~gt>
-    \{Although my office really really really did nothing wrong,
+  ----
+  ----{gt}
+    {Although my office really really really did nothing wrong,
     thank Christ the investigation is over.
-    Who cares about the <em>real</em> culprit over at Sydney City Council?\}
-  </~gt>
+    Who cares about the *real* culprit over at Sydney City Council?}
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      How do you explain the inconsistency
      between your story and the metadata produced by the Sydney City Council
      showing that the document as distributed never appeared on their website?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Well, that's a matter for them. [...]
-  </~g>
-  <~gt>
-    \{It's definitely their fault,
-    but for some reason I don't want an investigation.\}
-  </~gt>
+  ----
+  ----{gt}
+    {It's definitely their fault,
+    but for some reason I don't want an investigation.}
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      But aren't you bothered [...]?
      You have had a lot of trouble because of this and I'm just wondering,
      aren't you curious yourself as to what that inconsistency is?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Leigh, we've had two independent police forces look at this.
     [...]
     They have both considered and closed this matter and as I said,
     the AFP Commissioner today said that the matter is finalised, full stop
-  </~g>
-  <~gt>
-    \{which makes two full stops\}.
-  </~gt>
-  <~g>
+  ----
+  ----{gt}
+    {which makes two full stops}.
+  ----
+  ----{g}
     [...]
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      But the New South Wales Police referred the matter to the AFP;
      the AFP dropped its investigation.
-  </~h>
-  <~h>
+  ----
+  ----{h}
      Today the commissioner told a senate estimates committee that
-     the police did <em>not</em> interview the Sydney Lord Mayor;
+     the police did *not* interview the Sydney Lord Mayor;
      they also didn't interview you.
-  </~h>
-  <~h>
+  ----
+  ----{h}
     Given that what happened damaged your reputation, [...]
     you must be disappointed at the lack of a thorough investigation?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Haha, Leigh, two police forces have looked at this.
     It's been pretty thorough
-  </~g>
-  <~gt>
-    \{or about as thorough as the look I gave
+  ----
+  ----{gt}
+    {or about as thorough as the look I gave
     those highly reasonable spending figures in that document
-    which my office had absolutely nothing to do with\}...
-  </~gt>
+    which my office had absolutely nothing to do with}...
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      They didn't interview you, they didn't interview the Lord Mayor?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Well, that was a choice they made
     but it's very clear what the position is here.
-  </~g>
-  <~g>
+  ----
+  ----{g}
     The commissioner [...] was very clear:
     it's been finalised and the matter is closed, full stop
-  </~g>
-  <~gt>
-    \{which makes three full stops\}.
-  </~gt>
+  ----
+  ----{gt}
+    {which makes three full stops}.
+  ----
   
-  <~h>
+  ----{h}
     [...]
-  </~h>
-  <~g>
+  ----
+  ----{g}
     [...]
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      I keep coming back to this. [...]
      You are [...] the face of it, [...] at the front-line of it.
      Why aren't you worried about it?
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Because I've made a very clear statement on it
-  </~g>
-  <~gt>
-    \{namely "My office and I totally did nothing wrong",\}
-  </~gt>
-  <~g>
+  ----
+  ----{gt}
+    {namely "My office and I totally did nothing wrong",}
+  ----
+  ----{g}
     [... t]wo police forces have looked at it [and] the matter's closed
-  </~g>
-  <~gt>
-    \{which is the perfect outcome for me, the innocent one in all of this.
+  ----
+  ----{gt}
+    {which is the perfect outcome for me, the innocent one in all of this.
     I am eternally grateful to the police commissioner
-    for delivering true justice\}.
-  </~gt>
-  <~g>
+    for delivering true justice}.
+  ----
+  ----{g}
     [...]
-  </~g>
+  ----
   
-  [leigh-sales]
-  <~h>
+  \leigh-sales
+  ----{h}
      Minister, thank you very much for joining us this evening.
-  </~h>
+  ----
   
-  [angus-taylor]
-  <~g>
+  \angus-taylor
+  ----{g}
     Thanks for having me, Leigh.
-  </~g>
+  ----
   
-</~~>
+  \END
+  
+||||
 
-<*f>
-  except the
-  <@>
-    original 7.30 interview
-    | [abc.url]
-    | ABC 7.30: [abc.h]
-  </@>,
-  whose copyright belongs to the ABC
-  | <:t>\{Curly-bracketed words\}</:t> inserted by me.
-</*f>
+%footer-element
