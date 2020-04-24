@@ -15,6 +15,14 @@
 {: {gt} : {guest thought-bubble} :}
 
 
+<!-- END of excerpt \END-excerpt -->
+{: \END-excerpt :
+  <div class="signal">
+    END of Excerpt
+  </div>
+:}
+
+
 <!-- END of interview \END -->
 {: \END :
   <div class="signal">
