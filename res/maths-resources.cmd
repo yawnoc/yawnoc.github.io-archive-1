@@ -31,5 +31,6 @@
     let fallbackMathsJS = document.createElement('script');
     fallbackMathsJS.setAttribute('src', '/katex.min.js');
     fallbackMathsJS.setAttribute('onload', 'renderMaths()');
-    document.head.appendChild(fallbackMathsJS);"
+    document.head.appendChild(fallbackMathsJS);
+    this.remove();"
   onload="renderMaths()"></script>
