@@ -129,7 +129,7 @@ Date modified: %date-modified \+
     Of course, states can take their own decisions
   ----
   ----{gt}
-    {which I welcome, since <em>they</em> would then take the blame
+    {which I welcome, since *they* would then take the blame
     for any public-health or economy-related consequences
     associated with those decisions,
     instead of us,}
@@ -175,7 +175,7 @@ Date modified: %date-modified \+
   ----{h}
     You mentioned the budget,
     you've made these measures temporary so they're not baked into the budget,
-    but isn't this a time to <em>use</em> the budget
+    but isn't this a time to *use* the budget
     to also make some structural changes,
     for example bringing forward your planned income tax cuts
     across all brackets?
@@ -396,7 +396,7 @@ Date modified: %date-modified \+
     
     \josh-frydenberg-2019-730
     ----{g}
-      No, it <em>will</em> happen
+      No, it *will* happen
       and it's the product of bringing the spending under control.
     ----
     
