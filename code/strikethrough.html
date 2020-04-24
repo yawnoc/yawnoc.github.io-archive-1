@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<title>Strikethrough generator | Conway's site</title>
-<style>div.boxed {
+<link rel="stylesheet" href="/main.min.css">
+<title>Strikethrough formatter | Conway's site</title>
+<style>.container {
+border: 2px solid black;
+margin: 1em 0.3em;
 padding: 0.4em;
 }
-textarea {
+#input {
 box-sizing: border-box;
 display: block;
 padding: 0.5em;
@@ -25,39 +27,43 @@ width: 100%;
 }</style>
 </head>
 <body onload="passInputToOutput()">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-</ul></nav></header>
-<h1>Strikethrough generator</h1>
-<p class="page-properties">
-First created:&nbsp;20200302<br>
-Last modified:&nbsp;<b>20200302</b>
-</p>
-<p>
-Convenient for use in emails.
-</p>
-<div class="boxed not-large">
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1>Strikethrough formatter</h1>
+<div class="page-properties">
+First created: 2020-03-02<br>
+Last modified: 2020-04-25
+</div>
+<div class="container">
 <textarea
 autofocus id="input" oninput="passInputToOutput()" placeholder="Enter input here"
 >
 </textarea>
 </div>
-<div class="boxed not-large">
-<noscript>Enable Javascript for the generator to work.</noscript>
+<div class="container">
+<noscript>Enable JavaScript for the strikethrough formatter to work.</noscript>
 <s id="output"></s>
 </div>
 <footer>
-<hr>
 ©&nbsp;2020&nbsp;Conway.
 </footer>
-<script>function passInputToOutput() {
+<script>
+function passInputToOutput() {
 let inputString = document.getElementById('input').value
 output.textContent = (
 /\S/.test(inputString)
 ? inputString
 : 'Output shall appear here'
 )
-}</script>
+}
+</script>
 </body>
 </html>
