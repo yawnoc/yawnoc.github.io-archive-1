@@ -66,25 +66,25 @@ Date modified: %date-modified \+
 ||||{interview}
   
   ----{h}
-    [...]
+  [...]
   ----
   ----{g}
-    [...]
+  [...]
   ----
   
   \leigh-sales
   ----{h}
-    You've said that most new cases
-    are still coming into Australia from overseas.
+  You've said that most new cases
+  are still coming into Australia from overseas.
   ----
   ----{h}
-    There were some pretty [confronting scenes] today at Sydney Airport,
-    where big crowds of people were arriving and going to be temperature tested
-    in spaces where there was *clearly* insufficient room for
-    any sort of social distancing.
+  There were some pretty [confronting scenes] today at Sydney Airport,
+  where big crowds of people were arriving and going to be temperature tested
+  in spaces where there was *clearly* insufficient room for
+  any sort of social distancing.
   ----
   ----{h}
-    How can a situation like that be allowed to happen?
+  How can a situation like that be allowed to happen?
   ----
   @@[confronting scenes]
     https://www.abc.net.au/news/2020-03-26/\
@@ -94,160 +94,160 @@ Date modified: %date-modified \+
   
   \paul-kelly
   ----{gt}
-    {Incompetence?}
+  {Incompetence?}
   ----
   ----{g}
-    A couple of things I'd say about that:
+  A couple of things I'd say about that:
   ----
   ----{g}
-    One is, that the numbers of people returning from overseas
-    are decreasing quite rapidly.
-    But there's [\sic] still several thousand people every day.
+  One is, that the numbers of people returning from overseas
+  are decreasing quite rapidly.
+  But there's [\sic] still several thousand people every day.
   ----
   ----{gt}
-    {Now, as intelligent a person as I am (a Professor at ANU),
-    I shall pretend that your point is about the testing,
-    and not the amount of space.}
+  {Now, as intelligent a person as I am (a Professor at ANU),
+  I shall pretend that your point is about the testing,
+  and not the amount of space.}
   ----
   ----{g}
-    Uh... it's interesting that you would say that
-    people were concerned about being held up for temperature testing.
-    Of course, a few days ago we were being criticised
-    for not testing enough at the airport.
+  Uh... it's interesting that you would say that
+  people were concerned about being held up for temperature testing.
+  Of course, a few days ago we were being criticised
+  for not testing enough at the airport.
   ----
   
   \leigh-sales
   ----{ht}
-    {Christ, you sound like a politician.
-    You're supposed to be a medical expert.}
+  {Christ, you sound like a politician.
+  You're supposed to be a medical expert.}
   ----
   ----{h}
-    I'm not saying that they were concerned about that.
+  I'm not saying that they were concerned about that.
   ----
   ----{h}
-    I'm saying that the concern was
-    the amount of space that had been allocated.
+  I'm saying that the concern was
+  the amount of space that had been allocated.
   ----
   ----{ht}
-    {Don't you have any shame?}
+  {Don't you have any shame?}
   ----
   
   \paul-kelly
   ----{gt}
-    {Apparently not. Let me ignore your question and change the topic.}
+  {Apparently not. Let me ignore your question and change the topic.}
   ----
   ----{g}
-    Yeah, and that's one of the reasons why
-    we've gone to the 14~days of self-isolation.
+  Yeah, and that's one of the reasons why
+  we've gone to the 14~days of self-isolation.
   ----
   ----{gt}
-    {Verily, before 15~March,
-      we travelled forward in time
-      and saw today's packed queues at Sydney Airport,
-    and this influenced our decision
-    to extend the 14-day isolation requirement
-    to *all* international arrivals from 15~March.}
+  {Verily, before 15~March,
+    we travelled forward in time
+    and saw today's packed queues at Sydney Airport,
+  and this influenced our decision
+  to extend the 14-day isolation requirement
+  to *all* international arrivals from 15~March.}
   ----
   ----{g}
-    That means staying at home, umm, because...
-    airports are not set up for this sort of thing
+  That means staying at home, umm, because...
+  airports are not set up for this sort of thing
   ----
   ----{gt}
-    {so it's the airport's fault, for being an incompetent airport}.
+  {so it's the airport's fault, for being an incompetent airport}.
   ----
   ----{g}
-    [...]
+  [...]
   ----
   
   \leigh-sales
   ----{h}
-    Can you explain to people watching tonight
-    why the health body that advises the government
-    is not opting for the extreme lockdown measures
-    that are being used in the UK and in New Zealand?
-    [...]
+  Can you explain to people watching tonight
+  why the health body that advises the government
+  is not opting for the extreme lockdown measures
+  that are being used in the UK and in New Zealand?
+  [...]
   ----
   
   \paul-kelly
   ----{g}
-    In terms of [...] should we go hard-and-fast
-    or should we have a proportionate response
+  In terms of [...] should we go hard-and-fast
+  or should we have a proportionate response
   ----
   ----{gt}
-    {note how I use "proportion*ate*"
-    rather than "proportion*al*",
-    so as to imply, from the outset of my answer,
-    that hard-and-fast is disproportion*ate*}
+  {note how I use "proportion*ate*"
+  rather than "proportion*al*",
+  so as to imply, from the outset of my answer,
+  that hard-and-fast is disproportion*ate*}
   ----
   ----{g}
-    that can be scaled over time, uh...
-    there is a difference of opinion, I'll agree with that.
+  that can be scaled over time, uh...
+  there is a difference of opinion, I'll agree with that.
   ----
   ----{g}
-    [...] [COVID-19] is an infectious disease,
-    it's transmitted from person to person,
-    it's mostly when you're very close to another person,
-    and you increase that by being in large crowds of people
-    who may or may not have the infection
+  [...] [COVID-19] is an infectious disease,
+  it's transmitted from person to person,
+  it's mostly when you're very close to another person,
+  and you increase that by being in large crowds of people
+  who may or may not have the infection
   ----
   ----{gt}
-    {such as high-density queues for Centrelink
-    or for temperature screening at Sydney Airport}.
+  {such as high-density queues for Centrelink
+  or for temperature screening at Sydney Airport}.
   ----
   ----{g}
-    [...]
+  [...]
   ----
   
   \leigh-sales
   ----{h}
-    Why was the half-hour advice given about hairdressers
-    and then changed so soon after,
-    how does that square with the assurance that
-    all the restrictions follow expert medical advice?
+  Why was the half-hour advice given about hairdressers
+  and then changed so soon after,
+  how does that square with the assurance that
+  all the restrictions follow expert medical advice?
   ----
   
   \paul-kelly
   ----{gt}
-    {Iunno.}
+  {Iunno.}
   ----
   ----{g}
-    In terms of hairdressers [...]
-    it's impractical to keep the [...] 1.5~metres [...]
-    but there are many other things that people can do [...].
-    So minimising the time is one of them. [...]
-    Second of all if you are sick, don't go and get your hair cut.
-    If you are a sick hairdresser, don't go to work.
+  In terms of hairdressers [...]
+  it's impractical to keep the [...] 1.5~metres [...]
+  but there are many other things that people can do [...].
+  So minimising the time is one of them. [...]
+  Second of all if you are sick, don't go and get your hair cut.
+  If you are a sick hairdresser, don't go to work.
   ----
   
   \leigh-sales
   ----{h}
-    But you're not answering the actual question, which is regarding
-    how the rule can be changed from one day to the next
-    if the restrictions are based on the medical advice.
+  But you're not answering the actual question, which is regarding
+  how the rule can be changed from one day to the next
+  if the restrictions are based on the medical advice.
   ----
   
   \paul-kelly
   ----{gt}
-    {Incompetence?}
+  {Incompetence?}
   ----
   ----{g}
-    Uh look, the advice we give goes to the Cabinet;
-    the Cabinet have their discussions;
-    I'm not privy to how those discussions went [...].
+  Uh look, the advice we give goes to the Cabinet;
+  the Cabinet have their discussions;
+  I'm not privy to how those discussions went [...].
   ----
   ----{g}
-    Things are changing every day here [...]
-    and that was one of the things that was changed today.
+  Things are changing every day here [...]
+  and that was one of the things that was changed today.
   ----
   
   \leigh-sales
   ----{h}
-    Dr~Kelly, thanks for your time.
+  Dr~Kelly, thanks for your time.
   ----
   
   \paul-kelly
   ----{g}
-    You're welcome, Leigh.
+  You're welcome, Leigh.
   ----
   
   \END
