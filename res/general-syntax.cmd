@@ -11,6 +11,7 @@
   Translation (parallel text)  [..{[class]}↵ .. ..]
   Translator-supplied italics  _. _
   Translation-alternative markers  \or  \lit
+  Sic erat scriptum
   Sun Tzu
   Romanisation spans  [^ ]  [_ ]
   Romanisation special characters
@@ -278,6 +279,15 @@
 
 {: \or : <span class="alternative-marker">or</span> :}
 {: \lit : <span class="alternative-marker">lit.</span> :}
+
+
+<!--
+  ----------------------------------------------------------------
+  Sic erat scriptum  \sic
+  ----------------------------------------------------------------
+-->
+
+{: \sic : _sic_ :}
 
 
 <!--
