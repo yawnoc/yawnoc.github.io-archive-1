@@ -47,9 +47,9 @@ function renderDate() {
   let mm = padIntoTwoDigitString(dateNow.getMonth() + 1);
   let dd = padIntoTwoDigitString(dateNow.getDate());
   
-  let date_elements = document.getElementsByClassName("js-date");
-  for (let i = 0; i < date_elements.length; i++) {
-    let elem = date_elements[i]
+  let dateElements = document.getElementsByClassName("js-date");
+  for (let i = 0; i < dateElements.length; i++) {
+    let elem = dateElements[i]
     replaceTextContent(elem, /yyyy/g, yyyy);
     replaceTextContent(elem, /mm/g, mm);
     replaceTextContent(elem, /dd/g, dd);
@@ -69,9 +69,9 @@ function renderDate() {
 
 function renderMaths() {
   
-  let maths_elements = document.getElementsByClassName("js-maths");
-  for (let i = 0; i < maths_elements.length; i++) {
-    let elem = maths_elements[i]
+  let mathsElements = document.getElementsByClassName("js-maths");
+  for (let i = 0; i < mathsElements.length; i++) {
+    let elem = mathsElements[i]
     try {
       katex.render(
         elem.textContent,
