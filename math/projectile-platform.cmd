@@ -160,25 +160,17 @@ $$
 $$
 
 ----
-The flight time is the positive solution to the quadratic
-$y (t) = 0$, i.e.
+The flight time is the positive solution to the quadratic $y (t) = 0$,
+which is
 ----
 $$
-  \begin{aligned}
-    t
-    &=
-      \frac{1}{g}
-      \left(
-        u \sin\phi
-      + \sqrt{u^2 \sin^2\phi + 2 g h}
-      \right) \\
-    &=
-      \frac{u}{g}
-      \left(
-        \sin\phi
-      + \sqrt{\sin^2\phi + C}
-      \right)
-  \end{aligned}
+  t =
+    \frac{u}{g}
+    \left(
+      \sin\phi
+        +
+      \sqrt{\sin^2\phi + C}
+    \right),
 $$
 ----
 where $C = 2 g h / u^2$ is the dimensionless ratio
@@ -193,84 +185,30 @@ $$
     + \sqrt{\sin^2\phi + C}
     \right).
 $$
-----
 
+----
 To maximise the range $R$ with respect to the launch angle $\phi$,
-we compute
+we compute the derivative $\pd R / \pd\phi$.
+After some algebra, we obtain
 ----
 $$
-  \begin{aligned}
-    \frac{\pd R}{\pd\phi}
-    &=
-      \frac{u^2}{g}
-      \left[
-        \cos\phi \cdot \cos\phi
-      - \sin\phi \cdot \sin\phi
-      + \cos\phi
-        \cdot
-        \frac{2 \sin\phi \cos\phi}{2 \sqrt{\sin^2\phi + C}}
-      - \sin\phi \sqrt{\sin^2\phi + C}
-      \right] \\
-    &=
-      \frac{u^2}{g}
-      \left[
-        \cos^2\phi
-        \left(
-          1 + \frac{\sin\phi}{\sqrt{\sin^2\phi + C}}
-        \right)
-      - \sin\phi
-        \left(
-          \sin\phi + \sqrt{\sin^2\phi + C}
-        \right)
-      \right].
-  \end{aligned}
-$$
-
-----
-For brevity let $\beta = \sin\phi$. Then
-----
-$$
-  \begin{aligned}
-    \frac{\pd R}{\pd\phi}
-    &=
-      \frac{u^2}{g}
-      \left[
-        (1 - \beta^2)
-        \left(
-          1 + \frac{\beta}{\sqrt{\beta^2 + C}}
-        \right)
-      - \beta
-        \left(
-          \beta + \sqrt{\beta^2 + C}
-        \right)
-      \right] \\
-    &=
-      \frac{u^2}{g}
+  \frac{\pd R}{\pd\phi} =
+    \frac{2h}{C}
+    {\colb
       \left(
         \beta + \sqrt{\beta^2 + C}
       \right)
+    }
+    {\colr
       \left[
         \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
       - \beta
-      \right] \\
-    &=
-      \frac{2h}{C}
-      {\colb
-        \left(
-          \beta + \sqrt{\beta^2 + C}
-        \right)
-      }
-      {\colr
-        \left[
-          \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
-        - \beta
-        \right]
-      }.
-  \end{aligned}
+      \right]
+    },
 $$
-
 ----
-We carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
+where for brevity $\beta = \sin\phi$.
+We then carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
 ----
 
 ++++
@@ -291,7 +229,7 @@ We carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
   and in either case the range is zero, i.e.~$R$ is minimised.
 
 2.
-  If $C = 0$ and $\beta < 0$, then
+  If $\colb C = 0$ and $\colb \beta < 0$, then
   $$
     \begin{aligned}
       \frac{\pd R}{\pd\phi}
@@ -312,7 +250,7 @@ We carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
             \frac{1 - \beta^2}{-\beta}
           + \frac{\beta^2}{-\beta}
           \right]
-        } \\
+        } \\[\fraclinespace]
       &=
         \frac{2h}{C}
         {\colb
@@ -324,7 +262,7 @@ We carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
           \left[
           - \frac{1}{\beta}
           \right]
-        } \\
+        } \\[\fraclinespace]
       &= \frac{h}{\beta^2},
     \end{aligned}
   $$
@@ -343,9 +281,6 @@ We carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
   $$
     \begin{aligned}
       (1 - \beta^2)^2 &= \beta^2 (\beta^2 + C) \\
-      1 - 2 \beta^2 + \cancel{\beta^4}
-        &= \cancel{\beta^4} + C \beta^2 \\
-      1 &= (C + 2) \beta^2 \\
       \beta &= \frac{1}{\sqrt{C + 2}},
     \end{aligned}
   $$
@@ -359,19 +294,7 @@ We carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
         \left(
           \beta
         + \sqrt{\beta^2 + C}
-        \right) \\
-      &=
-        \frac{u^2}{g}
-        \sqrt{1 - \frac{1}{C + 2}}
-        \left(
-          \frac{\cancel{\beta^2}}{\beta}
-        + \frac{1 - \cancel{\beta^2}}{\beta}
-        \right) \\
-      &=
-        \frac{u^2}{g}
-        \sqrt{\frac{C + 1}{\cancel{C + 2}}}
-          \cdot
-        \frac{1}{\cancel{\beta}} \\
+        \right) \\[\fraclinespace]
       &=
         \frac{u^2}{g}
         \sqrt{C + 1}.
