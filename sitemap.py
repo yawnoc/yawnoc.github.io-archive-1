@@ -61,6 +61,9 @@ sitemap = re.sub(r'\\', '/', sitemap)
 # Canonicalise /index.html as /
 sitemap = re.sub('/index[.]html$', '/', sitemap, flags=re.MULTILINE)
 
+# Remove .html extension
+sitemap = re.sub('[.]html$', '', sitemap, flags=re.MULTILINE)
+
 # Replace . with actual root
 ROOT = 'https://yawnoc.github.io'
 sitemap = re.sub('^[.]', ROOT, sitemap, flags=re.MULTILINE)
