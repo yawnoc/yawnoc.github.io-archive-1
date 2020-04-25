@@ -117,6 +117,12 @@ function renderMaths() {
     // Order (Big-O)
     '\\order': '\\mathopspace O',
     
+    // Colours
+    '\\colr': '\\color{red}',
+    '\\colg': '\\color{green}',
+    '\\colb': '\\color{blue}',
+    '\\colv': '\\color{darkviolet}',
+    
   }
   
   let mathsElements = document.getElementsByClassName("js-maths");
