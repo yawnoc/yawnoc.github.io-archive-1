@@ -121,11 +121,16 @@ pre {
   padding-bottom: 0.25em;
 }
 
-/* Style equations in case JavaScript is not enabled */
+/*
+  Style equations in case JavaScript is not enabled
+  Vertical margin and centring for display equations (margin, text-align)
+  Prevent padding from .important (padding)
+*/
 
 .js-maths {
   font-family: monospace;
   margin: 1em 0;
+  padding: 0;
   text-align: center;
 }
 
