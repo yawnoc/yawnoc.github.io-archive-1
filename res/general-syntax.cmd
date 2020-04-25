@@ -226,6 +226,7 @@
 {:: \link:home :: [Home](/ Home page) ::}
 {:: \link:top :: [Top](# Jump back to top) ::}
 {:: \link:translation :: [Translation](#translation Translation) ::}
+{:: \link:result :: [Result](#result Jump to result) ::}
 {:: \link:cite :: [Cite](#cite Cite this page) ::}
 {:: \link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
 
