@@ -81,7 +81,7 @@
   which gets converted to standard HTML (<`>.html</`>) via my custom-written
   <@>
     Python converter
-    | /code/cch.html
+    | /code/cch
     | Python: a regex converter from CCH to HTML
   </@>.
   For example, this page was generated from the CCH file
@@ -160,7 +160,7 @@
 
 <p>
   Using KaTeX. See
-  <@> How to render equations using KaTeX | /code/katex-guide.html | </@>.
+  <@> How to render equations using KaTeX | /code/katex-guide | </@>.
 </p>
 
 

@@ -17,7 +17,7 @@
 # To be kept in the root directory.
 # ----------------------------------------------------------------
 # Basic documentation on how CCH works:
-#   https://yawnoc.github.io/code/cch.html
+#   https://yawnoc.github.io/code/cch
 # ----------------------------------------------------------------
 # Released into the public domain (CC0):
 #   https://creativecommons.org/publicdomain/zero/1.0/
@@ -258,7 +258,7 @@ def cch_error_page(error_message, element_id, element_title):
       <=h>
         <li>
           <a
-            href="/code/cch.html#{element_id}"
+            href="/code/cch#{element_id}"
             title="{element_title}"\
           >{element_title} help</a>
         </li>
@@ -1217,7 +1217,7 @@ def replace_all_assisting_romanisations(string):
 # Processed string:
 #   <@>
 #     Cantonese
-#     | /cantonese/conway-romanisation.html
+#     | /cantonese/conway-romanisation
 #     | Conway's Custom Romanisation for Cantonese
 #   </@>:~<^e>{cantonese}</^e>,
 #   Mandarin:~<^e>{mandarin}</^e>\
@@ -1271,7 +1271,7 @@ def replace_cantonese_mandarin_romanisation(match_object):
   processed_string = f'''
     <@>
       Cantonese
-      | /cantonese/conway-romanisation.html
+      | /cantonese/conway-romanisation
       | Conway's Custom Romanisation for Cantonese
     </@>:~<^e>{cantonese}</^e>,
     Mandarin:~<^e>{mandarin}</^e>{gov_spec}
@@ -2084,7 +2084,7 @@ def replace_page_properties(string):
       <,>
         <@>
           equation rendering
-          | /code/katex-guide.html
+          | /code/katex-guide
           | How to render mathematical equations using KaTeX
         </@>
       </,>
@@ -3727,7 +3727,10 @@ def cch_to_html(file_name):
   url = f'https://yawnoc.github.io/{file_name}.html'
   
   # Canonicalise /index.html as /
-  url = re.sub(r'\/index.html', '/', url)
+  url = re.sub(r'\/index[.]html$', '/', url)
+  
+  # Remove .html extension
+  url = re.sub(r'[.]html$', '', url)
   
   # ----------------------------------------------------------------
   # Import contents (markup) of CCH file

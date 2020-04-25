@@ -69,7 +69,7 @@ And by that I mean: politics is out to screw you.
     Deputy Chief Medical Officer Paul Kelly \
     on the fight to contain coronavirus
   ](
-    2020/sales-kelly-coronavirus.html
+    2020/sales-kelly-coronavirus
   )
   
   (or, Professor Paul Kelly speaking politician-speak)
@@ -79,7 +79,7 @@ And by that I mean: politics is out to screw you.
     Josh Frydenberg says the Government's surplus prediction \
     was based on 'forecasts at the time'
   ](
-    2020/sales-frydenberg-surplus.html
+    2020/sales-frydenberg-surplus
   )
 
 * [.3~March~2020.]
@@ -87,14 +87,14 @@ And by that I mean: politics is out to screw you.
     Scott Morrison says economic plan for coronavirus \
     to be revealed before May budget
   ](
-    2020/sales-morrison-economy.html
+    2020/sales-morrison-economy
   )
 
 * [.2~March~2020.]
   [
     Energy Minister Angus Taylor discusses carbon emissions and Clover Moore
   ](
-    2020/sales-taylor-emissions.html
+    2020/sales-taylor-emissions
   )
 
 ====
@@ -109,28 +109,28 @@ And by that I mean: politics is out to screw you.
   [
     Energy Minister Angus Taylor discusses Snowy Hydro 2.0
   ](
-    2019/sales-taylor-snowy.html
+    2019/sales-taylor-snowy
   )
 
 * [.10~September~2019.] (The Bolt Report, not 7.30)
   [
     Gladys Liu discusses membership of various Chinese Associations
   ](
-    2019/bolt-liu-association.html
+    2019/bolt-liu-association
   )
 
 * [.3~September~2019.]
   [
     Anthony Albanese discusses the NSW Labor donation scandal
   ](
-    2019/sales-albanese-donation.html
+    2019/sales-albanese-donation
   )
 
 * [.28~August~2019.]
   [
     Education Minister Dan Tehan discusses NAPLAN and the latest results
   ](
-    2019/sales-tehan-naplan.html
+    2019/sales-tehan-naplan
   )
 
 ====

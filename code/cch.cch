@@ -443,7 +443,7 @@
   Converted to a <`><div class="maths"></`> element for a
   <@>
     KaTeX
-    | /code/katex-guide.html
+    | /code/katex-guide
     | How to render mathematical equations using KaTeX
   </@>
   display equation, with automatic escaping of <`>&</`>, <`><</`> and <`>></`>,
@@ -498,7 +498,7 @@
   Converted to a <`><span class="maths"></`> element for a
   <@>
     KaTeX
-    | /code/katex-guide.html
+    | /code/katex-guide
     | How to render mathematical equations using KaTeX
   </@>
   inline equation, with automatic escaping of <`>&</`>, <`><</`> and <`>></`>
@@ -541,7 +541,7 @@
   This does not display, and should be used to hold
   <@>
     KaTeX
-    | /code/katex-guide.html
+    | /code/katex-guide
     | How to render mathematical equations using KaTeX
   </@>
   <`>\gdef</`> definitions.

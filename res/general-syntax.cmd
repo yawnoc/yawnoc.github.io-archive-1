@@ -230,7 +230,7 @@
 {:: \link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
 
 {:: \link:sun-tzu/preface ::
-  [《序》 "Preface"](/sun-tzu/preface.html)
+  [《序》 "Preface"](/sun-tzu/preface)
 ::}
 
 {:: \link:sun-tzu/iii ::
@@ -238,11 +238,11 @@
 ::}
 
 {:: \link:sun-tzu/ii ::
-  [《卷中》 "Volume~II"](/sun-tzu/ii.html) (incomplete)
+  [《卷中》 "Volume~II"](/sun-tzu/ii) (incomplete)
 ::}
 
 {:: \link:sun-tzu/i ::
-  [《卷上》 "Volume~I"](/sun-tzu/i.html)
+  [《卷上》 "Volume~I"](/sun-tzu/i)
 ::}
 
 {:: \link:sun-tzu ::

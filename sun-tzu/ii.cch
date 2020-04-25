@@ -50,12 +50,12 @@
   <ul>
     <@i>
       《序》~"[pref]"
-      | /sun-tzu/[pref].html
+      | /sun-tzu/preface
       | "[sun-tzu-classic]": 《孫子算經\.序》
     </@i>
     <@i>
       《卷上》~"[vol-i]"
-      | /sun-tzu/i.html
+      | /sun-tzu/i
       | "[sun-tzu]'s Computational Classic: [vol-i]": 《孫子算經\.卷上》
     </@i>
     <li>
@@ -1144,7 +1144,7 @@
 
 <p>
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
-  <@> Vol.~I \P5 | /sun-tzu/i.html#5 | Vol. I \P5 </@>.
+  <@> Vol.~I \P5 | /sun-tzu/i#5 | Vol. I \P5 </@>.
 </p>
 
 <;sh> 2 | 11 | Volume of a rectangular prism </;sh>
@@ -1296,7 +1296,7 @@
 </$$>
 <p>
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
-  <@> Vol.~I \P5 | /sun-tzu/i.html#5 | Vol. I \P5 </@>.
+  <@> Vol.~I \P5 | /sun-tzu/i#5 | Vol. I \P5 </@>.
 </p>
 
 <;sh> 2 | 13 | Area of a circle </;sh>
@@ -1312,7 +1312,7 @@
 </#t>
 <p>
   Here <$>\pi \approx 3</$>, see
-  <@> Vol.~I \P5 | /sun-tzu/i.html#5 | Vol. I \P5 </@>.
+  <@> Vol.~I \P5 | /sun-tzu/i#5 | Vol. I \P5 </@>.
 </p>
 
 <#t>
@@ -1485,7 +1485,7 @@
 </$$>
 <p>
   Here <$>\sqrt{2} \approx 7/5</$>, see
-  <@> Vol.~I \P5 | /sun-tzu/i.html#5 | Vol. I \P5 </@>.
+  <@> Vol.~I \P5 | /sun-tzu/i#5 | Vol. I \P5 </@>.
 </p>
 
 
@@ -3222,7 +3222,7 @@
 <p>
   In modern notation
   (but taking <$>\pi \approx 3</$> i.e. <$>4\pi \approx 12</$>
-  as per <@> Vol.~I \P5 | /sun-tzu/i.html#5 | </@>),
+  as per <@> Vol.~I \P5 | /sun-tzu/i#5 | </@>),
   the circumference of a circle of area <$>A = 35000 \unit{paces}^2</$> is
 </p>
 <$$>
@@ -3235,7 +3235,7 @@
   The balance of this paragraph involves extracting the square root of~420000.
   For a fully annotated and diagrammed walkthrough of
   [sun-tzu]'s square root algorithm,
-  see the previous <@> \P19 | /sun-tzu/ii.html#19 | Vol.~II \P19 </@>
+  see the previous <@> \P19 | /sun-tzu/ii#19 | Vol.~II \P19 </@>
   and the
   <@>
     pseudocode summary
