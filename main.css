@@ -121,6 +121,14 @@ pre {
   padding-bottom: 0.25em;
 }
 
+/* Style equations in case JavaScript is not enabled */
+
+.js-maths {
+  font-family: monospace;
+  margin: 1em 0;
+  text-align: center;
+}
+
 /* ---------------------------------------------------------------- */
 /* Footer                                                           */
 /* ---------------------------------------------------------------- */
