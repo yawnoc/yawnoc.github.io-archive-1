@@ -31,7 +31,7 @@ See also: [Conway's Custom Romanisation for Cantonese][conway]
 ||||]
 
 @@[conway]
-  /cantonese/conway-romanisation.html
+  /cantonese/conway-romanisation
 @@
 
 ----
@@ -59,7 +59,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 @@
 
 @@[ts-vs-ch]
-  /cantonese/conway-romanisation.html#ts-vs-ch
+  /cantonese/conway-romanisation#ts-vs-ch
 @@
 
 ##links

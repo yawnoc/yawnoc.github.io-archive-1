@@ -16,7 +16,7 @@
 
 <*p> |
   <b>Demo:</b>
-  <@> <`>katex-example.html</`> | /katex-example.html | katex-example.html </@>
+  <@> <`>katex-example.html</`> | /katex-example </@>
 </*p>
 
 <p>
@@ -166,7 +166,7 @@
   (unless you are using
   <@>
     my concise HTML
-    | /code/cch.html
+    | /code/cch
     | Python: a regex converter from CCH to HTML
   </@>,
   in which case you can use <`><$> {...} </$></`> for inline equations
@@ -207,7 +207,7 @@
 
 <p>
   <b>Demo:</b>
-  <@> <`>katex-example.html</`> | /katex-example.html | katex-example.html </@>
+  <@> <`>katex-example.html</`> | /katex-example </@>
 </p>
 <p>
   <:y>
@@ -236,7 +236,7 @@
   <noscript>Enable Javascript for equation rendering to work.</noscript>
   <p>
     <a
-      href="https://yawnoc.github.io/code/katex-guide.html"
+      href="https://yawnoc.github.io/code/katex-guide"
       title="How to render equations using KaTeX"
     >[back to Conway's step-by-step KaTeX guide]</a>
   </p>

@@ -45,7 +45,7 @@
   <ul>
     <@i>
       《序》~"[pref]"
-      | /sun-tzu/preface.html
+      | /sun-tzu/preface
       | "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
     </@i>
     <li>
@@ -53,7 +53,7 @@
     </li>
     <@i>
       《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
-      | /sun-tzu/ii.html
+      | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
     <li>
@@ -980,7 +980,7 @@
 </$$>
 
 <p>
-  In <@> Vol.~II \P10 | /sun-tzu/ii.html#10 | Vol. II \P10 </@>,
+  In <@> Vol.~II \P10 | /sun-tzu/ii#10 | Vol. II \P10 </@>,
   the conversion between
   the capacity unit "barrel", [斛],
   and the volume unit "cubic rule", [尺],
@@ -2437,7 +2437,7 @@
   after both the 6 and the 4 have been multiplied through. See
   <@>
     here
-    | /sun-tzu/code/animations.html
+    | /sun-tzu/code/animations
     | Mathematica: [sun-tzu] multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
@@ -2592,7 +2592,7 @@
   See
   <@>
     here
-    | /sun-tzu/code/animations.html
+    | /sun-tzu/code/animations
     | Mathematica: [sun-tzu] multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
@@ -2977,7 +2977,7 @@
   Source code available
   <@>
     here
-    | /sun-tzu/code/animations.html
+    | /sun-tzu/code/animations
     | Mathematica: [sun-tzu] multiplication \& division animations
   </@>.
 </p>
@@ -3093,7 +3093,7 @@
   Source code available
   <@>
     here
-    | /sun-tzu/code/animations.html
+    | /sun-tzu/code/animations
     | Mathematica: [sun-tzu] multiplication \& division animations
   </@>.
 </p>
@@ -3898,7 +3898,7 @@
   This gets rather repetitive (and boring), so you may wish to
   <@>
     skip to [vol-ii]
-    | /sun-tzu/ii.html
+    | /sun-tzu/ii
     | "[sun-tzu-classic]: [vol-ii]"
   </@>.
 </p>
@@ -4061,13 +4061,13 @@
   Previous:
   <@>
     《序》~"[pref]"
-    | /sun-tzu/preface.html
+    | /sun-tzu/preface
     | "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
   </@> <br>
   Next:
   <@>
     《卷中》~"[vol-ii]"
-    | /sun-tzu/ii.html
+    | /sun-tzu/ii
     | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
   </@>
 </div>

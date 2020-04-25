@@ -64,12 +64,12 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ###
 
 ===={plc}
-* [Conway's Romanisation for Cantonese](/cantonese/conway-romanisation.html)
+* [Conway's Romanisation for Cantonese](/cantonese/conway-romanisation)
   ||||{pd}
     Wade--Giles-style initials and length-indicative finals.
   ||||
 
-* [FAQ](/faq.html)
+* [FAQ](/faq)
   ||||{pd}
     Frequently asked questions.
   ||||
@@ -79,7 +79,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
     Mind reading: Australian politics.
   ||||
 
-* [Mao on separatism: 27 Chinas](/mao-on-separatism.html)
+* [Mao on separatism: 27 Chinas](/mao-on-separatism)
   ||||{pd}
     Mao in 1920, on why China ought to be split into 27 separate countries.
   ||||
@@ -92,14 +92,14 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ###
 
 ===={plc}
-* [Daytime: dependence on latitude and season](/math/daytime.html)
+* [Daytime: dependence on latitude and season](/math/daytime)
   ||||{pd}
     The sun's path through the sky
     and the duration of daytime (among other quantities).
   ||||
 
 * [Projectile motion: optimal launch angle for weak quadratic drag](
-    /math/projectile-weak-drag.html
+    /math/projectile-weak-drag
   )
   ||||{pd}
     Launching projectiles in weak air resistance
@@ -107,7 +107,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   ||||
 
 * [Projectile motion: optimal launch angle from a platform](
-    /math/projectile-platform.html
+    /math/projectile-platform
   )
   ||||{pd}
     Launching projectiles from a raised platform.
@@ -140,7 +140,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 * [
     《海島算經》 \+
     "_.The_ Sea Island Computational Classic"
-  ](/lit/sea-island.html)
+  ](/lit/sea-island)
   ||||{pd}
     The first problem in _Haidao Suanjing_.
   ||||
@@ -153,7 +153,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ####
 
 ===={plc}
-* ["The Need to Win"](/lit/need-to-win.html)
+* ["The Need to Win"](/lit/need-to-win)
   ||||{pd}
     On _The Turning_ (Tim Winton), quoting Thomas Merton,
     paraphrasing Chuang Tz(uu), on Confucius, on (probably) archery.
@@ -162,7 +162,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 * [
     《孔子問答：小兒論》 \+
     "Q _.\&_ A _.with_ Confucius: _.the_ Little Child's Discourse"
-  ](/lit/little-child.html)
+  ](/lit/little-child)
   ||||{pd}
     Confucius getting his arse whooped by a little kid.
   ||||
@@ -170,7 +170,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 * [
     《太平山獅子亭記》 \+
     "Record of _.the_ Lion's Pavilion, Victoria Peak"
-  ](/lit/lion-pavilion.html)
+  ](/lit/lion-pavilion)
   ||||{pd}
      Plaque text commemorating the Lion's Pavilion.
   ||||
@@ -178,7 +178,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 * [
     《狐假虎威》 \+
     "_.The_ Fox Feigneth _.the_ Tiger's Authority"
-  ](/lit/fox-tiger.html)
+  ](/lit/fox-tiger)
   ||||{pd}
      The original second half of _The Gruffalo_.
   ||||
@@ -186,7 +186,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 * [
     《施氏食獅史》 \+
     "_.An_ History of Mr Shih's Eating of Lions"
-  ](/lit/lion-eating.html)
+  ](/lit/lion-eating)
   ||||{pd}
      The original Mandarin "lion tongue twister".
   ||||
@@ -241,7 +241,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
     https://github.com/yawnoc/yawnoc.github.io/blob/master/sun-tzu/code/sqrt.py
   )
 * [\ma \sun-tzu multiplication \& division animations](
-    /sun-tzu/code/animations.html
+    /sun-tzu/code/animations
   )
 ====
 
@@ -254,8 +254,8 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ###
 
 ====
-* [Unicode mathematical symbols](/code/unicode-maths.html)
-* [Strikethrough formatter](/code/strikethrough.html)
+* [Unicode mathematical symbols](/code/unicode-maths)
+* [Strikethrough formatter](/code/strikethrough)
 ====
 
 
