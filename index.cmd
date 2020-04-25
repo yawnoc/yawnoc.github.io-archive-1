@@ -4,7 +4,7 @@
   %title Conway's site
   %author Conway
   %date-created 2019-03-09
-  %date-modified 2020-04-18
+  %date-modified 2020-04-26
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
@@ -34,6 +34,7 @@
 * \link:top
 * [Math.](#applied-maths  Applied mathematics \(or, physics\))
 * [Lit.](#literary-chinese  English translations of Literary Chinese)
+* [Code](#code  Useful code)
 * \link:cite
 ====]]
 
