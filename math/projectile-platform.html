@@ -2,54 +2,61 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="description" content="A derivation of the optimal launch angle (which maximises range) for projectile motion (no air resistance) from a raised platform.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
-<meta name="description" content="A derivation of the optimal launch angle (which maximises range) for projectile motion (no air resistance) from a raised platform.">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<link rel="stylesheet" href="/conway-katex.min.css">
-<script defer src="/conway-katex.min.js"></script>
-<script defer src="/conway-render.min.js"></script>
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
 <title>Projectile motion: optimal launch angle from a platform | Conway's site</title>
 </head>
-<body onload="dateRender(); mathsRender();">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-<li><a href="#solution" title="Solution">Solution</a></li>
-<li><a href="#result" title="Skip to the result">Result</a></li>
-<li><a href="#cite" title="Cite this page">Cite</a></li>
-</ul></nav></header>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="#result" title="Jump to result">Result</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
 <h1>Projectile motion: optimal launch angle from a platform</h1>
-<p class="page-properties">
-First created:&nbsp;20190413<br>
-Last modified:&nbsp;<b>20190817</b><br>
-<b>See also:</b>&nbsp;<a href="/math/projectile-weak-drag" title="Projectile motion: optimal launch angle for weak quadratic drag">Projectile motion: optimal launch angle for weak quadratic drag</a>
-<noscript>Enable Javascript for <a href="/code/katex-guide" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
-</p>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-04-13<br>
+Last modified: 2020-04-26<br>
+Manuscript: <a href="/manuscripts/platform.pdf"><code>platform.pdf</code></a><br>
+See also: <a href="/math/projectile-weak-drag">Projectile motion: optimal launch angle for weak quadratic drag</a>
+</div>
 <p>
 In the absence of air resistance, a launch angle of 45° maximises range.
-In high school Mr&nbsp;Benn asked what happens to the optimal launch angle
-if the projectile is instead launched from a raised platform.
-Here is a slightly condensed version of what I came up with:
+If the projectile is instead launched from a raised platform,
+the optimal launch angle still has a closed-form expression,
+although more algebra is required to compute it.
 </p>
-<h2 id="solution"><a class="self-link" href="#solution"></a>
-Solution
-</h2>
-<p>
-<b>Manuscript:</b>
-<a href="/manuscripts/platform.pdf" title="Manuscript for Projectile motion: optimal launch angle from a platform"><code>platform.pdf</code></a>
-</p>
+<h2 id="solution"><a class="self-link" href="#solution"></a>Solution</h2>
 <svg class="embedded-styles"><style>
 text {
 font-family: sans-serif;
 text-anchor: middle;
+}
+line, path {
+stroke: black;
+vector-effect: non-scaling-stroke;
 }
 @font-face {
 font-display: swap;
@@ -70,15 +77,11 @@ url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
 .maths-italic {
 font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
 }
-.maths-roman {
+.maths-regular {
 font-family: "KaTeX_Main-Regular";
 }
-line, path {
-stroke: black;
-vector-effect: non-scaling-stroke;
-}
 </style></svg>
-<div class="centred-svg">
+<div class="centred-block">
 <svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5">
 <defs>
 <marker id="arrowhead" viewBox="0 -0.15 0.5 0.3" refX="0.5" refY="0" markerWidth="0.5" markerHeight="0.15" orient="auto-start-reverse">
@@ -99,23 +102,21 @@ vector-effect: non-scaling-stroke;
 </svg>
 </div>
 <p>
-Suppose the projectile is launched at speed <span class="maths">u</span> and angle <span class="maths">\phi</span>
-from height <span class="maths">h</span> above the ground,
-which has gravitational field strength <span class="maths">g</span>,
+Suppose the projectile is launched at speed <span class="js-maths">u</span> and angle <span class="js-maths">\phi</span>
+from height <span class="js-maths">h</span> above the ground,
+which has gravitational field strength <span class="js-maths">g</span>,
 so that the motion is given by
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   x (t) &amp;= u t \cos\phi \\
   y (t) &amp;= u t \sin\phi - \frac{1}{2} g t^2 + h.
 \end{aligned}
 </div>
 <p>
 The flight time is the positive solution to the quadratic
-<span class="maths">y (t) = 0</span>, i.e.
+<span class="js-maths">y (t) = 0</span>, i.e.
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   t
   &amp;=
     \frac{1}{g}
@@ -132,12 +133,11 @@ The flight time is the positive solution to the quadratic
 \end{aligned}
 </div>
 <p>
-where <span class="maths">C = 2 g h / u^2</span> is the dimensionless ratio
+where <span class="js-maths">C = 2 g h / u^2</span> is the dimensionless ratio
 between the initial potential and kinetic energies of the projectile.
-Substituting the flight time into <span class="maths">x (t)</span> gives the range
+Substituting the flight time into <span class="js-maths">x (t)</span> gives the range
 </p>
-<div class="maths">
-R =
+<div class="js-maths">R =
   \frac{u^2 \cos\phi}{g}
   \left(
     \sin\phi
@@ -145,11 +145,10 @@ R =
   \right).
 </div>
 <p>
-To maximise the range <span class="maths">R</span> with respect to the launch angle <span class="maths">\phi</span>,
+To maximise the range <span class="js-maths">R</span> with respect to the launch angle <span class="js-maths">\phi</span>,
 we compute
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \frac{\pd R}{\pd\phi}
   &amp;=
     \frac{u^2}{g}
@@ -176,10 +175,9 @@ we compute
 \end{aligned}
 </div>
 <p>
-For brevity let <span class="maths">\beta = \sin\phi</span>. Then
+For brevity let <span class="js-maths">\beta = \sin\phi</span>. Then
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \frac{\pd R}{\pd\phi}
   &amp;=
     \frac{u^2}{g}
@@ -218,28 +216,24 @@ For brevity let <span class="maths">\beta = \sin\phi</span>. Then
 \end{aligned}
 </div>
 <p>
-We carefully consider the ways in which <span class="maths">\pd R / \pd\phi</span> can vanish:
+We carefully consider the ways in which <span class="js-maths">\pd R / \pd\phi</span> can vanish:
 </p>
-<ol class="sparse-list">
-<li>
-If <span class="maths">C = \infty</span>, then
-<div class="maths">
-\frac{\pd R}{\pd\phi}
+<ol>
+<li>If <span class="js-maths">C = \infty</span>, then
+<div class="js-maths">\frac{\pd R}{\pd\phi}
 = \frac{2h}{C}
   {\colb \left( \sqrt{C} \right)}
   {\colr \left[ -\beta \right]}
 = - 2\beta \cdot \frac{h}{\sqrt{C}},
 </div>
-which vanishes assuming <span class="maths">h</span> is finite.
-But since <span class="maths">C = 2 g h / u^2</span> is infinite, this only occurs if
-<span class="maths">g = \infty</span> (infinitely strong gravity) or
-<span class="maths">u = 0</span> (zero launch speed),
-and in either case the range is zero, i.e.&nbsp;<span class="maths">R</span> is minimised.
+which vanishes assuming <span class="js-maths">h</span> is finite.
+But since <span class="js-maths">C = 2 g h / u^2</span> is infinite, this only occurs if
+<span class="js-maths">g = \infty</span> (infinitely strong gravity) or
+<span class="js-maths">u = 0</span> (zero launch speed),
+and in either case the range is zero, i.e.&nbsp;<span class="js-maths">R</span> is minimised.
 </li>
-<li>
-If <span class="maths">C = 0</span> and <span class="maths">\beta &lt; 0</span>, then
-<div class="maths">
-\begin{aligned}
+<li>If <span class="js-maths">C = 0</span> and <span class="js-maths">\beta &lt; 0</span>, then
+<div class="js-maths">\begin{aligned}
   \frac{\pd R}{\pd\phi}
   &amp;=
     \frac{2h}{C}
@@ -274,20 +268,18 @@ If <span class="maths">C = 0</span> and <span class="maths">\beta &lt; 0</span>,
   &amp;= \frac{h}{\beta^2},
 \end{aligned}
 </div>
-which vanishes only if <span class="maths">h = 0</span>.
-But since <span class="maths">\phi = \sin^{-1}\beta &lt; 0</span>, this corresponds to
+which vanishes only if <span class="js-maths">h = 0</span>.
+But since <span class="js-maths">\phi = \sin^{-1}\beta &lt; 0</span>, this corresponds to
 launching the projectile downwards starting from ground level,
 and again the range is zero.
 </li>
-<li>
-If <span class="maths">\colr
-      \left[
-        \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
-      - \beta
-      \right] = 0</span>,
-then <span class="maths">\pd R / \pd\phi</span> vanishes unconditionally, and we have
-<div class="maths">
-\begin{aligned}
+<li>If <span class="js-maths">\colr
+    \left[
+      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
+    - \beta
+    \right] = 0</span>,
+then <span class="js-maths">\pd R / \pd\phi</span> vanishes unconditionally, and we have
+<div class="js-maths">\begin{aligned}
   (1 - \beta^2)^2 &amp;= \beta^2 (\beta^2 + C) \\
   1 - 2 \beta^2 + \cancel{\beta^4}
     &amp;= \cancel{\beta^4} + C \beta^2 \\
@@ -295,11 +287,8 @@ then <span class="maths">\pd R / \pd\phi</span> vanishes unconditionally, and we
   \beta &amp;= \frac{1}{\sqrt{C + 2}},
 \end{aligned}
 </div>
-<p>
 which indeed corresponds to the positive maximum range, which is
-</p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   R
   &amp;=
     \frac{u^2}{g}
@@ -327,108 +316,90 @@ which indeed corresponds to the positive maximum range, which is
 </div>
 </li>
 </ol>
-<h2 id="result"><a class="self-link" href="#result"></a>
-Result
-</h2>
+<h2 id="result"><a class="self-link" href="#result"></a>Result</h2>
 <p>
-Hence the <b>optimal launch angle</b> for a projectile launched at
-speed <span class="maths">u</span> from height <span class="maths">h</span>
-in a gravitational field of strength <span class="maths">g</span> is
+Hence the <b>optimal launch angle</b> for a projectile
+launched at speed <span class="js-maths">u</span> from height <span class="js-maths">h</span>
+in a gravitational field of strength <span class="js-maths">g</span> is
 </p>
-<div class="maths">
-\boxed{
-  \phi = \sin^{-1} \frac{1}{\sqrt{2 g h / u^2 + 2}},
-}
+<div class="js-maths important">\phi = \sin^{-1} \frac{1}{\sqrt{2 g h / u^2 + 2}},
 </div>
 <p>
 achieving a <b>maximum range</b> of
 </p>
-<div class="maths">
-\boxed{
-  R = \frac{u^2}{g} \sqrt{2 g h / u^2 + 1}.
-}
+<div class="js-maths important">R = \frac{u^2}{g} \sqrt{2 g h / u^2 + 1}.
 </div>
 <p>
 In particular:
 </p>
-<ul class="sparse-list">
-<li>
-For <span class="maths">h = 0</span>, we recover
-<span class="maths">\phi = \sin^{-1} (1/\sqrt{2}) = 45\degree</span> and <span class="maths">R = u^2 / g</span>,
+<ul>
+<li>For <span class="js-maths">h = 0</span>, we recover
+<span class="js-maths">\phi = \sin^{-1} (1/\sqrt{2}) = 45\degree</span> and <span class="js-maths">R = u^2 / g</span>,
 which are the optimal angle and maximum range
 respectively for a projectile launched from ground level.
-For small <span class="maths">h</span> we have
-<div class="maths">
-\phi \sim 45\degree - \frac{g h}{2 u^2} \cdot \frac{180\degree}{\pi}
+For small <span class="js-maths">h</span> we have
+<div class="js-maths">\phi \asy 45\degree - \frac{g h}{2 u^2} \cdot \frac{180\degree}{\pi}
 </div>
-<p>and</p>
-<div class="maths">
-R \sim \frac{u^2}{g} + h.
+and
+<div class="js-maths">R \asy \frac{u^2}{g} + h.
 </div>
 </li>
-<li>
-For <span class="maths">h = \infty</span>, the optimal angle is
-<span class="maths">\phi = \sin^{-1} (1/\sqrt{\infty}) = 0</span>
+<li>For <span class="js-maths">h = \infty</span>, the optimal angle is
+<span class="js-maths">\phi = \sin^{-1} (1/\sqrt{\infty}) = 0</span>
 and the maximum range is
-<span class="maths">R = u^2/g \cdot \sqrt{\infty} = \infty</span>.
+<span class="js-maths">R = u^2/g \cdot \sqrt{\infty} = \infty</span>.
 Projectiles should be launched almost horizontally
 from very tall platforms; asymptotically we have
-<div class="maths">
-\phi \sim \frac{1}{\sqrt{2 g h / u^2}}
+<div class="js-maths">\phi \asy \frac{1}{\sqrt{2 g h / u^2}}
   = \frac{u}{\sqrt{2 g h}} \cdot \frac{180 \degree}{\pi}
 </div>
-<p>and</p>
-<div class="maths">
-R \sim \frac{u^2}{g} \sqrt{2 g h / u^2} = u \sqrt{\frac{2 h}{g}}.
+and
+<div class="js-maths">R \asy \frac{u^2}{g} \sqrt{2 g h / u^2} = u \sqrt{\frac{2 h}{g}}.
 </div>
 </li>
 </ul>
 <p>
 Finally note that the optimal angle depends only on
-the dimensionless ratio <span class="maths">C = 2 g h / u^2</span>.
+the dimensionless ratio <span class="js-maths">C = 2 g h / u^2</span>.
 In fact this may be shown using dimensional analysis
 without actually having to solve the problem;
-the only parameters are <span class="maths">u</span>, <span class="maths">g</span> and <span class="maths">h</span>,
-so the only dimensionless group (up to a power) is <span class="maths">g h / u^2</span>.
+the only parameters are <span class="js-maths">u</span>, <span class="js-maths">g</span> and <span class="js-maths">h</span>,
+so the only dimensionless group (up to a power) is <span class="js-maths">g h / u^2</span>.
 </p>
-<h2 id="cite"><a class="self-link" href="#cite"></a>
-Cite this page
-</h2>
+<h2 id="cite"><a class="self-link" href="#cite"></a>Cite this page</h2>
 <ul>
 <li>Text:
 <p>
-Conway&nbsp;(2019).
+Conway&nbsp;(2020).
 Projectile motion: optimal launch angle from a platform.
-&lt;https://yawnoc.github.io/math/projectile-platform&gt;
-[Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
+&lt;https://yawnoc.github.io/math/projectile-platform.html&gt;
+Accessed <span class="js-date">yyyy-mm-dd</span>.
 </p>
 </li>
 <li>BibTeX:
-<pre>
-@misc{conway-projectile-platform,
+<pre><code>@misc{conway-projectile-platform,
   author = {Conway},
-  year = {2019},
+  year = {2020},
   title = {Projectile motion: optimal launch angle from a platform},
-  howpublished = {\url{https://yawnoc.github.io/math/projectile-platform}},
-  note = {[Accessed <span class="date">d~month~yyyy</span>]}
+  howpublished = {\url{https://yawnoc.github.io/math/projectile-platform.html}},
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 <li>BibLaTeX:
-<pre>
-@online{conway-projectile-platform,
+<pre><code>@online{conway-projectile-platform,
   author = {Conway},
-  year = {2019},
+  year = {2020},
   title = {Projectile motion: optimal launch angle from a platform},
-  url = {https://yawnoc.github.io/math/projectile-platform},
-  urldate = {<span class="date">yyyy-mm-dd</span>}
+  url = {https://yawnoc.github.io/math/projectile-platform.html},
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 </ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
 <footer>
-<hr>
-©&nbsp;2019&nbsp;Conway.
+©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
 </html>
