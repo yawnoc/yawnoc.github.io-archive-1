@@ -3,7 +3,7 @@
 ##  ----------------------------------------------------------------
 ##  Displays and returns quantities for the sun (daytime, noon altitude etc.)
 ##  using the model given at:
-##    https://yawnoc.github.io/math/daytime.html
+##    https://yawnoc.github.io/math/daytime
 ##  Input:
 ##    delta_spec is the specification for the latitude north of the equator,
 ##                      delta, either a scalar (delta / degree),
