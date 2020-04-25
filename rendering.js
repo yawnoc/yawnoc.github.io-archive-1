@@ -72,11 +72,17 @@ function renderMaths() {
   let maths_elements = document.getElementsByClassName("js-maths");
   for (let i = 0; i < maths_elements.length; i++) {
     let elem = maths_elements[i]
-    katex.render(
-      elem.textContent,
-      elem,
-      {displayMode: elem.tagName == "DIV"}
-    );
+    try {
+      katex.render(
+        elem.textContent,
+        elem,
+        {displayMode: elem.tagName == "DIV"}
+      )
+    }
+    catch (error) {
+      elem.textContent = error;
+      elem.setAttribute("style", "color:red")
+    }
   }
   
 }
