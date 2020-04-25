@@ -6,6 +6,7 @@
   Blockquotes
   Code
   Divisions
+  Equations (KaTeX)
   Footer
   Headings
   Images
@@ -101,6 +102,24 @@ pre {
   overflow-x: auto;
 }
 
+
+/* ---------------------------------------------------------------- */
+/* Equations (KaTeX)                                                */
+/* ---------------------------------------------------------------- */
+
+/*
+  Overflow display equations with horizontal scrolling (overflow-*)
+  Prevent vertical clipping (margin-*, padding-*)
+*/
+
+.katex-display > .katex {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: -0.5em;
+  padding-top: 0.5em;
+  margin-bottom: -0.25em;
+  padding-bottom: 0.25em;
+}
 
 /* ---------------------------------------------------------------- */
 /* Footer                                                           */
