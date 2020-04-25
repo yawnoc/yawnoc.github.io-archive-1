@@ -553,6 +553,31 @@
   text-anchor: middle;
 ::}
 
+{:: \svg-style:maths-font-rulesets ::
+  @font-face {
+    font-display: swap;
+    font-family: "KaTeX\_Math-Italic";
+    src:
+      url("/fonts/KaTeX\_Math-Italic.woff2") format("woff2"),
+      url("/fonts/KaTeX\_Math-Italic.woff") format("woff"),
+      url("/fonts/KaTeX\_Math-Italic.ttf") format("truetype");
+  }
+  @font-face {
+    font-display: swap;
+    font-family: "KaTeX\_Main-Regular";
+    src:
+      url("/fonts/KaTeX\_Main-Regular.woff2") format("woff2"),
+      url("/fonts/KaTeX\_Main-Regular.woff") format("woff"),
+      url("/fonts/KaTeX\_Main-Regular.ttf") format("truetype");
+  }
+  .maths-italic {
+    font-family: "KaTeX\_Math-Italic", "KaTeX\_Main-Regular";
+  }
+  .maths-regular {
+    font-family: "KaTeX\_Main-Regular";
+  }
+::}
+
 <!-- Container [svg-styles/ /] -->
 
 {%
