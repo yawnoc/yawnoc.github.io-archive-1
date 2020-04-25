@@ -22,12 +22,15 @@
 * \link:cite
 ====]]
 
+
+
 # %title #
+
+
 
 \noscript[]
 
 [||||
-Manuscript: [`platform.pdf`](/manuscripts/platform.pdf) \+
 See also: [Projectile motion: optimal launch angle for weak quadratic drag](
   /math/projectile-weak-drag
 )
@@ -45,6 +48,10 @@ although more algebra is required to compute it.
 ##solution
   Solution
 ##
+
+----
+__Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
+----
 
 <!--                       Projectile diagram
   ***********************************************************************
