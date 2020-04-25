@@ -76,7 +76,7 @@ function renderMaths() {
     '\\mathopspace': '\\mathop{}\\!',
     
     // More vertical space for fraction-containing equations in aligned etc.
-    '\\fraclinespace': '0.3em',
+    '\\fraclinespace': '0.7em',
     
     // Asymptotically
     '\\asy': '\\sim',
