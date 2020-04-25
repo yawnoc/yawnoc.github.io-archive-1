@@ -70,6 +70,55 @@ function renderDate() {
 
 function renderMaths() {
   
+  let macros = {
+    
+    // Space before an operator (e.g. total differential)
+    '\\mathopspace': '\\mathop{}\\!',
+    
+    // More vertical space for fraction-containing equations in aligned etc.
+    '\\fraclinespace': '0.3em',
+    
+    // Asymptotically
+    '\\asy': '\\sim',
+    
+    // Equality by definition
+    '\\defeq': '\\equiv',
+    
+    // Bold vectors
+    '\\vec': '\\boldsymbol{\\mathbf{#1}}',
+    
+    // Del operator
+    '\\del': '\\mathopspace\\vec{\\nabla}',
+    
+    // Partial differential
+    '\\pd': '\\mathopspace\\partial',
+    
+    // Total differential
+    '\\td': '\\mathopspace\\mathrm{d}',
+    
+    // Cross product
+    '\\crossp': '\\boldsymbol\\times',
+    
+    // Dot product
+    '\\dotp': '\\boldsymbol\\cdot',
+    
+    // Text quantity
+    '\\textq': '\\{\\text{#1}\\}',
+    
+    // Generic constant
+    '\\const': '\\mathrm{const}',
+    
+    // Natural exponential base
+    '\\ee': '\\mathrm{e}',
+    
+    // Imaginary unit
+    '\\ii': '\\mathrm{i}',
+    
+    // Order (Big-O)
+    '\\order': '\\mathopspace O',
+    
+  }
+  
   let mathsElements = document.getElementsByClassName("js-maths");
   
   for (let i = 0; i < mathsElements.length; i++) {
@@ -79,6 +128,7 @@ function renderMaths() {
       elem,
       {
         displayMode: elem.tagName == "DIV",
+        macros: macros,
         throwOnError: false,
       }
     )
