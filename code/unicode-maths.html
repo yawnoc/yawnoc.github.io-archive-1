@@ -2,482 +2,525 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<link rel="stylesheet" href="/conway-katex.min.css">
-<script defer src="/conway-katex.min.js"></script>
-<script defer src="/conway-render.min.js"></script>
-<title>Unicode maths symbols | Conway's site</title>
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
+<title>Unicode mathematical symbols | Conway's site</title>
 </head>
-<body onload="mathsRender();">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-</ul></nav></header>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+</ul>
+</nav>
+</header>
 <h1>Unicode mathematical symbols</h1>
-<p class="page-properties">
-First created:&nbsp;20190330<br>
-Last modified:&nbsp;<b>20191031</b>
-<noscript>Enable Javascript for <a href="/code/katex-guide" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
-</p>
-<nav><ul>
-<li><a href="#constants" title="Constants">Constants</a></li>
-<li><a href="#subscripts" title="Subscripts">Subscripts</a></li>
-<li><a href="#superscripts" title="Superscripts">Superscripts</a></li>
-<li><a href="#arithmetic" title="Arithmetic operators">Arithmetic</a></li>
-<li><a href="#relations" title="Relations">Relations</a></li>
-<li><a href="#calculus" title="Calculus">Calculus</a></li>
-<li><a href="#greek" title="Greek alphabet">Greek</a></li>
-</ul></nav>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-03-30<br>
+Last modified: 2020-04-25
+</div>
+<nav>
+<ul>
+<li><a href="#constants">Constants</a>
+</li>
+<li><a href="#subscripts">Subscripts</a>
+</li>
+<li><a href="#superscripts">Superscripts</a>
+</li>
+<li><a href="#arithmetic">Arithmetic</a>
+</li>
+<li><a href="#relations">Relations</a>
+</li>
+<li><a href="#calculus">Calculus</a>
+</li>
+<li><a href="#greek">Greek</a>
+</li>
+</ul>
+</nav>
 <p>
 Convenient for use in emails.
 </p>
-<h2 id="constants"><a class="self-link" href="#constants"></a>
-Constants
-</h2>
-<div class="overflowing"><table>
+<h2 id="constants"><a class="self-link" href="#constants"></a>Constants</h2>
+<div class="overflowing">
+<table>
+<thead>
 <tr>
 <th>Unicode</th>
 <th>KaTeX</th>
-<th>code</th>
+<th>KaTeX code</th>
 <th>Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>°</td>
-<td><span class="maths">\degree</span></td>
+<td><span class="js-maths">\degree</span></td>
 <td><code>\degree</code></td>
 <td>degree</td>
 </tr>
 <tr>
 <td>%</td>
-<td><span class="maths">\%</span></td>
+<td><span class="js-maths">\%</span></td>
 <td><code>\%</code></td>
 <td>percent</td>
 </tr>
 <tr>
 <td>∞</td>
-<td><span class="maths">\infty</span></td>
+<td><span class="js-maths">\infty</span></td>
 <td><code>\infty</code></td>
 <td>infinity</td>
 </tr>
 <tr>
 <td>½</td>
-<td><span class="maths">\frac{1}{2}</span></td>
+<td><span class="js-maths">\frac{1}{2}</span></td>
 <td><code>\frac{1}{2}</code></td>
 <td>half</td>
 </tr>
 <tr>
 <td>⅓ ⅔</td>
-<td><span class="maths">\frac{1}{3} \frac{2}{3}</span></td>
+<td><span class="js-maths">\frac{1}{3} \frac{2}{3}</span></td>
 <td><code>\frac{1}{3} \frac{2}{3}</code></td>
 <td>thirds</td>
 </tr>
 <tr>
 <td>¼ ¾</td>
-<td><span class="maths">\frac{1}{4} \frac{3}{4}</span></td>
+<td><span class="js-maths">\frac{1}{4} \frac{3}{4}</span></td>
 <td><code>\frac{1}{4} \frac{3}{4}</code></td>
 <td>quarters</td>
 </tr>
 <tr>
 <td>⅕ ⅖ ⅗ ⅘</td>
-<td><span class="maths">\frac{1}{5} \frac{2}{5} \frac{3}{5} \frac{4}{5}</span></td>
+<td><span class="js-maths">\frac{1}{5} \frac{2}{5} \frac{3}{5} \frac{4}{5}</span></td>
 <td><code>\frac{1}{5} \frac{2}{5} \frac{3}{5} \frac{4}{5}</code></td>
 <td>fifths</td>
 </tr>
 <tr>
 <td>⅙ ⅚</td>
-<td><span class="maths">\frac{1}{6} \frac{5}{6}</span></td>
+<td><span class="js-maths">\frac{1}{6} \frac{5}{6}</span></td>
 <td><code>\frac{1}{6} \frac{5}{6}</code></td>
 <td>sixths</td>
 </tr>
 <tr>
 <td>⅛ ⅜ ⅝ ⅞</td>
-<td><span class="maths">\frac{1}{8} \frac{3}{8} \frac{5}{8} \frac{7}{8}</span></td>
+<td><span class="js-maths">\frac{1}{8} \frac{3}{8} \frac{5}{8} \frac{7}{8}</span></td>
 <td><code>\frac{1}{8} \frac{3}{8} \frac{5}{8} \frac{7}{8}</code></td>
 <td>eighths</td>
 </tr>
-</table></div>
-<h2 id="subscripts"><a class="self-link" href="#subscripts"></a>
-Subscripts
-</h2>
-<div class="overflowing"><table>
+</tbody>
+</table>
+</div>
+<h2 id="subscripts"><a class="self-link" href="#subscripts"></a>Subscripts</h2>
+<div class="overflowing">
+<table>
+<thead>
 <tr>
 <th>Unicode</th>
 <th>KaTeX</th>
-<th>code</th>
+<th>KaTeX code</th>
 <th>Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>₀ ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉</td>
-<td><span class="maths">{_0} {_1} {_2} {_3} {_4} {_5} {_6} {_7} {_8} {_9}</span></td>
+<td><span class="js-maths">{_0} {_1} {_2} {_3} {_4} {_5} {_6} {_7} {_8} {_9}</span></td>
 <td><code>{_0} {_1} {_2} {_3} {_4} {_5} {_6} {_7} {_8} {_9}</code></td>
 <td>digits</td>
 </tr>
 <tr>
 <td>₍ ₎ ₊ ₋ ₌</td>
-<td><span class="maths">{_(} {_)} {_+} {_-} {_=}</span></td>
+<td><span class="js-maths">{_(} {_)} {_+} {_-} {_=}</span></td>
 <td><code>{_(} {_)} {_+} {_-} {_=}</code></td>
 <td>operators etc.</td>
 </tr>
-</table></div>
-<h2 id="superscripts"><a class="self-link" href="#superscripts"></a>
-Superscripts
-</h2>
-<div class="overflowing"><table>
+</tbody>
+</table>
+</div>
+<h2 id="superscripts"><a class="self-link" href="#superscripts"></a>Superscripts</h2>
+<div class="overflowing">
+<table>
+<thead>
 <tr>
 <th>Unicode</th>
 <th>KaTeX</th>
-<th>code</th>
+<th>KaTeX code</th>
 <th>Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹</td>
-<td><span class="maths">{^0} {^1} {^2} {^3} {^4} {^5} {^6} {^7} {^8} {^9}</span></td>
+<td><span class="js-maths">{^0} {^1} {^2} {^3} {^4} {^5} {^6} {^7} {^8} {^9}</span></td>
 <td><code>{^0} {^1} {^2} {^3} {^4} {^5} {^6} {^7} {^8} {^9}</code></td>
 <td>digits</td>
 </tr>
 <tr>
 <td>⁽ ⁾ ⁺ ⁻ ⁼</td>
-<td><span class="maths">{^(} {^)} {^+} {^-} {^=}</span></td>
+<td><span class="js-maths">{^(} {^)} {^+} {^-} {^=}</span></td>
 <td><code>{^(} {^)} {^+} {^-} {^=}</code></td>
 <td>operators etc.</td>
 </tr>
-</table></div>
-<h2 id="arithmetic"><a class="self-link" href="#arithmetic"></a>
-Arithmetic operators
-</h2>
-<div class="overflowing"><table>
+</tbody>
+</table>
+</div>
+<h2 id="arithmetic"><a class="self-link" href="#arithmetic"></a>Arithmetic operators</h2>
+<div class="overflowing">
+<table>
+<thead>
 <tr>
 <th>Unicode</th>
 <th>KaTeX</th>
-<th>code</th>
+<th>KaTeX code</th>
 <th>Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>+</td>
-<td><span class="maths">+</span></td>
+<td><span class="js-maths">+</span></td>
 <td><code>+</code></td>
 <td>plus</td>
 </tr>
 <tr>
 <td>−</td>
-<td><span class="maths">-</span></td>
+<td><span class="js-maths">-</span></td>
 <td><code>-</code></td>
 <td>minus</td>
 </tr>
 <tr>
 <td>±</td>
-<td><span class="maths">\pm</span></td>
+<td><span class="js-maths">\pm</span></td>
 <td><code>\pm</code></td>
 <td>plus or minus</td>
 </tr>
 <tr>
 <td>∓</td>
-<td><span class="maths">\mp</span></td>
+<td><span class="js-maths">\mp</span></td>
 <td><code>\mp</code></td>
 <td>minus or plus</td>
 </tr>
 <tr>
 <td>×</td>
-<td><span class="maths">\times</span></td>
+<td><span class="js-maths">\times</span></td>
 <td><code>\times</code></td>
 <td>times</td>
 </tr>
 <tr>
 <td>÷</td>
-<td><span class="maths">\div</span></td>
+<td><span class="js-maths">\div</span></td>
 <td><code>\div</code></td>
 <td>divide</td>
 </tr>
 <tr>
 <td>·</td>
-<td><span class="maths">\cdot</span></td>
+<td><span class="js-maths">\cdot</span></td>
 <td><code>\cdot</code></td>
 <td>dot</td>
 </tr>
-</table></div>
-<h2 id="relations"><a class="self-link" href="#relations"></a>
-Relations
-</h2>
-<div class="overflowing"><table>
+</tbody>
+</table>
+</div>
+<h2 id="relations"><a class="self-link" href="#relations"></a>Relations</h2>
+<div class="overflowing">
+<table>
+<thead>
 <tr>
 <th>Unicode</th>
 <th>KaTeX</th>
-<th>code</th>
+<th>KaTeX code</th>
 <th>Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>=</td>
-<td><span class="maths">=</span></td>
+<td><span class="js-maths">=</span></td>
 <td><code>=</code></td>
 <td>equals</td>
 </tr>
 <tr>
 <td>≐</td>
-<td><span class="maths">\doteq</span></td>
+<td><span class="js-maths">\doteq</span></td>
 <td><code>\doteq</code></td>
 <td>approximately equals</td>
 </tr>
 <tr>
 <td>≈</td>
-<td><span class="maths">\approx</span></td>
+<td><span class="js-maths">\approx</span></td>
 <td><code>\approx</code></td>
 <td>approximately</td>
 </tr>
 <tr>
 <td>≃</td>
-<td><span class="maths">\simeq</span></td>
+<td><span class="js-maths">\simeq</span></td>
 <td><code>\simeq</code></td>
 <td>asymptotically equals</td>
 </tr>
 <tr>
 <td>~</td>
-<td><span class="maths">\sim</span></td>
+<td><span class="js-maths">\sim</span></td>
 <td><code>\sim</code></td>
 <td>asymptotically</td>
 </tr>
 <tr>
 <td>≠</td>
-<td><span class="maths">\ne</span></td>
+<td><span class="js-maths">\ne</span></td>
 <td><code>\ne</code></td>
 <td>does not equal</td>
 </tr>
 <tr>
 <td>&lt;</td>
-<td><span class="maths">&lt;</span></td>
+<td><span class="js-maths">&lt;</span></td>
 <td><code>&amp;lt;</code></td>
 <td>less than</td>
 </tr>
 <tr>
 <td>&gt;</td>
-<td><span class="maths">&gt;</span></td>
+<td><span class="js-maths">&gt;</span></td>
 <td><code>&amp;gt;</code></td>
 <td>greater than</td>
 </tr>
 <tr>
 <td>≤</td>
-<td><span class="maths">\le</span></td>
+<td><span class="js-maths">\le</span></td>
 <td><code>\le</code></td>
 <td>less than or equal to</td>
 </tr>
 <tr>
 <td>≥</td>
-<td><span class="maths">\ge</span></td>
+<td><span class="js-maths">\ge</span></td>
 <td><code>\ge</code></td>
 <td>greater than or equal to</td>
 </tr>
 <tr>
 <td>≪</td>
-<td><span class="maths">\ll</span></td>
+<td><span class="js-maths">\ll</span></td>
 <td><code>\ll</code></td>
 <td>much less than</td>
 </tr>
 <tr>
 <td>≫</td>
-<td><span class="maths">\gg</span></td>
+<td><span class="js-maths">\gg</span></td>
 <td><code>\gg</code></td>
 <td>much greater than</td>
 </tr>
-</table></div>
-<h2 id="calculus"><a class="self-link" href="#calculus"></a>
-Calculus
-</h2>
-<div class="overflowing"><table>
+</tbody>
+</table>
+</div>
+<h2 id="calculus"><a class="self-link" href="#calculus"></a>Calculus</h2>
+<div class="overflowing">
+<table>
+<thead>
 <tr>
 <th>Unicode</th>
 <th>KaTeX</th>
-<th>code</th>
+<th>KaTeX code</th>
 <th>Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>∂</td>
-<td><span class="maths">\pd</span></td>
+<td><span class="js-maths">\pd</span></td>
 <td><code>\pd</code></td>
 <td>partial differential</td>
 </tr>
 <tr>
 <td>∇</td>
-<td><span class="maths">\del</span></td>
+<td><span class="js-maths">\del</span></td>
 <td><code>\del</code></td>
 <td>del</td>
 </tr>
 <tr>
 <td>∫</td>
-<td><span class="maths">\int</span></td>
+<td><span class="js-maths">\int</span></td>
 <td><code>\int</code></td>
 <td>integral</td>
 </tr>
-</table></div>
+</tbody>
+</table>
+</div>
 <p>
-Here, <code>\pd</code> is defined as <code>\mathop{}\!\partial</code>
-and <code>\del</code> is defined as <code>\mathop{}\!\boldsymbol{\nabla}</code>.
+For the definitions of <code>\pd</code> and <code>\del</code>,
+see <code>macros</code> in <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/rendering.js"><code>rendering.js</code></a>.
 </p>
-<h2 id="greek"><a class="self-link" href="#greek"></a>
-Greek alphabet
-</h2>
-<div class="overflowing"><table>
+<h2 id="greek"><a class="self-link" href="#greek"></a>Greek alphabet</h2>
+<div class="overflowing">
+<table>
+<thead>
 <tr>
 <th>Unicode</th>
 <th>KaTeX</th>
-<th>code</th>
+<th>KaTeX code</th>
 <th>Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>Α α</td>
-<td><span class="maths">\Alpha \alpha</span></td>
+<td><span class="js-maths">\Alpha \alpha</span></td>
 <td><code>\Alpha \alpha</code></td>
 <td>alpha</td>
 </tr>
 <tr>
 <td>Β β</td>
-<td><span class="maths">\Beta \beta</span></td>
+<td><span class="js-maths">\Beta \beta</span></td>
 <td><code>\Beta \beta</code></td>
 <td>beta</td>
 </tr>
 <tr>
 <td>Γ γ</td>
-<td><span class="maths">\Gamma \gamma</span></td>
+<td><span class="js-maths">\Gamma \gamma</span></td>
 <td><code>\Gamma \gamma</code></td>
 <td>gamma</td>
 </tr>
 <tr>
 <td>Δ δ</td>
-<td><span class="maths">\Delta \delta</span></td>
+<td><span class="js-maths">\Delta \delta</span></td>
 <td><code>\Delta \delta</code></td>
 <td>delta</td>
 </tr>
 <tr>
 <td>Ε ϵ ε</td>
-<td><span class="maths">\Epsilon \epsilon \varepsilon</span></td>
+<td><span class="js-maths">\Epsilon \epsilon \varepsilon</span></td>
 <td><code>\Epsilon \epsilon \varepsilon</code></td>
 <td>epsilon</td>
 </tr>
 <tr>
 <td>Ζ ζ</td>
-<td><span class="maths">\Zeta \zeta</span></td>
+<td><span class="js-maths">\Zeta \zeta</span></td>
 <td><code>\Zeta \zeta</code></td>
 <td>zeta</td>
 </tr>
 <tr>
 <td>Η η</td>
-<td><span class="maths">\Eta \eta</span></td>
+<td><span class="js-maths">\Eta \eta</span></td>
 <td><code>\Eta \eta</code></td>
 <td>eta</td>
 </tr>
 <tr>
 <td>Θ θ</td>
-<td><span class="maths">\Theta \theta</span></td>
+<td><span class="js-maths">\Theta \theta</span></td>
 <td><code>\Theta \theta</code></td>
 <td>theta</td>
 </tr>
 <tr>
 <td>Ι ι</td>
-<td><span class="maths">\Iota \iota</span></td>
+<td><span class="js-maths">\Iota \iota</span></td>
 <td><code>\Iota \iota</code></td>
 <td>iota</td>
 </tr>
 <tr>
 <td>Κ κ</td>
-<td><span class="maths">\Kappa \kappa</span></td>
+<td><span class="js-maths">\Kappa \kappa</span></td>
 <td><code>\Kappa \kappa</code></td>
 <td>kappa</td>
 </tr>
 <tr>
 <td>Λ λ</td>
-<td><span class="maths">\Lambda \lambda</span></td>
+<td><span class="js-maths">\Lambda \lambda</span></td>
 <td><code>\Lambda \lambda</code></td>
 <td>lambda</td>
 </tr>
 <tr>
 <td>Μ μ</td>
-<td><span class="maths">\Mu \mu</span></td>
+<td><span class="js-maths">\Mu \mu</span></td>
 <td><code>\Mu \mu</code></td>
 <td>mu</td>
 </tr>
 <tr>
 <td>Ν ν</td>
-<td><span class="maths">\Nu \nu</span></td>
+<td><span class="js-maths">\Nu \nu</span></td>
 <td><code>\Nu \nu</code></td>
 <td>nu</td>
 </tr>
 <tr>
 <td>Ξ ξ</td>
-<td><span class="maths">\Xi \xi</span></td>
+<td><span class="js-maths">\Xi \xi</span></td>
 <td><code>\Xi \xi</code></td>
 <td>xi</td>
 </tr>
 <tr>
 <td>Ο ο</td>
-<td><span class="maths">\Omicron \omicron</span></td>
+<td><span class="js-maths">\Omicron \omicron</span></td>
 <td><code>\Omicron \omicron</code></td>
 <td>omicron</td>
 </tr>
 <tr>
 <td>Π π</td>
-<td><span class="maths">\Pi \pi</span></td>
+<td><span class="js-maths">\Pi \pi</span></td>
 <td><code>\Pi \pi</code></td>
 <td>pi</td>
 </tr>
 <tr>
 <td>Ρ ρ</td>
-<td><span class="maths">\Rho \rho</span></td>
+<td><span class="js-maths">\Rho \rho</span></td>
 <td><code>\Rho \rho</code></td>
 <td>rho</td>
 </tr>
 <tr>
 <td>Σ σ ς</td>
-<td><span class="maths">\Sigma \sigma \varsigma</span></td>
+<td><span class="js-maths">\Sigma \sigma \varsigma</span></td>
 <td><code>\Sigma \sigma \varsigma</code></td>
 <td>sigma</td>
 </tr>
 <tr>
 <td>Τ τ</td>
-<td><span class="maths">\Tau \tau</span></td>
+<td><span class="js-maths">\Tau \tau</span></td>
 <td><code>\Tau \tau</code></td>
 <td>tau</td>
 </tr>
 <tr>
 <td>Υ υ</td>
-<td><span class="maths">\Upsilon \upsilon</span></td>
+<td><span class="js-maths">\Upsilon \upsilon</span></td>
 <td><code>\Upsilon \upsilon</code></td>
 <td>upsilon</td>
 </tr>
 <tr>
 <td>Φ ϕ φ</td>
-<td><span class="maths">\Phi \phi \varphi</span></td>
+<td><span class="js-maths">\Phi \phi \varphi</span></td>
 <td><code>\Phi \phi \varphi</code></td>
 <td>phi</td>
 </tr>
 <tr>
 <td>Χ χ</td>
-<td><span class="maths">\Xi \xi</span></td>
+<td><span class="js-maths">\Xi \xi</span></td>
 <td><code>\Xi \xi</code></td>
 <td>xi</td>
 </tr>
 <tr>
 <td>Ψ ψ</td>
-<td><span class="maths">\Psi \psi</span></td>
+<td><span class="js-maths">\Psi \psi</span></td>
 <td><code>\Psi \psi</code></td>
 <td>psi</td>
 </tr>
 <tr>
 <td>Ω ω</td>
-<td><span class="maths">\Omega \omega</span></td>
+<td><span class="js-maths">\Omega \omega</span></td>
 <td><code>\Omega \omega</code></td>
 <td>omega</td>
 </tr>
-</table></div>
+</tbody>
+</table>
+</div>
 <footer>
-<hr>
-©&nbsp;2019&nbsp;Conway.
+©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
 </html>
