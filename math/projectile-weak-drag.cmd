@@ -1,72 +1,82 @@
-<*>
-  Projectile motion: optimal launch angle for weak quadratic drag
-  | 20190621 | 20191201 | dm
-  | A derivation of the optimal launch angle (which maximises range) \
+(+ res/general-syntax.cmd +)
+
+%%
+  %title Projectile motion: optimal launch angle for weak quadratic drag
+  %title-suffix \title-suffix
+  %author Conway
+  %date-created 2019-06-21
+  %date-modified 2020-04-26
+  %resources
+    (+ res/main-resources.cmd +)
+    (+ res/rendering-javascript.cmd +)
+    (+ res/maths-resources.cmd +)
+  %description
+    A derivation of the optimal launch angle (which maximises range) \
     for projectile motion in weak quadratic drag using perturbation theory.
-</*>
+%%
 
-<=h>
-  <@ih></@ih>
-  <@it></@it>
-  <@i> [solution.h] | #solution | </@i>
-  <@ir></@ir>
-  <@i> Numerics | #numerics | [numerics.h] </@i>
-  <@ic></@ic>
-</=h>
+[[====
+* \link:home
+* \link:top
+* \link:result
+* [Numerics](#numerics  Numerical verification)
+* \link:cite
+====]]
 
-<h1>Projectile motion: optimal launch angle for weak quadratic drag</h1>
 
-<*p>
-  <@>
-    Projectile motion: optimal launch angle from a platform
-    | /math/projectile-platform
-    |
-  </@>
-</*p>
+# %title #
 
-<p>
-  In the absence of air resistance, a launch angle of 45° maximises range.
-  When there is drag linear in speed, the equations of motion can be integrated
-  analytically, and closed-form expressions in terms of the
-  <@>
-    Lambert <$>W</$> function
-    | http://mathworld.wolfram.com/LambertW-Function.html
-    | Lambert W-Function
-  </@>
-  can be obtained for the optimal launch angle; see
-  <@>
-    Packel \&~Yuen (2004)
-    | https://www.researchgate.net/publication/\
-      228851314_Projectile_Motion_with_Resistance_and_the_Lambert_W_Function
-    | Projectile Motion with Resistance and the Lambert W Function
-  </@>.
-  However, a more realistic model of air resistance
-  has drag proportional to the <strong>square</strong> of speed,
-  for which the equations of motion are nonlinear and
-  analytic solutions cannot be obtained.
-</p>
 
-<p>
-  In high school there was this rather horrible investigation where
-  we had to (experimentally) compare the optimal launch angle of
-  a golf ball and a ping-pong ball.
-  At the time I believed that nothing much could be done in terms of modelling
-  other than solving the equations of motion numerically,
-  but back then I knew nothing of scaling and perturbation theory.
-  Now armed with some basic knowledge of these very useful tools,
-  I have been able to derive an expansion for the optimal launch angle
-  when air resistance is relatively weak.
-</p>
 
-<$d>
-  \gdef\po#1{\color{grey} {} + O \!\left( #1 \right)}
-</$d>
+\noscript[]
 
-<-->
-  <-t></-t>
-  <-m></-m>
+[||||
+See also: [Projectile motion: optimal launch angle from a platform](
+  /math/projectile-platform
+)
+||||]
+
+
+----
+In the absence of air resistance, a launch angle of 45° maximises range.
+When there is drag linear in speed, the equations of motion can be integrated
+analytically, and closed-form expressions
+in terms of the [Lambert $W$-function][lambert-w]
+can be obtained for the optimal launch angle;
+see [Packel \&~Yuen (2004)][packel-yuen].
+However, a more realistic model of air resistance
+has drag proportional to the *square* of speed,
+for which the equations of motion are nonlinear and
+analytic solutions cannot be obtained.
+----
+@@[lambert-w]
+  http://mathworld.wolfram.com/LambertW-Function.html
+@@
+@@[packel-yuen]
+  https://www.researchgate.net/publication/\
+    228851314_Projectile_Motion_with_Resistance_and_the_Lambert_W_Function
+  Projectile Motion with Resistance and the Lambert W Function
+@@
+
+----
+In high school there was this rather horrible investigation where
+we had to (experimentally) compare the optimal launch angle of
+a golf ball and a ping-pong ball.
+At the time I believed that nothing much could be done in terms of modelling
+other than solving the equations of motion numerically,
+but back then I knew nothing of scaling and perturbation theory.
+Now armed with some basic knowledge of these very useful tools,
+I have been able to derive an asymptotic expansion
+for the optimal launch angle when air resistance is relatively weak.
+----
+
+[svg-styles/
+  text {
+    \svg-style:text-declarations
+  }
+  \svg-style:maths-font-rulesets
   line, polyline {
-    <-s></-s>
+    \svg-style:stroke-declarations
   }
   polyline {
     fill: none;
@@ -75,29 +85,19 @@
     fill: none;
     stroke: none;
   }
-</-->
+/]
 
 
-<% [solution.h] | Solution %>
-<@2> [solution.h] | solution </@2>
+##solution
+  Solution
+##
 
-
-<%
-  [manuscript.h] |
-  Manuscript for Projectile motion: \
-  optimal launch angle for weak quadratic drag
-%>
-
-<% [manuscript.url] | /manuscripts/resistance.pdf %>
-
-<p>
-  <b>Manuscript:</b>
-  <@>
-    <`>resistance.pdf</`>~(983~KB)
-    | [manuscript.url]
-    | [manuscript.h]
-  </@>
-</p>
+----
+__Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
+----
+@@[manuscript]
+  /manuscripts/resistance.pdf
+@@
 
 <!--                      Trajectory diagram
   ***********************************************************************
@@ -115,11 +115,12 @@
     h           total height                           10
   ***********************************************************************
   -->
-<div class="centred-svg">
+
+||||{centred-block}
 <svg class="fit-width" width="360px" viewBox="-2 -9 14 10">
   
-  <% [font-size-diagram] | font-size="0.8" %>
-  <% [mathit] | class="maths-italic" %>
+  {: {fs-diagram} : font-size="0.8" :}
+  {: {it} : class="maths-italic" :}
   
   <!-- Marker definitions -->
   <defs>
@@ -134,12 +135,12 @@
   
   <!-- x-axis -->
   <line x1="0" y1="0" x2="11" y2="0"/>
-  <text [mathit] x="11" y="0" [font-size-diagram]
+  <text {it} x="11" y="0" {fs-diagram}
     dx="0.6em" dy="0.3em">x</text>
   
   <!-- y-axis -->
   <line x1="0" y1="0" x2="0" y2="-8"/>
-  <text [mathit] x="0" y="-8" [font-size-diagram] dy="-0.5em">y</text>
+  <text {it} x="0" y="-8" {fs-diagram} dy="-0.5em">y</text>
   
   <!-- trajectory
     See svg_points_trajectory_script.m
@@ -235,215 +236,226 @@
   "/>
   
   <!-- launch angle phi -->
-  <text [mathit] x="1.2" y="-0.1" [font-size-diagram]
+  <text {it} x="1.2" y="-0.1" {fs-diagram}
     dx="-0.5em" dy="-0.35em">ϕ</text>
   
   <!-- range R -->
-  <text [mathit] x="10" y="0" [font-size-diagram]
+  <text {it} x="10" y="0" {fs-diagram}
     dy="1em">R</text>
   
   <!-- velocity vector u -->
   <line x1="0" y1="0" x2="1" y2="-2" marker-end="url(#arrowhead)"/>
-  <text [mathit] x="1" y="-2" [font-size-diagram]
+  <text {it} x="1" y="-2" {fs-diagram}
     dx="-0.6em">u</text>
   
 </svg>
-</div>
+||||
 
-<@3> Equations of motion | motion </@3>
+###motion
+  Equations of motion
+###
 
-<p>
-  Suppose a projectile of mass <$>m</$> is launched at
-  speed <$>u</$> and angle <$>\phi</$> from the ground,
-  which has gravitational field strength <$>g</$>,
-  and let there be drag proportional to the square of the projectile's speed,
-  with constant of proportionality <$>b</$>.
-  Let dots denote time derivatives.
-  The drag force on the projectile has magnitude
-  <$>b \| \dot{\vec{x}} \|^2</$>, and it acts
-  in the direction opposite to the projectile's velocity,
-  i.e.~in the direction <$>-\dot{\vec{x}} / \| \dot{\vec{x}} \|</$>.
-  Therefore the drag force is <$>-b \dot{\vec{x}} \| \dot{\vec{x}} \|</$>,
-  and so in components the equations of motion are
-</p>
+----
+Suppose a projectile of mass $m$ is launched at
+speed $u$ and angle $\phi$ from the ground,
+which has gravitational field strength $g$,
+and let there be drag proportional to the square of the projectile's speed,
+with constant of proportionality $b$.
+Let dots denote time derivatives.
+The drag force on the projectile has magnitude
+$b \norm{\dot{\vec{x}}}^2$, and it acts
+in the direction opposite to the projectile's velocity,
+i.e.~in the direction $-\dot{\vec{x}} / \norm{\dot{\vec{x}}}$.
+Therefore the drag force is $-b \dot{\vec{x}} \norm{\dot{\vec{x}}}$,
+and so in components the equations of motion are
+----
 
-<$$>
+$$
   \begin{alignedat}{4}
     m \ddot{x} &=      && - b \dot{x} \sqrt{\dot{x}^2 + \dot{y}^2},
       \quad & \dot{x} (0) &= u \cos\phi, \quad & x (0) &= 0, \\
     m \ddot{y} &= -m g && - b \dot{y} \sqrt{\dot{x}^2 + \dot{y}^2},
       \quad & \dot{y} (0) &= u \sin\phi, \quad & y (0) &= 0.
   \end{alignedat}
-</$$>
+$$
 
-<@3> Scaling | scaling </@3>
+###scaling
+  Scaling
+###
 
-<p>
-  Since we shall be making a perturbation from the dragless <$>b = 0</$> case,
-  it is appropriate to choose the length scale and time scale thereof.
-  In the dragless case the mass <$>m</$> is irrelevant,
-  and the only parameters are the initial speed <$>u</$>
-  and gravitational acceleration <$>g</$>, yielding the length scale
-</p>
-<$$>
+----
+Since we shall be making a perturbation from the dragless $b = 0$ case,
+it is appropriate to choose the length scale and time scale thereof.
+In the dragless case the mass $m$ is irrelevant,
+and the only parameters are the initial speed $u$
+and gravitational acceleration $g$, yielding the length scale
+----
+$$
   L = u^2 / g
-</$$>
-<p>
-  and the time scale
-</p>
-<$$>
+$$
+----
+and the time scale
+----
+$$
   T = u / g.
-</$$>
+$$
 
-<p>
-  Therefore we put <$>\hat{x} = x / L</$>,
-  <$>\hat{y} = y / L</$> and <$>\hat{t} = t / T</$> to obtain
-  scaled (dimensionless) variables <$>\hat{x}</$>,
-  <$>\hat{y}</$> and <$>\hat{t}</$>.
-  Dropping the hats, the equations of motion become
-</p>
-<$$>
+----
+Therefore we put $\hat{x} = x / L$,
+$\hat{y} = y / L$ and $\hat{t} = t / T$ to obtain
+scaled (dimensionless) variables $\hat{x}$,
+$\hat{y}$ and $\hat{t}$.
+Dropping the hats, the equations of motion become
+----
+$$
   \begin{alignedat}{4}
     \ddot{x} &=    && - B \dot{x} \sqrt{\dot{x}^2 + \dot{y}^2},
       \quad & \dot{x} (0) &= \cos\phi, \quad & x (0) &= 0, \\
     \ddot{y} &= -1 && - B \dot{y} \sqrt{\dot{x}^2 + \dot{y}^2},
       \quad & \dot{y} (0) &= \sin\phi, \quad & y (0) &= 0,
   \end{alignedat}
-</$$>
-<p>where</p>
-<$$>
+$$
+----
+where
+----
+$$
   B = \frac{b u^2}{m g}
-</$$>
-<p>
-  is the initial drag-to-weight ratio,
-  the only dimensionless group in the problem.
-  By definition, the projectile's terminal speed <$>c</$> is given by
-</p>
-<$$>
+$$
+----
+is the initial drag-to-weight ratio,
+the only dimensionless group in the problem.
+By definition, the projectile's terminal speed $c$ is given by
+----
+$$
   1 = \frac{b c^2}{m g}.
-</$$>
-<p>
-  Dividing these, we see that
-</p>
-<$$>
-  B = \left( \frac{u}{c} \right)^2.
-</$$>
+$$
+----
+Dividing these, we see that
+----
+$$
+  B = \roundbr{\frac{u}{c}}^2.
+$$
 
-<p>
-  Now the optimal angle is dimensionless, so it can depend only on
-  the sole dimensionless group <$>B</$>.
-  Thus, <strong>the optimal angle depends only on <$>\sqrt{B} = u / c</$>,
-  the ratio between the initial and terminal speeds</strong>.
-  (I wish I knew this back in Year~12.)
-</p>
+----
+Now the optimal angle is dimensionless, so it can depend only on
+the sole dimensionless group $B$.
+Thus, **the optimal angle depends only on $\sqrt{B} = u / c$,
+the ratio between the initial and terminal speeds**.
+(I wish I knew this back in Year~12.)
+----
 
-<@3> Perturbed trajectory | perturbation </@3>
+###perturbation
+  Perturbed trajectory
+###
 
-<p>
-  By "weak drag" I mean that <$>B \ll 1</$>, i.e.~<$>u^2 \ll c^2</$>.
-  We make an asymptotic expansion in powers of <$>B</$> about <$>B = 0</$>:
-</p>
-<$$>
+----
+By "weak drag" I mean that $B \ll 1$, i.e.~$u^2 \ll c^2$.
+We make an asymptotic expansion in powers of $B$ about $B = 0$:
+----
+$$
+  \gdef\grey#1{\textcolor{grey}{#1}}
+  \gdef\plusorder#1{\mathbin{\grey{+}} \grey{\order\roundbr{B^3}}}
   \begin{aligned}
-    \dot{x} &= \dot{x}_0 + B \dot{x}_1 + B^2 \dot{x}_2 \po{B^3} \\
-    \dot{y} &= \dot{y}_0 + B \dot{y}_1 + B^2 \dot{y}_2 \po{B^3}
+    \dot{x} &= \dot{x}_0 + B \dot{x}_1 + B^2 \dot{x}_2 \plusorder{B^3}, \\
+    \dot{y} &= \dot{y}_0 + B \dot{y}_1 + B^2 \dot{y}_2 \plusorder{B^3}.
   \end{aligned}
-</$$>
+$$
 
-<p>
-  Substituting these into the equations of motion and doing some algebra,
-  we obtain
-</p>
-<$$>
+----
+Substituting these into the equations of motion and doing some algebra,
+we obtain
+----
+$$
   \begin{alignedat}{2}
     \ddot{x}_0 + B \ddot{x}_1 + B^2 \ddot{x}_2 &=
-      && - B \big[ \dot{x}_0 v_0 \big]
-      - B^2 \left[ \dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0} \right]
-      \po{B^3}, \\
+      &&
+      - B \roundbr{\dot{x}_0 v_0}
+      - B^2 \roundbr{\dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0}}
+      \plusorder{B^3},
+      \\
     \ddot{y}_0 + B \ddot{y}_1 + B^2 \ddot{y}_2 &=
       - 1
-      && - B \big[ \dot{y}_0 v_0 \big]
-      - B^2 \left[ \dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0} \right]
-      \po{B^3},
+      &&
+      - B \roundbr{\dot{y}_0 v_0}
+      - B^2 \roundbr{\dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0}}
+      \plusorder{B^3},
   \end{alignedat}
-</$$>
-<p>where</p>
-<$$>
+$$
+----
+where
+----
+$$
   \begin{aligned}
     v_0 &= \sqrt{{\dot{x}_0}^2 + {\dot{y}_0}^2}, \\
     w_1 &= \dot{x}_0 \dot{x}_1 + \dot{y}_0 \dot{y}_1.
   \end{aligned}
-</$$>
-<p>
-  Equating coefficients of <$>B</$>, we obtain
-</p>
-<$$>
+$$
+----
+  Equating coefficients of $B$, we obtain
+----
+$$
   \begin{alignedat}{4}
     \ddot{x}_0 &= {} &  0 &,
       \quad & \dot{x}_0 (0) &= \cos\phi, \quad & x_0 (0) &= 0, \\
     \ddot{y}_0 &= {} & -1 &,
       \quad & \dot{y}_0 (0) &= \sin\phi, \quad & y_0 (0) &= 0,
   \end{alignedat}
-</$$>
-<$$>
+$$
+$$
   \begin{alignedat}{3}
     \ddot{x}_1 &= -\dot{x}_0 v_0,
       \quad & \dot{x}_1 (0) &= 0, \quad & x_1 (0) &= 0, \\
     \ddot{y}_1 &= -\dot{y}_0 v_0,
       \quad & \dot{y}_1 (0) &= 0, \quad & y_1 (0) &= 0,
   \end{alignedat}
-</$$>
-<$$>
+$$
+$$
   \begin{alignedat}{3}
-    \ddot{x}_2 &= -\left[ \dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0} \right],
+    \ddot{x}_2 &= -\roundbr{\dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0}},
       \quad & \dot{x}_2 (0) &= 0, \quad & x_2 (0) &= 0, \\
-    \ddot{y}_2 &= -\left[ \dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0} \right],
+    \ddot{y}_2 &= -\roundbr{\dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0}},
       \quad & \dot{y}_2 (0) &= 0, \quad & y_2 (0) &= 0,
   \end{alignedat}
-</$$>
-<$$>
+$$
+$$
   \text{etc.}
-</$$>
+$$
 
-<p>
-  Thus <$>\dot{x}_0, x_0, \dot{y}_0, y_0, \dot{x}_1,
-  \text{etc.}</$> can be determined by straight integration,
-  although the expressions become very complicated (see
-  <@>
-    manuscript
-    | [manuscript.url]
-    | [manuscript.h]
-  </@>
-  for details).
-  For brevity, we define the following:
-</p>
-<$$>
+----
+Thus $\dot{x}_0, x_0, \dot{y}_0, y_0, \dot{x}_1,
+\text{etc.}$ can be determined by straight integration,
+although the expressions become very complicated
+(see [manuscript] for details).
+For brevity, we define the following:
+----
+$$
   \begin{aligned}
     \alpha &= \cos\phi \\
      \beta &= \sin\phi \\
       \tau &= t - \beta \\
          r &= \frac{\tau + v_0}{-\beta + 1}
   \end{aligned}
-</$$>
-<p>
-  Note that <$>v_0 = \sqrt{\alpha^2 + \tau^2}</$>.
-  After a lot of algebra and integration, we obtain:
-</p>
-<$$>
+$$
+
+----
+Note that $v_0 = \sqrt{\alpha^2 + \tau^2}$.
+After a lot of algebra and integration, we obtain:
+----
+$$
   \begin{aligned}
     \ddot{x}_0 &= 0 \\[0.2em]
      \dot{x}_0 &= \alpha \\[0.2em]
            x_0 &= \alpha t
   \end{aligned}
-</$$>
-<$$>
+$$
+$$
   \begin{aligned}
     \ddot{y}_0 &= -1 \\[0.2em]
      \dot{y}_0 &= -\tau \\[0.2em]
            y_0 &= -\tfrac{1}{2} \tau^2 + \tfrac{1}{2} \beta^2
   \end{aligned}
-</$$>
-<$$>
+$$
+$$
   \begin{aligned}
     \ddot{x}_1 &= -\alpha v_0 \\[0.2em]
      \dot{x}_1 &=
@@ -458,8 +470,8 @@
       - \Big[ \tfrac{1}{6} \alpha \Big] {v_0}^3
       - \Big[ \tfrac{1}{2} \alpha^3 \Big] \tau \log r
   \end{aligned}
-</$$>
-<$$>
+$$
+$$
   \begin{aligned}
     \ddot{y}_1 &= \tau v_0 \\[0.2em]
      \dot{y}_1 &= \tfrac{1}{3} {v_0}^3 - \tfrac{1}{3} \\[0.4em]
@@ -470,8 +482,8 @@
       + \Big[ \tfrac{1}{12} \Big] \tau {v_0}^3
       + \Big[ \tfrac{1}{8} \alpha^4 \Big] \log r
   \end{aligned}
-</$$>
-<$$>
+$$
+$$
   \begin{aligned}
     \ddot{x}_2 &=
         \Big[ \tfrac{4}{3} \alpha^3 \Big] \tau
@@ -512,8 +524,8 @@
       + \Big[ \tfrac{1}{12} \alpha^3 \Big] {v_0}^3 \log r
       + \Big[ \tfrac{3}{8} \alpha^5 \Big] \tau \log^2 r
   \end{aligned}
-</$$>
-<$$>
+$$
+$$
   \begin{aligned}
     \ddot{y}_2 &=
       - \Big[ \tfrac{1}{3} \alpha^4 \Big]
@@ -552,15 +564,15 @@
       - \Big[ \tfrac{1}{4} \alpha^4 \Big] \tau v_0 \log r \\ & \quad
       - \Big[ \tfrac{1}{8} \alpha^6 \Big] \log^2 r
   \end{aligned}
-</$$>
-<p>
-  You might be wondering why I stopped at order <$>B^2</$>.
-  Initially I thought that integration could be performed to arbitrary order
-  (although the amount of algebra required grows <em>very</em> quickly).
-  However I was wrong; it turns out that the following integrals
-  appear at cubic order, which have no closed-form expression:
-</p>
-<$$>
+$$
+----
+You might be wondering why I stopped at order $B^2$.
+Initially I thought that integration could be performed to arbitrary order
+(although the amount of algebra required grows *very* quickly).
+However I was wrong; it turns out that the following integrals
+appear at cubic order, which have no closed-form expression:
+----
+$$
   \begin{aligned}
     &
     \int
@@ -579,25 +591,28 @@
       }
     \td\tau
   \end{aligned}
-</$$>
-<p>
-  If you are able to evaluate either of the two integrals above,
-  please contact me at <`>leeconway@protonmail.com</`>.
-  On the other hand, quartic terms, even if they could be found,
-  would be of little practical use, since the expansion is asymptotic
-  and as such probably does not converge.
-</p>
+$$
+----
+If you are able to evaluate either of the two integrals above,
+please contact me at `leeconway@protonmail.com`.
+On the other hand, quartic terms, even if they could be found,
+would be of little practical use, since the expansion is asymptotic
+and as such probably does not converge.
+----
 
-<@3> Flight time | time </@3>
 
-<p>
-  Having determined the trajectory, we then determine the flight time,
-  given by <$>y (t) = 0</$>.
-  To quadratic order, i.e.~with
-  <$>y = y_0 + B y_1 + B^2 y_2 \po{B^3}</$> and
-  <$>t = t_0 + B t_1 + B^2 t_2 \po{B^3}</$>, this becomes
-</p>
-<$$>
+###time
+  Flight time
+###
+
+----
+Having determined the trajectory, we then determine the flight time,
+given by $y (t) = 0$.
+To quadratic order, i.e.~with
+$y = y_0 + B y_1 + B^2 y_2 \plusorder{B^3}$ and
+$t = t_0 + B t_1 + B^2 t_2 \plusorder{B^3}$, this becomes
+----
+$$
   \begin{aligned}
     y_0 (t_0)
     & + B \big[ t_1 \dot{y}_0 (t_0) + y_1 (t_0) \big] \\
@@ -607,20 +622,22 @@
       + \tfrac{1}{2} {t_1}^2 \ddot{y}_0 (t_0)
       + t_1 \dot{y}_1 (t_0)
       + y_2 (t_0)
-      \Big] \po{B^3} = 0.
+      \Big] \plusorder{B^3} = 0.
   \end{aligned}
-</$$>
-<p>
-  The unperturbed (dragless) flight time is given by the positive solution to
-  <$>y_0 (t_0) = 0</$>, which is
-</p>
-<$$>
+$$
+----
+
+The unperturbed (dragless) flight time is given by the positive solution to
+$y_0 (t_0) = 0$, which is
+----
+$$
   t_0 = 2 \beta.
-</$$>
-<p>
-  From the linear and quadratic terms we obtain
-</p>
-<$$>
+$$
+
+----
+From the linear and quadratic terms we obtain
+----
+$$
   \begin{aligned}
     t_1 &= y_1 (t_0) \big/ {-\dot{y}_0 (t_0)}, \\[0.2em]
     t_2 &=
@@ -630,11 +647,11 @@
       + y_2 (t_0)
       \Big] \Big/ {-\dot{y}_0 (t_0)},
   \end{aligned}
-</$$>
-<p>
-  which, after some more algebra, reduce to
-</p>
-<$$>
+$$
+----
+which, after some more algebra, reduce to
+----
+$$
   \begin{aligned}
     t_1 &=
       \Big[ {-\tfrac{1}{2}} + \tfrac{\alpha^2}{4} \Big]
@@ -655,24 +672,28 @@
       + \tfrac{15}{128} \alpha^8
       \Big] \frac{\log^2\rho}{\beta^3},
   \end{aligned}
-</$$>
-<p>where</p>
-<$$>
+$$
+----
+where
+----
+$$
   \rho = \frac{1 + \beta}{1 - \beta}.
-</$$>
+$$
 
-<p>
-  By now, <$>t_0, t_1, t_2</$> are just functions of <$>\phi</$>
-  (remember <$>\alpha</$> and <$>\beta</$> are abbreviations
-  for <$>\cos\phi</$> and <$>\sin\phi</$>).
-</p>
+----
+By now, $t_0, t_1, t_2$ are just functions of $\phi$
+(remember $\alpha$ and $\beta$ are abbreviations
+for $\cos\phi$ and $\sin\phi$).
+----
 
-<@3> Range | range </@3>
+###range
+  Range
+###
 
-<p>
-  To quadratic order, the range is
-</p>
-<$$>
+----
+To quadratic order, the range is
+----
+$$
   \begin{aligned}
     R
     &= x (t) \\
@@ -684,14 +705,14 @@
         t_2 \dot{x}_0 (t_0)
       + t_1 \dot{x}_1 (t_0)
       + x_2 (t_0)
-      \Big] \po{B^3} \\
-    &= R_0 + B R_1 + B^2 R_2 \po{B^3},
+      \Big] \plusorder{B^3} \\
+    &= R_0 + B R_1 + B^2 R_2 \plusorder{B^3},
   \end{aligned}
-</$$>
-<p>
-  where, after some more algebra,
-</p>
-<$$>
+$$
+----
+where, after some more algebra,
+----
+$$
   \begin{aligned}
     R_0 &= 2 \alpha \beta, \\[0.2em]
     R_1 &=
@@ -717,16 +738,18 @@
       + \tfrac{71}{128} \alpha^9
       \Big] \frac{\log^2\rho}{\beta^3}.
   \end{aligned}
-</$$>
+$$
 
-<@3> Optimal launch angle | angle </@3>
+###angle
+  Optimal launch angle
+###
 
-<p>
-  Let primes denote <$>\phi</$> derivatives.
-  Then the optimal launch angle is given by <$>R' (\phi) = 0</$>,
-  or, to quadratic order,
-</p>
-<$$>
+----
+Let primes denote $\phi$ derivatives.
+Then the optimal launch angle is given by $R' (\phi) = 0$,
+or, to quadratic order,
+----
+$$
   \begin{aligned}
     R'_0 (\phi_0)
     & + B \big[ \phi_1 R''_0 (\phi_0) + R'_1 (\phi_0) \big] \\
@@ -736,21 +759,21 @@
       + \tfrac{1}{2} {\phi_1}^2 R'''_0 (\phi_0)
       + \phi_1 R''_1 (\phi_0)
       + R'_2 (\phi_0)
-      \Big] \po{B^3} = 0.
+      \Big] \plusorder{B^3} = 0.
   \end{aligned}
-</$$>
-<p>
-  From the constant term, <$>R'_0 (\phi_0) = 2 \cos (2 \phi_0) = 0</$>,
-  yielding the familiar
-</p>
-<$$>
+$$
+----
+From the constant term, $R'_0 (\phi_0) = 2 \cos (2 \phi_0) = 0$,
+yielding the familiar
+----
+$$
   \phi_0 = \frac{\pi}{4}
-</$$>
-<p>
-  in the absence of air resistance.
-  From the linear and quadratic terms we obtain
-</p>
-<$$>
+$$
+----
+in the absence of air resistance.
+From the linear and quadratic terms we obtain
+----
+$$
   \begin{aligned}
     \phi_1 &= R'_1 (\phi_0) \big/ {-R''_0 (\phi_0)}, \\[0.2em]
     \phi_2 &=
@@ -760,45 +783,49 @@
       + R'_2 (\phi_0)
       \Big] \Big/ {-R''_0 (\phi_0)},
   \end{aligned}
-</$$>
-<p>
-  which, after a lot of differentiation and yet more algebra, become
-</p>
-<$$>
+$$
+----
+which, after a lot of differentiation and yet more algebra, become
+----
+$$
   \begin{aligned}
     \phi_1 &= -\tfrac{3}{32} \sqrt{2} + \tfrac{1}{64} p, \\[0.2em]
     \phi_2 &=
       -\tfrac{1393}{3840} + \tfrac{81}{512} p \sqrt{2} + \tfrac{17}{2048} p^2,
   \end{aligned}
-</$$>
-<p>where</p>
-<$$>
+$$
+----
+where
+----
+$$
   p
   = \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
   = 2 \tanh^{-1} \tfrac{1}{\sqrt{2}}.
-</$$>
+$$
 
 
-<@2> Result | result </@2>
+##result
+  Result
+##
 
 
-<p>
+----
   For small initial drag-to-weight ratios
   (or small initial-to-terminal kinetic energy ratios)
-</p>
-<$$>
+----
+$$
   B = \frac{b u^2}{m g} = \frac{u^2}{c^2} \ll 1,
-</$$>
-<p>
-  the <b>optimal launch angle</b> has the <b>asymptotic expansion</b>
-</p>
-<$$>
-  \boxed{
-    \phi = \phi_0 + B \phi_1 + B^2 \phi_2 \po{B^3},
-  }
-</$$>
-<p>where</p>
-<$$>
+$$
+----
+  the __optimal launch angle__ has the __asymptotic expansion__
+----
+$${important}
+  \phi = \phi_0 + B \phi_1 + B^2 \phi_2 \plusorder{B^3},
+$$
+----
+where
+----
+$$
   \begin{aligned}
     \phi_0
       &= \tfrac{\pi}{4} \\
@@ -816,204 +843,173 @@
       + \tfrac{17}{2048} \log^2 \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}} \\
       &= 3.290 \degree,
   \end{aligned}
-</$$>
-<p>that is,</p>
-<$$>
-  \boxed{
+$$
+----
+that is,
+----
+$${important}
   \begin{aligned}
     \phi
-    &= 45 \degree - 6.018 \degree B + 3.290 \degree B^2 \po{B^3} \\
+    &= 45 \degree - 6.018 \degree B + 3.290 \degree B^2 \plusorder{B^3} \\
     &= 45 \degree
     - 6.018 \degree \frac{u^2}{c^2}
-    + 3.290 \degree \frac{u^4}{c^4} \po{\frac{u^6}{c^6}}.
+    + 3.290 \degree \frac{u^4}{c^4} \plusorder{\frac{u^6}{c^6}}.
   \end{aligned}
-}
-</$$>
+$$
 
 
-<% [numerics.h] | Numerical verification %>
-<@2> [numerics.h] | numerics </@2>
+##numerics
+  Numerical verification
+##
 
 
-<p>
-  <b>GNU Octave Code:</b>
-  <@>
-    <`>yawnoc/projectile-motion-numerics</`>
-    | \=/projectile-motion-numerics/
-    | GNU Octave: Projectile motion numerics
-  </@>
-</p>
+----
+__Code:__  [\[GNU Octave\] Projectile motion numerics (GitHub)][numerics-repo]
+----
+@@[numerics-repo]
+  https://github.com/yawnoc/projectile-motion-numerics/
+@@
 
 
-<p>
-  In the following table we compare numerically computed optimal launch angles
-  (see
-  <@>
-    GitHub repository
-    | \=/projectile-motion-numerics/
-    | GNU Octave: Projectile motion numerics
-  </@>)
-  with those from the asymptotic <@> result above | #result | Result </@>:
-</p>
+----
+In the following table we compare numerically computed optimal launch angles
+(see [GitHub repository][numerics-repo])
+with those from the asymptotic [result above](#result):
+----
 <!--
   See table_b_phi_script.m
   https://github.com/yawnoc/projectile-motion-numerics/
     blob/master/table_b_phi_script.m
   -->
-<!c><table>
-  <tr>
-    <td class="no-border"></td>
-    <th colspan="3">Optimal <$>\phi</$></th>
-  </tr>
-  <tr>
-    <th><$>B</$></th>
-    <th>Numerical</th>
-    <th>Asymptotic</th>
-    <th>Rel.~error</th>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0</td>
-    <td>45.0°</td>
-    <td>45.0°</td>
-    <td>\_0</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0.1</td>
-    <td>44.4°</td>
-    <td>44.4°</td>
-    <td>\_0.005%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0.2</td>
-    <td>43.9°</td>
-    <td>43.9°</td>
-    <td>\_0.04%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0.3</td>
-    <td>43.4°</td>
-    <td>43.5°</td>
-    <td>\_0.1%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0.4</td>
-    <td>43.0°</td>
-    <td>43.1°</td>
-    <td>\_0.3%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0.5</td>
-    <td>42.6°</td>
-    <td>42.8°</td>
-    <td>\_0.5%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0.6</td>
-    <td>42.2°</td>
-    <td>42.6°</td>
-    <td>\_0.8%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0.7</td>
-    <td>41.9°</td>
-    <td>42.4°</td>
-    <td>\_1.2%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0.8</td>
-    <td>41.6°</td>
-    <td>42.3°</td>
-    <td>\_1.7%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_0.9</td>
-    <td>41.3°</td>
-    <td>42.2°</td>
-    <td>\_2.4%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_1</td>
-    <td>41.0°</td>
-    <td>42.3°</td>
-    <td>\_3.2%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_2</td>
-    <td>38.8°</td>
-    <td>46.1°</td>
-    <td>19%</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_3</td>
-    <td>37.3°</td>
-    <td class="not-applicable" rowspan="16" colspan="2"></td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_4</td>
-    <td>36.2°</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_5</td>
-    <td>35.3°</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_6</td>
-    <td>34.6°</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_7</td>
-    <td>34.0°</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_8</td>
-    <td>33.5°</td>
-  </tr>
-  <tr>
-    <td>\_\_\_\_9</td>
-    <td>33.0°</td>
-  </tr>
-  <tr>
-    <td>\_\_\_10</td>
-    <td>32.6°</td>
-  </tr>
-  <tr>
-    <td>\_\_\_15</td>
-    <td>31.1°</td>
-  </tr>
-  <tr>
-    <td>\_\_\_20</td>
-    <td>30.1°</td>
-  </tr>
-  <tr>
-    <td>\_\_\_50</td>
-    <td>27.1°</td>
-  </tr>
-  <tr>
-    <td>\_\_100</td>
-    <td>25.2°</td>
-  </tr>
-  <tr>
-    <td>\_\_200</td>
-    <td>23.5°</td>
-  </tr>
-  <tr>
-    <td>\_\_500</td>
-    <td>22.9°</td>
-  </tr>
-  <tr>
-    <td>\_1000</td>
-    <td>19.7°</td>
-  </tr>
-  <tr>
-    <td>10000</td>
-    <td>18.1°</td>
-  </tr>
-</table></!c>
+||||||{centred-block}
+||||{overflowing}
+''''
+^^^
+  /
+    ;[2] $B$
+    ;[,3] Optimal $\phi$
+  /
+    ; Numerical
+    ; Asymptotic
+    ; Rel.~error
+~~~
+  /
+    , \0\0\0\00
+    , 45.0°
+    , 45.0°
+    , \00
+  /
+    , \0\0\0\00.1
+    , 44.4°
+    , 44.4°
+    , \00.005%
+  /
+    , \0\0\0\00.2
+    , 43.9°
+    , 43.9°
+    , \00.04%
+  /
+    , \0\0\0\00.3
+    , 43.4°
+    , 43.5°
+    , \00.1%
+  /
+    , \0\0\0\00.4
+    , 43.0°
+    , 43.1°
+    , \00.3%
+  /
+    , \0\0\0\00.5
+    , 42.6°
+    , 42.8°
+    , \00.5%
+  /
+    , \0\0\0\00.6
+    , 42.2°
+    , 42.6°
+    , \00.8%
+  /
+    , \0\0\0\00.7
+    , 41.9°
+    , 42.4°
+    , \01.2%
+  /
+    , \0\0\0\00.8
+    , 41.6°
+    , 42.3°
+    , \01.7%
+  /
+    , \0\0\0\00.9
+    , 41.3°
+    , 42.2°
+    , \02.4%
+  /
+    , \0\0\0\01
+    , 41.0°
+    , 42.3°
+    , \03.2%
+  /
+    , \0\0\0\02
+    , 38.8°
+    , 46.1°
+    , 19%
+  /
+    , \0\0\0\03
+    , 37.3°
+    ,{not-applicable}[16,2]
+  /
+    , \0\0\0\04
+    , 36.2°
+  /
+    , \0\0\0\05
+    , 35.3°
+  /
+    , \0\0\0\06
+    , 34.6°
+  /
+    , \0\0\0\07
+    , 34.0°
+  /
+    , \0\0\0\08
+    , 33.5°
+  /
+    , \0\0\0\09
+    , 33.0°
+  /
+    , \0\0\010
+    , 32.6°
+  /
+    , \0\0\015
+    , 31.1°
+  /
+    , \0\0\020
+    , 30.1°
+  /
+    , \0\0\050
+    , 27.1°
+  /
+    , \0\0100
+    , 25.2°
+  /
+    , \0\0200
+    , 23.5°
+  /
+    , \0\0500
+    , 22.9°
+  /
+    , \01000
+    , 19.7°
+  /
+    , 10000
+    , 18.1°
+''''
+||||
+||||||
 
-<p>
-  Indeed the asymptotic expansion is very accurate for <$>B < 0.5</$>
-  (or equivalently <$>u / c < 0.7</$>).
-</p>
+----
+Indeed the asymptotic expansion is very accurate for $B < 0.5$
+(or equivalently $u / c < 0.7$).
+----
 
 <!--            Optimal launch angle plot (in terms of B)
   ***********************************************************************
@@ -1028,7 +1024,8 @@
   ***********************************************************************
   Horizontal scale is 4:1.
   -->
-<div class="centred-svg">
+
+||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 16">
   
   <!-- Marker definitions -->
@@ -1055,78 +1052,70 @@
     </marker>
   </defs>
   
-  <%
-    [ticks-coarse-horizontal] |
+  {: {t-ch} :
     marker-start="url(#htickcoarse)"
     marker-mid="url(#htickcoarse)"
     marker-end="url(#htickcoarse)"
-  %>
-  <%
-    [ticks-fine-horizontal] |
+  :}
+  {: {t-fh} :
     marker-start="url(#htickfine)"
     marker-mid="url(#htickfine)"
     marker-end="url(#htickfine)"
-  %>
-  <%
-    [ticks-coarse-vertical] |
+  :}
+  {: {t-cv} :
     marker-start="url(#vtickcoarse)"
     marker-mid="url(#vtickcoarse)"
     marker-end="url(#vtickcoarse)"
-  %>
-  <%
-    [ticks-fine-vertical] |
+  :}
+  {: {t-fv} :
     marker-start="url(#vtickfine)"
     marker-mid="url(#vtickfine)"
     marker-end="url(#vtickfine)"
-  %>
+  :}
   
-  <% [font-size-plot] | font-size="1" %>
+  {: {fs-plot} : font-size="1" :}
   
   <!-- B-axis -->
   <line x1="0" y1="-35" x2="21" y2="-35"/>
-  <text [mathit] x="21" y="-35" [font-size-plot] dx="0.6em" dy="0.3em">B</text>
+  <text {it} x="21" y="-35" {fs-plot} dx="0.6em" dy="0.3em">B</text>
   
   <!-- Horizontal axis coarse ticks -->
   <polyline class="points" points="0,-35 4,-35 8,-35 12,-35 16,-35 20,-35"
-    [ticks-coarse-horizontal]/>
-  <text [mathit] x="0" y="-35" [tick-labels-horizontal]>0</text>
-  <text [mathit] x="4" y="-35" [tick-labels-horizontal]>1</text>
-  <text [mathit] x="8" y="-35" [tick-labels-horizontal]>2</text>
-  <text [mathit] x="12" y="-35" [tick-labels-horizontal]>3</text>
-  <text [mathit] x="16" y="-35" [tick-labels-horizontal]>4</text>
-  <text [mathit] x="20" y="-35" [tick-labels-horizontal]>5</text>
-  <%
-    [tick-labels-horizontal] |
-    font-size="1" dy="1.35em"
-  %>
+    {t-ch}/>
+  <text {it} x="0" y="-35" {t-lh}>0</text>
+  <text {it} x="4" y="-35" {t-lh}>1</text>
+  <text {it} x="8" y="-35" {t-lh}>2</text>
+  <text {it} x="12" y="-35" {t-lh}>3</text>
+  <text {it} x="16" y="-35" {t-lh}>4</text>
+  <text {it} x="20" y="-35" {t-lh}>5</text>
+  
+  {: {t-lh} : font-size="1" dy="1.35em" :}
   
   <!-- Horizontal axis fine ticks -->
   <polyline class="points"
     points="0.8,-35 1.6,-35 2.4,-35 3.2,-35 4.8,-35 5.6,-35 6.4,-35 7.2,-35
       8.8,-35 9.6,-35 10.4,-35 11.2,-35 12.8,-35 13.6,-35 14.4,-35 15.2,-35
       16.8,-35 17.6,-35 18.4,-35 19.2,-35 20.8,-35"
-    [ticks-fine-horizontal]/>
+    {t-fh}/>
   
   <!-- phi-axis -->
   <line x1="0" y1="-35" x2="0" y2="-46.8"/>
-  <text [mathit] x="0" y="-46.8" [font-size-plot] dy="-0.5em">ϕ</text>
+  <text {it} x="0" y="-46.8" {fs-plot} dy="-0.5em">ϕ</text>
   
   <!-- Vertical axis coarse ticks -->
   <polyline class="points"
     points="0,-35 0,-40 0,-45"
-    [ticks-coarse-vertical]/>
-  <text [mathit] x="0" y="-35" [tick-labels-vertical]>35°</text>
-  <text [mathit] x="0" y="-40" [tick-labels-vertical]>40°</text>
-  <text [mathit] x="0" y="-45" [tick-labels-vertical]>45°</text>
-  <%
-    [tick-labels-vertical] |
-    font-size="1" dx="-1.4em" dy="0.3em"
-  %>
+    {t-cv}/>
+  <text {it} x="0" y="-35" {t-lv}>35°</text>
+  <text {it} x="0" y="-40" {t-lv}>40°</text>
+  <text {it} x="0" y="-45" {t-lv}>45°</text>
+  
+  {: {t-lv} : font-size="1" dx="-1.4em" dy="0.3em" :}
   
   <!-- Vertical axis fine ticks -->
   <polyline class="points"
     points="0,-36 0,-37 0,-38 0,-39 0,-41 0,-42 0,-43 0,-44 0,-46"
-    [ticks-fine-vertical]/>
+    {t-fv}/>
   
   <!-- numerical
     See svg_points_b_phi_script.m
@@ -1185,7 +1174,7 @@
   19.6,-35.4
   20,-35.32
   "/>
-  <text x="10" y="-37.98" [font-size-plot]
+  <text x="10" y="-37.98" {fs-plot}
     dx="2.5em" dy="-0.5em">Numerical</text>
   <!-- asymptotic
     See svg_points_b_phi_asymptotic_script.m
@@ -1236,25 +1225,25 @@
   8.2,-46.49
   "/>
   
-  <text x="8.2" y="-46.49" [font-size-plot]
+  <text x="8.2" y="-46.49" {fs-plot}
     dx="-3.5em" dy="1em">Asymptotic</text>
   
 </svg>
-</div>
+||||
 
-<p>
-  The true optimal launch angle is a decreasing function of <$>B</$>.
-  Thus, very crudely, the asymptotic expansion becomes useless
-  when it stops decreasing, which occurs at
-</p>
-<$$>
+----
+The true optimal launch angle is a decreasing function of $B$.
+Thus, very crudely, the asymptotic expansion becomes useless
+when it stops decreasing, which occurs at
+----
+$$
   B \approx \frac{-\phi_1}{2 \phi_2} = 0.9.
-</$$>
+$$
 
-<p>
-  Finally, here is a plot of the optimal launch angle in terms of
-  <$>\sqrt{B} = u / c</$>, the initial-to-terminal speed ratio:
-</p>
+----
+Finally, here is a plot of the optimal launch angle in terms of
+$\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
+----
 <!--         Optimal launch angle plot (in terms of u / c)
   ***********************************************************************
   Constant    Description                           Value
@@ -1268,47 +1257,48 @@
   ***********************************************************************
   Horizontal scale is 5:1.
   -->
-<div class="centred-svg">
+
+||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 21">
   
   <!-- u/c-axis -->
   <line x1="0" y1="-30" x2="20.5" y2="-30"/>
-  <text [mathit] x="20.5" y="-30" [font-size-plot]
+  <text {it} x="20.5" y="-30" {fs-plot}
     dx="1.2em" dy="0.3em">u\,/\,c</text>
   
   <!-- Horizontal axis coarse ticks -->
   <polyline class="points"
     points="0,-30 5,-30 10,-30 15,-30 20,-30"
-    [ticks-coarse-horizontal]/>
-  <text [mathit] x="0" y="-30" [tick-labels-horizontal]>0</text>
-  <text [mathit] x="5" y="-30" [tick-labels-horizontal]>1</text>
-  <text [mathit] x="10" y="-30" [tick-labels-horizontal]>2</text>
-  <text [mathit] x="15" y="-30" [tick-labels-horizontal]>3</text>
-  <text [mathit] x="20" y="-30" [tick-labels-horizontal]>4</text>
+    {t-ch}/>
+  <text {it} x="0" y="-30" {t-lh}>0</text>
+  <text {it} x="5" y="-30" {t-lh}>1</text>
+  <text {it} x="10" y="-30" {t-lh}>2</text>
+  <text {it} x="15" y="-30" {t-lh}>3</text>
+  <text {it} x="20" y="-30" {t-lh}>4</text>
   
   <!-- Horizontal axis fine ticks -->
   <polyline class="points"
     points="1,-30 2,-30 3,-30 4,-30 6,-30 7,-30 8,-30 9,-30
       11,-30 12,-30 13,-30 14,-30 16,-30 17,-30 18,-30 19,-30"
-    [ticks-fine-horizontal]/>
+    {t-fh}/>
   
   <!-- phi-axis -->
   <line x1="0" y1="-30" x2="0" y2="-46.8"/>
-  <text [mathit] x="0" y="-46.8" [font-size-plot] dy="-0.5em">ϕ</text>
+  <text {it} x="0" y="-46.8" {fs-plot} dy="-0.5em">ϕ</text>
   <!-- Vertical axis coarse ticks -->
   <polyline class="points"
     points="0,-30 0,-35 0,-40 0,-45"
-    [ticks-coarse-vertical]/>
-  <text [mathit] x="0" y="-30" [tick-labels-vertical]>30°</text>
-  <text [mathit] x="0" y="-35" [tick-labels-vertical]>35°</text>
-  <text [mathit] x="0" y="-40" [tick-labels-vertical]>40°</text>
-  <text [mathit] x="0" y="-45" [tick-labels-vertical]>45°</text>
+    {t-cv}/>
+  <text {it} x="0" y="-30" {t-lv}>30°</text>
+  <text {it} x="0" y="-35" {t-lv}>35°</text>
+  <text {it} x="0" y="-40" {t-lv}>40°</text>
+  <text {it} x="0" y="-45" {t-lv}>45°</text>
   
   <!-- Vertical axis fine ticks -->
   <polyline class="points"
     points="0,-31 0,-32 0,-33 0,-34 0,-36 0,-37 0,-38 0,-39
       0,-41 0,-42 0,-43 0,-44 0,-46"
-    [ticks-fine-vertical]/>
+    {t-fv}/>
   
   <!-- numerical
     See svg_points_u_phi_script.m
@@ -1358,7 +1348,7 @@
   20,-30.87
   "/>
   
-  <text x="10" y="-36.2" [font-size-plot]
+  <text x="10" y="-36.2" {fs-plot}
     dx="2.5em" dy="-0.5em">Numerical</text>
   
   <!-- asymptotic
@@ -1397,15 +1387,11 @@
   7,-45.84
   7.25,-46.89
   "/>
-  <text x="7.25" y="-46.89" [font-size-plot]
+  <text x="7.25" y="-46.89" {fs-plot}
     dx="-3.2em" dy="1em">Asymptotic</text>
 </svg>
-</div>
+||||
 
-<*c>
-  Projectile motion: optimal launch angle for weak quadratic drag
-  | projectile-weak-drag
-  | Projectile motion: optimal launch angle for weak quadratic drag
-</*c>
+\cite-this-page[][projectile-weak-drag][%title]
 
-<*f></*f>
+%footer-element

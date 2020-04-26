@@ -2,47 +2,56 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="description" content="A derivation of the optimal launch angle (which maximises range) for projectile motion in weak quadratic drag using perturbation theory.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
-<meta name="description" content="A derivation of the optimal launch angle (which maximises range) for projectile motion in weak quadratic drag using perturbation theory.">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<link rel="stylesheet" href="/conway-katex.min.css">
-<script defer src="/conway-katex.min.js"></script>
-<script defer src="/conway-render.min.js"></script>
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
 <title>Projectile motion: optimal launch angle for weak quadratic drag | Conway's site</title>
 </head>
-<body onload="dateRender(); mathsRender();">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-<li><a href="#solution" title="Solution">Solution</a></li>
-<li><a href="#result" title="Skip to the result">Result</a></li>
-<li><a href="#numerics" title="Numerical verification">Numerics</a></li>
-<li><a href="#cite" title="Cite this page">Cite</a></li>
-</ul></nav></header>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="#result" title="Jump to result">Result</a>
+</li>
+<li><a href="#numerics" title="Numerical verification">Numerics</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
 <h1>Projectile motion: optimal launch angle for weak quadratic drag</h1>
-<p class="page-properties">
-First created:&nbsp;20190621<br>
-Last modified:&nbsp;<b>20191201</b><br>
-<b>See also:</b>&nbsp;<a href="/math/projectile-platform" title="Projectile motion: optimal launch angle from a platform">Projectile motion: optimal launch angle from a platform</a>
-<noscript>Enable Javascript for <a href="/code/katex-guide" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
-</p>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-06-21<br>
+Last modified: 2020-04-26<br>
+See also: <a href="/math/projectile-platform">Projectile motion: optimal launch angle from a platform</a>
+</div>
 <p>
 In the absence of air resistance, a launch angle of 45° maximises range.
 When there is drag linear in speed, the equations of motion can be integrated
-analytically, and closed-form expressions in terms of the
-<a href="http://mathworld.wolfram.com/LambertW-Function.html" title="Lambert W-Function">Lambert <span class="maths">W</span> function</a>
-can be obtained for the optimal launch angle; see
-<a href="https://www.researchgate.net/publication/228851314_Projectile_Motion_with_Resistance_and_the_Lambert_W_Function" title="Projectile Motion with Resistance and the Lambert W Function">Packel &amp;&nbsp;Yuen (2004)</a>.
+analytically, and closed-form expressions
+in terms of the <a href="http://mathworld.wolfram.com/LambertW-Function.html">Lambert <span class="js-maths">W</span>-function</a>
+can be obtained for the optimal launch angle;
+see <a href="https://www.researchgate.net/publication/228851314_Projectile_Motion_with_Resistance_and_the_Lambert_W_Function" title="Projectile Motion with Resistance and the Lambert W Function">Packel &amp;&nbsp;Yuen (2004)</a>.
 However, a more realistic model of air resistance
-has drag proportional to the <strong>square</strong> of speed,
+has drag proportional to the <em>square</em> of speed,
 for which the equations of motion are nonlinear and
 analytic solutions cannot be obtained.
 </p>
@@ -54,12 +63,9 @@ At the time I believed that nothing much could be done in terms of modelling
 other than solving the equations of motion numerically,
 but back then I knew nothing of scaling and perturbation theory.
 Now armed with some basic knowledge of these very useful tools,
-I have been able to derive an expansion for the optimal launch angle
-when air resistance is relatively weak.
+I have been able to derive an asymptotic expansion
+for the optimal launch angle when air resistance is relatively weak.
 </p>
-<span class="maths embedded-definitions">
-  \gdef\po#1{\color{grey} {} + O \!\left( #1 \right)}
-</span>
 <svg class="embedded-styles"><style>
 text {
 font-family: sans-serif;
@@ -84,7 +90,7 @@ url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
 .maths-italic {
 font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
 }
-.maths-roman {
+.maths-regular {
 font-family: "KaTeX_Main-Regular";
 }
 line, polyline {
@@ -99,14 +105,11 @@ fill: none;
 stroke: none;
 }
 </style></svg>
-<h2 id="solution"><a class="self-link" href="#solution"></a>
-Solution
-</h2>
+<h2 id="solution"><a class="self-link" href="#solution"></a>Solution</h2>
 <p>
-<b>Manuscript:</b>
-<a href="/manuscripts/resistance.pdf" title="Manuscript for Projectile motion: optimal launch angle for weak quadratic drag"><code>resistance.pdf</code>&nbsp;(983&nbsp;KB)</a>
+<b>Manuscript:</b> <a href="/manuscripts/resistance.pdf"><code>resistance.pdf</code>&nbsp;(983&nbsp;KB)</a>
 </p>
-<div class="centred-svg">
+<div class="centred-block">
 <svg class="fit-width" width="360px" viewBox="-2 -9 14 10">
 <defs>
 <marker id="arrowhead" viewBox="0 -0.3 1 0.6" refX="1" refY="0" markerWidth="1" markerHeight="0.3" orient="auto-start-reverse">
@@ -209,167 +212,154 @@ Solution
 <text class="maths-italic" x="1" y="-2" font-size="0.8" dx="-0.6em">u</text>
 </svg>
 </div>
-<h3 id="motion"><a class="self-link" href="#motion"></a>
-Equations of motion
-</h3>
+<h3 id="motion"><a class="self-link" href="#motion"></a>Equations of motion</h3>
 <p>
-Suppose a projectile of mass <span class="maths">m</span> is launched at
-speed <span class="maths">u</span> and angle <span class="maths">\phi</span> from the ground,
-which has gravitational field strength <span class="maths">g</span>,
+Suppose a projectile of mass <span class="js-maths">m</span> is launched at
+speed <span class="js-maths">u</span> and angle <span class="js-maths">\phi</span> from the ground,
+which has gravitational field strength <span class="js-maths">g</span>,
 and let there be drag proportional to the square of the projectile's speed,
-with constant of proportionality <span class="maths">b</span>.
+with constant of proportionality <span class="js-maths">b</span>.
 Let dots denote time derivatives.
 The drag force on the projectile has magnitude
-<span class="maths">b \| \dot{\vec{x}} \|^2</span>, and it acts
+<span class="js-maths">b \norm{\dot{\vec{x}}}^2</span>, and it acts
 in the direction opposite to the projectile's velocity,
-i.e.&nbsp;in the direction <span class="maths">-\dot{\vec{x}} / \| \dot{\vec{x}} \|</span>.
-Therefore the drag force is <span class="maths">-b \dot{\vec{x}} \| \dot{\vec{x}} \|</span>,
+i.e.&nbsp;in the direction <span class="js-maths">-\dot{\vec{x}} / \norm{\dot{\vec{x}}}</span>.
+Therefore the drag force is <span class="js-maths">-b \dot{\vec{x}} \norm{\dot{\vec{x}}}</span>,
 and so in components the equations of motion are
 </p>
-<div class="maths">
-\begin{alignedat}{4}
+<div class="js-maths">\begin{alignedat}{4}
   m \ddot{x} &amp;=      &amp;&amp; - b \dot{x} \sqrt{\dot{x}^2 + \dot{y}^2},
     \quad &amp; \dot{x} (0) &amp;= u \cos\phi, \quad &amp; x (0) &amp;= 0, \\
   m \ddot{y} &amp;= -m g &amp;&amp; - b \dot{y} \sqrt{\dot{x}^2 + \dot{y}^2},
     \quad &amp; \dot{y} (0) &amp;= u \sin\phi, \quad &amp; y (0) &amp;= 0.
 \end{alignedat}
 </div>
-<h3 id="scaling"><a class="self-link" href="#scaling"></a>
-Scaling
-</h3>
+<h3 id="scaling"><a class="self-link" href="#scaling"></a>Scaling</h3>
 <p>
-Since we shall be making a perturbation from the dragless <span class="maths">b = 0</span> case,
+Since we shall be making a perturbation from the dragless <span class="js-maths">b = 0</span> case,
 it is appropriate to choose the length scale and time scale thereof.
-In the dragless case the mass <span class="maths">m</span> is irrelevant,
-and the only parameters are the initial speed <span class="maths">u</span>
-and gravitational acceleration <span class="maths">g</span>, yielding the length scale
+In the dragless case the mass <span class="js-maths">m</span> is irrelevant,
+and the only parameters are the initial speed <span class="js-maths">u</span>
+and gravitational acceleration <span class="js-maths">g</span>, yielding the length scale
 </p>
-<div class="maths">
-L = u^2 / g
+<div class="js-maths">L = u^2 / g
 </div>
 <p>
 and the time scale
 </p>
-<div class="maths">
-T = u / g.
+<div class="js-maths">T = u / g.
 </div>
 <p>
-Therefore we put <span class="maths">\hat{x} = x / L</span>,
-<span class="maths">\hat{y} = y / L</span> and <span class="maths">\hat{t} = t / T</span> to obtain
-scaled (dimensionless) variables <span class="maths">\hat{x}</span>,
-<span class="maths">\hat{y}</span> and <span class="maths">\hat{t}</span>.
+Therefore we put <span class="js-maths">\hat{x} = x / L</span>,
+<span class="js-maths">\hat{y} = y / L</span> and <span class="js-maths">\hat{t} = t / T</span> to obtain
+scaled (dimensionless) variables <span class="js-maths">\hat{x}</span>,
+<span class="js-maths">\hat{y}</span> and <span class="js-maths">\hat{t}</span>.
 Dropping the hats, the equations of motion become
 </p>
-<div class="maths">
-\begin{alignedat}{4}
+<div class="js-maths">\begin{alignedat}{4}
   \ddot{x} &amp;=    &amp;&amp; - B \dot{x} \sqrt{\dot{x}^2 + \dot{y}^2},
     \quad &amp; \dot{x} (0) &amp;= \cos\phi, \quad &amp; x (0) &amp;= 0, \\
   \ddot{y} &amp;= -1 &amp;&amp; - B \dot{y} \sqrt{\dot{x}^2 + \dot{y}^2},
     \quad &amp; \dot{y} (0) &amp;= \sin\phi, \quad &amp; y (0) &amp;= 0,
 \end{alignedat}
 </div>
-<p>where</p>
-<div class="maths">
-B = \frac{b u^2}{m g}
+<p>
+where
+</p>
+<div class="js-maths">B = \frac{b u^2}{m g}
 </div>
 <p>
 is the initial drag-to-weight ratio,
 the only dimensionless group in the problem.
-By definition, the projectile's terminal speed <span class="maths">c</span> is given by
+By definition, the projectile's terminal speed <span class="js-maths">c</span> is given by
 </p>
-<div class="maths">
-1 = \frac{b c^2}{m g}.
+<div class="js-maths">1 = \frac{b c^2}{m g}.
 </div>
 <p>
 Dividing these, we see that
 </p>
-<div class="maths">
-B = \left( \frac{u}{c} \right)^2.
+<div class="js-maths">B = \roundbr{\frac{u}{c}}^2.
 </div>
 <p>
 Now the optimal angle is dimensionless, so it can depend only on
-the sole dimensionless group <span class="maths">B</span>.
-Thus, <strong>the optimal angle depends only on <span class="maths">\sqrt{B} = u / c</span>,
+the sole dimensionless group <span class="js-maths">B</span>.
+Thus, <strong>the optimal angle depends only on <span class="js-maths">\sqrt{B} = u / c</span>,
 the ratio between the initial and terminal speeds</strong>.
 (I wish I knew this back in Year&nbsp;12.)
 </p>
-<h3 id="perturbation"><a class="self-link" href="#perturbation"></a>
-Perturbed trajectory
-</h3>
+<h3 id="perturbation"><a class="self-link" href="#perturbation"></a>Perturbed trajectory</h3>
 <p>
-By "weak drag" I mean that <span class="maths">B \ll 1</span>, i.e.&nbsp;<span class="maths">u^2 \ll c^2</span>.
-We make an asymptotic expansion in powers of <span class="maths">B</span> about <span class="maths">B = 0</span>:
+By "weak drag" I mean that <span class="js-maths">B \ll 1</span>, i.e.&nbsp;<span class="js-maths">u^2 \ll c^2</span>.
+We make an asymptotic expansion in powers of <span class="js-maths">B</span> about <span class="js-maths">B = 0</span>:
 </p>
-<div class="maths">
+<div class="js-maths">\gdef\grey#1{\textcolor{grey}{#1}}
+\gdef\plusorder#1{\mathbin{\grey{+}} \grey{\order\roundbr{B^3}}}
 \begin{aligned}
-  \dot{x} &amp;= \dot{x}_0 + B \dot{x}_1 + B^2 \dot{x}_2 \po{B^3} \\
-  \dot{y} &amp;= \dot{y}_0 + B \dot{y}_1 + B^2 \dot{y}_2 \po{B^3}
+  \dot{x} &amp;= \dot{x}_0 + B \dot{x}_1 + B^2 \dot{x}_2 \plusorder{B^3}, \\
+  \dot{y} &amp;= \dot{y}_0 + B \dot{y}_1 + B^2 \dot{y}_2 \plusorder{B^3}.
 \end{aligned}
 </div>
 <p>
 Substituting these into the equations of motion and doing some algebra,
 we obtain
 </p>
-<div class="maths">
-\begin{alignedat}{2}
+<div class="js-maths">\begin{alignedat}{2}
   \ddot{x}_0 + B \ddot{x}_1 + B^2 \ddot{x}_2 &amp;=
-    &amp;&amp; - B \big[ \dot{x}_0 v_0 \big]
-    - B^2 \left[ \dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0} \right]
-    \po{B^3}, \\
+    &amp;&amp;
+    - B \roundbr{\dot{x}_0 v_0}
+    - B^2 \roundbr{\dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0}}
+    \plusorder{B^3},
+    \\
   \ddot{y}_0 + B \ddot{y}_1 + B^2 \ddot{y}_2 &amp;=
     - 1
-    &amp;&amp; - B \big[ \dot{y}_0 v_0 \big]
-    - B^2 \left[ \dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0} \right]
-    \po{B^3},
+    &amp;&amp;
+    - B \roundbr{\dot{y}_0 v_0}
+    - B^2 \roundbr{\dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0}}
+    \plusorder{B^3},
 \end{alignedat}
 </div>
-<p>where</p>
-<div class="maths">
-\begin{aligned}
+<p>
+where
+</p>
+<div class="js-maths">\begin{aligned}
   v_0 &amp;= \sqrt{{\dot{x}_0}^2 + {\dot{y}_0}^2}, \\
   w_1 &amp;= \dot{x}_0 \dot{x}_1 + \dot{y}_0 \dot{y}_1.
 \end{aligned}
 </div>
 <p>
-Equating coefficients of <span class="maths">B</span>, we obtain
+Equating coefficients of <span class="js-maths">B</span>, we obtain
 </p>
-<div class="maths">
-\begin{alignedat}{4}
+<div class="js-maths">\begin{alignedat}{4}
   \ddot{x}_0 &amp;= {} &amp;  0 &amp;,
     \quad &amp; \dot{x}_0 (0) &amp;= \cos\phi, \quad &amp; x_0 (0) &amp;= 0, \\
   \ddot{y}_0 &amp;= {} &amp; -1 &amp;,
     \quad &amp; \dot{y}_0 (0) &amp;= \sin\phi, \quad &amp; y_0 (0) &amp;= 0,
 \end{alignedat}
 </div>
-<div class="maths">
-\begin{alignedat}{3}
+<div class="js-maths">\begin{alignedat}{3}
   \ddot{x}_1 &amp;= -\dot{x}_0 v_0,
     \quad &amp; \dot{x}_1 (0) &amp;= 0, \quad &amp; x_1 (0) &amp;= 0, \\
   \ddot{y}_1 &amp;= -\dot{y}_0 v_0,
     \quad &amp; \dot{y}_1 (0) &amp;= 0, \quad &amp; y_1 (0) &amp;= 0,
 \end{alignedat}
 </div>
-<div class="maths">
-\begin{alignedat}{3}
-  \ddot{x}_2 &amp;= -\left[ \dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0} \right],
+<div class="js-maths">\begin{alignedat}{3}
+  \ddot{x}_2 &amp;= -\roundbr{\dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0}},
     \quad &amp; \dot{x}_2 (0) &amp;= 0, \quad &amp; x_2 (0) &amp;= 0, \\
-  \ddot{y}_2 &amp;= -\left[ \dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0} \right],
+  \ddot{y}_2 &amp;= -\roundbr{\dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0}},
     \quad &amp; \dot{y}_2 (0) &amp;= 0, \quad &amp; y_2 (0) &amp;= 0,
 \end{alignedat}
 </div>
-<div class="maths">
-\text{etc.}
+<div class="js-maths">\text{etc.}
 </div>
 <p>
-Thus <span class="maths">\dot{x}_0, x_0, \dot{y}_0, y_0, \dot{x}_1,
-  \text{etc.}</span> can be determined by straight integration,
-although the expressions become very complicated (see
-<a href="/manuscripts/resistance.pdf" title="Manuscript for Projectile motion: optimal launch angle for weak quadratic drag">manuscript</a>
-for details).
+Thus <span class="js-maths">\dot{x}_0, x_0, \dot{y}_0, y_0, \dot{x}_1,
+\text{etc.}</span> can be determined by straight integration,
+although the expressions become very complicated
+(see <a href="/manuscripts/resistance.pdf">manuscript</a> for details).
 For brevity, we define the following:
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \alpha &amp;= \cos\phi \\
    \beta &amp;= \sin\phi \\
     \tau &amp;= t - \beta \\
@@ -377,25 +367,22 @@ For brevity, we define the following:
 \end{aligned}
 </div>
 <p>
-Note that <span class="maths">v_0 = \sqrt{\alpha^2 + \tau^2}</span>.
+Note that <span class="js-maths">v_0 = \sqrt{\alpha^2 + \tau^2}</span>.
 After a lot of algebra and integration, we obtain:
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \ddot{x}_0 &amp;= 0 \\[0.2em]
    \dot{x}_0 &amp;= \alpha \\[0.2em]
          x_0 &amp;= \alpha t
 \end{aligned}
 </div>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \ddot{y}_0 &amp;= -1 \\[0.2em]
    \dot{y}_0 &amp;= -\tau \\[0.2em]
          y_0 &amp;= -\tfrac{1}{2} \tau^2 + \tfrac{1}{2} \beta^2
 \end{aligned}
 </div>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \ddot{x}_1 &amp;= -\alpha v_0 \\[0.2em]
    \dot{x}_1 &amp;=
     - \Big[ \tfrac{1}{2} \alpha \beta \Big]
@@ -410,8 +397,7 @@ After a lot of algebra and integration, we obtain:
     - \Big[ \tfrac{1}{2} \alpha^3 \Big] \tau \log r
 \end{aligned}
 </div>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \ddot{y}_1 &amp;= \tau v_0 \\[0.2em]
    \dot{y}_1 &amp;= \tfrac{1}{3} {v_0}^3 - \tfrac{1}{3} \\[0.4em]
          y_1 &amp;=
@@ -422,8 +408,7 @@ After a lot of algebra and integration, we obtain:
     + \Big[ \tfrac{1}{8} \alpha^4 \Big] \log r
 \end{aligned}
 </div>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \ddot{x}_2 &amp;=
       \Big[ \tfrac{4}{3} \alpha^3 \Big] \tau
     + \Big[ \tfrac{5}{6} \alpha \Big] \tau^3
@@ -464,8 +449,7 @@ After a lot of algebra and integration, we obtain:
     + \Big[ \tfrac{3}{8} \alpha^5 \Big] \tau \log^2 r
 \end{aligned}
 </div>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \ddot{y}_2 &amp;=
     - \Big[ \tfrac{1}{3} \alpha^4 \Big]
     - \Big[ \tfrac{3}{2} \alpha^2 \Big] \tau^2
@@ -505,14 +489,13 @@ After a lot of algebra and integration, we obtain:
 \end{aligned}
 </div>
 <p>
-You might be wondering why I stopped at order <span class="maths">B^2</span>.
+You might be wondering why I stopped at order <span class="js-maths">B^2</span>.
 Initially I thought that integration could be performed to arbitrary order
 (although the amount of algebra required grows <em>very</em> quickly).
 However I was wrong; it turns out that the following integrals
 appear at cubic order, which have no closed-form expression:
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   &amp;
   \int
     \frac{
@@ -538,18 +521,15 @@ On the other hand, quartic terms, even if they could be found,
 would be of little practical use, since the expansion is asymptotic
 and as such probably does not converge.
 </p>
-<h3 id="time"><a class="self-link" href="#time"></a>
-Flight time
-</h3>
+<h3 id="time"><a class="self-link" href="#time"></a>Flight time</h3>
 <p>
 Having determined the trajectory, we then determine the flight time,
-given by <span class="maths">y (t) = 0</span>.
+given by <span class="js-maths">y (t) = 0</span>.
 To quadratic order, i.e.&nbsp;with
-<span class="maths">y = y_0 + B y_1 + B^2 y_2 \po{B^3}</span> and
-<span class="maths">t = t_0 + B t_1 + B^2 t_2 \po{B^3}</span>, this becomes
+<span class="js-maths">y = y_0 + B y_1 + B^2 y_2 \plusorder{B^3}</span> and
+<span class="js-maths">t = t_0 + B t_1 + B^2 t_2 \plusorder{B^3}</span>, this becomes
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   y_0 (t_0)
   &amp; + B \big[ t_1 \dot{y}_0 (t_0) + y_1 (t_0) \big] \\
   &amp; + B^2
@@ -558,21 +538,19 @@ To quadratic order, i.e.&nbsp;with
     + \tfrac{1}{2} {t_1}^2 \ddot{y}_0 (t_0)
     + t_1 \dot{y}_1 (t_0)
     + y_2 (t_0)
-    \Big] \po{B^3} = 0.
+    \Big] \plusorder{B^3} = 0.
 \end{aligned}
 </div>
 <p>
 The unperturbed (dragless) flight time is given by the positive solution to
-<span class="maths">y_0 (t_0) = 0</span>, which is
+<span class="js-maths">y_0 (t_0) = 0</span>, which is
 </p>
-<div class="maths">
-t_0 = 2 \beta.
+<div class="js-maths">t_0 = 2 \beta.
 </div>
 <p>
 From the linear and quadratic terms we obtain
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   t_1 &amp;= y_1 (t_0) \big/ {-\dot{y}_0 (t_0)}, \\[0.2em]
   t_2 &amp;=
     \Big[
@@ -585,8 +563,7 @@ From the linear and quadratic terms we obtain
 <p>
 which, after some more algebra, reduce to
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   t_1 &amp;=
     \Big[ {-\tfrac{1}{2}} + \tfrac{\alpha^2}{4} \Big]
   + \Big[ \tfrac{1}{8} \alpha^4 \Big] \frac{\log\rho}{\beta}, \\[0.4em]
@@ -607,23 +584,21 @@ which, after some more algebra, reduce to
     \Big] \frac{\log^2\rho}{\beta^3},
 \end{aligned}
 </div>
-<p>where</p>
-<div class="maths">
-\rho = \frac{1 + \beta}{1 - \beta}.
+<p>
+where
+</p>
+<div class="js-maths">\rho = \frac{1 + \beta}{1 - \beta}.
 </div>
 <p>
-By now, <span class="maths">t_0, t_1, t_2</span> are just functions of <span class="maths">\phi</span>
-(remember <span class="maths">\alpha</span> and <span class="maths">\beta</span> are abbreviations
-for <span class="maths">\cos\phi</span> and <span class="maths">\sin\phi</span>).
+By now, <span class="js-maths">t_0, t_1, t_2</span> are just functions of <span class="js-maths">\phi</span>
+(remember <span class="js-maths">\alpha</span> and <span class="js-maths">\beta</span> are abbreviations
+for <span class="js-maths">\cos\phi</span> and <span class="js-maths">\sin\phi</span>).
 </p>
-<h3 id="range"><a class="self-link" href="#range"></a>
-Range
-</h3>
+<h3 id="range"><a class="self-link" href="#range"></a>Range</h3>
 <p>
 To quadratic order, the range is
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   R
   &amp;= x (t) \\
   &amp;=
@@ -634,15 +609,14 @@ To quadratic order, the range is
       t_2 \dot{x}_0 (t_0)
     + t_1 \dot{x}_1 (t_0)
     + x_2 (t_0)
-    \Big] \po{B^3} \\
-  &amp;= R_0 + B R_1 + B^2 R_2 \po{B^3},
+    \Big] \plusorder{B^3} \\
+  &amp;= R_0 + B R_1 + B^2 R_2 \plusorder{B^3},
 \end{aligned}
 </div>
 <p>
 where, after some more algebra,
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   R_0 &amp;= 2 \alpha \beta, \\[0.2em]
   R_1 &amp;=
     \Big[ {-\tfrac{3}{2} \alpha} + \tfrac{5}{4} \alpha^3 \Big]
@@ -668,16 +642,13 @@ where, after some more algebra,
     \Big] \frac{\log^2\rho}{\beta^3}.
 \end{aligned}
 </div>
-<h3 id="angle"><a class="self-link" href="#angle"></a>
-Optimal launch angle
-</h3>
+<h3 id="angle"><a class="self-link" href="#angle"></a>Optimal launch angle</h3>
 <p>
-Let primes denote <span class="maths">\phi</span> derivatives.
-Then the optimal launch angle is given by <span class="maths">R' (\phi) = 0</span>,
+Let primes denote <span class="js-maths">\phi</span> derivatives.
+Then the optimal launch angle is given by <span class="js-maths">R' (\phi) = 0</span>,
 or, to quadratic order,
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   R'_0 (\phi_0)
   &amp; + B \big[ \phi_1 R''_0 (\phi_0) + R'_1 (\phi_0) \big] \\
   &amp; + B^2
@@ -686,22 +657,20 @@ or, to quadratic order,
     + \tfrac{1}{2} {\phi_1}^2 R'''_0 (\phi_0)
     + \phi_1 R''_1 (\phi_0)
     + R'_2 (\phi_0)
-    \Big] \po{B^3} = 0.
+    \Big] \plusorder{B^3} = 0.
 \end{aligned}
 </div>
 <p>
-From the constant term, <span class="maths">R'_0 (\phi_0) = 2 \cos (2 \phi_0) = 0</span>,
+From the constant term, <span class="js-maths">R'_0 (\phi_0) = 2 \cos (2 \phi_0) = 0</span>,
 yielding the familiar
 </p>
-<div class="maths">
-\phi_0 = \frac{\pi}{4}
+<div class="js-maths">\phi_0 = \frac{\pi}{4}
 </div>
 <p>
 in the absence of air resistance.
 From the linear and quadratic terms we obtain
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \phi_1 &amp;= R'_1 (\phi_0) \big/ {-R''_0 (\phi_0)}, \\[0.2em]
   \phi_2 &amp;=
     \Big[
@@ -714,40 +683,35 @@ From the linear and quadratic terms we obtain
 <p>
 which, after a lot of differentiation and yet more algebra, become
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \phi_1 &amp;= -\tfrac{3}{32} \sqrt{2} + \tfrac{1}{64} p, \\[0.2em]
   \phi_2 &amp;=
     -\tfrac{1393}{3840} + \tfrac{81}{512} p \sqrt{2} + \tfrac{17}{2048} p^2,
 \end{aligned}
 </div>
-<p>where</p>
-<div class="maths">
-p
+<p>
+where
+</p>
+<div class="js-maths">p
 = \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
 = 2 \tanh^{-1} \tfrac{1}{\sqrt{2}}.
 </div>
-<h2 id="result"><a class="self-link" href="#result"></a>
-Result
-</h2>
+<h2 id="result"><a class="self-link" href="#result"></a>Result</h2>
 <p>
 For small initial drag-to-weight ratios
 (or small initial-to-terminal kinetic energy ratios)
 </p>
-<div class="maths">
-B = \frac{b u^2}{m g} = \frac{u^2}{c^2} \ll 1,
+<div class="js-maths">B = \frac{b u^2}{m g} = \frac{u^2}{c^2} \ll 1,
 </div>
 <p>
 the <b>optimal launch angle</b> has the <b>asymptotic expansion</b>
 </p>
-<div class="maths">
-\boxed{
-  \phi = \phi_0 + B \phi_1 + B^2 \phi_2 \po{B^3},
-}
+<div class="js-maths important">\phi = \phi_0 + B \phi_1 + B^2 \phi_2 \plusorder{B^3},
 </div>
-<p>where</p>
-<div class="maths">
-\begin{aligned}
+<p>
+where
+</p>
+<div class="js-maths">\begin{aligned}
   \phi_0
     &amp;= \tfrac{\pi}{4} \\
     &amp;= 45 \degree, \\[0.2em]
@@ -765,42 +729,41 @@ the <b>optimal launch angle</b> has the <b>asymptotic expansion</b>
     &amp;= 3.290 \degree,
 \end{aligned}
 </div>
-<p>that is,</p>
-<div class="maths">
-  \boxed{
-  \begin{aligned}
-    \phi
-    &amp;= 45 \degree - 6.018 \degree B + 3.290 \degree B^2 \po{B^3} \\
-    &amp;= 45 \degree
-    - 6.018 \degree \frac{u^2}{c^2}
-    + 3.290 \degree \frac{u^4}{c^4} \po{\frac{u^6}{c^6}}.
-  \end{aligned}
-}
-</div>
-<h2 id="numerics"><a class="self-link" href="#numerics"></a>
-Numerical verification
-</h2>
 <p>
-<b>GNU Octave Code:</b>
-<a href="https://github.com/yawnoc/projectile-motion-numerics/" title="GNU Octave: Projectile motion numerics"><code>yawnoc/projectile-motion-numerics</code></a>
+that is,
+</p>
+<div class="js-maths important">\begin{aligned}
+  \phi
+  &amp;= 45 \degree - 6.018 \degree B + 3.290 \degree B^2 \plusorder{B^3} \\
+  &amp;= 45 \degree
+  - 6.018 \degree \frac{u^2}{c^2}
+  + 3.290 \degree \frac{u^4}{c^4} \plusorder{\frac{u^6}{c^6}}.
+\end{aligned}
+</div>
+<h2 id="numerics"><a class="self-link" href="#numerics"></a>Numerical verification</h2>
+<p>
+<b>Code:</b>  <a href="https://github.com/yawnoc/projectile-motion-numerics/">[GNU Octave] Projectile motion numerics (GitHub)</a>
 </p>
 <p>
 In the following table we compare numerically computed optimal launch angles
-(see
-<a href="https://github.com/yawnoc/projectile-motion-numerics/" title="GNU Octave: Projectile motion numerics">GitHub repository</a>)
-with those from the asymptotic <a href="#result" title="Result">result above</a>:
+(see <a href="https://github.com/yawnoc/projectile-motion-numerics/">GitHub repository</a>)
+with those from the asymptotic <a href="#result">result above</a>:
 </p>
-<div class="centred-flex"><div class="overflowing"><table>
+<div class="centred-block">
+<div class="overflowing">
+<table>
+<thead>
 <tr>
-<td class="no-border"></td>
-<th colspan="3">Optimal <span class="maths">\phi</span></th>
+<th rowspan="2"><span class="js-maths">B</span></th>
+<th colspan="3">Optimal <span class="js-maths">\phi</span></th>
 </tr>
 <tr>
-<th><span class="maths">B</span></th>
 <th>Numerical</th>
 <th>Asymptotic</th>
 <th>Rel.&nbsp;error</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>&numsp;&numsp;&numsp;&numsp;0</td>
 <td>45.0°</td>
@@ -938,12 +901,15 @@ with those from the asymptotic <a href="#result" title="Result">result above</a>
 <td>10000</td>
 <td>18.1°</td>
 </tr>
-</table></div></div>
+</tbody>
+</table>
+</div>
+</div>
 <p>
-Indeed the asymptotic expansion is very accurate for <span class="maths">B &lt; 0.5</span>
-(or equivalently <span class="maths">u / c &lt; 0.7</span>).
+Indeed the asymptotic expansion is very accurate for <span class="js-maths">B &lt; 0.5</span>
+(or equivalently <span class="js-maths">u / c &lt; 0.7</span>).
 </p>
-<div class="centred-svg">
+<div class="centred-block">
 <svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 16">
 <defs>
 <marker id="htickcoarse" viewBox="-0.1 0 0.2 0.4" refX="0" refY="0" markerWidth="0.2" markerHeight="0.4">
@@ -1078,18 +1044,17 @@ Indeed the asymptotic expansion is very accurate for <span class="maths">B &lt; 
 </svg>
 </div>
 <p>
-The true optimal launch angle is a decreasing function of <span class="maths">B</span>.
+The true optimal launch angle is a decreasing function of <span class="js-maths">B</span>.
 Thus, very crudely, the asymptotic expansion becomes useless
 when it stops decreasing, which occurs at
 </p>
-<div class="maths">
-B \approx \frac{-\phi_1}{2 \phi_2} = 0.9.
+<div class="js-maths">B \approx \frac{-\phi_1}{2 \phi_2} = 0.9.
 </div>
 <p>
 Finally, here is a plot of the optimal launch angle in terms of
-<span class="maths">\sqrt{B} = u / c</span>, the initial-to-terminal speed ratio:
+<span class="js-maths">\sqrt{B} = u / c</span>, the initial-to-terminal speed ratio:
 </p>
-<div class="centred-svg">
+<div class="centred-block">
 <svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 21">
 <line x1="0" y1="-30" x2="20.5" y2="-30"/>
 <text class="maths-italic" x="20.5" y="-30" font-size="1" dx="1.2em" dy="0.3em">u&thinsp;/&thinsp;c</text>
@@ -1187,44 +1152,40 @@ Finally, here is a plot of the optimal launch angle in terms of
 <text x="7.25" y="-46.89" font-size="1" dx="-3.2em" dy="1em">Asymptotic</text>
 </svg>
 </div>
-<h2 id="cite"><a class="self-link" href="#cite"></a>
-Cite this page
-</h2>
+<h2 id="cite"><a class="self-link" href="#cite"></a>Cite this page</h2>
 <ul>
 <li>Text:
 <p>
-Conway&nbsp;(2019).
+Conway&nbsp;(2020).
 Projectile motion: optimal launch angle for weak quadratic drag.
-&lt;https://yawnoc.github.io/math/projectile-weak-drag&gt;
-[Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
+&lt;https://yawnoc.github.io/math/projectile-weak-drag.html&gt;
+Accessed <span class="js-date">yyyy-mm-dd</span>.
 </p>
 </li>
 <li>BibTeX:
-<pre>
-@misc{conway-projectile-weak-drag,
+<pre><code>@misc{conway-projectile-weak-drag,
   author = {Conway},
-  year = {2019},
+  year = {2020},
   title = {Projectile motion: optimal launch angle for weak quadratic drag},
-  howpublished = {\url{https://yawnoc.github.io/math/projectile-weak-drag}},
-  note = {[Accessed <span class="date">d~month~yyyy</span>]}
+  howpublished = {\url{https://yawnoc.github.io/math/projectile-weak-drag.html}},
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 <li>BibLaTeX:
-<pre>
-@online{conway-projectile-weak-drag,
+<pre><code>@online{conway-projectile-weak-drag,
   author = {Conway},
-  year = {2019},
+  year = {2020},
   title = {Projectile motion: optimal launch angle for weak quadratic drag},
-  url = {https://yawnoc.github.io/math/projectile-weak-drag},
-  urldate = {<span class="date">yyyy-mm-dd</span>}
+  url = {https://yawnoc.github.io/math/projectile-weak-drag.html},
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 </ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
 <footer>
-<hr>
-©&nbsp;2019&nbsp;Conway.
+©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
 </html>
