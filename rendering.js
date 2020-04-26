@@ -97,6 +97,10 @@ function renderMaths() {
     '\\roundbr': '\\delimwrap{(}{#1}{)}',
     '\\squarebr': '\\delimwrap{[}{#1}{]}',
     
+    // Fencing
+    '\\abs': '\\delimwrap{\\lvert}{#1}{\\rvert}', /* or, '\\situps' */
+    '\\norm': '\\delimwrap{\\lVert}{#1}{\\rVert}',
+    
     // Del operator
     '\\del': '\\mathopspace\\vec{\\nabla}',
     
