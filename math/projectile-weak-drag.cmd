@@ -39,9 +39,9 @@ See also: [Projectile motion: optimal launch angle from a platform](
 
 ----
 In the absence of air resistance, a launch angle of 45° maximises range.
-When there is drag linear in speed, the equations of motion can be integrated
-analytically, and closed-form expressions
-in terms of the [Lambert $W$-function][lambert-w]
+When there is drag linear in speed,
+the equations of motion can be integrated analytically,
+and closed-form expressions in terms of the [Lambert W-function][lambert-w]
 can be obtained for the optimal launch angle;
 see [Packel \&~Yuen (2004)][packel-yuen].
 However, a more realistic model of air resistance
@@ -355,7 +355,8 @@ We make an asymptotic expansion in powers of $B$ about $B = 0$:
 ----
 $$
   \gdef\grey#1{\textcolor{grey}{#1}}
-  \gdef\plusorder#1{\mathbin{\grey{+}} \grey{\order\roundbr{B^3}}}
+  \gdef\plusorder#1{\mathbin{\grey{+}} \grey{\order\roundbr{#1}}}
+  \gdef\coeffbr#1{\Bigl(#1\Bigr)}
   \begin{aligned}
     \dot{x} &= \dot{x}_0 + B \dot{x}_1 + B^2 \dot{x}_2 \plusorder{B^3}, \\
     \dot{y} &= \dot{y}_0 + B \dot{y}_1 + B^2 \dot{y}_2 \plusorder{B^3}.
@@ -363,211 +364,16 @@ $$
 $$
 
 ----
-Substituting these into the equations of motion and doing some algebra,
-we obtain
+Substituting these into the equations of motion and equating coefficients,
+we obtain successive 2nd-order ordinary differential equations
+for $x_0$, $y_0$, $x_1$, $y_1$, etc.
+Thus $\dot{x}_0$, $x_0$, $\dot{y}_0$, $y_0$, $\dot{x}_1$, ..., $y_2$
+can be determined by straight integration,
+the details of which I leave to the [manuscript] (page~3 onwards).
 ----
-$$
-  \begin{alignedat}{2}
-    \ddot{x}_0 + B \ddot{x}_1 + B^2 \ddot{x}_2 &=
-      &&
-      - B \roundbr{\dot{x}_0 v_0}
-      - B^2 \roundbr{\dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0}}
-      \plusorder{B^3},
-      \\
-    \ddot{y}_0 + B \ddot{y}_1 + B^2 \ddot{y}_2 &=
-      - 1
-      &&
-      - B \roundbr{\dot{y}_0 v_0}
-      - B^2 \roundbr{\dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0}}
-      \plusorder{B^3},
-  \end{alignedat}
-$$
-----
-where
-----
-$$
-  \begin{aligned}
-    v_0 &= \sqrt{{\dot{x}_0}^2 + {\dot{y}_0}^2}, \\
-    w_1 &= \dot{x}_0 \dot{x}_1 + \dot{y}_0 \dot{y}_1.
-  \end{aligned}
-$$
-----
-  Equating coefficients of $B$, we obtain
-----
-$$
-  \begin{alignedat}{4}
-    \ddot{x}_0 &= {} &  0 &,
-      \quad & \dot{x}_0 (0) &= \cos\phi, \quad & x_0 (0) &= 0, \\
-    \ddot{y}_0 &= {} & -1 &,
-      \quad & \dot{y}_0 (0) &= \sin\phi, \quad & y_0 (0) &= 0,
-  \end{alignedat}
-$$
-$$
-  \begin{alignedat}{3}
-    \ddot{x}_1 &= -\dot{x}_0 v_0,
-      \quad & \dot{x}_1 (0) &= 0, \quad & x_1 (0) &= 0, \\
-    \ddot{y}_1 &= -\dot{y}_0 v_0,
-      \quad & \dot{y}_1 (0) &= 0, \quad & y_1 (0) &= 0,
-  \end{alignedat}
-$$
-$$
-  \begin{alignedat}{3}
-    \ddot{x}_2 &= -\roundbr{\dot{x}_1 v_0 + \frac{\dot{x}_0 w_1}{v_0}},
-      \quad & \dot{x}_2 (0) &= 0, \quad & x_2 (0) &= 0, \\
-    \ddot{y}_2 &= -\roundbr{\dot{y}_1 v_0 + \frac{\dot{y}_0 w_1}{v_0}},
-      \quad & \dot{y}_2 (0) &= 0, \quad & y_2 (0) &= 0,
-  \end{alignedat}
-$$
-$$
-  \text{etc.}
-$$
 
 ----
-Thus $\dot{x}_0, x_0, \dot{y}_0, y_0, \dot{x}_1,
-\text{etc.}$ can be determined by straight integration,
-although the expressions become very complicated
-(see [manuscript] for details).
-For brevity, we define the following:
-----
-$$
-  \begin{aligned}
-    \alpha &= \cos\phi \\
-     \beta &= \sin\phi \\
-      \tau &= t - \beta \\
-         r &= \frac{\tau + v_0}{-\beta + 1}
-  \end{aligned}
-$$
-
-----
-Note that $v_0 = \sqrt{\alpha^2 + \tau^2}$.
-After a lot of algebra and integration, we obtain:
-----
-$$
-  \begin{aligned}
-    \ddot{x}_0 &= 0 \\[0.2em]
-     \dot{x}_0 &= \alpha \\[0.2em]
-           x_0 &= \alpha t
-  \end{aligned}
-$$
-$$
-  \begin{aligned}
-    \ddot{y}_0 &= -1 \\[0.2em]
-     \dot{y}_0 &= -\tau \\[0.2em]
-           y_0 &= -\tfrac{1}{2} \tau^2 + \tfrac{1}{2} \beta^2
-  \end{aligned}
-$$
-$$
-  \begin{aligned}
-    \ddot{x}_1 &= -\alpha v_0 \\[0.2em]
-     \dot{x}_1 &=
-      - \Big[ \tfrac{1}{2} \alpha \beta \Big]
-      - \Big[ \tfrac{1}{2} \alpha \Big] \tau v_0
-      - \Big[ \tfrac{1}{2} \alpha^3 \Big] \log r
-      \\[0.4em]
-    x_1 &=
-      - \Big[ \tfrac{1}{3} \alpha \Big]
-      - \Big[ \tfrac{1}{2} \alpha \beta \Big] \tau
-      + \Big[ \tfrac{1}{2} \alpha^3 \Big] v_0
-      - \Big[ \tfrac{1}{6} \alpha \Big] {v_0}^3
-      - \Big[ \tfrac{1}{2} \alpha^3 \Big] \tau \log r
-  \end{aligned}
-$$
-$$
-  \begin{aligned}
-    \ddot{y}_1 &= \tau v_0 \\[0.2em]
-     \dot{y}_1 &= \tfrac{1}{3} {v_0}^3 - \tfrac{1}{3} \\[0.4em]
-           y_1 &=
-        \Big[ {-\tfrac{1}{4}} + \tfrac{1}{8} \alpha^2 \Big] \beta
-      - \Big[ \tfrac{1}{3} \Big] \tau
-      + \Big[ \tfrac{1}{8} \alpha^2 \Big] \tau v_0
-      + \Big[ \tfrac{1}{12} \Big] \tau {v_0}^3
-      + \Big[ \tfrac{1}{8} \alpha^4 \Big] \log r
-  \end{aligned}
-$$
-$$
-  \begin{aligned}
-    \ddot{x}_2 &=
-        \Big[ \tfrac{4}{3} \alpha^3 \Big] \tau
-      + \Big[ \tfrac{5}{6} \alpha \Big] \tau^3
-      + \Big[ \tfrac{1}{2} \alpha^3 \beta \Big] \frac{1}{v_0}
-      - \Big[ \tfrac{1}{3} \alpha \Big] \frac{\tau}{v_0}
-      + \Big[ \tfrac{1}{2} \alpha \beta \Big] v_0
-      + \Big[ \tfrac{1}{2} \alpha^5 \Big] \frac{\log r}{v_0} \\ & \quad
-      + \Big[ \tfrac{1}{2} \alpha^3 \Big] v_0 \log r
-      \\[0.4em]
-    \dot{x}_2 &=
-        \Big[
-          \tfrac{3}{8} \alpha - \tfrac{3}{8} \alpha^3 + \tfrac{1}{3} \alpha^5
-        \Big]
-      + \Big[ \tfrac{13}{24} \alpha^3 \Big] \tau^2
-      + \Big[ \tfrac{5}{24} \alpha \Big] \tau^4
-      - \Big[ \tfrac{1}{3} \alpha \Big] v_0
-      + \Big[ \tfrac{1}{4} \alpha \beta \Big] \tau v_0 \\ & \quad
-      + \Big[ \tfrac{3}{4} \alpha^3 \beta \Big] \log r
-      + \Big[ \tfrac{1}{4} \alpha^3 \Big] \tau v_0 \log r
-      + \Big[ \tfrac{3}{8} \alpha^5 \Big] \log^2 r
-      \\[0.4em]
-    x_2 &=
-        \Big[
-          \tfrac{1}{6} \alpha + \tfrac{4}{9} \alpha^3 + \tfrac{8}{9} \alpha^5
-        \Big] \beta
-      + \Big[
-          \tfrac{3}{8} \alpha - \tfrac{3}{8} \alpha^3 + \alpha^5
-        \Big] \tau
-      + \Big[ \tfrac{11}{72} \alpha^3 \Big] \tau^3
-      + \Big[ \tfrac{1}{24} \alpha \Big] \tau^5 \\ & \quad
-      - \Big[ \tfrac{3}{4} \alpha^3 \beta \Big] v_0
-      - \Big[ \tfrac{1}{6} \alpha \Big] \tau v_0
-      + \Big[ \tfrac{1}{12} \alpha \beta \Big] {v_0}^3
-      - \Big[ \tfrac{1}{6} \alpha^3 \Big] \log r
-      + \Big[ \tfrac{3}{4} \alpha^3 \beta \Big] \tau \log r \\ & \quad
-      - \Big[ \tfrac{3}{4} \alpha^5 \Big] v_0 \log r
-      + \Big[ \tfrac{1}{12} \alpha^3 \Big] {v_0}^3 \log r
-      + \Big[ \tfrac{3}{8} \alpha^5 \Big] \tau \log^2 r
-  \end{aligned}
-$$
-$$
-  \begin{aligned}
-    \ddot{y}_2 &=
-      - \Big[ \tfrac{1}{3} \alpha^4 \Big]
-      - \Big[ \tfrac{3}{2} \alpha^2 \Big] \tau^2
-      - \Big[ \tfrac{2}{3} \Big] \tau^4
-      + \Big[ \tfrac{1}{3} \Big] v_0
-      - \Big[ \tfrac{1}{2} \alpha^2 \beta \Big] \frac{\tau}{v_0}
-      + \Big[ \tfrac{1}{3} \Big] \frac{\tau^2}{v_0}
-      - \Big[ \tfrac{1}{2} \alpha^4 \Big] \frac{\tau \log r}{v_0}
-      \\[0.4em]
-    \dot{y}_2 &=
-        \Big[
-          \tfrac{1}{5} + \tfrac{4}{15} \alpha^2 + \tfrac{8}{15} \alpha^4
-        \Big] \beta
-      + \Big[ \tfrac{1}{6} \alpha^4 \Big] \tau
-      - \Big[ \tfrac{1}{2} \alpha^2 \Big] \tau^3
-      - \Big[ \tfrac{2}{15} \Big] \tau^5
-      - \Big[ \tfrac{1}{2} \alpha^2 \beta \Big] v_0
-      + \Big[ \tfrac{1}{3} \Big] \tau v_0 \\ & \quad
-      - \Big[ \tfrac{1}{2} \alpha^4 \Big] v_0 \log r
-      \\[0.4em]
-    y_2 &=
-        \Big[
-          \tfrac{1}{9} - \tfrac{1}{8} \alpha^2 + \tfrac{1}{8} \alpha^4
-        - \tfrac{2}{9} \alpha^6
-        \Big]
-      + \Big[
-          \tfrac{1}{5} + \tfrac{4}{15} \alpha^2 + \tfrac{8}{15} \alpha^4
-        \Big] \beta \tau
-      + \Big[ \tfrac{5}{24} \alpha^4 \Big] \tau^2
-      - \Big[ \tfrac{1}{8} \alpha^2 \Big] \tau^4 \\ & \quad
-      - \Big[ \tfrac{1}{45} \Big] \tau^6
-      - \Big[ \tfrac{1}{4} \alpha^2 \beta \Big] \tau v_0
-      + \Big[ \tfrac{1}{9} \Big] {v_0}^3
-      - \Big[ \tfrac{1}{4} \alpha^4 \beta \Big] \log r
-      - \Big[ \tfrac{1}{4} \alpha^4 \Big] \tau v_0 \log r \\ & \quad
-      - \Big[ \tfrac{1}{8} \alpha^6 \Big] \log^2 r
-  \end{aligned}
-$$
-----
-You might be wondering why I stopped at order $B^2$.
+You might be wondering why we have stopped at order $B^2$.
 Initially I thought that integration could be performed to arbitrary order
 (although the amount of algebra required grows *very* quickly).
 However I was wrong; it turns out that the following integrals
@@ -578,7 +384,7 @@ $$
     &
     \int
       \frac{
-        \tau \log \big( \tau + \sqrt{\alpha^2 + \tau^2} \big)
+        \tau \log \roundbr{\tau + \sqrt{\alpha^2 + \tau^2}}
       }{
         \alpha^2 + \tau^2
       }
@@ -586,7 +392,7 @@ $$
     &
     \int
       \frac{
-        \log^2 \big( \tau + \sqrt{\alpha^2 + \tau^2} \big)
+        \log^2 \roundbr{\tau + \sqrt{\alpha^2 + \tau^2}}
       }{
         (\alpha^2 + \tau^2)^{3/2}
       }
@@ -607,84 +413,45 @@ and as such probably does not converge.
 ###
 
 ----
-Having determined the trajectory, we then determine the flight time,
-given by $y (t) = 0$.
-To quadratic order, i.e.~with
-$y = y_0 + B y_1 + B^2 y_2 \plusorder{B^3}$ and
-$t = t_0 + B t_1 + B^2 t_2 \plusorder{B^3}$, this becomes
+Having determined the trajectory,
+we then determine the flight time, given by $y (t) = 0$.
+To quadratic order, i.e.~with 
 ----
 $$
   \begin{aligned}
-    y_0 (t_0)
-    & + B \big[ t_1 \dot{y}_0 (t_0) + y_1 (t_0) \big] \\
-    & + B^2
-      \Big[
+    y &= y_0 + B y_1 + B^2 y_2 \plusorder{B^3}, \\
+    t &= t_0 + B t_1 + B^2 t_2 \plusorder{B^3},
+  \end{aligned}
+$$
+----
+this becomes
+----
+$$
+  y_0 (t_0)
+    + B \coeffbr{t_1 \dot{y}_0 (t_0) + y_1 (t_0)}
+    + B^2
+      \coeffbr{
         t_2 \dot{y}_0 (t_0)
-      + \tfrac{1}{2} {t_1}^2 \ddot{y}_0 (t_0)
-      + t_1 \dot{y}_1 (t_0)
-      + y_2 (t_0)
-      \Big] \plusorder{B^3} = 0.
-  \end{aligned}
+        + \tfrac{1}{2} {t_1}^2 \ddot{y}_0 (t_0)
+        + t_1 \dot{y}_1 (t_0)
+        + y_2 (t_0)
+      }
+    \plusorder{B^3}
+  = 0.
 $$
-----
 
+----
 The unperturbed (dragless) flight time is given by the positive solution to
-$y_0 (t_0) = 0$, which is
+$y_0 (t_0) = t_0 (\sin\phi - t_0 / 2) = 0$, which is
 ----
 $$
-  t_0 = 2 \beta.
-$$
-
-----
-From the linear and quadratic terms we obtain
-----
-$$
-  \begin{aligned}
-    t_1 &= y_1 (t_0) \big/ {-\dot{y}_0 (t_0)}, \\[0.2em]
-    t_2 &=
-      \Big[
-        \tfrac{1}{2} {t_1}^2 \ddot{y}_0 (t_0)
-      + t_1 \dot{y}_1 (t_0)
-      + y_2 (t_0)
-      \Big] \Big/ {-\dot{y}_0 (t_0)},
-  \end{aligned}
-$$
-----
-which, after some more algebra, reduce to
-----
-$$
-  \begin{aligned}
-    t_1 &=
-      \Big[ {-\tfrac{1}{2}} + \tfrac{\alpha^2}{4} \Big]
-    + \Big[ \tfrac{1}{8} \alpha^4 \Big] \frac{\log\rho}{\beta}, \\[0.4em]
-    t_2 &=
-      \Big[
-        \tfrac{11}{40}
-      - \tfrac{29}{120} \alpha^2
-      + \tfrac{481}{480} \alpha^4
-      - \tfrac{16}{15} \alpha^6
-      \Big] \frac{1}{\beta}
-    + \Big[
-        {-\tfrac{7}{16} \alpha^4}
-      + \tfrac{15}{32} \alpha^6
-      \Big] \frac{\log\rho}{\beta^2} \\ & \quad
-    + \Big[
-        {-\tfrac{1}{8} \alpha^6}
-      + \tfrac{15}{128} \alpha^8
-      \Big] \frac{\log^2\rho}{\beta^3},
-  \end{aligned}
-$$
-----
-where
-----
-$$
-  \rho = \frac{1 + \beta}{1 - \beta}.
+  t_0 = 2 \sin\phi.
 $$
 
 ----
-By now, $t_0, t_1, t_2$ are just functions of $\phi$
-(remember $\alpha$ and $\beta$ are abbreviations
-for $\cos\phi$ and $\sin\phi$).
+From the linear and quadratic terms
+we then obtain $t_1$ and $t_2$
+(see page~20 onwards of [manuscript]).
 ----
 
 ###range
@@ -692,54 +459,31 @@ for $\cos\phi$ and $\sin\phi$).
 ###
 
 ----
-To quadratic order, the range is
+Substituting the flight time into the horizontal component of the trajectory
+gives the range
 ----
 $$
   \begin{aligned}
     R
     &= x (t) \\
     &=
-    x_0 (t_0)
-    + B \big[ t_1 \dot{x}_0 (t_0) + x_1 (t_0) \big]
-    + B^2
-      \Big[
-        t_2 \dot{x}_0 (t_0)
-      + t_1 \dot{x}_1 (t_0)
-      + x_2 (t_0)
-      \Big] \plusorder{B^3} \\
-    &= R_0 + B R_1 + B^2 R_2 \plusorder{B^3},
+      x_0 (t_0)
+        + B \coeffbr{t_1 \dot{x}_0 (t_0) + x_1 (t_0)}
+        + B^2
+          \coeffbr{
+            t_2 \dot{x}_0 (t_0)
+            + t_1 \dot{x}_1 (t_0)
+            + x_2 (t_0)
+          }
+        \plusorder{B^3}
+      \\
+    &\defeq R_0 + B R_1 + B^2 R_2 \plusorder{B^3},
   \end{aligned}
 $$
 ----
-where, after some more algebra,
+where $R_0$, $R_1$, and $R_2$ are (horribly complicated) functions of $\phi$
+(see page~24 onwards of [manuscript]).
 ----
-$$
-  \begin{aligned}
-    R_0 &= 2 \alpha \beta, \\[0.2em]
-    R_1 &=
-      \Big[ {-\tfrac{3}{2} \alpha} + \tfrac{5}{4} \alpha^3 \Big]
-    + \Big[
-        {-\tfrac{1}{2} \alpha^3} + \tfrac{5}{8} \alpha^5
-      \Big] \frac{\log\rho}{\beta}, \\[0.4em]
-    R_2 &=
-      \Big[
-        \tfrac{51}{40} \alpha
-      - \tfrac{757}{360} \alpha^3
-      + \tfrac{5243}{1440} \alpha^5
-      - \tfrac{128}{45} \alpha^7
-      \Big] \frac{1}{\beta} \\ & \quad
-    + \Big[
-        \tfrac{11}{12} \alpha^3
-      - \tfrac{149}{48} \alpha^5
-      + \tfrac{71}{32} \alpha^7
-      \Big] \frac{\log\rho}{\beta^2}
-    + \Big[
-        \tfrac{3}{8} \alpha^5
-      - \tfrac{15}{16} \alpha^7
-      + \tfrac{71}{128} \alpha^9
-      \Big] \frac{\log^2\rho}{\beta^3}.
-  \end{aligned}
-$$
 
 ###angle
   Optimal launch angle
@@ -751,20 +495,20 @@ Then the optimal launch angle is given by $R' (\phi) = 0$,
 or, to quadratic order,
 ----
 $$
-  \begin{aligned}
-    R'_0 (\phi_0)
-    & + B \big[ \phi_1 R''_0 (\phi_0) + R'_1 (\phi_0) \big] \\
-    & + B^2
-      \Big[
+  R'_0 (\phi_0)
+    + B \coeffbr{\phi_1 R''_0 (\phi_0) + R'_1 (\phi_0)}
+    + B^2
+      \coeffbr{
         \phi_2 R''_0 (\phi_0)
-      + \tfrac{1}{2} {\phi_1}^2 R'''_0 (\phi_0)
-      + \phi_1 R''_1 (\phi_0)
-      + R'_2 (\phi_0)
-      \Big] \plusorder{B^3} = 0.
-  \end{aligned}
+        + \tfrac{1}{2} {\phi_1}^2 R'''_0 (\phi_0)
+        + \phi_1 R''_1 (\phi_0)
+        + R'_2 (\phi_0)
+      }
+    \plusorder{B^3}
+  = 0.
 $$
 ----
-From the constant term, $R'_0 (\phi_0) = 2 \cos (2 \phi_0) = 0$,
+From the constant term we have $R'_0 (\phi_0) = 2 \cos (2 \phi_0) = 0$,
 yielding the familiar
 ----
 $$
@@ -773,36 +517,10 @@ $$
 ----
 in the absence of air resistance.
 From the linear and quadratic terms we obtain
+after much differentiation and algebra (pages~27--35 of [manuscript])
+the constants $\phi_1$ and $\phi_2$,
+and hence the result:
 ----
-$$
-  \begin{aligned}
-    \phi_1 &= R'_1 (\phi_0) \big/ {-R''_0 (\phi_0)}, \\[0.2em]
-    \phi_2 &=
-      \Big[
-        \tfrac{1}{2} {\phi_1}^2 R'''_0 (\phi_0)
-      + \phi_1 R''_1 (\phi_0)
-      + R'_2 (\phi_0)
-      \Big] \Big/ {-R''_0 (\phi_0)},
-  \end{aligned}
-$$
-----
-which, after a lot of differentiation and yet more algebra, become
-----
-$$
-  \begin{aligned}
-    \phi_1 &= -\tfrac{3}{32} \sqrt{2} + \tfrac{1}{64} p, \\[0.2em]
-    \phi_2 &=
-      -\tfrac{1393}{3840} + \tfrac{81}{512} p \sqrt{2} + \tfrac{17}{2048} p^2,
-  \end{aligned}
-$$
-----
-where
-----
-$$
-  p
-  = \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
-  = 2 \tanh^{-1} \tfrac{1}{\sqrt{2}}.
-$$
 
 
 ##result
@@ -821,32 +539,29 @@ $$
   the __optimal launch angle__ has the __asymptotic expansion__
 ----
 $${important}
-  \phi = \phi_0 + B \phi_1 + B^2 \phi_2 \plusorder{B^3},
-$$
-----
-where
-----
-$$
   \begin{aligned}
-    \phi_0
-      &= \tfrac{\pi}{4} \\
-      &= 45 \degree, \\[0.2em]
-    \phi_1
-      &=
-      - \tfrac{3}{32} \sqrt{2}
-      + \tfrac{1}{64} \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}} \\
-      &= -6.018 \degree, \\[0.2em]
-    \phi_2
-      &=
-      - \tfrac{1393}{3840}
-      + \tfrac{81}{512} \sqrt{2}
-        \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
-      + \tfrac{17}{2048} \log^2 \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}} \\
-      &= 3.290 \degree,
+    \phi =
+      \frac{\pi}{4}
+      & + B
+          \coeffbr{
+            - \tfrac{3}{32} \sqrt{2}
+            + \tfrac{1}{64} \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
+          }
+            \\
+      & + B^2
+          \coeffbr{
+            - \tfrac{1393}{3840}
+            + \tfrac{81}{512} \sqrt{2}
+              \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
+            + \tfrac{17}{2048}
+              \log^2 \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
+          }
+            \\
+      & \plusorder{B^3},
   \end{aligned}
 $$
 ----
-that is,
+or
 ----
 $${important}
   \begin{aligned}
