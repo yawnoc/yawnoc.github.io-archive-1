@@ -107,8 +107,8 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
 ||||{centred-block}
 <svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5">
   
-  {: {it} : class="maths-italic" :}
-  {: {fs} : font-size="0.45" :}
+  {: \maths-italic : class="maths-italic" :}
+  {: \font-size : font-size="0.45" :}
   
   <!-- Marker definitions -->
   <defs>
@@ -124,28 +124,34 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
   
   <!-- x-axis -->
   <line x1="0" y1="0" x2="5.5" y2="0"/>
-  <text {it} x="5.5" y="0" {fs} dx="0.5em" dy="0.3em">x</text>
+  <text \maths-italic x="5.5" y="0" \font-size
+    dx="0.5em" dy="0.3em">x</text>
   
   <!-- y-axis -->
   <line x1="0" y1="0" x2="0" y2="-3.5"/>
-  <text {it} x="0" y="-3.5" {fs} dy="-0.5em">y</text>
+  <text \maths-italic x="0" y="-3.5" \font-size
+    dy="-0.5em">y</text>
   
   <!-- initial height h -->
   <line x1="-0.25" y1="-2" x2="0.5" y2="-2"/>
-  <text {it} x="-0.25" y="-2" {fs} dx="-0.5em" dy="0.3em">h</text>
+  <text \maths-italic x="-0.25" y="-2" \font-size
+    dx="-0.5em" dy="0.3em">h</text>
   
   <!-- trajectory -->
   <path d="M 0,-2 Q 1.5,-5 5,0" fill="none"/>
   
   <!-- launch angle phi -->
-  <text {it} x="0.6" y="-2" {fs} dx="-0.5em" dy="-0.35em">ϕ</text>
+  <text \maths-italic x="0.6" y="-2" \font-size
+    dx="-0.5em" dy="-0.35em">ϕ</text>
   
   <!-- range R -->
-  <text {it} x="5" y="0" {fs} dy="1em">R</text>
+  <text \maths-italic x="5" y="0" \font-size
+    dy="1em">R</text>
   
   <!-- velocity vector u -->
   <line x1="0" y1="-2" x2="0.8" y2="-3.6" marker-end = "url(#arrowhead)"/>
-  <text {it} x="0.8" y="-3.6" {fs} dx="0.5em">u</text>
+  <text \maths-italic x="0.8" y="-3.6" \font-size
+    dx="0.5em">u</text>
   
 </svg>
 ||||

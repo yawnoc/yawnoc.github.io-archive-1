@@ -119,8 +119,8 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
 ||||{centred-block}
 <svg class="fit-width" width="360px" viewBox="-2 -9 14 10">
   
-  {: {fs-diagram} : font-size="0.8" :}
-  {: {it} : class="maths-italic" :}
+  {:: \font-size:diagram :: font-size="0.8" ::}
+  {: \maths-italic : class="maths-italic" :}
   
   <!-- Marker definitions -->
   <defs>
@@ -135,12 +135,13 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
   
   <!-- x-axis -->
   <line x1="0" y1="0" x2="11" y2="0"/>
-  <text {it} x="11" y="0" {fs-diagram}
+  <text \maths-italic x="11" y="0" \font-size:diagram
     dx="0.6em" dy="0.3em">x</text>
   
   <!-- y-axis -->
   <line x1="0" y1="0" x2="0" y2="-8"/>
-  <text {it} x="0" y="-8" {fs-diagram} dy="-0.5em">y</text>
+  <text \maths-italic x="0" y="-8" \font-size:diagram
+    dy="-0.5em">y</text>
   
   <!-- trajectory
     See svg_points_trajectory_script.m
@@ -236,16 +237,16 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
   "/>
   
   <!-- launch angle phi -->
-  <text {it} x="1.2" y="-0.1" {fs-diagram}
+  <text \maths-italic x="1.2" y="-0.1" \font-size:diagram
     dx="-0.5em" dy="-0.35em">ϕ</text>
   
   <!-- range R -->
-  <text {it} x="10" y="0" {fs-diagram}
+  <text \maths-italic x="10" y="0" \font-size:diagram
     dy="1em">R</text>
   
   <!-- velocity vector u -->
   <line x1="0" y1="0" x2="1" y2="-2" marker-end="url(#arrowhead)"/>
-  <text {it} x="1" y="-2" {fs-diagram}
+  <text \maths-italic x="1" y="-2" \font-size:diagram
     dx="-0.6em">u</text>
   
 </svg>
@@ -1052,70 +1053,72 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
     </marker>
   </defs>
   
-  {: {t-ch} :
+  {:: \ticks:coarse-horizontal ::
     marker-start="url(#htickcoarse)"
     marker-mid="url(#htickcoarse)"
     marker-end="url(#htickcoarse)"
-  :}
-  {: {t-fh} :
+  ::}
+  {:: \ticks:fine-horizontal ::
     marker-start="url(#htickfine)"
     marker-mid="url(#htickfine)"
     marker-end="url(#htickfine)"
-  :}
-  {: {t-cv} :
+  ::}
+  {:: \ticks:coarse-vertical ::
     marker-start="url(#vtickcoarse)"
     marker-mid="url(#vtickcoarse)"
     marker-end="url(#vtickcoarse)"
-  :}
-  {: {t-fv} :
+  ::}
+  {:: \ticks:fine-vertical ::
     marker-start="url(#vtickfine)"
     marker-mid="url(#vtickfine)"
     marker-end="url(#vtickfine)"
-  :}
+  ::}
   
-  {: {fs-plot} : font-size="1" :}
+  {:: \font-size:plot :: font-size="1" ::}
   
   <!-- B-axis -->
   <line x1="0" y1="-35" x2="21" y2="-35"/>
-  <text {it} x="21" y="-35" {fs-plot} dx="0.6em" dy="0.3em">B</text>
+  <text \maths-italic x="21" y="-35" \font-size:plot
+    dx="0.6em" dy="0.3em">B</text>
   
   <!-- Horizontal axis coarse ticks -->
   <polyline class="points" points="0,-35 4,-35 8,-35 12,-35 16,-35 20,-35"
-    {t-ch}/>
-  <text {it} x="0" y="-35" {t-lh}>0</text>
-  <text {it} x="4" y="-35" {t-lh}>1</text>
-  <text {it} x="8" y="-35" {t-lh}>2</text>
-  <text {it} x="12" y="-35" {t-lh}>3</text>
-  <text {it} x="16" y="-35" {t-lh}>4</text>
-  <text {it} x="20" y="-35" {t-lh}>5</text>
+    \ticks:coarse-horizontal/>
+  <text \maths-italic x="0" y="-35" \tick-labels:horizontal>0</text>
+  <text \maths-italic x="4" y="-35" \tick-labels:horizontal>1</text>
+  <text \maths-italic x="8" y="-35" \tick-labels:horizontal>2</text>
+  <text \maths-italic x="12" y="-35" \tick-labels:horizontal>3</text>
+  <text \maths-italic x="16" y="-35" \tick-labels:horizontal>4</text>
+  <text \maths-italic x="20" y="-35" \tick-labels:horizontal>5</text>
   
-  {: {t-lh} : font-size="1" dy="1.35em" :}
+  {:: \tick-labels:horizontal :: font-size="1" dy="1.35em" ::}
   
   <!-- Horizontal axis fine ticks -->
   <polyline class="points"
     points="0.8,-35 1.6,-35 2.4,-35 3.2,-35 4.8,-35 5.6,-35 6.4,-35 7.2,-35
       8.8,-35 9.6,-35 10.4,-35 11.2,-35 12.8,-35 13.6,-35 14.4,-35 15.2,-35
       16.8,-35 17.6,-35 18.4,-35 19.2,-35 20.8,-35"
-    {t-fh}/>
+    \ticks:fine-horizontal/>
   
   <!-- phi-axis -->
   <line x1="0" y1="-35" x2="0" y2="-46.8"/>
-  <text {it} x="0" y="-46.8" {fs-plot} dy="-0.5em">ϕ</text>
+  <text \maths-italic x="0" y="-46.8" \font-size:plot
+    dy="-0.5em">ϕ</text>
   
   <!-- Vertical axis coarse ticks -->
   <polyline class="points"
     points="0,-35 0,-40 0,-45"
-    {t-cv}/>
-  <text {it} x="0" y="-35" {t-lv}>35°</text>
-  <text {it} x="0" y="-40" {t-lv}>40°</text>
-  <text {it} x="0" y="-45" {t-lv}>45°</text>
+    \ticks:coarse-vertical/>
+  <text \maths-italic x="0" y="-35" \tick-labels:vertical>35°</text>
+  <text \maths-italic x="0" y="-40" \tick-labels:vertical>40°</text>
+  <text \maths-italic x="0" y="-45" \tick-labels:vertical>45°</text>
   
-  {: {t-lv} : font-size="1" dx="-1.4em" dy="0.3em" :}
+  {:: \tick-labels:vertical :: font-size="1" dx="-1.4em" dy="0.3em" ::}
   
   <!-- Vertical axis fine ticks -->
   <polyline class="points"
     points="0,-36 0,-37 0,-38 0,-39 0,-41 0,-42 0,-43 0,-44 0,-46"
-    {t-fv}/>
+    \ticks:fine-vertical/>
   
   <!-- numerical
     See svg_points_b_phi_script.m
@@ -1174,7 +1177,7 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
   19.6,-35.4
   20,-35.32
   "/>
-  <text x="10" y="-37.98" {fs-plot}
+  <text x="10" y="-37.98" \font-size:plot
     dx="2.5em" dy="-0.5em">Numerical</text>
   <!-- asymptotic
     See svg_points_b_phi_asymptotic_script.m
@@ -1225,7 +1228,7 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
   8.2,-46.49
   "/>
   
-  <text x="8.2" y="-46.49" {fs-plot}
+  <text x="8.2" y="-46.49" \font-size:plot
     dx="-3.5em" dy="1em">Asymptotic</text>
   
 </svg>
@@ -1263,42 +1266,42 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
   
   <!-- u/c-axis -->
   <line x1="0" y1="-30" x2="20.5" y2="-30"/>
-  <text {it} x="20.5" y="-30" {fs-plot}
+  <text \maths-italic x="20.5" y="-30" \font-size:plot
     dx="1.2em" dy="0.3em">u\,/\,c</text>
   
   <!-- Horizontal axis coarse ticks -->
   <polyline class="points"
     points="0,-30 5,-30 10,-30 15,-30 20,-30"
-    {t-ch}/>
-  <text {it} x="0" y="-30" {t-lh}>0</text>
-  <text {it} x="5" y="-30" {t-lh}>1</text>
-  <text {it} x="10" y="-30" {t-lh}>2</text>
-  <text {it} x="15" y="-30" {t-lh}>3</text>
-  <text {it} x="20" y="-30" {t-lh}>4</text>
+    \ticks:coarse-horizontal/>
+  <text \maths-italic x="0" y="-30" \tick-labels:horizontal>0</text>
+  <text \maths-italic x="5" y="-30" \tick-labels:horizontal>1</text>
+  <text \maths-italic x="10" y="-30" \tick-labels:horizontal>2</text>
+  <text \maths-italic x="15" y="-30" \tick-labels:horizontal>3</text>
+  <text \maths-italic x="20" y="-30" \tick-labels:horizontal>4</text>
   
   <!-- Horizontal axis fine ticks -->
   <polyline class="points"
     points="1,-30 2,-30 3,-30 4,-30 6,-30 7,-30 8,-30 9,-30
       11,-30 12,-30 13,-30 14,-30 16,-30 17,-30 18,-30 19,-30"
-    {t-fh}/>
+    \ticks:fine-horizontal/>
   
   <!-- phi-axis -->
   <line x1="0" y1="-30" x2="0" y2="-46.8"/>
-  <text {it} x="0" y="-46.8" {fs-plot} dy="-0.5em">ϕ</text>
+  <text \maths-italic x="0" y="-46.8" \font-size:plot dy="-0.5em">ϕ</text>
   <!-- Vertical axis coarse ticks -->
   <polyline class="points"
     points="0,-30 0,-35 0,-40 0,-45"
-    {t-cv}/>
-  <text {it} x="0" y="-30" {t-lv}>30°</text>
-  <text {it} x="0" y="-35" {t-lv}>35°</text>
-  <text {it} x="0" y="-40" {t-lv}>40°</text>
-  <text {it} x="0" y="-45" {t-lv}>45°</text>
+    \ticks:coarse-vertical/>
+  <text \maths-italic x="0" y="-30" \tick-labels:vertical>30°</text>
+  <text \maths-italic x="0" y="-35" \tick-labels:vertical>35°</text>
+  <text \maths-italic x="0" y="-40" \tick-labels:vertical>40°</text>
+  <text \maths-italic x="0" y="-45" \tick-labels:vertical>45°</text>
   
   <!-- Vertical axis fine ticks -->
   <polyline class="points"
     points="0,-31 0,-32 0,-33 0,-34 0,-36 0,-37 0,-38 0,-39
       0,-41 0,-42 0,-43 0,-44 0,-46"
-    {t-fv}/>
+    \ticks:fine-vertical/>
   
   <!-- numerical
     See svg_points_u_phi_script.m
@@ -1348,7 +1351,7 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
   20,-30.87
   "/>
   
-  <text x="10" y="-36.2" {fs-plot}
+  <text x="10" y="-36.2" \font-size:plot
     dx="2.5em" dy="-0.5em">Numerical</text>
   
   <!-- asymptotic
@@ -1387,7 +1390,7 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
   7,-45.84
   7.25,-46.89
   "/>
-  <text x="7.25" y="-46.89" {fs-plot}
+  <text x="7.25" y="-46.89" \font-size:plot
     dx="-3.2em" dy="1em">Asymptotic</text>
 </svg>
 ||||

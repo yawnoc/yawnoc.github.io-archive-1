@@ -56,32 +56,28 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Pages to read
 ##
 
-<!-- Abbreviations for classes -->
-{: {plc} : {page-link-container} :}
-{: {pd} : {page-description} :}
-
 ###general
   General material
 ###
 
-===={plc}
+===={page-link-container}
 * [Conway's Romanisation for Cantonese](/cantonese/conway-romanisation)
-  ||||{pd}
+  ||||{page-description}
     Wade--Giles-style initials and length-indicative finals.
   ||||
 
 * [FAQ](/faq)
-  ||||{pd}
+  ||||{page-description}
     Frequently asked questions.
   ||||
 
 * [A cynic's 7.30 (and other programs)](/cynics-730/)
-  ||||{pd}
+  ||||{page-description}
     Mind reading: Australian politics.
   ||||
 
 * [Mao on separatism: 27 Chinas](/mao-on-separatism)
-  ||||{pd}
+  ||||{page-description}
     Mao in 1920, on why China ought to be split into 27 separate countries.
   ||||
 
@@ -92,9 +88,9 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Applied mathematics (or, physics)
 ###
 
-===={plc}
+===={page-link-container}
 * [Daytime: dependence on latitude and season](/math/daytime)
-  ||||{pd}
+  ||||{page-description}
     The sun's path through the sky
     and the duration of daytime (among other quantities).
   ||||
@@ -102,7 +98,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 * [Projectile motion: optimal launch angle for weak quadratic drag](
     /math/projectile-weak-drag
   )
-  ||||{pd}
+  ||||{page-description}
     Launching projectiles in weak air resistance
     proportional to the square of speed.
   ||||
@@ -110,7 +106,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 * [Projectile motion: optimal launch angle from a platform](
     /math/projectile-platform
   )
-  ||||{pd}
+  ||||{page-description}
     Launching projectiles from a raised platform.
   ||||
 
@@ -126,7 +122,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Mathematics
 ####
 
-======{plc}
+======{page-link-container}
 * \link:sun-tzu
   ===={sun-tzu-navigation}
   * \link:sun-tzu/preface
@@ -134,7 +130,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   * \link:sun-tzu/ii
   * \link:sun-tzu/iii
   ====
-  ||||{pd}
+  ||||{page-description}
     An annotated translation of the entire _Sunzi Suanjing_ (once completed).
   ||||
 
@@ -142,7 +138,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
     《海島算經》 \+
     "_.The_ Sea Island Computational Classic"
   ](/lit/sea-island)
-  ||||{pd}
+  ||||{page-description}
     The first problem in _Haidao Suanjing_.
   ||||
 
@@ -153,9 +149,9 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
   Not mathematics
 ####
 
-===={plc}
+===={page-link-container}
 * ["The Need to Win"](/lit/need-to-win)
-  ||||{pd}
+  ||||{page-description}
     On _The Turning_ (Tim Winton), quoting Thomas Merton,
     paraphrasing Chuang Tz(uu), on Confucius, on (probably) archery.
   ||||
@@ -164,7 +160,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
     《孔子問答：小兒論》 \+
     "Q _.\&_ A _.with_ Confucius: _.the_ Little Child's Discourse"
   ](/lit/little-child)
-  ||||{pd}
+  ||||{page-description}
     Confucius getting his arse whooped by a little kid.
   ||||
 
@@ -172,7 +168,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
     《太平山獅子亭記》 \+
     "Record of _.the_ Lion's Pavilion, Victoria Peak"
   ](/lit/lion-pavilion)
-  ||||{pd}
+  ||||{page-description}
      Plaque text commemorating the Lion's Pavilion.
   ||||
 
@@ -180,7 +176,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
     《狐假虎威》 \+
     "_.The_ Fox Feigneth _.the_ Tiger's Authority"
   ](/lit/fox-tiger)
-  ||||{pd}
+  ||||{page-description}
      The original second half of _The Gruffalo_.
   ||||
 
@@ -188,7 +184,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
     《施氏食獅史》 \+
     "_.An_ History of Mr Shih's Eating of Lions"
   ](/lit/lion-eating)
-  ||||{pd}
+  ||||{page-description}
      The original Mandarin "lion tongue twister".
   ||||
 
