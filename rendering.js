@@ -128,10 +128,10 @@ function renderMaths() {
     '\\order': '\\mathopspace O',
     
     // Colours
-    '\\colr': '\\color{red}',
-    '\\colg': '\\color{green}',
-    '\\colb': '\\color{blue}',
-    '\\colv': '\\color{darkviolet}',
+    '\\colr': '\\textcolor{red}{#1}',
+    '\\colg': '\\textcolor{green}{#1}',
+    '\\colb': '\\textcolor{blue}{#1}',
+    '\\colv': '\\textcolor{darkviolet}{#1}',
     
   }
   

@@ -195,14 +195,12 @@ After some algebra, we obtain
 $$
   \frac{\pd R}{\pd\phi} =
     \frac{2h}{C}
-    {\colb
-      \roundbr{\beta + \sqrt{\beta^2 + C}}
-    }
-    {\colr
-      \squarebr{
-        \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
-      }
-    },
+    \colb{\roundbr{
+      \beta + \sqrt{\beta^2 + C}
+    }}
+    \colr{\squarebr{
+      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
+    }},
 $$
 ----
 where for brevity $\beta = \sin\phi$.
@@ -216,8 +214,8 @@ We then carefully consider the ways in which $\pd R / {\pd\phi}$ can vanish:
   $$
     \frac{\pd R}{\pd\phi}
     = \frac{2h}{C}
-      {\colb \roundbr{\sqrt{C}}}
-      {\colr \squarebr{-\beta}}
+      \colb{\roundbr{\sqrt{C}}}
+      \colr{\squarebr{-\beta}}
     = - 2\beta \cdot \frac{h}{\sqrt{C}},
   $$
   which vanishes assuming $h$ is finite.
@@ -233,29 +231,25 @@ We then carefully consider the ways in which $\pd R / {\pd\phi}$ can vanish:
       \frac{\pd R}{\pd\phi}
       &=
         \frac{2h}{C}
-        {\colb
-          \roundbr{
-            \beta
-              +
-            (-\beta) \roundbr{1 + \frac{C}{2 \beta^2}}
-          }
-        }
-        {\colr
-          \squarebr{
-            \frac{1 - \beta^2}{-\beta}
-              + 
-            \frac{\beta^2}{-\beta}
-          }
-        }
+        \colb{\roundbr{
+          \beta
+            +
+          (-\beta) \roundbr{1 + \frac{C}{2 \beta^2}}
+        }}
+        \colr{\squarebr{
+          \frac{1 - \beta^2}{-\beta}
+            + 
+          \frac{\beta^2}{-\beta}
+        }}
           \\[\fraclinespace]
       &=
         \frac{2h}{C}
-        {\colb
-          \roundbr{- \frac{C}{2 \beta}}
-        }
-        {\colr
-          \squarebr{- \frac{1}{\beta}}
-        }
+        \colb{\roundbr{
+          - \frac{C}{2 \beta}
+        }}
+        \colr{\squarebr{
+          - \frac{1}{\beta}
+        }}
           \\[\fraclinespace]
       &= \frac{h}{\beta^2},
     \end{aligned}
@@ -266,11 +260,11 @@ We then carefully consider the ways in which $\pd R / {\pd\phi}$ can vanish:
   and again the range is zero.
 
 3.
-  If $\colr
-    \squarebr{
-      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
+  If $
+    \colr{
+      \squarebr{\frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta} = 0
     }
-      = 0$,
+  $,
   then $\pd R / {\pd\phi}$ vanishes unconditionally, and we have
   $$
     \begin{aligned}
@@ -335,9 +329,9 @@ In particular:
   $$
 
 * For $h = \infty$, the optimal angle is
-    $\phi = \sin^{-1} (1/\sqrt{\infty}) = 0$
+    $\phi = \sin^{-1} (1 / \sqrt{\infty}) = 0$
   and the maximum range is
-    $R = u^2/g \cdot \sqrt{\infty} = \infty$.
+    $R = u^2 / g \cdot \sqrt{\infty} = \infty$.
   Projectiles should be launched almost horizontally
   from very tall platforms; asymptotically we have
   $$

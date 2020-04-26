@@ -145,14 +145,12 @@ After some algebra, we obtain
 </p>
 <div class="js-maths">\frac{\pd R}{\pd\phi} =
   \frac{2h}{C}
-  {\colb
-    \roundbr{\beta + \sqrt{\beta^2 + C}}
-  }
-  {\colr
-    \squarebr{
-      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
-    }
-  },
+  \colb{\roundbr{
+    \beta + \sqrt{\beta^2 + C}
+  }}
+  \colr{\squarebr{
+    \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
+  }},
 </div>
 <p>
 where for brevity <span class="js-maths">\beta = \sin\phi</span>.
@@ -162,8 +160,8 @@ We then carefully consider the ways in which <span class="js-maths">\pd R / {\pd
 <li>If <span class="js-maths">C = \infty</span>, then
 <div class="js-maths">\frac{\pd R}{\pd\phi}
 = \frac{2h}{C}
-  {\colb \roundbr{\sqrt{C}}}
-  {\colr \squarebr{-\beta}}
+  \colb{\roundbr{\sqrt{C}}}
+  \colr{\squarebr{-\beta}}
 = - 2\beta \cdot \frac{h}{\sqrt{C}},
 </div>
 which vanishes assuming <span class="js-maths">h</span> is finite.
@@ -177,29 +175,25 @@ and in either case the range is zero, i.e.&nbsp;<span class="js-maths">R</span> 
   \frac{\pd R}{\pd\phi}
   &amp;=
     \frac{2h}{C}
-    {\colb
-      \roundbr{
-        \beta
-          +
-        (-\beta) \roundbr{1 + \frac{C}{2 \beta^2}}
-      }
-    }
-    {\colr
-      \squarebr{
-        \frac{1 - \beta^2}{-\beta}
-          + 
-        \frac{\beta^2}{-\beta}
-      }
-    }
+    \colb{\roundbr{
+      \beta
+        +
+      (-\beta) \roundbr{1 + \frac{C}{2 \beta^2}}
+    }}
+    \colr{\squarebr{
+      \frac{1 - \beta^2}{-\beta}
+        + 
+      \frac{\beta^2}{-\beta}
+    }}
       \\[\fraclinespace]
   &amp;=
     \frac{2h}{C}
-    {\colb
-      \roundbr{- \frac{C}{2 \beta}}
-    }
-    {\colr
-      \squarebr{- \frac{1}{\beta}}
-    }
+    \colb{\roundbr{
+      - \frac{C}{2 \beta}
+    }}
+    \colr{\squarebr{
+      - \frac{1}{\beta}
+    }}
       \\[\fraclinespace]
   &amp;= \frac{h}{\beta^2},
 \end{aligned}
@@ -209,11 +203,9 @@ But since <span class="js-maths">\phi = \sin^{-1}\beta &lt; 0</span>, this corre
 launching the projectile downwards starting from ground level,
 and again the range is zero.
 </li>
-<li>If <span class="js-maths">\colr
-    \squarebr{
-      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
-    }
-      = 0</span>,
+<li>If <span class="js-maths">\colr{
+      \squarebr{\frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta} = 0
+    }</span>,
 then <span class="js-maths">\pd R / {\pd\phi}</span> vanishes unconditionally, and we have
 <div class="js-maths">\begin{aligned}
   (1 - \beta^2)^2 &amp;= \beta^2 (\beta^2 + C) \\
@@ -264,9 +256,9 @@ and
 </div>
 </li>
 <li>For <span class="js-maths">h = \infty</span>, the optimal angle is
-<span class="js-maths">\phi = \sin^{-1} (1/\sqrt{\infty}) = 0</span>
+<span class="js-maths">\phi = \sin^{-1} (1 / \sqrt{\infty}) = 0</span>
 and the maximum range is
-<span class="js-maths">R = u^2/g \cdot \sqrt{\infty} = \infty</span>.
+<span class="js-maths">R = u^2 / g \cdot \sqrt{\infty} = \infty</span>.
 Projectiles should be launched almost horizontally
 from very tall platforms; asymptotically we have
 <div class="js-maths">\phi \asy \frac{1}{\sqrt{2 g h / u^2}}
