@@ -87,6 +87,16 @@ function renderMaths() {
     // Bold vectors
     '\\vec': '\\boldsymbol{\\mathbf{#1}}',
     
+    // Delimiters
+    '\\delimleft': '\\mathopen{}\\mathclose\\bgroup\\left#1',
+    '\\delimright': '\\right#1\\egroup',
+    '\\delimwrap': '\\delimleft{#1}{#2}\\delimright{#3}',
+    
+    // Bracketing
+    '\\curlybr': '\\delimwrap{\\{}{#1}{\\}}',
+    '\\roundbr': '\\delimwrap{(}{#1}{)}',
+    '\\squarebr': '\\delimwrap{[}{#1}{]}',
+    
     // Del operator
     '\\del': '\\mathopspace\\vec{\\nabla}',
     
