@@ -189,7 +189,7 @@ $$
 
 ----
 To maximise the range $R$ with respect to the launch angle $\phi$,
-we compute the derivative $\pd R / \pd\phi$.
+we compute the derivative $\pd R / {\pd\phi}$.
 After some algebra, we obtain
 ----
 $$
@@ -206,7 +206,7 @@ $$
 $$
 ----
 where for brevity $\beta = \sin\phi$.
-We then carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
+We then carefully consider the ways in which $\pd R / {\pd\phi}$ can vanish:
 ----
 
 ++++
@@ -271,7 +271,7 @@ We then carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
       \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
     }
       = 0$,
-  then $\pd R / \pd\phi$ vanishes unconditionally, and we have
+  then $\pd R / {\pd\phi}$ vanishes unconditionally, and we have
   $$
     \begin{aligned}
       (1 - \beta^2)^2 &= \beta^2 (\beta^2 + C) \\
