@@ -170,11 +170,9 @@ which is
 $$
   t =
     \frac{u}{g}
-    \left(
-      \sin\phi
-        +
-      \sqrt{\sin^2\phi + C}
-    \right),
+    \roundbr{
+      \sin\phi + \sqrt{\sin^2\phi + C}
+    },
 $$
 ----
 where $C = 2 g h / u^2$ is the dimensionless ratio
@@ -184,10 +182,9 @@ Substituting the flight time into $x (t)$ gives the range
 $$
   R =
     \frac{u^2 \cos\phi}{g}
-    \left(
-      \sin\phi
-    + \sqrt{\sin^2\phi + C}
-    \right).
+    \roundbr{
+      \sin\phi + \sqrt{\sin^2\phi + C}
+    }.
 $$
 
 ----
@@ -199,15 +196,12 @@ $$
   \frac{\pd R}{\pd\phi} =
     \frac{2h}{C}
     {\colb
-      \left(
-        \beta + \sqrt{\beta^2 + C}
-      \right)
+      \roundbr{\beta + \sqrt{\beta^2 + C}}
     }
     {\colr
-      \left[
-        \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
-      - \beta
-      \right]
+      \squarebr{
+        \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
+      }
     },
 $$
 ----
@@ -222,8 +216,8 @@ We then carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
   $$
     \frac{\pd R}{\pd\phi}
     = \frac{2h}{C}
-      {\colb \left( \sqrt{C} \right)}
-      {\colr \left[ -\beta \right]}
+      {\colb \roundbr{\sqrt{C}}}
+      {\colr \squarebr{-\beta}}
     = - 2\beta \cdot \frac{h}{\sqrt{C}},
   $$
   which vanishes assuming $h$ is finite.
@@ -240,33 +234,29 @@ We then carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
       &=
         \frac{2h}{C}
         {\colb
-          \left(
+          \roundbr{
             \beta
-          + (-\beta)
-            \left(
-              1
-            + \frac{C}{2 \beta^2}
-            \right)
-          \right)
+              +
+            (-\beta) \roundbr{1 + \frac{C}{2 \beta^2}}
+          }
         }
         {\colr
-          \left[
+          \squarebr{
             \frac{1 - \beta^2}{-\beta}
-          + \frac{\beta^2}{-\beta}
-          \right]
-        } \\[\fraclinespace]
+              + 
+            \frac{\beta^2}{-\beta}
+          }
+        }
+          \\[\fraclinespace]
       &=
         \frac{2h}{C}
         {\colb
-          \left(
-          - \frac{C}{2 \beta}
-          \right)
+          \roundbr{- \frac{C}{2 \beta}}
         }
         {\colr
-          \left[
-          - \frac{1}{\beta}
-          \right]
-        } \\[\fraclinespace]
+          \squarebr{- \frac{1}{\beta}}
+        }
+          \\[\fraclinespace]
       &= \frac{h}{\beta^2},
     \end{aligned}
   $$
@@ -277,10 +267,10 @@ We then carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
 
 3.
   If $\colr
-    \left[
-      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
-    - \beta
-    \right] = 0$,
+    \squarebr{
+      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
+    }
+      = 0$,
   then $\pd R / \pd\phi$ vanishes unconditionally, and we have
   $$
     \begin{aligned}
@@ -295,10 +285,8 @@ We then carefully consider the ways in which $\pd R / \pd\phi$ can vanish:
       &=
         \frac{u^2}{g}
         \sqrt{1 - \beta^2}
-        \left(
-          \beta
-        + \sqrt{\beta^2 + C}
-        \right) \\[\fraclinespace]
+        \roundbr{\beta + \sqrt{\beta^2 + C}}
+          \\[\fraclinespace]
       &=
         \frac{u^2}{g}
         \sqrt{C + 1}.

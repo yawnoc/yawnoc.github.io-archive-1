@@ -123,11 +123,9 @@ which is
 </p>
 <div class="js-maths">t =
   \frac{u}{g}
-  \left(
-    \sin\phi
-      +
-    \sqrt{\sin^2\phi + C}
-  \right),
+  \roundbr{
+    \sin\phi + \sqrt{\sin^2\phi + C}
+  },
 </div>
 <p>
 where <span class="js-maths">C = 2 g h / u^2</span> is the dimensionless ratio
@@ -136,10 +134,9 @@ Substituting the flight time into <span class="js-maths">x (t)</span> gives the 
 </p>
 <div class="js-maths">R =
   \frac{u^2 \cos\phi}{g}
-  \left(
-    \sin\phi
-  + \sqrt{\sin^2\phi + C}
-  \right).
+  \roundbr{
+    \sin\phi + \sqrt{\sin^2\phi + C}
+  }.
 </div>
 <p>
 To maximise the range <span class="js-maths">R</span> with respect to the launch angle <span class="js-maths">\phi</span>,
@@ -149,15 +146,12 @@ After some algebra, we obtain
 <div class="js-maths">\frac{\pd R}{\pd\phi} =
   \frac{2h}{C}
   {\colb
-    \left(
-      \beta + \sqrt{\beta^2 + C}
-    \right)
+    \roundbr{\beta + \sqrt{\beta^2 + C}}
   }
   {\colr
-    \left[
-      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
-    - \beta
-    \right]
+    \squarebr{
+      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
+    }
   },
 </div>
 <p>
@@ -168,8 +162,8 @@ We then carefully consider the ways in which <span class="js-maths">\pd R / \pd\
 <li>If <span class="js-maths">C = \infty</span>, then
 <div class="js-maths">\frac{\pd R}{\pd\phi}
 = \frac{2h}{C}
-  {\colb \left( \sqrt{C} \right)}
-  {\colr \left[ -\beta \right]}
+  {\colb \roundbr{\sqrt{C}}}
+  {\colr \squarebr{-\beta}}
 = - 2\beta \cdot \frac{h}{\sqrt{C}},
 </div>
 which vanishes assuming <span class="js-maths">h</span> is finite.
@@ -184,33 +178,29 @@ and in either case the range is zero, i.e.&nbsp;<span class="js-maths">R</span> 
   &amp;=
     \frac{2h}{C}
     {\colb
-      \left(
+      \roundbr{
         \beta
-      + (-\beta)
-        \left(
-          1
-        + \frac{C}{2 \beta^2}
-        \right)
-      \right)
+          +
+        (-\beta) \roundbr{1 + \frac{C}{2 \beta^2}}
+      }
     }
     {\colr
-      \left[
+      \squarebr{
         \frac{1 - \beta^2}{-\beta}
-      + \frac{\beta^2}{-\beta}
-      \right]
-    } \\[\fraclinespace]
+          + 
+        \frac{\beta^2}{-\beta}
+      }
+    }
+      \\[\fraclinespace]
   &amp;=
     \frac{2h}{C}
     {\colb
-      \left(
-      - \frac{C}{2 \beta}
-      \right)
+      \roundbr{- \frac{C}{2 \beta}}
     }
     {\colr
-      \left[
-      - \frac{1}{\beta}
-      \right]
-    } \\[\fraclinespace]
+      \squarebr{- \frac{1}{\beta}}
+    }
+      \\[\fraclinespace]
   &amp;= \frac{h}{\beta^2},
 \end{aligned}
 </div>
@@ -220,10 +210,10 @@ launching the projectile downwards starting from ground level,
 and again the range is zero.
 </li>
 <li>If <span class="js-maths">\colr
-    \left[
-      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}}
-    - \beta
-    \right] = 0</span>,
+    \squarebr{
+      \frac{1 - \beta^2}{\sqrt{\beta^2 + C}} - \beta
+    }
+      = 0</span>,
 then <span class="js-maths">\pd R / \pd\phi</span> vanishes unconditionally, and we have
 <div class="js-maths">\begin{aligned}
   (1 - \beta^2)^2 &amp;= \beta^2 (\beta^2 + C) \\
@@ -236,10 +226,8 @@ which indeed corresponds to the positive maximum range, which is
   &amp;=
     \frac{u^2}{g}
     \sqrt{1 - \beta^2}
-    \left(
-      \beta
-    + \sqrt{\beta^2 + C}
-    \right) \\[\fraclinespace]
+    \roundbr{\beta + \sqrt{\beta^2 + C}}
+      \\[\fraclinespace]
   &amp;=
     \frac{u^2}{g}
     \sqrt{C + 1}.
@@ -303,7 +291,7 @@ so the only dimensionless group (up to a power) is <span class="js-maths">g h / 
 <p>
 Conway&nbsp;(2020).
 Projectile motion: optimal launch angle from a platform.
-&lt;https://yawnoc.github.io/math/projectile-platform&gt;
+&lt;https://yawnoc.github.io/math/projectile-platform.html&gt;
 Accessed <span class="js-date">yyyy-mm-dd</span>.
 </p>
 </li>
@@ -312,7 +300,7 @@ Accessed <span class="js-date">yyyy-mm-dd</span>.
   author = {Conway},
   year = {2020},
   title = {Projectile motion: optimal launch angle from a platform},
-  howpublished = {\url{https://yawnoc.github.io/math/projectile-platform}},
+  howpublished = {\url{https://yawnoc.github.io/math/projectile-platform.html}},
   note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
 }
 </code></pre>
@@ -322,7 +310,7 @@ Accessed <span class="js-date">yyyy-mm-dd</span>.
   author = {Conway},
   year = {2020},
   title = {Projectile motion: optimal launch angle from a platform},
-  url = {https://yawnoc.github.io/math/projectile-platform},
+  url = {https://yawnoc.github.io/math/projectile-platform.html},
   urldate = {<span class="js-date">yyyy-mm-dd</span>},
 }
 </code></pre>
