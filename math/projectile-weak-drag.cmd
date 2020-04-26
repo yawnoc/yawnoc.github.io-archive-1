@@ -5,7 +5,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-21
-  %date-modified 2020-04-26
+  %date-modified 2020-04-27
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
@@ -358,8 +358,8 @@ $$
   \gdef\plusorder#1{\mathbin{\grey{+}} \grey{\order\roundbr{#1}}}
   \gdef\coeffbr#1{\Bigl(#1\Bigr)}
   \begin{aligned}
-    \dot{x} &= \dot{x}_0 + B \dot{x}_1 + B^2 \dot{x}_2 \plusorder{B^3}, \\
-    \dot{y} &= \dot{y}_0 + B \dot{y}_1 + B^2 \dot{y}_2 \plusorder{B^3}.
+    \dot{x} &= \dot{x}_0 + \dot{x}_1 B + \dot{x}_2 B^2 \plusorder{B^3}, \\
+    \dot{y} &= \dot{y}_0 + \dot{y}_1 B + \dot{y}_2 B^2 \plusorder{B^3}.
   \end{aligned}
 $$
 
@@ -419,8 +419,8 @@ To quadratic order, i.e.~with
 ----
 $$
   \begin{aligned}
-    y &= y_0 + B y_1 + B^2 y_2 \plusorder{B^3}, \\
-    t &= t_0 + B t_1 + B^2 t_2 \plusorder{B^3},
+    y &= y_0 + y_1 B + y_2 B^2 \plusorder{B^3}, \\
+    t &= t_0 + t_1 B + t_2 B^2 \plusorder{B^3},
   \end{aligned}
 $$
 ----
@@ -428,14 +428,14 @@ this becomes
 ----
 $$
   y_0 (t_0)
-    + B \coeffbr{t_1 \dot{y}_0 (t_0) + y_1 (t_0)}
-    + B^2
-      \coeffbr{
+    + \coeffbr{t_1 \dot{y}_0 (t_0) + y_1 (t_0)} B
+    + \coeffbr{
         t_2 \dot{y}_0 (t_0)
         + \tfrac{1}{2} {t_1}^2 \ddot{y}_0 (t_0)
         + t_1 \dot{y}_1 (t_0)
         + y_2 (t_0)
       }
+      B^2
     \plusorder{B^3}
   = 0.
 $$
@@ -468,16 +468,16 @@ $$
     &= x (t) \\
     &=
       x_0 (t_0)
-        + B \coeffbr{t_1 \dot{x}_0 (t_0) + x_1 (t_0)}
-        + B^2
-          \coeffbr{
+        + \coeffbr{t_1 \dot{x}_0 (t_0) + x_1 (t_0)} B
+        + \coeffbr{
             t_2 \dot{x}_0 (t_0)
             + t_1 \dot{x}_1 (t_0)
             + x_2 (t_0)
           }
+          B^2
         \plusorder{B^3}
       \\
-    &\defeq R_0 + B R_1 + B^2 R_2 \plusorder{B^3},
+    &\defeq R_0 + R_1 B + R_2 B^2 \plusorder{B^3},
   \end{aligned}
 $$
 ----
@@ -496,14 +496,14 @@ or, to quadratic order,
 ----
 $$
   R'_0 (\phi_0)
-    + B \coeffbr{\phi_1 R''_0 (\phi_0) + R'_1 (\phi_0)}
-    + B^2
-      \coeffbr{
+    + \coeffbr{\phi_1 R''_0 (\phi_0) + R'_1 (\phi_0)} B
+    + \coeffbr{
         \phi_2 R''_0 (\phi_0)
         + \tfrac{1}{2} {\phi_1}^2 R'''_0 (\phi_0)
         + \phi_1 R''_1 (\phi_0)
         + R'_2 (\phi_0)
       }
+      B^2
     \plusorder{B^3}
   = 0.
 $$
@@ -542,20 +542,20 @@ $${important}
   \begin{aligned}
     \phi =
       \frac{\pi}{4}
-      & + B
-          \coeffbr{
+      & + \coeffbr{
             - \tfrac{3}{32} \sqrt{2}
             + \tfrac{1}{64} \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
           }
+          B
             \\
-      & + B^2
-          \coeffbr{
+      & + \coeffbr{
             - \tfrac{1393}{3840}
             + \tfrac{81}{512} \sqrt{2}
               \log \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
             + \tfrac{17}{2048}
               \log^2 \tfrac{1 + 1 / \sqrt{2}}{1 - 1 / \sqrt{2}}
           }
+          B^2
             \\
       & \plusorder{B^3},
   \end{aligned}
