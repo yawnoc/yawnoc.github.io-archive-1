@@ -54,7 +54,7 @@ although more algebra is required to compute it.
 <p>
 <b>Manuscript:</b> <a href="/manuscripts/platform.pdf"><code>platform.pdf</code></a>
 </p>
-<svg class="embedded-styles"><style>
+<svg class="embedded-styles" aria-hidden="true"><style>
 text {
 font-family: sans-serif;
 text-anchor: middle;
@@ -87,7 +87,9 @@ font-family: "KaTeX_Main-Regular";
 }
 </style></svg>
 <div class="centred-block">
-<svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5">
+<svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5" role="img" focusable="false" aria-labelledby="trajectory-diagram-title">
+<title id="trajectory-diagram-title">Projectile motion from a raised platform at height h along the y-axis. The initial speed is u and the initial angle is phi. The projectile takes a parabolic path and strikes the ground at range R along the x-axis.</title>
+<g aria-hidden="true">
 <defs>
 <marker id="arrowhead" viewBox="0 -0.15 0.5 0.3" refX="0.5" refY="0" markerWidth="0.5" markerHeight="0.15" orient="auto-start-reverse">
 <path d="M 0, -0.15 L 0, 0.15 L 0.5, 0 z"/>
@@ -104,6 +106,7 @@ font-family: "KaTeX_Main-Regular";
 <text class="maths-italic" x="5" y="0" font-size="0.45" dy="1em">R</text>
 <line x1="0" y1="-2" x2="0.8" y2="-3.6" marker-end="url(#arrowhead)"/>
 <text class="maths-italic" x="0.8" y="-3.6" font-size="0.45" dx="0.5em">u</text>
+</g>
 </svg>
 </div>
 <p>
