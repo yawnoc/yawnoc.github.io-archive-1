@@ -671,3 +671,38 @@
   
 -->
 
+<!-- \accessible-svg-attributes[{id}] -->
+{%
+  \\accessible[-]svg[-]attributes
+  \[
+    (?P<id_> [\S]+? )
+  \]
+%
+  role="img" focusable="false" aria-labelledby="\g<id_>"
+%}
+
+<!-- [accessible-svg-title/{id}  {content}  /] -->
+{%
+  \[
+  accessible[-]svg[-]title/
+    (?P<id_> [\S]+ )
+    [\s]*
+    (?P<content> [\s\S]*? )
+    [\s]*
+  /
+  \]
+%
+  <title id="\g<id_>">\g<content></title>
+%}
+
+<!-- [accessible-svg-content/  {content}  /] -->
+{%
+  \[
+  accessible[-]svg[-]content/
+    (?P<content> [\s\S]*? )
+  /
+  \]
+%
+  <g aria-hidden="true">\g<content></g>
+%}
+
