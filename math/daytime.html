@@ -2,67 +2,90 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="description" content="A simple mathematical model for the sun's path through the sky and the amount of daytime at different times of the year.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
-<meta name="description" content="A simple mathematical model for the sun's path through the sky and the amount of daytime at different times of the year.">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<link rel="stylesheet" href="/conway-katex.min.css">
-<script defer src="/conway-katex.min.js"></script>
-<script defer src="/conway-render.min.js"></script>
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
 <title>Daytime: dependence on latitude and season | Conway's site</title>
+<style>.timeanddate {
+color: #057;
+}
+.model {
+color: #50a;
+}
+.with-correction {
+background: lightyellow;
+}</style>
 </head>
-<body onload="dateRender(); mathsRender();">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-<li><a href="#result" title="Skip to the result">Result</a></li>
-<li><a href="#cite" title="Cite this page">Cite</a></li>
-</ul></nav></header>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="#verification" title="Verification">Verification</a>
+</li>
+<li><a href="#result" title="Jump to result">Result</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
 <h1>Daytime: dependence on latitude and season</h1>
-<p class="page-properties">
-First created:&nbsp;20190712<br>
-Last modified:&nbsp;<b>20190918</b>
-<noscript>Enable Javascript for <a href="/code/katex-guide" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
-</p>
-<nav><ul>
-<li><a href="#assumptions" title="Assumptions">Assumptions</a></li>
-<li><a href="#coordinates" title="Coordinate systems">Coordinates</a></li>
-<li><a href="#sun" title="Sun's position">Sun's pos.</a></li>
-<li><a href="#observer" title="Observer's position">Observer's pos.</a></li>
-<li><a href="#direction" title="Direction from observer to sun">Direction to sun</a></li>
-<li><a href="#daytime" title="Daytime duration">Daytime</a></li>
-<li><a href="#angles" title="Assorted angles">Angles</a></li>
-<li><a href="#correction" title="Refraction correction">Refraction</a></li>
-<li><a href="#verification" title="Verification">Verification</a></li>
-<li><a href="#code" title="Code for computing modelled quantities">Code</a></li>
-<li><a href="#result" title="Skip to the result">Result</a></li>
-<li><a href="#plots">Plots</a></li>
-</ul></nav>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-07-12<br>
+Last modified: 2020-04-28
+</div>
+<nav>
+<ul>
+<li><a href="#assumptions">Assumptions</a>
+</li>
+<li><a href="#coordinates">Coordinates</a>
+</li>
+<li><a href="#sun">Sun's position</a>
+</li>
+<li><a href="#observer">Observer's position</a>
+</li>
+<li><a href="#direction">Direction to sun</a>
+</li>
+<li><a href="#daytime">Daytime</a>
+</li>
+<li><a href="#angles">Angles</a>
+</li>
+<li><a href="#correction">Refraction correction</a>
+</li>
+<li><a href="#verification">Verification</a>
+</li>
+<li><a href="#code">Code</a>
+</li>
+<li><a href="#result">Result</a>
+</li>
+</ul>
+</nav>
 <p>
 This is a simplistic model for the sun's path through the sky, and the
 dependence of the amount of daytime upon latitude and time of year.
 Skipped steps/algebra may be found in the manuscript.
 </p>
 <p>
-<b>Manuscript:</b>
-<a href="/manuscripts/daytime.pdf" title="Manuscript for Daytime: dependence on latitude and season"><code>daytime.pdf</code>&nbsp;(624&nbsp;KB)</a>
+<b>Manuscript:</b> <a href="/manuscripts/daytime.pdf"><code>daytime.pdf</code>&nbsp;(624&nbsp;KB)</a>
 </p>
-<span class="maths embedded-definitions">
-  \gdef\atan{\operatorname{atan2}}
-  \gdef\tx{\tilde{x}}
-  \gdef\ty{\tilde{y}}
-  \gdef\tz{\tilde{z}}
-  \gdef\vph{\varphi}
-  \gdef\Re{\operatorname{Re}}
-</span>
-<svg class="embedded-styles"><style>
+<svg class="embedded-styles" aria-hidden="true"><style>
 text {
 font-family: sans-serif;
 text-anchor: middle;
@@ -86,7 +109,7 @@ url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
 .maths-italic {
 font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
 }
-.maths-roman {
+.maths-regular {
 font-family: "KaTeX_Main-Regular";
 }
 line, polyline {
@@ -101,41 +124,28 @@ fill: none;
 stroke: none;
 }
 </style></svg>
-<h2 id="assumptions"><a class="self-link" href="#assumptions"></a>
-Assumptions
-</h2>
+<h2 id="assumptions"><a class="permalink" href="#assumptions" aria-label="Permalink"></a>Assumptions</h2>
 <p>
 Approximations must be made, that this problem be doable.
 In roughly decreasing order of accuracy (according to my gut):
 </p>
 <ol>
-<li>
-The size of the observer is negligible compared to the size of the earth.
+<li>The size of the observer is negligible compared to the size of the earth.
 </li>
-<li>
-The difference between a
-<a href="https://en.wikipedia.org/wiki/Tropical_year" title="Wikipedia: Tropical year">tropical year (or solar year)</a>
-and a
-<a href="https://en.wikipedia.org/wiki/Sidereal_year" title="Wikipedia: Sidereal year">sidereal year</a>
-is negligible, i.e.&nbsp;Earth's
-<a href="https://en.wikipedia.org/wiki/Axial_precession" title="Wikipedia: Axial precession">axial precession</a>
-is negligible.
+<li>The difference between a <a href="https://en.wikipedia.org/wiki/Tropical_year">tropical year (or solar year)</a>
+and a <a href="https://en.wikipedia.org/wiki/Sidereal_year">sidereal year</a> is negligible,
+i.e.&nbsp;Earth's <a href="https://en.wikipedia.org/wiki/Axial_precession">axial precession</a> is negligible.
 </li>
-<li>
-The radius of the earth is negligible compared to the earth–sun distance.
+<li>The radius of the earth is negligible compared to the earth–sun distance.
 </li>
-<li>
-The earth is spherical.
+<li>The earth is spherical.
 </li>
-<li>
-The earth's orbit around the sun is circular (and hence uniform in speed).
+<li>The earth's orbit around the sun is circular (and hence uniform in speed).
 </li>
-<li>
-The linear angle subtended by the sun in the sky is negligible,
+<li>The linear angle subtended by the sun in the sky is negligible,
 i.e.&nbsp;the sun is taken to be a point.
 </li>
-<li>
-Light propagates in straight lines, i.e.&nbsp;no atmospheric refraction.
+<li>Light propagates in straight lines, i.e.&nbsp;no atmospheric refraction.
 </li>
 </ol>
 <p>
@@ -143,245 +153,217 @@ The last assumption of no refraction is the weakest,
 usually affecting sunrise and sunset times by several minutes.
 Later on I give a first-order correction to account for this.
 </p>
-<h2 id="coordinates"><a class="self-link" href="#coordinates"></a>
-Coordinate systems
-</h2>
-<p class="note">
+<h2 id="coordinates"><a class="permalink" href="#coordinates" aria-label="Permalink"></a>Coordinate systems</h2>
+<p>
+<small>
 I have settled for hand-drawn perspective 3D diagrams because
 the corresponding SVGs would simply be too time consuming to make.
+</small>
 </p>
-<div class="centred-flex">
-<img src="equatorial-coordinates-solar-year.png" alt="The earth lies at the centre of the equatorial coordinate system,
-and spins once about its own axis in a day.
+<div class="centred-block">
+<img alt="Diagram of equatorial coordinates and the solar year.
+The earth lies at the centre of the equatorial coordinate system, and spins once about its own axis in a day.
 The equator is in the xy-plane; the north pole is the positive z-axis.
-The sun goes once around the ecliptic
-(relative to the fixed stars) in a solar year.
-The path of the sun, the ecliptic,
-lies not in the equatorial xy-plane but in the ecliptic plane,
-which is tilted by tilt τ about the positive x-axis in a right-handed sense.
-When the sun crosses the positive x-axis, it is northern spring equinox;
-above the positive y-axis, northern summer solstice;
-the negative x-axis, northern autumnal equinox;
-below the negative y-axis, northern winter solstice." title="The equator, the ecliptic and the solar year" width="480">
+The sun goes once around the ecliptic (relative to the fixed stars) in a solar year.
+The path of the sun, the ecliptic, lies not in the equatorial xy-plane but in the ecliptic plane, which is tilted by tilt tau about the positive x-axis in a right-handed sense.
+When the sun crosses the positive x-axis, it is northern spring equinox; above the positive y-axis, northern summer solstice; the negative x-axis, northern autumnal equinox; below the negative y-axis, northern winter solstice." src="equatorial-coordinates-solar-year.png" width="480">
 </div>
 <p>
-The
-<a href="https://en.wikipedia.org/wiki/Equatorial_coordinate_system" title="Wikipedia: Equatorial coordinate system">equatorial coordinate system</a> <span class="maths">(x, y, z)</span>,
-has origin at the centre of the earth, <span class="maths">x</span>-axis
-pointing towards the northern spring (or March) equinox&nbsp;(<span lang="zh-Hant">春分</span>),
-and <span class="maths">xy</span>-plane the plane of the earth's equator&nbsp;(<span lang="zh-Hant">赤道</span>).
-Thus the <span class="maths">z</span>-axis is the north pole.
-The earth spins once (relative to the fixed stars) about this axis every
-<a href="https://en.wikipedia.org/wiki/Sidereal_time" title="Wikipedia: Sidereal time">sidereal day</a>.
-The sun revolves once (relative to the fixed stars) every
-<a href="https://en.wikipedia.org/wiki/Tropical_year" title="Wikipedia: Tropical year">solar year</a>,
+The <a href="https://en.wikipedia.org/wiki/Equatorial_coordinate_system"><b>equatorial coordinate system</b></a> has
+origin at the centre of the earth,
+<span class="js-maths">x</span>-axis pointing towards the northern spring (or March) equinox&nbsp;(<span lang="zh-Hant">春分</span>),
+and <span class="js-maths">xy</span>-plane the plane of the earth's equator&nbsp;(<span lang="zh-Hant">赤道</span>).
+Thus the <span class="js-maths">z</span>-axis is the north pole.
+The earth spins once (relative to the fixed stars) about this axis
+every <a href="https://en.wikipedia.org/wiki/Sidereal_time">sidereal day</a>.
+The sun revolves once (relative to the fixed stars)
+every <a href="https://en.wikipedia.org/wiki/Tropical_year">solar year</a>,
 but its path, the ecliptic&nbsp;(<span lang="zh-Hant">黃道</span>),
 lies not in the plane of the equator but in the ecliptic plane,
 which is tilted with respect to the equatorial
-<span class="maths">xy</span>-plane by earth's
-<a href="https://en.wikipedia.org/wiki/Axial_tilt" title="Wikipedia: Axial tilt">axial tilt</a>
-<span class="maths">\tau = 23\degree 26'</span>.
+<span class="js-maths">xy</span>-plane by earth's <a href="https://en.wikipedia.org/wiki/Axial_tilt">axial tilt</a> <span class="js-maths">\tau = 23\degree \, 26'</span>.
 </p>
-<div class="centred-flex">
-<img src="equatorial-coordinates-spherical.png" alt="r is the distance from the origin, the centre of the earth.
-θ is the angle from the north pole, the z-axis.
-ϕ is the angle east from the x-axis.
-Declination δ is the complement of θ, i.e.&nbsp;δ and θ sum to a right angle." title="Equatorial spherical coordinates" width="240">
+<div class="centred-block">
+<img alt="Diagram of equatorial spherical coordinates.
+r is the distance from the origin, the centre of the earth.
+theta is the angle from the north pole, the z-axis.
+phi is the angle east from the x-axis.
+Declination delta is the complement of theta, i.e.&nbsp;delta and theta sum to a right angle." src="equatorial-coordinates-spherical.png" width="240">
 </div>
 <p>
 We also have the associated right-handed spherical coordinates
-<span class="maths">(r, \theta, \phi)</span>, given by
+<span class="js-maths">(r, \theta, \phi)</span>, given by
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   x &amp;= r \sin\theta \cos\phi \\
   y &amp;= r \sin\theta \sin\phi \\
   z &amp;= r \cos\theta.
 \end{aligned}
 </div>
 <p>
-Thus <span class="maths">r</span> is the distance from the centre of the earth,
-<span class="maths">\theta</span> the angle from the north pole and
-<span class="maths">\phi</span> the angle east from the spring equinox.
-Note that <span class="maths">\theta = \pi/2 - \delta</span>,
-where <span class="maths">\delta</span> is the astronomer's
-<a href="https://en.wikipedia.org/wiki/Declination" title="Wikipedia: Declination">declination</a>,
-and <span class="maths">\phi</span> is equivalent to the astronomer's
-<a href="https://en.wikipedia.org/wiki/Right_ascension" title="Wikipedia: Right ascension">right ascension</a>.
+Thus <span class="js-maths">r</span> is the distance from the centre of the earth,
+<span class="js-maths">\theta</span> the angle from the north pole and
+<span class="js-maths">\phi</span> the angle east from the spring equinox.
+Note that <span class="js-maths">\theta = \pi/2 - \delta</span>,
+where <span class="js-maths">\delta</span> is the astronomer's <a href="https://en.wikipedia.org/wiki/Declination">declination</a>,
+and that <span class="js-maths">\phi</span> is equivalent to the astronomer's <a href="https://en.wikipedia.org/wiki/Right_ascension">right ascension</a>.
 </p>
-<div class="centred-flex">
-<img src="equatorial-ecliptic-coordinates.png" alt="The ecliptic coordinate axes (with tildes) are tilted with respect to
-the equatorial coordinate axes by tilt τ about the positive x-axis,
-in a right-handed sense." title="Ecliptic coordinates (with tildes)" width="260">
+<div class="centred-block">
+<img alt="Diagram of ecliptic coordinates.
+The ecliptic coordinate axes (with tildes) are tilted with respect to the equatorial coordinate axes by tilt tau about the positive x-axis, in a right-handed sense." src="equatorial-ecliptic-coordinates.png" width="260">
 </div>
 <p>
-Finally we have the
-<a href="https://en.wikipedia.org/wiki/Ecliptic_coordinate_system" title="Wikipedia: Ecliptic coordinate system">ecliptic coordinate system</a>
-<span class="maths">(\tx, \ty, \tz)</span>, whose <span class="maths">\tx</span>-axis coincides with the equatorial
-<span class="maths">x</span>-axis, but whose <span class="maths">\ty</span>- and <span class="maths">\tz</span>-axes are tilted by tilt
-<span class="maths">\tau</span> in the right-handed sense about the positive <span class="maths">x</span>-axis:
+Finally we have
+the <a href="https://en.wikipedia.org/wiki/Ecliptic_coordinate_system"><b>ecliptic coordinate system</b></a>
+<span class="js-maths">(\tilde{x}, \tilde{y}, \tilde{z})</span>,
+whose <span class="js-maths">\tilde{x}</span>-axis coincides with the equatorial <span class="js-maths">x</span>-axis,
+but whose <span class="js-maths">\tilde{y}</span>- and <span class="js-maths">\tilde{z}</span>-axes are tilted by tilt <span class="js-maths">\tau</span>
+in the right-handed sense about the positive <span class="js-maths">x</span>-axis:
 </p>
-<div class="maths">
-\begin{aligned}
-  x &amp;= \tx \\
-  y &amp;= \ty \cos\tau - \tz \sin\tau \\
-  z &amp;= \ty \sin\tau + \tz \cos\tau.
+<div class="js-maths">\begin{aligned}
+  x &amp;= \tilde{x} \\
+  y &amp;= \tilde{y} \cos\tau - \tilde{z} \sin\tau \\
+  z &amp;= \tilde{y} \sin\tau + \tilde{z} \cos\tau.
 \end{aligned}
 </div>
-<h2 id="sun"><a class="self-link" href="#sun"></a>
-Sun's position
-</h2>
+<h2 id="sun"><a class="permalink" href="#sun" aria-label="Permalink"></a>Sun's position</h2>
 <p>
-Let <span class="maths">t</span> be the <b>time</b> since the northern spring
-(or March) equinox. Since the sun goes once around the ecliptic
-every solar year, i.e.
+Let <span class="js-maths">t</span> be the <b>time</b> since the northern spring (or March) equinox.
+The sun goes once around the ecliptic every <b>solar year&nbsp;(yr)</b>,
+equal to 365.242&nbsp;days.
+Defining what I call the <b>year angle</b>
 </p>
-<div class="maths">
-\unit{yr} = 365.242 \unit{day},
+<div class="js-maths">Y \defeq \frac{2 \pi t}{\unit{yr}},
 </div>
 <p>
-the sun's position is given in ecliptic coordinates by
+which moves through a full turn each solar year,
+the sun's position is therefore given in ecliptic coordinates by
 </p>
-<div class="maths">
-(\tx, \ty, \tz)_\text{sun} =
-(R_\text{es} \cos Y, R_\text{es} \sin Y, 0),
+<div class="js-maths">(\tilde{x}, \tilde{y}, \tilde{z})_\mathrm{sun} =
+(R_\mathrm{es} \cos Y, R_\mathrm{es} \sin Y, 0),
 </div>
 <p>
-where <span class="maths">R_\text{es}</span> is the earth–sun distance,
-and <span class="maths">Y</span> is what I call the <b>year angle</b>,
+where <span class="js-maths">R_\mathrm{es}</span> is the earth–sun distance.
 </p>
-<div class="maths">
-Y = \frac{2 \pi t}{\unit{yr}}.
-</div>
 <p>
-<span class="maths">Y</span> moves through a full turn (<span class="maths">2 \pi = 360\degree</span>) each year,
-and in the northern hemisphere, <span class="maths">Y = 0 \, ,
-  90\degree, 180\degree, 270\degree</span> correspond to
+In the northern hemisphere,
+<span class="js-maths">Y = 0\degree, 90\degree, 180\degree, 270\degree</span> correspond to
 spring equinox&nbsp;(<span lang="zh-Hant">春分</span>), summer solstice&nbsp;(<span lang="zh-Hant">夏至</span>),
-autumnal equinox&nbsp;(<span lang="zh-Hant">秋分</span>) and winter solstice&nbsp;(<span lang="zh-Hant">冬至</span>) respectively.
+autumnal equinox&nbsp;(<span lang="zh-Hant">秋分</span>), and winter solstice&nbsp;(<span lang="zh-Hant">冬至</span>) respectively.
 </p>
-<h2 id="observer"><a class="self-link" href="#observer"></a>
-Observer's position
-</h2>
+<h2 id="observer"><a class="permalink" href="#observer" aria-label="Permalink"></a>Observer's position</h2>
 <p>
-We consider an observer at latitude <span class="maths">\delta</span>
-measured north from the equator. In equatorial spherical coordinates,
-the observer has radius <span class="maths">r_\text{obs} = R_\text{e}</span>
-(the radius of the earth) and zenith angle
-<span class="maths">\theta_\text{obs} = \pi/2 - \delta</span>.
+We consider an observer at latitude <span class="js-maths">\delta</span> measured north from the equator.
+In equatorial spherical coordinates, the observer has radius
+<span class="js-maths">r_\mathrm{obs} = R_\mathrm{e}</span> (the radius of the earth)
+and zenith angle <span class="js-maths">\theta_\mathrm{obs} = \pi/2 - \delta</span>.
 </p>
 <p>
-Now a solar day (<span class="maths">\unit{day} = 24 \unit{hr}</span>)
+Now a mean <b>solar day&nbsp;(day)</b>, 24&nbsp;hours,
 is the time it takes for the earth to spin once relative to the sun,
-whereas a sidereal day (<span class="maths">\unit{sd}</span>)
+whereas a <b>sidereal day&nbsp;(sd)</b>
 is the time it takes for the earth to spin once relative to the fixed stars.
 Since the sun revolves once around the ecliptic every solar year,
 the number of sidereal days per year is
 one more than the number of solar days:
 </p>
-<div class="maths">
-\begin{gathered}
-  \frac{\unit{yr}}{\unit{sd}} = 1 + \frac{\unit{yr}}{\unit{day}} \\[2ex]
+<div class="js-maths">\begin{gathered}
+  \frac{\unit{yr}}{\unit{sd}} = 1 + \frac{\unit{yr}}{\unit{day}}
+    \\[\fraclinespace]
   \unit{sd}
-  = \frac{\unit{yr}}{1 + \unit{yr}/\unit{day}}
+  = \frac{\unit{yr}}{1 + \unit{yr} / {\unit{day}}}
   = \frac{365.242 \times 24 \unit{hr}}{1 + 365.242}
-  = 23 \unit{hr} 56' 4''
+  = 23 \unit{hr} \, 56' \, 4''
 \end{gathered}
 </div>
 <p>
-Therefore you would be correct if you put the observer's azimuthal angle
-to be <span class="maths">\phi_\text{obs} = 2 \pi t / \unit{sd}</span>,
+Therefore you would be correct in saying that
+the observer's azimuthal angle is <span class="js-maths">\phi_\mathrm{obs} = 2 \pi t / {\unit{sd}}</span>,
 which moves through a full turn every sidereal day.
 However, I won't be doing this.
-</p>
-<p>
-Instead I am going to use the fact that a day (whether solar or sidereal)
+Instead, I shall use the fact that a day (whether solar or sidereal)
 is much shorter than a year, so that over the course of a day,
-the year angle <span class="maths">Y</span> is almost constant
-(it only changes by order
-<span class="maths">\unit{day} / \unit{yr} = 1 / 365.242 = 0.3\%</span>).
-<span class="blue">To make the maths simpler, I shall assert that
-<span class="maths">Y</span> actually is constant over a day,
-and compensate for the associated error by instead putting
-<span class="maths">\phi_\text{obs} = 2 \pi t / \unit{day}</span>.</span>
-I am sure many of you will have your doubts about this,
-but my intuition says that this will work. Trust me, I know what I'm doing.
+the year angle <span class="js-maths">Y</span> is almost constant
+(it only changes by order <span class="js-maths">\unit{day} / {\unit{yr}} = 1 / 365.242 = 0.3\%</span>).
 </p>
+<div class="important">
+Thus, to make the maths simpler, I shall assert that
+<span class="js-maths">Y</span> actually is constant over a day,
+and compensate for the associated error by instead putting
+<span class="js-maths">\phi_\mathrm{obs} = 2 \pi t / {\unit{day}}</span>.
+You may doubt me if you like, but my intuition says that this will work.
+</div>
 <p>
 Defining what I call the <b>day angle</b>
 </p>
-<div class="maths">
-D = \frac{2 \pi t}{\unit{day}}
+<div class="js-maths">D = \frac{2 \pi t}{\unit{day}}
 </div>
 <p>
 which moves through a full turn every solar day,
 the observer's position is given in equatorial spherical coordinates by
 </p>
-<div class="maths">
-(r, \theta, \phi)_\text{obs} =
-(R_\text{e}, \pi/2 - \delta, D).
+<div class="js-maths">(r, \theta, \phi)_\mathrm{obs} =
+(R_\mathrm{e}, \pi/2 - \delta, D).
 </div>
-<h2 id="direction"><a class="self-link" href="#direction"></a>
-Direction from observer to sun
-</h2>
+<h2 id="direction"><a class="permalink" href="#direction" aria-label="Permalink"></a>Direction from the observer to the sun</h2>
 <p>
-Moving the sun's position from ecliptic <span class="maths">(\tx, \ty, \tz)</span> coordinates
-to equatorial <span class="maths">(x, y, z)</span> coordinates, we obtain
+Moving the sun's position
+from ecliptic <span class="js-maths">(\tilde{x}, \tilde{y}, \tilde{z})</span> coordinates
+to equatorial <span class="js-maths">(x, y, z)</span> coordinates, we obtain
 </p>
-<div class="maths">
-\begin{pmatrix}
+<div class="js-maths">\begin{pmatrix}
   x \\ y \\ z
-\end{pmatrix}_\text{sun}
+\end{pmatrix}_\mathrm{sun}
 =
-R_\text{es}
+R_\mathrm{es}
 \begin{pmatrix}
   \cos Y \\ \cos\tau \sin Y \\ \sin\tau \sin Y
 \end{pmatrix}.
 </div>
 <p>
-Now the distance from the origin to the observer is the earth's radius
-<span class="maths">R_\text{e}</span>,
+Now the distance from the origin to the observer
+is the earth's radius <span class="js-maths">R_\mathrm{e}</span>,
 and by assumption this is infinitesimally small
-compared to the earth–sun distance <span class="maths">R_\text{es}</span>.
+compared to the earth–sun distance <span class="js-maths">R_\mathrm{es}</span>.
 Thus the direction (or unit vector) from the observer towards the sun is
 </p>
-<div class="maths">
-\vec{u} = u_x \veca_x + u_y \veca_y + u_z \veca_z,
+<div class="js-maths">\vec{u} = u_x \basisvec{x} + u_y \basisvec{y} + u_z \basisvec{z},
 </div>
 <p>
 where
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   u_x &amp;= \cos Y \\
   u_y &amp;= \cos\tau \sin Y \\
   u_z &amp;= \sin\tau \sin Y,
 \end{aligned}
 </div>
 <p>
-and <span class="maths">\veca_x, \veca_y, \veca_z</span> are the Cartesian basis vectors.
+and <span class="js-maths">\basisvec{x}, \basisvec{y}, \basisvec{z}</span> are the Cartesian basis vectors.
 But since we are interested in what the observer sees,
 we must transform this into the local spherical basis, i.e.&nbsp;put
 </p>
-<div class="maths">
-\vec{u} = u_r \veca_r + u_\theta \veca_\theta + u_\phi \veca_\phi,
+<div class="js-maths">\vec{u} =
+  u_r \basisvec{r} + u_\theta \basisvec{\theta} + u_\phi \basisvec{\phi},
 </div>
 <p>
 where
-<span class="maths">\veca_r</span> points up&nbsp;(<span lang="zh-Hant">上</span>),
-<span class="maths">\veca_\theta</span> points south&nbsp;(<span lang="zh-Hant">南</span>) and
-<span class="maths">\veca_\phi</span> points east&nbsp;(<span lang="zh-Hant">東</span>).
+<span class="js-maths">\basisvec{r}</span> points up&nbsp;(<span lang="zh-Hant">上</span>),
+<span class="js-maths">\basisvec{\theta}</span> points south&nbsp;(<span lang="zh-Hant">南</span>) and
+<span class="js-maths">\basisvec{\phi}</span> points east&nbsp;(<span lang="zh-Hant">東</span>).
 </p>
-<div class="centred-flex">
-<img src="equatorial-coordinates-spherical-basis.png" alt="The local spherical basis has r-vector pointing up,
-θ-vector pointing south and ϕ-vector pointing east." title="Equatorial spherical coordinates" width="320">
+<div class="centred-block">
+<img alt="Diagram of the local basis of equatorial spherical coordinate.
+The r-vector points up,
+the theta-vector points south,
+and the phi-vector points east." src="equatorial-coordinates-spherical-basis.png" width="320">
 </div>
 <p>
-Unlike the Cartesian basis, the spherical basis is dependent upon
-(the observer's) position, and the components transform as follows:
+Unlike the Cartesian basis,
+the spherical basis is dependent upon (the observer's) position,
+and the components transform as follows:
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \begin{pmatrix}
     u_r \\ u_\theta \\ u_\phi
   \end{pmatrix}
@@ -406,84 +388,89 @@ Unlike the Cartesian basis, the spherical basis is dependent upon
 \end{aligned}
 </div>
 <p>
-This looks rather horrible. To simplify it, I define what I call the
+This looks rather horrible.
+To simplify it, I define what I call the
 <b>tilt-reduced unit radius</b> and the <b>tilt-reduced year angle</b>,
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   \rho &amp;= \sqrt{\cos^2 Y + \cos^2\tau \sin^2 Y} \\
-  \vph &amp;= \tan^{-1} \frac{\cos\tau \sin Y}{\cos Y},
+  \varphi &amp;= \tan^{-1} \frac{\cos\tau \sin Y}{\cos Y},
 \end{aligned}
 </div>
 <p>
-where <span class="maths">\tan^{-1} (y/x)</span> is an abuse of notation
-meaning <span class="maths">\atan (y, x)</span>
-(in other words <span class="maths">\vph</span> is always in the same quadrant
-as <span class="maths">Y</span>).
+where <span class="js-maths">\tan^{-1} (y/x)</span> is an abuse of notation
+meaning <span class="js-maths">\mathrm{atan2} (y, x)</span>
+(in other words <span class="js-maths">\varphi</span> is always in the same quadrant as <span class="js-maths">Y</span>).
 </p>
-<div class="centred-svg">
-<svg class="fit-width" width="320px" viewBox="-0.5 -4.1 12 5.1">
+<div class="centred-block">
+<svg class="fit-width" width="320px" viewBox="-0.5 -4.1 12 5.1" role="img" focusable="false" aria-labelledby="tilt-reduced-quantities-diagram">
+<title id="tilt-reduced-quantities-diagram">Fundamental diagram of tilt-reduced quantities.
+A right-angled triangle with
+hypotenuse rho (which is the tilt-reduced unit radius),
+azimuthal angle curly-phi (which is the tilt-reduced year angle),
+base cos Y (adjacent to curly-phi),
+and height cos tau sin Y (opposite curly-phi).</title>
+<g aria-hidden="true">
 <line x1="0" y1="0" x2="8" y2="-4" />
 <text class="maths-italic" x="4" y="-2" font-size="0.7" dy="-0.6em">ρ</text>
 <text class="maths-italic" x="1.8" y="-0.3" font-size="0.7">φ</text>
 <line x1="0" y1="0" x2="8" y2="0" />
 <text x="4" y="0.8" font-size="0.7">
-<tspan class="maths-roman">cos</tspan>
+<tspan class="maths-regular">cos</tspan>
 <tspan class="maths-italic">Y</tspan>
 </text>
 <line x1="8" y1="0" x2="8" y2="-4" />
 <text x="9.8" y="-1.8" font-size="0.7">
-<tspan class="maths-roman">cos</tspan>
+<tspan class="maths-regular">cos</tspan>
 <tspan class="maths-italic">τ</tspan>
-<tspan class="maths-roman">sin</tspan>
+<tspan class="maths-regular">sin</tspan>
 <tspan class="maths-italic">Y</tspan>
 </text>
 <line x1="7.5" y1="0" x2="7.5" y2="-0.5" />
 <line x1="7.5" y1="-0.5" x2="8" y2="-0.5" />
+</g>
 </svg>
 </div>
 <p>
-After a bit of algebra, the components of the direction
+After some algebra, the components of the direction
 from the observer towards the sun simplify to
 </p>
-<div class="maths">
+<div class="js-maths">\def\componentreminder#1{\textcolor{gray}{\text{#1}}}
 \begin{pmatrix}
   u_r \\ u_\theta \\ u_\phi
 \end{pmatrix}
 =
 \rho
 \begin{pmatrix}
-  \cos\delta \cos (D - \vph) + \tan\tau \sin\delta \sin\vph \\
-  \sin\delta \cos (D - \vph) - \tan\tau \cos\delta \sin\vph \\
-            -\sin (D - \vph)
+  \cos\delta \cos (D - \varphi) + \tan\tau \sin\delta \sin\varphi \\
+  \sin\delta \cos (D - \varphi) - \tan\tau \cos\delta \sin\varphi \\
+            -\sin (D - \varphi)
 \end{pmatrix}
-\quad
-{\color{gray}
+  \quad
 \begin{matrix}
-  \text{(up)} \\ \text{(south)} \\ \text{(east)}.
+  \componentreminder{(up)} \\
+  \componentreminder{(south)} \\
+  \componentreminder{(east)}.
 \end{matrix}
-}
 </div>
 <p>
 Let us ponder these for a moment.
-Since <span class="maths">Y</span> is constant over the course of a day,
-so are <span class="maths">\rho</span> and <span class="maths">\vph</span>.
-Thus the components are sinusoidal in <span class="maths">D</span>,
+Since <span class="js-maths">Y</span> is constant over the course of a day,
+so are <span class="js-maths">\rho</span> and <span class="js-maths">\varphi</span>.
+Thus the components are sinusoidal in <span class="js-maths">D</span>,
 with a period of one (solar) day.
-</p>
-<p>
-Since <span class="maths">\cos\delta</span> is nonnegative,
-the upward component <span class="maths">u_r</span> is maximised at <span class="maths">D = \vph</span>.
+Since <span class="js-maths">\cos\delta</span> is nonnegative,
+the upward component <span class="js-maths">u_r</span> is maximised at <span class="js-maths">D = \varphi</span>.
 I would wager (but can't be bothered showing)
 that the sun's angle of elevation
-<span class="maths">\tan^{-1} (u_r / \sqrt{{u_\theta}^2 + {u_\phi}^2})</span>
-is also maximised at <span class="maths">D = \vph</span>,
+<span class="js-maths">\tan^{-1} (u_r / \sqrt{{u_\theta}^2 + {u_\phi}^2})</span>
+is also maximised at <span class="js-maths">D = \varphi</span>,
 corresponding to <b>solar noon</b> (or <b>high noon</b>).
 This makes perfect sense; notice that the eastward component
-<span class="maths">u_\phi</span> is zero and decreasing   at <span class="maths">D = \vph</span>,
+<span class="js-maths">u_\phi</span> is zero and decreasing   at <span class="js-maths">D = \varphi</span>,
 i.e.&nbsp;the sun is crossing the local meridian (north-south arc of the sky)
 towards the west.
-(Similarly we have solar midnight at <span class="maths">D = \vph + \pi</span>,
+(Similarly we have solar midnight at <span class="js-maths">D = \varphi + \pi</span>,
 when the sun is closest to the nadir, the local downward direction.)
 </p>
 <p>
@@ -491,75 +478,62 @@ when the sun is closest to the nadir, the local downward direction.)
 There are several reasons for this:
 </p>
 <ol>
-<li>
-<b>Earth's axial tilt:</b> this has been accounted for by our model;
-notice that solar noon occurs at <span class="maths">D = \vph</span>
-rather than <span class="maths">D = Y</span>.
+<li><b>Earth's axial tilt.</b><br>
+This has been accounted for by our model;
+notice that solar noon occurs at <span class="js-maths">D = \varphi</span>
+rather than <span class="js-maths">D = Y</span>.
 </li>
-<li>
-<b>Earth's orbit is elliptical, not circular:</b>
-the sun moves faster and slower at different times of the year.
+<li><b>Earth's orbit is elliptical, not circular.</b><br>
+The sun moves faster and slower at different times of the year.
 </li>
-<li>
-<b>Time zones:</b>
-clock time jumps discontinuously over their boundaries (which are arbitrary),
+<li><b>Time zones.</b><br>
+Clock time jumps discontinuously over their boundaries (which are arbitrary),
 whereas local solar time is a smooth function of location.
 </li>
 </ol>
-<h2 id="daytime"><a class="self-link" href="#daytime"></a>
-Daytime duration
-</h2>
+<h2 id="daytime"><a class="permalink" href="#daytime" aria-label="Permalink"></a>Daytime duration</h2>
 <p>
 <b>Sunrise</b> and <b>sunset</b> occur
 when the sun passes through the horizon,
-i.e.&nbsp;when the upward component <span class="maths">u_r</span> vanishes, or
+i.e.&nbsp;when the upward component <span class="js-maths">u_r</span> vanishes, or
 </p>
-<div class="maths">
-\cos\delta \cos (D - \vph) + \tan\tau \sin\delta \sin\vph = 0.
+<div class="js-maths">\cos\delta \cos (D - \varphi) + \tan\tau \sin\delta \sin\varphi = 0.
 </div>
 <p>
 This solves to give
 </p>
-<div class="maths">
+<div class="js-maths">\gdef\bigbr#1{\bigl(#1\bigr)}
 D = D_\pm =
-\vph \pm
+\varphi \pm
 \left[
-  \frac{\pi}{2} + \sin^{-1} \big( \tan\tau \tan\delta \sin\vph \big)
+  \frac{\pi}{2} + \sin^{-1} \bigbr{\tan\tau \tan\delta \sin\varphi}
 \right],
 </div>
 <p>
-where <span class="maths">D = D_-</span> corresponds to sunrise, and <span class="maths">D = D_+</span> to sunset.
-(Noon, <span class="maths">D = \vph</span>, is halfway between the two.)
+where <span class="js-maths">D = D_-</span> corresponds to sunrise, and <span class="js-maths">D = D_+</span> to sunset.
+(Noon, <span class="js-maths">D = \varphi</span>, is halfway between the two.)
 The day angle which elapses between sunrise and sunset is therefore
 </p>
-<div class="maths">
-D_+ - D_- =
-\pi + 2 \sin^{-1} \big( \tan\tau \tan\delta \sin\vph \big).
+<div class="js-maths">D_+ - D_- =
+\pi + 2 \sin^{-1} \bigbr{\tan\tau \tan\delta \sin\varphi}.
 </div>
 <p>
-Multiplying this by <span class="maths">\unit{day} / (2 \pi)</span>
+Multiplying this by <span class="js-maths">\unit{day} / (2 \pi)</span>
 gives the amount of time between sunrise and sunset,
 </p>
-<div class="maths">
-\begin{aligned}
-  T &amp;=
-  \left[
+<div class="js-maths">T =
+  \squarebr{
     \frac{1}{2}
-  + \frac{1}{\pi} \sin^{-1} \big( \tan\tau \tan\delta \sin\vph \big)
-  \right] \unit{day} \\[2ex]
-  &amp;=
-  \left[
-    12
-  + \frac{24}{\pi} \sin^{-1} \big( \tan\tau \tan\delta \sin\vph \big)
-  \right] \unit{hr}.
-\end{aligned}
+      +
+    \frac{1}{\pi} \sin^{-1} \bigbr{\tan\tau \tan\delta \sin\varphi}
+  }
+  \unit{day}.
 </div>
 <p>
 <b>Note.</b> The argument to the arcsine will exceed unity in magnitude
-at some time during the year if <span class="maths">|\tan\tau \tan\delta| &gt; 1</span>, or
+at some time during the year if <span class="js-maths">\abs{\tan\tau \tan\delta} &gt; 1</span>, or
 </p>
-<div class="maths">
-|\delta| &gt; \frac{\pi}{2} - \tau.
+<div class="js-maths">\abs{\delta} &gt; \frac{\pi}{2} - \tau.
 </div>
 <p>
 In such a case there is no real solution to the sunrise/sunset equation.
@@ -568,131 +542,129 @@ and polar night&nbsp;(24&nbsp;hr darkness), which occur for observers
 north of the Arctic Circle and south of the Antarctic Circle
 (give or take due to refraction).
 </p>
-<div class="centred-flex">
-<img src="earth-polar-regions.png" alt="Midnight sun and polar night possible where abs(δ) &gt; π/2 − τ.
-The Arctic Circle is δ = π/2 − τ.
-The Antarctic Circle is δ = −(π/2 − τ)." title="Earth's polar regions" width="360">
+<div class="centred-block">
+<img alt="Diagram of earth's polar regions.
+Midnight sun and polar night possible
+where the absolute value of delta exceeds pi on two minus tau.
+The Arctic Circle is delta equals pi on two minus tau.
+The Antarctic Circle is delta equals the negative, of pi on two minus tau." src="earth-polar-regions.png" width="360">
 </div>
 <p>
 Yet it is very interesting to note that taking the real part of the above
-expression for <span class="maths">T</span> will give the correct daytimes, that is,
-<span class="maths">\Re \{ T \} = 24 \unit{hr}</span> for midnight sun and
-<span class="maths">\Re \{ T \} = 0</span> for polar night.
+expression for <span class="js-maths">T</span> will give the correct daytimes, that is,
+<span class="js-maths">\Re \curlybr{T} = 24 \unit{hr}</span> for midnight sun and
+<span class="js-maths">\Re \curlybr{T} = 0</span> for polar night.
 This is because
 </p>
-<div class="maths">
-\Re (\sin^{-1} w) =
+<div class="js-maths">\Re \curlybr{\sin^{-1} w} =
 \begin{cases}
   + \pi/2, &amp; w &gt; +1 \\
   - \pi/2, &amp; w &lt; -1.
 \end{cases}
 </div>
-<h2 id="angles"><a class="self-link" href="#angles"></a>
-Assorted angles
-</h2>
+<h2 id="angles"><a class="permalink" href="#angles" aria-label="Permalink"></a>Assorted angles</h2>
 <p>
 Let
 </p>
-<div class="maths">
-\begin{aligned}
+<div class="js-maths">\begin{aligned}
   U = u_r / \rho &amp;=
-    \cos\delta \cos (D - \vph) + \tan\tau \sin\delta \sin\vph \\
+    \cos\delta \cos (D - \varphi) + \tan\tau \sin\delta \sin\varphi \\
   S = u_\theta / \rho &amp;=
-    \sin\delta \cos (D - \vph) - \tan\tau \cos\delta \sin\vph \\
+    \sin\delta \cos (D - \varphi) - \tan\tau \cos\delta \sin\varphi \\
   E = u_\phi / \rho &amp;=
-    -\sin (D - \vph).
+    -\sin (D - \varphi).
 \end{aligned}
 </div>
-<div class="centred-flex">
-<img src="sun-components.png" alt="After scaling out by the tilt-reduced unit radius ρ,
-the local components of the direction from the observer towards the sun
-are U (up), S (south) and E (east)." title="Components of the direction towards the sun" width="280">
+<div class="centred-block">
+<img alt="Diagram of components of the direction towards the sun.
+This direction makes an angle alpha to the horizontal plane (the ground).
+After scaling out by the tilt-reduced unit radius rho, the local components of the direction from the observer towards the sun are U (up), S (south) and E (east)." src="sun-components.png" width="280">
 </div>
 <p>
 Then the sun's <b>altitude</b> (or <b>elevation angle</b>) is given by
 </p>
-<div class="maths">
-\alpha = \tan^{-1} \frac{U}{\sqrt{S^2 + E^2}}.
+<div class="js-maths">\alpha = \tan^{-1} \frac{U}{\sqrt{S^2 + E^2}}.
 </div>
-<p>At solar noon this becomes</p>
-<div class="maths">
-\alpha_\text{noon} =
+<p>
+At solar noon this becomes
+</p>
+<div class="js-maths">\alpha_\mathrm{noon} =
 \tan^{-1} \frac{
-  \cos\delta + \tan\tau \sin\delta \sin\vph
+  \cos\delta + \tan\tau \sin\delta \sin\varphi
 }{
-  |\sin\delta - \tan\tau \cos\delta \sin\vph|
+  \abs{\sin\delta - \tan\tau \cos\delta \sin\varphi}
 }.
 </div>
 <p>
 The sun's <b>bearing</b> (measured clockwise from north) is given by
 </p>
-<div class="maths">
-\beta = \tan^{-1} \frac{E}{-S},
+<div class="js-maths">\beta = \tan^{-1} \frac{E}{-S},
 </div>
 <p>
 and at sunrise/sunset this becomes
 </p>
-<div class="maths">
-\beta_\pm = \tan^{-1} \frac{
-  \mp \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\vph}
+<div class="js-maths">\beta_\pm = \tan^{-1} \frac{
+  \mp \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\varphi}
 }{
-  \tan\tau \sec\delta \sin\vph
+  \tan\tau \sec\delta \sin\varphi
 },
 </div>
 <p>
 where the lower signs are for sunrise and the upper signs are for sunset.
-This goes imaginary for midnight sun and polar night, i.e.&nbsp;when
-<span class="maths">|\tan\tau \tan\delta \sin\vph| &gt; 1</span>.
+This goes imaginary for midnight sun and polar night,
+i.e.&nbsp;when <span class="js-maths">\abs{\tan\tau \tan\delta \sin\varphi} &gt; 1</span>.
 </p>
-<h2 id="correction"><a class="self-link" href="#correction"></a>
-Refraction correction
-</h2>
+<h2 id="correction"><a class="permalink" href="#correction" aria-label="Permalink"></a>Refraction correction</h2>
 <p>
 At the time of writing (of the manuscript) it is Sunday 7&nbsp;July&nbsp;2019.
 The northern spring equinox fell on Thursday 21&nbsp;March this year
 at 05:58 (UTC+08:00). Thus we have
 </p>
-<div class="maths">
-\begin{aligned}
-     t &amp;= 108 \unit{day} \\
-     Y &amp;= 106.45\degree \\
-  \vph &amp;= 107.84\degree.
+<div class="js-maths">\begin{aligned}
+   t &amp;= 108 \unit{day} \\
+   Y &amp;= 106.45 \degree \\
+  \varphi &amp;= 107.84 \degree.
 \end{aligned}
 </div>
 <p>
-We briefly compare our model for daytime against
-<a href="https://www.timeanddate.com/" title="timeanddate.com">timeanddate.com</a>
-(t&amp;d) for Hong Kong and Perth:
+Before proceeding any further,
+we briefly compare our <span class="model">model</span> for daytime
+against <a href="https://www.timeanddate.com/">timeanddate.com</a> (<span class="timeanddate">T&amp;D</span>)
+for Hong Kong and Perth:
 </p>
-<div class="centred-flex"><div class="overflowing"><table class="collapsed-no-wrapping">
+<div class="centred-block">
+<div class="overflowing">
+<table class="no-wrapping">
+<thead>
 <tr>
-<th rowspan="2">Location<br>(<span class="maths">\delta</span>)</th>
+<th rowspan="2">Location<br> (<span class="js-maths">\delta</span>)</th>
 <th colspan="3">Daytime</th>
 </tr>
 <tr>
-<th>t&amp;d</th>
-<th>Model</th>
-<th>Error</th>
+<th><span class="timeanddate">T&amp;D</span></th>
+<th><span class="model">Model</span></th>
+<th><span class="model">Error</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><a href="https://www.timeanddate.com/sun/hong-kong/hong-kong">Hong Kong</a><br>
+(+22°19')</th>
+<td><span class="timeanddate">13&thinsp;hr&thinsp;26'&thinsp;41"</span></td>
+<td><span class="model">13&thinsp;hr&thinsp;18'</span></td>
+<td><span class="model">−9.' (−1.1%)</span></td>
 </tr>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/hong-kong/hong-kong" title="timeanddate.com: Hong Kong">Hong Kong</a><br>
-(+22°19')
-</td>
-<td>13&thinsp;hr&thinsp;26'&thinsp;41"</td>
-<td>13&thinsp;hr&thinsp;18'</td>
-<td>−9.' (−1.1%)</td>
+<th><a href="https://www.timeanddate.com/sun/australia/perth">Perth</a><br>
+(−31°57')</th>
+<td><span class="timeanddate">10&thinsp;hr&thinsp;&numsp;8'&thinsp;18"</span></td>
+<td><span class="model">10&thinsp;hr&thinsp;&numsp;1'</span></td>
+<td><span class="model">−7.' (−1.2%)</span></td>
 </tr>
-<tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/australia/perth" title="timeanddate.com: Perth">Perth</a><br>
-(−31°57')
-</td>
-<td>10&thinsp;hr&thinsp;&numsp;8'&thinsp;18"</td>
-<td>10&thinsp;hr&thinsp;&numsp;1'</td>
-<td>−7.' (−1.2%)</td>
-</tr>
-</table></div></div>
+</tbody>
+</table>
+</div>
+</div>
 <p>
 The errors are just over 1%;
 not bad for something derived with pen and paper.
@@ -708,334 +680,267 @@ Also sunrise/sunset occur when the leading/trailing edge of the sun passes
 through the horizon, rather than its centre.
 </p>
 <p>
-According to
-<a href="https://www.hko.gov.hk/m/article_e.htm?title=ele_00493" title="Effect of atmospheric refraction on the times of sunrise and sunset">this Hong Kong Observatory article by Tong Yu-fai</a>
-(which the Wayback Machine apparently cannot save),
+According to <a href="https://www.hko.gov.hk/m/article_e.htm?title=ele_00493" title="Effect of atmospheric refraction on the times of sunrise and sunset">this Hong Kong Observatory article by Tong Yu-fai</a>
+(which the Wayback Machine could not save at the time of writing),
 refraction contributes around 0°34' of angular discrepancy, and
 the apparent radius of the sun, 0°16', so that altogether,
 the sun is 0°50' below the horizon at sunrise/sunset.
 </p>
-<p class="note">
-These figures appear to have been pulled off
-<a href="https://en.wikipedia.org/wiki/Atmospheric_refraction" title="Wikipedia: Atmospheric refraction">Wikipedia</a>,
-which is possibly(?) referring to
-<a href="https://archive.org/details/AstrophysicalQuantities/page/n134/mode/1up" title="Astrophysical Quantities">p.&nbsp;125</a>
-(<var>z</var><sub>a</sub>&nbsp;=&nbsp;90.0°, <var>z</var><sub>t</sub>&nbsp;=&nbsp;90°35',
-i.e.&nbsp;refraction of 0°35' at the horizon) and
-<a href="https://archive.org/details/AstrophysicalQuantities/page/n171/mode/1up" title="Astrophysical Quantities">p.&nbsp;162</a>
+<p>
+<small>
+These figures appear to have been pulled off <a href="https://en.wikipedia.org/wiki/Atmospheric_refraction">Wikipedia</a>,
+which is possibly(?) referring to <a href="https://archive.org/details/AstrophysicalQuantities/page/n134/mode/1up">p.&nbsp;125</a>
+(<var>z</var><sub>a</sub> = 90.0°, <var>z</var><sub>t</sub> = 90°35',
+i.e.&nbsp;refraction of 0°35' at the horizon)
+and <a href="https://archive.org/details/AstrophysicalQuantities/page/n171/mode/1up">p.&nbsp;162</a>
 (semi-diameter of sun at mean earth distance = 959.63", i.e.&nbsp;0°16')
 of Allen's <i>Astrophysical Quantities</i> (1973).
 In any case I think the final angle of 0°50' is reliable;
-<a href="http://www.hko.gov.hk/gts/astron2017/2017simp-paths-sun.pdf" title="HKO: Paths of the Sun throughout the Year (Simplified Version), 2017">this Hong Kong Observatory document</a>
-<a href="https://web.archive.org/web/20190712080536/http://www.hko.gov.hk/gts/astron2017/2017simp-paths-sun.pdf" title="Web archive: Paths of the Sun throughout the Year (Simplified Version), 2017">(archived version)</a>
+<a href="http://www.hko.gov.hk/gts/astron2017/2017simp-paths-sun.pdf" title="Paths of the Sun throughout the Year (Simplified Version), 2017">this Hong Kong Observatory document</a>
+(<a href="https://web.archive.org/web/20190712080536/http://www.hko.gov.hk/gts/astron2017/2017simp-paths-sun.pdf" title="Paths of the Sun throughout the Year (Simplified Version), 2017">archived version</a>)
 uses it for computing sunrise/sunset times.
+</small>
 </p>
 <p>
 A correction to daytime which accounts for refraction and
 the sun's apparent radius can be obtained by seeking the times at which the
-sun's altitude <span class="maths">\alpha</span> dips to
+sun's altitude <span class="js-maths">\alpha</span> dips to
 </p>
-<div class="maths">
-\alpha = -\alpha_\text{ref},
+<div class="js-maths">\alpha = -\alpha_\mathrm{ref},
 </div>
 <p>
-where <span class="maths">\alpha_\text{ref} = 0\degree 50'</span>.
+where <span class="js-maths">\alpha_\mathrm{ref} = 0\degree \, 50'</span>.
 Presumably these times will not be far from the approximate sunrise/sunset
-times we have already calculated, so we seek <span class="maths">\eps_\pm</span> such that
+times we have already calculated, so we seek <span class="js-maths">\eps_\pm</span> such that
 </p>
-<div class="maths">
-\left.
+<div class="js-maths">\left.
   \tan^{-1} \frac{U}{\sqrt{S^2 + E^2}}
 \right|_{D = D_\pm + \eps_\pm}
-= -\alpha_\text{ref}.
+= -\alpha_\mathrm{ref}.
 </div>
 <p>
-Assuming <span class="maths">\eps_\pm \ll 2 \pi</span>, we obtain (to first order)
+Assuming <span class="js-maths">\eps_\pm \ll 2 \pi</span>, we obtain (to first order)
 </p>
-<div class="maths">
-\eps_\pm =
+<div class="js-maths">\eps_\pm =
 \pm \frac{
-  \tan\alpha_\text{ref} \sqrt{1 + \tan^2\tau \sin^2\vph}
+  \tan\alpha_\mathrm{ref} \sqrt{1 + \tan^2\tau \sin^2\varphi}
 }{
-  \cos\delta \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\vph}
+  \cos\delta \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\varphi}
 }
 </div>
 <p>
 so that the amount of daytime is to be corrected by
 </p>
-<div class="maths">
-\frac{\eps_+ - \eps_-}{2 \pi} \unit{day} =
+<div class="js-maths">\frac{\eps_+ - \eps_-}{2 \pi} \unit{day} =
 \frac{
-  \tan\alpha_\text{ref} \sqrt{1 + \tan^2\tau \sin^2\vph}
+  \tan\alpha_\mathrm{ref} \sqrt{1 + \tan^2\tau \sin^2\varphi}
 }{
-  \pi \cos\delta \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\vph}
-} \unit{day}.
+  \pi \cos\delta \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\varphi}
+}
+\unit{day}.
 </div>
 <p>
-For the 7&nbsp;July example above, this evaluates to +8&nbsp;minutes
-for Hong Kong and +9&nbsp;minutes for Perth, and in both cases
-the corrected model is able to predict daytime to within two minutes:
+For the 7&nbsp;July example above, this evaluates to
++8&nbsp;minutes for Hong Kong and +9&nbsp;minutes for Perth,
+and in both cases
+the <span class="model with-correction">refraction-corrected model</span> is able to predict daytime
+to within two minutes:
 </p>
-<div class="centred-flex"><div class="overflowing"><table class="collapsed-no-wrapping">
+<div class="centred-block">
+<div class="overflowing">
+<table class="no-wrapping">
+<thead>
 <tr>
-<th rowspan="2">Location<br>(<span class="maths">\delta</span>)</th>
+<th rowspan="2">Location<br> (<span class="js-maths">\delta</span>)</th>
 <th colspan="3">Daytime</th>
 </tr>
 <tr>
-<th>t&amp;d</th>
-<th>Model</th>
-<th>Error</th>
+<th><span class="timeanddate">T&amp;D</span></th>
+<th><span class="model with-correction">Model</span></th>
+<th><span class="model with-correction">Error</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><a href="https://www.timeanddate.com/sun/hong-kong/hong-kong">Hong Kong</a><br>
+(+22°19')</th>
+<td><span class="timeanddate">13&thinsp;hr&thinsp;26'&thinsp;41"</span></td>
+<td><span class="model with-correction">13&thinsp;hr&thinsp;26'</span></td>
+<td><span class="model with-correction">−1.' (−0.1%)</span></td>
 </tr>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/hong-kong/hong-kong" title="timeanddate.com: Hong Kong">Hong Kong</a><br>
-(+22°19')
-</td>
-<td>13&thinsp;hr&thinsp;26'&thinsp;41"</td>
-<td>13&thinsp;hr&thinsp;26'</td>
-<td>−1.' (−0.1%)</td>
+<th><a href="https://www.timeanddate.com/sun/australia/perth">Perth</a><br>
+(−31°57')</th>
+<td><span class="timeanddate">10&thinsp;hr&thinsp;&numsp;8'&thinsp;18"</span></td>
+<td><span class="model with-correction">10&thinsp;hr&thinsp;10'</span></td>
+<td><span class="model with-correction">+2.' (+0.3%)</span></td>
 </tr>
-<tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/australia/perth" title="timeanddate.com: Perth">Perth</a><br>
-(−31°57')
-</td>
-<td>10&thinsp;hr&thinsp;&numsp;8'&thinsp;18"</td>
-<td>10&thinsp;hr&thinsp;10'</td>
-<td>+2.' (+0.3%)</td>
-</tr>
-</table></div></div>
-<h2 id="verification"><a class="self-link" href="#verification"></a>
-Verification
-</h2>
+</tbody>
+</table>
+</div>
+</div>
+<h2 id="verification"><a class="permalink" href="#verification" aria-label="Permalink"></a>Verification</h2>
 <p>
 Here I have extended the 7&nbsp;July example above to more locations,
-again using values from
-<a href="https://www.timeanddate.com/" title="timeanddate.com">timeanddate.com</a>
-for reference (although I haven't bothered with
-adjusting the date of the March equinox for different time zones).
+again using values from <a href="https://www.timeanddate.com/">timeanddate.com</a> for reference
+(although I haven't bothered with adjusting the date of the March equinox
+for different time zones).
 The entries in the table are of the form
 </p>
-<div class="centred-flex"><div class="overflowing"><table class="collapsed-no-wrapping">
+<div class="centred-block">
+<div class="overflowing">
+<table class="no-wrapping">
 <tr>
-<td>
-<span class="blue">timeanddate.com</span><br>
-Model (Error)<br>
-<span class="lightyellow">Model with correction (Error)</span>.
-</td>
+<td><span class="timeanddate">timeanddate.com</span><br>
+<span class="model">Model (Error)</span><br>
+<span class="model with-correction">Model with refraction correction (Error)</span>.</td>
 </tr>
-</table></div></div>
+</table>
+</div>
+</div>
 <p>
 No refraction correction is used for the sun's noon altitude.
 </p>
-<div class="centred-flex"><div class="overflowing"><table class="collapsed-no-wrapping">
+<div class="centred-block">
+<div class="overflowing">
+<table class="no-wrapping">
+<thead>
 <tr>
-<th rowspan="2">Location<br>(<span class="maths">\delta</span>)</th>
+<th rowspan="2">Location<br> (<span class="js-maths">\delta</span>)</th>
 <th rowspan="2">Daytime</th>
-<th rowspan="2">Sun's altitude<br>at noon</th>
+<th rowspan="2">Sun's altitude<br> at noon</th>
 <th colspan="2">Sun's bearing at</th>
 </tr>
 <tr>
 <th>sunrise</th>
 <th>sunset</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/greenland/station-nord" title="timeanddate.com: Station Nord">Station Nord</a><br>
-(+81°36')
-</td>
-<td>
-<span class="blue">24&thinsp;hr</span><br>
-24&thinsp;hr<br>
-<span class="lightyellow">24&thinsp;hr</span>
-</td>
-<td>
-<span class="blue">31.0°</span><br>
-30.8° (−0.2°)<br>
-&nbsp;
-</td>
-<td class="centred-text" colspan="2">
-N/A<br>
-(midnight sun)
-</td>
+<th><a href="https://www.timeanddate.com/sun/greenland/station-nord">Station Nord</a><br>
+(+81°36')</th>
+<td><span class="timeanddate">24&thinsp;hr</span><br>
+<span class="model">24&thinsp;hr</span><br>
+<span class="model with-correction">24&thinsp;hr</span></td>
+<td><span class="timeanddate">31.0°</span><br>
+<span class="model">30.8° (−0.2°)</span><br>
+&nbsp;</td>
+<td class="merged-cell" colspan="2">N/A<br>
+(midnight sun)</td>
 </tr>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/iceland/reykjavik" title="timeanddate.com: Reykjavik">Reykjavik</a><br>
-(+64°9')
-</td>
-<td>
-<span class="blue">20&thinsp;hr&thinsp;26'&thinsp;51"</span><br>
-19&thinsp;hr&thinsp;47' (−3.2%)<br>
-<span class="lightyellow">20&thinsp;hr&thinsp;19' (−0.6%)</span>
-</td>
-<td>
-<span class="blue">48.4°</span><br>
-48.3° (−0.1°)<br>
-&nbsp;
-</td>
-<td>
-<span class="blue">24°</span><br>
-29.0° (+5.°)<br>
-<span class="lightyellow">25.4° (+1.°)</span>
-</td>
-<td>
-<span class="blue">335°</span><br>
-331.0° (−4.°)<br>
-<span class="lightyellow">334.6° (−0.°)</span>
-</td>
+<th><a href="https://www.timeanddate.com/sun/iceland/reykjavik">Reykjavik</a><br>
+(+64°9')</th>
+<td><span class="timeanddate">20&thinsp;hr&thinsp;26'&thinsp;51"</span><br>
+<span class="model">19&thinsp;hr&thinsp;47' (−3.2%)</span><br>
+<span class="model with-correction">20&thinsp;hr&thinsp;19' (−0.6%)</span></td>
+<td><span class="timeanddate">48.4°</span><br>
+<span class="model">48.3° (−0.1°)</span><br>
+&nbsp;</td>
+<td><span class="timeanddate">24°</span><br>
+<span class="model">29.0° (+5.°)</span><br>
+<span class="model with-correction">25.4° (+1.°)</span></td>
+<td><span class="timeanddate">335°</span><br>
+<span class="model">331.0° (−4.°)</span><br>
+<span class="model with-correction">334.6° (−0.°)</span></td>
 </tr>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/uk/london" title="timeanddate.com: London">London</a><br>
-(+51°30')
-</td>
-<td>
-<span class="blue">16&thinsp;hr&thinsp;25'&thinsp;57"</span><br>
-16&thinsp;hr&thinsp;10' (−1.6%)<br>
-<span class="lightyellow">16&thinsp;hr&thinsp;24' (−0.2%)</span>
-</td>
-<td>
-<span class="blue">61.1°</span><br>
-60.9° (−0.2°)<br>
-&nbsp;
-</td>
-<td>
-<span class="blue">51°</span><br>
-52.2° (+1.°)<br>
-<span class="lightyellow">50.9° (−0.°)</span>
-</td>
-<td>
-<span class="blue">309°</span><br>
-307.8° (−1.°)<br>
-<span class="lightyellow">309.1° (+0.°)</span>
-</td>
+<th><a href="https://www.timeanddate.com/sun/uk/london">London</a><br>
+(+51°30')</th>
+<td><span class="timeanddate">16&thinsp;hr&thinsp;25'&thinsp;57"</span><br>
+<span class="model">16&thinsp;hr&thinsp;10' (−1.6%)</span><br>
+<span class="model with-correction">16&thinsp;hr&thinsp;24' (−0.2%)</span></td>
+<td><span class="timeanddate">61.1°</span><br>
+<span class="model">60.9° (−0.2°)</span><br>
+&nbsp;</td>
+<td><span class="timeanddate">51°</span><br>
+<span class="model">52.2° (+1.°)</span><br>
+<span class="model with-correction">50.9° (−0.°)</span></td>
+<td><span class="timeanddate">309°</span><br>
+<span class="model">307.8° (−1.°)</span><br>
+<span class="model with-correction">309.1° (+0.°)</span></td>
 </tr>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/hong-kong/hong-kong" title="timeanddate.com: Hong Kong">Hong Kong</a><br>
-(+22°19')
-</td>
-<td>
-<span class="blue">13&thinsp;hr&thinsp;26'&thinsp;41"</span><br>
-13&thinsp;hr&thinsp;18' (−1.1%)<br>
-<span class="lightyellow">13&thinsp;hr&thinsp;26' (−0.1%)</span>
-</td>
-<td>
-<span class="blue">89.7°</span><br>
-89.9° (+0.2°)<br>
-&nbsp;
-</td>
-<td>
-<span class="blue">65°</span><br>
-65.7° (+1.°)<br>
-<span class="lightyellow">65.3° (+0.°)</span>
-</td>
-<td>
-<span class="blue">295°</span><br>
-294.3° (−1.°)<br>
-<span class="lightyellow">294.7° (−0.°)</span>
-</td>
+<th><a href="https://www.timeanddate.com/sun/hong-kong/hong-kong">Hong Kong</a><br>
+(+22°19')</th>
+<td><span class="timeanddate">13&thinsp;hr&thinsp;26'&thinsp;41"</span><br>
+<span class="model">13&thinsp;hr&thinsp;18' (−1.1%)</span><br>
+<span class="model with-correction">13&thinsp;hr&thinsp;26' (−0.1%)</span></td>
+<td><span class="timeanddate">89.7°</span><br>
+<span class="model">89.9° (+0.2°)</span><br>
+&nbsp;</td>
+<td><span class="timeanddate">65°</span><br>
+<span class="model">65.7° (+1.°)</span><br>
+<span class="model with-correction">65.3° (+0.°)</span></td>
+<td><span class="timeanddate">295°</span><br>
+<span class="model">294.3° (−1.°)</span><br>
+<span class="model with-correction">294.7° (−0.°)</span></td>
 </tr>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/singapore/singapore" title="timeanddate.com: Singapore">Singapore</a><br>
-(+1°17')
-</td>
-<td>
-<span class="blue">12&thinsp;hr&thinsp;11'&thinsp;31"</span><br>
-12&thinsp;hr&thinsp;&numsp;4' (−1.0%)<br>
-<span class="lightyellow">12&thinsp;hr&thinsp;11' (−0.1%)</span>
-</td>
-<td>
-<span class="blue">68.7°</span><br>
-68.9° (+0.2°)<br>
-&nbsp;
-</td>
-<td>
-<span class="blue">67°</span><br>
-67.6° (+1.°)<br>
-<span class="lightyellow">67.6° (+1.°)</span>
-</td>
-<td>
-<span class="blue">293°</span><br>
-292.4° (−1.°)<br>
-<span class="lightyellow">292.4° (−1.°)</span>
-</td>
+<th><a href="https://www.timeanddate.com/sun/singapore/singapore">Singapore</a><br>
+(+1°17')</th>
+<td><span class="timeanddate">12&thinsp;hr&thinsp;11'&thinsp;31"</span><br>
+<span class="model">12&thinsp;hr&thinsp;&numsp;4' (−1.0%)</span><br>
+<span class="model with-correction">12&thinsp;hr&thinsp;11' (−0.1%)</span></td>
+<td><span class="timeanddate">68.7°</span><br>
+<span class="model">68.9° (+0.2°)</span><br>
+&nbsp;</td>
+<td><span class="timeanddate">67°</span><br>
+<span class="model">67.6° (+1.°)</span><br>
+<span class="model with-correction">67.6° (+1.°)</span></td>
+<td><span class="timeanddate">293°</span><br>
+<span class="model">292.4° (−1.°)</span><br>
+<span class="model with-correction">292.4° (−1.°)</span></td>
 </tr>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/australia/perth" title="timeanddate.com: Perth">Perth</a><br>
-(−31°57')
-</td>
-<td>
-<span class="blue">10&thinsp;hr&thinsp;&numsp;8'&thinsp;18"</span><br>
-10&thinsp;hr&thinsp;&numsp;1' (−1.2%)<br>
-<span class="lightyellow">10&thinsp;hr&thinsp;10' (+0.3%)</span>
-</td>
-<td>
-<span class="blue">35.5°</span><br>
-35.6° (+0.1°)<br>
-&nbsp;
-</td>
-<td>
-<span class="blue">64°</span><br>
-63.3° (−1.°)<br>
-<span class="lightyellow">63.9° (−0.°)</span>
-</td>
-<td>
-<span class="blue">296°</span><br>
-296.7° (+1.°)<br>
-<span class="lightyellow">296.1° (+0.°)</span>
-</td>
+<th><a href="https://www.timeanddate.com/sun/australia/perth">Perth</a><br>
+(−31°57')</th>
+<td><span class="timeanddate">10&thinsp;hr&thinsp;&numsp;8'&thinsp;18"</span><br>
+<span class="model">10&thinsp;hr&thinsp;&numsp;1' (−1.2%)</span><br>
+<span class="model with-correction">10&thinsp;hr&thinsp;10' (+0.3%)</span></td>
+<td><span class="timeanddate">35.5°</span><br>
+<span class="model">35.6° (+0.1°)</span><br>
+&nbsp;</td>
+<td><span class="timeanddate">64°</span><br>
+<span class="model">63.3° (−1.°)</span><br>
+<span class="model with-correction">63.9° (−0.°)</span></td>
+<td><span class="timeanddate">296°</span><br>
+<span class="model">296.7° (+1.°)</span><br>
+<span class="model with-correction">296.1° (+0.°)</span></td>
 </tr>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/@6630103" title="timeanddate.com: Enderby Land">Enderby Land<br>@6630103</a><br>
-(−67°30')
-</td>
-<td>
-<span class="blue">&numsp;2&thinsp;hr&thinsp;&numsp;3'&thinsp;28"</span><br>
-&numsp;0&thinsp;hr&thinsp;41' (−&numsp;67%)<br>
-&numsp;<span class="lightyellow">4&thinsp;hr&thinsp;14' (+106%)</span>
-</td>
-<td>
-<span class="blue">&numsp;0.4°</span><br>
-&numsp;0.1° (−0.3°)<br>
-&nbsp;
-</td>
-<td>
-<span class="blue">14°</span><br>
-&numsp;4.7° (−&numsp;9°)<br>
-<span class="lightyellow">29.1° (+15°)</span>
-</td>
-<td>
-<span class="blue">346°</span><br>
-355.3° (+&numsp;9°)<br>
-<span class="lightyellow">330.9° (−15°)</span>
-</td>
+<th><a href="https://www.timeanddate.com/sun/@6630103">Enderby Land<br>@6630103</a><br>
+(−67°30')</th>
+<td><span class="timeanddate">&numsp;2&thinsp;hr&thinsp;&numsp;3'&thinsp;28"</span><br>
+<span class="model">&numsp;0&thinsp;hr&thinsp;41' (−&numsp;67%)</span><br>
+<span class="model with-correction">&numsp;4&thinsp;hr&thinsp;14' (+106%)</span></td>
+<td><span class="timeanddate">&numsp;0.4°</span><br>
+<span class="model">&numsp;0.1° (−0.3°)</span><br>
+&nbsp;</td>
+<td><span class="timeanddate">14°</span><br>
+<span class="model">&numsp;4.7° (−&numsp;9°)</span><br>
+<span class="model with-correction">29.1° (+15°)</span></td>
+<td><span class="timeanddate">346°</span><br>
+<span class="model">355.3° (+&numsp;9°)</span><br>
+<span class="model with-correction">330.9° (−15°)</span></td>
 </tr>
 <tr>
-<td class="centred-text">
-<a href="https://www.timeanddate.com/sun/antarctica/concordia-station" title="timeanddate.com: Concordia Station">Concordia Station</a><br>
-(−75°6')
-</td>
-<td>
-&numsp;<span class="blue">0&thinsp;hr</span><br>
-&numsp;0&thinsp;hr<br>
-&numsp;<span class="lightyellow">0&thinsp;hr</span>
-</td>
-<td>
-<span class="blue">−7.7°</span><br>
-−7.5° (+0.2°)<br>
-&nbsp;
-</td>
-<td class="centred-text" colspan="2">
-N/A<br>
-(polar night)
-</td>
+<th><a href="https://www.timeanddate.com/sun/antarctica/concordia-station">Concordia Station</a><br>
+(−75°6')</th>
+<td><span class="timeanddate">&numsp;0&thinsp;hr</span><br>
+<span class="model">&numsp;0&thinsp;hr</span><br>
+<span class="model with-correction">&numsp;0&thinsp;hr</span></td>
+<td><span class="timeanddate">−7.7°</span><br>
+<span class="model">−7.5° (+0.2°)</span><br>
+&nbsp;</td>
+<td class="merged-cell" colspan="2">N/A<br>
+(polar night)</td>
 </tr>
-</table></div></div>
+</tbody>
+</table>
+</div>
+</div>
 <p>
 With the exception of Enderby Land, the model does quite well;
 the correction brings daytimes to within 0.5%,
@@ -1045,7 +950,7 @@ recently ended on 26&nbsp;June (just 11&nbsp;days earlier),
 so the sun is spending a rather large proportion of the day near the horizon
 (where refraction is significant); the correction for Enderby Land
 actually makes things worse
-(I think this is because the associated value of <span class="maths">|\eps_\pm| = 0.46</span>
+(I think this is because the associated value of <span class="js-maths">\abs{\eps_\pm} = 0.46</span>
 is not small enough for the perturbation to work properly).
 </p>
 <p>
@@ -1055,41 +960,32 @@ the early start and late end of midnight sun,
 nor the late start and early end of polar night,
 compared to a hypothetical Earth with no atmosphere.
 </p>
-<h3 id="code"><a class="self-link" href="#code"></a>
-Code for computing modelled quantities
-</h3>
+<h3 id="code"><a class="permalink" href="#code" aria-label="Permalink"></a>Code for computing modelled quantities</h3>
 <p>
-<b>GNU Octave Code:</b>
-<a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/math/sun.m" title="GNU Octave: sun.m"><code>sun.m</code></a>
+<b>Code:</b>  <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/math/sun.m">[GNU Octave] Daytime model (GitHub)</a>
 </p>
-<p>Usage examples:</p>
-<ul class="sparse-list">
-<li>
-<span class="maths">\delta = 60\degree, Y = 45\degree</span>
-<pre>
-sun (60, 45);
-</pre>
+<p>
+Usage examples:
+</p>
+<ul>
+<li><span class="js-maths">\delta = 60\degree, Y = 45\degree</span>
+<pre><code>sun (60, 45);
+</code></pre>
 </li>
-<li>
-Location: 41°16'S<br>
+<li>Location: 41°16'S<br>
 Time of year: 41&nbsp;days before the northern spring (or March) equinox
-<pre>
-sun (-[41, 16], -41, "day");
-</pre>
+<pre><code>sun (-[41, 16], -41, "day");
+</code></pre>
 </li>
-<li>
-Hong Kong, winter solstice
-<pre>
-sun ("hong-kong", 270);
-</pre>
+<li>Hong Kong, winter solstice
+<pre><code>sun ("hong-kong", 270);
+</code></pre>
 </li>
 </ul>
 <p>
-Script for printing the model values used in the table
-<a href="#verification" title="Verification">above</a>:
+Script for printing the model values used in the table <a href="#verification">above</a>:
 </p>
-<pre>
-places = {
+<pre><code>places = {
   "station-nord",
   "reykjavik",
   "london",
@@ -1103,142 +999,114 @@ places = {
 for n = 1 : numel (places)
   sun (places{n}, 108, "day");
 endfor
-</pre>
-<h2 id="result"><a class="self-link" href="#result"></a>
-Result
-</h2>
+</code></pre>
+<h2 id="result"><a class="permalink" href="#result" aria-label="Permalink"></a>Result</h2>
 <p>
 The amount of <b>daytime</b> (without refraction) is
 </p>
-<div class="maths">
-\boxed{
-  \Re \{ T \} =
-  \Re
-  \left\{
-    12
-  + \frac{24}{\pi} \sin^{-1} \big( \tan\tau \tan\delta \sin\vph \big)
-  \right\} \unit{hr},
-}
+<div class="js-maths important">\Re \curlybr{T} =
+  \Re \curlybr{
+    12 +
+    \frac{24}{\pi} \sin^{-1} \bigbr{\tan\tau \tan\delta \sin\varphi}
+  }
+  \unit{hr},
 </div>
-<p>where</p>
-<div class="maths">
-\begin{aligned}
-  \vph &amp;= \tan^{-1} \frac{\cos\tau \sin Y}{\cos Y} \\[2ex]
-     Y &amp;= \frac{2 \pi t}{\unit{yr}} \\[2ex]
+<p>
+where
+</p>
+<div class="js-maths">\begin{aligned}
+  \varphi &amp;= \tan^{-1} \frac{\cos\tau \sin Y}{\cos Y} \\[\fraclinespace]
+  Y &amp;= \frac{2 \pi t}{\unit{yr}} \\[\fraclinespace]
   \unit{yr} &amp;= 365.242 \unit{day},
 \end{aligned}
 </div>
 <ul>
-<li>
-<span class="maths">\tan^{-1} (y/x)</span> an abuse of notation used throughout this page,
-meaning <span class="maths">\atan (y, x)</span>,
+<li><span class="js-maths">\tan^{-1} (y/x)</span> an abuse of notation used throughout this page,
+meaning <span class="js-maths">\mathrm{atan2} (y, x)</span>,
 </li>
-<li>
-<span class="maths">\tau = 23\degree 26'</span> is Earth's axial tilt,
+<li><span class="js-maths">\tau = 23\degree \, 26'</span> is Earth's axial tilt,
 </li>
-<li>
-<span class="maths">\delta</span> is the observer's latitude measured north from the equator,
+<li><span class="js-maths">\delta</span> is the observer's latitude measured north from the equator,
 and
 </li>
-<li>
-<span class="maths">t</span> is the time since the northern spring (or March) equinox.
+<li><span class="js-maths">t</span> is the time since the northern spring (or March) equinox.
 </li>
 </ul>
 <p>
 The sun's <b>bearing at sunrise/sunset</b> (measured clockwise from north)
 is given by
 </p>
-<div class="maths">
-\boxed{
-  \beta_\pm = \tan^{-1} \frac{
-    \mp \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\vph}
-  }{
-    \tan\tau \sec\delta \sin\vph
-  },
-}
+<div class="js-maths important">\beta_\pm = \tan^{-1} \frac{
+  \mp \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\varphi}
+}{
+  \tan\tau \sec\delta \sin\varphi
+},
 </div>
 <p>
 where the lower signs are for sunrise and the upper signs are for sunset.
 </p>
 <p>
 A first-order <b>correction to daytime</b> which accounts
-<b>for refraction</b> by angle <span class="maths">\alpha_\text{ref}</span>
+<b>for refraction</b> by angle <span class="js-maths">\alpha_\text{ref}</span>
 (taken to be 0°50') is given by
 </p>
-<div class="maths">
-\boxed{
-  \frac{
-    24 \tan\alpha_\text{ref} \sqrt{1 + \tan^2\tau \sin^2\vph}
-  }{
-    \pi \cos\delta \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\vph}
-  } \unit{hr}.
-}
+<div class="js-maths important">\frac{
+  24 \tan\alpha_\text{ref} \sqrt{1 + \tan^2\tau \sin^2\varphi}
+}{
+  \pi \cos\delta \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\varphi}
+} \unit{hr}.
 </div>
 <p>
-The corresponding <b>corrected bearings at sunrise/sunset</b>
-may be computed by evaluating <span class="maths">\beta = \tan^{-1} E / {-S}</span>
-at <span class="maths">D = D_\pm + \eps_\pm</span>, where <span class="maths">D_\pm</span> is given in the section
-<a href="#daytime" title="Daytime duration">Daytime duration</a> above,
-<span class="maths">S</span> &amp; <span class="maths">E</span> in <a href="#angles" title="Assorted angles">Assorted angles</a> and
-<span class="maths">\eps_\pm</span> in <a href="correction" title="Refraction correction">Refraction correction</a>.
+The corresponding <b>corrected bearings at sunrise/sunset</b> may be computed
+by evaluating <span class="js-maths">\beta = \tan^{-1} (E / {-S})</span> at <span class="js-maths">D = D_\pm + \eps_\pm</span>,
+where <span class="js-maths">D_\pm</span> is given in the section <a href="#daytime">Daytime duration</a> above,
+<span class="js-maths">S</span> &amp; <span class="js-maths">E</span> in <a href="#angles">Assorted angles</a> and
+<span class="js-maths">\eps_\pm</span> in <a href="#correction">Refraction correction</a>.
 </p>
 <p>
 The sun's <b>altitude</b> (or <b>elevation angle</b>) at noon is given by
 </p>
-<div class="maths">
-\boxed{
-  \alpha_\text{noon} =
-  \tan^{-1} \frac{
-    \cos\delta + \tan\tau \sin\delta \sin\vph
-  }{
-    |\sin\delta - \tan\tau \cos\delta \sin\vph|
-  }.
-}
+<div class="js-maths important">\alpha_\text{noon} =
+\tan^{-1} \frac{
+  \cos\delta + \tan\tau \sin\delta \sin\varphi
+}{
+  \abs{\sin\delta - \tan\tau \cos\delta \sin\varphi}
+}.
 </div>
-<h2 id="plots"><a class="self-link" href="#plots"></a>
-Plots
-</h2>
-<span class="red">TO BE DONE</span>
-<h2 id="cite"><a class="self-link" href="#cite"></a>
-Cite this page
-</h2>
+<h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
 <ul>
 <li>Text:
 <p>
-Conway&nbsp;(2019).
+Conway&nbsp;(2020).
 Daytime: dependence on latitude and season.
 &lt;https://yawnoc.github.io/math/daytime&gt;
-[Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
+Accessed <span class="js-date">yyyy-mm-dd</span>.
 </p>
 </li>
 <li>BibTeX:
-<pre>
-@misc{conway-daytime,
+<pre><code>@misc{conway-daytime,
   author = {Conway},
-  year = {2019},
+  year = {2020},
   title = {Daytime: dependence on latitude and season},
   howpublished = {\url{https://yawnoc.github.io/math/daytime}},
-  note = {[Accessed <span class="date">d~month~yyyy</span>]}
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 <li>BibLaTeX:
-<pre>
-@online{conway-daytime,
+<pre><code>@online{conway-daytime,
   author = {Conway},
-  year = {2019},
+  year = {2020},
   title = {Daytime: dependence on latitude and season},
   url = {https://yawnoc.github.io/math/daytime},
-  urldate = {<span class="date">yyyy-mm-dd</span>}
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 </ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
 <footer>
-<hr>
-©&nbsp;2019&nbsp;Conway.<br>
-The code above is released into the
-<a href="https://creativecommons.org/publicdomain/zero/1.0/" title="CC0 1.0 Universal (CC0 1.0) Public Domain Dedication">public domain (CC0)</a>.
+©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
 </html>
