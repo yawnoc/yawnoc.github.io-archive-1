@@ -57,7 +57,7 @@ although more algebra is required to compute it.
 __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
 ----
 
-<!--                       Projectile diagram
+<!--                       Trajectory diagram
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -105,53 +105,65 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
 /]
 
 ||||{centred-block}
-<svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5">
+<svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5"
+  \accessible-svg-attributes[trajectory-diagram]\
+>
+  [accessible-svg-title/trajectory-diagram
+    Projectile motion from a raised platform at height h along the y-axis. \
+    The initial speed is u and the initial angle is phi. \
+    The projectile takes a parabolic path \
+    and strikes the ground at range R along the x-axis.
+  /]
   
-  {: \maths-italic : class="maths-italic" :}
-  {: \font-size : font-size="0.45" :}
+  [accessible-svg-content/
+    
+    {: \maths-italic : class="maths-italic" :}
+    {: \font-size : font-size="0.45" :}
+    
+    <!-- Marker definitions -->
+    <defs>
+      <!-- velocity arrowhead -->
+      <marker
+        id="arrowhead" viewBox="0 -0.15 0.5 0.3"
+        refX="0.5" refY="0"
+        markerWidth="0.5" markerHeight="0.15"
+        orient="auto-start-reverse">
+        <path d="M 0, -0.15 L 0, 0.15 L 0.5, 0 z"/>
+      </marker>
+    </defs>
+    
+    <!-- x-axis -->
+    <line x1="0" y1="0" x2="5.5" y2="0"/>
+    <text \maths-italic x="5.5" y="0" \font-size
+      dx="0.5em" dy="0.3em">x</text>
+    
+    <!-- y-axis -->
+    <line x1="0" y1="0" x2="0" y2="-3.5"/>
+    <text \maths-italic x="0" y="-3.5" \font-size
+      dy="-0.5em">y</text>
+    
+    <!-- initial height h -->
+    <line x1="-0.25" y1="-2" x2="0.5" y2="-2"/>
+    <text \maths-italic x="-0.25" y="-2" \font-size
+      dx="-0.5em" dy="0.3em">h</text>
+    
+    <!-- trajectory -->
+    <path d="M 0,-2 Q 1.5,-5 5,0" fill="none"/>
+    
+    <!-- launch angle phi -->
+    <text \maths-italic x="0.6" y="-2" \font-size
+      dx="-0.5em" dy="-0.35em">ϕ</text>
+    
+    <!-- range R -->
+    <text \maths-italic x="5" y="0" \font-size
+      dy="1em">R</text>
+    
+    <!-- velocity vector u -->
+    <line x1="0" y1="-2" x2="0.8" y2="-3.6" marker-end = "url(#arrowhead)"/>
+    <text \maths-italic x="0.8" y="-3.6" \font-size
+      dx="0.5em">u</text>
   
-  <!-- Marker definitions -->
-  <defs>
-    <!-- velocity arrowhead -->
-    <marker
-      id="arrowhead" viewBox="0 -0.15 0.5 0.3"
-      refX="0.5" refY="0"
-      markerWidth="0.5" markerHeight="0.15"
-      orient="auto-start-reverse">
-      <path d="M 0, -0.15 L 0, 0.15 L 0.5, 0 z"/>
-    </marker>
-  </defs>
-  
-  <!-- x-axis -->
-  <line x1="0" y1="0" x2="5.5" y2="0"/>
-  <text \maths-italic x="5.5" y="0" \font-size
-    dx="0.5em" dy="0.3em">x</text>
-  
-  <!-- y-axis -->
-  <line x1="0" y1="0" x2="0" y2="-3.5"/>
-  <text \maths-italic x="0" y="-3.5" \font-size
-    dy="-0.5em">y</text>
-  
-  <!-- initial height h -->
-  <line x1="-0.25" y1="-2" x2="0.5" y2="-2"/>
-  <text \maths-italic x="-0.25" y="-2" \font-size
-    dx="-0.5em" dy="0.3em">h</text>
-  
-  <!-- trajectory -->
-  <path d="M 0,-2 Q 1.5,-5 5,0" fill="none"/>
-  
-  <!-- launch angle phi -->
-  <text \maths-italic x="0.6" y="-2" \font-size
-    dx="-0.5em" dy="-0.35em">ϕ</text>
-  
-  <!-- range R -->
-  <text \maths-italic x="5" y="0" \font-size
-    dy="1em">R</text>
-  
-  <!-- velocity vector u -->
-  <line x1="0" y1="-2" x2="0.8" y2="-3.6" marker-end = "url(#arrowhead)"/>
-  <text \maths-italic x="0.8" y="-3.6" \font-size
-    dx="0.5em">u</text>
+  /]
   
 </svg>
 ||||
