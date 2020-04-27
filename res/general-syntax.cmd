@@ -588,7 +588,9 @@
   /
   \]
 %
-  <svg class="embedded-styles"><style>\g<content></style></svg>
+  <svg class="embedded-styles" aria-hidden="true">\\
+    <style>\g<content></style>\\
+  </svg>
 %}
 
 
