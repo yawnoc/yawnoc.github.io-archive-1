@@ -401,7 +401,8 @@ $$
       }{
         \alpha^2 + \tau^2
       }
-    \td\tau \\[0.4em]
+    \td\tau,
+      \\[\fraclinespace]
     &
     \int
       \frac{
@@ -409,7 +410,7 @@ $$
       }{
         (\alpha^2 + \tau^2)^{3/2}
       }
-    \td\tau
+    \td\tau.
   \end{aligned}
 $$
 ----
