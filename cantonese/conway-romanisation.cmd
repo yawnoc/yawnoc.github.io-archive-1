@@ -1353,187 +1353,206 @@ and is **never** sounded as a consonant.
 /]
 
 ||||{centred-block}
-<svg class="fit-width" width="480px" viewBox="-5.5 -7 12 6.5">
+<svg class="fit-width" width="480px" viewBox="-5.5 -7 12 6.5"
+  \accessible-svg-attributes[tone-diagram-title]
+>
+  [accessible-svg-title/tone-diagram-title
+    Diagram of the nine tones of Cantonese. \
+    Using the pitch numerals 1 to 5 in order of increasing pitch:
+      tone~1 (! 陰平 !) is level at 5;
+      tone~2 (! 陰上 !) is rising from 3 to 5;
+      tone~3 (! 陰去 !) is level at 3;
+      tone~4 (! 陽平 !) is level at 1;
+      tone~5 (! 陽上 !) is rising from 2 to 3;
+      tone~6 (! 陽去 !) is level at 2;
+      tone~7 (! 高陰入 !) is level at 5 and short;
+      tone~8 (! 低陰入 !) is level at 3 and short;
+      tone~9 (! 陽入 !) is level at 2 and short.
+  /]
   
-  {:: \font-size :: font-size = "0.4" ::}
+  [accessible-svg-content/
+    
+    {:: \font-size :: font-size = "0.4" ::}
+    
+    <!-- tone 1 陰平 -->
+    <line
+      x1 = "-2.5"
+      y1 = "-5.5"
+      x2 = "2.5"
+      y2 = "-5.5" />
+    <text
+      x = "0"
+      y = "-5.5"
+      \font-size
+      dy = "-0.5em"
+      >tone~1 (! 陰平 !)
+    </text>
+    
+    <!-- tone 2 陰上 -->
+    <line
+      x1 = "-2.5"
+      y1 = "-3.3"
+      x2 = "2.5"
+      y2 = "-5.5" />
+    <text
+      x = "0"
+      y = "-4.4"
+      \font-size
+      dy = "-0.5em"
+      transform = "rotate(-23.75 0 -4.4)"
+      >tone~2 (! 陰上 !)
+      <!-- arctan (2.2/5) == 23.75 degree -->
+    </text>
+    
+    <!-- tone 3 陰去 -->
+    <line
+      x1 = "-2.5"
+      y1 = "-3.3"
+      x2 = "2.5"
+      y2 = "-3.3" />
+    <text
+      x = "0"
+      y = "-3.3"
+      \font-size
+      dy = "-0.5em"
+      >tone~3 (! 陰去 !)
+    </text>
+    
+    <!-- tone 4 陽平 -->
+    <line
+      x1 = "-2.5"
+      y1 = "-1.1"
+      x2 = "2.5"
+      y2 = "-1.1" />
+    <text
+      x = "0"
+      y = "-1.1"
+      \font-size
+      dy = "-0.5em"
+      >tone~4 (! 陽平 !)
+    </text>
+    
+    <!-- tone 5 陽上 -->
+    <line
+      x1 = "-2.5"
+      y1 = "-2.2"
+      x2 = "2.5"
+      y2 = "-3.3" />
+    <text
+      x = "-1.3"
+      y = "-2.75"
+      \font-size
+      dy = "-0.5em"
+      transform = "rotate(-12.41 0 -2.75)"
+      >tone~5 (! 陽上 !)
+      <!-- arctan (1.1/5) == 12.41 degree -->
+    </text>
+    
+    <!-- tone 6 陽去 -->
+    <line
+      x1 = "-2.5"
+      y1 = "-2.2"
+      x2 = "2.5"
+      y2 = "-2.2" />
+    <text
+      x = "1.3"
+      y = "-2.2"
+      \font-size
+      dy = "-0.5em"
+      >tone~6 (! 陽去 !)
+    </text>
+    
+    <!-- tone 7 高陰入 -->
+    <line
+      x1 = "3.75"
+      y1 = "-5.5"
+      x2 = "6.25"
+      y2 = "-5.5" />
+    <text
+      x = "5"
+      y = "-5.5"
+      \font-size
+      dy = "-0.5em"
+      >tone~7 (! 高陰入 !)
+    </text>
+    
+    <!-- tone 8 低陰入 -->
+    <line
+      x1 = "3.75"
+      y1 = "-3.3"
+      x2 = "6.25"
+      y2 = "-3.3" />
+    <text
+      x = "5"
+      y = "-3.3"
+      \font-size
+      dy = "-0.5em"
+      >tone~8 (! 低陰入 !)
+    </text>
+    
+    <!-- tone 9 陽入 -->
+    <line
+      x1 = "3.75"
+      y1 = "-2.2"
+      x2 = "6.25"
+      y2 = "-2.2" />
+    <text
+      x = "5"
+      y = "-2.2"
+      \font-size
+      dy = "-0.5em"
+      >tone~9 (! 陽入 !)
+    </text>
+    
+    <!-- pitch num. -->
+    <text
+      x = "-4"
+      y = "-6.6"
+      \font-size
+      >pitch num.
+    </text>
+    
+    <!-- 5 -->
+    <text
+      x = "-4"
+      y = "-5.5"
+      \font-size
+      >5
+    </text>
+    
+    <!-- 4 -->
+    <text
+      x = "-4"
+      y = "-4.4"
+      \font-size
+      >4
+    </text>
+    
+    <!-- 3 -->
+    <text
+      x = "-4"
+      y = "-3.3"
+      \font-size
+      >3
+    </text>
+    
+    <!-- 2 -->
+    <text
+      x = "-4"
+      y = "-2.2"
+      \font-size
+      >2
+    </text>
+    
+    <!-- 1 -->
+    <text
+      x = "-4"
+      y = "-1.1"
+      \font-size
+      >1
+    </text>
   
-  <!-- tone 1 陰平 -->
-  <line
-    x1 = "-2.5"
-    y1 = "-5.5"
-    x2 = "2.5"
-    y2 = "-5.5" />
-  <text
-    x = "0"
-    y = "-5.5"
-    \font-size
-    dy = "-0.5em"
-    >tone~1 (! 陰平 !)
-  </text>
-  
-  <!-- tone 2 陰上 -->
-  <line
-    x1 = "-2.5"
-    y1 = "-3.3"
-    x2 = "2.5"
-    y2 = "-5.5" />
-  <text
-    x = "0"
-    y = "-4.4"
-    \font-size
-    dy = "-0.5em"
-    transform = "rotate(-23.75 0 -4.4)"
-    >tone~2 (! 陰上 !)
-    <!-- arctan (2.2/5) == 23.75 degree -->
-  </text>
-  
-  <!-- tone 3 陰去 -->
-  <line
-    x1 = "-2.5"
-    y1 = "-3.3"
-    x2 = "2.5"
-    y2 = "-3.3" />
-  <text
-    x = "0"
-    y = "-3.3"
-    \font-size
-    dy = "-0.5em"
-    >tone~3 (! 陰去 !)
-  </text>
-  
-  <!-- tone 4 陽平 -->
-  <line
-    x1 = "-2.5"
-    y1 = "-1.1"
-    x2 = "2.5"
-    y2 = "-1.1" />
-  <text
-    x = "0"
-    y = "-1.1"
-    \font-size
-    dy = "-0.5em"
-    >tone~4 (! 陽平 !)
-  </text>
-  
-  <!-- tone 5 陽上 -->
-  <line
-    x1 = "-2.5"
-    y1 = "-2.2"
-    x2 = "2.5"
-    y2 = "-3.3" />
-  <text
-    x = "-1.3"
-    y = "-2.75"
-    \font-size
-    dy = "-0.5em"
-    transform = "rotate(-12.41 0 -2.75)"
-    >tone~5 (! 陽上 !)
-    <!-- arctan (1.1/5) == 12.41 degree -->
-  </text>
-  
-  <!-- tone 6 陽去 -->
-  <line
-    x1 = "-2.5"
-    y1 = "-2.2"
-    x2 = "2.5"
-    y2 = "-2.2" />
-  <text
-    x = "1.3"
-    y = "-2.2"
-    \font-size
-    dy = "-0.5em"
-    >tone~6 (! 陽去 !)
-  </text>
-  
-  <!-- tone 7 高陰入 -->
-  <line
-    x1 = "3.75"
-    y1 = "-5.5"
-    x2 = "6.25"
-    y2 = "-5.5" />
-  <text
-    x = "5"
-    y = "-5.5"
-    \font-size
-    dy = "-0.5em"
-    >tone~7 (! 高陰入 !)
-  </text>
-  
-  <!-- tone 8 低陰入 -->
-  <line
-    x1 = "3.75"
-    y1 = "-3.3"
-    x2 = "6.25"
-    y2 = "-3.3" />
-  <text
-    x = "5"
-    y = "-3.3"
-    \font-size
-    dy = "-0.5em"
-    >tone~8 (! 低陰入 !)
-  </text>
-  
-  <!-- tone 9 陽入 -->
-  <line
-    x1 = "3.75"
-    y1 = "-2.2"
-    x2 = "6.25"
-    y2 = "-2.2" />
-  <text
-    x = "5"
-    y = "-2.2"
-    \font-size
-    dy = "-0.5em"
-    >tone~9 (! 陽入 !)
-  </text>
-  
-  <!-- pitch num. -->
-  <text
-    x = "-4"
-    y = "-6.6"
-    \font-size
-    >pitch num.
-  </text>
-  
-  <!-- 5 -->
-  <text
-    x = "-4"
-    y = "-5.5"
-    \font-size
-    >5
-  </text>
-  
-  <!-- 4 -->
-  <text
-    x = "-4"
-    y = "-4.4"
-    \font-size
-    >4
-  </text>
-  
-  <!-- 3 -->
-  <text
-    x = "-4"
-    y = "-3.3"
-    \font-size
-    >3
-  </text>
-  
-  <!-- 2 -->
-  <text
-    x = "-4"
-    y = "-2.2"
-    \font-size
-    >2
-  </text>
-  
-  <!-- 1 -->
-  <text
-    x = "-4"
-    y = "-1.1"
-    \font-size
-    >1
-  </text>
+  /]
   
 </svg>
 ||||
