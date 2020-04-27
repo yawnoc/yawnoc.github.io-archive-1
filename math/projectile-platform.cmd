@@ -59,14 +59,63 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
 
 <!--                       Trajectory diagram
   ***********************************************************************
+  We choose the parabola with initial height h and range R
+  with peak along x == b.
+  
+  In the usual (non-reflected-y) coordinates, this is of the form
+    y == C - 1/2 A (x - b)^2.
+  From the initial and final points (x, y) = (0, h) and (x, y) = (R, 0),
+  we have
+    
+    h == C - 1/2 A b^2
+    0 == C - 1/2 A (R - b)^2
+    
+  which solves to give
+    
+    A == 2 h / [R (R - 2b)]
+    C == h (R - b)^2 / [R (R - 2b)].
+    
+  Therefore the parabola is given by
+    
+    y == -h (R - x)/R * (x + R - 2b)/(R - 2b).
+    
+  Now y' == - A (x - b), so we have initial and final slopes
+    
+    y'(0) == A b == 2 h b / [R (R - 2b)]
+    y'(R) == - A (R - b) == - 2 h (R - b) / [R (R - 2b)].
+    
+  The Bezier control point (x_c, y_c) for the required quadratic path (Q)
+  is located at the intersection of the initial and final tangent lines,
+  whence we have
+    
+    y_c == 2 h b / [R (R - 2b)] x_c + h
+    y_c == - 2 h (R - b) / [R (R - 2b)] (x_c - R),
+    
+  which solves to give
+    
+    x_c == R/2
+    y_c == h (R - b) / (R - 2b).
+  
+  For the actual values, we choose
+    initial height h = 2
+    range R == 5
+    peak horizontal position b == 2
+  yielding
+    initial slope y'(0) == 1.6
+    control point (x_c, y_c) == (2.5, 6).
+  
+  Henceforth we switch to SVG (reflected-y) coordinates.
+  
+  ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
     h           initial height                         -2
     r           range                                   5
-    xb          x pos of bezier control point           1.5
-    yb          y pos of bezier control point          -5
-    m           slope of velocity vector                2
-    wu          width of velocity vector                0.8
+    b           x pos of peak                           2
+    xc          x pos of bezier control point           2.5
+    yc          y pos of bezier control point          -6
+    m           slope of velocity vector                1.6
+    wu          width of velocity vector                1
     hu          height of velocity vector               1.6
     wp          width of platform                       0.5
     xleft       left x pos                             -1
@@ -143,24 +192,24 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
       dy="-0.5em">y</text>
     
     <!-- initial height h -->
-    <line x1="-0.25" y1="-2" x2="0.5" y2="-2"/>
+    <line x1="-0.2" y1="-2" x2="0.7" y2="-2"/>
     <text \maths-italic x="-0.25" y="-2" \font-size
       dx="-0.5em" dy="0.3em">h</text>
     
     <!-- trajectory -->
-    <path d="M 0,-2 Q 1.5,-5 5,0" fill="none"/>
+    <path d="M 0,-2 Q 2.5,-6 5,0" fill="none"/>
     
     <!-- launch angle phi -->
-    <text \maths-italic x="0.6" y="-2" \font-size
-      dx="-0.5em" dy="-0.35em">ϕ</text>
+    <text \maths-italic x="0" y="-2" \font-size
+      dx="1em" dy="-0.35em">ϕ</text>
     
     <!-- range R -->
     <text \maths-italic x="5" y="0" \font-size
       dy="1em">R</text>
     
     <!-- velocity vector u -->
-    <line x1="0" y1="-2" x2="0.8" y2="-3.6" marker-end = "url(#arrowhead)"/>
-    <text \maths-italic x="0.8" y="-3.6" \font-size
+    <line x1="0" y1="-2" x2="1" y2="-3.6" marker-end = "url(#arrowhead)"/>
+    <text \maths-italic x="1" y="-3.6" \font-size
       dx="0.5em">u</text>
   
   /]
