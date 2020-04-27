@@ -265,14 +265,14 @@ a[href^="http"
 }
 
 
-/* Heading self links */
+/* Heading permalinks */
 
-h2 > .self-link {
+h2 > .permalink {
   background-image: url(/favicon-32x32.png);
 }
 
-.self-link {
-  background-image: url(/res/self-link.svg);
+.permalink {
+  background-image: url(/res/permalink.svg);
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 1em;

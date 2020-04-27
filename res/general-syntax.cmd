@@ -7,7 +7,7 @@
   Noscript  \noscript[feature]
   Cite this page section
   Page properties with dates  [|||| ||||]
-  Heading self-link anchors (<h2> through <h6>)
+  Heading permalinks (<h2> through <h6>)
   Links
   Navigation bars  [==== ====]
   Translation (parallel text)  [..{[class]}↵ .. ..]
@@ -194,7 +194,7 @@
 
 <!--
   ----------------------------------------------------------------
-  Heading self-link anchors (<h2> through <h6>)
+  Heading permalinks (<h2> through <h6>)
   ----------------------------------------------------------------
 -->
 
@@ -207,7 +207,7 @@
   (?P=hashes)
 %
   \g<hashes>\g<id_>
-    <a class="self-link" href="#\g<id_>" aria-label="Permalink"></a>\\
+    <a class="permalink" href="#\g<id_>" aria-label="Permalink"></a>\\
     \g<content>
   \g<hashes>
 %}
