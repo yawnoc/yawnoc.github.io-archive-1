@@ -134,6 +134,10 @@ function renderMaths() {
     // Imaginary unit
     '\\ii': '\\mathrm{i}',
     
+    // Real and imaginary parts
+    '\\Re': '\\mathopspace\\mathrm{Re}',
+    '\\Im': '\\mathopspace\\mathrm{Im}',
+    
     // Order (Big-O)
     '\\order': '\\mathopspace O',
     
