@@ -66,7 +66,7 @@ Now armed with some basic knowledge of these very useful tools,
 I have been able to derive an asymptotic expansion
 for the optimal launch angle when air resistance is relatively weak.
 </p>
-<svg class="embedded-styles"><style>
+<svg class="embedded-styles" aria-hidden="true"><style>
 text {
 font-family: sans-serif;
 text-anchor: middle;
@@ -110,7 +110,10 @@ stroke: none;
 <b>Manuscript:</b> <a href="/manuscripts/resistance.pdf"><code>resistance.pdf</code>&nbsp;(983&nbsp;KB)</a>
 </p>
 <div class="centred-block">
-<svg class="fit-width" width="360px" viewBox="-2 -9 14 10">
+<svg class="fit-width" width="360px" viewBox="-2 -9 14 10" role="img" focusable="false" aria-labelledby="trajectory-diagram-title">
+<title id="trajectory-diagram-title">Projectile motion from the origin in weak quadratic drag. The initial speed is u and the initial angle is phi. The projectile takes an asymmetric path, similar to a parabola but squashed horizontally to the right,
+and strikes the ground at range R along the x-axis.</title>
+<g aria-hidden="true">
 <defs>
 <marker id="arrowhead" viewBox="0 -0.3 1 0.6" refX="1" refY="0" markerWidth="1" markerHeight="0.3" orient="auto-start-reverse">
 <path d="M 0, -0.3 L 0, 0.3 L 1, 0 z"/>
@@ -210,6 +213,7 @@ stroke: none;
 <text class="maths-italic" x="10" y="0" font-size="0.8" dy="1em">R</text>
 <line x1="0" y1="0" x2="1" y2="-2" marker-end="url(#arrowhead)"/>
 <text class="maths-italic" x="1" y="-2" font-size="0.8" dx="-0.6em">u</text>
+</g>
 </svg>
 </div>
 <h3 id="motion"><a class="self-link" href="#motion"></a>Equations of motion</h3>
@@ -647,7 +651,10 @@ Indeed the asymptotic expansion is very accurate for <span class="js-maths">B &l
 (or equivalently <span class="js-maths">u / c &lt; 0.7</span>).
 </p>
 <div class="centred-block">
-<svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 16">
+<svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 16" role="img" focusable="false" aria-labelledby="optimal-angle-phi-vs-b-plot-title"
+>
+<title id="optimal-angle-phi-vs-b-plot-title">Plot showing numerical and asymptotic optimal launch angle phi versus the dimensionless group B. There is good agreement from B = 0 (where phi = 45 degrees) up to about B = 0.5, after which the asymptotic curve bends away from the numerical curve.</title>
+<g aria-hidden="true">
 <defs>
 <marker id="htickcoarse" viewBox="-0.1 0 0.2 0.4" refX="0" refY="0" markerWidth="0.2" markerHeight="0.4">
 <line x1="0" y1="0" x2="0" y2="0.4"/>
@@ -778,6 +785,7 @@ Indeed the asymptotic expansion is very accurate for <span class="js-maths">B &l
 8.2,-46.49
 "/>
 <text x="8.2" y="-46.49" font-size="1" dx="-3.5em" dy="1em">Asymptotic</text>
+</g>
 </svg>
 </div>
 <p>
@@ -792,7 +800,10 @@ Finally, here is a plot of the optimal launch angle in terms of
 <span class="js-maths">\sqrt{B} = u / c</span>, the initial-to-terminal speed ratio:
 </p>
 <div class="centred-block">
-<svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 21">
+<svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 21" role="img" focusable="false" aria-labelledby="optimal-angle-phi-vs-u-on-c-plot-title"
+>
+<title id="optimal-angle-phi-vs-u-on-c-plot-title">Plot showing numerical and asymptotic optimal launch angle phi versus the initial-to-terminal speed ratio u divided by c. There is good agreement from B = 0 (where phi = 45 degrees) up to about B = 0.6, after which the asymptotic curve bends away from the numerical curve.</title>
+<g aria-hidden="true">
 <line x1="0" y1="-30" x2="20.5" y2="-30"/>
 <text class="maths-italic" x="20.5" y="-30" font-size="1" dx="1.2em" dy="0.3em">u&thinsp;/&thinsp;c</text>
 <polyline class="points" points="0,-30 5,-30 10,-30 15,-30 20,-30" marker-start="url(#htickcoarse)" marker-mid="url(#htickcoarse)" marker-end="url(#htickcoarse)"/>
@@ -887,6 +898,7 @@ Finally, here is a plot of the optimal launch angle in terms of
 7.25,-46.89
 "/>
 <text x="7.25" y="-46.89" font-size="1" dx="-3.2em" dy="1em">Asymptotic</text>
+</g>
 </svg>
 </div>
 <h2 id="cite"><a class="self-link" href="#cite"></a>Cite this page</h2>
