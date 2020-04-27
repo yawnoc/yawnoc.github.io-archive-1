@@ -116,6 +116,9 @@ function renderMaths() {
     // Dot product
     '\\dotp': '\\boldsymbol\\cdot',
     
+    // Basis vectors
+    '\\basisvec': '\\mathopspace\\vec{a}_{#1}',
+    
     // Units
     '\\unit': '\\mathopspace\\mathrm{#1}',
     
