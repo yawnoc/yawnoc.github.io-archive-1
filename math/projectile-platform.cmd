@@ -106,9 +106,9 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
 
 ||||{centred-block}
 <svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5"
-  \accessible-svg-attributes[trajectory-diagram]\
+  \accessible-svg-attributes[trajectory-diagram-title]\
 >
-  [accessible-svg-title/trajectory-diagram
+  [accessible-svg-title/trajectory-diagram-title
     Projectile motion from a raised platform at height h along the y-axis. \
     The initial speed is u and the initial angle is phi. \
     The projectile takes a parabolic path \
