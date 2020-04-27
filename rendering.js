@@ -147,6 +147,9 @@ function renderMaths() {
     '\\colb': '\\textcolor{blue}{#1}',
     '\\colv': '\\textcolor{darkviolet}{#1}',
     
+    // Epsilon
+    '\\eps': '\\varepsilon',
+    
   }
   
   let mathsElements = document.getElementsByClassName("js-maths");
