@@ -116,7 +116,10 @@ function renderMaths() {
     // Dot product
     '\\dotp': '\\boldsymbol\\cdot',
     
-    // Text quantity
+    // Units
+    '\\unit': '\\mathopspace\\mathrm{#1}',
+    
+    // Text quantities
     '\\textq': '\\{\\text{#1}\\}',
     
     // Generic constant
