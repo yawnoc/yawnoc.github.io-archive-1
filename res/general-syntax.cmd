@@ -663,8 +663,8 @@
   * [accessible-svg-title/{id}  {content}  /]
     <title id="{id}">{content}</title>
   
-  * \accessible-svg-aria
-    aria-hidden="true"
+  * [accessible-svg-content/  {content}  /]
+    <g aria-hidden="true">{content}</g>
   
   If the labelling by id ever becomes unnecessary,
   then I will remove the {id} bits.
