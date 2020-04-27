@@ -1211,7 +1211,7 @@ and is **never** sounded as a consonant.
 
 ||||||{centred-block}
 ||||{overflowing}
-''''
+''''{no-wrapping}
 ^^^
   /
     ;[,3] 九聲
@@ -1224,7 +1224,7 @@ and is **never** sounded as a consonant.
   /
     , 婚
     , 1
-    ,{no-wrapping} 陰平
+    , 陰平
     , [fɐn˥]~(55)
     , [.fan1.]
     , fan1
@@ -1233,7 +1233,7 @@ and is **never** sounded as a consonant.
   /
     , 粉
     , 2
-    ,{no-wrapping} 陰上
+    , 陰上
     , [fɐn˧˥]~(35)
     , [.fan2.]
     , fan2
@@ -1242,7 +1242,7 @@ and is **never** sounded as a consonant.
   /
     , 訓
     , 3
-    ,{no-wrapping} 陰去
+    , 陰去
     , [fɐn˧]~(33)
     , [.fan3.]
     , fan3
@@ -1251,7 +1251,7 @@ and is **never** sounded as a consonant.
   /
     , 焚
     , 4
-    ,{no-wrapping} 陽平
+    , 陽平
     , [fɐn˩]~(11)
     , [.fan4.]
     , fan4
@@ -1260,7 +1260,7 @@ and is **never** sounded as a consonant.
   /
     , 奮
     , 5
-    ,{no-wrapping} 陽上
+    , 陽上
     , [fɐn˨˧]~(23)
     , [.fan5.]
     , fan5
@@ -1269,7 +1269,7 @@ and is **never** sounded as a consonant.
   /
     , 份
     , 6
-    ,{no-wrapping} 陽去
+    , 陽去
     , [fɐn˨]~(22)
     , [.fan6.]
     , fan6
@@ -1278,7 +1278,7 @@ and is **never** sounded as a consonant.
   /
     , 忽
     , 7
-    ,{no-wrapping} 高陰入
+    , 高陰入
     , [fɐt̚˥]~(5)
     , [.fat7.]
     , fat1
@@ -1287,7 +1287,7 @@ and is **never** sounded as a consonant.
   /
     , 　
     , 8
-    ,{no-wrapping} 低陰入
+    , 低陰入
     , [fɐt̚˧]~(3)
     , [.fat8.]
     , fat3
@@ -1296,7 +1296,7 @@ and is **never** sounded as a consonant.
   /
     , 佛
     , 9
-    ,{no-wrapping} 陽入
+    , 陽入
     , [fɐt̚˨]~(2)
     , [.fat9.]
     , fat6
