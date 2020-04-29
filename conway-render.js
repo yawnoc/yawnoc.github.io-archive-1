@@ -377,7 +377,7 @@ function romanisationInitialise() {
     // New romanisation
     romanisation = ROMANISATIONS[index];
     // Set romanisation cookie
-    Cookies.set('romanisation', romanisation, {expires: 365});
+    Cookies.set('romanisation', romanisation);
     // Check radio button corresponding to cookie
     let elem = addPrefix(romanisation);
     document.getElementById(elem).checked = true;
@@ -397,7 +397,7 @@ function romanisationInitialise() {
     // Get romanisation
     let romanisation = removePrefix(this.id);
     // Set romanisation cookie
-    Cookies.set('romanisation', romanisation, {expires: 365});
+    Cookies.set('romanisation', romanisation);
     // Show selected romanisation
     romanisationShow(romanisation);
   };
@@ -410,10 +410,11 @@ function romanisationInitialise() {
   let romanisation = Cookies.get('romanisation');
   // If romanisation cookie is not among romanisations
   if (!ROMANISATIONS.includes(romanisation)) {
-    // Set romanisation and romanisation cookie to 'conway'
+    // Set romanisation to 'conway'
     romanisation = 'conway';
-    Cookies.set('romanisation', romanisation, {expires: 365});
   }
+  // Set romanisation cookie
+  Cookies.set('romanisation', romanisation);
   // Check radio button corresponding to cookie
   let elem = addPrefix(romanisation);
   document.getElementById(elem).checked = true;
