@@ -137,9 +137,11 @@
       \/}
     </code></pre>
   ====
-  <script>(!
-    document.addEventListener("DOMContentLoaded",function(){renderDate()})
-  !)</script>
+  a(!
+    <script>\
+      document.addEventListener("DOMContentLoaded",function(){renderDate()})\
+    </script>
+  !)
 %}
 
 

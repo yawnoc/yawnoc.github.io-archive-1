@@ -1,2 +1,4 @@
 <!-- Load rendering JS -->
-<script defer src="/rendering.min.js"></script>
+a(!
+  <script defer src="/rendering.min.js"></script>
+!)
