@@ -22,8 +22,9 @@
       width: 100%;
     }
   !)
-  %onload-js
+  %onload-js a(!
     passInputToOutput()
+  !)
 %%
 
 
@@ -39,29 +40,33 @@
 ||||]
 
 ||||{container}
-<textarea
-  autofocus
-  id="input"
-  oninput="passInputToOutput()"
-  placeholder="Enter input here"
->
-</textarea>
+a(!
+  <textarea
+    autofocus
+    id="input"
+    oninput="passInputToOutput()"
+    placeholder="Enter input here"
+  >
+  </textarea>
+!)
 ||||
 
 ||||{container}
   \noscript[the strikethrough formatter]
-  <s id="output"></s>
+  a(! <s id="output"></s> !)
 ||||
 
 %footer-element
 
-<script>
-function passInputToOutput() {
-  let inputString = document.getElementById('input').value
-  output.textContent = (
-    /\S/.test(inputString)
-    ? inputString
-    : 'Output shall appear here'
-  )
-}
-</script>
+a(!
+  <script>
+  function passInputToOutput() {
+    let inputString = document.getElementById('input').value
+    output.textContent = (
+      /\S/.test(inputString)
+      ? inputString
+      : 'Output shall appear here'
+    )
+  }
+  </script>
+!)
