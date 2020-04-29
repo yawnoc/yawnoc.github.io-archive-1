@@ -15,7 +15,7 @@
     It means that I haven't thought up
     or gotten around to adding content since %year-modified-next;
     possibly I have died.
-  %css
+  %css a(!
     .page-link-container > li {
       margin-bottom: 0.7em;
     }
@@ -26,6 +26,7 @@
       font-size: small;
       margin: 0.2em 0;
     }
+  !)
 %%
 
 

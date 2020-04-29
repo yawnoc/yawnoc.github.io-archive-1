@@ -10,13 +10,14 @@
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
-  %css
+  %css a(!
     .air-date {
       font-weight: bold;
     }
     li > a {
       display: block;
     }
+  !)
 %%
 
 

@@ -12,7 +12,7 @@
   %description
     Conway's Romanisation for Cantonese, \
     with English approximations and a diagram of the nine tones.
-  %css
+  %css a(!
     .alternatives-separator {
       font-weight: bold;
       margin-left: 1em;
@@ -31,6 +31,7 @@
       font-size: large;
       padding: 0.3em 0.4em;
     }
+  !)
 %%
 
 

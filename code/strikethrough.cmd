@@ -8,19 +8,20 @@
   %date-modified 2020-04-25
   %resources
     (+ res/main-resources.cmd +)
-  %css
+  %css a(!
     .container {
       border: 2px solid black;
       margin: 1em 0.3em;
       padding: 0.4em;
     }
-    \#input {
+    #input {
       box-sizing: border-box;
       display: block;
       padding: 0.5em;
       resize: vertical;
       width: 100%;
     }
+  !)
   %onload-js
     passInputToOutput()
 %%

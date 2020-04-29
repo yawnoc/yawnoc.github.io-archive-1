@@ -13,10 +13,11 @@
     An English translation of Mao's 1920 suggestion, in (! 長沙《大公報》 !), \
     of dividing China into 27 separate countries, \
     including the Republic of Hunan ((! 湖南共和國 !)).
-  %css
+  %css a(!
     .red-emphasis {
       color: red;
     }
+  !)
 %%
 
 

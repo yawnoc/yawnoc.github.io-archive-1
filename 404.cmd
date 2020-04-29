@@ -5,11 +5,12 @@
   %title-suffix \title-suffix
   %resources
     (+ res/main-resources.cmd +)
-  %css
+  %css a(!
     strong {
       display: block;
       margin-bottom: 1em;
     }
+  !)
 %%
 
 
