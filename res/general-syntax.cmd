@@ -112,7 +112,7 @@
     Conway~(%year-modified).
     \g<text_title>.
     \\<\\url-full\\>
-    Accessed \\yyyy-mm-dd.
+    Accessed~\\yyyy-mm-dd.
     ----
   
   * BibTeX:
