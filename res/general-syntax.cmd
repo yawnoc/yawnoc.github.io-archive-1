@@ -112,7 +112,7 @@
     Conway~(%year-modified).
     \g<text_title>.
     \\<\\url-full\\>
-    Accessed <span class="js-date">yyyy-mm-dd</span>.
+    Accessed \\yyyy-mm-dd.
     ----
   
   * BibTeX:
@@ -122,7 +122,7 @@
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
       \/  howpublished = {\\url{\\url-full}},
-      \/  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
+      \/  note = {Accessed \\yyyy-mm-dd},
       \/}
     </code></pre>
   
@@ -133,7 +133,7 @@
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
       \/  url = {\\url-full},
-      \/  urldate = {<span class="js-date">yyyy-mm-dd</span>},
+      \/  urldate = {\\yyyy-mm-dd},
       \/}
     </code></pre>
   ====
@@ -144,6 +144,7 @@
   !)
 %}
 
+{: \yyyy-mm-dd : a(! <span class="js-date">yyyy-mm-dd</span> !) :}
 
 
 <!--
