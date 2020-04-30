@@ -15,6 +15,7 @@
   Translation-alternative markers  \or  \lit
   Sic erat scriptum
   Sun Tzu
+  Romanisation indicators  \C  \pm  \M  \gr
   Romanisation spans  [^ ]  [_ ]
   Romanisation special characters
   Automatic language declarations for Chinese
@@ -379,6 +380,30 @@
 -->
 
 {: \sun-tzu : Sun Tz(uu) :}
+
+
+
+<!--
+  ----------------------------------------------------------------
+  Romanisation indicators  \C  \pm  \M  \gr
+  ----------------------------------------------------------------
+-->
+
+{% \\C [\s]* %
+  [Cantonese](
+    /cantonese/conway-romanisation
+    Conway's Romanisation for Cantonese
+  ):~
+%}
+{% \\pm [\s]* %
+  [post-merger](
+    /cantonese/conway-romanisation#ts-vs-ch
+    {ts vs ch}, {ts' vs ch'}, and {s vs sh}
+  ):~
+%}
+
+{% \\M [\s]* % Mandarin:~ %}
+{% \\gr [\s]* % Government-regulared 統讀:~ %}
 
 
 
