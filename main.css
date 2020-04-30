@@ -64,13 +64,15 @@ blockquote {
 /* ---------------------------------------------------------------- */
 
 
-code {
-  background: #f8f8f8;
+:not(pre) > code {
+  background: #fcfcfc;
+  border: 1px solid lightgrey;
+  padding: 0.15em;
 }
 
 
 pre {
-  background: #f8f8f8;
+  background: #fcfcfc;
   border: 1px solid grey;
   overflow-x: auto;
   padding: 0.5em;
