@@ -613,6 +613,39 @@
   }
 ::}
 
+{:: \svg-style:stroke-colour-rulesets ::
+  line.colour-r {
+    stroke: red;
+  }
+  line.colour-g {
+    stroke: green;
+  }
+  line.colour-b {
+    stroke: blue;
+  }
+  line.colour-v {
+    stroke: darkviolet;
+  }
+  line[class^='colour-'] {
+    stroke-width: 3;
+  }
+::}
+
+{:: \svg-style:text-colour-rulesets ::
+  text.colour-r {
+    fill: red;
+  }
+  text.colour-g {
+    fill: green;
+  }
+  text.colour-b {
+    fill: blue;
+  }
+  text.colour-v {
+    fill: darkviolet;
+  }
+::}
+
 <!-- Container [svg-styles/ /] -->
 
 {%
