@@ -419,6 +419,20 @@ noscript {
   color: green;
 }
 
+/* Bracketed original Chinese after romanisations */
+
+.original-chinese {
+  color: purple;
+}
+
+.original-chinese::before {
+  content: '(';
+}
+
+.original-chinese::after {
+  content: ')';
+}
+
 
 /* ---------------------------------------------------------------- */
 /* Sun Tzu                                                          */
