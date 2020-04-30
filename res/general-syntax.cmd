@@ -19,6 +19,7 @@
   Romanisation special characters
   Automatic language declarations for Chinese
   Bracketed original Chinese for romanisations  (( ))
+  Coloured spans  [c/ /]
   SVG embedded styles
   Accessible inline SVGs
   
@@ -575,6 +576,26 @@
   \)\)
 %
   ~\g<match_portion_1> class="original-chinese"\g<match_portion_2>
+%}
+
+
+
+<!--
+  ----------------------------------------------------------------
+  Coloured spans  [c/ /]
+  ----------------------------------------------------------------
+  c is the colour letter, one of r, g, b, v.
+-->
+
+
+{%
+  \[ (?P<colour_letter> [rgbv] )
+    /
+      (?P<content> [\s\S] *? )
+    /
+  \]
+%
+  <span class="colour-\g<colour_letter>">\g<content></span>
 %}
 
 
