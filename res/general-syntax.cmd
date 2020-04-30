@@ -11,7 +11,7 @@
   Links
   Navigation bars  [==== ====]
   Translation (parallel text)  [..{[class]}↵ .. ..]
-  Translator-supplied italics  _. _
+  Translator-supplied italics  .[ ]
   Translation-alternative markers  \or  \lit
   Sic erat scriptum
   Sun Tzu
@@ -339,14 +339,15 @@
 
 <!--
   ----------------------------------------------------------------
-  Translator-supplied italics  _. _
+  Translator-supplied italics  .[ ]
   ----------------------------------------------------------------
 -->
 
 {%
-  [_][.](?= [\S] )
-    (?P<content> [^_] *? )
-  [_]
+  [.]
+  \[
+    (?P<content> [^]] *? )
+  \]
 %
   _{translator-supplied}\g<content>_
 %}

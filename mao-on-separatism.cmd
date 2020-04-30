@@ -68,7 +68,7 @@ as the second appears to have many transcription errors):
 
 ++++
 1. [Google books] \+
-  This is in "Selected Historical Materials of _.the_ Hunan Autonomy Movement"
+  This is in "Selected Historical Materials of .[the] Hunan Autonomy Movement"
   ([simp/(! 《湖南自治运动史料选编》 !)/])
   by Li Tieming ([simp/(! 李铁明 !)/]),
   locatable by searching Google Books for
@@ -159,15 +159,15 @@ And who now forbids any mention of self-determination or independence?
 [..
   湖南建設問題的根本問題——[:湖南共和國:]
 ..
-  _.The_ Fundamental Issues of _.the_ Hunan Development Issue
-  --- [:_.the_ Republic of Hunan:]
+  .[The] Fundamental Issues of .[the] Hunan Development Issue
+  --- [:.[the] Republic of Hunan:]
 ..]
 
 [..
   鄉居寂靜，一臥兼旬。
 ..
-  _.Mine_ hometown residence _.hath been_ quiet,
-  _.in my_ rest of twenty days.
+  .[Mine] hometown residence .[hath been] quiet,
+  .[in my] rest of twenty days.
 ..]
 ====
 * 一臥：
@@ -181,11 +181,11 @@ And who now forbids any mention of self-determination or independence?
   九月一號到省，翻閱《大公報》，封面打了紅色，\
   中間有許多我所最喜歡的議論，引起我的高興，很願意繼續將我的一些意思寫出。
 ..
-  _.On the_ first of September _.I_ arrived at _.the_ province;
-  flipping through _.the_ "Ta Kung Pao", _.its_ cover _.was_ struck _.in_ Red,
-  _.and_ within _.it_ there were many of my favourite discussions,
+  .[On the] first of September .[I] arrived at .[the] province;
+  flipping through .[the] "Ta Kung Pao", .[its] cover .[was] struck .[in] Red,
+  .[and] within .[it] there were many of my favourite discussions,
   bringing me joyousness,
-  _.and I am_ very willing to continue to write out some of my opinions.
+  .[and I am] very willing to continue to write out some of my opinions.
 ..]
 ====
 * Here I have followed Version~2 with 繼續,
@@ -195,17 +195,17 @@ And who now forbids any mention of self-determination or independence?
 [..
   我是反對「大中華民國」的，[:我是主張「湖南共和國」的:]。有什麼理由呢？
 ..
-  I oppose _.a_ 'Great Republic of China',
-  [:_.and_ I assert _.a_ 'Republic of Hunan':].
-  What reasons have _.I_?
+  I oppose .[a] 'Great Republic of China',
+  [:.[and] I assert .[a] 'Republic of Hunan':].
+  What reasons have .[I]?
 ..]
 
 [..
   大概從前有一種謬論，就是「在今後世界能夠爭存的國家，必定是大國家」。
 ..
-  Broadly, there is _.an_ absurd discourse from former _.times_,
-  _.which_ is: 'In _.the_ world hereafter,
-  _.the_ nations _.which shall be_ able to survive, must be Great Nations'.
+  Broadly, there is .[an] absurd discourse from former .[times],
+  .[which] is: 'In .[the] world hereafter,
+  .[the] nations .[which shall be] able to survive, must be Great Nations'.
 ..]
 ====
 * 一種：
@@ -219,9 +219,9 @@ And who now forbids any mention of self-determination or independence?
 [..
   這種議論的流毒，擴充帝國主義，壓抑自國的小弱民族，
 ..
-  _.The_ spreading malice of this type of discourse
+  .[The] spreading malice of this type of discourse
   expands imperialism,
-  _.and_ oppresses _.the_ weaker peoples of _.one's_ own nation;
+  .[and] oppresses .[the] weaker peoples of .[one's] own nation;
 ..]
 ====
 * 流：
@@ -237,85 +237,85 @@ And who now forbids any mention of self-determination or independence?
   窒其生存向上，而惟使恭順馴屈於己。
 ..
   in contending for colonies overseas,
-  causes semi-developed _.and_ undeveloped peoples
-  _.to_ become slaves _.in_ full,
-  obstructing their _.moving_ upwards _.in_ life, and only makes _.them_
-  deferential, obedient, tame _.and_ submissive unto oneself.
+  causes semi-developed .[and] undeveloped peoples
+  .[to] become slaves .[in] full,
+  obstructing their .[moving] upwards .[in] life, and only makes .[them]
+  deferential, obedient, tame .[and] submissive unto oneself.
 ..]
 
 [..
   最著的例，是英、美、德、法、俄、奧，他們幸都收了其實沒有成功的成功。
 ..
-  _.The_ most notable examples, are of
-  Britain, America, Germany, France, Russia _.and_ Austria-_.Hungary_:
-  they all _.have been_ fortunate _.to_ reap of success without actual success.
+  .[The] most notable examples, are of
+  Britain, America, Germany, France, Russia .[and] Austria-.[Hungary]:
+  they all .[have been] fortunate .[to] reap of success without actual success.
 ..]
 
 [..
   還有一個就是中國，連「其實沒有成功的成功」，都沒收得，
 ..
-  _.Yet_ also there is one _.other_, _.which_ is China,
-  _.for which_, even 'success without actual success'
-  _.they have_ not even reaped:
+  .[Yet] also there is one .[other], .[which] is China,
+  .[for which], even 'success without actual success'
+  .[they have] not even reaped:
 ..]
 
 [..
   收得的是滿洲人消滅，蒙人、回人、藏人、奄奄欲死，
 ..
-  _.that_ reaped is _.the_ annihilation of _.the_ Manchurians;
-  _.the_ Mongolians, _.the_ Huis _.and the_ Tibetans
-  breathing feebly _.and_ wishing to die;
+  .[that] reaped is .[the] annihilation of .[the] Manchurians;
+  .[the] Mongolians, .[the] Huis .[and the] Tibetans
+  breathing feebly .[and] wishing to die;
 ..]
 
 [..
   十八省亂七八糟，造成三個政府、三個國會、\
   二十個以上督軍王、巡按使王、總司令王，
 ..
-  _.the_ eighteen provinces _.in_ chaos _.and_ disarray,
+  .[the] eighteen provinces .[in] chaos .[and] disarray,
   leading to three governments, three National Assemblies,
-  _.and_ above twenty military-governor kings, civil-governor kings, _.and_
+  .[and] above twenty military-governor kings, civil-governor kings, .[and]
   commander-in-chief kings;
 ..]
 
 [..
   老百姓天天被人殺死姦死，財產盪空，外債如麻。
 ..
-  commoners killed _.and_ raped to death by others every day; _.and_
-  wealth spent to depletion, _.and_ foreign debt as _.entangled_ hemp fibre.
+  commoners killed .[and] raped to death by others every day; .[and]
+  wealth spent to depletion, .[and] foreign debt as .[entangled] hemp fibre.
 ..]
 ====
 * 如麻：
-    as _.entangled_ hemp fibre \+
-    As in 亂麻. Version~2 has 如山, "as _.a_ mountain".
+    as .[entangled] hemp fibre \+
+    As in 亂麻. Version~2 has 如山, "as .[a] mountain".
 ====
 
 [..
   號稱共和民國，沒有幾個懂得「什麼是共和」的國民，
 ..
-  _.It_ claims _.the_ title of Republic _.and_ Democratic Nation,
-  _.but_ has not _.even a_ few citizens _.who_ know 'what is a Republic'.
+  .[It] claims .[the] title of Republic .[and] Democratic Nation,
+  .[but] has not .[even a] few citizens .[who] know 'what is a Republic'.
 ..]
 
 [..
   四萬萬人至少有三萬九千萬不曉得寫信看報。
 ..
-  _.Of_ four hundred million people
-  there are at least three hundred _.and_ ninety million,
-  _.who_ know not how to write letters _.or_ read _.the_ news.
+  .[Of] four hundred million people
+  there are at least three hundred .[and] ninety million,
+  .[who] know not how to write letters .[or] read .[the] news.
 ..]
 
 [..
   全國沒有一條自主的鐵路。
 ..
-  _.The_ whole nation has not one self-controlled railroad.
+  .[The] whole nation has not one self-controlled railroad.
 ..]
 
 [..
   不能辦郵政，不能駕「洋船」，不能經理食鹽。
 ..
-  _.We_ cannot do postal services;
-  _.we_ cannot drive 'foreign ships';
-  _.and we_ cannot manage table salt.
+  .[We] cannot do postal services;
+  .[we] cannot drive 'foreign ships';
+  .[and we] cannot manage table salt.
 ..]
 ====
 * 食鹽：
@@ -327,85 +327,85 @@ And who now forbids any mention of self-determination or independence?
   十八省中像湖南、四川、廣東、福建、浙江、湖北一類的省，\
   通變成被征服省，屢踐他人的馬蹄，受害無極。
 ..
-  Amidst _.the_ eighteen provinces,
-  _.the_ provinces like _.the_ likes of
-  Hunan, Szechuan, Kwangtung, Fukien, Chekiang _.and_ Hupeh,
-  _.have_ all changed into conquered provinces,
-  repeatedly treading _.the_ horse hoofs of others,
-  _.and have_ been harmed without limit.
+  Amidst .[the] eighteen provinces,
+  .[the] provinces like .[the] likes of
+  Hunan, Szechuan, Kwangtung, Fukien, Chekiang .[and] Hupeh,
+  .[have] all changed into conquered provinces,
+  repeatedly treading .[the] horse hoofs of others,
+  .[and have] been harmed without limit.
 ..]
 
 [..
   這些果都是誰之罪呢？
 ..
-  _.And_ all these consequences are whose crime?
+  .[And] all these consequences are whose crime?
 ..]
 
 [..
   我敢說，是帝國之罪，是大國之罪，\
   是「在世界能夠爭存的國家必定是大國家」一種謬論的罪。
 ..
-  I dare say: _.it_ is _.the_ crime of imperialism,
-  _.it_ is _.the_ crime of the Great Nation,
-  _.and it_ is _.the_ crime of absurd discourses, _.the_ likes of
-    'in _.the_ world hereafter,
-    _.the_ nations _.which shall be_ able to survive must be Great Nations'.
+  I dare say: .[it] is .[the] crime of imperialism,
+  .[it] is .[the] crime of the Great Nation,
+  .[and it] is .[the] crime of absurd discourses, .[the] likes of
+    'in .[the] world hereafter,
+    .[the] nations .[which shall be] able to survive must be Great Nations'.
 ..]
 
 [..
   根本的說，是人民的罪。
 ..
-  Fundamentally speaking, _.it_ is _.the_ crime of the people.
+  Fundamentally speaking, .[it] is .[the] crime of the people.
 ..]
 
 [..
   現在我們知道，世界的大國多半瓦解了。
 ..
-  Now we know _.that_,
-  _.of the_ Great Nations of _.the_ world, _.the_ majority _.have_ crumbled.
+  Now we know .[that],
+  .[of the] Great Nations of .[the] world, .[the] majority .[have] crumbled.
 ..]
 
 [..
   俄國的旗子變成紅色，完全是世界主義的平民天下。
 ..
-  Russia's flag _.has_ become Red;
-  _.it_ completely is _.a_ cosmopolitanist commoner's world.
+  Russia's flag .[has] become Red;
+  .[it] completely is .[a] cosmopolitanist commoner's world.
 ..]
 ====
 * 天下：
     world;
-    \lit _.all_ under heaven
+    \lit .[all] under heaven
 ====
 
 [..
   德國也染成了半紅。波蘭獨立，截克獨立，匈牙利獨立，\
   猶太、阿剌伯、亞美尼亞，都重新建國。
 ..
-  Germany also _.has been_ dyed to become half Red.
-  Poland _.has become_ independent, Czecho-_.Slovakia_ independent,
-  _.and_ Hungary independent;
-  Judea, Arabia _.and_ Armenia _.have_ all established nations anew.
+  Germany also .[has been] dyed to become half Red.
+  Poland .[has become] independent, Czecho-.[Slovakia] independent,
+  .[and] Hungary independent;
+  Judea, Arabia .[and] Armenia .[have] all established nations anew.
 ..]
 
 [..
   愛爾蘭狂欲脫離英吉利，朝鮮狂欲脫離日本。
 ..
-  Ireland ferociously wishes to secede from England, _.and_
+  Ireland ferociously wishes to secede from England, .[and]
   Korea ferociously wishes to secede from Japan.
 ..]
 
 [..
   在我們東北的西伯利亞遠東片土，亦建了三個政府。
 ..
-  _.The_ far eastern Siberian land to our north-east,
-  _.has_ also established three governments.
+  .[The] far eastern Siberian land to our north-east,
+  .[has] also established three governments.
 ..]
 
 [..
   全世界風起雲湧，[:「民族自決」高唱入雲:]。
 ..
-  _.In the_ whole world, _.the_ wind stirs _.and the_ clouds surge;
-  [:'people's self-determination' _.is_ sung loud into _.the_ clouds:].
+  .[In the] whole world, .[the] wind stirs .[and the] clouds surge;
+  [:'people's self-determination' .[is] sung loud into .[the] clouds:].
 ..]
 ====
 * 高：
@@ -416,8 +416,8 @@ And who now forbids any mention of self-determination or independence?
 [..
   [:打破大國迷夢，知道是野心家欺人的鬼話。:]
 ..
-  [:Smash _.the_ illusion of the Great Nation:
-  know _.that it_ is the ambitionist's lie _.for_ deceiving others.:]
+  [:Smash .[the] illusion of the Great Nation:
+  know .[that it] is the ambitionist's lie .[for] deceiving others.:]
 ..]
 ====
 * 野心家：
@@ -431,27 +431,27 @@ And who now forbids any mention of self-determination or independence?
 [..
   推翻帝國主義，不許他再來作祟，全世界蓋有好些人民業已醒覺了。
 ..
-  Overthrow imperialism, _.and_ let it not come again to make trouble;
-  _.the_ whole world has indeed _.a_ good few peoples
-  _.who have_ already awoken.
+  Overthrow imperialism, .[and] let it not come again to make trouble;
+  .[the] whole world has indeed .[a] good few peoples
+  .[who have] already awoken.
 ..]
 
 [..
   中國呢？也醒覺了（除開政客、官僚、軍閥）。
 ..
-  _.And_ China? _.It_ also _.has_ awoken
-  (apart from _.the_ politicians, _.the_ bureaucrats, _.and the_ warlords).
+  .[And] China? .[It] also .[has] awoken
+  (apart from .[the] politicians, .[the] bureaucrats, .[and the] warlords).
 ..]
 
 [..
   九年假共和、大戰亂的經驗，迫人不得不醒覺，\
   知道全國的總建設在一個期內完全無望。
 ..
-  _.The_ experiences of nine years of _.a_ Fake Republic,
-  _.and of the_ Great War, _.have_ forced people to not _.be_ unawake,
-  _.and to_ know _.that the_ whole nation's collective development,
+  .[The] experiences of nine years of .[a] Fake Republic,
+  .[and of the] Great War, .[have] forced people to not .[be] unawake,
+  .[and to] know .[that the] whole nation's collective development,
   in one term,
-  _.is_ completely without hope.
+  .[is] completely without hope.
 ..]
 ====
 * 期：
@@ -463,73 +463,73 @@ And who now forbids any mention of self-determination or independence?
   [:最好辦法，是:]索性不謀總建設，[:索性分裂:]，\
   去謀各省的分建設，[:實行「各省人民自決主義」:]。
 ..
-  [:_.The_ best way, is:] _.that we_ may as well
-  not go for collective development: [:_.we_ may as well split up:],
-  to go for _.the_ separate development of each province,
-  [:_.and_ implement 'self-determinationism of the people of each province':].
+  [:.[The] best way, is:] .[that we] may as well
+  not go for collective development: [:.[we] may as well split up:],
+  to go for .[the] separate development of each province,
+  [:.[and] implement 'self-determinationism of the people of each province':].
 ..]
 
 [..
   [:二十二行省、三特區、兩藩地:]，合共二十七個地方，[:最好分為二十七國:]。
 ..
   [:Twenty-two provinces, three special regions
-  _.and_ two bordered lands:], totalling twenty-seven places,
-  [:_.are_ best split into twenty-seven nations:].
+  .[and] two bordered lands:], totalling twenty-seven places,
+  [:.[are] best split into twenty-seven nations:].
 ..]
 
 [..
   湖南呢？至於我們湖南，尤其三千萬人個個應該醒覺了！
 ..
-  _.And_ Hunan? As to our Hunan, in particular thirty million people:
-  every one _.of them_ should _.be_ awakened!
+  .[And] Hunan? As to our Hunan, in particular thirty million people:
+  every one .[of them] should .[be] awakened!
 ..]
 
 [..
   湖南人沒有別的法子，[:唯一的法子是湖南自決自治:]，\
   是湖南人在湖南地域[:建設一個「湖南共和國」:]。
 ..
-  _.The_ Hunan people have no other way.
-  [:_.The_ only way is Hunan's self-determination _.and_ autonomy:];
-  _.it_ is _.for the_ Hunan people [:_.to_ establish _.a_
-  'Republic of Hunan':] in _.the_ Hunan region.
+  .[The] Hunan people have no other way.
+  [:.[The] only way is Hunan's self-determination .[and] autonomy:];
+  .[it] is .[for the] Hunan people [:.[to] establish .[a]
+  'Republic of Hunan':] in .[the] Hunan region.
 ..]
 
 [..
   我曾著實想過，救湖南，救中國，圖與全世界解放的民族攜手，均非這樣不行。
 ..
-  I have really thought about _.this_:
-  _.to_ save Hunan, _.and to_ save China;
-  _.to_ seek to join hands with _.the_ liberated peoples of _.the_ whole world:
-  all _.ways which are_ not thus, _.will_ not work.
+  I have really thought about .[this]:
+  .[to] save Hunan, .[and to] save China;
+  .[to] seek to join hands with .[the] liberated peoples of .[the] whole world:
+  all .[ways which are] not thus, .[will] not work.
 ..]
 ====
 * 攜手：
     join hands;
-    \lit take _.the_ hands
+    \lit take .[the] hands
 ====
 
 [..
   [:湖南人沒有把湖南自建為國的決心和勇氣，湖南終究是沒辦法。:]
 ..
-  [:_.If the_ Hunan people have not _.the_ determination and courage
-  to establish Hunan itself as _.a_ nation,
-  Hunan _.in the_ end has no way _.forward_.:]
+  [:.[If the] Hunan people have not .[the] determination and courage
+  to establish Hunan itself as .[a] nation,
+  Hunan .[in the] end has no way .[forward].:]
 ..]
 
 [..
   談湖南建設問題，我覺得這是一個根本問題。
 ..
-  On _.the_ Hunan development issue:
-  I feel this is _.a_ fundamental issue.
+  On .[the] Hunan development issue:
+  I feel this is .[a] fundamental issue.
 ..]
 
 [..
   我頗有一點意思要發表出來，乞吾三千萬同胞的聰聽，\
   希望共起討論這一個頂有意思的大問題。
 ..
-  I really have one _.more_ point of opinion _.which_ needs to _.be_ expressed,
-  _.so I_ request _.the_ clear audience of my thirty million fellow citizens,
-  _.and_ hope to discuss together this big issue of utmost interest.
+  I really have one .[more] point of opinion .[which] needs to .[be] expressed,
+  .[so I] request .[the] clear audience of my thirty million fellow citizens,
+  .[and] hope to discuss together this big issue of utmost interest.
 ..]
 ====
 * 同胞：
@@ -541,8 +541,8 @@ And who now forbids any mention of self-determination or independence?
 [..
   今天是個發端，餘俟明日以後繼續討論。
 ..
-  Today is _.a_ beginning;
-  _.the_ remainder awaits continued discussion tomorrow _.and_ thereafter.
+  Today is .[a] beginning;
+  .[the] remainder awaits continued discussion tomorrow .[and] thereafter.
 ..]
 
 
