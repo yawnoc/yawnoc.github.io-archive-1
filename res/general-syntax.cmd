@@ -509,6 +509,11 @@
   
   Also allowed are the following:
   
+  * Colour spans
+      [r/ /]
+      [g/ /]
+      [b/ /]
+      [v/ /]
   * Simple delimiters
       [: :]
   * Double U+2014 EM DASH
@@ -522,11 +527,13 @@
 
 {%
   (
+    ( \[ [rgbv] / ) ?
     ( \[: ) ?
     [⺀-〿㇀-㇣㐀-鿼豈-龎！-｠𠀀-𱍊] +
     ( —{2} ) ?
     ( …{2} ) ?
     ( :\] ) ?
+    ( /\] ) ?
     (
       \\
       \n
