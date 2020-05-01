@@ -41,9 +41,9 @@
 body {
   font-family: sans-serif;
   line-height: 1.4;
-  margin: auto auto 1em;
+  margin: 0;
   overflow-wrap: break-word;
-  padding: 32px 0.7em 0;
+  padding: 32px 0.7em 0.7em;
 }
 
 
