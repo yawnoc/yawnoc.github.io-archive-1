@@ -13,7 +13,7 @@
     (+ res/maths-resources.cmd +)
   %description c(!
     An annotated English translation of the first problem in Haidao Suanjing, \
-    《海島算經》, or "[The] Sea Island Computational Classic".
+    《海島算經》, "The Sea Island Computational Classic".
   !)
 %%
 

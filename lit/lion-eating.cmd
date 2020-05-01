@@ -1,7 +1,7 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title (! "An History of Mr~Shih's Eating of Lions" 《施氏食獅史》 !)
+  %title (! "An History of Mr Shih's Eating of Lions" 《施氏食獅史》 !)
   %title-suffix \title-suffix
   %title-en ".[An] History of Mr~Shih's Eating of Lions"
   %author Conway
@@ -13,7 +13,7 @@
   %description c(!
     An English translation of the Mandarin "lion tongue twister" \
     《施氏食獅史》, "shi shi shi shi shi", or \
-    "[An] History of Mr~Shih's Eating of Lions".
+    "An History of Mr Shih's Eating of Lions".
   !)
 %%
 
