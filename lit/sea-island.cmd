@@ -6,7 +6,7 @@
   %title-en ".[The] Sea Island Computational Classic"
   %author Conway
   %date-created 2019-04-20
-  %date-modified 2020-05-01
+  %date-modified 2020-05-02
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
@@ -520,7 +520,6 @@ $$
       &=
         \frac{
           \textq{front post backward walk}
-            \cdot
           \textq{post separation}
         }{
           \textq{mutual excess}
