@@ -107,7 +107,7 @@ and its corresponding derivation as found in 《海島算經細草圖說》.
 ----
 The Chinese source texts
 [今有望海島][problem] (problem) and [說曰][derivation] (derivation)
-are taken from archive.org.
+are from archive.org.
 After reading these in their original forms (i.e.~without any punctuation)
 it is hard not to appreciate modern mathematical notation.
 ----

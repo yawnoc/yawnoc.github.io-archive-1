@@ -53,7 +53,7 @@ It is written in literary Chinese, with every character pronounced
 
 
 ----
-The Chinese source text is taken from Page~143 of Chao's
+The Chinese source text is from Page~143 of Chao's
 [《語言問題》](
   https://books.google.com.au/books\
     ?id=AQs2KCQharAC&pg=PA143\
