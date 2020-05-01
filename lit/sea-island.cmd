@@ -197,17 +197,17 @@ $$
 </svg>
 ||||
 
-[..
+<<
   今有望[b/海島/]，立[r/兩表/]，[r/齊高三丈/]，\
   前後[g/相去千步/]，令後表與前表參相直。
-..
+||
   Now there be .[a] looking at .[a] [b/ sea island /];
   erect [r/ two posts /], [r/ .[of the] same height three rods /],
   .[one] in front of .[the] other,
   [g/ mutually separated by .[a] thousand paces /],
   .[and] make .[the] rear post mutually straight .[the] three
   with .[the] front post .[and the island].
-..]
+>>
 ====
 * 表：標也；
     posts;
@@ -277,15 +277,15 @@ $$
 </svg>
 ||||
 
-[..
+<<
   從前表[b/卻行一百二十三步/]，人目著地[r/取望島峯/]，與表末參合。
-..
+||
   [b/ Walking back one hundred .[and] twenty-three paces /]
     from .[the] front post,
   .[a] man's eye on .[the] ground,
     [r/ taking .[a] look at .[the] peak of .[the] island /],
   meeteth .[the] three with .[the] tip of .[the] post.
-..]
+>>
 ====
 * 著地：
     on .[the] ground;
@@ -338,14 +338,14 @@ $$
 </svg>
 ||||
 
-[..
+<<
   從後表[b/卻行一百二十七步/]，人目着地[r/取望島峯/]，亦與表末參合。
-..
+||
   [b/ Walking back one hundred .[and] twenty-seven paces /]
   from .[the] rear post, .[a] man's eye on .[the] ground,
   [r/ taking .[a] look at .[the] peak of .[the] island /],
   also meeteth .[the] three with .[the] tip of .[the] post.
-..]
+>>
 
 
 
@@ -384,21 +384,21 @@ $$
 </svg>
 ||||
 
-[..
+<<
   問[b/島高/]及[r/去表/]各幾何？
-..
+||
   .[We] ask: how much .[are] each of [b/ .[the] height of .[the] island /]
   and [r/ .[its] distance from .[the] post /]?
-..]
+>>
 
-[..
+<<
   答曰：島高[b/四里五十五步/]；去表[r/一百二里一百五十步/]。
-..
+||
   Answer saith: .[the] height of .[the] island .[is]
     [b/ four miles .[and] fifty-five paces /],
   .[and the] distance from .[the] post,
     [r/ one hundred .[and] two miles .[and] one hundred .[and] fifty paces /].
-..]
+>>
 ======
 * 里：
     miles \+
@@ -426,15 +426,15 @@ $$
 
 ======
 
-[..
+<<
   術曰：以表高乘表間爲實；相多爲法，除之。所得加表高，即得島高。
-..
+||
   Method saith: use .[the] post height times
   .[the] post separation as .[the] dividend, .[and the]
   mutual excess as .[the] divisor, .[and] divide them.
   .[Unto] that obtained add .[the] post height,
   that is .[we] obtain .[the] height of .[the] island.
-..]
+>>
 ====
 * 實：
     dividend;
@@ -493,9 +493,9 @@ $$
   $$
 
 ====
-[..
+<<
   求前表去島遠近者：以前表卻行乘表間爲實；相多爲法。除之，得島去表里數。
-..
+||
   Those seeking .[the] distance .[that the] front post .[is] separated
     from .[the] island:
   use .[the] front post backward walk times .[the] post separation
@@ -503,7 +503,7 @@ $$
   .[and the] mutual excess as .[the] divisor.
   Divide them, .[to] obtain .[the] number of miles
     .[that the] island .[is] separated from .[the] post.
-..]
+>>
 ====
 * 遠近：
     distance;
@@ -757,13 +757,13 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   說曰：[b/甲乙爲海島/]，[r/甲爲島峯/]。
-..
+||
   Explanation saith:
   [b/ $AB$ is .[the] sea island /];
   [r/ $A$ is .[the] peak of .[the] island /].
-..]
+>>
 
 ||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5"
@@ -815,16 +815,16 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   [b/丙丁爲前表/]，[r/戊丁爲前去表/]，\
   [g/戊爲人目/]，[v/戊丙甲爲前表望島峯/]。
-..
+||
   [b/$CD$ is .[the] front post/];
   [r/$ED$ is .[the] front .[walk's] separation from .[the] post/];
   [g/$E$ is .[the] man's eye/];
   [v/$ECA$ is .[the] front post's
   looking at .[the] peak of .[the] island/].
-..]
+>>
 
 ||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5"
@@ -894,16 +894,16 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   [b/己庚爲後表/]，[r/辛庚爲後去表/]，\
   [g/辛爲人目/]，[v/辛己甲爲後表望島峯/]。
-..
+||
   [b/$FG$ is .[the] rear post/];
   [r/$HG$ is .[the] rear .[walk's] separation from .[the] post/];
   [g/$H$ is .[the] man's eye/];
   [v/$HFA$ is .[the] rear post's looking at
     .[the] peak of .[the] island/].
-..]
+>>
 
 ||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5"
@@ -979,12 +979,12 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   與[b/庚戊丁乙/]平行[r/作己丙辰/]，則[g/辰乙與丙丁、己庚俱等/]。
-..
+||
   [r/Constructing $FCO$/] parallel with [b/$GEDB$/],
   [g/$OB$ .[is] equal with both $CD$ .[and] $FG$/].
-..]
+>>
 ====
 * 俱：
     both;
@@ -1074,12 +1074,12 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   與[b/丙戊/]平行[r/作己壬/]，則[g/壬庚與戊丁等/]。
-..
+||
   [r/Constructing $FI$/] parallel with [b/$CE$/],
   [g/$IG$ .[is] equal with $ED$/].
-..]
+>>
 
 ||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5"
@@ -1160,12 +1160,12 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   [b/己庚辛形/]，與[r/甲辰己形/]同式。
-..
+||
   [b/.[The] shape $FGH$/] .[is] similar with
   [r/.[the] shape $AOF$/].
-..]
+>>
 ====
 * 同式：
     similar;
@@ -1256,12 +1256,12 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   [b/己庚壬形/]，與[r/甲辰丙形/]同式。
-..
+||
   [b/.[The] shape $FGI$/] .[is] similar with
   [r/.[the] shape $AOC$/].
-..]
+>>
 
 ||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5"
@@ -1341,13 +1341,13 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   己庚辛形，分[b/己庚壬形，同己庚句/]，而[r/辛壬爲股較/]。
-..
+||
   .[The] shape $FGH$ .[is] split into [b/.[the] shape $FGI$
   .[of the] same minor cathetus  $FG$/],
   with [r/$HI$ as .[the] major cathetus chariot-beam/].
-..]
+>>
 
 ====
 * 句：
@@ -1466,13 +1466,13 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   甲辰己形，分[b/甲辰丙形，同甲辰句/]，而[r/己丙爲股較/]。
-..
+||
   .[The] shape $AOF$ .[is] split into [b/.[the] shape $AOC$
   .[of the] same minor cathetus  $AO$/],
   with [r/$FC$ as .[the] major cathetus chariot-beam/].
-..]
+>>
 
 ||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-1 -4 9.2 5"
@@ -1554,15 +1554,15 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   以[b/小股較辛壬/]比[r/小句己庚/]，\
   若[g/大股較己丙/]比[v/大句甲辰/]。
-..
+||
   Using [b/.[the] small major cathetus chariot-beam $HI$/]
   .[to] compare unto [r/.[the] small minor cathetus $FG$/],
   .[is] like [g/.[the] large major cathetus chariot-beam $FC$/]
   compared unto [v/.[the] large minor cathetus $AO$/].
-..]
+>>
 ====
 * In modern notation,
   $$
@@ -1653,13 +1653,13 @@ The punctuation inserted in this section is my own.
 </svg>
 
 ||||
-[..
+<<
   既得[v/甲辰/]，加[r/表高辰乙/]（即[r/丙丁/]），得甲乙，爲島高。
-..
+||
   Having obtained [v/$AO$/],
   add [r/.[the] post height $OB$/] (which is [r/$CD$/]),
   .[to] obtain $AB$, being .[the] height of .[the] island.
-..]
+>>
 ====
 * In modern notation,
   $$
@@ -1776,11 +1776,11 @@ The punctuation inserted in this section is my own.
 </svg>
 ||||
 
-[..
+<<
   [b/小股較辛壬/]比[r/分股壬庚/]，\
   若[g/大股較己丙/]比[v/分股丙辰/]（即[v/丁乙/]），\
   得[v/島去前表之遠/]。
-..
+||
   [b/.[The] small major cathetus chariot-beam $HI$/] compared unto
   [r/.[the] split major cathetus $IG$/],
   .[is] like
@@ -1789,7 +1789,7 @@ The punctuation inserted in this section is my own.
   (which is [v/$DB$/]);
   .[we] obtain [v/.[the] distance .[that the] island .[is] separated
   from .[the] front post/].
-..]
+>>
 ====
 * In modern notation,
   $$

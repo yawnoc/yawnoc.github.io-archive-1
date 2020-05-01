@@ -10,7 +10,7 @@
   Heading permalinks (<h2> through <h6>)
   Links
   Navigation bars  [==== ====]
-  Translation (parallel text)  [..{[class]}↵ .. ..]
+  Translation (parallel text)  <<{[class]}↵ || >>
   Translator-supplied italics  .[ ]
   Translation-alternative markers  \or  \lit
   Sic erat scriptum
@@ -305,15 +305,14 @@
 
 <!--
   ----------------------------------------------------------------
-  Translation (parallel text)  [..{[class]}↵ .. ..]
+  Translation (parallel text)  <<{[class]}↵ || >>
   ----------------------------------------------------------------
 -->
 
 
 {%
   ^ [^\S\n]*
-  \[
-  (?P<full_stops> [.]{2,} )
+  [<]{2}
   (
     \{
       (?P<class> [^}]*? )
@@ -321,11 +320,10 @@
   )?
   \n
     (?P<chinese_content> [\s\S]*? )
-  (?P=full_stops)
+  [|]{2}
     (?P<english_content> [\s\S]*? )
   ^ [^\S\n]*
-  (?P=full_stops)
-  \]
+  [>]{2}
 %
   ||||||{translation parallel-text \g<class>}
   ||||{chinese}
