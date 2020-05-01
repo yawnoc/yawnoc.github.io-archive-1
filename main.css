@@ -563,6 +563,12 @@ th, td {
   font-family: serif;
 }
 
+/* Annotation lists */
+
+.parallel-text + ul {
+  margin: 0.7em;
+}
+
 
 /* ---------------------------------------------------------------- */
 /* Vertical right-to-left script                                    */
