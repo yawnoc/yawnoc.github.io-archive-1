@@ -559,7 +559,7 @@ th, td {
 /* Translation-alternative markers ("or", "lit.", etc.) */
 
 .alternative-marker {
-  color: grey;
+  color: #666;
   font-family: serif;
 }
 
