@@ -537,6 +537,11 @@ th, td {
 /* ---------------------------------------------------------------- */
 
 
+/* Translator-supplied words */
+.translator-supplied {
+  color: #767676;
+}
+
 /* Parallel text */
 
 .parallel-text {
