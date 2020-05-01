@@ -3,7 +3,6 @@ https://yawnoc.github.io/cantonese/conway-romanisation
 https://yawnoc.github.io/cantonese/tonic-dictionary
 https://yawnoc.github.io/code/cch
 https://yawnoc.github.io/code/katex-guide
-https://yawnoc.github.io/code/sandbox
 https://yawnoc.github.io/code/strikethrough
 https://yawnoc.github.io/code/unicode-maths
 https://yawnoc.github.io/cynics-730/
