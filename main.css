@@ -444,7 +444,7 @@ noscript {
 /* Bracketed original Chinese after romanisations */
 
 .original-chinese {
-  color: purple;
+  color: red;
 }
 
 .original-chinese::before {
