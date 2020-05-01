@@ -120,7 +120,7 @@ The Chinese source text is taken from Page~143 of Chao's
   Mr~.[Shih] went to .[the] market all the time .[to] view lions.
 >>
 ====
-* 氏 <br>
+* 氏 \+
     Here, 施 has been dropped from 施氏.
 
 * 時時：
@@ -140,7 +140,7 @@ The Chinese source text is taken from Page~143 of Chao's
 >>
 ====
 * 十時：
-    ten o'clock <br>
+    ten o'clock \+
     This is a modern term; perhaps "tenth hour" would be a better rendering.
     Classically, 時 meant 時辰, which were
     [named two-hour intervals](https://en.wikipedia.org/wiki/Earthly_Branches)
