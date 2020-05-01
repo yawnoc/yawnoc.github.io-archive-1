@@ -19,6 +19,7 @@
   Romanisation spans  [^ ]  [_ ]
   Romanisation special characters
   Automatic language declarations for Chinese
+  Middle dot \.
   Bracketed original Chinese for romanisations  (( ))
   Coloured spans  [c/ /]
   SVG embedded styles
@@ -568,6 +569,18 @@
 %
   <span lang="zh-Hant">\g<0></span>
 %}
+
+
+
+<!--
+  ----------------------------------------------------------------
+  Middle dot \.
+  ----------------------------------------------------------------
+-->
+
+
+<!-- U+30FB KATAKANA MIDDLE DOT -->
+{: \. : ・ :}
 
 
 
