@@ -649,71 +649,81 @@
 -->
 
 {:: \svg-style:stroke-declarations ::
-  stroke: black;
-  vector-effect: non-scaling-stroke;
+  a(!
+    stroke: black;
+    vector-effect: non-scaling-stroke;
+  !)
 ::}
 
 {:: \svg-style:text-declarations ::
-  font-family: sans-serif;
-  text-anchor: middle;
+  a(!
+    font-family: sans-serif;
+    text-anchor: middle;
+  !)
 ::}
 
 {:: \svg-style:maths-font-rulesets ::
-  @font-face {
-    font-display: swap;
-    font-family: "KaTeX\_Math-Italic";
-    src:
-      url("/fonts/KaTeX\_Math-Italic.woff2") format("woff2"),
-      url("/fonts/KaTeX\_Math-Italic.woff") format("woff"),
-      url("/fonts/KaTeX\_Math-Italic.ttf") format("truetype");
-  }
-  @font-face {
-    font-display: swap;
-    font-family: "KaTeX\_Main-Regular";
-    src:
-      url("/fonts/KaTeX\_Main-Regular.woff2") format("woff2"),
-      url("/fonts/KaTeX\_Main-Regular.woff") format("woff"),
-      url("/fonts/KaTeX\_Main-Regular.ttf") format("truetype");
-  }
-  .maths-italic {
-    font-family: "KaTeX\_Math-Italic", "KaTeX\_Main-Regular";
-  }
-  .maths-regular {
-    font-family: "KaTeX\_Main-Regular";
-  }
+  a(!
+    @font-face {
+      font-display: swap;
+      font-family: "KaTeX_Math-Italic";
+      src:
+        url("/fonts/KaTeX_Math-Italic.woff2") format("woff2"),
+        url("/fonts/KaTeX_Math-Italic.woff") format("woff"),
+        url("/fonts/KaTeX_Math-Italic.ttf") format("truetype");
+    }
+    @font-face {
+      font-display: swap;
+      font-family: "KaTeX_Main-Regular";
+      src:
+        url("/fonts/KaTeX_Main-Regular.woff2") format("woff2"),
+        url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
+        url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+    }
+    .maths-italic {
+      font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
+    }
+    .maths-regular {
+      font-family: "KaTeX_Main-Regular";
+    }
+  !)
 ::}
 
 {:: \svg-style:stroke-colour-rulesets ::
-  line.colour-r {
-    stroke: red;
-  }
-  line.colour-g {
-    stroke: green;
-  }
-  line.colour-b {
-    stroke: blue;
-  }
-  line.colour-v {
-    stroke: darkviolet;
-  }
-  line[class^='colour-'] {
-    stroke-width: 3;
-  }
+  a(!
+    line.colour-r {
+      stroke: red;
+    }
+    line.colour-g {
+      stroke: green;
+    }
+    line.colour-b {
+      stroke: blue;
+    }
+    line.colour-v {
+      stroke: darkviolet;
+    }
+    line[class^='colour-'] {
+      stroke-width: 3;
+    }
+  !)
 ::}
 
 {:: \svg-style:text-colour-rulesets ::
-  text.colour-r {
-    fill: red;
-  }
-  text.colour-g {
-    fill: green;
-  }
-  text.colour-b {
-    fill: blue;
-  }
-  text.colour-v {
-    fill: darkviolet;
-  }
+  a(!
+    text.colour-r {
+      fill: red;
+    }
+    text.colour-g {
+      fill: green;
+    }
+    text.colour-b {
+      fill: blue;
+    }
+    text.colour-v {
+      fill: darkviolet;
+    }
+  !)
 ::}
 
 <!-- Container [svg-styles/ /] -->
