@@ -565,7 +565,7 @@ th, td {
 
 .alternative-marker {
   color: #666;
-  font-family: serif;
+  font-family: Palatino, Georgia, serif;
 }
 
 /* Annotation lists */
