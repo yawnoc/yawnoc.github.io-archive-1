@@ -46,7 +46,8 @@ it consists of nine problems in the surveying of
 distant structures or landforms.
 For each problem, the Classic itself only gives the statement of the problem,
 the answer and the formula used to compute the answer.
-Derivations of the formulae I found in [《海島算經細草圖說》][sea island detailed],
+Derivations of the formulae I found
+in [《海島算經細草圖說》][sea island detailed],
 or ".[The] Sea Island Computational Classic
 .[with] detailed working, diagrams, .[and] explanations".
 Written by [Li Huang ((李潢))] [李潢],

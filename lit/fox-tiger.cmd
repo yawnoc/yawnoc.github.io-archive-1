@@ -105,7 +105,8 @@ The Chinese source text is from Chinese Text Project:
   江一對曰：「虎求百獸而食之，得狐。
 ||
   .[But] Kiang I ((江一)) replied, saying,
-  ".[The] tiger sought .[the] many beasts to eat them, .[and] obtained .[the] fox.
+  ".[The] tiger sought .[the] many beasts to eat them,
+  .[and] obtained .[the] fox.
 >>
 ====
 * Kiang I ((江一)) \+
@@ -231,7 +232,7 @@ The Chinese source text is from Chinese Text Project:
 >>
 
 \cite-this-page[%title-en][fox-tiger][
-  (! ``\textit{The} {Fox} {Feigneth} \emph{the} {Tiger's} {Authority}'' !)
+  (! ``\textit{The} {Fox} {Feigneth} \textit{the} {Tiger's} {Authority}'' !)
 ]
 
 %footer-element

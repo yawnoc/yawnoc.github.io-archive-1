@@ -310,7 +310,7 @@ The inserted punctuation is my own.
     
     4. 將也，幾也；
         almost; \or nearly \+
-        No. Same as 2.
+        No. Same as~2.
     
     5. 
         志操精果謂之誠，反誠爲殆；
@@ -321,7 +321,9 @@ The inserted punctuation is my own.
         (interchangeable with 怠) \+
         No.
     
-    7. 叶養里切，音以。《楚辭\.天問》女歧縫裳，而館同爰止。何顚易厥首，而親以逢殆。 \+
+    7.
+      叶養里切，音以。\
+      《楚辭\.天問》女歧縫裳，而館同爰止。何顚易厥首，而親以逢殆。 \+
         No.
     
     ++++
@@ -569,7 +571,7 @@ The inserted punctuation is my own.
 ====
 
 \cite-this-page[%title-en][lion-pavilion][
-  (! ``{Record} of \emph{the} {Lion's} {Pavilion}, {Victoria}~{Peak}'' !)
+  (! ``{Record} of \textit{the} {Lion's} {Pavilion}, {Victoria}~{Peak}'' !)
 ]
 
 %footer-element
