@@ -15,6 +15,11 @@
     An annotated English translation of the first problem in Haidao Suanjing, \
     《海島算經》, "The Sea Island Computational Classic".
   !)
+  %css
+    .parallel-text + ul + .centred-block,
+    .parallel-text + .centred-block {
+      margin-top: 10ex;
+    }
 %%
 
 [[====
