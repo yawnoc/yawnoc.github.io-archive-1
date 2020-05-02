@@ -312,28 +312,36 @@
 
 
 {%
-  ^ [^\S\n]*
-  [<]{2}
+  ^ (?P<leading_whitespace> [^\S\n]* )
+  [<]{2,}
   (
     \{
       (?P<class> [^}]*? )
     \}
   )?
   \n
+    
     (?P<chinese_content> [\s\S]*? )
-  [|]{2}
+    
+  ^ (?P=leading_whitespace)
+  (?P<pipes> [|]{2,} )
+    
     (?P<english_content> [\s\S]*? )
-  ^ [^\S\n]*
-  [>]{2}
+    
+  ^ (?P=leading_whitespace)
+  [>]{2,}
 %
-  ||||||{translation parallel-text \g<class>}
-  ||||{chinese}
+  \g<pipes>||||{translation parallel-text \g<class>}
+  
+  \g<pipes>||{chinese}
     \g<chinese_content>
-  ||||
-  ||||{english}
+  \g<pipes>||
+  
+  \g<pipes>||{english}
     \g<english_content>
-  ||||
-  ||||||
+  \g<pipes>||
+  
+  \g<pipes>||||
 %}
 
 
