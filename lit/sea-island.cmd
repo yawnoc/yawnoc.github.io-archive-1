@@ -129,9 +129,9 @@ and while their exact size is not terribly important,
 it is good to know the order of magnitude:
 ----
 ====
-* A chang~丈, "rod", is of the order three metres,
-* A pu~步, "pace", is of the order two metres, and
-* A li~里, "mile", is of the order half a kilometre.
+* A chang ((丈)), "rod", is of the order three metres,
+* A pu ((步)), "pace", is of the order two metres, and
+* A li ((里)), "mile", is of the order half a kilometre.
 ====
 ----
 The relevant conversions are
