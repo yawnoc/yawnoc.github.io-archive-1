@@ -150,7 +150,7 @@
   ----
   ----{g}
   I mean, last year alone we brought forward
-  \.4.2~billion worth of our program on infrastructure
+  \d4.2~billion worth of our program on infrastructure
   to address the very issues that you've just raised
   ----
   ----{gt}
@@ -321,7 +321,7 @@
   Melbourne University [...]
   found that the potential economic risk to Australia
   if global emissions patterns remain the same
-  are [\.]584~billion by 2020, and [\.]762~billion by 2050.
+  are [\d]584~billion by 2020, and [\d]762~billion by 2050.
   ----
   
   \scott-morrison

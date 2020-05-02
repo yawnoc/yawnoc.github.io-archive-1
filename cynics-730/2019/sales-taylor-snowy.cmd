@@ -87,7 +87,7 @@
   ----
   ----{g}
   I mean, we know that the benefits of Snowy 2.0
-  will be from [\.]4.4~to 6.8~billion
+  will be from [\d]4.4~to 6.8~billion
   and [...] Snowy will reduce volatility of wholesale electricity prices.
   ----
   ----{g}
@@ -158,8 +158,8 @@
   {I have no idea. Dodge the second:}
   ----
   ----{g}
-  Well yeah the benefits across all Australians is [\.]4.4~[billion],
-  as I say \.4.4~to \.6.8~billion, and that's a very significant...
+  Well yeah the benefits across all Australians is [\d]4.4~[billion],
+  as I say \d4.4~to \d6.8~billion, and that's a very significant...
   ----
   
   \leigh-sales
@@ -194,7 +194,7 @@
   Well, it hasn't
   ----
   ----{gt}
-  {but only if you ignore Malcolm Turnbull's initial quote of \.2~billion
+  {but only if you ignore Malcolm Turnbull's initial quote of \d2~billion
   and 4~years, which I sense is the whole point of your question}.
   ----
   
@@ -210,7 +210,7 @@
   ----{g}
   The original feasibility...
   the feasibility study work was done in December 2017.
-  The numbers were [\.]3.8~to [\.]4.5~billion and we're in line with those.
+  The numbers were [\d]3.8~to [\d]4.5~billion and we're in line with those.
   ----
   ----{gt}
   {Of course, "in line" has a different meaning
@@ -226,10 +226,10 @@
   
   \leigh-sales
   ----{h}
-  Australians were originally told it would cost \.2~billion,
+  Australians were originally told it would cost \d2~billion,
   then less than a year later that doubled.
   Earlier this year a contract for part of it was signed
-  for more than \.5~billion.
+  for more than \d5~billion.
   ----
   ----{h}
   Is there a limit to what the Government will chip in?
@@ -249,7 +249,7 @@
   ----{gt}
   {Since we are talking about the Coalition,
   "in line" means if you squint hard enough, they look the same.
-  Never mind that \.5~billion already exceeds the \.4.5~billion
+  Never mind that \d5~billion already exceeds the \d4.5~billion
   quoted by the feasibility study.}
   ----
   
@@ -282,7 +282,7 @@
   \angus-taylor
   ----{g}
   Well, the truth of the matter is,
-  it's going to reduce bills by \.4.4~to \.6.8~billion.
+  it's going to reduce bills by \d4.4~to \d6.8~billion.
   ----
   
   \leigh-sales
@@ -329,7 +329,7 @@
   "Government" is a euphemism for "taxpayer".}
   ----
   ----{g}
-  \.1.38~billion in equity investment [...].
+  \d1.38~billion in equity investment [...].
   ----
   ----{h}
   [...]

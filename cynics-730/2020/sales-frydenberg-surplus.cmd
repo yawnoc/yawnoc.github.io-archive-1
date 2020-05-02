@@ -185,7 +185,7 @@
   ----
   ----{g}
   Well again, we've shown our mettle when it comes to reducing taxes.
-  We've passed through the Parliament over \.300~billion of tax cuts...
+  We've passed through the Parliament over \d300~billion of tax cuts...
   ----
   
   \leigh-sales
@@ -262,7 +262,7 @@
   
   \josh-frydenberg
   ----{g}
-  [...] what we'll see is \.11~billion go into the economy
+  [...] what we'll see is \d11~billion go into the economy
   before June the 30th [...].
   ----
   
@@ -387,7 +387,7 @@
     \leigh-sales-2019
     ----{h}
     Like any projection,
-    your ability to deliver that \.7~billion surplus
+    your ability to deliver that \d7~billion surplus
     is reliant on factors that are outside your control;
     it might not happen?
     ----
