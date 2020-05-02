@@ -29,6 +29,9 @@
   %title-en
 #
 
+
+\noscript[]
+
 [||||
 Also known as _Haidao Suanjing_.
 ||||]
