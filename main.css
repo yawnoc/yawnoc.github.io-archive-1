@@ -561,6 +561,11 @@ th, td {
   padding-top: 0.3em;
 }
 
+li > .parallel-text {
+  font-size: 0.9em;
+  border-width: 1px;
+}
+
 .front-matter, .back-matter {
   font-size: medium;
 }
