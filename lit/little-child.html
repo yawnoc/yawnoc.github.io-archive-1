@@ -2,158 +2,142 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="description" content="An English translation of 《孔子問答：小兒論》, &quot;Q &amp; A with Confucius: the Little Child's Discourse&quot;. Basically Confucius getting his arse whooped by a little kid.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
-<meta name="description" content="An English translation of 《孔子問答：小兒論》, or &quot;Q&nbsp;&amp;&nbsp;A with Confucius: the Little Child's Discourse&quot;. Basically Confucius getting his arse whooped by a little kid.">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<script defer src="/conway-render.min.js"></script>
-<title>&quot;Q&nbsp;&amp;&nbsp;A with Confucius: the Little Child's Discourse&quot;:
-《孔子問答：小兒論》 | Conway's site</title>
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<title>"Q &amp; A with Confucius: the Little Child's Discourse" 《孔子問答：小兒論》 | Conway's site</title>
+<style>.danger {
+color: red;
+}</style>
 </head>
-<body onload="dateRender(); romanisationInitialise();">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-<li><a href="#introduction" title="Introduction">Intro</a></li>
-<li><a href="#translation" title="Translation">Translation</a></li>
-<li><a href="#cite" title="Cite this page">Cite</a></li>
-</ul></nav></header>
-<h1>
-<span lang="zh-Hant">《孔子問答：小兒論》</span> <span class="alternative-type">or</span><br>
-"Q&nbsp;<i>&amp;</i>&nbsp;A <i>with</i> Confucius: <i>the</i> Little Child's Discourse"
-</h1>
-<p class="page-properties">
-First created:&nbsp;20190407<br>
-Last modified:&nbsp;<b>20200223</b>
-</p>
-<h2 id="introduction"><a class="self-link" href="#introduction"></a>
-Introduction
-</h2>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="#translation" title="Translation">Translation</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1><span lang="zh-Hant">《孔子問答：小兒論》</span><br>
+"Q&nbsp;<i class="translator-supplied">&amp;</i>&nbsp;A <i class="translator-supplied">with</i> Confucius: <i class="translator-supplied">the</i> Little Child's Discourse"</h1>
+<div class="page-properties">
+First created: 2019-04-07<br>
+Last modified: 2020-05-02
+</div>
 <p>
-This is one of several accounts of
-<a href="https://zh.wikipedia.org/wiki/%E9%A0%85%E6%A9%90" title="維基百科：項橐"><span lang="zh-Hant">項橐</span><span class="romanisation romanisation-conway">&nbsp;(Hong T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Hsiang T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Xiang Tuo)</span></a>,
+This is one of several accounts of <a href="https://zh.wikipedia.org/wiki/%E9%A0%85%E6%A9%90">Hiang T'o&nbsp;<span lang="zh-Hant" class="original-chinese">項橐</span></a>,
 a child prodigy who is supposed to have outwitted Confucius
 at the age of seven.
-From <span lang="zh-Hant">《淮南子・脩務訓》：</span>
-<a href="https://ctext.org/huainanzi/xiu-wu-xun#n3435" title="《脩務訓》"><span lang="zh-Hant">「夫項託七歲為孔子師」</span></a>, meaning
-"<span lang="zh-Hant">項橐</span><span class="romanisation romanisation-conway">&nbsp;(Hong T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Hsiang T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Xiang Tuo)</span> <i>at</i> seven years
-became teacher of Confucius".
-In <span lang="zh-Hant">《三字經》</span> he is mentioned in the line
-<a href="https://ctext.org/three-character-classic#n90627" title="《三字經》"><span lang="zh-Hant">「昔仲尼，師項橐」</span></a> meaning
-"<span lang="zh-Hant">仲尼</span><span class="romanisation romanisation-conway">&nbsp;(Chung-nei)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Chung-ni)</span><span class="romanisation romanisation-pinyin">&nbsp;(Zhongni)</span> of old,
-<i>had</i> teacher <span lang="zh-Hant">項橐</span><span class="romanisation romanisation-conway">&nbsp;(Hong T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Hsiang T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Xiang Tuo)</span>".
+From <span lang="zh-Hant">《淮南子・脩務訓》：</span> <a href="https://ctext.org/huainanzi/xiu-wu-xun#n3435"><span lang="zh-Hant">「夫項託七歲為孔子師」</span></a>, meaning
+"Hiang T'o&nbsp;<span lang="zh-Hant" class="original-chinese">項橐</span> <i class="translator-supplied">at</i> seven years became teacher of Confucius".
+In <span lang="zh-Hant">《三字經》</span> he is mentioned in the line <a href="https://ctext.org/three-character-classic#n90627"><span lang="zh-Hant">「昔仲尼，師項橐」</span></a>, meaning
+"Chung-ni&nbsp;<span lang="zh-Hant" class="original-chinese">仲尼</span> of old, <i class="translator-supplied">had</i> teacher Hiang T'o&nbsp;<span lang="zh-Hant" class="original-chinese">項橐</span>".
 </p>
 <p>
-The text is sourced from a 1999 (<span lang="zh-Hant">己卯年</span>) Chinese almanac (<span lang="zh-Hant">通勝</span>),
+The Chinese source text is from a 1999 (<span lang="zh-Hant">己卯年</span>) Chinese almanac (<span lang="zh-Hant">通勝</span>),
 printed by <span lang="zh-Hant">天寶樓</span> (though these days only two almanac printing houses
 remain in Hong Kong, <span lang="zh-Hant">永經堂</span> and <span lang="zh-Hant">廣經堂</span>).
 It is entitled <span lang="zh-Hant">小兒論</span>, with the heading <span lang="zh-Hant">孔子問答</span> in the margins.
-It is relatively easy to read (and arguably isn't fully literary),
-and I would recommend it as a beginning text.
 </p>
 <p>
-Although there is no paragraphing,
-<span lang="zh-Hant">句讀</span><span class="romanisation romanisation-conway">&nbsp;(k_ü tau)</span><span class="romanisation romanisation-wadegiles">&nbsp;(chü tou)</span><span class="romanisation romanisation-pinyin">&nbsp;(ju dou)</span>
+Although there is no paragraphing, kü tou&nbsp;<span lang="zh-Hant" class="original-chinese">句讀</span>
 are supplied (albeit with errors in a few places).
 These are the rudimentary punctuation markers
 </p>
 <ul>
-<li>
-<span lang="zh-Hant">句（。）</span> for the end of a sentence
+<li>kü&nbsp;<span lang="zh-Hant" class="original-chinese">句</span>, "<span lang="zh-Hant">。</span>", for the end of a sentence, and
 </li>
-<li>
-<span lang="zh-Hant">讀（、）</span> for a mid-sentence pause<br>
-<span lang="zh-Hant">讀，去聲，</span>
-<a href="/cantonese/conway-romanisation" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;tau6,
-Mandarin:&nbsp;dòu
+<li>tou&nbsp;<span lang="zh-Hant" class="original-chinese">讀</span>, "<span lang="zh-Hant">、</span>", for a mid-sentence pause.<br>
+<span lang="zh-Hant">讀，去聲，</span> <a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;tau6, Mandarin:&nbsp;dòu.
 </li>
 </ul>
 <p>
-although the almanac uses <span lang="zh-Hant">句</span> even for mid-sentence pauses,
-and only uses <span lang="zh-Hant">讀</span> (very sparingly) for lists; see
-<a href="almanac-little-child-1.jpg" title="小兒論">the actual first page of the almanac text</a>.
+The almanac's usage of these is quite bizarre.
+Kü&nbsp;<span lang="zh-Hant" class="original-chinese">句</span> are used even for mid-sentence pauses,
+and tou&nbsp;<span lang="zh-Hant" class="original-chinese">讀</span> are only very sparingly used for lists;
+see <a href="almanac-little-child-1.jpg">the actual first page of the almanac text</a>.
 </p>
-<h2 id="translation"><a class="self-link" href="#translation"></a>
-Translation
-</h2>
-<div class="romanisation-radio">
-<noscript>Enable Javascript for romanisation toggling to work.</noscript>
-Romanisation&nbsp;(<kbd>F2</kbd>):&nbsp;<span lang="zh-Hant">音標</span><span class="romanisation romanisation-conway">&nbsp;(yam peeu)</span><span class="romanisation romanisation-wadegiles">&nbsp;(yin piao)</span><span class="romanisation romanisation-pinyin">&nbsp;(yin biao)</span><br>
-<input type="radio" name="romanisation" id="romanisation-none" value="none">
-<label for="romanisation-none">None</label>
-<input type="radio" name="romanisation" id="romanisation-conway" value="conway">
-<label for="romanisation-conway">Conway</label>
-<input type="radio" name="romanisation" id="romanisation-wadegiles" value="wadegiles">
-<label for="romanisation-wadegiles">Wade–Giles</label>
-<input type="radio" name="romanisation" id="romanisation-pinyin" value="pinyin">
-<label for="romanisation-pinyin">Pinyin</label>
-</div>
-<div class="boxed translation">
+<h2 id="translation"><a class="permalink" href="#translation" aria-label="Permalink"></a>Translation</h2>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">《孔子問答：小兒論》</span>
-<hr>
-"Q&nbsp;<i>&amp;</i>&nbsp;A <i>with</i> Confucius:
-<i>the</i> Little Child's Discourse"
+</div>
+<div class="english">
+"Q&nbsp;<i class="translator-supplied">&amp;</i>&nbsp;A <i class="translator-supplied">with</i> Confucius:
+<i class="translator-supplied">the</i> Little Child's Discourse"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">問答：</span>
-Q&nbsp;<i>&amp;</i>&nbsp;A;
-<span class="alternative-type">or</span> questions <i>and</i> answers;
-<span class="alternative-type">or</span> asking <i>and</i> replying
+Q&nbsp;<i class="translator-supplied">&amp;</i>&nbsp;A;
+<span class="alternative-marker">or</span> questions <i class="translator-supplied">and</i> answers;
+<span class="alternative-marker">or</span> asking <i class="translator-supplied">and</i> replying
 </li>
 <li><span lang="zh-Hant">小：</span>
 little;
-<span class="alternative-type">or</span> small
+<span class="alternative-marker">or</span> small
 </li>
 <li><span lang="zh-Hant">論：</span>
 discourse;
-<span class="alternative-type">or</span> theory
+<span class="alternative-marker">or</span> theory
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子，名丘，字仲尼，設敎於魯國之西。</span>
-<hr>
-Confucius, named <span lang="zh-Hant">丘</span><span class="romanisation romanisation-conway">&nbsp;(Yau)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Ch'iu)</span><span class="romanisation romanisation-pinyin">&nbsp;(Qiu)</span>,
-<i>and</i> styled <span lang="zh-Hant">仲尼</span><span class="romanisation romanisation-conway">&nbsp;(Chung-nei)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Chung-ni)</span><span class="romanisation romanisation-pinyin">&nbsp;(Zhongni)</span>,
-established <i>a</i> teaching in <i>the</i> west
-of <i>the</i> nation of <span lang="zh-Hant">魯</span><span class="romanisation romanisation-conway">&nbsp;(Lou)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Lu)</span><span class="romanisation romanisation-pinyin">&nbsp;(Lu)</span>.
+</div>
+<div class="english">
+Confucius, named K'iu&nbsp;<span lang="zh-Hant" class="original-chinese">丘</span>,
+<i class="translator-supplied">and</i> styled Chung-ni&nbsp;<span lang="zh-Hant" class="original-chinese">仲尼</span>,
+established <i class="translator-supplied">a</i> teaching in <i class="translator-supplied">the</i> west
+of <i class="translator-supplied">the</i> nation of Lu&nbsp;<span lang="zh-Hant" class="original-chinese">魯</span>.
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">孔子：</span>
 Confucius;
-<span class="alternative-type">lit.</span> Master&nbsp;<span lang="zh-Hant">孔</span><span class="romanisation romanisation-conway">&nbsp;(Hung)</span><span class="romanisation romanisation-wadegiles">&nbsp;(K'ung)</span><span class="romanisation romanisation-pinyin">&nbsp;(Kong)</span>
+<span class="alternative-marker">lit.</span> Master&nbsp;K'ung&nbsp;<span lang="zh-Hant" class="original-chinese">孔</span>
 </li>
 <li><span lang="zh-Hant">字：</span>
 styled<br>
-<span lang="zh-Hant">名</span> is one's name given at birth, whereas <span lang="zh-Hant">字</span> is given at twenty (adulthood)
-by one's parents or teacher, usually rendered as
-<a href="https://en.wikipedia.org/wiki/Courtesy_name" title="Wikipedia: Courtesy name">"courtesy name" or "style name"</a>
-(although hardly anyone has a <span lang="zh-Hant">字</span> these days).
-I prefer the rendering "style name" because I can use the verb "styled".
-In modern vernacular Mandarin, people say <span lang="zh-Hant">名字</span> for name,
-when technically they mean <span lang="zh-Hant">名</span>;
-this is to do with Mandarin having (on average) more homophones
-than other variants of Chinese, hence the need to include
-more syllables (in this case "<span lang="zh-Hant">字</span>") to disambiguate.
+<span lang="zh-Hant">名</span> is one's name given at birth,
+whereas <span lang="zh-Hant">字</span> is given at twenty (adulthood) by one's parents or teacher,
+usually rendered as <a href="https://en.wikipedia.org/wiki/Courtesy_name">"courtesy name" or "style name"</a>.
+The compound <span lang="zh-Hant">名字</span> only means "name" in modern Mandarin;
+classically it refers to
+the two separate names <span lang="zh-Hant">名</span> (birth name) and <span lang="zh-Hant">字</span> (style name).
 </li>
 <li><span lang="zh-Hant">敎：</span>
-<i>a</i> teaching<br>
-Arguably "<i>a</i> religion" would also work.
+<i class="translator-supplied">a</i> teaching<br>
+Arguably "<i class="translator-supplied">a</i> religion" would also work.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">一日率諸弟子，御車出遊，路逢數兒嬉戲，中有一兒不戲。</span>
-<hr>
-One day <i>he</i> led <i>his</i> many disciples,
-driving <i>his</i> chariot out <i>for</i> travel.
-<i>Along the</i> road <i>they</i> encountered several children playing,
-<i>and</i> amidst <i>them</i> there was one child <i>who</i> played not.
+</div>
+<div class="english">
+One day <i class="translator-supplied">he</i> led <i class="translator-supplied">his</i> many disciples,
+driving <i class="translator-supplied">his</i> chariot out <i class="translator-supplied">for</i> travel.
+<i class="translator-supplied">Along the</i> road <i class="translator-supplied">they</i> encountered several children playing,
+<i class="translator-supplied">and</i> amidst <i class="translator-supplied">them</i> there was one child <i class="translator-supplied">who</i> played not.
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">御：使馬也；</span>
@@ -163,36 +147,42 @@ Driving horses of course.
 <li><span lang="zh-Hant">車：</span>
 chariot<br>
 <span lang="zh-Hant">車，音居，</span>
-<a href="/cantonese/conway-romanisation" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;k_ü1,
-Mandarin:&nbsp;jū<br>
+<a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;k_ü1, Mandarin:&nbsp;jū<br>
 This is a literary text, and Confucius&nbsp;&amp;&nbsp;co. are riding in a chariot,
 not a small cart or a wheelbarrow.
-Therefore, please do not pronounce this ch'e1/chē:
+Therefore, please do not pronounce this ch'e1/chē;
 my ears will bleed.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子乃駐車問曰：「獨汝不戲，何也？」</span>
-<hr>
-Confucius thus stopped <i>his</i> chariot <i>and</i> asked,
+</div>
+<div class="english">
+Confucius thus stopped <i class="translator-supplied">his</i> chariot <i class="translator-supplied">and</i> asked,
 saying,
 "Alone thou playest not: why?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">駐：馬止也；</span>
 stopped<br>
-Literally "stopping <i>the</i> horses".
+Literally "stopping <i class="translator-supplied">the</i> horses".
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「凢戲無益，衣破難縫。上辱父母，下及門中。必有鬥爭，勞而無功。豈爲好事？故乃不戲。」</span>
-<hr>
-<i>The</i> little child replied, saying,
-"All play <i>is of</i> no benefit: clothes damaged <i>are</i> hard to mend;
-<i>an</i> insult <i>to</i> father <i>and</i> mother above:
-<i>even</i> down unto <i>those</i> amidst <i>the</i> family;
-surely there <i>shall</i> be fighting <i>and</i> disputes: toil, but no achievement.
-How be <i>this a</i> good thing? Therefore <i>I</i> play not."
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
+"All play <i class="translator-supplied">is of</i> no benefit: clothes damaged <i class="translator-supplied">are</i> hard to mend;
+<i class="translator-supplied">an</i> insult <i class="translator-supplied">to</i> father <i class="translator-supplied">and</i> mother above:
+<i class="translator-supplied">even</i> down unto <i class="translator-supplied">those</i> amidst <i class="translator-supplied">the</i> family;
+surely there <i class="translator-supplied">shall</i> be fighting <i class="translator-supplied">and</i> disputes:
+toil, but no achievement.
+How be <i class="translator-supplied">this a</i> good thing? Therefore <i class="translator-supplied">I</i> play not."
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">凢</span><br>
@@ -200,196 +190,228 @@ Variant of <span lang="zh-Hant">凡</span>.
 </li>
 <li><span lang="zh-Hant">縫：</span>
 mend;
-<span class="alternative-type">lit.</span> stitch
+<span class="alternative-marker">lit.</span> stitch
 </li>
 <li><span lang="zh-Hant">門中：門，家門；</span>
-<i>those</i> amidst <i>the</i> family<br>
+<i class="translator-supplied">those</i> amidst <i class="translator-supplied">the</i> family<br>
 His siblings.
 </li>
 <li><span lang="zh-Hant">功：</span>
 achievement;
-<span class="alternative-type">or</span> (good) result
+<span class="alternative-marker">or</span> (good) result
 </li>
 <li><span lang="zh-Hant">豈：</span>
 how<br>
 A very stern and righteous "how".
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">遂低頭以瓦片作城。</span>
-<hr>
-<i>He</i> then lowered <i>his</i> head <i>and began</i> building <i>a</i> wall
-using <i>some</i> tile pieces.
+</div>
+<div class="english">
+<i class="translator-supplied">He</i> then lowered <i class="translator-supplied">his</i> head <i class="translator-supplied">and began</i> building <i class="translator-supplied">a</i> wall
+using <i class="translator-supplied">some</i> tile pieces.
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">低頭：</span>
-lowered <i>his</i> head<br>
+lowered <i class="translator-supplied">his</i> head<br>
 Being a little child, he had to look up to speak to Confucius;
 having finished speaking he turned his head back down.
-From the illustration in the almanac, he then
+From the <a href="almanac-little-child-1.jpg">illustration</a> in the almanac, he then
 joins in with the building of the wall:
-<div class="centred-flex">
-<a href="almanac-little-child-1.jpg" title="小兒論"><img src="almanac-little-child-1-small.jpg" alt="A little child with Confucius,
-before two other children building a wall." title="豈爲好事？故乃不戲。"></a>
+<div class="centred-block">
+<img alt="Almanac illustration.
+A little child with Confucius,
+before two other children building a wall." src="almanac-little-child-1-small.jpg">
 </div>
 </li>
 <li><span lang="zh-Hant">片：</span>
 pieces;
-<span class="alternative-type">lit.</span> slices
+<span class="alternative-marker">lit.</span> slices
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子責之曰：「何不避車乎？」</span>
-<hr>
-Confucius rebuked him, saying,
-"Wherefore avoidest <i>thou</i> not <i>my</i> chariot?"
 </div>
-<div class="boxed translation">
+<div class="english">
+Confucius rebuked him, saying,
+"Wherefore avoidest <i class="translator-supplied">thou</i> not <i class="translator-supplied">my</i> chariot?"
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「自古及今，爲當車避于城，不當城避於車。」</span>
-<hr>
-<i>The</i> little child replied, saying,
-"Since antiquity, <i>even</i> until now,
-be <i>it that</i> the chariot ought to avoid the wall,
-not <i>that</i> the wall ought to avoid the chariot."
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
+"Since antiquity, <i class="translator-supplied">even</i> until now,
+be <i class="translator-supplied">it that</i> the chariot ought to avoid the wall,
+not <i class="translator-supplied">that</i> the wall ought to avoid the chariot."
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">當：</span>
 ought to;
-<span class="alternative-type">or</span> should
+<span class="alternative-marker">or</span> should
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子乃勒車論道，下車而問焉：「汝年尚幼，何多詐乎？」</span>
-<hr>
-Confucius thus restrained <i>his</i> chariot
-<i>to</i> reason, alighting <i>his</i> chariot and asking,
-"Thy years <i>be</i> yet young; wherefore <i>so</i> much cunning?"
+</div>
+<div class="english">
+Confucius thus restrained <i class="translator-supplied">his</i> chariot
+<i class="translator-supplied">to</i> reason, alighting <i class="translator-supplied">his</i> chariot and asking,
+"Thy years <i class="translator-supplied">be</i> yet young; wherefore <i class="translator-supplied">so</i> much cunning?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">論道：</span>
 reason;
-<span class="alternative-type">lit.</span> debate logic<br>
-Maybe "argue for <i>the right of</i> way".
+<span class="alternative-marker">lit.</span> debate logic<br>
+Maybe "argue for <i class="translator-supplied">the right of</i> way".
 </li>
 <li><span lang="zh-Hant">詐：</span>
 cunning;
-<span class="alternative-type">lit.</span> trickery;
-<span class="alternative-type">or</span> deception<br>
+<span class="alternative-marker">lit.</span> trickery;
+<span class="alternative-marker">or</span> deception<br>
 Here I think Confucius is referring to the child's wit;
 I don't see how the child is tricking or deceiving Confucius in any way.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「人生三歲，分別父母。兔生三日，走地畎畝。魚生三日，遊於江湖。天生自然，豈謂詐乎？」</span>
-<hr>
-<i>The</i> little child replied, saying,
-"<i>I the</i> human lived three years,
-<i>and was</i> separated from <i>my</i> father <i>and</i> mother;
-the rabbit liveth three days, <i>and</i> runneth upon
-<i>the</i> ditches <i>and</i> fields of <i>the</i> earth;
-the fish liveth three days, <i>and</i> journeyeth unto <i>the</i> rivers <i>and</i> lakes.
-Naturally <i>are they</i> automatically thus: how be <i>this</i> cunning?"
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
+"<i class="translator-supplied">I the</i> human lived three years,
+<i class="translator-supplied">and was</i> separated from <i class="translator-supplied">my</i> father <i class="translator-supplied">and</i> mother;
+the rabbit liveth three days,
+<i class="translator-supplied">and</i> runneth upon <i class="translator-supplied">the</i> ditches <i class="translator-supplied">and</i> fields of <i class="translator-supplied">the</i> earth;
+the fish liveth three days,
+<i class="translator-supplied">and</i> journeyeth unto <i class="translator-supplied">the</i> rivers <i class="translator-supplied">and</i> lakes.
+Naturally <i class="translator-supplied">are they</i> automatically thus: how be <i class="translator-supplied">this</i> cunning?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">人生：</span>
-<i>I the</i> human lived<br>
+<i class="translator-supplied">I the</i> human lived<br>
 Literally this is "human life", or "life".
 To match the pattern in the sentences which follow,
 <span lang="zh-Hant">人生三歲</span> might be rendered "man liveth three years".
 </li>
 <li><span lang="zh-Hant">三歲：</span>
 three years;
-<span class="alternative-type">or</span> to <i>the</i> age of three
+<span class="alternative-marker">or</span> to <i class="translator-supplied">the</i> age of three
 </li>
 <li><span lang="zh-Hant">畎：田中溝也；</span>
 ditch (in a field)<br>
 <span lang="zh-Hant">畎，音犬，</span>
-<a href="/cantonese/conway-romanisation" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;hün2,
-Mandarin:&nbsp;quǎn
+<a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;hün2, Mandarin:&nbsp;quǎn
 </li>
 <li><span lang="zh-Hant">天生：</span>
 naturally;
-<span class="alternative-type">lit.</span> born of nature;
-<span class="alternative-type">or</span> born of Heaven
+<span class="alternative-marker">lit.</span> born of nature;
+<span class="alternative-marker">or</span> born of Heaven
 </li>
 <li><span lang="zh-Hant">豈謂：</span>
-how be <i>this</i>;
-<span class="alternative-type">lit.</span> how speak of <i>this as</i>
+how be <i class="translator-supplied">this</i>;
+<span class="alternative-marker">lit.</span> how speak of <i class="translator-supplied">this as</i>
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子曰：「汝居何鄉、何里、何姓、何名、何字？」</span>
-<hr>
-Confucius said,
-"Dwellest thou in what hometown, <i>and</i> what village;
-<i>and</i> what surname, what name, <i>and</i> what style name <i>hast thou</i>?"
 </div>
-<div class="boxed translation">
+<div class="english">
+Confucius said,
+"Dwellest thou in what hometown, <i class="translator-supplied">and</i> what village;
+<i class="translator-supplied">and</i> what surname, what name, <i class="translator-supplied">and</i> what style name <i class="translator-supplied">hast thou</i>?"
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「吾居敝鄉、賤地、姓項、名橐、未有字也。」</span>
-<hr>
-<i>The</i> little child replied, saying,
-"I dwell in <i>a</i> shabby hometown, <i>and a</i> lowly village,
-<i>and am</i> surnamed <span lang="zh-Hant">項</span><span class="romanisation romanisation-conway">&nbsp;(Hong)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Hsiang)</span><span class="romanisation romanisation-pinyin">&nbsp;(Xiang)</span>,
-<i>and</i> named <span lang="zh-Hant">橐</span><span class="romanisation romanisation-conway">&nbsp;(T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Tuo)</span>,
-<i>and am</i> yet to have <i>a</i> style name."
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
+"I dwell in <i class="translator-supplied">a</i> shabby hometown, <i class="translator-supplied">and a</i> lowly village,
+<i class="translator-supplied">and am</i> surnamed Hiang&nbsp;<span lang="zh-Hant" class="original-chinese">項</span>,
+<i class="translator-supplied">and</i> named T'o&nbsp;<span lang="zh-Hant" class="original-chinese">橐</span>,
+<i class="translator-supplied">and am</i> yet to have <i class="translator-supplied">a</i> style name."
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">敝：</span>
-shabby; <span class="alternative-type">or</span> worn-out<br>
+shabby; <span class="alternative-marker">or</span> worn-out<br>
 Both <span lang="zh-Hant">敝</span> and <span lang="zh-Hant">賤</span> can be used
 as a self-deprecating substitute for "I" or "my".
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子曰：「吾欲共汝同遊，汝意下如何？」</span>
-<hr>
+</div>
+<div class="english">
 Confucius said,
-"I wish to travel together with thee: what <i>be</i> thy thoughts <i>upon this</i>?"
+"I wish to travel together with thee:
+what <i class="translator-supplied">be</i> thy thoughts <i class="translator-supplied">upon this</i>?"
+</div>
 </div>
 <ul>
-<li>
-<span class="red"><strong>Beware stranger danger.</strong></span>
+<li><strong class="danger">Beware stranger danger.</strong>
 </li>
 <li><span lang="zh-Hant">汝意下如何：</span>
-what <i>be</i> thy thoughts <i>upon this</i>;
-<span class="alternative-type">or</span>
-<a href="https://youtu.be/f_4-rCROcsM" title="What say you?">what sayest thou</a>
+what <i class="translator-supplied">be</i> thy thoughts <i class="translator-supplied">upon this</i>;
+<span class="alternative-marker">or</span> <a href="https://youtu.be/f_4-rCROcsM" title="&quot;What say you?&quot;">what sayest thou</a>
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「家有嚴父，須當事之。家有慈母，須當養之。</span>
-<hr>
-<i>The</i> little child replied, saying,
-"<i>In mine</i> house there is <i>my</i> strict father: <i>I</i> must attend to him.
-<i>In mine</i> house there is <i>my</i> loving mother: <i>I</i> must provide for her.
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
+"<i class="translator-supplied">In mine</i> house there is <i class="translator-supplied">my</i> strict father: <i class="translator-supplied">I</i> must attend to him.
+<i class="translator-supplied">In mine</i> house there is <i class="translator-supplied">my</i> loving mother: <i class="translator-supplied">I</i> must provide for her.
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">慈：</span>
 loving;
-<span class="alternative-type">or</span> kind<br>
+<span class="alternative-marker">or</span> kind<br>
 The quintessential father is strict (<span lang="zh-Hant">嚴</span>) in that
 in addition to providing for his children,
-he ought not to fail in teaching them (as in
-<a href="https://ctext.org/three-character-classic#n90568" title="《三字經》"><span lang="zh-Hant">養不教，父之過</span></a>,
-"<i>to</i> provide for <i>but</i> not teach,
-<i>is the</i> mistake of <i>the</i> father").
+he ought not to fail in teaching them
+(as in <a href="https://ctext.org/three-character-classic#n90568"><span lang="zh-Hant">養不教，父之過</span></a>,
+"<i class="translator-supplied">to</i> provide for <i class="translator-supplied">but</i> not teach, <i class="translator-supplied">is the</i> mistake of <i class="translator-supplied">the</i> father").
 The quintessential mother is kind/loving (<span lang="zh-Hant">慈</span>).
 In literary Chinese the words <span lang="zh-Hant">嚴</span> and <span lang="zh-Hant">慈</span> can, even on their own,
 mean father and mother respectively.
 </li>
 <li><span lang="zh-Hant">養：</span>
 provide for;
-<span class="alternative-type">or</span> support;
-<span class="alternative-type">or</span> feed
+<span class="alternative-marker">or</span> support;
+<span class="alternative-marker">or</span> feed
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">家有賢兄，須當順之。家有弱弟，須當敎之。家有明師，須當學之。何暇同遊也？」</span>
-<hr>
-"<i>In mine</i> house there are <i>my</i> worthy older brothers: <i>I</i> must obey them.
-<i>In mine</i> house there are <i>my</i> feeble younger brothers: <i>I</i> must teach them.
-<i>In mine</i> house there is <i>my</i> brilliant teacher: <i>I</i> must learn from him.
-What spare time <i>have I to</i> travel together <i>with thee</i>?"
+</div>
+<div class="english">
+"<i class="translator-supplied">In mine</i> house there are <i class="translator-supplied">my</i> worthy older brothers:
+<i class="translator-supplied">I</i> must obey them.
+<i class="translator-supplied">In mine</i> house there are <i class="translator-supplied">my</i> feeble younger brothers:
+<i class="translator-supplied">I</i> must teach them.
+<i class="translator-supplied">In mine</i> house there is <i class="translator-supplied">my</i> brilliant teacher:
+<i class="translator-supplied">I</i> must learn from him.
+What spare time <i class="translator-supplied">have I to</i> travel together <i class="translator-supplied">with thee</i>?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">賢：</span>
@@ -398,175 +420,188 @@ Often used as an honorific.
 </li>
 <li><span lang="zh-Hant">順：</span>
 obey;
-<span class="alternative-type">or</span> go along with;
-<span class="alternative-type">or</span> follow
+<span class="alternative-marker">or</span> go along with;
+<span class="alternative-marker">or</span> follow
 </li>
 <li><span lang="zh-Hant">明：高明；</span>
 brilliant;
-<span class="alternative-type">or</span> wise
+<span class="alternative-marker">or</span> wise
 </li>
 <li><span lang="zh-Hant">暇：閒也；</span>
 spare time;
-<span class="alternative-type">or</span> free time
+<span class="alternative-marker">or</span> free time
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子曰：「吾車中有三十二棋子，與汝奕博，汝意下如何？」</span>
-<hr>
+</div>
+<div class="english">
 Confucius said,
 "In my chariot there are thirty-two chess pieces,
-<i>to</i> play chess <i>for a</i> wager with thee:
-what <i>be</i> thy thoughts <i>upon this</i>?"
+<i class="translator-supplied">to</i> play chess <i class="translator-supplied">for a</i> wager with thee:
+what <i class="translator-supplied">be</i> thy thoughts <i class="translator-supplied">upon this</i>?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">三十二棋子</span><br>
 It is a coincidence that
-<a href="https://en.wikipedia.org/wiki/Xiangqi" title="Wikipedia: Xiangqi">Chinese Chess (<span lang="zh-Hant">象棋</span>)</a>
-and
-<a href="https://en.wikipedia.org/wiki/Chess" title="Wikipedia: Chess">Western Chess</a>
-both consist of 16 chess pieces per player.
+<a href="https://en.wikipedia.org/wiki/Xiangqi">Chinese Chess (<span lang="zh-Hant">象棋</span>)</a> and <a href="https://en.wikipedia.org/wiki/Chess">Western Chess</a>
+both use 16 chess pieces per player.
 Of course this text is not canon, nor is it historically accurate;
-in Confucius's time, <span lang="zh-Hant">奕</span> referred to the
-<a href="https://en.wikipedia.org/wiki/Go_(game)" title="Wikipedia: Go (game)">Surrounding Game (<span lang="zh-Hant">圍棋</span>)</a> (also known as Go).
+in Confucius's time, <span lang="zh-Hant">奕</span> referred to the <a href="https://en.wikipedia.org/wiki/Go_(game)">Surrounding Game (<span lang="zh-Hant">圍棋</span>)</a>,
+more commonly known as Go.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「天子好博，四海不理。諸侯好博，有妨政紀。士儒好博，學問廢弛。</span>
-<hr>
-<i>The</i> little child replied, saying,
-"<i>Be the</i> Son of Heaven fond of wagering:
-<i>all within the</i> Four Seas <i>shall</i> not <i>be properly</i> administered.
-<i>Be the</i> many lords fond of wagering:
-<i>this</i> doth harm governance <i>and</i> law.
-<i>Be the</i> scholars <i>and</i> academics fond of wagering:
-scholarship <i>shall be</i> neglected <i>and</i> abandoned.
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
+"<i class="translator-supplied">Be the</i> Son of Heaven fond of wagering:
+<i class="translator-supplied">all within the</i> Four Seas <i class="translator-supplied">shall</i> not <i class="translator-supplied">be properly</i> administered.
+<i class="translator-supplied">Be the</i> many lords fond of wagering:
+<i class="translator-supplied">this</i> doth harm governance <i class="translator-supplied">and</i> law.
+<i class="translator-supplied">Be the</i> scholars <i class="translator-supplied">and</i> academics fond of wagering:
+scholarship <i class="translator-supplied">shall be</i> neglected <i class="translator-supplied">and</i> abandoned.
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">天子：</span>
-<i>the</i> Son of Heaven<br>
+<i class="translator-supplied">the</i> Son of Heaven<br>
 The emperor.
 </li>
 <li><span lang="zh-Hant">理：</span>
 administered;
-<span class="alternative-type">or</span> managed
+<span class="alternative-marker">or</span> managed
 </li>
 <li><span lang="zh-Hant">侯：</span>
 lords;
-<span class="alternative-type">or</span> marquesses<br>
-See
-<a href="https://en.wiktionary.org/wiki/%E8%AB%B8%E4%BE%AF" title="Wiktionary: 諸侯"><span lang="zh-Hant">諸侯</span></a>.
+<span class="alternative-marker">or</span> marquesses<br>
+See <a href="https://en.wiktionary.org/wiki/%E8%AB%B8%E4%BE%AF"><span lang="zh-Hant">諸侯</span></a>.
 </li>
 <li><span lang="zh-Hant">妨：</span>
 harm;
-<span class="alternative-type">or</span> obstruct
+<span class="alternative-marker">or</span> obstruct
 </li>
 <li><span lang="zh-Hant">士儒：</span>
-scholars <i>and</i> academics<br>
+scholars <i class="translator-supplied">and</i> academics<br>
 Both <span lang="zh-Hant">士</span> and <span lang="zh-Hant">儒</span> refer to scholars,
 although <span lang="zh-Hant">儒</span> can mean Confucian scholar specifically.
 I have used "academics" to avoid rendering <span lang="zh-Hant">士儒</span> as
-"scholars <i>and</i> scholars".
+"scholars <i class="translator-supplied">and</i> scholars".
 </li>
 <li><span lang="zh-Hant">學問：</span>
 scholarship;
-<span class="alternative-type">or</span> learning;
-<span class="alternative-type">lit.</span> learning <i>and</i> enquiry
+<span class="alternative-marker">or</span> learning;
+<span class="alternative-marker">lit.</span> learning <i class="translator-supplied">and</i> enquiry
 </li>
 <li><span lang="zh-Hant">弛：放也，棄也，廢也；</span>
 abandoned;
-<span class="alternative-type">lit.</span> slackened
+<span class="alternative-marker">lit.</span> slackened
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小人好博，輸却家計。奴婢好博，必受鞭撲。農夫好博，耕種失時。是故不博也。」</span>
-<hr>
-"<i>Be</i> the little man fond of wagering:
-<i>he shall</i> lose away <i>the</i> livelihood of <i>his</i> family.
-<i>Be the</i> manservants <i>and</i> maidservants fond of wagering:
-<i>they shall</i> surely be lashed <i>and</i> beaten.
-<i>Be</i> the farmer fond of wagering:
-<i>he shall</i> plough <i>and</i> sow out of season.
-<i>For</i> these reasons <i>I</i> wager not."
+</div>
+<div class="english">
+"<i class="translator-supplied">Be</i> the little man fond of wagering:
+<i class="translator-supplied">he shall</i> lose away <i class="translator-supplied">the</i> livelihood of <i class="translator-supplied">his</i> family.
+<i class="translator-supplied">Be the</i> manservants <i class="translator-supplied">and</i> maidservants fond of wagering:
+<i class="translator-supplied">they shall</i> surely be lashed <i class="translator-supplied">and</i> beaten.
+<i class="translator-supplied">Be</i> the farmer fond of wagering:
+<i class="translator-supplied">he shall</i> plough <i class="translator-supplied">and</i> sow out of season.
+<i class="translator-supplied">For</i> these reasons <i class="translator-supplied">I</i> wager not."
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">小人：</span>
 the little man;
-<span class="alternative-type">or</span> the despicable man<br>
+<span class="alternative-marker">or</span> the despicable man<br>
 In Confucianism, <span lang="zh-Hant">小人</span> is a person of low moral character,
 always seeking quick personal gain.
 The opposite of <span lang="zh-Hant">小人</span> is <span lang="zh-Hant">君子</span> (gentleman),
 a refined man and a person of virtue.
-James Legge renders <span lang="zh-Hant">君子</span> as "the superior man" and <span lang="zh-Hant">小人</span> as "the mean man" in
-<a href="https://ctext.org/analects/shu-er#n1287" title="《論語・述而》"><span lang="zh-Hant">《論語・述而》</span></a>.
+James Legge renders <span lang="zh-Hant">君子</span> as "the superior man"
+and <span lang="zh-Hant">小人</span> as "the mean man" in <a href="https://ctext.org/analects/shu-er#n1287"><span lang="zh-Hant">《論語・述而》</span></a>.
 </li>
 <li><span lang="zh-Hant">撲：擊也；</span>
 beaten
 </li>
 <li><span lang="zh-Hant">失時：</span>
 out of season;
-<span class="alternative-type">lit.</span> missing <i>the</i> season
+<span class="alternative-marker">lit.</span> missing <i class="translator-supplied">the</i> season
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子曰：「吾欲與汝平却天下，汝意下如何？」</span>
-<hr>
+</div>
+<div class="english">
 Confucius said,
-"I wish to level out <i>all</i> under Heaven with thee:
-what <i>be</i> thy thoughts <i>upon this</i>?"
+"I wish to level out <i class="translator-supplied">all</i> under Heaven with thee:
+what <i class="translator-supplied">be</i> thy thoughts <i class="translator-supplied">upon this</i>?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">平却：</span>
 level out;
-<span class="alternative-type">or</span> flatten away<br>
+<span class="alternative-marker">or</span> flatten away<br>
 Alternatively, <span lang="zh-Hant">平</span> may mean "make fair",
 as in fairness, and egalitarianism.
 </li>
 <li><span lang="zh-Hant">天下：</span>
-<i>all</i> under Heaven<br>
+<i class="translator-supplied">all</i> under Heaven<br>
 The whole world. Similar to "under the sun" in English,
 from the Hebrew
 <span lang="he" dir="rtl" class="no-wrapping">תחת השמש</span>,
-in
-<a href="https://www.mechon-mamre.org/p/pt/pt3101.htm" title="Mechon Mamre: Ecclesiastes">Ecclesiastes</a>.
+in <a href="https://www.mechon-mamre.org/p/pt/pt3101.htm">Ecclesiastes</a>.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「天下不可平也。或有高山，或有江湖。或有王侯，或有奴婢。</span>
-<hr>
-<i>The</i> little child replied, saying,
-"<i>All</i> under Heaven cannot <i>be</i> levelled.
-Perhaps there be high mountains;
-perhaps there be rivers <i>and</i> lakes;
-perhaps there be kings <i>and</i> lords;
-perhaps there be manservants <i>and</i> maidservants.
 </div>
-<div class="boxed translation">
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
+"<i class="translator-supplied">All</i> under Heaven cannot <i class="translator-supplied">be</i> levelled.
+Perhaps there be high mountains;
+perhaps there be rivers <i class="translator-supplied">and</i> lakes;
+perhaps there be kings <i class="translator-supplied">and</i> lords;
+perhaps there be manservants <i class="translator-supplied">and</i> maidservants.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">平却高山，鳥獸無依。塡却江湖，魚鱉無歸。除却王侯，民多是非。絶却奴婢，君子使誰？天下蕩蕩，豈可平乎？」</span>
-<hr>
-"Level out <i>the</i> high mountains,
-<i>and the</i> birds <i>and</i> beasts <i>shall</i> have nothing <i>to</i> lean upon;
-fill out <i>the</i> rivers <i>and</i> lakes,
-<i>and the</i> fishes <i>and</i> turtles <i>shall</i> have no home;
-remove out <i>the</i> kings <i>and</i> lords,
-<i>and</i> the people <i>shall have</i> many quarrels;
-cut off <i>the</i> manservants <i>and</i> maidservants,
-<i>and</i> whom <i>shall</i> the rulers employ?
-Vast <i>be all</i> under Heaven: how can <i>it be</i> levelled?"
+</div>
+<div class="english">
+"Level out <i class="translator-supplied">the</i> high mountains,
+<i class="translator-supplied">and the</i> birds <i class="translator-supplied">and</i> beasts <i class="translator-supplied">shall</i> have nothing <i class="translator-supplied">to</i> lean upon;
+fill out <i class="translator-supplied">the</i> rivers <i class="translator-supplied">and</i> lakes,
+<i class="translator-supplied">and the</i> fishes <i class="translator-supplied">and</i> turtles <i class="translator-supplied">shall</i> have no home;
+remove out <i class="translator-supplied">the</i> kings <i class="translator-supplied">and</i> lords,
+<i class="translator-supplied">and</i> the people <i class="translator-supplied">shall have</i> many quarrels;
+cut off <i class="translator-supplied">the</i> manservants <i class="translator-supplied">and</i> maidservants,
+<i class="translator-supplied">and</i> whom <i class="translator-supplied">shall</i> the rulers employ?
+Vast <i class="translator-supplied">be all</i> under Heaven: how can <i class="translator-supplied">it be</i> levelled?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">鱉：龜屬；</span>
 turtle<br>
 <span lang="zh-Hant">鱉，變入聲，</span>
-<a href="/cantonese/conway-romanisation" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;peet8,
-Mandarin:&nbsp;biē
+<a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;peet8, Mandarin:&nbsp;biē
 </li>
 <li><span lang="zh-Hant">無歸：</span>
 no home;
-<span class="alternative-type">or</span> nothing <i>to</i> return to
+<span class="alternative-marker">or</span> nothing <i class="translator-supplied">to</i> return to
 </li>
 <li><span lang="zh-Hant">絶却：</span>
 cut off;
-<span class="alternative-type">lit.</span> cut out
+<span class="alternative-marker">lit.</span> cut out
 </li>
 <li><span lang="zh-Hant">君子：</span>
 rulers<br>
@@ -576,15 +611,17 @@ refers to gentlemen, but to rulers and lords
 </li>
 <li><span lang="zh-Hant">使：</span>
 employ;
-<span class="alternative-type">or</span> use
+<span class="alternative-marker">or</span> use
 </li>
 <li><span lang="zh-Hant">蕩蕩：大也，廣遠也；</span>
 vast
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子曰：「汝知天下，何火無烟？何水無魚？何山無石？何樹無枝？何人無婦？何女無夫？</span>
-<hr>
+</div>
+<div class="english">
 Confucius said,
 "Knowest thou under Heaven:
 What fire hath no smoke?
@@ -594,23 +631,26 @@ What tree hath no twig?
 What man hath no wife?
 What woman hath no husband?
 </div>
+</div>
 <ul>
 <li><span lang="zh-Hant">火：</span>
 fire;
-<span class="alternative-type">or</span> light
+<span class="alternative-marker">or</span> light
 </li>
 <li><span lang="zh-Hant">山：</span>
 mountain;
-<span class="alternative-type">or</span> hill
+<span class="alternative-marker">or</span> hill
 </li>
 <li><span lang="zh-Hant">枝：</span>
 twig;
-<span class="alternative-type">or</span> branch
+<span class="alternative-marker">or</span> branch
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">何牛無犢？何馬無駒？何雄無雌？何雌無雄？何爲君子？何爲小人？何爲不足？何爲有餘？何城無市？何人無字？」</span>
-<hr>
+</div>
+<div class="english">
 "What cow hath no calf?
 What horse hath no foal?
 What male bird hath no female bird?
@@ -622,16 +662,16 @@ What be in excess?
 What city hath no market?
 What man hath no style name?"
 </div>
+</div>
 <ul>
 <li><span lang="zh-Hant">犢：牛子也；</span>
 calf<br>
 <span lang="zh-Hant">犢，音獨，</span>
-<a href="/cantonese/conway-romanisation" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;tuk9,
-Mandarin:&nbsp;dú
+<a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;tuk9, Mandarin:&nbsp;dú
 </li>
 <li><span lang="zh-Hant">駒：馬二歲曰駒；</span>
 foal;
-<span class="alternative-type">lit.</span> horse <i>under</i> two years
+<span class="alternative-marker">lit.</span> horse <i class="translator-supplied">under</i> two years
 </li>
 <li><span lang="zh-Hant">雄：</span>
 male bird<br>
@@ -642,16 +682,19 @@ female bird<br>
 More generally this refers to any female plant or animal.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「螢火無烟。井水無魚。土山無石。枯樹無枝。仙人無婦。玉女無夫。</span>
-<hr>
-<i>The</i> little child replied, saying,
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
 "Firefly light hath no smoke.
 Well water hath no fish.
 The dirt hill hath no rock.
 The withered tree hath no twig.
 The celestial man hath no wife.
 The fairy woman hath no husband.
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">螢火：</span>
@@ -661,7 +704,7 @@ This riddle only works because
 </li>
 <li><span lang="zh-Hant">土山：</span>
 the dirt hill;
-<span class="alternative-type">or</span> the earth hill<br>
+<span class="alternative-marker">or</span> the earth hill<br>
 Similarly this works because
 <span lang="zh-Hant">山</span> may mean both "mountain" and "hill".
 </li>
@@ -669,569 +712,637 @@ Similarly this works because
 the celestial man<br>
 A supernatural, immortal being, usually celibate.
 Many people attempted to become immortal by
-ingesting various "immortality elixirs" of
-<a href="https://en.wikipedia.org/wiki/Chinese_alchemy" title="Wikipedia: Chinese alchemy">alchemy</a>,
-which were usually
-<a href="https://en.wikipedia.org/wiki/Chinese_alchemical_elixir_poisoning" title="Wikipedia: Chinese alchemical elixir poisoning">toxic substances</a>.
+ingesting various "immortality elixirs" of <a href="https://en.wikipedia.org/wiki/Chinese_alchemy">alchemy</a>,
+which were usually <a href="https://en.wikipedia.org/wiki/Chinese_alchemical_elixir_poisoning">toxic substances</a>.
 </li>
 <li><span lang="zh-Hant">玉女：</span>
-fairy lady; <span class="alternative-type">lit.</span> jade lady<br>
+fairy lady; <span class="alternative-marker">lit.</span> jade lady<br>
 The female equivalent of <span lang="zh-Hant">仙人</span>.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">土牛無犢。木馬無駒。孤雄無雌。孤雌無雄。賢爲君子。愚爲小人。冬日不足。夏日有餘。皇城無市。小人無字。」</span>
-<hr>
-"<i>A</i> clay cow hath no calf.
-<i>A</i> wooden horse hath no foal.
+</div>
+<div class="english">
+"<i class="translator-supplied">A</i> clay cow hath no calf.
+<i class="translator-supplied">A</i> wooden horse hath no foal.
 The lone male bird hath no female bird.
 The lone female bird hath no male bird.
 Virtuous be the gentleman.
 Foolish be the little man.
-Winter days <i>be</i> not sufficient.
-Summer days <i>be</i> in excess.
-<i>The</i> imperial city hath no market.
-<i>I the</i> little man have no style name."
+Winter days <i class="translator-supplied">be</i> not sufficient.
+Summer days <i class="translator-supplied">be</i> in excess.
+<i class="translator-supplied">The</i> imperial city hath no market.
+<i class="translator-supplied">I the</i> little man have no style name."
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">小人：</span>
-<i>I the</i> little man<br>
+<i class="translator-supplied">I the</i> little man<br>
 A self-deprecating self address.
-Evidently <span lang="zh-Hant">項橐</span><span class="romanisation romanisation-conway">&nbsp;(Hong T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Hsiang T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Xiang Tuo)</span> is
+Evidently Hiang T'o&nbsp;<span lang="zh-Hant" class="original-chinese">項橐</span> is
 far from the little man of Confucianism.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子問曰：「汝知天地之綱紀，陰陽之終始？</span>
-<hr>
+</div>
+<div class="english">
 Confucius asked, saying,
-"Knowest thou <i>the</i> principle <i>and the</i> law of Heaven <i>and</i> Earth,
-<i>and the</i> beginning <i>and the</i> end of Dark <i>and</i> Light?
+"Knowest thou <i class="translator-supplied">the</i> principle <i class="translator-supplied">and the</i> law of Heaven <i class="translator-supplied">and</i> Earth,
+<i class="translator-supplied">and the</i> beginning <i class="translator-supplied">and the</i> end of Dark <i class="translator-supplied">and</i> Light?
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">綱：</span>
-principle; <span class="alternative-type">or</span> crux
+principle; <span class="alternative-marker">or</span> crux
 </li>
 <li><span lang="zh-Hant">陰陽：</span>
-Dark <i>and</i> Light;
-<span class="alternative-type">or</span> Shade <i>and</i> Sun;
-<span class="alternative-type">or</span> Female <i>and</i> Male<br>
-Usually rendered
-<a href="https://en.wikipedia.org/wiki/Yin_and_yang" title="Wikipedia: Yin and yang">"yin <i>and</i> yang"</a>.
+Dark <i class="translator-supplied">and</i> Light;
+<span class="alternative-marker">or</span> Shade <i class="translator-supplied">and</i> Sun;
+<span class="alternative-marker">or</span> Female <i class="translator-supplied">and</i> Male<br>
+Usually rendered <a href="https://en.wikipedia.org/wiki/Yin_and_yang">"yin <i class="translator-supplied">and</i> yang"</a>.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">何爲左？何爲右？何爲表？何爲裏？何爲父？何爲母？何爲夫？何爲婦？</span>
-<hr>
+</div>
+<div class="english">
 "What be left?
 What be right?
-What be <i>on the</i> surface?
+What be <i class="translator-supplied">on the</i> surface?
 What be within?
 What be the father?
 What be the mother?
 What be the husband?
 What be the wife?
 </div>
-<div class="boxed translation">
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">風從何來？雨從何至？雲從何出？霧從何起？天地相去幾千萬里？」</span>
-<hr>
+</div>
+<div class="english">
 "From whence cometh the wind?
 From whence arriveth the rain?
 From whence emergeth the clouds?
 From whence ariseth the fog?
-How many thousands <i>and</i> myriads of miles
-<i>are</i> Heaven <i>and</i> Earth mutually separated?"
+How many thousands <i class="translator-supplied">and</i> myriads of miles
+<i class="translator-supplied">are</i> Heaven <i class="translator-supplied">and</i> Earth mutually separated?"
+</div>
 </div>
 <ul>
-<li><span lang="zh-Hant">里</span><span class="romanisation romanisation-conway">&nbsp;(lei)</span><span class="romanisation romanisation-wadegiles">&nbsp;(li)</span><span class="romanisation romanisation-pinyin">&nbsp;(li)</span><span lang="zh-Hant">：</span>
+<li><span lang="zh-Hant">里：</span>
 miles<br>
-A
-<a href="https://en.wikipedia.org/wiki/Li_(unit)" title="Wikipedia: Li (unit)">unit of distance</a>, of the order half a kilometre.
+A <a href="https://en.wikipedia.org/wiki/Li_(unit)">unit of distance</a>, of the order half a kilometre.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「九九還歸八十一，是天地之綱紀。八九七十二，是陰陽之終始。</span>
-<hr>
-<i>The</i> little child replied, saying,
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
 "Nine nines return eighty-one:
-this <i>be</i> <i>the</i> principle <i>and the</i> law of Heaven <i>and</i> Earth.
-<i>And</i> eight nines seventy-two:
-this <i>be the</i> beginning <i>and the</i> end of Dark <i>and</i> Light.
+this <i class="translator-supplied">be</i> <i class="translator-supplied">the</i> principle <i class="translator-supplied">and the</i> law of Heaven <i class="translator-supplied">and</i> Earth.
+<i class="translator-supplied">And</i> eight nines seventy-two:
+this <i class="translator-supplied">be the</i> beginning <i class="translator-supplied">and the</i> end of Dark <i class="translator-supplied">and</i> Light.
+</div>
 </div>
 <ul>
-<li>
-There is a whole genre of stuff like this
-i.e.&nbsp;divination, numerology etc. E.g.&nbsp;in
-<a href="https://ctext.org/da-dai-li-ji/yi-ben-ming" title="《大戴禮記・易本命》"><span lang="zh-Hant">《大戴禮記・易本命》</span></a>:
-<div class="boxed translation">
+<li>There is a whole genre of stuff like this i.e.&nbsp;divination, numerology etc.
+E.g.&nbsp;in <a href="https://ctext.org/da-dai-li-ji/yi-ben-ming"><span lang="zh-Hant">《大戴禮記・易本命》</span></a>:
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">天一，地二，人三；三三而九，九九八十一；一主日，日數十，故人十月而生。</span>
-<hr>
-Heaven <i>is</i> first, Earth second <i>and</i> Man third.
-<i>Now</i> three threes <i>are</i> nine, <i>and</i> nine nines eighty-one.
-One governeth <i>the</i> sun, <i>and the</i> sun <i>hath</i> number ten;
-therefore humans <i>are</i> born <i>of a term of</i> ten months.
+</div>
+<div class="english">
+Heaven <i class="translator-supplied">is</i> first, Earth second <i class="translator-supplied">and</i> Man third.
+<i class="translator-supplied">Now</i> three threes <i class="translator-supplied">are</i> nine, <i class="translator-supplied">and</i> nine nines eighty-one.
+One governeth <i class="translator-supplied">the</i> sun, <i class="translator-supplied">and the</i> sun <i class="translator-supplied">hath</i> number ten;
+therefore humans <i class="translator-supplied">are</i> born <i class="translator-supplied">of a term of</i> ten months.
+</div>
 </div>
 (Presumably "months" are 28-day months,
 so that ten months make forty weeks, a full term.)
 Being a physicist, I take a very dim view of such works
 (involving arbitrary associations etc.).
 It is a real pity too, for such material detracts from
-the
-<a href="/#literary-maths" title="English translations of Literary Chinese: Mathematics">serious mathematics of Classical Chinese literature</a>.
+the <a href="/#literary-chinese-maths">serious mathematics of Classical Chinese literature</a>.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">天爲父。地爲母。日爲夫。月爲婦。東爲左。西爲右。外爲表。内爲裏。</span>
-<hr>
+</div>
+<div class="english">
 "Heaven be the father.
 Earth be the mother.
-<i>The</i> sun be the husband.
-<i>The</i> moon be the wife.
+<i class="translator-supplied">The</i> sun be the husband.
+<i class="translator-supplied">The</i> moon be the wife.
 East be left.
 West be right.
-<i>The</i> exterior be <i>on the</i> surface.
-<i>The</i> interior be within.
+<i class="translator-supplied">The</i> exterior be <i class="translator-supplied">on the</i> surface.
+<i class="translator-supplied">The</i> interior be within.
+</div>
 </div>
 <ul>
-<li>
-<span lang="zh-Hant">東爲左。西爲右。</span><br>
+<li><span lang="zh-Hant">東爲左。西爲右。</span><br>
 Traditionally, one faces the south;
 thus east is to the left, and west is to the right.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">風從蒼梧。雨從郊市。雲從山出。霧從地起。天地相去，有千千萬萬餘里。東西南北，皆有寄耳。」</span>
-<hr>
-"The wind <i>cometh</i> from <span lang="zh-Hant">蒼梧</span><span class="romanisation romanisation-conway">&nbsp;(Ts'ong Ng)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Ts'ang Wu)</span><span class="romanisation romanisation-pinyin">&nbsp;(Cang Wu)</span>.
-The rain <i>arriveth</i> from <i>the</i> town of <span lang="zh-Hant">郊</span><span class="romanisation romanisation-conway">&nbsp;(Kaau)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Chiao)</span><span class="romanisation romanisation-pinyin">&nbsp;(Jiao)</span>.
-The clouds emergeth from <i>the</i> mountains.
-The fog ariseth from <i>the</i> ground.
-Heaven <i>and</i> Earth <i>are</i> mutually separated,
-<i>in</i> excess of
-thousands <i>upon</i> thousands <i>and</i>
-myriads <i>upon</i> myriads of miles.
-East, west, south, <i>and</i> north, all have adherence unto <i>these</i>."
+</div>
+<div class="english">
+"The wind <i class="translator-supplied">cometh</i> from Ts'ang Wu&nbsp;<span lang="zh-Hant" class="original-chinese">蒼梧</span>.
+The rain <i class="translator-supplied">arriveth</i> from <i class="translator-supplied">the</i> outskirt towns.
+The clouds emergeth from <i class="translator-supplied">the</i> mountains.
+The fog ariseth from <i class="translator-supplied">the</i> ground.
+Heaven <i class="translator-supplied">and</i> Earth <i class="translator-supplied">are</i> mutually separated,
+<i class="translator-supplied">in</i> excess of
+thousands <i class="translator-supplied">upon</i> thousands <i class="translator-supplied">and</i>
+myriads <i class="translator-supplied">upon</i> myriads of miles.
+East, west, south, <i class="translator-supplied">and</i> north, all have adherence unto <i class="translator-supplied">these</i>."
+</div>
 </div>
 <ul>
-<li><span lang="zh-Hant">蒼梧</span><span class="romanisation romanisation-conway">&nbsp;(Ts'ong Ng)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Ts'ang Wu)</span><span class="romanisation romanisation-pinyin">&nbsp;(Cang Wu)</span><span lang="zh-Hant">：地名，舜葬處</span><br>
+<li>Ts'ang Wu&nbsp;<span lang="zh-Hant" class="original-chinese">蒼梧</span><span lang="zh-Hant">：地名，舜葬處</span><br>
 A place name.
-<a href="https://ctext.org/kangxi-zidian/75/7#n330493" title="蒼梧，地名，舜葬處">The legendary <span lang="zh-Hant">舜</span><span class="romanisation romanisation-conway">&nbsp;(Sh_n)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Shun)</span><span class="romanisation romanisation-pinyin">&nbsp;(Shun)</span>
-is supposed to have been buried here.</a>
+<a href="https://ctext.org/kangxi-zidian/75/7#n330493">The legendary Shun&nbsp;<span lang="zh-Hant" class="original-chinese">舜</span> is supposed to have been buried here.</a>
 </li>
-<li><span lang="zh-Hant">郊</span><span class="romanisation romanisation-conway">&nbsp;(Kaau)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Chiao)</span><span class="romanisation romanisation-pinyin">&nbsp;(Jiao)</span><span lang="zh-Hant">：晉地名</span><br>
-A place name in <span lang="zh-Hant">晉</span><span class="romanisation romanisation-conway">&nbsp;(Ts_n)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Chin)</span><span class="romanisation romanisation-pinyin">&nbsp;(Jin)</span>.
+<li><span lang="zh-Hant">郊市：</span> outskirt towns<br>
+Not certain. Possibly "town of Kiao&nbsp;<span lang="zh-Hant" class="original-chinese">郊</span>".
 </li>
 <li><span lang="zh-Hant">寄：</span>
 adherence unto;
-<span class="alternative-type">or</span> dependence upon<br>
-<span lang="zh-Hant">請多多指教</span>, for I am unsure about this one.
+<span class="alternative-marker">or</span> dependence upon<br>
+Not certain.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子問曰：「汝言父母是親，夫婦是親？」</span>
-<hr>
+</div>
+<div class="english">
 Confucius asked, saying,
-"Sayest thou <i>that</i> father <i>and</i> mother are <i>more</i> close
-<i>unto their children</i>,
-<i>or that</i> husband <i>and</i> wife are <i>more</i> close?"
+"Sayest thou <i class="translator-supplied">that</i> father <i class="translator-supplied">and</i> mother are <i class="translator-supplied">more</i> close
+<i class="translator-supplied">unto their children</i>,
+<i class="translator-supplied">or that</i> husband <i class="translator-supplied">and</i> wife are <i class="translator-supplied">more</i> close?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">親：</span>
 close;
-<span class="alternative-type">or</span> loving
+<span class="alternative-marker">or</span> loving
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「父母是親，夫婦不親。」</span>
-<hr>
-<i>The</i> little child replied, saying,
-"Father <i>and</i> mother are <i>more</i> close <i>unto their children</i>;
-husband <i>and</i> wife, not <i>as</i> close."
 </div>
-<div class="boxed translation">
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
+"Father <i class="translator-supplied">and</i> mother are <i class="translator-supplied">more</i> close <i class="translator-supplied">unto their children</i>;
+husband <i class="translator-supplied">and</i> wife, not <i class="translator-supplied">as</i> close."
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子曰：「夫婦生則同衾，死則同穴，何得不親？」</span>
-<hr>
+</div>
+<div class="english">
 Confucius said,
-"Husband <i>and</i> wife <i>are under the</i> same bed quilt <i>in</i> life,
-<i>and the</i> same grave <i>in</i> death: how can <i>they be</i> not <i>as</i> close?"
+"Husband <i class="translator-supplied">and</i> wife <i class="translator-supplied">are under the</i> same bed quilt <i class="translator-supplied">in</i> life,
+<i class="translator-supplied">and the</i> same grave <i class="translator-supplied">in</i> death: how can <i class="translator-supplied">they be</i> not <i class="translator-supplied">as</i> close?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">衾：</span>
 bed quilt;
-<span class="alternative-type">or</span> blanket
+<span class="alternative-marker">or</span> blanket
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「人生無婦，如車無輪。無輪再造，必得其新。婦死更索，又得其新。</span>
-<hr>
-<i>The</i> little child replied, saying,
-"<i>A</i> man losing <i>his</i> wife <i>in</i> life,
-<i>is</i> like <i>a</i> chariot losing <i>its</i> wheel.
-<i>Should a</i> wheel <i>be</i> lost, remake <i>it</i>:
-surely <i>a</i> new <i>one shall be</i> obtained.
-<i>Should one's</i> wife die, seek anew:
-also <i>a</i> new <i>one shall be</i> obtained.
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
+"<i class="translator-supplied">A</i> man losing <i class="translator-supplied">his</i> wife <i class="translator-supplied">in</i> life,
+<i class="translator-supplied">is</i> like <i class="translator-supplied">a</i> chariot losing <i class="translator-supplied">its</i> wheel.
+<i class="translator-supplied">Should a</i> wheel <i class="translator-supplied">be</i> lost, remake <i class="translator-supplied">it</i>:
+surely <i class="translator-supplied">a</i> new <i class="translator-supplied">one shall be</i> obtained.
+<i class="translator-supplied">Should one's</i> wife die, seek anew:
+also <i class="translator-supplied">a</i> new <i class="translator-supplied">one shall be</i> obtained.
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">更：</span>
 anew<br>
 <span lang="zh-Hant">更，平聲，</span>
-<a href="/cantonese/conway-romanisation" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;kang1,
-Mandarin:&nbsp;gēng
+<a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;kang1, Mandarin:&nbsp;gēng
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">賢家之女，必配貴夫。十間之室，須得棟樑。</span>
-<hr>
-"<i>A</i> daughter of <i>a</i> worthy family,
-<i>shall</i> surely <i>be</i> matched with the worthy man.
-<i>The</i> bedchambers of ten partitions,
-must get pillars <i>and</i> roof beams.
+</div>
+<div class="english">
+"<i class="translator-supplied">A</i> daughter of <i class="translator-supplied">a</i> worthy family,
+<i class="translator-supplied">shall</i> surely <i class="translator-supplied">be</i> matched with the worthy man.
+<i class="translator-supplied">The</i> bedchambers of ten partitions,
+must get pillars <i class="translator-supplied">and</i> roof beams.
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">貴：</span>
 worthy;
-<span class="alternative-type">or</span> honourable;
-<span class="alternative-type">lit.</span> noble<br>
+<span class="alternative-marker">or</span> honourable;
+<span class="alternative-marker">lit.</span> noble<br>
 Perhaps "venerable" as in "commanding respect"
 would also work, but <span lang="zh-Hant">貴</span> has no connotation with age.
 Rendering both <span lang="zh-Hant">賢</span> and <span lang="zh-Hant">貴</span> as "worthy" is not desirable,
 but unavoidable.
 </li>
-<li>
-I have rendered <span lang="zh-Hant">十間之室，須得棟樑</span>
+<li>I have rendered <span lang="zh-Hant">十間之室，須得棟樑</span>
 literally, but really this is saying
-"<i>the</i> women of many families must get upholding <i>men</i>":
+"<i class="translator-supplied">the</i> women of many families must get upholding <i class="translator-supplied">men</i>":
 <ul>
 <li><span lang="zh-Hant">十間：</span>
 many families;
-<span class="alternative-type">lit.</span> ten partitions<br>
+<span class="alternative-marker">lit.</span> ten partitions<br>
 <span lang="zh-Hant">間，去聲，</span>
-<a href="/cantonese/conway-romanisation" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;kaan3,
-Mandarin:&nbsp;jiàn
+<a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;kaan3, Mandarin:&nbsp;jiàn
 </li>
 <li><span lang="zh-Hant">室：</span>
 women;
-<span class="alternative-type">lit.</span> bedchambers<br>
+<span class="alternative-marker">lit.</span> bedchambers<br>
 In other contexts, <span lang="zh-Hant">室</span> may mean wife or concubine.
 </li>
 <li><span lang="zh-Hant">棟樑：</span>
-upholding <i>men</i>;
-<span class="alternative-type">lit.</span> pillars <i>and</i> roof beams<br>
+upholding <i class="translator-supplied">men</i>;
+<span class="alternative-marker">lit.</span> pillars <i class="translator-supplied">and</i> roof beams<br>
 Those worthy of bearing great responsibility.
 </li>
 </ul>
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">三窗六牗，不如一户之光。衆星朗朗，不如孤月獨明。父母之恩，奚可失也？」</span>
-<hr>
-"<i>Yet the light of</i> three windows <i>and</i> six casements,
-<i>is</i> not as <i>the</i> light of one <i>particular</i> window.
-<i>The</i> multitude of stars bright,
-<i>are</i> not as <i>the</i> lone moon, radiant by itself.
-<i>The</i> affection of father <i>and</i> mother:
-how can <i>it be</i> lost?"
+</div>
+<div class="english">
+"<i class="translator-supplied">Yet the light of</i> three windows <i class="translator-supplied">and</i> six casements,
+<i class="translator-supplied">is</i> not as <i class="translator-supplied">the</i> light of one <i class="translator-supplied">particular</i> door.
+<i class="translator-supplied">The</i> multitude of stars bright,
+<i class="translator-supplied">are</i> not as <i class="translator-supplied">the</i> lone moon, radiant by itself.
+<i class="translator-supplied">The</i> affection of father <i class="translator-supplied">and</i> mother:
+how can <i class="translator-supplied">it be</i> lost?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">牗：窗也；</span>
 casement<br>
 Variant of <span lang="zh-Hant">牖</span>.<br>
 <span lang="zh-Hant">牗，與久切，音酉，</span>
-<a href="/cantonese/conway-romanisation" title="Conway's Custom Romanisation for Cantonese">Cantonese</a>:&nbsp;yau5,
-Mandarin:&nbsp;yǒu<br>
-I didn't want to render <span lang="zh-Hant">窗</span>, <span lang="zh-Hant">牗</span> and <span lang="zh-Hant">户</span> all as "window",
-and "casement" was the only other word I could find in English.
-Technically casements are windows with side hinges,
-but in literary and poetic contexts, "casement"
-is a fancy way of referring to a window of any type.
+<a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;yau5, Mandarin:&nbsp;yǒu<br>
+A fancy word for "window".
 </li>
 <li><span lang="zh-Hant">恩：</span>
 affection;
-<span class="alternative-type">or</span> kindness;
-<span class="alternative-type">or</span> love
+<span class="alternative-marker">or</span> kindness;
+<span class="alternative-marker">or</span> love
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子歎曰：「賢哉！賢哉！」</span>
-<hr>
-Confucius sighed, saying,
-"Worthy <i>art thou</i>! Worthy <i>art thou</i>!"
 </div>
-<div class="boxed translation">
+<div class="english">
+Confucius sighed, saying,
+"Worthy <i class="translator-supplied">art thou</i>! Worthy <i class="translator-supplied">art thou</i>!"
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒問孔子曰：「適來問橐，橐一一答之。橐今欲求敎夫子一言，明以誨橐，幸請勿棄。」</span>
-<hr>
-<i>The</i> little child asked Confucius, saying,
-"<i>Master hath</i> just come to ask <span lang="zh-Hant">橐</span><span class="romanisation romanisation-conway">&nbsp;(T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Tuo)</span> <i>questions</i>,
-<i>and</i> <span lang="zh-Hant">橐</span><span class="romanisation romanisation-conway">&nbsp;(T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Tuo)</span> <i>hath</i> answered them one <i>by</i> one.
-<span lang="zh-Hant">橐</span><span class="romanisation romanisation-conway">&nbsp;(T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Tuo)</span> wisheth now to request
-<i>the</i> advice of Master <i>in</i> one asking,
-<i>to</i> teach <span lang="zh-Hant">橐</span><span class="romanisation romanisation-conway">&nbsp;(T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Tuo)</span> with clarity,
-<i>and</i> hopeth <i>and</i> asketh <i>that Master</i> doth not forsake <i>this request</i>."
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child asked Confucius, saying,
+"<i class="translator-supplied">The master hath</i> just come to ask T'o&nbsp;<span lang="zh-Hant" class="original-chinese">橐</span> <i class="translator-supplied">questions</i>,
+<i class="translator-supplied">and</i> T'o&nbsp;<span lang="zh-Hant" class="original-chinese">橐</span> <i class="translator-supplied">hath</i> answered them one <i class="translator-supplied">by</i> one.
+T'o&nbsp;<span lang="zh-Hant" class="original-chinese">橐</span> wisheth now to request
+<i class="translator-supplied">the</i> advice of <i class="translator-supplied">the</i> master <i class="translator-supplied">in</i> one asking,
+<i class="translator-supplied">to</i> teach T'o&nbsp;<span lang="zh-Hant" class="original-chinese">橐</span> with clarity,
+<i class="translator-supplied">and</i> hopeth <i class="translator-supplied">and</i> asketh <i class="translator-supplied">that the master</i>
+doth not forsake <i class="translator-supplied">this request</i>."
+</div>
 </div>
 <ul>
-<li><span lang="zh-Hant">橐</span><span class="romanisation romanisation-conway">&nbsp;(T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Tuo)</span><br>
-The child <span lang="zh-Hant">項橐</span><span class="romanisation romanisation-conway">&nbsp;(Hong T'ok)</span><span class="romanisation romanisation-wadegiles">&nbsp;(Hsiang T'o)</span><span class="romanisation romanisation-pinyin">&nbsp;(Xiang Tuo)</span> is
-<a href="https://en.wikipedia.org/wiki/Illeism" title="Wikipedia: Illeism">referring to himself in the third person</a>, out of respect.
+<li>T'o&nbsp;<span lang="zh-Hant" class="original-chinese">橐</span><br>
+Out of respect, the child Hiang T'o&nbsp;<span lang="zh-Hant" class="original-chinese">項橐</span> refers
+<a href="https://en.wikipedia.org/wiki/Illeism">to himself in the third person</a>,
+and to Confucius as <span lang="zh-Hant">夫子</span>, "<i class="translator-supplied">the</i> master", rather than <span lang="zh-Hant">汝</span>, "thou".
 </li>
 <li><span lang="zh-Hant">求敎：</span>
-request <i>the</i> advice;
-<span class="alternative-type">or</span> <i>earnestly</i> request <i>the</i> advice
+request <i class="translator-supplied">the</i> advice;
+<span class="alternative-marker">or</span> <i class="translator-supplied">earnestly</i> request <i class="translator-supplied">the</i> advice
 </li>
 <li><span lang="zh-Hant">言：問也；</span>
-<a href="https://en.wiktionary.org/wiki/asking#Noun" title="(Noun)">asking</a>
+<a href="https://en.wiktionary.org/wiki/asking#Noun" title="Noun">asking</a>
 </li>
 <li><span lang="zh-Hant">明：</span>
 clarity;
-<span class="alternative-type">or</span> illustration
+<span class="alternative-marker">or</span> illustration
 </li>
 <li><span lang="zh-Hant">幸：冀也；</span>
 hopeth
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒曰：「鵝鴨何以能浮？鴻雁何以能鳴？松柏何以冬青？」</span>
-<hr>
-<i>The</i> little child said,
-"Why <i>are</i> geese <i>and</i> ducks able to float?
-Why <i>are</i> swans <i>and</i> wild geese able to sound?
-Why <i>are</i> pine trees <i>and</i> cypress trees evergreen?"
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child said,
+"Why <i class="translator-supplied">are</i> geese <i class="translator-supplied">and</i> ducks able to float?
+Why <i class="translator-supplied">are</i> swans <i class="translator-supplied">and</i> wild geese able to sound?
+Why <i class="translator-supplied">are</i> pine trees <i class="translator-supplied">and</i> cypress trees evergreen?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">浮：</span>
 float;
-<span class="alternative-type">or</span> drift
+<span class="alternative-marker">or</span> drift
 </li>
 <li><span lang="zh-Hant">鴻雁：</span>
-swans <i>and</i> wild geese<br>
-Arguably <span lang="zh-Hant">鴻雁</span> could also be the single bird
-<a href="https://en.wikipedia.org/wiki/Swan_goose" title="Wikipedia: Swan goose">"swan goose"</a>.
+swans <i class="translator-supplied">and</i> wild geese<br>
+Could also be the single bird <a href="https://en.wikipedia.org/wiki/Swan_goose">"swan goose"</a>.
 </li>
 <li><span lang="zh-Hant">冬青：</span>
 evergreen;
-<span class="alternative-type">lit.</span> green <i>in</i> winter
+<span class="alternative-marker">lit.</span> green <i class="translator-supplied">in</i> winter
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子答曰：「鵝鴨能浮，皆因足方。鴻雁能鳴，皆因頸長。松柏冬青，皆因心堅。」</span>
-<hr>
+</div>
+<div class="english">
 Confucius replied, saying,
-"Geese <i>and</i> ducks <i>are</i> able to float, all because of webbed feet.
-Swans <i>and</i> wild geese <i>are</i> able to sound, all because of long necks.
-Pine trees <i>and</i> cypress trees <i>are</i> evergreen, all because of strong cores."
+"Geese <i class="translator-supplied">and</i> ducks <i class="translator-supplied">are</i> able to float, all because of webbed feet.
+Swans <i class="translator-supplied">and</i> wild geese <i class="translator-supplied">are</i> able to sound, all because of long necks.
+Pine trees <i class="translator-supplied">and</i> cypress trees <i class="translator-supplied">are</i> evergreen,
+all because of strong cores."
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">足方：</span>
 webbed feet;
-<span class="alternative-type">lit.</span> square feet
+<span class="alternative-marker">lit.</span> square feet
 </li>
 <li><span lang="zh-Hant">堅：</span>
 strong;
-<span class="alternative-type">or</span> firm
+<span class="alternative-marker">or</span> firm
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒答曰：「不然。魚鱉能浮，豈皆足方？蝦蟆能鳴，豈因頸長？綠竹冬青，豈因心堅？」</span>
-<hr>
-<i>The</i> little child replied, saying,
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child replied, saying,
 "Not so.
-Fishes <i>and</i> turtles can float: how <i>have they</i> all webbed feet?
-The toad can sound: how <i>be this</i> because of <i>a</i> long neck?
-The green bamboo <i>is</i> evergreen: how <i>be this</i> because of <i>a</i> strong core?"
+Fishes <i class="translator-supplied">and</i> turtles can float: how <i class="translator-supplied">have they</i> all webbed feet?
+The toad can sound: how <i class="translator-supplied">be this</i> because of <i class="translator-supplied">a</i> long neck?
+The green bamboo <i class="translator-supplied">is</i> evergreen:
+how <i class="translator-supplied">be this</i> because of <i class="translator-supplied">a</i> strong core?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">綠竹：</span>
-<a href="https://en.wikipedia.org/wiki/Bambusa_oldhamii" title="Wikipedia: Bambusa oldhamii">the green bamboo</a>
+<a href="https://en.wikipedia.org/wiki/Bambusa_oldhamii">the green bamboo</a>
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒又問曰：「天上零零有幾星？」</span>
-<hr>
-<i>The</i> little child asked again, saying,
-"How many stars are there, scattered <i>in the</i> heavens above?"
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child asked again, saying,
+"How many stars are there, scattered <i class="translator-supplied">in the</i> heavens above?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">零零：</span>
 scattered<br>
-As in <span lang="zh-Hant">零碎</span>.
+As in <span lang="zh-Hant">零碎</span>.<br>
+Note that <span lang="zh-Hant">零</span> (ling4/líng) rhymes with <span lang="zh-Hant">星</span> (sing1/xīng).
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子答曰：「適來問地，何必談天？」</span>
-<hr>
-Confucius replied, saying,
-"<i>I have</i> just come to ask <i>regarding the</i> earth;
-wherefore must <i>we</i> discuss <i>the</i> heavens?"
 </div>
-<div class="boxed translation">
+<div class="english">
+Confucius replied, saying,
+"<i class="translator-supplied">I have</i> just come to ask <i class="translator-supplied">regarding the</i> earth;
+wherefore must <i class="translator-supplied">we</i> discuss <i class="translator-supplied">the</i> heavens?"
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒曰：「地下碌碌有幾屋？」</span>
-<hr>
-<i>The</i> little child said,
-"How many houses are there, ordinary <i>on the</i> earth below?"
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> little child said,
+"How many houses are there, ordinary <i class="translator-supplied">on the</i> earth below?"
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">碌碌：</span>
 ordinary;
-<span class="alternative-type">or</span> common;
-<span class="alternative-type">or</span> everyday<br>
-Note that <span lang="zh-Hant">零</span> (ling4/líng)
-rhymes with <span lang="zh-Hant">星</span> (sing1/xīng),
-and <span lang="zh-Hant">碌</span> (luk7/lù)
-with <span lang="zh-Hant">屋</span> (uk7/wū).
+<span class="alternative-marker">or</span> common;
+<span class="alternative-marker">or</span> everyday<br>
+Note that <span lang="zh-Hant">碌</span> (luk7/lù) rhymes with <span lang="zh-Hant">屋</span> (uk7/wū).
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子曰：「且論眼前之事，何必談天説地？」</span>
-<hr>
+</div>
+<div class="english">
 Confucius said,
-"And <i>let us</i> discuss matters before <i>our very</i> eyes;
-wherefore must <i>we</i> discuss <i>the</i> heavens
-<i>and</i> speak of <i>the</i> earth?"
+"And <i class="translator-supplied">let us</i> discuss matters before <i class="translator-supplied">our very</i> eyes;
+wherefore must <i class="translator-supplied">we</i> discuss <i class="translator-supplied">the</i> heavens
+<i class="translator-supplied">and</i> speak of <i class="translator-supplied">the</i> earth?"
 </div>
-<div class="boxed translation">
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">小兒曰：「若論眼前之事，眉毛中有幾枝？」</span>
-<hr>
-<i>The</i> little child said,
-"If <i>we shall</i> discuss matters before <i>our very</i> eyes,
-how many <i>hairs</i> are there amidst <i>my</i> brow?"
 </div>
-<div class="boxed translation">
+<div class="english">
+<i class="translator-supplied">The</i> little child said,
+"If <i class="translator-supplied">we shall</i> discuss matters before <i class="translator-supplied">our very</i> eyes,
+how many <i class="translator-supplied">hairs</i> be there amidst <i class="translator-supplied">my</i> brow?"
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">孔子笑而不答，顧謂諸弟子曰：「後生可畏！焉知來者之不如今也？」</span>
-<hr>
+</div>
+<div class="english">
 Confucius smiled and replied not,
-<i>and</i> turned back <i>and</i> spake unto <i>his</i> many disciples, saying,
-"The young ought to <i>be</i> feared!
-<i>For</i> how know <i>we</i> <i>that</i> those who come <i>after us</i>,
-<i>be</i> not as <i>we who are</i> now?"
+<i class="translator-supplied">and</i> turned back <i class="translator-supplied">and</i> spake unto <i class="translator-supplied">his</i> many disciples, saying,
+"The young ought to <i class="translator-supplied">be</i> feared!
+<i class="translator-supplied">For</i> how know <i class="translator-supplied">we</i> <i class="translator-supplied">that</i> those who come <i class="translator-supplied">after us</i>,
+<i class="translator-supplied">be</i> not as <i class="translator-supplied">we who are</i> now?"
+</div>
 </div>
 <ul>
-<li>
-<span lang="zh-Hant">後生可畏！焉知來者之不如今也？</span><br>
-This is part of an actual (as in canon) quote of Confucius in
-<a href="https://ctext.org/analects/zi-han#n1331" title="《論語・子罕》"><span lang="zh-Hant">《論語・子罕》</span></a>:
-<div class="boxed translation">
+<li><span lang="zh-Hant">後生可畏！焉知來者之不如今也？</span><br>
+This is part of an actual (as in canon) quote of Confucius
+in <a href="https://ctext.org/analects/zi-han#n1331"><span lang="zh-Hant">《論語・子罕》</span></a>:
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">子曰：「後生可畏，焉知來者之不如今也？四十、五十而無聞焉，斯亦不足畏也已。」</span>
-<hr>
-<i>The</i> Master said,
-"The young ought to <i>be</i> feared;
-<i>for</i> how know <i>we</i> <i>that</i> those who come <i>after us</i>,
-<i>be</i> not as <i>we who are</i> now?
-<i>By</i> forty <i>or</i> fifty and <i>be they</i> unheard of,
-then <i>be they</i> not worthy of fear."
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> Master said,
+"The young ought to <i class="translator-supplied">be</i> feared;
+<i class="translator-supplied">for</i> how know <i class="translator-supplied">we</i> <i class="translator-supplied">that</i> those who come <i class="translator-supplied">after us</i>,
+<i class="translator-supplied">be</i> not as <i class="translator-supplied">we who are</i> now?
+<i class="translator-supplied">By</i> forty <i class="translator-supplied">or</i> fifty and <i class="translator-supplied">be they</i> unheard of,
+then <i class="translator-supplied">be they</i> not worthy of fear."
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">後生：</span>
 the young;
-<span class="alternative-type">lit.</span> the after-born<br>
+<span class="alternative-marker">lit.</span> the after-born<br>
 This constrasts with <span lang="zh-Hant">先生</span>, literally "former-born",
 which classically was a polite address to an older, wiser person.
 This usage survives today in Cantonese,
-and also Japanese (<i>sensei</i>), where <span lang="zh-Hant">先生</span> means teacher.
+and also Japanese <i>sensei</i>, where <span lang="zh-Hant">先生</span> means teacher.
 </li>
 <li><span lang="zh-Hant">畏：</span>
 feared;
-<span class="alternative-type">or</span> respected<br>
+<span class="alternative-marker">or</span> respected<br>
 Here, I do not mean fear as in being afraid,
 but rather reverence and respect, as in fearing God.
-"<i>Is</i> formidable" is also a good rendering of <span lang="zh-Hant">可畏</span>.
+"<i class="translator-supplied">Is</i> formidable" is also a good rendering of <span lang="zh-Hant">可畏</span>,
+but the following <span lang="zh-Hant">不足畏</span> then becomes difficult to render likewise.
 </li>
 <li><span lang="zh-Hant">不如：</span>
 not as;
-<span class="alternative-type">or</span> not <i>as good</i> as
+<span class="alternative-marker">or</span> not <i class="translator-supplied">as good</i> as
 </li>
 </ul>
 The almanac erroneously has <span lang="zh-Hant">焉能求者</span> for <span lang="zh-Hant">焉知來者</span>;
 this is called <span lang="zh-Hant">執錯字粒</span>, or
-"picking <i>the</i> wrong character block" in printing.
+"picking <i class="translator-supplied">the</i> wrong character block" in printing.
 </li>
 </ul>
-<div class="boxed translation">
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">於是登車而去。</span>
-<hr>
-<i>And</i> so <i>he</i> boarded <i>his</i> chariot and departed.
 </div>
-<div class="boxed translation">
+<div class="english">
+<i class="translator-supplied">And</i> so <i class="translator-supplied">he</i> boarded <i class="translator-supplied">his</i> chariot and departed.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
 <span lang="zh-Hant">詩曰：</span>
-<div class="centred-flex"><div>
+<div class="centred-block">
+<div>
 <span lang="zh-Hant">休欺年少聰明子，</span><br>
 <span lang="zh-Hant">廣有英才智過人。</span><br>
 <span lang="zh-Hant">談論世間無限事，</span><br>
 <span lang="zh-Hant">分明古聖現其身。</span>
-</div></div>
-<hr>
+</div>
+</div>
+</div>
+<div class="english">
 Verse saith:
-<div class="centred-flex"><div>
-Do not bully the intelligent child, young <i>in</i> years,<br>
-<i>Who</i> greatly hath outstanding talent, <i>and</i> wisdom <i>which</i> surpasseth others.<br>
-<i>He</i> discusseth <i>and</i> discourseth <i>the</i> infinite matters in <i>the</i> world;<br>
-Clearly <i>the</i> ancient sages <i>have</i> manifested <i>in</i> his person.
-</div></div>
+<div class="centred-block">
+<div>
+Do not bully the intelligent child, young <i class="translator-supplied">in</i> years,<br>
+<i class="translator-supplied">Who</i> greatly hath outstanding talent, <i class="translator-supplied">and</i> wisdom <i class="translator-supplied">which</i> surpasseth others.<br>
+<i class="translator-supplied">He</i> discusseth <i class="translator-supplied">and</i> discourseth <i class="translator-supplied">the</i> infinite matters in <i class="translator-supplied">the</i> world;<br>
+Clearly <i class="translator-supplied">the</i> ancient sages <i class="translator-supplied">have</i> manifested <i class="translator-supplied">in</i> his person.
+</div>
+</div>
+</div>
 </div>
 <ul>
 <li><span lang="zh-Hant">欺：</span>
 bully;
-<span class="alternative-type">or</span> pick on
+<span class="alternative-marker">or</span> pick on
 </li>
 <li><span lang="zh-Hant">過：</span>
 surpasseth;
-<span class="alternative-type">or</span> exceedeth
+<span class="alternative-marker">or</span> exceedeth
 </li>
 <li><span lang="zh-Hant">論：</span>
 discourseth;
-<span class="alternative-type">or</span> debateth
+<span class="alternative-marker">or</span> debateth
 </li>
 <li><span lang="zh-Hant">分明：</span>
 clearly<br>
 Or "blatantly", but here without the negative connotation.
 </li>
 <li><span lang="zh-Hant">古聖：</span>
-<i>the</i> ancient sages<br>
+<i class="translator-supplied">the</i> ancient sages<br>
 The virtuous, wise men of antiquity.
 In modern times though, due to the influence of Christian literature,
 <span lang="zh-Hant">聖</span> has come to mean "holy", or "sacred", or "saint".
 </li>
 <li><span lang="zh-Hant">現：</span>
 manifested;
-<span class="alternative-type">or</span> appeared
+<span class="alternative-marker">or</span> appeared
 </li>
 </ul>
-<h2 id="cite"><a class="self-link" href="#cite"></a>
-Cite this page
-</h2>
+<h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
 <ul>
 <li>Text:
 <p>
 Conway&nbsp;(2020).
-"Q&nbsp;<i>&amp;</i>&nbsp;A <i>with</i> Confucius: <i>the</i> Little Child's Discourse".
+"Q&nbsp;<i class="translator-supplied">&amp;</i>&nbsp;A <i class="translator-supplied">with</i> Confucius: <i class="translator-supplied">the</i> Little Child's Discourse".
 &lt;https://yawnoc.github.io/lit/little-child&gt;
-[Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
+Accessed&nbsp;<span class="js-date">yyyy-mm-dd</span>.
 </p>
 </li>
 <li>BibTeX:
-<pre>
-@misc{conway-little-child,
+<pre><code>@misc{conway-little-child,
   author = {Conway},
   year = {2020},
-  title = {``{Q}~\emph{\&amp;}~{A} \emph{with} {Confucius}: \emph{the} {Little} {Child's} {Discourse}''},
+  title = {``{Q}~\textit{\&amp;}~{A} \emph{textit} {Confucius}: \textit{the} {Little} {Child's} {Discourse}''},
   howpublished = {\url{https://yawnoc.github.io/lit/little-child}},
-  note = {[Accessed <span class="date">d~month~yyyy</span>]}
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 <li>BibLaTeX:
-<pre>
-@online{conway-little-child,
+<pre><code>@online{conway-little-child,
   author = {Conway},
   year = {2020},
-  title = {``{Q}~\emph{\&amp;}~{A} \emph{with} {Confucius}: \emph{the} {Little} {Child's} {Discourse}''},
+  title = {``{Q}~\textit{\&amp;}~{A} \emph{textit} {Confucius}: \textit{the} {Little} {Child's} {Discourse}''},
   url = {https://yawnoc.github.io/lit/little-child},
-  urldate = {<span class="date">yyyy-mm-dd</span>}
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 </ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
 <footer>
-<hr>
 ©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
