@@ -50,9 +50,9 @@ one of them being the "Republic of Hunan", Hunan being his home province.
 ----
 
 ----
-I have only been able to find two versions of this
-(of which I shall be following the first version,
-as the second appears to have many transcription errors):
+I have only been able to find two versions of this,
+of which I shall be using the first version as the source text,
+as the second appears to have many transcription errors:
 ----
 
 <!-- Simplified Chinese declaration [simp/ /] -->
