@@ -489,8 +489,8 @@ For example, [_s]aang [_ch']oi rather than [^sh]aang [^ts']oi for 生菜.
 ====]
 
 ----
-If typesetting of the characters [.(oe).]~(`U+0153`)
-and [.(u").]~(`U+00FC`) is inconvenient,
+If typesetting of the characters [.(oe).]~`U+0153`
+and [.(u").]~`U+00FC` is inconvenient,
 you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ----
 
