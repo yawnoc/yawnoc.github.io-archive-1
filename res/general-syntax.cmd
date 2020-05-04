@@ -236,7 +236,7 @@
 {:: \link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
 
 {:: \link:sun-tzu/preface ::
-  [《序》 "Preface"](/sun-tzu/preface)
+  [《序》 "Preface"] ["p"]
 ::}
 
 {:: \link:sun-tzu/iii ::
@@ -244,19 +244,44 @@
 ::}
 
 {:: \link:sun-tzu/ii ::
-  [《卷中》 "Volume~II"](/sun-tzu/ii) (incomplete)
+  [《卷中》 "Volume~II"] ["ii"] (incomplete)
 ::}
 
 {:: \link:sun-tzu/i ::
-  [《卷上》 "Volume~I"](/sun-tzu/i)
+  [《卷上》 "Volume~I"] ["i"]
 ::}
 
 {:: \link:sun-tzu ::
   [
     《孫子算經》 \+
     "\\sun-tzu's Computational Classic"
-  ](/sun-tzu)
+  ]
+  [""]
 ::}
+
+<!-- Sun Tzu URL in round brackets  [""] -->
+{%
+  [\s]*
+  \[""\]
+%
+  (/sun-tzu/)
+%}
+
+<!-- Sun Tzu Volume v URL in round brackets  ["v"] -->
+{%
+  [\s]*
+  \["p"\]
+%
+  (/sun-tzu/preface)
+%}
+{%
+  [\s]*
+  \[ "
+    (?P<volume> [i] {1,3} )
+  " \]
+%
+  (/sun-tzu/\g<volume>)
+%}
 
 <!-- Sun Tzu Volume v Paragraph p URL in round brackets  ["v p"] -->
 {%
