@@ -410,7 +410,7 @@
 %}
 
 {% \\M [\s]* % Mandarin:~ %}
-{% \\gr [\s]* % Government-regulared 統讀:~ %}
+{% \\gr [\s]* % Government-regulated 統讀:~ %}
 
 
 
