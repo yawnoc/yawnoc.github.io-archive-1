@@ -2,132 +2,117 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="description" content="Mathematica code generating animations for the Sunzi Suanjing multiplication \&amp; division algorithms.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
-<meta name="description" content="Mathematica code generating animations for the Sunzi Suanjing multiplication &amp; division algorithms.">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<link rel="stylesheet" href="/conway-katex.min.css">
-<script defer src="/conway-katex.min.js"></script>
-<script defer src="/conway-render.min.js"></script>
-<title>Mathematica: Sun&nbsp;Tzŭ multiplication &amp; division animations | Conway's site</title>
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
+<title>[Mathematica] Sun Tzŭ multiplication &amp; division animations</title>
 </head>
-<body onload="mathsRender();">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-<li><a href="#multiplication" title="Multiplication">Multiplication</a></li>
-<li><a href="#division" title="Division">Division</a></li>
-</ul></nav></header>
-<h1>
-Mathematica:
-Sun&nbsp;Tzŭ multiplication &amp; division animations
-</h1>
-<p class="page-properties">
-First created:&nbsp;20190526<br>
-Last modified:&nbsp;<b>20200320</b>
-<noscript>Enable Javascript for <a href="/code/katex-guide" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
-</p>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="#multiplication" title="Multiplication">Multiplication</a>
+</li>
+<li><a href="#division" title="Division">Division</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1>[Mathematica] Sun Tzŭ multiplication &amp; division animations</h1>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-05-26<br>
+Last modified: 2020-03-20
+</div>
 <p>
-<b>GitHub repository:</b>
-<a href="https://github.com/yawnoc/sun-tzu-arithmetic" title="GitHub: Sun&nbsp;Tzŭ arithmetic animations"><code>sun-tzu-arithmetic</code></a>
+<b>Code:</b>  <a href="https://github.com/yawnoc/sun-tzu-arithmetic">yawnoc/sun-tzu-arithmetic (GitHub)</a>
 </p>
 <p>
 Mathematica code for the animations in my
-<a href="/sun-tzu/" title="&quot;Sun&nbsp;Tzŭ's Computational Classic&quot;: 《孫子算經》">translation of
-"Sun&nbsp;Tzŭ's Computational Classic"</a>;
-see Vol.&nbsp;I <a href="/sun-tzu/i#8" title="Vol. I ¶8">¶8</a>
-&amp;&nbsp;<a href="/sun-tzu/i#13" title="Vol. I ¶13">¶13</a> (multiplication)
-and <a href="/sun-tzu/i#9" title="Vol. I ¶9">¶9</a>
-&amp;&nbsp;<a href="/sun-tzu/i#14" title="Vol. I ¶14">¶14</a> (division).
+<a href="/sun-tzu/">translation of "Sun Tzŭ's Computational Classic"</a>;
+see Vol.&nbsp;I <a href="/sun-tzu/i#8">¶8</a> &amp;&nbsp;<a href="/sun-tzu/i#13">¶13</a> (multiplication)
+and <a href="/sun-tzu/i#9">¶9</a> &amp;&nbsp;<a href="/sun-tzu/i#14">¶14</a> (division).
 </p>
 <p>
-First change to the directory of
-<a href="https://github.com/yawnoc/sun-tzu-arithmetic/blob/master/SunTzu.wl" title="GitHub: SunTzu.wl"><code>SunTzu.wl</code></a>,
+First change to the directory of <a href="https://github.com/yawnoc/sun-tzu-arithmetic/blob/master/SunTzu.wl"><code>SunTzu.wl</code></a>,
 then load the package
 </p>
-<pre>
-&lt;&lt; SunTzu`
-</pre>
+<pre><code>&lt;&lt; SunTzu`
+</code></pre>
 <p>
 and run the following:
 </p>
-<h2 id="multiplication"><a class="self-link" href="#multiplication"></a>
-Multiplication
-</h2>
-<pre>
-{
+<h2 id="multiplication"><a class="permalink" href="#multiplication" aria-label="Permalink"></a>Multiplication</h2>
+<pre><code>{
   {81, 81},
   {1989, 64},
   {1024, 1024},
   {246, 97531}
 } /.
   {x_, y_} :&gt; MultiplyAnimation[x, y, Export -&gt; True]
-</pre>
-<div class="centred-flex"><div class="centred-text overflowing"><table>
+</code></pre>
+<div class="centred-block">
+<div class="overflowing">
+<table>
 <tr>
-<th><span class="maths">81 \times 81 = 6561</span></th>
-<th><span class="maths">1989 \times 64 = 127296</span></th>
-<th><span class="maths">1024 \times 1024 = 1048576</span></th>
-<th><span class="maths">246 \times 97531 = 23992626</span></th>
+<th><span class="js-maths">81 \times 81 = 6561</span></th>
+<th><span class="js-maths">1989 \times 64 = 127296</span></th>
+<th><span class="js-maths">1024 \times 1024 = 1048576</span></th>
+<th><span class="js-maths">246 \times 97531 = 23992626</span></th>
 </tr>
 <tr>
-<td>
-<img src="/sun-tzu/code/multiply-81-81.gif" alt="Sun&nbsp;Tzŭ multiplication: 81 × 81">
-</td>
-<td>
-<img src="/sun-tzu/code/multiply-1989-64.gif" alt="Sun&nbsp;Tzŭ multiplication: 1989 × 64">
-</td>
-<td>
-<img src="/sun-tzu/code/multiply-1024-1024.gif" alt="Sun&nbsp;Tzŭ multiplication: 1024 × 1024">
-</td>
-<td>
-<img src="/sun-tzu/code/multiply-246-97531.gif" alt="Sun&nbsp;Tzŭ multiplication: 246 × 97531">
-</td>
+<td><img alt="Animation for Sun Tzŭ multiplication: 81 multiplied by 81" src="/sun-tzu/code/multiply-81-81.gif"></td>
+<td><img alt="Animation for Sun Tzŭ multiplication: 1989 multiplied by 64" src="/sun-tzu/code/multiply-1989-64.gif"></td>
+<td><img alt="Animation for Sun Tzŭ multiplication: 1024 multiplied by 1024" src="/sun-tzu/code/multiply-1024-1024.gif"></td>
+<td><img alt="Animation for Sun Tzŭ multiplication: 246 multiplied by 97531" src="/sun-tzu/code/multiply-246-97531.gif"></td>
 </tr>
-</table></div></div>
-<h2 id="division"><a class="self-link" href="#division"></a>
-Division
-</h2>
-<pre>
-{
+</table>
+</div>
+</div>
+<h2 id="division"><a class="permalink" href="#division" aria-label="Permalink"></a>Division</h2>
+<pre><code>{
   {100, 6},
   {1989, 64},
   {6561, 9},
   {97531, 4}
 } /.
   {x_, y_} :&gt; DivideAnimation[x, y, Export -&gt; True]
-</pre>
-<div class="centred-flex"><div class="centred-text overflowing"><table>
+</code></pre>
+<div class="centred-block">
+<div class="overflowing">
+<table>
 <tr>
-<th><span class="maths">100 \div 6 = 16 + \dfrac{4}{6}</span></th>
-<th><span class="maths">1989 \div 64 = 31 + \dfrac{5}{64}</span></th>
-<th><span class="maths">6561 \div 9 = 729</span></th>
-<th><span class="maths">97531 \div 4 = 24382 + \dfrac{3}{4}</span></th>
+<th><span class="js-maths">100 \div 6 = 16 + \dfrac{4}{6}</span></th>
+<th><span class="js-maths">1989 \div 64 = 31 + \dfrac{5}{64}</span></th>
+<th><span class="js-maths">6561 \div 9 = 729</span></th>
+<th><span class="js-maths">97531 \div 4 = 24382 + \dfrac{3}{4}</span></th>
 </tr>
 <tr>
-<td>
-<img src="/sun-tzu/code/divide-100-6.gif" alt="Sun&nbsp;Tzŭ division: 100 ÷ 6">
-</td>
-<td>
-<img src="/sun-tzu/code/divide-1989-64.gif" alt="Sun&nbsp;Tzŭ division: 1989 ÷ 64">
-</td>
-<td>
-<img src="/sun-tzu/code/divide-6561-9.gif" alt="Sun&nbsp;Tzŭ division: 6561 ÷ 9">
-</td>
-<td>
-<img src="/sun-tzu/code/divide-97531-4.gif" alt="Sun&nbsp;Tzŭ division: 97531 ÷ 4">
-</td>
+<td><img alt="Animation for Sun Tzŭ division: 100 divided by 6" src="/sun-tzu/code/divide-100-6.gif"></td>
+<td><img alt="Animation for Sun Tzŭ division: 1989 divided by 64" src="/sun-tzu/code/divide-1989-64.gif"></td>
+<td><img alt="Animation for Sun Tzŭ division: 6561 divided by 9" src="/sun-tzu/code/divide-6561-9.gif"></td>
+<td><img alt="Animation for Sun Tzŭ division: 97531 divided by 4" src="/sun-tzu/code/divide-97531-4.gif"></td>
 </tr>
-</table></div></div>
+</table>
+</div>
+</div>
 <footer>
-<hr>
 ©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
