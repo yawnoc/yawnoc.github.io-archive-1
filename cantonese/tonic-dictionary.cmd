@@ -121,7 +121,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 %}
 
 
-<!-- archive.org URL in parentheses [" p "] -->
+<!-- archive.org URL in round brackets [" p "] -->
 {%
   \[ "
     [\s]*?
