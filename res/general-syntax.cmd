@@ -411,6 +411,7 @@
 
 {% \\M [\s]* % Mandarin:~ %}
 {% \\gr [\s]* % Government-regulated 統讀:~ %}
+{% \\nc [\s]* % Nominally-Communist 統讀:~ %}
 
 
 
