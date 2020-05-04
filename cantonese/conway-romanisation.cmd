@@ -55,6 +55,7 @@ See also:
 
 [====
 * [Initials](#initials)
+* [{ts~vs~ch}](#ts-vs-ch)
 * [Finals](#finals)
 * [Tones](#tones)
 * [Compact tables](#compact-tables)
