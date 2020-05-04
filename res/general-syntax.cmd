@@ -258,6 +258,18 @@
   ](/sun-tzu)
 ::}
 
+<!-- Sun Tzu Volume v Paragraph p URL in round brackets  ["v p"] -->
+{%
+  [\s]*
+  \[ "
+    (?P<volume> [i] {1,3} )
+    [ ]
+    (?P<paragraph> [0-9] + )
+  " \]
+%
+  (/sun-tzu/\g<volume>#\g<paragraph>)
+%}
+
 
 <!--
   ----------------------------------------------------------------
