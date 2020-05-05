@@ -106,7 +106,7 @@ and run the following:
       (?P<b> [0-9]+ )
   \]
 %
-  ![Animation for \sun-tzu multiplication: \g<a> multiplied by \g<b>](
+  ![Animation for \\sun-tzu multiplication: \g<a> multiplied by \g<b>](
     \//sun-tzu/code/multiply-\g<a>-\g<b>.gif
   )
 %}
@@ -121,7 +121,7 @@ and run the following:
       (?P<b> [0-9]+ )
   \]
 %
-  ![Animation for \sun-tzu division: \g<a> divided by \g<b>](
+  ![Animation for \\sun-tzu division: \g<a> divided by \g<b>](
     \//sun-tzu/code/divide-\g<a>-\g<b>.gif
   )
 %}
