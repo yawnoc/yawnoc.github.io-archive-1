@@ -1,9 +1,9 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title (!
+  %title ~~
     "Memorial unto the Mobilisation, Hong Kong" 《香港出師表》
-  !)
+  ~~
   %title-suffix \title-suffix
   %title-en "Memorial .[unto the] Mobilisation, Hong Kong"
   %author Conway
@@ -480,8 +480,8 @@ by [畫字~(Draword)][draword].
 >>
 <<
   <span lang="zh-Hant">\
-    (! 若無興德之言，則隨教徒之聲， !)
-    <span lang="en">Sing Hallelujah to the LORD</span>(! 。 !)\
+    ~~ 若無興德之言，則隨教徒之聲， ~~
+    <span lang="en">Sing Hallelujah to the LORD</span>~~ 。 ~~\
   </span>
 ||
   .[And] if .[ye] lack words .[which] encourage virtue,

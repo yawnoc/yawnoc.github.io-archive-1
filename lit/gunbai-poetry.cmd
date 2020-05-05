@@ -63,12 +63,12 @@
 ----
   In professional sumo wrestling, the [umpire] [Gyoji]
   indicates his decision by pointing a fan, called a
-  [ _gunbai_ ([ja/ (! 軍配 !) /]) ] [gunbai],
+  [ _gunbai_ ([ja/~~ 軍配 ~~/]) ] [gunbai],
   towards the winning wrestler's starting end.
   Some are decorated with patterns, but others bear calligraphy.
   In particular, the fan carried by umpire
-  [\kimura-yodo ([ja/ (! 木村容堂 !) /])] [kimura]
-  has the lines [ja/ (! 及時當勉励 歳月不待人 !) /]:
+  [\kimura-yodo ([ja/~~ 木村容堂 ~~/])] [kimura]
+  has the lines [ja/~~ 及時當勉励 歳月不待人 ~~/]:
 ----
 @@[gyoji]
   https://en.wikipedia.org/wiki/Gy%C5%8Dji

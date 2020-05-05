@@ -8,7 +8,7 @@
   %date-modified 2020-04-25
   %resources
     (+ res/main-resources.cmd +)
-  %css a(!
+  %css a~~
     .container {
       border: 2px solid black;
       margin: 1em 0.3em;
@@ -21,10 +21,10 @@
       resize: vertical;
       width: 100%;
     }
-  !)
-  %onload-js a(!
+  ~~
+  %onload-js a~~
     passInputToOutput()
-  !)
+  ~~
 %%
 
 
@@ -40,7 +40,7 @@
 ||||]
 
 ||||{container}
-a(!
+a~~
   <textarea
     autofocus
     id="input"
@@ -48,17 +48,17 @@ a(!
     placeholder="Enter input here"
   >
   </textarea>
-!)
+~~
 ||||
 
 ||||{container}
   \noscript[the strikethrough formatter]
-  a(! <s id="output"></s> !)
+  a~~ <s id="output"></s> ~~
 ||||
 
 %footer-element
 
-a(!
+a~~
   <script>
   function passInputToOutput() {
     let inputString = document.getElementById('input').value
@@ -69,4 +69,4 @@ a(!
     )
   }
   </script>
-!)
+~~

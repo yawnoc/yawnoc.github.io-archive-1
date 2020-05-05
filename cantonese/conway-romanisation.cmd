@@ -12,7 +12,7 @@
   %description
     Conway's Romanisation for Cantonese, \
     with English approximations and a diagram of the nine tones.
-  %css a(!
+  %css a~~
     .alternatives-separator {
       font-weight: bold;
       margin-left: 1em;
@@ -31,7 +31,7 @@
       font-size: large;
       padding: 0.3em 0.4em;
     }
-  !)
+  ~~
 %%
 
 
@@ -1361,15 +1361,15 @@ and is **never** sounded as a consonant.
   [accessible-svg-title/tone-diagram-title
     Diagram of the nine tones of Cantonese. \
     Using the pitch numerals 1 to 5 in order of increasing pitch:
-      tone~1 (! 陰平 !) is level at 5;
-      tone~2 (! 陰上 !) is rising from 3 to 5;
-      tone~3 (! 陰去 !) is level at 3;
-      tone~4 (! 陽平 !) is level at 1;
-      tone~5 (! 陽上 !) is rising from 2 to 3;
-      tone~6 (! 陽去 !) is level at 2;
-      tone~7 (! 高陰入 !) is level at 5 and short;
-      tone~8 (! 低陰入 !) is level at 3 and short;
-      tone~9 (! 陽入 !) is level at 2 and short.
+      tone~1 ~~ 陰平 ~~ is level at 5;
+      tone~2 ~~ 陰上 ~~ is rising from 3 to 5;
+      tone~3 ~~ 陰去 ~~ is level at 3;
+      tone~4 ~~ 陽平 ~~ is level at 1;
+      tone~5 ~~ 陽上 ~~ is rising from 2 to 3;
+      tone~6 ~~ 陽去 ~~ is level at 2;
+      tone~7 ~~ 高陰入 ~~ is level at 5 and short;
+      tone~8 ~~ 低陰入 ~~ is level at 3 and short;
+      tone~9 ~~ 陽入 ~~ is level at 2 and short.
   /]
   
   [accessible-svg-content/
@@ -1387,7 +1387,7 @@ and is **never** sounded as a consonant.
       y = "-5.5"
       \font-size
       dy = "-0.5em"
-      >tone~1 (! 陰平 !)
+      >tone~1 ~~ 陰平 ~~
     </text>
     
     <!-- tone 2 陰上 -->
@@ -1402,7 +1402,7 @@ and is **never** sounded as a consonant.
       \font-size
       dy = "-0.5em"
       transform = "rotate(-23.75 0 -4.4)"
-      >tone~2 (! 陰上 !)
+      >tone~2 ~~ 陰上 ~~
       <!-- arctan (2.2/5) == 23.75 degree -->
     </text>
     
@@ -1417,7 +1417,7 @@ and is **never** sounded as a consonant.
       y = "-3.3"
       \font-size
       dy = "-0.5em"
-      >tone~3 (! 陰去 !)
+      >tone~3 ~~ 陰去 ~~
     </text>
     
     <!-- tone 4 陽平 -->
@@ -1431,7 +1431,7 @@ and is **never** sounded as a consonant.
       y = "-1.1"
       \font-size
       dy = "-0.5em"
-      >tone~4 (! 陽平 !)
+      >tone~4 ~~ 陽平 ~~
     </text>
     
     <!-- tone 5 陽上 -->
@@ -1446,7 +1446,7 @@ and is **never** sounded as a consonant.
       \font-size
       dy = "-0.5em"
       transform = "rotate(-12.41 0 -2.75)"
-      >tone~5 (! 陽上 !)
+      >tone~5 ~~ 陽上 ~~
       <!-- arctan (1.1/5) == 12.41 degree -->
     </text>
     
@@ -1461,7 +1461,7 @@ and is **never** sounded as a consonant.
       y = "-2.2"
       \font-size
       dy = "-0.5em"
-      >tone~6 (! 陽去 !)
+      >tone~6 ~~ 陽去 ~~
     </text>
     
     <!-- tone 7 高陰入 -->
@@ -1475,7 +1475,7 @@ and is **never** sounded as a consonant.
       y = "-5.5"
       \font-size
       dy = "-0.5em"
-      >tone~7 (! 高陰入 !)
+      >tone~7 ~~ 高陰入 ~~
     </text>
     
     <!-- tone 8 低陰入 -->
@@ -1489,7 +1489,7 @@ and is **never** sounded as a consonant.
       y = "-3.3"
       \font-size
       dy = "-0.5em"
-      >tone~8 (! 低陰入 !)
+      >tone~8 ~~ 低陰入 ~~
     </text>
     
     <!-- tone 9 陽入 -->
@@ -1503,7 +1503,7 @@ and is **never** sounded as a consonant.
       y = "-2.2"
       \font-size
       dy = "-0.5em"
-      >tone~9 (! 陽入 !)
+      >tone~9 ~~ 陽入 ~~
     </text>
     
     <!-- pitch num. -->

@@ -141,14 +141,14 @@
       \/}
     </code></pre>
   ====
-  a(!
+  a~~
     <script>\
       document.addEventListener("DOMContentLoaded",function(){renderDate()})\
     </script>
-  !)
+  ~~
 %}
 
-{: \yyyy-mm-dd : a(! <span class="js-date">yyyy-mm-dd</span> !) :}
+{: \yyyy-mm-dd : a~~ <span class="js-date">yyyy-mm-dd</span> ~~ :}
 
 
 <!--
@@ -691,21 +691,21 @@
 -->
 
 {:: \svg-style:stroke-declarations ::
-  a(!
+  a~~
     stroke: black;
     vector-effect: non-scaling-stroke;
-  !)
+  ~~
 ::}
 
 {:: \svg-style:text-declarations ::
-  a(!
+  a~~
     font-family: sans-serif;
     text-anchor: middle;
-  !)
+  ~~
 ::}
 
 {:: \svg-style:maths-font-rulesets ::
-  a(!
+  a~~
     @font-face {
       font-display: swap;
       font-family: "KaTeX_Math-Italic";
@@ -728,11 +728,11 @@
     .maths-regular {
       font-family: "KaTeX_Main-Regular";
     }
-  !)
+  ~~
 ::}
 
 {:: \svg-style:stroke-colour-rulesets ::
-  a(!
+  a~~
     line.colour-r {
       stroke: red;
     }
@@ -748,11 +748,11 @@
     line[class^='colour-'] {
       stroke-width: 3;
     }
-  !)
+  ~~
 ::}
 
 {:: \svg-style:text-colour-rulesets ::
-  a(!
+  a~~
     text.colour-r {
       fill: red;
     }
@@ -765,7 +765,7 @@
     text.colour-v {
       fill: darkviolet;
     }
-  !)
+  ~~
 ::}
 
 <!-- Container [svg-styles/ /] -->

@@ -1,7 +1,7 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title (! "An History of Mr Shih's Eating of Lions" 《施氏食獅史》 !)
+  %title ~~ "An History of Mr Shih's Eating of Lions" 《施氏食獅史》 ~~
   %title-suffix \title-suffix
   %title-en ".[An] History of Mr~Shih's Eating of Lions"
   %author Conway
@@ -10,11 +10,11 @@
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
-  %description c(!
+  %description c~~
     An English translation of the Mandarin "lion tongue twister" \
     《施氏食獅史》, "shi shi shi shi shi", or \
     "An History of Mr Shih's Eating of Lions".
-  !)
+  ~~
 %%
 
 [[====
@@ -236,7 +236,7 @@ The Chinese source text is from Page~143 of Chao's
 ====
 
 \cite-this-page[%title-en][lion-eating][
-  (! ``\textit{An} {History} of {Mr}~{Shih's} {Eating} of {Lions}'' !)
+  ~~ ``\textit{An} {History} of {Mr}~{Shih's} {Eating} of {Lions}'' ~~
 ]
 
 %footer-element

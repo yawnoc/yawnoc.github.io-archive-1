@@ -1,4 +1,4 @@
 <!-- Load rendering JS -->
-a(!
+a~~
   <script defer src="/rendering.min.js"></script>
-!)
+~~

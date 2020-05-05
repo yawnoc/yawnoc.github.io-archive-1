@@ -10,14 +10,14 @@
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
   %description
-    An English translation of Mao's 1920 suggestion, in (! 長沙《大公報》 !), \
+    An English translation of Mao's 1920 suggestion, in ~~ 長沙《大公報》 ~~, \
     of dividing China into 27 separate countries, \
-    including the Republic of Hunan ((! 湖南共和國 !)).
-  %css a(!
+    including the Republic of Hunan (~~ 湖南共和國 ~~).
+  %css a~~
     .red-emphasis {
       color: red;
     }
-  !)
+  ~~
 %%
 
 
@@ -69,15 +69,15 @@ as the second appears to have many transcription errors:
 ++++
 1. [Google books] \+
   This is in "Selected Historical Materials of .[the] Hunan Autonomy Movement"
-  ([simp/(! 《湖南自治运动史料选编》 !)/])
-  by Li Tieming ([simp/(! 李铁明 !)/]),
+  ([simp/~~ 《湖南自治运动史料选编》 ~~/])
+  by Li Tieming ([simp/~~ 李铁明 ~~/]),
   locatable by searching Google Books for
   `"湖南自治运动史料选编" "湖南建设问题的根本问题——湖南共和国"`.
 
 2. [marxists.org] ([archived version]) \+
   This is taken from the 1968 Wuhan Version of
   "Long Live Mao Ts(e^)-tung Thought"
-  ([simp/(! 1968年武汉版《毛泽东思想万岁》 !)/]).
+  ([simp/~~ 1968年武汉版《毛泽东思想万岁》 ~~/]).
 
 ++++
 
@@ -546,7 +546,7 @@ And who now forbids any mention of self-determination or independence?
 >>
 
 
-\cite-this-page[][mao-separatism][(! {Mao} on separatism: 27~{Chinas} !)]
+\cite-this-page[][mao-separatism][~~ {Mao} on separatism: 27~{Chinas} ~~]
 
 %footer-element
 

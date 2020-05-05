@@ -4,7 +4,7 @@
   ----------------------------------------------------------------
 -->
 
-a(!
+a~~
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
     integrity="sha384-\
@@ -18,7 +18,7 @@ a(!
         '/katex.min.css'\
       )\
     ">
-!)
+~~
 
 
 <!--
@@ -27,7 +27,7 @@ a(!
   ----------------------------------------------------------------
 -->
 
-a(!
+a~~
   <script defer
     src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
     integrity="sha384-\
@@ -44,4 +44,4 @@ a(!
       this.remove()\
     "
     onload="renderMaths()"></script>
-!)
+~~

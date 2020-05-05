@@ -1,9 +1,9 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title (!
+  %title ~~
     "Record of the Lion's Pavilion, Victoria Peak" 《太平山獅子亭記》
-  !)
+  ~~
   %title-suffix \title-suffix
   %title-en "Record of .[the] Lion's Pavilion, Victoria~Peak"
   %author Conway
@@ -12,11 +12,11 @@
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
-  %description c(!
+  %description c~~
     An English translation of 《太平山獅子亭記》, \
     "Record of .[the] Lion's Pavilion, Victoria~Peak", \
     the text on a plaque in the Lion's Pavilion, Victoria Peak, Hong Kong.
-  !)
+  ~~
   %css
     .level-tone {
       color: green;
@@ -571,7 +571,7 @@ The inserted punctuation is my own.
 ====
 
 \cite-this-page[%title-en][lion-pavilion][
-  (! ``{Record} of \textit{the} {Lion's} {Pavilion}, {Victoria}~{Peak}'' !)
+  ~~ ``{Record} of \textit{the} {Lion's} {Pavilion}, {Victoria}~{Peak}'' ~~
 ]
 
 %footer-element

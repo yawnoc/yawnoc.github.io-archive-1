@@ -13,7 +13,7 @@
   %description
     A simple mathematical model for the sun's path through the sky \
     and the amount of daytime at different times of the year.
-  %css a(!
+  %css a~~
     .timeanddate {
       color: #057;
     }
@@ -23,7 +23,7 @@
     .with-correction {
       background: lightyellow;
     }
-  !)
+  ~~
 %%
 
 <!--

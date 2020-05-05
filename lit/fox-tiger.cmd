@@ -1,7 +1,7 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title (! "The Fox Feigneth the Tiger's Authority" 《狐假虎威》 !)
+  %title ~~ "The Fox Feigneth the Tiger's Authority" 《狐假虎威》 ~~
   %title-suffix \title-suffix
   %title-en ".[The] Fox Feigneth .[the] Tiger's Authority"
   %author Conway
@@ -10,10 +10,10 @@
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
-  %description c(!
+  %description c~~
     An English translation of 《狐假虎威》, \
     "The Fox Feigneth the Tiger's Authority".
-  !)
+  ~~
 %%
 
 [[====
@@ -232,7 +232,7 @@ The Chinese source text is from Chinese Text Project:
 >>
 
 \cite-this-page[%title-en][fox-tiger][
-  (! ``\textit{The} {Fox} {Feigneth} \textit{the} {Tiger's} {Authority}'' !)
+  ~~ ``\textit{The} {Fox} {Feigneth} \textit{the} {Tiger's} {Authority}'' ~~
 ]
 
 %footer-element

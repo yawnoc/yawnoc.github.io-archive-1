@@ -13,11 +13,11 @@
   %description
     A derivation of the optimal launch angle (which maximises range) \
     for projectile motion (no air resistance) from a raised platform.
-  %css a(!
+  %css a~~
     li {
       margin-bottom: 1.3em;
     }
-  !)
+  ~~
 %%
 
 [[====

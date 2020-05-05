@@ -1,9 +1,9 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title (!
+  %title ~~
     "Q & A with Confucius: the Little Child's Discourse" 《孔子問答：小兒論》
-  !)
+  ~~
   %title-suffix \title-suffix
   %title-en "Q~.[\&]~A .[with] Confucius: .[the] Little Child's Discourse"
   %author Conway
@@ -12,11 +12,11 @@
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
-  %description c(!
+  %description c~~
     An English translation of 《孔子問答：小兒論》, \
     "Q & A with Confucius: the Little Child's Discourse". \
     Basically Confucius getting his arse whooped by a little kid.
-  !)
+  ~~
   %css
     .danger {
       color: red;
@@ -1301,10 +1301,10 @@ see [the actual first page of the almanac text][almanac text].
 
 
 \cite-this-page[%title-en][little-child][
-  c(!
+  c~~
     ``{Q}~\textit{\&}~{A} \emph{textit} {Confucius}: \
     \textit{the} {Little} {Child's} {Discourse}''
-  !)
+  ~~
 ]
 
 %footer-element
