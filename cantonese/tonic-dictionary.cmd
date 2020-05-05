@@ -73,17 +73,17 @@ Note that Jyutping (like all contemporary romanisation systems)
 
 
 <!-- Header rows for tables -->
-{:
+{::
   \header-row
-:
-  ^^^
-    /
+::
+  |^
+    ==
       ; (n)
       ; Williams
       ; Conway
       ; Jyutping
-  ~~~
-:}
+  |:
+::}
 
 
 <!-- Page row \page-row[p] n -->
@@ -95,7 +95,7 @@ Note that Jyutping (like all contemporary romanisation systems)
     [^\S\n]+
   (?P<williams_page_number> [0-9]+(\\\*)? )
 %
-  /
+  ==
     ,{merged-cell}[,4]
       [Page~\g<williams_page_number>][" \g<archive_page_number> "]
 %}
@@ -113,7 +113,7 @@ Note that Jyutping (like all contemporary romanisation systems)
     [^\S\n]+
   (?P<jyutping> [^\s\n]+? )
 %
-  /
+  ==
     , (\g<williams_index>)
     , \g<williams>
     , \g<conway>

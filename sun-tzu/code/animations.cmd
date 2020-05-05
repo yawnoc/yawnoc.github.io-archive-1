@@ -80,12 +80,12 @@ and run the following:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-  /
+  ==
     ; $81 \times 81 = 6561$
     ; $1989 \times 64 = 127296$
     ; $1024 \times 1024 = 1048576$
     ; $246 \times 97531 = 23992626$
-  /
+  ==
     , \multiplication-animation[81 * 81]
     , \multiplication-animation[1989 * 64]
     , \multiplication-animation[1024 * 1024]
@@ -107,7 +107,7 @@ and run the following:
   \]
 %
   ![Animation for \\sun-tzu multiplication: \g<a> multiplied by \g<b>](
-    \//sun-tzu/code/multiply-\g<a>-\g<b>.gif
+    /sun-tzu/code/multiply-\g<a>-\g<b>.gif
   )
 %}
 
@@ -122,7 +122,7 @@ and run the following:
   \]
 %
   ![Animation for \\sun-tzu division: \g<a> divided by \g<b>](
-    \//sun-tzu/code/divide-\g<a>-\g<b>.gif
+    /sun-tzu/code/divide-\g<a>-\g<b>.gif
   )
 %}
 
@@ -146,12 +146,12 @@ and run the following:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-  /
+  ==
     ; $100 \div 6 = 16 + \dfrac{4}{6}$
     ; $1989 \div 64 = 31 + \dfrac{5}{64}$
     ; $6561 \div 9 = 729$
     ; $97531 \div 4 = 24382 + \dfrac{3}{4}$
-  /
+  ==
     , \division-animation[100 / 6]
     , \division-animation[1989 / 64]
     , \division-animation[6561 / 9]

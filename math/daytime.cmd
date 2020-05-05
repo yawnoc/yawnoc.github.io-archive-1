@@ -858,22 +858,22 @@ for Hong Kong and Perth:
 ||||||{centred-block}
 ||||{overflowing}
 ''''{no-wrapping}
-^^^
-/
+|^
+==
   ;[2] Location \+ ($\delta$)
   ;[,3] Daytime
-/
+==
   ; [tad/   \tad    /]
   ; [mod/   Model   /]
   ; [mod/   Error   /]
-~~~
-/
+|:
+==
   ; [Hong Kong](\tad-url sun/hong-kong/hong-kong) \+
     (+22°19')
   , [tad/   13 \, hr \, 26' \, 41"  /]
   , [mod/   13 \, hr \, 18'         /]
   , [mod/   −9.' (−1.1%)            /]
-/
+==
   ; [Perth](\tad-url sun/australia/perth) \+
     (−31°57')
   , [tad/   10 \, hr \, \08' \, 18" /]
@@ -1000,22 +1000,22 @@ to within two minutes:
 ||||||{centred-block}
 ||||{overflowing}
 ''''{no-wrapping}
-^^^
-/
+|^
+==
   ;[2] Location \+ ($\delta$)
   ;[,3] Daytime
-/
+==
   ; [tad/   \tad    /]
   ; [modc/  Model   /]
   ; [modc/  Error   /]
-~~~
-/
+|:
+==
   ; [Hong Kong](\tad-url sun/hong-kong/hong-kong) \+
     (+22°19')
   , [tad/   13 \, hr \, 26' \, 41"  /]
   , [modc/  13 \, hr \, 26'         /]
   , [modc/  −1.' (−0.1%)            /]
-/
+==
   ; [Perth](\tad-url sun/australia/perth) \+
     (−31°57')
   , [tad/   10 \, hr \, \08' \, 18"   /]
@@ -1041,7 +1041,7 @@ The entries in the table are of the form
 ||||||{centred-block}
 ||||{overflowing}
 ''''{no-wrapping}
-/
+==
   , [tad/ timeanddate.com /]  \+
     [mod/ Model (Error)   /]  \+
     [modc/ Model with refraction correction (Error) /].
@@ -1056,17 +1056,17 @@ No refraction correction is used for the sun's noon altitude.
 ||||||{centred-block}
 ||||{overflowing}
 ''''{no-wrapping}
-^^^
-/
+|^
+==
   ;[2] Location \+ ($\delta$)
   ;[2] Daytime
   ;[2] Sun's altitude \+ at noon
   ;[,2] Sun's bearing at
-/
+==
   ; sunrise
   ; sunset
-~~~
-/
+|:
+==
   ; [Station Nord](\tad-url sun/greenland/station-nord) \+
     (+81°36')
   ,
@@ -1076,11 +1076,11 @@ No refraction correction is used for the sun's noon altitude.
   ,
     [tad/   31.0°           /]  \+
     [mod/   30.8° (−0.2°)   /]  \+
-    \/~
+    ~
   ,{merged-cell}[,2]
     N/A \+
     (midnight sun)
-/
+==
   ; [Reykjavik](\tad-url sun/iceland/reykjavik) \+
     (+64°9')
   ,
@@ -1090,7 +1090,7 @@ No refraction correction is used for the sun's noon altitude.
   ,
     [tad/   48.4°           /]  \+
     [mod/   48.3° (−0.1°)   /]  \+
-    \/~
+    ~
   ,
     [tad/   24°  /]  \+
     [mod/   29.0° (+5.°)  /]  \+
@@ -1099,7 +1099,7 @@ No refraction correction is used for the sun's noon altitude.
     [tad/   335°  /]  \+
     [mod/   331.0° (−4.°)  /]  \+
     [modc/  334.6° (−0.°)  /]
-/
+==
   ;
     [London](\tad-url sun/uk/london) \+
     (+51°30')
@@ -1110,7 +1110,7 @@ No refraction correction is used for the sun's noon altitude.
   ,
     [tad/   61.1°           /]  \+
     [mod/   60.9° (−0.2°)   /]  \+
-    \/~
+    ~
   ,
     [tad/   51°           /]  \+
     [mod/   52.2° (+1.°)  /]  \+
@@ -1119,7 +1119,7 @@ No refraction correction is used for the sun's noon altitude.
     [tad/   309°            /]  \+
     [mod/   307.8° (−1.°)   /]  \+
     [modc/  309.1° (+0.°)   /]
-/
+==
   ;
     [Hong Kong](\tad-url sun/hong-kong/hong-kong) \+
     (+22°19')
@@ -1130,7 +1130,7 @@ No refraction correction is used for the sun's noon altitude.
   ,
     [tad/   89.7°           /]  \+
     [mod/   89.9° (+0.2°)   /]  \+
-    \/~
+    ~
   ,
     [tad/   65°           /]  \+
     [mod/   65.7° (+1.°)  /]  \+
@@ -1139,7 +1139,7 @@ No refraction correction is used for the sun's noon altitude.
     [tad/   295°            /]  \+
     [mod/   294.3° (−1.°)   /]  \+
     [modc/  294.7° (−0.°)   /]
-/
+==
   ;
     [Singapore](\tad-url sun/singapore/singapore) \+
     (+1°17')
@@ -1150,7 +1150,7 @@ No refraction correction is used for the sun's noon altitude.
   ,
     [tad/   68.7°           /]  \+
     [mod/   68.9° (+0.2°)   /]  \+
-    \/~
+    ~
   ,
     [tad/   67°  /]  \+
     [mod/   67.6° (+1.°)  /]  \+
@@ -1159,7 +1159,7 @@ No refraction correction is used for the sun's noon altitude.
     [tad/   293°  /]  \+
     [mod/   292.4° (−1.°)  /]  \+
     [modc/  292.4° (−1.°)  /]
-/
+==
   ;
     [Perth](\tad-url sun/australia/perth) \+
     (−31°57')
@@ -1170,7 +1170,7 @@ No refraction correction is used for the sun's noon altitude.
   ,
     [tad/  35.5°          /]  \+
     [mod/  35.6° (+0.1°)  /]  \+
-    \/~
+    ~
   ,
     [tad/   64°           /]  \+
     [mod/   63.3° (−1.°)  /]  \+
@@ -1179,7 +1179,7 @@ No refraction correction is used for the sun's noon altitude.
     [tad/   296°            /]  \+
     [mod/   296.7° (+1.°)  /]  \+
     [modc/  296.1° (+0.°)  /]
-/
+==
   ;
     [Enderby Land \+@6630103](\tad-url sun/@6630103) \+
     (−67°30')
@@ -1190,7 +1190,7 @@ No refraction correction is used for the sun's noon altitude.
   ,
     [tad/   \00.4°          /]  \+
     [mod/   \00.1° (−0.3°)  /]  \+
-    \/~
+    ~
   ,
     [tad/    14°            /]  \+
     [mod/   \04.7° (−\09°)  /]  \+
@@ -1199,7 +1199,7 @@ No refraction correction is used for the sun's noon altitude.
     [tad/   346°            /]  \+
     [mod/   355.3° (+\09°)  /]  \+
     [modc/  330.9° (−15°)   /]
-/
+==
   ;
     [Concordia Station](\tad-url sun/antarctica/concordia-station) \+
     (−75°6')
@@ -1210,7 +1210,7 @@ No refraction correction is used for the sun's noon altitude.
   ,
     [tad/  −7.7°          /]  \+
     [mod/  −7.5° (+0.2°)  /]  \+
-    \/~
+    ~
   ,{merged-cell}[,2]
     N/A \+
     (polar night)

@@ -114,8 +114,8 @@ as spoken and perceived by me.
     (?P<type> [\s\S]*? )
   \]
 %
-  ^^^
-    /
+  |^
+    ==
       ; \\heading-cell[\g<type>]
       ; IPA
       ; Conway
@@ -123,7 +123,7 @@ as spoken and perceived by me.
       ; Yale
       ; S.~Lau
       ; Conway's approximation
-  ~~~
+  |:
 %}
 {: \heading-cell[initials] : Initials (聲) :}
 {: \heading-cell[finals] : Finals (韻) :}
@@ -136,7 +136,7 @@ as spoken and perceived by me.
 ||||{overflowing}
 ''''
   \header-row[initials]
-  /
+  ==
     , 巴
     , [p]
     , [.p.]
@@ -144,7 +144,7 @@ as spoken and perceived by me.
     , b
     , b
     , [[:p:] as in s[:p:]y]
-  /
+  ==
     , 怕
     , [pʰ]
     , [.p'.]
@@ -152,7 +152,7 @@ as spoken and perceived by me.
     , p
     , p
     , [[:p:] as in [:p:]ie]
-  /
+  ==
     , 媽
     , [m]
     , [.m.]
@@ -160,7 +160,7 @@ as spoken and perceived by me.
     , m
     , m
     , [[:m:] as in [:m:]y]
-  /
+  ==
     , 花
     , [f]
     , [.f.]
@@ -179,7 +179,7 @@ as spoken and perceived by me.
 ||||{overflowing}
 ''''
   \header-row[initials]
-  /
+  ==
     , 打
     , [t]
     , [.t.]
@@ -187,7 +187,7 @@ as spoken and perceived by me.
     , d
     , d
     , [[:t:] as in s[:t:]y]
-  /
+  ==
     , 他
     , [tʰ]
     , [.t'.]
@@ -195,7 +195,7 @@ as spoken and perceived by me.
     , t
     , t
     , [[:t:] as in [:t:]ie], in Received Pronunciation
-  /
+  ==
     , 那
     , [n]
     , [.n.]
@@ -203,7 +203,7 @@ as spoken and perceived by me.
     , n
     , n
     , [[:n:] as in [:n:]igh]
-  /
+  ==
     , 啦
     , [l]
     , [.l.]
@@ -222,7 +222,7 @@ as spoken and perceived by me.
 ||||{overflowing}
 ''''
   \header-row[initials]
-  /
+  ==
     , 家
     , [k]
     , [.k.]
@@ -230,7 +230,7 @@ as spoken and perceived by me.
     , g
     , g
     , [[:k:] as in s[:k:]y]
-  /
+  ==
     , 卡
     , [kʰ]
     , [.k'.]
@@ -238,7 +238,7 @@ as spoken and perceived by me.
     , k
     , k
     , [[:k:] as in [:k:]ey]
-  /
+  ==
     , 牙
     , [ŋ]
     , [.ng.]
@@ -246,7 +246,7 @@ as spoken and perceived by me.
     , ng
     , ng
     , [[:ng:] as in si[:ng:]er]
-  /
+  ==
     , 蝦
     , [h]
     , [.h.]
@@ -254,7 +254,7 @@ as spoken and perceived by me.
     , h
     , h
     , [[:h:] as in [:h:]e]
-  /
+  ==
     , 瓜
     , [kʷ]
     , [.kw.]
@@ -262,7 +262,7 @@ as spoken and perceived by me.
     , gw
     , gw
     , [[:qu:] as in s[:qu:]eeze]
-  /
+  ==
     , 誇
     , [kʷʰ]
     , [.k'w.]
@@ -270,7 +270,7 @@ as spoken and perceived by me.
     , kw
     , kw
     , [[:qu:] as in [:qu:]een]
-  /
+  ==
     , 華
     , [w]
     , [.w.]
@@ -289,7 +289,7 @@ as spoken and perceived by me.
 ||||{overflowing}
 ''''
   \header-row[initials]
-  /
+  ==
     , 將
     , [ts]
     , [.ts.]
@@ -297,7 +297,7 @@ as spoken and perceived by me.
     ,[2] j
     ,[2] j
     , [[:ts:] as in lis[:ts:]]
-  /
+  ==
     , 張
     , [tɕ]
     , [.ch.]
@@ -306,7 +306,7 @@ as spoken and perceived by me.
       and [[:t:] as in s[:t:]upid],
       with the latter in a sufficiently broad Australian accent
       for which the T is sounded like [[:ch:] as in [:ch:]ew]
-  /
+  ==
     , 槍
     , [tsʰ]
     , [.ts'.]
@@ -314,14 +314,14 @@ as spoken and perceived by me.
     ,[2] ch
     ,[2] ch
     , [[:ts:] as in hi[:ts:]]
-  /
+  ==
     , 昌
     , [tɕʰ]
     , [.ch'.]
     ,
       halfway between [[:ts:] as in hi[:ts:]]
       and [[:ch:] as in hit[:ch:]]
-  /
+  ==
     , 相
     , [s]
     , [.s.]
@@ -329,14 +329,14 @@ as spoken and perceived by me.
     ,[2] s
     ,[2] s
     , [[:s:] as in [:s:]igh]
-  /
+  ==
     , 傷
     , [ɕ]
     , [.sh.]
     ,
       halfway between [[:s:] as in [:s:]igh]
       and [[:sh:] as in [:sh:]y]
-  /
+  ==
     , 也
     , [j]
     , [.y.]
@@ -405,7 +405,7 @@ of the merger depending on the vowel which follows:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-  /
+  ==
     ; Following vowel
     , [aː]
     , [ɐ]
@@ -418,14 +418,14 @@ of the merger depending on the vowel which follows:
     , [œ]
     , [ɵ]
     , [yː]
-  /
+  ==
     ;[3] Favoured post-merger initial
     ,{merged-cell}[,5] [_ts]
     ,{merged-cell}[,6] [_ch]
-  /
+  ==
     ,{merged-cell}[,5] [_ts']
     ,{merged-cell}[,6] [_ch']
-  /
+  ==
     ,{merged-cell}[,10] [_s]
     ,{merged-cell} [_sh]
 ''''
@@ -511,7 +511,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 叉
     , [aː]
     , [.aa.]
@@ -521,7 +521,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:ar:] as in c[:ar:]],
       in a general Australian accent with strictly no R consonant
-  /
+  ==
     , 釵
     , [aːi]
     , [.aai.]
@@ -529,7 +529,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     , aai
     , aai
     , [[:y:] as in m[:y:]], in Received Pronunciation
-  /
+  ==
     , 抄
     , [aːu]
     , [.aau.]
@@ -537,7 +537,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     , aau
     , aau
     , [[:ow:] as in c[:ow:]], in Received Pronunciation
-  /
+  ==
     , 參
     , [aːm]
     , [.aam.]
@@ -547,7 +547,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:arm:] as in [:arm:]],
       in a general Australian accent with strictly no R consonant
-  /
+  ==
     , 餐
     , [aːn]
     , [.aan.]
@@ -557,7 +557,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:arn:] as in b[:arn:]],
       in a general Australian accent with strictly no R consonant
-  /
+  ==
     , 撐
     , [aːŋ]
     , [.aang.]
@@ -568,7 +568,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
       [[:ar:] as in c[:ar:]],
       in a general Australian accent with strictly no R consonant,
       followed by [[:ng:] as in si[:ng:]]
-  /
+  ==
     , 插
     , [aːp̚]
     , [.aap.]
@@ -579,7 +579,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
       [[:ar:] as in c[:ar:]],
       in a general Australian accent with strictly no R consonant,
       followed by [[:p:] as in co[:p:]ter] with no audibly released P
-  /
+  ==
     , 察
     , [aːt̚]
     , [.aat.]
@@ -594,7 +594,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
         \OR
       [[:art:] as in c[:art:]wheel] with no audibly released T,
       in a general Australian accent with strictly no R consonant
-  /
+  ==
     , 拆
     , [aːk̚]
     , [.aak.]
@@ -620,7 +620,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 仔
     , [ɐi]
     , [.ai.]
@@ -631,7 +631,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
       [[:ay:] as in b[:ay:]],
       in a general, perhaps slightly broad Australian accent,
       but with shorter A
-  /
+  ==
     , 走
     , [ɐu]
     , [.au.]
@@ -643,7 +643,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
       in a general Australian accent,
       followed by [[:u:] as in p[:u:]ll],
       in a general Australian accent
-  /
+  ==
     , 針
     , [ɐm]
     , [.am.]
@@ -651,7 +651,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     , am
     , am
     , [[:um:] as in s[:um:]], in a general Australian accent
-  /
+  ==
     , 真
     , [ɐn]
     , [.an.]
@@ -659,7 +659,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     , an
     , an
     , [[:un:] as in s[:un:]], in a general Australian accent
-  /
+  ==
     , 增
     , [ɐŋ]
     , [.ang.]
@@ -667,7 +667,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     , ang
     , ang
     , [[:ung:] as in s[:ung:]], in a general Australian accent
-  /
+  ==
     , 汁
     , [ɐp̚]
     , [.ap.]
@@ -677,7 +677,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:u:] as in c[:u:]t], in a general Australian accent,
       followed by [[:p:] as in co[:p:]ter] with no audibly released P
-  /
+  ==
     , 疾
     , [ɐt̚]
     , [.at.]
@@ -691,7 +691,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
         \OR
       [[:ut:] as in b[:ut:]ler] with no audibly released T,
       in a general Australian accent
-  /
+  ==
     , 仄
     , [ɐk̚]
     , [.ak.]
@@ -712,7 +712,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 爹
     , [ɛː]
     , [.e.]
@@ -722,7 +722,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:e:] as in y[:e:]ah],
       in a general Australian accent, but slightly longer
-  /
+  ==
     , 地
     , [ei]
     , [.ei.]
@@ -732,7 +732,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:ay:] as in b[:ay:]], in Received Pronunciation,
       but with shorter A and longer Y
-  /
+  ==
     , 掉
     , [ɛːu]
     , [.eu.]
@@ -743,7 +743,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
       [[:e:] as in y[:e:]ah], in a general Australian accent,
       followed by
       [[:u:] as in p[:u:]ll], in a general Australian accent
-  /
+  ==
     , 舔
     , [ɛːm]
     , [.em.]
@@ -753,7 +753,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:em:] as in h[:em:]], in a general Australian accent,
       but longer
-  /
+  ==
     , 贏
     , [ɛːŋ]
     , [.eng.]
@@ -763,7 +763,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:e:] as in y[:e:]ah], in a general Australian accent,
       but slightly longer, followed by [[:ng:] as in si[:ng:]]
-  /
+  ==
     , 夾
     , [ɛːp̚]
     , [.ep.]
@@ -777,7 +777,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
         \OR
       [[:ep:] as in s[:ep:]tic] with no audibly released P,
       in a general Australian accent, but longer
-  /
+  ==
     , 尺
     , [ɛːk̚]
     , [.ek.]
@@ -802,7 +802,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 而
     , [iː]
     , [.ee.]
@@ -810,7 +810,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     , i
     , i
     , [[:ee:] as in b[:ee:]], in Received Pronunciation
-  /
+  ==
     , 堯
     , [iːu]
     , [.eeu.]
@@ -821,7 +821,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
       [[:ee:] as in b[:ee:]], in Received Pronunciation,
       followed by
       [[:u:] as in p[:u:]ll], in a general Australian accent
-  /
+  ==
     , 嚴
     , [iːm]
     , [.eem.]
@@ -829,7 +829,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     , im
     , im
     , [[:eem:] as in s[:eem:]], in Received Pronunciation
-  /
+  ==
     , 言
     , [iːn]
     , [.een.]
@@ -837,7 +837,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     , in
     , in
     , [[:een:] as in s[:een:]], in Received Pronunciation
-  /
+  ==
     , 形
     , [eŋ]
     , [.ing.]
@@ -849,7 +849,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
       and [[:e:] as in t[:e:]n],
       both in a general Australian accent,
       followed by [[:ng:] as in si[:ng:]]
-  /
+  ==
     , 葉
     , [iːp̚]
     , [.eep.]
@@ -859,7 +859,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:ee:] as in b[:ee:]], in Received Pronunciation,
       followed by [[:p:] as in co[:p:]ter] with no audibly released P
-  /
+  ==
     , 熱
     , [iːt̚]
     , [.eet.]
@@ -869,7 +869,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
     ,
       [[:ee:] as in b[:ee:]], in Received Pronunciation,
       followed by [[:t:] as in a[:t:]las] with no audibly released T 
-  /
+  ==
     , 亦
     , [ek̚]
     , [.ik.]
@@ -898,7 +898,7 @@ and is **never** sounded as a consonant.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 歌
     , [ɔː]
     , [.or.]
@@ -908,7 +908,7 @@ and is **never** sounded as a consonant.
     ,
       [[:or:] as in n[:or:]],
       in a general Australian accent with strictly no R consonant
-  /
+  ==
     , 該
     , [ɔːy]
     , [.oi.]
@@ -918,7 +918,7 @@ and is **never** sounded as a consonant.
     ,
       [[:oy:] as in b[:oy:]], in a general Australian accent,
       but with longer O
-  /
+  ==
     , 高
     , [ou]
     , [.ou.]
@@ -931,7 +931,7 @@ and is **never** sounded as a consonant.
       but much much shorter,
       followed by
       [[:u:] as in p[:u:]ll], in a general Australian accent
-  /
+  ==
     , 干
     , [ɔːn]
     , [.orn.]
@@ -941,7 +941,7 @@ and is **never** sounded as a consonant.
     ,
       [[:orn:] as in h[:orn:]],
       in a general Australian accent with strictly no R consonant
-  /
+  ==
     , 江
     , [ɔːŋ]
     , [.ong.]
@@ -951,7 +951,7 @@ and is **never** sounded as a consonant.
     ,
       [[:ong:] as in s[:ong:]], in a general Australian accent,
       but longer
-  /
+  ==
     , 葛
     , [ɔːt̚]
     , [.ort.]
@@ -966,7 +966,7 @@ and is **never** sounded as a consonant.
         \OR
       [[:ort:] as in f[:ort:]let] with no audibly released T,
       in a general Australian accent with strictly no R consonant
-  /
+  ==
     , 各
     , [ɔːk̚]
     , [.ok.]
@@ -987,7 +987,7 @@ and is **never** sounded as a consonant.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 呼
     , [uː]
     , [.oo.]
@@ -997,7 +997,7 @@ and is **never** sounded as a consonant.
     ,
       [[:u:] as in p[:u:]ll], in a general Australian accent,
       but longer
-  /
+  ==
     , 灰
     , [uːy]
     , [.ooi.]
@@ -1008,7 +1008,7 @@ and is **never** sounded as a consonant.
       [[:u:] as in p[:u:]ll], in a general Australian accent,
       but longer, followed by
       [[:y:] as in bo[:y:]], in a general Australian accent
-  /
+  ==
     , 歡
     , [uːn]
     , [.oon.]
@@ -1018,7 +1018,7 @@ and is **never** sounded as a consonant.
     ,
       [[:u:] as in p[:u:]ll], in a general Australian accent,
       but longer, followed by [[:n:] as in si[:n:]]
-  /
+  ==
     , 風
     , [oŋ]
     , [.ung.]
@@ -1028,7 +1028,7 @@ and is **never** sounded as a consonant.
     ,
       [[:oo:] as in t[:oo:]k], in a general Australian accent,
       followed by [[:ng:] as in si[:ng:]]
-  /
+  ==
     , 闊
     , [uːt̚]
     , [.oot.]
@@ -1039,7 +1039,7 @@ and is **never** sounded as a consonant.
       [[:u:] as in p[:u:]ll], in a general Australian accent,
       but longer,
       followed by [[:t:] as in a[:t:]las] with no audibly released T
-  /
+  ==
     , 福
     , [ok̚]
     , [.uk.]
@@ -1064,7 +1064,7 @@ and is **never** sounded as a consonant.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 靴
     , [œː]
     , [.(oe).]
@@ -1075,7 +1075,7 @@ and is **never** sounded as a consonant.
       [[:ö:] as in H[:ö:]lle], in German
         \OR
       [[:eu:] as in j[:eu:]ne], in French
-  /
+  ==
     , 香
     , [œːŋ]
     , [.(oe)ng.]
@@ -1085,7 +1085,7 @@ and is **never** sounded as a consonant.
     ,
       [[:ö:] as in H[:ö:]lle], in German,
       followed by [[:ng:] as in si[:ng:]]
-  /
+  ==
     , 卻
     , [œːk̚]
     , [.(oe)k.]
@@ -1106,7 +1106,7 @@ and is **never** sounded as a consonant.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 需
     , [ɵy]
     , [.\_(u").]
@@ -1116,7 +1116,7 @@ and is **never** sounded as a consonant.
     ,
       [[:ö:] as in H[:ö:]lle], in German, but extremely short,
       followed by [[:ü:] as in [:ü:]ber], in German
-  /
+  ==
     , 詢
     , [ɵn]
     , [.\_n.]
@@ -1126,7 +1126,7 @@ and is **never** sounded as a consonant.
     ,
       [[:ö:] as in H[:ö:]lle], in German, but extremely short,
       followed by [[:n:] as in si[:n:]]
-  /
+  ==
     , 戌
     , [ɵt̚]
     , [.\_t.]
@@ -1147,7 +1147,7 @@ and is **never** sounded as a consonant.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 遇
     , [yː]
     , [.(u").]
@@ -1155,7 +1155,7 @@ and is **never** sounded as a consonant.
     , yu
     , ue
     , [[:ü:] as in [:ü:]ber], in German
-  /
+  ==
     , 願
     , [yːn]
     , [.(u")n.]
@@ -1165,7 +1165,7 @@ and is **never** sounded as a consonant.
     ,
       [[:ü:] as in [:ü:]ber], in German,
       followed by [[:n:] as in si[:n:]]
-  /
+  ==
     , 月
     , [yːt̚]
     , [.(u")t.]
@@ -1186,7 +1186,7 @@ and is **never** sounded as a consonant.
 ||||{overflowing}
 ''''
   \header-row[finals]
-  /
+  ==
     , 唔
     , [m̩]
     , [.m.]
@@ -1194,7 +1194,7 @@ and is **never** sounded as a consonant.
     , m
     , m
     , [[:m:] as in su[:m:]], but longer
-  /
+  ==
     , 吾
     , [ŋ̍]
     , [.ng.]
@@ -1214,16 +1214,16 @@ and is **never** sounded as a consonant.
 ||||||{centred-block}
 ||||{overflowing}
 ''''{no-wrapping}
-^^^
-  /
+|^
+  ==
     ;[,3] 九聲
     ; IPA~(num.)
     ; Conway
     ; Jyutping
     ; Yale
     ; S.~Lau
-~~~
-  /
+|:
+  ==
     , 婚
     , 1
     , 陰平
@@ -1232,7 +1232,7 @@ and is **never** sounded as a consonant.
     , fan1
     , fān
     , fan1
-  /
+  ==
     , 粉
     , 2
     , 陰上
@@ -1241,7 +1241,7 @@ and is **never** sounded as a consonant.
     , fan2
     , fán
     , fan2
-  /
+  ==
     , 訓
     , 3
     , 陰去
@@ -1250,7 +1250,7 @@ and is **never** sounded as a consonant.
     , fan3
     , fan
     , fan3
-  /
+  ==
     , 焚
     , 4
     , 陽平
@@ -1259,7 +1259,7 @@ and is **never** sounded as a consonant.
     , fan4
     , fàhn
     , fan4
-  /
+  ==
     , 奮
     , 5
     , 陽上
@@ -1268,7 +1268,7 @@ and is **never** sounded as a consonant.
     , fan5
     , fáhn
     , fan5
-  /
+  ==
     , 份
     , 6
     , 陽去
@@ -1277,7 +1277,7 @@ and is **never** sounded as a consonant.
     , fan6
     , fahn
     , fan6
-  /
+  ==
     , 忽
     , 7
     , 高陰入
@@ -1286,7 +1286,7 @@ and is **never** sounded as a consonant.
     , fat1
     , fāt
     , fat1
-  /
+  ==
     , 　
     , 8
     , 低陰入
@@ -1295,7 +1295,7 @@ and is **never** sounded as a consonant.
     , fat3
     , fat
     , fat3
-  /
+  ==
     , 佛
     , 9
     , 陽入
@@ -1329,9 +1329,9 @@ and is **never** sounded as a consonant.
     num.
                         tone 1 陰平                    tone 7 高陰入
      5        ________________________________        ________________
-                        tone 2 陰上  //////
-     4                  ////////////
-                 ////// tone 3 陰去                    tone 8 低陰入
+                        tone 2 陰上  ==/////
+     4                  ==///////////
+                 ==///// tone 3 陰去                    tone 8 低陰入
      3        ________________________________        ________________
           tone 5 陽上// tone 6 陽去                     tone 9 陽入
      2        ________________________________   _    ________________
@@ -1578,28 +1578,28 @@ in terms of this correspondence:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-^^^
-  /
+|^
+  ==
     ; Place of articulation
     ; Nasal
     ; Stop
     ; Example quoted in 《康熙字典》
-~~~
-  /
+|:
+  ==
     , Labial
     , [m]
     , [p̚]
     ,
       [入：任入聲](https://ctext.org/kangxi-zidian/11/0#n318684)
       i.e.~任~[.(yam6).] to~入~[.(yap9).]
-  /
+  ==
     , Plain dental/alveolar
     , [n]
     , [t̚]
     ,
       [出：春入聲](https://ctext.org/kangxi-zidian/17/3#n319099)
       i.e.~春~[.(ch'\_n1).] to~出~[.(ch'\_t7).]
-  /
+  ==
     , Plain velar
     , [ŋ]
     , [k̚]
@@ -1631,35 +1631,35 @@ Here are a few examples:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-^^^
-  /
+|^
+  ==
     ; Phrase
     ; Literary
     ; Vernacularised
-~~~
-  /
+|:
+  ==
     , 笛
     , tek[.9.]
     , tek[.2.]
-  /
+  ==
     , 姐姐
     , tse[.2.]~tse[.2.]
     , tse[.4.]~tse[.1.]
-  /
+  ==
     , 後尾
     , hau[.6.]~mei[.5.]
     ,
       hau6~mei[.1.] \+
       hau[.1.]~mei[.1.]
-  /
+  ==
     , 今晚
     , kam1~maan[.5.]
     , kam1~maan[.1.]
-  /
+  ==
     , 長沙灣
     , ch'(oe)ng4~shaa1~waan[.1.]
     , ch'(oe)ng4~shaa1~waan[.4.]
-  /
+  ==
     , 油麻地
     , yau4~maa4~tei[.6.]
     , yau4~maa4~tei[.2.]
@@ -1679,28 +1679,28 @@ Here are a few examples:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-  /
+  ==
     , 巴~[.p.]
     , 打~[.t.]
     , 家~[.k.]
     , 瓜~[.kw.]
     , 將~[.ts.]
     , 張~[.ch.]
-  /
+  ==
     , 怕~[.p'.]
     , 他~[.t'.]
     , 卡~[.k'.]
     , 誇~[.k'w.]
     , 槍~[.ts'.]
     , 昌~[.ch'.]
-  /
+  ==
     , 媽~[.m.]
     , 那~[.n.]
     , 牙~[.ng.]
     , 華~[.w.]
     , 相~[.s.]
     , 傷~[.sh.]
-  /
+  ==
     , 花~[.f.]
     , 啦~[.l.]
     , 蝦~[.h.]
@@ -1719,7 +1719,7 @@ Here are a few examples:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-  /
+  ==
     , 叉~[.aa.]
     ,
     , 爹~[.e.]
@@ -1730,7 +1730,7 @@ Here are a few examples:
     ,
     , 遇~[.(u").]
     ,
-  /
+  ==
     , 釵~[.aai.]
     , 仔~[.ai.]
     , 地~[.ei.]
@@ -1741,7 +1741,7 @@ Here are a few examples:
     , 需~[.\_(u").]
     ,
     ,
-  /
+  ==
     , 抄~[.aau.]
     , 走~[.au.]
     , 掉~[.eu.]
@@ -1752,7 +1752,7 @@ Here are a few examples:
     ,
     ,
     ,
-  /
+  ==
     , 參~[.aam.]
     , 針~[.am.]
     , 舔~[.em.]
@@ -1763,7 +1763,7 @@ Here are a few examples:
     ,
     ,
     , 唔~[.m.]
-  /
+  ==
     , 餐~[.aan.]
     , 真~[.an.]
     ,
@@ -1774,7 +1774,7 @@ Here are a few examples:
     , 詢~[.\_n.]
     , 願~[.(u")n.]
     ,
-  /
+  ==
     , 撐~[.aang.]
     , 增~[.ang.]
     , 贏~[.eng.]
@@ -1785,7 +1785,7 @@ Here are a few examples:
     ,
     ,
     , 吾~[.ng.]
-  /
+  ==
     , 插~[.aap.]
     , 汁~[.ap.]
     , 夾~[.ep.]
@@ -1796,7 +1796,7 @@ Here are a few examples:
     ,
     ,
     ,
-  /
+  ==
     , 察~[.aat.]
     , 疾~[.at.]
     ,
@@ -1807,7 +1807,7 @@ Here are a few examples:
     , 戌~[.\_t.]
     , 月~[.(u")t.]
     ,
-  /
+  ==
     , 拆~[.aak.]
     , 仄~[.ak.]
     , 尺~[.ek.]
@@ -1831,8 +1831,8 @@ Here are a few examples:
 ||||||{centred-block}
 ||||{centred-block overflowing}
 ''''
-^^^
-  /
+|^
+  ==
     ;{vertical-rtl} 陰平
     ;{vertical-rtl} 陰上
     ;{vertical-rtl} 陰去
@@ -1843,7 +1843,7 @@ Here are a few examples:
     ;{vertical-rtl} 高陰入
     ;{vertical-rtl} 低陰入
     ;{vertical-rtl} 陽入
-  /
+  ==
     ; 1
     ; 2
     ; 3
@@ -1853,8 +1853,8 @@ Here are a few examples:
     ; 7
     ; 8
     ; 9
-~~~
-  /
+|:
+  ==
     , 閹
     , 掩
     , 厭
@@ -1865,7 +1865,7 @@ Here are a few examples:
     , 　
     , 醃
     , 頁
-  /
+  ==
     , 婚
     , 粉
     , 訓
@@ -1876,7 +1876,7 @@ Here are a few examples:
     , 忽
     , 　
     , 佛
-  /
+  ==
     , 英
     , 影
     , 應

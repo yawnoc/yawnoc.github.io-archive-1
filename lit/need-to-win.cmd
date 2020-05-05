@@ -442,13 +442,13 @@ The Chinese source text is from Chinese Text Project:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-^^^
-  /
+|^
+  ==
     ; Conway
     ; James Legge
     ; Thomas Merton
-~~~
-  /
+|:
+  ==
     ,
       He who wagereth .[by archery] \+
       for earthenware .[is] skillful;
@@ -459,7 +459,7 @@ The Chinese source text is from Chinese Text Project:
     ,
       When an archer is shooting for nothing \+
       He has all his skill.
-  /
+  ==
     ,
       He who wagereth .[by archery] \+
       for .[a] buckle, fearful;
@@ -469,9 +469,9 @@ The Chinese source text is from Chinese Text Project:
     ,
       If he shoots for a brass buckle \+
       He is already nervous.
-  /
+  ==
     ,
-      \/.[And] he who wagereth .[by archery] \+
+      .[And] he who wagereth .[by archery] \+
       for gold, dazed.
     ,
       If it be for an article of gold, \+
@@ -481,7 +481,7 @@ The Chinese source text is from Chinese Text Project:
       He goes blind \+
       Or sees two targets--- \+
       He is out of his mind!
-  /
+  ==
     ,
       Their skill .[is the] same, \+
       but .[that] there be that \+
@@ -494,13 +494,13 @@ The Chinese source text is from Chinese Text Project:
     ,
       His skill has not changed. But the prize \+
       Divides him. He cares.
-  /
+  ==
     ,
-      \/.[Is] attaching importance \+
+      .[Is] attaching importance \+
       to .[the] external. \+
       All those who attach importance \+
       to .[the] external, \+
-      \/.[are] internally stupid.
+      .[are] internally stupid.
     ,
       And looks on the external prize \+
       as most important. \+

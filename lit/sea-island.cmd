@@ -566,7 +566,7 @@ I have mapped the names of the vertices as follows:
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-  /
+  ==
     , 甲
     , 乙
     , 丙
@@ -577,7 +577,7 @@ I have mapped the names of the vertices as follows:
     , 辛
     , 壬
     , 辰
-  /
+  ==
     , $A$
     , $B$
     , $C$
