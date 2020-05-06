@@ -19,9 +19,9 @@
 {: \short-title : Angus Taylor on Snowy Hydro~2.0 (14 Oct 2019) :}
 
 [[====
-* \link:home
-* \link:top
-* \link:cynicism
+* \header-link:home
+* \header-link:top
+* \header-link:cynicism
 ====]]
 
 

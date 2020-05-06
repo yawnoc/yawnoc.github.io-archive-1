@@ -31,12 +31,12 @@
 
 
 [[====
-* \link-here:home
-* \link:top
+* \header-link-here:home
+* \header-link:top
 * [Math.](#applied-maths  Applied mathematics \(or, physics\))
 * [Lit.](#literary-chinese  English translations of Literary Chinese)
 * [Code](#code  Useful code)
-* \link:cite
+* \header-link:cite
 ====]]
 
 

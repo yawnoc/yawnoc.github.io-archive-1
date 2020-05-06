@@ -19,9 +19,9 @@
 {: \short-title : Albanese on donations (3 Sep 2019) :}
 
 [[====
-* \link:home
-* \link:top
-* \link:cynicism
+* \header-link:home
+* \header-link:top
+* \header-link:cynicism
 ====]]
 
 

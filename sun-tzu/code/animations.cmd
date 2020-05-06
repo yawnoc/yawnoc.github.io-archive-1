@@ -15,8 +15,8 @@
 %%
 
 [[====
-* \link:home
-* \link:top
+* \header-link:home
+* \header-link:top
 * [Multiplication](#multiplication  Multiplication)
 * [Division](#division  Division)
 ====]]

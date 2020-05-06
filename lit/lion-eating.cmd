@@ -18,10 +18,10 @@
 %%
 
 [[====
-* \link:home
-* \link:top
-* \link:translation
-* \link:cite
+* \header-link:home
+* \header-link:top
+* \header-link:translation
+* \header-link:cite
 ====]]
 
 

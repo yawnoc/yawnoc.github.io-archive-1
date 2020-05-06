@@ -17,10 +17,10 @@
 
 
 [[====
-* \link:home
-* \link:top
+* \header-link:home
+* \header-link:top
 * [Links](#links Links A to Z)
-* \link:cite
+* \header-link:cite
 ====]]
 
 # %title #

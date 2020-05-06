@@ -19,9 +19,9 @@
 {: \short-title : Angus Taylor on emissions \& documents (2 Mar 2020) :}
 
 [[====
-* \link:home
-* \link:top
-* \link:cynicism
+* \header-link:home
+* \header-link:top
+* \header-link:cynicism
 ====]]
 
 

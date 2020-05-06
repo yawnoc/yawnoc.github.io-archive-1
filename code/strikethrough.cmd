@@ -29,8 +29,8 @@
 
 
 [[====
-* \link:home
-* \link:top
+* \header-link:home
+* \header-link:top
 ====]]
 
 

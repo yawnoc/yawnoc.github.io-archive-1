@@ -19,9 +19,9 @@
 {: \short-title : Gladys Liu on Chinese Associations (10 Sep 2019) :}
 
 [[====
-* \link:home
-* \link:top
-* \link:cynicism
+* \header-link:home
+* \header-link:top
+* \header-link:cynicism
 ====]]
 
 

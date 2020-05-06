@@ -19,9 +19,9 @@
 {: \short-title : Dan Tehan on NAPLAN (28 Aug 2019) :}
 
 [[====
-* \link:home
-* \link:top
-* \link:cynicism
+* \header-link:home
+* \header-link:top
+* \header-link:cynicism
 ====]]
 
 

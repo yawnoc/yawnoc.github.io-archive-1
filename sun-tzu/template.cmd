@@ -12,9 +12,9 @@
 %%
 
 [[====
-* \link:home
-* \link:top
-* \link:cite
+* \header-link:home
+* \header-link:top
+* \header-link:cite
 ====]]
 
 #

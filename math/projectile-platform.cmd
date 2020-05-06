@@ -21,10 +21,10 @@
 %%
 
 [[====
-* \link:home
-* \link:top
-* \link:result
-* \link:cite
+* \header-link:home
+* \header-link:top
+* \header-link:result
+* \header-link:cite
 ====]]
 
 

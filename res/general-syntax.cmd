@@ -227,13 +227,13 @@
   ----------------------------------------------------------------
 -->
 
-{:: \link-here:home :: [Home](#) ::}
-{:: \link:home :: [Home](/ Home page) ::}
-{:: \link:top :: [Top](# Jump back to top) ::}
-{:: \link:translation :: [Translation](#translation Translation) ::}
-{:: \link:result :: [Result](#result Jump to result) ::}
-{:: \link:cite :: [Cite](#cite Cite this page) ::}
-{:: \link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
+{:: \header-link-here:home :: [Home](#) ::}
+{:: \header-link:home :: [Home](/ Home page) ::}
+{:: \header-link:top :: [Top](# Jump back to top) ::}
+{:: \header-link:translation :: [Translation](#translation Translation) ::}
+{:: \header-link:result :: [Result](#result Jump to result) ::}
+{:: \header-link:cite :: [Cite](#cite Cite this page) ::}
+{:: \header-link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
 
 {:: \link:sun-tzu/preface ::
   [《序》 "Preface"] ["p"]

@@ -20,9 +20,9 @@
 %%
 
 [[====
-* \link:home
-* \link:top
-* \link:translation
+* \header-link:home
+* \header-link:top
+* \header-link:translation
 ====]]
 
 
