@@ -43,7 +43,7 @@ body {
   line-height: 1.4;
   margin: 0;
   overflow-wrap: break-word;
-  padding: 32px 0.7em 0.7em;
+  padding: 2em 0.7em 0.7em;
 }
 
 
@@ -55,7 +55,7 @@ body {
 blockquote {
   background: #ffffce;
   border-left: 3px solid grey;
-  padding: 10px;
+  padding: 0.6em 0.7em;
 }
 
 
@@ -361,36 +361,39 @@ header {
   z-index: 1;
 }
 
-nav > ul {
+nav {
   background: #ffff66;
-  border-bottom: 1px solid black;
-  margin: 0;
-  overflow: auto;
-  padding: 0;
-  white-space: nowrap;
-}
-:not(header) > nav {
+  border: 1px solid black;
   margin: 1em 0.5em;
 }
-:not(header) > nav > ul {
-  border: 1px solid black;
-  white-space: normal;
+header > nav {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 0;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header > nav > ul {
+  flex-wrap: nowrap;
+  overflow: auto;
 }
 
 nav > ul > li {
-  display: inline-block;
-  list-style-type: none;
   margin-bottom: 0;
-  padding: 5px 8px;
+  padding: 0.3em 0.6em;
 }
 
 nav > ul > li > a {
-  display: block;
-  font-size: 14px;
+  display: flex;
+  font-size: 0.9em;
   font-weight: bold;
-  text-align: center;
 }
-
 
 /*
   Leave room at top for navigation bar when following anchor links
@@ -400,8 +403,8 @@ nav > ul > li > a {
 :target::before {
   content: "";
   display: block;
-  height: 48px;
-  margin: -48px 0 0;
+  height: 3em;
+  margin: -3em 0 0;
 }
 
 
