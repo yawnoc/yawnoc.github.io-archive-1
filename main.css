@@ -382,6 +382,7 @@ nav > ul {
 header > nav > ul {
   flex-wrap: nowrap;
   overflow: auto;
+  white-space: nowrap;
 }
 
 nav > ul > li {
