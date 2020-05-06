@@ -227,7 +227,7 @@
   ----------------------------------------------------------------
 -->
 
-{:: \header-link-here:home :: [Home](#) ::}
+{:: \header-link-here:home :: [Home](\/ You are on the Home page) ::}
 {:: \header-link:home :: [Home](/ Home page) ::}
 {:: \header-link:top :: [Top](# Jump back to top) ::}
 {:: \header-link:translation :: [Translation](#translation Translation) ::}
