@@ -8,6 +8,7 @@
   Cite this page section
   Page properties with dates  [|||| ||||]
   Heading permalinks (<h2> through <h6>)
+  Sun Tzu surrounds navigation  {{{{| |}}}}
   Links
   Navigation bars  [==== ====]
   Translation (parallel text)  <<{[class]}↵ || >>
@@ -223,6 +224,99 @@
 
 <!--
   ----------------------------------------------------------------
+  Sun Tzu surrounds navigation  {{{{| |}}}}
+  ----------------------------------------------------------------
+  Arrows used:
+  * ← U+2190 LEFTWARDS ARROW
+  * ↑ U+2191 UPWARDS ARROW
+  * → U+2192 RIGHTWARDS ARROW
+-->
+
+<!-- Surrounds navigation {{{{| |}}}}  -->
+{%
+  \{{4}
+    [|]
+    (?P<content> [\s\S]*? )
+    [|]
+  \}{4}
+%
+  <nav class="surrounds">
+    \g<content>
+  </nav>
+%}
+
+<!-- Adjacent row  {{| |}}  -->
+{%
+  \{{2}
+    [|]
+    (?P<content> [\s\S]*? )
+    [|]
+  \}{2}
+%
+  ||||||{adjacent}
+    \g<content>
+  ||||||
+%}
+
+<!-- Current location in container  \nav-curr: {text} -->
+{%
+  \\nav[-]curr:
+    [\s]*
+      (?P<text> [^\n]* )
+%
+  ||||{current}
+    \g<text>
+  ||||
+%}
+
+<!-- Up link in container  \nav-up: {text} : {href_spec}  -->
+{%
+  \\nav[-]up:
+    [\s]*
+      (?P<text> [\s\S]*? )
+    [\s]*
+      :
+    [\s]*
+      (?P<href_spec> [^\n]* )
+%
+  ||||{up}
+    [↑ \g<text>]\g<href_spec>
+  ||||
+%}
+
+<!-- Previous link in container  \nav-prev: {text} : {href_spec}  -->
+{%
+  \\nav[-]prev:
+    [\s]*
+      (?P<text> [\s\S]*? )
+    [\s]*
+      :
+    [\s]*
+      (?P<href_spec> [^\n]* )
+%
+  ||||{previous}
+    [← \g<text>]\g<href_spec>
+  ||||
+%}
+
+<!-- Next link in container  \nav-next: {text} : {href_spec}  -->
+{%
+  \\nav[-]next:
+    [\s]*
+      (?P<text> [\s\S]*? )
+    [\s]*
+      :
+    [\s]*
+      (?P<href_spec> [^\n]* )
+%
+  ||||{next}
+    [\g<text> →]\g<href_spec>
+  ||||
+%}
+
+
+<!--
+  ----------------------------------------------------------------
   Links
   ----------------------------------------------------------------
 -->
@@ -335,6 +429,10 @@
     </nav>
   </header>
 %}
+
+<!-- Sun Tzu navigation-bar breadcrumb link list item  *> -->
+
+{: *> : *{breadcrumb} :}
 
 <!-- Not inside header [==== ====] -->
 
