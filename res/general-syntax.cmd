@@ -262,37 +262,47 @@
 <!-- Sun Tzu URL in round brackets  [""] -->
 {%
   [\s]*
-  \[""\]
+  \[
+    ""
+    (?P<title> [\s\S]*? )
+  \]
 %
-  (/sun-tzu/)
+  (/sun-tzu/ \g<title>)
 %}
 
 <!-- Sun Tzu Volume v URL in round brackets  ["v"] -->
 {%
   [\s]*
-  \["p"\]
+  \[
+    "p"
+    (?P<title> [\s\S]*? )
+  \]
 %
-  (/sun-tzu/preface/)
+  (/sun-tzu/preface/ \g<title>)
 %}
 {%
   [\s]*
-  \[ "
-    (?P<volume> [i] {1,3} )
-  " \]
+  \[
+    " (?P<volume> [i] {1,3} ) "
+    (?P<title> [\s\S]*? )
+  \]
 %
-  (/sun-tzu/\g<volume>/)
+  (/sun-tzu/\g<volume>/ \g<title>)
 %}
 
 <!-- Sun Tzu Volume v Paragraph p URL in round brackets  ["v p"] -->
 {%
   [\s]*
-  \[ "
-    (?P<volume> [i] {1,3} )
-    [ ]
-    (?P<paragraph> [0-9] + )
-  " \]
+  \[
+    "
+      (?P<volume> [i] {1,3} )
+      [ ]
+      (?P<paragraph> [0-9] + )
+    "
+    (?P<title> [\s\S]*? )
+  \]
 %
-  (/sun-tzu/\g<volume>/\g<paragraph>)
+  (/sun-tzu/\g<volume>/\g<paragraph> \g<title>)
 %}
 
 
