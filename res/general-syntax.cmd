@@ -235,6 +235,10 @@
 {:: \header-link:cite :: [Cite](#cite Cite this page) ::}
 {:: \header-link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
 
+{:: \header-link:sun-tzu ::
+  [\\sun-tzu] ["" \\sun-tzu's Computational Classic]
+::}
+
 {:: \link:sun-tzu/preface ::
   [《序》 "Preface"] ["p"]
 ::}

@@ -1,8 +1,8 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title ~~ "\sun-tzu's Computational Classic" 《孫子算經》 ~~
-  %title-en \sun-tzu's Computational Classic"
+  %title "\sun-tzu's Computational Classic" ~~《孫子算經》~~
+  %title-en "\sun-tzu's Computational Classic"
   %title-suffix \title-suffix
   %author Conway
   %date-created 2020-05-06
@@ -14,6 +14,7 @@
 [[====
 * \header-link:home
 * \header-link:top
+* \header-link:sun-tzu
 * \header-link:cite
 ====]]
 
