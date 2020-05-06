@@ -6,7 +6,7 @@
   %title-en ".[The] Fox Feigneth .[the] Tiger's Authority"
   %author Conway
   %date-created 2019-04-07
-  %date-modified 2020-05-02
+  %date-modified 2020-05-06
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
@@ -47,6 +47,18 @@ compiled/edited by [Liu Hiang ((劉向))][劉向].
   https://en.wikipedia.org/wiki/Liu_Xiang_(scholar)
 @@
 
+----
+See also:
+----
+====
+* ["XI.~The Fox and the Tiger"][fairy book] in _The Chinese Fairy Book_
+  by Richard Wilhelm, translated by Frederick H.~Martens
+* [ _The Gruffalo_ ](https://en.wikipedia.org/wiki/The_Gruffalo),
+  by Julia Donaldson
+====
+@@[fairy book]
+  https://en.wikisource.org/wiki/Chinese_Fairy_Book_(Richard_Wilhelm)/11
+@@
 
 
 ##translation
