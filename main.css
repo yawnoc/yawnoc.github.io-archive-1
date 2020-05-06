@@ -13,7 +13,7 @@
   Interviews (Cynic's 7.30)
   Links
   Lists
-  Navigation bar
+  Navigation
   Noscript
   Page properties
   Romanisations
@@ -343,7 +343,7 @@ ul {
 
 
 /* ---------------------------------------------------------------- */
-/* Navigation bar                                                   */
+/* Navigation                                                       */
 /* ---------------------------------------------------------------- */
 
 
@@ -393,7 +393,7 @@ nav > ul > li > a {
   font-weight: bold;
 }
 
-/* Breadcrumb separators for Sun Tzu navigation bar links */
+/* Sun Tzu navigation-bar breadcrumb links */
 
 .breadcrumb {
   margin-left: 0;
@@ -402,6 +402,33 @@ nav > ul > li > a {
 .breadcrumb::before {
   content: ">";
   margin-right: 0.5em;
+}
+
+/* Sun Tzu surrounds navigation */
+
+.surrounds {
+  padding: 0.2em;
+  font-size: large;
+  text-align: center;
+}
+
+.adjacent {
+  align-items: center;
+  display: flex;
+}
+
+.current  {
+  font-size: x-large;
+}
+
+.previous {
+  flex: 1;
+  text-align: left;
+}
+
+.next {
+  flex: 1;
+  text-align: right;
 }
 
 /*
