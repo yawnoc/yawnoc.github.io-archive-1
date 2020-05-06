@@ -336,6 +336,10 @@
   </header>
 %}
 
+<!-- Sun Tzu navigation-bar breadcrumb link list item  *> -->
+
+{: *> : *{breadcrumb} :}
+
 <!-- Not inside header [==== ====] -->
 
 {%
