@@ -385,14 +385,23 @@ header > nav > ul {
 }
 
 nav > ul > li {
-  margin-bottom: 0;
-  padding: 0.3em 0.6em;
+  margin: 0.2em 0.6em;
 }
 
 nav > ul > li > a {
-  display: flex;
   font-size: 0.9em;
   font-weight: bold;
+}
+
+/* Breadcrumb separators for Sun Tzu navigation bar links */
+
+.breadcrumb {
+  margin-left: 0;
+}
+
+.breadcrumb::before {
+  content: ">";
+  margin-right: 0.5em;
 }
 
 /*
