@@ -19,9 +19,9 @@
 {: \short-title : Josh Frydenberg on surplus predictions (12 Mar 2020) :}
 
 [[====
-* \link:home
-* \link:top
-* \link:cynicism
+* \header-link:home
+* \header-link:top
+* \header-link:cynicism
 ====]]
 
 

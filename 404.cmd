@@ -15,7 +15,7 @@
 
 
 [[====
-* \link:home
+* \header-link:home
 ====]]
 
 

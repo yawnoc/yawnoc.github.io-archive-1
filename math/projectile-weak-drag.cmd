@@ -16,11 +16,11 @@
 %%
 
 [[====
-* \link:home
-* \link:top
-* \link:result
+* \header-link:home
+* \header-link:top
+* \header-link:result
 * [Numerics](#numerics  Numerical verification)
-* \link:cite
+* \header-link:cite
 ====]]
 
 

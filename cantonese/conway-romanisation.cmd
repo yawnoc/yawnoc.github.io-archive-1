@@ -36,10 +36,10 @@
 
 
 [[====
-* \link:home
-* \link:top
-* [Examples](#examples)
-* \link:cite
+* \header-link:home
+* \header-link:top
+* [Examples](#examples Examples)
+* \header-link:cite
 ====]]
 
 

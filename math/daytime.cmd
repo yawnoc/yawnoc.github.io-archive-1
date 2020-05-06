@@ -49,11 +49,11 @@
 
 
 [[====
-* \link:home
-* \link:top
+* \header-link:home
+* \header-link:top
 * [Verification](#verification  Verification)
-* \link:result
-* \link:cite
+* \header-link:result
+* \header-link:cite
 ====]]
 
 

@@ -19,9 +19,9 @@
 {: \short-title : Paul Kelly on containing coronavirus (26 Mar 2020) :}
 
 [[====
-* \link:home
-* \link:top
-* \link:cynicism
+* \header-link:home
+* \header-link:top
+* \header-link:cynicism
 ====]]
 
 

@@ -227,13 +227,17 @@
   ----------------------------------------------------------------
 -->
 
-{:: \link-here:home :: [Home](\/ You are on the Home page) ::}
-{:: \link:home :: [Home](/ Home page) ::}
-{:: \link:top :: [Top](# Jump back to top) ::}
-{:: \link:translation :: [Translation](#translation Translation) ::}
-{:: \link:result :: [Result](#result Jump to result) ::}
-{:: \link:cite :: [Cite](#cite Cite this page) ::}
-{:: \link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
+{:: \header-link-here:home :: [Home](\/ You are on the Home page) ::}
+{:: \header-link:home :: [Home](/ Home page) ::}
+{:: \header-link:top :: [Top](# Jump back to top) ::}
+{:: \header-link:translation :: [Translation](#translation Translation) ::}
+{:: \header-link:result :: [Result](#result Jump to result) ::}
+{:: \header-link:cite :: [Cite](#cite Cite this page) ::}
+{:: \header-link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
+
+{:: \header-link:sun-tzu ::
+  [\\sun-tzu] ["" \\sun-tzu's Computational Classic]
+::}
 
 {:: \link:sun-tzu/preface ::
   [《序》 "Preface"] ["p"]
@@ -262,37 +266,47 @@
 <!-- Sun Tzu URL in round brackets  [""] -->
 {%
   [\s]*
-  \[""\]
+  \[
+    ""
+    (?P<title> [\s\S]*? )
+  \]
 %
-  (/sun-tzu/)
+  (/sun-tzu/ \g<title>)
 %}
 
 <!-- Sun Tzu Volume v URL in round brackets  ["v"] -->
 {%
   [\s]*
-  \["p"\]
+  \[
+    "p"
+    (?P<title> [\s\S]*? )
+  \]
 %
-  (/sun-tzu/preface)
+  (/sun-tzu/preface/ \g<title>)
 %}
 {%
   [\s]*
-  \[ "
-    (?P<volume> [i] {1,3} )
-  " \]
+  \[
+    " (?P<volume> [i] {1,3} ) "
+    (?P<title> [\s\S]*? )
+  \]
 %
-  (/sun-tzu/\g<volume>)
+  (/sun-tzu/\g<volume>/ \g<title>)
 %}
 
 <!-- Sun Tzu Volume v Paragraph p URL in round brackets  ["v p"] -->
 {%
   [\s]*
-  \[ "
-    (?P<volume> [i] {1,3} )
-    [ ]
-    (?P<paragraph> [0-9] + )
-  " \]
+  \[
+    "
+      (?P<volume> [i] {1,3} )
+      [ ]
+      (?P<paragraph> [0-9] + )
+    "
+    (?P<title> [\s\S]*? )
+  \]
 %
-  (/sun-tzu/\g<volume>#\g<paragraph>)
+  (/sun-tzu/\g<volume>/\g<paragraph> \g<title>)
 %}
 
 

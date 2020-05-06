@@ -19,9 +19,9 @@
 {: \short-title : Scott Morrison on the economy \& coronavirus (3 Mar 2020) :}
 
 [[====
-* \link:home
-* \link:top
-* \link:cynicism
+* \header-link:home
+* \header-link:top
+* \header-link:cynicism
 ====]]
 
 
