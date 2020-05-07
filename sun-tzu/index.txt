@@ -293,9 +293,9 @@ In each page, remove the its own link, and make that text bold.
 <@3> A note on thousands and myriads | myriads </@3>
 
 ----
-  In Chinese, numbers are grouped in 萬, myriads <_>10000s</_>,
-  rather than thousands <_>1000s</_>.
-  For example, 八萬五千 <_>85000</_> is literally
+  In Chinese, numbers are grouped in 萬, myriads,
+  rather than thousands.
+  For example, 八萬五千 is literally
   "eight myriad five thousand" rather than "eighty-five thousand".
   However, I shall default to rendering numbers in the English using the
   thousands grouping, only using the myriads grouping

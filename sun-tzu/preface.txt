@@ -432,14 +432,14 @@
     mils {and} cents \+
     Small units of length
     (see <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>),
-    respectively a thousandth <_>1/1000</_> and a hundredth <_>1/100</_>
+    respectively a thousandth and a hundredth
     of the Chinese inch, [寸].
   </li>
   <li>[黍絫]：
     millets {and} piles \+
     Small units of weight,
     (see <@> Vol.~I~\P2 | /sun-tzu/i#2 | Vol. I \P2 </@>),
-    respectively a hundredth <_>1/100</_> and a tenth <_>1/10</_>
+    respectively a hundredth and a tenth
     of the Chinese dram, [銖],
     which is of the order one gram.
   </li>
