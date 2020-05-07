@@ -52,13 +52,13 @@
       __《卷上》~"[vol-i]"__
   
     <@i>
-      《卷中》~"[vol-ii]" <:v>(incomplete)/]
+      《卷中》~"[vol-ii]" [v/(incomplete)/]
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
   * 
-      <:r>\!《卷下》~"[vol-iii]"/]
-      <:r>(haven't started)/]
+      [r/\!《卷下》~"[vol-iii]"/]
+      [r/(haven't started)/]
   
   ====
   
@@ -2729,36 +2729,36 @@ $$
 <;s@@> 1 | 10 | 8 | 147 | 52066 | 9 | 16 </;s@@>
 
 <<
-  以<:y>粟/]求<:y><:r>糲/]<:b>米/]/]，\
+  以[y/粟/]求[y/[r/糲/][b/米/]/]，\
     三之，五而一。 \+
-  以<:y><:r>糲/]<:b>米/]/]求<:y>粟/]，\
+  以[y/[r/糲/][b/米/]/]求[y/粟/]，\
     五之，三而一。 \+
-  以<:y><:r>糲/]<:b>米/]/]求<:y><:v>飯/]/]，\
+  以[y/[r/糲/][b/米/]/]求[y/[v/飯/]/]，\
     五之，二而一。 \+
-  以<:y>粟<:b>米/]/]求<:y><:r>糲/]<:v>飯/]/]，\
+  以[y/粟[b/米/]/]求[y/[r/糲/][v/飯/]/]，\
     六之，四而一。 \+
-  以<:y><:r>糲/]<:v>飯/]/]求<:y><:r>糲/]<:b>米/]/]，\
+  以[y/[r/糲/][v/飯/]/]求[y/[r/糲/][b/米/]/]，\
     二之，五而一。 \+
-  以<:y><:g>糳/]<:b>米/]/]求<:y><:v>飯/]/]，\
+  以[y/[g/糳/][b/米/]/]求[y/[v/飯/]/]，\
     八之，四而一。
 ||
-  Seeking <:y><:r>coarse/] <:b>grain/]/]
-  with <:y>grain/]:
+  Seeking [y/[r/coarse/] [b/grain/]/]
+  with [y/grain/]:
     triple it, .[and make] five .[as] one. \+
-  Seeking <:y>grain/]
-  with <:y><:r>coarse/] <:b>grain/]/]:
+  Seeking [y/grain/]
+  with [y/[r/coarse/] [b/grain/]/]:
     quintuple it, .[and make] three .[as] one. \+
-  Seeking <:y><:r>{coarse}/] <:v>rice/]/]
-  with <:y><:r>coarse/] <:b>grain/]/]:
+  Seeking [y/[r/{coarse}/] [v/rice/]/]
+  with [y/[r/coarse/] [b/grain/]/]:
     quintuple it, .[and make] two .[as] one. \+
-  Seeking <:y><:r>coarse/] <:v>rice/]/]
-  with <:y><:b>grain/]/]:
+  Seeking [y/[r/coarse/] [v/rice/]/]
+  with [y/[b/grain/]/]:
     sextuple it, .[and make] four .[as] one. \+
-  Seeking <:y><:r>coarse/] <:b>grain/]/]
-  with <:y><:r>coarse/] <:v>rice/]/]:
+  Seeking [y/[r/coarse/] [b/grain/]/]
+  with [y/[r/coarse/] [v/rice/]/]:
     double it, .[and make] five .[as] one. \+
-  Seeking <:y><:g>{intricate}/] <:v>rice/]/]
-  with <:y><:g>intricate/] <:b>grain/]/]:
+  Seeking [y/[g/{intricate}/] [v/rice/]/]
+  with [y/[g/intricate/] [b/grain/]/]:
     octuple it, .[and make] four .[as] one.
 >>
 ====
@@ -2766,37 +2766,37 @@ $$
     <@> Version~A | [version-a.url]8 | [version-a.h] </@>
     erroneously has 米粟求糲米 for 以粟求糲米.
 
-* <:y>粟：/]
-    <:y>grain/] \+
+* [y/粟：/]
+    [y/grain/] \+
     As opposed to
-    <:y><:r>糲/]/], <:y><:r>"coarse grain"/]/], or
-    <:y><:g>糳/]/], <:y><:g>"intricate grain"/]/],
+    [y/[r/糲/]/], [y/[r/"coarse grain"/]/], or
+    [y/[g/糳/]/], [y/[g/"intricate grain"/]/],
     to follow.
 
-* <:y><:r>糲/]：米不精也；/]
-    <:y><:r>coarse grain/]/] \+
+* [y/[r/糲/]：米不精也；/]
+    [y/[r/coarse grain/]/] \+
       糲，力制切，音勵，
       <^cm> lai6 | li\ </^cm>
 
-* <:y>粟<:b>米/]：/]
-    <:y><:b>grain/]/] \+
+* [y/粟[b/米/]：/]
+    [y/[b/grain/]/] \+
     **This is not a nice paragraph to render into English**
     (hence the colours).
     I am overloading the word __"grain"__ with both
-    <:y>粟/], <:y>"grain"/] (in contrast to
-    <:y><:r>糲/]/], <:y><:r>"coarse grain"/]/], and
-    <:y><:g>糳/]/], <:y><:g>"intricate grain"/]/])
-    and <:y><:b>米/]/], <:y><:b>"grain"/]/],
-    i.e.~<:y><:b>"uncooked rice"/]/] (in contrast to
-    <:y><:v>飯/]/], <:y><:v>"cooked rice"/]/],
-    which I am just calling <:y><:v>"rice"/]/] for brevity).
+    [y/粟/], [y/"grain"/] (in contrast to
+    [y/[r/糲/]/], [y/[r/"coarse grain"/]/], and
+    [y/[g/糳/]/], [y/[g/"intricate grain"/]/])
+    and [y/[b/米/]/], [y/[b/"grain"/]/],
+    i.e.~[y/[b/"uncooked rice"/]/] (in contrast to
+    [y/[v/飯/]/], [y/[v/"cooked rice"/]/],
+    which I am just calling [y/[v/"rice"/]/] for brevity).
 
 * 
     <@> Version~C | [version-c.url]52066 | [version-c.h] </@>
     erroneously has 绺 for 糳.
 
-* <:y><:g>糳/]：精細米也；/]
-    <:y><:g>intricate grain/]/] \+
+* [y/[g/糳/]：精細米也；/]
+    [y/[g/intricate grain/]/] \+
       糳，
       <^cm> tsok8; also tsok9 | zuo\ </^cm> \+
     All of the old rime dictionaries have 陰入, tsok8,
