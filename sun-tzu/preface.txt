@@ -17,7 +17,7 @@
 </h1>
 
 <*p> |
-  Also known as {Sunzi Suanjing}: [pref].
+  Also known as .[Sunzi Suanjing]: [pref].
 </*p>
 
 <@2> Volume navigation | volumes </@2>
@@ -77,7 +77,7 @@
   In the preface, [sun-tzu]
   tells us that mathematics governs absolutely everything,
   and allows us to do even magical things
-  (like "seek {the} whereabouts of gods {and} earth gods").
+  (like "seek .[the] whereabouts of gods .[and] earth gods").
   Basically it reads like advertising material for
   prospective STEM undergraduates.
 ----
@@ -148,15 +148,15 @@
 
 <#t>
   天地之經緯，群生之元首； |
-  {the} warp {and} woof of Heaven {and} Earth,
-  {and the} origin {and} beginning of {the} living masses;
+  .[the] warp .[and] woof of Heaven .[and] Earth,
+  .[and the] origin .[and] beginning of .[the] living masses;
 </#t>
 ====
 * 經緯：
-    {the} warp {and} woof;
-    \or {the} meridians {and} parallels \+
+    .[the] warp .[and] woof;
+    \or .[the] meridians .[and] parallels \+
     <@>
-      "Warp {and} woof"
+      "Warp .[and] woof"
       | https://en.wiktionary.org/wiki/warp_and_woof
       | Wiktionary: warp and woof
     </@>
@@ -168,12 +168,12 @@
 
 <#t>
   五常之本末，陰陽之父母； |
-  {the} beginning {and} end of {the} Five Everlasting Virtues,
-  {and the} father {and} mother of Dark {and} Light;
+  .[the] beginning .[and] end of .[the] Five Everlasting Virtues,
+  .[and the] father .[and] mother of Dark .[and] Light;
 </#t>
 ====
 * 五常：
-    {the} Five Everlasting Virtues \+
+    .[the] Five Everlasting Virtues \+
     <@>
       仁義禮智信
       | https://ctext.org/three-character-classic#n90581
@@ -182,15 +182,15 @@
     i.e.~Humanity, Righteousness, Propriety (or Rites), Wisdom and Trust.
 
 * 本末：
-    {the} beginning {and} end;
-    \or {the} base {and} tip
+    .[the] beginning .[and] end;
+    \or .[the] base .[and] tip
 
 * 陰陽：
-    Dark {and} Light;
-    \or Shade {and} Sun;
-    \or Female {and} Male \+
+    Dark .[and] Light;
+    \or Shade .[and] Sun;
+    \or Female .[and] Male \+
     <@>
-      "Yin {and} Yang"
+      "Yin .[and] Yang"
       | https://en.wikipedia.org/wiki/Yin_and_yang
       | Wikipedia: Yin and yang
     </@>.
@@ -199,14 +199,14 @@
 
 <#t>
   星辰之建號，三光之表裏； |
-  {the} establishment {and} designation of
-  {the} stars {and} heavenly bodies,
-  {and the} surface {and} internals of
-  {the} Three Luminaries;
+  .[the] establishment .[and] designation of
+  .[the] stars .[and] heavenly bodies,
+  .[and the] surface .[and] internals of
+  .[the] Three Luminaries;
 </#t>
 ====
 * 三光：
-    {the} Three Luminaries \+
+    .[the] Three Luminaries \+
     <@>
       日月星
       | https://ctext.org/three-character-classic#n90576
@@ -226,12 +226,12 @@
 
 <#t>
   五行之準平，四時之終始； |
-  {the} evenness {and} balance of {the} Five Elements,
-  {and the} finishing {and} starting of {the} Four Seasons;
+  .[the] evenness .[and] balance of .[the] Five Elements,
+  .[and the] finishing .[and] starting of .[the] Four Seasons;
 </#t>
 ====
 * 五行：
-    {the} Five Elements \+
+    .[the] Five Elements \+
     <@>
       金木水火土
       | https://en.wikipedia.org/wiki/Wu_Xing
@@ -248,16 +248,16 @@
 
 <#t>
   萬物之祖宗，六藝之綱紀。 |
-  {the} ancestor {and} progenitor of {the} myriad things,
-  {and the} principle {and} law of {the} Six Arts.
+  .[the] ancestor .[and] progenitor of .[the] myriad things,
+  .[and the] principle .[and] law of .[the] Six Arts.
 </#t>
 ====
 * 萬物：
     everything;
-    \lit {the} myriad things
+    \lit .[the] myriad things
 
 * 六藝：
-    {the} Six Arts \+
+    .[the] Six Arts \+
     <@>
       禮樂射御書數
       | https://en.wikipedia.org/wiki/Six_Arts
@@ -270,8 +270,8 @@
 
 <#t>
   稽群倫之聚散，考二氣之降升； |
-  {It} examineth {the} gathering {and} dispersion of {the} amassed kinds,
-  {and} inspecteth {the} falling {and} rising of {the} Two Breaths;
+  .[It] examineth .[the] gathering .[and] dispersion of .[the] amassed kinds,
+  .[and] inspecteth .[the] falling .[and] rising of .[the] Two Breaths;
 </#t>
 ====
 * 稽：考也；
@@ -286,10 +286,10 @@
     \or types
 
 * 二氣：
-    {the} Two Breaths \+
+    .[the] Two Breaths \+
     陰氣 and 陽氣.
     Recall 陰 and 陽 are
-    "Dark {and} Light", "Shade {and} Sun", or "Female {and} Male".
+    "Dark .[and] Light", "Shade .[and] Sun", or "Female .[and] Male".
     <@>
       氣
       | https://en.wikipedia.org/wiki/Qi
@@ -307,13 +307,13 @@
 
 <#t>
   推寒暑之迭運，步遠近之殊同； |
-  {it} deduceth {the} alternating {and} revolving of winter {and} summer,
-  {and} measureth {the} disparity {and} sameness of far {and} near;
+  .[it] deduceth .[the] alternating .[and] revolving of winter .[and] summer,
+  .[and] measureth .[the] disparity .[and] sameness of far .[and] near;
 </#t>
 ====
 * 寒暑：
-    winter {and} summer;
-    \lit cold {and} heat
+    winter .[and] summer;
+    \lit cold .[and] heat
 
 * 迭：更也；
     alternating
@@ -325,16 +325,16 @@
 
 <#t>
   觀天道精微之兆基，察地理從橫之長短； |
-  {it} inspecteth {the} foundations of
-    {the} intricacies {and} minutiae of Physics,
-  {and} examineth {the} length of
-    {the} meridians {and} parallels of Geography;
+  .[it] inspecteth .[the] foundations of
+    .[the] intricacies .[and] minutiae of Physics,
+  .[and] examineth .[the] length of
+    .[the] meridians .[and] parallels of Geography;
 </#t>
 ====
 * 天道：
     Physics;
-    \lit {the} laws of Nature;
-    \or {the} way of Heaven
+    \lit .[the] laws of Nature;
+    \or .[the] way of Heaven
 
 * 兆基：
     foundations \+
@@ -343,29 +343,29 @@
 
 * 地理：
     Geography;
-    \lit {the} science of Earth
+    \lit .[the] science of Earth
 
 * 從橫：
-    meridians {and} parallels (of latitude) \+
+    meridians .[and] parallels (of latitude) \+
     Variant of 縱橫.
     Here 從橫 is referring to "things of broad scope"
     or "the grand scheme of things", in contrast to 精微
-    (intricacies {and} minutiae) in the previous line,
+    (intricacies .[and] minutiae) in the previous line,
     which it is parallel with.
 
 * 長短：
     length;
-    \lit length {and} shortness
+    \lit length .[and] shortness
 
 ====
 
 <#t>
   采神祇之所在，極成敗之符驗； \+
   窮道德之理，究性命之情。 |
-  {it} seeketh {the} whereabouts of gods {and} earth gods,
-  {and} examineth corroboration of success {and} failure; \+
-  {it} exhausteth {the} reasoning of morality,
-  {and} investigateth {the} sense of life.
+  .[it] seeketh .[the] whereabouts of gods .[and] earth gods,
+  .[and] examineth corroboration of success .[and] failure; \+
+  .[it] exhausteth .[the] reasoning of morality,
+  .[and] investigateth .[the] sense of life.
 </#t>
 ====
 * 祇：地神；
@@ -381,7 +381,7 @@
 
 * 符驗：
     corroboration;
-    \lit corroboration {by} talisman
+    \lit corroboration .[by] talisman
 
 * 道德：
     morality;
@@ -396,18 +396,18 @@
 <#t>
   立規矩，準方圓， \+
   謹法度，約尺丈， |
-  {It} establisheth {the} rules,
-  standardiseth the square {and} the circle, \+
-  abideth by {the} law,
-  agreeth upon {the} rule {and the} rod,
+  .[It] establisheth .[the] rules,
+  standardiseth the square .[and] the circle, \+
+  abideth by .[the] law,
+  agreeth upon .[the] rule .[and the] rod,
 </#t>
 ====
 * 規矩：
-    {the} rules;
-    \lit the compass {and} the set square
+    .[the] rules;
+    \lit the compass .[and] the set square
 
 * [尺丈]：
-    {the} rule {and the} rod \+
+    .[the] rule .[and the] rod \+
     Units of length, see
     <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>.
     One [尺] or rule is of the order one foot,
@@ -419,24 +419,24 @@
   立權衡，平重輕， \+
   剖毫釐，析黍絫。 |
   establisheth the weighing scale,
-  balanceth heavy {and} light \+
-  disecteth mils {and} cents,
-  {and} splitteth millets {and} piles.
+  balanceth heavy .[and] light \+
+  disecteth mils .[and] cents,
+  .[and] splitteth millets .[and] piles.
 </#t>
 ====
 * 重輕：
-    heavy {and} light;
-    \or important {and} unimportant
+    heavy .[and] light;
+    \or important .[and] unimportant
 
 * [毫釐]：
-    mils {and} cents \+
+    mils .[and] cents \+
     Small units of length
     (see <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>),
     respectively a thousandth and a hundredth
     of the Chinese inch, [寸].
 
 * [黍絫]：
-    millets {and} piles \+
+    millets .[and] piles \+
     Small units of weight,
     (see <@> Vol.~I~\P2 | /sun-tzu/i#2 | Vol. I \P2 </@>),
     respectively a hundredth and a tenth
@@ -447,16 +447,16 @@
 
 <#t>
   歷億載而不朽，施八極而無疆。 |
-  {It} endureth {an} hundred million years and decayeth not,
-  {and is} applied unto {the} Eight Extremities without bound.
+  .[It] endureth .[an] hundred million years and decayeth not,
+  .[and is] applied unto .[the] Eight Extremities without bound.
 </#t>
 ====
 * 億：
-    {an} hundred million;
-    \or {a} square-myriad
+    .[an] hundred million;
+    \or .[a] square-myriad
 
 * 八極：
-    {the} Eight Extremities \+
+    .[the] Eight Extremities \+
     Probably the four cardinal directions
     plus the four intercardinal directions.
     Sometimes called the "principal winds" in English.
@@ -465,8 +465,8 @@
 
 <#t>
   散之不可勝究，斂之不盈掌握。 |
-  Scattering it, {it} cannot {be} wholly investigated,
-  {yet} gathering it, {it is} not beyond grasp.
+  Scattering it, .[it] cannot .[be] wholly investigated,
+  .[yet] gathering it, .[it is] not beyond grasp.
 </#t>
 ====
 * 勝：
@@ -486,8 +486,8 @@
 
 <#t>
   嚮之者富有餘，背之者貧且窶； |
-  Those who echo {in agreement with} it {shall be} rich in excess,
-  {but} those who turn {their} backs to it {shall be} poor and destitute;
+  Those who echo .[in agreement with] it .[shall be] rich in excess,
+  .[but] those who turn .[their] backs to it .[shall be] poor and destitute;
 </#t>
 ====
 * 窶：貧也；
@@ -499,11 +499,11 @@
 
 <#t>
   心開者幼沖而即悟，意閉者皓首而難精。 |
-  those who {are} open-minded, {even as} young children,
-    {shall} immediately comprehend {it},
-  {but} those who {are} close-minded,
-    {even with a} bright white head {of hair},
-    {shall find it} hard to {be} proficient {in it}.
+  those who .[are] open-minded, .[even as] young children,
+    .[shall] immediately comprehend .[it],
+  .[but] those who .[are] close-minded,
+    .[even with a] bright white head .[of hair],
+    .[shall find it] hard to .[be] proficient .[in it].
 </#t>
 ====
 * 沖：童也；
@@ -530,7 +530,7 @@
 <#t>
   夫欲學之者必務量能揆己，志在所專。 |
   Those who wish to learn it must seek to
-  gauge {one's} abilities {and} measure oneself,
+  gauge {one's} abilities .[and] measure oneself,
   {and put one's} will into that focused upon.
 </#t>
 ====
@@ -557,7 +557,7 @@
 
 <#t>
   如是則焉有不成者哉！ |
-  {Among those} like this, how be there those who succeed not!
+  .[Among those] like this, how be there those who succeed not!
 </#t>
 
 <div class="end">
@@ -573,7 +573,7 @@
 <*c>
   "[sun-tzu-classic]: [pref]"
   | sun-tzu-preface
-  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {[pref]}''
+  | ``{Sun}~{Tz{\uu}'s} .[Computational] .[Classic]: {[pref]}''
 </*c>
 
 <*f></*f>

@@ -19,7 +19,7 @@
 </h1>
 
 <*p> |
-  Also known as {Sunzi Suanjing}.
+  Also known as .[Sunzi Suanjing].
 </*p>
 
 
@@ -134,7 +134,7 @@ In each page, remove the its own link, and make that text bold.
   </@>
   who wrote
   <@>
-    {The Art of War}
+    .[The Art of War]
     | https://en.wikipedia.org/wiki/The_Art_of_War
     | Wikipedia: The Art of War
   </@>.
@@ -477,7 +477,7 @@ In each page, remove the its own link, and make that text bold.
 <*c>
   "[sun-tzu-classic]"
   | sun-tzu
-  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}''
+  | ``{Sun}~{Tz{\uu}'s} .[Computational] .[Classic]''
 </*c>
 
 <*f></*f>

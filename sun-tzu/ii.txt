@@ -18,7 +18,7 @@
 </h1>
 
 <*p> |
-  Also known as {Sunzi Suanjing}: [vol-ii].
+  Also known as .[Sunzi Suanjing]: [vol-ii].
 </*p>
 
 <% [劉徽] | 劉徽 <^> Lau Fai | Liu Hui | Liu Hui </^> %>
@@ -265,7 +265,7 @@
   今有一十八分之一十二。問約之得幾何？ \+
   答曰：三分之二。 |
   Now there be twelve eighteenths.
-  {We} ask: how much resulteth, {upon} reducing it? \+
+  .[We] ask: how much resulteth, .[upon] reducing it? \+
   Answer saith: two thirds.
 </#t>
 ====
@@ -280,12 +280,12 @@
   術曰：置十八分在下，一十二分在上。\
   副置二位，以少減多，等數得六為法，約之，即得。 |
   Method saith:
-  put {the} eighteen shares below,
-  {and the} twelve shares above.
-  Put subsidiarily {the} two places,
-  {and} diminish {the} greater by {the} lesser;
-  {for the} equal quantity {there} resulteth six
-  as {the} divisor, {and} reducing them, {we} are done.
+  put .[the] eighteen shares below,
+  .[and the] twelve shares above.
+  Put subsidiarily .[the] two places,
+  .[and] diminish .[the] greater by .[the] lesser;
+  .[for the] equal quantity .[there] resulteth six
+  as .[the] divisor, .[and] reducing them, .[we] are done.
 </#t>
 ====
 * 副：
@@ -316,14 +316,14 @@ $$
 
 ====
 * 以少減多，等數得六：
-    diminish {the} greater by {the} lesser.
-    {For the} equal quantity {there} resulteth six \+
+    diminish .[the] greater by .[the] lesser.
+    .[For the] equal quantity .[there] resulteth six \+
     In my opinion this description of the algorithm lacks clarity;
     there isn't any instruction here \
     to **repeat** the subtraction
     **until** you get the equal quantity~6.
     A better description is found in 《九章算術》,
-    "Nine Chapters {on} Computational Methods",
+    "Nine Chapters .[on] Computational Methods",
     in the chapter 〈方田〉, 'Rectangular Fields',
     which has the same problem of reducing
     <@>
@@ -347,14 +347,14 @@ $$
       今有十八分之十二。問約之得幾何？ \+
       答曰：三分之二。 |
       Now there be twelve eighteenths.
-      {We} ask: how much resulteth, {upon} reducing it? \+
+      .[We] ask: how much resulteth, .[upon] reducing it? \+
       Answer saith: two thirds.
     </#t>
     <#t>
       又有九十一分之四十九。問約之得幾何？ \+
       答曰：十三分之七。 |
       Also there be forty-nine ninety-firsts.
-      {We} ask: how much resulteth, {upon} reducing it? \+
+      .[We] ask: how much resulteth, .[upon] reducing it? \+
       Answer saith: seven thirteenths.
     </#t>
     <#t>
@@ -364,23 +364,23 @@ $$
         雖則異辭，至於為數，亦同歸爾。\
         法實相推，動有參差，故為術者，先治諸分。</:y>）\
       術曰： |
-      {The} Method of Reducing Fractions
+      .[The] Method of Reducing Fractions
         (<:y>Note: Reducing Fractions---
-        {when a} number of objects cannot {be} completely whole,
-        {we} must speak of them using fractions.
-        {A} fraction being {a} quantity, {if} complicated,
-        {is} difficult {to} utilise.
+        .[when a] number of objects cannot .[be] completely whole,
+        .[we] must speak of them using fractions.
+        .[A] fraction being .[a] quantity, .[if] complicated,
+        .[is] difficult .[to] utilise.
         Suppose there be two fourths.
-        Complicating {it} in speaking of it,
-        {it} may also be four eighths;
-        reducing {it} in speaking of it, one half.
-        Although different {in their} terms,
-        as to {the} quantities {they} are,
-        {these do} return {the} same {value}.
-        Divisors {and} dividends {in} calculation with each other,
-        have unevenness {in their} motions;
-        therefore {we} perform {the} method,
-        first administering it unto {the} fractions.</:y>)
+        Complicating .[it] in speaking of it,
+        .[it] may also be four eighths;
+        reducing .[it] in speaking of it, one half.
+        Although different .[in their] terms,
+        as to .[the] quantities .[they] are,
+        .[these do] return .[the] same .[value].
+        Divisors .[and] dividends .[in] calculation with each other,
+        have unevenness .[in their] motions;
+        therefore .[we] perform .[the] method,
+        first administering it unto .[the] fractions.</:y>)
       saith:
     </#t>
     ====
@@ -393,7 +393,7 @@ $$
         \or intact
     
     * 動有參差：
-        have unevenness {in their} motions \+
+        have unevenness .[in their] motions \+
         This is a literal rendering. I think
         [劉徽] is trying to say that
         different representations of fractions lead to inconsistencies
@@ -409,20 +409,20 @@ $$
       以等數約之。
       （<:y>等數約之，即除也。\
       其所以相減者，皆等數之重疊。故以等數約之。</:y>） |
-      those which can {be} halved: halve them.
-      Those which cannot {be} halved: put subsidiarily
-      {the} quantities of {the} denominator {and the} numerator
-      of {the} fraction.
-      Diminish {the} greater by {the} lesser, {and}
-      further subtract {them} from each other,
-      seeking their {being} equal.
-      Reduce them using {the} equal quantity.
-        (<:y>{To} reduce them {with the} equal quantity,
-        is {to} divide {them}.
-        Those of them which {have been} mutually subtracted,
-        {are} all repeated pilings of {the} equal quantity.
-        Therefore {we} use {the} equal quantity
-        {to} reduce them.</:y>)
+      those which can .[be] halved: halve them.
+      Those which cannot .[be] halved: put subsidiarily
+      .[the] quantities of .[the] denominator .[and the] numerator
+      of .[the] fraction.
+      Diminish .[the] greater by .[the] lesser, .[and]
+      further subtract .[them] from each other,
+      seeking their .[being] equal.
+      Reduce them using .[the] equal quantity.
+        (<:y>{To} reduce them .[with the] equal quantity,
+        is .[to] divide .[them].
+        Those of them which .[have been] mutually subtracted,
+        .[are] all repeated pilings of .[the] equal quantity.
+        Therefore .[we] use .[the] equal quantity
+        .[to] reduce them.</:y>)
     </#t>
     ====
     * 重疊：
@@ -441,8 +441,8 @@ $$
   今有三分之一、五分之二。問合之二得幾何？ \+
   答曰：一十五分之一十一。 |
   Now there be one of three shares
-  {and} two of five shares.
-  {We} ask: how much resulteth, {upon} joining them two? \+
+  .[and] two of five shares.
+  .[We] ask: how much resulteth, .[upon] joining them two? \+
   Answer saith: eleven of fifteen shares.
 </#t>
 ====
@@ -467,23 +467,23 @@ $$
 <#t>
   術曰：置三分、五分在右方，之一、之二在左方。 |
   Method saith:
-  put {the} three shares {and the} five shares
-    on {the} right;
-  {the} one of {and the} two of,
-    on {the} left.
+  put .[the] three shares .[and the] five shares
+    on .[the] right;
+  .[the] one of .[and the] two of,
+    on .[the] left.
 </#t>
 
 <#t>
   母互乘子，五分之二得六，三分之一得五，并之，得一十一為實。\
   右方二母相乘，得一十五為法。 |
-  {The} denominators {are}
-  mutually multiplied with {the} numerators:
-  {for the} two of five shares {there} resulteth six,
-  {and for the} one of three shares
-  {there} resulteth five;
-  combining them, resulteth in eleven as {the} dividend.
-  {The} two denominators {to the} right, multiplied with each other,
-  result in fifteen as {the} divisor.
+  .[The] denominators .[are]
+  mutually multiplied with .[the] numerators:
+  .[for the] two of five shares .[there] resulteth six,
+  .[and for the] one of three shares
+  .[there] resulteth five;
+  combining them, resulteth in eleven as .[the] dividend.
+  .[The] two denominators .[to the] right, multiplied with each other,
+  result in fifteen as .[the] divisor.
 </#t>
 ----
   In modern notation:
@@ -496,12 +496,12 @@ $$
 
 <#t>
   不滿法，以法命之，即得。 |
-  {The dividend} reacheth not {the} divisor;
-  naming it {for a fraction} using {the} divisor, {we} are done.
+  .[The dividend] reacheth not .[the] divisor;
+  naming it .[for a fraction] using .[the] divisor, .[we] are done.
 </#t>
 ====
 * 不滿法：
-    {The dividend} reacheth not {the} divisor \+
+    .[The dividend] reacheth not .[the] divisor \+
     This is saying that 11~\<~15, i.e.~the fraction~11/15 is proper
     (so no further division is necessary).
 
@@ -514,32 +514,32 @@ $$
   今有九分之八，減其五分之一。問餘幾何？ \+
   答曰：四十五分之三十一。 |
   Now there be eight of nine shares,
-  {and we} diminish of it one of five shares.
-  {We} ask: how much remaineth? \+
+  .[and we] diminish of it one of five shares.
+  .[We] ask: how much remaineth? \+
   Answer saith: thirty-one of forty-five shares.
 </#t>
 
 <#t>
   術曰：置九分、五分在右方，之八、之一在左方。 |
-  Method saith: put {the} nine shares
-  {and the} five shares on {the} right;
-  {the} eight of {and the} one of,
-  on {the} left.
+  Method saith: put .[the] nine shares
+  .[and the] five shares on .[the] right;
+  .[the] eight of .[and the] one of,
+  on .[the] left.
 </#t>
 
 <#t>
   母互乘子，五分之一得九，九分之八得四十，以少減多，餘三十一為實。\
   母相乘得四十五為法。 |
-  {The} denominators {are} mutually multiplied
-  with {the} numerators:
-  {for the} one of five shares
-    {there} resulteth nine,
-  {and for the} eight of nine shares
-    {there} resulteth forty;
-  diminishing {the} greater by {the} lesser,
-  {there} remaineth thirty-one as {the} dividend.
-  {The} denominators multiplied with each other,
-  result in forty-five as {the} divisor.
+  .[The] denominators .[are] mutually multiplied
+  with .[the] numerators:
+  .[for the] one of five shares
+    .[there] resulteth nine,
+  .[and for the] eight of nine shares
+    .[there] resulteth forty;
+  diminishing .[the] greater by .[the] lesser,
+  .[there] remaineth thirty-one as .[the] dividend.
+  .[The] denominators multiplied with each other,
+  result in forty-five as .[the] divisor.
 </#t>
 ====
 * 
@@ -555,8 +555,8 @@ $$
 
 <#t>
   不滿法，以法命之，即得。 |
-  {The dividend} reacheth not {the} divisor;
-  naming it {for a fraction} using {the} divisor, {we} are done.
+  .[The dividend] reacheth not .[the] divisor;
+  naming it .[for a fraction] using .[the] divisor, .[we] are done.
 </#t>
 
 <;sh> 2 | 4 | Redistributing fractions for equality </;sh>
@@ -565,25 +565,25 @@ $$
 <#t>
   今有三分之一、三分之二、四分之三。問減多益少，幾何而平？ |
   Now there be one of three shares,
-  two of three shares {and} three of four shares.
-  {We} ask: how much {shall we} diminish {the} greater
-  {to} benefit {the} lesser, that {they be} level?
+  two of three shares .[and] three of four shares.
+  .[We] ask: how much .[shall we] diminish .[the] greater
+  .[to] benefit .[the] lesser, that .[they be] level?
 </#t>
 ====
 * 而平：
-    that {they be} level;
-    \or that {it be} fair
+    that .[they be] level;
+    \or that .[it be] fair
 
 ====
 
 <#t>
   答曰：減四分之三者<:r>二</:r>，三分之二者<:v>一</:v>，\
   <:g>并</:g>以益三分之一，而各<:b>平於一十二分之七</:b>。 |
-  Answer saith: that diminished of {the} three of four shares,
-  {is} <:r>two</:r>;
-  that of {the} two of three shares, <:v>one</:v>;
-  <:g>combined</:g> to benefit {the} one of three shares,
-  that each {be} <:b>level at seven of twelve shares</:b>.
+  Answer saith: that diminished of .[the] three of four shares,
+  .[is] <:r>two</:r>;
+  that of .[the] two of three shares, <:v>one</:v>;
+  <:g>combined</:g> to benefit .[the] one of three shares,
+  that each .[be] <:b>level at seven of twelve shares</:b>.
 </#t>
 $$
   \frac{3}{4} - {\colr \frac{2}{12}}
@@ -622,14 +622,14 @@ $$
 <#t>
   術曰：置三分、三分、四分在右方，之一、之二、之三在左方。\
   母互乘子，副并得六十三，置右為平實。 |
-  Method saith: put {the} three shares,
-  {the} three shares {and the} four shares
-  on {the} right;
-  {the} one of, {the} two of {and the}
-  three of, on {the} left.
-  {The} denominators, mutually multiplied with {the} numerators,
+  Method saith: put .[the] three shares,
+  .[the] three shares .[and the] four shares
+  on .[the] right;
+  .[the] one of, .[the] two of .[and the]
+  three of, on .[the] left.
+  .[The] denominators, mutually multiplied with .[the] numerators,
   combined subsidiarily, result in sixty-three,
-  put to {the} right as {the} level dividend.
+  put to .[the] right as .[the] level dividend.
 </#t>
 ====
 * 
@@ -652,8 +652,8 @@ $$
 
 <#t>
   母相乘，得三十六為法。 |
-  {The} denominators multiplied with each other,
-  result in thirty-six as {the} divisor.
+  .[The] denominators multiplied with each other,
+  result in thirty-six as .[the] divisor.
 </#t>
 $$
   ABC = 3 \times 3 \times 4 = 36
@@ -661,8 +661,8 @@ $$
 
 <#t>
   以列數三乘未并者及法。 |
-  Multiply those not yet combined, and {the} divisor,
-  by {the} number of rows, three.
+  Multiply those not yet combined, and .[the] divisor,
+  by .[the] number of rows, three.
 </#t>
 ====
 * 未并者：
@@ -683,8 +683,8 @@ $$
 
 <#t>
   等數得九，約訖。 |
-  {For their} equal quantity {there} resulteth nine;
-  finish reducing {them}.
+  .[For their] equal quantity .[there] resulteth nine;
+  finish reducing .[them].
 </#t>
 ====
 * 等數：
@@ -713,10 +713,10 @@ $$
 
 <#t>
   減四分之三者二，減三分之二者一，并以益三分之一，各平於一十二分之七。 |
-  That diminished of {the} three of four shares,
-  {is} two;
-  that diminished of {the} two of three shares, one;
-  combined to benefit {the} one of three shares,
+  That diminished of .[the] three of four shares,
+  .[is] two;
+  that diminished of .[the] two of three shares, one;
+  combined to benefit .[the] one of three shares,
   each level at seven of twelve shares.
 </#t>
 
@@ -727,7 +727,7 @@ $$
   今有粟一斗。問為糲米幾何？ \+
   答曰：六升。 |
   Now there be grain, one peck.
-  {We} ask: how much be {this in} coarse grain? \+
+  .[We] ask: how much be .[this in] coarse grain? \+
   Answer saith: six quarts.
 </#t>
 ====
@@ -740,13 +740,13 @@ $$
 <#t>
   術曰：置粟一斗，十升。\
   以糲米率三十乘之，得三百升為實。以粟率五十為法，除之，即得。 |
-  Method saith: put {down the} grain,
-  one peck, {or} ten quarts.
-  Multiplying it by {the} coarse grain rate, thirty,
+  Method saith: put .[down the] grain,
+  one peck, .[or] ten quarts.
+  Multiplying it by .[the] coarse grain rate, thirty,
   resulteth in three hundred quarts
-  as {the} dividend.
-  Use {the} grain rate, fifty, as {the} divisor,
-  {and} dividing them, {we} are done.
+  as .[the] dividend.
+  Use .[the] grain rate, fifty, as .[the] divisor,
+  .[and] dividing them, .[we] are done.
 </#t>
 ----
   In modern notation, with $V$ for volume and $r$ for rate:
@@ -774,7 +774,7 @@ $$
       | https://ctext.org/nine-chapters/su-mi
       | 〈粟米〉
     </@>, of 《九章算術》,
-    "Nine Chapters {on} Computational Methods",
+    "Nine Chapters .[on] Computational Methods",
     which gives a list of 率, rates, for common grains.
     (Note that the ctext database's version has transcription errors;
     see instead the
@@ -791,8 +791,8 @@ $$
       粺米二十七；\
       糳米二十四；\
       御米二十一；…… |
-      {The} method of grain:
-      {the} grain rate {is} fifty;
+      .[The] method of grain:
+      .[the] grain rate .[is] fifty;
       coarse grain, thirty;
       fine grain, twenty-seven;
       intricate grain, twenty-four;
@@ -800,13 +800,13 @@ $$
     </#t>
     <#t>
       今有術曰：以所有數乘所求率為實，以所有率為法，實如法而一。 |
-      {The} 'now there be' method saith:
-      use {the} quantity of that there be,
-      times {the} rate of that sought,
-      as {the} dividend,
-      {and} use {the} rate of that there be,
-      as {the} divisor.
-      {Take the} dividend, as {if the} divisor {were} one.
+      .[The] 'now there be' method saith:
+      use .[the] quantity of that there be,
+      times .[the] rate of that sought,
+      as .[the] dividend,
+      .[and] use .[the] rate of that there be,
+      as .[the] divisor.
+      .[Take the] dividend, as .[if the] divisor .[were] one.
     </#t>
 
 ====
@@ -817,11 +817,11 @@ $$
 <#t>
   今有粟二斗一升。問為粺米幾何？ \+
   答曰：一斗一升五十分升之一十七。 |
-  Now there be grain, two pecks {and} one quart.
-  {We} ask: how much be {this in} fine grain? \+
+  Now there be grain, two pecks .[and] one quart.
+  .[We] ask: how much be .[this in] fine grain? \+
   Answer saith:
-    one peck, one quart {and}
-    seventeen fiftieths of {a} quart.
+    one peck, one quart .[and]
+    seventeen fiftieths of .[a] quart.
 </#t>
 ====
 * 
@@ -838,21 +838,21 @@ $$
 
 * 五十分升之一十七：
     \lit seventeen of fifty shares
-    of {a} quart
+    of .[a] quart
 
 ====
 
 <#t>
   術曰：置粟二十一升。以粺米率二十七乘之，得五百六十七升為實。\
   以粟率五十為法，除之。不盡，以法而命分。 |
-  Method saith: put {down the} grain,
+  Method saith: put .[down the] grain,
   twenty-one quarts.
-  Multiplying it by {the} fine grain rate, twenty-seven,
-  resulteth in five hundred {and} sixty-seven quarts
-  as {the} dividend.
-  Use {the} grain rate, fifty, as {the} divisor,
-  {and} divide them.
-  {For the} remainder, name {the} fraction using {the} divisor.
+  Multiplying it by .[the] fine grain rate, twenty-seven,
+  resulteth in five hundred .[and] sixty-seven quarts
+  as .[the] dividend.
+  Use .[the] grain rate, fifty, as .[the] divisor,
+  .[and] divide them.
+  .[For the] remainder, name .[the] fraction using .[the] divisor.
 </#t>
 $$
   V
@@ -866,11 +866,11 @@ $$
 <#t>
   今有粟四斗五升。問為糳米幾何？ \+
   答曰：二斗一升五分升之三。 |
-  Now there be grain, four pecks {and} five quarts.
-  {We} ask: how much be {this in} intricate grain? \+
+  Now there be grain, four pecks .[and] five quarts.
+  .[We] ask: how much be .[this in] intricate grain? \+
   Answer saith:
-    two pecks, one quart {and}
-    three fifths of {a} quart.
+    two pecks, one quart .[and]
+    three fifths of .[a] quart.
 </#t>
 ====
 * 
@@ -881,11 +881,11 @@ $$
 
 <#t>
   術曰：置粟四十五升。以二約糳米率二十四，得一十二，乘之，得五百四十升為實。 |
-  Method saith: put {down the} grain, forty-five quarts.
-  Reducing {the} intricate grain rate, twenty-four,
+  Method saith: put .[down the] grain, forty-five quarts.
+  Reducing .[the] intricate grain rate, twenty-four,
   by two, resulteth in twelve;
-  multiplying them resulteth in five hundred {and} forty quarts
-  as {the} dividend.
+  multiplying them resulteth in five hundred .[and] forty quarts
+  as .[the] dividend.
 </#t>
 ====
 * 以二約：
@@ -897,15 +897,15 @@ $$
 
 <#t>
   以二約粟率五十，得二十五為法。除之。不盡，以等數約之，而命分。 |
-  Reducing {the} grain rate, fifty,
-  by two, resulteth in twenty-five as {the} divisor.
+  Reducing .[the] grain rate, fifty,
+  by two, resulteth in twenty-five as .[the] divisor.
   Divide them.
-  {For the} remainder, reduce it by {the} equal quantity,
-  and name {the} fraction.
+  .[For the] remainder, reduce it by .[the] equal quantity,
+  and name .[the] fraction.
 </#t>
 ====
 * 不盡，以等數約之：
-    {for the} remainder, reduce it by {the} equal quantity \+
+    .[for the] remainder, reduce it by .[the] equal quantity \+
     The division 540~÷~25 leaves remainder 15/25.
     Their "equal quantity" (see <@> \P1 | #1 | Vol. II \P1 </@>)
     is $\gcd (15, 25) = 5$, by which the fraction is reduced to~3/5.
@@ -924,12 +924,12 @@ $$
 <#t>
   今有粟七斗九升。問為御米幾何？ \+
   答曰：三斗三升一合八勺。 |
-  Now there be grain, seven pecks {and} nine quarts.
-  {We} ask: how much be {this in} poppy seed? \+
+  Now there be grain, seven pecks .[and] nine quarts.
+  .[We] ask: how much be .[this in] poppy seed? \+
   Answer saith:
     three pecks,
     three quarts,
-    one gill {and}
+    one gill .[and]
     eight ladles.
 </#t>
 ====
@@ -947,14 +947,14 @@ $$
 <#t>
   術曰：置七斗九升。\
   以御米率二十一乘之，得一千六百五十九升為實。以粟率五十除之，即得。 |
-  Method saith: put {down the}
-    seven pecks {and}
+  Method saith: put .[down the]
+    seven pecks .[and]
     nine quarts.
-  Multiplying it by {the} poppy seed rate, twenty-one,
-  resulteth in one thousand, six hundred {and} fifty-nine quarts
-  as {the} dividend.
-  Dividing it by {the} grain rate, fifty,
-  {we} are done.
+  Multiplying it by .[the] poppy seed rate, twenty-one,
+  resulteth in one thousand, six hundred .[and] fifty-nine quarts
+  as .[the] dividend.
+  Dividing it by .[the] grain rate, fifty,
+  .[we] are done.
 </#t>
 $$
   V
@@ -967,13 +967,13 @@ $$
 
 <#t>
   今有屋基，南北三丈，東西六丈，欲以甎砌之。凡積二尺，用甎五枚。問計幾何？ |
-  Now there be {an} house foundation,
-    three rods north-{to}-south, {and}
+  Now there be .[an] house foundation,
+    three rods north-{to}-south, .[and]
     six rods east-{to}-west,
-  {and we} wish to build it with bricks.
+  .[and we] wish to build it with bricks.
   Every two rules of area,
   useth five bricks.
-  {We} ask: how many amounteth {this} to?
+  .[We] ask: how many amounteth .[this] to?
 </#t>
 ====
 * 南北：
@@ -992,20 +992,20 @@ $$
 
 <#t>
   答曰：四千五百枚。 |
-  Answer saith: four thousand five hundred {bricks}.
+  Answer saith: four thousand five hundred .[bricks].
 </#t>
 
 <#t>
   術曰：置東西六丈，以南北三丈乘之，得一千八百尺。\
   以五乘之，得九千尺。以二除之，即得。 |
-  Method saith: put {down the}
+  Method saith: put .[down the]
     six rods east-{to}-west.
-  Multiplying it by {the}
+  Multiplying it by .[the]
     three rods north-{to}-south,
   resulteth in one thousand eight hundred rules.
   Multiplying it by five, resulteth in
   nine thousand rules.
-  Dividing it by two, {we} are done.
+  Dividing it by two, .[we] are done.
 </#t>
 ====
 * 九千尺：
@@ -1035,10 +1035,10 @@ $$
 
 <#t>
   今有圓窖，下周二百八十六尺，深三丈六尺。問受粟幾何？ |
-  Now there be {a} circular cellar, of lower circumference
-  two hundred {and} eighty-six rules,
-  {and} depth three rods {and} six rules.
-  {We} ask: how much grain beareth {it}?
+  Now there be .[a] circular cellar, of lower circumference
+  two hundred .[and] eighty-six rules,
+  .[and] depth three rods .[and] six rules.
+  .[We] ask: how much grain beareth .[it]?
 </#t>
 ====
 * 窖：地藏也；
@@ -1050,26 +1050,26 @@ $$
 
 <#t>
   答曰：一十五萬一千四百七十四斛七升二十七分升之一十一。 |
-  Answer saith: one hundred {and} fifty-one thousand,
-  four hundred {and} seventy-four barrels,
+  Answer saith: one hundred .[and] fifty-one thousand,
+  four hundred .[and] seventy-four barrels,
   seven quarts
-  {and} eleven twenty-sevenths of {a} quart.
+  .[and] eleven twenty-sevenths of .[a] quart.
 </#t>
 
 <#t>
   術曰：置周二百八十六尺，自相乘，得八萬一千七百九十六尺。 |
-  Method saith: put {down the} circumference,
-  two hundred {and} eighty-six rules, {which},
+  Method saith: put .[down the] circumference,
+  two hundred .[and] eighty-six rules, .[which],
   multiplied with itself, resulteth in
-  eighty-one thousand, seven hundred {and} ninety-six rules.
+  eighty-one thousand, seven hundred .[and] ninety-six rules.
 </#t>
 
 <#t>
   以深三丈六尺乘之，得二百九十四萬四千六百五十六尺。 |
-  Multiplying it by {the} depth,
-  three rods {and} six rules,
-  resulteth in two million, nine hundred {and} forty-four thousand,
-  six hundred {and} fifty-six rules.
+  Multiplying it by .[the] depth,
+  three rods .[and] six rules,
+  resulteth in two million, nine hundred .[and] forty-four thousand,
+  six hundred .[and] fifty-six rules.
 </#t>
 ====
 * 
@@ -1082,20 +1082,20 @@ $$
 <#t>
   以一十二除之，得二十四萬五千三百八十八尺。 |
   Dividing it by twelve, resulteth in
-  two hundred {and} forty-five thousand, three hundred {and}
+  two hundred .[and] forty-five thousand, three hundred .[and]
   eighty-eight rules.
 </#t>
 
 <#t>
   以斛法一尺六寸二分除之，即得。 |
-  Dividing it by {the} barrel divisor,
-    one rule, six inches {and} two tenths,
-  {we} are done.
+  Dividing it by .[the] barrel divisor,
+    one rule, six inches .[and] two tenths,
+  .[we] are done.
 </#t>
 ====
 * 斛法一尺六寸二分：
-    {the} barrel divisor,
-      one rule, six inches {and} two tenths \+
+    .[the] barrel divisor,
+      one rule, six inches .[and] two tenths \+
     The "barrel divisor" gives the conversion between
     the volume unit cubic rule~([尺])
     and the capacity unit barrel~([斛]).
@@ -1108,7 +1108,7 @@ $$
     and "cubic rules" were simply referred to as "rules"
     (though they still knew how to do area and volume conversions correctly).
     Here,
-      "one rule, six inches {and} two tenths",
+      "one rule, six inches .[and] two tenths",
     which is the length "1.62~rules",
     actually means the volume 1.62~**cubic**~rules.
     But
@@ -1158,20 +1158,20 @@ $$
 
 <#t>
   今有方窖，廣四丈六尺，長五丈四尺，深三丈五尺。問受粟幾何？ |
-  Now there be {a} rectangular cellar,
-  of width four rods {and} six rules,
-  length five rods {and} four rules,
-  {and} depth three rods {and} five rules.
-  {We} ask: how much grain beareth {it}?
+  Now there be .[a] rectangular cellar,
+  of width four rods .[and] six rules,
+  length five rods .[and] four rules,
+  .[and] depth three rods .[and] five rules.
+  .[We] ask: how much grain beareth .[it]?
 </#t>
 
 <#t>
   答曰：五萬三千六百六十六斛六斗六升三分升之二。 |
   Answer saith:
-  fifty-three thousand, six hundred {and} sixty-six barrels,
+  fifty-three thousand, six hundred .[and] sixty-six barrels,
   six pecks,
   six quarts
-  {and} two thirds of {a} quart.
+  .[and] two thirds of .[a] quart.
 </#t>
 ====
 * 
@@ -1184,27 +1184,27 @@ $$
 
 <#t>
   術曰：置廣四丈六尺、長五丈四尺，相乘，得二千四百八十四尺。 |
-  Method saith: put {down the} width,
-    four rods {and} six rules,
-  {and the} length,
-    five rods {and} four rules,
-  {which}, multiplied with each other,
-  result in two thousand, four hundred {and} eighty-four rules.
+  Method saith: put .[down the] width,
+    four rods .[and] six rules,
+  .[and the] length,
+    five rods .[and] four rules,
+  .[which], multiplied with each other,
+  result in two thousand, four hundred .[and] eighty-four rules.
 </#t>
 
 <#t>
   以深三丈五尺乘之，得八萬六千九百四十尺。 |
-  Multiplying it by {the} depth,
-    three rods {and} five rules,
+  Multiplying it by .[the] depth,
+    three rods .[and] five rules,
   resulteth in
-    eighty-six thousand, nine hundred {and} forty rules.
+    eighty-six thousand, nine hundred .[and] forty rules.
 </#t>
 
 <#t>
   以斛法一尺六寸二分除之，即得。 |
-  Dividing it by {the} barrel divisor,
-    one rule, six inches {and} two tenths,
-  {we} are done.
+  Dividing it by .[the] barrel divisor,
+    one rule, six inches .[and] two tenths,
+  .[we] are done.
 </#t>
 
 ----
@@ -1230,11 +1230,11 @@ $$
 
 <#t>
   今有圓窖，周五丈四尺，深一丈八尺。問受粟幾何？ |
-  Now there be {a} circular cellar, of circumference
-    five rods {and} four rules,
-  {and} depth
-    one rod {and} eight rules.
-  {We} ask: how much grain beareth {it}?
+  Now there be .[a] circular cellar, of circumference
+    five rods .[and] four rules,
+  .[and] depth
+    one rod .[and] eight rules.
+  .[We] ask: how much grain beareth .[it]?
 </#t>
 
 <#t>
@@ -1245,10 +1245,10 @@ $$
 
 <#t>
   術曰：先置周五丈四尺，自相乘，得二千九百一十六尺。 |
-  Method saith: First put {down the} circumference,
-    five rods {and} four rules,
-  {which}, multiplied with itself, resulteth in
-  two thousand, nine hundred {and} sixteen rules.
+  Method saith: First put .[down the] circumference,
+    five rods .[and] four rules,
+  .[which], multiplied with itself, resulteth in
+  two thousand, nine hundred .[and] sixteen rules.
 </#t>
 ====
 * 
@@ -1266,23 +1266,23 @@ $$
 
 <#t>
   以深一丈八尺乘之，得五萬二千四百八十八尺。 |
-  Multiplying it by {the} depth,
-    one rod {and} eight rules,
+  Multiplying it by .[the] depth,
+    one rod .[and] eight rules,
   resulteth in
-    fifty-two thousand, four hundred {and} eighty-eight rules.
+    fifty-two thousand, four hundred .[and] eighty-eight rules.
 </#t>
 
 <#t>
   以一十二除之，得四千三百七十四尺。 |
   Dividing it by twelve, resulteth in
-    four thousand, three hundred {and} seventy-four rules.
+    four thousand, three hundred .[and] seventy-four rules.
 </#t>
 
 <#t>
   以斛法一尺六寸二分除之，即得。 |
-  Dividing it by {the} barrel divisor,
-    one rule, six inches {and} two tenths,
-  {we} are done.
+  Dividing it by .[the] barrel divisor,
+    one rule, six inches .[and] two tenths,
+  .[we] are done.
 </#t>
 
 ----
@@ -1310,11 +1310,11 @@ $$
 
 <#t>
   今有圓田，周三百步，徑一百步。問得田幾何？ |
-  Now there be {a} circular field, of circumference
+  Now there be .[a] circular field, of circumference
     three hundred paces,
-  {and} diameter
+  .[and] diameter
     one hundred paces.
-  {We} ask: how much field resulteth?
+  .[We] ask: how much field resulteth?
 </#t>
 ----
   Here $\pi \approx 3$, see
@@ -1346,28 +1346,28 @@ $$
 <#t>
   術曰：先置周三百步，半之，得一百五十步。又置徑一百步，半之，得五十步。\
   相乘，得七千五百步。 |
-  Method saith: first put {down the} circumference,
+  Method saith: first put .[down the] circumference,
     three hundred paces;
   halving it, resulteth in
-    one hundred {and} fifty paces.
-  Also put {down the} diameter,
+    one hundred .[and] fifty paces.
+  Also put .[down the] diameter,
     one hundred paces;
   halving it, resulteth in
     fifty paces.
-  {These}, multiplied with each other, result in
+  .[These], multiplied with each other, result in
     seven thousand five hundred paces.
 </#t>
 
 <#t>
   以畝法二百四十步除之，即得。 |
-  Dividing it by {the} acre divisor,
-    two hundred {and} forty paces,
-  {we} are done.
+  Dividing it by .[the] acre divisor,
+    two hundred .[and] forty paces,
+  .[we] are done.
 </#t>
 
 <#t>
   又術：周自相乘，得九萬步。以一十二除之，得七千五百步。 |
-  Also {a} method: {the} circumference, multiplied with itself,
+  Also .[a] method: .[the] circumference, multiplied with itself,
   resulteth in ninety thousand paces.
   Dividing it by twelve, resulteth in
     seven thousand five hundred paces.
@@ -1381,24 +1381,24 @@ $$
 
 <#t>
   以畝法除之，得畝數。 |
-  Dividing it by {the} acre divisor,
-  resulteth in {the} number of acres.
+  Dividing it by .[the] acre divisor,
+  resulteth in .[the] number of acres.
 </#t>
 
 <#t>
   又術：徑自乘，得一萬。以三乘之，得三萬步。四除之，得七千五百步。 |
-  Also {a} method: {the} diameter, multiplied {with} itself,
+  Also .[a] method: .[the] diameter, multiplied .[with] itself,
   resulteth in ten thousand.
   Multiplying it by three, resulteth in
     thirty thousand paces.
-  Dividing it {by} four, resulteth in
+  Dividing it .[by] four, resulteth in
     seven thousand five hundred paces.
 </#t>
 
 <#t>
   以畝法除之，得畝數。 |
-  Dividing it by {the} acre divisor,
-  resulteth in {the} number of acres.
+  Dividing it by .[the] acre divisor,
+  resulteth in .[the] number of acres.
 </#t>
 ----
   In modern notation (and taking $\pi \approx 3$),
@@ -1413,19 +1413,19 @@ $$
 
 <#t>
   今有方田，桑生中央。從角至桑一百四十七步。問為田幾何？ |
-  Now there be {a} square field,
-  {with a} mulberry tree growing {in the} centre.
-  From {a} corner unto {the} mulberry tree:
-    one hundred {and} forty-seven paces.
-  {We} ask: how much field be {this}?
+  Now there be .[a] square field,
+  .[with a] mulberry tree growing .[in the] centre.
+  From .[a] corner unto .[the] mulberry tree:
+    one hundred .[and] forty-seven paces.
+  .[We] ask: how much field be .[this]?
 </#t>
 
 <#t>
   答曰：一頃八十三畝奇一百八十步。 |
   Answer saith:
-    one yardland {and}
+    one yardland .[and]
     eighty-three acres,
-    remainder one hundred {and} eighty paces.
+    remainder one hundred .[and] eighty paces.
 </#t>
 ====
 * [頃]：
@@ -1451,27 +1451,27 @@ $$
 
 <#t>
   術曰：置角至桑一百四十七步，倍之，得二百九十四步。 |
-  Method saith: put {down the} corner unto {the} mulberry tree,
-    one hundred {and} forty-seven paces.
+  Method saith: put .[down the] corner unto .[the] mulberry tree,
+    one hundred .[and] forty-seven paces.
   Doubling it, resulteth in
-    two hundred {and} ninety-four paces.
+    two hundred .[and] ninety-four paces.
 </#t>
 
 <#t>
   以五乘之，得一千四百七十步。\
   以七除之，得二百一十步，自相乘，得四萬四千一百步。 |
   Multiplying it by five, resulteth in
-    one thousand four hundred {and} seventy paces.
+    one thousand four hundred .[and] seventy paces.
   Dividing it by seven, resulteth in
-    two hundred {and} ten paces,
-  {which}, multiplied with itself, resulteth in
+    two hundred .[and] ten paces,
+  .[which], multiplied with itself, resulteth in
     forty-four thousand, one hundred paces.
 </#t>
 
 <#t>
   以二百四十步除之，即得。 |
-  Dividing it by two hundred {and} forty paces,
-  {we} are done.
+  Dividing it by two hundred .[and] forty paces,
+  .[we] are done.
 </#t>
 ----
   In modern notation, the area of a square with circumradius (or semi-diagonal)
@@ -1500,10 +1500,10 @@ $$
 
 <#t>
   今有木方三尺，欲方五寸作枕一枚。問得幾何？ |
-  Now there be {a} wooden cube {of edge} three rules,
-  {and we} wish {that each} cube {of edge} five inches {thereof be}
+  Now there be .[a] wooden cube .[of edge] three rules,
+  .[and we] wish .[that each] cube .[of edge] five inches .[thereof be]
   made into one pillow.
-  {We} ask: how many result?
+  .[We] ask: how many result?
 </#t>
 ====
 * 
@@ -1519,22 +1519,22 @@ $$
 
 <#t>
   答曰：二百一十六枚。 |
-  Answer saith: two hundred {and} sixteen {pillows}.
+  Answer saith: two hundred .[and] sixteen .[pillows].
 </#t>
 
 <#t>
   術曰：置方三尺，自相乘，得九尺。以高三尺乘之，得二十七尺。 |
-  Method saith: put {down the} cube's {edge}, three rules,
-  {which}, multiplied with itself, resulteth in nine rules.
-  Multiplying it by {the} height, three rules,
+  Method saith: put .[down the] cube's .[edge], three rules,
+  .[which], multiplied with itself, resulteth in nine rules.
+  Multiplying it by .[the] height, three rules,
   resulteth in twenty-seven rules.
 </#t>
 
 <#t>
   以一尺木八枕乘之，即得。 |
-  Multiplying it by eight pillows {for each}
+  Multiplying it by eight pillows .[for each]
     one rule of wood,
-  {we} are done.
+  .[we] are done.
 </#t>
 ====
 * 一尺：
@@ -1562,27 +1562,27 @@ $$
   今有索長五千七百九十四步，欲使作方。問幾何？ \+
   答曰：一千四百四十八步三尺。 |
   Now there be rope, of length
-    five thousand, seven hundred {and} ninety-four paces,
-  {and we} wish to make {it} be {a} square.
-  {We} ask: how much {be its edge}? \+
+    five thousand, seven hundred .[and] ninety-four paces,
+  .[and we] wish to make .[it] be .[a] square.
+  .[We] ask: how much .[be its edge]? \+
   Answer saith:
-    one thousand, four hundred {and} forty-eight paces
-    {and} three rules.
+    one thousand, four hundred .[and] forty-eight paces
+    .[and] three rules.
 </#t>
 
 <#t>
   術曰：置索長五千七百九十四步。以四除之，得一千四百四十八步，餘二步。 |
-  Method saith: put {down the} rope's length,
-    five thousand, seven hundred {and} ninety-four paces.
+  Method saith: put .[down the] rope's length,
+    five thousand, seven hundred .[and] ninety-four paces.
   Dividing it by four, resulteth in
-    one thousand, four hundred {and} forty-eight paces,
+    one thousand, four hundred .[and] forty-eight paces,
     remainder two paces.
 
 </#t>
 <#t>
   以六因之，得一丈二尺。以四除之，得三尺。 |
   Multiplying it by six, resulteth in
-    one rod {and} two rules.
+    one rod .[and] two rules.
   Dividing it by four, resulteth in
     three rules.
 </#t>
@@ -1595,7 +1595,7 @@ $$
 
 <#t>
   通計，即得。 |
-  Computing {the} total, {we} are done.
+  Computing .[the] total, .[we] are done.
 </#t>
 ====
 * 通：總也；
@@ -1625,15 +1625,15 @@ $$
 
 <#t>
   今有隄，下廣五丈，上廣三丈，高二丈，長六十尺，欲以一千尺作一方。問計幾何？ |
-  Now there be {an} embankment, of
+  Now there be .[an] embankment, of
     lower width five rods,
     upper width three rods,
-    height two rods, {and}
+    height two rods, .[and]
     length sixty rules,
-  {and we} wish to consider
+  .[and we] wish to consider
     one thousand rules
   as one block.
-  {We} ask: how many amounteth {this} to?
+  .[We] ask: how many amounteth .[this] to?
 </#t>
 ====
 * 一千尺：
@@ -1649,8 +1649,8 @@ $$
 
 <#t>
   法曰：置隄上廣三丈、下廣五丈。并之，得八丈。半之，得四丈。 |
-  Method saith: put {down the} embankment's
-  upper width, three rods, {and the}
+  Method saith: put .[down the] embankment's
+  upper width, three rods, .[and the]
   lower width, five rods.
   Combining them, resulteth in eight rods.
   Halving it, resulteth in four rods.
@@ -1667,9 +1667,9 @@ $$
 
 <#t>
   以高二丈乘之，得八百尺。以長六十尺乘之，得四萬八千。 |
-  Multiplying it by {the} height, two rods,
+  Multiplying it by .[the] height, two rods,
   resulteth in eight hundred rules.
-  Multiplying it by {the} length, sixty rules,
+  Multiplying it by .[the] length, sixty rules,
   resulteth in forty-eight thousand.
 </#t>
 ====
@@ -1682,7 +1682,7 @@ $$
 <#t>
   以一千尺除之，即得。 |
   Dividing it by one thousand rules,
-  {we} are done.
+  .[we] are done.
 </#t>
 
 ----
@@ -1711,14 +1711,14 @@ $$
 
 <#t>
   今有溝，廣十丈，深五丈，長二十丈，欲以千尺作一方。問得幾何？ |
-  Now there be {a} ditch, of
+  Now there be .[a] ditch, of
     width ten rods,
-    depth five rods, {and}
+    depth five rods, .[and]
     length twenty rods,
-  {and we} wish to consider
-    {a} thousand rules
+  .[and we] wish to consider
+    .[a] thousand rules
   as one block.
-  {We} ask: how many result?
+  .[We] ask: how many result?
 </#t>
 
 <#t>
@@ -1728,16 +1728,16 @@ $$
 
 <#t>
   術曰：置廣一十丈。以深五丈乘之，得五千尺。又以長二十丈乘之，得一百萬尺。 |
-  Method saith: put {down the} width, ten rods.
-  Multiplying it by {the} depth, five rods,
+  Method saith: put .[down the] width, ten rods.
+  Multiplying it by .[the] depth, five rods,
   resulteth in five thousand rules.
-  Also multiplying it by {the} length, twenty rods,
+  Also multiplying it by .[the] length, twenty rods,
   resulteth in one million rules.
 </#t>
 
 <#t>
   以一千除之，即得。 |
-  Dividing it by one thousand, {we} are done.
+  Dividing it by one thousand, .[we] are done.
 </#t>
 
 ----
@@ -1763,17 +1763,17 @@ $$
 <#t>
   今有積二十三萬四千五百六十七步。問為方幾何？ |
   Now there be area,
-  two hundred {and} thirty-four thousand, five hundred {and} sixty-seven\ paces.
-  {We} ask: be {this a} square {of edge} how much?
+  two hundred .[and] thirty-four thousand, five hundred .[and] sixty-seven\ paces.
+  .[We] ask: be .[this a] square .[of edge] how much?
 </#t>
 
 <#t>
   答曰：四百八十四步九百六十八分步之三百一十一。 |
   Answer saith:
-    four hundred {and} eighty-four paces
-    {and} three hundred {and} eleven
-      nine hundred {and} sixty-eighths
-    of {a} pace.
+    four hundred .[and] eighty-four paces
+    .[and] three hundred .[and] eleven
+      nine hundred .[and] sixty-eighths
+    of .[a] pace.
 </#t>
 
 ----
@@ -1786,8 +1786,8 @@ $$
 
 <#t>
   術曰：<:b>置積</:b>二十三萬四千五百六十七步為<:b>實</:b>。 |
-  Method saith: <:b>put {down the} area</:b>,
-  two hundred {and} thirty-four thousand, five hundred {and} sixty-seven\ paces,
+  Method saith: <:b>put .[down the] area</:b>,
+  two hundred .[and] thirty-four thousand, five hundred .[and] sixty-seven\ paces,
   as <:b>{the} dividend</:b>.
 </#t>
 ----
@@ -1829,9 +1829,9 @@ $$
 
 <#t>
   次<:r>借一算為下法</:r>。<:r>步之，超一位，至百而止</:r>。 |
-  Next, <:r>borrow one rod, {to} be {the} lower divisor</:r>.
-  <:r>Step it {forth}, jumping over one place,
-  {even} unto {the} hundreds, and stop</:r>.
+  Next, <:r>borrow one rod, .[to] be .[the] lower divisor</:r>.
+  <:r>Step it .[forth], jumping over one place,
+  .[even] unto .[the] hundreds, and stop</:r>.
 </#t>
 ====
 * 超：跳也；
@@ -1900,7 +1900,7 @@ $$
 <#t>
   <:g>上商置四百</:g>於實之上。 |
   <:g>{For the} upper quotient,
-  put four hundred</:g> above {the} dividend.
+  put four hundred</:g> above .[the] dividend.
 </#t>
 ====
 * 
@@ -1969,8 +1969,8 @@ $$
 <#t>
   副<:v>置四萬</:v>於實之下，下法之上，名為<:v>方法</:v>。 |
   Subsidiarily <:v>put forty thousand</:v>
-  below {the} dividend, {and} above {the} lower divisor;
-  {its} name be <:v>{the} upright divisor</:v>.
+  below .[the] dividend, .[and] above .[the] lower divisor;
+  .[its] name be <:v>{the} upright divisor</:v>.
 </#t>
 ====
 * 方：
@@ -2038,12 +2038,12 @@ $$
 
 <#t>
   <:g>命上商四百</:g><:b>除實</:b>。 |
-  <:g>Name {the} upper quotient's four hundred</:g>,
-  <:b>{and} remove {this} from {the} dividend</:b>.
+  <:g>Name .[the] upper quotient's four hundred</:g>,
+  <:b>{and} remove .[this] from .[the] dividend</:b>.
 </#t>
 ====
 * 除：
-    remove {this} from \+
+    remove .[this] from \+
     This is also the word for division. Division was thought of as
     repeatedly removing the divisor from the dividend.
 
@@ -2105,7 +2105,7 @@ $$
 
 <#t>
   除訖，<:v>倍方法</:v>。 |
-  {The} removal finished, <:v>double {the} upright divisor</:v>.
+  .[The] removal finished, <:v>double .[the] upright divisor</:v>.
 </#t>
 
 $$
@@ -2225,7 +2225,7 @@ $$
 <#t>
   復<:g>置上商八十</:g>，以次前商。 |
   <:g>Put</:g> again <:g>{for the} upper quotient eighty</:g>,
-  to be next {after the} quotient {digit} before.
+  to be next .[after the] quotient .[digit] before.
 </#t>
 
 ----
@@ -2292,8 +2292,8 @@ $$
 <#t>
   副<:v>置八百</:v>於方法之下，下法之上，名為<:v>廉法</:v>。 |
   Subsidiarily <:v>put eight hundred</:v>
-  below {the} upright divisor, {and} above {the} lower divisor;
-  {its} name be <:v>{the} incorrupt divisor</:v>.
+  below .[the] upright divisor, .[and] above .[the] lower divisor;
+  .[its] name be <:v>{the} incorrupt divisor</:v>.
 </#t>
 ====
 * 廉：
@@ -2366,9 +2366,9 @@ $$
 
 <#t>
   <:v>方、廉各命</:v><:g>上商八十</:g>，以<:b>除實</:b>。 |
-  <:v>Each of {the} upright {and the} incorrupt nameth</:v>
+  <:v>Each of .[the] upright .[and the] incorrupt nameth</:v>
   <:g>{the} upper quotient's eighty</:g>,
-  to be <:b>removed from {the} dividend</:b>.
+  to be <:b>removed from .[the] dividend</:b>.
 </#t>
 ====
 * 
@@ -2445,8 +2445,8 @@ $$
 
 <#t>
   除訖，<:v>倍廉法</:v>，上從方法。 |
-  {The} removal finished, <:v>double {the} incorrupt divisor</:v>,
-  {which} followeth {the} upright divisor above.
+  .[The] removal finished, <:v>double .[the] incorrupt divisor</:v>,
+  .[which] followeth .[the] upright divisor above.
 </#t>
 ====
 * 
@@ -2530,7 +2530,7 @@ $$
 * 
     Presumably 上從方法 from the previous sentence tells us that
     the incorrupt divisor~(廉法) is to
-      "follow {the} upright divisor~(方法) above"
+      "follow .[the] upright divisor~(方法) above"
     in its retreat.
 
 ====
@@ -2604,7 +2604,7 @@ $$
 <#t>
   復<:g>置上商四</:g>，以次前。 |
   <:g>Put</:g> again <:g>{for the} upper quotient four</:g>,
-  to be next {after the digit} before.
+  to be next .[after the digit] before.
 </#t>
 
 ----
@@ -2686,8 +2686,8 @@ $$
 <#t>
   副<:v>置四</:v>於方法之下，下法之上，名曰<:v>隅法</:v>。 |
   Subsidiarily <:v>put four</:v>
-  below {the} upright divisor, {and} above {the} lower divisor;
-  {its} name {be} called <:v>{the} honest divisor</:v>.
+  below .[the] upright divisor, .[and] above .[the] lower divisor;
+  .[its] name .[be] called <:v>{the} honest divisor</:v>.
 </#t>
 ====
 * 隅：廉也；
@@ -2774,9 +2774,9 @@ $$
 
 <#t>
   <:v>方、廉、隅各命</:v><:g>上商四</:g>，以<:b>除實</:b>。 |
-  <:v>Each of {the} upright, {the} incorrupt {and the} honest nameth</:v>
+  <:v>Each of .[the] upright, .[the] incorrupt .[and the] honest nameth</:v>
   <:g>{the} upper quotient's four</:g>,
-  to be <:b>removed from {the} dividend</:b>.
+  to be <:b>removed from .[the] dividend</:b>.
 </#t>
 ====
 * 
@@ -2862,8 +2862,8 @@ $$
 
 <#t>
   除訖，<:v>倍隅法</:v>，從方法。 |
-  {The} removal finished, <:v>double {the} honest divisor</:v>,
-  {which} followeth {the} upright divisor.
+  .[The] removal finished, <:v>double .[the] honest divisor</:v>,
+  .[which] followeth .[the] upright divisor.
 </#t>
 ====
 * 
@@ -2947,11 +2947,11 @@ $$
   <:v>下法得九百六十八</:v>，\
   <:b>不盡三百一十一</:b>。 |
   <:g>{The} upper quotient resulteth in
-    four hundred {and} eighty-four</:g>,
+    four hundred .[and] eighty-four</:g>,
   <:v>{and the} lower divisors result in
-    nine hundred {and} sixty-eight</:v>,
+    nine hundred .[and] sixty-eight</:v>,
   <:b>{with} remainder
-    three hundred {and} eleven</:b>.
+    three hundred .[and] eleven</:b>.
 </#t>
 ====
 * 下法：
@@ -3045,11 +3045,11 @@ $$
 
 <#t>
   是為方<:g>四百八十四</:g>步<:v>九百六十八分</:v>步之<:b>三百一十一</:b>。 |
-  This be {a} square {of edge}
-    <:g>four hundred {and} eighty-four</:g> paces
-    {and} <:b>three hundred {and} eleven</:b>
-      <:v>nine hundred {and} sixty-eighths</:v>
-    of {a} pace.
+  This be .[a] square .[of edge]
+    <:g>four hundred .[and] eighty-four</:g> paces
+    .[and] <:b>three hundred .[and] eleven</:b>
+      <:v>nine hundred .[and] sixty-eighths</:v>
+    of .[a] pace.
 </#t>
 
 ----
@@ -3198,24 +3198,24 @@ $$
   今有積三萬五千步。問為圓幾何？ |
   Now there be area,
   thirty-five thousand paces.
-  {We} ask: be {this a} circle {of circumference} how much?
+  .[We] ask: be .[this a] circle .[of circumference] how much?
 </#t>
 
 <#t>
   答曰：六百四十八步一千二百九十六分步之九十六。 |
   Answer saith:
-    six hundred {and} forty-eight paces
-    {and} ninety-six
-      one thousand, two hundred {and} ninety-sixths
-    of {a} pace.
+    six hundred .[and] forty-eight paces
+    .[and] ninety-six
+      one thousand, two hundred .[and] ninety-sixths
+    of .[a] pace.
 </#t>
 
 <#t>
   術曰：置積三萬五千步。以一十二乘之，得四十二萬為<:b>實</:b>。 |
-  Method saith: put {down the} area,
+  Method saith: put .[down the] area,
     thirty-five thousand paces.
   Multiplying it by twelve, resulteth in
-    four hundred {and} twenty thousand
+    four hundred .[and] twenty thousand
   as <:b>{the} dividend</:b>.
 </#t>
 ====
@@ -3253,15 +3253,15 @@ $$
 
 <#t>
   次<:r>借一算為下法</:r>。<:r>步之，超一位，至百而止</:r>。 |
-  Next, <:r>borrow one rod, {to} be {the} lower divisor</:r>.
-  <:r>Step it {forth}, jumping over one place,
-  {even} unto {the} hundreds, and stop</:r>.
+  Next, <:r>borrow one rod, .[to] be .[the] lower divisor</:r>.
+  <:r>Step it .[forth], jumping over one place,
+  .[even] unto .[the] hundreds, and stop</:r>.
 </#t>
 
 <#t>
   <:g>上商置六百</:g>於實之上。 |
   <:g>{For the} upper quotient,
-  put six hundred</:g> above {the} dividend.
+  put six hundred</:g> above .[the] dividend.
 </#t>
 ====
 * 
@@ -3273,19 +3273,19 @@ $$
 <#t>
   副<:v>置六萬</:v>於實之下，下法之上，名為<:v>方法</:v>。 |
   Subsidiarily <:v>put sixty thousand</:v>
-  below {the} dividend, {and} above {the} lower divisor;
-  {its} name be <:v>{the} upright divisor</:v>.
+  below .[the] dividend, .[and] above .[the] lower divisor;
+  .[its] name be <:v>{the} upright divisor</:v>.
 </#t>
 
 <#t>
   <:g>命上商六百</:g><:b>除實</:b>。 |
-  <:g>Name {the} upper quotient's six hundred</:g>,
-  <:b>{and} remove {this} from {the} dividend</:b>.
+  <:g>Name .[the] upper quotient's six hundred</:g>,
+  <:b>{and} remove .[this] from .[the] dividend</:b>.
 </#t>
 
 <#t>
   除訖，<:v>倍方法</:v>。 |
-  {The} removal finished, <:v>double {the} upright divisor</:v>.
+  .[The] removal finished, <:v>double .[the] upright divisor</:v>.
 </#t>
 
 <#t>
@@ -3297,21 +3297,21 @@ $$
 <#t>
   復<:g>置上商四十</:g>，以次前商。 |
   <:g>Put</:g> again <:g>{for the} upper quotient forty</:g>,
-  to be next {after the} quotient {digit} before.
+  to be next .[after the] quotient .[digit] before.
 </#t>
 
 <#t>
   副<:v>置四百</:v>於方法之下，下法之上，名為<:v>廉法</:v>。 |
   Subsidiarily <:v>put four hundred</:v>
-  below {the} upright divisor, {and} above {the} lower divisor;
-  {its} name be <:v>{the} incorrupt divisor</:v>.
+  below .[the] upright divisor, .[and] above .[the] lower divisor;
+  .[its] name be <:v>{the} incorrupt divisor</:v>.
 </#t>
 
 <#t>
   <:v>方、廉各命</:v><:g>上商四十</:g>，以<:b>除實</:b>。 |
-  <:v>Each of {the} upright {and the} incorrupt nameth</:v>
+  <:v>Each of .[the] upright .[and the] incorrupt nameth</:v>
   <:g>{the} upper quotient's forty</:g>,
-  to be <:b>removed from {the} dividend</:b>.
+  to be <:b>removed from .[the] dividend</:b>.
 </#t>
 ====
 * 
@@ -3327,8 +3327,8 @@ $$
 
 <#t>
   除訖，<:v>倍廉法</:v>，從方法。 |
-  {The} removal finished, <:v>double {the} incorrupt divisor</:v>,
-  {which} followeth {the} upright divisor.
+  .[The] removal finished, <:v>double .[the] incorrupt divisor</:v>,
+  .[which] followeth .[the] upright divisor.
 </#t>
 
 <#t>
@@ -3340,21 +3340,21 @@ $$
 <#t>
   復<:g>置上商八</:g>，次前商。 |
   <:g>Put</:g> again <:g>{for the} upper quotient eight</:g>,
-  next {after the} quotient {digit} before.
+  next .[after the] quotient .[digit] before.
 </#t>
 
 <#t>
   副<:v>置八</:v>於方法之下，下法之上，名為<:v>隅法</:v>。 |
   Subsidiarily <:v>put eight</:v>
-  below {the} upright divisor, {and} above {the} lower divisor;
-  {its} name be <:v>{the} honest divisor</:v>.
+  below .[the] upright divisor, .[and] above .[the] lower divisor;
+  .[its] name be <:v>{the} honest divisor</:v>.
 </#t>
 
 <#t>
   <:v>方、廉、隅各命</:v><:g>上商八</:g>，以<:b>除實</:b>。 |
-  <:v>Each of {the} upright, {the} incorrupt {and the} honest nameth</:v>
+  <:v>Each of .[the] upright, .[the] incorrupt .[and the] honest nameth</:v>
   <:g>{the} upper quotient's eight</:g>,
-  to be <:b>removed from {the} dividend</:b>.
+  to be <:b>removed from .[the] dividend</:b>.
 </#t>
 ====
 * 
@@ -3365,8 +3365,8 @@ $$
 
 <#t>
   除訖，<:v>倍隅法</:v>，從方法。 |
-  {The} removal finished, <:v>double {the} honest divisor</:v>,
-  {which} followeth {the} upright divisor.
+  .[The] removal finished, <:v>double .[the] honest divisor</:v>,
+  .[which] followeth .[the] upright divisor.
 </#t>
 
 <#t>
@@ -3374,9 +3374,9 @@ $$
   <:v>下法得一千二百九十六</:v>，\
   <:b>不盡九十六</:b>。 |
   <:g>{The} upper quotient resulteth in
-    six hundred {and} forty-eight</:g>,
+    six hundred .[and] forty-eight</:g>,
   <:v>{and the} lower divisors result in
-    one thousand, two hundred {and} ninety-six</:v>,
+    one thousand, two hundred .[and] ninety-six</:v>,
   <:b>{with} remainder ninety-six</:b>.
 </#t>
 ====
@@ -3390,11 +3390,11 @@ $$
 
 <#t>
   是為方<:g>六百四十八</:g>步<:v>一千二百九十六分</:v>步之<:b>九十六</:b>。 |
-  This be {a} circumference of
-    <:g>six hundred {and} forty-eight</:g> paces
-    {and} <:b>ninety-six</:b>
-      <:v>one thousand, two hundred {and} ninety-sixths</:v>
-    of {a} pace.
+  This be .[a] circumference of
+    <:g>six hundred .[and] forty-eight</:g> paces
+    .[and] <:b>ninety-six</:b>
+      <:v>one thousand, two hundred .[and] ninety-sixths</:v>
+    of .[a] pace.
 </#t>
 
 
@@ -3405,7 +3405,7 @@ $$
 <*c>
   "[sun-tzu]'s Computational Classic: [vol-ii]"
   | sun-tzu-ii
-  | ``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {[vol-ii]}''
+  | ``{Sun}~{Tz{\uu}'s} .[Computational] .[Classic]: {[vol-ii]}''
 </*c>
 
 <*f></*f>
