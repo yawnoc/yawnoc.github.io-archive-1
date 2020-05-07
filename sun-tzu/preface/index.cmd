@@ -1,138 +1,53 @@
-<*>
-  "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
-  | 20190609 | 20200223 | dr
-  | An annotated English translation of the preface to Sunzi Suanjing, \
-    《孫子算經》, or "[sun-tzu-classic]".
-</*>
+(+ res/general-syntax.cmd +)
 
-<=h>
-  <@ih></@ih>
-  <@it></@it>
-  <@ic></@ic>
-</=h>
+%%
+  %title "\sun-tzu's Computational Classic: Preface" ~~《孫子算經\.序》~~
+  %title-en "\sun-tzu's Computational Classic: Preface"
+  %title-suffix \title-suffix
+  %author Conway
+  %date-created 2019-06-09
+  %date-modified 2020-05-xx
+  %resources
+    (+ res/main-resources.cmd +)
+    (+ res/rendering-javascript.cmd +)
+%%
 
-<h1>
-  《孫子算經\.序》 \or \+
-  "[sun-tzu-classic]: [pref]"
-</h1>
-
-<*p> |
-  Also known as .[Sunzi Suanjing]: [pref].
-</*p>
-
-<@2> Volume navigation | volumes </@2>
+[[====
+* \header-link:home
+* \header-link:top
+* \header-link:sun-tzu
+*> [Pref.](\/ You are viewing Preface)
+* \header-link:cite
+====]]
 
 
-<@@>
-  <@d> Translation | translation </@d>
-</@@>
-
-<#n>
-  
-  <@>
-    《孫子算經》 \or \+
-    "[sun-tzu-classic]"
-    | /sun-tzu/
-    | "[sun-tzu-classic]": 《孫子算經》
-  </@>
-  ====
-  * 
-      __《序》~"[pref]"__
-  
-    <@i>
-      《卷上》~"[vol-i]"
-      | /sun-tzu/i
-      | "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
-    </@i>
-    <@i>
-      《卷中》~"[vol-ii]" [v/(incomplete)/]
-      | /sun-tzu/ii
-      | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
-    </@i>
-  * 
-      [r/\!《卷下》~"[vol-iii]"/]
-      [r/(haven't started)/]
-  
-  ====
-  
-</#n>
-
-<% [sun-tzu] | Sun~Tzuu %>
-<% [sun-tzu-classic] | [sun-tzu]'s Computational Classic %>
-<% [pref] | Preface %>
-<% [vol-i] | Volume~I %>
-<% [vol-ii] | Volume~II %>
-<% [vol-iii] | Volume~III %>
+#
+  《孫子算經\.序》 \+
+  %title-en
+#
 
 
-<@2> Translation | translation </@2>
-
-
-<@@>
-  <@u> Volumes | volumes | Volume navigation </@u>
-</@@>
-<^^></^^>
+[||||
+||||]
 
 ----
-  In the preface, [sun-tzu]
-  tells us that mathematics governs absolutely everything,
-  and allows us to do even magical things
-  (like "seek .[the] whereabouts of gods .[and] earth gods").
-  Basically it reads like advertising material for
-  prospective STEM undergraduates.
+In the preface, \sun-tzu tells us that
+mathematics governs absolutely everything,
+and allows us to do even magical things
+like "seek .[the] whereabouts of gods .[and] earth gods".
+Basically it reads like advertising material for
+prospective STEM undergraduates.
 ----
 
-<% [尺丈] | 尺丈 <^> ch'ek choeng | ch'ih chang | chi zhang </^> %>
-<% [尺] | 尺 <^> ch'ek | ch'ih | chi </^> %>
-<% [丈] | 丈 <^> choeng | chang | zhang </^> %>
-<% [毫釐] | 毫釐 <^> hou lei | hao li | hao li </^> %>
-<% [寸] | 寸 <^> ts'u"n | ts'un | cun </^> %>
-<% [黍絫] | 黍絫 <^> shu" l_u" | shu lei | shu lei </^> %>
-<% [銖] | 銖 <^> chu" | chu | zhu </^> %>
 
-<<
-  《孫子算經\.序》
-||
-  "[sun-tzu-classic]: [pref]"
->>
-
-<@@>
-  <@u> Volumes | volumes | Volume navigation </@u>
-  <@>
-    [manuscript]
-    | /manuscripts/sun-tzu-preface.pdf
-    | Translation manuscript for [pref]
-  </@>
-  <@>
-    A2
-    | https://archive.org/details/02094034.cn/page/n2
-    | 02094034.cn at archive.org
-  </@>
-  <@>
-    B146(141)
-    | https://commons.wikimedia.org/w/index.php\
-        ?title=\
-          File%3A%E6%96%87%E6%B7%B5%E9%96%A3\
-          %E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu\
-        &page=146
-    | 《文淵閣四庫全書》第0797冊 at Wikimedia Commons
-  </@>
-  <@>
-    C
-    | https://ctext.org/sunzi-suan-jing
-    | ctext.org database page
-  </@>
-  <@>
-    D7
-    | https://ctext.org/library.pl?if=en&file=86926&page=7
-    | 《知不足齋叢書》本 at ctext.org library
-  </@>
-</@@>
+##translation
+  Translation
+##
 
 <<
   孫子曰：夫算者，
 ||
-  [sun-tzu] saith: Computation---
+  \sun-tzu saith: Computation---
 >>
 ====
 * 算：
@@ -158,13 +73,8 @@
 * 經緯：
     .[the] warp .[and] woof;
     \or .[the] meridians .[and] parallels \+
-    <@>
-      "Warp .[and] woof"
-      | https://en.wiktionary.org/wiki/warp_and_woof
-      | Wiktionary: warp and woof
-    </@>
-    translates well, both
-    literally (longways and sideways threads)
+    ["Warp and woof"](https://en.wiktionary.org/wiki/warp_and_woof)
+    is a good translation, both literally (longways and sideways threads)
     and figuratively (fundamental structure).
 
 ====
@@ -178,11 +88,7 @@
 ====
 * 五常：
     .[the] Five Everlasting Virtues \+
-    <@>
-      仁義禮智信
-      | https://ctext.org/three-character-classic#n90581
-      | 《三字經》
-    </@>,
+    [仁義禮智信](https://ctext.org/three-character-classic#n90581),
     i.e.~Humanity, Righteousness, Propriety (or Rites), Wisdom and Trust.
 
 * 本末：
@@ -193,11 +99,7 @@
     Dark .[and] Light;
     \or Shade .[and] Sun;
     \or Female .[and] Male \+
-    <@>
-      "Yin .[and] Yang"
-      | https://en.wikipedia.org/wiki/Yin_and_yang
-      | Wikipedia: Yin and yang
-    </@>.
+    ["Yin and Yang"](https://en.wikipedia.org/wiki/Yin_and_yang).
 
 ====
 
@@ -212,20 +114,8 @@
 ====
 * 三光：
     .[the] Three Luminaries \+
-    <@>
-      日月星
-      | https://ctext.org/three-character-classic#n90576
-      | 《三字經》
-    </@>,
+    [日月星](https://ctext.org/three-character-classic#n90576),
     i.e.~the sun, the moon and the stars.
-
-* 
-    <@>
-      Version~C
-      | https://ctext.org/sunzi-suan-jing
-      | ctext.org database page
-    </@>
-    erroneously has 裹 for 裏.
 
 ====
 
@@ -238,13 +128,9 @@
 ====
 * 五行：
     .[the] Five Elements \+
-    <@>
-      金木水火土
-      | https://en.wikipedia.org/wiki/Wu_Xing
-      | Wikipedia: Wu Xing
-    </@>,
+    [金木水火土](https://en.wikipedia.org/wiki/Wu_Xing),
     i.e.~metal, tree, water, fire and earth.
-    Perhaps better rendered as "{the} Five Phases".
+    Perhaps better rendered as ".[the] Five Phases".
 
 * 準：平也；又均也；
     evenness;
@@ -265,11 +151,7 @@
 
 * 六藝：
     .[the] Six Arts \+
-    <@>
-      禮樂射御書數
-      | https://en.wikipedia.org/wiki/Six_Arts
-      | Wikipedia: Six Arts
-    </@>,
+    [禮樂射御書數](https://en.wikipedia.org/wiki/Six_Arts),
     i.e.~Propriety (or Rites), Music, Archery,
     (Chariot) Driving, Calligraphy and Mathematics.
 
@@ -298,18 +180,10 @@
     陰氣 and 陽氣.
     Recall 陰 and 陽 are
     "Dark .[and] Light", "Shade .[and] Sun", or "Female .[and] Male".
-    <@>
-      氣
-      | https://en.wikipedia.org/wiki/Qi
-      | Wikipedia: Qi
-    </@>
+    [氣](https://en.wikipedia.org/wiki/Qi)
     is usually rendered as "life force",
-    transliterated as Hei
-    (<@>
-      Cantonese
-      | /cantonese/conway-romanisation
-      | Conway's Custom Romanisation for Cantonese
-    </@>), Ch'i (Wade-Giles) or Qi\ (Pinyin).
+    romanised as Hei ([Cantonese](/cantonese/conway-romanisation)),
+    Ch'i (Wade--Giles) or Q(i\) (Pinyin).
 
 ====
 
@@ -382,10 +256,10 @@
 * 祇：地神；
     earth gods \+
       祇，音岐，
-      \C k'ei4, \M qi/
+      \C k'ei4, \M q(i/)
 
 * 極：
-    examineth ({unto} extremity) \+
+    examineth (.[unto] extremity) \+
     All of 采, 極, 窮 and 究
     mean "investigate", and in particular the last three mean
     "investigate to the utmost extent".
@@ -418,12 +292,11 @@
     .[the] rules;
     \lit the compass .[and] the set square
 
-* [尺丈]：
+* 尺丈：
     .[the] rule .[and the] rod \+
-    Units of length, see
-    <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>.
-    One [尺] or rule is of the order one foot,
-    and one [丈] or rod is equal to ten rules.
+    Units of length, see [Vol.~I \P1] ["i 1"].
+    One rule, chih ((尺)), is of the order one Imperial foot,
+    and one rod, chang ((丈)), is equal to ten rules.
 
 ====
 
@@ -441,19 +314,17 @@
     heavy .[and] light;
     \or important .[and] unimportant
 
-* [毫釐]：
+* 毫釐：
     mils .[and] cents \+
-    Small units of length
-    (see <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>),
+    Small units of length (see [Vol.~I \P1] ["i 1"]),
     respectively a thousandth and a hundredth
-    of the Chinese inch, [寸].
+    of the Chinese inch, ts'un ((寸)).
 
-* [黍絫]：
+* 黍絫：
     millets .[and] piles \+
-    Small units of weight,
-    (see <@> Vol.~I~\P2 | /sun-tzu/i#2 | Vol. I \P2 </@>),
+    Small units of weight (see [Vol.~I \P2] ["i 2"]),
     respectively a hundredth and a tenth
-    of the Chinese dram, [銖],
+    of the Chinese dram, chu ((銖)),
     which is of the order one gram.
 
 ====
@@ -467,7 +338,7 @@
 ====
 * 億：
     .[an] hundred million;
-    \or .[a] square-myriad
+    \lit .[a] square-myriad
 
 * 八極：
     .[the] Eight Extremities \+
@@ -488,7 +359,7 @@
     wholly;
     \or completely \+
       勝，平聲，
-      \C shing1, \M she=ng \gr she\ng
+      \C [^sh]ing1 (\pm [_s]ing1), \M sh(e-)ng (\gr sh(e\)ng)
 
 * 斂：聚也；
     gathering
@@ -509,7 +380,7 @@
 * 窶：貧也；
     destitute \+
       窶，音巨，
-      \C k_u"6, \M ju\
+      \C k\_(u")6, \M j(u\)
 
 ====
 
@@ -536,7 +407,7 @@
 * 皓：光也；白也；
     bright white \+
       皓，音號，
-      \C hou6, \M ha\o
+      \C hou6, \M h(a\)o
 
 ====
 
@@ -548,28 +419,28 @@
   夫欲學之者必務量能揆己，志在所專。
 ||
   Those who wish to learn it must seek to
-  gauge {one's} abilities .[and] measure oneself,
-  {and put one's} will into that focused upon.
+  gauge .[one's] abilities .[and] measure oneself,
+  .[and put one's] will into that focused upon.
 >>
 ====
 * 量：
     gauge; or measure \+
       量，去聲，
-      \C loeng6, \M lia\ng \+
+      \C loeng6, \M li(a\)ng \+
     量 is a funny word.
     When it is the verb "measure/gauge" applied to physical measurements
       (e.g.~volume of grain),
-      it is read in 平聲 (loeng4/lia/ng),
+      it is read in 平聲 (loeng4/li(a/)ng),
     but when applied to figurative or not-so-physical quantities
       (e.g.~量力, "gauging strength/ability", or 量入, "gauging revenue"),
-      it is read in 去聲 (loeng6/lia\ng).
+      it is read in 去聲 (loeng6/li(a\)ng).
     And when it is the noun "amount",
-      also 去聲 (loeng6/lia\ng).
+      also 去聲 (loeng6/li(a\)ng).
 
 * 揆：度也；
     measure \+
       揆，音葵，
-      \C k'wai4, \M kui/
+      \C k'wai4, \M ku(i/)
 
 ====
 
@@ -579,20 +450,18 @@
   .[Among those] like this, how be there those who succeed not!
 >>
 
-<div class="end">
-  <span>END of [pref]</span> \+
-  Next:
-  <@>
-    《卷上》~"[vol-i]"
-    | /sun-tzu/i
-    | "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
-  </@>
-</div>
+{{{{|
+  \nav-up: \sun-tzu's Computational Classic : [""]
+  {{|
+    ||||{previous}
+    ||||
+    \nav-curr: Preface
+    \nav-next: Vol.~I : ["i"]
+  |}}
+|}}}}
 
-<*c>
-  "[sun-tzu-classic]: [pref]"
-  | sun-tzu-preface
-  | ``{Sun}~{Tz{\uu}'s} .[Computational] .[Classic]: {[pref]}''
-</*c>
 
-<*f></*f>
+\cite-this-page[%title-en][sun-tzu-preface][
+  ~~``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {Preface}''~~
+]
+
