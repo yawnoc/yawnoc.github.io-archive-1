@@ -403,6 +403,18 @@
   (/sun-tzu/\g<volume>/\g<paragraph> \g<title>)
 %}
 
+<!-- Sun Tzu manuscript URL in round brackets  [m"v p"] -->
+{%
+  [\s]* \[m"p"\]
+%
+  (/manuscripts/sun-tzu-preface.pdf)
+%}
+{%
+  [\s]* \[m"(?P<volume> [i] {1,3} ) [ ] (?P<paragraph> [0-9] + )"\]
+%
+  (/manuscripts/sun-tzu-\g<volume>-\g<paragraph>.pdf)
+%}
+
 
 <!--
   ----------------------------------------------------------------
