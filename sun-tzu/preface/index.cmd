@@ -56,13 +56,6 @@ prospective STEM undergraduates.
 
 ====
 
-----
-  From the next line until almost the end of the preface,
-  the text consists of pairs of lines which parallel each other,
-  character for character.
-  This is a very common rhetorical device in Literary Chinese.
-----
-
 <<
   天地之經緯，群生之元首；
 ||
@@ -70,6 +63,11 @@ prospective STEM undergraduates.
   .[and the] origin .[and] beginning of .[the] living masses;
 >>
 ====
+* From this line until almost the end of the preface,
+  the text consists of pairs of lines which parallel each other,
+  character for character.
+  This is a very common rhetorical device in Literary Chinese.
+
 * 經緯：
     .[the] warp .[and] woof;
     \or .[the] meridians .[and] parallels \+
@@ -409,11 +407,10 @@ prospective STEM undergraduates.
       皓，音號，
       \C hou6, \M h(a\)o
 
+* Here the parallel pairing of lines stops.
+
 ====
 
-----
-  At this point the parallel pairs of lines stops.
-----
 
 <<
   夫欲學之者必務量能揆己，志在所專。
