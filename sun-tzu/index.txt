@@ -14,7 +14,7 @@
 </=h>
 
 <h1>
-  《孫子算經》 \or <br>
+  《孫子算經》 \or \+
   "[sun-tzu-classic]"
 </h1>
 
@@ -31,7 +31,7 @@
 </@@>
 
 <#n>
-  <b>《孫子算經》</b> \or <br>
+  <b>《孫子算經》</b> \or \+
   <b>"[sun-tzu-classic]"</b>
   <ul>
     <@i>
@@ -72,7 +72,7 @@ In each page, remove the its own link, and make that text bold.
 <#n>
   
   <@>
-    《孫子算經》 \or <br>
+    《孫子算經》 \or \+
     "[sun-tzu-classic]"
     | /sun-tzu/
     | "[sun-tzu-classic]": 《孫子算經》
@@ -222,8 +222,8 @@ In each page, remove the its own link, and make that text bold.
         https://commons.wikimedia.org/w/index.php\
           ?title=File%3A文淵閣四庫全書_0797冊.djvu\
           \&page=<:g>$p$</:g>
-      </code> <br>
-      corresponding to the printed page number <:g>$q$</:g>. <br>
+      </code> \+
+      corresponding to the printed page number <:g>$q$</:g>. \+
       Note that ${\colg p} - {\colg q} = 5$.
     </#>
   </li>
@@ -239,7 +239,7 @@ In each page, remove the its own link, and make that text bold.
       C<:g>$p$</:g>(<:g>$v$</:g>.<:g>$q$</:g>) shall mean
       <code>
         https://ctext.org/sunzi-suan-jing#n<:g>$p$</:g>
-      </code> <br>
+      </code> \+
       corresponding to Volume <:g>$v$</:g>, Line <:g>$q$</:g>
       according to ctext.org's numbering.
     </#>
@@ -447,7 +447,7 @@ In each page, remove the its own link, and make that text bold.
 </@@>
 
 <#n>
-  <b>《孫子算經》</b> \or <br>
+  <b>《孫子算經》</b> \or \+
   <b>"[sun-tzu-classic]"</b>
   <ul>
     <@i>

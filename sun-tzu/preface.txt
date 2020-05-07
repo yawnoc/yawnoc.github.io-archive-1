@@ -12,7 +12,7 @@
 </=h>
 
 <h1>
-  《孫子算經\.序》 \or <br>
+  《孫子算經\.序》 \or \+
   "[sun-tzu-classic]: [pref]"
 </h1>
 
@@ -30,7 +30,7 @@
 <#n>
   
   <@>
-    《孫子算經》 \or <br>
+    《孫子算經》 \or \+
     "[sun-tzu-classic]"
     | /sun-tzu/
     | "[sun-tzu-classic]": 《孫子算經》
@@ -154,7 +154,7 @@
 <ul>
   <li>經緯：
     {the} warp {and} woof;
-    \or {the} meridians {and} parallels <br>
+    \or {the} meridians {and} parallels \+
     <@>
       "Warp {and} woof"
       | https://en.wiktionary.org/wiki/warp_and_woof
@@ -173,7 +173,7 @@
 </#t>
 <ul>
   <li>五常：
-    {the} Five Everlasting Virtues <br>
+    {the} Five Everlasting Virtues \+
     <@>
       仁義禮智信
       | https://ctext.org/three-character-classic#n90581
@@ -188,7 +188,7 @@
   <li>陰陽：
     Dark {and} Light;
     \or Shade {and} Sun;
-    \or Female {and} Male <br>
+    \or Female {and} Male \+
     <@>
       "Yin {and} Yang"
       | https://en.wikipedia.org/wiki/Yin_and_yang
@@ -206,7 +206,7 @@
 </#t>
 <ul>
   <li>三光：
-    {the} Three Luminaries <br>
+    {the} Three Luminaries \+
     <@>
       日月星
       | https://ctext.org/three-character-classic#n90576
@@ -231,7 +231,7 @@
 </#t>
 <ul>
   <li>五行：
-    {the} Five Elements <br>
+    {the} Five Elements \+
     <@>
       金木水火土
       | https://en.wikipedia.org/wiki/Wu_Xing
@@ -257,7 +257,7 @@
     \lit {the} myriad things
   </li>
   <li>六藝：
-    {the} Six Arts <br>
+    {the} Six Arts \+
     <@>
       禮樂射御書數
       | https://en.wikipedia.org/wiki/Six_Arts
@@ -286,7 +286,7 @@
     \or types
   </li>
   <li>二氣：
-    {the} Two Breaths <br>
+    {the} Two Breaths \+
     陰氣 and 陽氣.
     Recall 陰 and 陽 are
     "Dark {and} Light", "Shade {and} Sun", or "Female {and} Male".
@@ -337,7 +337,7 @@
     \or {the} way of Heaven
   </li>
   <li>兆基：
-    foundations <br>
+    foundations \+
     According to 《國語辭典》 this means 開創基業,
     roughly "opening/beginning/foundation".
   </li>
@@ -346,7 +346,7 @@
     \lit {the} science of Earth
   </li>
   <li>從橫：
-    meridians {and} parallels (of latitude) <br>
+    meridians {and} parallels (of latitude) \+
     Variant of 縱橫.
     Here 從橫 is referring to "things of broad scope"
     or "the grand scheme of things", in contrast to 精微
@@ -360,21 +360,21 @@
 </ul>
 
 <#t>
-  采神祇之所在，極成敗之符驗； <br>
+  采神祇之所在，極成敗之符驗； \+
   窮道德之理，究性命之情。 |
   {it} seeketh {the} whereabouts of gods {and} earth gods,
-  {and} examineth corroboration of success {and} failure; <br>
+  {and} examineth corroboration of success {and} failure; \+
   {it} exhausteth {the} reasoning of morality,
   {and} investigateth {the} sense of life.
 </#t>
 <ul>
   <li>祇：地神；
-    earth gods <br>
+    earth gods \+
       祇，音岐，
       <^cm> k'ei4 | qi/ </^cm>
   </li>
   <li>極：
-    examineth ({unto} extremity) <br>
+    examineth ({unto} extremity) \+
     All of 采, 極, 窮 and 究
     mean "investigate", and in particular the last three mean
     "investigate to the utmost extent".
@@ -394,10 +394,10 @@
 </ul>
 
 <#t>
-  立規矩，準方圓， <br>
+  立規矩，準方圓， \+
   謹法度，約尺丈， |
   {It} establisheth {the} rules,
-  standardiseth the square {and} the circle, <br>
+  standardiseth the square {and} the circle, \+
   abideth by {the} law,
   agreeth upon {the} rule {and the} rod,
 </#t>
@@ -407,7 +407,7 @@
     \lit the compass {and} the set square
   </li>
   <li>[尺丈]：
-    {the} rule {and the} rod <br>
+    {the} rule {and the} rod \+
     Units of length, see
     <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>.
     One [尺] or rule is of the order one foot,
@@ -416,10 +416,10 @@
 </ul>
 
 <#t>
-  立權衡，平重輕， <br>
+  立權衡，平重輕， \+
   剖毫釐，析黍絫。 |
   establisheth the weighing scale,
-  balanceth heavy {and} light <br>
+  balanceth heavy {and} light \+
   disecteth mils {and} cents,
   {and} splitteth millets {and} piles.
 </#t>
@@ -429,14 +429,14 @@
     \or important {and} unimportant
   </li>
   <li>[毫釐]：
-    mils {and} cents <br>
+    mils {and} cents \+
     Small units of length
     (see <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>),
     respectively a thousandth <_>1/1000</_> and a hundredth <_>1/100</_>
     of the Chinese inch, [寸].
   </li>
   <li>[黍絫]：
-    millets {and} piles <br>
+    millets {and} piles \+
     Small units of weight,
     (see <@> Vol.~I~\P2 | /sun-tzu/i#2 | Vol. I \P2 </@>),
     respectively a hundredth <_>1/100</_> and a tenth <_>1/10</_>
@@ -456,7 +456,7 @@
     \or {a} square-myriad
   </li>
   <li>八極：
-    {the} Eight Extremities <br>
+    {the} Eight Extremities \+
     Probably the four cardinal directions
     plus the four intercardinal directions.
     Sometimes called the "principal winds" in English.
@@ -471,7 +471,7 @@
 <ul>
   <li>勝：
     wholly;
-    \or completely <br>
+    \or completely \+
       勝，平聲，
       <^cmg> shing1 | she=ng | she\ng </^cmg>
   </li>
@@ -491,7 +491,7 @@
 </#t>
 <ul>
   <li>窶：貧也；
-    destitute <br>
+    destitute \+
       窶，音巨，
       <^cm> k_u"6 | ju\ </^cm>
   </li>
@@ -510,14 +510,14 @@
     children
   </li>
   <li>意閉：
-    close-minded <br>
+    close-minded \+
     This is the literal rendering;
     perhaps "narrow-minded" sounds more natural.
     I have translated both 心 and 意 as
     <span class="no-wrapping">"-minded"</span>.
   </li>
   <li>皓：光也；白也；
-    bright white <br>
+    bright white \+
       皓，音號，
       <^cm> hou6 | ha\o </^cm>
   </li>
@@ -535,9 +535,9 @@
 </#t>
 <ul>
   <li>量：
-    gauge; or measure <br>
+    gauge; or measure \+
       量，去聲，
-      <^cm> loeng6 | lia\ng </^cm> <br>
+      <^cm> loeng6 | lia\ng </^cm> \+
     量 is a funny word.
     When it is the verb "measure/gauge" applied to physical measurements
       (e.g.~volume of grain),
@@ -549,7 +549,7 @@
       also 去聲 (<^e>loeng6</^e>/<^e>lia\ng</^e>).
   </li>
   <li>揆：度也；
-    measure <br>
+    measure \+
       揆，音葵，
       <^cm> k'wai4 | kui/ </^cm>
   </li>
@@ -561,7 +561,7 @@
 </#t>
 
 <div class="end">
-  <span>END of [pref]</span> <br>
+  <span>END of [pref]</span> \+
   Next:
   <@>
     《卷上》~"[vol-i]"
