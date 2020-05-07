@@ -2,363 +2,101 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
-<meta name="description" content="An annotated English translation of Sunzi Suanjing, 《孫子算經》, or &quot;Sun&nbsp;Tzŭ's Computational Classic&quot;.">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<link rel="stylesheet" href="/conway-katex.min.css">
-<script defer src="/conway-katex.min.js"></script>
-<script defer src="/conway-render.min.js"></script>
-<title>&quot;Sun&nbsp;Tzŭ's Computational Classic&quot;: 《孫子算經》 | Conway's site</title>
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<title>"Sun Tzŭ's Computational Classic" 《孫子算經》 | Conway's site</title>
+<style>.sun-tzu-navigation {
+font-size: large;
+}</style>
 </head>
-<body onload="dateRender(); mathsRender();">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-<li><a href="#manuscript" title="Manuscript">Manuscript</a></li>
-<li><a href="#translation" title="Translation">Translation</a></li>
-<li><a href="#cite" title="Cite this page">Cite</a></li>
-</ul></nav></header>
-<h1>
-<span lang="zh-Hant">《孫子算經》</span> <span class="alternative-type">or</span><br>
-"Sun&nbsp;Tzŭ's Computational Classic"
-</h1>
-<p class="page-properties">
-First created:&nbsp;20190504<br>
-Last modified:&nbsp;<b>20200215</b><br>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a title="You are viewing &quot;Sun Tzŭ's Computational Classic&quot;">Sun Tzŭ</a>
+</li>
+<li class="breadcrumb"><a href="/sun-tzu/preface/" title="Preface">Pref.</a>
+</li>
+<li><a href="/sun-tzu/i/" title="Volume&nbsp;I">I</a>
+</li>
+<li><a href="/sun-tzu/ii/" title="Volume&nbsp;II">II</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1><span lang="zh-Hant">《孫子算經》</span><br>
+"Sun Tzŭ's Computational Classic"</h1>
+<div class="page-properties">
+First created: 2019-05-04<br>
+Last modified: 2020-05-xx<br>
 Also known as <i>Sunzi Suanjing</i>.
-<noscript>Enable Javascript for <a href="/code/katex-guide" title="How to render mathematical equations using KaTeX">equation rendering</a> to work.</noscript>
-</p>
-<h2 id="volumes"><a class="self-link" href="#volumes"></a>
-Volume navigation
-</h2>
-<div class="links">
-<a href="#introduction">[▼&thinsp;Introduction]</a>
 </div>
-<div class="boxed not-large">
-<b><span lang="zh-Hant">《孫子算經》</span></b> <span class="alternative-type">or</span><br>
-<b>"Sun&nbsp;Tzŭ's Computational Classic"</b>
-<ul>
-<li><a href="/sun-tzu/preface" title="&quot;Sun&nbsp;Tzŭ's Computational Classic: Preface&quot;: 《孫子算經・序》"><span lang="zh-Hant">《序》</span>&nbsp;"Preface"</a></li>
-<li><a href="/sun-tzu/i" title="&quot;Sun&nbsp;Tzŭ's Computational Classic: Volume&nbsp;I&quot;: 《孫子算經・卷上》"><span lang="zh-Hant">《卷上》</span>&nbsp;"Volume&nbsp;I"</a></li>
-<li><a href="/sun-tzu/ii" title="&quot;Sun&nbsp;Tzŭ's Computational Classic: Volume&nbsp;II&quot;: 《孫子算經・卷中》"><span lang="zh-Hant">《卷中》</span>&nbsp;"Volume&nbsp;II" <span class="violet">(incomplete)</span></a></li>
-<li>
-<span class="red"><span lang="zh-Hant">《卷下》</span>&nbsp;"Volume&nbsp;III"</span>
-<span class="red">(haven't started)</span>
+<h2 id="translation"><a class="permalink" href="#translation" aria-label="Permalink"></a>Translation (links to volumes)</h2>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">《孫子算經》</span>
+</div>
+<div class="english">
+"Sun Tzŭ's Computational Classic"
+</div>
+</div>
+<ul class="sun-tzu-navigation">
+<li><a href="/sun-tzu/preface/"><span lang="zh-Hant">《序》</span> "Preface"</a>
+</li>
+<li><a href="/sun-tzu/i/"><span lang="zh-Hant">《卷上》</span> "Volume&nbsp;I"</a>
+</li>
+<li><a href="/sun-tzu/ii/"><span lang="zh-Hant">《卷中》</span> "Volume&nbsp;II"</a> (incomplete)
+</li>
+<li><span lang="zh-Hant">《卷下》</span> "Volume&nbsp;III" (haven't started)
 </li>
 </ul>
-</div>
-<h2 id="introduction"><a class="self-link" href="#introduction"></a>
-Introduction
-</h2>
-<p>
-<span lang="zh-Hant">《孫子算經》</span>, or
-<a href="https://en.wikipedia.org/wiki/Sunzi_Suanjing" title="Wikipedia: Sunzi Suanjing">"Sun&nbsp;Tzŭ's Computational Classic"</a>,
-like the
-<a href="/lit/sea-island" title="&quot;The Sea Island Computational Classic&quot;">Sea Island Computational Classic</a>, is one of the
-<a href="https://en.wikipedia.org/wiki/Ten_Computational_Canons" title="Wikipedia: Ten Computational Canons">ten canon classics of Chinese mathematics</a>.
-Probably written in the 3rd to 5th centuries AD,
-the author Sun&nbsp;Tzŭ (<span lang="zh-Hant">孫子</span>)
-is not the same
-<a href="https://en.wikipedia.org/wiki/Sun_Tzu" title="Wikipedia: Sun Tzu">Sun&nbsp;Tzŭ</a>
-who wrote
-<a href="https://en.wikipedia.org/wiki/The_Art_of_War" title="Wikipedia: The Art of War"><i>The Art of War</i></a>.
-</p>
-<p>
-In late April&nbsp;2019, I set myself the rather ambitious task of translating
-the entire <span lang="zh-Hant">《孫子算經》</span> into English.
-Apparently
-<a href="https://books.google.com.au/books/about/Fleeting_Footsteps.html?id=fGYmpWE5UZgC" title="Fleeting Footsteps: Tracing the Conception of Arithmetic and Algebra in Ancient China">this has been done before</a>,
-but I shall <strong>not</strong> read that translation
-(which is behind a paywall anyway) until I have completely finished mine.
-</p>
-<p>
-As of 23 November 2019, I have finished the
-<a href="#manuscript" title="Manuscript">manuscript</a> for the entire text,
-but it will probably take until the end of 2020
-to type up all of this in web (HTML) format.
-</p>
-<h3 id="versions"><a class="self-link" href="#versions"></a>
-Versions
-</h3>
-<p>
-There are four versions which I refer to,
-with slight differences in wording between them.
-<strong>Unless otherwise noted I will be following the text from
-<a href="https://ctext.org/library.pl?if=en&amp;res=80226" title="孫子算經+五曹算經（知不足齋本）">Version&nbsp;D</a>.</strong>
-The punctuation is based on that in
-<a href="https://ctext.org/sunzi-suan-jing" title="《孫子算經》">Version&nbsp;C (ctext.org)</a>,
-but with changes to my liking.
-I have grouped the paragraphs mostly following the line breaks
-of Versions&nbsp;A, B and&nbsp;D, with groupings which
-in my opinion are more logical than those in Version&nbsp;C.
-</p>
-<p>
-A quick system for referring to specific pages is as follows:
-</p>
-<ul>
-<li>
-<b>A</b>:
-<a href="https://archive.org/details/02094034.cn" title="《孫子算經》">02094034.cn at archive.org</a>
-<div class="boxed">
-A<span class="green"><span class="maths">p</span></span> shall mean
-<code>
-https://archive.org/details/02094034.cn/page/n<span class="green"><span class="maths">p</span></span>
-</code>
-</div>
-</li>
-<li>
-<b>B</b>:
-<a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=144" title="《文淵閣四庫全書》 0797冊"><span lang="zh-Hant">《文淵閣四庫全書》第</span>0797<span lang="zh-Hant">冊</span> at Wikimedia Commons</a>
-<div class="boxed">
-B<span class="green"><span class="maths">p</span></span>(<span class="green"><span class="maths">q</span></span>) shall mean
-<code>
-https://commons.wikimedia.org/w/index.php?title=File%3A<span lang="zh-Hant">文淵閣四庫全書</span>_0797<span lang="zh-Hant">冊</span>.djvu&amp;page=<span class="green"><span class="maths">p</span></span>
-</code><br>
-corresponding to the printed page number <span class="green"><span class="maths">q</span></span>.<br>
-Note that <span class="maths">{\colg p} - {\colg q} = 5</span>.
-</div>
-</li>
-<li>
-<b>C</b>:
-<a href="https://ctext.org/sunzi-suan-jing" title="《孫子算經》">ctext.org database page</a>
-<div class="boxed">
-C<span class="green"><span class="maths">p</span></span>(<span class="green"><span class="maths">v</span></span>.<span class="green"><span class="maths">q</span></span>) shall mean
-<code>
-https://ctext.org/sunzi-suan-jing#n<span class="green"><span class="maths">p</span></span>
-</code><br>
-corresponding to Volume <span class="green"><span class="maths">v</span></span>, Line <span class="green"><span class="maths">q</span></span>
-according to ctext.org's numbering.
-</div>
-</li>
-<li>
-<b>D</b>:
-<a href="https://ctext.org/library.pl?if=en&amp;res=80226" title="孫子算經+五曹算經（知不足齋本）"><span lang="zh-Hant">《知不足齋叢書》本</span> at ctext.org library</a>
-<strong>(This shall be the base reference version.)</strong>
-<div class="boxed">
-D<span class="green"><span class="maths">p</span></span> shall mean
-<code>
-https://ctext.org/library.pl?if=en&amp;file=86926&amp;page=<span class="green"><span class="maths">p</span></span>
-</code>
-</div>
-</li>
-</ul>
-<h3 id="variants"><a class="self-link" href="#variants"></a>
-Canonical variant-character substitutions
-</h3>
-<p>
-The following variant substitutions have been used
-(in each pair the character on the right is preferred):
-</p>
-<div class="boxed not-large">
-<span lang="zh-Hant">羣群</span>
-<span lang="zh-Hant">氂釐</span>
-<span lang="zh-Hant">歴歷</span>
-<span lang="zh-Hant">卽即</span>
-<span lang="zh-Hant">爲為</span>
-<span lang="zh-Hant">㵎澗</span>
-<span lang="zh-Hant">乗乘</span>
-<span lang="zh-Hant">荅答</span>
-<span lang="zh-Hant">竝並</span>
-<span lang="zh-Hant">幷并</span>
-</div>
-<h3 id="weight"><a class="self-link" href="#weight"></a>
-A note on mass and weight
-</h3>
-<p>
-Classical Chinese does not distinguish between mass and weight;
-nor is this a physics text in which the distinction is important.
-Therefore I will be using the two terms interchangeably.
-</p>
-<h3 id="myriads"><a class="self-link" href="#myriads"></a>
-A note on thousands and myriads
-</h3>
-<p>
-In Chinese, numbers are grouped in <span lang="zh-Hant">萬</span>, myriads<span class="numeral">&nbsp;(10000s)</span>,
-rather than thousands<span class="numeral">&nbsp;(1000s)</span>.
-For example, <span lang="zh-Hant">八萬五千</span><span class="numeral">&nbsp;(85000)</span> is literally
-"eight myriad five thousand" rather than "eighty-five thousand".
-However, I shall default to rendering numbers in the English using the
-thousands grouping, only using the myriads grouping
-for passages where the thousands grouping is awkward.
-</p>
-<h2 id="manuscript"><a class="self-link" href="#manuscript"></a>
-Manuscript
-</h2>
-<p>
-These are PDF scans of my handwritten translation scribblings.
-They are drafts, and as such, do not contain
-edits and corrections I have made since they were scanned.
-</p>
-<ul>
-<li><a href="/manuscripts/sun-tzu-versions.pdf" title="Referencing system for different versions">Version referencing system</a></li>
-<li><a href="/manuscripts/sun-tzu-preface.pdf" title="Translation manuscript for Preface"><b>Preface</b></a></li>
-<li>
-<b>Volume&nbsp;I:</b>
-<a href="/manuscripts/sun-tzu-i-1.pdf" title="Translation manuscript for Vol. I ¶1">¶1</a>
-<a href="/manuscripts/sun-tzu-i-2.pdf" title="Translation manuscript for Vol. I ¶2">¶2</a>
-<a href="/manuscripts/sun-tzu-i-3.pdf" title="Translation manuscript for Vol. I ¶3">¶3</a>
-<a href="/manuscripts/sun-tzu-i-4.pdf" title="Translation manuscript for Vol. I ¶4">¶4</a>
-<a href="/manuscripts/sun-tzu-i-5.pdf" title="Translation manuscript for Vol. I ¶5">¶5</a>
-<a href="/manuscripts/sun-tzu-i-6.pdf" title="Translation manuscript for Vol. I ¶6">¶6</a>
-<a href="/manuscripts/sun-tzu-i-7.pdf" title="Translation manuscript for Vol. I ¶7">¶7</a>
-<a href="/manuscripts/sun-tzu-i-8.pdf" title="Translation manuscript for Vol. I ¶8">¶8</a>
-<a href="/manuscripts/sun-tzu-i-9.pdf" title="Translation manuscript for Vol. I ¶9">¶9</a>
-<a href="/manuscripts/sun-tzu-i-10.pdf" title="Translation manuscript for Vol. I ¶10">¶10</a>
-<a href="/manuscripts/sun-tzu-i-11.pdf" title="Translation manuscript for Vol. I ¶11">¶11</a>
-<a href="/manuscripts/sun-tzu-i-12.pdf" title="Translation manuscript for Vol. I ¶12">¶12</a>
-<a href="/manuscripts/sun-tzu-i-13.pdf" title="Translation manuscript for Vol. I ¶13">¶13</a>
-<a href="/manuscripts/sun-tzu-i-14.pdf" title="Translation manuscript for Vol. I ¶14">¶14</a>
-<a href="/manuscripts/sun-tzu-i-15.pdf" title="Translation manuscript for Vol. I ¶15">¶15</a>
-<a href="/manuscripts/sun-tzu-i-16.pdf" title="Translation manuscript for Vol. I ¶16">¶16</a>
-<a href="/manuscripts/sun-tzu-i-17.pdf" title="Translation manuscript for Vol. I ¶17">¶17</a>
-<a href="/manuscripts/sun-tzu-i-18.pdf" title="Translation manuscript for Vol. I ¶18">¶18</a>
-<a href="/manuscripts/sun-tzu-i-19.pdf" title="Translation manuscript for Vol. I ¶19">¶19</a>
-<a href="/manuscripts/sun-tzu-i-20.pdf" title="Translation manuscript for Vol. I ¶20">¶20</a>
-<a href="/manuscripts/sun-tzu-i-21.pdf" title="Translation manuscript for Vol. I ¶21">¶21</a>
-<a href="/manuscripts/sun-tzu-i-22.pdf" title="Translation manuscript for Vol. I ¶22">¶22</a>
-<a href="/manuscripts/sun-tzu-i-23.pdf" title="Translation manuscript for Vol. I ¶23">¶23</a>
-<a href="/manuscripts/sun-tzu-i-24.pdf" title="Translation manuscript for Vol. I ¶24">¶24</a>
-</li>
-<li>
-<b>Volume&nbsp;II:</b>
-<a href="/manuscripts/sun-tzu-ii-1.pdf" title="Translation manuscript for Vol. II ¶1">¶1</a>
-<a href="/manuscripts/sun-tzu-ii-2.pdf" title="Translation manuscript for Vol. II ¶2">¶2</a>
-<a href="/manuscripts/sun-tzu-ii-3.pdf" title="Translation manuscript for Vol. II ¶3">¶3</a>
-<a href="/manuscripts/sun-tzu-ii-4.pdf" title="Translation manuscript for Vol. II ¶4">¶4</a>
-<a href="/manuscripts/sun-tzu-ii-5.pdf" title="Translation manuscript for Vol. II ¶5">¶5</a>
-<a href="/manuscripts/sun-tzu-ii-6.pdf" title="Translation manuscript for Vol. II ¶6">¶6</a>
-<a href="/manuscripts/sun-tzu-ii-7.pdf" title="Translation manuscript for Vol. II ¶7">¶7</a>
-<a href="/manuscripts/sun-tzu-ii-8.pdf" title="Translation manuscript for Vol. II ¶8">¶8</a>
-<a href="/manuscripts/sun-tzu-ii-9.pdf" title="Translation manuscript for Vol. II ¶9">¶9</a>
-<a href="/manuscripts/sun-tzu-ii-10.pdf" title="Translation manuscript for Vol. II ¶10">¶10</a>
-<a href="/manuscripts/sun-tzu-ii-11.pdf" title="Translation manuscript for Vol. II ¶11">¶11</a>
-<a href="/manuscripts/sun-tzu-ii-12.pdf" title="Translation manuscript for Vol. II ¶12">¶12</a>
-<a href="/manuscripts/sun-tzu-ii-13.pdf" title="Translation manuscript for Vol. II ¶13">¶13</a>
-<a href="/manuscripts/sun-tzu-ii-14.pdf" title="Translation manuscript for Vol. II ¶14">¶14</a>
-<a href="/manuscripts/sun-tzu-ii-15.pdf" title="Translation manuscript for Vol. II ¶15">¶15</a>
-<a href="/manuscripts/sun-tzu-ii-16.pdf" title="Translation manuscript for Vol. II ¶16">¶16</a>
-<a href="/manuscripts/sun-tzu-ii-17.pdf" title="Translation manuscript for Vol. II ¶17">¶17</a>
-<a href="/manuscripts/sun-tzu-ii-18.pdf" title="Translation manuscript for Vol. II ¶18">¶18</a>
-<a href="/manuscripts/sun-tzu-ii-19.pdf" title="Translation manuscript for Vol. II ¶19">¶19</a>
-<a href="/manuscripts/sun-tzu-ii-20.pdf" title="Translation manuscript for Vol. II ¶20">¶20</a>
-<a href="/manuscripts/sun-tzu-ii-21.pdf" title="Translation manuscript for Vol. II ¶21">¶21</a>
-<a href="/manuscripts/sun-tzu-ii-22.pdf" title="Translation manuscript for Vol. II ¶22">¶22</a>
-<a href="/manuscripts/sun-tzu-ii-23.pdf" title="Translation manuscript for Vol. II ¶23">¶23</a>
-<a href="/manuscripts/sun-tzu-ii-24.pdf" title="Translation manuscript for Vol. II ¶24">¶24</a>
-<a href="/manuscripts/sun-tzu-ii-25.pdf" title="Translation manuscript for Vol. II ¶25">¶25</a>
-<a href="/manuscripts/sun-tzu-ii-26.pdf" title="Translation manuscript for Vol. II ¶26">¶26</a>
-<a href="/manuscripts/sun-tzu-ii-27.pdf" title="Translation manuscript for Vol. II ¶27">¶27</a>
-<a href="/manuscripts/sun-tzu-ii-28.pdf" title="Translation manuscript for Vol. II ¶28">¶28</a>
-</li>
-<li>
-<b>Volume&nbsp;III:</b>
-<a href="/manuscripts/sun-tzu-iii-1.pdf" title="Translation manuscript for Vol. III ¶1">¶1</a>
-<a href="/manuscripts/sun-tzu-iii-2.pdf" title="Translation manuscript for Vol. III ¶2">¶2</a>
-<a href="/manuscripts/sun-tzu-iii-3.pdf" title="Translation manuscript for Vol. III ¶3">¶3</a>
-<a href="/manuscripts/sun-tzu-iii-4.pdf" title="Translation manuscript for Vol. III ¶4">¶4</a>
-<a href="/manuscripts/sun-tzu-iii-5.pdf" title="Translation manuscript for Vol. III ¶5">¶5</a>
-<a href="/manuscripts/sun-tzu-iii-6.pdf" title="Translation manuscript for Vol. III ¶6">¶6</a>
-<a href="/manuscripts/sun-tzu-iii-7.pdf" title="Translation manuscript for Vol. III ¶7">¶7</a>
-<a href="/manuscripts/sun-tzu-iii-8.pdf" title="Translation manuscript for Vol. III ¶8">¶8</a>
-<a href="/manuscripts/sun-tzu-iii-9.pdf" title="Translation manuscript for Vol. III ¶9">¶9</a>
-<a href="/manuscripts/sun-tzu-iii-10.pdf" title="Translation manuscript for Vol. III ¶10">¶10</a>
-<a href="/manuscripts/sun-tzu-iii-11.pdf" title="Translation manuscript for Vol. III ¶11">¶11</a>
-<a href="/manuscripts/sun-tzu-iii-12.pdf" title="Translation manuscript for Vol. III ¶12">¶12</a>
-<a href="/manuscripts/sun-tzu-iii-13.pdf" title="Translation manuscript for Vol. III ¶13">¶13</a>
-<a href="/manuscripts/sun-tzu-iii-14.pdf" title="Translation manuscript for Vol. III ¶14">¶14</a>
-<a href="/manuscripts/sun-tzu-iii-15.pdf" title="Translation manuscript for Vol. III ¶15">¶15</a>
-<a href="/manuscripts/sun-tzu-iii-16.pdf" title="Translation manuscript for Vol. III ¶16">¶16</a>
-<a href="/manuscripts/sun-tzu-iii-17.pdf" title="Translation manuscript for Vol. III ¶17">¶17</a>
-<a href="/manuscripts/sun-tzu-iii-18.pdf" title="Translation manuscript for Vol. III ¶18">¶18</a>
-<a href="/manuscripts/sun-tzu-iii-19.pdf" title="Translation manuscript for Vol. III ¶19">¶19</a>
-<a href="/manuscripts/sun-tzu-iii-20.pdf" title="Translation manuscript for Vol. III ¶20">¶20</a>
-<a href="/manuscripts/sun-tzu-iii-21.pdf" title="Translation manuscript for Vol. III ¶21">¶21</a>
-<a href="/manuscripts/sun-tzu-iii-22.pdf" title="Translation manuscript for Vol. III ¶22">¶22</a>
-<a href="/manuscripts/sun-tzu-iii-23.pdf" title="Translation manuscript for Vol. III ¶23">¶23</a>
-<a href="/manuscripts/sun-tzu-iii-24.pdf" title="Translation manuscript for Vol. III ¶24">¶24</a>
-<a href="/manuscripts/sun-tzu-iii-25.pdf" title="Translation manuscript for Vol. III ¶25">¶25</a>
-<a href="/manuscripts/sun-tzu-iii-26.pdf" title="Translation manuscript for Vol. III ¶26">¶26</a>
-<a href="/manuscripts/sun-tzu-iii-27.pdf" title="Translation manuscript for Vol. III ¶27">¶27</a>
-<a href="/manuscripts/sun-tzu-iii-28.pdf" title="Translation manuscript for Vol. III ¶28">¶28</a>
-<a href="/manuscripts/sun-tzu-iii-29.pdf" title="Translation manuscript for Vol. III ¶29">¶29</a>
-<a href="/manuscripts/sun-tzu-iii-30.pdf" title="Translation manuscript for Vol. III ¶30">¶30</a>
-<a href="/manuscripts/sun-tzu-iii-31.pdf" title="Translation manuscript for Vol. III ¶31">¶31</a>
-<a href="/manuscripts/sun-tzu-iii-32.pdf" title="Translation manuscript for Vol. III ¶32">¶32</a>
-<a href="/manuscripts/sun-tzu-iii-33.pdf" title="Translation manuscript for Vol. III ¶33">¶33</a>
-<a href="/manuscripts/sun-tzu-iii-34.pdf" title="Translation manuscript for Vol. III ¶34">¶34</a>
-<a href="/manuscripts/sun-tzu-iii-35.pdf" title="Translation manuscript for Vol. III ¶35">¶35</a>
-<a href="/manuscripts/sun-tzu-iii-36.pdf" title="Translation manuscript for Vol. III ¶36">¶36</a>
-</li>
-</ul>
-<p>
-A link to the corresponding manuscript is also provided by the
-[manuscript] link above each of the paragraphs themselves.
-</p>
-<h2 id="translation"><a class="self-link" href="#translation"></a>
-Translation
-</h2>
-<div class="links">
-<a href="#introduction">[▲&thinsp;Introduction]</a>
-</div>
-<div class="boxed not-large">
-<b><span lang="zh-Hant">《孫子算經》</span></b> <span class="alternative-type">or</span><br>
-<b>"Sun&nbsp;Tzŭ's Computational Classic"</b>
-<ul>
-<li><a href="/sun-tzu/preface" title="&quot;Sun&nbsp;Tzŭ's Computational Classic: Preface&quot;: 《孫子算經・序》"><span lang="zh-Hant">《序》</span>&nbsp;"Preface"</a></li>
-<li><a href="/sun-tzu/i" title="&quot;Sun&nbsp;Tzŭ's Computational Classic: Volume&nbsp;I&quot;: 《孫子算經・卷上》"><span lang="zh-Hant">《卷上》</span>&nbsp;"Volume&nbsp;I"</a></li>
-<li><a href="/sun-tzu/ii" title="&quot;Sun&nbsp;Tzŭ's Computational Classic: Volume&nbsp;II&quot;: 《孫子算經・卷中》"><span lang="zh-Hant">《卷中》</span>&nbsp;"Volume&nbsp;II" <span class="violet">(incomplete)</span></a></li>
-<li>
-<span class="red"><span lang="zh-Hant">《卷下》</span>&nbsp;"Volume&nbsp;III"</span>
-<span class="red">(haven't started)</span>
-</li>
-</ul>
-</div>
-<h2 id="cite"><a class="self-link" href="#cite"></a>
-Cite this page
-</h2>
+<h2 id="conways-preface"><a class="permalink" href="#conways-preface" aria-label="Permalink"></a>Conway's Preface</h2>
+<h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
 <ul>
 <li>Text:
 <p>
 Conway&nbsp;(2020).
-"Sun&nbsp;Tzŭ's Computational Classic".
+"Sun Tzŭ's Computational Classic".
 &lt;https://yawnoc.github.io/sun-tzu/&gt;
-[Accessed <span class="date">d&nbsp;month&nbsp;yyyy</span>]
+Accessed&nbsp;<span class="js-date">yyyy-mm-dd</span>.
 </p>
 </li>
 <li>BibTeX:
-<pre>
-@misc{conway-sun-tzu,
+<pre><code>@misc{conway-sun-tzu,
   author = {Conway},
   year = {2020},
   title = {``{Sun}~{Tz{\uu}'s} {Computational} {Classic}''},
   howpublished = {\url{https://yawnoc.github.io/sun-tzu/}},
-  note = {[Accessed <span class="date">d~month~yyyy</span>]}
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 <li>BibLaTeX:
-<pre>
-@online{conway-sun-tzu,
+<pre><code>@online{conway-sun-tzu,
   author = {Conway},
   year = {2020},
   title = {``{Sun}~{Tz{\uu}'s} {Computational} {Classic}''},
   url = {https://yawnoc.github.io/sun-tzu/},
-  urldate = {<span class="date">yyyy-mm-dd</span>}
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
 }
-</pre>
+</code></pre>
 </li>
 </ul>
-<footer>
-<hr>
-©&nbsp;2019–2020&nbsp;Conway.
-</footer>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
 </body>
 </html>
