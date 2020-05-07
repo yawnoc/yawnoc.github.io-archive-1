@@ -90,10 +90,11 @@
 <% [黍絫] | 黍絫 <^> shu" l_u" | shu lei | shu lei </^> %>
 <% [銖] | 銖 <^> chu" | chu | zhu </^> %>
 
-<#t>
-  《孫子算經\.序》 |
+<<
+  《孫子算經\.序》
+||
   "[sun-tzu-classic]: [pref]"
-</#t>
+>>
 
 <@@>
   <@u> Volumes | volumes | Volume navigation </@u>
@@ -128,10 +129,11 @@
   </@>
 </@@>
 
-<#t>
-  孫子曰：夫算者， |
+<<
+  孫子曰：夫算者，
+||
   [sun-tzu] saith: Computation---
-</#t>
+>>
 ====
 * 算：
     Computation;
@@ -146,11 +148,12 @@
   This is a very common rhetorical device in Literary Chinese.
 ----
 
-<#t>
-  天地之經緯，群生之元首； |
+<<
+  天地之經緯，群生之元首；
+||
   .[the] warp .[and] woof of Heaven .[and] Earth,
   .[and the] origin .[and] beginning of .[the] living masses;
-</#t>
+>>
 ====
 * 經緯：
     .[the] warp .[and] woof;
@@ -166,11 +169,12 @@
 
 ====
 
-<#t>
-  五常之本末，陰陽之父母； |
+<<
+  五常之本末，陰陽之父母；
+||
   .[the] beginning .[and] end of .[the] Five Everlasting Virtues,
   .[and the] father .[and] mother of Dark .[and] Light;
-</#t>
+>>
 ====
 * 五常：
     .[the] Five Everlasting Virtues \+
@@ -197,13 +201,14 @@
 
 ====
 
-<#t>
-  星辰之建號，三光之表裏； |
+<<
+  星辰之建號，三光之表裏；
+||
   .[the] establishment .[and] designation of
   .[the] stars .[and] heavenly bodies,
   .[and the] surface .[and] internals of
   .[the] Three Luminaries;
-</#t>
+>>
 ====
 * 三光：
     .[the] Three Luminaries \+
@@ -224,11 +229,12 @@
 
 ====
 
-<#t>
-  五行之準平，四時之終始； |
+<<
+  五行之準平，四時之終始；
+||
   .[the] evenness .[and] balance of .[the] Five Elements,
   .[and the] finishing .[and] starting of .[the] Four Seasons;
-</#t>
+>>
 ====
 * 五行：
     .[the] Five Elements \+
@@ -246,11 +252,12 @@
 
 ====
 
-<#t>
-  萬物之祖宗，六藝之綱紀。 |
+<<
+  萬物之祖宗，六藝之綱紀。
+||
   .[the] ancestor .[and] progenitor of .[the] myriad things,
   .[and the] principle .[and] law of .[the] Six Arts.
-</#t>
+>>
 ====
 * 萬物：
     everything;
@@ -268,11 +275,12 @@
 
 ====
 
-<#t>
-  稽群倫之聚散，考二氣之降升； |
+<<
+  稽群倫之聚散，考二氣之降升；
+||
   .[It] examineth .[the] gathering .[and] dispersion of .[the] amassed kinds,
   .[and] inspecteth .[the] falling .[and] rising of .[the] Two Breaths;
-</#t>
+>>
 ====
 * 稽：考也；
     examineth
@@ -305,11 +313,12 @@
 
 ====
 
-<#t>
-  推寒暑之迭運，步遠近之殊同； |
+<<
+  推寒暑之迭運，步遠近之殊同；
+||
   .[it] deduceth .[the] alternating .[and] revolving of winter .[and] summer,
   .[and] measureth .[the] disparity .[and] sameness of far .[and] near;
-</#t>
+>>
 ====
 * 寒暑：
     winter .[and] summer;
@@ -323,13 +332,14 @@
 
 ====
 
-<#t>
-  觀天道精微之兆基，察地理從橫之長短； |
+<<
+  觀天道精微之兆基，察地理從橫之長短；
+||
   .[it] inspecteth .[the] foundations of
     .[the] intricacies .[and] minutiae of Physics,
   .[and] examineth .[the] length of
     .[the] meridians .[and] parallels of Geography;
-</#t>
+>>
 ====
 * 天道：
     Physics;
@@ -359,14 +369,15 @@
 
 ====
 
-<#t>
+<<
   采神祇之所在，極成敗之符驗； \+
-  窮道德之理，究性命之情。 |
+  窮道德之理，究性命之情。
+||
   .[it] seeketh .[the] whereabouts of gods .[and] earth gods,
   .[and] examineth corroboration of success .[and] failure; \+
   .[it] exhausteth .[the] reasoning of morality,
   .[and] investigateth .[the] sense of life.
-</#t>
+>>
 ====
 * 祇：地神；
     earth gods \+
@@ -393,14 +404,15 @@
 
 ====
 
-<#t>
+<<
   立規矩，準方圓， \+
-  謹法度，約尺丈， |
+  謹法度，約尺丈，
+||
   .[It] establisheth .[the] rules,
   standardiseth the square .[and] the circle, \+
   abideth by .[the] law,
   agreeth upon .[the] rule .[and the] rod,
-</#t>
+>>
 ====
 * 規矩：
     .[the] rules;
@@ -415,14 +427,15 @@
 
 ====
 
-<#t>
+<<
   立權衡，平重輕， \+
-  剖毫釐，析黍絫。 |
+  剖毫釐，析黍絫。
+||
   establisheth the weighing scale,
   balanceth heavy .[and] light \+
   disecteth mils .[and] cents,
   .[and] splitteth millets .[and] piles.
-</#t>
+>>
 ====
 * 重輕：
     heavy .[and] light;
@@ -445,11 +458,12 @@
 
 ====
 
-<#t>
-  歷億載而不朽，施八極而無疆。 |
+<<
+  歷億載而不朽，施八極而無疆。
+||
   .[It] endureth .[an] hundred million years and decayeth not,
   .[and is] applied unto .[the] Eight Extremities without bound.
-</#t>
+>>
 ====
 * 億：
     .[an] hundred million;
@@ -463,11 +477,12 @@
 
 ====
 
-<#t>
-  散之不可勝究，斂之不盈掌握。 |
+<<
+  散之不可勝究，斂之不盈掌握。
+||
   Scattering it, .[it] cannot .[be] wholly investigated,
   .[yet] gathering it, .[it is] not beyond grasp.
-</#t>
+>>
 ====
 * 勝：
     wholly;
@@ -484,11 +499,12 @@
 
 ====
 
-<#t>
-  嚮之者富有餘，背之者貧且窶； |
+<<
+  嚮之者富有餘，背之者貧且窶；
+||
   Those who echo .[in agreement with] it .[shall be] rich in excess,
   .[but] those who turn .[their] backs to it .[shall be] poor and destitute;
-</#t>
+>>
 ====
 * 窶：貧也；
     destitute \+
@@ -497,14 +513,15 @@
 
 ====
 
-<#t>
-  心開者幼沖而即悟，意閉者皓首而難精。 |
+<<
+  心開者幼沖而即悟，意閉者皓首而難精。
+||
   those who .[are] open-minded, .[even as] young children,
     .[shall] immediately comprehend .[it],
   .[but] those who .[are] close-minded,
     .[even with a] bright white head .[of hair],
     .[shall find it] hard to .[be] proficient .[in it].
-</#t>
+>>
 ====
 * 沖：童也；
     children
@@ -527,12 +544,13 @@
   At this point the parallel pairs of lines stops.
 ----
 
-<#t>
-  夫欲學之者必務量能揆己，志在所專。 |
+<<
+  夫欲學之者必務量能揆己，志在所專。
+||
   Those who wish to learn it must seek to
   gauge {one's} abilities .[and] measure oneself,
   {and put one's} will into that focused upon.
-</#t>
+>>
 ====
 * 量：
     gauge; or measure \+
@@ -555,10 +573,11 @@
 
 ====
 
-<#t>
-  如是則焉有不成者哉！ |
+<<
+  如是則焉有不成者哉！
+||
   .[Among those] like this, how be there those who succeed not!
-</#t>
+>>
 
 <div class="end">
   <span>END of [pref]</span> \+

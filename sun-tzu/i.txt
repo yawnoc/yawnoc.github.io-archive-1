@@ -143,11 +143,12 @@
 
 <^^></^^>
 
-<#t>
-  《孫子算經\.卷上》 |
+<<
+  《孫子算經\.卷上》
+||
   "[sun-tzu-classic]:
   [vol-i]"
-</#t>
+>>
 
 ----
   Literally "Upper Volume".
@@ -302,13 +303,14 @@
 
 <% [劉德] | 劉德 <^> Lau Tak | Liu Te^ | Liu De</^> %>
 
-<#t>
-  度之所起，起於忽。欲知其忽，蠶吐絲為忽。 |
+<<
+  度之所起，起於忽。欲知其忽，蠶吐絲為忽。
+||
   .[Of] that which measuring of length beginneth from:
   beginneth .[it] from floss.
   Wishing to know .[the size of] floss:
   .[the] silk spat of the silkworm be floss.
-</#t>
+>>
 ====
 * 度：
     measuring of length \+
@@ -336,7 +338,7 @@
 
 ====
 
-<#t>
+<<
   十忽為一絲， \+
   十絲為一毫， \+
   十毫為一釐， \+
@@ -344,7 +346,8 @@
   十分為一寸， \+
   十寸為一尺， \+
   十尺為一丈， \+
-  十丈為一引； |
+  十丈為一引；
+||
   Ten flosses make one thread; \+
   ten threads make one mil; \+
   ten mils make one cent; \+
@@ -353,7 +356,7 @@
   ten inches make one rule; \+
   ten rules make one rod; \+
   ten rods make one draw.
-</#t>
+>>
 ====
 * [絲]：
     (silk) thread \+
@@ -431,14 +434,15 @@
 
 ====
 
-<#t>
+<<
   五十尺為一端； \+
   四十尺為一匹； \+
-  六尺為一步。 |
+  六尺為一步。
+||
   Fifty rules make one end; \+
   forty rules make one length; \+
   six rules make one pace.
-</#t>
+>>
 ====
 * [端]：
     \lit end
@@ -458,10 +462,11 @@
 
 ====
 
-<#t>
-  二百四十步為一畝。 |
+<<
+  二百四十步為一畝。
+||
   Two hundred .[and] forty paces make one acre.
-</#t>
+>>
 ====
 * [畝]：
     acre;
@@ -482,10 +487,11 @@
 
 ====
 
-<#t>
-  三百步為一里。 |
+<<
+  三百步為一里。
+||
   Three hundred paces make one mile.
-</#t>
+>>
 ====
 * [里]：
     mile \+
@@ -636,11 +642,12 @@ $$
 <% [鈞] | 鈞 <^> kwan | chu"n | jun </^> %>
 <% [石] | 石 <^> shek | shih | shi </^> %>
 
-<#t>
-  稱之所起，起於黍。 |
+<<
+  稱之所起，起於黍。
+||
   .[Of] that which measuring of weight beginneth from:
   beginneth .[it] from millet.
-</#t>
+>>
 ====
 * 稱：
     measuring of weight;
@@ -652,20 +659,21 @@ $$
 
 ====
 
-<#t>
+<<
   十黍為一絫， \+
   十絫為一銖， \+
   二十四銖為一兩， \+
   十六兩為一斤， \+
   三十斤為一鈞， \+
-  四鈞為一石。 |
+  四鈞為一石。
+||
   Ten millets make one pile; \+
   ten piles make one dram; \+
   twenty-four drams make one tael; \+
   sixteen taels make one catty; \+
   thirty catties make one quarter; \+
   four quarters make one stone.
-</#t>
+>>
 ====
 * [絫]：
     pile \+
@@ -848,11 +856,12 @@ $$
 <% [斗] | 斗 <^> tau | tou | dou </^> %>
 <% [斛] | 斛 <^> huk | hu | hu </^> %>
 
-<#t>
-  量之所起，起於粟。 |
+<<
+  量之所起，起於粟。
+||
   .[Of] that which measuring of capacity beginneth from:
   beginneth .[it] from grain.
-</#t>
+>>
 ====
 * 量：
     measuring of capacity \+
@@ -865,7 +874,7 @@ $$
 
 ====
 
-<#t>
+<<
   六粟為一圭， \+
   十圭為一撮， \+
   十撮為一抄， \+
@@ -873,7 +882,8 @@ $$
   十勺為一合， \+
   十合為一升， \+
   十升為一斗， \+
-  十斗為一斛。 |
+  十斗為一斛。
+||
   Six grains make one tablet; \+
   ten tablets make one pinch; \+
   ten pinches make one grab; \+
@@ -882,7 +892,7 @@ $$
   ten gills make one quart; \+
   ten quarts make one peck; \+
   ten pecks make one barrel.
-</#t>
+>>
 ====
 * [圭]：
     \lit (jade) tablet \+
@@ -1031,12 +1041,13 @@ $$
   with respect to English units in 1885.
 ----
 
-<#t>
-  斛得六千萬粟。所以得知者， |
+<<
+  斛得六千萬粟。所以得知者，
+||
   .[A] barrel resulteth in
   six thousand myriad grains.
   .[And] that by which .[one] getteth to know .[this]:
-</#t>
+>>
 ====
 * 
     Reading ahead, I found it appropriate, in this paragraph and the next,
@@ -1045,7 +1056,7 @@ $$
     (i.e.~thousands).
 
 ====
-<#t>
+<<
   六粟為一圭， \+
   十圭六十粟為一撮， \+
   十撮六百粟為一抄， \+
@@ -1053,7 +1064,8 @@ $$
   十勺六萬粟為一合， \+
   十合六十萬粟為一升， \+
   十升六百萬粟為一斗， \+
-  十斗六千萬粟為一斛。 |
+  十斗六千萬粟為一斛。
+||
   six grains make one tablet; \+
   ten tablets,
     sixty grains,
@@ -1076,21 +1088,22 @@ $$
   ten pecks,
     six thousand myriad grains,
     make one barrel.
-</#t>
+>>
 
 ----
   Here we first encounter named powers of ten starting from [_10^8_],
   which I have rendered literally:
 ----
 
-<#t>
+<<
   十斛六億粟， \+
   百斛六兆粟， \+
   千斛六京粟， \+
   萬斛六陔粟， \+
   十萬斛六秭粟， \+
   百萬斛六壤粟， \+
-  千萬斛六溝粟， |
+  千萬斛六溝粟，
+||
   Ten barrels .[be]
     six square-myriad grains; \+
   .[an] hundred barrels,
@@ -1105,7 +1118,7 @@ $$
     six soil grains; \+
   .[a] thousand myriad barrels,
     six ditch grains;
-</#t>
+>>
 ====
 * [億]：
     square-myriad
@@ -1132,10 +1145,11 @@ $$
 
 ====
 
-<#t>
+<<
   萬萬斛為一億斛六澗粟， \+
   十億斛六正粟， \+
-  百億斛六載粟。 |
+  百億斛六載粟。
+||
   .[a] myriad myriad barrels
   make one square-myriad barrels,
     six stream grains; \+
@@ -1143,7 +1157,7 @@ $$
     six right grains; \+
   .[an] hundred square-myriad barrels,
     six carry grains.
-</#t>
+>>
 ====
 * [澗]：
     \lit (mountain) stream
@@ -1208,7 +1222,7 @@ $$
 <% [正] | 正 <^> ching | che^ng | zheng </^> %>
 <% [載] | 載 <^> tsoi | tsai | zai </^> %>
 
-<#t>
+<<
   凡大數之法， \+
   萬萬曰億， \+
   萬萬億曰兆， \+
@@ -1219,7 +1233,8 @@ $$
   萬萬壤曰溝， \+
   萬萬溝曰澗， \+
   萬萬澗曰正， \+
-  萬萬正曰載。 |
+  萬萬正曰載。
+||
   .[In the] method of all large numbers: \+
   .[a] myriad myriad
     .[is] called .[a] square-myriad; \+
@@ -1250,7 +1265,7 @@ $$
   .[a] myriad myriad
       right
     .[is] called .[a] carry.
-</#t>
+>>
 ====
 * 
     <@> Version~C | [version-c.url]52060 | [version-c.h] </@>
@@ -1370,17 +1385,18 @@ $$
 <;sh> 1 | 5 | $\pi \approx 3$, $\sqrt{2} \approx 7/5$ </;sh>
 <;s@@> 1 | 5 | 6 | 147 | 52061 | 4 | 13 </;s@@>
 
-<#t>
+<<
   周三徑一；方五邪七。 \+
   見邪求方，五之，七而一； \+
-  見方求邪，七之，五而一。 |
+  見方求邪，七之，五而一。
+||
   .[The] circumference three: .[the] diameter one.
   .[The] square's .[edge] five: .[the] diagonal seven. \+
   Seeing .[the] diagonal .[and] seeking .[the] square's .[edge],
     quintuple it, .[and make] seven .[as] one. \+
   Seeing .[the] square's .[edge] .[and] seeking .[the] diagonal,
     septuple it, .[and make] five .[as] one.
-</#t>
+>>
 ====
 * 邪：
     diagonal;
@@ -1487,14 +1503,15 @@ $$
 <;sh> 1 | 6 | Densities of metals~etc. </;sh>
 <;s@@> 1 | 6 | 6 | 147 | 52062 | 5 | 13 </;s@@>
 
-<#t>
+<<
   黃金方寸重一斤。 \+
   白金方寸重一十四兩。 \+
-  玉方寸重一十二兩。 |
+  玉方寸重一十二兩。
+||
   .[Each] cubic inch of gold weigheth one catty. \+
   .[Each] cubic inch of silver weigheth fourteen taels. \+
   .[Each] cubic inch of jade weigheth twelve taels.
-</#t>
+>>
 ====
 * 黃金：
     gold;
@@ -1515,18 +1532,19 @@ $$
 
 ====
 
-<#t>
+<<
   銅方寸重七兩半。 \+
   鉛方寸重九兩半。 \+
   鐵方寸重六兩。 \+
-  石方寸重三兩。 |
+  石方寸重三兩。
+||
   .[Each] cubic inch of copper weigheth
     seven taels .[and an] half. \+
   .[Each] cubic inch of lead weigheth
     nine taels .[and an] half. \+
   .[Each] cubic inch of iron weigheth six taels. \+
   .[Each] cubic inch of stone weigheth three taels.
-</#t>
+>>
 ====
 * 銅：
     copper;
@@ -1875,10 +1893,11 @@ $$
 <;sh> 1 | 7 | Rod calculus: vertical \&~horizontal forms </;sh>
 <;s@@> 1 | 7 | 6 | 147 | 52063 | 6 | 14 </;s@@>
 
-<#t>
-  凡算之法，先識其位。 |
+<<
+  凡算之法，先識其位。
+||
   .[In the] method of all computation, know first .[the] places.
-</#t>
+>>
 ====
 * 位：
     .[the] places;
@@ -1886,8 +1905,9 @@ $$
 
 ====
 
-<#t>
-  一從十橫，百立千僵，千十相望，萬百相當。 |
+<<
+  一從十橫，百立千僵，千十相望，萬百相當。
+||
   .[The] ones .[are] vertical
     .[and the] tens horizontal;
   .[the] hundreds upright
@@ -1896,7 +1916,7 @@ $$
     look at each other;
   .[the] myriads .[and] hundreds
     correspond to each other.
-</#t>
+>>
 ====
 * 從 \+
     Variant of 縱.
@@ -1914,8 +1934,9 @@ $$
     According to the inline note in
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>,
     this is a transcription error:
-    <#t>
-      案：「萬百」原本訛作「百萬」。今據《夏侯陽算經》改正。 |
+    <<
+      案：「萬百」原本訛作「百萬」。今據《夏侯陽算經》改正。
+||
       Note: "Myriads .[and] hundreds"
       .[in the] original version .[was] erroneously written
       "hundreds .[and] myriads".
@@ -1926,7 +1947,7 @@ $$
         | https://archive.org/details/02094036.cn/page/n6
         | 02094036.cn at archive.org
       </@>.
-    </#t>
+    >>
     In my opinion 萬百 vs~百萬 is a minor issue,
     but I agree that 萬百 is the correct order,
     since we have 千十 preceding, rather than
@@ -2283,11 +2304,12 @@ $$
 <;sh> 1 | 8 | Rod calculus: multiplication algorithm </;sh>
 <;s@@> 1 | 8 | 6 | 147 | 52064 | 7 | 14 </;s@@>
 
-<#t>
-  凡乘之法，重置其位。 |
+<<
+  凡乘之法，重置其位。
+||
   .[In the] method of all multiplication,
   put into .[a] stack .[the] places.
-</#t>
+>>
 ====
 * 重：
     .[a] stack \+
@@ -2296,8 +2318,9 @@ $$
 
 ====
 
-<#t>
-  上下相觀，上位有十步至十，有百步至百，有千步至千。 |
+<<
+  上下相觀，上位有十步至十，有百步至百，有千步至千。
+||
   .[That the] upper .[and] lower .[places] view each other:
   be there tens .[in the] upper places,
     step unto .[the] tens;
@@ -2305,7 +2328,7 @@ $$
     step unto .[the] hundreds;
   be there thousands,
     step unto .[the] thousands.
-</#t>
+>>
 ====
 * 
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
@@ -2366,15 +2389,16 @@ OR
   placed in this middle row.
 ----
 
-<#t>
-  以上命下，所得之數，列於中位。言十即過，不滿自如。 |
+<<
+  以上命下，所得之數，列於中位。言十即過，不滿自如。
+||
   Name the lower with the upper.
   .[The] quantities which result,
   .[are] arranged in .[a] row in .[the] middle places.
   Tens are carried,
   .[but those] not reaching .[ten],
   .[left] as themselves.
-</#t>
+>>
 ====
 * 命：
     name \+
@@ -2393,14 +2417,15 @@ OR
 
 ====
 
-<#t>
+<<
   上位乘訖者，先去之。 \+
-  下位乘訖者，則俱退之。 |
+  下位乘訖者，則俱退之。
+||
   .[The] upper places which .[one hath] finished multiplying:
   remove them first. \+
   .[The] lower places which .[one hath] finished multiplying:
   retreat them all.
-</#t>
+>>
 ====
 * 訖：終也，了也；
     finished \+
@@ -2445,11 +2470,12 @@ OR
   for the Mathematica code used to produce the animation.
 ----
 
-<#t>
-  六不積，五不隻。 |
+<<
+  六不積，五不隻。
+||
   Sixes .[are] not accumulated;
   fives, not single.
-</#t>
+>>
 ====
 * 六不積 \+
     This is saying that 6 is displayed as either
@@ -2508,11 +2534,12 @@ OR
 
 ====
 
-<#t>
-  上下相乘，至盡則已。 |
+<<
+  上下相乘，至盡則已。
+||
   The upper .[and] the lower .[are] mutually multiplied,
   finishing .[upon] reaching exhaustion.
-</#t>
+>>
 ====
 * 
     <@> Version~C | [version-c.url]52064 | [version-c.h] </@>
@@ -2527,13 +2554,14 @@ OR
 <;sh> 1 | 9 | Rod calculus: division algorithm </;sh>
 <;s@@> 1 | 9 | 8 | 147 | 52065 | 8 | 15 </;s@@>
 
-<#t>
+<<
   凡除之法，與乘正異。 \+
-  乘得在中央，除得在上方。 |
+  乘得在中央，除得在上方。
+||
   .[The] method of all division, .[is] directly opposite to multiplication. \+
   .[The] result of multiplication .[is placed] in .[the] middle;
   .[the] result of division, in .[the] above.
-</#t>
+>>
 ====
 * 異：
     opposite;
@@ -2541,11 +2569,12 @@ OR
 
 ====
 
-<#t>
-  假令六為法，百為實。 |
+<<
+  假令六為法，百為實。
+||
   Suppose .[we] make six be .[the] divisor,
   .[and an] hundred be .[the] dividend.
-</#t>
+>>
 ----
   實 and 法 are jargon terms for dividend and divisor:
 ----
@@ -2561,9 +2590,10 @@ $$
   <@> \P14 | #14 | Vol. I \P14 </@>.
 ----
 
-<#t>
+<<
   以六除百，當進之二等，令在正百下； \+
-  以六除一，則法多而實少，不可除，故當退就十位。 |
+  以六除一，則法多而實少，不可除，故當退就十位。
+||
   .[To] divide .[an] hundred by six,
   .[we] ought to advance it two ranks,
   making .[it] be directly below .[the] hundred; \+
@@ -2572,7 +2602,7 @@ $$
   .[it] cannot divide;
   therefore .[we] ought to retreat .[and] assume .[the]
   tens place.
-</#t>
+>>
 ====
 * 等：
     ranks;
@@ -2600,14 +2630,15 @@ $$
   for the Mathematica code used to produce the animation.
 ----
 
-<#t>
-  以法除實，言一六而折百為四十，故可除。 |
+<<
+  以法除實，言一六而折百為四十，故可除。
+||
   .[Now] dividing .[the] dividend by .[the] divisor:
   one six .[is six],
   and .[we] reduce .[the] hundred
   .[to] become forty;
   therefore .[it] can divide.
-</#t>
+>>
 ====
 * 
     <@> Version~C | [version-c.url]52065 | [version-c.h] </@>
@@ -2615,12 +2646,13 @@ $$
 
 ====
 
-<#t>
-  若實多法少，自當百之，不當復退。 |
+<<
+  若實多法少，自當百之，不當復退。
+||
   If .[the] dividend .[be] more .[and the] divisor less,
   .[we] naturally ought to centuple it,
   .[and] ought not retreat back.
-</#t>
+>>
 
 ----
   In other words, if a three-digit number is being divided
@@ -2629,14 +2661,15 @@ $$
   don't retreat to the tens.
 ----
 
-<#t>
-  故或步法十者置於十位，百者置於百位。 |
+<<
+  故或步法十者置於十位，百者置於百位。
+||
   Therefore if .[we have] stepped .[the] divisor .[unto the]
   tens, put .[the result]
   in .[the] tens place;
   .[if], .[unto the] hundreds,
   put .[the result] in .[the] hundreds place.
-</#t>
+>>
 
 ----
   The next line I have bracketed, for it is an inline annotation by
@@ -2648,11 +2681,12 @@ $$
 
 <% [李淳風] | 李淳風 <^> Lei Sh_n-fung | Li Ch'un-fe^ng | Li Chunfeng </^> %>
 
-<#t>
-  （上位有空絕者，法退二位。） |
+<<
+  （上位有空絕者，法退二位。）
+||
   ({If among the} upper places, there be .[an] empty,
   disconnected one, .[the] divisor .[shall be] retreated two places.)
-</#t>
+>>
 ====
 * 
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
@@ -2664,18 +2698,20 @@ $$
 
 ====
 
-<#t>
-  餘法皆如乘時。 |
+<<
+  餘法皆如乘時。
+||
   All .[the] remainder of .[the] method .[is] as when multiplying.
-</#t>
+>>
 
-<#t>
-  實有餘者，以法命之，以法為母，實餘為子。 |
+<<
+  實有餘者，以法命之，以法為母，實餘為子。
+||
   .[If the] dividend hath .[a] remainder,
   name it .[for a fraction] using .[the] divisor:
   use .[the] divisor as .[the] denominator,
   .[and the] dividend remainder as .[the] numerator.
-</#t>
+>>
 ====
 * 命：
     name;
@@ -2692,7 +2728,7 @@ $$
 <;sh> 1 | 10 | Volume conversion rates for grain \&~rice </;sh>
 <;s@@> 1 | 10 | 8 | 147 | 52066 | 9 | 16 </;s@@>
 
-<#t>
+<<
   以<:y>粟</:y>求<:y><:r>糲</:r><:b>米</:b></:y>，\
     三之，五而一。 \+
   以<:y><:r>糲</:r><:b>米</:b></:y>求<:y>粟</:y>，\
@@ -2704,7 +2740,8 @@ $$
   以<:y><:r>糲</:r><:v>飯</:v></:y>求<:y><:r>糲</:r><:b>米</:b></:y>，\
     二之，五而一。 \+
   以<:y><:g>糳</:g><:b>米</:b></:y>求<:y><:v>飯</:v></:y>，\
-    八之，四而一。 |
+    八之，四而一。
+||
   Seeking <:y><:r>coarse</:r> <:b>grain</:b></:y>
   with <:y>grain</:y>:
     triple it, .[and make] five .[as] one. \+
@@ -2723,7 +2760,7 @@ $$
   Seeking <:y><:g>{intricate}</:g> <:v>rice</:v></:y>
   with <:y><:g>intricate</:g> <:b>grain</:b></:y>:
     octuple it, .[and make] four .[as] one.
-</#t>
+>>
 ====
 * 
     <@> Version~A | [version-a.url]8 | [version-a.h] </@>
@@ -2803,7 +2840,7 @@ $$
 <;sh> 1 | 11 | Some equivalent fractions </;sh>
 <;s@@> 1 | 11 | 8 | 148 | 52067 | 10 | 16 </;s@@>
 
-<#t>
+<<
   十分減一者，以二乘，二十除。 \+
   減二者，以四乘，二十除。 \+
   減三者，以六乘，二十除。 \+
@@ -2812,7 +2849,8 @@ $$
   減六者，以十二乘，二十除。 \+
   減七者，以十四乘，二十除。 \+
   減八者，以十六乘，二十除。 \+
-  減九者，以十八乘，二十除。 |
+  減九者，以十八乘，二十除。
+||
   Subtracting one of ten shares:
     multiply by two, .[and] divide .[by] twenty; \+
   subtracting two:
@@ -2831,7 +2869,7 @@ $$
     multiply by sixteen, .[and] divide .[by] twenty; \+
   subtracting nine:
     multiply by eighteen, .[and] divide .[by] twenty.
-</#t>
+>>
 ====
 * 分：
     shares;
@@ -2860,12 +2898,13 @@ $$
 
 <;sh> 1 | 12 | Some equivalent fractions </;sh>
 <;s@@> 1 | 12 | 10 | 148 | 52068 | 11 | 17 </;s@@>
-<#t>
+<<
   九分減一者，以二乘，十八除。 \+
   八分減一者，以二乘，十六除。 \+
   七分減一者，以二乘，十四除。 \+
   六分減一者，以二乘，十二除。 \+
-  五分減一者，以二乘，十除。 |
+  五分減一者，以二乘，十除。
+||
   Subtracting one of nine shares:
     multiply by two, .[and] divide .[by] eighteen; \+
   subtracting one of eight shares:
@@ -2876,7 +2915,7 @@ $$
     multiply by two, .[and] divide .[by] twelve; \+
   subtracting one of five shares:
     multiply by two, .[and] divide .[by] ten.
-</#t>
+>>
 ----
   In modern notation:
 ----
@@ -2892,13 +2931,14 @@ $$
 <;sh> 1 | 13 | Rod calculus: $81 \times 81$ </;sh>
 <;s@@> 1 | 13 | 10 | 148 | 52073 | 16 | 17 </;s@@>
 
-<#t>
+<<
   九九八十一，自相乘，得幾何？ \+
-  答曰：六千五百六十一。 |
+  答曰：六千五百六十一。
+||
   Nine nines .[are] eighty-one, .[which],
   multiplied with itself, resulteth in how much? \+
   Answer saith: six thousand, five hundred .[and] sixty-one.
-</#t>
+>>
 $$
   \begin{aligned}
      9 \times  9 &= 81 \\
@@ -2906,37 +2946,41 @@ $$
   \end{aligned}
 $$
 
-<#t>
-  術曰：重置其位。 |
+<<
+  術曰：重置其位。
+||
   Method saith: put into .[a] stack .[the] places.
-</#t>
+>>
 ====
 * 重置其位 \+
     See <@> \P8 | #8 | Vol. I \P8 </@>.
 
 ====
 
-<#t>
-  以上八呼下八，八八六十四，即下六千四百於中位。 |
+<<
+  以上八呼下八，八八六十四，即下六千四百於中位。
+||
   Calling .[the] lower eight
   with .[the] upper eight:
   eight eights .[are] sixty-four, that is,
   put down six thousand four hundred
   upon .[the] middle places.
-</#t>
+>>
 
-<#t>
-  以上八呼下一，一八如八，即於中位下八十。 |
+<<
+  以上八呼下一，一八如八，即於中位下八十。
+||
   Calling .[the] lower one with .[the] upper eight:
   one eight .[is] as eight, that is,
   upon .[the] middle places, put down eighty.
-</#t>
+>>
 
-<#t>
-  退下位一等，收上位八十。 |
+<<
+  退下位一等，收上位八十。
+||
   Retreat .[the] lower places .[by] one rank, .[and]
   put away eighty .[the] upper place.
-</#t>
+>>
 ====
 * 
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
@@ -2944,27 +2988,30 @@ $$
 
 ====
 
-<#t>
-  以上位一呼下八，一八如八，即於中位下八十。 |
+<<
+  以上位一呼下八，一八如八，即於中位下八十。
+||
   Calling .[the] lower eight with
   one .[the] upper place:
   one eight .[is] as eight, that is,
   upon .[the] middle places, put down eighty.
-</#t>
+>>
 
-<#t>
-  以上一呼下一，一一如一，即於中位下一。 |
+<<
+  以上一呼下一，一一如一，即於中位下一。
+||
   Calling .[the] lower one with .[the] upper one:
   one one .[is] as one, that is,
   upon .[the] middle places, put down one.
-</#t>
+>>
 
-<#t>
-  上下位俱收，中位即得六千五百六十一。 |
+<<
+  上下位俱收，中位即得六千五百六十一。
+||
   .[The] upper .[and] lower places .[now] all
   put away, .[the] middle places .[do] then result in
   six thousand, five hundred .[and] sixty-one.
-</#t>
+>>
 
 ----
   In animated form:
@@ -2987,14 +3034,15 @@ $$
 <;sh> 1 | 14 | Rod calculus: $6561 \div 9$ </;sh>
 <;s@@> 1 | 14 | 10 | 148 | 52074 | 17 | 18 </;s@@>
 
-<#t>
+<<
   六千五百六十一，九人分之，問人得幾何？ \+
-  答曰：七百二十九。 |
+  答曰：七百二十九。
+||
   Six thousand, five hundred .[and] sixty-one:
   .[with] nine men sharing it,
   .[we] ask: how much receiveth .[each] man? \+
   Answer saith: seven hundred .[and] twenty-nine.
-</#t>
+>>
 ====
 * 人：
     (generic) man;
@@ -3005,21 +3053,23 @@ $$
   6561 \div 9 = 729
 $$
 
-<#t>
-  術曰：先置六千五百六十一於中位為實，下列九人為法。 |
+<<
+  術曰：先置六千五百六十一於中位為實，下列九人為法。
+||
   Method saith:
   first put six thousand, five hundred .[and] sixty-one
   upon .[the] middle places as .[the] dividend,
   .[and] below display .[the] nine men as .[the] divisor.
-</#t>
+>>
 
-<#t>
-  上位置七百，以上七呼下九，七九六十三，即除中位六千三百。 |
+<<
+  上位置七百，以上七呼下九，七九六十三，即除中位六千三百。
+||
   .[In the] upper places put seven hundred,
   .[and] calling .[the] lower nine with .[the] upper seven:
   seven nines .[are] sixty-three, that is,
   remove from .[the] middle places six thousand three hundred.
-</#t>
+>>
 ====
 * 
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
@@ -3027,8 +3077,9 @@ $$
 
 ====
 
-<#t>
-  退下位一等，即上位置二十，以上二呼下九，二九十八，即除中位一百八十。 |
+<<
+  退下位一等，即上位置二十，以上二呼下九，二九十八，即除中位一百八十。
+||
   Retreat .[the] lower place .[by] one rank,
   then .[in the] upper places put twenty,
   .[and] calling .[the] lower nine
@@ -3036,7 +3087,7 @@ $$
   two nines .[are] eighteen, that is,
   remove from .[the] middle places
   one hundred .[and] eighty.
-</#t>
+>>
 ====
 * 
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
@@ -3044,14 +3095,15 @@ $$
 
 ====
 
-<#t>
-  又更退下位一等，即上位更置九，即以上九呼下九，九九八十一，即除中位八十一。 |
+<<
+  又更退下位一等，即上位更置九，即以上九呼下九，九九八十一，即除中位八十一。
+||
   And retreat again .[the] lower place .[by] one rank,
   then .[in the] upper places put further .[a] nine,
   then calling .[the] lower nine with .[the] upper nine:
   nine nines .[are] eighty-one, that is,
   remove from .[the] middle places eighty-one.
-</#t>
+>>
 ====
 * 更：
     again; also further \+
@@ -3060,13 +3112,14 @@ $$
 
 ====
 
-<#t>
-  中位並盡，收下位。上位所得即人之所得。 |
+<<
+  中位並盡，收下位。上位所得即人之所得。
+||
   .[The] middle places .[now] all exhausted,
   put away .[the] lower place.
   That which resulteth .[in the] upper places is that received of
   .[each] man.
-</#t>
+>>
 ====
 * 
     <@> Version~C | [version-c.url]52074 | [version-c.h] </@>
@@ -3100,11 +3153,12 @@ $$
   </@>.
 ----
 
-<#t>
-  自八八六十四至一一如一，並準此。 |
+<<
+  自八八六十四至一一如一，並準此。
+||
   From eight eights .[are] sixty-four,
   unto one one .[is] as one: all .[be] according to this.
-</#t>
+>>
 ----
   I think this is saying that the same procedures as above
   are used to compute
@@ -3158,14 +3212,15 @@ $$
   so you may wish to <@> skip to \P23 | #23 | Vol. I \P23 </@>.
 ----
 
-<#t>
-  八九七十二，自相乘，得五千一百八十四。八人分之，人得六百四十八。 |
+<<
+  八九七十二，自相乘，得五千一百八十四。八人分之，人得六百四十八。
+||
   Eight nines .[are] seventy-two,
   .[which], multiplied with itself, resulteth in
   five thousand, one hundred .[and] eighty-four.
   .[With] eight men sharing it,
   .[each] man receiveth six hundred .[and] forty-eight.
-</#t>
+>>
 ====
 * 
     <@> Version~A | [version-a.url]12 | [version-a.h] </@>
@@ -3177,14 +3232,15 @@ $$
 
 ====
 
-<#t>
-  七九六十三，自相乘，得三千九百六十九。七人分之，人得五百六十七。 |
+<<
+  七九六十三，自相乘，得三千九百六十九。七人分之，人得五百六十七。
+||
   Seven nines .[are] sixty-three,
   .[which], multiplied with itself, resulteth in
   three thousand, nine hundred .[and] sixty-nine.
   .[With] seven men sharing it,
   .[each] man receiveth five hundred .[and] sixty-seven.
-</#t>
+>>
 ====
 * 
     <@> Version~A | [version-a.url]12 | [version-a.h] </@>
@@ -3196,32 +3252,35 @@ $$
 
 ====
 
-<#t>
-  六九五十四，自相乘，得二千九百一十六。六人分之，人得四百八十六。 |
+<<
+  六九五十四，自相乘，得二千九百一十六。六人分之，人得四百八十六。
+||
   Six nines .[are] fifty-four,
   .[which], multiplied with itself, resulteth in
   two thousand, nine hundred .[and] sixteen.
   .[With] six men sharing it,
   .[each] man receiveth four hundred .[and] eighty-six.
-</#t>
+>>
 
-<#t>
-  五九四十五，自相乘，得二千二十五。五人分之，人得四百五。 |
+<<
+  五九四十五，自相乘，得二千二十五。五人分之，人得四百五。
+||
   Five nines .[are] forty-five,
   .[which], multiplied with itself, resulteth in
   two thousand .[and] twenty-five.
   .[With] five men sharing it,
   .[each] man receiveth four hundred .[and] five.
-</#t>
+>>
 
-<#t>
-  四九三十六，自相乘，得一千二百九十六。四人分之，人得三百二十四。 |
+<<
+  四九三十六，自相乘，得一千二百九十六。四人分之，人得三百二十四。
+||
   Four nines .[are] thirty-six,
   .[which], multiplied with itself, resulteth in
   one thousand, two hundred .[and] ninety-six.
   .[With] four men sharing it, .[each] man receiveth
   three hundred .[and] twenty-four.
-</#t>
+>>
 ====
 * 
     __<@> Version~A | [version-a.url]12 | [version-a.h] </@>\
@@ -3238,34 +3297,38 @@ $$
 
 ====
 
-<#t>
-  三九二十七，自相乘，得七百二十九。三人分之，人得二百四十三。 |
+<<
+  三九二十七，自相乘，得七百二十九。三人分之，人得二百四十三。
+||
   Three nines .[are] twenty-seven,
   .[which], multiplied with itself, resulteth in
   seven hundred .[and] twenty-nine.
   .[With] three men sharing it, .[each] man receiveth
   two hundred .[and] forty-three.
-</#t>
+>>
 
-<#t>
-  二九一十八，自相乘，得三百二十四。二人分之，人得一百六十二。 |
+<<
+  二九一十八，自相乘，得三百二十四。二人分之，人得一百六十二。
+||
   Two nines .[are] eighteen,
   .[which], multiplied with itself, resulteth in
   three hundred .[and] twenty-four.
   .[With] two men sharing it, .[each] man receiveth
   one hundred .[and] sixty-two.
-</#t>
+>>
 
-<#t>
-  一九如九，自相乘，得八十一。一人得八十一。 |
+<<
+  一九如九，自相乘，得八十一。一人得八十一。
+||
   One nine .[is] as nine,
   .[which], multiplied with itself, resulteth in eighty-one.
   One man receiveth eighty-one.
-</#t>
+>>
 
-<#t>
+<<
   右九九一條，得四百五，自相乘，得一十六萬四千二十五。\
-  九人分之，人得一萬八千二百二十五。 |
+  九人分之，人得一萬八千二百二十五。
+||
   .[The] nine nines above,
   .[in] one strand, result in four hundred .[and] five,
   .[which], multiplied with itself, resulteth in
@@ -3273,7 +3336,7 @@ $$
     twenty-five.
   .[With] nine men sharing it, .[each] man receiveth
   eighteen thousand, two hundred .[and] twenty-five.
-</#t>
+>>
 ====
 * 右：
     above;
@@ -3317,14 +3380,15 @@ $$
   <@> A14 | [version-a.url]14 | [version-a.h] </@>.__
 ----
 
-<#t>
-  八八六十四，自相乘，得四千九十六。八人分之，人得五百十二。 |
+<<
+  八八六十四，自相乘，得四千九十六。八人分之，人得五百十二。
+||
   Eight eights .[are] sixty-four,
   .[which], multiplied with itself, resulteth in
   four thousand .[and] ninety-six.
   .[With] eight men sharing it, .[each] man receiveth
   five hundred .[and] twelve.
-</#t>
+>>
 ====
 * 
     <@> Version~B | [version-b.url]149 | [version-b.h] </@>
@@ -3332,77 +3396,85 @@ $$
 
 ====
 
-<#t>
-  七八五十六，自相乘，得三千一百三十六。七人分之，人得四百四十八。 |
+<<
+  七八五十六，自相乘，得三千一百三十六。七人分之，人得四百四十八。
+||
   Seven eights .[are] fifty-six,
   .[which], multiplied with itself, resulteth in
   three thousand, one hundred .[and] thirty-six.
   .[With] seven men sharing it, .[each] man receiveth
   four hundred .[and] forty-eight.
-</#t>
+>>
 
-<#t>
-  六八四十八，自相乘，得二千三百四。六人分之，人得三百八十四。 |
+<<
+  六八四十八，自相乘，得二千三百四。六人分之，人得三百八十四。
+||
   Six eights .[are] forty-eight,
   .[which], multiplied with itself, resulteth in
   two thousand, three hundred .[and] four.
   .[With] six men sharing it, .[each] man receiveth
   three hundred .[and] eighty-four.
-</#t>
+>>
 
-<#t>
-  五八四十，自相乘，得一千六百。五人分之，人得三百二十。 |
+<<
+  五八四十，自相乘，得一千六百。五人分之，人得三百二十。
+||
   Five eights .[are] forty,
   .[which], multiplied with itself, resulteth in
   one thousand six hundred.
   .[With] five men sharing it, .[each] man receiveth
   three hundred .[and] twenty.
-</#t>
+>>
 
-<#t>
-  四八三十二，自相乘，得一千二十四。四人分之，人得二百五十六。 |
+<<
+  四八三十二，自相乘，得一千二十四。四人分之，人得二百五十六。
+||
   Four eights .[are] thirty-two,
   .[which], multiplied with itself, resulteth in
   one thousand .[and] twenty-four.
   .[With] four men sharing it, .[each] man receiveth
   two hundred .[and] fifty-six.
-</#t>
+>>
 
-<#t>
-  三八二十四，自相乘，得五百七十六。三人分之，人得一百九十二。 |
+<<
+  三八二十四，自相乘，得五百七十六。三人分之，人得一百九十二。
+||
   Three eights .[are] twenty-four,
   .[which], multiplied with itself, resulteth in
   five hundred .[and] seventy-six.
   .[With] three men sharing it, .[each] man receiveth
   one hundred .[and] ninety-two.
-</#t>
+>>
 
-<#t>
-  二八十六，自相乘，得二百五十六。二人分之，人得一百二十八。 |
+<<
+  二八十六，自相乘，得二百五十六。二人分之，人得一百二十八。
+||
   Two eights .[are] sixteen,
   .[which], multiplied with itself, resulteth in
   two hundred .[and] fifty-six.
   .[With] two men sharing it, .[each] man receiveth
   one hundred .[and] twenty-eight.
-</#t>
+>>
 
-<#t>
-  一八如八，自相乘，得六十四。一人得六十四。 |
+<<
+  一八如八，自相乘，得六十四。一人得六十四。
+||
   One eight .[is] as eight,
   .[which], multiplied with itself, resulteth in sixty-four.
   One man receiveth sixty-four.
-</#t>
+>>
 
-<#t>
+<<
   右八八一條，得二百八十八，自相乘，得八萬二千九百四十四。\
-  八人分之，人得一萬三百六十八。 |
+  八人分之，人得一萬三百六十八。
+||
   .[The] eight eights above,
   .[in] one strand, result in two hundred .[and] eighty-eight,
   .[which], multiplied with itself, resulteth in
   eighty-two thousand, nine hundred .[and] forty-four.
   .[With] eight men sharing it, .[each] man receiveth
   ten thousand, three hundred .[and] sixty-eight.
-</#t>
+>>
 
 $$
   \begin{gathered}
@@ -3425,59 +3497,65 @@ $$
   <@> resumes | [version-a.url]14 | [version-a.h] </@>.__
 ----
 
-<#t>
-  七七四十九，自相乘，得二千四百一。七人分之，人得三百四十三。 |
+<<
+  七七四十九，自相乘，得二千四百一。七人分之，人得三百四十三。
+||
   Seven sevens .[are] forty-nine,
   .[which], multiplied with itself, resulteth in
   two thousand, four hundred .[and] one.
   .[With] seven men sharing it, .[each] man receiveth
   three hundred .[and] forty-three.
-</#t>
+>>
 
-<#t>
-  六七四十二，自相乘，得一千七百六十四。六人分之，人得二百九十四。 |
+<<
+  六七四十二，自相乘，得一千七百六十四。六人分之，人得二百九十四。
+||
   Six sevens .[are] forty-two,
   .[which], multiplied with itself, resulteth in
   one thousand, seven hundred .[and] sixty-four.
   .[With] six men sharing it, .[each] man receiveth
   two hundred .[and] ninety-four.
-</#t>
+>>
 
-<#t>
-  五七三十五，自相乘，得一千二百二十五。五人分之，人得二百四十五。 |
+<<
+  五七三十五，自相乘，得一千二百二十五。五人分之，人得二百四十五。
+||
   Five sevens .[are] thirty-five,
   .[which], multiplied with itself, resulteth in
   one thousand, two hundred .[and] twenty-five.
   .[With] five men sharing it, .[each] man receiveth
   two hundred .[and] forty-five.
-</#t>
+>>
 
-<#t>
-  四七二十八，自相乘，得七百八十四。四人分之，人得一百九十六。 |
+<<
+  四七二十八，自相乘，得七百八十四。四人分之，人得一百九十六。
+||
   Four sevens .[are] twenty-eight,
   .[which], multiplied with itself, resulteth in
   seven hundred .[and] eighty-four.
   .[With] four men sharing it, .[each] man receiveth
   one hundred .[and] ninety-six.
-</#t>
+>>
 
-<#t>
-  三七二十一，自相乘，得四百四十一。三人分之，人得一百四十七。 |
+<<
+  三七二十一，自相乘，得四百四十一。三人分之，人得一百四十七。
+||
   Three sevens .[are] twenty-one,
   .[which], multiplied with itself, resulteth in
   four hundred .[and] forty-one.
   .[With] three men sharing it, .[each] man receiveth
   one hundred .[and] forty-seven.
-</#t>
+>>
 
-<#t>
-  二七十四，自相乘，得一百九十六。二人分之，人得九十八。 |
+<<
+  二七十四，自相乘，得一百九十六。二人分之，人得九十八。
+||
   Two sevens .[are] fourteen,
   .[which], multiplied with itself, resulteth in
   one hundred .[and] ninety-six.
   .[With] two men sharing it,
   .[each] man receiveth ninety-eight.
-</#t>
+>>
 ====
 * 
     <@> Version~B | [version-b.url]150 | [version-b.h] </@>
@@ -3485,23 +3563,25 @@ $$
 
 ====
 
-<#t>
-  一七如七，自相乘，得四十九。一人得四十九。 |
+<<
+  一七如七，自相乘，得四十九。一人得四十九。
+||
   One seven .[is] as seven,
   .[which], multiplied with itself, resulteth in forty-nine.
   One man receiveth forty-nine.
-</#t>
+>>
 
-<#t>
+<<
   右七七一條，得一百九十六，自相乘，得三萬八千四百一十六。\
-  七人分之，人得五千四百八十八。 |
+  七人分之，人得五千四百八十八。
+||
   .[The] seven sevens above,
   .[in] one strand, result in one hundred .[and] ninety-six,
   .[which], multiplied with itself, resulteth in
   thirty-eight thousand, four hundred .[and] sixteen.
   .[With] seven men sharing it, .[each] man receiveth
   five thousand, four hundred .[and] eighty-eight.
-</#t>
+>>
 
 $$
   \begin{gathered}
@@ -3518,68 +3598,75 @@ $$
 <;sh> 1 | 18 | Results of multiplication \&~division: multiples of~6 </;sh>
 <;s@@> 1 | 18 | 14 | 150 | 52097 | 40 | 26 </;s@@>
 
-<#t>
-  六六三十六，自相乘，得一千二百九十六。六人分之，人得二百一十六。 |
+<<
+  六六三十六，自相乘，得一千二百九十六。六人分之，人得二百一十六。
+||
   Six sixes .[are] thirty-six,
   .[which], multiplied with itself, resulteth in
   one thousand, two hundred .[and] ninety-six.
   .[With] six men sharing it, .[each] man receiveth
   two hundred .[and] sixteen.
-</#t>
+>>
 
-<#t>
-  五六三十，自相乘，得九百。五人分之，人得一百八十。 |
+<<
+  五六三十，自相乘，得九百。五人分之，人得一百八十。
+||
   Five sixes .[are] thirty,
   .[which], multiplied with itself, resulteth in nine hundred.
   .[With] five men sharing it, .[each] man receiveth
   one hundred .[and] eighty.
-</#t>
+>>
 
-<#t>
-  四六二十四，自相乘，得五百七十六。四人分之，人得一百四十四。 |
+<<
+  四六二十四，自相乘，得五百七十六。四人分之，人得一百四十四。
+||
   Four sixes .[are] twenty-four,
   .[which], multiplied with itself, resulteth in
   five hundred .[and] seventy-six.
   .[With] four men sharing it, .[each] man receiveth
   one hundred .[and] forty-four.
-</#t>
+>>
 
-<#t>
-  三六一十八，自相乘，得三百二十四。三人分之，人得一百八。 |
+<<
+  三六一十八，自相乘，得三百二十四。三人分之，人得一百八。
+||
   Three sixes .[are] eighteen,
   .[which], multiplied with itself, resulteth in
   three hundred .[and] twenty-four.
   .[With] three men sharing it, .[each] man receiveth
   one hundred .[and] eight.
-</#t>
+>>
 
-<#t>
-  二六一十二，自相乘，得一百四十四。二人分之，人得七十二。 |
+<<
+  二六一十二，自相乘，得一百四十四。二人分之，人得七十二。
+||
   Two sixes .[are] twelve,
   .[which], multiplied with itself, resulteth in
   one hundred .[and] forty-four.
   .[With] two men sharing it,
   .[each] man receiveth seventy-two.
-</#t>
+>>
 
-<#t>
-  一六如六，自相乘，得三十六。一人得三十六。 |
+<<
+  一六如六，自相乘，得三十六。一人得三十六。
+||
   One six .[is] as six,
   .[which], multiplied with itself, resulteth in
   thirty-six.
   One man receiveth thirty-six.
-</#t>
+>>
 
-<#t>
+<<
   右六六一條，得一百二十六，自相乘，得一萬五千八百七十六。\
-  六人分之，人得二千六百四十六。 |
+  六人分之，人得二千六百四十六。
+||
   .[The] six sixes above,
   .[in] one strand, result in one hundred .[and] twenty-six,
   .[which], multiplied with itself, resulteth in
   fifteen thousand, eight hundred .[and] seventy-six.
   .[With] six men sharing it, .[each] man receiveth
   two thousand, six hundred .[and] forty-six.
-</#t>
+>>
 
 $$
   \begin{gathered}
@@ -3594,59 +3681,65 @@ $$
 ----
 <;sh> 1 | 19 | Results of multiplication \&~division: multiples of~5 </;sh>
 <;s@@> 1 | 19 | 16 | 150 | 52103 | 46 | 27 </;s@@>
-<#t>
-  五五二十五，自相乘，得六百二十五。五人分之，人得一百二十五。 |
+<<
+  五五二十五，自相乘，得六百二十五。五人分之，人得一百二十五。
+||
   Five fives .[are] twenty-five,
   .[which], multiplied with itself, resulteth in
   six hundred .[and] twenty-five.
   .[With] five men sharing it, .[each] man receiveth
   one hundred .[and] twenty-five.
-</#t>
+>>
 
-<#t>
-  四五二十，自相乘，得四百。四人分之，人得一百。 |
+<<
+  四五二十，自相乘，得四百。四人分之，人得一百。
+||
   Four fives .[are] twenty,
   .[which], multiplied with itself, resulteth in four hundred.
   .[With] four men sharing it, .[each] man receiveth
   one hundred.
-</#t>
+>>
 
-<#t>
-  三五一十五，自相乘，得二百二十五。三人分之，人得七十五。 |
+<<
+  三五一十五，自相乘，得二百二十五。三人分之，人得七十五。
+||
   Three fives .[are] fifteen,
   .[which], multiplied with itself, resulteth in
   two hundred .[and] twenty-five.
   .[With] three men sharing it, .[each] man receiveth
   seventy-five.
-</#t>
+>>
 
-<#t>
-  二五一十，自相乘，得一百。二人分之，人得五十。 |
+<<
+  二五一十，自相乘，得一百。二人分之，人得五十。
+||
   Two fives .[are] ten,
   .[which], multiplied with itself, resulteth in
   one hundred.
   .[With] two men sharing it, .[each] man receiveth
   fifty.
-</#t>
+>>
 
-<#t>
-  一五如五，自相乘，得二十五。一人得二十五。 |
+<<
+  一五如五，自相乘，得二十五。一人得二十五。
+||
   One five .[is] as five,
   .[which], multiplied with itself, resulteth in
   twenty-five.
   One man receiveth twenty-five.
-</#t>
+>>
 
-<#t>
+<<
   右五五一條，得七十五，自相乘，得五千六百二十五。\
-  五人分之，人得一千一百二十五。 |
+  五人分之，人得一千一百二十五。
+||
   .[The] five fives above,
   .[in] one strand, result in seventy-five,
   .[which], multiplied with itself, resulteth in
   five thousand, six hundred .[and] twenty-five.
   .[With] five men sharing it, .[each] man receiveth
   one thousand, one hundred .[and] twenty-five.
-</#t>
+>>
 
 $$
   \begin{gathered}
@@ -3663,48 +3756,53 @@ $$
 <;sh> 1 | 20 | Results of multiplication \&~division: multiples of~4 </;sh>
 <;s@@> 1 | 20 | 18 | 151 | 52108 | 51 | 29 </;s@@>
 
-<#t>
-  四四一十六，自相乘，得二百五十六。四人分之，人得六十四。 |
+<<
+  四四一十六，自相乘，得二百五十六。四人分之，人得六十四。
+||
   Four fours .[are] sixteen,
   .[which], multiplied with itself, resulteth in
   two hundred .[and] fifty-six.
   .[With] four men sharing it, .[each] man receiveth
   sixty-four.
-</#t>
+>>
 
-<#t>
-  三四一十二，自相乘，得一百四十四。三人分之，人得四十八。 |
+<<
+  三四一十二，自相乘，得一百四十四。三人分之，人得四十八。
+||
   Three fours .[are] twelve,
   .[which], multiplied with itself, resulteth in
   one hundred .[and] forty-four.
   .[With] three men sharing it, .[each] man receiveth
   forty-eight.
-</#t>
+>>
 
-<#t>
-  二四如八，自相乘，得六十四。二人分之，人得三十二。 |
+<<
+  二四如八，自相乘，得六十四。二人分之，人得三十二。
+||
   Two fours .[are] as eight,
   .[which], multiplied with itself, resulteth in sixty-four.
   .[With] two men sharing it, .[each] man receiveth
   thirty-two.
-</#t>
+>>
 
-<#t>
-  一四如四，自相乘，得一十六。一人得一十六。 |
+<<
+  一四如四，自相乘，得一十六。一人得一十六。
+||
   One four .[is] as four,
   .[which], multiplied with itself, resulteth in sixteen.
   One man receiveth sixteen.
-</#t>
+>>
 
-<#t>
-  右四四一條，得四十，自相乘，得一千六百。四人分之，人得四百。 |
+<<
+  右四四一條，得四十，自相乘，得一千六百。四人分之，人得四百。
+||
   .[The] four fours above,
   .[in] one strand, result in forty,
   .[which], multiplied with itself, resulteth in
   one thousand six hundred.
   .[With] four men sharing it, .[each] man receiveth
   four hundred.
-</#t>
+>>
 
 $$
   \begin{gathered}
@@ -3721,14 +3819,15 @@ $$
 <;sh> 1 | 21 | Results of multiplication \&~division: multiples of~3 </;sh>
 <;s@@> 1 | 21 | 18 | 151 | 52112 | 55 | 30 </;s@@>
 
-<#t>
-  三三如九，自相乘，得八十一。三人分之，人得二十七。 |
+<<
+  三三如九，自相乘，得八十一。三人分之，人得二十七。
+||
   Three threes .[are] as nine,
   .[which], multiplied with itself, resulteth in
   eighty-one.
   .[With] three men sharing it, .[each] man receiveth
   twenty-seven.
-</#t>
+>>
 ====
 * 
     <@> Version~A | [version-a.url]18 | [version-a.h] </@>
@@ -3736,14 +3835,15 @@ $$
 
 ====
 
-<#t>
-  二三如六，自相乘，得三十六。二人分之，人得一十八。 |
+<<
+  二三如六，自相乘，得三十六。二人分之，人得一十八。
+||
   Two threes .[are] as six,
   .[which], multiplied with itself, resulteth in
   thirty-six.
   .[With] two men sharing it, .[each] man receiveth
   eighteen.
-</#t>
+>>
 ====
 * 
     <@> Version~A | [version-a.url]18 | [version-a.h] </@>
@@ -3751,23 +3851,25 @@ $$
 
 ====
 
-<#t>
-  一三如三，自相乘，得九。一人得九。 |
+<<
+  一三如三，自相乘，得九。一人得九。
+||
   One three .[is] as three,
   .[which], multiplied with itself, resulteth in
   nine.
   One man receiveth nine.
-</#t>
+>>
 
-<#t>
-  右三三一條，得一十八，自相乘，得三百二十四。三人分之，人得一百八。 |
+<<
+  右三三一條，得一十八，自相乘，得三百二十四。三人分之，人得一百八。
+||
   .[The] three threes above,
   .[in] one strand, result in eighteen,
   .[which], multiplied with itself, resulteth in
   three hundred .[and] twenty-four.
   .[With] three men sharing it, .[each] man receiveth
   one hundred .[and] eight.
-</#t>
+>>
 
 $$
 \begin{gathered}
@@ -3784,30 +3886,33 @@ $$
 <;sh> 1 | 22 | Results of multiplication \&~division: multiples of~2 </;sh>
 <;s@@> 1 | 22 | 20 | 151 | 52115 | 58 | 31 </;s@@>
 
-<#t>
-  二二如四，自相乘，得一十六。二人分之，人得八。 |
+<<
+  二二如四，自相乘，得一十六。二人分之，人得八。
+||
   Two twos .[are] as four,
   .[which], multiplied with itself, resulteth in sixteen.
   .[With] two men sharing it, .[each] man receiveth
   eight.
-</#t>
+>>
 
-<#t>
-  一二如二，自相乘，得四。一人得四。 |
+<<
+  一二如二，自相乘，得四。一人得四。
+||
   One two .[is] as two,
   .[which], multiplied with itself, resulteth in
   four.
   One man receiveth four.
-</#t>
+>>
 
-<#t>
-  右二二一條，得六，自相乘，得三十六。二人分之，人得十八。 |
+<<
+  右二二一條，得六，自相乘，得三十六。二人分之，人得十八。
+||
   .[The] two twos above,
   .[in] one strand, result in six,
   .[which], multiplied with itself, resulteth in thirty-six.
   .[With] two men sharing it, .[each] man receiveth
   eighteen.
-</#t>
+>>
 ====
 * 
     <@> Version~B | [version-b.url]151 | [version-b.h] </@>
@@ -3830,12 +3935,13 @@ $$
 </;sh>
 <;s@@> 1 | 23 | 20 | 151 | 52117 | 60 | 32 </;s@@>
 
-<#t>
-  一一如一，自相乘，得一。一乘不長。 |
+<<
+  一一如一，自相乘，得一。一乘不長。
+||
   One one .[is] as one,
   .[which], multiplied with itself, resulteth in one.
   Multiplying .[by] one augmenteth not.
-</#t>
+>>
 ====
 * 長：
     augmenteth \+
@@ -3844,9 +3950,10 @@ $$
 
 ====
 
-<#t>
+<<
   右從九九至一一，總成一千一百五十五，自相乘，得一百三十三萬四千二十五。\
-  九人分之，人得一十四萬八千二百二十五。 |
+  九人分之，人得一十四萬八千二百二十五。
+||
   From nine nines unto one one above:
   .[the] total becometh one thousand, one hundred .[and] fifty-five,
   .[which], multiplied with itself, resulteth in
@@ -3855,7 +3962,7 @@ $$
   .[With] nine men sharing it, .[each] man receiveth
   one hundred .[and] forty-eight thousand,
     two hundred .[and] twenty-five.
-</#t>
+>>
 ====
 * 
     <@> Version~C | [version-c.url]52117 | [version-c.h] </@>
@@ -3905,31 +4012,34 @@ $$
   </@>.
 ----
 
-<#t>
-  以九乘一十二，得一百八。六人分之，人得一十八。 |
+<<
+  以九乘一十二，得一百八。六人分之，人得一十八。
+||
   Multiplying twelve by nine, resulteth in
   one hundred .[and] eight.
   .[With] six men sharing it, .[each] man receiveth
   eighteen.
-</#t>
+>>
 
-<#t>
-  以二十七乘三十六，得九百七十二。一十八人分之，人得五十四。 |
+<<
+  以二十七乘三十六，得九百七十二。一十八人分之，人得五十四。
+||
   Multiplying thirty-six by twenty-seven, resulteth in
   nine hundred .[and] seventy-two.
   .[With] eighteen men sharing it, .[each] man receiveth
   fifty-four.
-</#t>
+>>
 
-<#t>
-  以八十一乘一百八，得八千七百四十八。五十四人分之，人得一百六十二。 |
+<<
+  以八十一乘一百八，得八千七百四十八。五十四人分之，人得一百六十二。
+||
   Multiplying one hundred .[and] eight
   by eighty-one, resulteth in
   eight thousand, seven hundred .[and] forty-eight.
   .[With] fifty-four men sharing it,
   .[each] man receiveth
   one hundred .[and] sixty-two.
-</#t>
+>>
 ====
 * 
     <@> Version~B | [version-b.url]151 | [version-b.h] </@>
@@ -3937,9 +4047,10 @@ $$
 
 ====
 
-<#t>
+<<
   以二百四十三乘三百二十四，得七萬八千七百三十二。\
-  一百六十二人分之，人得四百八十六。 |
+  一百六十二人分之，人得四百八十六。
+||
   Multiplying three hundred .[and] twenty-four
   by two hundred .[and] forty-three,
   resulteth in seventy-eight thousand, seven hundred .[and]
@@ -3947,11 +4058,12 @@ $$
   .[With] one hundred .[and] sixty-two men sharing it,
   .[each] man receiveth
   four hundred .[and] eighty-six.
-</#t>
+>>
 
-<#t>
+<<
   以七百二十九乘九百七十二，得七十萬八千五百八十八。\
-  四百八十六人分之，人得一千四百五十八。 |
+  四百八十六人分之，人得一千四百五十八。
+||
   Multiplying nine hundred .[and] seventy-two
   by seven hundred .[and] twenty-nine,
   resulteth in seven hundred .[and] eight thousand, five hundred .[and]
@@ -3960,11 +4072,12 @@ $$
   eighty-six men sharing it, .[each] man receiveth
   one thousand, four hundred .[and]
   fifty-eight.
-</#t>
+>>
 
-<#t>
+<<
   以二千一百八十七乘二千九百一十六，得六百三十七萬七千二百九十二。\
-  一千四百五十八人分之，人得四千三百七十四。 |
+  一千四百五十八人分之，人得四千三百七十四。
+||
   Multiplying two thousand, nine hundred .[and] sixteen
   by two thousand, one hundred .[and] eighty-seven,
   resulteth in six million, three hundred .[and] seventy-seven thousand,
@@ -3972,7 +4085,7 @@ $$
   .[With] one thousand, four hundred .[and]
   fifty-eight men sharing it, .[each] man receiveth
   four thousand, three hundred .[and] seventy-four.
-</#t>
+>>
 ====
 * 
     <@> Version~C | [version-c.url]52123 | [version-c.h] </@>
@@ -3980,9 +4093,10 @@ $$
 
 ====
 
-<#t>
+<<
   以六千五百六十一乘八千七百四十八，得五千七百三十九萬五千六百二十八。\
-  四千三百七十四人分之，人得一萬三千一百二十二。 |
+  四千三百七十四人分之，人得一萬三千一百二十二。
+||
   Multiplying eight thousand, seven hundred .[and]
   forty-eight
   by six thousand, five hundred .[and] sixty-one,
@@ -3992,12 +4106,13 @@ $$
   .[With] four thousand, three hundred .[and]
   seventy-four men sharing it, .[each] man receiveth
   thirteen thousand, one hundred .[and] twenty-two.
-</#t>
+>>
 
-<#t>
+<<
   以一萬九千六百八十三乘二萬六千二百四十四，\
   得五億一千六百五十六萬六百五十二。\
-  一萬三千一百二十二人分之，人得三萬九千三百六十六。 |
+  一萬三千一百二十二人分之，人得三萬九千三百六十六。
+||
   Multiplying twenty-six thousand, two hundred .[and] forty-four
   by nineteen thousand, six hundred .[and] eighty-three,
   resulteth in five hundred .[and] sixteen million,
@@ -4006,12 +4121,13 @@ $$
   .[With] thirteen thousand, one hundred .[and]
   twenty-two men sharing it, .[each] man receiveth
   thirty-nine thousand, three hundred .[and] sixty-six.
-</#t>
+>>
 
-<#t>
+<<
   以五萬九千四十九乘七萬八千七百三十二，\
   得四十六億四千九百四萬五千八百六十八。\
-  三萬九千三百六十六人分之，人得一十一萬八千九十八。 |
+  三萬九千三百六十六人分之，人得一十一萬八千九十八。
+||
   Multiplying seventy-eight thousand, seven hundred .[and]
   thirty-two
   by fifty-nine thousand .[and] forty-nine,
@@ -4020,12 +4136,13 @@ $$
   .[With] thirty-nine thousand, three hundred .[and]
   sixty-six men sharing it, .[each] man receiveth
   one hundred .[and] eighteen thousand .[and] ninety-eight.
-</#t>
+>>
 
-<#t>
+<<
   以一十七萬七千一百四十七乘二十三萬六千一百九十六，\
   得四百一十八億四千一百四十一萬二千八百一十二。\
-  一十一萬八千九十八人分之，人得三十五萬四千二百九十四。 |
+  一十一萬八千九十八人分之，人得三十五萬四千二百九十四。
+||
   Multiplying two hundred .[and] thirty-six thousand,
   one hundred .[and] ninety-six
   by one hundred .[and] seventy-seven thousand,
@@ -4037,12 +4154,13 @@ $$
   ninety-eight men sharing it, .[each] man receiveth
   three hundred .[and] fifty-four thousand,
   two hundred .[and] ninety-four.
-</#t>
+>>
 
-<#t>
+<<
   以五十三萬一千四百四十一乘七十萬八千五百八十八，\
   得三千七百六十五億七千二百七十一萬五千三百八。\
-  三十五萬四千二百九十四人分之，人得一百六萬二千八百八十二。 |
+  三十五萬四千二百九十四人分之，人得一百六萬二千八百八十二。
+||
   Multiplying seven hundred .[and] eight thousand,
   five hundred .[and] eighty-eight
   by five hundred .[and] thirty-one thousand,
@@ -4056,7 +4174,7 @@ $$
   men sharing it, .[each] man receiveth one million,
   sixty-two thousand, eight hundred .[and]
   eighty-two.
-</#t>
+>>
 
 <div class="end">
   <span>END of [vol-i]</span> \+
