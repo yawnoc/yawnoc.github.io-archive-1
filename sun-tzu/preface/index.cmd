@@ -121,6 +121,8 @@ Unless noted otherwise, I follow the text from Version~D.
     [日月星](https://ctext.org/three-character-classic#n90576),
     i.e.~the sun, the moon and the stars.
 
+* \c[52056] erroneously has 裹 for 裏.
+
 ====
 
 <<
