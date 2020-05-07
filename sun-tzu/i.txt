@@ -652,7 +652,7 @@ $$
 * 稱：
     measuring of weight;
     \or weighing \+
-      稱，<^cm> 去聲~ch'ing3 | 平聲~che=ng </^cm>
+      稱，\C 去聲~ch'ing3, \M 平聲~che=ng
 
 * [黍]：
     \lit millet
@@ -866,7 +866,7 @@ $$
 * 量：
     measuring of capacity \+
       量，平聲，
-      <^cm> loeng4 | lia/ng </^cm>
+      \C loeng4, \M lia/ng
 
 * [粟]：
     \lit grain \+
@@ -2314,7 +2314,7 @@ $$
 * 重：
     .[a] stack \+
       重，平聲，
-      <^cm> ch'ung4 | cho/ng </^cm>
+      \C ch'ung4, \M cho/ng
 
 ====
 
@@ -2430,7 +2430,7 @@ OR
 * 訖：終也，了也；
     finished \+
       訖，居迄切，
-      <^cm> kat7 | qi\ </^cm>
+      \C kat7, \M qi\
 
 ====
 
@@ -2776,7 +2776,7 @@ $$
 * [y/[r/糲/]：米不精也；/]
     [y/[r/coarse grain/]/] \+
       糲，力制切，音勵，
-      <^cm> lai6 | li\ </^cm>
+      \C lai6, \M li\
 
 * [y/粟[b/米/]：/]
     [y/[b/grain/]/] \+
@@ -2798,7 +2798,7 @@ $$
 * [y/[g/糳/]：精細米也；/]
     [y/[g/intricate grain/]/] \+
       糳，
-      <^cm> tsok8; also tsok9 | zuo\ </^cm> \+
+      \C tsok8; also tsok9, \M zuo\ \+
     All of the old rime dictionaries have 陰入, tsok8,
     whereas modern dictionaries have 陽入, tsok9.
 
@@ -3108,7 +3108,7 @@ $$
 * 更：
     again; also further \+
       更，去聲，
-      <^cm> kang3 | ge\ng </^cm>
+      \C kang3, \M ge\ng
 
 ====
 
@@ -3946,7 +3946,7 @@ $$
 * 長：
     augmenteth \+
       長，上聲，
-      <^cm> choeng2 | zhavng </^cm>
+      \C choeng2, \M zhavng
 
 ====
 

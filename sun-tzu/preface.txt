@@ -382,7 +382,7 @@
 * 祇：地神；
     earth gods \+
       祇，音岐，
-      <^cm> k'ei4 | qi/ </^cm>
+      \C k'ei4, \M qi/
 
 * 極：
     examineth ({unto} extremity) \+
@@ -509,7 +509,7 @@
 * 窶：貧也；
     destitute \+
       窶，音巨，
-      <^cm> k_u"6 | ju\ </^cm>
+      \C k_u"6, \M ju\
 
 ====
 
@@ -536,7 +536,7 @@
 * 皓：光也；白也；
     bright white \+
       皓，音號，
-      <^cm> hou6 | ha\o </^cm>
+      \C hou6, \M ha\o
 
 ====
 
@@ -555,7 +555,7 @@
 * 量：
     gauge; or measure \+
       量，去聲，
-      <^cm> loeng6 | lia\ng </^cm> \+
+      \C loeng6, \M lia\ng \+
     量 is a funny word.
     When it is the verb "measure/gauge" applied to physical measurements
       (e.g.~volume of grain),
@@ -569,7 +569,7 @@
 * 揆：度也；
     measure \+
       揆，音葵，
-      <^cm> k'wai4 | kui/ </^cm>
+      \C k'wai4, \M kui/
 
 ====
 

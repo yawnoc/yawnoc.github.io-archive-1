@@ -1081,7 +1081,7 @@ $$
 * 窖：地藏也；
     cellar \+
     窖，居效切，
-    <^cm> kaau3 | jia\o </^cm>
+    \C kaau3, \M jia\o
 
 ====
 
@@ -1385,7 +1385,7 @@ $$
 * 奇：
     remainder \+
     奇，音羈，
-    <^cm> kei1 | ji= </^cm> \+
+    \C kei1, \M ji= \+
     To convert area from square paces
     to acres, [畝],
     one divides by the conversion factor
