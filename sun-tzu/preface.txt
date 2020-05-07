@@ -488,7 +488,7 @@
     wholly;
     \or completely \+
       勝，平聲，
-      <^cmg> shing1 | she=ng | she\ng </^cmg>
+      \C shing1, \M she=ng \gr she\ng
 
 * 斂：聚也；
     gathering

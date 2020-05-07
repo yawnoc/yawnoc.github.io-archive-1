@@ -315,7 +315,7 @@
 * 度：
     measuring of length \+
       度，入聲，
-      <^cmg> tok9 | duo\ | duo/ </^cmg>
+      \C tok9, \M duo\ \gr duo/
 
 * 起：
     beginneth from;
