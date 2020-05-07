@@ -1,7 +1,7 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title "\sun-tzu's Computational Classic: Preface" ~~《孫子算經\.序》~~
+  %title "\sun-tzu's Computational Classic: Preface" ~~《孫子算經・序》~~
   %title-en "\sun-tzu's Computational Classic: Preface"
   %title-suffix \title-suffix
   %author Conway
