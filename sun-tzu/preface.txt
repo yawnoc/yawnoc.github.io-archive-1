@@ -36,7 +36,7 @@
     | "[sun-tzu-classic]": 《孫子算經》
   </@>
   ====
-    <li>
+  * 
       <b>《序》~"[pref]"</b>
   
     <@i>
@@ -49,7 +49,7 @@
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
-    <li>
+  * 
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
   
@@ -133,7 +133,7 @@
   [sun-tzu] saith: Computation---
 </#t>
 ====
-  <li>算：
+* 算：
     Computation;
     \or Mathematics
 
@@ -152,7 +152,7 @@
   {and the} origin {and} beginning of {the} living masses;
 </#t>
 ====
-  <li>經緯：
+* 經緯：
     {the} warp {and} woof;
     \or {the} meridians {and} parallels \+
     <@>
@@ -172,7 +172,7 @@
   {and the} father {and} mother of Dark {and} Light;
 </#t>
 ====
-  <li>五常：
+* 五常：
     {the} Five Everlasting Virtues \+
     <@>
       仁義禮智信
@@ -181,11 +181,11 @@
     </@>,
     i.e.~Humanity, Righteousness, Propriety (or Rites), Wisdom and Trust.
 
-  <li>本末：
+* 本末：
     {the} beginning {and} end;
     \or {the} base {and} tip
 
-  <li>陰陽：
+* 陰陽：
     Dark {and} Light;
     \or Shade {and} Sun;
     \or Female {and} Male \+
@@ -205,7 +205,7 @@
   {the} Three Luminaries;
 </#t>
 ====
-  <li>三光：
+* 三光：
     {the} Three Luminaries \+
     <@>
       日月星
@@ -214,7 +214,7 @@
     </@>,
     i.e.~the sun, the moon and the stars.
 
-  <li>
+* 
     <@>
       Version~C
       | https://ctext.org/sunzi-suan-jing
@@ -230,7 +230,7 @@
   {and the} finishing {and} starting of {the} Four Seasons;
 </#t>
 ====
-  <li>五行：
+* 五行：
     {the} Five Elements \+
     <@>
       金木水火土
@@ -240,7 +240,7 @@
     i.e.~metal, tree, water, fire and earth.
     Perhaps better rendered as "{the} Five Phases".
 
-  <li>準：平也；又均也；
+* 準：平也；又均也；
     evenness;
     \or levelness
 
@@ -252,11 +252,11 @@
   {and the} principle {and} law of {the} Six Arts.
 </#t>
 ====
-  <li>萬物：
+* 萬物：
     everything;
     \lit {the} myriad things
 
-  <li>六藝：
+* 六藝：
     {the} Six Arts \+
     <@>
       禮樂射御書數
@@ -274,18 +274,18 @@
   {and} inspecteth {the} falling {and} rising of {the} Two Breaths;
 </#t>
 ====
-  <li>稽：考也；
+* 稽：考也；
     examineth
 
-  <li>群：
+* 群：
     amassed;
     \lit crowded
 
-  <li>倫：
+* 倫：
     kinds;
     \or types
 
-  <li>二氣：
+* 二氣：
     {the} Two Breaths \+
     陰氣 and 陽氣.
     Recall 陰 and 陽 are
@@ -311,14 +311,14 @@
   {and} measureth {the} disparity {and} sameness of far {and} near;
 </#t>
 ====
-  <li>寒暑：
+* 寒暑：
     winter {and} summer;
     \lit cold {and} heat
 
-  <li>迭：更也；
+* 迭：更也；
     alternating
 
-  <li>步：
+* 步：
     measureth (in steps)
 
 ====
@@ -331,21 +331,21 @@
     {the} meridians {and} parallels of Geography;
 </#t>
 ====
-  <li>天道：
+* 天道：
     Physics;
     \lit {the} laws of Nature;
     \or {the} way of Heaven
 
-  <li>兆基：
+* 兆基：
     foundations \+
     According to 《國語辭典》 this means 開創基業,
     roughly "opening/beginning/foundation".
 
-  <li>地理：
+* 地理：
     Geography;
     \lit {the} science of Earth
 
-  <li>從橫：
+* 從橫：
     meridians {and} parallels (of latitude) \+
     Variant of 縱橫.
     Here 從橫 is referring to "things of broad scope"
@@ -353,7 +353,7 @@
     (intricacies {and} minutiae) in the previous line,
     which it is parallel with.
 
-  <li>長短：
+* 長短：
     length;
     \lit length {and} shortness
 
@@ -368,26 +368,26 @@
   {and} investigateth {the} sense of life.
 </#t>
 ====
-  <li>祇：地神；
+* 祇：地神；
     earth gods \+
       祇，音岐，
       <^cm> k'ei4 | qi/ </^cm>
 
-  <li>極：
+* 極：
     examineth ({unto} extremity) \+
     All of 采, 極, 窮 and 究
     mean "investigate", and in particular the last three mean
     "investigate to the utmost extent".
 
-  <li>符驗：
+* 符驗：
     corroboration;
     \lit corroboration {by} talisman
 
-  <li>道德：
+* 道德：
     morality;
     \or ethics
 
-  <li>理：
+* 理：
     reasoning;
     \or logic
 
@@ -402,11 +402,11 @@
   agreeth upon {the} rule {and the} rod,
 </#t>
 ====
-  <li>規矩：
+* 規矩：
     {the} rules;
     \lit the compass {and} the set square
 
-  <li>[尺丈]：
+* [尺丈]：
     {the} rule {and the} rod \+
     Units of length, see
     <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>.
@@ -424,18 +424,18 @@
   {and} splitteth millets {and} piles.
 </#t>
 ====
-  <li>重輕：
+* 重輕：
     heavy {and} light;
     \or important {and} unimportant
 
-  <li>[毫釐]：
+* [毫釐]：
     mils {and} cents \+
     Small units of length
     (see <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>),
     respectively a thousandth and a hundredth
     of the Chinese inch, [寸].
 
-  <li>[黍絫]：
+* [黍絫]：
     millets {and} piles \+
     Small units of weight,
     (see <@> Vol.~I~\P2 | /sun-tzu/i#2 | Vol. I \P2 </@>),
@@ -451,11 +451,11 @@
   {and is} applied unto {the} Eight Extremities without bound.
 </#t>
 ====
-  <li>億：
+* 億：
     {an} hundred million;
     \or {a} square-myriad
 
-  <li>八極：
+* 八極：
     {the} Eight Extremities \+
     Probably the four cardinal directions
     plus the four intercardinal directions.
@@ -469,16 +469,16 @@
   {yet} gathering it, {it is} not beyond grasp.
 </#t>
 ====
-  <li>勝：
+* 勝：
     wholly;
     \or completely \+
       勝，平聲，
       <^cmg> shing1 | she=ng | she\ng </^cmg>
 
-  <li>斂：聚也；
+* 斂：聚也；
     gathering
 
-  <li>盈：過曰盈；
+* 盈：過曰盈；
     beyond;
     \lit in excess of
 
@@ -490,7 +490,7 @@
   {but} those who turn {their} backs to it {shall be} poor and destitute;
 </#t>
 ====
-  <li>窶：貧也；
+* 窶：貧也；
     destitute \+
       窶，音巨，
       <^cm> k_u"6 | ju\ </^cm>
@@ -506,17 +506,17 @@
     {shall find it} hard to {be} proficient {in it}.
 </#t>
 ====
-  <li>沖：童也；
+* 沖：童也；
     children
 
-  <li>意閉：
+* 意閉：
     close-minded \+
     This is the literal rendering;
     perhaps "narrow-minded" sounds more natural.
     I have translated both 心 and 意 as
     <span class="no-wrapping">"-minded"</span>.
 
-  <li>皓：光也；白也；
+* 皓：光也；白也；
     bright white \+
       皓，音號，
       <^cm> hou6 | ha\o </^cm>
@@ -534,7 +534,7 @@
   {and put one's} will into that focused upon.
 </#t>
 ====
-  <li>量：
+* 量：
     gauge; or measure \+
       量，去聲，
       <^cm> loeng6 | lia\ng </^cm> \+
@@ -548,7 +548,7 @@
     And when it is the noun "amount",
       also 去聲 (<^e>loeng6</^e>/<^e>lia\ng</^e>).
 
-  <li>揆：度也；
+* 揆：度也；
     measure \+
       揆，音葵，
       <^cm> k'wai4 | kui/ </^cm>

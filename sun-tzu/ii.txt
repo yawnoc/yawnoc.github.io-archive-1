@@ -58,10 +58,10 @@
       | /sun-tzu/i
       | "[sun-tzu]'s Computational Classic: [vol-i]": 《孫子算經\.卷上》
     </@i>
-    <li>
+  * 
       <b>《卷中》~"[vol-ii]" <:v>(incomplete)</:v></b>
   
-    <li>
+  * 
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
   
@@ -269,7 +269,7 @@
   Answer saith: two thirds.
 </#t>
 ====
-  <li>一十八分之一十二：
+* 一十八分之一十二：
     twelve eighteenths;
     \lit twelve of eighteen shares;
     \or twelve of eighteen portions
@@ -288,10 +288,10 @@
   as {the} divisor, {and} reducing them, {we} are done.
 </#t>
 ====
-  <li>副：
+* 副：
     subsidiarily
 
-  <li>位：
+* 位：
     places
 
 ====
@@ -315,7 +315,7 @@ $$
 $$
 
 ====
-  <li>以少減多，等數得六：
+* 以少減多，等數得六：
     diminish {the} greater by {the} lesser.
     {For the} equal quantity {there} resulteth six \+
     In my opinion this description of the algorithm lacks clarity;
@@ -384,22 +384,22 @@ $$
       saith:
     </#t>
     ====
-      <li>約：
+    * 約：
         reducing;
         \or simplifying
     
-      <li>全：
+    * 全：
         whole;
         \or intact
     
-      <li>動有參差：
+    * 動有參差：
         have unevenness {in their} motions \+
         This is a literal rendering. I think
         [劉徽] is trying to say that
         different representations of fractions lead to inconsistencies
         (so first reduce them before doing any other calculations).
     
-      <li>諸 \+
+    * 諸 \+
         Contraction of 之於 (I think).
     
     ====
@@ -425,7 +425,7 @@ $$
         {to} reduce them.</:y>)
     </#t>
     ====
-      <li>重疊：
+    * 重疊：
         repeated pilings;
         \or overlappings \+
         I think this means "multiples".
@@ -446,15 +446,15 @@ $$
   Answer saith: eleven of fifteen shares.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52133 | [version-c.h] </@>
     has only 合之 for 合之二.
 
-  <li>
+* 
     <@> Version~B | [version-b.url]153 | [version-b.h] </@>
     has 十一 for 一十一.
 
-  <li>$b$ 分之 $a$:
+* $b$ 分之 $a$:
     \lit $a$ of $b$ shares \+
     I have rendered fractions literally from here up to and including
     <@> \P4 | #4 | Vol. II \P4 </@>, as there will be references to
@@ -500,7 +500,7 @@ $$
   naming it {for a fraction} using {the} divisor, {we} are done.
 </#t>
 ====
-  <li>不滿法：
+* 不滿法：
     {The dividend} reacheth not {the} divisor \+
     This is saying that 11~\<~15, i.e.~the fraction~11/15 is proper
     (so no further division is necessary).
@@ -542,7 +542,7 @@ $$
   result in forty-five as {the} divisor.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52136 | [version-c.h] </@>
     erroneously has 王十一 for 三十一.
 
@@ -570,7 +570,7 @@ $$
   {to} benefit {the} lesser, that {they be} level?
 </#t>
 ====
-  <li>而平：
+* 而平：
     that {they be} level;
     \or that {it be} fair
 
@@ -632,11 +632,11 @@ $$
   put to {the} right as {the} level dividend.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52139 | [version-c.h] </@>
     erroneously has 母互乘于 for 母互乘子.
 
-  <li>平實：
+* 平實：
     level dividend \+
     $L = aBC + bCA + cAB = 63$.
 
@@ -665,7 +665,7 @@ $$
   by {the} number of rows, three.
 </#t>
 ====
-  <li>未并者：
+* 未并者：
     those not yet combined \+
     These are the individual terms $aBC$, $bCA$ and $cAB$,
     before they were combined subsidiarily to make the level dividend $L$.
@@ -687,7 +687,7 @@ $$
   finish reducing {them}.
 </#t>
 ====
-  <li>等數：
+* 等數：
     equal quantity \+
     Greatest common divisor (gcd) is called an "equal quantity"
     because it is determined by repeated subtraction until an equal quantity
@@ -731,7 +731,7 @@ $$
   Answer saith: six quarts.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52142 | [version-c.h] </@>
     erroneously has 糯米 for 糲米.
 
@@ -765,7 +765,7 @@ $$
   \end{aligned}
 $$
 ====
-  <li>
+* 
     Here we have cross-multiplication, known as 今有術,
     the 'now there be method',
     see the chapter
@@ -824,11 +824,11 @@ $$
     seventeen fiftieths of {a} quart.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52145 | [version-c.h] </@>
     erroneously has 稗 for 粺, both here and below.
 
-  <li>粺：
+* 粺：
     fine grain \+
       粺，
       Cantonese:
@@ -836,7 +836,7 @@ $$
       《正韻》薄邁切, <^e>paai6</^e>,
       Mandarin: <^e>ba\i</^e>
 
-  <li>五十分升之一十七：
+* 五十分升之一十七：
     \lit seventeen of fifty shares
     of {a} quart
 
@@ -873,7 +873,7 @@ $$
     three fifths of {a} quart.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52148 | [version-c.h] </@>
     erroneously has 槃 for 糳, both here and below.
 
@@ -888,7 +888,7 @@ $$
   as {the} dividend.
 </#t>
 ====
-  <li>以二約：
+* 以二約：
     reducing by two \+
     The intricate grain rate~24 here and the (normal) grain rate~50 below
     are reduced by their greatest common divisor, $\gcd (24, 50) = 2$.
@@ -904,7 +904,7 @@ $$
   and name {the} fraction.
 </#t>
 ====
-  <li>不盡，以等數約之：
+* 不盡，以等數約之：
     {for the} remainder, reduce it by {the} equal quantity \+
     The division 540~÷~25 leaves remainder 15/25.
     Their "equal quantity" (see <@> \P1 | #1 | Vol. II \P1 </@>)
@@ -933,11 +933,11 @@ $$
     eight ladles.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52148 | [version-c.h] </@>
     erroneously has 栗 for 粟.
 
-  <li>御米：
+* 御米：
     poppy seed;
     \lit imperial grain;
     \or royal grain
@@ -976,16 +976,16 @@ $$
   {We} ask: how many amounteth {this} to?
 </#t>
 ====
-  <li>南北：
+* 南北：
     north-{to}-south;
     \lit south-{to}-north
 
-  <li>
+* 
     <@> Version~C | [version-c.url]52154 | [version-c.h] </@>
     erroneously has ●~(<code>U+25CF</code>)
     for both instances of 甎.
 
-  <li>枚 \+
+* 枚 \+
     Classifier for bricks, omitted in the English.
 
 ====
@@ -1008,7 +1008,7 @@ $$
   Dividing it by two, {we} are done.
 </#t>
 ====
-  <li>九千尺：
+* 九千尺：
     nine thousand rules \+
     This is area, but what we would call "square rules"
     were simply referred to as "rules".
@@ -1041,7 +1041,7 @@ $$
   {We} ask: how much grain beareth {it}?
 </#t>
 ====
-  <li>窖：地藏也；
+* 窖：地藏也；
     cellar \+
     窖，居效切，
     <^cm> kaau3 | jia\o </^cm>
@@ -1072,7 +1072,7 @@ $$
   six hundred {and} fifty-six rules.
 </#t>
 ====
-  <li>
+* 
     Only
     <@> Version~C | [version-c.url]52157 | [version-c.h] </@>
     has 尺 at the end of this sentence.
@@ -1093,7 +1093,7 @@ $$
   {we} are done.
 </#t>
 ====
-  <li>斛法一尺六寸二分：
+* 斛法一尺六寸二分：
     {the} barrel divisor,
       one rule, six inches {and} two tenths \+
     The "barrel divisor" gives the conversion between
@@ -1174,7 +1174,7 @@ $$
   {and} two thirds of {a} quart.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]34 | [version-a.h] </@>
     and
     <@> Version~D | [version-d.url]46 | [version-d.h] </@>
@@ -1251,7 +1251,7 @@ $$
   two thousand, nine hundred {and} sixteen rules.
 </#t>
 ====
-  <li>
+* 
     Versions~\
     <@>
       A | [version-a.url]34 | [version-a.h] </@>,
@@ -1327,7 +1327,7 @@ $$
   remainder sixty paces.
 </#t>
 ====
-  <li>奇：
+* 奇：
     remainder \+
     奇，音羈，
     <^cm> kei1 | ji= </^cm> \+
@@ -1373,7 +1373,7 @@ $$
     seven thousand five hundred paces.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]155 | [version-b.h] </@>
     has 又術曰 for 又術, both here and below.
 
@@ -1428,7 +1428,7 @@ $$
     remainder one hundred {and} eighty paces.
 </#t>
 ====
-  <li>[頃]：
+* [頃]：
     yardland \+
     100 Chinese acres.
     Difficult to render, and I have chosen "yardland"
@@ -1506,13 +1506,13 @@ $$
   {We} ask: how many result?
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]155 | [version-b.h] </@>
     and
     <@> Version~C | [version-c.url]52174 | [version-c.h] </@>
     have 高三尺 after 木方三尺.
 
-  <li>枚 \+
+* 枚 \+
     Classifier, omitted in the English.
 
 ====
@@ -1537,7 +1537,7 @@ $$
   {we} are done.
 </#t>
 ====
-  <li>一尺：
+* 一尺：
     one rule \+
     This is a <strong>cubic</strong> rule,
     as are the 27~rules above.
@@ -1587,7 +1587,7 @@ $$
     three rules.
 </#t>
 ====
-  <li>因：
+* 因：
     multiplying \+
     As in times tables, 九因歌, "{the} Song of Nine Multiples".
 
@@ -1598,7 +1598,7 @@ $$
   Computing {the} total, {we} are done.
 </#t>
 ====
-  <li>通：總也；
+* 通：總也；
     total
 
 ====
@@ -1636,7 +1636,7 @@ $$
   {We} ask: how many amounteth {this} to?
 </#t>
 ====
-  <li>一千尺：
+* 一千尺：
     one thousand rules \+
     These are <strong>cubic</strong> rules.
 
@@ -1656,7 +1656,7 @@ $$
   Halving it, resulteth in four rods.
 </#t>
 ====
-  <li>法：
+* 法：
     method \+
     <@> Version~B | [version-b.url]155 | [version-b.h] </@>
     and
@@ -1673,7 +1673,7 @@ $$
   resulteth in forty-eight thousand.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]155 | [version-b.h] </@>
     has the  以二丈 for 以高二丈.
 
@@ -1834,7 +1834,7 @@ $$
   {even} unto {the} hundreds, and stop</:r>.
 </#t>
 ====
-  <li>超：跳也；
+* 超：跳也；
     jumping over;
     \or skipping \+
     Taking double steps, so that 100 is in fact 10000.
@@ -1903,7 +1903,7 @@ $$
   put four hundred</:g> above {the} dividend.
 </#t>
 ====
-  <li>
+* 
     Versions~\
     <@>
       A | [version-a.url]40 | [version-a.h] </@>
@@ -1912,7 +1912,7 @@ $$
       C | [version-c.url]52186 | [version-c.h] </@>
     have just 商 for 上商.
 
-  <li>上商：
+* 上商：
     upper quotient \+
     The integer part of the square root to be computed.
 
@@ -1973,13 +1973,13 @@ $$
   {its} name be <:v>{the} upright divisor</:v>.
 </#t>
 ====
-  <li>方：
+* 方：
     (morally) upright \+
     方法 is one of three named divisors whose names relate to integrity:
     ====
-      <li>方法： upright divisor ($s_1$)</li>
-      <li>廉法： incorrupt divisor ($s_2$)</li>
-      <li>隅法： honest divisor ($s_3$)</li>
+    * 方法： upright divisor ($s_1$)</li>
+    * 廉法： incorrupt divisor ($s_2$)</li>
+    * 隅法： honest divisor ($s_3$)</li>
     ====
     These shall henceforth be referred to as the <b>straight divisors</b>
     (straight as in 'straight copper' vs 'bent copper').
@@ -2042,7 +2042,7 @@ $$
   <:b>{and} remove {this} from {the} dividend</:b>.
 </#t>
 ====
-  <li>除：
+* 除：
     remove {this} from \+
     This is also the word for division. Division was thought of as
     repeatedly removing the divisor from the dividend.
@@ -2157,7 +2157,7 @@ $$
   <:r>{the} lower divisor retreateth again</:r>.
 </#t>
 ====
-  <li>
+* 
     Versions~\
     <@>
       A | [version-a.url]40 | [version-a.h] </@>
@@ -2166,7 +2166,7 @@ $$
       C | [version-c.url]52186 | [version-c.h] </@>
     are missing 方法 in 方法一退.
 
-  <li>再：
+* 再：
     again;
     \or twice
 
@@ -2296,7 +2296,7 @@ $$
   {its} name be <:v>{the} incorrupt divisor</:v>.
 </#t>
 ====
-  <li>廉：
+* 廉：
     incorrupt
 
 ====
@@ -2371,7 +2371,7 @@ $$
   to be <:b>removed from {the} dividend</:b>.
 </#t>
 ====
-  <li>
+* 
     Versions~\
     <@>
       A | [version-a.url]40 | [version-a.h] </@>
@@ -2449,7 +2449,7 @@ $$
   {which} followeth {the} upright divisor above.
 </#t>
 ====
-  <li>
+* 
     Versions~\
     <@>
       A | [version-a.url]40 | [version-a.h] </@>
@@ -2523,11 +2523,11 @@ $$
   <:r>{the} lower divisor retreateth again</:r>.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]40 | [version-a.h] </@>
     erroneously has 一退方法 for 方法一退.
 
-  <li>
+* 
     Presumably 上從方法 from the previous sentence tells us that
     the incorrupt divisor~(廉法) is to
       "follow {the} upright divisor~(方法) above"
@@ -2690,7 +2690,7 @@ $$
   {its} name {be} called <:v>{the} honest divisor</:v>.
 </#t>
 ====
-  <li>隅：廉也；
+* 隅：廉也；
     honest
 
 ====
@@ -2779,7 +2779,7 @@ $$
   to be <:b>removed from {the} dividend</:b>.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]40 | [version-a.h] </@>
     is missing 以.
 
@@ -2866,7 +2866,7 @@ $$
   {which} followeth {the} upright divisor.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]40 | [version-a.h] </@>
     is missing 倍隅法，從方法.
 
@@ -2954,7 +2954,7 @@ $$
     three hundred {and} eleven</:b>.
 </#t>
 ====
-  <li>下法：
+* 下法：
     lower divisors \+
     Confusingly, this refers not to the lower divisor~(下法),
     currently $\colr L = 1$,
@@ -3075,35 +3075,35 @@ $$
   In general, to compute the square root of the positive integer $x$:
 ----
 <ol class="sparse-list">
-  <li>
+* 
     Compute the number of digits of $x$:
     $$
       N := \lfloor \log_{10} x \rfloor + 1
     $$
 
-  <li>
+* 
     Compute the number of digits of the <:g>upper quotient~(上商)</:g>,
     which is the integer part of $\sqrt{x}$:
     $$
       n := \left\lceil \frac{N}{2} \right\rceil
     $$
 
-  <li>
+* 
     Initialise the <:r>lower divisor~(下法)</:r>:
     $$
       {\colr L} := (10 ^ {n - 1}) ^ 2
     $$
 
-  <li>
+* 
     Initialise the <:b>dividend~(實)</:b>:
     $$
       {\colb d} := x
     $$
 
-  <li>
+* 
     <span class="small-caps">For</span> $i = 1, 2, \dots, n$:
     <ul class="sparse-list">
-      <li>
+    * 
         Determine the <:g>$i$th digit of the upper quotient~(上商)</:g>,
         the largest integer $\colg a_i$ such that
         $$
@@ -3113,7 +3113,7 @@ $$
           ] \le {\colb d}.
         $$
     
-      <li>
+    * 
         Determine the <:v>$i$th straight divisor</:v>:
         $$
           {\colv s_i} := {\colg a_i} {\colr L}
@@ -3128,7 +3128,7 @@ $$
         
 ----
     
-      <li>
+    * 
         Update the <:b>dividend~(實)</:b>:
         $$
           {\colb d} :=
@@ -3138,16 +3138,16 @@ $$
           ]
         $$
     
-      <li>
+    * 
         Double the <:v>$i$th straight divisor</:v>:
         $$
           {\colv s_i} := 2 s_i
         $$
     
-      <li>
+    * 
         <span class="small-caps">If</span> $i < n$:
         ====
-          <li>
+        * 
             Retreat the divisors:
             $$
               \begin{aligned}
@@ -3164,7 +3164,7 @@ $$
     ====
     <span class="small-caps">End~For</span>
 
-  <li>
+* 
     Compute
       the <:g>upper quotient~(上商)</:g>,
       the <:v>sum of the straight divisors</:v>,
@@ -3177,7 +3177,7 @@ $$
       \end{aligned}
     $$
 
-  <li>
+* 
     <span class="small-caps">Return</span>
     ${\colg U} + {\colb R} / {\colv L}$.
 
@@ -3219,7 +3219,7 @@ $$
   as <:b>{the} dividend</:b>.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52189 | [version-c.h] </@>
     has 四十二萬步 for 四十二萬.
 
@@ -3264,7 +3264,7 @@ $$
   put six hundred</:g> above {the} dividend.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]42 | [version-a.h] </@>
     erroneously has 餘於 for 於.
 
@@ -3314,7 +3314,7 @@ $$
   to be <:b>removed from {the} dividend</:b>.
 </#t>
 ====
-  <li>
+* 
     Versions~\
     <@>
       A | [version-a.url]42 | [version-a.h] </@>
@@ -3357,7 +3357,7 @@ $$
   to be <:b>removed from {the} dividend</:b>.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52189 | [version-c.h] </@>
     erroneously has 上前 for 上商八.
 
@@ -3380,7 +3380,7 @@ $$
   <:b>{with} remainder ninety-six</:b>.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]42 | [version-a.h] </@>
     is missing 得 after 上商,
     and erroneously has 一千二百九十七 for 一千二百九十六 both here

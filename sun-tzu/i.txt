@@ -48,7 +48,7 @@
       | /sun-tzu/preface
       | "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
     </@i>
-    <li>
+  * 
       <b>《卷上》~"[vol-i]"</b>
   
     <@i>
@@ -56,7 +56,7 @@
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
-    <li>
+  * 
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
   
@@ -310,16 +310,16 @@
   {the} silk spat of the silkworm be floss.
 </#t>
 ====
-  <li>度：
+* 度：
     measuring of length \+
       度，入聲，
       <^cmg> tok9 | duo\ | duo/ </^cmg>
 
-  <li>起：
+* 起：
     beginneth from;
     \lit ariseth from
 
-  <li>[忽]：
+* [忽]：
     floss \+
     1/100,000 of the Chinese inch, [寸].
     <@>
@@ -330,7 +330,7 @@
     has 忽，蜘蛛網也, "floss, {a} spider's web",
     quoting 《劉德曰》, or "[劉德]'s sayings".
 
-  <li>
+* 
     <@> Version~C | [version-c.url]52058 | [version-c.h] </@>
     has 蠶所生，吐絲為忽.
 
@@ -355,11 +355,11 @@
   ten rods make one draw.
 </#t>
 ====
-  <li>[絲]：
+* [絲]：
     (silk) thread \+
     1/10,000 of the Chinese inch, [寸].
 
-  <li>[毫]：
+* [毫]：
     mil;
     \or thou;
     \lit fine hair \+
@@ -371,15 +371,15 @@
       | Wikipedia: Thousandth of an inch
     </@>.
 
-  <li>[釐]：
+* [釐]：
     cent \+
     1/100 of the Chinese inch, [寸].
 
-  <li>[分]：
+* [分]：
     tenth \+
     1/10 of the Chinese inch, [寸].
 
-  <li>[寸]：
+* [寸]：
     inch \+
     The
     <@>
@@ -392,7 +392,7 @@
     to denote a small distance,
     so I am happy to simply render it as "inch".
 
-  <li>[尺]：
+* [尺]：
     rule;
     \or ruler;
     \or covid \+
@@ -406,7 +406,7 @@
     but I can't seem to find much about it on the internet...
     thanks a lot, WHO.
 
-  <li>[丈]：
+* [丈]：
     rod;
     \or staff;
     \or measure \+
@@ -425,7 +425,7 @@
     of the same order of magnitude and also related to surveying.
     Also Moses had one.
 
-  <li>[引]：
+* [引]：
     \lit draw;
     \or pull
 
@@ -440,19 +440,19 @@
   six rules make one pace.
 </#t>
 ====
-  <li>[端]：
+* [端]：
     \lit end
 
-  <li>
+* 
     <@> Version~B | [version-b.url]146 | [version-b.h] </@>
     erroneously has 五十引為一端.
 
-  <li>[匹]：
+* [匹]：
     length \+
     This is the only unit rendering which I am unsatisfied with.
     匹 is the classifier for cloth, 一匹布 being "one length of cloth".
 
-  <li>[步]：
+* [步]：
     pace;
     \or step
 
@@ -463,7 +463,7 @@
   Two hundred {and} forty paces make one acre.
 </#t>
 ====
-  <li>[畝]：
+* [畝]：
     acre;
     \lit field \+
     This is area, what today would be called
@@ -487,7 +487,7 @@
   Three hundred paces make one mile.
 </#t>
 ====
-  <li>[里]：
+* [里]：
     mile \+
     The
     <@>
@@ -642,12 +642,12 @@ $$
   beginneth {it} from millet.
 </#t>
 ====
-  <li>稱：
+* 稱：
     measuring of weight;
     \or weighing \+
       稱，<^cm> 去聲~ch'ing3 | 平聲~che=ng </^cm>
 
-  <li>[黍]：
+* [黍]：
     \lit millet
 
 ====
@@ -667,13 +667,13 @@ $$
   four quarters make one stone.
 </#t>
 ====
-  <li>[絫]：
+* [絫]：
     pile \+
     Difficult to render because Chinese dictionaries
     simply define it as 10~[黍].
     I have taken "pile" from the interchangeable 累, "to accumulate/pile/heap".
 
-  <li>[銖]：
+* [銖]：
     dram \+
     Of the order two grams.
     According to
@@ -691,7 +691,7 @@ $$
     </@>,
     which is of similar magnitude.
 
-  <li>[兩]：
+* [兩]：
     tael \+
     (Oh at last, a unit with a name
     <@>
@@ -704,7 +704,7 @@ $$
     where it has been metricised to a tenth,
     thus ruining the phrase 半斤八兩, "half {a} catty {is} eight taels".
 
-  <li>[斤]：
+* [斤]：
     catty \+
     (Hooray, another unit with a name
     <@>
@@ -714,7 +714,7 @@ $$
     </@>.) \+
     Of the order one pound, or half a kilogram.
 
-  <li>[鈞]：
+* [鈞]：
     quarter \+
     A quarter of the [石] or "stone" below,
     and of similar weight to the
@@ -728,11 +728,11 @@ $$
     since Chinese dictionaries simply define it
     as 30~[斤].
 
-  <li>
+* 
     <@> Version~C | [version-c.url]52059 | [version-c.h] </@>
     erroneously has 鉤 for 鈞.
 
-  <li>[石]：
+* [石]：
     \lit stone \+
     This is a literal rendering.
     The Chinese stone is of the order 120~pounds,
@@ -854,12 +854,12 @@ $$
   beginneth {it} from grain.
 </#t>
 ====
-  <li>量：
+* 量：
     measuring of capacity \+
       量，平聲，
       <^cm> loeng4 | lia/ng </^cm>
 
-  <li>[粟]：
+* [粟]：
     \lit grain \+
     1/600,000 of the Chinese litre, [升].
 
@@ -884,26 +884,26 @@ $$
   ten pecks make one barrel.
 </#t>
 ====
-  <li>[圭]：
+* [圭]：
     \lit (jade) tablet \+
     1/100,000 of the Chinese litre, [升].
 
-  <li>[撮]：
+* [撮]：
     \lit (two- or three-finger) pinch;
     \or pugil \+
     1/10,000 of the Chinese litre, [升].
 
-  <li>[抄]：
+* [抄]：
     grab \+
     1/1,000 of the Chinese litre, [升].
     Others render this as "handful",
     but that sounds too big in my opinion.
 
-  <li>[勺]：
+* [勺]：
     ladle \+
     1/100 of the Chinese litre, [升].
 
-  <li>[合]：
+* [合]：
     gill \+
     1/10 of the Chinese litre, [升].
     Similar in size to the
@@ -915,7 +915,7 @@ $$
     Note the Chinese pronunciation 葛合切, i.e.~<^e>kap8</^e>/<^e>gev</^e>.
     In English, "gill" is read [dʒɪl], i.e.~with a soft 'g'.
 
-  <li>[升]：
+* [升]：
     quart \+
     The <b>Chinese litre</b>,
     of the same order of magnitude as the metric litre.
@@ -929,14 +929,14 @@ $$
       | Wikipedia: Quart
     </@>.
 
-  <li>[斗]：
+* [斗]：
     peck \+
     10~Chinese litres,
     of similar to the imperial peck.
     A person of integrity will not 為五斗米折腰,
     or "bow down (\lit bend {at the} waist) for five pecks of grain".
 
-  <li>[斛]：
+* [斛]：
     barrel \+
     100~Chinese litres.
     <@>
@@ -1038,7 +1038,7 @@ $$
   {And} that by which {one} getteth to know {this}:
 </#t>
 ====
-  <li>
+* 
     Reading ahead, I found it appropriate, in this paragraph and the next,
     to preserve 萬 as "myriad" (meaning [_10^4_]~=~10000)
     rather than use English grouping of numbers by three zeroes \
@@ -1107,27 +1107,27 @@ $$
     six ditch grains;
 </#t>
 ====
-  <li>[億]：
+* [億]：
     square-myriad
 
-  <li>[兆]：
+* [兆]：
     multitude \+
     Effectively a formal version of "zillion".
 
-  <li>[京]：
+* [京]：
     \lit capital
 
-  <li>[陔]：
+* [陔]：
     \lit terrace
 
-  <li>[秭]：
+* [秭]：
     \lit haystack \+
     More accurately, "grainstack".
 
-  <li>[壤]：
+* [壤]：
     \lit soil
 
-  <li>[溝]：
+* [溝]：
     \lit ditch
 
 ====
@@ -1145,13 +1145,13 @@ $$
     six carry grains.
 </#t>
 ====
-  <li>[澗]：
+* [澗]：
     \lit (mountain) stream
 
-  <li>[正]：
+* [正]：
     \lit right
 
-  <li>[載]：
+* [載]：
     \lit carry \+
     Since this is a noun,
     it should be read in 上聲, i.e.~<^e>tsoi2</^e>/<^e>zavi</^e>.
@@ -1252,7 +1252,7 @@ $$
     {is} called {a} carry.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52060 | [version-c.h] </@>
     erroneously has 萬萬澗日正 for 萬萬澗曰正.
 
@@ -1382,13 +1382,13 @@ $$
     septuple it, {and make} five {as} one.
 </#t>
 ====
-  <li>邪：
+* 邪：
     diagonal;
     \lit incline \+
     Here, 邪 is interchangeable
     with 斜.
 
-  <li>五之：
+* 五之：
     <@>
       quintuple
       | https://en.wiktionary.org/wiki/quintuple#Verb
@@ -1396,7 +1396,7 @@ $$
     </@> it \+
     Multiply by five.
 
-  <li>七而一：
+* 七而一：
     {make} seven {as} one \+
     Divide by seven.
 
@@ -1496,19 +1496,19 @@ $$
   {Each} cubic inch of jade weigheth twelve taels.
 </#t>
 ====
-  <li>黃金：
+* 黃金：
     gold;
     \lit yellow metal
 
-  <li>
+* 
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 白銀 for 白金.
 
-  <li>白金：
+* 白金：
     silver;
     \lit white metal
 
-  <li>
+* 
     For jade,
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 一十兩 for 一十二兩.
@@ -1528,16 +1528,16 @@ $$
   {Each} cubic inch of stone weigheth three taels.
 </#t>
 ====
-  <li>銅：
+* 銅：
     copper;
     also brass
 
-  <li>
+* 
     For iron,
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 七兩 for 六兩.
 
-  <li>石：
+* 石：
     stone;
     \or rock
 
@@ -1880,7 +1880,7 @@ $$
   {In the} method of all computation, know first {the} places.
 </#t>
 ====
-  <li>位：
+* 位：
     {the} places;
     \or place {values}
 
@@ -1898,10 +1898,10 @@ $$
     correspond to each other.
 </#t>
 ====
-  <li>從 \+
+* 從 \+
     Variant of 縱.
 
-  <li>僵：偃也；
+* 僵：偃也；
     <@>
       prostrate
       | https://en.wiktionary.org/wiki/prostrate#Adjective
@@ -1909,7 +1909,7 @@ $$
     </@> \+
     Not to be confused with prostate.
 
-  <li>
+* 
     Versions~A \&~D have 百萬 instead of 萬百.
     According to the inline note in
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>,
@@ -2244,13 +2244,13 @@ $$
   The text is saying that we use
 ----
 ====
-  <li>
+* 
     <b>vertical form</b> for place values corresponding to
     <b>even powers of ten</b>,
     i.e.~ones, hundreds, myriads~etc.,
     and
 
-  <li>
+* 
     <b>horizontal form</b> for place values corresponding to
     <b>odd powers of ten</b>,
     i.e.~tens, thousands~etc.
@@ -2289,7 +2289,7 @@ $$
   put into {a} stack {the} places.
 </#t>
 ====
-  <li>重：
+* 重：
     {a} stack \+
       重，平聲，
       <^cm> ch'ung4 | cho/ng </^cm>
@@ -2307,12 +2307,12 @@ $$
     step unto {the} thousands.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 頭位 for 上位,
     both here and in many of the paragraphs to follow.
 
-  <li>至：
+* 至：
     unto;
     \or till
 
@@ -2376,18 +2376,18 @@ OR
   {left} as themselves.
 </#t>
 ====
-  <li>命：
+* 命：
     name \+
     Or maybe "command/order" as in "operate on".
 
-  <li>列：
+* 列：
     arranged in {a} row;
     \or displayed
 
-  <li>言 \+
+* 言 \+
     Pretty sure this is a speech-assist word, with no meaning.
 
-  <li>過：
+* 過：
     carried;
     \lit passed
 
@@ -2402,7 +2402,7 @@ OR
   retreat them all.
 </#t>
 ====
-  <li>訖：終也，了也；
+* 訖：終也，了也；
     finished \+
       訖，居迄切，
       <^cm> kat7 | qi\ </^cm>
@@ -2451,7 +2451,7 @@ OR
   fives, not single.
 </#t>
 ====
-  <li>六不積 \+
+* 六不積 \+
     This is saying that 6 is displayed as either
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Vertical 6 -->
@@ -2483,7 +2483,7 @@ OR
       <polyline [point] points="0,0.25" [#rodh1]"/>
     </svg>.
 
-  <li>五不隻 \+
+* 五不隻 \+
     This is saying that 5 is displayed as either
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
       <!-- Vertical 5 -->
@@ -2514,11 +2514,11 @@ OR
   finishing {upon} reaching exhaustion.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52064 | [version-c.h] </@>
     erroneously has 土下 for 上下.
 
-  <li>盡：
+* 盡：
     exhaustion;
     \or {the} end
 
@@ -2535,7 +2535,7 @@ OR
   {the} result of division, in {the} above.
 </#t>
 ====
-  <li>異：
+* 異：
     opposite;
     \lit different
 
@@ -2574,11 +2574,11 @@ $$
   tens place.
 </#t>
 ====
-  <li>等：
+* 等：
     ranks;
     \or classes
 
-  <li>在正 \+
+* 在正 \+
     Like the vernacular 喺正,
     <^e>hai2 cheng3</^e>.
 
@@ -2609,7 +2609,7 @@ $$
   therefore {it} can divide.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52065 | [version-c.h] </@>
     erroneously has 四十七 for 四十.
 
@@ -2654,11 +2654,11 @@ $$
   disconnected one, {the} divisor {shall be} retreated two places.)
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 頭位 for 上位.
 
-  <li>
+* 
     <@> Version~A | [version-a.url]8 | [version-a.h] </@>
     erroneously has 二法 for 二位.
 
@@ -2677,7 +2677,7 @@ $$
   {and the} dividend remainder as {the} numerator.
 </#t>
 ====
-  <li>命：
+* 命：
     name;
     \or designate
 
@@ -2725,23 +2725,23 @@ $$
     octuple it, {and make} four {as} one.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]8 | [version-a.h] </@>
     erroneously has 米粟求糲米 for 以粟求糲米.
 
-  <li><:y>粟：</:y>
+* <:y>粟：</:y>
     <:y>grain</:y> \+
     As opposed to
     <:y><:r>糲</:r></:y>, <:y><:r>"coarse grain"</:r></:y>, or
     <:y><:g>糳</:g></:y>, <:y><:g>"intricate grain"</:g></:y>,
     to follow.
 
-  <li><:y><:r>糲</:r>：米不精也；</:y>
+* <:y><:r>糲</:r>：米不精也；</:y>
     <:y><:r>coarse grain</:r></:y> \+
       糲，力制切，音勵，
       <^cm> lai6 | li\ </^cm>
 
-  <li><:y>粟<:b>米</:b>：</:y>
+* <:y>粟<:b>米</:b>：</:y>
     <:y><:b>grain</:b></:y> \+
     <strong>This is not a nice paragraph to render into English</strong>
     (hence the colours).
@@ -2754,11 +2754,11 @@ $$
     <:y><:v>飯</:v></:y>, <:y><:v>"cooked rice"</:v></:y>,
     which I am just calling <:y><:v>"rice"</:v></:y> for brevity).
 
-  <li>
+* 
     <@> Version~C | [version-c.url]52066 | [version-c.h] </@>
     erroneously has 绺 for 糳.
 
-  <li><:y><:g>糳</:g>：精細米也；</:y>
+* <:y><:g>糳</:g>：精細米也；</:y>
     <:y><:g>intricate grain</:g></:y> \+
       糳，
       <^cm> tsok8; also tsok9 | zuo\ </^cm> \+
@@ -2833,7 +2833,7 @@ $$
     multiply by eighteen, {and} divide {by} twenty.
 </#t>
 ====
-  <li>分：
+* 分：
     shares;
     \or portions \+
     In Chinese, the fraction $\dfrac{a}{b}$
@@ -2911,7 +2911,7 @@ $$
   Method saith: put into {a} stack {the} places.
 </#t>
 ====
-  <li>重置其位 \+
+* 重置其位 \+
     See <@> \P8 | #8 | Vol. I \P8 </@>.
 
 ====
@@ -2938,7 +2938,7 @@ $$
   put away eighty {the} upper place.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 收上頭位 for 收上位.
 
@@ -2996,7 +2996,7 @@ $$
   Answer saith: seven hundred {and} twenty-nine.
 </#t>
 ====
-  <li>人：
+* 人：
     (generic) man;
     \or person
 
@@ -3021,7 +3021,7 @@ $$
   remove from {the} middle places six thousand three hundred.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 上頭位置七百 for 上位置七百.
 
@@ -3038,7 +3038,7 @@ $$
   one hundred {and} eighty.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 二九一十八 for 二九十八.
 
@@ -3053,7 +3053,7 @@ $$
   remove from {the} middle places eighty-one.
 </#t>
 ====
-  <li>更：
+* 更：
     again; also further \+
       更，去聲，
       <^cm> kang3 | ge\ng </^cm>
@@ -3068,15 +3068,15 @@ $$
   {each} man.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52074 | [version-c.h] </@>
     erroneously has 邬 for 並,
     both here and in 並準此 below.
 
-  <li>並：皆也；
+* 並：皆也；
     all
 
-  <li>
+* 
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 頭位所得 for 上位所得.
 
@@ -3167,11 +3167,11 @@ $$
   {each} man receiveth six hundred {and} forty-eight.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]12 | [version-a.h] </@>
     erroneously has 得 for 人得.
 
-  <li>
+* 
     <@> Version~C | [version-c.url]52075 | [version-c.h] </@>
     erroneously has 六百四十八五 for 六百四十八.
 
@@ -3186,11 +3186,11 @@ $$
   {each} man receiveth five hundred {and} sixty-seven.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]12 | [version-a.h] </@>
     erroneously has 得 for 人得.
 
-  <li>
+* 
     <@> Version~C | [version-c.url]52075 | [version-c.h] </@>
     erroneously has 五百六十七五 for 五百六十七.
 
@@ -3223,7 +3223,7 @@ $$
   three hundred {and} twenty-four.
 </#t>
 ====
-  <li>
+* 
     <b><@> Version~A | [version-a.url]12 | [version-a.h] </@>\
     is missing four whole pages</b>
     after 一千二百九十六, from 四人分之 in the line above until
@@ -3275,7 +3275,7 @@ $$
   eighteen thousand, two hundred {and} twenty-five.
 </#t>
 ====
-  <li>右：
+* 右：
     above;
     \lit {to the} right \+
     In English, preceding material lies above, since English is written
@@ -3283,7 +3283,7 @@ $$
     In Chinese, preceding material lies to the right, since
     (at least classically) Chinese is written top-to-bottom, right-to-left.
 
-  <li>
+* 
     <@> Version~C | [version-c.url]52081 | [version-c.h] </@>
     erroneously has 二萬八千二百二十五 for 一萬八千二百二十五.
 
@@ -3326,7 +3326,7 @@ $$
   five hundred {and} twelve.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]149 | [version-b.h] </@>
     has 五百一十二 for 五百十二.
 
@@ -3479,7 +3479,7 @@ $$
   {each} man receiveth ninety-eight.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]150 | [version-b.h] </@>
     has 二七一十四 for 二七十四.
 
@@ -3730,7 +3730,7 @@ $$
   twenty-seven.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]18 | [version-a.h] </@>
     erroneously has 得 for 人得.
 
@@ -3745,7 +3745,7 @@ $$
   eighteen.
 </#t>
 ====
-  <li>
+* 
     <@> Version~A | [version-a.url]18 | [version-a.h] </@>
     erroneously has 得 for 人得.
 
@@ -3809,7 +3809,7 @@ $$
   eighteen.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]151 | [version-b.h] </@>
     has 人得一十八 for 人得十八.
 
@@ -3837,7 +3837,7 @@ $$
   Multiplying {by} one augmenteth not.
 </#t>
 ====
-  <li>長：
+* 長：
     augmenteth \+
       長，上聲，
       <^cm> choeng2 | zhavng </^cm>
@@ -3857,7 +3857,7 @@ $$
     two hundred {and} twenty-five.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52117 | [version-c.h] </@>
     erroneously has 一百十三萬 for 一百三十三萬.
 
@@ -3931,7 +3931,7 @@ $$
   one hundred {and} sixty-two.
 </#t>
 ====
-  <li>
+* 
     <@> Version~B | [version-b.url]151 | [version-b.h] </@>
     erroneously has 六十二 for 一百六十二.
 
@@ -3974,7 +3974,7 @@ $$
   four thousand, three hundred {and} seventy-four.
 </#t>
 ====
-  <li>
+* 
     <@> Version~C | [version-c.url]52123 | [version-c.h] </@>
     erroneously has 七千百九十二 for 七千二百九十二.
 

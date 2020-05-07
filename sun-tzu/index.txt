@@ -49,7 +49,7 @@
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
-    <li>
+  * 
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
   
@@ -93,7 +93,7 @@ In each page, remove the its own link, and make that text bold.
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
-    <li>
+  * 
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
   
@@ -191,7 +191,7 @@ In each page, remove the its own link, and make that text bold.
 
 ====
   
-  <li>
+* 
     <b>A</b>:
     <@>
       02094034.cn at archive.org
@@ -206,7 +206,7 @@ In each page, remove the its own link, and make that text bold.
     </#>
 
   
-  <li>
+* 
     <b>B</b>:
     <@>
       《文淵閣四庫全書》第0797冊 at Wikimedia Commons
@@ -228,7 +228,7 @@ In each page, remove the its own link, and make that text bold.
     </#>
 
   
-  <li>
+* 
     <b>C</b>:
     <@>
       ctext.org database page
@@ -245,7 +245,7 @@ In each page, remove the its own link, and make that text bold.
     </#>
 
   
-  <li>
+* 
     <b>D</b>:
     <@>
       《知不足齋叢書》本 at ctext.org library
@@ -331,7 +331,7 @@ In each page, remove the its own link, and make that text bold.
     | [man.url]-preface.pdf
     | [man-for] [pref]
   </@i>
-  <li>
+* 
     <b>[vol-i]:</b>
     <@> \P1 | [man.url]-i-1.pdf | [man-i.h] \P1 </@>
     <@> \P2 | [man.url]-i-2.pdf | [man-i.h] \P2 </@>
@@ -359,7 +359,7 @@ In each page, remove the its own link, and make that text bold.
     <@> \P24 | [man.url]-i-24.pdf | [man-i.h] \P24 </@>
 
   
-  <li>
+* 
     <b>[vol-ii]:</b>
     <@> \P1 | [man.url]-ii-1.pdf | [man-ii.h] \P1 </@>
     <@> \P2 | [man.url]-ii-2.pdf | [man-ii.h] \P2 </@>
@@ -391,7 +391,7 @@ In each page, remove the its own link, and make that text bold.
     <@> \P28 | [man.url]-ii-28.pdf | [man-ii.h] \P28 </@>
 
   
-  <li>
+* 
     <b>[vol-iii]:</b>
     <@> \P1 | [man.url]-iii-1.pdf | [man-iii.h] \P1 </@>
     <@> \P2 | [man.url]-iii-2.pdf | [man-iii.h] \P2 </@>
@@ -465,7 +465,7 @@ In each page, remove the its own link, and make that text bold.
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
-    <li>
+  * 
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
   
