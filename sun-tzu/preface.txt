@@ -35,7 +35,7 @@
     | /sun-tzu/
     | "[sun-tzu-classic]": 《孫子算經》
   </@>
-  <ul>
+  ====
     <li>
       <b>《序》~"[pref]"</b>
     </li>
@@ -53,7 +53,7 @@
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
     </li>
-  </ul>
+  ====
   
 </#n>
 
@@ -132,12 +132,12 @@
   孫子曰：夫算者， |
   [sun-tzu] saith: Computation---
 </#t>
-<ul>
+====
   <li>算：
     Computation;
     \or Mathematics
   </li>
-</ul>
+====
 
 ----
   From the next line until almost the end of the preface,
@@ -151,7 +151,7 @@
   {the} warp {and} woof of Heaven {and} Earth,
   {and the} origin {and} beginning of {the} living masses;
 </#t>
-<ul>
+====
   <li>經緯：
     {the} warp {and} woof;
     \or {the} meridians {and} parallels \+
@@ -164,14 +164,14 @@
     literally (longways and sideways threads)
     and figuratively (fundamental structure).
   </li>
-</ul>
+====
 
 <#t>
   五常之本末，陰陽之父母； |
   {the} beginning {and} end of {the} Five Everlasting Virtues,
   {and the} father {and} mother of Dark {and} Light;
 </#t>
-<ul>
+====
   <li>五常：
     {the} Five Everlasting Virtues \+
     <@>
@@ -195,7 +195,7 @@
       | Wikipedia: Yin and yang
     </@>.
   </li>
-</ul>
+====
 
 <#t>
   星辰之建號，三光之表裏； |
@@ -204,7 +204,7 @@
   {and the} surface {and} internals of
   {the} Three Luminaries;
 </#t>
-<ul>
+====
   <li>三光：
     {the} Three Luminaries \+
     <@>
@@ -222,14 +222,14 @@
     </@>
     erroneously has 裹 for 裏.
   </li>
-</ul>
+====
 
 <#t>
   五行之準平，四時之終始； |
   {the} evenness {and} balance of {the} Five Elements,
   {and the} finishing {and} starting of {the} Four Seasons;
 </#t>
-<ul>
+====
   <li>五行：
     {the} Five Elements \+
     <@>
@@ -244,14 +244,14 @@
     evenness;
     \or levelness
   </li>
-</ul>
+====
 
 <#t>
   萬物之祖宗，六藝之綱紀。 |
   {the} ancestor {and} progenitor of {the} myriad things,
   {and the} principle {and} law of {the} Six Arts.
 </#t>
-<ul>
+====
   <li>萬物：
     everything;
     \lit {the} myriad things
@@ -266,14 +266,14 @@
     i.e.~Propriety (or Rites), Music, Archery,
     (Chariot) Driving, Calligraphy and Mathematics.
   </li>
-</ul>
+====
 
 <#t>
   稽群倫之聚散，考二氣之降升； |
   {It} examineth {the} gathering {and} dispersion of {the} amassed kinds,
   {and} inspecteth {the} falling {and} rising of {the} Two Breaths;
 </#t>
-<ul>
+====
   <li>稽：考也；
     examineth
   </li>
@@ -303,14 +303,14 @@
       | Conway's Custom Romanisation for Cantonese
     </@>), <^e>Ch'i</^e> (Wade-Giles) or <^e>Qi\</^e> (Pinyin).
   </li>
-</ul>
+====
 
 <#t>
   推寒暑之迭運，步遠近之殊同； |
   {it} deduceth {the} alternating {and} revolving of winter {and} summer,
   {and} measureth {the} disparity {and} sameness of far {and} near;
 </#t>
-<ul>
+====
   <li>寒暑：
     winter {and} summer;
     \lit cold {and} heat
@@ -321,7 +321,7 @@
   <li>步：
     measureth (in steps)
   </li>
-</ul>
+====
 
 <#t>
   觀天道精微之兆基，察地理從橫之長短； |
@@ -330,7 +330,7 @@
   {and} examineth {the} length of
     {the} meridians {and} parallels of Geography;
 </#t>
-<ul>
+====
   <li>天道：
     Physics;
     \lit {the} laws of Nature;
@@ -357,7 +357,7 @@
     length;
     \lit length {and} shortness
   </li>
-</ul>
+====
 
 <#t>
   采神祇之所在，極成敗之符驗； \+
@@ -367,7 +367,7 @@
   {it} exhausteth {the} reasoning of morality,
   {and} investigateth {the} sense of life.
 </#t>
-<ul>
+====
   <li>祇：地神；
     earth gods \+
       祇，音岐，
@@ -391,7 +391,7 @@
     reasoning;
     \or logic
   </li>
-</ul>
+====
 
 <#t>
   立規矩，準方圓， \+
@@ -401,7 +401,7 @@
   abideth by {the} law,
   agreeth upon {the} rule {and the} rod,
 </#t>
-<ul>
+====
   <li>規矩：
     {the} rules;
     \lit the compass {and} the set square
@@ -413,7 +413,7 @@
     One [尺] or rule is of the order one foot,
     and one [丈] or rod is equal to ten rules.
   </li>
-</ul>
+====
 
 <#t>
   立權衡，平重輕， \+
@@ -423,7 +423,7 @@
   disecteth mils {and} cents,
   {and} splitteth millets {and} piles.
 </#t>
-<ul>
+====
   <li>重輕：
     heavy {and} light;
     \or important {and} unimportant
@@ -443,14 +443,14 @@
     of the Chinese dram, [銖],
     which is of the order one gram.
   </li>
-</ul>
+====
 
 <#t>
   歷億載而不朽，施八極而無疆。 |
   {It} endureth {an} hundred million years and decayeth not,
   {and is} applied unto {the} Eight Extremities without bound.
 </#t>
-<ul>
+====
   <li>億：
     {an} hundred million;
     \or {a} square-myriad
@@ -461,14 +461,14 @@
     plus the four intercardinal directions.
     Sometimes called the "principal winds" in English.
   </li>
-</ul>
+====
 
 <#t>
   散之不可勝究，斂之不盈掌握。 |
   Scattering it, {it} cannot {be} wholly investigated,
   {yet} gathering it, {it is} not beyond grasp.
 </#t>
-<ul>
+====
   <li>勝：
     wholly;
     \or completely \+
@@ -482,20 +482,20 @@
     beyond;
     \lit in excess of
   </li>
-</ul>
+====
 
 <#t>
   嚮之者富有餘，背之者貧且窶； |
   Those who echo {in agreement with} it {shall be} rich in excess,
   {but} those who turn {their} backs to it {shall be} poor and destitute;
 </#t>
-<ul>
+====
   <li>窶：貧也；
     destitute \+
       窶，音巨，
       <^cm> k_u"6 | ju\ </^cm>
   </li>
-</ul>
+====
 
 <#t>
   心開者幼沖而即悟，意閉者皓首而難精。 |
@@ -505,7 +505,7 @@
     {even with a} bright white head {of hair},
     {shall find it} hard to {be} proficient {in it}.
 </#t>
-<ul>
+====
   <li>沖：童也；
     children
   </li>
@@ -521,7 +521,7 @@
       皓，音號，
       <^cm> hou6 | ha\o </^cm>
   </li>
-</ul>
+====
 
 ----
   At this point the parallel pairs of lines stops.
@@ -533,7 +533,7 @@
   gauge {one's} abilities {and} measure oneself,
   {and put one's} will into that focused upon.
 </#t>
-<ul>
+====
   <li>量：
     gauge; or measure \+
       量，去聲，
@@ -553,7 +553,7 @@
       揆，音葵，
       <^cm> k'wai4 | kui/ </^cm>
   </li>
-</ul>
+====
 
 <#t>
   如是則焉有不成者哉！ |

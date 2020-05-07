@@ -42,7 +42,7 @@
     | /sun-tzu/
     | "[sun-tzu-classic]": 《孫子算經》
   </@>
-  <ul>
+  ====
     <@i>
       《序》~"[pref]"
       | /sun-tzu/preface
@@ -60,7 +60,7 @@
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
     </li>
-  </ul>
+  ====
   
 </#n>
 
@@ -309,7 +309,7 @@
   Wishing to know {the size of} floss:
   {the} silk spat of the silkworm be floss.
 </#t>
-<ul>
+====
   <li>度：
     measuring of length \+
       度，入聲，
@@ -334,7 +334,7 @@
     <@> Version~C | [version-c.url]52058 | [version-c.h] </@>
     has 蠶所生，吐絲為忽.
   </li>
-</ul>
+====
 
 <#t>
   十忽為一絲， \+
@@ -354,7 +354,7 @@
   ten rules make one rod; \+
   ten rods make one draw.
 </#t>
-<ul>
+====
   <li>[絲]：
     (silk) thread \+
     1/10,000 of the Chinese inch, [寸].
@@ -429,7 +429,7 @@
     \lit draw;
     \or pull
   </li>
-</ul>
+====
 
 <#t>
   五十尺為一端； \+
@@ -439,7 +439,7 @@
   forty rules make one length; \+
   six rules make one pace.
 </#t>
-<ul>
+====
   <li>[端]：
     \lit end
   </li>
@@ -456,13 +456,13 @@
     pace;
     \or step
   </li>
-</ul>
+====
 
 <#t>
   二百四十步為一畝。 |
   Two hundred {and} forty paces make one acre.
 </#t>
-<ul>
+====
   <li>[畝]：
     acre;
     \lit field \+
@@ -480,13 +480,13 @@
     I have chosen to render it acre
     because both have the etymological meaning "field".
   </li>
-</ul>
+====
 
 <#t>
   三百步為一里。 |
   Three hundred paces make one mile.
 </#t>
-<ul>
+====
   <li>[里]：
     mile \+
     The
@@ -501,7 +501,7 @@
     to denote a large distance,
     so I am happy to simply render it as "mile".
   </li>
-</ul>
+====
 
 ----
   I can't be bothered looking up a reputable source
@@ -641,7 +641,7 @@ $$
   {Of} that which measuring of weight beginneth from:
   beginneth {it} from millet.
 </#t>
-<ul>
+====
   <li>稱：
     measuring of weight;
     \or weighing \+
@@ -650,7 +650,7 @@ $$
   <li>[黍]：
     \lit millet
   </li>
-</ul>
+====
 
 <#t>
   十黍為一絫， \+
@@ -666,7 +666,7 @@ $$
   thirty catties make one quarter; \+
   four quarters make one stone.
 </#t>
-<ul>
+====
   <li>[絫]：
     pile \+
     Difficult to render because Chinese dictionaries
@@ -744,7 +744,7 @@ $$
     </@>
     than the <em>much</em> lighter imperial stone (14~pounds).
   </li>
-</ul>
+====
 
 ----
   I can't be bothered looking up a reputable source
@@ -853,7 +853,7 @@ $$
   {Of} that which measuring of capacity beginneth from:
   beginneth {it} from grain.
 </#t>
-<ul>
+====
   <li>量：
     measuring of capacity \+
       量，平聲，
@@ -863,7 +863,7 @@ $$
     \lit grain \+
     1/600,000 of the Chinese litre, [升].
   </li>
-</ul>
+====
 
 <#t>
   六粟為一圭， \+
@@ -883,7 +883,7 @@ $$
   ten quarts make one peck; \+
   ten pecks make one barrel.
 </#t>
-<ul>
+====
   <li>[圭]：
     \lit (jade) tablet \+
     1/100,000 of the Chinese litre, [升].
@@ -955,7 +955,7 @@ $$
     have a [斛] being only 50~Chinese litres
     (rather than~100).
   </li>
-</ul>
+====
 
 ----
   I can't be bothered looking up a reputable source
@@ -1037,14 +1037,14 @@ $$
   six thousand myriad grains.
   {And} that by which {one} getteth to know {this}:
 </#t>
-<ul>
+====
   <li>
     Reading ahead, I found it appropriate, in this paragraph and the next,
     to preserve 萬 as "myriad" (meaning [_10^4_]~=~10000)
     rather than use English grouping of numbers by three zeroes \
     (i.e.~thousands).
   </li>
-</ul>
+====
 <#t>
   六粟為一圭， \+
   十圭六十粟為一撮， \+
@@ -1106,7 +1106,7 @@ $$
   {a} thousand myriad barrels,
     six ditch grains;
 </#t>
-<ul>
+====
   <li>[億]：
     square-myriad
   </li>
@@ -1130,7 +1130,7 @@ $$
   <li>[溝]：
     \lit ditch
   </li>
-</ul>
+====
 
 <#t>
   萬萬斛為一億斛六澗粟， \+
@@ -1144,7 +1144,7 @@ $$
   {an} hundred square-myriad barrels,
     six carry grains.
 </#t>
-<ul>
+====
   <li>[澗]：
     \lit (mountain) stream
   </li>
@@ -1168,7 +1168,7 @@ $$
     For context, the usual phrase is 天覆地載,
     "Heaven covereth {and} Earth carrieth".
   </li>
-</ul>
+====
 
 ----
   Here we have a "short scale" where the named quantities go up
@@ -1251,12 +1251,12 @@ $$
       right
     {is} called {a} carry.
 </#t>
-<ul>
+====
   <li>
     <@> Version~C | [version-c.url]52060 | [version-c.h] </@>
     erroneously has 萬萬澗日正 for 萬萬澗曰正.
   </li>
-</ul>
+====
 
 ----
   Here we have a "long scale" where the named quantities go up
@@ -1381,7 +1381,7 @@ $$
   Seeing {the} square's {edge} {and} seeking {the} diagonal,
     septuple it, {and make} five {as} one.
 </#t>
-<ul>
+====
   <li>邪：
     diagonal;
     \lit incline \+
@@ -1400,7 +1400,7 @@ $$
     {make} seven {as} one \+
     Divide by seven.
   </li>
-</ul>
+====
 
 ----
   Here, 3 and 7/5 are used as
@@ -1495,7 +1495,7 @@ $$
   {Each} cubic inch of silver weigheth fourteen taels. \+
   {Each} cubic inch of jade weigheth twelve taels.
 </#t>
-<ul>
+====
   <li>黃金：
     gold;
     \lit yellow metal
@@ -1513,7 +1513,7 @@ $$
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 一十兩 for 一十二兩.
   </li>
-</ul>
+====
 
 <#t>
   銅方寸重七兩半。 \+
@@ -1527,7 +1527,7 @@ $$
   {Each} cubic inch of iron weigheth six taels. \+
   {Each} cubic inch of stone weigheth three taels.
 </#t>
-<ul>
+====
   <li>銅：
     copper;
     also brass
@@ -1541,7 +1541,7 @@ $$
     stone;
     \or rock
   </li>
-</ul>
+====
 
 ----
   Let us do a quick comparison of the densities.
@@ -1879,12 +1879,12 @@ $$
   凡算之法，先識其位。 |
   {In the} method of all computation, know first {the} places.
 </#t>
-<ul>
+====
   <li>位：
     {the} places;
     \or place {values}
   </li>
-</ul>
+====
 
 <#t>
   一從十橫，百立千僵，千十相望，萬百相當。 |
@@ -1897,7 +1897,7 @@ $$
   {the} myriads {and} hundreds
     correspond to each other.
 </#t>
-<ul>
+====
   <li>從 \+
     Variant of 縱.
   </li>
@@ -1933,7 +1933,7 @@ $$
     十千 (i.e.~the larger place-value appears first).
     Thus I have 萬百 above.
   </li>
-</ul>
+====
 
 <% [夏侯陽] | 夏侯陽 <^> Haa Hau-yoeng | Hsia Hou-yang | Xia Houyang </^> %>
 
@@ -2243,7 +2243,7 @@ $$
 ----
   The text is saying that we use
 ----
-<ul>
+====
   <li>
     <b>vertical form</b> for place values corresponding to
     <b>even powers of ten</b>,
@@ -2255,7 +2255,7 @@ $$
     <b>odd powers of ten</b>,
     i.e.~tens, thousands~etc.
   </li>
-</ul>
+====
 ----
   For example, 123456 is displayed as
   <svg class="fit-width" width="216px" viewBox="0.5 -0.3 6 0.6">
@@ -2288,13 +2288,13 @@ $$
   {In the} method of all multiplication,
   put into {a} stack {the} places.
 </#t>
-<ul>
+====
   <li>重：
     {a} stack \+
       重，平聲，
       <^cm> ch'ung4 | cho/ng </^cm>
   </li>
-</ul>
+====
 
 <#t>
   上下相觀，上位有十步至十，有百步至百，有千步至千。 |
@@ -2306,7 +2306,7 @@ $$
   be there thousands,
     step unto {the} thousands.
 </#t>
-<ul>
+====
   <li>
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 頭位 for 上位,
@@ -2316,7 +2316,7 @@ $$
     unto;
     \or till
   </li>
-</ul>
+====
 
 ----
   This paragraph describes the algorithm for multiplying two integers.
@@ -2375,7 +2375,7 @@ OR
   {but those} not reaching {ten},
   {left} as themselves.
 </#t>
-<ul>
+====
   <li>命：
     name \+
     Or maybe "command/order" as in "operate on".
@@ -2391,7 +2391,7 @@ OR
     carried;
     \lit passed
   </li>
-</ul>
+====
 
 <#t>
   上位乘訖者，先去之。 \+
@@ -2401,13 +2401,13 @@ OR
   {The} lower places which {one hath} finished multiplying:
   retreat them all.
 </#t>
-<ul>
+====
   <li>訖：終也，了也；
     finished \+
       訖，居迄切，
       <^cm> kat7 | qi\ </^cm>
   </li>
-</ul>
+====
 
 ----
   A concrete example of the algorithm does not appear until
@@ -2450,7 +2450,7 @@ OR
   Sixes {are} not accumulated;
   fives, not single.
 </#t>
-<ul>
+====
   <li>六不積 \+
     This is saying that 6 is displayed as either
     <svg class="cenvert" width="36px" viewBox="-0.5 -0.3 1 0.6">
@@ -2506,14 +2506,14 @@ OR
     </svg>
     (since they would look like ones).
   </li>
-</ul>
+====
 
 <#t>
   上下相乘，至盡則已。 |
   The upper {and} the lower {are} mutually multiplied,
   finishing {upon} reaching exhaustion.
 </#t>
-<ul>
+====
   <li>
     <@> Version~C | [version-c.url]52064 | [version-c.h] </@>
     erroneously has 土下 for 上下.
@@ -2522,7 +2522,7 @@ OR
     exhaustion;
     \or {the} end
   </li>
-</ul>
+====
 
 <;sh> 1 | 9 | Rod calculus: division algorithm </;sh>
 <;s@@> 1 | 9 | 8 | 147 | 52065 | 8 | 15 </;s@@>
@@ -2534,12 +2534,12 @@ OR
   {The} result of multiplication {is placed} in {the} middle;
   {the} result of division, in {the} above.
 </#t>
-<ul>
+====
   <li>異：
     opposite;
     \lit different
   </li>
-</ul>
+====
 
 <#t>
   假令六為法，百為實。 |
@@ -2573,7 +2573,7 @@ $$
   therefore {we} ought to retreat {and} assume {the}
   tens place.
 </#t>
-<ul>
+====
   <li>等：
     ranks;
     \or classes
@@ -2582,7 +2582,7 @@ $$
     Like the vernacular 喺正,
     <^e>hai2 cheng3</^e>.
   </li>
-</ul>
+====
 <div class="centred-flex">
   <+>
     /sun-tzu/code/divide-100-6.gif
@@ -2608,12 +2608,12 @@ $$
   {to} become forty;
   therefore {it} can divide.
 </#t>
-<ul>
+====
   <li>
     <@> Version~C | [version-c.url]52065 | [version-c.h] </@>
     erroneously has 四十七 for 四十.
   </li>
-</ul>
+====
 
 <#t>
   若實多法少，自當百之，不當復退。 |
@@ -2653,7 +2653,7 @@ $$
   ({If among the} upper places, there be {an} empty,
   disconnected one, {the} divisor {shall be} retreated two places.)
 </#t>
-<ul>
+====
   <li>
     <@> Version~B | [version-b.url]147 | [version-b.h] </@>
     has 頭位 for 上位.
@@ -2662,7 +2662,7 @@ $$
     <@> Version~A | [version-a.url]8 | [version-a.h] </@>
     erroneously has 二法 for 二位.
   </li>
-</ul>
+====
 
 <#t>
   餘法皆如乘時。 |
@@ -2676,12 +2676,12 @@ $$
   use {the} divisor as {the} denominator,
   {and the} dividend remainder as {the} numerator.
 </#t>
-<ul>
+====
   <li>命：
     name;
     \or designate
   </li>
-</ul>
+====
 
 ----
   In other words, if you get a remainder $r$ after dividing by $d$,
@@ -2724,7 +2724,7 @@ $$
   with <:y><:g>intricate</:g> <:b>grain</:b></:y>:
     octuple it, {and make} four {as} one.
 </#t>
-<ul>
+====
   <li>
     <@> Version~A | [version-a.url]8 | [version-a.h] </@>
     erroneously has 米粟求糲米 for 以粟求糲米.
@@ -2765,7 +2765,7 @@ $$
     All of the old rime dictionaries have 陰入, tsok8,
     whereas modern dictionaries have 陽入, tsok9.
   </li>
-</ul>
+====
 
 ----
   These are volume conversion rates to be used when trading grain
@@ -2832,7 +2832,7 @@ $$
   subtracting nine:
     multiply by eighteen, {and} divide {by} twenty.
 </#t>
-<ul>
+====
   <li>分：
     shares;
     \or portions \+
@@ -2840,7 +2840,7 @@ $$
     is referred to as $b$ 分之 $a$, literally
     "$a$ of $b$ shares".
   </li>
-</ul>
+====
 ----
   I think this paragraph is saying
 ----
@@ -2910,11 +2910,11 @@ $$
   術曰：重置其位。 |
   Method saith: put into {a} stack {the} places.
 </#t>
-<ul>
+====
   <li>重置其位 \+
     See <@> \P8 | #8 | Vol. I \P8 </@>.
   </li>
-</ul>
+====
 
 <#t>
   以上八呼下八，八八六十四，即下六千四百於中位。 |
@@ -2937,12 +2937,12 @@ $$
   Retreat {the} lower places {by} one rank, {and}
   put away eighty {the} upper place.
 </#t>
-<ul>
+====
   <li>
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 收上頭位 for 收上位.
   </li>
-</ul>
+====
 
 <#t>
   以上位一呼下八，一八如八，即於中位下八十。 |
@@ -2995,12 +2995,12 @@ $$
   {we} ask: how much receiveth {each} man? \+
   Answer saith: seven hundred {and} twenty-nine.
 </#t>
-<ul>
+====
   <li>人：
     (generic) man;
     \or person
   </li>
-</ul>
+====
 $$
   6561 \div 9 = 729
 $$
@@ -3020,12 +3020,12 @@ $$
   seven nines {are} sixty-three, that is,
   remove from {the} middle places six thousand three hundred.
 </#t>
-<ul>
+====
   <li>
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 上頭位置七百 for 上位置七百.
   </li>
-</ul>
+====
 
 <#t>
   退下位一等，即上位置二十，以上二呼下九，二九十八，即除中位一百八十。 |
@@ -3037,12 +3037,12 @@ $$
   remove from {the} middle places
   one hundred {and} eighty.
 </#t>
-<ul>
+====
   <li>
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 二九一十八 for 二九十八.
   </li>
-</ul>
+====
 
 <#t>
   又更退下位一等，即上位更置九，即以上九呼下九，九九八十一，即除中位八十一。 |
@@ -3052,13 +3052,13 @@ $$
   nine nines {are} eighty-one, that is,
   remove from {the} middle places eighty-one.
 </#t>
-<ul>
+====
   <li>更：
     again; also further \+
       更，去聲，
       <^cm> kang3 | ge\ng </^cm>
   </li>
-</ul>
+====
 
 <#t>
   中位並盡，收下位。上位所得即人之所得。 |
@@ -3067,7 +3067,7 @@ $$
   That which resulteth {in the} upper places is that received of
   {each} man.
 </#t>
-<ul>
+====
   <li>
     <@> Version~C | [version-c.url]52074 | [version-c.h] </@>
     erroneously has 邬 for 並,
@@ -3080,7 +3080,7 @@ $$
     <@> Version~B | [version-b.url]148 | [version-b.h] </@>
     has 頭位所得 for 上位所得.
   </li>
-</ul>
+====
 
 ----
   In animated form:
@@ -3166,7 +3166,7 @@ $$
   {With} eight men sharing it,
   {each} man receiveth six hundred {and} forty-eight.
 </#t>
-<ul>
+====
   <li>
     <@> Version~A | [version-a.url]12 | [version-a.h] </@>
     erroneously has 得 for 人得.
@@ -3175,7 +3175,7 @@ $$
     <@> Version~C | [version-c.url]52075 | [version-c.h] </@>
     erroneously has 六百四十八五 for 六百四十八.
   </li>
-</ul>
+====
 
 <#t>
   七九六十三，自相乘，得三千九百六十九。七人分之，人得五百六十七。 |
@@ -3185,7 +3185,7 @@ $$
   {With} seven men sharing it,
   {each} man receiveth five hundred {and} sixty-seven.
 </#t>
-<ul>
+====
   <li>
     <@> Version~A | [version-a.url]12 | [version-a.h] </@>
     erroneously has 得 for 人得.
@@ -3194,7 +3194,7 @@ $$
     <@> Version~C | [version-c.url]52075 | [version-c.h] </@>
     erroneously has 五百六十七五 for 五百六十七.
   </li>
-</ul>
+====
 
 <#t>
   六九五十四，自相乘，得二千九百一十六。六人分之，人得四百八十六。 |
@@ -3222,7 +3222,7 @@ $$
   {With} four men sharing it, {each} man receiveth
   three hundred {and} twenty-four.
 </#t>
-<ul>
+====
   <li>
     <b><@> Version~A | [version-a.url]12 | [version-a.h] </@>\
     is missing four whole pages</b>
@@ -3236,7 +3236,7 @@ $$
     in Version~D,
     which has the same page breaks as Version~A.
   </li>
-</ul>
+====
 
 <#t>
   三九二十七，自相乘，得七百二十九。三人分之，人得二百四十三。 |
@@ -3274,7 +3274,7 @@ $$
   {With} nine men sharing it, {each} man receiveth
   eighteen thousand, two hundred {and} twenty-five.
 </#t>
-<ul>
+====
   <li>右：
     above;
     \lit {to the} right \+
@@ -3287,7 +3287,7 @@ $$
     <@> Version~C | [version-c.url]52081 | [version-c.h] </@>
     erroneously has 二萬八千二百二十五 for 一萬八千二百二十五.
   </li>
-</ul>
+====
 ----
   條, "strand", is the classifier for problem/question.
   I think 右九九一條, "{the} nine nines above {in} one strand", is saying
@@ -3325,12 +3325,12 @@ $$
   {With} eight men sharing it, {each} man receiveth
   five hundred {and} twelve.
 </#t>
-<ul>
+====
   <li>
     <@> Version~B | [version-b.url]149 | [version-b.h] </@>
     has 五百一十二 for 五百十二.
   </li>
-</ul>
+====
 
 <#t>
   七八五十六，自相乘，得三千一百三十六。七人分之，人得四百四十八。 |
@@ -3478,12 +3478,12 @@ $$
   {With} two men sharing it,
   {each} man receiveth ninety-eight.
 </#t>
-<ul>
+====
   <li>
     <@> Version~B | [version-b.url]150 | [version-b.h] </@>
     has 二七一十四 for 二七十四.
   </li>
-</ul>
+====
 
 <#t>
   一七如七，自相乘，得四十九。一人得四十九。 |
@@ -3729,12 +3729,12 @@ $$
   {With} three men sharing it, {each} man receiveth
   twenty-seven.
 </#t>
-<ul>
+====
   <li>
     <@> Version~A | [version-a.url]18 | [version-a.h] </@>
     erroneously has 得 for 人得.
   </li>
-</ul>
+====
 
 <#t>
   二三如六，自相乘，得三十六。二人分之，人得一十八。 |
@@ -3744,12 +3744,12 @@ $$
   {With} two men sharing it, {each} man receiveth
   eighteen.
 </#t>
-<ul>
+====
   <li>
     <@> Version~A | [version-a.url]18 | [version-a.h] </@>
     erroneously has 得 for 人得.
   </li>
-</ul>
+====
 
 <#t>
   一三如三，自相乘，得九。一人得九。 |
@@ -3808,12 +3808,12 @@ $$
   {With} two men sharing it, {each} man receiveth
   eighteen.
 </#t>
-<ul>
+====
   <li>
     <@> Version~B | [version-b.url]151 | [version-b.h] </@>
     has 人得一十八 for 人得十八.
   </li>
-</ul>
+====
 
 $$
   \begin{gathered}
@@ -3836,13 +3836,13 @@ $$
   {which}, multiplied with itself, resulteth in one.
   Multiplying {by} one augmenteth not.
 </#t>
-<ul>
+====
   <li>長：
     augmenteth \+
       長，上聲，
       <^cm> choeng2 | zhavng </^cm>
   </li>
-</ul>
+====
 
 <#t>
   右從九九至一一，總成一千一百五十五，自相乘，得一百三十三萬四千二十五。\
@@ -3856,12 +3856,12 @@ $$
   one hundred {and} forty-eight thousand,
     two hundred {and} twenty-five.
 </#t>
-<ul>
+====
   <li>
     <@> Version~C | [version-c.url]52117 | [version-c.h] </@>
     erroneously has 一百十三萬 for 一百三十三萬.
   </li>
-</ul>
+====
 
 $$
   \begin{gathered}
@@ -3930,12 +3930,12 @@ $$
   {each} man receiveth
   one hundred {and} sixty-two.
 </#t>
-<ul>
+====
   <li>
     <@> Version~B | [version-b.url]151 | [version-b.h] </@>
     erroneously has 六十二 for 一百六十二.
   </li>
-</ul>
+====
 
 <#t>
   以二百四十三乘三百二十四，得七萬八千七百三十二。\
@@ -3973,12 +3973,12 @@ $$
   fifty-eight men sharing it, {each} man receiveth
   four thousand, three hundred {and} seventy-four.
 </#t>
-<ul>
+====
   <li>
     <@> Version~C | [version-c.url]52123 | [version-c.h] </@>
     erroneously has 七千百九十二 for 七千二百九十二.
   </li>
-</ul>
+====
 
 <#t>
   以六千五百六十一乘八千七百四十八，得五千七百三十九萬五千六百二十八。\
