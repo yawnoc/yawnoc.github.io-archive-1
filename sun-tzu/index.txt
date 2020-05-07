@@ -106,7 +106,7 @@ In each page, remove the its own link, and make that text bold.
 <@2> Introduction | introduction </@2>
 
 
-<p>
+----
   《孫子算經》, or
   <@>
     "[sun-tzu-classic]"
@@ -138,9 +138,9 @@ In each page, remove the its own link, and make that text bold.
     | https://en.wikipedia.org/wiki/The_Art_of_War
     | Wikipedia: The Art of War
   </@>.
-</p>
+----
 
-<p>
+----
   In late April~2019, I set myself the rather ambitious task of translating
   the entire 《孫子算經》 into English.
   Apparently
@@ -153,18 +153,18 @@ In each page, remove the its own link, and make that text bold.
   </@>,
   but I shall <strong>not</strong> read that translation
   (which is behind a paywall anyway) until I have completely finished mine.
-</p>
+----
 
-<p>
+----
   As of 23 November 2019, I have finished the
   <@> manuscript | #manuscript | Manuscript </@> for the entire text,
   but it will probably take until the end of 2020
   to type up all of this in web (HTML) format.
-</p>
+----
 
 <@3> Versions | versions </@3>
 
-<p>
+----
   There are four versions which I refer to,
   with slight differences in wording between them.
   <strong>Unless otherwise noted I will be following the text from
@@ -183,11 +183,11 @@ In each page, remove the its own link, and make that text bold.
   I have grouped the paragraphs mostly following the line breaks
   of Versions~A, B and~D, with groupings which
   in my opinion are more logical than those in Version~C.
-</p>
+----
 
-<p>
+----
   A quick system for referring to specific pages is as follows:
-</p>
+----
 
 <ul>
   
@@ -265,10 +265,10 @@ In each page, remove the its own link, and make that text bold.
 
 <@3> Canonical variant-character substitutions | variants </@3>
 
-<p>
+----
   The following variant substitutions have been used
   (in each pair the character on the right is preferred):
-</p>
+----
 <#n>
   羣群
   氂釐
@@ -284,15 +284,15 @@ In each page, remove the its own link, and make that text bold.
 
 <@3> A note on mass and weight | weight </@3>
 
-<p>
+----
   Classical Chinese does not distinguish between mass and weight;
   nor is this a physics text in which the distinction is important.
   Therefore I will be using the two terms interchangeably.
-</p>
+----
 
 <@3> A note on thousands and myriads | myriads </@3>
 
-<p>
+----
   In Chinese, numbers are grouped in 萬, myriads <_>10000s</_>,
   rather than thousands <_>1000s</_>.
   For example, 八萬五千 <_>85000</_> is literally
@@ -300,17 +300,17 @@ In each page, remove the its own link, and make that text bold.
   However, I shall default to rendering numbers in the English using the
   thousands grouping, only using the myriads grouping
   for passages where the thousands grouping is awkward.
-</p>
+----
 
 
 <@2> Manuscript | manuscript </@2>
 
 
-<p>
+----
   These are PDF scans of my handwritten translation scribblings.
   They are drafts, and as such, do not contain
   edits and corrections I have made since they were scanned.
-</p>
+----
 
 <% [man-for] | Translation manuscript for %>
 <% [man-i.h] | [man-for] Vol. I %>
@@ -433,10 +433,10 @@ In each page, remove the its own link, and make that text bold.
   
 </ul>
 
-<p>
+----
   A link to the corresponding manuscript is also provided by the
   [manuscript] link above each of the paragraphs themselves.
-</p>
+----
 
 
 <@2> Translation | translation </@2>

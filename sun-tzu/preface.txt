@@ -73,14 +73,14 @@
 </@@>
 <^^></^^>
 
-<p>
+----
   In the preface, [sun-tzu]
   tells us that mathematics governs absolutely everything,
   and allows us to do even magical things
   (like "seek {the} whereabouts of gods {and} earth gods").
   Basically it reads like advertising material for
   prospective STEM undergraduates.
-</p>
+----
 
 <% [尺丈] | 尺丈 <^> ch'ek choeng | ch'ih chang | chi zhang </^> %>
 <% [尺] | 尺 <^> ch'ek | ch'ih | chi </^> %>
@@ -139,12 +139,12 @@
   </li>
 </ul>
 
-<p>
+----
   From the next line until almost the end of the preface,
   the text consists of pairs of lines which parallel each other,
   character for character.
   This is a very common rhetorical device in Literary Chinese.
-</p>
+----
 
 <#t>
   天地之經緯，群生之元首； |
@@ -523,9 +523,9 @@
   </li>
 </ul>
 
-<p>
+----
   At this point the parallel pairs of lines stops.
-</p>
+----
 
 <#t>
   夫欲學之者必務量能揆己，志在所專。 |

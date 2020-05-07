@@ -154,9 +154,9 @@
   "[sun-tzu]'s Computational Classic:
   [vol-ii]"
 </#t>
-<p>
+----
   Literally "Middle Volume".
-</p>
+----
 
 <% [paragraphs.h] | [vol-ii]: Paragraph navigation %>
 <@3> [paragraphs.h] | paragraphs </@3>
@@ -165,11 +165,11 @@
   <@u> Volumes | volumes | Volume navigation </@u>
 </@@>
 
-<p>
+----
   <b>Note.</b>
   The <span class="heading"><b>"About" short headings</b></span>
   are not part of the original text.
-</p>
+----
 
 <!-- [__ __] for centred table cell -->
 <% [__ | <td class="centred-text"> %>
@@ -296,10 +296,10 @@
   </li>
 </ul>
 
-<p>
+----
   Here we have the subtraction-only version of the Euclidean algorithm for
   greatest common divisor (gcd):
-</p>
+----
 <$$>
   \begin{aligned}
     18 - 12 &= 6 \\
@@ -307,7 +307,9 @@
   \end{aligned}
 </$$>
 
-<p>Therefore <$>\gcd (12, 18) = 6</$> and we have</p>
+----
+Therefore <$>\gcd (12, 18) = 6</$> and we have
+----
 <$$>
   \frac{12}{18} = \frac{12 \div 6}{18 \div 6} = \frac{2}{3}.
 </$$>
@@ -483,9 +485,9 @@
   {The} two denominators {to the} right, multiplied with each other,
   result in fifteen <_>15</_> as {the} divisor.
 </#t>
-<p>
+----
   In modern notation:
-</p>
+----
 <$$>
   \frac{1}{3} + \frac{2}{5}
   = \frac{1 \times 5 + 2 \times 3}{3 \times 5}
@@ -590,30 +592,32 @@
   = {\colb \frac{7}{12}}
 </$$>
 
-<p>
+----
   More generally, consider redistributing the fractions
   <$>a/A</$>, <$>b/B</$> and <$>c/C</$> for equality.
   Their mean is
-</p>
+----
 <$$>
   m = \frac{L}{3 ABC},
 </$$>
-<p>where</p>
+----
+where
+----
 <$$>
   L = aBC + bCA + cAB,
 </$$>
-<p>
+----
   so the fractions must be changed by the quantities
-</p>
+----
 <$$>
   m - \left( \frac{a}{A}, \frac{b}{B}, \frac{c}{C} \right)
   = \frac{L - (3 aBC, 3 bCA, 3 cAB)}{3 ABC}
 </$$>
-<p>
+----
   respectively.
   Of course [sun-tzu]
   did not have the luxury of modern mathematical notation:
-</p>
+----
 
 <#t>
   術曰：置三分、三分、四分在右方，之一、之二、之三在左方。\
@@ -695,7 +699,9 @@
   \gcd (L, 3 aBC, 3 bCA, 3 cAB, 3 ABC) = 9
 </$$>
 
-<p>Therefore</p>
+----
+Therefore
+----
 <$$>
   \begin{aligned}
     \frac{L - (3 aBC, 3 bCA, 3 cAB)}{3 ABC}
@@ -742,9 +748,9 @@
   Use {the} grain rate, fifty <_>50</_>, as {the} divisor,
   {and} dividing them, {we} are done.
 </#t>
-<p>
+----
   In modern notation, with <$>V</$> for volume and <$>r</$> for rate:
-</p>
+----
 <$$>
   \begin{aligned}
     V(\text{sought})
@@ -1009,12 +1015,12 @@
   </li>
 </ul>
 
-<p>
+----
   In modern notation, the number of bricks required to fill
   a rectangle of length <$>L = 3 \unit{rods}</$>
   and width <$>W = 6 \unit{rods}</$>
   at number density <$>\rho = 5 / (2 \unit{rules}^2)</$> is
-</p>
+----
 <$$>
   \begin{aligned}
     N
@@ -1125,10 +1131,10 @@
   </li>
 </ul>
 
-<p>
+----
   In modern notation, the volume (capacity) of a cylinder of circumference
   <$>C = 286 \unit{rules}</$> and depth <$>H = 36 \unit{rules}</$> is
-</p>
+----
 <$$>
 \begin{aligned}
   V
@@ -1142,10 +1148,10 @@
 \end{aligned}
 </$$>
 
-<p>
+----
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
   <@> Vol.~I \P5 | /sun-tzu/i#5 | Vol. I \P5 </@>.
-</p>
+----
 
 <;sh> 2 | 11 | Volume of a rectangular prism </;sh>
 <;s@@> 2 | 11 | 34 | 154 | 52160 | 11 | 46 </;s@@>
@@ -1201,11 +1207,11 @@
   {we} are done.
 </#t>
 
-<p>
+----
   In modern notation, the volume (capacity) of a rectangular prism of
   width <$>W = 46 \unit{rules}</$>, length <$>L = 54 \unit{rules}</$> and
   depth <$>H = 35 \unit{rules}</$> is
-</p>
+----
 <$$>
   \begin{aligned}
     V
@@ -1279,10 +1285,10 @@
   {we} are done.
 </#t>
 
-<p>
+----
   In modern notation, the volume (capacity) of a cylinder of circumference
   <$>C = 54 \unit{rules}</$> and depth <$>H = 18 \unit{rules}</$> is
-</p>
+----
 <$$>
   \begin{aligned}
     V
@@ -1294,10 +1300,10 @@
     &= 2700 \unit{barrels}.
   \end{aligned}
 </$$>
-<p>
+----
   Here <$>\pi \approx 3</$> (so that <$>4\pi \approx 12</$>), see
   <@> Vol.~I \P5 | /sun-tzu/i#5 | Vol. I \P5 </@>.
-</p>
+----
 
 <;sh> 2 | 13 | Area of a circle </;sh>
 <;s@@> 2 | 13 | 34 | 155 | 52166 | 13 | 48 </;s@@>
@@ -1310,10 +1316,10 @@
     one hundred <_>100</_> paces.
   {We} ask: how much field resulteth?
 </#t>
-<p>
+----
   Here <$>\pi \approx 3</$>, see
   <@> Vol.~I \P5 | /sun-tzu/i#5 | Vol. I \P5 </@>.
-</p>
+----
 
 <#t>
   答曰：三十一畝奇六十步。 |
@@ -1333,9 +1339,9 @@
     This is why answer saith refers to a "remainder".
   </li>
 </ul>
-<p>
+----
   In modern notation, the area is <$>31 \unit{acres} + 60 \unit{paces}^2</$>.
-</p>
+----
 
 <#t>
   術曰：先置周三百步，半之，得一百五十步。又置徑一百步，半之，得五十步。\
@@ -1394,10 +1400,10 @@
   Dividing it by {the} acre divisor,
   resulteth in {the} number of acres.
 </#t>
-<p>
+----
   In modern notation (and taking <$>\pi \approx 3</$>),
   a circle with circumference <$>C</$> and diameter <$>d</$> has area
-</p>
+----
 <$$>
   \frac{C}{2} \cdot \frac{d}{2} \approx \frac{C^2}{12} \approx \frac{3d^2}{4}.
 </$$>
@@ -1467,10 +1473,10 @@
   Dividing it by two hundred {and} forty <_>240</_> paces,
   {we} are done.
 </#t>
-<p>
+----
   In modern notation, the area of a square with circumradius (or semi-diagonal)
   <$>s = 147 \unit{paces}</$> is
-</p>
+----
 <$$>
   \begin{aligned}
     A
@@ -1483,10 +1489,10 @@
     &= 1 \unit{yardland} + 83 \unit{acres} + 180 \unit{paces}^2.
   \end{aligned}
 </$$>
-<p>
+----
   Here <$>\sqrt{2} \approx 7/5</$>, see
   <@> Vol.~I \P5 | /sun-tzu/i#5 | Vol. I \P5 </@>.
-</p>
+----
 
 
 <;sh> 2 | 15 | Dividing a cube into smaller cubes </;sh>
@@ -1537,17 +1543,17 @@
     as are the 27~rules above.
   </li>
 </ul>
-<p>
+----
   In modern notation, the number of pillows is
-</p>
+----
 <$$>
   (3 \unit{rules})^3 \times \frac{8}{1 \unit{rule}^3} = 216,
 </$$>
-<p>
+----
   where we have used the fact that
   <$>1 \unit{rule} = 2 \times 5 \unit{inches}</$>,
   and that <$>2^3 = 8</$>.
-</p>
+----
 
 <;sh> 2 | 16 | Side length of a square of a given perimeter </;sh>
 <;s@@> 2 | 16 | 38 | 155 | 52177 | 16 | 50 </;s@@>
@@ -1597,9 +1603,9 @@
   </li>
 </ul>
 
-<p>
+----
   In modern notation, the side length of the square is
-</p>
+----
 <$$>
   \begin{aligned}
     \frac{5794 \unit{paces}}{4}
@@ -1679,13 +1685,13 @@
   {we} are done.
 </#t>
 
-<p>
+----
   In modern notation, the volume of a trapezoidal prism of
     upper width <$>A = 3 \unit{rods}</$>,
     lower width <$>B = 5 \unit{rods}</$>,
     height <$>H = 2 \unit{rods}</$> and
     length <$>L = 60 \unit{rules}</$> is
-</p>
+----
 <$$>
   \begin{aligned}
     V
@@ -1734,11 +1740,11 @@
   Dividing it by one thousand <_>1000</_>, {we} are done.
 </#t>
 
-<p>
+----
   In modern notation, the volume of a rectangular prism of
   width <$>W = 10 \unit{rods}</$>, depth <$>H = 5 \unit{rods}</$> and
   length <$>L = 20 \unit{rods}</$> is
-</p>
+----
 <$$>
   \begin{aligned}
     V
@@ -1771,10 +1777,10 @@
     of {a} pace.
 </#t>
 
-<p>
+----
   Here we have an algorithm for computing the square root,
   in this instance giving
-</p>
+----
 <$$>
   \sqrt{234567 \unit{paces}^2} \approx 484 \tfrac{311}{968} \unit{paces}.
 </$$>
@@ -1786,9 +1792,9 @@
     <_>234567</_> paces,
   as <:b>{the} dividend</:b>.
 </#t>
-<p>
+----
   The radicand is called the <:b><b>dividend</b>~(實)</:b>,
-</p>
+----
 <$$>
   {\colb d} := {\colb 234567}.
 </$$>
@@ -1836,22 +1842,22 @@
     Taking double steps, so that 100 is in fact 10000.
   </li>
 </ul>
-<p>
+----
   Since the number of digits of the radicand is
-</p>
+----
 <$$>
   N := \lfloor \log_{10} d \rfloor + 1 = 6,
 </$$>
-<p>
+----
   the number of digits of the integer part of its square root is
-</p>
+----
 <$$>
   n := \left\lceil \frac{N}{2} \right\rceil = 3.
 </$$>
-<p>
+----
   We then take <$>n - 1 = 2</$> double steps
   for the <:r><b>lower divisor</b>~(下法)</:r>
-</p>
+----
 <$$>
   {\colr L} := (10 ^ {n - 1}) ^ 2 = {\colr 10^4}.
 </$$>
@@ -1914,18 +1920,18 @@
   </li>
 </ul>
 
-<p>
+----
   The <:g><b>hundreds digit of the upper quotient</b>~(上商)</:g>
   is the largest <$>\colg a_1</$> such that
   <$>{\colg a_1}^2 {\colr L} \le {\colb d}</$>,
   or
-</p>
+----
 <$$>
   {\colr 10000} {\colg a_1}^2 \le {\colb 234567},
 </$$>
-<p>
+----
   i.e.
-</p>
+----
 <$$>
   {\colg a_1} := {\colg 4}.
 </$$>
@@ -1982,9 +1988,9 @@
   </li>
 </ul>
 
-<p>
+----
   The first straight divisor is the <:v><b>upright divisor</b>~(方法)</:v>
-</p>
+----
 <$$>
   {\colv s_1}
   := {\colg a_1} {\colr L}
@@ -2045,12 +2051,12 @@
   </li>
 </ul>
 
-<p>
+----
   As written, the text says
   <$>{\colb d} := {\colb d} - {\colg 400^2}</$>,
   but for the purpose of understanding how this step fits in with the others,
   this is best written
-</p>
+----
 <$$>
   \begin{aligned}
     {\colb d}
@@ -2224,18 +2230,18 @@
   to be next {after the} quotient {digit} before.
 </#t>
 
-<p>
+----
   The <:g><b>tens digit of the upper quotient</b>~(上商)</:g>
   is the largest <$>\colg a_2</$> such that
   <$>{\colg a_2} ({\colv s_1} + {\colg a_2} {\colr L}) \le {\colb d}</$>,
   or
-</p>
+----
 <$$>
   {\colg a_2} ({\colv 8000} + {\colr 100} {\colg a_2}) \le {\colb 74567},
 </$$>
-<p>
+----
   i.e.
-</p>
+----
 <$$>
   {\colg a_2} := {\colg 8}.
 </$$>
@@ -2297,9 +2303,9 @@
   </li>
 </ul>
 
-<p>
+----
   The second straight divisor is the <:v><b>incorrupt divisor</b>~(廉法)</:v>
-</p>
+----
 <$$>
   {\colv s_2}
   := {\colg a_2} {\colr L}
@@ -2603,19 +2609,19 @@
   to be next {after the digit} before.
 </#t>
 
-<p>
+----
   The <:g><b>ones digit of the upper quotient</b>~(上商)</:g>
   is the largest <$>\colg a_3</$> such that
   <$>{\colg a_3} ({\colv s_1} + {\colv s_2} + {\colg a_3} {\colr L})
   \le {\colb d}</$>,
   or
-</p>
+----
 <$$>
   {\colg a_3} ({\colv 800} + {\colv 160} + {\colg a_3}) \le {\colb 4167},
 </$$>
-<p>
+----
   i.e.
-</p>
+----
 <$$>
   {\colg a_3} := {\colg 4}.
 </$$>
@@ -2691,9 +2697,9 @@
   </li>
 </ul>
 
-<p>
+----
   The third straight divisor is the <:v><b>honest divisor</b>~(隅法)</:v>
-</p>
+----
 <$$>
   {\colv s_3}
   := {\colg a_3} {\colr L}
@@ -2969,9 +2975,9 @@
   \end{aligned}
 </$$>
 
-<p>
+----
   The final arrangement of counting rods is thus:
-</p>
+----
 
 <div class="centred-svg">
 <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8">
@@ -3048,9 +3054,9 @@
     of {a} pace.
 </#t>
 
-<p>
+----
   Thus the algorithm gives
-</p>
+----
 <$$>
   \begin{aligned}
     \sqrt{234567 \unit{paces}^2}
@@ -3058,18 +3064,18 @@
     &= {\colg 484} \tfrac{\colb 311}{\colv 968} \unit{paces},
   \end{aligned}
 </$$>
-<p>
+----
   which has relative error <$>2.2 \times 10^{-7}</$>.
-</p>
+----
 
 <@4>
   Summary of [sun-tzu]'s square root algorithm
   | sqrt
 </@4>
 
-<p>
+----
   In general, to compute the square root of the positive integer <$>x</$>:
-</p>
+----
 <ol class="sparse-list">
   <li>
     Compute the number of digits of <$>x</$>:
@@ -3114,13 +3120,15 @@
         <$$>
           {\colv s_i} := {\colg a_i} {\colr L}
         </$$>
-        <p>
+        
+----
           (The first three are named:
             <$>\colv s_1</$> upright~(方),
             <$>\colv s_2</$> incorrupt~(廉), and
             <$>\colv s_3</$> honest~(隅).\
           )
-        </p>
+        
+----
       </li>
       <li>
         Update the <:b>dividend~(實)</:b>:
@@ -3176,14 +3184,14 @@
     <$>{\colg U} + {\colb R} / {\colv L}</$>.
   </li>
 </ol>
-<p>
+----
   For an implementation in Python, see
   <@>
     <`>/sun-tzu/code/sqrt.py</`>
     | \/sun-tzu/code/sqrt.py
     | Python: [sun-tzu] square root algorithm
   </@>.
-</p>
+----
 
 <;sh> 2 | 20 | Rod calculus: square root algorithm </;sh>
 <;s@@> 2 | 20 | 42 | 156 | 52189 | 20 | 54 </;s@@>
@@ -3219,19 +3227,19 @@
   </li>
 </ul>
 
-<p>
+----
   In modern notation
   (but taking <$>\pi \approx 3</$> i.e. <$>4\pi \approx 12</$>
   as per <@> Vol.~I \P5 | /sun-tzu/i#5 | </@>),
   the circumference of a circle of area <$>A = 35000 \unit{paces}^2</$> is
-</p>
+----
 <$$>
   \begin{aligned}
     C &\approx \sqrt{12 A} \\
       &= \sqrt{420000} \unit{paces}.
   \end{aligned}
 </$$>
-<p>
+----
   The balance of this paragraph involves extracting the square root of~420000.
   For a fully annotated and diagrammed walkthrough of
   [sun-tzu]'s square root algorithm,
@@ -3243,7 +3251,7 @@
     | Summary of [sun-tzu]'s square root algorithm
   </@>,
   whose detail I will not be repeating here.
-</p>
+----
 
 <#t>
   次<:r>借一算為下法</:r>。<:r>步之，超一位，至百而止</:r>。 |

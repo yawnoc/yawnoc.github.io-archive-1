@@ -149,9 +149,9 @@
   [vol-i]"
 </#t>
 
-<p>
+----
   Literally "Upper Volume".
-</p>
+----
 
 <% [paragraphs.h] | [vol-i]: Paragraph navigation %>
 <@3> [paragraphs.h] | paragraphs </@3>
@@ -160,11 +160,11 @@
   <@u> Volumes | volumes | [volumes.h] </@u>
 </@@>
 
-<p>
+----
   <b>Note.</b>
   The <span class="heading"><b>"About" short headings</b></span>
   are not part of the original text.
-</p>
+----
 
 <!-- [__ __] for centred table cell -->
 <% [__ | <td class="centred-text"> %>
@@ -503,13 +503,13 @@
   </li>
 </ul>
 
-<p>
+----
   I can't be bothered looking up a reputable source
   for the precise length of a [尺] or "rule"
   when [sun-tzu-classic] was first written,
   but using 0.3~metres as an estimate,
   we have:
-</p>
+----
 <$$>
   \begin{alignedat}{3}
     1 \unit{floss (忽)} &={} & 10^{-6} & \unit{rules} && \sim 0.3 \unit{μm} \\
@@ -528,7 +528,7 @@
     1 \unit{mile (里)} &={} & 300 & \unit{paces} && \sim 540 \unit{m}
   \end{alignedat}
 </$$>
-<p>
+----
   Silk is around 12~μm in thickness
   (<@>
     UAF
@@ -548,9 +548,9 @@
   and [絲], "(silk) thread", still a little thin.
   Thus 蠶吐絲為忽 is an exaggeration of the thinness of silk.
   But my job is only to translate the text as it is, not to correct it.
-</p>
+----
 
-<p>
+----
   By the later part of the <^e>Ts'ing</^e> Dynasty,
   one [尺] or "rule"
   is about 14⅝~inches in Hong Kong.
@@ -570,7 +570,7 @@
   </@>
   gives the following conversions between Chinese length units
   (consistent with those above):
-</p>
+----
 <div class="centred-flex">
   <+>
     /sun-tzu/ord-1844-no-22-length.jpg
@@ -583,7 +583,7 @@
   </+>
 </div>
 
-<p>
+----
   However, it is very interesting to note that
   the British only standardised these
   Chinese length units with reference to English units in
@@ -594,7 +594,7 @@
     | Ordinance No. 8 of 1885 (1890 Edition)
   </@>,
   more than four decades later:
-</p>
+----
 <div class="centred-flex">
   <+>
     /sun-tzu/ord-1885-no-8-length.jpg
@@ -606,7 +606,7 @@
   </+>
 </div>
 
-<p>
+----
   Eventually the [尺] is given the
   equivalent definition of 0.371475~metres,
   used unto this day in Hong Kong; see
@@ -616,14 +616,14 @@
     | Hong Kong e-Legislation: Cap. 68
   </@>.
   (Floor plans are reckoned in imperial feet though, written "呎".)
-</p>
+----
 
-<p>
+----
   Taiwan uses a [尺] from the Japanese occupation
   equal to 10/33 of a metre, i.e.~0.3030...~(ugh) metres,
   and Mainland China uses a metric-based [尺]
   equal to 1/3 of a metre, i.e.~0.3333...~(ugh) metres.
-</p>
+----
 
 <;sh> 1 | 2 | Units of weight (or mass) </;sh>
 <;s@@> 1 | 2 | 4 | 146 | 52059 | 2 | 11 </;s@@>
@@ -746,13 +746,13 @@
   </li>
 </ul>
 
-<p>
+----
   I can't be bothered looking up a reputable source
   for the precise weight of a catty
   when [sun-tzu-classic] was first written,
   but using 600~grams as an estimate,
   we have:
-</p>
+----
 <$$>
   \begin{alignedat}{3}
     1 \unit{millet (黍)} &={} & \tfrac{1}{38400} & \unit{catties}
@@ -772,7 +772,7 @@
   \end{alignedat}
 </$$>
 
-<p>
+----
   By the later part of the <^e>Ts'ing</^e> Dynasty,
   one [斤] or catty is about 1⅓~pounds.
   As with length units,
@@ -785,7 +785,7 @@
   of Hong Kong gives the relevant conversions
   between the Chinese units themselves
   (here, candareen and mace are used rather than "piles" and "drams"):
-</p>
+----
 <div class="centred-flex">
   <+>
     /sun-tzu/ord-1844-no-22-weights.jpg
@@ -799,7 +799,7 @@
   </+>
 </div>
 
-<p>
+----
   And likewise they are only standardised
   with reference to English units forty years later, in
   <@>
@@ -809,7 +809,7 @@
     | Ordinance No. 8 of 1885 (1890 Edition)
   </@>
   (note the typo in the definition of candareen):
-</p>
+----
 <div class="centred-flex">
   <+>
     /sun-tzu/ord-1885-no-8-weights.jpg
@@ -823,7 +823,7 @@
   </+>
 </div>
 
-<p>
+----
   Eventually the [斤] or catty is given the
   <em>almost</em> equivalent definition of 0.60478982~kg,
   used unto this day in Hong Kong street markets; see
@@ -832,7 +832,7 @@
     | https://www.elegislation.gov.hk/hk/cap68
     | Hong Kong e-Legislation: Cap. 68
   </@>.
-</p>
+----
 
 <;sh> 1 | 3 | Units of capacity </;sh>
 <;s@@> 1 | 3 | 4 | 146 | 52059 | 2 | 12 </;s@@>
@@ -957,13 +957,13 @@
   </li>
 </ul>
 
-<p>
+----
   I can't be bothered looking up a reputable source
   for the precise volume of a [升]
   when [sun-tzu-classic] was first written,
   but using 1~litre as an estimate,
   we have:
-</p>
+----
 <$$>
   \begin{alignedat}{3}
     1 \unit{grain (粟)} &={}
@@ -979,18 +979,18 @@
   \end{alignedat}
 </$$>
 
-<p>
+----
   In <@> Vol.~II \P10 | /sun-tzu/ii#10 | Vol. II \P10 </@>,
   the conversion between
   the capacity unit "barrel", [斛],
   and the volume unit "cubic rule", [尺],
   is given as
-</p>
+----
 <$$>
   1 \unit{barrel} = 1.62 \unit{rules}^3.
 </$$>
 
-<p>
+----
   <@> Version~C | [version-c.url]52059 | [version-c.h] </@>
   has "pinches" ([撮])
   and "grabs" ([抄]) the other way around.
@@ -1007,7 +1007,7 @@
   equal to 5~ladles.
   Here the [斛] is defined as
   5~[斗] rather than 10~[斗]:
-</p>
+----
 <div class="centred-flex">
   <+>
     /sun-tzu/ord-1844-no-22-grain.jpg
@@ -1025,11 +1025,11 @@
   </+>
 </div>
 
-<p>
+----
   Unlike length and weight,
   the British did not standardise Chinese capacity units
   with respect to English units in 1885.
-</p>
+----
 
 <#t>
   斛得六千萬粟。所以得知者， |
@@ -1078,10 +1078,10 @@
     make one barrel.
 </#t>
 
-<p>
+----
   Here we first encounter named powers of ten starting from [_10^8_],
   which I have rendered literally:
-</p>
+----
 
 <#t>
   十斛六億粟， <br>
@@ -1170,10 +1170,10 @@
   </li>
 </ul>
 
-<p>
+----
   Here we have a "short scale" where the named quantities go up
   by a factor of 10:
-</p>
+----
 <$$>
 \begin{aligned}
   \unit{square-myriad (億)} &= 10^8 \\
@@ -1189,10 +1189,10 @@
 \end{aligned}
 </$$>
 
-<p>
+----
   However, the <@> next paragraph | #4 | Vol. I \P4 </@> \
   uses a "long scale".
-</p>
+----
 
 <;sh> 1 | 4 | Names of large numbers </;sh>
 <;s@@> 1 | 4 | 6 | 147 | 52060 | 3 | 13 </;s@@>
@@ -1258,10 +1258,10 @@
   </li>
 </ul>
 
-<p>
+----
   Here we have a "long scale" where the named quantities go up
   by a factor of [_10^8_]:
-</p>
+----
 <$$>
 \begin{aligned}
   \unit{square-myriad (億)} &= 10^8 \\
@@ -1276,11 +1276,11 @@
   \unit{carry (載)} &= 10^{80}
 \end{aligned}
 </$$>
-<p>
+----
   However in modern usage, a "medium scale" is used where
   the named quantities go up by [_10^4_].
   In summary:
-</p>
+----
 
 <!cc><table>
   <tr>
@@ -1362,10 +1362,10 @@
   </tr>
 </table></!cc>
 
-<p>
+----
   Note that [兆], "multitude", is also used for
   the SI Prefix mega~([_10^6_]). Confusing eh?
-</p>
+----
 
 <;sh> 1 | 5 | <$>\pi \approx 3</$>, <$>\sqrt{2} \approx 7/5</$> </;sh>
 <;s@@> 1 | 5 | 6 | 147 | 52061 | 4 | 13 </;s@@>
@@ -1402,15 +1402,15 @@
   </li>
 </ul>
 
-<p>
+----
   Here, 3 and 7/5 are used as
   approximations of <$>\pi</$> and <$>\sqrt{2}</$>,
   which arise in the geometry of the circle and square respectively.
-</p>
+----
 
-<p>
+----
   For a circle of circumference <$>C</$> and diameter <$>d</$> we have
-</p>
+----
 <$$>
   \frac{C}{d} = \pi \approx \frac{3}{1}.
 </$$>
@@ -1442,15 +1442,15 @@
 </svg>
 </div>
 
-<p>
+----
   For a square of side length <$>L</$> and diagonal <$>D</$> we have
-</p>
+----
 <$$>
   \frac{D}{L} = \sqrt{2} \approx \frac{7}{5},
 </$$>
-<p>
+----
   so
-</p>
+----
 <$$>
   \begin{aligned}
     L & \approx \frac{5D}{7} \\[2ex]
@@ -1543,14 +1543,14 @@
   </li>
 </ul>
 
-<p>
+----
   Let us do a quick comparison of the densities.
   For the modern density of~鐵 I have used cast iron,
   since that value is available, and the Chinese
   probably couldn't get pure iron back then.
   石~(stone) I have excluded from the analysis
   since it does not adequately pinpoint a specific material.
-</p>
+----
 
 <!c><table>
   <tr>
@@ -1669,14 +1669,14 @@
   </tr>
 </table></!c>
 
-<p>
+----
   Apart from silver and jade, the densities appear to fit quite well,
   so [sun-tzu]
   either fluked the measurements for gold, copper, lead and iron
   or he was actually a decent experimentalist but buggered up
   the measurements for silver and jade.
   Or maybe he only had access to <em>very</em> impure silver and jade:
-</p>
+----
 
 <!--                     Density comparison
   ***********************************************************************
@@ -1847,19 +1847,19 @@
 </svg>
 </div>
 
-<p>
+----
   Discarding the outliers 銀~(silver) and 玉~(jade)
   and forcing a least squares fit through the origin, we get
-</p>
+----
 <$$>
   \frac{\rho_\text{s}}{\unit{taels} \unit{inch}^{-3}}
   = 0.834229 \cdot \frac{\rho_\text{m}}{\unit{g} \unit{cm}^{-3}}
 </$$>
-<p>
+----
   with R<sup>2</sup>~=~0.999915; the slope has standard error~0.004453.
-</p>
+----
 
-<p>
+----
   Assuming that [sun-tzu]'s
   <$>\rho_\text{s}</$> and toady's <$>\rho_\text{m}</$>
   are referring to the same material,
@@ -1867,7 +1867,7 @@
   Therefore we obtain the following experimental conversion relation
   between [sun-tzu]
   and modern density units:
-</p>
+----
 <$$>
   1 \unit{tael} \unit{inch}^{-3} = (1.1987 \pm 0.0064) \unit{g} \unit{cm}^{-3}
 </$$>
@@ -1937,7 +1937,7 @@
 
 <% [夏侯陽] | 夏侯陽 <^> Haa Hau-yoeng | Hsia Hou-yang | Xia Houyang </^> %>
 
-<p>
+----
   This paragraph is referring to the way numerals are displayed in
   <@>
     rod calculus
@@ -1953,7 +1953,7 @@
   </@>).
   For each numeral there are two forms (except zero, which is denoted
   with a blank space):
-</p>
+----
 <!--                   Rod calculus numerals
   ***********************************************************************
   Constant    Description                           Value
@@ -2240,9 +2240,9 @@
     </td>
   </tr>
 </table></!cc>
-<p>
+----
   The text is saying that we use
-</p>
+----
 <ul>
   <li>
     <b>vertical form</b> for place values corresponding to
@@ -2256,7 +2256,7 @@
     i.e.~tens <_>10s</_>, thousands <_>1000s</_>~etc.
   </li>
 </ul>
-<p>
+----
   For example, 123456 is displayed as
   <svg class="fit-width" width="216px" viewBox="0.5 -0.3 6 0.6">
     <!-- 123456 -->
@@ -2278,7 +2278,7 @@
   </svg>.
   This is done to avoid ambiguities which would arise if vertical forms
   were placed adjacent to each other.
-</p>
+----
 
 <;sh> 1 | 8 | Rod calculus: multiplication algorithm </;sh>
 <;s@@> 1 | 8 | 6 | 147 | 52064 | 7 | 14 </;s@@>
@@ -2318,7 +2318,7 @@
   </li>
 </ul>
 
-<p>
+----
   This paragraph describes the algorithm for multiplying two integers.
   It tells us to put the two numbers in two separate rows, and "step"
   (i.e.~shift to the left) the lower number until its units digit
@@ -2326,7 +2326,7 @@
   For example, if we wish to compute 1989~×~64,
   we first shift the lower 64 to the left
   until the 4 (units) is in line with the upper 1 (thousand):
-</p>
+----
 
 <div class="centred-svg">
 <svg class="fit-width" width="180px" viewBox="0.5 -0.5 5 3">
@@ -2341,7 +2341,9 @@
 </svg>
 </div>
 
-<p>OR</p>
+----
+OR
+----
 
 <% [font-size-para-8-digit] | font-size="0.8" %>
 
@@ -2358,11 +2360,11 @@
 </svg>
 </div>
 
-<p>
+----
   I have left an empty row between the two numbers because,
   as you shall see below, the intermediate results are to be
   placed in this middle row.
-</p>
+----
 
 <#t>
   以上命下，所得之數，列於中位。言十即過，不滿自如。 |
@@ -2407,7 +2409,7 @@
   </li>
 </ul>
 
-<p>
+----
   A concrete example of the algorithm does not appear until
   <@> \P13 | #13 | Vol. I \P13 </@>,
   so I will provide my own here. Below is an animation showing
@@ -2422,7 +2424,7 @@
   can be done in whatever order you like,
   whereas with pen \&~paper, you must work from right to left
   and finish all the carrying before proceding to the next digit.
-</p>
+----
 
 <div class="centred-flex">
   <+>
@@ -2431,7 +2433,7 @@
   </+>
 </div>
 
-<p>
+----
   The instruction 俱退之, "retreat them all",
   refers to the shifting to the right of the lower number 64,
   after both the 6 and the 4 have been multiplied through. See
@@ -2441,7 +2443,7 @@
     | Mathematica: [sun-tzu] multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
-</p>
+----
 
 <#t>
   六不積，五不隻。 |
@@ -2544,20 +2546,20 @@
   Suppose {we} make six <_>6</_> be {the} divisor,
   {and an} hundred <_>100</_> be {the} dividend.
 </#t>
-<p>
+----
   實 and 法 are jargon terms for dividend and divisor:
-</p>
+----
 <$$>
   \frac{\text{實}}{\text{法}} = \frac{\text{[dividend]}}{\text{[divisor]}}
 </$$>
 
-<p>
+----
   In the lines to follow, 進, "advance", means move to the left,
   and 退, "retreat", means move to the right.
   The first step of the division <$>100 \div 6</$> is given,
   but a full example of the division algorithm does not appear until
   <@> \P14 | #14 | Vol. I \P14 </@>.
-</p>
+----
 
 <#t>
   以六除百，當進之二等，令在正百下； <br>
@@ -2588,7 +2590,7 @@
   </+>
 </div>
 
-<p>
+----
   See
   <@>
     here
@@ -2596,7 +2598,7 @@
     | Mathematica: [sun-tzu] multiplication \& division animations
   </@>
   for the Mathematica code used to produce the animation.
-</p>
+----
 
 <#t>
   以法除實，言一六而折百為四十，故可除。 |
@@ -2620,12 +2622,12 @@
   {and} ought not retreat back.
 </#t>
 
-<p>
+----
   In other words, if a three-digit number is being divided
   by six <_>6</_> and the first digit is greater than six <_>6</_>,
   then keep the six <_>6</_> advanced to the hundreds <_>100s</_>:
   don't retreat to the tens <_>10s</_>.
-</p>
+----
 
 <#t>
   故或步法十者置於十位，百者置於百位。 |
@@ -2636,13 +2638,13 @@
   put {the result} in {the} hundreds <_>100s</_> place.
 </#t>
 
-<p>
+----
   The next line I have bracketed, for it is an inline annotation by
   [李淳風]~{et~al.},
   written in two columns of smaller characters which take up
   half the width of the normal characters; see
   <@> Version~D | [version-d.url]15 | [version-d.h] </@>.
-</p>
+----
 
 <% [李淳風] | 李淳風 <^> Lei Sh_n-fung | Li Ch'un-fe^ng | Li Chunfeng </^> %>
 
@@ -2681,11 +2683,11 @@
   </li>
 </ul>
 
-<p>
+----
   In other words, if you get a remainder <$>r</$> after dividing by <$>d</$>,
   "name <$>r</$> {for a fraction} using <$>d</$>",
   i.e.~form the fraction <$>\dfrac{r}{d}</$>.
-</p>
+----
 
 <;sh> 1 | 10 | Volume conversion rates for grain \&~rice </;sh>
 <;s@@> 1 | 10 | 8 | 147 | 52066 | 9 | 16 </;s@@>
@@ -2765,11 +2767,11 @@
   </li>
 </ul>
 
-<p>
+----
   These are volume conversion rates to be used when trading grain
   and rice; I'm not sure why <$>6/4</$> and <$>8/4</$> haven't been simplified.
   In modern notation:
-</p>
+----
 <$$>
   \begin{aligned}
     V(\colorbox{lightyellow}{{\colr 糲}{\colb 米}})
@@ -2839,9 +2841,9 @@
     "<$>a</$> of <$>b</$> shares".
   </li>
 </ul>
-<p>
+----
   I think this paragraph is saying
-</p>
+----
 <$$>
   \begin{aligned}
     -\frac{1}{10} &= -\frac{2}{20} \\[2ex]
@@ -2850,11 +2852,11 @@
     -\frac{9}{10} &= -\frac{18}{20},
   \end{aligned}
 </$$>
-<p>
+----
   but I have no clue as to why this might be useful,
   and why it is phrased in terms of subtraction.
   Ditto for <@> the next paragraph | #12 | Vol. I \P12 </@>.
-</p>
+----
 
 <;sh> 1 | 12 | Some equivalent fractions </;sh>
 <;s@@> 1 | 12 | 10 | 148 | 52068 | 11 | 17 </;s@@>
@@ -2875,9 +2877,9 @@
   subtracting one <_>1</_> of five <_>5</_> shares:
     multiply by two <_>2</_>, {and} divide {by} ten <_>10</_>.
 </#t>
-<p>
+----
   In modern notation:
-</p>
+----
 <$$>
   \begin{aligned}
     -\frac{1}{9} &= -\frac{2}{18} \\[2ex]
@@ -2964,23 +2966,23 @@
   six thousand, five hundred {and} sixty-one <_>6561</_>.
 </#t>
 
-<p>
+----
   In animated form:
-</p>
+----
 <div class="centred-flex">
   <+>
     /sun-tzu/code/multiply-81-81.gif
     | [sun-tzu] multiplication: 81 × 81
   </+>
 </div>
-<p>
+----
   Source code available
   <@>
     here
     | /sun-tzu/code/animations
     | Mathematica: [sun-tzu] multiplication \& division animations
   </@>.
-</p>
+----
 
 <;sh> 1 | 14 | Rod calculus: <$>6561 \div 9</$> </;sh>
 <;s@@> 1 | 14 | 10 | 148 | 52074 | 17 | 18 </;s@@>
@@ -3080,33 +3082,33 @@
   </li>
 </ul>
 
-<p>
+----
   In animated form:
-</p>
+----
 <div class="centred-flex">
   <+>
     /sun-tzu/code/divide-6561-9.gif
     | [sun-tzu] division: 6561 ÷ 9
   </+>
 </div>
-<p>
+----
   Source code available
   <@>
     here
     | /sun-tzu/code/animations
     | Mathematica: [sun-tzu] multiplication \& division animations
   </@>.
-</p>
+----
 
 <#t>
   自八八六十四至一一如一，並準此。 |
   From eight eights <_>8 * 8</_> {are} sixty-four <_>64</_>,
   unto one one <_>1 * 1</_> {is} as one <_>1</_>: all {be} according to this.
 </#t>
-<p>
+----
   I think this is saying that the same procedures as above
   are used to compute
-</p>
+----
 <$$>
   \begin{alignedat}{3}
     8 \times 8 &= 64;
@@ -3118,32 +3120,32 @@
       & & & \text{etc.}
   \end{alignedat}
 </$$>
-<p>
+----
   in the paragraphs to follow.
-</p>
+----
 
 <;sh> 1 | 15 | Results of multiplication \&~division: multiples of~9 </;sh>
 <;s@@> 1 | 15 | 12 | 148 | 52075 | 18 | 20 </;s@@>
 
-<p>
+----
   <@> \P13 | #13 | Vol. I \P13 </@> above through to
   <@> \P22 | #22 | Vol. I \P22 </@> below
   display the results of multiplications and divisions of the form
-</p>
+----
 <$$>
   \begin{aligned}
     (m n) \times (m n) &= m^2 n^2 \\
     (m^2 n^2) \div m &= m n^2,
   \end{aligned}
 </$$>
-<p>
+----
   where <$>n = 9, 8, \dots, 2</$> and <$>m = n, \dots, 1</$>.
   While <@> \P13 | #13 | Vol. I \P13 </@> \
   and <@> \P14 | #14 | Vol. I \P14 </@>
   above gave worked versions for <$>m = n = 9</$>,
   only the results are listed for the cases below.
   Also displayed for each <$>n = 9, 8, \dots, 2</$> are the divisions
-</p>
+----
 <$$>
   \big[
     n \times n + (n - 1) \times n + \dots + 1 \times n
@@ -3151,10 +3153,10 @@
   \div n.
 </$$>
 
-<p>
+----
   This gets rather repetitive (and boring),
   so you may wish to <@> skip to \P23 | #23 | Vol. I \P23 </@>.
-</p>
+----
 
 <#t>
   八九七十二，自相乘，得五千一百八十四。八人分之，人得六百四十八。 |
@@ -3286,12 +3288,12 @@
     erroneously has 二萬八千二百二十五 for 一萬八千二百二十五.
   </li>
 </ul>
-<p>
+----
   條, "strand", is the classifier for problem/question.
   I think 右九九一條, "{the} nine nines above {in} one strand", is saying
   "considering <$>9 \times 9</$> through <$>1 \times 9</$> above,
   together in one single problem", i.e.
-</p>
+----
 <$$>
   \begin{gathered}
     9 \times 9 + 8 \times 9 + \dots + 1 \times 9 = 405; \\
@@ -3300,20 +3302,20 @@
   \end{gathered}
 </$$>
 
-<p>
+----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
-</p>
+----
 
 <;sh> 1 | 16 | Results of multiplication \&~division: multiples of~8 </;sh>
 <;s@@> 1 | 16 | | 149 | 52082 | 25 | 22 </;s@@>
 
-<p>
+----
   <b>This entire paragraph is missing from Version~A;
   it should be between
   <@> A12 | [version-a.url]12 | [version-a.h] </@>
   and
   <@> A14 | [version-a.url]14 | [version-a.h] </@>.</b>
-</p>
+----
 
 <#t>
   八八六十四，自相乘，得四千九十六。八人分之，人得五百十二。 |
@@ -3410,18 +3412,18 @@
   \end{gathered}
 </$$>
 
-<p>
+----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
-</p>
+----
 
 <;sh> 1 | 17 | Results of multiplication \&~division: multiples of~7 </;sh>
 <;s@@> 1 | 17 | | 149 | 52090 | 33 | 24 </;s@@>
 
-<p>
+----
   <b>Version~A is missing everything in this paragraph up to 四人分之,
   where it
   <@> resumes | [version-a.url]14 | [version-a.h] </@>.</b>
-</p>
+----
 
 <#t>
   七七四十九，自相乘，得二千四百一。七人分之，人得三百四十三。 |
@@ -3509,9 +3511,9 @@
   \end{gathered}
 </$$>
 
-<p>
+----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
-</p>
+----
 
 <;sh> 1 | 18 | Results of multiplication \&~division: multiples of~6 </;sh>
 <;s@@> 1 | 18 | 14 | 150 | 52097 | 40 | 26 </;s@@>
@@ -3587,9 +3589,9 @@
   \end{gathered}
 </$$>
 
-<p>
+----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
-</p>
+----
 <;sh> 1 | 19 | Results of multiplication \&~division: multiples of~5 </;sh>
 <;s@@> 1 | 19 | 16 | 150 | 52103 | 46 | 27 </;s@@>
 <#t>
@@ -3654,9 +3656,9 @@
   \end{gathered}
 </$$>
 
-<p>
+----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
-</p>
+----
 
 <;sh> 1 | 20 | Results of multiplication \&~division: multiples of~4 </;sh>
 <;s@@> 1 | 20 | 18 | 151 | 52108 | 51 | 29 </;s@@>
@@ -3712,9 +3714,9 @@
   \end{gathered}
 </$$>
 
-<p>
+----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
-</p>
+----
 
 <;sh> 1 | 21 | Results of multiplication \&~division: multiples of~3 </;sh>
 <;s@@> 1 | 21 | 18 | 151 | 52112 | 55 | 30 </;s@@>
@@ -3775,9 +3777,9 @@
 \end{gathered}
 </$$>
 
-<p>
+----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
-</p>
+----
 
 <;sh> 1 | 22 | Results of multiplication \&~division: multiples of~2 </;sh>
 <;s@@> 1 | 22 | 20 | 151 | 52115 | 58 | 31 </;s@@>
@@ -3883,17 +3885,17 @@
 </;sh>
 <;s@@> 1 | 24 | 20 | 151 | 52118 | 61 | 32 </;s@@>
 
-<p>
+----
   This last paragraph of [vol-i] displays the results of
   multiplications and divisions of the form
-</p>
+----
 <$$>
   \begin{aligned}
     (4 \cdot 3^n) \times (3^{n + 1}) &= 4 \cdot 3^{2 n + 1} \\
     (4 \cdot 3^{2 n + 1}) \div (2 \cdot 3^n) &= 2 \cdot 3^{n + 1},
   \end{aligned}
 </$$>
-<p>
+----
   where <$>n = 1, 2, \dots, 11</$>.
   This gets rather repetitive (and boring), so you may wish to
   <@>
@@ -3901,7 +3903,7 @@
     | /sun-tzu/ii
     | "[sun-tzu-classic]: [vol-ii]"
   </@>.
-</p>
+----
 
 <#t>
   以九乘一十二，得一百八。六人分之，人得一十八。 |
