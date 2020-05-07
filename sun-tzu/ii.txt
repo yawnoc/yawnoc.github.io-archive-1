@@ -320,8 +320,8 @@ $$
     {For the} equal quantity {there} resulteth six \+
     In my opinion this description of the algorithm lacks clarity;
     there isn't any instruction here \
-    to <strong>repeat</strong> the subtraction
-    <strong>until</strong> you get the equal quantity~6.
+    to **repeat** the subtraction
+    **until** you get the equal quantity~6.
     A better description is found in 《九章算術》,
     "Nine Chapters {on} Computational Methods",
     in the chapter 〈方田〉, 'Rectangular Fields',
@@ -1110,7 +1110,7 @@ $$
     Here,
       "one rule, six inches {and} two tenths",
     which is the length "1.62~rules",
-    actually means the volume 1.62~<strong>cubic</strong>~rules.
+    actually means the volume 1.62~**cubic**~rules.
     But
       $$
         \begin{aligned}
@@ -1539,7 +1539,7 @@ $$
 ====
 * 一尺：
     one rule \+
-    This is a <strong>cubic</strong> rule,
+    This is a **cubic** rule,
     as are the 27~rules above.
 
 ====
@@ -1638,7 +1638,7 @@ $$
 ====
 * 一千尺：
     one thousand rules \+
-    These are <strong>cubic</strong> rules.
+    These are **cubic** rules.
 
 ====
 

@@ -151,7 +151,7 @@ In each page, remove the its own link, and make that text bold.
     | Fleeting Footsteps: \
         Tracing the Conception of Arithmetic and Algebra in Ancient China
   </@>,
-  but I shall <strong>not</strong> read that translation
+  but I shall **not** read that translation
   (which is behind a paywall anyway) until I have completely finished mine.
 ----
 
@@ -167,12 +167,12 @@ In each page, remove the its own link, and make that text bold.
 ----
   There are four versions which I refer to,
   with slight differences in wording between them.
-  <strong>Unless otherwise noted I will be following the text from
+  **Unless otherwise noted I will be following the text from
   <@>
     Version~D
     | https://ctext.org/library.pl?if=en&res=80226
     | 孫子算經+五曹算經（知不足齋本）
-  </@>.</strong>
+  </@>.**
   The punctuation is based on that in
   <@>
     Version~C (ctext.org)
@@ -252,7 +252,7 @@ In each page, remove the its own link, and make that text bold.
       | https://ctext.org/library.pl?if=en&res=80226
       | 孫子算經+五曹算經（知不足齋本）
     </@>
-    <strong>(This shall be the base reference version.)</strong>
+    **(This shall be the base reference version.)**
     <#>
       D<:g>$p$</:g> shall mean
       <code>

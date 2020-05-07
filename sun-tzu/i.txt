@@ -467,7 +467,7 @@
     acre;
     \lit field \+
     This is area, what today would be called
-    240 <strong>square</strong> paces.
+    240 **square** paces.
     Classical Chinese mathematics did not have
     a fully developed notion of dimensional analysis,
     so 'square paces' were simply referred to as 'paces'.
@@ -2743,7 +2743,7 @@ $$
 
 * <:y>粟<:b>米</:b>：</:y>
     <:y><:b>grain</:b></:y> \+
-    <strong>This is not a nice paragraph to render into English</strong>
+    **This is not a nice paragraph to render into English**
     (hence the colours).
     I am overloading the word <b>"grain"</b> with both
     <:y>粟</:y>, <:y>"grain"</:y> (in contrast to
