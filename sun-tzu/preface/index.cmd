@@ -44,6 +44,12 @@ prospective STEM undergraduates.
   Translation
 ##
 
+----
+Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
+Unless noted otherwise, I follow the text from Version~D.
+----
+
+
 <<
   孫子曰：夫算者，
 ||
