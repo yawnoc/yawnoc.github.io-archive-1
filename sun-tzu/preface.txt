@@ -38,7 +38,7 @@
   ====
     <li>
       <b>《序》~"[pref]"</b>
-    </li>
+  
     <@i>
       《卷上》~"[vol-i]"
       | /sun-tzu/i
@@ -52,7 +52,7 @@
     <li>
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
-    </li>
+  
   ====
   
 </#n>
@@ -136,7 +136,7 @@
   <li>算：
     Computation;
     \or Mathematics
-  </li>
+
 ====
 
 ----
@@ -163,7 +163,7 @@
     translates well, both
     literally (longways and sideways threads)
     and figuratively (fundamental structure).
-  </li>
+
 ====
 
 <#t>
@@ -180,11 +180,11 @@
       | 《三字經》
     </@>,
     i.e.~Humanity, Righteousness, Propriety (or Rites), Wisdom and Trust.
-  </li>
+
   <li>本末：
     {the} beginning {and} end;
     \or {the} base {and} tip
-  </li>
+
   <li>陰陽：
     Dark {and} Light;
     \or Shade {and} Sun;
@@ -194,7 +194,7 @@
       | https://en.wikipedia.org/wiki/Yin_and_yang
       | Wikipedia: Yin and yang
     </@>.
-  </li>
+
 ====
 
 <#t>
@@ -213,7 +213,7 @@
       | 《三字經》
     </@>,
     i.e.~the sun, the moon and the stars.
-  </li>
+
   <li>
     <@>
       Version~C
@@ -221,7 +221,7 @@
       | ctext.org database page
     </@>
     erroneously has 裹 for 裏.
-  </li>
+
 ====
 
 <#t>
@@ -239,11 +239,11 @@
     </@>,
     i.e.~metal, tree, water, fire and earth.
     Perhaps better rendered as "{the} Five Phases".
-  </li>
+
   <li>準：平也；又均也；
     evenness;
     \or levelness
-  </li>
+
 ====
 
 <#t>
@@ -255,7 +255,7 @@
   <li>萬物：
     everything;
     \lit {the} myriad things
-  </li>
+
   <li>六藝：
     {the} Six Arts \+
     <@>
@@ -265,7 +265,7 @@
     </@>,
     i.e.~Propriety (or Rites), Music, Archery,
     (Chariot) Driving, Calligraphy and Mathematics.
-  </li>
+
 ====
 
 <#t>
@@ -276,15 +276,15 @@
 ====
   <li>稽：考也；
     examineth
-  </li>
+
   <li>群：
     amassed;
     \lit crowded
-  </li>
+
   <li>倫：
     kinds;
     \or types
-  </li>
+
   <li>二氣：
     {the} Two Breaths \+
     陰氣 and 陽氣.
@@ -302,7 +302,7 @@
       | /cantonese/conway-romanisation
       | Conway's Custom Romanisation for Cantonese
     </@>), <^e>Ch'i</^e> (Wade-Giles) or <^e>Qi\</^e> (Pinyin).
-  </li>
+
 ====
 
 <#t>
@@ -314,13 +314,13 @@
   <li>寒暑：
     winter {and} summer;
     \lit cold {and} heat
-  </li>
+
   <li>迭：更也；
     alternating
-  </li>
+
   <li>步：
     measureth (in steps)
-  </li>
+
 ====
 
 <#t>
@@ -335,16 +335,16 @@
     Physics;
     \lit {the} laws of Nature;
     \or {the} way of Heaven
-  </li>
+
   <li>兆基：
     foundations \+
     According to 《國語辭典》 this means 開創基業,
     roughly "opening/beginning/foundation".
-  </li>
+
   <li>地理：
     Geography;
     \lit {the} science of Earth
-  </li>
+
   <li>從橫：
     meridians {and} parallels (of latitude) \+
     Variant of 縱橫.
@@ -352,11 +352,11 @@
     or "the grand scheme of things", in contrast to 精微
     (intricacies {and} minutiae) in the previous line,
     which it is parallel with.
-  </li>
+
   <li>長短：
     length;
     \lit length {and} shortness
-  </li>
+
 ====
 
 <#t>
@@ -372,25 +372,25 @@
     earth gods \+
       祇，音岐，
       <^cm> k'ei4 | qi/ </^cm>
-  </li>
+
   <li>極：
     examineth ({unto} extremity) \+
     All of 采, 極, 窮 and 究
     mean "investigate", and in particular the last three mean
     "investigate to the utmost extent".
-  </li>
+
   <li>符驗：
     corroboration;
     \lit corroboration {by} talisman
-  </li>
+
   <li>道德：
     morality;
     \or ethics
-  </li>
+
   <li>理：
     reasoning;
     \or logic
-  </li>
+
 ====
 
 <#t>
@@ -405,14 +405,14 @@
   <li>規矩：
     {the} rules;
     \lit the compass {and} the set square
-  </li>
+
   <li>[尺丈]：
     {the} rule {and the} rod \+
     Units of length, see
     <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>.
     One [尺] or rule is of the order one foot,
     and one [丈] or rod is equal to ten rules.
-  </li>
+
 ====
 
 <#t>
@@ -427,14 +427,14 @@
   <li>重輕：
     heavy {and} light;
     \or important {and} unimportant
-  </li>
+
   <li>[毫釐]：
     mils {and} cents \+
     Small units of length
     (see <@> Vol.~I~\P1 | /sun-tzu/i#1 | Vol. I \P1 </@>),
     respectively a thousandth and a hundredth
     of the Chinese inch, [寸].
-  </li>
+
   <li>[黍絫]：
     millets {and} piles \+
     Small units of weight,
@@ -442,7 +442,7 @@
     respectively a hundredth and a tenth
     of the Chinese dram, [銖],
     which is of the order one gram.
-  </li>
+
 ====
 
 <#t>
@@ -454,13 +454,13 @@
   <li>億：
     {an} hundred million;
     \or {a} square-myriad
-  </li>
+
   <li>八極：
     {the} Eight Extremities \+
     Probably the four cardinal directions
     plus the four intercardinal directions.
     Sometimes called the "principal winds" in English.
-  </li>
+
 ====
 
 <#t>
@@ -474,14 +474,14 @@
     \or completely \+
       勝，平聲，
       <^cmg> shing1 | she=ng | she\ng </^cmg>
-  </li>
+
   <li>斂：聚也；
     gathering
-  </li>
+
   <li>盈：過曰盈；
     beyond;
     \lit in excess of
-  </li>
+
 ====
 
 <#t>
@@ -494,7 +494,7 @@
     destitute \+
       窶，音巨，
       <^cm> k_u"6 | ju\ </^cm>
-  </li>
+
 ====
 
 <#t>
@@ -508,19 +508,19 @@
 ====
   <li>沖：童也；
     children
-  </li>
+
   <li>意閉：
     close-minded \+
     This is the literal rendering;
     perhaps "narrow-minded" sounds more natural.
     I have translated both 心 and 意 as
     <span class="no-wrapping">"-minded"</span>.
-  </li>
+
   <li>皓：光也；白也；
     bright white \+
       皓，音號，
       <^cm> hou6 | ha\o </^cm>
-  </li>
+
 ====
 
 ----
@@ -547,12 +547,12 @@
       it is read in 去聲 (<^e>loeng6</^e>/<^e>lia\ng</^e>).
     And when it is the noun "amount",
       also 去聲 (<^e>loeng6</^e>/<^e>lia\ng</^e>).
-  </li>
+
   <li>揆：度也；
     measure \+
       揆，音葵，
       <^cm> k'wai4 | kui/ </^cm>
-  </li>
+
 ====
 
 <#t>

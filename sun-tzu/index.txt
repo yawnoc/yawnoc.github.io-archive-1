@@ -52,7 +52,7 @@
     <li>
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
-    </li>
+  
   ====
   
 </#n>
@@ -96,7 +96,7 @@ In each page, remove the its own link, and make that text bold.
     <li>
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
-    </li>
+  
   ====
   
 </#n>
@@ -204,7 +204,7 @@ In each page, remove the its own link, and make that text bold.
         https://archive.org/details/02094034.cn/page/n<:g>$p$</:g>
       </code>
     </#>
-  </li>
+
   
   <li>
     <b>B</b>:
@@ -226,7 +226,7 @@ In each page, remove the its own link, and make that text bold.
       corresponding to the printed page number <:g>$q$</:g>. \+
       Note that ${\colg p} - {\colg q} = 5$.
     </#>
-  </li>
+
   
   <li>
     <b>C</b>:
@@ -243,7 +243,7 @@ In each page, remove the its own link, and make that text bold.
       corresponding to Volume <:g>$v$</:g>, Line <:g>$q$</:g>
       according to ctext.org's numbering.
     </#>
-  </li>
+
   
   <li>
     <b>D</b>:
@@ -259,7 +259,7 @@ In each page, remove the its own link, and make that text bold.
         https://ctext.org/library.pl?if=en\&file=86926\&page=<:g>$p$</:g>
       </code>
     </#>
-  </li>
+
   
 ====
 
@@ -357,7 +357,7 @@ In each page, remove the its own link, and make that text bold.
     <@> \P22 | [man.url]-i-22.pdf | [man-i.h] \P22 </@>
     <@> \P23 | [man.url]-i-23.pdf | [man-i.h] \P23 </@>
     <@> \P24 | [man.url]-i-24.pdf | [man-i.h] \P24 </@>
-  </li>
+
   
   <li>
     <b>[vol-ii]:</b>
@@ -389,7 +389,7 @@ In each page, remove the its own link, and make that text bold.
     <@> \P26 | [man.url]-ii-26.pdf | [man-ii.h] \P26 </@>
     <@> \P27 | [man.url]-ii-27.pdf | [man-ii.h] \P27 </@>
     <@> \P28 | [man.url]-ii-28.pdf | [man-ii.h] \P28 </@>
-  </li>
+
   
   <li>
     <b>[vol-iii]:</b>
@@ -429,7 +429,7 @@ In each page, remove the its own link, and make that text bold.
     <@> \P34 | [man.url]-iii-34.pdf | [man-iii.h] \P34 </@>
     <@> \P35 | [man.url]-iii-35.pdf | [man-iii.h] \P35 </@>
     <@> \P36 | [man.url]-iii-36.pdf | [man-iii.h] \P36 </@>
-  </li>
+
   
 ====
 
@@ -468,7 +468,7 @@ In each page, remove the its own link, and make that text bold.
     <li>
       <:r>\!《卷下》~"[vol-iii]"</:r>
       <:r>(haven't started)</:r>
-    </li>
+  
   ====
   
 </#n>
