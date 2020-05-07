@@ -64,7 +64,7 @@
   
 </#n>
 
-<% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
+<% [sun-tzu] | Sun~Tzuu %>
 <% [sun-tzu-classic] | [sun-tzu]'s Computational Classic %>
 <% [pref] | Preface %>
 <% [vol-i] | Volume~I %>
@@ -551,7 +551,7 @@ $$
 ----
 
 ----
-  By the later part of the <^e>Ts'ing</^e> Dynasty,
+  By the later part of the Ts'ing Dynasty,
   one [尺] or "rule"
   is about 14⅝~inches in Hong Kong.
   Reading through historical versions of the
@@ -773,7 +773,7 @@ $$
 $$
 
 ----
-  By the later part of the <^e>Ts'ing</^e> Dynasty,
+  By the later part of the Ts'ing Dynasty,
   one [斤] or catty is about 1⅓~pounds.
   As with length units,
   <@>
@@ -912,7 +912,7 @@ $$
       | https://en.wikipedia.org/wiki/Gill_(unit)
       | Wikipedia: Gill (unit)
     </@>.
-    Note the Chinese pronunciation 葛合切, i.e.~<^e>kap8</^e>/<^e>gev</^e>.
+    Note the Chinese pronunciation 葛合切, i.e.~kap8/gev.
     In English, "gill" is read [dʒɪl], i.e.~with a soft 'g'.
 
 * [升]：
@@ -1154,7 +1154,7 @@ $$
 * [載]：
     \lit carry \+
     Since this is a noun,
-    it should be read in 上聲, i.e.~<^e>tsoi2</^e>/<^e>zavi</^e>.
+    it should be read in 上聲, i.e.~tsoi2/zavi.
     An explanation for its use to denote a large power of ten
     is quoted in
     <@>
@@ -1164,7 +1164,7 @@ $$
     </@>:
     載地不能載也, or "{a} carry {even the} Earth cannot carry"
     (here the second "carry" is a verb,
-    read in the usual 去聲, i.e.~<^e>tsoi3</^e>/<^e>za\i</^e>).
+    read in the usual 去聲, i.e.~tsoi3/za\i).
     For context, the usual phrase is 天覆地載,
     "Heaven covereth {and} Earth carrieth".
 
@@ -2580,7 +2580,7 @@ $$
 
 * 在正 \+
     Like the vernacular 喺正,
-    <^e>hai2 cheng3</^e>.
+    hai2 cheng3.
 
 ====
 <div class="centred-flex">

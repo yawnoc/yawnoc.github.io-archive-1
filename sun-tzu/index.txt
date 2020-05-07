@@ -57,7 +57,7 @@
   
 </#n>
 
-<% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
+<% [sun-tzu] | Sun~Tzuu %>
 <% [sun-tzu-classic] | [sun-tzu]'s Computational Classic %>
 <% [pref] | Preface %>
 <% [vol-i] | Volume~I %>

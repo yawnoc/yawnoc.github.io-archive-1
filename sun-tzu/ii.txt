@@ -69,7 +69,7 @@
   
 </#n>
 
-<% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
+<% [sun-tzu] | Sun~Tzuu %>
 <% [sun-tzu-classic] | [sun-tzu]'s Computational Classic %>
 <% [pref] | Preface %>
 <% [vol-i] | Volume~I %>
@@ -832,9 +832,9 @@ $$
     fine grain \+
       粺，
       Cantonese:
-      《分韻撮要》 <^e>p'ei4</^e>;
-      《正韻》薄邁切, <^e>paai6</^e>,
-      Mandarin: <^e>ba\i</^e>
+      《分韻撮要》 p'ei4;
+      《正韻》薄邁切, paai6,
+      Mandarin: ba\i
 
 * 五十分升之一十七：
     \lit seventeen of fifty shares

@@ -57,7 +57,7 @@
   
 </#n>
 
-<% [sun-tzu] | <^e>Sun~Tzuu</^e> %>
+<% [sun-tzu] | Sun~Tzuu %>
 <% [sun-tzu-classic] | [sun-tzu]'s Computational Classic %>
 <% [pref] | Preface %>
 <% [vol-i] | Volume~I %>
@@ -296,12 +296,12 @@
       | Wikipedia: Qi
     </@>
     is usually rendered as "life force",
-    transliterated as <^e>Hei</^e>
+    transliterated as Hei
     (<@>
       Cantonese
       | /cantonese/conway-romanisation
       | Conway's Custom Romanisation for Cantonese
-    </@>), <^e>Ch'i</^e> (Wade-Giles) or <^e>Qi\</^e> (Pinyin).
+    </@>), Ch'i (Wade-Giles) or Qi\ (Pinyin).
 
 ====
 
@@ -541,12 +541,12 @@
     量 is a funny word.
     When it is the verb "measure/gauge" applied to physical measurements
       (e.g.~volume of grain),
-      it is read in 平聲 (<^e>loeng4</^e>/<^e>lia/ng</^e>),
+      it is read in 平聲 (loeng4/lia/ng),
     but when applied to figurative or not-so-physical quantities
       (e.g.~量力, "gauging strength/ability", or 量入, "gauging revenue"),
-      it is read in 去聲 (<^e>loeng6</^e>/<^e>lia\ng</^e>).
+      it is read in 去聲 (loeng6/lia\ng).
     And when it is the noun "amount",
-      also 去聲 (<^e>loeng6</^e>/<^e>lia\ng</^e>).
+      also 去聲 (loeng6/lia\ng).
 
 * 揆：度也；
     measure \+
