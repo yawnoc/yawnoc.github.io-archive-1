@@ -419,6 +419,7 @@ nav > ul > li > a {
 }
 
 .current  {
+  margin-top: 0.1em;
   font-size: x-large;
 }
 
