@@ -198,8 +198,8 @@
   <tr>
     [__<@> \P5 | #5 | Vol. I \P5 </@>__]
     [==
-      <$>\pi \approx 3</$>,
-      <$>\sqrt{2} \approx 7/5</$>
+      $\pi \approx 3$,
+      $\sqrt{2} \approx 7/5$
     ==]
   </tr>
   <tr>
@@ -231,11 +231,11 @@
   </tr>
   <tr>
     [__<@> \P13 | #13 | Vol. I \P13 </@>__]
-    [==Rod calculus: <$>81 \times 81</$>==]
+    [==Rod calculus: $81 \times 81$==]
   </tr>
   <tr>
     [__<@> \P14 | #14 | Vol. I \P14 </@>__]
-    [==Rod calculus: <$>6561 \div 9</$>==]
+    [==Rod calculus: $6561 \div 9$==]
   </tr>
   <tr>
     [__<@> \P15 | #15 | Vol. I \P15 </@>__]
@@ -510,7 +510,7 @@
   but using 0.3~metres as an estimate,
   we have:
 ----
-<$$>
+$$
   \begin{alignedat}{3}
     1 \unit{floss (忽)} &={} & 10^{-6} & \unit{rules} && \sim 0.3 \unit{μm} \\
     1 \unit{thread (絲)} &={} & 10^{-5} & \unit{rules} && \sim 3 \unit{μm} \\
@@ -527,7 +527,7 @@
     1 \unit{acre (畝)} &={} & 240 & \unit{paces}^2 && \sim 780 \unit{m}^2 \\
     1 \unit{mile (里)} &={} & 300 & \unit{paces} && \sim 540 \unit{m}
   \end{alignedat}
-</$$>
+$$
 ----
   Silk is around 12~μm in thickness
   (<@>
@@ -753,7 +753,7 @@
   but using 600~grams as an estimate,
   we have:
 ----
-<$$>
+$$
   \begin{alignedat}{3}
     1 \unit{millet (黍)} &={} & \tfrac{1}{38400} & \unit{catties}
       && \sim 0.02 \unit{g} \\
@@ -770,7 +770,7 @@
     1 \unit{stone (石)} &={} & 120 & \unit{catties}
       && \sim 72 \unit{kg}
   \end{alignedat}
-</$$>
+$$
 
 ----
   By the later part of the <^e>Ts'ing</^e> Dynasty,
@@ -964,7 +964,7 @@
   but using 1~litre as an estimate,
   we have:
 ----
-<$$>
+$$
   \begin{alignedat}{3}
     1 \unit{grain (粟)} &={}
       & \tfrac{1}{6} \times 10^{-5} & \unit{quarts} && \sim 2 \unit{μL} \\
@@ -977,7 +977,7 @@
     1 \unit{peck (斗)} &={} & 10 & \unit{quarts} && \sim 10 \unit{L} \\
     1 \unit{barrel (斛)} &={} & 100 & \unit{quarts} && \sim 100 \unit{L}
   \end{alignedat}
-</$$>
+$$
 
 ----
   In <@> Vol.~II \P10 | /sun-tzu/ii#10 | Vol. II \P10 </@>,
@@ -986,9 +986,9 @@
   and the volume unit "cubic rule", [尺],
   is given as
 ----
-<$$>
+$$
   1 \unit{barrel} = 1.62 \unit{rules}^3.
-</$$>
+$$
 
 ----
   <@> Version~C | [version-c.url]52059 | [version-c.h] </@>
@@ -1174,7 +1174,7 @@
   Here we have a "short scale" where the named quantities go up
   by a factor of 10:
 ----
-<$$>
+$$
 \begin{aligned}
   \unit{square-myriad (億)} &= 10^8 \\
   \unit{multitude (兆)} &= 10^9 \\
@@ -1187,7 +1187,7 @@
   \unit{right (正)} &= 10^{16} \\
   \unit{carry (載)} &= 10^{17}
 \end{aligned}
-</$$>
+$$
 
 ----
   However, the <@> next paragraph | #4 | Vol. I \P4 </@> \
@@ -1262,7 +1262,7 @@
   Here we have a "long scale" where the named quantities go up
   by a factor of [_10^8_]:
 ----
-<$$>
+$$
 \begin{aligned}
   \unit{square-myriad (億)} &= 10^8 \\
   \unit{multitude (兆)} &= 10^{16} \\
@@ -1275,7 +1275,7 @@
   \unit{right (正)} &= 10^{72} \\
   \unit{carry (載)} &= 10^{80}
 \end{aligned}
-</$$>
+$$
 ----
   However in modern usage, a "medium scale" is used where
   the named quantities go up by [_10^4_].
@@ -1367,7 +1367,7 @@
   the SI Prefix mega~([_10^6_]). Confusing eh?
 ----
 
-<;sh> 1 | 5 | <$>\pi \approx 3</$>, <$>\sqrt{2} \approx 7/5</$> </;sh>
+<;sh> 1 | 5 | $\pi \approx 3$, $\sqrt{2} \approx 7/5$ </;sh>
 <;s@@> 1 | 5 | 6 | 147 | 52061 | 4 | 13 </;s@@>
 
 <#t>
@@ -1404,16 +1404,16 @@
 
 ----
   Here, 3 and 7/5 are used as
-  approximations of <$>\pi</$> and <$>\sqrt{2}</$>,
+  approximations of $\pi$ and $\sqrt{2}$,
   which arise in the geometry of the circle and square respectively.
 ----
 
 ----
-  For a circle of circumference <$>C</$> and diameter <$>d</$> we have
+  For a circle of circumference $C$ and diameter $d$ we have
 ----
-<$$>
+$$
   \frac{C}{d} = \pi \approx \frac{3}{1}.
-</$$>
+$$
 
 <!--                 Circumference and diameter
   ***********************************************************************
@@ -1443,20 +1443,20 @@
 </div>
 
 ----
-  For a square of side length <$>L</$> and diagonal <$>D</$> we have
+  For a square of side length $L$ and diagonal $D$ we have
 ----
-<$$>
+$$
   \frac{D}{L} = \sqrt{2} \approx \frac{7}{5},
-</$$>
+$$
 ----
   so
 ----
-<$$>
+$$
   \begin{aligned}
     L & \approx \frac{5D}{7} \\[2ex]
     D & \approx \frac{7L}{5}.
   \end{aligned}
-</$$>
+$$
 
 <!--                 Square's edge and diagonal
   ***********************************************************************
@@ -1557,18 +1557,18 @@
     <th>Material</th>
     <th>
       《孫子算經》 <br>
-      <$>\rho_\text{s} / (\unit{taels} \unit{inch}^{-3})</$>
+      $\rho_\text{s} / (\unit{taels} \unit{inch}^{-3})$
     </th>
     <th>
       Modern value <br>
-      <$>\rho_\text{m} / (\unit{g} \unit{cm}^{-3})</$>
+      $\rho_\text{m} / (\unit{g} \unit{cm}^{-3})$
     </th>
     <th>
-      <$>\dfrac{
+      $\dfrac{
         \rho_\text{s} / (\unit{taels} \unit{inch}^{-3})
       }{
         \rho_\text{m} / (\unit{g} \unit{cm}^{-3})
-      }</$>
+      }$
     </th>
     <th>Reference</th>
   </tr>
@@ -1851,26 +1851,26 @@
   Discarding the outliers 銀~(silver) and 玉~(jade)
   and forcing a least squares fit through the origin, we get
 ----
-<$$>
+$$
   \frac{\rho_\text{s}}{\unit{taels} \unit{inch}^{-3}}
   = 0.834229 \cdot \frac{\rho_\text{m}}{\unit{g} \unit{cm}^{-3}}
-</$$>
+$$
 ----
   with R<sup>2</sup>~=~0.999915; the slope has standard error~0.004453.
 ----
 
 ----
   Assuming that [sun-tzu]'s
-  <$>\rho_\text{s}</$> and toady's <$>\rho_\text{m}</$>
+  $\rho_\text{s}$ and toady's $\rho_\text{m}$
   are referring to the same material,
-  we <em>should</em> have that <$>\rho_\text{s} = \rho_\text{m}</$>.
+  we <em>should</em> have that $\rho_\text{s} = \rho_\text{m}$.
   Therefore we obtain the following experimental conversion relation
   between [sun-tzu]
   and modern density units:
 ----
-<$$>
+$$
   1 \unit{tael} \unit{inch}^{-3} = (1.1987 \pm 0.0064) \unit{g} \unit{cm}^{-3}
-</$$>
+$$
 
 <;sh> 1 | 7 | Rod calculus: vertical \&~horizontal forms </;sh>
 <;s@@> 1 | 7 | 6 | 147 | 52063 | 6 | 14 </;s@@>
@@ -2549,14 +2549,14 @@ OR
 ----
   實 and 法 are jargon terms for dividend and divisor:
 ----
-<$$>
+$$
   \frac{\text{實}}{\text{法}} = \frac{\text{[dividend]}}{\text{[divisor]}}
-</$$>
+$$
 
 ----
   In the lines to follow, 進, "advance", means move to the left,
   and 退, "retreat", means move to the right.
-  The first step of the division <$>100 \div 6</$> is given,
+  The first step of the division $100 \div 6$ is given,
   but a full example of the division algorithm does not appear until
   <@> \P14 | #14 | Vol. I \P14 </@>.
 ----
@@ -2684,9 +2684,9 @@ OR
 </ul>
 
 ----
-  In other words, if you get a remainder <$>r</$> after dividing by <$>d</$>,
-  "name <$>r</$> {for a fraction} using <$>d</$>",
-  i.e.~form the fraction <$>\dfrac{r}{d}</$>.
+  In other words, if you get a remainder $r$ after dividing by $d$,
+  "name $r$ {for a fraction} using $d$",
+  i.e.~form the fraction $\dfrac{r}{d}$.
 ----
 
 <;sh> 1 | 10 | Volume conversion rates for grain \&~rice </;sh>
@@ -2769,10 +2769,10 @@ OR
 
 ----
   These are volume conversion rates to be used when trading grain
-  and rice; I'm not sure why <$>6/4</$> and <$>8/4</$> haven't been simplified.
+  and rice; I'm not sure why $6/4$ and $8/4$ haven't been simplified.
   In modern notation:
 ----
-<$$>
+$$
   \begin{aligned}
     V(\colorbox{lightyellow}{{\colr 糲}{\colb 米}})
       &= \frac{3}{5} \cdot
@@ -2798,7 +2798,7 @@ OR
       &= \frac{8}{4} \cdot
     V(\colorbox{lightyellow}{{\colg 糳}{\colb 米}})
   \end{aligned}
-</$$>
+$$
 
 <;sh> 1 | 11 | Some equivalent fractions </;sh>
 <;s@@> 1 | 11 | 8 | 148 | 52067 | 10 | 16 </;s@@>
@@ -2836,22 +2836,22 @@ OR
   <li>分：
     shares;
     \or portions <br>
-    In Chinese, the fraction <$>\dfrac{a}{b}</$>
-    is referred to as <$>b</$> 分之 <$>a</$>, literally
-    "<$>a</$> of <$>b</$> shares".
+    In Chinese, the fraction $\dfrac{a}{b}$
+    is referred to as $b$ 分之 $a$, literally
+    "$a$ of $b$ shares".
   </li>
 </ul>
 ----
   I think this paragraph is saying
 ----
-<$$>
+$$
   \begin{aligned}
     -\frac{1}{10} &= -\frac{2}{20} \\[2ex]
     -\frac{2}{10} &= -\frac{4}{20} \\
                   & \;\,\vdots \\
     -\frac{9}{10} &= -\frac{18}{20},
   \end{aligned}
-</$$>
+$$
 ----
   but I have no clue as to why this might be useful,
   and why it is phrased in terms of subtraction.
@@ -2880,16 +2880,16 @@ OR
 ----
   In modern notation:
 ----
-<$$>
+$$
   \begin{aligned}
     -\frac{1}{9} &= -\frac{2}{18} \\[2ex]
     -\frac{1}{8} &= -\frac{2}{16} \\
                  & \;\,\vdots \\
     -\frac{1}{5} &= -\frac{2}{10}
   \end{aligned}
-</$$>
+$$
 
-<;sh> 1 | 13 | Rod calculus: <$>81 \times 81</$> </;sh>
+<;sh> 1 | 13 | Rod calculus: $81 \times 81$ </;sh>
 <;s@@> 1 | 13 | 10 | 148 | 52073 | 16 | 17 </;s@@>
 
 <#t>
@@ -2899,12 +2899,12 @@ OR
   multiplied with itself, resulteth in how much? <br>
   Answer saith: six thousand, five hundred {and} sixty-one <_>6561</_>.
 </#t>
-<$$>
+$$
   \begin{aligned}
      9 \times  9 &= 81 \\
     81 \times 81 &= 6561
   \end{aligned}
-</$$>
+$$
 
 <#t>
   術曰：重置其位。 |
@@ -2984,7 +2984,7 @@ OR
   </@>.
 ----
 
-<;sh> 1 | 14 | Rod calculus: <$>6561 \div 9</$> </;sh>
+<;sh> 1 | 14 | Rod calculus: $6561 \div 9$ </;sh>
 <;s@@> 1 | 14 | 10 | 148 | 52074 | 17 | 18 </;s@@>
 
 <#t>
@@ -3001,9 +3001,9 @@ OR
     \or person
   </li>
 </ul>
-<$$>
+$$
   6561 \div 9 = 729
-</$$>
+$$
 
 <#t>
   術曰：先置六千五百六十一於中位為實，下列九人為法。 |
@@ -3109,7 +3109,7 @@ OR
   I think this is saying that the same procedures as above
   are used to compute
 ----
-<$$>
+$$
   \begin{alignedat}{3}
     8 \times 8 &= 64;
       & \quad 64 \times 64 &= 4096;
@@ -3119,7 +3119,7 @@ OR
       & \quad 2401 \div 7 &= 343 \\
       & & & \text{etc.}
   \end{alignedat}
-</$$>
+$$
 ----
   in the paragraphs to follow.
 ----
@@ -3132,26 +3132,26 @@ OR
   <@> \P22 | #22 | Vol. I \P22 </@> below
   display the results of multiplications and divisions of the form
 ----
-<$$>
+$$
   \begin{aligned}
     (m n) \times (m n) &= m^2 n^2 \\
     (m^2 n^2) \div m &= m n^2,
   \end{aligned}
-</$$>
+$$
 ----
-  where <$>n = 9, 8, \dots, 2</$> and <$>m = n, \dots, 1</$>.
+  where $n = 9, 8, \dots, 2$ and $m = n, \dots, 1$.
   While <@> \P13 | #13 | Vol. I \P13 </@> \
   and <@> \P14 | #14 | Vol. I \P14 </@>
-  above gave worked versions for <$>m = n = 9</$>,
+  above gave worked versions for $m = n = 9$,
   only the results are listed for the cases below.
-  Also displayed for each <$>n = 9, 8, \dots, 2</$> are the divisions
+  Also displayed for each $n = 9, 8, \dots, 2$ are the divisions
 ----
-<$$>
+$$
   \big[
     n \times n + (n - 1) \times n + \dots + 1 \times n
   \big]^2
   \div n.
-</$$>
+$$
 
 ----
   This gets rather repetitive (and boring),
@@ -3291,16 +3291,16 @@ OR
 ----
   條, "strand", is the classifier for problem/question.
   I think 右九九一條, "{the} nine nines above {in} one strand", is saying
-  "considering <$>9 \times 9</$> through <$>1 \times 9</$> above,
+  "considering $9 \times 9$ through $1 \times 9$ above,
   together in one single problem", i.e.
 ----
-<$$>
+$$
   \begin{gathered}
     9 \times 9 + 8 \times 9 + \dots + 1 \times 9 = 405; \\
     405 \times 405 = 164025;
     \quad 164025 \div 9 = 18225.
   \end{gathered}
-</$$>
+$$
 
 ----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
@@ -3404,13 +3404,13 @@ OR
   ten thousand, three hundred {and} sixty-eight <_>10368</_>.
 </#t>
 
-<$$>
+$$
   \begin{gathered}
     8 \times 8 + 7 \times 8 + \dots + 1 \times 8 = 288; \\
     288 \times 288 = 82944;
     \quad 82944 \div 8 = 10368
   \end{gathered}
-</$$>
+$$
 
 ----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
@@ -3503,13 +3503,13 @@ OR
   five thousand, four hundred {and} eighty-eight <_>5488</_>.
 </#t>
 
-<$$>
+$$
   \begin{gathered}
     7 \times 7 + 6 \times 7 + \dots + 1 \times 7 = 196; \\
     196 \times 196 = 38416;
     \quad 38416 \div 7 = 5488
   \end{gathered}
-</$$>
+$$
 
 ----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
@@ -3581,13 +3581,13 @@ OR
   two thousand, six hundred {and} forty-six <_>2646</_>.
 </#t>
 
-<$$>
+$$
   \begin{gathered}
     6 \times 6 + 5 \times 6 + \dots + 1 \times 6 = 126; \\
     126 \times 126 = 15876;
     \quad 15876 \div 6 = 2646
   \end{gathered}
-</$$>
+$$
 
 ----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
@@ -3648,13 +3648,13 @@ OR
   one thousand, one hundred {and} twenty-five <_>1125</_>.
 </#t>
 
-<$$>
+$$
   \begin{gathered}
     5 \times 5 + 4 \times 5 + \dots + 1 \times 5 = 75; \\
     75 \times 75 = 5625;
     \quad 5625 \div 5 = 1125
   \end{gathered}
-</$$>
+$$
 
 ----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
@@ -3706,13 +3706,13 @@ OR
   four hundred <_>400</_>.
 </#t>
 
-<$$>
+$$
   \begin{gathered}
     4 \times 4 + 3 \times 4 + 2 \times 4 + 1 \times 4 = 40; \\
     40 \times 40 = 1600;
     \quad 1600 \div 4 = 400
   \end{gathered}
-</$$>
+$$
 
 ----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
@@ -3769,13 +3769,13 @@ OR
   one hundred {and} eight <_>108</_>.
 </#t>
 
-<$$>
+$$
 \begin{gathered}
   3 \times 3 + 2 \times 3 + 1 \times 3 = 18; \\
   18 \times 18 = 324;
   \quad 324 \div 3 = 108
 \end{gathered}
-</$$>
+$$
 
 ----
   Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
@@ -3815,13 +3815,13 @@ OR
   </li>
 </ul>
 
-<$$>
+$$
   \begin{gathered}
     2 \times 2 + 1 \times 2 = 6; \\
     6 \times 6 = 36;
     \quad 36 \div 2 = 18
   \end{gathered}
-</$$>
+$$
 
 <;sh>
   1 | 23 |
@@ -3863,7 +3863,7 @@ OR
   </li>
 </ul>
 
-<$$>
+$$
   \begin{gathered}
     \begin{alignedat}{2}
       9 \times 9 & + 8 \times 9 +{} & \dots & + 1 \times 9 \\
@@ -3877,7 +3877,7 @@ OR
       \quad 1334025 \div 9 &= 148225
     \end{aligned}
   \end{gathered}
-</$$>
+$$
 
 <;sh>
   1 | 24 |
@@ -3889,14 +3889,14 @@ OR
   This last paragraph of [vol-i] displays the results of
   multiplications and divisions of the form
 ----
-<$$>
+$$
   \begin{aligned}
     (4 \cdot 3^n) \times (3^{n + 1}) &= 4 \cdot 3^{2 n + 1} \\
     (4 \cdot 3^{2 n + 1}) \div (2 \cdot 3^n) &= 2 \cdot 3^{n + 1},
   \end{aligned}
-</$$>
+$$
 ----
-  where <$>n = 1, 2, \dots, 11</$>.
+  where $n = 1, 2, \dots, 11$.
   This gets rather repetitive (and boring), so you may wish to
   <@>
     skip to [vol-ii]

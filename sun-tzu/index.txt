@@ -199,9 +199,9 @@ In each page, remove the its own link, and make that text bold.
       | 《孫子算經》
     </@>
     <#>
-      A<:g><$>p</$></:g> shall mean
+      A<:g>$p$</:g> shall mean
       <code>
-        https://archive.org/details/02094034.cn/page/n<:g><$>p</$></:g>
+        https://archive.org/details/02094034.cn/page/n<:g>$p$</:g>
       </code>
     </#>
   </li>
@@ -217,14 +217,14 @@ In each page, remove the its own link, and make that text bold.
       | 《文淵閣四庫全書》 0797冊
     </@>
     <#>
-      B<:g><$>p</$></:g>(<:g><$>q</$></:g>) shall mean
+      B<:g>$p$</:g>(<:g>$q$</:g>) shall mean
       <code>
         https://commons.wikimedia.org/w/index.php\
           ?title=File%3A文淵閣四庫全書_0797冊.djvu\
-          \&page=<:g><$>p</$></:g>
+          \&page=<:g>$p$</:g>
       </code> <br>
-      corresponding to the printed page number <:g><$>q</$></:g>. <br>
-      Note that <$>{\colg p} - {\colg q} = 5</$>.
+      corresponding to the printed page number <:g>$q$</:g>. <br>
+      Note that ${\colg p} - {\colg q} = 5$.
     </#>
   </li>
   
@@ -236,11 +236,11 @@ In each page, remove the its own link, and make that text bold.
       | 《孫子算經》
     </@>
     <#>
-      C<:g><$>p</$></:g>(<:g><$>v</$></:g>.<:g><$>q</$></:g>) shall mean
+      C<:g>$p$</:g>(<:g>$v$</:g>.<:g>$q$</:g>) shall mean
       <code>
-        https://ctext.org/sunzi-suan-jing#n<:g><$>p</$></:g>
+        https://ctext.org/sunzi-suan-jing#n<:g>$p$</:g>
       </code> <br>
-      corresponding to Volume <:g><$>v</$></:g>, Line <:g><$>q</$></:g>
+      corresponding to Volume <:g>$v$</:g>, Line <:g>$q$</:g>
       according to ctext.org's numbering.
     </#>
   </li>
@@ -254,9 +254,9 @@ In each page, remove the its own link, and make that text bold.
     </@>
     <strong>(This shall be the base reference version.)</strong>
     <#>
-      D<:g><$>p</$></:g> shall mean
+      D<:g>$p$</:g> shall mean
       <code>
-        https://ctext.org/library.pl?if=en\&file=86926\&page=<:g><$>p</$></:g>
+        https://ctext.org/library.pl?if=en\&file=86926\&page=<:g>$p$</:g>
       </code>
     </#>
   </li>
