@@ -440,8 +440,8 @@ nav > ul > li > a {
 :target::before {
   content: "";
   display: block;
-  height: 3em;
-  margin: -3em 0 0;
+  height: 2.5rem;
+  margin: -2.5rem 0 0;
 }
 
 
