@@ -10,6 +10,9 @@
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
+  %description
+    Links to an annotated English translation of Volume~I of Sunzi Suanjing, \
+    ~~《孫子算經》~~, "\sun-tzu's Computational Classic".
 %%
 
 [[====
