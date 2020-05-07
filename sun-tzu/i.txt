@@ -742,7 +742,7 @@ $$
       | https://en.wikipedia.org/wiki/Hundredweight
       | Wikipedia: Hundredweight
     </@>
-    than the <em>much</em> lighter imperial stone (14~pounds).
+    than the *much* lighter imperial stone (14~pounds).
 
 ====
 
@@ -825,7 +825,7 @@ $$
 
 ----
   Eventually the [斤] or catty is given the
-  <em>almost</em> equivalent definition of 0.60478982~kg,
+  *almost* equivalent definition of 0.60478982~kg,
   used unto this day in Hong Kong street markets; see
   <@>
     Cap.~68 Weights and Measures Ordinance
@@ -1675,7 +1675,7 @@ $$
   either fluked the measurements for gold, copper, lead and iron
   or he was actually a decent experimentalist but buggered up
   the measurements for silver and jade.
-  Or maybe he only had access to <em>very</em> impure silver and jade:
+  Or maybe he only had access to *very* impure silver and jade:
 ----
 
 <!--                     Density comparison
@@ -1863,7 +1863,7 @@ $$
   Assuming that [sun-tzu]'s
   $\rho_\text{s}$ and toady's $\rho_\text{m}$
   are referring to the same material,
-  we <em>should</em> have that $\rho_\text{s} = \rho_\text{m}$.
+  we *should* have that $\rho_\text{s} = \rho_\text{m}$.
   Therefore we obtain the following experimental conversion relation
   between [sun-tzu]
   and modern density units:
