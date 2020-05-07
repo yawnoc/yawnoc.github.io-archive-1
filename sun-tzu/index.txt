@@ -45,13 +45,13 @@
       | "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
     </@i>
     <@i>
-      《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
+      《卷中》~"[vol-ii]" <:v>(incomplete)/]
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
   * 
-      <:r>\!《卷下》~"[vol-iii]"</:r>
-      <:r>(haven't started)</:r>
+      <:r>\!《卷下》~"[vol-iii]"/]
+      <:r>(haven't started)/]
   
   ====
   
@@ -89,13 +89,13 @@ In each page, remove the its own link, and make that text bold.
       | "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
     </@i>
     <@i>
-      《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
+      《卷中》~"[vol-ii]" <:v>(incomplete)/]
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
   * 
-      <:r>\!《卷下》~"[vol-iii]"</:r>
-      <:r>(haven't started)</:r>
+      <:r>\!《卷下》~"[vol-iii]"/]
+      <:r>(haven't started)/]
   
   ====
   
@@ -199,9 +199,9 @@ In each page, remove the its own link, and make that text bold.
       | 《孫子算經》
     </@>
     <#>
-      A<:g>$p$</:g> shall mean
+      A<:g>$p$/] shall mean
       <code>
-        https://archive.org/details/02094034.cn/page/n<:g>$p$</:g>
+        https://archive.org/details/02094034.cn/page/n<:g>$p$/]
       </code>
     </#>
 
@@ -217,13 +217,13 @@ In each page, remove the its own link, and make that text bold.
       | 《文淵閣四庫全書》 0797冊
     </@>
     <#>
-      B<:g>$p$</:g>(<:g>$q$</:g>) shall mean
+      B<:g>$p$/](<:g>$q$/]) shall mean
       <code>
         https://commons.wikimedia.org/w/index.php\
           ?title=File%3A文淵閣四庫全書_0797冊.djvu\
-          \&page=<:g>$p$</:g>
+          \&page=<:g>$p$/]
       </code> \+
-      corresponding to the printed page number <:g>$q$</:g>. \+
+      corresponding to the printed page number <:g>$q$/]. \+
       Note that ${\colg p} - {\colg q} = 5$.
     </#>
 
@@ -236,11 +236,11 @@ In each page, remove the its own link, and make that text bold.
       | 《孫子算經》
     </@>
     <#>
-      C<:g>$p$</:g>(<:g>$v$</:g>.<:g>$q$</:g>) shall mean
+      C<:g>$p$/](<:g>$v$/].<:g>$q$/]) shall mean
       <code>
-        https://ctext.org/sunzi-suan-jing#n<:g>$p$</:g>
+        https://ctext.org/sunzi-suan-jing#n<:g>$p$/]
       </code> \+
-      corresponding to Volume <:g>$v$</:g>, Line <:g>$q$</:g>
+      corresponding to Volume <:g>$v$/], Line <:g>$q$/]
       according to ctext.org's numbering.
     </#>
 
@@ -254,9 +254,9 @@ In each page, remove the its own link, and make that text bold.
     </@>
     **(This shall be the base reference version.)**
     <#>
-      D<:g>$p$</:g> shall mean
+      D<:g>$p$/] shall mean
       <code>
-        https://ctext.org/library.pl?if=en\&file=86926\&page=<:g>$p$</:g>
+        https://ctext.org/library.pl?if=en\&file=86926\&page=<:g>$p$/]
       </code>
     </#>
 
@@ -461,13 +461,13 @@ In each page, remove the its own link, and make that text bold.
       | "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
     </@i>
     <@i>
-      《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
+      《卷中》~"[vol-ii]" <:v>(incomplete)/]
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
   * 
-      <:r>\!《卷下》~"[vol-iii]"</:r>
-      <:r>(haven't started)</:r>
+      <:r>\!《卷下》~"[vol-iii]"/]
+      <:r>(haven't started)/]
   
   ====
   

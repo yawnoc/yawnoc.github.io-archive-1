@@ -59,11 +59,11 @@
       | "[sun-tzu]'s Computational Classic: [vol-i]": 《孫子算經\.卷上》
     </@i>
   * 
-      __《卷中》~"[vol-ii]" <:v>(incomplete)</:v>__
+      __《卷中》~"[vol-ii]" <:v>(incomplete)/]__
   
   * 
-      <:r>\!《卷下》~"[vol-iii]"</:r>
-      <:r>(haven't started)</:r>
+      <:r>\!《卷下》~"[vol-iii]"/]
+      <:r>(haven't started)/]
   
   ====
   
@@ -339,13 +339,13 @@ $$
       | https://ctext.org/nine-chapters/fang-tian#n51073
       | 〈方田〉
     </@>.
-    The <:y>bracketed portions</:y> below are inline two-column annotations by
+    The <:y>bracketed portions/] below are inline two-column annotations by
     [劉徽], see the
     <@>
       《四部叢刊初編》
       | https://ctext.org/library.pl?if=en&file=77747&page=13
     </@>
-    version. Punctuation for these <:y>bracketed annotations</:y> is mine:
+    version. Punctuation for these <:y>bracketed annotations/] is mine:
     <<
       今有十八分之十二。問約之得幾何？ \+
       答曰：三分之二。
@@ -367,7 +367,7 @@ $$
         （<:y>按：約分者，物之數量不可悉全，必以分言之。分之為數，繁則難用。\
         設有四分之二者。繁而言之，亦可為八分之四；約而言之，則二分之一也。\
         雖則異辭，至於為數，亦同歸爾。\
-        法實相推，動有參差，故為術者，先治諸分。</:y>）\
+        法實相推，動有參差，故為術者，先治諸分。/]）\
       術曰：
 ||
       .[The] Method of Reducing Fractions
@@ -386,7 +386,7 @@ $$
         Divisors .[and] dividends .[in] calculation with each other,
         have unevenness .[in their] motions;
         therefore .[we] perform .[the] method,
-        first administering it unto .[the] fractions.</:y>)
+        first administering it unto .[the] fractions./])
       saith:
     >>
     ====
@@ -414,7 +414,7 @@ $$
       不可半者，副置分母、子之數，以少減多，更相減損，求其等也。\
       以等數約之。
       （<:y>等數約之，即除也。\
-      其所以相減者，皆等數之重疊。故以等數約之。</:y>）
+      其所以相減者，皆等數之重疊。故以等數約之。/]）
 ||
       those which can .[be] halved: halve them.
       Those which cannot .[be] halved: put subsidiarily
@@ -429,7 +429,7 @@ $$
         Those of them which .[have been] mutually subtracted,
         .[are] all repeated pilings of .[the] equal quantity.
         Therefore .[we] use .[the] equal quantity
-        .[to] reduce them.</:y>)
+        .[to] reduce them./])
     >>
     ====
     * 重疊：
@@ -593,14 +593,14 @@ $$
 ====
 
 <<
-  答曰：減四分之三者<:r>二</:r>，三分之二者<:v>一</:v>，\
-  <:g>并</:g>以益三分之一，而各<:b>平於一十二分之七</:b>。
+  答曰：減四分之三者<:r>二/]，三分之二者<:v>一/]，\
+  <:g>并/]以益三分之一，而各<:b>平於一十二分之七/]。
 ||
   Answer saith: that diminished of .[the] three of four shares,
-  .[is] <:r>two</:r>;
-  that of .[the] two of three shares, <:v>one</:v>;
-  <:g>combined</:g> to benefit .[the] one of three shares,
-  that each .[be] <:b>level at seven of twelve shares</:b>.
+  .[is] <:r>two/];
+  that of .[the] two of three shares, <:v>one/];
+  <:g>combined/] to benefit .[the] one of three shares,
+  that each .[be] <:b>level at seven of twelve shares/].
 >>
 $$
   \frac{3}{4} - {\colr \frac{2}{12}}
@@ -1870,14 +1870,14 @@ $$
 $$
 
 <<
-  術曰：<:b>置積</:b>二十三萬四千五百六十七步為<:b>實</:b>。
+  術曰：<:b>置積/]二十三萬四千五百六十七步為<:b>實/]。
 ||
-  Method saith: <:b>put .[down the] area</:b>,
+  Method saith: <:b>put .[down the] area/],
   two hundred .[and] thirty-four thousand, five hundred .[and] sixty-seven\ paces,
-  as <:b>{the} dividend</:b>.
+  as <:b>{the} dividend/].
 >>
 ----
-  The radicand is called the <:b>__dividend__~(實)</:b>,
+  The radicand is called the <:b>__dividend__~(實)/],
 ----
 $$
   {\colb d} := {\colb 234567}.
@@ -1914,11 +1914,11 @@ $$
 </div>
 
 <<
-  次<:r>借一算為下法</:r>。<:r>步之，超一位，至百而止</:r>。
+  次<:r>借一算為下法/]。<:r>步之，超一位，至百而止/]。
 ||
-  Next, <:r>borrow one rod, .[to] be .[the] lower divisor</:r>.
+  Next, <:r>borrow one rod, .[to] be .[the] lower divisor/].
   <:r>Step it .[forth], jumping over one place,
-  .[even] unto .[the] hundreds, and stop</:r>.
+  .[even] unto .[the] hundreds, and stop/].
 >>
 ====
 * 超：跳也；
@@ -1941,7 +1941,7 @@ $$
 $$
 ----
   We then take $n - 1 = 2$ double steps
-  for the <:r>__lower divisor__~(下法)</:r>
+  for the <:r>__lower divisor__~(下法)/]
 ----
 $$
   {\colr L} := (10 ^ {n - 1}) ^ 2 = {\colr 10^4}.
@@ -1985,10 +1985,10 @@ $$
 </div>
 
 <<
-  <:g>上商置四百</:g>於實之上。
+  <:g>上商置四百/]於實之上。
 ||
   <:g>{For the} upper quotient,
-  put four hundred</:g> above .[the] dividend.
+  put four hundred/] above .[the] dividend.
 >>
 ====
 * 
@@ -2007,7 +2007,7 @@ $$
 ====
 
 ----
-  The <:g>__hundreds digit of the upper quotient__~(上商)</:g>
+  The <:g>__hundreds digit of the upper quotient__~(上商)/]
   is the largest $\colg a_1$ such that
   ${\colg a_1}^2 {\colr L} \le {\colb d}$,
   or
@@ -2055,11 +2055,11 @@ $$
 </div>
 
 <<
-  副<:v>置四萬</:v>於實之下，下法之上，名為<:v>方法</:v>。
+  副<:v>置四萬/]於實之下，下法之上，名為<:v>方法/]。
 ||
-  Subsidiarily <:v>put forty thousand</:v>
+  Subsidiarily <:v>put forty thousand/]
   below .[the] dividend, .[and] above .[the] lower divisor;
-  .[its] name be <:v>{the} upright divisor</:v>.
+  .[its] name be <:v>{the} upright divisor/].
 >>
 ====
 * 方：
@@ -2076,7 +2076,7 @@ $$
 ====
 
 ----
-  The first straight divisor is the <:v>__upright divisor__~(方法)</:v>
+  The first straight divisor is the <:v>__upright divisor__~(方法)/]
 ----
 $$
   {\colv s_1}
@@ -2126,10 +2126,10 @@ $$
 </div>
 
 <<
-  <:g>命上商四百</:g><:b>除實</:b>。
+  <:g>命上商四百/]<:b>除實/]。
 ||
-  <:g>Name .[the] upper quotient's four hundred</:g>,
-  <:b>{and} remove .[this] from .[the] dividend</:b>.
+  <:g>Name .[the] upper quotient's four hundred/],
+  <:b>{and} remove .[this] from .[the] dividend/].
 >>
 ====
 * 除：
@@ -2194,9 +2194,9 @@ $$
 </div>
 
 <<
-  除訖，<:v>倍方法</:v>。
+  除訖，<:v>倍方法/]。
 ||
-  .[The] removal finished, <:v>double .[the] upright divisor</:v>.
+  .[The] removal finished, <:v>double .[the] upright divisor/].
 >>
 
 $$
@@ -2243,10 +2243,10 @@ $$
 </div>
 
 <<
-  <:v>方法一退</:v>，<:r>下法再退</:r>。
+  <:v>方法一退/]，<:r>下法再退/]。
 ||
-  <:v>{The} upright divisor retreateth once</:v>;
-  <:r>{the} lower divisor retreateth again</:r>.
+  <:v>{The} upright divisor retreateth once/];
+  <:r>{the} lower divisor retreateth again/].
 >>
 ====
 * 
@@ -2315,14 +2315,14 @@ $$
 </div>
 
 <<
-  復<:g>置上商八十</:g>，以次前商。
+  復<:g>置上商八十/]，以次前商。
 ||
-  <:g>Put</:g> again <:g>{for the} upper quotient eighty</:g>,
+  <:g>Put/] again <:g>{for the} upper quotient eighty/],
   to be next .[after the] quotient .[digit] before.
 >>
 
 ----
-  The <:g>__tens digit of the upper quotient__~(上商)</:g>
+  The <:g>__tens digit of the upper quotient__~(上商)/]
   is the largest $\colg a_2$ such that
   ${\colg a_2} ({\colv s_1} + {\colg a_2} {\colr L}) \le {\colb d}$,
   or
@@ -2383,11 +2383,11 @@ $$
 </div>
 
 <<
-  副<:v>置八百</:v>於方法之下，下法之上，名為<:v>廉法</:v>。
+  副<:v>置八百/]於方法之下，下法之上，名為<:v>廉法/]。
 ||
-  Subsidiarily <:v>put eight hundred</:v>
+  Subsidiarily <:v>put eight hundred/]
   below .[the] upright divisor, .[and] above .[the] lower divisor;
-  .[its] name be <:v>{the} incorrupt divisor</:v>.
+  .[its] name be <:v>{the} incorrupt divisor/].
 >>
 ====
 * 廉：
@@ -2396,7 +2396,7 @@ $$
 ====
 
 ----
-  The second straight divisor is the <:v>__incorrupt divisor__~(廉法)</:v>
+  The second straight divisor is the <:v>__incorrupt divisor__~(廉法)/]
 ----
 $$
   {\colv s_2}
@@ -2459,11 +2459,11 @@ $$
 </div>
 
 <<
-  <:v>方、廉各命</:v><:g>上商八十</:g>，以<:b>除實</:b>。
+  <:v>方、廉各命/]<:g>上商八十/]，以<:b>除實/]。
 ||
-  <:v>Each of .[the] upright .[and the] incorrupt nameth</:v>
-  <:g>{the} upper quotient's eighty</:g>,
-  to be <:b>removed from .[the] dividend</:b>.
+  <:v>Each of .[the] upright .[and the] incorrupt nameth/]
+  <:g>{the} upper quotient's eighty/],
+  to be <:b>removed from .[the] dividend/].
 >>
 ====
 * 
@@ -2539,9 +2539,9 @@ $$
 </div>
 
 <<
-  除訖，<:v>倍廉法</:v>，上從方法。
+  除訖，<:v>倍廉法/]，上從方法。
 ||
-  .[The] removal finished, <:v>double .[the] incorrupt divisor</:v>,
+  .[The] removal finished, <:v>double .[the] incorrupt divisor/],
   .[which] followeth .[the] upright divisor above.
 >>
 ====
@@ -2614,10 +2614,10 @@ $$
 </div>
 
 <<
-  <:v>方法一退</:v>，<:r>下法再退</:r>。
+  <:v>方法一退/]，<:r>下法再退/]。
 ||
-  <:v>{The} upright divisor retreateth once</:v>;
-  <:r>{the} lower divisor retreateth again</:r>.
+  <:v>{The} upright divisor retreateth once/];
+  <:r>{the} lower divisor retreateth again/].
 >>
 ====
 * 
@@ -2699,14 +2699,14 @@ $$
 </div>
 
 <<
-  復<:g>置上商四</:g>，以次前。
+  復<:g>置上商四/]，以次前。
 ||
-  <:g>Put</:g> again <:g>{for the} upper quotient four</:g>,
+  <:g>Put/] again <:g>{for the} upper quotient four/],
   to be next .[after the digit] before.
 >>
 
 ----
-  The <:g>__ones digit of the upper quotient__~(上商)</:g>
+  The <:g>__ones digit of the upper quotient__~(上商)/]
   is the largest $\colg a_3$ such that
   ${\colg a_3} ({\colv s_1} + {\colv s_2} + {\colg a_3} {\colr L})
   \le {\colb d}$,
@@ -2782,11 +2782,11 @@ $$
 </div>
 
 <<
-  副<:v>置四</:v>於方法之下，下法之上，名曰<:v>隅法</:v>。
+  副<:v>置四/]於方法之下，下法之上，名曰<:v>隅法/]。
 ||
-  Subsidiarily <:v>put four</:v>
+  Subsidiarily <:v>put four/]
   below .[the] upright divisor, .[and] above .[the] lower divisor;
-  .[its] name .[be] called <:v>{the} honest divisor</:v>.
+  .[its] name .[be] called <:v>{the} honest divisor/].
 >>
 ====
 * 隅：廉也；
@@ -2795,7 +2795,7 @@ $$
 ====
 
 ----
-  The third straight divisor is the <:v>__honest divisor__~(隅法)</:v>
+  The third straight divisor is the <:v>__honest divisor__~(隅法)/]
 ----
 $$
   {\colv s_3}
@@ -2872,11 +2872,11 @@ $$
 </div>
 
 <<
-  <:v>方、廉、隅各命</:v><:g>上商四</:g>，以<:b>除實</:b>。
+  <:v>方、廉、隅各命/]<:g>上商四/]，以<:b>除實/]。
 ||
-  <:v>Each of .[the] upright, .[the] incorrupt .[and the] honest nameth</:v>
-  <:g>{the} upper quotient's four</:g>,
-  to be <:b>removed from .[the] dividend</:b>.
+  <:v>Each of .[the] upright, .[the] incorrupt .[and the] honest nameth/]
+  <:g>{the} upper quotient's four/],
+  to be <:b>removed from .[the] dividend/].
 >>
 ====
 * 
@@ -2961,9 +2961,9 @@ $$
 </div>
 
 <<
-  除訖，<:v>倍隅法</:v>，從方法。
+  除訖，<:v>倍隅法/]，從方法。
 ||
-  .[The] removal finished, <:v>double .[the] honest divisor</:v>,
+  .[The] removal finished, <:v>double .[the] honest divisor/],
   .[which] followeth .[the] upright divisor.
 >>
 ====
@@ -3044,16 +3044,16 @@ $$
 </div>
 
 <<
-  <:g>上商得四百八十四</:g>，\
-  <:v>下法得九百六十八</:v>，\
-  <:b>不盡三百一十一</:b>。
+  <:g>上商得四百八十四/]，\
+  <:v>下法得九百六十八/]，\
+  <:b>不盡三百一十一/]。
 ||
   <:g>{The} upper quotient resulteth in
-    four hundred .[and] eighty-four</:g>,
+    four hundred .[and] eighty-four/],
   <:v>{and the} lower divisors result in
-    nine hundred .[and] sixty-eight</:v>,
+    nine hundred .[and] sixty-eight/],
   <:b>{with} remainder
-    three hundred .[and] eleven</:b>.
+    three hundred .[and] eleven/].
 >>
 ====
 * 下法：
@@ -3146,12 +3146,12 @@ $$
 </div>
 
 <<
-  是為方<:g>四百八十四</:g>步<:v>九百六十八分</:v>步之<:b>三百一十一</:b>。
+  是為方<:g>四百八十四/]步<:v>九百六十八分/]步之<:b>三百一十一/]。
 ||
   This be .[a] square .[of edge]
-    <:g>four hundred .[and] eighty-four</:g> paces
-    .[and] <:b>three hundred .[and] eleven</:b>
-      <:v>nine hundred .[and] sixty-eighths</:v>
+    <:g>four hundred .[and] eighty-four/] paces
+    .[and] <:b>three hundred .[and] eleven/]
+      <:v>nine hundred .[and] sixty-eighths/]
     of .[a] pace.
 >>
 
@@ -3185,20 +3185,20 @@ $$
     $$
 
 * 
-    Compute the number of digits of the <:g>upper quotient~(上商)</:g>,
+    Compute the number of digits of the <:g>upper quotient~(上商)/],
     which is the integer part of $\sqrt{x}$:
     $$
       n := \left\lceil \frac{N}{2} \right\rceil
     $$
 
 * 
-    Initialise the <:r>lower divisor~(下法)</:r>:
+    Initialise the <:r>lower divisor~(下法)/]:
     $$
       {\colr L} := (10 ^ {n - 1}) ^ 2
     $$
 
 * 
-    Initialise the <:b>dividend~(實)</:b>:
+    Initialise the <:b>dividend~(實)/]:
     $$
       {\colb d} := x
     $$
@@ -3207,7 +3207,7 @@ $$
     <span class="small-caps">For</span> $i = 1, 2, \dots, n$:
     <ul class="sparse-list">
     * 
-        Determine the <:g>$i$th digit of the upper quotient~(上商)</:g>,
+        Determine the <:g>$i$th digit of the upper quotient~(上商)/],
         the largest integer $\colg a_i$ such that
         $$
           {\colg a_i} [
@@ -3217,7 +3217,7 @@ $$
         $$
     
     * 
-        Determine the <:v>$i$th straight divisor</:v>:
+        Determine the <:v>$i$th straight divisor/]:
         $$
           {\colv s_i} := {\colg a_i} {\colr L}
         $$
@@ -3232,7 +3232,7 @@ $$
 ----
     
     * 
-        Update the <:b>dividend~(實)</:b>:
+        Update the <:b>dividend~(實)/]:
         $$
           {\colb d} :=
           {\colb d} - {\colg a_i} [
@@ -3242,7 +3242,7 @@ $$
         $$
     
     * 
-        Double the <:v>$i$th straight divisor</:v>:
+        Double the <:v>$i$th straight divisor/]:
         $$
           {\colv s_i} := 2 s_i
         $$
@@ -3269,9 +3269,9 @@ $$
 
 * 
     Compute
-      the <:g>upper quotient~(上商)</:g>,
-      the <:v>sum of the straight divisors</:v>,
-      and the <:b>remainder~(不盡)</:b>:
+      the <:g>upper quotient~(上商)/],
+      the <:v>sum of the straight divisors/],
+      and the <:b>remainder~(不盡)/]:
     $$
       \begin{aligned}
         {\colg U} &:= {\colg 10^{n-1} a_1 + 10^{n-2} a_2 + \dots + a_n} \\
@@ -3316,13 +3316,13 @@ $$
 >>
 
 <<
-  術曰：置積三萬五千步。以一十二乘之，得四十二萬為<:b>實</:b>。
+  術曰：置積三萬五千步。以一十二乘之，得四十二萬為<:b>實/]。
 ||
   Method saith: put .[down the] area,
     thirty-five thousand paces.
   Multiplying it by twelve, resulteth in
     four hundred .[and] twenty thousand
-  as <:b>{the} dividend</:b>.
+  as <:b>{the} dividend/].
 >>
 ====
 * 
@@ -3358,18 +3358,18 @@ $$
 ----
 
 <<
-  次<:r>借一算為下法</:r>。<:r>步之，超一位，至百而止</:r>。
+  次<:r>借一算為下法/]。<:r>步之，超一位，至百而止/]。
 ||
-  Next, <:r>borrow one rod, .[to] be .[the] lower divisor</:r>.
+  Next, <:r>borrow one rod, .[to] be .[the] lower divisor/].
   <:r>Step it .[forth], jumping over one place,
-  .[even] unto .[the] hundreds, and stop</:r>.
+  .[even] unto .[the] hundreds, and stop/].
 >>
 
 <<
-  <:g>上商置六百</:g>於實之上。
+  <:g>上商置六百/]於實之上。
 ||
   <:g>{For the} upper quotient,
-  put six hundred</:g> above .[the] dividend.
+  put six hundred/] above .[the] dividend.
 >>
 ====
 * 
@@ -3379,54 +3379,54 @@ $$
 ====
 
 <<
-  副<:v>置六萬</:v>於實之下，下法之上，名為<:v>方法</:v>。
+  副<:v>置六萬/]於實之下，下法之上，名為<:v>方法/]。
 ||
-  Subsidiarily <:v>put sixty thousand</:v>
+  Subsidiarily <:v>put sixty thousand/]
   below .[the] dividend, .[and] above .[the] lower divisor;
-  .[its] name be <:v>{the} upright divisor</:v>.
+  .[its] name be <:v>{the} upright divisor/].
 >>
 
 <<
-  <:g>命上商六百</:g><:b>除實</:b>。
+  <:g>命上商六百/]<:b>除實/]。
 ||
-  <:g>Name .[the] upper quotient's six hundred</:g>,
-  <:b>{and} remove .[this] from .[the] dividend</:b>.
+  <:g>Name .[the] upper quotient's six hundred/],
+  <:b>{and} remove .[this] from .[the] dividend/].
 >>
 
 <<
-  除訖，<:v>倍方法</:v>。
+  除訖，<:v>倍方法/]。
 ||
-  .[The] removal finished, <:v>double .[the] upright divisor</:v>.
+  .[The] removal finished, <:v>double .[the] upright divisor/].
 >>
 
 <<
-  <:v>方法一退</:v>，<:r>下法再退</:r>。
+  <:v>方法一退/]，<:r>下法再退/]。
 ||
-  <:v>{The} upright divisor retreateth once</:v>;
-  <:r>{the} lower divisor retreateth again</:r>.
+  <:v>{The} upright divisor retreateth once/];
+  <:r>{the} lower divisor retreateth again/].
 >>
 
 <<
-  復<:g>置上商四十</:g>，以次前商。
+  復<:g>置上商四十/]，以次前商。
 ||
-  <:g>Put</:g> again <:g>{for the} upper quotient forty</:g>,
+  <:g>Put/] again <:g>{for the} upper quotient forty/],
   to be next .[after the] quotient .[digit] before.
 >>
 
 <<
-  副<:v>置四百</:v>於方法之下，下法之上，名為<:v>廉法</:v>。
+  副<:v>置四百/]於方法之下，下法之上，名為<:v>廉法/]。
 ||
-  Subsidiarily <:v>put four hundred</:v>
+  Subsidiarily <:v>put four hundred/]
   below .[the] upright divisor, .[and] above .[the] lower divisor;
-  .[its] name be <:v>{the} incorrupt divisor</:v>.
+  .[its] name be <:v>{the} incorrupt divisor/].
 >>
 
 <<
-  <:v>方、廉各命</:v><:g>上商四十</:g>，以<:b>除實</:b>。
+  <:v>方、廉各命/]<:g>上商四十/]，以<:b>除實/]。
 ||
-  <:v>Each of .[the] upright .[and the] incorrupt nameth</:v>
-  <:g>{the} upper quotient's forty</:g>,
-  to be <:b>removed from .[the] dividend</:b>.
+  <:v>Each of .[the] upright .[and the] incorrupt nameth/]
+  <:g>{the} upper quotient's forty/],
+  to be <:b>removed from .[the] dividend/].
 >>
 ====
 * 
@@ -3441,40 +3441,40 @@ $$
 ====
 
 <<
-  除訖，<:v>倍廉法</:v>，從方法。
+  除訖，<:v>倍廉法/]，從方法。
 ||
-  .[The] removal finished, <:v>double .[the] incorrupt divisor</:v>,
+  .[The] removal finished, <:v>double .[the] incorrupt divisor/],
   .[which] followeth .[the] upright divisor.
 >>
 
 <<
-  <:v>方法一退</:v>，<:r>下法再退</:r>。
+  <:v>方法一退/]，<:r>下法再退/]。
 ||
-  <:v>{The} upright divisor retreateth once</:v>;
-  <:r>{the} lower divisor retreateth again</:r>.
+  <:v>{The} upright divisor retreateth once/];
+  <:r>{the} lower divisor retreateth again/].
 >>
 
 <<
-  復<:g>置上商八</:g>，次前商。
+  復<:g>置上商八/]，次前商。
 ||
-  <:g>Put</:g> again <:g>{for the} upper quotient eight</:g>,
+  <:g>Put/] again <:g>{for the} upper quotient eight/],
   next .[after the] quotient .[digit] before.
 >>
 
 <<
-  副<:v>置八</:v>於方法之下，下法之上，名為<:v>隅法</:v>。
+  副<:v>置八/]於方法之下，下法之上，名為<:v>隅法/]。
 ||
-  Subsidiarily <:v>put eight</:v>
+  Subsidiarily <:v>put eight/]
   below .[the] upright divisor, .[and] above .[the] lower divisor;
-  .[its] name be <:v>{the} honest divisor</:v>.
+  .[its] name be <:v>{the} honest divisor/].
 >>
 
 <<
-  <:v>方、廉、隅各命</:v><:g>上商八</:g>，以<:b>除實</:b>。
+  <:v>方、廉、隅各命/]<:g>上商八/]，以<:b>除實/]。
 ||
-  <:v>Each of .[the] upright, .[the] incorrupt .[and the] honest nameth</:v>
-  <:g>{the} upper quotient's eight</:g>,
-  to be <:b>removed from .[the] dividend</:b>.
+  <:v>Each of .[the] upright, .[the] incorrupt .[and the] honest nameth/]
+  <:g>{the} upper quotient's eight/],
+  to be <:b>removed from .[the] dividend/].
 >>
 ====
 * 
@@ -3484,22 +3484,22 @@ $$
 ====
 
 <<
-  除訖，<:v>倍隅法</:v>，從方法。
+  除訖，<:v>倍隅法/]，從方法。
 ||
-  .[The] removal finished, <:v>double .[the] honest divisor</:v>,
+  .[The] removal finished, <:v>double .[the] honest divisor/],
   .[which] followeth .[the] upright divisor.
 >>
 
 <<
-  <:g>上商得六百四十八</:g>，\
-  <:v>下法得一千二百九十六</:v>，\
-  <:b>不盡九十六</:b>。
+  <:g>上商得六百四十八/]，\
+  <:v>下法得一千二百九十六/]，\
+  <:b>不盡九十六/]。
 ||
   <:g>{The} upper quotient resulteth in
-    six hundred .[and] forty-eight</:g>,
+    six hundred .[and] forty-eight/],
   <:v>{and the} lower divisors result in
-    one thousand, two hundred .[and] ninety-six</:v>,
-  <:b>{with} remainder ninety-six</:b>.
+    one thousand, two hundred .[and] ninety-six/],
+  <:b>{with} remainder ninety-six/].
 >>
 ====
 * 
@@ -3511,18 +3511,18 @@ $$
 ====
 
 <<
-  是為方<:g>六百四十八</:g>步<:v>一千二百九十六分</:v>步之<:b>九十六</:b>。
+  是為方<:g>六百四十八/]步<:v>一千二百九十六分/]步之<:b>九十六/]。
 ||
   This be .[a] circumference of
-    <:g>six hundred .[and] forty-eight</:g> paces
-    .[and] <:b>ninety-six</:b>
-      <:v>one thousand, two hundred .[and] ninety-sixths</:v>
+    <:g>six hundred .[and] forty-eight/] paces
+    .[and] <:b>ninety-six/]
+      <:v>one thousand, two hundred .[and] ninety-sixths/]
     of .[a] pace.
 >>
 
 
 <div class="end">
-  <:r>WORK IN PROGRESS</:r>
+  <:r>WORK IN PROGRESS/]
 </div>
 
 <*c>

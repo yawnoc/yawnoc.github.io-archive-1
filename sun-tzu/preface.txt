@@ -45,13 +45,13 @@
       | "[sun-tzu-classic]: [vol-i]": 《孫子算經\.卷上》
     </@i>
     <@i>
-      《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
+      《卷中》~"[vol-ii]" <:v>(incomplete)/]
       | /sun-tzu/ii
       | "[sun-tzu-classic]: [vol-ii]": 《孫子算經\.卷中》
     </@i>
   * 
-      <:r>\!《卷下》~"[vol-iii]"</:r>
-      <:r>(haven't started)</:r>
+      <:r>\!《卷下》~"[vol-iii]"/]
+      <:r>(haven't started)/]
   
   ====
   
