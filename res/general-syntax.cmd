@@ -357,6 +357,13 @@
   [Version~D](https://ctext.org/library.pl?if=en&file=86926&page=\g<p>)
 %}
 
+<!-- Default to Version D \d-default -->
+{:
+  \d-default
+:
+  Unless noted otherwise, I follow the text from Version~D, 《知不足齋叢書》本.
+:}
+
 
 <!--
   ----------------------------------------------------------------
