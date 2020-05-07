@@ -49,7 +49,7 @@
       | "[sun-tzu-classic]: [pref]": 《孫子算經\.序》
     </@i>
   * 
-      <b>《卷上》~"[vol-i]"</b>
+      __《卷上》~"[vol-i]"__
   
     <@i>
       《卷中》~"[vol-ii]" <:v>(incomplete)</:v>
@@ -161,8 +161,8 @@
 </@@>
 
 ----
-  <b>Note.</b>
-  The <span class="heading"><b>"About" short headings</b></span>
+  __Note.__
+  The <span class="heading">__"About" short headings__</span>
   are not part of the original text.
 ----
 
@@ -383,7 +383,7 @@
     inch \+
     The
     <@>
-      <b>Chinese inch</b>
+      __Chinese inch__
       | https://en.wikipedia.org/wiki/Cun_(unit)
       | Wikipedia: Cun (unit)
     </@>,
@@ -917,7 +917,7 @@ $$
 
 * [升]：
     quart \+
-    The <b>Chinese litre</b>,
+    The __Chinese litre__,
     of the same order of magnitude as the metric litre.
     I have avoided rendering it "litre"
     so as to keep SI units free,
@@ -2245,14 +2245,14 @@ $$
 ----
 ====
 * 
-    <b>vertical form</b> for place values corresponding to
-    <b>even powers of ten</b>,
+    __vertical form__ for place values corresponding to
+    __even powers of ten__,
     i.e.~ones, hundreds, myriads~etc.,
     and
 
 * 
-    <b>horizontal form</b> for place values corresponding to
-    <b>odd powers of ten</b>,
+    __horizontal form__ for place values corresponding to
+    __odd powers of ten__,
     i.e.~tens, thousands~etc.
 
 ====
@@ -2745,7 +2745,7 @@ $$
     <:y><:b>grain</:b></:y> \+
     **This is not a nice paragraph to render into English**
     (hence the colours).
-    I am overloading the word <b>"grain"</b> with both
+    I am overloading the word __"grain"__ with both
     <:y>粟</:y>, <:y>"grain"</:y> (in contrast to
     <:y><:r>糲</:r></:y>, <:y><:r>"coarse grain"</:r></:y>, and
     <:y><:g>糳</:g></:y>, <:y><:g>"intricate grain"</:g></:y>)
@@ -3224,8 +3224,8 @@ $$
 </#t>
 ====
 * 
-    <b><@> Version~A | [version-a.url]12 | [version-a.h] </@>\
-    is missing four whole pages</b>
+    __<@> Version~A | [version-a.url]12 | [version-a.h] </@>\
+    is missing four whole pages__
     after 一千二百九十六, from 四人分之 in the line above until
     四人分之 after 四七二十八 in
     <@> \P17 | #17 | Vol. I \P17 </@>.
@@ -3310,11 +3310,11 @@ $$
 <;s@@> 1 | 16 | | 149 | 52082 | 25 | 22 </;s@@>
 
 ----
-  <b>This entire paragraph is missing from Version~A;
+  __This entire paragraph is missing from Version~A;
   it should be between
   <@> A12 | [version-a.url]12 | [version-a.h] </@>
   and
-  <@> A14 | [version-a.url]14 | [version-a.h] </@>.</b>
+  <@> A14 | [version-a.url]14 | [version-a.h] </@>.__
 ----
 
 <#t>
@@ -3420,9 +3420,9 @@ $$
 <;s@@> 1 | 17 | | 149 | 52090 | 33 | 24 </;s@@>
 
 ----
-  <b>Version~A is missing everything in this paragraph up to 四人分之,
+  __Version~A is missing everything in this paragraph up to 四人分之,
   where it
-  <@> resumes | [version-a.url]14 | [version-a.h] </@>.</b>
+  <@> resumes | [version-a.url]14 | [version-a.h] </@>.__
 ----
 
 <#t>

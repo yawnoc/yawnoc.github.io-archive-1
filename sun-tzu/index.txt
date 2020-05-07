@@ -31,8 +31,8 @@
 </@@>
 
 <#n>
-  <b>《孫子算經》</b> \or \+
-  <b>"[sun-tzu-classic]"</b>
+  __《孫子算經》__ \or \+
+  __"[sun-tzu-classic]"__
   ====
     <@i>
       《序》~"[pref]"
@@ -192,7 +192,7 @@ In each page, remove the its own link, and make that text bold.
 ====
   
 * 
-    <b>A</b>:
+    __A__:
     <@>
       02094034.cn at archive.org
       | https://archive.org/details/02094034.cn
@@ -207,7 +207,7 @@ In each page, remove the its own link, and make that text bold.
 
   
 * 
-    <b>B</b>:
+    __B__:
     <@>
       《文淵閣四庫全書》第0797冊 at Wikimedia Commons
       | https://commons.wikimedia.org/w/index.php\
@@ -229,7 +229,7 @@ In each page, remove the its own link, and make that text bold.
 
   
 * 
-    <b>C</b>:
+    __C__:
     <@>
       ctext.org database page
       | https://ctext.org/sunzi-suan-jing
@@ -246,7 +246,7 @@ In each page, remove the its own link, and make that text bold.
 
   
 * 
-    <b>D</b>:
+    __D__:
     <@>
       《知不足齋叢書》本 at ctext.org library
       | https://ctext.org/library.pl?if=en&res=80226
@@ -327,12 +327,12 @@ In each page, remove the its own link, and make that text bold.
   </@i>
   
   <@i>
-    <b>[pref]</b>
+    __[pref]__
     | [man.url]-preface.pdf
     | [man-for] [pref]
   </@i>
 * 
-    <b>[vol-i]:</b>
+    __[vol-i]:__
     <@> \P1 | [man.url]-i-1.pdf | [man-i.h] \P1 </@>
     <@> \P2 | [man.url]-i-2.pdf | [man-i.h] \P2 </@>
     <@> \P3 | [man.url]-i-3.pdf | [man-i.h] \P3 </@>
@@ -360,7 +360,7 @@ In each page, remove the its own link, and make that text bold.
 
   
 * 
-    <b>[vol-ii]:</b>
+    __[vol-ii]:__
     <@> \P1 | [man.url]-ii-1.pdf | [man-ii.h] \P1 </@>
     <@> \P2 | [man.url]-ii-2.pdf | [man-ii.h] \P2 </@>
     <@> \P3 | [man.url]-ii-3.pdf | [man-ii.h] \P3 </@>
@@ -392,7 +392,7 @@ In each page, remove the its own link, and make that text bold.
 
   
 * 
-    <b>[vol-iii]:</b>
+    __[vol-iii]:__
     <@> \P1 | [man.url]-iii-1.pdf | [man-iii.h] \P1 </@>
     <@> \P2 | [man.url]-iii-2.pdf | [man-iii.h] \P2 </@>
     <@> \P3 | [man.url]-iii-3.pdf | [man-iii.h] \P3 </@>
@@ -447,8 +447,8 @@ In each page, remove the its own link, and make that text bold.
 </@@>
 
 <#n>
-  <b>《孫子算經》</b> \or \+
-  <b>"[sun-tzu-classic]"</b>
+  __《孫子算經》__ \or \+
+  __"[sun-tzu-classic]"__
   ====
     <@i>
       《序》~"[pref]"

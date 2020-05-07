@@ -59,7 +59,7 @@
       | "[sun-tzu]'s Computational Classic: [vol-i]": 《孫子算經\.卷上》
     </@i>
   * 
-      <b>《卷中》~"[vol-ii]" <:v>(incomplete)</:v></b>
+      __《卷中》~"[vol-ii]" <:v>(incomplete)</:v>__
   
   * 
       <:r>\!《卷下》~"[vol-iii]"</:r>
@@ -166,8 +166,8 @@
 </@@>
 
 ----
-  <b>Note.</b>
-  The <span class="heading"><b>"About" short headings</b></span>
+  __Note.__
+  The <span class="heading">__"About" short headings__</span>
   are not part of the original text.
 ----
 
@@ -1791,7 +1791,7 @@ $$
   as <:b>{the} dividend</:b>.
 </#t>
 ----
-  The radicand is called the <:b><b>dividend</b>~(實)</:b>,
+  The radicand is called the <:b>__dividend__~(實)</:b>,
 ----
 $$
   {\colb d} := {\colb 234567}.
@@ -1854,7 +1854,7 @@ $$
 $$
 ----
   We then take $n - 1 = 2$ double steps
-  for the <:r><b>lower divisor</b>~(下法)</:r>
+  for the <:r>__lower divisor__~(下法)</:r>
 ----
 $$
   {\colr L} := (10 ^ {n - 1}) ^ 2 = {\colr 10^4}.
@@ -1919,7 +1919,7 @@ $$
 ====
 
 ----
-  The <:g><b>hundreds digit of the upper quotient</b>~(上商)</:g>
+  The <:g>__hundreds digit of the upper quotient__~(上商)</:g>
   is the largest $\colg a_1$ such that
   ${\colg a_1}^2 {\colr L} \le {\colb d}$,
   or
@@ -1981,13 +1981,13 @@ $$
     * 廉法： incorrupt divisor ($s_2$)</li>
     * 隅法： honest divisor ($s_3$)</li>
     ====
-    These shall henceforth be referred to as the <b>straight divisors</b>
+    These shall henceforth be referred to as the __straight divisors__
     (straight as in 'straight copper' vs 'bent copper').
 
 ====
 
 ----
-  The first straight divisor is the <:v><b>upright divisor</b>~(方法)</:v>
+  The first straight divisor is the <:v>__upright divisor__~(方法)</:v>
 ----
 $$
   {\colv s_1}
@@ -2229,7 +2229,7 @@ $$
 </#t>
 
 ----
-  The <:g><b>tens digit of the upper quotient</b>~(上商)</:g>
+  The <:g>__tens digit of the upper quotient__~(上商)</:g>
   is the largest $\colg a_2$ such that
   ${\colg a_2} ({\colv s_1} + {\colg a_2} {\colr L}) \le {\colb d}$,
   or
@@ -2302,7 +2302,7 @@ $$
 ====
 
 ----
-  The second straight divisor is the <:v><b>incorrupt divisor</b>~(廉法)</:v>
+  The second straight divisor is the <:v>__incorrupt divisor__~(廉法)</:v>
 ----
 $$
   {\colv s_2}
@@ -2608,7 +2608,7 @@ $$
 </#t>
 
 ----
-  The <:g><b>ones digit of the upper quotient</b>~(上商)</:g>
+  The <:g>__ones digit of the upper quotient__~(上商)</:g>
   is the largest $\colg a_3$ such that
   ${\colg a_3} ({\colv s_1} + {\colv s_2} + {\colg a_3} {\colr L})
   \le {\colb d}$,
@@ -2696,7 +2696,7 @@ $$
 ====
 
 ----
-  The third straight divisor is the <:v><b>honest divisor</b>~(隅法)</:v>
+  The third straight divisor is the <:v>__honest divisor__~(隅法)</:v>
 ----
 $$
   {\colv s_3}
