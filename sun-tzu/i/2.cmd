@@ -64,7 +64,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
 * 稱：
     measuring of weight;
     \or weighing \+
-      稱，\C 去聲~[^ch']ing3 (\pm [_ts']ing3), \M 平聲~ch(e-)ng
+      稱， \C 去聲~[^ch']ing3 (\pm [_ts']ing3), \M 平聲~ch(e-)ng
 
 * 起：
     beginneth from;
@@ -72,6 +72,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
 
 * 黍：
     \lit millet \+
+      黍，音暑， \C sh(u")2, \M sh(uv) \+
     Shu ((黍)).
 
 ====
@@ -94,6 +95,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
 ====
 * 絫：
     pile \+
+      絫，魯水切， \C l\_(u")5, \M l(ev)i \+
     Lei ((絫)).
     Difficult to render because Chinese dictionaries
     simply define it as ten shu ((黍)).
@@ -101,6 +103,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
 
 * 銖：
     dram \+
+      銖， \C ch(u")1, \M zh(u-) \+
     Chu ((銖)), of the order two grams.
     According to [Williams' _Tonic Dictionary_] [銖],
     "a small ancient silver coin",
@@ -137,6 +140,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
 
 * 鈞：
     quarter \+
+      鈞，音均， \C kwan1, \M j(u-)n \+
     Ki(u")n ((鈞)).
     A quarter of the shih ((石)) or "stone" below,
     and of similar weight to the [imperial quarter] (28~pounds).
