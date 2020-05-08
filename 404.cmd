@@ -24,13 +24,5 @@
 ----
 **The requested page was not found.**
 
-Head back to the [home page], or see the [sitemap].
+Head back to the [home page](/).
 ----
-
-@@[home page]
-  /
-@@
-
-@@[sitemap]
-  https://github.com/yawnoc/yawnoc.github.io/blob/master/sitemap.txt
-@@
