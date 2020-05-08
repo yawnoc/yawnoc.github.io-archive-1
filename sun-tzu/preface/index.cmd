@@ -445,16 +445,16 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
 * 量：
     gauge; or measure \+
       量，去聲，
-      \C loeng6, \M li(a\)ng \+
+      \C l(oe)ng6, \M li(a\)ng \+
     量 is a funny word.
     When it is the verb "measure/gauge" applied to physical measurements
       (e.g.~volume of grain),
-      it is read in 平聲 (loeng4/li(a/)ng),
+      it is read in 平聲 (l(oe)ng4/li(a/)ng),
     but when applied to figurative or not-so-physical quantities
       (e.g.~量力, "gauging strength/ability", or 量入, "gauging revenue"),
-      it is read in 去聲 (loeng6/li(a\)ng).
+      it is read in 去聲 (l(oe)ng6/li(a\)ng).
     And when it is the noun "amount",
-      also 去聲 (loeng6/li(a\)ng).
+      also 去聲 (l(oe)ng6/li(a\)ng).
 
 * 揆：度也；
     measure \+
