@@ -181,19 +181,19 @@ we have:
 ----
 $$
   \begin{alignedat}{3}
-    1 \unit{millet\ (黍)} &={} & \tfrac{1}{38400} & \unit{catties}
+    1 \unit{millet (黍)} &={} & \tfrac{1}{38400} & \unit{catties}
       && \sim 0.02 \unit{g} \\
-    1 \unit{pile\ (絫)} &={} & \tfrac{1}{3840} & \unit{catties}
+    1 \unit{pile (絫)} &={} & \tfrac{1}{3840} & \unit{catties}
       && \sim 0.2 \unit{g} \\
-    1 \unit{dram\ (銖)} &={} & \tfrac{1}{384} & \unit{catties}
+    1 \unit{dram (銖)} &={} & \tfrac{1}{384} & \unit{catties}
       && \sim 2 \unit{g} \\
-    1 \unit{tael\ (兩)} &={} & \tfrac{1}{16} & \unit{catties}
+    1 \unit{tael (兩)} &={} & \tfrac{1}{16} & \unit{catties}
       && \sim 40 \unit{g} \\
-    1 \unit{catty\ (斤)} &={} & 1 & \unit{catty}
+    1 \unit{catty (斤)} &={} & 1 & \unit{catty}
       && \sim 600 \unit{g} \\
-    1 \unit{quarter\ (鈞)} &={} & 30 & \unit{catties}
+    1 \unit{quarter (鈞)} &={} & 30 & \unit{catties}
       && \sim 18 \unit{kg} \\
-    1 \unit{stone\ (石)} &={} & 120 & \unit{catties}
+    1 \unit{stone (石)} &={} & 120 & \unit{catties}
       && \sim 72 \unit{kg}
   \end{alignedat}
 $$
