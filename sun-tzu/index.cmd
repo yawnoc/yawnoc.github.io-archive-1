@@ -19,7 +19,7 @@
       margin-right: 0.3em;
       margin-bottom: 0.2em;
     }
-    .sun-tzu-navigation {
+    .volumes {
       font-size: large;
     }
     .variant-characters {
@@ -64,7 +64,7 @@ Also known as _Sunzi Suanjing_.
   "\sun-tzu's Computational Classic"
 >>
 
-===={sun-tzu-navigation}
+===={volumes}
 * \link:sun-tzu/preface
 * \link:sun-tzu/i
 * \link:sun-tzu/ii
@@ -321,7 +321,7 @@ edits and corrections I have made since they were scanned.
   "\sun-tzu's Computational Classic"
 >>
 
-===={sun-tzu-navigation}
+===={volumes}
 * \link:sun-tzu/preface
 * \link:sun-tzu/i
 * \link:sun-tzu/ii
