@@ -16,6 +16,12 @@
     or gotten around to adding content since %year-modified-next;
     possibly I have died.
   %css a~~
+    li > ul {
+      margin-top: 0.1em;
+    }
+    li > ul > li {
+      margin-bottom: 0.1em;
+    }
     .page-link-container > li {
       margin-bottom: 0.7em;
     }
@@ -125,7 +131,7 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 
 ======{page-link-container}
 * \link:sun-tzu
-  ===={sun-tzu-navigation}
+  ====
   * \link:sun-tzu/preface
   * \link:sun-tzu/i
   * \link:sun-tzu/ii

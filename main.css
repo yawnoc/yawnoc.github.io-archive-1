@@ -17,7 +17,6 @@
   Noscript
   Page properties
   Romanisations
-  Sun Tzu
   SVG
   Tables
   Thought bubbles (Cynic's 7.30)
@@ -498,20 +497,6 @@ noscript {
 
 .original-chinese::after {
   content: ')';
-}
-
-
-/* ---------------------------------------------------------------- */
-/* Sun Tzu                                                          */
-/* ---------------------------------------------------------------- */
-
-
-.sun-tzu-navigation {
-  margin-top: 0.1em;
-}
-
-.sun-tzu-navigation > li {
-  margin-bottom: 0.1em;
 }
 
 
