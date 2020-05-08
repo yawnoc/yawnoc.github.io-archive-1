@@ -355,7 +355,7 @@ $$
 $$
 
 ----
-However, the [next paragraph] ["i 4"] uses a "long scale"
+However, the [next paragraph (\P4)] ["i 4"] uses a "long scale"
 where the named quantities go up by a factor of 10 ** 8.
 ----
 
