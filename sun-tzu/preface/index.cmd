@@ -28,6 +28,16 @@
   "\sun-tzu's Computational Classic: Preface"
 #
 
+{{{{|
+  \nav-up: \sun-tzu's Computational Classic : [""]
+  {{|
+    ||||{previous}
+    ||||
+    \nav-curr: Preface
+    \nav-next: Vol.~I : ["i"]
+  |}}
+|}}}}
+
 
 [||||
 ||||]

@@ -29,6 +29,15 @@
   "\sun-tzu's Computational Classic: Volume~I"
 #
 
+{{{{|
+  \nav-up: \sun-tzu's Computational Classic : [""]
+  {{|
+    \nav-prev: Pref. : ["p"]
+    \nav-curr: Volume~I
+    \nav-next: Vol.~II : ["ii"]
+  |}}
+|}}}}
+
 
 \noscript[]
 

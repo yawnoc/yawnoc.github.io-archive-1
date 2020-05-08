@@ -28,6 +28,15 @@
   \P2. Units of weight (or mass)
 #
 
+{{{{|
+  \nav-up: Volume~I : ["i"]
+  {{|
+    \nav-prev: \P1 : ["i 1"]
+    \nav-curr: \P2
+    \nav-next: \P3 : ["i 3"]
+  |}}
+|}}}}
+
 
 \noscript[]
 

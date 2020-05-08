@@ -28,6 +28,15 @@
   \P1. Units of length (or distance)
 #
 
+{{{{|
+  \nav-up: Volume~I : ["i"]
+  {{|
+    \nav-prev: Pref. : ["p"]
+    \nav-curr: \P1
+    \nav-next: \P2 : ["i 2"]
+  |}}
+|}}}}
+
 
 \noscript[]
 
