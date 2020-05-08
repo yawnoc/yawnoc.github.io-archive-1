@@ -64,6 +64,8 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[12]. \+
 * 量： measuring of capacity \+
   量，平聲， \C l(oe)ng4, \M li(a/)ng
 
+* 起： beginneth from; \lit ariseth from
+
 * 粟： \lit grain \+
   Su ((粟)), a six-hundred-thousandth of the Chinese litre, sh(e^)ng ((升)).
 ====
