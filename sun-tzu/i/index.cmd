@@ -2,7 +2,6 @@
 
 %%
   %title "\sun-tzu's Computational Classic: Volume~I" ~~《孫子算經・卷上》~~
-  %title-en "\sun-tzu's Computational Classic: Volume~I"
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
@@ -27,7 +26,7 @@
 
 #
   《孫子算經\.卷上》 \+
-  %title-en
+  "\sun-tzu's Computational Classic: Volume~I"
 #
 
 
@@ -93,7 +92,11 @@ and the headings I have allocated are **not** part of the original text.
 |}}}}
 
 
-\cite-this-page[%title-en][sun-tzu-i][
+\cite-this-page[
+  "\sun-tzu's Computational Classic: Volume~I"
+][
+  sun-tzu-i
+][
   ~~``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{I}''~~
 ]
 

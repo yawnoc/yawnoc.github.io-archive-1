@@ -2,7 +2,6 @@
 
 %%
   %title "\sun-tzu's Computational Classic: Preface" ~~《孫子算經・序》~~
-  %title-en "\sun-tzu's Computational Classic: Preface"
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
@@ -26,7 +25,7 @@
 
 #
   《孫子算經\.序》 \+
-  %title-en
+  "\sun-tzu's Computational Classic: Preface"
 #
 
 
@@ -469,7 +468,11 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
 |}}}}
 
 
-\cite-this-page[%title-en][sun-tzu-preface][
+\cite-this-page[
+  "\sun-tzu's Computational Classic: Preface"
+][
+  sun-tzu-preface
+][
   ~~``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Preface}''~~
 ]
 

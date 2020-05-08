@@ -1,8 +1,7 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title "\sun-tzu's Computational Classic: Volume~I" ~~《孫子算經・卷上》~~
-  %title-en "\sun-tzu's Computational Classic: Volume~I"
+  %title "\sun-tzu's Computational Classic: Volume~I" ~~《孫子算經・卷上》~~ \P1
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
@@ -25,7 +24,7 @@
 
 #
   《孫子算經\.卷上》 \+
-  %title-en \+
+  "\sun-tzu's Computational Classic: Volume~I" \+
   \P1. Units of length (or distance)
 #
 
