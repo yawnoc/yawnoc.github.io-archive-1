@@ -265,20 +265,20 @@ we have:
 ----
 $$
   \begin{alignedat}{3}
-    1 \unit{floss (忽)} &={} & 10^{-6} & \unit{rules} && \sim 0.3 \unit{μm} \\
-    1 \unit{thread (絲)} &={} & 10^{-5} & \unit{rules} && \sim 3 \unit{μm} \\
-    1 \unit{mil (毫)} &={} & 10^{-4} & \unit{rules} && \sim 30 \unit{μm} \\
-    1 \unit{cent (釐)} &={} & 10^{-3} & \unit{rules} && \sim 0.3 \unit{mm} \\
-    1 \unit{tenth (分)} &={} & 10^{-2} & \unit{rules} && \sim 3 \unit{mm} \\
-    1 \unit{inch (寸)} &={} & 10^{-1} & \unit{rules} && \sim 30 \unit{mm} \\
-    1 \unit{rule (尺)} &={} & 1 & \unit{rule} && \sim 0.3 \unit{m} \\
-    1 \unit{rod (丈)} &={} & 10 & \unit{rules} && \sim 3 \unit{m} \\
-    1 \unit{draw (引)} &={} & 100 & \unit{rules} && \sim 30 \unit{m} \\
-    1 \unit{end (端)} &={} & 50 & \unit{rules} && \sim 15 \unit{m} \\
-    1 \unit{length (匹)} &={} & 40 & \unit{rules} && \sim 12 \unit{m} \\
-    1 \unit{pace (步)} &={} & 6 & \unit{rules} && \sim 1.8 \unit{m} \\
-    1 \unit{acre (畝)} &={} & 240 & \unit{paces}^2 && \sim 780 \unit{m}^2 \\
-    1 \unit{mile (里)} &={} & 300 & \unit{paces} && \sim 540 \unit{m}
+    1 \unit{floss~(忽)} &={} & 10^{-6} & \unit{rules} && \sim 0.3 \unit{μm} \\
+    1 \unit{thread~(絲)} &={} & 10^{-5} & \unit{rules} && \sim 3 \unit{μm} \\
+    1 \unit{mil~(毫)} &={} & 10^{-4} & \unit{rules} && \sim 30 \unit{μm} \\
+    1 \unit{cent~(釐)} &={} & 10^{-3} & \unit{rules} && \sim 0.3 \unit{mm} \\
+    1 \unit{tenth~(分)} &={} & 10^{-2} & \unit{rules} && \sim 3 \unit{mm} \\
+    1 \unit{inch~(寸)} &={} & 10^{-1} & \unit{rules} && \sim 30 \unit{mm} \\
+    1 \unit{rule~(尺)} &={} & 1 & \unit{rule} && \sim 0.3 \unit{m} \\
+    1 \unit{rod~(丈)} &={} & 10 & \unit{rules} && \sim 3 \unit{m} \\
+    1 \unit{draw~(引)} &={} & 100 & \unit{rules} && \sim 30 \unit{m} \\
+    1 \unit{end~(端)} &={} & 50 & \unit{rules} && \sim 15 \unit{m} \\
+    1 \unit{length~(匹)} &={} & 40 & \unit{rules} && \sim 12 \unit{m} \\
+    1 \unit{pace~(步)} &={} & 6 & \unit{rules} && \sim 1.8 \unit{m} \\
+    1 \unit{acre~(畝)} &={} & 240 & \unit{paces}^2 && \sim 780 \unit{m}^2 \\
+    1 \unit{mile~(里)} &={} & 300 & \unit{paces} && \sim 540 \unit{m}
   \end{alignedat}
 $$
 
