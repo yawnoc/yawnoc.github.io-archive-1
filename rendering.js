@@ -120,7 +120,7 @@ function renderMaths() {
     '\\basisvec': '\\mathopspace\\vec{a}_{#1}',
     
     // Units
-    '\\unit': '\\mathopspace\\mathrm{#1}',
+    '\\unit': '\\mathopspace\\text{#1}',
     
     // Text quantities
     '\\textq': '\\{\\text{#1}\\}',
