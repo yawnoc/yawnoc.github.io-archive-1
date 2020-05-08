@@ -408,7 +408,6 @@ nav > ul > li > a {
 
 .surrounds {
   padding: 0.2em;
-  font-size: large;
   text-align: center;
 }
 
@@ -419,7 +418,7 @@ nav > ul > li > a {
 
 .current  {
   margin-top: 0.1em;
-  font-size: x-large;
+  font-size: 1.3em;
 }
 
 .previous {
