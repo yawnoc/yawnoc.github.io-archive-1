@@ -31,7 +31,7 @@
 {{{{|
   \nav-up: Volume~I : ["i"]
   {{|
-    \nav-prev: Pref. : ["p"]
+    \nav-prev: Vol.~I : ["i"]
     \nav-curr: \P1
     \nav-next: \P2 : ["i 2"]
   |}}
@@ -393,7 +393,7 @@ In either case, ugh to recurring decimals.
 {{{{|
   \nav-up: Volume~I : ["i"]
   {{|
-    \nav-prev: Pref. : ["p"]
+    \nav-prev: Vol.~I : ["i"]
     \nav-curr: \P1
     \nav-next: \P2 : ["i 2"]
   |}}

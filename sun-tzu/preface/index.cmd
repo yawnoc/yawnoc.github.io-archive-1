@@ -35,7 +35,7 @@
   {{|
     ||||{previous}
     ||||
-    \nav-curr: Preface
+    \nav-curr: Pref.
     \nav-next: Vol.~I : ["i"]
   |}}
 |}}}}
@@ -474,7 +474,7 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   {{|
     ||||{previous}
     ||||
-    \nav-curr: Preface
+    \nav-curr: Pref.
     \nav-next: Vol.~I : ["i"]
   |}}
 |}}}}

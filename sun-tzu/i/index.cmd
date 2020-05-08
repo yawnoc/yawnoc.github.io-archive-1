@@ -35,8 +35,8 @@
   \nav-up: \sun-tzu's Computational Classic : [""]
   {{|
     \nav-prev: Pref. : ["p"]
-    \nav-curr: Volume~I
-    \nav-next: Vol.~II : ["ii"]
+    \nav-curr: Vol.~I
+    \nav-next: \P1 : ["i 1"]
   |}}
 |}}}}
 
@@ -97,8 +97,8 @@ and the headings I have allocated are **not** part of the original text.
   \nav-up: \sun-tzu's Computational Classic : [""]
   {{|
     \nav-prev: Pref. : ["p"]
-    \nav-curr: Volume~I
-    \nav-next: Vol.~II : ["ii"]
+    \nav-curr: Vol.~I
+    \nav-next: \P1 : ["i 1"]
   |}}
 |}}}}
 
