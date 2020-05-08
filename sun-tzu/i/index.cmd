@@ -19,7 +19,9 @@
 * \header-link:home
 * \header-link:top
 * \header-link:sun-tzu
-*> [Vol.~I](\/ You are viewing Volume~I)
+*> [Pref.] ["p" Preface]
+* [I](\/ You are viewing Volume~I)
+* [II] ["ii" Volume~II]
 * \header-link:cite
 ====]]
 
