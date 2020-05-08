@@ -26,6 +26,7 @@
   Coloured spans  [c/ /]
   SVG embedded styles
   Accessible inline SVGs
+  Superscript elements  **
   
 -->
 
@@ -1069,5 +1070,23 @@
   \]
 %
   <g aria-hidden="true">\g<content></g>
+%}
+
+
+
+<!--
+  ----------------------------------------------------------------
+  Superscript elements  **
+  ----------------------------------------------------------------
+-->
+
+{%
+  (?<= [0-9])
+    [ ]*
+  [*]{2}
+    [ ]*
+  (?P<power> [0-9]+ )
+%
+  <sup>\g<power></sup>
 %}
 
