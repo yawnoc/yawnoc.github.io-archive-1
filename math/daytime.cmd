@@ -192,6 +192,7 @@ the corresponding SVGs would simply be too time consuming to make.
   equatorial coordinates and solar year
 ]
 ||||
+
 @@![equatorial coordinates and solar year]
   equatorial-coordinates-solar-year.png
 @@480
@@ -211,6 +212,7 @@ lies not in the plane of the equator but in the ecliptic plane,
 which is tilted with respect to the equatorial
 $xy$-plane by earth's [axial tilt] $\tau = 23\degree \, 26'$.
 ----
+
 @@[equatorial coords]
   https://en.wikipedia.org/wiki/Equatorial_coordinate_system
 @@
@@ -233,6 +235,7 @@ $xy$-plane by earth's [axial tilt] $\tau = 23\degree \, 26'$.
   equatorial coordinates spherical
 ]
 ||||
+
 @@![equatorial coordinates spherical]
   equatorial-coordinates-spherical.png
 @@240
@@ -257,6 +260,7 @@ Note that $\theta = \pi/2 - \delta$,
 where $\delta$ is the astronomer's [declination],
 and that $\phi$ is equivalent to the astronomer's [right ascension].
 ----
+
 @@[declination]
   https://en.wikipedia.org/wiki/Declination
 @@
@@ -275,6 +279,7 @@ and that $\phi$ is equivalent to the astronomer's [right ascension].
   ecliptic coordinates
 ]
 ||||
+
 @@![ecliptic coordinates]
   equatorial-ecliptic-coordinates.png
 @@260
@@ -294,6 +299,7 @@ $$
     z &= \tilde{y} \sin\tau + \tilde{z} \cos\tau.
   \end{aligned}
 $$
+
 @@[ecliptic coords]
   https://en.wikipedia.org/wiki/Ecliptic_coordinate_system
 @@
@@ -466,6 +472,7 @@ where
   equatorial coordinates spherical basis
 ]
 ||||
+
 @@![equatorial coordinates spherical basis]
   equatorial-coordinates-spherical-basis.png
 @@320
@@ -724,6 +731,7 @@ north of the Arctic Circle and south of the Antarctic Circle
   polar regions
 ]
 ||||
+
 @@![polar regions]
   earth-polar-regions.png
 @@360
@@ -775,6 +783,7 @@ $$
   sun components
 ]
 ||||
+
 @@![sun components]
   sun-components.png
 @@280
@@ -848,6 +857,7 @@ we briefly compare our [mod/ model /] for daytime
 against [timeanddate.com][timeanddate] ([tad/ \tad /])
 for Hong Kong and Perth:
 ----
+
 @@[timeanddate]
   \tad-url
 @@
@@ -925,6 +935,7 @@ In any case I think the final angle of 0°50' is reliable;
 uses it for computing sunrise/sunset times.
 </small>
 ----
+
 @@[refraction]
   https://en.wikipedia.org/wiki/Atmospheric_refraction
 @@
@@ -1247,6 +1258,7 @@ compared to a hypothetical Earth with no atmosphere.
 ----
 __Code:__  [\[GNU Octave\] Daytime model (GitHub)][sun.m]
 ----
+
 @@[sun.m]
   https://github.com/yawnoc/yawnoc.github.io/blob/master/math/sun.m
 @@

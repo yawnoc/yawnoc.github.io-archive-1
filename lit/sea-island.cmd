@@ -62,6 +62,7 @@ annotations of [Li Ch'un-f(e^)ng ((李淳風))] [李淳風].
 It is in the explanations~(說) that I find derivations of the formulae,
 not unlike high school geometry proofs.
 ----
+
 @@[sea island]
   https://en.wikipedia.org/wiki/Haidao_Suanjing
 @@
@@ -120,6 +121,7 @@ are from archive.org.
 After reading these in their original forms (i.e.~without any punctuation)
 it is hard not to appreciate modern mathematical notation.
 ----
+
 @@[problem]
   https://archive.org/details/02094033.cn/page/n1/mode/1up
 @@
@@ -218,34 +220,21 @@ $$
   with .[the] front post .[and the island].
 >>
 ====
-* 表：標也；
-    posts;
-    \or pillars;
-    \lit markers
+* 表：標也； posts; \or pillars; \lit markers
 
-* 齊：
-    .[the] same;
-    \or uniform
+* 齊： .[the] same; \or uniform
 
-* 丈：
-    rod; \or measure \+
-    A unit of distance, of the order three metres.
-    Note that $3 \unit{rods} = 5 \unit{paces}$.
+* 丈： rod; \or measure \+
+  A unit of distance, of the order three metres.
+  Note that $3 \unit{rods} = 5 \unit{paces}$.
 
-* 前後：
-    .[one] in front of .[the] other;
-    \lit front .[and] rear
+* 前後： .[one] in front of .[the] other; \lit front .[and] rear
 
-* 步：
-    paces;
-    \or steps \+
-    A unit of distance, of the order two metres.
+* 步： paces; \or steps \+
+  A unit of distance, of the order two metres.
 
-* 參相直：
-    mutually straight .[the] three;
-    \or three-in-line \+
-    參 means 三, three.
-
+* 參相直： mutually straight .[the] three; \or three-in-line \+
+  參 means 三, three.
 ====
 
 
@@ -296,18 +285,13 @@ $$
   meeteth .[the] three with .[the] tip of .[the] post.
 >>
 ====
-* 著地：
-    on .[the] ground;
-    \lit contacting .[the] ground
+* 著地： on .[the] ground; \lit contacting .[the] ground
 
-* 峯：
-    peak;
-    \or summit
+* 峯： peak; \or summit
 
 * In other words, the three of them
   (the island's peak, the post's tip, and the person's eye)
   are in a straight line.
-
 ====
 
 
@@ -409,30 +393,26 @@ $$
     [r/ one hundred .[and] two miles .[and] one hundred .[and] fifty paces /].
 >>
 ======
-* 里：
-    miles \+
-    A [unit of distance](https://en.wikipedia.org/wiki/Li_\(unit\)),
-    of the order half a kilometre.
-    Note that $1 \unit{mile} = 300 \unit{paces}$.
+* 里： miles \+
+  A [unit of distance](https://en.wikipedia.org/wiki/Li_\(unit\)),
+  of the order half a kilometre.
+  Note that $1 \unit{mile} = 300 \unit{paces}$.
 
-* 一百二：
-    one hundred .[and] two \+
-    The italicised .[and] has been supplied by me as the translator,
-    and is noteworthy because:
-    ====
-    * In modern Chinese, you must say 一百零二,
-      "one hundred oh two", to mean~102.
-      If you just say 一百二 or 百二, this means~120;
-      the~二 refers to the next significant digit
-      (as in $1.2 \times 100 = 120$).
-    
-    * In Literary Chinese you might see 一百又二 or 一百有二,
-      "one hundred and two", but the "and" is not necessary.
-      Thus 一百二 or 百二 means~102 rather than~120.
-      This is preserved in modern Japanese.
-    
-    ====
-
+* 一百二： one hundred .[and] two \+
+  The italicised .[and] has been supplied by me as the translator,
+  and is noteworthy because:
+  ====
+  * In modern Chinese, you must say 一百零二,
+    "one hundred oh two", to mean~102.
+    If you just say 一百二 or 百二, this means~120;
+    the~二 refers to the next significant digit
+    (as in $1.2 \times 100 = 120$).
+  
+  * In Literary Chinese you might see 一百又二 or 一百有二,
+    "one hundred and two", but the "and" is not necessary.
+    Thus 一百二 or 百二 means~102 rather than~120.
+    This is preserved in modern Japanese.
+  ====
 ======
 
 <<
@@ -445,29 +425,21 @@ $$
   that is .[we] obtain .[the] height of .[the] island.
 >>
 ====
-* 實：
-    dividend;
-    \or numerator
+* 實： dividend; \or numerator
 
-* 間：
-    separation \+
-      間，去聲，
-      \C kaan3, \M ji(a\)n
+* 間： separation \+
+  間，去聲， \C kaan3, \M ji(a\)n
 
-* 相多：
-    mutual excess;
-    \or difference \+
-    It is not immediately obvious, but "mutual excess" refers to
-    the difference between the backward walking distances from the two posts.
+* 相多： mutual excess; \or difference \+
+  It is not immediately obvious, but "mutual excess" refers to
+  the difference between the backward walking distances from the two posts.
 
-* 法：
-    divisor;
-    \or denominator \+
-    $$
-      \frac{\text{實}}{\text{法}} = \frac{\textq{dividend}}{\textq{divisor}}
-    $$
-    實 and 法 are very much mathematical jargon terms of Literary Chinese.
-    In no other context do they mean "dividend" and "divisor".
+* 法： divisor; \or denominator \+
+  $$
+    \frac{\text{實}}{\text{法}} = \frac{\textq{dividend}}{\textq{divisor}}
+  $$
+  實 and 法 are very much mathematical jargon terms of Literary Chinese.
+  In no other context do they mean "dividend" and "divisor".
 
 * In modern notation,
   $$
@@ -500,8 +472,8 @@ $$
       &= 4 \unit{miles} + 55 \unit{paces}.
     \end{aligned}
   $$
-
 ====
+
 <<
   求前表去島遠近者：以前表卻行乘表間爲實；相多爲法。除之，得島去表里數。
 ||
@@ -514,9 +486,7 @@ $$
     .[that the] island .[is] separated from .[the] post.
 >>
 ====
-* 遠近：
-    distance;
-    \lit far-closeness
+* 遠近： distance; \lit far-closeness
 
 * In modern notation,
   $$
@@ -544,7 +514,6 @@ $$
       &= 102 \unit{miles} + 150 \unit{paces}.
     \end{aligned}
   $$
-
 ====
 
 
@@ -994,10 +963,7 @@ The punctuation inserted in this section is my own.
   [g/$OB$ .[is] equal with both $CD$ .[and] $FG$/].
 >>
 ====
-* 俱：
-    both;
-    \lit all
-
+* 俱： both; \lit all
 ====
 
 ||||{centred-block}
@@ -1175,11 +1141,7 @@ The punctuation inserted in this section is my own.
   [r/.[the] shape $AOF$/].
 >>
 ====
-* 同式：
-    similar;
-    \lit same form;
-    \or same style
-
+* 同式： similar; \lit same form; \or same style
 ====
 
 ||||{centred-block}
@@ -1358,40 +1320,33 @@ The punctuation inserted in this section is my own.
 >>
 
 ====
-* 句：
-    minor cathetus;
-    \or shorter leg (of a right-angled triangle) \+
-    Variant of 勾. \+
-    A [cathetus] or leg is a non-hypotenuse side of a right-angled triangle.
-    
-    @@[cathetus]
-      https://en.wikipedia.org/wiki/Cathetus
-    @@
+* 句： minor cathetus; \or shorter leg (of a right-angled triangle) \+
+  Variant of 勾. \+
+  A [cathetus] or leg is a non-hypotenuse side of a right-angled triangle.
+  
+  @@[cathetus]
+    https://en.wikipedia.org/wiki/Cathetus
+  @@
 
-* 股：
-    major cathetus;
-    \or longer leg (of a right-angled triangle) \+
-    Surveying the sea island from distances much greater than its height,
-    the horizontal lengths will be much greater than
-    the vertical lengths.
-    Thus the relevant horizontal segments are referred to as major catheti~(股)
-    and the relevant vertical segments as minor catheti~(句).
+* 股： major cathetus; \or longer leg (of a right-angled triangle) \+
+  Surveying the sea island from distances much greater than its height,
+  the horizontal lengths will be much greater than
+  the vertical lengths.
+  Thus the relevant horizontal segments are referred to as major catheti~(股)
+  and the relevant vertical segments as minor catheti~(句).
 
-* 較：
-    (horizontal) chariot-beam \+
-      較，入聲，音覺，
-      \C kok8, \M ji(a\)o \+
-    If I understand [the entry in 《康熙字典》][較] correctly,
-    較 are horizontal beams of a chariot which stick out like horns,
-    above 輢 (the wooden vertical side boards)
-    and above 軾 (which are the horizontal handrails for standing passengers).
-    So 辛壬爲股較 is a very literary way of saying
-    "$HI$ sticks out horizontally" (from $FGI$).
-    
-    @@[較]
-      https://ctext.org/kangxi-zidian/159/6#n352070
-    @@
-
+* 較： (horizontal) chariot-beam \+
+  較，入聲，音覺， \C kok8, \M ji(a\)o \+
+  If I understand [the entry in 《康熙字典》][較] correctly,
+  較 are horizontal beams of a chariot which stick out like horns,
+  above 輢 (the wooden vertical side boards)
+  and above 軾 (which are the horizontal handrails for standing passengers).
+  So 辛壬爲股較 is a very literary way of saying
+  "$HI$ sticks out horizontally" (from $FGI$).
+  
+  @@[較]
+    https://ctext.org/kangxi-zidian/159/6#n352070
+  @@
 ====
 
 ||||{centred-block}
@@ -1580,7 +1535,6 @@ The punctuation inserted in this section is my own.
       \colv{AO} &= \frac{\colr{FG} \cdot \colg{FC}}{\colb{HI}}
     \end{aligned}
   $$
-
 ====
 
 ||||{centred-block}

@@ -86,6 +86,7 @@ the reputed author \sun-tzu ((孫子)), "Master~Sun",
 is not the same [\sun-tzu] [孫子] who wrote [ _The Art of War_ ][兵法]
 (though the characters are the same).
 ----
+
 @@[算經]
   https://en.wikipedia.org/wiki/Sunzi_Suanjing
 @@
@@ -110,6 +111,7 @@ Apparently this has been done before by Ang \&~Lam
 but I have **not** read that translation,
 and I probably never will because it is behind a paywall.
 ----
+
 @@[ang lam]
   https://books.google.com.au/books/about/Fleeting_Footsteps.html\
     ?id=fGYmpWE5UZgC
@@ -121,6 +123,7 @@ I have finished a [manuscript] for the entire translation,
 but it will probably take until the end of~2020
 to revise and type up all of it up in web (HTML) format.
 ----
+
 @@[manuscript]
   \#translation-manuscript
 @@
@@ -144,6 +147,7 @@ with slight differences in wording between them:
 **Unless noted otherwise, I follow the text from [Version~D][d].**
 The punctuation is based on [Version~C][c], but with changes to my liking.
 ----
+
 @@[a]
   https://archive.org/details/02094034.cn
 @@

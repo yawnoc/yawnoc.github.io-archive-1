@@ -49,6 +49,7 @@ has drag proportional to the *square* of speed,
 for which the equations of motion are nonlinear and
 analytic solutions cannot be obtained.
 ----
+
 @@[lambert-w]
   http://mathworld.wolfram.com/LambertW-Function.html
 @@
@@ -95,6 +96,7 @@ for the optimal launch angle when air resistance is relatively weak.
 ----
 __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
 ----
+
 @@[manuscript]
   /manuscripts/resistance.pdf
 @@
@@ -596,6 +598,7 @@ $$
 ----
 __Code:__  [\[GNU Octave\] Projectile motion numerics (GitHub)][numerics-repo]
 ----
+
 @@[numerics-repo]
   https://github.com/yawnoc/projectile-motion-numerics/
 @@

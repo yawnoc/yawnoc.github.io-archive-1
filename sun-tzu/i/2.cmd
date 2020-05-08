@@ -61,20 +61,14 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
   beginneth .[it] from millet.
 >>
 ====
-* 稱：
-    measuring of weight;
-    \or weighing \+
-      稱， \C 去聲~[^ch']ing3 (\pm [_ts']ing3), \M 平聲~ch(e-)ng
+* 稱： measuring of weight; \or weighing \+
+  稱， \C 去聲~[^ch']ing3 (\pm [_ts']ing3), \M 平聲~ch(e-)ng
 
-* 起：
-    beginneth from;
-    \lit ariseth from
+* 起： beginneth from; \lit ariseth from
 
-* 黍：
-    \lit millet \+
-      黍，音暑， \C sh(u")2, \M sh(uv) \+
-    Shu ((黍)).
-
+* 黍： \lit millet \+
+  黍，音暑， \C sh(u")2, \M sh(uv) \+
+  Shu ((黍)).
 ====
 
 <<
@@ -93,78 +87,71 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
   four quarters make one stone.
 >>
 ====
-* 絫：
-    pile \+
-      絫，魯水切， \C l\_(u")5, \M l(ev)i \+
-    Lei ((絫)).
-    Difficult to render because Chinese dictionaries
-    simply define it as ten shu ((黍)).
-    I have taken "pile" from the interchangeable 累, "to accumulate/pile/heap".
+* 絫： pile \+
+  絫，魯水切， \C l\_(u")5, \M l(ev)i \+
+  Lei ((絫)).
+  Difficult to render because Chinese dictionaries
+  simply define it as ten shu ((黍)).
+  I have taken "pile" from the interchangeable 累, "to accumulate/pile/heap".
 
-* 銖：
-    dram \+
-      銖， \C ch(u")1, \M zh(u-) \+
-    Chu ((銖)), of the order two grams.
-    According to [Williams' _Tonic Dictionary_] [銖],
-    "a small ancient silver coin",
-    so I have chosen "dram" after the eponymous
-    [ancient Greek coin and weight] [dram],
-    which is of similar magnitude.
-    
-    @@[銖]
-      https://archive.org/details/tonicdictionaryo00will/page/30/mode/1up
-    @@
-    @@[dram]
-      https://en.wikipedia.org/wiki/Dram_(unit)
-    @@
+* 銖： dram \+
+  銖， \C ch(u")1, \M zh(u-) \+
+  Chu ((銖)), of the order two grams.
+  According to [Williams' _Tonic Dictionary_] [銖],
+  "a small ancient silver coin",
+  so I have chosen "dram" after the eponymous
+  [ancient Greek coin and weight] [dram],
+  which is of similar magnitude.
+  
+  @@[銖]
+    https://archive.org/details/tonicdictionaryo00will/page/30/mode/1up
+  @@
+  @@[dram]
+    https://en.wikipedia.org/wiki/Dram_(unit)
+  @@
 
-* 兩：
-    [tael] \+
-    Liang ((兩)).
-    One sixteenth of a catty,
-    except in Mainland China where it has been metricised to a tenth,
-    thus ruining the phrase 半斤八兩, "half .[a] catty .[is] eight taels".
-    
-    @@[tael]
-      https://en.wikipedia.org/wiki/Tael
-    @@
+* 兩： [tael] \+
+  Liang ((兩)).
+  One sixteenth of a catty,
+  except in Mainland China where it has been metricised to a tenth,
+  thus ruining the phrase 半斤八兩, "half .[a] catty .[is] eight taels".
+  
+  @@[tael]
+    https://en.wikipedia.org/wiki/Tael
+  @@
 
-* 斤：
-    [catty] \+
-    Kin ((斤)).
-    Of the order one pound, or half a kilogram.
-    
-    @@[catty]
-      https://en.wikipedia.org/wiki/Catty
-    @@
+* 斤： [catty] \+
+  Kin ((斤)).
+  Of the order one pound, or half a kilogram.
+  
+  @@[catty]
+    https://en.wikipedia.org/wiki/Catty
+  @@
 
-* 鈞：
-    quarter \+
-      鈞，音均， \C kwan1, \M j(u-)n \+
-    Ki(u")n ((鈞)).
-    A quarter of the shih ((石)) or "stone" below,
-    and of similar weight to the [imperial quarter] (28~pounds).
-    Difficult to render otherwise
-    since Chinese dictionaries simply define it as thirty kin ((斤))
-    
-    @@[imperial quarter]
-      https://en.wikipedia.org/wiki/Quarter_(unit)#Weight
-    @@
+* 鈞： quarter \+
+  鈞，音均， \C kwan1, \M j(u-)n \+
+  Ki(u")n ((鈞)).
+  A quarter of the shih ((石)) or "stone" below,
+  and of similar weight to the [imperial quarter] (28~pounds).
+  Difficult to render otherwise
+  since Chinese dictionaries simply define it as thirty kin ((斤))
+  
+  @@[imperial quarter]
+    https://en.wikipedia.org/wiki/Quarter_(unit)#Weight
+  @@
 
 * \c[52059] erroneously has 鉤 for 鈞.
 
-* 石：
-    \lit stone \+
-    Shih ((石)).
-    This is a literal rendering.
-    The Chinese stone shih ((石)) is of the order 120~pounds,
-    making it closer to the [imperial hundredweight]
-    than the *much* lighter imperial stone (14~pounds).
-    
-    @@[imperial hundredweight]
-      https://en.wikipedia.org/wiki/Hundredweight
-    @@
-
+* 石： \lit stone \+
+  Shih ((石)).
+  This is a literal rendering.
+  The Chinese stone shih ((石)) is of the order 120~pounds,
+  making it closer to the [imperial hundredweight]
+  than the *much* lighter imperial stone (14~pounds).
+  
+  @@[imperial hundredweight]
+    https://en.wikipedia.org/wiki/Hundredweight
+  @@
 ====
 
 

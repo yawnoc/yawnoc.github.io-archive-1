@@ -88,13 +88,10 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   character for character.
   This is a very common rhetorical device in Literary Chinese.
 
-* 經緯：
-    .[the] warp .[and] woof;
-    \or .[the] meridians .[and] parallels \+
-    ["Warp and woof"](https://en.wiktionary.org/wiki/warp_and_woof)
-    is a good translation, both literally (longways and sideways threads)
-    and figuratively (fundamental structure).
-
+* 經緯： .[the] warp .[and] woof; \or .[the] meridians .[and] parallels \+
+  ["Warp and woof"](https://en.wiktionary.org/wiki/warp_and_woof)
+  is a good translation, both literally (longways and sideways threads)
+  and figuratively (fundamental structure).
 ====
 
 <<
@@ -104,21 +101,14 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[and the] father .[and] mother of Dark .[and] Light;
 >>
 ====
-* 五常：
-    .[the] Five Everlasting Virtues \+
-    [仁義禮智信](https://ctext.org/three-character-classic#n90581),
-    i.e.~Humanity, Righteousness, Propriety (or Rites), Wisdom and Trust.
+* 五常： .[the] Five Everlasting Virtues \+
+  [仁義禮智信](https://ctext.org/three-character-classic#n90581),
+  i.e.~Humanity, Righteousness, Propriety (or Rites), Wisdom and Trust.
 
-* 本末：
-    .[the] beginning .[and] end;
-    \or .[the] base .[and] tip
+* 本末： .[the] beginning .[and] end; \or .[the] base .[and] tip
 
-* 陰陽：
-    Dark .[and] Light;
-    \or Shade .[and] Sun;
-    \or Female .[and] Male \+
-    ["Yin and Yang"](https://en.wikipedia.org/wiki/Yin_and_yang).
-
+* 陰陽： Dark .[and] Light; \or Shade .[and] Sun; \or Female .[and] Male \+
+  ["Yin and Yang"](https://en.wikipedia.org/wiki/Yin_and_yang).
 ====
 
 <<
@@ -130,13 +120,11 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[the] Three Luminaries;
 >>
 ====
-* 三光：
-    .[the] Three Luminaries \+
-    [日月星](https://ctext.org/three-character-classic#n90576),
-    i.e.~the sun, the moon and the stars.
+* 三光： .[the] Three Luminaries \+
+  [日月星](https://ctext.org/three-character-classic#n90576),
+  i.e.~the sun, the moon and the stars.
 
 * \c[52056] erroneously has 裹 for 裏.
-
 ====
 
 <<
@@ -146,16 +134,12 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[and the] finishing .[and] starting of .[the] Four Seasons;
 >>
 ====
-* 五行：
-    .[the] Five Elements \+
-    [金木水火土](https://en.wikipedia.org/wiki/Wu_Xing),
-    i.e.~metal, tree, water, fire and earth.
-    Perhaps better rendered as ".[the] Five Phases".
+* 五行： .[the] Five Elements \+
+  [金木水火土](https://en.wikipedia.org/wiki/Wu_Xing),
+  i.e.~metal, tree, water, fire and earth.
+  Perhaps better rendered as ".[the] Five Phases".
 
-* 準：平也；又均也；
-    evenness;
-    \or levelness
-
+* 準：平也；又均也； evenness; \or levelness
 ====
 
 <<
@@ -165,16 +149,12 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[and the] principle .[and] law of .[the] Six Arts.
 >>
 ====
-* 萬物：
-    everything;
-    \lit .[the] myriad things
+* 萬物： everything; \lit .[the] myriad things
 
-* 六藝：
-    .[the] Six Arts \+
-    [禮樂射御書數](https://en.wikipedia.org/wiki/Six_Arts),
-    i.e.~Propriety (or Rites), Music, Archery,
-    (Chariot) Driving, Calligraphy and Mathematics.
-
+* 六藝： .[the] Six Arts \+
+  [禮樂射御書數](https://en.wikipedia.org/wiki/Six_Arts),
+  i.e.~Propriety (or Rites), Music, Archery,
+  (Chariot) Driving, Calligraphy and Mathematics.
 ====
 
 <<
@@ -184,27 +164,20 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[and] inspecteth .[the] falling .[and] rising of .[the] Two Breaths;
 >>
 ====
-* 稽：考也；
-    examineth
+* 稽：考也； examineth
 
-* 群：
-    amassed;
-    \lit crowded
+* 群： amassed; \lit crowded
 
-* 倫：
-    kinds;
-    \or types
+* 倫： kinds; \or types
 
-* 二氣：
-    .[the] Two Breaths \+
-    陰氣 and 陽氣.
-    Recall 陰 and 陽 are
-    "Dark .[and] Light", "Shade .[and] Sun", or "Female .[and] Male".
-    [氣](https://en.wikipedia.org/wiki/Qi)
-    is usually rendered as "life force",
-    romanised as Hei ([Cantonese](/cantonese/conway-romanisation)),
-    Ch'i (Wade--Giles) or Q(i\) (Pinyin).
-
+* 二氣： .[the] Two Breaths \+
+  陰氣 and 陽氣.
+  Recall 陰 and 陽 are
+  "Dark .[and] Light", "Shade .[and] Sun", or "Female .[and] Male".
+  [氣](https://en.wikipedia.org/wiki/Qi)
+  is usually rendered as "life force",
+  romanised as Hei ([Cantonese](/cantonese/conway-romanisation)),
+  Ch'i (Wade--Giles) or Q(i\) (Pinyin).
 ====
 
 <<
@@ -214,16 +187,11 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[and] measureth .[the] disparity .[and] sameness of far .[and] near;
 >>
 ====
-* 寒暑：
-    winter .[and] summer;
-    \lit cold .[and] heat
+* 寒暑： winter .[and] summer; \lit cold .[and] heat
 
-* 迭：更也；
-    alternating
+* 迭：更也； alternating
 
-* 步：
-    measureth (in steps)
-
+* 步： measureth (in steps)
 ====
 
 <<
@@ -235,32 +203,24 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
     .[the] meridians .[and] parallels of Geography;
 >>
 ====
-* 天道：
-    Physics;
-    \lit .[the] laws of Nature;
-    \or .[the] way of Heaven
+* 天道： Physics;
+  \lit .[the] laws of Nature;
+  \or .[the] way of Heaven
 
-* 兆基：
-    foundations \+
-    According to 《國語辭典》 this means 開創基業,
-    roughly "opening/beginning/foundation".
+* 兆基： foundations \+
+  According to 《國語辭典》 this means 開創基業,
+  roughly "opening/beginning/foundation".
 
-* 地理：
-    Geography;
-    \lit .[the] science of Earth
+* 地理： Geography; \lit .[the] science of Earth
 
-* 從橫：
-    meridians .[and] parallels (of latitude) \+
-    Variant of 縱橫.
-    Here 從橫 is referring to "things of broad scope"
-    or "the grand scheme of things", in contrast to 精微
-    (intricacies .[and] minutiae) in the previous line,
-    which it is parallel with.
+* 從橫： meridians .[and] parallels (of latitude) \+
+  Variant of 縱橫.
+  Here 從橫 is referring to "things of broad scope"
+  or "the grand scheme of things", in contrast to 精微
+  (intricacies .[and] minutiae) in the previous line,
+  which it is parallel with.
 
-* 長短：
-    length;
-    \lit length .[and] shortness
-
+* 長短： length; \lit length .[and] shortness
 ====
 
 <<
@@ -273,29 +233,19 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[and] investigateth .[the] sense of life.
 >>
 ====
-* 祇：地神；
-    earth gods \+
-      祇，音岐，
-      \C k'ei4, \M q(i/)
+* 祇：地神； earth gods \+
+  祇，音岐， \C k'ei4, \M q(i/)
 
-* 極：
-    examineth (.[unto] extremity) \+
-    All of 采, 極, 窮 and 究
-    mean "investigate", and in particular the last three mean
-    "investigate to the utmost extent".
+* 極： examineth (.[unto] extremity) \+
+  All of 采, 極, 窮 and 究
+  mean "investigate", and in particular the last three mean
+  "investigate to the utmost extent".
 
-* 符驗：
-    corroboration;
-    \lit corroboration .[by] talisman
+* 符驗： corroboration; \lit corroboration .[by] talisman
 
-* 道德：
-    morality;
-    \or ethics
+* 道德： morality; \or ethics
 
-* 理：
-    reasoning;
-    \or logic
-
+* 理： reasoning; \or logic
 ====
 
 <<
@@ -308,16 +258,12 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   agreeth upon .[the] rule .[and the] rod,
 >>
 ====
-* 規矩：
-    .[the] rules;
-    \lit the compass .[and] the set square
+* 規矩： .[the] rules; \lit the compass .[and] the set square
 
-* 尺丈：
-    .[the] rule .[and the] rod \+
-    Units of length, see [Vol.~I \P1] ["i 1"].
-    One rule, chih ((尺)), is of the order one Imperial foot,
-    and one rod, chang ((丈)), is equal to ten rules.
-
+* 尺丈： .[the] rule .[and the] rod \+
+  Units of length, see [Vol.~I \P1] ["i 1"].
+  One rule, chih ((尺)), is of the order one Imperial foot,
+  and one rod, chang ((丈)), is equal to ten rules.
 ====
 
 <<
@@ -330,23 +276,18 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[and] splitteth millets .[and] piles.
 >>
 ====
-* 重輕：
-    heavy .[and] light;
-    \or important .[and] unimportant
+* 重輕： heavy .[and] light; \or important .[and] unimportant
 
-* 毫釐：
-    mils .[and] cents \+
-    Small units of length (see [Vol.~I \P1] ["i 1"]),
-    respectively a thousandth and a hundredth
-    of the Chinese inch, ts'un ((寸)).
+* 毫釐： mils .[and] cents \+
+  Small units of length (see [Vol.~I \P1] ["i 1"]),
+  respectively a thousandth and a hundredth
+  of the Chinese inch, ts'un ((寸)).
 
-* 黍絫：
-    millets .[and] piles \+
-    Small units of weight (see [Vol.~I \P2] ["i 2"]),
-    respectively a hundredth and a tenth
-    of the Chinese dram, chu ((銖)),
-    which is of the order one gram.
-
+* 黍絫： millets .[and] piles \+
+  Small units of weight (see [Vol.~I \P2] ["i 2"]),
+  respectively a hundredth and a tenth
+  of the Chinese dram, chu ((銖)),
+  which is of the order one gram.
 ====
 
 <<
@@ -356,16 +297,12 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[and is] applied unto .[the] Eight Extremities without bound.
 >>
 ====
-* 億：
-    .[an] hundred million;
-    \lit .[a] square-myriad
+* 億： .[an] hundred million; \lit .[a] square-myriad
 
-* 八極：
-    .[the] Eight Extremities \+
-    Probably the four cardinal directions
-    plus the four intercardinal directions.
-    Sometimes called the "principal winds" in English.
-
+* 八極： .[the] Eight Extremities \+
+  Probably the four cardinal directions
+  plus the four intercardinal directions.
+  Sometimes called the "principal winds" in English.
 ====
 
 <<
@@ -375,19 +312,12 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[yet] gathering it, .[it is] not beyond grasp.
 >>
 ====
-* 勝：
-    wholly;
-    \or completely \+
-      勝，平聲，
-      \C [^sh]ing1 (\pm [_s]ing1), \M sh(e-)ng (\gr sh(e\)ng)
+* 勝： wholly; \or completely \+
+  勝，平聲， \C [^sh]ing1 (\pm [_s]ing1), \M sh(e-)ng (\gr sh(e\)ng)
 
-* 斂：聚也；
-    gathering
+* 斂：聚也； gathering
 
-* 盈：過曰盈；
-    beyond;
-    \lit in excess of
-
+* 盈：過曰盈； beyond; \lit in excess of
 ====
 
 <<
@@ -397,11 +327,8 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[but] those who turn .[their] backs to it .[shall be] poor and destitute;
 >>
 ====
-* 窶：貧也；
-    destitute \+
-      窶，音巨，
-      \C k\_(u")6, \M j(u\)
-
+* 窶：貧也； destitute \+
+  窶，音巨， \C k\_(u")6, \M j(u\)
 ====
 
 <<
@@ -414,23 +341,18 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
     .[shall find it] hard to .[be] proficient .[in it].
 >>
 ====
-* 沖：童也；
-    children
+* 沖：童也； children
 
-* 意閉：
-    close-minded \+
-    This is the literal rendering;
-    perhaps "narrow-minded" sounds more natural.
-    I have translated both 心 and 意 as
-    <span class="no-wrapping">"-minded"</span>.
+* 意閉： close-minded \+
+  This is the literal rendering;
+  perhaps "narrow-minded" sounds more natural.
+  I have translated both 心 and 意 as
+  <span class="no-wrapping">"-minded"</span>.
 
-* 皓：光也；白也；
-    bright white \+
-      皓，音號，
-      \C hou6, \M h(a\)o
+* 皓：光也；白也； bright white \+
+  皓，音號， \C hou6, \M h(a\)o
 
 * Here the parallel pairing of lines stops.
-
 ====
 
 
@@ -442,25 +364,20 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[and put one's] will into that focused upon.
 >>
 ====
-* 量：
-    gauge; or measure \+
-      量，去聲，
-      \C l(oe)ng6, \M li(a\)ng \+
-    量 is a funny word.
-    When it is the verb "measure/gauge" applied to physical measurements
-      (e.g.~volume of grain),
-      it is read in 平聲 (l(oe)ng4/li(a/)ng),
-    but when applied to figurative or not-so-physical quantities
-      (e.g.~量力, "gauging strength/ability", or 量入, "gauging revenue"),
-      it is read in 去聲 (l(oe)ng6/li(a\)ng).
-    And when it is the noun "amount",
-      also 去聲 (l(oe)ng6/li(a\)ng).
+* 量： gauge; or measure \+
+  量，去聲， \C l(oe)ng6, \M li(a\)ng \+
+  量 is a funny word.
+  When it is the verb "measure/gauge" applied to physical measurements
+    (e.g.~volume of grain),
+    it is read in 平聲 (l(oe)ng4/li(a/)ng),
+  but when applied to figurative or not-so-physical quantities
+    (e.g.~量力, "gauging strength/ability", or 量入, "gauging revenue"),
+    it is read in 去聲 (l(oe)ng6/li(a\)ng).
+  And when it is the noun "amount",
+    also 去聲 (l(oe)ng6/li(a\)ng).
 
-* 揆：度也；
-    measure \+
-      揆，音葵，
-      \C k'wai4, \M ku(i/)
-
+* 揆：度也； measure \+
+  揆，音葵， \C k'wai4, \M ku(i/)
 ====
 
 <<

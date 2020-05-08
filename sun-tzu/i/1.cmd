@@ -63,24 +63,18 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
   .[the] silk spat of the silkworm be floss.
 >>
 ====
-* 度：
-    measuring of length \+
-      度，入聲，
-      \C tok9, \M duo\ (\gr du(o/))
+* 度： measuring of length \+
+  度，入聲， \C tok9, \M duo\ (\gr du(o/))
 
-* 起：
-    beginneth from;
-    \lit ariseth from
+* 起： beginneth from; \lit ariseth from
 
-* 忽：
-    floss \+
-    Hu ((忽)), a hundred-thousandth of the Chinese inch, ts'un ((寸)).
-    [K'ang-hi's Dictionary](https://ctext.org/kangxi-zidian/61/4#n326385),
-    quoting 《劉德曰》, "Liu T(e^)'s sayings",
-    has 忽，蜘蛛網也, "floss, .[a] spider's web".
+* 忽： floss \+
+  Hu ((忽)), a hundred-thousandth of the Chinese inch, ts'un ((寸)).
+  [K'ang-hi's Dictionary](https://ctext.org/kangxi-zidian/61/4#n326385),
+  quoting 《劉德曰》, "Liu T(e^)'s sayings",
+  has 忽，蜘蛛網也, "floss, .[a] spider's web".
 
 * \c[52058] has 蠶所生，吐絲為忽.
-
 ====
 
 <<
@@ -103,79 +97,63 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
   ten rods make one draw.
 >>
 ====
-* 絲：
-    (silk) thread \+
-    Ss(uu) ((絲)), a ten-thousandth of the Chinese inch, ts'un ((寸)).
+* 絲： (silk) thread \+
+  Ss(uu) ((絲)), a ten-thousandth of the Chinese inch, ts'un ((寸)).
 
-* 毫：
-    mil;
-    \or thou;
-    \lit fine hair \+
-    Hao ((毫)), a thousandth of the Chinese inch, ts'un ((寸)).
-    Similar to the imperial [mil or thou].
-    
-    @@[mil or thou]
-      https://en.wikipedia.org/wiki/Thousandth_of_an_inch
-    @@
+* 毫： mil; \or thou; \lit fine hair \+
+  Hao ((毫)), a thousandth of the Chinese inch, ts'un ((寸)).
+  Similar to the imperial [mil or thou].
+  
+  @@[mil or thou]
+    https://en.wikipedia.org/wiki/Thousandth_of_an_inch
+  @@
 
-* 釐：
-    cent \+
-    Li ((釐)), a hundredth of the Chinese inch, ts'un ((寸)).
+* 釐： cent \+
+  Li ((釐)), a hundredth of the Chinese inch, ts'un ((寸)).
 
-* 分：
-    tenth \+
-    F(e^)n ((分)), a tenth of the Chinese inch, ts'un ((寸)).
+* 分： tenth \+
+  F(e^)n ((分)), a tenth of the Chinese inch, ts'un ((寸)).
 
-* 寸：
-    inch \+
-    Ts'un ((寸)), the [ __Chinese inch__ ] [寸].
-    Of the same order of magnitude as the imperial inch,
-    and used figuratively as the inch is in English
-    to denote a small distance,
-    so I am happy to simply render it as "inch".
-    
-    @@[寸]
-      https://en.wikipedia.org/wiki/Cun_(unit)
-    @@
+* 寸： inch \+
+  Ts'un ((寸)), the [ __Chinese inch__ ] [寸].
+  Of the same order of magnitude as the imperial inch,
+  and used figuratively as the inch is in English
+  to denote a small distance,
+  so I am happy to simply render it as "inch".
+  
+  @@[寸]
+    https://en.wikipedia.org/wiki/Cun_(unit)
+  @@
 
-* 尺：
-    rule;
-    \or ruler;
-    \or covid \+
-    Ch'ih ((尺)), ten Chinese inches.
-    This is of the order one foot,
-    but I have not rendered this as "foot"
-    because there is no such connotation.
-    Some translate this as "cubit",
-    but a cubit is more like one and a half feet, or even two.
-    The term "covid" appears to have been used in colonial Hong Kong,
-    but I can't seem to find much about it on the internet...
-    thanks a lot, WHO.
+* 尺： rule; \or ruler; \or covid \+
+  Ch'ih ((尺)), ten Chinese inches.
+  This is of the order one foot,
+  but I have not rendered this as "foot"
+  because there is no such connotation.
+  Some translate this as "cubit",
+  but a cubit is more like one and a half feet, or even two.
+  The term "covid" appears to have been used in colonial Hong Kong,
+  but I can't seem to find much about it on the internet...
+  thanks a lot, WHO.
 
-* 丈：
-    rod;
-    \or staff;
-    \or measure \+
-    Chang ((丈)), ten rules.
-    Difficult to render because Chinese dictionaries
-    simply define it as ten rules.
-    More generally its meanings are "elder male",
-    from the interchangeable 杖 or "walking stick",
-    and "to measure/survey land".
-    I have chosen "rod" for its few letters \& monosyllabicity,
-    and because of the [imperial rod],
-    of the same order of magnitude and also related to surveying.
-    Also Moses had one.
-    
-    @@[imperial rod]
-      https://en.wikipedia.org/wiki/Rod_(unit)
-    @@
+* 丈： rod; \or staff; \or measure \+
+  Chang ((丈)), ten rules.
+  Difficult to render because Chinese dictionaries
+  simply define it as ten rules.
+  More generally its meanings are "elder male",
+  from the interchangeable 杖 or "walking stick",
+  and "to measure/survey land".
+  I have chosen "rod" for its few letters \& monosyllabicity,
+  and because of the [imperial rod],
+  of the same order of magnitude and also related to surveying.
+  Also Moses had one.
+  
+  @@[imperial rod]
+    https://en.wikipedia.org/wiki/Rod_(unit)
+  @@
 
-* 引：
-    \lit draw;
-    \or pull \+
-    Yin ((引)), ten rods.
-
+* 引： \lit draw; \or pull \+
+  Yin ((引)), ten rods.
 ====
 
 <<
@@ -188,23 +166,18 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
   six rules make one pace.
 >>
 ====
-* 端：
-    \lit end \+
-    Tuan ((端)), fifty rules.
+* 端： \lit end \+
+  Tuan ((端)), fifty rules.
 
 * \b[146] erroneously has 五十引為一端.
 
-* 匹：
-    length \+
-    P'i ((匹)), forty rules.
-    This is the only unit rendering which I am unsatisfied with.
-    匹 is the classifier for cloth, 一匹布 being "one length of cloth".
+* 匹： length \+
+  P'i ((匹)), forty rules.
+  This is the only unit rendering which I am unsatisfied with.
+  匹 is the classifier for cloth, 一匹布 being "one length of cloth".
 
-* 步：
-    pace;
-    \or step \+
-    Pu ((步)), the Chinese pace, six rules.
-
+* 步： pace; \or step \+
+  Pu ((步)), the Chinese pace, six rules.
 ====
 
 <<
@@ -213,22 +186,19 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
   Two hundred .[and] forty paces make one acre.
 >>
 ====
-* 畝：
-    acre;
-    \lit field \+
-    This is area, what today would be called
-    240 **square** paces.
-    Classical Chinese mathematics did not have
-    a fully developed notion of dimensional analysis,
-    so 'square paces' were simply referred to as 'paces'.
-    While a mu ((畝)) is only about a fifth of an [imperial acre],
-    I have chosen to render it acre
-    because both have the etymological meaning "field".
-    
-    @@[imperial acre]
-      https://en.wikipedia.org/wiki/Acre
-    @@
-
+* 畝： acre; \lit field \+
+  This is area, what today would be called
+  240 **square** paces.
+  Classical Chinese mathematics did not have
+  a fully developed notion of dimensional analysis,
+  so 'square paces' were simply referred to as 'paces'.
+  While a mu ((畝)) is only about a fifth of an [imperial acre],
+  I have chosen to render it acre
+  because both have the etymological meaning "field".
+  
+  @@[imperial acre]
+    https://en.wikipedia.org/wiki/Acre
+  @@
 ====
 
 <<
@@ -237,18 +207,16 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
   Three hundred paces make one mile.
 >>
 ====
-* 里：
-    mile \+
-    The [Chinese mile] [里], li ((里)), of the order half a kilometre.
-    While this is much shorter than the imperial mile,
-    it is figuratively used as the mile is in English
-    to denote a large distance,
-    so I am happy to simply render it as "mile".
-    
-    @@[里]
-      https://en.wikipedia.org/wiki/Li_(unit)
-    @@
-
+* 里： mile \+
+  The [Chinese mile] [里], li ((里)), of the order half a kilometre.
+  While this is much shorter than the imperial mile,
+  it is figuratively used as the mile is in English
+  to denote a large distance,
+  so I am happy to simply render it as "mile".
+  
+  @@[里]
+    https://en.wikipedia.org/wiki/Li_(unit)
+  @@
 ====
 
 
@@ -294,6 +262,7 @@ Thus 蠶吐絲為忽, ".[the] silk spat of the silkworm be floss",
 is an exaggeration of the thinness of silk.
 But my job is only to translate the text as it is, not to correct it.
 ----
+
 @@[UAF]
   https://www.uaf.edu/lars/qiviut/fine-fibers/
 @@
