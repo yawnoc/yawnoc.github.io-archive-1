@@ -45,7 +45,7 @@ Also known as _Haidao Suanjing_.
 ----
 《海島算經》, or [".[The] Sea Island Computational Classic"][sea island],
 is one of the [ten canon classics] of Chinese mathematics.
-Written by [Liu Hui ((劉徽))] [劉徽]
+Written by [Liu Huei ((劉徽))] [劉徽]
 of the [Three Kingdoms period] (220--280~AD),
 it consists of nine problems in the surveying of
 distant structures or landforms.

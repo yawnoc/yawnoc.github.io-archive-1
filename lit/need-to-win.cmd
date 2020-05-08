@@ -137,7 +137,7 @@ The Chinese source text is from Chinese Text Project:
 ====
 * 顏淵： Yen Y(u")an \+
     Confucius's [favourite disciple](https://en.wikipedia.org/wiki/Yan_Hui).
-    Also called Yen Hui ((顏回)).
+    Also called Yen Huei ((顏回)).
 
 * 仲尼： Chung-ni \+
     The [style name (or courtesy name)][字] of Confucius.
