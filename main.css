@@ -361,11 +361,12 @@ header {
 }
 
 nav {
-  background: #ffff66;
+  background: #ffffcc;
   border: 1px solid black;
   margin: 1em 0.5em;
 }
 header > nav {
+  background: #ffff66;
   border: none;
   border-bottom: 1px solid black;
   margin: 0;
