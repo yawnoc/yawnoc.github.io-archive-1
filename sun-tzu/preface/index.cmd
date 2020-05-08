@@ -470,6 +470,6 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
 
 
 \cite-this-page[%title-en][sun-tzu-preface][
-  ~~``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {Preface}''~~
+  ~~``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Preface}''~~
 ]
 

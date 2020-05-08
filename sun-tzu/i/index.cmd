@@ -94,6 +94,6 @@ and the headings I have allocated are **not** part of the original text.
 
 
 \cite-this-page[%title-en][sun-tzu-i][
-  ~~``{Sun}~{Tz{\uu}'s} {Computational} {Classic}: {Volume}~{I}''~~
+  ~~``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{I}''~~
 ]
 

@@ -330,6 +330,6 @@ edits and corrections I have made since they were scanned.
 
 
 \cite-this-page[%title-en][sun-tzu][
-  ~~``{Sun}~{Tz{\uu}'s} {Computational} {Classic}''~~
+  ~~``{Sun}~{Tz{\u u}'s} {Computational} {Classic}''~~
 ]
 
