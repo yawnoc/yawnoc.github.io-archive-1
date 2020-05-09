@@ -49,6 +49,21 @@
 ||||]
 
 
+----
+This paragraph hints at the way in which numerals are displayed
+in [rod calculus],
+a means of doing arithmetic computations using counting rods
+(eventually replaced by the [Chinese abacus]).
+----
+
+@@[rod calculus]
+  https://en.wikipedia.org/wiki/Rod_calculus
+@@
+@@[Chinese abacus]
+  https://en.wikipedia.org/wiki/Suanpan
+@@
+
+
 ##translation
   Translation
 ##
@@ -174,19 +189,9 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
 ##
 
 ----
-This paragraph refers to the way numerals are displayed in [rod calculus],
-a means of doing arithmetic computations using counting rods
-(though eventually this was replaced by the [Chinese abacus]).
-Since the paragraph is hardly a self-contained explanation,
-I give a brief introduction to rod calculus here.
+Since this paragraph is hardly a self-contained explanation of rod calculus,
+I give a brief introduction here.
 ----
-
-@@[rod calculus]
-  https://en.wikipedia.org/wiki/Rod_calculus
-@@
-@@[Chinese abacus]
-  https://en.wikipedia.org/wiki/Suanpan
-@@
 
 ----
 For each numeral (except zero which is denoted by a blank space)

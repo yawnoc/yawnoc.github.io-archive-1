@@ -45,6 +45,12 @@
 ||||]
 
 
+----
+This paragraph introduces a "long scale" for named powers of ten.
+Note that the [previous paragraph (\P3)] ["i 3"] uses a "short scale".
+----
+
+
 ##translation
   Translation
 ##

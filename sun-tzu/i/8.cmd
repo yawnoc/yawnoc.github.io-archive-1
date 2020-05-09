@@ -48,7 +48,7 @@
 ----
 This paragraph describes the algorithm for multiplying two integers
 represented using rod numerals.
-For a brief description of rod numberals,
+For a brief description of rod numerals,
 see [\P7 commentary](/sun-tzu/i/7#commentary).
 ----
 

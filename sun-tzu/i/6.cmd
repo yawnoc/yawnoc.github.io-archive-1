@@ -45,6 +45,12 @@
 ||||]
 
 
+----
+This paragraph gives the densities of some precious \& base metals,
+along with those of jade and an unspecific "stone/rock".
+----
+
+
 ##translation
   Translation
 ##

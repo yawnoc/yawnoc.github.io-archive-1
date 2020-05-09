@@ -45,6 +45,12 @@
 ||||]
 
 
+----
+This paragraph gives the approximate values $3$ for $\pi$
+and $7/5$ for $\sqrt{2}$.
+----
+
+
 ##translation
   Translation
 ##

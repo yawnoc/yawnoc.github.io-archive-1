@@ -45,6 +45,15 @@
 ||||]
 
 
+----
+This paragraph introduces Chinese capacity units
+and gives the conversion rates between them.
+A "short scale" is used for named powers of ten.
+Note that the [next paragraph (\P4)] ["i 4"] uses a "long scale".
+----
+
+
+
 ##translation
   Translation
 ##
