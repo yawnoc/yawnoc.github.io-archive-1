@@ -256,7 +256,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[12]. \+
 
 
 ##commentary
-  Conway's commentary
+  Commentary
 ##
 
 ----

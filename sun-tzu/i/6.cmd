@@ -113,7 +113,7 @@ Chinese source text: \a[6], \b[147], \c[52062], \d[13]. \+
 
 
 ##commentary
-  Conway's commentary
+  Commentary
 ##
 
 ----
