@@ -221,7 +221,7 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
 
 
 ##commentary
-  Commentary
+  Extended commentary
 ##
 
 ----

@@ -156,7 +156,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
 
 
 ##commentary
-  Commentary
+  Extended commentary
 ##
 
 ----

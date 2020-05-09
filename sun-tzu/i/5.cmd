@@ -96,7 +96,7 @@ Chinese source text: \a[6], \b[147], \c[52061], \d[13]. \+
 
 
 ##commentary
-  Commentary
+  Extended commentary
 ##
 
 ----
