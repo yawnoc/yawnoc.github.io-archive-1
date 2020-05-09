@@ -62,9 +62,9 @@ Chinese source text: \a[6], \b[147], \c[52061], \d[13]. \+
   .[The] circumference three: .[the] diameter one.
   .[The] square's .[edge] five: .[the] diagonal seven. \+
   Seeing .[the] diagonal .[and] seeking .[the] square's .[edge],
-    quintuple it, .[and make] seven .[as] one. \+
+    quintuple it, .[and take] seven .[as] one. \+
   Seeing .[the] square's .[edge] .[and] seeking .[the] diagonal,
-    septuple it, .[and make] five .[as] one.
+    septuple it, .[and take] five .[as] one.
 >>
 ====
 * 邪： diagonal; \lit incline \+
@@ -78,7 +78,7 @@ Chinese source text: \a[6], \b[147], \c[52061], \d[13]. \+
     Verb
   @@
 
-* 七而一： .[make] seven .[as] one \+
+* 七而一： .[take] seven .[as] one \+
   Divide by seven.
 ====
 
