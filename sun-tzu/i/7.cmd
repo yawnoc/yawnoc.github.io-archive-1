@@ -9,7 +9,6 @@
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
-    (+ res/maths-resources.cmd +)
   %css
     td {
       padding: 0;
@@ -40,9 +39,6 @@
     \nav-next: \P8 : ["i 8"]
   |}}
 |}}}}
-
-
-\noscript[]
 
 
 [||||

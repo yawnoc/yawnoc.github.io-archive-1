@@ -9,7 +9,6 @@
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
-    (+ res/maths-resources.cmd +)
 %%
 
 [[====
@@ -36,9 +35,6 @@
     \nav-next: \P9 : ["i 9"]
   |}}
 |}}}}
-
-
-\noscript[]
 
 
 [||||
