@@ -98,7 +98,7 @@ Chinese source text: \a[6], \b[147], \c[52062], \d[13]. \+
     \svg-style:text-declarations
   }
   \svg-style:maths-font-rulesets
-  circle, line {
+  line {
     \svg-style:stroke-declarations
     fill: none;
   }
