@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
+<title>"Sun Tzŭ's Computational Classic: Volume&nbsp;I" 《孫子算經・卷上》 ¶8 | Conway's site</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="/sun-tzu/" title="Sun Tzŭ's Computational Classic">Sun Tzŭ</a>
+</li>
+<li class="breadcrumb"><a href="/sun-tzu/i/" title="Volume&nbsp;I">I</a>
+</li>
+<li class="breadcrumb"><a title="You are viewing ¶8">¶8</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1><span lang="zh-Hant">《孫子算經・卷上》</span><br>
+"Sun Tzŭ's Computational Classic: Volume&nbsp;I"<br>
+¶8. Rod calculus: multiplication algorithm</h1>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/i/">↑ Volume&nbsp;I</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/i/7">← ¶7</a>
+</div>
+<div class="current">
+¶8
+</div>
+<div class="next">
+<a href="/sun-tzu/i/9">¶9 →</a>
+</div>
+</div>
+</nav>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-06-09<br>
+Last modified: 2020-05-xx
+</div>
+<p>
+This paragraph describes the algorithm for multiplying two integers
+represented using rod numerals.
+For a brief description of rod numberals,
+see <a href="/sun-tzu/i/7#commentary">¶7 commentary</a>.
+</p>
+<svg class="embedded-styles" aria-hidden="true"><style>
+text {
+font-family: sans-serif;
+text-anchor: middle;
+}
+@font-face {
+font-display: swap;
+font-family: "KaTeX_Math-Italic";
+src:
+url("/fonts/KaTeX_Math-Italic.woff2") format("woff2"),
+url("/fonts/KaTeX_Math-Italic.woff") format("woff"),
+url("/fonts/KaTeX_Math-Italic.ttf") format("truetype");
+}
+@font-face {
+font-display: swap;
+font-family: "KaTeX_Main-Regular";
+src:
+url("/fonts/KaTeX_Main-Regular.woff2") format("woff2"),
+url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
+url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+}
+.maths-italic {
+font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
+}
+.maths-regular {
+font-family: "KaTeX_Main-Regular";
+}
+line {
+stroke: black;
+vector-effect: non-scaling-stroke;
+fill: none;
+}
+polyline.points {
+fill: none;
+stroke: none;
+}
+.thick {
+stroke-width: 2;
+}
+</style></svg>
+<h2 id="translation"><a class="permalink" href="#translation" aria-label="Permalink"></a>Translation</h2>
+<p>
+Chinese source text: <a href="https://archive.org/details/02094034.cn/page/n6">Version&nbsp;A</a>, <a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=147">Version&nbsp;B</a>, <a href="https://ctext.org/sunzi-suan-jing#n52064">Version&nbsp;C</a>, <a href="https://ctext.org/library.pl?if=en&amp;file=86926&amp;page=14">Version&nbsp;D</a>.<br>
+Unless noted otherwise, I follow the text from Version&nbsp;D, <span lang="zh-Hant">《知不足齋叢書》本</span>.
+</p>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">凡乘之法，重置其位。</span>
+</div>
+<div class="english">
+<i class="translator-supplied">In the</i> method of all multiplication,
+put into <i class="translator-supplied">a</i> stack <i class="translator-supplied">the</i> places.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">重：</span> <i class="translator-supplied">a</i> stack<br>
+<span lang="zh-Hant">重，平聲，</span> <a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;ch'ung4, Mandarin:&nbsp;chóng
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">上下相觀，上位有十步至十，有百步至百，有千步至千。</span>
+</div>
+<div class="english">
+<i class="translator-supplied">That the</i> upper <i class="translator-supplied">and</i> lower <i class="translator-supplied">places</i> view each other:
+be there tens <i class="translator-supplied">in the</i> upper places, step unto <i class="translator-supplied">the</i> tens;
+be there hundreds, step unto <i class="translator-supplied">the</i> hundreds;
+be there thousands, step unto <i class="translator-supplied">the</i> thousands.
+</div>
+</div>
+<ul>
+<li><a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=147">Version&nbsp;B</a> has <span lang="zh-Hant">頭位</span> for <span lang="zh-Hant">上位</span>,
+both here and in many of the paragraphs to follow.
+</li>
+<li><span lang="zh-Hant">至：</span> unto; <span class="alternative-marker">or</span> till
+</li>
+<li>After putting the numbers into two separate rows,
+the text tells us to "step" (i.e.&nbsp;shift to the left) the lower number
+until its units digit is vertically in line
+with the top number's most significant digit.
+For example, if we wish to compute 1989 × 64,
+we first shift the lower number 64 to the left
+until its units digit, 4, is in line
+with the upper number's thousands digit, 1:
+<div class="centred-block">
+<svg class="fit-width" width="180px" viewBox="0.5 -0.5 5 3" role="img" focusable="false" aria-labelledby="rod-numerals-1989-times-64-title">
+<defs>
+<marker id="rod-vertical-1" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<line class="thick" x1="0" y1="-0.25" x2="0" y2="0.25"/>
+</marker>
+<marker id="rod-vertical-2" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="-0.05,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0.05,0" marker-end="url(#rod-vertical-1)"/>
+</marker>
+<marker id="rod-vertical-3" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="-0.1,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0.1,0" marker-end="url(#rod-vertical-1)"/>
+</marker>
+<marker id="rod-vertical-4" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="-0.15,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="-0.05,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0.05,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0.15,0" marker-end="url(#rod-vertical-1)"/>
+</marker>
+<marker id="rod-vertical-5" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="-0.2,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="-0.1,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0.1,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0.2,0" marker-end="url(#rod-vertical-1)"/>
+</marker>
+<marker id="rod-vertical-grouping-5" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,-0.25" marker-end="url(#rod-horizontal-1)"/>
+</marker>
+<marker id="rod-vertical-6" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-grouping-5)"/>
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-1)"/>
+</marker>
+<marker id="rod-vertical-7" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-grouping-5)"/>
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-2)"/>
+</marker>
+<marker id="rod-vertical-8" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-grouping-5)"/>
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-3)"/>
+</marker>
+<marker id="rod-vertical-9" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-grouping-5)"/>
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-4)"/>
+</marker>
+<marker id="rod-horizontal-1" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<line class="thick" x1="-0.25" y1="0" x2="0.25" y2="0"/>
+</marker>
+<marker id="rod-horizontal-2" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,-0.05" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0.05" marker-end="url(#rod-horizontal-1)"/>
+</marker>
+<marker id="rod-horizontal-3" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,-0.1" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0.1" marker-end="url(#rod-horizontal-1)"/>
+</marker>
+<marker id="rod-horizontal-4" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,-0.15" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,-0.05" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0.05" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0.15" marker-end="url(#rod-horizontal-1)"/>
+</marker>
+<marker id="rod-horizontal-5" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,-0.2" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,-0.1" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0.1" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0.2" marker-end="url(#rod-horizontal-1)"/>
+</marker>
+<marker id="rod-horizontal-grouping-5" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-1)"/>
+</marker>
+<marker id="rod-horizontal-6" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,0" marker-end="url(#rod-horizontal-grouping-5)"/>
+<polyline class="points" points="0,0.25" marker-end="url(#rod-horizontal-1)"/>
+</marker>
+<marker id="rod-horizontal-7" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,-0.05" marker-end="url(#rod-horizontal-grouping-5)"/>
+<polyline class="points" points="0,0.25" marker-end="url(#rod-horizontal-2)"/>
+</marker>
+<marker id="rod-horizontal-8" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,-0.075" marker-end="url(#rod-horizontal-grouping-5)"/>
+<polyline class="points" points="0,0.3" marker-end="url(#rod-horizontal-3)"/>
+</marker>
+<marker id="rod-horizontal-9" viewBox="-0.5 -0.5 1 1" refX="0" refY="0" markerWidth="1" markerHeight="1">
+<polyline class="points" points="0,-0.1" marker-end="url(#rod-horizontal-grouping-5)"/>
+<polyline class="points" points="0,0.325" marker-end="url(#rod-horizontal-4)"/>
+</marker>
+</defs>
+<title id="rod-numerals-1989-times-64-title">Initial arrangement for multiplying 1989 by 64.
+The upper row contains the rod numerals for 1989, and the lower row contains the rod numerals for 64, where the upper&nbsp;1 is horizontally aligned with the lower&nbsp;4.</title>
+<g aria-hidden="true">
+<polyline class="points" points="2,0" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="3,0" marker-end="url(#rod-vertical-9)"/>
+<polyline class="points" points="4,0" marker-end="url(#rod-horizontal-8)"/>
+<polyline class="points" points="5,0" marker-end="url(#rod-vertical-9)"/>
+<polyline class="points" points="1,2" marker-end="url(#rod-vertical-6)"/>
+<polyline class="points" points="2,2" marker-end="url(#rod-horizontal-4)"/>
+</g>
+</svg>
+</div>
+Or, in Arabic numerals for readability:
+<div class="centred-block">
+<svg class="fit-width" width="180px" viewBox="0.5 -0.7 5 2.8" role="img" focusable="false" aria-labelledby="arabic-numerals-1989-times-64-title">
+<title id="arabic-numerals-1989-times-64-title">Initial arrangement for multiplying 1989 by 64, with Arabic numerals instead of rod numerals.
+The upper row contains 1989, and the lower row contains 64, where the upper&nbsp;1 is horizontally aligned with the lower&nbsp;4.</title>
+<g aria-hidden="true">
+<text x="2" y="0" font-size="0.8">1</text>
+<text x="3" y="0" font-size="0.8">9</text>
+<text x="4" y="0" font-size="0.8">8</text>
+<text x="5" y="0" font-size="0.8">9</text>
+<text x="1" y="2" font-size="0.8">6</text>
+<text x="2" y="2" font-size="0.8">4</text>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">以上命下，所得之數，列於中位。言十即過，不滿自如。</span>
+</div>
+<div class="english">
+Name the lower with the upper.
+<i class="translator-supplied">The</i> quantities which result,
+<i class="translator-supplied">are</i> arranged in <i class="translator-supplied">a</i> row in <i class="translator-supplied">the</i> middle places.
+Tens are carried,
+<i class="translator-supplied">but those</i> not reaching <i class="translator-supplied">ten</i>, <i class="translator-supplied">left</i> as themselves.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">命：</span> name<br>
+Or maybe "command/order" as in "operate on".
+</li>
+<li><span lang="zh-Hant">列：</span> arranged in <i class="translator-supplied">a</i> row; <span class="alternative-marker">or</span> displayed
+</li>
+<li><span lang="zh-Hant">言</span><br>
+Pretty sure this is a speech-assist word, with no meaning.
+</li>
+<li><span lang="zh-Hant">過：</span> carried; <span class="alternative-marker">lit.</span> passed
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">上位乘訖者，先去之。</span><br>
+<span lang="zh-Hant">下位乘訖者，則俱退之。</span>
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> upper places which <i class="translator-supplied">one hath</i> finished multiplying:
+remove them first.<br>
+<i class="translator-supplied">The</i> lower places which <i class="translator-supplied">one hath</i> finished multiplying:
+retreat them all.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">訖：終也，了也；</span> finished<br>
+<span lang="zh-Hant">訖，居迄切，</span> <a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;kat7, Mandarin:&nbsp;qì
+</li>
+<li>A concrete example of the algorithm does not appear until <a href="/sun-tzu/i/13">¶13</a>,
+so I will provide my own.
+Here is an animation (<a href="/sun-tzu/code/animations">link to source code</a>)
+showing the multiplication 1989 × 64 = 127296,
+where I have used usual numerals rather than rods (for readability)
+and I have split the middle row into two rows
+to make the intermediate additions clearer.
+I have greyed out the finished digits instead of removing them:
+<div class="centred-block">
+<img alt="Animation for Sun Tzŭ multiplication: 1989 multiplied by 64" src="/sun-tzu/code/multiply-1989-64.gif">
+</div>
+The algorithm pretty much works like modern long multiplication,
+except that you go from left to right.
+Indeed the advantage of using counting rods is that
+carrying simply consists of putting more rods down,
+whereas with pen &amp;&nbsp;paper, you must work from right to left
+and finish all the carrying before proceding to the next digit.
+</li>
+<li>The instruction <span lang="zh-Hant">俱退之</span>, "retreat them all",
+refers to the shifting to the right of the lower number 64,
+after both the 6 and the 4 have been multiplied through.
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">六不積，五不隻。</span>
+</div>
+<div class="english">
+Sixes <i class="translator-supplied">are</i> not accumulated;
+fives, not single.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">六不積</span><br>
+This is saying that the digit&nbsp;6 in rod numerals is displayed as either
+<svg width="36px" viewBox="-0.5 -0.3 1 0.6" role="img" focusable="false" aria-labelledby="rod-numeral-vertical-6-title">
+<title id="rod-numeral-vertical-6-title">Graphic for rod numeral vertical 6.
+One horizontal rod above one vertical rod, like a T.</title>
+<g aria-hidden="true">
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-6)"/>
+</g>
+</svg>
+or
+<svg width="36px" viewBox="-0.5 -0.3 1 0.6" role="img" focusable="false" aria-labelledby="rod-numeral-horizontal-6-title">
+<title id="rod-numeral-horizontal-6-title">Graphic for rod numeral horizontal 6.
+One vertical rod above one horizontal rod, like an upside-down T.</title>
+<g aria-hidden="true">
+<polyline class="points" points="0,0" marker-end="url(#rod-horizontal-6)"/>
+</g>
+</svg>,
+but not
+<svg width="36px" viewBox="-0.5 -0.3 1 0.6" role="img" focusable="false" aria-labelledby="improper-rod-numeral-vertical-6-title">
+<title id="improper-rod-numeral-vertical-6-title">Graphic for improper rod numeral vertical 6.
+Six vertical rods.</title>
+<g aria-hidden="true">
+<polyline class="points" points="-0.25,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="-0.15,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="-0.05,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0.05,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0.15,0" marker-end="url(#rod-vertical-1)"/>
+<polyline class="points" points="0.25,0" marker-end="url(#rod-vertical-1)"/>
+</g>
+</svg>
+or
+<svg width="36px" viewBox="-0.5 -0.3 1 0.6" role="img" focusable="false" aria-labelledby="improper-rod-numeral-horizontal-6-title">
+<title id="improper-rod-numeral-horizontal-6-title">Graphic for improper rod numeral horizontal 6.
+Six horizontal rods.</title>
+<g aria-hidden="true">
+<polyline class="points" points="0,-0.25" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,-0.15" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,-0.05" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0.05" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0.15" marker-end="url(#rod-horizontal-1)"/>
+<polyline class="points" points="0,0.25" marker-end="url(#rod-horizontal-1)"/>
+</g>
+</svg>.
+</li>
+<li><span lang="zh-Hant">五不隻</span><br>
+This is saying that the digit&nbsp;5 in rod numerals is displayed as either
+<svg width="36px" viewBox="-0.5 -0.3 1 0.6" role="img" focusable="false" aria-labelledby="rod-numeral-vertical-5-title">
+<title id="rod-numeral-vertical-5-title">Graphic for rod numeral vertical 5.
+Five vertical rods.</title>
+<g aria-hidden="true">
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-5)"/>
+</g>
+</svg>
+or
+<svg width="36px" viewBox="-0.5 -0.3 1 0.6" role="img" focusable="false" aria-labelledby="rod-numeral-horizontal-5-title">
+<title id="rod-numeral-horizontal-5-title">Graphic for rod numeral horizontal 5.
+Five horizontal rods.</title>
+<g aria-hidden="true">
+<polyline class="points" points="0,0" marker-end="url(#rod-horizontal-5)"/>
+</g>
+</svg>,
+but not
+<svg width="36px" viewBox="-0.5 -0.3 1 0.6" role="img" focusable="false" aria-labelledby="improper-rod-numeral-vertical-5-title">
+<title id="improper-rod-numeral-vertical-5-title">Graphic for improper rod numeral vertical 5.
+One horizontal rod above zero vertical rods.</title>
+<g aria-hidden="true">
+<polyline class="points" points="0,0" marker-end="url(#rod-vertical-grouping-5)"/>
+</g>
+</svg>
+or
+<svg width="36px" viewBox="-0.5 -0.3 1 0.6" role="img" focusable="false" aria-labelledby="improper-rod-numeral-horizontal-5-title">
+<title id="improper-rod-numeral-horizontal-5-title">Graphic for improper rod numeral horizontal 5.
+One vertical rod above zero horizontal rods.</title>
+<g aria-hidden="true">
+<polyline class="points" points="0,0" marker-end="url(#rod-horizontal-grouping-5)"/>
+</g>
+</svg>
+since it would be indistinguishable from the rod numeral representation
+for the digit&nbsp;1.
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">上下相乘，至盡則已。</span>
+</div>
+<div class="english">
+The upper <i class="translator-supplied">and</i> the lower <i class="translator-supplied">are</i> mutually multiplied,
+finishing <i class="translator-supplied">upon</i> reaching exhaustion.
+</div>
+</div>
+<ul>
+<li><a href="https://ctext.org/sunzi-suan-jing#n52064">Version&nbsp;C</a> erroneously has <span lang="zh-Hant">土下</span> for <span lang="zh-Hant">上下</span>.
+</li>
+<li><span lang="zh-Hant">盡：</span> exhaustion; <span class="alternative-marker">or</span> <i class="translator-supplied">the</i> end
+</li>
+</ul>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/i/">↑ Volume&nbsp;I</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/i/7">← ¶7</a>
+</div>
+<div class="current">
+¶8
+</div>
+<div class="next">
+<a href="/sun-tzu/i/9">¶9 →</a>
+</div>
+</div>
+</nav>
+<h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
+<ul>
+<li>Text:
+<p>
+Conway&nbsp;(2020).
+"Sun Tzŭ's Computational Classic: Volume&nbsp;I ¶8".
+&lt;https://yawnoc.github.io/sun-tzu/i/8&gt;
+Accessed&nbsp;<span class="js-date">yyyy-mm-dd</span>.
+</p>
+</li>
+<li>BibTeX:
+<pre><code>@misc{conway-sun-tzu-i-8,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{I} {\P8}''},
+  howpublished = {\url{https://yawnoc.github.io/sun-tzu/i/8}},
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+<li>BibLaTeX:
+<pre><code>@online{conway-sun-tzu-i-8,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{I} {\P8}''},
+  url = {https://yawnoc.github.io/sun-tzu/i/8},
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+</ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
+</body>
+</html>
