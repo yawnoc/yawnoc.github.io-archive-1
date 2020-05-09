@@ -277,6 +277,13 @@ p.thought-bubble {
 /* ---------------------------------------------------------------- */
 
 
+/* Placeholder links, i.e. anchor elements without an href attribute */
+
+a:not([href]) {
+  color: #545454;
+}
+
+
 /* External link icon */
 
 a[href^="http"
