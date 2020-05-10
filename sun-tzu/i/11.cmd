@@ -101,7 +101,7 @@ Chinese source text: \a[8], \b[148], \c[52067], \d[16]. \+
     \begin{aligned}
       -\frac{1}{10} &= -\frac{2}{20} \\[\tallspace]
       -\frac{2}{10} &= -\frac{4}{20} \\
-                    & \;\,\vdots \\
+                    & \enspace \vdots \\
       -\frac{9}{10} &= -\frac{18}{20},
     \end{aligned}
   $$

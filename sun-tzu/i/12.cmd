@@ -88,7 +88,7 @@ Chinese source text: \a[10], \b[148], \c[52068], \d[17]. \+
     \begin{aligned}
       -\frac{1}{9} &= -\frac{2}{18} \\[\tallspace]
       -\frac{1}{8} &= -\frac{2}{16} \\
-                   & \;\,\vdots \\
+                   & \enspace \vdots \\
       -\frac{1}{5} &= -\frac{2}{10}
     \end{aligned}
   $$
