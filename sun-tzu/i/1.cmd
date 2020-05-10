@@ -252,7 +252,7 @@ $$
     1 \unit{length~(匹)} &={} & 40 & \unit{rules} && \sim 12 \unit{m} \\
     1 \unit{pace~(步)} &={} & 6 & \unit{rules} && \sim 1.8 \unit{m} \\
     1 \unit{acre~(畝)} &={} & 240 & \unit{paces}^2 && \sim 780 \unit{m}^2 \\
-    1 \unit{mile~(里)} &={} & 300 & \unit{paces} && \sim 540 \unit{m}
+    1 \unit{mile~(里)} &={} & 300 & \unit{paces} && \sim 540 \unit{m}.
   \end{alignedat}
 $$
 

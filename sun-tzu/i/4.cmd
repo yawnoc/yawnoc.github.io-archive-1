@@ -109,7 +109,7 @@ $$
   \unit{ditch~(溝)} &= 10^{56} \\
   \unit{stream~(澗)} &= 10^{64} \\
   \unit{right~(正)} &= 10^{72} \\
-  \unit{carry~(載)} &= 10^{80}
+  \unit{carry~(載)} &= 10^{80}.
 \end{aligned}
 $$
 ----

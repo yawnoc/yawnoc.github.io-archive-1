@@ -366,7 +366,7 @@ $$
     \unit{sd}
     = \frac{\unit{yr}}{1 + \unit{yr} / {\unit{day}}}
     = \frac{365.242 \times 24 \unit{hr}}{1 + 365.242}
-    = 23 \unit{hr} \, 56' \, 4''
+    = 23 \unit{hr} \, 56' \, 4''.
   \end{gathered}
 $$
 
@@ -504,7 +504,7 @@ $$
     \end{pmatrix}
     \begin{pmatrix}
       \cos Y \\ \cos\tau \sin Y \\ \sin\tau \sin Y
-    \end{pmatrix}
+    \end{pmatrix}.
   \end{aligned}
 $$
 

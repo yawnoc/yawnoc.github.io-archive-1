@@ -83,7 +83,7 @@ Chinese source text: \a[8], \b[147], \c[52065], \d[15]. \+
 ====
 * 實 and 法 are jargon terms for dividend and divisor:
   $$
-    \frac{\text{實}}{\text{法}} = \frac{\textq{dividend}}{\textq{divisor}}
+    \frac{\text{實}}{\text{法}} = \frac{\textq{dividend}}{\textq{divisor}}.
   $$
 ====
 

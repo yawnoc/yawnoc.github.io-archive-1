@@ -73,7 +73,7 @@ Chinese source text: \a[10], \b[148], \c[52073], \d[17]. \+
   $$
     \begin{aligned}
       9 \times 9 &= 81 \\
-      81 \times 81 &= 6561
+      81 \times 81 &= 6561.
     \end{aligned}
   $$
 ====

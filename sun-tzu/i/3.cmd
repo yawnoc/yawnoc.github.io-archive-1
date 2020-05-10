@@ -286,7 +286,7 @@ $$
     1 \unit{gill~(合)} &={} & 10^{-1} & \unit{quarts} && \sim 100 \unit{mL} \\
     1 \unit{quart~(升)} &={} & 1 & \unit{quart} && \sim 1 \unit{L} \\
     1 \unit{peck~(斗)} &={} & 10 & \unit{quarts} && \sim 10 \unit{L} \\
-    1 \unit{barrel~(斛)} &={} & 100 & \unit{quarts} && \sim 100 \unit{L}
+    1 \unit{barrel~(斛)} &={} & 100 & \unit{quarts} && \sim 100 \unit{L}.
   \end{alignedat}
 $$
 
@@ -359,7 +359,7 @@ $$
   \unit{ditch~(溝)} &= 10^{14} \\
   \unit{stream~(澗)} &= 10^{15} \\
   \unit{right~(正)} &= 10^{16} \\
-  \unit{carry~(載)} &= 10^{17}
+  \unit{carry~(載)} &= 10^{17}.
 \end{aligned}
 $$
 

@@ -435,8 +435,9 @@ $$
   the difference between the backward walking distances from the two posts.
 
 * 法： divisor; \or denominator \+
+  Altogether:
   $$
-    \frac{\text{實}}{\text{法}} = \frac{\textq{dividend}}{\textq{divisor}}
+    \frac{\text{實}}{\text{法}} = \frac{\textq{dividend}}{\textq{divisor}}.
   $$
   實 and 法 are very much mathematical jargon terms of Literary Chinese.
   In no other context do they mean "dividend" and "divisor".
@@ -1774,7 +1775,7 @@ The punctuation inserted in this section is my own.
           \textq{\colg{post separation}}
         }{
           \textq{\colb{mutual excess}}
-        }
+        }.
     \end{aligned}
   $$
 ====

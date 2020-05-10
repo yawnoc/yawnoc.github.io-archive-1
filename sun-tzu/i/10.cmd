@@ -130,7 +130,7 @@ Chinese source text: \a[8], \b[147], \c[52066], \d[16]. \+
         \\[\tallspace]
       \vol{coarse grain} &= \frac{2}{5} \cdot \vol{coarse rice}
         \\[\tallspace]
-      \vol{intricate rice} &= \frac{8}{4} \cdot \vol{intricate grain}
+      \vol{intricate rice} &= \frac{8}{4} \cdot \vol{intricate grain}.
     \end{aligned}
   $$
 ====

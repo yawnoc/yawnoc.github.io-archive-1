@@ -187,7 +187,7 @@ $$
     1 \unit{quarter~(鈞)} &={} & 30 & \unit{catties}
       && \sim 18 \unit{kg} \\
     1 \unit{stone~(石)} &={} & 120 & \unit{catties}
-      && \sim 72 \unit{kg}
+      && \sim 72 \unit{kg}.
   \end{alignedat}
 $$
 
