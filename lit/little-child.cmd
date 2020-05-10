@@ -1302,7 +1302,7 @@ see [the actual first page of the almanac text][almanac text].
 
 \cite-this-page[%title-en][little-child][
   c~~
-    ``{Q}~\textit{\&}~{A} \emph{textit} {Confucius}: \
+    ``{Q}~\textit{\&}~{A} \textit{with} {Confucius}: \
     \textit{the} {Little} {Child's} {Discourse}''
   ~~
 ]
