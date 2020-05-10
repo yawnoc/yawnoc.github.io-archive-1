@@ -84,7 +84,8 @@ Chinese source text: \a[12], \b[148], \c[52075], \d[20]. \+
 <<
   八九七十二，自相乘，得五千一百八十四。八人分之，人得六百四十八。
 ||
-  Eight nines .[are] seventy-two, .[which], multiplied with itself,
+  Eight nines .[are] seventy-two,
+  .[which], multiplied with itself,
   resulteth in five thousand, one hundred .[and] eighty-four.
   .[With] eight men sharing it,
   .[each] man receiveth six hundred .[and] forty-eight.
@@ -98,7 +99,8 @@ Chinese source text: \a[12], \b[148], \c[52075], \d[20]. \+
 <<
   七九六十三，自相乘，得三千九百六十九。七人分之，人得五百六十七。
 ||
-  Seven nines .[are] sixty-three, .[which], multiplied with itself,
+  Seven nines .[are] sixty-three,
+  .[which], multiplied with itself,
   resulteth in three thousand, nine hundred .[and] sixty-nine.
   .[With] seven men sharing it,
   .[each] man receiveth five hundred .[and] sixty-seven.
@@ -112,7 +114,8 @@ Chinese source text: \a[12], \b[148], \c[52075], \d[20]. \+
 <<
   六九五十四，自相乘，得二千九百一十六。六人分之，人得四百八十六。
 ||
-  Six nines .[are] fifty-four, .[which], multiplied with itself,
+  Six nines .[are] fifty-four,
+  .[which], multiplied with itself,
   resulteth in two thousand, nine hundred .[and] sixteen.
   .[With] six men sharing it,
   .[each] man receiveth four hundred .[and] eighty-six.
@@ -121,7 +124,8 @@ Chinese source text: \a[12], \b[148], \c[52075], \d[20]. \+
 <<
   五九四十五，自相乘，得二千二十五。五人分之，人得四百五。
 ||
-  Five nines .[are] forty-five, .[which], multiplied with itself,
+  Five nines .[are] forty-five,
+  .[which], multiplied with itself,
   resulteth in two thousand .[and] twenty-five.
   .[With] five men sharing it,
   .[each] man receiveth four hundred .[and] five.
@@ -130,10 +134,11 @@ Chinese source text: \a[12], \b[148], \c[52075], \d[20]. \+
 <<
   四九三十六，自相乘，得一千二百九十六。四人分之，人得三百二十四。
 ||
-  Four nines .[are] thirty-six, .[which], multiplied with itself,
+  Four nines .[are] thirty-six,
+  .[which], multiplied with itself,
   resulteth in one thousand, two hundred .[and] ninety-six.
-  .[With] four men sharing it, .[each] man receiveth
-  three hundred .[and] twenty-four.
+  .[With] four men sharing it,
+  .[each] man receiveth three hundred .[and] twenty-four.
 >>
 ====
 * **\a[12] is missing four whole pages after 一千二百九十六**,
@@ -153,19 +158,21 @@ Chinese source text: \a[12], \b[148], \c[52075], \d[20]. \+
 <<
   三九二十七，自相乘，得七百二十九。三人分之，人得二百四十三。
 ||
-  Three nines .[are] twenty-seven, .[which], multiplied with itself,
+  Three nines .[are] twenty-seven,
+  .[which], multiplied with itself,
   resulteth in seven hundred .[and] twenty-nine.
-  .[With] three men sharing it, .[each] man receiveth
-  two hundred .[and] forty-three.
+  .[With] three men sharing it,
+  .[each] man receiveth two hundred .[and] forty-three.
 >>
 
 <<
   二九一十八，自相乘，得三百二十四。二人分之，人得一百六十二。
 ||
-  Two nines .[are] eighteen, .[which], multiplied with itself,
+  Two nines .[are] eighteen,
+  .[which], multiplied with itself,
   resulteth in three hundred .[and] twenty-four.
-  .[With] two men sharing it, .[each] man receiveth
-  one hundred .[and] sixty-two.
+  .[With] two men sharing it,
+  .[each] man receiveth one hundred .[and] sixty-two.
 >>
 
 <<
@@ -184,8 +191,9 @@ Chinese source text: \a[12], \b[148], \c[52075], \d[20]. \+
   result in four hundred .[and] five,
   .[which], multiplied with itself,
   resulteth in sixteen myriad, four thousand .[and] twenty-five.
-  .[With] nine men sharing it, .[each] man receiveth
-  one myriad, eight thousand, two hundred .[and] twenty-five.
+  .[With] nine men sharing it,
+  .[each] man receiveth
+    one myriad, eight thousand, two hundred .[and] twenty-five.
 >>
 ====
 * 右： above; \lit .[to the] right \+
