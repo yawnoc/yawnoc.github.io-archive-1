@@ -20,65 +20,6 @@
 <% [mathrm] | class="maths-roman" %>
 <% [point] | class="points" %>
 
-<;sh> 1 | 11 | Some equivalent fractions </;sh>
-<;s@@> 1 | 11 | 8 | 148 | 52067 | 10 | 16 </;s@@>
-
-<<
-  十分減一者，以二乘，二十除。 \+
-  減二者，以四乘，二十除。 \+
-  減三者，以六乘，二十除。 \+
-  減四者，以八乘，二十除。 \+
-  減五者，以十乘，二十除。 \+
-  減六者，以十二乘，二十除。 \+
-  減七者，以十四乘，二十除。 \+
-  減八者，以十六乘，二十除。 \+
-  減九者，以十八乘，二十除。
-||
-  Subtracting one of ten shares:
-    multiply by two, .[and] divide .[by] twenty; \+
-  subtracting two:
-    multiply by four, .[and] divide .[by] twenty; \+
-  subtracting three:
-    multiply by six, .[and] divide .[by] twenty; \+
-  subtracting four:
-    multiply by eight, .[and] divide .[by] twenty; \+
-  subtracting five:
-    multiply by ten, .[and] divide .[by] twenty; \+
-  subtracting six:
-    multiply by twelve, .[and] divide .[by] twenty; \+
-  subtracting seven:
-    multiply by fourteen, .[and] divide .[by] twenty; \+
-  subtracting eight:
-    multiply by sixteen, .[and] divide .[by] twenty; \+
-  subtracting nine:
-    multiply by eighteen, .[and] divide .[by] twenty.
->>
-====
-* 分：
-    shares;
-    \or portions \+
-    In Chinese, the fraction $\dfrac{a}{b}$
-    is referred to as $b$ 分之 $a$, literally
-    "$a$ of $b$ shares".
-
-====
-----
-  I think this paragraph is saying
-----
-$$
-  \begin{aligned}
-    -\frac{1}{10} &= -\frac{2}{20} \\[2ex]
-    -\frac{2}{10} &= -\frac{4}{20} \\
-                  & \;\,\vdots \\
-    -\frac{9}{10} &= -\frac{18}{20},
-  \end{aligned}
-$$
-----
-  but I have no clue as to why this might be useful,
-  and why it is phrased in terms of subtraction.
-  Ditto for <@> the next paragraph | #12 | Vol. I \P12 </@>.
-----
-
 <;sh> 1 | 12 | Some equivalent fractions </;sh>
 <;s@@> 1 | 12 | 10 | 148 | 52068 | 11 | 17 </;s@@>
 <<
