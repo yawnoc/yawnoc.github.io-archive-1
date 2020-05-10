@@ -46,7 +46,7 @@
 
 
 ----
-This paragraph gives conversion rates for various types of grain and rice.
+This paragraph gives some equivalent fractions.
 ----
 
 
