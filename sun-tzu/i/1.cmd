@@ -256,10 +256,6 @@ $$
   \end{alignedat}
 $$
 
-@@[katex]
-  https://github.com/KaTeX/KaTeX/issues/564
-@@
-
 ----
 Silk is around 12~μm in thickness ([UAF], [Luong~_et~al._~(2014)][Luong])
 so hu ((忽)), "floss", is much too thin,
