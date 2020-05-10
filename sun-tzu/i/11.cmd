@@ -95,23 +95,20 @@ Chinese source text: \a[8], \b[148], \c[52067], \d[16]. \+
 * 分： shares; \or portions \+
   In Chinese, the fraction $\dfrac{a}{b}$ is referred to as $b$ 分之 $a$,
   literally "$a$ of $b$ shares".
+
+* I think this paragraph is saying
+  $$
+    \begin{aligned}
+      -\frac{1}{10} &= -\frac{2}{20} \\[\tallspace]
+      -\frac{2}{10} &= -\frac{4}{20} \\
+                    & \;\,\vdots \\
+      -\frac{9}{10} &= -\frac{18}{20},
+    \end{aligned}
+  $$
+  but I have no clue as to why this might be useful,
+  and why it is phrased in terms of subtraction.
+  Ditto for the [next paragraph (\P12)] ["i 12"].
 ====
-----
-I think this paragraph is saying
-----
-$$
-  \begin{aligned}
-    -\frac{1}{10} &= -\frac{2}{20} \\[\tallspace]
-    -\frac{2}{10} &= -\frac{4}{20} \\
-                  & \;\,\vdots \\
-    -\frac{9}{10} &= -\frac{18}{20},
-  \end{aligned}
-$$
-----
-but I have no clue as to why this might be useful,
-and why it is phrased in terms of subtraction.
-Ditto for the [next paragraph (\P12)] ["i 12"].
-----
 
 
 {{{{|
