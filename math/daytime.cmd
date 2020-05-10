@@ -495,7 +495,7 @@ $$
     \end{pmatrix}_\text{obs}
     \begin{pmatrix}
       u_x \\ u_y \\ u_z
-    \end{pmatrix} \\[4ex]
+    \end{pmatrix} \\[\fraclinespace]
     &=
     \begin{pmatrix}
       \cos\delta \cos D & \cos\delta \sin D &  \sin\delta \\

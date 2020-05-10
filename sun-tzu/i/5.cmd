@@ -163,7 +163,7 @@ so
 ----
 $$
   \begin{aligned}
-    L & \approx \frac{5D}{7} \\[2ex]
+    L & \approx \frac{5D}{7} \\[\fraclinespace]
     D & \approx \frac{7L}{5}.
   \end{aligned}
 $$
