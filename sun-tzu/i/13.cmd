@@ -68,12 +68,15 @@ Chinese source text: \a[10], \b[148], \c[52073], \d[17]. \+
   multiplied with itself, resulteth in how much? \+
   Answer saith: six thousand, five hundred .[and] sixty-one.
 >>
-$$
-  \begin{aligned}
-    9 \times 9 &= 81 \\
-    81 \times 81 &= 6561
-  \end{aligned}
-$$
+====
+* In modern notation:
+  $$
+    \begin{aligned}
+      9 \times 9 &= 81 \\
+      81 \times 81 &= 6561
+    \end{aligned}
+  $$
+====
 
 <<
   術曰：重置其位。
