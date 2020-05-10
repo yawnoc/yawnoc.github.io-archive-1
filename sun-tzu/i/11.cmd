@@ -101,7 +101,7 @@ I think this paragraph is saying
 ----
 $$
   \begin{aligned}
-    -\frac{1}{10} &= -\frac{2}{20} \\[\fraclinespace]
+    -\frac{1}{10} &= -\frac{2}{20} \\[\tallspace]
     -\frac{2}{10} &= -\frac{4}{20} \\
                   & \;\,\vdots \\
     -\frac{9}{10} &= -\frac{18}{20},

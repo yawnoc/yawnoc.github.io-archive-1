@@ -459,7 +459,7 @@ $$
         }
           +
         \textq{post height}
-          \\[\fraclinespace]
+          \\[\tallspace]
       &=
         \frac{
           3 \unit{rods} \cdot 1000 \unit{paces}
@@ -468,7 +468,7 @@ $$
         } 
           +
         5 \unit{paces}
-          \\[\fraclinespace]
+          \\[\tallspace]
       &= 4 \unit{miles} + 55 \unit{paces}.
     \end{aligned}
   $$
@@ -503,14 +503,14 @@ $$
         }{
           \textq{mutual excess}
         }
-          \\[\fraclinespace]
+          \\[\tallspace]
       &=
         \frac{
           123 \unit{paces} \cdot 1000 \unit{paces}
         }{
           127 \unit{paces} - 123 \unit{paces}
         }
-          \\[\fraclinespace]
+          \\[\tallspace]
       &= 102 \unit{miles} + 150 \unit{paces}.
     \end{aligned}
   $$
@@ -1531,7 +1531,7 @@ The punctuation inserted in this section is my own.
   $$
     \begin{aligned}
       \frac{\colb{HI}}{\colr{FG}} &= \frac{\colg{FC}}{\colv{AO}}
-        \\[\fraclinespace]
+        \\[\tallspace]
       \colv{AO} &= \frac{\colr{FG} \cdot \colg{FC}}{\colb{HI}}
     \end{aligned}
   $$
@@ -1627,9 +1627,9 @@ The punctuation inserted in this section is my own.
   $$
     \begin{aligned}
       AB
-        &= \colv{AO} + \colr{OB} \\[\fraclinespace]
+        &= \colv{AO} + \colr{OB} \\[\tallspace]
         &= \frac{\colr{FG} \cdot \colg{FC}}{\colb{HI}} + \colr{OB}
-          \\[\fraclinespace]
+          \\[\tallspace]
       \textq{island height}
         &=
           \frac{
@@ -1757,8 +1757,8 @@ The punctuation inserted in this section is my own.
   $$
     \begin{aligned}
       \frac{\colb{HI}}{\colr{IG}}
-        &= \frac{\colg{FC}}{\colv{CO}} \\[\fraclinespace]
-        &= \frac{\colg{FC}}{\colv{DB}} \\[\fraclinespace]
+        &= \frac{\colg{FC}}{\colv{CO}} \\[\tallspace]
+        &= \frac{\colg{FC}}{\colv{DB}} \\[\tallspace]
       \colv{DB}
         &=
           \frac{
@@ -1766,7 +1766,7 @@ The punctuation inserted in this section is my own.
           }{
             \colb{HI}
           }
-          \\[\fraclinespace]
+          \\[\tallspace]
       \textq{\colv{island-post separation}}
       &=
         \frac{

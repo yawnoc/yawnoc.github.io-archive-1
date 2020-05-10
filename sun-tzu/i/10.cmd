@@ -121,15 +121,15 @@ Chinese source text: \a[8], \b[147], \c[52066], \d[16]. \+
     \gdef\vol#1{V(\text{#1})}
     \begin{aligned}
       \vol{coarse grain}  &= \frac{3}{5} \cdot \vol{grain}
-        \\[\fraclinespace]
+        \\[\tallspace]
       \vol{grain} &= \frac{5}{3} \cdot \vol{coarse grain}
-        \\[\fraclinespace]
+        \\[\tallspace]
       \vol{coarse rice} &= \frac{5}{2} \cdot \vol{coarse grain}
-        \\[\fraclinespace]
+        \\[\tallspace]
       \vol{coarse rice} &= \frac{6}{4} \cdot \vol{grain}
-        \\[\fraclinespace]
+        \\[\tallspace]
       \vol{coarse grain} &= \frac{2}{5} \cdot \vol{coarse rice}
-        \\[\fraclinespace]
+        \\[\tallspace]
       \vol{intricate rice} &= \frac{8}{4} \cdot \vol{intricate grain}
     \end{aligned}
   $$

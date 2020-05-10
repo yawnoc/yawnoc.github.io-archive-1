@@ -404,7 +404,7 @@ $$
         \alpha^2 + \tau^2
       }
     \td\tau,
-      \\[\fraclinespace]
+      \\[\tallspace]
     &
     \int
       \frac{

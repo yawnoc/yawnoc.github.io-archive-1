@@ -362,7 +362,7 @@ one more than the number of solar days:
 $$
   \begin{gathered}
     \frac{\unit{yr}}{\unit{sd}} = 1 + \frac{\unit{yr}}{\unit{day}}
-      \\[\fraclinespace]
+      \\[\tallspace]
     \unit{sd}
     = \frac{\unit{yr}}{1 + \unit{yr} / {\unit{day}}}
     = \frac{365.242 \times 24 \unit{hr}}{1 + 365.242}
@@ -495,7 +495,7 @@ $$
     \end{pmatrix}_\text{obs}
     \begin{pmatrix}
       u_x \\ u_y \\ u_z
-    \end{pmatrix} \\[\fraclinespace]
+    \end{pmatrix} \\[\tallspace]
     &=
     \begin{pmatrix}
       \cos\delta \cos D & \cos\delta \sin D &  \sin\delta \\
@@ -1326,8 +1326,8 @@ where
 ----
 $$
   \begin{aligned}
-    \varphi &= \tan^{-1} \frac{\cos\tau \sin Y}{\cos Y} \\[\fraclinespace]
-    Y &= \frac{2 \pi t}{\unit{yr}} \\[\fraclinespace]
+    \varphi &= \tan^{-1} \frac{\cos\tau \sin Y}{\cos Y} \\[\tallspace]
+    Y &= \frac{2 \pi t}{\unit{yr}} \\[\tallspace]
     \unit{yr} &= 365.242 \unit{day},
   \end{aligned}
 $$
