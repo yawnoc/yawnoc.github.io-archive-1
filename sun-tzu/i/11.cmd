@@ -132,3 +132,4 @@ Ditto for the [next paragraph (\P12)] ["i 12"].
   ~~``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{I} {\P11}''~~
 ]
 
+%footer-element

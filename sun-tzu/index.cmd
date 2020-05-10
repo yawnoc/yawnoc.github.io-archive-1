@@ -340,3 +340,4 @@ edits and corrections I have made since they were scanned.
   ~~``{Sun}~{Tz{\u u}'s} {Computational} {Classic}''~~
 ]
 
+%footer-element

@@ -154,3 +154,4 @@ Chinese source text: \a[8], \b[147], \c[52066], \d[16]. \+
   ~~``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{I} {\P10}''~~
 ]
 
+%footer-element

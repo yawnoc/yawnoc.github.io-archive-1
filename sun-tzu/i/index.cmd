@@ -111,3 +111,4 @@ and the headings I have allocated are **not** part of the original text.
   ~~``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{I}''~~
 ]
 
+%footer-element
