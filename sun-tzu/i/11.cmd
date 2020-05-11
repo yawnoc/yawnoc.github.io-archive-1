@@ -93,7 +93,8 @@ Chinese source text: \a[8], \b[148], \c[52067], \d[16]. \+
 >>
 ====
 * 分： shares; \or portions \+
-  In Chinese, the fraction $\dfrac{a}{b}$ is referred to as $b$ 分之 $a$,
+  In Chinese, the fraction $\dfrac{a}{b}$ is referred to
+  as <span lang="zh-Hant">$b$ ~~分之~~ $a$</span>,
   literally "$a$ of $b$ shares".
 
 * I think this paragraph is saying
