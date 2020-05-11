@@ -13,6 +13,10 @@
   %description
     Links to an annotated English translation of Volume~II of Sunzi Suanjing, \
     ~~《孫子算經》~~, "\sun-tzu's Computational Classic".
+  %css
+    .wip {
+      color: red;
+    }
 %%
 
 [[====
@@ -82,6 +86,10 @@ and the headings I have allocated are **not** part of the original text.
 * [\P20. Rod calculus square root: $\sqrt{420000}$] ["ii 20"]
 ====
 
+
+||||{marker wip}
+ WORK IN PROGRESS
+||||
 
 
 {{{{|
