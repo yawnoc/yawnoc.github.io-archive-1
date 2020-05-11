@@ -217,7 +217,7 @@ Chinese source text: \a[12], \b[148], \c[52075], \d[20]. \+
   $$
   Note that "nine nines above" includes $9 \times 9$ from [\P13] ["i 13"],
   which I feel deserves its own paragraph since it contains full working.
-  Note that the source text has no paragraphing, only line breaks;
+  The source text has no paragraphing, only line breaks;
   paragraphing is an entirely modern practice.
 ====
 
