@@ -261,11 +261,11 @@ p.thought-bubble {
   text-align: center;
 }
 
-.marker:first-child{
+.start {
   margin-bottom: 1.3em;
 }
 
-.marker:last-child {
+.end {
   clear: both;
   font-size: x-large;
   margin-top: 0.5em;

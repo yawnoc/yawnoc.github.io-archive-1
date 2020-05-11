@@ -380,7 +380,7 @@
   
   """"
     
-    ||||{marker}
+    ||||{marker start}
       (Excerpt from 7.30 interview on 2 Apr 2019)
     ||||
     
@@ -404,7 +404,7 @@
   
   """"
     
-    ||||{marker}
+    ||||{marker start}
       (Excerpt from Sky News interview on 2 Apr 2019)
     ||||
     

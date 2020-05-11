@@ -17,7 +17,7 @@
 
 <!-- END of excerpt \END-excerpt -->
 {: \END-excerpt :
-  <div class="marker">
+  <div class="marker end">
     END of Excerpt
   </div>
 :}
@@ -25,7 +25,7 @@
 
 <!-- END of interview \END -->
 {: \END :
-  <div class="marker">
+  <div class="marker end">
     END
   </div>
 :}
