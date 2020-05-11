@@ -233,6 +233,10 @@ Chinese source text: \a[20], \b[151], \c[52118], \d[32]. \+
     two thousand, eight hundred .[and] eighty-two.
 >>
 
+||||{marker end}
+END of Volume~I
+||||
+
 
 {{{{|
   \nav-up: Volume~I : ["i"]

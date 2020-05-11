@@ -386,6 +386,11 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[Among those] like this, how be there those who succeed not!
 >>
 
+||||{marker end}
+END of Preface
+||||
+
+
 {{{{|
   \nav-up: \sun-tzu's Computational Classic : [""]
   {{|
