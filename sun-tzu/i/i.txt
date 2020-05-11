@@ -20,69 +20,6 @@
 <% [mathrm] | class="maths-roman" %>
 <% [point] | class="points" %>
 
-<;sh> 1 | 20 | Results of multiplication \&~division: multiples of~4 </;sh>
-<;s@@> 1 | 20 | 18 | 151 | 52108 | 51 | 29 </;s@@>
-
-<<
-  四四一十六，自相乘，得二百五十六。四人分之，人得六十四。
-||
-  Four fours .[are] sixteen,
-  .[which], multiplied with itself, resulteth in
-  two hundred .[and] fifty-six.
-  .[With] four men sharing it, .[each] man receiveth
-  sixty-four.
->>
-
-<<
-  三四一十二，自相乘，得一百四十四。三人分之，人得四十八。
-||
-  Three fours .[are] twelve,
-  .[which], multiplied with itself, resulteth in
-  one hundred .[and] forty-four.
-  .[With] three men sharing it, .[each] man receiveth
-  forty-eight.
->>
-
-<<
-  二四如八，自相乘，得六十四。二人分之，人得三十二。
-||
-  Two fours .[are] as eight,
-  .[which], multiplied with itself, resulteth in sixty-four.
-  .[With] two men sharing it, .[each] man receiveth
-  thirty-two.
->>
-
-<<
-  一四如四，自相乘，得一十六。一人得一十六。
-||
-  One four .[is] as four,
-  .[which], multiplied with itself, resulteth in sixteen.
-  One man receiveth sixteen.
->>
-
-<<
-  右四四一條，得四十，自相乘，得一千六百。四人分之，人得四百。
-||
-  .[The] four fours above,
-  .[in] one strand, result in forty,
-  .[which], multiplied with itself, resulteth in
-  one thousand six hundred.
-  .[With] four men sharing it, .[each] man receiveth
-  four hundred.
->>
-
-$$
-  \begin{gathered}
-    4 \times 4 + 3 \times 4 + 2 \times 4 + 1 \times 4 = 40; \\
-    40 \times 40 = 1600;
-    \quad 1600 \div 4 = 400
-  \end{gathered}
-$$
-
-----
-  Bored? <@> Skip to \P23 | #23 | Vol. I \P23 </@>.
-----
-
 <;sh> 1 | 21 | Results of multiplication \&~division: multiples of~3 </;sh>
 <;s@@> 1 | 21 | 18 | 151 | 52112 | 55 | 30 </;s@@>
 
