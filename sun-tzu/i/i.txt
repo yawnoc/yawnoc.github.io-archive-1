@@ -21,64 +21,6 @@
 <% [point] | class="points" %>
 
 <;sh>
-  1 | 23 |
-  Results of multiplication \&~division:
-  multiples of~1, and all multiples of~9 through~1 combined
-</;sh>
-<;s@@> 1 | 23 | 20 | 151 | 52117 | 60 | 32 </;s@@>
-
-<<
-  一一如一，自相乘，得一。一乘不長。
-||
-  One one .[is] as one,
-  .[which], multiplied with itself, resulteth in one.
-  Multiplying .[by] one augmenteth not.
->>
-====
-* 長：
-    augmenteth \+
-      長，上聲，
-      \C choeng2, \M zhavng
-
-====
-
-<<
-  右從九九至一一，總成一千一百五十五，自相乘，得一百三十三萬四千二十五。\
-  九人分之，人得一十四萬八千二百二十五。
-||
-  From nine nines unto one one above:
-  .[the] total becometh one thousand, one hundred .[and] fifty-five,
-  .[which], multiplied with itself, resulteth in
-    one million, three hundred .[and] thirty-four thousand .[and]
-    twenty-five.
-  .[With] nine men sharing it, .[each] man receiveth
-  one hundred .[and] forty-eight thousand,
-    two hundred .[and] twenty-five.
->>
-====
-* 
-    <@> Version~C | [version-c.url]52117 | [version-c.h] </@>
-    erroneously has 一百十三萬 for 一百三十三萬.
-
-====
-
-$$
-  \begin{gathered}
-    \begin{alignedat}{2}
-      9 \times 9 & + 8 \times 9 +{} & \dots & + 1 \times 9 \\
-                 & + 8 \times 8 +{} & \dots & + 1 \times 8 \\[1ex]
-                 &                  & \ddots \\
-                 &                  &       & + 1 \times 1
-      = 1155
-    \end{alignedat} \\
-    \begin{aligned}
-      1155 \times 1155 &= 1334025 \\
-      \quad 1334025 \div 9 &= 148225
-    \end{aligned}
-  \end{gathered}
-$$
-
-<;sh>
   1 | 24 |
   Results of multiplication \&~division: multiples of powers of~3
 </;sh>
