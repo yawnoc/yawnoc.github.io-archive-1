@@ -104,7 +104,7 @@ Chinese source text: \a[26], \b[153], \c[52133], \d[39]. \+
   $$
     \frac{1}{3} + \frac{2}{5}
     = \frac{1 \times 5 + 2 \times 3}{3 \times 5}
-    = \frac{11}{15}
+    = \frac{11}{15}.
   $$
 ====
 

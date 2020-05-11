@@ -103,7 +103,7 @@ Chinese source text: \a[28], \b[153], \c[52136], \d[40]. \+
   $$
     \frac{8}{9} - \frac{1}{5}
     = \frac{8 \times 5 - 1 \times 9}{9 \times 5}
-    = \frac{31}{45}
+    = \frac{31}{45}.
   $$
 ====
 
