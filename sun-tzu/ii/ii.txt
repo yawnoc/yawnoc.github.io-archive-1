@@ -28,62 +28,6 @@
 <% [mathit-b] | class="maths-italic blue" %>
 <% [mathit-v] | class="maths-italic violet" %>
 
-<;sh> 2 | 3 | Subtracting fractions </;sh>
-<;s@@> 2 | 3 | 28 | 153 | 52136 | 3 | 40 </;s@@>
-
-<<
-  今有九分之八，減其五分之一。問餘幾何？ \+
-  答曰：四十五分之三十一。
-||
-  Now there be eight of nine shares,
-  .[and we] diminish of it one of five shares.
-  .[We] ask: how much remaineth? \+
-  Answer saith: thirty-one of forty-five shares.
->>
-
-<<
-  術曰：置九分、五分在右方，之八、之一在左方。
-||
-  Method saith: put .[the] nine shares
-  .[and the] five shares on .[the] right;
-  .[the] eight of .[and the] one of,
-  on .[the] left.
->>
-
-<<
-  母互乘子，五分之一得九，九分之八得四十，以少減多，餘三十一為實。\
-  母相乘得四十五為法。
-||
-  .[The] denominators .[are] mutually multiplied
-  with .[the] numerators:
-  .[for the] one of five shares
-    .[there] resulteth nine,
-  .[and for the] eight of nine shares
-    .[there] resulteth forty;
-  diminishing .[the] greater by .[the] lesser,
-  .[there] remaineth thirty-one as .[the] dividend.
-  .[The] denominators multiplied with each other,
-  result in forty-five as .[the] divisor.
->>
-====
-* 
-    <@> Version~C | [version-c.url]52136 | [version-c.h] </@>
-    erroneously has 王十一 for 三十一.
-
-====
-$$
-  \frac{8}{9} - \frac{1}{5}
-  = \frac{8 \times 5 - 1 \times 9}{9 \times 5}
-  = \frac{31}{45}
-$$
-
-<<
-  不滿法，以法命之，即得。
-||
-  .[The dividend] reacheth not .[the] divisor;
-  naming it .[for a fraction] using .[the] divisor, .[we] are done.
->>
-
 <;sh> 2 | 4 | Redistributing fractions for equality </;sh>
 <;s@@> 2 | 4 | 28 | 153 | 52139 | 4 | 41 </;s@@>
 
