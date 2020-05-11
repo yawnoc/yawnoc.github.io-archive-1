@@ -20,51 +20,6 @@
 <% [mathrm] | class="maths-roman" %>
 <% [point] | class="points" %>
 
-<;sh> 1 | 22 | Results of multiplication \&~division: multiples of~2 </;sh>
-<;s@@> 1 | 22 | 20 | 151 | 52115 | 58 | 31 </;s@@>
-
-<<
-  二二如四，自相乘，得一十六。二人分之，人得八。
-||
-  Two twos .[are] as four,
-  .[which], multiplied with itself, resulteth in sixteen.
-  .[With] two men sharing it, .[each] man receiveth
-  eight.
->>
-
-<<
-  一二如二，自相乘，得四。一人得四。
-||
-  One two .[is] as two,
-  .[which], multiplied with itself, resulteth in
-  four.
-  One man receiveth four.
->>
-
-<<
-  右二二一條，得六，自相乘，得三十六。二人分之，人得十八。
-||
-  .[The] two twos above,
-  .[in] one strand, result in six,
-  .[which], multiplied with itself, resulteth in thirty-six.
-  .[With] two men sharing it, .[each] man receiveth
-  eighteen.
->>
-====
-* 
-    <@> Version~B | [version-b.url]151 | [version-b.h] </@>
-    has 人得一十八 for 人得十八.
-
-====
-
-$$
-  \begin{gathered}
-    2 \times 2 + 1 \times 2 = 6; \\
-    6 \times 6 = 36;
-    \quad 36 \div 2 = 18
-  \end{gathered}
-$$
-
 <;sh>
   1 | 23 |
   Results of multiplication \&~division:
