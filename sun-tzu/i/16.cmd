@@ -79,7 +79,7 @@ This paragraph corresponds to $n = 8$.
 ----
 Chinese source text: \b[149], \c[52082], \d[22]. \+
 \d-default \+
-This entire paragraph is missing from Version A;
+This entire paragraph is missing from Version~A;
 it should be between [page/n12] and [page/n14].
 ----
 
