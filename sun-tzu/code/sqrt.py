@@ -7,7 +7,7 @@ sqrt.py
 
 孫子算經 Sun Tzŭ's Computational Classic
 Square root algorithm in Volume II Paragraph 19:
-  <https://yawnoc.github.io/sun-tzu/ii#19>
+  <https://yawnoc.github.io/sun-tzu/ii/19>
 
 Released into the public domain (CC0):
   <https://creativecommons.org/publicdomain/zero/1.0/>
