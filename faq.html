@@ -2,62 +2,35 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="author" content="Conway">
 <meta name="msapplication-TileColor" content="#00aba9">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<link rel="stylesheet" href="/conway.min.css">
-<script defer src="/conway-render.min.js"></script>
+<link rel="stylesheet" href="/main.min.css">
 <title>FAQ | Conway's site</title>
 </head>
-<body onload="dateRender();">
-<header><nav><ul>
-<li><a href="/" title="Home page">Home</a></li>
-<li><a href="#" title="Jump back to top">Top</a></li>
-</ul></nav></header>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+</ul>
+</nav>
+</header>
 <h1>FAQ</h1>
-<p class="page-properties">
-First created:&nbsp;20190801<br>
-Last modified:&nbsp;<b>20200326</b>
-</p>
-<p>
-<a href="#general" title="General"><b>General</b></a>
-</p>
-<ul>
-<li><a href="#time" title="What do you do in your spare time?">What do you do in your spare time?</a></li>
-<li><a href="#site" title="How is this site built?">How is this site built?</a></li>
-<li><a href="#domain" title="Why don't you get yourself a custom domain
-instead of the default yawnoc.github.io?">Why don't you get yourself a custom domain
-instead of the default yawnoc.github.io?</a></li>
-<li><a href="#death" title="Oh... that's a bit macabre.">Oh... that's a bit macabre.</a></li>
-<li><a href="#cookies" title="Does your site use cookies?">Does your site use cookies?</a></li>
-<li><a href="#favicon" title="How did you set up the site favicon?">How did you set up the site favicon?</a></li>
-</ul>
-<p>
-<a href="#applied" title="Applied mathematics, or physics"><b>Applied mathematics, or physics</b></a>
-</p>
-<ul>
-<li><a href="#equations" title="How are the maths equations rendered?">How are the maths equations rendered?</a></li>
-</ul>
-<p>
-<a href="#literary" title="English translations of Literary Chinese"><b>English translations of Literary Chinese</b></a>
-</p>
-<ul>
-<li><a href="#italics" title="Why are there italicised words in your translations?">Why are there italicised words in your translations?</a></li>
-<li><a href="#archaic" title="Wherefore usest thou archaic verb conjugation?">Wherefore usest thou archaic verb conjugation?</a></li>
-<li><a href="#this" title="But I thought that 是 means &quot;is&quot;, and 也, &quot;also&quot;.">But I thought that <span lang="zh-Hant">是</span> means "is", and <span lang="zh-Hant">也</span>, "also".</a></li>
-</ul>
-<h2 id="general"><a class="self-link" href="#general"></a>
-General
-</h2>
-<h3 id="time"><a class="self-link" href="#time"></a>
-What do you do in your spare time?
-</h3>
+<div class="page-properties">
+First created: 2019-08-01<br>
+Last modified: 2020-05-13
+</div>
+<h2 id="time"><a class="permalink" href="#time" aria-label="Permalink"></a>What do you do in your spare time?</h2>
 <p>
 That depends on what you mean by spare time; a day is quite short really.
 Generally speaking life is very short too.
@@ -65,208 +38,106 @@ Eighty years is not a very long time to (expect to) be alive,
 and even eight hundred years would pass me by very quickly.
 </p>
 <p>
-I ponder unsophisticated
-<a href="#applied" title="Applied mathematics, or physics">applied maths problems</a>
-and attempt to read
-<a href="#literary" title="English translations of Literary Chinese">Literary Chinese</a>.
-Now I am burning even more of my time by building this website
+These days I ponder <a href="/#applied-maths">unsophisticated applied maths problems</a>
+and attempt to read and <a href="/#literary-chinese">translate Literary Chinese</a>,
+and burn even more of my time by building this website
 and making the content freely available online.
 </p>
-<h3 id="site"><a class="self-link" href="#site"></a>
-How is this site built?
-</h3>
+<h2 id="site"><a class="permalink" href="#site" aria-label="Permalink"></a>How is this site built?</h2>
 <p>
-Using <a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a>,
-which is
-<span class="green"><b>simple</b></span>,
-<span class="green"><b>fast</b></span> and most importantly
-<span class="green"><b>ad-free</b></span>
-(but unfortunately conway.github.io was already taken, sob).
-I definitely recommend it for building a static website.
+Using <a href="https://pages.github.com/">GitHub Pages</a>,
+which is <b>simple</b>, <b>fast</b>, and most importantly <b>ad-free</b>.
+Unfortunately conway.github.io was already taken though (sob).
 In my case, I do not use Jekyll or other plugins;
 just straight CSS and JavaScript.
 </p>
 <p>
-The pages are written in my own "concise HTML" (<code>.cch</code>),
-which gets converted to standard HTML (<code>.html</code>) via my custom-written
-<a href="/code/cch" title="Python: a regex converter from CCH to HTML">Python converter</a>.
-For example, this page was generated from the CCH file
-<a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/faq.cch" title="faq.cch"><code>faq.cch</code></a>.
+The pages are written in <a href="https://conway-markdown.github.io/">Conway's markdown (CMD)</a>,
+which gets converted to HTML via my custom-written <a href="https://github.com/conway-markdown/conway-markdown">Python converter</a>.
+For example, this page was generated from the CMD file <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/faq.cmd"><code>faq.cmd</code></a>.
 </p>
-<h3 id="domain"><a class="self-link" href="#domain"></a>
-Why don't you get yourself a custom domain
-instead of the default yawnoc.github.io?
-</h3>
+<h2 id="domain"><a class="permalink" href="#domain" aria-label="Permalink"></a>Why don't you get yourself a custom domain
+instead of the default yawnoc.github.io?</h2>
 <p>
 Firstly, I am poor, and secondly, even if I did buy a domain,
-I can't keep it with me when I die. On the other hand,
-the default subdomain is as permanent as GitHub Pages itself.
+I can't keep it with me when I die.
+On the other hand, the default subdomain
+is as permanent as GitHub Pages itself.
 </p>
-<h3 id="death"><a class="self-link" href="#death"></a>
-Oh... that's a bit macabre.
-</h3>
+<h2 id="death"><a class="permalink" href="#death" aria-label="Permalink"></a>Oh… that's a bit macabre.</h2>
 <p>
 I do not fear death for my own sake.
 I might die some time later today, or I may have many decades yet.
 At the time of writing the latter is more probable. Fear changes nothing.
 </p>
-<h3 id="cookies"><a class="self-link" href="#cookies"></a>
-Does your site use cookies?
-</h3>
+<h2 id="cookies"><a class="permalink" href="#cookies" aria-label="Permalink"></a>Does your site use cookies?</h2>
 <p>
-A single cookie called <code>romanisation</code> is used
-to remember your romanisation preference.
-Unless you tamper with it, its value will only be one of
-<code>none</code>, <code>conway</code>, <code>wadegiles</code> or <code>pinyin</code>.
-I do not track you.
+No, unless you have visited this site prior to 14&nbsp;May 2020.
 </p>
-<p class="note">
-Cookie banners/pop-ups are stupid. Sue me.<br>
-<span class="small-caps"><strong><span class="red">I</span> <span class="red">A</span>m <span class="red">N</span>ot <span class="red">A</span> <span class="red">L</span>awyer</strong></span>
-</p>
-<h3 id="favicon"><a class="self-link" href="#favicon"></a>
-How did you set up the site favicon?
-</h3>
+<h2 id="favicon"><a class="permalink" href="#favicon" aria-label="Permalink"></a>How did you set up the site favicon?</h2>
 <p>
-Using <a href="https://realfavicongenerator.net/" title="RealFaviconGenerator">RealFaviconGenerator</a>
-by <a href="https://stackoverflow.com/a/19590415" title="Philippe Bernard">Philippe Bernard</a>.
+Using <a href="https://realfavicongenerator.net/">RealFaviconGenerator</a>
+by <a href="https://stackoverflow.com/a/19590415">Philippe Bernard</a>.
 </p>
-<h2 id="applied"><a class="self-link" href="#applied"></a>
-Applied mathematics, or physics
-</h2>
+<h2 id="equations"><a class="permalink" href="#equations" aria-label="Permalink"></a>How are the maths equations rendered?</h2>
 <p>
-The <a href="/#applied" title="Applied mathematics, or physics">applied maths</a>
-I am interested in is really physics,
-specifically problems in the Newtonian regime
-which can be modelled in a continuum manner,
-with none of the complications of
-quantum mechanics (which I do not understand)
-and relativity.
+Using <a href="https://katex.org/">KaTeX</a>.
 </p>
-<h3 id="equations"><a class="self-link" href="#equations"></a>
-How are the maths equations rendered?
-</h3>
+<h2 id="italics"><a class="permalink" href="#italics" aria-label="Permalink"></a>Why are there italicised words in your translations?</h2>
 <p>
-Using KaTeX. See
-<a href="/code/katex-guide" title="How to render equations using KaTeX">How to render equations using KaTeX</a>.
-</p>
-<h2 id="literary"><a class="self-link" href="#literary"></a>
-English translations of Literary Chinese
-</h2>
-<p>
-In any regional variant of Chinese, there is a continuum between
-<span lang="zh-Hant">白話</span> (vernacular Chinese; literally "plain talk") and <span lang="zh-Hant">文言</span>
-(Literary Chinese, or Classical Chinese; literally "literary speech").
-Literary is extremely concise, and prone to dropping things
-which can be inferred by context.
-It is very difficult to read because
-Chinese characters have many meanings which are now archaic.
-For example, the character <span lang="zh-Hant">之</span> retains only two meanings in modern usage
-(though the second is rare and very formal):
-</p>
-<ul>
-<li>
-reverse of "of",
-so that "A&nbsp;<span lang="zh-Hant">之</span>&nbsp;B"
-means "B&nbsp;of&nbsp;A"
-</li>
-<li>
-any non-subject pronoun (him, it, etc.)
-</li>
-</ul>
-<p>
-However in literary Chinese, <span lang="zh-Hant">之</span> can also be
-</p>
-<ul>
-<li><span lang="zh-Hant">此也：</span>
-this (as in <span lang="zh-Hant">之子：</span>this daughter)
-</li>
-<li><span lang="zh-Hant">往也：</span>
-go (as in <span lang="zh-Hant">東之：</span>went east)
-</li>
-<li><span lang="zh-Hant">至也：</span>
-until (as in <span lang="zh-Hant">之死：</span>until death)
-</li>
-</ul>
-<p>
-among other meanings.
-There is also the interchangeable use of certain characters, e.g.&nbsp;<span lang="zh-Hant">女</span>&nbsp;for&nbsp;<span lang="zh-Hant">汝</span> (thou),
-<span lang="zh-Hant">邪</span>&nbsp;for&nbsp;<span lang="zh-Hant">耶</span> (a speech-assist word indicating a question),
-<span lang="zh-Hant">反</span>&nbsp;for&nbsp;<span lang="zh-Hant">返</span> (return),
-<span lang="zh-Hant">矜</span>&nbsp;for&nbsp;<span lang="zh-Hant">鰥</span> (widower), etc.
-I also note that Literary was originally written with no punctuation
-and very little paragraphing, and that in all the resources we read today,
-an editor has already gone ahead and inserted the punctuation for us.
-</p>
-<p>
-Recently I got the idea of
-<a href="/#literary" title="English translations of Literary Chinese">translating</a>
-some of the texts which I have been reading into English.
-</p>
-<h3 id="italics"><a class="self-link" href="#italics"></a>
-Why are there italicised words in your translations?
-</h3>
-<p>
-I aim for
-<a href="https://en.wikipedia.org/wiki/Dynamic_and_formal_equivalence" title="Wikipedia: Dynamic and formal equivalence">formal equivalence</a>
-in my translations, and I adopt the convention of the
-King&nbsp;James Bible translators, who <i>distinguished</i> words
-which did not appear in the original Hebrew, Aramaic or Greek
-(note that in the original 1611 version this was done not using italics,
-but using Roman type instead of the main Black Letter type).
+I aim for <a href="https://en.wikipedia.org/wiki/Dynamic_and_formal_equivalence">formal equivalence</a> in my translations,
+and I adopt the convention of the King&nbsp;James Bible translators,
+who <i class="translator-supplied">distinguished</i> words which did not appear
+in the original Hebrew, Aramaic or Greek,
+but were supplied by the translator.
+(Note that in the original 1611 version this was done not using italics,
+but using Roman type instead of the main Black Letter type.)
 In my case, English words which do not appear in the original Chinese
 (meaning I cannot point to a character which corresponds to
-or contains that word) are <i>distinguished</i>, except:
+or contains that word) are <i class="translator-supplied">distinguished</i>, except:
 </p>
-<ol>
-<li>
-"The" is not distinguished when referring to a general class
+<ul>
+<li>"The" is not distinguished when referring to a general class
 as opposed to a particular instance, e.g.&nbsp;"the poor".
 </li>
-<li>
-"Of" is not distinguished unless part an entire phrase
+<li>"Of" is not distinguished unless part an entire phrase
 not in the original Chinese,
 and is thought of as being provided by the word order in Chinese.
 </li>
-<li>
-Prepositions are not distinguished when they follow a verb,
+<li>Prepositions are not distinguished when they follow a verb,
 and are thought of as part of the verb in Chinese,
 e.g.&nbsp;"went to", "laughed at".
 </li>
-</ol>
-<h3 id="archaic"><a class="self-link" href="#archaic"></a>
-Wherefore usest thou archaic verb conjugation?
-</h3>
+</ul>
+<h2 id="archaic"><a class="permalink" href="#archaic" aria-label="Permalink"></a>Wherefore usest thou archaic verb conjugation?</h2>
 <p>
 This is stylistic, and in my view
 accurately reflects the archaicness of Literary Chinese.
 </p>
 <p>
 Also it sounds cooler and allows for greater freedom in word order.
-For example, compare
-"This is what the <span class="small-caps">Lord</span> says" (New International Version)
+For example,
+compare
+"This is what the LORD says" (New International Version)
 to
-"Thus saith the <span class="small-caps">Lord</span>" (King&nbsp;James Version)
+"Thus saith the LORD" (King&nbsp;James Version)
 for the Hebrew
 <span lang="he" dir="rtl" class="no-wrapping">כה אמר יהוה</span>.
 </p>
-<h3 id="this"><a class="self-link" href="#this"></a>
-But I thought that <span lang="zh-Hant">是</span> means "is", and <span lang="zh-Hant">也</span>, "also".
-</h3>
+<h2 id="this"><a class="permalink" href="#this" aria-label="Permalink"></a>But I thought that <span lang="zh-Hant">是</span> means "is", and <span lang="zh-Hant">也</span>, "also".</h2>
 <p>
 Forget everything you learnt in Mandarin class; that is modern vernacular.
-Welcome to pre-twentieth-century Chinese Literature, in which
-<span lang="zh-Hant">是</span> primarily means "this", and <span lang="zh-Hant">也</span> is primarily an ending
-speech-assist word (with no inherent meaning) which asserts
-the preceding thing/notion/statement.
+Welcome to pre-twentieth-century Chinese Literature,
+in which <span lang="zh-Hant">是</span> primarily means "this",
+and <span lang="zh-Hant">也</span> is primarily an ending speech-assist word (with no inherent meaning)
+which asserts the preceding thing/notion/statement.
 </p>
 <p>
 In Hong Kong you might see <span lang="zh-Hant">是日例湯</span> written on a chalkboard
 for soup at an eatery.
-Here <span lang="zh-Hant"><span class="highlighted-part">是</span>日</span> means "<span class="highlighted-part">this</span> day", i.e.&nbsp;"today".
+Here <span lang="zh-Hant">是日</span> means "this day", i.e.&nbsp;"today".
 </p>
 <footer>
-<hr>
 ©&nbsp;2019–2020&nbsp;Conway.
 </footer>
 </body>
