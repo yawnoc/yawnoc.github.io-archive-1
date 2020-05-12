@@ -148,7 +148,7 @@ Chinese source text: \a[34], \b[154], \c[52163], \d[47]. \+
       V
       &\approx \frac{C^2 H}{12} \\[\tallspace]
       &=
-        \frac{(54 \unit{rules})^2 (18 \unit{rules})}{12}
+        \frac{(54 \unit{rules})^2 \cdot (18 \unit{rules})}{12}
           \div
         \frac{1.62 \unit{rules}^3}{\unit{barrel}}
           \\[\tallspace]
