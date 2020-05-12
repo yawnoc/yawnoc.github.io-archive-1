@@ -194,8 +194,8 @@ Chinese source text: \a[28], \b[153], \c[52139], \d[41]. \+
   $$
     \begin{aligned}
       \frac{L - (3 aBC, 3 bCA, 3 cAB)}{3 ABC}
-      &= \frac{63 \div 9 - (36, 72, 81) \div 9}{108 \div 9} \\[2ex]
-      &= \frac{7 - (4, 8, 9)}{12} \\[2ex]
+      &= \frac{63 \div 9 - (36, 72, 81) \div 9}{108 \div 9} \\[\tallspace]
+      &= \frac{7 - (4, 8, 9)}{12} \\[\tallspace]
       &= \frac{(+3, -1, -2)}{12}.
     \end{aligned}
   $$
