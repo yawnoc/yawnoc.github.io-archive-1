@@ -28,57 +28,6 @@
 <% [mathit-b] | class="maths-italic blue" %>
 <% [mathit-v] | class="maths-italic violet" %>
 
-<;sh> 2 | 6 | Volume conversions for grain </;sh>
-<;s@@> 2 | 6 | 30 | 153 | 52145 | 6 | 42 </;s@@>
-
-<<
-  今有粟二斗一升。問為粺米幾何？ \+
-  答曰：一斗一升五十分升之一十七。
-||
-  Now there be grain, two pecks .[and] one quart.
-  .[We] ask: how much be .[this in] fine grain? \+
-  Answer saith:
-    one peck, one quart .[and]
-    seventeen fiftieths of .[a] quart.
->>
-====
-* 
-    <@> Version~C | [version-c.url]52145 | [version-c.h] </@>
-    erroneously has 稗 for 粺, both here and below.
-
-* 粺：
-    fine grain \+
-      粺，
-      Cantonese:
-      《分韻撮要》 p'ei4;
-      《正韻》薄邁切, paai6,
-      Mandarin: ba\i
-
-* 五十分升之一十七：
-    \lit seventeen of fifty shares
-    of .[a] quart
-
-====
-
-<<
-  術曰：置粟二十一升。以粺米率二十七乘之，得五百六十七升為實。\
-  以粟率五十為法，除之。不盡，以法而命分。
-||
-  Method saith: put .[down the] grain,
-  twenty-one quarts.
-  Multiplying it by .[the] fine grain rate, twenty-seven,
-  resulteth in five hundred .[and] sixty-seven quarts
-  as .[the] dividend.
-  Use .[the] grain rate, fifty, as .[the] divisor,
-  .[and] divide them.
-  .[For the] remainder, name .[the] fraction using .[the] divisor.
->>
-$$
-  V
-  = \frac{21 \unit{quarts} \times 27}{50}
-  = 11 \tfrac{17}{50} \unit{quarts}
-$$
-
 <;sh> 2 | 7 | Volume conversions for grain </;sh>
 <;s@@> 2 | 7 | 30 | 154 | 52148 | 7 | 43 </;s@@>
 
