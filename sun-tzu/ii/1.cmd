@@ -47,7 +47,7 @@
 
 ----
 This paragraph gives a worked example of simplifying fractions,
-using the subtraction-only version of the Euclidean algorithm.
+using the __subtraction-only__ version of the __Euclidean algorithm__.
 ----
 
 
@@ -115,7 +115,7 @@ Chinese source text: \a[26], \b[153], \c[52130], \d[39]. \+
 
 ----
 In my opinion, this paragraph's description
-of the subtraction-only Euclidean algorithm
+of the __subtraction-only Euclidean algorithm__
 is rather lacking in clarity.
 In particular, there is no explicit instruction
 to **repeat** the subtraction **until** you get the equal quantity~6.

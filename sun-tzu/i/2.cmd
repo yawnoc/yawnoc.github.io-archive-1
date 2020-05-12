@@ -46,7 +46,7 @@
 
 
 ----
-This paragraph introduces Chinese weight units
+This paragraph introduces __Chinese units of weight__
 and gives the conversion rates between them.
 ----
 

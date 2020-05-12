@@ -46,7 +46,7 @@
 
 
 ----
-This paragraph introduces Chinese length units
+This paragraph introduces __Chinese units of length__
 and gives the conversion rates between them.
 ----
 

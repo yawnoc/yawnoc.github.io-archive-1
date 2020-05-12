@@ -46,7 +46,7 @@
 
 
 ----
-This paragraph gives the densities of some precious \& base metals,
+This paragraph gives the __densities__ of some precious \& base metals,
 along with those of jade and an unspecific "stone/rock".
 ----
 

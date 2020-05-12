@@ -47,7 +47,7 @@
 
 ----
 This paragraph gives a fully worked example
-of the rod calculus division algorithm described in [\P9] ["i 9"].
+of the __rod calculus division__ algorithm described in [\P9] ["i 9"].
 ----
 
 

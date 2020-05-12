@@ -47,7 +47,7 @@
 
 ----
 This paragraph hints at the way in which numerals are displayed
-in [rod calculus],
+in [ __rod calculus__ ] [rod calculus],
 a means of doing arithmetic computations using counting rods
 (eventually replaced by the [Chinese abacus]).
 ----

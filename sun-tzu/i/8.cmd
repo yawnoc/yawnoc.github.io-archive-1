@@ -42,7 +42,7 @@
 
 
 ----
-This paragraph describes the algorithm for multiplying two integers
+This paragraph describes the algorithm for __multiplying two integers__
 represented using rod numerals.
 For a brief description of rod numerals,
 see [\P7 commentary](/sun-tzu/i/7#commentary).

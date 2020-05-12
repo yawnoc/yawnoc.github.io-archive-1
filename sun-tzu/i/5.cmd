@@ -46,7 +46,7 @@
 
 
 ----
-This paragraph gives the approximate values $3$ for $\pi$
+This paragraph gives the __approximate values__ $3$ for $\pi$
 and $7/5$ for $\sqrt{2}$.
 ----
 

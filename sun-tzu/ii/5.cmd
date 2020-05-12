@@ -47,7 +47,7 @@
 
 ----
 This paragraph gives a worked example of volume conversions for grain,
-using cross-multiplication.
+using __cross-multiplication__.
 ----
 ----
 The relevant unit conversion for capacity is

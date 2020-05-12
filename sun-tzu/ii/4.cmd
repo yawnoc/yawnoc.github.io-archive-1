@@ -47,7 +47,7 @@
 
 ----
 This paragraph gives a worked example of
-redistributing three fractions for equality.
+__redistributing__ three __fractions for equality__.
 ----
 
 

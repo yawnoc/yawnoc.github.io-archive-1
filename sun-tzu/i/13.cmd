@@ -47,7 +47,7 @@
 
 ----
 This paragraph gives a fully worked example
-of the rod calculus multiplication algorithm described in [\P8] ["i 8"].
+of the __rod calculus multiplication__ algorithm described in [\P8] ["i 8"].
 ----
 
 

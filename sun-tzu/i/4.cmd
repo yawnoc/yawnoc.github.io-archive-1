@@ -46,7 +46,7 @@
 
 
 ----
-This paragraph introduces a "long scale" for named powers of ten.
+This paragraph introduces a "long scale" for __named powers of ten__.
 Note that the [previous paragraph (\P3)] ["i 3"] uses a "short scale".
 ----
 
