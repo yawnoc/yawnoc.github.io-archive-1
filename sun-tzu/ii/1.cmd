@@ -46,7 +46,7 @@
 
 
 ----
-This paragraph gives a worked example of simplifying fractions,
+This paragraph gives a worked example of simplifying a fraction,
 using the __subtraction-only__ version of the __Euclidean algorithm__.
 ----
 
