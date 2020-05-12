@@ -46,7 +46,8 @@
 
 
 ----
-This paragraph gives __conversion rates__ for various types of grain and rice.
+This paragraph gives __conversion rates__
+for trading various types of grain and rice.
 ----
 
 

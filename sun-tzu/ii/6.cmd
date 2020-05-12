@@ -46,7 +46,7 @@
 
 
 ----
-This paragraph gives a worked example of a volume conversion for grain,
+This paragraph gives a worked example of a volume conversion for trading grain
 using __cross-multiplication__.
 ----
 ----
