@@ -5,7 +5,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-xx
+  %date-modified 2020-05-13
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
