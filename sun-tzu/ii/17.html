@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
+<title>"Sun Tzŭ's Computational Classic: Volume&nbsp;II" 《孫子算經・卷中》 ¶17 | Conway's site</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="/sun-tzu/" title="Sun Tzŭ's Computational Classic">Sun Tzŭ</a>
+</li>
+<li class="breadcrumb"><a href="/sun-tzu/ii/" title="Volume&nbsp;II">II</a>
+</li>
+<li class="breadcrumb"><a title="You are viewing ¶17">¶17</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1><span lang="zh-Hant">《孫子算經・卷中》</span><br>
+"Sun Tzŭ's Computational Classic: Volume&nbsp;II"<br>
+¶17. Volume of a trapezoidal prism</h1>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/ii/">↑ Volume&nbsp;II</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/ii/16">← ¶16</a>
+</div>
+<div class="current">
+¶17
+</div>
+<div class="next">
+<a href="/sun-tzu/ii/18">¶18 →</a>
+</div>
+</div>
+</nav>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-06-09<br>
+Last modified: 2020-05-xx
+</div>
+<p>
+This paragraph gives a worked example of computing
+the <b>volume of a trapezoidal prism</b>.
+</p>
+<p>
+The relevant unit conversion for length is
+</p>
+<div class="js-maths">1 \unit{rod~(丈)} = 10 \unit{rules~(尺)}.
+</div>
+<p>
+See <a href="/sun-tzu/i/1">Vol.&nbsp;I ¶1 (Units of length)</a>.
+</p>
+<h2 id="translation"><a class="permalink" href="#translation" aria-label="Permalink"></a>Translation</h2>
+<p>
+Chinese source text: <a href="https://archive.org/details/02094034.cn/page/n38">Version&nbsp;A</a>, <a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=155">Version&nbsp;B</a>, <a href="https://ctext.org/sunzi-suan-jing#n52180">Version&nbsp;C</a>, <a href="https://ctext.org/library.pl?if=en&amp;file=86926&amp;page=51">Version&nbsp;D</a>.<br>
+Unless noted otherwise, I follow the text from Version&nbsp;D, <span lang="zh-Hant">《知不足齋叢書》本</span>.
+</p>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">今有隄，下廣五丈，上廣三丈，高二丈，長六十尺，欲以一千尺作一方。問計幾何？</span>
+</div>
+<div class="english">
+Now there be <i class="translator-supplied">an</i> embankment, of
+lower width five rods,
+upper width three rods,
+height two rods, <i class="translator-supplied">and</i>
+length sixty rules,
+<i class="translator-supplied">and we</i> wish to consider one thousand rules as one block.
+<i class="translator-supplied">We</i> ask: how many amounteth <i class="translator-supplied">this</i> to?
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">一千尺：</span> one thousand rules<br>
+In modern language these are <strong>cubic</strong> rules.
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">答曰：四十八方。</span>
+</div>
+<div class="english">
+Answer saith: forty-eight blocks.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">法曰：置隄上廣三丈、下廣五丈。并之，得八丈。半之，得四丈。</span>
+</div>
+<div class="english">
+Method saith:
+put <i class="translator-supplied">down the</i> embankment's upper width, three rods,
+<i class="translator-supplied">and the</i> lower width, five rods.
+Combining them, resulteth in eight rods.
+Halving it, resulteth in four rods.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">法：</span> method<br>
+<a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=155">Version&nbsp;B</a> and <a href="https://ctext.org/sunzi-suan-jing#n52180">Version&nbsp;C</a> have the usual <span lang="zh-Hant">術</span> for <span lang="zh-Hant">法</span>.
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">以高二丈乘之，得八百尺。以長六十尺乘之，得四萬八千。</span>
+</div>
+<div class="english">
+Multiplying it by <i class="translator-supplied">the</i> height, two rods,
+resulteth in eight hundred rules.
+Multiplying it by <i class="translator-supplied">the</i> length, sixty rules,
+resulteth in four myriad <i class="translator-supplied">and</i> eight thousand.
+</div>
+</div>
+<ul>
+<li><a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=155">Version&nbsp;B</a> has <span lang="zh-Hant">以二丈</span> for <span lang="zh-Hant">以高二丈</span>.
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">以一千尺除之，即得。</span>
+</div>
+<div class="english">
+Dividing it by one thousand rules, <i class="translator-supplied">we</i> are done.
+</div>
+</div>
+<ul>
+<li>In modern notation, the volume of a trapezoidal prism of
+upper width <span class="js-maths">A = 3 \unit{rods}</span>,
+lower width <span class="js-maths">B = 5 \unit{rods}</span>,
+height <span class="js-maths">H = 2 \unit{rods}</span>, and
+length <span class="js-maths">L = 60 \unit{rules}</span>
+is
+<div class="js-maths">\begin{aligned}
+  V
+  &amp;= \frac{A + B}{2} \cdot H L \\[\tallspace]
+  &amp;=
+    \frac{30 \unit{rules} + 50 \unit{rules}}{2}
+      \times
+    20 \unit{rules} \times 60 \unit{rules}
+      \div
+    \frac{1000 \unit{rules}^3}{\unit{block}}
+      \\[\tallspace]
+  &amp;= 48 \unit{blocks}.
+\end{aligned}
+</div>
+</li>
+</ul>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/ii/">↑ Volume&nbsp;II</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/ii/16">← ¶16</a>
+</div>
+<div class="current">
+¶17
+</div>
+<div class="next">
+<a href="/sun-tzu/ii/18">¶18 →</a>
+</div>
+</div>
+</nav>
+<h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
+<ul>
+<li>Text:
+<p>
+Conway&nbsp;(2020).
+"Sun Tzŭ's Computational Classic: Volume&nbsp;II ¶17".
+&lt;https://yawnoc.github.io/sun-tzu/ii/17&gt;
+Accessed&nbsp;<span class="js-date">yyyy-mm-dd</span>.
+</p>
+</li>
+<li>BibTeX:
+<pre><code>@misc{conway-sun-tzu-ii-17,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{II} {\P17}''},
+  howpublished = {\url{https://yawnoc.github.io/sun-tzu/ii/17}},
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+<li>BibLaTeX:
+<pre><code>@online{conway-sun-tzu-ii-17,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{II} {\P17}''},
+  url = {https://yawnoc.github.io/sun-tzu/ii/17},
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+</ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
+<footer>
+©&nbsp;2019–2020&nbsp;Conway.
+</footer>
+</body>
+</html>
