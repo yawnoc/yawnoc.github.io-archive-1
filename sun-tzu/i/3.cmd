@@ -298,7 +298,7 @@ and the volume unit "cubic rule", ch'ih ((尺)),
 is given as
 ----
 $$
-  1 \unit{barrel} = 1.62 \unit{rules}^3.
+  1 \unit{barrel~(斛)} = 1.62 \unit{rules~(尺)}^3.
 $$
 
 ----
