@@ -28,67 +28,6 @@
 <% [mathit-b] | class="maths-italic blue" %>
 <% [mathit-v] | class="maths-italic violet" %>
 
-<;sh> 2 | 7 | Volume conversions for grain </;sh>
-<;s@@> 2 | 7 | 30 | 154 | 52148 | 7 | 43 </;s@@>
-
-<<
-  今有粟四斗五升。問為糳米幾何？ \+
-  答曰：二斗一升五分升之三。
-||
-  Now there be grain, four pecks .[and] five quarts.
-  .[We] ask: how much be .[this in] intricate grain? \+
-  Answer saith:
-    two pecks, one quart .[and]
-    three fifths of .[a] quart.
->>
-====
-* 
-    <@> Version~C | [version-c.url]52148 | [version-c.h] </@>
-    erroneously has 槃 for 糳, both here and below.
-
-====
-
-<<
-  術曰：置粟四十五升。以二約糳米率二十四，得一十二，乘之，得五百四十升為實。
-||
-  Method saith: put .[down the] grain, forty-five quarts.
-  Reducing .[the] intricate grain rate, twenty-four,
-  by two, resulteth in twelve;
-  multiplying them resulteth in five hundred .[and] forty quarts
-  as .[the] dividend.
->>
-====
-* 以二約：
-    reducing by two \+
-    The intricate grain rate~24 here and the (normal) grain rate~50 below
-    are reduced by their greatest common divisor, $\gcd (24, 50) = 2$.
-
-====
-
-<<
-  以二約粟率五十，得二十五為法。除之。不盡，以等數約之，而命分。
-||
-  Reducing .[the] grain rate, fifty,
-  by two, resulteth in twenty-five as .[the] divisor.
-  Divide them.
-  .[For the] remainder, reduce it by .[the] equal quantity,
-  and name .[the] fraction.
->>
-====
-* 不盡，以等數約之：
-    .[for the] remainder, reduce it by .[the] equal quantity \+
-    The division 540~÷~25 leaves remainder 15/25.
-    Their "equal quantity" (see <@> \P1 | #1 | Vol. II \P1 </@>)
-    is $\gcd (15, 25) = 5$, by which the fraction is reduced to~3/5.
-
-====
-
-$$
-  V
-  = \frac{45 \unit{quarts} \times 24 \div 2}{50 \div 2}
-  = 21 \tfrac{3}{5} \unit{quarts}
-$$
-
 <;sh> 2 | 8 | Volume conversions for grain </;sh>
 <;s@@> 2 | 8 | 30 | 154 | 52151 | 8 | 44 </;s@@>
 
