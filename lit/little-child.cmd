@@ -48,6 +48,7 @@ From 《淮南子\.脩務訓》： [「夫項託七歲為孔子師」][脩務訓
 In 《三字經》 he is mentioned in the line [「昔仲尼，師項橐」][三字經], meaning
 "Chung-ni ((仲尼)) of old, .[had] teacher Hiang T'o ((項橐))".
 ----
+
 @@[項橐]
   https://zh.wikipedia.org/wiki/%E9%A0%85%E6%A9%90
 @@
@@ -81,6 +82,7 @@ K(u") ((句)) are used even for mid-sentence pauses,
 and tou ((讀)) are only very sparingly used for lists;
 see [the actual first page of the almanac text][almanac text].
 ----
+
 @@[almanac text]
   almanac-little-child-1.jpg
 @@
@@ -97,19 +99,11 @@ see [the actual first page of the almanac text][almanac text].
   .[the] Little Child's Discourse"
 >>
 ====
-* 問答：
-    Q~.[\&]~A;
-    \or questions .[and] answers;
-    \or asking .[and] replying
+* 問答： Q~.[\&]~A; \or questions .[and] answers; \or asking .[and] replying
 
-* 小：
-    little;
-    \or small
+* 小： little; \or small
 
-* 論：
-    discourse;
-    \or theory
-
+* 論： discourse; \or theory
 ====
 
 <<
@@ -121,24 +115,20 @@ see [the actual first page of the almanac text][almanac text].
   of .[the] nation of Lu ((魯)).
 >>
 ====
-* 孔子：
-    Confucius;
-    \lit Master~K'ung ((孔))
+* 孔子： Confucius; \lit Master~K'ung ((孔))
 
-* 字：
-    styled \+
-    名 is one's name given at birth,
-    whereas 字 is given at twenty (adulthood) by one's parents or teacher,
-    usually rendered as ["courtesy name" or "style name"][字].
-    The compound 名字 only means "name" in modern Mandarin;
-    classically it refers to
-    the two separate names 名 (birth name) and 字 (style name).
+* 字： styled \+
+  名 is one's name given at birth,
+  whereas 字 is given at twenty (adulthood) by one's parents or teacher,
+  usually rendered as ["courtesy name" or "style name"][字].
+  The compound 名字 only means "name" in modern Mandarin;
+  classically it refers to
+  the two separate names 名 (birth name) and 字 (style name).
 
-* 敎：
-    .[a] teaching \+
-    Arguably ".[a] religion" would also work.
-
+* 敎： .[a] teaching \+
+  Arguably ".[a] religion" would also work.
 ====
+
 @@[字]
   https://en.wikipedia.org/wiki/Courtesy_name
 @@
@@ -152,19 +142,15 @@ see [the actual first page of the almanac text][almanac text].
   .[and] amidst .[them] there was one child .[who] played not.
 >>
 ====
-* 御：使馬也；
-    driving \+
-    Driving horses of course.
+* 御：使馬也； driving \+
+  Driving horses of course.
 
-* 車：
-    chariot \+
-      車，音居，
-      \C k\_(u")1, \M j(u-) \+
-    This is a literary text, and Confucius~\&~co. are riding in a chariot,
-    not a small cart or a wheelbarrow.
-    Therefore, please do not pronounce this ch'e1/ch(e-);
-    my ears will bleed.
-
+* 車： chariot \+
+  車，音居， \C k\_(u")1, \M j(u-) \+
+  This is a literary text, and Confucius~\&~co. are riding in a chariot,
+  not a small cart or a wheelbarrow.
+  Therefore, please do not pronounce this ch'e1/ch(e-);
+  my ears will bleed.
 ====
 
 <<
@@ -176,9 +162,8 @@ see [the actual first page of the almanac text][almanac text].
 >>
 ====
 * 駐：馬止也；
-    stopped \+
-    Literally "stopping .[the] horses".
-
+  stopped \+
+  Literally "stopping .[the] horses".
 ====
 
 <<
@@ -197,24 +182,17 @@ see [the actual first page of the almanac text][almanac text].
 >>
 ====
 * 凢 \+
-    Variant of 凡.
+  Variant of 凡.
 
-* 縫：
-    mend;
-    \lit stitch
+* 縫： mend; \lit stitch
 
-* 門中：門，家門；
-    .[those] amidst .[the] family \+
-    His siblings.
+* 門中：門，家門； .[those] amidst .[the] family \+
+  His siblings.
 
-* 功：
-    achievement;
-    \or (good) result
+* 功： achievement; \or (good) result
 
-* 豈：
-    how \+
-    A very stern and righteous "how".
-
+* 豈： how \+
+  A very stern and righteous "how".
 ====
 
 <<
@@ -224,26 +202,22 @@ see [the actual first page of the almanac text][almanac text].
   using .[some] tile pieces.
 >>
 ====
-* 低頭：
-    lowered .[his] head \+
-    Being a little child, he had to look up to speak to Confucius;
-    having finished speaking he turned his head back down.
-    From the [illustration][almanac text] in the almanac, he then
-    joins in with the building of the wall:
-    ||||{centred-block}
-      ![
-        Almanac illustration.
-        A little child with Confucius,
-        before two other children building a wall.
-      ](
-        almanac-little-child-1-small.jpg
-      )
-    ||||
+* 低頭： lowered .[his] head \+
+  Being a little child, he had to look up to speak to Confucius;
+  having finished speaking he turned his head back down.
+  From the [illustration][almanac text] in the almanac, he then
+  joins in with the building of the wall:
+  ||||{centred-block}
+    ![
+      Almanac illustration.
+      A little child with Confucius,
+      before two other children building a wall.
+    ](
+      almanac-little-child-1-small.jpg
+    )
+  ||||
 
-* 片：
-    pieces;
-    \lit slices
-
+* 片： pieces; \lit slices
 ====
 
 <<
@@ -262,10 +236,7 @@ see [the actual first page of the almanac text][almanac text].
     not .[that] the wall ought to avoid the chariot."
 >>
 ====
-* 當：
-    ought to;
-    \or should
-
+* 當： ought to; \or should
 ====
 
 <<
@@ -276,18 +247,12 @@ see [the actual first page of the almanac text][almanac text].
     "Thy years .[be] yet young; wherefore .[so] much cunning?"
 >>
 ====
-* 論道：
-    reason;
-    \lit debate logic \+
-    Maybe "argue for .[the right of] way".
+* 論道： reason; \lit debate logic \+
+  Maybe "argue for .[the right of] way".
 
-* 詐：
-    cunning;
-    \lit trickery;
-    \or deception \+
-    Here I think Confucius is referring to the child's wit;
-    I don't see how the child is tricking or deceiving Confucius in any way.
-
+* 詐： cunning; \lit trickery; \or deception \+
+  Here I think Confucius is referring to the child's wit;
+  I don't see how the child is tricking or deceiving Confucius in any way.
 ====
 
 <<
@@ -308,30 +273,19 @@ see [the actual first page of the almanac text][almanac text].
     Naturally .[are they] automatically thus: how be .[this] cunning?"
 >>
 ====
-* 人生：
-    .[I the] human lived \+
-    Literally this is "human life", or "life".
-    To match the pattern in the sentences which follow,
-    人生三歲 might be rendered "man liveth three years".
+* 人生： .[I the] human lived \+
+  Literally this is "human life", or "life".
+  To match the pattern in the sentences which follow,
+  人生三歲 might be rendered "man liveth three years".
 
-* 三歲：
-    three years;
-    \or to .[the] age of three
+* 三歲： three years; \or to .[the] age of three
 
-* 畎：田中溝也；
-    ditch (in a field) \+
-      畎，音犬，
-      \C h(u")n2, \M qu(av)n
+* 畎：田中溝也； ditch (in a field) \+
+  畎，音犬， \C h(u")n2, \M qu(av)n
 
-* 天生：
-    naturally;
-    \lit born of nature;
-    \or born of Heaven
+* 天生： naturally; \lit born of nature; \or born of Heaven
 
-* 豈謂：
-    how be .[this];
-    \lit how speak of .[this as]
-
+* 豈謂： how be .[this]; \lit how speak of .[this as]
 ====
 
 <<
@@ -352,11 +306,9 @@ see [the actual first page of the almanac text][almanac text].
     .[and am] yet to have .[a] style name."
 >>
 ====
-* 敝：
-    shabby; \or worn-out \+
-    Both 敝 and 賤 can be used
-    as a self-deprecating substitute for "I" or "my".
-
+* 敝： shabby; \or worn-out \+
+  Both 敝 and 賤 can be used
+  as a self-deprecating substitute for "I" or "my".
 ====
 
 <<
@@ -372,7 +324,6 @@ see [the actual first page of the almanac text][almanac text].
 * 汝意下如何：
     what .[be] thy thoughts .[upon this];
     \or [what sayest thou](https://youtu.be/f_4-rCROcsM "What say you?")
-
 ====
 
 <<
@@ -383,24 +334,19 @@ see [the actual first page of the almanac text][almanac text].
     .[In mine] house there is .[my] loving mother: .[I] must provide for her.
 >>
 ====
-* 慈：
-    loving;
-    \or kind \+
-    The quintessential father is strict (嚴) in that
-    in addition to providing for his children,
-    he ought not to fail in teaching them
-    (as in [養不教，父之過][養不教],
-    ".[to] provide for .[but] not teach, .[is the] mistake of .[the] father").
-    The quintessential mother is kind/loving (慈).
-    In literary Chinese the words 嚴 and 慈 can, even on their own,
-    mean father and mother respectively.
+* 慈： loving; \or kind \+
+  The quintessential father is strict (嚴) in that
+  in addition to providing for his children,
+  he ought not to fail in teaching them
+  (as in [養不教，父之過][養不教],
+  ".[to] provide for .[but] not teach, .[is the] mistake of .[the] father").
+  The quintessential mother is kind/loving (慈).
+  In literary Chinese the words 嚴 and 慈 can, even on their own,
+  mean father and mother respectively.
 
-* 養：
-    provide for;
-    \or support;
-    \or feed
-
+* 養： provide for; \or support; \or feed
 ====
+
 @@[養不教]
   https://ctext.org/three-character-classic#n90568
 @@
@@ -417,23 +363,14 @@ see [the actual first page of the almanac text][almanac text].
   What spare time .[have I to] travel together .[with thee]?"
 >>
 ====
-* 賢：
-    worthy; also virtuous \+
-    Often used as an honorific.
+* 賢： worthy; also virtuous \+
+  Often used as an honorific.
 
-* 順：
-    obey;
-    \or go along with;
-    \or follow
+* 順： obey; \or go along with; \or follow
 
-* 明：高明；
-    brilliant;
-    \or wise
+* 明：高明； brilliant; \or wise
 
-* 暇：閒也；
-    spare time;
-    \or free time
-
+* 暇：閒也； spare time; \or free time
 ====
 
 <<
@@ -446,14 +383,14 @@ see [the actual first page of the almanac text][almanac text].
 >>
 ====
 * 三十二棋子 \+
-    It is a coincidence that
-    [Chinese Chess (象棋)][象棋] and [Western Chess][Chess]
-    both use 16 chess pieces per player.
-    Of course this text is not canon, nor is it historically accurate;
-    in Confucius's time, 奕 referred to the [Surrounding Game (圍棋)][圍棋],
-    more commonly known as Go.
-
+  It is a coincidence that
+  [Chinese Chess (象棋)][象棋] and [Western Chess][Chess]
+  both use 16 chess pieces per player.
+  Of course this text is not canon, nor is it historically accurate;
+  in Confucius's time, 奕 referred to the [Surrounding Game (圍棋)][圍棋],
+  more commonly known as Go.
 ====
+
 @@[象棋]
   https://en.wikipedia.org/wiki/Xiangqi
 @@
@@ -476,39 +413,25 @@ see [the actual first page of the almanac text][almanac text].
       scholarship .[shall be] neglected .[and] abandoned.
 >>
 ====
-* 天子：
-    .[the] Son of Heaven \+
-    The emperor.
+* 天子： .[the] Son of Heaven \+
+  The emperor.
 
-* 理：
-    administered;
-    \or managed
+* 理： administered; \or managed
 
-* 侯：
-    lords;
-    \or marquesses \+
-    See [諸侯](https://en.wiktionary.org/wiki/%E8%AB%B8%E4%BE%AF).
+* 侯： lords; \or marquesses \+
+  See [諸侯](https://en.wiktionary.org/wiki/%E8%AB%B8%E4%BE%AF).
 
-* 妨：
-    harm;
-    \or obstruct
+* 妨： harm; \or obstruct
 
-* 士儒：
-    scholars .[and] academics \+
-    Both 士 and 儒 refer to scholars,
-    although 儒 can mean Confucian scholar specifically.
-    I have used "academics" to avoid rendering 士儒 as
-    "scholars .[and] scholars".
+* 士儒： scholars .[and] academics \+
+  Both 士 and 儒 refer to scholars,
+  although 儒 can mean Confucian scholar specifically.
+  I have used "academics" to avoid rendering 士儒 as
+  "scholars .[and] scholars".
 
-* 學問：
-    scholarship;
-    \or learning;
-    \lit learning .[and] enquiry
+* 學問： scholarship; \or learning; \lit learning .[and] enquiry
 
-* 弛：放也，棄也，廢也；
-    abandoned;
-    \lit slackened
-
+* 弛：放也，棄也，廢也； abandoned; \lit slackened
 ====
 
 <<
@@ -523,25 +446,19 @@ see [the actual first page of the almanac text][almanac text].
   .[For] these reasons .[I] wager not."
 >>
 ====
-* 小人：
-    the little man;
-    \or the despicable man \+
-    In Confucianism, 小人 is a person of low moral character,
-    always seeking quick personal gain.
-    The opposite of 小人 is 君子 (gentleman),
-    a refined man and a person of virtue.
-    James Legge renders 君子 as "the superior man"
-    and 小人 as "the mean man" in [《論語\.述而》](
-      https://ctext.org/analects/shu-er#n1287
-    ).
+* 小人： the little man; \or the despicable man \+
+  In Confucianism, 小人 is a person of low moral character,
+  always seeking quick personal gain.
+  The opposite of 小人 is 君子 (gentleman),
+  a refined man and a person of virtue.
+  James Legge renders 君子 as "the superior man"
+  and 小人 as "the mean man" in [《論語\.述而》](
+    https://ctext.org/analects/shu-er#n1287
+  ).
 
-* 撲：擊也；
-    beaten
+* 撲：擊也； beaten
 
-* 失時：
-    out of season;
-    \lit missing .[the] season
-
+* 失時： out of season; \lit missing .[the] season
 ====
 
 <<
@@ -552,19 +469,15 @@ see [the actual first page of the almanac text][almanac text].
     what .[be] thy thoughts .[upon this]?"
 >>
 ====
-* 平却：
-    level out;
-    \or flatten away \+
-    Alternatively, 平 may mean "make fair",
-    as in fairness, and egalitarianism.
+* 平却： level out; \or flatten away \+
+  Alternatively, 平 may mean "make fair",
+  as in fairness, and egalitarianism.
 
-* 天下：
-    .[all] under Heaven \+
-    The whole world. Similar to "under the sun" in English,
-    from the Hebrew
-      <span lang="he" dir="rtl" class="no-wrapping">תחת השמש</span>,
-    in [Ecclesiastes](https://www.mechon-mamre.org/p/pt/pt3101.htm).
-
+* 天下： .[all] under Heaven \+
+  The whole world. Similar to "under the sun" in English,
+  from the Hebrew
+    <span lang="he" dir="rtl" class="no-wrapping">תחת השמש</span>,
+  in [Ecclesiastes](https://www.mechon-mamre.org/p/pt/pt3101.htm).
 ====
 
 <<
@@ -594,32 +507,21 @@ see [the actual first page of the almanac text][almanac text].
     Vast .[be all] under Heaven: how can .[it be] levelled?"
 >>
 ====
-* 鱉：龜屬；
-    turtle \+
-      鱉，變入聲，
-      \C peet8, \M bi(e-)
+* 鱉：龜屬； turtle \+
+  鱉，變入聲， \C peet8, \M bi(e-)
 
-* 無歸：
-    no home;
-    \or nothing .[to] return to
+* 無歸： no home; \or nothing .[to] return to
 
-* 絶却：
-    cut off;
-    \lit cut out
+* 絶却： cut off; \lit cut out
 
-* 君子：
-    rulers \+
-    Here I don't think 君子
-    refers to gentlemen, but to rulers and lords
-    (君 as in "monarch" or "sovereign").
+* 君子： rulers \+
+  Here I don't think 君子
+  refers to gentlemen, but to rulers and lords
+  (君 as in "monarch" or "sovereign").
 
-* 使：
-    employ;
-    \or use
+* 使： employ; \or use
 
-* 蕩蕩：大也，廣遠也；
-    vast
-
+* 蕩蕩：大也，廣遠也； vast
 ====
 
 <<
@@ -639,18 +541,11 @@ see [the actual first page of the almanac text][almanac text].
     What woman hath no husband?
 >>
 ====
-* 火：
-    fire;
-    \or light
+* 火： fire; \or light
 
-* 山：
-    mountain;
-    \or hill
+* 山： mountain; \or hill
 
-* 枝：
-    twig;
-    \or branch
-
+* 枝： twig; \or branch
 ====
 
 <<
@@ -670,23 +565,16 @@ see [the actual first page of the almanac text][almanac text].
   What man hath no style name?"
 >>
 ====
-* 犢：牛子也；
-    calf \+
-      犢，音獨，
-      \C tuk9, \M d(u/)
+* 犢：牛子也； calf \+
+  犢，音獨， \C tuk9, \M d(u/)
 
-* 駒：馬二歲曰駒；
-    foal;
-    \lit horse .[under] two years
+* 駒：馬二歲曰駒； foal; \lit horse .[under] two years
 
-* 雄：
-    male bird \+
-    More generally this refers to any male plant or animal.
+* 雄： male bird \+
+  More generally this refers to any male plant or animal.
 
-* 雌：
-    female bird \+
-    More generally this refers to any female plant or animal.
-
+* 雌： female bird \+
+  More generally this refers to any female plant or animal.
 ====
 
 <<
@@ -701,35 +589,27 @@ see [the actual first page of the almanac text][almanac text].
     The fairy woman hath no husband.
 >>
 ====
-* 螢火：
-    firefly light \+
-    This riddle only works because
-    火 may mean both "fire" and "light".
+* 螢火： firefly light \+
+  This riddle only works because 火 may mean both "fire" and "light".
 
-* 土山：
-    the dirt hill;
-    \or the earth hill \+
-    Similarly this works because
-    山 may mean both "mountain" and "hill".
+* 土山： the dirt hill; \or the earth hill \+
+  Similarly this works because 山 may mean both "mountain" and "hill".
 
-* 仙人：
-    the celestial man \+
-    A supernatural, immortal being, usually celibate.
-    Many people attempted to become immortal by
-    ingesting various "immortality elixirs" of [alchemy],
-    which were usually [toxic substances].
-    
-    @@[alchemy]
-      https://en.wikipedia.org/wiki/Chinese_alchemy
-    @@
-    @@[toxic substances]
-      https://en.wikipedia.org/wiki/Chinese_alchemical_elixir_poisoning
-    @@
+* 仙人： the celestial man \+
+  A supernatural, immortal being, usually celibate.
+  Many people attempted to become immortal by
+  ingesting various "immortality elixirs" of [alchemy],
+  which were usually [toxic substances].
+  
+  @@[alchemy]
+    https://en.wikipedia.org/wiki/Chinese_alchemy
+  @@
+  @@[toxic substances]
+    https://en.wikipedia.org/wiki/Chinese_alchemical_elixir_poisoning
+  @@
 
-* 玉女：
-    fairy lady; \lit jade lady \+
-    The female equivalent of 仙人.
-
+* 玉女： fairy lady; \lit jade lady \+
+  The female equivalent of 仙人.
 ====
 
 <<
@@ -751,12 +631,10 @@ see [the actual first page of the almanac text][almanac text].
   .[I the] little man have no style name."
 >>
 ====
-* 小人：
-    .[I the] little man \+
-    A self-deprecating self address.
-    Evidently Hiang T'o ((項橐)) is
-    far from the little man of Confucianism.
-
+* 小人： .[I the] little man \+
+  A self-deprecating self address.
+  Evidently Hiang T'o ((項橐)) is
+  far from the little man of Confucianism.
 ====
 
 <<
@@ -767,17 +645,15 @@ see [the actual first page of the almanac text][almanac text].
     .[and the] beginning .[and the] end of Dark .[and] Light?
 >>
 ====
-* 綱：
-    principle; \or crux
+* 綱： principle; \or crux
 
 * 陰陽：
-    Dark .[and] Light;
-    \or Shade .[and] Sun;
-    \or Female .[and] Male \+
-    Usually rendered ["yin .[and] yang"](
-       https://en.wikipedia.org/wiki/Yin_and_yang
-    ).
-
+  Dark .[and] Light;
+  \or Shade .[and] Sun;
+  \or Female .[and] Male \+
+  Usually rendered ["yin .[and] yang"](
+    https://en.wikipedia.org/wiki/Yin_and_yang
+  ).
 ====
 
 <<
@@ -804,13 +680,12 @@ see [the actual first page of the almanac text][almanac text].
   .[are] Heaven .[and] Earth mutually separated?"
 >>
 ====
-* 里：
-    miles \+
-    A [unit of distance][里], of the order half a kilometre.
-    @@[里]
-      https://en.wikipedia.org/wiki/Li_(unit)
-    @@
-
+* 里： miles \+
+  A [unit of distance][里], of the order half a kilometre.
+  
+  @@[里]
+    https://en.wikipedia.org/wiki/Li_(unit)
+  @@
 ====
 
 <<
@@ -823,26 +698,24 @@ see [the actual first page of the almanac text][almanac text].
       this .[be the] beginning .[and the] end of Dark .[and] Light.
 >>
 ====
-* 
-    There is a whole genre of stuff like this i.e.~divination, numerology etc.
-    E.g.~in [《大戴禮記\.易本命》](https://ctext.org/da-dai-li-ji/yi-ben-ming):
-    <<
-      天一，地二，人三；三三而九，九九八十一；一主日，日數十，故人十月而生。
-    ||
-      Heaven .[is] first, Earth second .[and] Man third.
-      .[Now] three threes .[are] nine, .[and] nine nines eighty-one.
-      One governeth .[the] sun, .[and the] sun .[hath] number ten;
-      therefore humans .[are] born .[of a term of] ten months.
-    >>
-    (Presumably "months" are 28-day months,
-    so that ten months make forty weeks, a full term.)
-    Being a physicist, I take a very dim view of such works
-    (involving arbitrary associations etc.).
-    It is a real pity too, for such material detracts from
-    the [serious mathematics of Classical Chinese literature](
-      /#literary-chinese-maths
-    ).
-
+* There is a whole genre of stuff like this i.e.~divination, numerology etc.
+  E.g.~in [《大戴禮記\.易本命》](https://ctext.org/da-dai-li-ji/yi-ben-ming):
+  <<
+    天一，地二，人三；三三而九，九九八十一；一主日，日數十，故人十月而生。
+  ||
+    Heaven .[is] first, Earth second .[and] Man third.
+    .[Now] three threes .[are] nine, .[and] nine nines eighty-one.
+    One governeth .[the] sun, .[and the] sun .[hath] number ten;
+    therefore humans .[are] born .[of a term of] ten months.
+  >>
+  (Presumably "months" are 28-day months,
+  so that ten months make forty weeks, a full term.)
+  Being a physicist, I take a very dim view of such works
+  (involving arbitrary associations etc.).
+  It is a real pity too, for such material detracts from
+  the [serious mathematics of Classical Chinese literature](
+    /#literary-chinese-maths
+  ).
 ====
 
 <<
@@ -861,7 +734,6 @@ see [the actual first page of the almanac text][almanac text].
 * 東爲左。西爲右。 \+
   Traditionally, one faces the south;
   thus east is to the left, and west is to the right.
-
 ====
 
 <<
@@ -882,19 +754,16 @@ see [the actual first page of the almanac text][almanac text].
 >>
 ====
 * Ts'ang Wu ((蒼梧))：地名，舜葬處 \+
-    A place name.
-    [The legendary Shun ((舜)) is supposed to have been buried here.](
-      https://ctext.org/kangxi-zidian/75/7#n330493
-    )
+  A place name.
+  [The legendary Shun ((舜)) is supposed to have been buried here.](
+    https://ctext.org/kangxi-zidian/75/7#n330493
+  )
 
 * 郊市： outskirt towns \+
-    Not certain. Possibly "town of Kiao ((郊))".
+  Not certain. Possibly "town of Kiao ((郊))".
 
-* 寄：
-    adherence unto;
-    \or dependence upon \+
-    Not certain.
-
+* 寄： adherence unto; \or dependence upon \+
+  Not certain.
 ====
 
 <<
@@ -906,10 +775,7 @@ see [the actual first page of the almanac text][almanac text].
     .[or that] husband .[and] wife are .[more] close?"
 >>
 ====
-* 親：
-    close;
-    \or loving
-
+* 親： close; \or loving
 ====
 
 <<
@@ -928,10 +794,7 @@ see [the actual first page of the almanac text][almanac text].
     .[and the] same grave .[in] death: how can .[they be] not .[as] close?"
 >>
 ====
-* 衾：
-    bed quilt;
-    \or blanket
-
+* 衾： bed quilt; \or blanket
 ====
 
 <<
@@ -946,11 +809,8 @@ see [the actual first page of the almanac text][almanac text].
     also .[a] new .[one shall be] obtained.
 >>
 ====
-* 更：
-    anew \+
-      更，平聲，
-      \C kang1, \M g(e-)ng
-
+* 更： anew \+
+  更，平聲， \C kang1, \M g(e-)ng
 ====
 
 <<
@@ -962,38 +822,25 @@ see [the actual first page of the almanac text][almanac text].
   must get pillars .[and] roof beams.
 >>
 ======
-* 貴：
-    worthy;
-    \or honourable;
-    \lit noble \+
-    Perhaps "venerable" as in "commanding respect"
-    would also work, but 貴 has no connotation with age.
-    Rendering both 賢 and 貴 as "worthy" is not desirable,
-    but unavoidable.
+* 貴： worthy; \or honourable; \lit noble \+
+  Perhaps "venerable" as in "commanding respect"
+  would also work, but 貴 has no connotation with age.
+  Rendering both 賢 and 貴 as "worthy" is not desirable,
+  but unavoidable.
 
-* 
-    I have rendered 十間之室，須得棟樑
-    literally, but really this is saying
-    ".[the] women of many families must get upholding .[men]":
-    ====
-    * 十間：
-        many families;
-        \lit ten partitions \+
-          間，去聲，
-          \C kaan3, \M ji(a\)n
-    
-    * 室：
-        women;
-        \lit bedchambers \+
-        In other contexts, 室 may mean wife or concubine.
-    
-    * 棟樑：
-        upholding .[men];
-        \lit pillars .[and] roof beams \+
-        Those worthy of bearing great responsibility.
-    
-    ====
-
+* I have rendered 十間之室，須得棟樑
+  literally, but really this is saying
+  ".[the] women of many families must get upholding .[men]":
+  ====
+  * 十間： many families; \lit ten partitions \+
+    間，去聲， \C kaan3, \M ji(a\)n
+  
+  * 室： women; \lit bedchambers \+
+    In other contexts, 室 may mean wife or concubine.
+  
+  * 棟樑： upholding .[men]; \lit pillars .[and] roof beams \+
+    Those worthy of bearing great responsibility.
+  ====
 ======
 
 <<
@@ -1007,18 +854,12 @@ see [the actual first page of the almanac text][almanac text].
   how can .[it be] lost?"
 >>
 ====
-* 牗：窗也；
-    casement \+
-    Variant of 牖. \+
-      牗，與久切，音酉，
-      \C yau5, \M y(ov)u \+
-    A fancy word for "window".
+* 牗：窗也； casement \+
+  牗，與久切，音酉， \C yau5, \M y(ov)u \+
+  Variant of 牖. \+
+  A fancy word for "window".
 
-* 恩：
-    affection;
-    \or kindness;
-    \or love
-
+* 恩： affection; \or kindness; \or love
 ====
 
 <<
@@ -1044,28 +885,21 @@ see [the actual first page of the almanac text][almanac text].
 >>
 ====
 * T'o ((橐)) \+
-    Out of respect, the child Hiang T'o ((項橐)) refers
-    [to himself in the third person][illeism],
-    and to Confucius as 夫子, ".[the] master", rather than 汝, "thou".
-    
-    @@[illeism]
-      https://en.wikipedia.org/wiki/Illeism
-    @@
+  Out of respect, the child Hiang T'o ((項橐)) refers
+  [to himself in the third person][illeism],
+  and to Confucius as 夫子, ".[the] master", rather than 汝, "thou".
+  
+  @@[illeism]
+    https://en.wikipedia.org/wiki/Illeism
+  @@
 
-* 求敎：
-    request .[the] advice;
-    \or .[earnestly] request .[the] advice
+* 求敎： request .[the] advice; \or .[earnestly] request .[the] advice
 
-* 言：問也；
-    [asking](https://en.wiktionary.org/wiki/asking#Noun Noun)
+* 言：問也； [asking](https://en.wiktionary.org/wiki/asking#Noun Noun)
 
-* 明：
-    clarity;
-    \or illustration
+* 明： clarity; \or illustration
 
-* 幸：冀也；
-    hopeth
-
+* 幸：冀也； hopeth
 ====
 
 <<
@@ -1077,20 +911,14 @@ see [the actual first page of the almanac text][almanac text].
     Why .[are] pine trees .[and] cypress trees evergreen?"
 >>
 ====
-* 浮：
-    float;
-    \or drift
+* 浮： float; \or drift
 
-* 鴻雁：
-    swans .[and] wild geese \+
-    Could also be the single bird ["swan goose"](
-      https://en.wikipedia.org/wiki/Swan_goose
-    ).
+* 鴻雁： swans .[and] wild geese \+
+  Could also be the single bird ["swan goose"](
+    https://en.wikipedia.org/wiki/Swan_goose
+  ).
 
-* 冬青：
-    evergreen;
-    \lit green .[in] winter
-
+* 冬青： evergreen; \lit green .[in] winter
 ====
 
 <<
@@ -1103,14 +931,9 @@ see [the actual first page of the almanac text][almanac text].
       all because of strong cores."
 >>
 ====
-* 足方：
-    webbed feet;
-    \lit square feet
+* 足方： webbed feet; \lit square feet
 
-* 堅：
-    strong;
-    \or firm
-
+* 堅： strong; \or firm
 ====
 
 <<
@@ -1128,9 +951,7 @@ see [the actual first page of the almanac text][almanac text].
       how .[be this] because of .[a] strong core?"
 >>
 ====
-* 綠竹：
-    [the green bamboo](https://en.wikipedia.org/wiki/Bambusa_oldhamii)
-
+* 綠竹： [the green bamboo](https://en.wikipedia.org/wiki/Bambusa_oldhamii)
 ====
 
 <<
@@ -1140,11 +961,9 @@ see [the actual first page of the almanac text][almanac text].
     "How many stars are there, scattered .[in the] heavens above?"
 >>
 ====
-* 零零：
-    scattered \+
-    As in 零碎. \+
-    Note that 零 (ling4/l(i/)ng) rhymes with 星 (sing1/x(i-)ng).
-
+* 零零： scattered \+
+  As in 零碎. \+
+  Note that 零 (ling4/l(i/)ng) rhymes with 星 (sing1/x(i-)ng).
 ====
 
 <<
@@ -1162,12 +981,8 @@ see [the actual first page of the almanac text][almanac text].
     "How many houses are there, ordinary .[on the] earth below?"
 >>
 ====
-* 碌碌：
-    ordinary;
-    \or common;
-    \or everyday \+
-    Note that 碌 (luk7/l(u\)) rhymes with 屋 (uk7/w(u-)).
-
+* 碌碌： ordinary; \or common; \or everyday \+
+  Note that 碌 (luk7/l(u\)) rhymes with 屋 (uk7/w(u-)).
 ====
 
 <<
@@ -1214,31 +1029,23 @@ see [the actual first page of the almanac text][almanac text].
       then .[be they] not worthy of fear."
   >>
   ====
-  * 後生：
-      the young;
-      \lit the after-born \+
-      This constrasts with 先生, literally "former-born",
-      which classically was a polite address to an older, wiser person.
-      This usage survives today in Cantonese,
-      and also Japanese _sensei_, where 先生 means teacher.
+  * 後生： the young; \lit the after-born \+
+    This constrasts with 先生, literally "former-born",
+    which classically was a polite address to an older, wiser person.
+    This usage survives today in Cantonese,
+    and also Japanese _sensei_, where 先生 means teacher.
   
-  * 畏：
-      feared;
-      \or respected \+
-      Here, I do not mean fear as in being afraid,
-      but rather reverence and respect, as in fearing God.
-      ".[Is] formidable" is also a good rendering of 可畏,
-      but the following 不足畏 then becomes difficult to render likewise.
+  * 畏： feared; \or respected \+
+    Here, I do not mean fear as in being afraid,
+    but rather reverence and respect, as in fearing God.
+    ".[Is] formidable" is also a good rendering of 可畏,
+    but the following 不足畏 then becomes difficult to render likewise.
   
-  * 不如：
-      not as;
-      \or not .[as good] as
-  
+  * 不如： not as; \or not .[as good] as
   ====
   The almanac erroneously has 焉能求者 for 焉知來者;
   this is called 執錯字粒, or
   "picking .[the] wrong character block" in printing.
-
 ======
 
 <<
@@ -1271,32 +1078,21 @@ see [the actual first page of the almanac text][almanac text].
   ||||||
 >>>>>>>>
 ====
-* 欺：
-    bully;
-    \or pick on
+* 欺： bully; \or pick on
 
-* 過：
-    surpasseth;
-    \or exceedeth
+* 過： surpasseth; \or exceedeth
 
-* 論：
-    discourseth;
-    \or debateth
+* 論： discourseth; \or debateth
 
-* 分明：
-    clearly \+
-    Or "blatantly", but here without the negative connotation.
+* 分明： clearly \+
+  Or "blatantly", but here without the negative connotation.
 
-* 古聖：
-    .[the] ancient sages \+
-    The virtuous, wise men of antiquity.
-    In modern times though, due to the influence of Christian literature,
-    聖 has come to mean "holy", or "sacred", or "saint".
+* 古聖： .[the] ancient sages \+
+  The virtuous, wise men of antiquity.
+  In modern times though, due to the influence of Christian literature,
+  聖 has come to mean "holy", or "sacred", or "saint".
 
-* 現：
-    manifested;
-    \or appeared
-
+* 現： manifested; \or appeared
 ====
 
 

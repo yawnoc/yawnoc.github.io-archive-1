@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
+<title>"Sun Tzŭ's Computational Classic: Volume&nbsp;II" 《孫子算經・卷中》 ¶1 | Conway's site</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="/sun-tzu/" title="Sun Tzŭ's Computational Classic">Sun Tzŭ</a>
+</li>
+<li class="breadcrumb"><a href="/sun-tzu/ii/" title="Volume&nbsp;II">II</a>
+</li>
+<li class="breadcrumb"><a title="You are viewing ¶1">¶1</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1><span lang="zh-Hant">《孫子算經・卷中》</span><br>
+"Sun Tzŭ's Computational Classic: Volume&nbsp;II"<br>
+¶1. Reducing fractions</h1>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/ii/">↑ Volume&nbsp;II</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/ii/">← Vol.&nbsp;II</a>
+</div>
+<div class="current">
+¶1
+</div>
+<div class="next">
+<a href="/sun-tzu/ii/2">¶2 →</a>
+</div>
+</div>
+</nav>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-06-09<br>
+Last modified: 2020-05-xx
+</div>
+<p>
+This paragraph gives a worked example of simplifying a fraction
+using the <b>subtraction-only</b> version of the <b>Euclidean algorithm</b>.
+</p>
+<h2 id="translation"><a class="permalink" href="#translation" aria-label="Permalink"></a>Translation</h2>
+<p>
+Chinese source text: <a href="https://archive.org/details/02094034.cn/page/n26">Version&nbsp;A</a>, <a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=153">Version&nbsp;B</a>, <a href="https://ctext.org/sunzi-suan-jing#n52130">Version&nbsp;C</a>, <a href="https://ctext.org/library.pl?if=en&amp;file=86926&amp;page=39">Version&nbsp;D</a>.<br>
+Unless noted otherwise, I follow the text from Version&nbsp;D, <span lang="zh-Hant">《知不足齋叢書》本</span>.
+</p>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">今有一十八分之一十二。問約之得幾何？</span><br>
+<span lang="zh-Hant">答曰：三分之二。</span>
+</div>
+<div class="english">
+Now there be twelve eighteenths.
+<i class="translator-supplied">We</i> ask: how much resulteth, <i class="translator-supplied">upon</i> reducing it?<br>
+Answer saith: two thirds.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">一十八分之一十二：</span> twelve eighteenths;
+<span class="alternative-marker">lit.</span> twelve of eighteen shares;
+<span class="alternative-marker">or</span> twelve of eighteen portions
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">術曰：置十八分在下，一十二分在上。副置二位，以少減多，等數得六為法，約之，即得。</span>
+</div>
+<div class="english">
+Method saith:
+put <i class="translator-supplied">the</i> eighteen shares below,
+<i class="translator-supplied">and the</i> twelve shares above.
+Put subsidiarily <i class="translator-supplied">the</i> two places,
+<i class="translator-supplied">and</i> diminish <i class="translator-supplied">the</i> greater by <i class="translator-supplied">the</i> lesser;
+<i class="translator-supplied">for the</i> equal quantity <i class="translator-supplied">there</i> resulteth six as <i class="translator-supplied">the</i> divisor,
+<i class="translator-supplied">and</i> reducing them, <i class="translator-supplied">we</i> are done.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">副：</span> subsidiarily
+</li>
+<li><span lang="zh-Hant">位：</span> places
+</li>
+<li><span lang="zh-Hant">以少減多，等數得六：</span>
+diminish <i class="translator-supplied">the</i> greater by <i class="translator-supplied">the</i> lesser;
+<i class="translator-supplied">for the</i> equal quantity <i class="translator-supplied">there</i> resulteth six<br>
+Here we have the subtraction-only version of the Euclidean algorithm
+for greatest common divisor (GCD):
+<div class="js-maths">\begin{aligned}
+  18 - 12 &amp;= 6 \\
+  12 - 6  &amp;= 6.
+\end{aligned}
+</div>
+Therefore <span class="js-maths">\gcd (12, 18) = 6</span>, and we have
+<div class="js-maths">\frac{12}{18} = \frac{12 \div 6}{18 \div 6} = \frac{2}{3}.
+</div>
+</li>
+</ul>
+<h2 id="commentary"><a class="permalink" href="#commentary" aria-label="Permalink"></a>Extended commentary</h2>
+<p>
+In my opinion, this paragraph's description
+of the <b>subtraction-only Euclidean algorithm</b>
+is rather lacking in clarity.
+In particular, there is no explicit instruction
+to <strong>repeat</strong> the subtraction <strong>until</strong> you get the equal quantity&nbsp;6.
+</p>
+<p>
+A much better description of <span lang="zh-Hant">約分術</span>, "<i class="translator-supplied">the</i> Method of Reducing Fractions",
+is found in the separate text <span lang="zh-Hant">《九章算術》</span>,
+"Nine Chapters <i class="translator-supplied">on</i> Computational Methods",
+in the chapter <span lang="zh-Hant">〈方田〉</span>, 'Rectangular Fields',
+which has the same problem of <a href="https://ctext.org/nine-chapters/fang-tian#n51071">simplifying 12/18</a>
+as well as another, <a href="https://ctext.org/nine-chapters/fang-tian#n51073">simplifying 49/91</a>.
+I think it is informative to include a translation of an excerpt here.
+</p>
+<p>
+The source text for this excerpt is from
+<a href="https://ctext.org/library.pl?if=en&amp;file=77747&amp;page=13"><span lang="zh-Hant">《四部叢刊初編》</span> (ctext.org library)</a>,
+and the bracketed portions are
+inline two-column annotations by <a href="https://en.wikipedia.org/wiki/Liu_Hui">Liu Huei&nbsp;<span lang="zh-Hant" class="original-chinese">劉徽</span></a>.
+The inserted punctuation is my own.
+</p>
+<p>
+Note that this excerpt is <strong>not</strong> a part
+of Sun Tzŭ's Computational Classic:
+</p>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">今有十八分之十二。問約之得幾何？</span><br>
+<span lang="zh-Hant">答曰：三分之二。</span>
+</div>
+<div class="english">
+Now there be twelve eighteenths.
+<i class="translator-supplied">We</i> ask: how much resulteth, <i class="translator-supplied">upon</i> reducing it?<br>
+Answer saith: two thirds.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">又有九十一分之四十九。問約之得幾何？</span><br>
+<span lang="zh-Hant">答曰：十三分之七。</span>
+</div>
+<div class="english">
+Also there be forty-nine ninety-firsts.
+<i class="translator-supplied">We</i> ask: how much resulteth, <i class="translator-supplied">upon</i> reducing it?<br>
+Answer saith: seven thirteenths.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">約分（按：約分者，物之數量不可悉全，必以分言之。分之為數，繁則難用。設有四分之二者。繁而言之，亦可為八分之四；約而言之，則二分之一也。雖則異辭，至於為數，亦同歸爾。法實相推，動有參差，故為術者，先治諸分。）術曰：</span>
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> Method of Reducing Fractions
+(Note: Reducing Fractions—
+<i class="translator-supplied">when a</i> number of objects cannot <i class="translator-supplied">be</i> completely whole,
+<i class="translator-supplied">we</i> must speak of them using fractions.
+<i class="translator-supplied">A</i> fraction being <i class="translator-supplied">a</i> quantity, <i class="translator-supplied">if</i> complicated,
+<i class="translator-supplied">is</i> difficult <i class="translator-supplied">to</i> utilise.
+Suppose there be two fourths.
+Complicating <i class="translator-supplied">it</i> in speaking of it, <i class="translator-supplied">it</i> may also be four eighths;
+reducing <i class="translator-supplied">it</i> in speaking of it, one half.
+Although different <i class="translator-supplied">in their</i> terms,
+as to <i class="translator-supplied">the</i> quantities <i class="translator-supplied">they</i> are,
+<i class="translator-supplied">these do</i> return <i class="translator-supplied">the</i> same <i class="translator-supplied">value</i>.
+Divisors <i class="translator-supplied">and</i> dividends <i class="translator-supplied">in</i> calculation with each other,
+have unevenness <i class="translator-supplied">in their</i> motions;
+therefore <i class="translator-supplied">we</i> perform <i class="translator-supplied">the</i> method,
+first administering it unto <i class="translator-supplied">the</i> fractions.)
+saith:
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">約：</span> reducing; <span class="alternative-marker">or</span> simplifying
+</li>
+<li><span lang="zh-Hant">全：</span> whole; <span class="alternative-marker">or</span> intact
+</li>
+<li><span lang="zh-Hant">動有參差：</span> have unevenness <i class="translator-supplied">in their</i> motions<br>
+This is a literal rendering.
+I think Liu Huei&nbsp;<span lang="zh-Hant" class="original-chinese">劉徽</span> is trying to say that
+different representations of fractions lead to inconsistencies,
+so first reduce them before doing any other calculations.
+</li>
+<li><span lang="zh-Hant">諸</span><br>
+Contraction of <span lang="zh-Hant">之於</span> (I think).
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">可半者半之。</span>
+</div>
+<div class="english">
+Those which can <i class="translator-supplied">be</i> halved: halve them.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">不可半者，副置分母、子之數，以少減多，更相減損，求其等也。</span>
+</div>
+<div class="english">
+Those which cannot <i class="translator-supplied">be</i> halved:
+put subsidiarily <i class="translator-supplied">the</i> quantities of
+<i class="translator-supplied">the</i> denominator <i class="translator-supplied">and the</i> numerator
+of <i class="translator-supplied">the</i> fraction.
+Diminish <i class="translator-supplied">the</i> greater by <i class="translator-supplied">the</i> lesser, <i class="translator-supplied">and</i>
+further subtract <i class="translator-supplied">them</i> from each other,
+seeking their <i class="translator-supplied">being</i> equal.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">以等數約之。</span>
+<span lang="zh-Hant">（等數約之，即除也。其所以相減者，皆等數之重疊。故以等數約之。）</span>
+</div>
+<div class="english">
+Reduce them using <i class="translator-supplied">the</i> equal quantity.
+(<i class="translator-supplied">To</i> reduce them <i class="translator-supplied">with the</i> equal quantity, is <i class="translator-supplied">to</i> divide <i class="translator-supplied">them</i>.
+Those of them which <i class="translator-supplied">have been</i> mutually subtracted,
+<i class="translator-supplied">are</i> all repeated pilings of <i class="translator-supplied">the</i> equal quantity.
+Therefore <i class="translator-supplied">we</i> use <i class="translator-supplied">the</i> equal quantity <i class="translator-supplied">to</i> reduce them.)
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">重疊：</span> <span class="alternative-marker">lit.</span> repeated pilings; <span class="alternative-marker">or</span> overlappings<br>
+I think this means "multiples".
+</li>
+</ul>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/ii/">↑ Volume&nbsp;II</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/ii/">← Vol.&nbsp;II</a>
+</div>
+<div class="current">
+¶1
+</div>
+<div class="next">
+<a href="/sun-tzu/ii/2">¶2 →</a>
+</div>
+</div>
+</nav>
+<h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
+<ul>
+<li>Text:
+<p>
+Conway&nbsp;(2020).
+"Sun Tzŭ's Computational Classic: Volume&nbsp;II ¶1".
+&lt;https://yawnoc.github.io/sun-tzu/ii/1&gt;
+Accessed&nbsp;<span class="js-date">yyyy-mm-dd</span>.
+</p>
+</li>
+<li>BibTeX:
+<pre><code>@misc{conway-sun-tzu-ii-1,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{II} {\P1}''},
+  howpublished = {\url{https://yawnoc.github.io/sun-tzu/ii/1}},
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+<li>BibLaTeX:
+<pre><code>@online{conway-sun-tzu-ii-1,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{II} {\P1}''},
+  url = {https://yawnoc.github.io/sun-tzu/ii/1},
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+</ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
+<footer>
+©&nbsp;2019–2020&nbsp;Conway.
+</footer>
+</body>
+</html>

@@ -309,7 +309,7 @@ We then carefully consider the ways in which $\pd R / {\pd\phi}$ can vanish:
             + 
           \frac{\beta^2}{-\beta}
         }}
-          \\[\fraclinespace]
+          \\[\tallspace]
       &=
         \frac{2h}{C}
         \colb{\roundbr{
@@ -318,7 +318,7 @@ We then carefully consider the ways in which $\pd R / {\pd\phi}$ can vanish:
         \colr{\squarebr{
           - \frac{1}{\beta}
         }}
-          \\[\fraclinespace]
+          \\[\tallspace]
       &= \frac{h}{\beta^2},
     \end{aligned}
   $$
@@ -348,7 +348,7 @@ We then carefully consider the ways in which $\pd R / {\pd\phi}$ can vanish:
         \frac{u^2}{g}
         \sqrt{1 - \beta^2}
         \roundbr{\beta + \sqrt{\beta^2 + C}}
-          \\[\fraclinespace]
+          \\[\tallspace]
       &=
         \frac{u^2}{g}
         \sqrt{C + 1}.

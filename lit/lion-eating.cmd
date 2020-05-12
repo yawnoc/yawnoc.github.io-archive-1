@@ -40,6 +40,7 @@ a Chinese-American linguist, scholar, etc.
 It is written in literary Chinese, with every character pronounced
 尸 (Pinyin:~shi) up to tone in Mandarin.
 ----
+
 @@[Yuen Ren Chao]
   https://en.wikipedia.org/wiki/Yuen_Ren_Chao
 @@
@@ -75,14 +76,9 @@ The Chinese source text is from Page~143 of Chao's
   ".[An] History of Mr~Shih's Eating of Lions"
 >>
 ====
-* 施氏：
-    Mr~Shih;
-    \lit .[he with] surname Shih
+* 施氏： Mr~Shih; \lit .[he with] surname Shih
 
-* 史：
-    history;
-    \or record
-
+* 史： history; \or record
 ====
 
 <<
@@ -92,26 +88,15 @@ The Chinese source text is from Page~143 of Chao's
   liked lions, .[and] sware to eat ten lions.
 >>
 ====
-* 石：
-    stone;
-    \or rock
+* 石： stone; \or rock
 
-* 室：
-    house;
-    \or room
+* 室： house; \or room
 
-* 詩士：
-    poet;
-    \lit poem scholar
+* 詩士： poet; \lit poem scholar
 
-* 嗜：
-    liked;
-    \or .[was] fond of
+* 嗜： liked; \or .[was] fond of
 
-* 誓：
-    sware to;
-    \or took oath to
-
+* 誓： sware to; \or took oath to
 ====
 
 <<
@@ -121,15 +106,11 @@ The Chinese source text is from Page~143 of Chao's
 >>
 ====
 * 氏 \+
-    Here, 施 has been dropped from 施氏.
+  Here, 施 has been dropped from 施氏.
 
-* 時時：
-    all the time;
-    \or often
+* 時時： all the time; \or often
 
-* 適：往也；
-    went to
-
+* 適：往也； went to
 ====
 
 <<
@@ -139,20 +120,15 @@ The Chinese source text is from Page~143 of Chao's
   .[At] this time, Mr~Shih .[had also] just arrived at .[the] market.
 >>
 ====
-* 十時：
-    ten o'clock \+
-    This is a modern term; perhaps "tenth hour" would be a better rendering.
-    Classically, 時 meant 時辰, which were
-    [named two-hour intervals](https://en.wikipedia.org/wiki/Earthly_Branches)
-    rather than numbered one-hour intervals.
+* 十時： ten o'clock \+
+  This is a modern term; perhaps "tenth hour" would be a better rendering.
+  Classically, 時 meant 時辰, which were
+  [named two-hour intervals](https://en.wikipedia.org/wiki/Earthly_Branches)
+  rather than numbered one-hour intervals.
 
-* 適：
-    .[had] just;
-    \or .[happened to have] just
+* 適： .[had] just; \or .[happened to have] just
 
-* 適：至也；
-    arrived at
-
+* 適：至也； arrived at
 ====
 
 <<
@@ -163,14 +139,9 @@ The Chinese source text is from Page~143 of Chao's
   made these ten lions pass away.
 >>
 ====
-* 勢：
-    situational .[advantage];
-    \or influence
+* 勢： situational .[advantage]; \or influence
 
-* 使：
-    made;
-    \or caused
-
+* 使： made; \or caused
 ====
 
 <<
@@ -194,10 +165,7 @@ The Chinese source text is from Page~143 of Chao's
   Mr~.[Shih] began to try eating .[the] carcasses of these ten lions.
 >>
 ====
-* 始：
-    began to;
-    \or started to
-
+* 始： began to; \or started to
 ====
 
 <<
@@ -208,15 +176,9 @@ The Chinese source text is from Page~143 of Chao's
   .[were] actually .[the] carcasses of ten stone lions.
 >>
 ====
-* 始：
-    first;
-    \or begin to
+* 始： first; \or begin to
 
-* 實：
-    actually;
-    \or in fact;
-    \or really
-
+* 實： actually; \or in fact; \or really
 ====
 
 <<
@@ -225,14 +187,9 @@ The Chinese source text is from Page~143 of Chao's
   Try to interpret these events.
 >>
 ====
-* 試：
-    try to;
-    \or attempt to
+* 試： try to; \or attempt to
 
-* 是事：
-    these events;
-    \or this incident
-
+* 是事： these events; \or this incident
 ====
 
 \cite-this-page[%title-en][lion-eating][

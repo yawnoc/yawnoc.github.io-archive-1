@@ -61,6 +61,7 @@
   licensed under [CC~BY-SA~4.0] [cc license].
 </small>
 ----
+
 @@[demonstration image]
   https://commons.wikimedia.org/wiki/File:\
     Demonstration_against_extradition_bill_aerial_view_\
@@ -86,6 +87,7 @@ An English translation of
 [《香港出師表》][facebook post] [(archived version)][archived]
 by [畫字~(Draword)][draword].
 ----
+
 @@[facebook post]
   https://www.facebook.com/Draword/photos/a.613162078701902/3027327090618710/
 @@
@@ -133,11 +135,7 @@ by [畫字~(Draword)][draword].
   this .[is] truly .[a] period of critical urgency, .[and] life .[and] death.
 >>
 ====
-* 秋：
-    period;
-    \lit autumn;
-    \or year
-
+* 秋： period; \lit autumn; \or year
 ====
 
 <<
@@ -150,12 +148,11 @@ by [畫字~(Draword)][draword].
   .[and] wish to repay him in our City.
 >>
 ====
-* 烈士：
-    .[our] martyr \+
-    [梁凌杰 (Leung Ling-kit)][梁凌杰],
-    who fell from atop Pacific Place on 15~June~2019, and died.
-
+* 烈士： .[our] martyr \+
+  [梁凌杰 (Leung Ling-kit)][梁凌杰],
+  who fell from atop Pacific Place on 15~June~2019, and died.
 ====
+
 @@[梁凌杰]
   https://zh.wikipedia.org/wiki/%E6%A2%81%E5%87%8C%E6%9D%B0
 @@
@@ -171,9 +168,7 @@ by [畫字~(Draword)][draword].
   .[and] reproach each other's wrongs, to block .[the] road of the struggle.
 >>
 ====
-* 菲，上聲，
-    \C fei2, \M f(ev)i
-
+* 菲，上聲，\C fei2, \M f(ev)i
 ====
 
 <<
@@ -197,21 +192,12 @@ by [畫字~(Draword)][draword].
   .[and] make .[ourselves] discordant within .[and] without.
 >>
 ====
-* 隊：
-    dobbing;
-    \lit poking;
-    \or fingering;
-    \or shoving \+
-    篤 is also "poking".
+* 隊： dobbing; \lit poking; \or fingering; \or shoving \+
+  篤 is also "poking".
 
-* 論：
-    debate;
-    \or judge
+* 論： debate; \or judge
 
-* 理：
-    judgement;
-    \lit governance
-
+* 理： judgement; \lit governance
 ====
 
 <<
@@ -234,19 +220,13 @@ by [畫字~(Draword)][draword].
   .[and] that there be .[a] broadening of benefit.
 >>
 ====
-* 裨：助也，補也；
-    supplement;
-    \or aid \+
-      裨，
-      \C pei1, \M b(i\)
+* 裨：助也，補也； supplement; \or aid \+
+  裨， \C pei1, \M b(i\)
 
 * 闕 \+
-    Used for 缺.
+  Used for 缺.
 
-* 漏：
-    flaws;
-    \or loopholes
-
+* 漏： flaws; \or loopholes
 ====
 
 <<
@@ -262,12 +242,9 @@ by [畫字~(Draword)][draword].
 * Removed colon before 神.
 
 * 闕 \+
-    Used for 缺.
+  Used for 缺.
 
-* 和事：
-    mediator;
-    \lit harmoniser of matters
-
+* 和事： mediator; \lit harmoniser of matters
 ====
 
 <<
@@ -292,12 +269,8 @@ by [畫字~(Draword)][draword].
   .[shall] collapse .[in] ruin.
 >>
 ====
-* 遠：
-    being far from;
-    \or keeping away from \+
-      遠，去聲，
-      \C y(u")n6, \M yu(a\)n
-
+* 遠： being far from; \or keeping away from \+
+  遠，去聲， \C y(u")n6, \M yu(a\)n
 ====
 
 <<
@@ -322,10 +295,7 @@ by [畫字~(Draword)][draword].
   may come .[within] numbered days.
 >>
 ====
-* 待：
-    come;
-    \lit .[be] awaited upon
-
+* 待： come; \lit .[be] awaited upon
 ====
 
 <<
@@ -346,18 +316,16 @@ by [畫字~(Draword)][draword].
   pushed Evil Laws upon .[the] midst of .[the] people.
 >>
 ====
-* 再三：
-    again .[and] again;
-    \lit again .[and] thrice \+
-    By my count at least thrice:
-      [Article~23~(2003)] [23條],
-      [Fake universal suffrage~(2014)] [政改],
-      and now [Extradition to Mainlandia~(2019)] [送中].
-    And don't forget the proposed
-      [National Anthem Bill] [歌],
-    whereby one might be arrested for mentioning 通菜牛肉剁爛.
-
+* 再三： again .[and] again; \lit again .[and] thrice \+
+  By my count at least thrice:
+    [Article~23~(2003)] [23條],
+    [Fake universal suffrage~(2014)] [政改],
+    and now [Extradition to Mainlandia~(2019)] [送中].
+  And don't forget the proposed
+    [National Anthem Bill] [歌],
+  whereby one might be arrested for mentioning 通菜牛肉剁爛.
 ====
+
 @@[23條]
   https://en.wikipedia.org/wiki/\
     National_Security_(Legislative_Provisions)_Bill_2003
@@ -380,10 +348,7 @@ by [畫字~(Draword)][draword].
   .[I] then agreed to .[the] pan-democrats .[to] do service .[for the cause].
 >>
 ====
-* 驅馳：
-    do service .[for the cause];
-    \lit run quickly (by horse)
-
+* 驅馳： do service .[for the cause]; \lit run quickly (by horse)
 ====
 
 <<
@@ -416,10 +381,7 @@ by [畫字~(Draword)][draword].
   .[and] harmed .[the] splendour of .[our] righteous fighter.
 >>
 ====
-* 效：
-    effected;
-    \or brought about
-
+* 效： effected; \or brought about
 ====
 
 <<
@@ -447,11 +409,9 @@ by [畫字~(Draword)][draword].
   and .[it is my] allotted duty of loyalty .[to] Hong Kong.
 >>
 ====
-* 應分：
-    allotted duty \+
-    Originally written 應份.
-    分 below also originally written 份.
-
+* 應分： allotted duty \+
+  Originally written 應份.
+  分 below also originally written 份.
 ====
 
 <<
@@ -463,10 +423,7 @@ by [畫字~(Draword)][draword].
   .[the] councillors .[and the] demonstrators.
 >>
 ====
-* 斟酌：
-    weighing up;
-    \lit pouring .[the correct amount]
-
+* 斟酌： weighing up; \lit pouring .[the correct amount]
 ====
 
 <<
@@ -491,8 +448,7 @@ by [畫字~(Draword)][draword].
 >>
 ====
 * Sing Hallelujah to the LORD \+
-    Originally written in lower case.
-
+  Originally written in lower case.
 ====
 
 <<
@@ -507,15 +463,10 @@ by [畫字~(Draword)][draword].
   .[and properly] give thanks.
 >>
 ====
-* 底：
-    .[the] end;
-    \lit .[the] bottom
+* 底： .[the] end; \lit .[the] bottom
 
-* 勝：
-    completely \+
-      勝，平聲，
-      \C [^sh]ing1 (\pm [_s]ing1), \M sh(e-)ng1 (\nc sh(e\)ng)
-
+* 勝： completely \+
+  勝，平聲， \C [^sh]ing1 (\pm [_s]ing1), \M sh(e-)ng1 (\nc sh(e\)ng)
 ====
 
 <<{back-matter}

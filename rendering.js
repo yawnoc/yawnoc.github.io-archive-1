@@ -75,8 +75,8 @@ function renderMaths() {
     // Space before an operator (e.g. total differential)
     '\\mathopspace': '\\mathop{}\\!',
     
-    // More vertical space for fraction-containing equations in aligned etc.
-    '\\fraclinespace': '0.7em',
+    // More vertical space for lines containing fractions etc.
+    '\\tallspace': '0.8em',
     
     // Asymptotically
     '\\asy': '\\sim',
@@ -120,7 +120,7 @@ function renderMaths() {
     '\\basisvec': '\\mathopspace\\vec{a}_{#1}',
     
     // Units
-    '\\unit': '\\mathopspace\\mathrm{#1}',
+    '\\unit': '\\mathopspace\\text{#1}',
     
     // Text quantities
     '\\textq': '\\{\\text{#1}\\}',

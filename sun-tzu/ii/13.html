@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
+<title>"Sun Tzŭ's Computational Classic: Volume&nbsp;II" 《孫子算經・卷中》 ¶13 | Conway's site</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="/sun-tzu/" title="Sun Tzŭ's Computational Classic">Sun Tzŭ</a>
+</li>
+<li class="breadcrumb"><a href="/sun-tzu/ii/" title="Volume&nbsp;II">II</a>
+</li>
+<li class="breadcrumb"><a title="You are viewing ¶13">¶13</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1><span lang="zh-Hant">《孫子算經・卷中》</span><br>
+"Sun Tzŭ's Computational Classic: Volume&nbsp;II"<br>
+¶13. Area of a circle</h1>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/ii/">↑ Volume&nbsp;II</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/ii/12">← ¶12</a>
+</div>
+<div class="current">
+¶13
+</div>
+<div class="next">
+<a href="/sun-tzu/ii/14">¶14 →</a>
+</div>
+</div>
+</nav>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-06-09<br>
+Last modified: 2020-05-xx
+</div>
+<p>
+This paragraph gives a worked example of computing the <b>area of a circle</b>.
+</p>
+<p>
+The relevant unit conversion between area and length is
+</p>
+<div class="js-maths">1 \unit{acre~(畝)} = 240 \unit{paces~(步)}^2.
+</div>
+<p>
+See <a href="/sun-tzu/i/1">Vol.&nbsp;I ¶1 (Units of length)</a>.
+</p>
+<h2 id="translation"><a class="permalink" href="#translation" aria-label="Permalink"></a>Translation</h2>
+<p>
+Chinese source text: <a href="https://archive.org/details/02094034.cn/page/n34">Version&nbsp;A</a>, <a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=155">Version&nbsp;B</a>, <a href="https://ctext.org/sunzi-suan-jing#n52166">Version&nbsp;C</a>, <a href="https://ctext.org/library.pl?if=en&amp;file=86926&amp;page=48">Version&nbsp;D</a>.<br>
+Unless noted otherwise, I follow the text from Version&nbsp;D, <span lang="zh-Hant">《知不足齋叢書》本</span>.
+</p>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">今有圓田，周三百步，徑一百步。問得田幾何？</span>
+</div>
+<div class="english">
+Now there be <i class="translator-supplied">a</i> circular field,
+of circumference three hundred paces,
+<i class="translator-supplied">and</i> diameter one hundred paces.
+<i class="translator-supplied">We</i> ask: how much field resulteth?
+</div>
+</div>
+<p>
+* Here <span class="js-maths">\pi \approx 3</span>, see <a href="/sun-tzu/i/5">Vol.&nbsp;I ¶5</a>.
+</p>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">答曰：三十一畝奇六十步。</span>
+</div>
+<div class="english">
+Answer saith: thirty-one acres, remainder sixty paces.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">奇：</span> remainder<br>
+<span lang="zh-Hant">奇，音羈，</span> <a href="/cantonese/conway-romanisation" title="Conway's Romanisation for Cantonese">Cantonese</a>:&nbsp;kei1, Mandarin:&nbsp;jī<br>
+To convert area from square paces to acres, mu&nbsp;<span lang="zh-Hant" class="original-chinese">畝</span>,
+one divides by the conversion factor <span class="js-maths">240 \unit{paces}^2 / \unit{acre}</span>,
+called the "acre divisor" below.
+This is why the text refers to a "remainder".
+</li>
+<li>In modern notation, the area is <span class="js-maths">31 \unit{acres} + 60 \unit{paces}^2</span>.
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">術曰：先置周三百步，半之，得一百五十步。又置徑一百步，半之，得五十步。相乘，得七千五百步。</span>
+</div>
+<div class="english">
+Method saith:
+first put <i class="translator-supplied">down the</i> circumference, three hundred paces;
+halving it, resulteth in one hundred <i class="translator-supplied">and</i> fifty paces.
+Also put <i class="translator-supplied">down the</i> diameter, one hundred paces;
+halving it, resulteth in fifty paces.
+<i class="translator-supplied">These</i>, multiplied with each other,
+result in seven thousand five hundred paces.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">以畝法二百四十步除之，即得。</span>
+</div>
+<div class="english">
+Dividing it by <i class="translator-supplied">the</i> acre divisor,
+two hundred <i class="translator-supplied">and</i> forty paces,
+<i class="translator-supplied">we</i> are done.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">又術：周自相乘，得九萬步。以一十二除之，得七千五百步。</span>
+</div>
+<div class="english">
+Also <i class="translator-supplied">a</i> method:
+<i class="translator-supplied">the</i> circumference, multiplied with itself, resulteth in nine myriad paces.
+Dividing it by twelve, resulteth in seven thousand five hundred paces.
+</div>
+</div>
+<ul>
+<li><a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=155">Version&nbsp;B</a> has <span lang="zh-Hant">又術曰</span> for <span lang="zh-Hant">又術</span>, both here and below.
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">以畝法除之，得畝數。</span>
+</div>
+<div class="english">
+Dividing it by <i class="translator-supplied">the</i> acre divisor,
+resulteth in <i class="translator-supplied">the</i> number of acres.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">又術：徑自乘，得一萬。以三乘之，得三萬步。四除之，得七千五百步。</span>
+</div>
+<div class="english">
+Also <i class="translator-supplied">a</i> method:
+<i class="translator-supplied">the</i> diameter, multiplied <i class="translator-supplied">with</i> itself, resulteth in one myriad.
+Multiplying it by three, resulteth in three myriad paces.
+Dividing it <i class="translator-supplied">by</i> four, resulteth in seven thousand five hundred paces.
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">以畝法除之，得畝數。</span>
+</div>
+<div class="english">
+Dividing it by <i class="translator-supplied">the</i> acre divisor, resulteth in <i class="translator-supplied">the</i> number of acres.
+</div>
+</div>
+<ul>
+<li>In modern notation,
+a circle with circumference <span class="js-maths">C</span> and diameter <span class="js-maths">d</span> has area
+<div class="js-maths">\frac{C}{2} \cdot \frac{d}{2}
+\approx \frac{C^2}{12}
+\approx \frac{3d^2}{4}.
+</div>
+Here <span class="js-maths">\pi \approx 3</span>, see <a href="/sun-tzu/i/5">Vol.&nbsp;I ¶5</a>.
+</li>
+</ul>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/ii/">↑ Volume&nbsp;II</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/ii/12">← ¶12</a>
+</div>
+<div class="current">
+¶13
+</div>
+<div class="next">
+<a href="/sun-tzu/ii/14">¶14 →</a>
+</div>
+</div>
+</nav>
+<h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
+<ul>
+<li>Text:
+<p>
+Conway&nbsp;(2020).
+"Sun Tzŭ's Computational Classic: Volume&nbsp;II ¶13".
+&lt;https://yawnoc.github.io/sun-tzu/ii/13&gt;
+Accessed&nbsp;<span class="js-date">yyyy-mm-dd</span>.
+</p>
+</li>
+<li>BibTeX:
+<pre><code>@misc{conway-sun-tzu-ii-13,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{II} {\P13}''},
+  howpublished = {\url{https://yawnoc.github.io/sun-tzu/ii/13}},
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+<li>BibLaTeX:
+<pre><code>@online{conway-sun-tzu-ii-13,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{II} {\P13}''},
+  url = {https://yawnoc.github.io/sun-tzu/ii/13},
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+</ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
+<footer>
+©&nbsp;2019–2020&nbsp;Conway.
+</footer>
+</body>
+</html>

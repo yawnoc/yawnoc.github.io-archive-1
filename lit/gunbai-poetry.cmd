@@ -61,15 +61,16 @@
 {: \kimura-yodo : Kimura Yōdō :}
 
 ----
-  In professional sumo wrestling, the [umpire] [Gyoji]
-  indicates his decision by pointing a fan, called a
-  [ _gunbai_ ([ja/~~ 軍配 ~~/]) ] [gunbai],
-  towards the winning wrestler's starting end.
-  Some are decorated with patterns, but others bear calligraphy.
-  In particular, the fan carried by umpire
-  [\kimura-yodo ([ja/~~ 木村容堂 ~~/])] [kimura]
-  has the lines [ja/~~ 及時當勉励 歳月不待人 ~~/]:
+In professional sumo wrestling, the [umpire] [Gyoji]
+indicates his decision by pointing a fan, called a
+[ _gunbai_ ([ja/~~ 軍配 ~~/]) ] [gunbai],
+towards the winning wrestler's starting end.
+Some are decorated with patterns, but others bear calligraphy.
+In particular, the fan carried by umpire
+[\kimura-yodo ([ja/~~ 木村容堂 ~~/])] [kimura]
+has the lines [ja/~~ 及時當勉励 歳月不待人 ~~/]:
 ----
+
 @@[gyoji]
   https://en.wikipedia.org/wiki/Gy%C5%8Dji
 @@
@@ -103,6 +104,7 @@ by [T'ao Y(u")an-ming ((陶淵明))][陶淵明].
 \kimura-yodo never points the other side of the fan away from himself,
 but I would guess that that side bears the two lines before. All up:
 ----
+
 @@[雜詩]
   https://zh.wikisource.org/zh-hant/\
     %E9%9B%9C%E8%A9%A9_(%E9%99%B6%E6%B7%B5%E6%98%8E)#%E5%85%B6%E4%B8%80
@@ -132,18 +134,11 @@ but I would guess that that side bears the two lines before. All up:
   ||||||
 >>>>>>>>
 ====
-* 盛：
-    prime;
-    \lit flourishing
+* 盛： prime; \lit flourishing
 
-* 一日：
-    {a} day;
-    \lit one day
+* 一日： .[a] day; \lit one day
 
-* 難：
-    cannot;
-    \lit .[with] difficulty
-
+* 難： cannot; \lit .[with] difficulty
 ====
 
 

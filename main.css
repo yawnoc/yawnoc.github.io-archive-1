@@ -17,7 +17,6 @@
   Noscript
   Page properties
   Romanisations
-  Sun Tzu
   SVG
   Tables
   Thought bubbles (Cynic's 7.30)
@@ -262,11 +261,11 @@ p.thought-bubble {
   text-align: center;
 }
 
-.marker:first-child{
+.start {
   margin-bottom: 1.3em;
 }
 
-.marker:last-child {
+.end {
   clear: both;
   font-size: x-large;
   margin-top: 0.5em;
@@ -276,6 +275,13 @@ p.thought-bubble {
 /* ---------------------------------------------------------------- */
 /* Links                                                            */
 /* ---------------------------------------------------------------- */
+
+
+/* Placeholder links, i.e. anchor elements without an href attribute */
+
+a:not([href]) {
+  color: #545454;
+}
 
 
 /* External link icon */
@@ -362,11 +368,12 @@ header {
 }
 
 nav {
-  background: #ffff66;
+  background: #ffffcc;
   border: 1px solid black;
   margin: 1em 0.5em;
 }
 header > nav {
+  background: #ffff66;
   border: none;
   border-bottom: 1px solid black;
   margin: 0;
@@ -409,7 +416,6 @@ nav > ul > li > a {
 
 .surrounds {
   padding: 0.2em;
-  font-size: large;
   text-align: center;
 }
 
@@ -419,7 +425,8 @@ nav > ul > li > a {
 }
 
 .current  {
-  font-size: x-large;
+  margin-top: 0.1em;
+  font-size: 1.3em;
 }
 
 .previous {
@@ -497,20 +504,6 @@ noscript {
 
 .original-chinese::after {
   content: ')';
-}
-
-
-/* ---------------------------------------------------------------- */
-/* Sun Tzu                                                          */
-/* ---------------------------------------------------------------- */
-
-
-.sun-tzu-navigation {
-  margin-top: 0.1em;
-}
-
-.sun-tzu-navigation > li {
-  margin-bottom: 0.1em;
 }
 
 

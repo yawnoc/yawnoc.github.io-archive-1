@@ -9,6 +9,7 @@
   Page properties with dates  [|||| ||||]
   Heading permalinks (<h2> through <h6>)
   Sun Tzu surrounds navigation  {{{{| |}}}}
+  Sun Tzu source text links
   Links
   Navigation bars  [==== ====]
   Translation (parallel text)  <<{[class]}↵ || >>
@@ -25,6 +26,7 @@
   Coloured spans  [c/ /]
   SVG embedded styles
   Accessible inline SVGs
+  Superscript elements  **
   
 -->
 
@@ -315,6 +317,55 @@
 %}
 
 
+
+<!--
+  ----------------------------------------------------------------
+  Sun Tzu source text links
+  ----------------------------------------------------------------
+-->
+
+<!-- Version A  \a[p] -->
+{%
+  \\a \[ (?P<p> [0-9]+ ) \]
+%
+  [Version~A](https://archive.org/details/02094034.cn/page/n\g<p>)
+%}
+
+<!-- Version B  \b[p] -->
+{%
+  \\b \[ (?P<p> [0-9]+ ) \]
+%
+  [Version~B](
+    https://commons.wikimedia.org/w/index.php\
+    ?title=\
+      File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8\
+      _0797%E5%86%8A.djvu\
+    &page=\g<p>
+  )
+%}
+
+<!-- Version C  \c[p] -->
+{%
+  \\c \[ (?P<p> [0-9]+ ) \]
+%
+  [Version~C](https://ctext.org/sunzi-suan-jing#n\g<p>)
+%}
+
+<!-- Version D  \d[p] -->
+{%
+  \\d \[ (?P<p> [0-9]+ ) \]
+%
+  [Version~D](https://ctext.org/library.pl?if=en&file=86926&page=\g<p>)
+%}
+
+<!-- Default to Version D \d-default -->
+{:
+  \d-default
+:
+  Unless noted otherwise, I follow the text from Version~D, 《知不足齋叢書》本.
+:}
+
+
 <!--
   ----------------------------------------------------------------
   Links
@@ -401,6 +452,18 @@
   \]
 %
   (/sun-tzu/\g<volume>#\g<paragraph> \g<title>)
+%}
+
+<!-- Sun Tzu manuscript URL in round brackets  [m"v p"] -->
+{%
+  [\s]* \[m"p"\]
+%
+  (/manuscripts/sun-tzu-preface.pdf)
+%}
+{%
+  [\s]* \[m"(?P<volume> [i] {1,3} ) [ ] (?P<paragraph> [0-9] + )"\]
+%
+  (/manuscripts/sun-tzu-\g<volume>-\g<paragraph>.pdf)
 %}
 
 
@@ -1007,5 +1070,23 @@
   \]
 %
   <g aria-hidden="true">\g<content></g>
+%}
+
+
+
+<!--
+  ----------------------------------------------------------------
+  Superscript elements  **
+  ----------------------------------------------------------------
+-->
+
+{%
+  (?<= [0-9])
+    [ ]*
+  [*]{2}
+    [ ]*
+  (?P<power> [0-9]+ )
+%
+  <sup>\g<power></sup>
 %}
 

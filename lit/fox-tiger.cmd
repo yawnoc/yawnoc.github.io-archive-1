@@ -40,6 +40,7 @@ It originates from a fable told in 《戰國策\.楚策一》, or
 "Ch'u ((楚))~Strategies~I" of [".[The] Warring States' Strategies"][戰國策],
 compiled/edited by [Liu Hiang ((劉向))][劉向].
 ----
+
 @@[戰國策]
   https://en.wikipedia.org/wiki/Zhan_Guo_Ce
 @@
@@ -56,6 +57,7 @@ See also:
 * [ _The Gruffalo_ ](https://en.wikipedia.org/wiki/The_Gruffalo),
   by Julia Donaldson
 ====
+
 @@[fairy book]
   https://en.wikisource.org/wiki/Chinese_Fairy_Book_(Richard_Wilhelm)/11
 @@
@@ -69,6 +71,7 @@ See also:
 The Chinese source text is from Chinese Text Project:
 [先秦兩漢 \> 史書 \> 戰國策 \> 楚策 \> 楚一 \> 荊宣王問群臣][source].
 ----
+
 @@[source]
   https://ctext.org/zhan-guo-ce/jing-xuan-wang-wen-qun-chen
 @@
@@ -80,16 +83,11 @@ The Chinese source text is from Chinese Text Project:
 >>
 ====
 * 狐 \+
-    The fox is as cunning an animal in the East, as he is in the West.
+  The fox is as cunning an animal in the East, as he is in the West.
 
-* 假：
-    feigneth;
-    \or falsely assumeth
+* 假： feigneth; \or falsely assumeth
 
-* 威：
-    authority;
-    \lit might
-
+* 威： authority; \lit might
 ====
 
 <<
@@ -102,39 +100,31 @@ The Chinese source text is from Chinese Text Project:
 >>
 ====
 * King ((荊)) \+
-    Another name for the state of~Ch'u ((楚)).
+  Another name for the state of~Ch'u ((楚)).
 
-* 群：
-    group;
-    \or gathering
+* 群： group; \or gathering
 
 * Chao Hi-s(u") ((昭奚恤)) \+
-    The name of a high military official of~Ch'u ((楚)).
-
+  The name of a high military official of~Ch'u ((楚)).
 ====
 
 <<
   江一對曰：「虎求百獸而食之，得狐。
 ||
   .[But] Kiang I ((江一)) replied, saying,
-  ".[The] tiger sought .[the] many beasts to eat them,
-  .[and] obtained .[the] fox.
+    ".[The] tiger sought .[the] many beasts to eat them,
+    .[and] obtained .[the] fox.
 >>
 ====
 * Kiang I ((江一)) \+
-    A minister of King~S(u")an ((宣)) of~King ((荊)).
-    In another manuscript he is called Kiang I ((江乙)).
+  A minister of King~S(u")an ((宣)) of~King ((荊)).
+  In another manuscript he is called Kiang I ((江乙)).
 
-* 求：索也；
-    sought
+* 求：索也； sought
 
-* 百獸：
-    .[the] many beasts; \lit .[the] hundred beasts
+* 百獸： .[the] many beasts; \lit .[the] hundred beasts
 
-* 得：
-    obtained;
-    \or got
-
+* 得： obtained; \or got
 ====
 
 <<
@@ -147,28 +137,16 @@ The Chinese source text is from Chinese Text Project:
     this .[would] defy .[the] command of .[the] Emperor of Heaven.
 >>
 ====
-* 子：
-    thou;
-    \lit .[the] master
+* 子： thou; \lit .[the] master
 
-* 天帝：
-    .[the] Emperor of Heaven;
-    \or God
+* 天帝： .[the] Emperor of Heaven; \or God
 
-* 長：
-    leader \+
-      長，上聲，
-      \C ch(oe)ng2, \M zh(av)ng
+* 長： leader \+
+  長，上聲， \C ch(oe)ng2, \M zh(av)ng
 
-* 逆：
-    defy;
-    \or go against
+* 逆： defy; \or go against
 
-* 命：
-    command;
-    \or order;
-    \or mandate
-
+* 命： command; \or order; \or mandate
 ====
 
 <<
@@ -181,13 +159,9 @@ The Chinese source text is from Chinese Text Project:
   .[shall] see me and dare run not?'
 >>
 ====
-* 先：
-    before
+* 先： before
 
-* 後：
-    behind;
-    \or after
-
+* 後： behind; \or after
 ====
 
 <<
@@ -212,27 +186,17 @@ The Chinese source text is from Chinese Text Project:
   and exclusively subordinate .[are] they unto Chao Hi-s(u") ((昭奚恤));
 >>
 ====
-* 地：
-    territory;
-    \lit land
+* 地： territory; \lit land
 
-* 方：
-    circumference
+* 方： circumference
 
-* 里：
-    miles \+
-    A [unit of distance](https://en.wikipedia.org/wiki/Li_\(unit\)),
-    of the order half a kilometre.
+* 里： miles \+
+  A [unit of distance](https://en.wikipedia.org/wiki/Li_\(unit\)),
+  of the order half a kilometre.
 
-* 百萬：
-    .[a] million;
-    \or .[in their] millions;
-    \lit .[an] hundred myriad
+* 百萬： .[a] million; \or .[in their] millions; \lit .[an] hundred myriad
 
-* 屬：
-    subordinate to;
-    \or belonging to
-
+* 屬： subordinate to; \or belonging to
 ====
 
 <<
