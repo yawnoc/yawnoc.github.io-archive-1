@@ -1,293 +1,206 @@
-<*> FAQ | 20190801 | 20200326 | d </*>
+(+ res/general-syntax.cmd +)
 
-<=h>
-  <@ih></@ih>
-  <@it></@it>
-</=h>
-
-<h1>FAQ</h1>
-
-<*p></*p>
-
-<p>
-  <@> <b>[general.h]</b> | #general | [general.h] </@>
-</p>
-
-<ul>
-  <@i> [time.h] | #time | </@i>
-  <@i> [site.h] | #site | </@i>
-  <@i> [domain.h] | #domain | </@i>
-  <@i> [death.h] | #death | </@i>
-  <@i> [cookies.h] | #cookies | </@i>
-  <@i> [favicon.h] | #favicon | </@i>
-</ul>
-
-<p>
-  <@> <b>[applied.h]</b> | #applied | [applied.h] </@>
-</p>
-<ul>
-  <@i> [equations.h] | #equations | </@i>
-</ul>
-
-<p>
-  <@> <b>[literary.h]</b> | #literary | [literary.h] </@>
-</p>
-<ul>
-  <@i> [italics.h] | #italics | </@i>
-  <@i> [archaic.h] | #archaic | </@i>
-  <@i> [this.h] | #this | </@i>
-</ul>
+%%
+  %title FAQ
+  %title-suffix \title-suffix
+  %author Conway
+  %date-created 2019-08-01
+  %date-modified 2020-05-13
+  %resources
+    (+ res/main-resources.cmd +)
+%%
 
 
-<% [general.h] | General %>
-<@2> [general.h] | general </@2>
+[[====
+* \header-link:home
+* \header-link:top
+====]]
 
 
-<% [time.h] | What do you do in your spare time? %>
-<@3> [time.h] | time </@3>
+# %title #
 
-<p>
-  That depends on what you mean by spare time; a day is quite short really.
-  Generally speaking life is very short too.
-  Eighty years is not a very long time to (expect to) be alive,
-  and even eight hundred years would pass me by very quickly.
-</p>
 
-<p>
-  I ponder unsophisticated
-  <@> applied maths problems | #applied | [applied.h] </@>
-  and attempt to read
-  <@> Literary Chinese | #literary | [literary.h] </@>.
-  Now I am burning even more of my time by building this website
-  and making the content freely available online.
-</p>
+[||||
+||||]
 
-<% [site.h] | How is this site built? %>
-<@3> [site.h] | site </@3>
 
-<p>
-  Using <@> GitHub Pages | https://pages.github.com/ | </@>,
-  which is
-    <:g><b>simple</b></:g>,
-    <:g><b>fast</b></:g> and most importantly
-    <:g><b>ad-free</b></:g>
-  (but unfortunately conway.github.io was already taken, sob).
-  I definitely recommend it for building a static website.
-  In my case, I do not use Jekyll or other plugins;
-  just straight CSS and JavaScript.
-</p>
-<p>
-  The pages are written in my own "concise HTML" (<`>.cch</`>),
-  which gets converted to standard HTML (<`>.html</`>) via my custom-written
-  <@>
-    Python converter
-    | /code/cch
-    | Python: a regex converter from CCH to HTML
-  </@>.
-  For example, this page was generated from the CCH file
-  <@> <`>faq.cch</`> | \/faq.cch | faq.cch </@>.
-</p>
 
-<%
-  [domain.h] |
+##time
+  What do you do in your spare time?
+##
+
+----
+That depends on what you mean by spare time; a day is quite short really.
+Generally speaking life is very short too.
+Eighty years is not a very long time to (expect to) be alive,
+and even eight hundred years would pass me by very quickly.
+----
+----
+These days I ponder [unsophisticated applied maths problems](/#applied-maths)
+and attempt to read and [translate Literary Chinese](/#literary-chinese),
+and burn even more of my time by building this website
+and making the content freely available online.
+----
+
+
+
+##site
+  How is this site built?
+##
+
+----
+Using [GitHub Pages](https://pages.github.com/),
+which is __simple__, __fast__, and most importantly __ad-free__.
+Unfortunately conway.github.io was already taken though (sob).
+In my case, I do not use Jekyll or other plugins;
+just straight CSS and JavaScript.
+----
+----
+The pages are written in [Conway's markdown (CMD)] [cmd],
+which gets converted to HTML via my custom-written [Python converter] [py].
+For example, this page was generated from the CMD file [`faq.cmd`] [.cmd].
+----
+
+@@[cmd]
+  https://conway-markdown.github.io/
+@@
+@@[py]
+  https://github.com/conway-markdown/conway-markdown
+@@
+@@[.cmd]
+  https://github.com/yawnoc/yawnoc.github.io/blob/master/faq.cmd
+@@
+
+
+
+##domain
   Why don't you get yourself a custom domain
   instead of the default yawnoc.github.io?
-%>
-<@3> [domain.h] | domain </@3>
+##
 
-<p>
-  Firstly, I am poor, and secondly, even if I did buy a domain,
-  I can't keep it with me when I die. On the other hand,
-  the default subdomain is as permanent as GitHub Pages itself.
-</p>
-
-<% [death.h] | Oh... that's a bit macabre. %>
-<@3> [death.h] | death </@3>
-
-<p>
-  I do not fear death for my own sake.
-  I might die some time later today, or I may have many decades yet.
-  At the time of writing the latter is more probable. Fear changes nothing.
-</p>
-
-<% [cookies.h] | Does your site use cookies? %>
-<@3> [cookies.h] | cookies </@3>
-
-<p>
-  A single cookie called <code>romanisation</code> is used
-  to remember your romanisation preference.
-  Unless you tamper with it, its value will only be one of
-  <`>none</`>, <`>conway</`>, <`>wadegiles</`> or <`>pinyin</`>.
-  I do not track you.
-</p>
-
-<!-- [: :] for red first letters -->
-<% [: | <:r> %>
-<% :] | </:r> %>
-
-<.>
-  Cookie banners/pop-ups are stupid. Sue me. <br>
-  <span class="small-caps"><strong>\
-    [:I:] [:A:]m [:N:]ot [:A:] [:L:]awyer\
-  </strong></span>
-</.>
-
-<% [favicon.h] | How did you set up the site favicon? %>
-<@3> [favicon.h] | favicon </@3>
-
-<p>
-  Using <@> RealFaviconGenerator | https://realfavicongenerator.net/ | </@>
-  by <@> Philippe Bernard | https://stackoverflow.com/a/19590415 | </@>.
-</p>
+----
+Firstly, I am poor, and secondly, even if I did buy a domain,
+I can't keep it with me when I die.
+On the other hand, the default subdomain
+is as permanent as GitHub Pages itself.
+----
 
 
-<% [applied.h] | Applied mathematics, or physics %>
-<@2> [applied.h] | applied </@2>
+
+##death
+  Oh... that's a bit macabre.
+##
+
+----
+I do not fear death for my own sake.
+I might die some time later today, or I may have many decades yet.
+At the time of writing the latter is more probable. Fear changes nothing.
+----
 
 
-<p>
-  The <@> applied maths | /#applied | Applied mathematics, or physics </@>
-  I am interested in is really physics,
-  specifically problems in the Newtonian regime
-  which can be modelled in a continuum manner,
-  with none of the complications of
-  quantum mechanics (which I do not understand)
-  and relativity.
-</p>
 
-<% [equations.h] | How are the maths equations rendered? %>
-<@3> [equations.h] | equations </@3>
+##cookies
+  Does your site use cookies?
+##
 
-<p>
-  Using KaTeX. See
-  <@> How to render equations using KaTeX | /code/katex-guide | </@>.
-</p>
+----
+No, unless you have visited this site prior to 14~May 2020.
+----
 
 
-<% [literary.h] | English translations of Literary Chinese %>
-<@2> [literary.h] | literary </@2>
+
+##favicon
+  How did you set up the site favicon?
+##
+
+----
+Using [RealFaviconGenerator](https://realfavicongenerator.net/)
+by [Philippe Bernard](https://stackoverflow.com/a/19590415).
+----
 
 
-<p>
-  In any regional variant of Chinese, there is a continuum between
-  白話 (vernacular Chinese; literally "plain talk") and 文言
-  (Literary Chinese, or Classical Chinese; literally "literary speech").
-  Literary is extremely concise, and prone to dropping things
-  which can be inferred by context.
-  It is very difficult to read because
-  Chinese characters have many meanings which are now archaic.
-  For example, the character 之 retains only two meanings in modern usage
-  (though the second is rare and very formal):
-</p>
-<ul>
-  <li>
-    reverse of "of",
-    so that "A~之~B"
-    means "B~of~A"
-  </li>
-  <li>
-    any non-subject pronoun (him, it, etc.)
-  </li>
-</ul>
-<p>
-  However in literary Chinese, 之 can also be
-</p>
-<ul>
-  <li>此也：
-    this (as in 之子：this daughter)
-  </li>
-  <li>往也：
-    go (as in 東之：went east)
-  </li>
-  <li>至也：
-    until (as in 之死：until death)
-  </li>
-</ul>
-<p>
-  among other meanings.
-  There is also the interchangeable use of certain characters, e.g.~\
-    女~for~汝 (thou),
-    邪~for~耶 (a speech-assist word indicating a question),
-    反~for~返 (return),
-    矜~for~鰥 (widower), etc.
-  I also note that Literary was originally written with no punctuation
-  and very little paragraphing, and that in all the resources we read today,
-  an editor has already gone ahead and inserted the punctuation for us.
-</p>
 
-<p>
-  Recently I got the idea of
-  <@> translating | /#literary | English translations of Literary Chinese </@>
-  some of the texts which I have been reading into English.
-</p>
+##equations
+  How are the maths equations rendered?
+##
 
-<% [italics.h] | Why are there italicised words in your translations? %>
-<@3> [italics.h] | italics </@3>
+----
+Using [KaTeX](https://katex.org/).
+----
 
-<p>
-  I aim for
-  <@>
-    formal equivalence
-    | https://en.wikipedia.org/wiki/Dynamic_and_formal_equivalence
-    | Wikipedia: Dynamic and formal equivalence
-  </@>
-  in my translations, and I adopt the convention of the
-  King~James Bible translators, who {distinguished} words
-  which did not appear in the original Hebrew, Aramaic or Greek
-  (note that in the original 1611 version this was done not using italics,
-  but using Roman type instead of the main Black Letter type).
-  In my case, English words which do not appear in the original Chinese
-  (meaning I cannot point to a character which corresponds to
-  or contains that word) are {distinguished}, except:
-</p>
-<ol>
-  <li>
-    "The" is not distinguished when referring to a general class
-    as opposed to a particular instance, e.g.~"the poor".
-  </li>
-  <li>
-    "Of" is not distinguished unless part an entire phrase
-    not in the original Chinese,
-    and is thought of as being provided by the word order in Chinese.
-  </li>
-  <li>
-    Prepositions are not distinguished when they follow a verb,
-    and are thought of as part of the verb in Chinese,
-    e.g.~"went to", "laughed at".
-  </li>
-</ol>
 
-<% [archaic.h] | Wherefore usest thou archaic verb conjugation? %>
-<@3> [archaic.h] | archaic </@3>
 
-<p>
-  This is stylistic, and in my view
-  accurately reflects the archaicness of Literary Chinese.
-</p>
-<p>
-  Also it sounds cooler and allows for greater freedom in word order.
-  For example, compare
-    "This is what the \LORD says" (New International Version)
+##italics
+  Why are there italicised words in your translations?
+##
+
+----
+I aim for [formal equivalence] in my translations,
+and I adopt the convention of the King~James Bible translators,
+who .[distinguished] words which did not appear
+in the original Hebrew, Aramaic or Greek,
+but were supplied by the translator.
+(Note that in the original 1611 version this was done not using italics,
+but using Roman type instead of the main Black Letter type.)
+In my case, English words which do not appear in the original Chinese
+(meaning I cannot point to a character which corresponds to
+or contains that word) are .[distinguished], except:
+----
+====
+* "The" is not distinguished when referring to a general class
+  as opposed to a particular instance, e.g.~"the poor".
+
+* "Of" is not distinguished unless part an entire phrase
+  not in the original Chinese,
+  and is thought of as being provided by the word order in Chinese.
+
+* Prepositions are not distinguished when they follow a verb,
+  and are thought of as part of the verb in Chinese,
+  e.g.~"went to", "laughed at".
+====
+
+@@[formal equivalence]
+  https://en.wikipedia.org/wiki/Dynamic_and_formal_equivalence
+@@
+
+
+
+##archaic
+  Wherefore usest thou archaic verb conjugation?
+##
+
+----
+This is stylistic, and in my view
+accurately reflects the archaicness of Literary Chinese.
+----
+----
+Also it sounds cooler and allows for greater freedom in word order.
+For example,
+  compare
+    "This is what the LORD says" (New International Version)
   to
-    "Thus saith the \LORD" (King~James Version)
+    "Thus saith the LORD" (King~James Version)
   for the Hebrew
     <span lang="he" dir="rtl" class="no-wrapping">כה אמר יהוה</span>.
-</p>
+----
 
-<% [this.h] | But I thought that 是 means "is", and 也, "also". %>
-<@3> [this.h] | this </@3>
 
-<p>
-  Forget everything you learnt in Mandarin class; that is modern vernacular.
-  Welcome to pre-twentieth-century Chinese Literature, in which
-  是 primarily means "this", and 也 is primarily an ending
-  speech-assist word (with no inherent meaning) which asserts
-  the preceding thing/notion/statement.
-</p>
-<p>
-  In Hong Kong you might see 是日例湯 written on a chalkboard
-  for soup at an eatery.
-  Here <:h>是</:h>日 means "<:h>this</:h> day", i.e.~"today".
-</p>
 
-<*f></*f>
+##this
+  But I thought that 是 means "is", and 也, "also".
+##
+
+----
+Forget everything you learnt in Mandarin class; that is modern vernacular.
+Welcome to pre-twentieth-century Chinese Literature,
+in which 是 primarily means "this",
+and 也 is primarily an ending speech-assist word (with no inherent meaning)
+which asserts the preceding thing/notion/statement.
+----
+----
+In Hong Kong you might see 是日例湯 written on a chalkboard
+for soup at an eatery.
+Here 是日 means "this day", i.e.~"today".
+----
+
+%footer-element
