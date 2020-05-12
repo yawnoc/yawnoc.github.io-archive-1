@@ -193,8 +193,7 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
 >>
 ====
 * 畝： acre; \lit field \+
-  This is area, what today would be called
-  240 **square** paces.
+  Mu ((畝)), 240~square paces.
   Classical Chinese mathematics did not have
   a fully developed notion of dimensional analysis,
   so 'square paces' were simply referred to as 'paces'.
@@ -214,7 +213,7 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
 >>
 ====
 * 里： mile \+
-  The [Chinese mile] [里], li ((里)), of the order half a kilometre.
+  Li ((里)), the [Chinese mile] [里], of the order half a kilometre.
   While this is much shorter than the imperial mile,
   it is figuratively used as the mile is in English
   to denote a large distance,
