@@ -282,7 +282,7 @@ $$
     1 \unit{tablet~(圭)} &={} & 10^{-5} & \unit{quarts} && \sim 10 \unit{μL} \\
     1 \unit{pinch~(撮)} &={} & 10^{-4} & \unit{quarts} && \sim 0.1 \unit{mL} \\
     1 \unit{grab~(抄)} &={} & 10^{-3} & \unit{quarts} && \sim 1 \unit{mL} \\
-    1 \unit{ladel~(勺)} &={} & 10^{-2} & \unit{quarts} && \sim 10 \unit{mL} \\
+    1 \unit{ladle~(勺)} &={} & 10^{-2} & \unit{quarts} && \sim 10 \unit{mL} \\
     1 \unit{gill~(合)} &={} & 10^{-1} & \unit{quarts} && \sim 100 \unit{mL} \\
     1 \unit{quart~(升)} &={} & 1 & \unit{quart} && \sim 1 \unit{L} \\
     1 \unit{peck~(斗)} &={} & 10 & \unit{quarts} && \sim 10 \unit{L} \\

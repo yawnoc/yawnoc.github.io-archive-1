@@ -56,7 +56,7 @@ $$
   \begin{aligned}
     1 \unit{peck~(斗)} &= 10 \unit{quarts~(升)} \\
     1 \unit{quart~(升)} &= 10 \unit{gills~(合)} \\
-    1 \unit{gill~(合)} &= 10 \unit{ladels~(勺)}.
+    1 \unit{gill~(合)} &= 10 \unit{ladles~(勺)}.
   \end{aligned}
 $$
 ----
