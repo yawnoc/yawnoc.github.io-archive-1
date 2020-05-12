@@ -112,6 +112,9 @@ Chinese source text: \a[30], \b[153], \c[52145], \d[42]. \+
       &= 11 \tfrac{17}{50} \unit{quarts}.
     \end{aligned}
   $$
+  The rates 27~for fine grain and 50~for (regular) grain appear to come from
+  《九章算術\.粟米》, "Nine Chapters .[on] Computational Methods: Grain".
+  See [\P5 commentary](/sun-tzu/ii/5#commentary).
 ====
 
 
