@@ -427,7 +427,7 @@
     (?P<title> [\s\S]*? )
   \]
 %
-  (/sun-tzu/preface \g<title>)
+  (/sun-tzu/preface/ \g<title>)
 %}
 {%
   [\s]*
@@ -436,7 +436,7 @@
     (?P<title> [\s\S]*? )
   \]
 %
-  (/sun-tzu/\g<volume> \g<title>)
+  (/sun-tzu/\g<volume>/ \g<title>)
 %}
 
 <!-- Sun Tzu Volume v Paragraph p URL in round brackets  ["v p"] -->
@@ -451,7 +451,7 @@
     (?P<title> [\s\S]*? )
   \]
 %
-  (/sun-tzu/\g<volume>#\g<paragraph> \g<title>)
+  (/sun-tzu/\g<volume>/\g<paragraph> \g<title>)
 %}
 
 <!-- Sun Tzu manuscript URL in round brackets  [m"v p"] -->
