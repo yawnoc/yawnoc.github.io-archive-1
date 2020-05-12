@@ -306,11 +306,11 @@ $$
 has "pinches", ts'o ((撮)), and "grabs", ch'ao ((抄)), the other way around.
 The order given here is that in Versions~A, B and~D,
 and it is consistent with the order
-in [Ordinance No.~22 of~1844 (PDF)] [ord 22 of 1844],
+in Hong Kong's [Ordinance No.~22 of~1844 (PDF)] [ord 22 of 1844],
 which has all of the above units as well as the "cup", y(u")eh ((龠)),
 equal to five ladles.
 Note however that Ordinance No.~22 has the "barrel", hu ((斛)), defined as
-five tou ((斗)) rather than ten ((斗)):
+five tou ((斗)) rather than ten tou ((斗)):
 ----
 
 ||||{centred-block}
