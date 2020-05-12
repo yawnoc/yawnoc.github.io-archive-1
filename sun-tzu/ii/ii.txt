@@ -28,52 +28,6 @@
 <% [mathit-b] | class="maths-italic blue" %>
 <% [mathit-v] | class="maths-italic violet" %>
 
-<;sh> 2 | 8 | Volume conversions for grain </;sh>
-<;s@@> 2 | 8 | 30 | 154 | 52151 | 8 | 44 </;s@@>
-
-<<
-  今有粟七斗九升。問為御米幾何？ \+
-  答曰：三斗三升一合八勺。
-||
-  Now there be grain, seven pecks .[and] nine quarts.
-  .[We] ask: how much be .[this in] poppy seed? \+
-  Answer saith:
-    three pecks,
-    three quarts,
-    one gill .[and]
-    eight ladles.
->>
-====
-* 
-    <@> Version~C | [version-c.url]52148 | [version-c.h] </@>
-    erroneously has 栗 for 粟.
-
-* 御米：
-    poppy seed;
-    \lit imperial grain;
-    \or royal grain
-
-====
-
-<<
-  術曰：置七斗九升。\
-  以御米率二十一乘之，得一千六百五十九升為實。以粟率五十除之，即得。
-||
-  Method saith: put .[down the]
-    seven pecks .[and]
-    nine quarts.
-  Multiplying it by .[the] poppy seed rate, twenty-one,
-  resulteth in one thousand, six hundred .[and] fifty-nine quarts
-  as .[the] dividend.
-  Dividing it by .[the] grain rate, fifty,
-  .[we] are done.
->>
-$$
-  V
-  = \frac{79 \unit{quarts} \times 21}{50}
-  = 33.18 \unit{quarts}
-$$
-
 <;sh> 2 | 9 | Area of a rectangle </;sh>
 <;s@@> 2 | 9 | 32 | 154 | 52154 | 9 | 44 </;s@@>
 
