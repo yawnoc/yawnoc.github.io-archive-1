@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/main.min.css">
+<script defer src="/rendering.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin onerror="this.removeAttribute('integrity');this.removeAttribute('onerror');this.setAttribute('href','/katex.min.css')">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin onerror="let a=document.createElement('script');a.setAttribute('src','/katex.min.js');a.setAttribute('onload', 'renderMaths()');document.head.appendChild(a);
+this.remove()" onload="renderMaths()"></script>
+<title>"Sun Tzŭ's Computational Classic: Volume&nbsp;II" 《孫子算經・卷中》 ¶19 | Conway's site</title>
+<style>li > ul {
+margin: 0.3em 0;
+}
+ol > li {
+margin-top: 1em;
+}
+.centred-block {
+margin: 0em 0 3em;
+}
+.keyword {
+display: inline-block;
+font-size: large;
+font-variant: small-caps;
+margin: 0.2em;
+margin-left: 0;
+}</style>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#" title="Jump back to top">Top</a>
+</li>
+<li><a href="/sun-tzu/" title="Sun Tzŭ's Computational Classic">Sun Tzŭ</a>
+</li>
+<li class="breadcrumb"><a href="/sun-tzu/ii/" title="Volume&nbsp;II">II</a>
+</li>
+<li class="breadcrumb"><a title="You are viewing ¶19">¶19</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1><span lang="zh-Hant">《孫子算經・卷中》</span><br>
+"Sun Tzŭ's Computational Classic: Volume&nbsp;II"<br>
+¶19. Rod calculus square root: <span class="js-maths">\sqrt{234567}</span></h1>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/ii/">↑ Volume&nbsp;II</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/ii/18">← ¶18</a>
+</div>
+<div class="current">
+¶19
+</div>
+<div class="next">
+<a href="/sun-tzu/ii/20">¶20 →</a>
+</div>
+</div>
+</nav>
+<noscript>Enable JavaScript for equation rendering to work.</noscript>
+<div class="page-properties">
+First created: 2019-06-09<br>
+Last modified: 2020-05-xx
+</div>
+<p>
+This paragraph gives a worked example
+of the <b>rod calculus square root</b> algorithm.
+</p>
+<p>
+In my opinion this is the most sophisticated piece of mathematics
+in the entirety of Sun Tzŭ's Computational Classic,
+which is why I have provided a fully annotated and diagrammed walkthrough,
+along with a pseudocode summary in the <a href="#commentary">Extended commentary</a>.
+</p>
+<svg class="embedded-styles" aria-hidden="true"><style>
+text {
+font-family: sans-serif;
+text-anchor: middle;
+}
+text.colour-r {
+fill: red;
+}
+text.colour-g {
+fill: green;
+}
+text.colour-b {
+fill: blue;
+}
+text.colour-v {
+fill: darkviolet;
+}
+@font-face {
+font-display: swap;
+font-family: "KaTeX_Math-Italic";
+src:
+url("/fonts/KaTeX_Math-Italic.woff2") format("woff2"),
+url("/fonts/KaTeX_Math-Italic.woff") format("woff"),
+url("/fonts/KaTeX_Math-Italic.ttf") format("truetype");
+}
+@font-face {
+font-display: swap;
+font-family: "KaTeX_Main-Regular";
+src:
+url("/fonts/KaTeX_Main-Regular.woff2") format("woff2"),
+url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
+url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+}
+.maths-italic {
+font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
+}
+.maths-regular {
+font-family: "KaTeX_Main-Regular";
+}
+path.step {
+stroke: black;
+vector-effect: non-scaling-stroke;
+fill: none;
+}
+rect.border {
+stroke: black;
+vector-effect: non-scaling-stroke;
+fill: none;
+stroke: grey;
+}
+line.colour-r {
+stroke: red;
+}
+line.colour-g {
+stroke: green;
+}
+line.colour-b {
+stroke: blue;
+}
+line.colour-v {
+stroke: darkviolet;
+}
+line[class^='colour-'] {
+stroke-width: 3;
+}
+</style></svg>
+<h2 id="translation"><a class="permalink" href="#translation" aria-label="Permalink"></a>Translation</h2>
+<p>
+Chinese source text: <a href="https://archive.org/details/02094034.cn/page/n40">Version&nbsp;A</a>, <a href="https://commons.wikimedia.org/w/index.php?title=File%3A%E6%96%87%E6%B7%B5%E9%96%A3%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8_0797%E5%86%8A.djvu&amp;page=156">Version&nbsp;B</a>, <a href="https://ctext.org/sunzi-suan-jing#n52186">Version&nbsp;C</a>, <a href="https://ctext.org/library.pl?if=en&amp;file=86926&amp;page=52">Version&nbsp;D</a>.<br>
+Unless noted otherwise, I follow the text from Version&nbsp;D, <span lang="zh-Hant">《知不足齋叢書》本</span>.
+</p>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">今有積二十三萬四千五百六十七步。問為方幾何？</span>
+</div>
+<div class="english">
+Now there be area,
+twenty-three myriad, four thousand, five hundred <i class="translator-supplied">and</i> sixty-seven paces.
+<i class="translator-supplied">We</i> ask: be <i class="translator-supplied">this a</i> square <i class="translator-supplied">of edge</i> how much?
+</div>
+</div>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">答曰：四百八十四步九百六十八分步之三百一十一。</span>
+</div>
+<div class="english">
+Answer saith:
+four hundred <i class="translator-supplied">and</i> eighty-four paces
+<i class="translator-supplied">and</i> three hundred <i class="translator-supplied">and</i> eleven
+nine hundred <i class="translator-supplied">and</i> sixty-eighths
+of <i class="translator-supplied">a</i> pace.
+</div>
+</div>
+<ul>
+<li>Here we have an algorithm for computing the square root,
+in this instance giving
+<div class="js-maths">\sqrt{234567 \unit{paces}^2} \approx 484 \tfrac{311}{968} \unit{paces}.
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">術曰：<span class="colour-b">置積</span>二十三萬四千五百六十七步為<span class="colour-b">實</span>。</span>
+</div>
+<div class="english">
+Method saith: <span class="colour-b">put <i class="translator-supplied">down the</i> area</span>,
+twenty-three myriad, four thousand, five hundred <i class="translator-supplied">and</i> sixty-seven paces,
+as <span class="colour-b"><i class="translator-supplied">the</i> dividend</span>.
+</div>
+</div>
+<ul>
+<li>The radicand is called the <span class="colour-b"><b>dividend</b>&nbsp;(<span lang="zh-Hant">實</span>)</span>,
+<div class="js-maths">\colb{d} := \colb{234567}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -0.25 10.5 2" role="img" focusable="false" aria-labelledby="put-down-the-area-title">
+<title id="put-down-the-area-title">"Put down the area" diagram.
+Put down the dividend 234567.</title>
+<g aria-hidden="true">
+<text class="maths-italic colour-b" x="-3" y="1" font-size="0.8">d</text>
+<text class="colour-b" x="-1" y="1" font-size="0.8">實</text>
+<text class="colour-b" x="1" y="1" font-size="0.8">2</text>
+<text class="colour-b" x="2" y="1" font-size="0.8">3</text>
+<text class="colour-b" x="3" y="1" font-size="0.8">4</text>
+<text class="colour-b" x="4" y="1" font-size="0.8">5</text>
+<text class="colour-b" x="5" y="1" font-size="0.8">6</text>
+<text class="colour-b" x="6" y="1" font-size="0.8">7</text>
+<rect class="border" x="-2.25" y="0" width="9" height="1.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">次<span class="colour-r">借一算為下法</span>。<span class="colour-r">步之，超一位，至百而止</span>。</span>
+</div>
+<div class="english">
+Next, <span class="colour-r">borrow one rod, <i class="translator-supplied">to</i> be <i class="translator-supplied">the</i> lower divisor</span>.
+<span class="colour-r">Step it <i class="translator-supplied">forth</i>, jumping over one place,
+<i class="translator-supplied">even</i> unto <i class="translator-supplied">the</i> hundreds, and stop</span>.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">超：跳也；</span> jumping over; <span class="alternative-marker">or</span> skipping<br>
+Taking double steps, so that 100 is in fact 10000.
+</li>
+<li>Since the number of digits of the radicand is
+<div class="js-maths">N := \lfloor \log_{10} d \rfloor + 1 = 6,
+</div>
+the number of digits of the integer part of its square root is
+<div class="js-maths">n := \left\lceil \frac{N}{2} \right\rceil = 3.
+</div>
+We then take <span class="js-maths">n - 1 = 2</span> double steps
+for the <span class="colour-r"><b>lower divisor</b>&nbsp;(<span lang="zh-Hant">下法</span>)</span>
+<div class="js-maths">\colr{L} := (10 ^ {n - 1}) ^ 2 = \colr{10^4}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -0.25 10.5 3" role="img" focusable="false" aria-labelledby="next-borrow-one-rod-title">
+<title id="next-borrow-one-rod-title">"Next borrow one rod" diagram.
+Put a 1 below the dividend 234567, and move it by two double steps to the left, to become the lower divisor 10000.
+There are now two rows: the dividend 234567 and the lower divisor 10000.</title>
+<g aria-hidden="true">
+<defs>
+<marker id="arrowhead" viewBox="0 -0.15 0.7 0.3" refX="0.5" refY="0" markerWidth="0.7" markerHeight="0.15" orient="auto-start-reverse">
+<path d="M 0,-0.15 L 0,0.15 L 0.7,0 z"/>
+</marker>
+</defs>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="1" y="1" font-size="0.8">2</text>
+<text x="2" y="1" font-size="0.8">3</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">5</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic colour-r" x="-3" y="2" font-size="0.8">L</text>
+<text class="colour-r" x="-1" y="2" font-size="0.8">下法</text>
+<text class="colour-r" x="2" y="2" font-size="0.8">1</text>
+<path class="step" d="M 6 2 m -0.1 -0.3 a 2 2 0 0 0 -1.7 0" marker-end="url(#arrowhead)"/>
+<path class="step" d="M 4 2 m -0.1 -0.3 a 2 2 0 0 0 -1.5 0" marker-end="url(#arrowhead)"/>
+<rect class="border" x="-2.25" y="0" width="9" height="2.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant"><span class="colour-g">上商置四百</span>於實之上。</span>
+</div>
+<div class="english">
+<span class="colour-g"><i class="translator-supplied">For the</i> upper quotient, put four hundred</span> above <i class="translator-supplied">the</i> dividend.
+</div>
+</div>
+<ul>
+<li><a href="https://archive.org/details/02094034.cn/page/n40">Version&nbsp;A</a> and <a href="https://ctext.org/sunzi-suan-jing#n52186">Version&nbsp;C</a> have just <span lang="zh-Hant">商</span> for <span lang="zh-Hant">上商</span>.
+</li>
+<li><span lang="zh-Hant">上商：</span> upper quotient<br>
+The integer part of the square root to be computed.
+</li>
+<li>The <span class="colour-g"><b>hundreds digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)</span>
+is the largest <span class="js-maths">\colg{a_1}</span> such that <span class="js-maths">\colg{a_1}^2 \colr{L} \le \colb{d}</span>,
+or
+<div class="js-maths">\colr{10000} \colg{a_1}^2 \le \colb{234567},
+</div>
+i.e.
+<div class="js-maths">\colg{a_1} := \colg{4}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 5" role="img" focusable="false" aria-labelledby="for-the-upper-quotient-put-400-title">
+<title id="for-the-upper-quotient-put-400-title">"For the upper quotient put four hundred" diagram.
+Insert the upper quotient 400 above the dividend 234567.
+There are now three rows: the upper quotient 400, the dividend 234567, and the lower divisor 10000.</title>
+<g aria-hidden="true">
+<text class="colour-g" x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic colour-g" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="colour-g" x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="1" y="1" font-size="0.8">2</text>
+<text x="2" y="1" font-size="0.8">3</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">5</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">L</text>
+<text x="-1" y="2" font-size="0.8">下法</text>
+<text x="2" y="2" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="3.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">副<span class="colour-v">置四萬</span>於實之下，下法之上，名為<span class="colour-v">方法</span>。</span>
+</div>
+<div class="english">
+Subsidiarily <span class="colour-v">put four myriad</span> below <i class="translator-supplied">the</i> dividend,
+<i class="translator-supplied">and</i> above <i class="translator-supplied">the</i> lower divisor;
+<i class="translator-supplied">its</i> name be <span class="colour-v"><i class="translator-supplied">the</i> upright divisor</span>.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">方：</span> (morally) upright<br>
+<span lang="zh-Hant">方法</span> is one of three named divisors whose names relate to integrity:
+<ul>
+<li><span lang="zh-Hant">方法：</span> upright divisor (<span class="js-maths">s_1</span>)
+</li>
+<li><span lang="zh-Hant">廉法：</span> incorrupt divisor (<span class="js-maths">s_2</span>)
+</li>
+<li><span lang="zh-Hant">隅法：</span> honest divisor (<span class="js-maths">s_3</span>)
+</li>
+</ul>
+These shall henceforth be referred to as the <b>straight divisors</b>
+(straight as in 'straight copper' vs 'bent copper').
+</li>
+<li>The first straight divisor is the <span class="colour-v"><b>upright divisor</b>&nbsp;(<span lang="zh-Hant">方法</span>)</span>
+<div class="js-maths">\colv{s_1}
+:= \colg{a_1} \colr{L}
+= \colg{4} \times \colr{10000}
+= \colv{40000}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6" role="img" focusable="false" aria-labelledby="subsidiarily-put-40000-title">
+<title id="subsidiarily-put-40000-title">"Subsidiarily put four myriad" diagram.
+Insert the upright divisor 40000 between the dividend 234567 and the lower divisor 10000.
+There are now four rows: the upper quotient 400, the dividend 234567, the upright divisor 40000, and the lower divisor 10000.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="1" y="1" font-size="0.8">2</text>
+<text x="2" y="1" font-size="0.8">3</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">5</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic colour-v" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="colour-v" x="-1" y="2" font-size="0.8">方法</text>
+<text class="colour-v" x="2" y="2" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
+<text x="-1" y="3" font-size="0.8">下法</text>
+<text x="2" y="3" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant"><span class="colour-g">命上商四百</span><span class="colour-b">除實</span>。</span>
+</div>
+<div class="english">
+<span class="colour-g">Name <i class="translator-supplied">the</i> upper quotient's four hundred</span>,
+<span class="colour-b"><i class="translator-supplied">and</i> remove <i class="translator-supplied">this</i> from <i class="translator-supplied">the</i> dividend</span>.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">除：</span> remove <i class="translator-supplied">this</i> from<br>
+This is also the word for division.
+Division is thought of as repeated removal of the divisor
+(in analogy to multiplication being repeated addition).
+</li>
+<li>As written, the text says <span class="js-maths">\colb{d} := \colb{d} - \colg{400^2}</span>,
+but for the purpose of understanding how this step fits in with the others,
+this is best written
+<div class="js-maths">\begin{aligned}
+  \colb{d}
+  &amp;:= \colb{d} - \colg{a_1} \colv{s_1} \\
+  &amp;= \colb{234567} - \colg{4} \times \colv{40000} \\
+  &amp;= \colb{74567}.
+\end{aligned}
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6" role="img" focusable="false" aria-labelledby="name-the-upper-quotients-400-title">
+<title id="name-the-upper-quotients-400-title">"Name the upper quotient's four hundred" diagram.
+Update the dividend 234567 to 74567.
+The four rows are now: the upper quotient 400, the dividend 74567, the upright divisor 40000, and the lower divisor 10000.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic colour-b" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text class="colour-b" x="2" y="1" font-size="0.8">7</text>
+<text class="colour-b" x="3" y="1" font-size="0.8">4</text>
+<text class="colour-b" x="4" y="1" font-size="0.8">5</text>
+<text class="colour-b" x="5" y="1" font-size="0.8">6</text>
+<text class="colour-b" x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="2" y="2" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
+<text x="-1" y="3" font-size="0.8">下法</text>
+<text x="2" y="3" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">除訖，<span class="colour-v">倍方法</span>。</span>
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> removal finished, <span class="colour-v">double <i class="translator-supplied">the</i> upright divisor</span>.
+</div>
+</div>
+<ul>
+<li>In modern notation:
+<div class="js-maths">\colv{s_1} := 2 s_1 = 2 \times 40000 = \colv{80000}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6" role="img" focusable="false" aria-labelledby="double-the-upright-divisor-title">
+<title id="double-the-upright-divisor-title">"Double the upright divisor" diagram.
+Update the upright divisor 40000 to 80000.
+The four rows are now: the upper quotient 400, the dividend 74567, the upright divisor 80000, and the lower divisor 10000.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="2" y="1" font-size="0.8">7</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">5</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic colour-v" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="colour-v" x="-1" y="2" font-size="0.8">方法</text>
+<text class="colour-v" x="2" y="2" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
+<text x="-1" y="3" font-size="0.8">下法</text>
+<text x="2" y="3" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant"><span class="colour-v">方法一退</span>，<span class="colour-r">下法再退</span>。</span>
+</div>
+<div class="english">
+<span class="colour-v"><i class="translator-supplied">The</i> upright divisor retreateth once</span>;
+<span class="colour-r"><i class="translator-supplied">the</i> lower divisor retreateth again</span>.
+</div>
+</div>
+<ul>
+<li><a href="https://archive.org/details/02094034.cn/page/n40">Version&nbsp;A</a> and <a href="https://ctext.org/sunzi-suan-jing#n52186">Version&nbsp;C</a> are missing <span lang="zh-Hant">方法</span> in <span lang="zh-Hant">方法一退</span>.
+</li>
+<li><span lang="zh-Hant">再：</span> again; <span class="alternative-marker">or</span> twice
+</li>
+<li>In modern notation:
+<div class="js-maths">\begin{aligned}
+  \colv{s_1} &amp;:= s_1 / 10 = 80000 / 10 = \colv{8000} \\
+  \colr{L} &amp;:= L / 10^2 = 10000 / 100 = \colr{100}.
+\end{aligned}
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6" role="img" focusable="false" aria-labelledby="the-upright-divisor-retreateth-title-1">
+<title id="the-upright-divisor-retreateth-title-1">"The upright divisor retreateth once", first diagram.
+Update the upright divisor 80000 to 8000.
+Update the lower divisor 10000 to 100.
+The four rows are now: the upper quotient 400, the dividend 74567, the upright divisor 8000, and the lower divisor 100.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="2" y="1" font-size="0.8">7</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">5</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic colour-v" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="colour-v" x="-1" y="2" font-size="0.8">方法</text>
+<text class="colour-v" x="3" y="2" font-size="0.8">8</text>
+<text class="maths-italic colour-r" x="-3" y="3" font-size="0.8">L</text>
+<text class="colour-r" x="-1" y="3" font-size="0.8">下法</text>
+<text class="colour-r" x="4" y="3" font-size="0.8">1</text>
+<path class="step" d="M 2 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
+<path class="step" d="M 2 3 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" marker-end="url(#arrowhead)"/>
+<rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">復<span class="colour-g">置上商八十</span>，以次前商。</span>
+</div>
+<div class="english">
+<span class="colour-g">Put</span> again <span class="colour-g"><i class="translator-supplied">for the</i> upper quotient eighty</span>,
+to be next <i class="translator-supplied">after the</i> quotient <i class="translator-supplied">digit</i> before.
+</div>
+</div>
+<ul>
+<li>The <span class="colour-g"><b>tens digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)</span>
+is the largest <span class="js-maths">\colg{a_2}</span> such that
+<span class="js-maths">\colg{a_2} (\colv{s_1} + \colg{a_2} \colr{L}) \le \colb{d}</span>,
+or
+<div class="js-maths">\colg{a_2} (\colv{8000} + \colr{100} \colg{a_2}) \le \colb{74567},
+</div>
+i.e.
+<div class="js-maths">\colg{a_2} := \colg{8}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6" role="img" focusable="false" aria-labelledby="put-again-for-the-upper-quotient-80-title">
+<title id="put-again-for-the-upper-quotient-80-title">"Put again for the upper quotient eighty" diagram.
+Update the upper quotient 400 to 480.
+The four rows are now: the upper quotient 480, the dividend 74567, the upright divisor 8000, and the lower divisor 100.</title>
+<g aria-hidden="true">
+<text class="colour-g" x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic colour-g" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="colour-g" x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="2" y="1" font-size="0.8">7</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">5</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="3" y="2" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">L</text>
+<text x="-1" y="3" font-size="0.8">下法</text>
+<text x="4" y="3" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="4.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">副<span class="colour-v">置八百</span>於方法之下，下法之上，名為<span class="colour-v">廉法</span>。</span>
+</div>
+<div class="english">
+Subsidiarily <span class="colour-v">put eight hundred</span> below <i class="translator-supplied">the</i> upright divisor,
+<i class="translator-supplied">and</i> above <i class="translator-supplied">the</i> lower divisor;
+<i class="translator-supplied">its</i> name be <span class="colour-v"><i class="translator-supplied">the</i> incorrupt divisor</span>.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">廉：</span> incorrupt
+</li>
+<li>The second straight divisor is the <span class="colour-v"><b>incorrupt divisor</b>&nbsp;(<span lang="zh-Hant">廉法</span>)</span>
+<div class="js-maths">\colv{s_2}
+:= \colg{a_2} \colr{L}
+= \colg{8} \times \colr{100}
+= \colv{800}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7" role="img" focusable="false" aria-labelledby="subsidiarily-put-800-title">
+<title id="subsidiarily-put-800-title">"Subsidiarily put eight hundred" diagram.
+Insert the incorrupt divisor 800 between the upright divisor 8000 and the lower divisor 100.
+There are now five rows: the upper quotient 480, the dividend 74567, the upright divisor 8000, the incorrupt divisor 800, and the lower divisor 100.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="2" y="1" font-size="0.8">7</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">5</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic colour-v" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="3" y="2" font-size="0.8">8</text>
+<text class="colour-v" x="-1" y="3" font-size="0.8">廉法</text>
+<text class="colour-v" x="4" y="3" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="4" font-size="0.8">L</text>
+<text x="-1" y="4" font-size="0.8">下法</text>
+<text x="4" y="4" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="5.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant"><span class="colour-v">方、廉各命</span><span class="colour-g">上商八十</span>，以<span class="colour-b">除實</span>。</span>
+</div>
+<div class="english">
+<span class="colour-v">Each of <i class="translator-supplied">the</i> upright <i class="translator-supplied">and the</i> incorrupt nameth</span>
+<span class="colour-g"><i class="translator-supplied">the</i> upper quotient's eighty</span>,
+to be <span class="colour-b">removed from <i class="translator-supplied">the</i> dividend</span>.
+</div>
+</div>
+<ul>
+<li><a href="https://archive.org/details/02094034.cn/page/n40">Version&nbsp;A</a> and <a href="https://ctext.org/sunzi-suan-jing#n52186">Version&nbsp;C</a> are missing <span lang="zh-Hant">實</span>.
+</li>
+<li>In modern notation:
+<div class="js-maths">\begin{aligned}
+  \colb{d}
+  &amp;:= \colb{d} - \colg{a_2} \colv{(s_1 + s_2)} \\
+  &amp;= \colb{74567} - \colg{8} \times \colv{(8000 + 800)} \\
+  &amp;= \colb{4167}.
+\end{aligned}
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7" role="img" focusable="false" aria-labelledby="the-incorrupt-nameth-title">
+<title id="the-incorrupt-nameth-title">"… the incorrupt nameth" diagram.
+Update the dividend 74567 to 4167.
+The five rows are now: the upper quotient 480, the dividend 4167, the upright divisor 8000, the incorrupt divisor 800, and the lower divisor 100.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic colour-b" x="-3" y="1" font-size="0.8">d</text>
+<text class="colour-b" x="-1" y="1" font-size="0.8">實</text>
+<text class="colour-b" x="3" y="1" font-size="0.8">4</text>
+<text class="colour-b" x="4" y="1" font-size="0.8">1</text>
+<text class="colour-b" x="5" y="1" font-size="0.8">6</text>
+<text class="colour-b" x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="3" y="2" font-size="0.8">8</text>
+<text x="-1" y="3" font-size="0.8">廉法</text>
+<text x="4" y="3" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="4" font-size="0.8">L</text>
+<text x="-1" y="4" font-size="0.8">下法</text>
+<text x="4" y="4" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="5.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">除訖，<span class="colour-v">倍廉法</span>，上從方法。</span>
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> removal finished, <span class="colour-v">double <i class="translator-supplied">the</i> incorrupt divisor</span>,
+<i class="translator-supplied">which</i> followeth <i class="translator-supplied">the</i> upright divisor above.
+</div>
+</div>
+<ul>
+<li><a href="https://archive.org/details/02094034.cn/page/n40">Version&nbsp;A</a> and <a href="https://ctext.org/sunzi-suan-jing#n52186">Version&nbsp;C</a> are missing <span lang="zh-Hant">除</span>.
+</li>
+<li>In modern notation:
+<div class="js-maths">\colv{s_2} := 2 s_2 = 2 \times 800 = \colv{1600}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7" role="img" focusable="false" aria-labelledby="double-the-incorrupt-divisor-title">
+<title id="double-the-incorrupt-divisor-title">"Double the incorrupt divisor" diagram.
+Update the incorrupt divisor 800 to 1600.
+The five rows are now: the upper quotient 480, the dividend 4167, the upright divisor 8000, the incorrupt divisor 1600, and the lower divisor 100.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">1</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic colour-v" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="3" y="2" font-size="0.8">8</text>
+<text class="colour-v" x="-1" y="3" font-size="0.8">廉法</text>
+<text class="colour-v" x="3" y="3" font-size="0.8">1</text>
+<text class="colour-v" x="4" y="3" font-size="0.8">6</text>
+<text class="maths-italic" x="-3" y="4" font-size="0.8">L</text>
+<text x="-1" y="4" font-size="0.8">下法</text>
+<text x="4" y="4" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="5.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant"><span class="colour-v">方法一退</span>，<span class="colour-r">下法再退</span>。</span>
+</div>
+<div class="english">
+<span class="colour-v"><i class="translator-supplied">The</i> upright divisor retreateth once</span>;
+<span class="colour-r"><i class="translator-supplied">the</i> lower divisor retreateth again</span>.
+</div>
+</div>
+<ul>
+<li><a href="https://archive.org/details/02094034.cn/page/n40">Version&nbsp;A</a> erroneously has <span lang="zh-Hant">一退方法</span> for <span lang="zh-Hant">方法一退</span>.
+</li>
+<li>Presumably <span lang="zh-Hant">上從方法</span> from the previous sentence tells us that
+the incorrupt divisor&nbsp;(<span lang="zh-Hant">廉法</span>) is to
+"follow <i class="translator-supplied">the</i> upright divisor&nbsp;(<span lang="zh-Hant">方法</span>) above"
+in its retreat.
+</li>
+<li>In modern notation:
+<div class="js-maths">\begin{aligned}
+  \colv{s_1} &amp;:= s_1 / 10 = 8000 / 10 = \colv{800} \\
+  \colv{s_2} &amp;:= s_2 / 10 = 1600 / 10 = \colv{160} \\
+  \colr{L} &amp;:= L / 10^2 = 100 / 100 = \colr{1}.
+\end{aligned}
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7" role="img" focusable="false" aria-labelledby="the-upright-divisor-retreateth-title-2">
+<title id="the-upright-divisor-retreateth-title-2">"The upright divisor retreateth once", second diagram.
+Update the upright divisor 8000 to 800.
+Update the incorrupt divisor 1600 to 160.
+Update the lower divisor 100 to 1.
+The five rows are now: the upper quotient 480, the dividend 4167, the upright divisor 800, the incorrupt divisor 160, and the lower divisor 1.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">1</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic colour-v" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic colour-v" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="colour-v" x="-1" y="2" font-size="0.8">方法</text>
+<text class="colour-v" x="4" y="2" font-size="0.8">8</text>
+<text class="colour-v" x="-1" y="3" font-size="0.8">廉法</text>
+<text class="colour-v" x="4" y="3" font-size="0.8">1</text>
+<text class="colour-v" x="5" y="3" font-size="0.8">6</text>
+<text class="maths-italic colour-r" x="-3" y="4" font-size="0.8">L</text>
+<text class="colour-r" x="-1" y="4" font-size="0.8">下法</text>
+<text class="colour-r" x="6" y="4" font-size="0.8">1</text>
+<path class="step" d="M 3 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
+<path class="step" d="M 3 3 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" marker-end="url(#arrowhead)"/>
+<path class="step" d="M 4 4 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" marker-end="url(#arrowhead)"/>
+<rect class="border" x="-2.25" y="-1" width="9" height="5.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">復<span class="colour-g">置上商四</span>，以次前。</span>
+</div>
+<div class="english">
+<span class="colour-g">Put</span> again <span class="colour-g"><i class="translator-supplied">for the</i> upper quotient four</span>,
+to be next <i class="translator-supplied">after the digit</i> before.
+</div>
+</div>
+<ul>
+<li>The <span class="colour-g"><b>ones digit of the upper quotient</b>&nbsp;(<span lang="zh-Hant">上商</span>)</span>
+is the largest <span class="js-maths">\colg{a_3}</span> such that
+<span class="js-maths">\colg{a_3} (\colv{s_1} + \colv{s_2} + \colg{a_3} \colr{L})
+  \le \colb{d}</span>,
+or
+<div class="js-maths">\colg{a_3} (\colv{800} + \colv{160} + \colg{a_3}) \le \colb{4167},
+</div>
+i.e.
+<div class="js-maths">\colg{a_3} := \colg{4}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7" role="img" focusable="false" aria-labelledby="put-again-for-the-upper-quotient-4-title">
+<title id="put-again-for-the-upper-quotient-4-title">"Put again for the upper quotient four" diagram.
+Update the upper quotient 480 to 484.
+The five rows are now: the upper quotient 484, the dividend 4167, the upright divisor 800, the incorrupt divisor 160, and the lower divisor 1.</title>
+<g aria-hidden="true">
+<text class="colour-g" x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic colour-g" x="6" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text class="colour-g" x="6" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">1</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="4" y="2" font-size="0.8">8</text>
+<text x="-1" y="3" font-size="0.8">廉法</text>
+<text x="4" y="3" font-size="0.8">1</text>
+<text x="5" y="3" font-size="0.8">6</text>
+<text class="maths-italic" x="-3" y="4" font-size="0.8">L</text>
+<text x="-1" y="4" font-size="0.8">下法</text>
+<text x="6" y="4" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="5.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">副<span class="colour-v">置四</span>於方法之下，下法之上，名曰<span class="colour-v">隅法</span>。</span>
+</div>
+<div class="english">
+Subsidiarily <span class="colour-v">put four</span> below <i class="translator-supplied">the</i> upright divisor,
+<i class="translator-supplied">and</i> above <i class="translator-supplied">the</i> lower divisor;
+<i class="translator-supplied">its</i> name <i class="translator-supplied">be</i> called <span class="colour-v"><i class="translator-supplied">the</i> honest divisor</span>.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">隅：廉也；</span> honest
+</li>
+<li>The third straight divisor is the <span class="colour-v"><b>honest divisor</b>&nbsp;(<span lang="zh-Hant">隅法</span>)</span>
+<div class="js-maths">\colv{s_3}
+:= \colg{a_3} \colr{L}
+= \colg{4} \times \colr{1}
+= \colv{4}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8" role="img" focusable="false" aria-labelledby="subsidiarily-put-4-title">
+<title id="subsidiarily-put-4-title">"Subsidiarily put four" diagram.
+Insert the honest divisor 4 between the incorrupt divisor 160 and the lower divisor 1.
+There are now six rows: the upper quotient 484, the dividend 4167, the upright divisor 800, the incorrupt divisor 160, the honest divisor 4, and the lower divisor 1.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic" x="6" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text x="6" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="3" y="1" font-size="0.8">4</text>
+<text x="4" y="1" font-size="0.8">1</text>
+<text x="5" y="1" font-size="0.8">6</text>
+<text x="6" y="1" font-size="0.8">7</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="maths-italic colour-v" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="4" y="2" font-size="0.8">8</text>
+<text x="-1" y="3" font-size="0.8">廉法</text>
+<text x="4" y="3" font-size="0.8">1</text>
+<text x="5" y="3" font-size="0.8">6</text>
+<text class="colour-v" x="-1" y="4" font-size="0.8">隅法</text>
+<text class="colour-v" x="6" y="4" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="5" font-size="0.8">L</text>
+<text x="-1" y="5" font-size="0.8">下法</text>
+<text x="6" y="5" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="6.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant"><span class="colour-v">方、廉、隅各命</span><span class="colour-g">上商四</span>，以<span class="colour-b">除實</span>。</span>
+</div>
+<div class="english">
+<span class="colour-v">Each of <i class="translator-supplied">the</i> upright, <i class="translator-supplied">the</i> incorrupt <i class="translator-supplied">and the</i> honest nameth</span>
+<span class="colour-g"><i class="translator-supplied">the</i> upper quotient's four</span>,
+to be <span class="colour-b">removed from <i class="translator-supplied">the</i> dividend</span>.
+</div>
+</div>
+<ul>
+<li><a href="https://archive.org/details/02094034.cn/page/n40">Version&nbsp;A</a> is missing <span lang="zh-Hant">以</span>.
+</li>
+<li>In modern notation:
+<div class="js-maths">\begin{aligned}
+  \colb{d}
+  &amp;:= \colb{d} - \colg{a_3} \colv{(s_1 + s_2 + s_3)} \\
+  &amp;= \colb{4167} - \colg{4} \times \colv{(800 + 160 + 4)} \\
+  &amp;= \colb{311}.
+\end{aligned}
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8" role="img" focusable="false" aria-labelledby="the-honest-nameth-title">
+<title id="the-honest-nameth-title">"… the honest nameth" diagram.
+Update the dividend 4167 to 311.
+The six rows are now: the upper quotient 484, the dividend 311, the upright divisor 800, the incorrupt divisor 160, the honest divisor 4, and the lower divisor 1.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic" x="6" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text x="6" y="0" font-size="0.8">4</text>
+<text class="maths-italic colour-b" x="-3" y="1" font-size="0.8">d</text>
+<text class="colour-b" x="-1" y="1" font-size="0.8">實</text>
+<text class="colour-b" x="4" y="1" font-size="0.8">3</text>
+<text class="colour-b" x="5" y="1" font-size="0.8">1</text>
+<text class="colour-b" x="6" y="1" font-size="0.8">1</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="maths-italic" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="4" y="2" font-size="0.8">8</text>
+<text x="-1" y="3" font-size="0.8">廉法</text>
+<text x="4" y="3" font-size="0.8">1</text>
+<text x="5" y="3" font-size="0.8">6</text>
+<text x="-1" y="4" font-size="0.8">隅法</text>
+<text x="6" y="4" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="5" font-size="0.8">L</text>
+<text x="-1" y="5" font-size="0.8">下法</text>
+<text x="6" y="5" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="6.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">除訖，<span class="colour-v">倍隅法</span>，從方法。</span>
+</div>
+<div class="english">
+<i class="translator-supplied">The</i> removal finished, <span class="colour-v">double <i class="translator-supplied">the</i> honest divisor</span>,
+<i class="translator-supplied">which</i> followeth <i class="translator-supplied">the</i> upright divisor.
+</div>
+</div>
+<ul>
+<li><a href="https://archive.org/details/02094034.cn/page/n40">Version&nbsp;A</a> is missing <span lang="zh-Hant">倍隅法，從方法</span>.
+</li>
+<li>In modern notation:
+<div class="js-maths">\colv{s_3} := 2 s_3 = 2 \times 4 = \colv{8}.
+</div>
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8" role="img" focusable="false" aria-labelledby="double-the-honest-divisor-title">
+<title id="double-the-honest-divisor-title">"Double the honest divisor" diagram.
+Update the honest divisor 4 to 8.
+The six rows are now: the upper quotient 484, the dividend 311, the upright divisor 800, the incorrupt divisor 160, the honest divisor 8, and the lower divisor 1.</title>
+<g aria-hidden="true">
+<text x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic" x="6" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text x="6" y="0" font-size="0.8">4</text>
+<text class="maths-italic" x="-3" y="1" font-size="0.8">d</text>
+<text x="-1" y="1" font-size="0.8">實</text>
+<text x="4" y="1" font-size="0.8">3</text>
+<text x="5" y="1" font-size="0.8">1</text>
+<text x="6" y="1" font-size="0.8">1</text>
+<text class="maths-italic" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="maths-italic colour-v" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text x="-1" y="2" font-size="0.8">方法</text>
+<text x="4" y="2" font-size="0.8">8</text>
+<text x="-1" y="3" font-size="0.8">廉法</text>
+<text x="4" y="3" font-size="0.8">1</text>
+<text x="5" y="3" font-size="0.8">6</text>
+<text class="colour-v" x="-1" y="4" font-size="0.8">隅法</text>
+<text class="colour-v" x="6" y="4" font-size="0.8">8</text>
+<text class="maths-italic" x="-3" y="5" font-size="0.8">L</text>
+<text x="-1" y="5" font-size="0.8">下法</text>
+<text x="6" y="5" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="6.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant"><span class="colour-g">上商得四百八十四</span>，<span class="colour-v">下法得九百六十八</span>，<span class="colour-b">不盡三百一十一</span>。</span>
+</div>
+<div class="english">
+<span class="colour-g"><i class="translator-supplied">The</i> upper quotient resulteth in four hundred <i class="translator-supplied">and</i> eighty-four</span>,
+<span class="colour-v"><i class="translator-supplied">and the</i> lower divisors result in nine hundred <i class="translator-supplied">and</i> sixty-eight</span>,
+<span class="colour-b"><i class="translator-supplied">with</i> remainder three hundred <i class="translator-supplied">and</i> eleven</span>.
+</div>
+</div>
+<ul>
+<li><span lang="zh-Hant">下法：</span> lower divisors<br>
+Confusingly, this refers not to the lower divisor&nbsp;(<span lang="zh-Hant">下法</span>),
+currently <span class="js-maths">\colr{L = 1}</span>,
+but to the total of the three straight divisors,
+upright (<span class="js-maths">\colv{s_1}</span>),
+incorrupt (<span class="js-maths">\colv{s_2}</span>), and
+honest (<span class="js-maths">\colv{s_3}</span>).
+</li>
+<li>In modern notation:
+<div class="js-maths">\begin{aligned}
+  \colg{U} &amp;:= \colg{100 a_1 + 10 a_2 + a_3} = \colg{484} \\
+  \colv{L} &amp;:= \colv{s_1 + s_2 + s_3} = \colv{968} \\
+  \colb{R} &amp;:= \colb{d} = \colb{311}.
+\end{aligned}
+</div>
+The final arrangement of counting rods is thus:
+<div class="centred-block">
+<svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8" role="img" focusable="false" aria-labelledby="final-arrangement-title">
+<title id="final-arrangement-title">Final arrangement diagram.
+There are six rows: the upper quotient 484, the dividend 311, the upright divisor 800, the incorrupt divisor 160, the honest divisor 8, and the lower divisor 1.</title>
+<g aria-hidden="true">
+<text class="colour-g" x="-1" y="0" font-size="0.8">上商</text>
+<text class="maths-italic colour-g" x="4" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="colour-g" x="4" y="0" font-size="0.8">4</text>
+<text class="maths-italic colour-g" x="5" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="colour-g" x="5" y="0" font-size="0.8">8</text>
+<text class="maths-italic colour-g" x="6" y="-1.3" font-size="0.8">a<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text class="colour-g" x="6" y="0" font-size="0.8">4</text>
+<text class="maths-italic colour-b" x="-3" y="1" font-size="0.8">d</text>
+<text class="colour-b" x="-1" y="1" font-size="0.8">實</text>
+<text class="colour-b" x="4" y="1" font-size="0.8">3</text>
+<text class="colour-b" x="5" y="1" font-size="0.8">1</text>
+<text class="colour-b" x="6" y="1" font-size="0.8">1</text>
+<text class="maths-italic colour-v" x="-3" y="2" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">1</tspan></text>
+<text class="maths-italic colour-v" x="-3" y="3" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">2</tspan></text>
+<text class="maths-italic colour-v" x="-3" y="4" font-size="0.8">s<tspan font-size="0.5" dy="0.25em">3</tspan></text>
+<text class="colour-v" x="-1" y="2" font-size="0.8">方法</text>
+<text class="colour-v" x="4" y="2" font-size="0.8">8</text>
+<text class="colour-v" x="-1" y="3" font-size="0.8">廉法</text>
+<text class="colour-v" x="4" y="3" font-size="0.8">1</text>
+<text class="colour-v" x="5" y="3" font-size="0.8">6</text>
+<text class="colour-v" x="-1" y="4" font-size="0.8">隅法</text>
+<text class="colour-v" x="6" y="4" font-size="0.8">8</text>
+<text class="maths-italic colour-r" x="-3" y="5" font-size="0.8">L</text>
+<text class="colour-r" x="-1" y="5" font-size="0.8">下法</text>
+<text class="colour-r" x="6" y="5" font-size="0.8">1</text>
+<rect class="border" x="-2.25" y="-1" width="9" height="6.5"/>
+</g>
+</svg>
+</div>
+</li>
+</ul>
+<div class="translation parallel-text">
+<div class="chinese">
+<span lang="zh-Hant">是為方<span class="colour-g">四百八十四</span>步<span class="colour-v">九百六十八分</span>步之<span class="colour-b">三百一十一</span>。</span>
+</div>
+<div class="english">
+This be <i class="translator-supplied">a</i> square <i class="translator-supplied">of edge</i>
+<span class="colour-g">four hundred <i class="translator-supplied">and</i> eighty-four</span> paces
+<i class="translator-supplied">and</i> <span class="colour-b">three hundred <i class="translator-supplied">and</i> eleven</span>
+<span class="colour-v">nine hundred <i class="translator-supplied">and</i> sixty-eighths</span>
+of <i class="translator-supplied">a</i> pace.
+</div>
+</div>
+<ul>
+<li>Thus the algorithm gives
+<div class="js-maths">\begin{aligned}
+  \sqrt{234567 \unit{paces}^2}
+  &amp;\approx \left( \colg{U} + \frac\colb{R}\colv{L} \right) \unit{paces}
+    \\[\tallspace]
+  &amp;= \colg{484} \tfrac\colb{311}\colv{968} \unit{paces},
+\end{aligned}
+</div>
+which has relative error <span class="js-maths">2.2 \times 10^{-7}</span>.
+</li>
+</ul>
+<h2 id="commentary"><a class="permalink" href="#commentary" aria-label="Permalink"></a>Extended commentary</h2>
+<h3 id="pseudocode"><a class="permalink" href="#pseudocode" aria-label="Permalink"></a>Pseudocode</h3>
+<p>
+In modern notation, Sun Tzŭ's algorithm
+for computing the square root of the positive integer <span class="js-maths">x</span>
+proceeds thus:
+</p>
+<ol>
+<li>Compute the number of digits of <span class="js-maths">x</span>:
+<div class="js-maths">N := \lfloor \log_{10} x \rfloor + 1.
+</div>
+</li>
+<li>Compute the number of digits of the <span class="colour-g">upper quotient&nbsp;(<span lang="zh-Hant">上商</span>)</span>,
+which is the integer part of <span class="js-maths">\sqrt{x}</span>:
+<div class="js-maths">n := \left\lceil \frac{N}{2} \right\rceil.
+</div>
+</li>
+<li>Initialise the <span class="colour-r">lower divisor&nbsp;(<span lang="zh-Hant">下法</span>)</span>:
+<div class="js-maths">\colr{L} := (10 ^ {n - 1}) ^ 2.
+</div>
+</li>
+<li>Initialise the <span class="colour-b">dividend&nbsp;(<span lang="zh-Hant">實</span>)</span>:
+<div class="js-maths">\colb{d} := x.
+</div>
+</li>
+<li><span class="keyword">For</span> <span class="js-maths">i = 1, 2, \dots, n</span>:
+<ul>
+<li>Determine the <span class="colour-g"><span class="js-maths">i</span>th digit of the upper quotient&nbsp;(<span lang="zh-Hant">上商</span>)</span>,
+the largest integer <span class="js-maths">\colg{a_i}</span> such that
+<div class="js-maths">\colg{a_i}
+\Bigl[
+  (\colv{s_1} + \dots + \colv{s_{i-1}}) + \colg{a_i} \colr{L}
+\Bigr]
+  \le
+\colb{d}.
+</div>
+</li>
+<li>Determine the <span class="colour-v"><span class="js-maths">i</span>th straight divisor</span>:
+<div class="js-maths">\colv{s_i} := \colg{a_i} \colr{L}.
+</div>
+The first three are named:
+<span class="js-maths">\colv{s_1}</span> upright&nbsp;(<span lang="zh-Hant">方</span>),
+<span class="js-maths">\colv{s_2}</span> incorrupt&nbsp;(<span lang="zh-Hant">廉</span>), and
+<span class="js-maths">\colv{s_3}</span> honest&nbsp;(<span lang="zh-Hant">隅</span>).
+</li>
+<li>Update the <span class="colour-b">dividend&nbsp;(<span lang="zh-Hant">實</span>)</span>:
+<div class="js-maths">\colb{d} :=
+\colb{d}
+  -
+\colg{a_i}
+\Bigl[
+  (\colv{s_1} + \dots + \colv{s_{i-1}}) + \colv{s_i}
+\Bigr].
+</div>
+</li>
+<li>Double the <span class="colour-v"><span class="js-maths">i</span>th straight divisor</span>:
+<div class="js-maths">\colv{s_i} := 2 s_i.
+</div>
+</li>
+<li><span class="keyword">If</span> <span class="js-maths">i &lt; n</span>:
+<ul>
+<li>Retreat the divisors:
+<div class="js-maths">\begin{aligned}
+  \colv{s_1} &amp;:= s_1 / 10 \\
+    &amp;\quad \vdots \\
+  \colv{s_i} &amp;:= s_i / 10 \\
+  \colr{L} &amp;:= L / 10^2.
+\end{aligned}
+</div>
+</li>
+</ul>
+<span class="keyword">End&nbsp;If</span>
+</li>
+</ul>
+<span class="keyword">End&nbsp;For</span>
+</li>
+<li>Compute
+the <span class="colour-g">upper quotient&nbsp;(<span lang="zh-Hant">上商</span>)</span>,
+the <span class="colour-v">sum of the straight divisors</span>,
+and the <span class="colour-b">remainder&nbsp;(<span lang="zh-Hant">不盡</span>)</span>:
+<div class="js-maths">\begin{aligned}
+  \colg{U} &amp;:= \colg{10^{n-1} a_1 + 10^{n-2} a_2 + \dots + a_n} \\
+  \colv{L} &amp;:= \colv{s_1 + s_2 + \dots + s_n} \\
+  \colb{R} &amp;:= \colb{d}.
+\end{aligned}
+</div>
+</li>
+<li><span class="keyword">Return</span> <span class="js-maths">\colg{U} + \colb{R} / \colv{L}</span>.
+</li>
+</ol>
+<p>
+For an implementation in Python, see <a href="https://github.com/yawnoc/yawnoc.github.io/blob/master/sun-tzu/code/sqrt.py"><code>/sun-tzu/code/sqrt.py</code></a>.
+</p>
+<h3 id="why"><a class="permalink" href="#why" aria-label="Permalink"></a>Why does it work?</h3>
+<p>
+Stare at the following identity for a long time:
+</p>
+<div class="js-maths">\begin{aligned}
+  \gdef\coeffbr#1{\Bigl(#1\Bigr)}
+  \roundbr{
+    a_1 + \frac{a_2}{10} + \frac{a_3}{10^2} + \frac{a_4}{10^3} + \dots
+  } ^ 2
+    =
+  {a_1}^2
+  &amp;+ \frac{a_2}{10^2} \coeffbr{20 a_1 + a_2}
+    \\[\tallspace]
+  &amp;+ \frac{a_3}{10^4} \coeffbr{200 a_1 + 20 a_2 + a_3}
+    \\[\tallspace]
+  &amp;+ \frac{a_4}{10^6} \coeffbr{2000 a_1 + 200 a_2 + 20 a_3 + a_4}
+    \\[\tallspace]
+  &amp;+ \dots
+\end{aligned}
+</div>
+<nav class="surrounds">
+<div class="up">
+<a href="/sun-tzu/ii/">↑ Volume&nbsp;II</a>
+</div>
+<div class="adjacent">
+<div class="previous">
+<a href="/sun-tzu/ii/18">← ¶18</a>
+</div>
+<div class="current">
+¶19
+</div>
+<div class="next">
+<a href="/sun-tzu/ii/20">¶20 →</a>
+</div>
+</div>
+</nav>
+<h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
+<ul>
+<li>Text:
+<p>
+Conway&nbsp;(2020).
+"Sun Tzŭ's Computational Classic: Volume&nbsp;II ¶19".
+&lt;https://yawnoc.github.io/sun-tzu/ii/19&gt;
+Accessed&nbsp;<span class="js-date">yyyy-mm-dd</span>.
+</p>
+</li>
+<li>BibTeX:
+<pre><code>@misc{conway-sun-tzu-ii-19,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{II} {\P19}''},
+  howpublished = {\url{https://yawnoc.github.io/sun-tzu/ii/19}},
+  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+<li>BibLaTeX:
+<pre><code>@online{conway-sun-tzu-ii-19,
+  author = {Conway},
+  year = {2020},
+  title = {``{Sun}~{Tz{\u u}'s} {Computational} {Classic}: {Volume}~{II} {\P19}''},
+  url = {https://yawnoc.github.io/sun-tzu/ii/19},
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+</ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
+<footer>
+©&nbsp;2019–2020&nbsp;Conway.
+</footer>
+</body>
+</html>
