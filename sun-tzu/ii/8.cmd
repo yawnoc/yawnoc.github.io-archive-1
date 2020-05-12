@@ -79,7 +79,7 @@ Chinese source text: \a[30], \b[154], \c[52151], \d[44]. \+
 ||
   Now there be grain, seven pecks .[and] nine quarts.
   .[We] ask: how much be .[this in] poppy seed? \+
-  Answer saith: three pecks, three quarts, one gill .[and] eight ladles.
+  Answer saith: three pecks, three quarts, one gill, .[and] eight ladles.
 >>
 ====
 * \c[52148] erroneously has 栗 for 粟.

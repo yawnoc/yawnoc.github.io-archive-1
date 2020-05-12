@@ -76,8 +76,7 @@ Chinese source text: \a[30], \b[154], \c[52148], \d[43]. \+
   Now there be grain, four pecks .[and] five quarts.
   .[We] ask: how much be .[this in] intricate grain? \+
   Answer saith:
-    two pecks, one quart .[and]
-    three fifths of .[a] quart.
+    two pecks, one quart, .[and] three fifths of .[a] quart.
 >>
 ====
 \c[52148] erroneously has 槃 for 糳, both here and below.

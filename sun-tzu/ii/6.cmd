@@ -75,7 +75,7 @@ Chinese source text: \a[30], \b[153], \c[52145], \d[42]. \+
 ||
   Now there be grain, two pecks .[and] one quart.
   .[We] ask: how much be .[this in] fine grain? \+
-  Answer saith: one peck, one quart .[and] seventeen fiftieths of .[a] quart.
+  Answer saith: one peck, one quart, .[and] seventeen fiftieths of .[a] quart.
 >>
 ====
 * \c[52145] erroneously has 稗 for 粺, both here and below.
