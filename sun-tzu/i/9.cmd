@@ -67,7 +67,7 @@ Chinese source text: \a[8], \b[147], \c[52065], \d[15]. \+
   乘得在中央，除得在上方。
 ||
   .[The] method of all division, .[is] directly opposite to multiplication. \+
-  .[The] result of multiplication .[is placed] in .[the] middle;
+  .[The] result of multiplication .[is put] in .[the] middle;
   .[the] result of division, in .[the] above.
 >>
 ====
