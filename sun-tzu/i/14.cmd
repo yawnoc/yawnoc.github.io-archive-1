@@ -155,8 +155,8 @@ Chinese source text: \a[10], \b[148], \c[52074], \d[18]. \+
 <<
   自八八六十四至一一如一，並準此。
 ||
-  From eight eights .[are] sixty-four,
-  unto one one .[is] as one: all according to this.
+  From eight eights .[are] sixty-four unto one one .[is] as one:
+  all according to this.
 >>
 ====
 * I think this is saying that the same procedures as above
