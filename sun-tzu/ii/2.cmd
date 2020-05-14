@@ -1,7 +1,8 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title "\sun-tzu's Computational Classic: Volume~II" ~~《孫子算經・卷中》~~ \P2
+  %title
+    "\sun-tzu's Computational Classic: Volume~II" ~~《孫子算經・卷中》~~ \P2
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
