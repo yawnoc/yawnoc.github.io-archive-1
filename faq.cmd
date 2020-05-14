@@ -25,6 +25,12 @@
 
 
 
+##general
+  General
+##
+
+
+
 ###time
   What do you do in your spare time?
 ###
@@ -127,6 +133,12 @@ by [Philippe Bernard](https://stackoverflow.com/a/19590415).
 ----
 Using [KaTeX](https://katex.org/).
 ----
+
+
+
+##translation
+  Translation
+##
 
 
 
