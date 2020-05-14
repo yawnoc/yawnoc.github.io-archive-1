@@ -6,7 +6,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-05-14
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
@@ -70,6 +70,13 @@ Chinese source text: \a[28], \b[153], \c[52139], \d[41]. \+
   .[to] benefit .[the] lesser, that .[they be] level?
 >>
 ====
+* <span lang="zh-Hant">$b$ ~~分之~~ $a$</span>:
+    \lit $a$ of $b$ shares \+
+  I have rendered fractions literally, since there are references to
+  the numerator <span lang="zh-Hant">~~「之~~ $a$~~」~~</span>, "$a$ of", and
+  the denominator <span lang="zh-Hant">~~「~~$b$ ~~分」~~</span>, "$b$ shares",
+  in the lines to follow.
+
 * 而平： that .[they be] level; \or that .[it be] fair
 ====
 
