@@ -44,8 +44,8 @@ and even eight hundred years would pass me by very quickly.
 ----
 These days I ponder [unsophisticated applied maths problems](/#applied-maths)
 and attempt to read and [translate Literary Chinese](/#literary-chinese),
-and burn even more of my time by building this website
-and making the content freely available online.
+and burn even more of my time building this website
+to make such material freely available online.
 ----
 
 
@@ -57,10 +57,14 @@ and making the content freely available online.
 ----
 Using [GitHub Pages](https://pages.github.com/),
 which is __simple__, __fast__, and most importantly __ad-free__.
-Unfortunately conway.github.io was already taken though (sob).
-In my case, I do not use Jekyll or other plugins;
+I [do not use Jekyll] [nojekyll] or any plugins;
 just straight CSS and JavaScript.
 ----
+
+@@[nojekyll]
+  https://github.com/yawnoc/yawnoc.github.io/blob/master/.nojekyll
+@@
+
 ----
 The pages are written in [Conway's markdown (CMD)] [cmd],
 which gets converted to HTML via my custom-written [Python converter] [py].
@@ -75,6 +79,15 @@ For example, this page was generated from the CMD file [`faq.cmd`] [.cmd].
 @@
 @@[.cmd]
   https://github.com/yawnoc/yawnoc.github.io/blob/master/faq.cmd
+@@
+
+----
+Unfortunately conway.github.io was already taken though (sob);
+blame [Jake Conway].
+----
+
+@@[Jake Conway]
+  https://github.com/Conway
 @@
 
 
@@ -94,7 +107,7 @@ is as permanent as GitHub Pages itself.
 
 
 ###death
-  Oh... that's a bit macabre.
+  That's a bit macabre.
 ###
 
 ----
@@ -147,13 +160,37 @@ Using [KaTeX](https://katex.org/).
 ###
 
 ----
+These are words which I have supplied as the translator.
+----
+
+----
+No two languages correspond perfectly.
+When the target language has no equivalent,
+one inevitably loses meanings, connotations, rhymes, meter, structure, etc.
+It is also necessary to introduce words in the target language
+which do not appear in the source text.
+----
+
+----
 I aim for [formal equivalence] in my translations,
-and I adopt the convention of the King~James Bible translators,
+and believe that translations should be
+as faithful to the original text as possible.
+Accuracy should not be forsaken in favour of readability,
+and the translator should take care not to alter a text by paraphrasing.
+----
+
+----
+In order to make clear
+which words are the original text's and which words are mine,
+I adopt the convention of the King~James Bible translators,
 who .[distinguished] words which did not appear
 in the original Hebrew, Aramaic or Greek,
-but were supplied by the translator.
-(Note that in the original 1611 version this was done not using italics,
+but were instead supplied by the translator.
+(Note that in the 1611 version this was done not using italics,
 but using Roman type instead of the main Black Letter type.)
+----
+
+----
 In my case, English words which do not appear in the original Chinese
 (meaning I cannot point to a character which corresponds to
 or contains that word) are .[distinguished], except:
