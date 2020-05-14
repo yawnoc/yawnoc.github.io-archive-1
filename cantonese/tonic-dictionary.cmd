@@ -1,11 +1,11 @@
 (+ res/general-syntax.cmd +)
 
 %%
-  %title Quick links for Williams' _Tonic Dictionary_ of Cantonese
+  %title Quick links for Williams' Tonic Dictionary of Cantonese
   %title-suffix \title-suffix
   %author Conway
   %date-created 2020-02-20
-  %date-modified 2020-02-23
+  %date-modified 2020-05-14
   %resources
     (+ res/main-resources.cmd +)
     (+ res/rendering-javascript.cmd +)
@@ -23,7 +23,8 @@
 * \header-link:cite
 ====]]
 
-# %title #
+
+# Quick links for Williams' _Tonic Dictionary_ of Cantonese #
 
 
 [||||
@@ -294,7 +295,11 @@ Note that Jyutping (like all contemporary romanisation systems)
 
 
 
-\cite-this-page[][tonic-dictionary][
+\cite-this-page[
+  Quick links for Williams' _Tonic Dictionary_ of Cantonese
+][
+  tonic-dictionary
+][
   Quick links for {Williams'} \textit{{Tonic} {Dictionary}} of {Cantonese}
 ]
 
