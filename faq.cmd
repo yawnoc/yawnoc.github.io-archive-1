@@ -1,3 +1,4 @@
+(+ res/faq-link-syntax.cmd +)
 (+ res/general-syntax.cmd +)
 
 %%
@@ -8,6 +9,10 @@
   %date-modified 2020-05-14
   %resources
     (+ res/main-resources.cmd +)
+  %css
+    li > ul {
+      margin: 0.3em 0;
+    }
 %%
 
 
@@ -22,6 +27,28 @@
 
 [||||
 ||||]
+
+
+
+======
+* \faq-link:general
+  ====
+  * \faq-link:time
+  * \faq-link:site
+  * \faq-link:domain
+  * \faq-link:death
+  * \faq-link:cookies
+  * \faq-link:favicon
+  * \faq-link:equations
+  ====
+
+* \faq-link:translation
+  ====
+  * \faq-link:italics
+  * \faq-link:archaic
+  * \faq-link:this
+  ====
+======
 
 
 
@@ -140,7 +167,7 @@ by [Philippe Bernard](https://stackoverflow.com/a/19590415).
 
 
 ###equations
-  How are the maths equations rendered?
+  How are equations rendered?
 ###
 
 ----
@@ -185,7 +212,7 @@ which words are the original text's and which words are mine,
 I adopt the convention of the King~James Bible translators,
 who .[distinguished] words which did not appear
 in the original Hebrew, Aramaic or Greek,
-but were instead supplied by the translator.
+but were supplied.
 (Note that in the 1611 version this was done not using italics,
 but using Roman type instead of the main Black Letter type.)
 ----
