@@ -5,7 +5,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-08-01
-  %date-modified 2020-05-13
+  %date-modified 2020-05-14
   %resources
     (+ res/main-resources.cmd +)
 %%
@@ -25,9 +25,9 @@
 
 
 
-##time
+###time
   What do you do in your spare time?
-##
+###
 
 ----
 That depends on what you mean by spare time; a day is quite short really.
@@ -44,9 +44,9 @@ and making the content freely available online.
 
 
 
-##site
+###site
   How is this site built?
-##
+###
 
 ----
 Using [GitHub Pages](https://pages.github.com/),
@@ -73,10 +73,10 @@ For example, this page was generated from the CMD file [`faq.cmd`] [.cmd].
 
 
 
-##domain
+###domain
   Why don't you get yourself a custom domain
   instead of the default yawnoc.github.io?
-##
+###
 
 ----
 Firstly, I am poor, and secondly, even if I did buy a domain,
@@ -87,9 +87,9 @@ is as permanent as GitHub Pages itself.
 
 
 
-##death
+###death
   Oh... that's a bit macabre.
-##
+###
 
 ----
 I do not fear death for my own sake.
@@ -99,9 +99,9 @@ At the time of writing the latter is more probable. Fear changes nothing.
 
 
 
-##cookies
+###cookies
   Does your site use cookies?
-##
+###
 
 ----
 No, unless you have visited this site prior to 14~May 2020.
@@ -109,9 +109,9 @@ No, unless you have visited this site prior to 14~May 2020.
 
 
 
-##favicon
+###favicon
   How did you set up the site favicon?
-##
+###
 
 ----
 Using [RealFaviconGenerator](https://realfavicongenerator.net/)
@@ -120,9 +120,9 @@ by [Philippe Bernard](https://stackoverflow.com/a/19590415).
 
 
 
-##equations
+###equations
   How are the maths equations rendered?
-##
+###
 
 ----
 Using [KaTeX](https://katex.org/).
@@ -130,9 +130,9 @@ Using [KaTeX](https://katex.org/).
 
 
 
-##italics
+###italics
   Why are there italicised words in your translations?
-##
+###
 
 ----
 I aim for [formal equivalence] in my translations,
@@ -165,9 +165,9 @@ or contains that word) are .[distinguished], except:
 
 
 
-##archaic
+###archaic
   Wherefore usest thou archaic verb conjugation?
-##
+###
 
 ----
 This is stylistic, and in my view
@@ -186,9 +186,9 @@ For example,
 
 
 
-##this
+###this
   But I thought that 是 means "is", and 也, "also".
-##
+###
 
 ----
 Forget everything you learnt in Mandarin class; that is modern vernacular.
