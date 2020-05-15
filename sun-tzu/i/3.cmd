@@ -1,4 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
+(+ resources/inclusions/syntax/superscripts.cmd +)
 
 %%
   %title
