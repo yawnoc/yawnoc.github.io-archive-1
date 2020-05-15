@@ -294,7 +294,7 @@ a[href^="http"
 ):not(
   [href^="https://conway-markdown.github.io/"]
 ) {
-  background-image: url(/res/external-link.svg);
+  background-image: url(/resources/styles/external-link.svg);
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 0.8em;
@@ -309,7 +309,7 @@ h2 > .permalink {
 }
 
 .permalink {
-  background-image: url(/res/permalink.svg);
+  background-image: url(/resources/styles/permalink.svg);
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 1em;
