@@ -1,5 +1,5 @@
-(+ res/general-syntax.cmd +)
-(+ res/cynics-730-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+(+ resources/inclusions/syntax/cynics-730.cmd +)
 
 %%
   %title A cynic's Bolt Report: \short-title

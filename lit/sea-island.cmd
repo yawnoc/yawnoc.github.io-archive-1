@@ -1,4 +1,4 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
 
 %%
   %title ~~ "The Sea Island Computational Classic" 《海島算經》 ~~

@@ -1,4 +1,4 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
 
 %%
   %title Mao on separatism: 27~Chinas

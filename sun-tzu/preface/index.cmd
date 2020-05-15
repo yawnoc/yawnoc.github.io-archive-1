@@ -1,4 +1,4 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
 
 %%
   %title "\sun-tzu's Computational Classic: Preface" ~~《孫子算經・序》~~

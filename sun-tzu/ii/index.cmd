@@ -1,4 +1,4 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
 
 %%
   %title "\sun-tzu's Computational Classic: Volume~II" ~~《孫子算經・卷中》~~

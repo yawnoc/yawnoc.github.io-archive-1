@@ -1,4 +1,4 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
 
 %%
   %title ~~ "The Fox Feigneth the Tiger's Authority" 《狐假虎威》 ~~

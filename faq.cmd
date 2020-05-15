@@ -1,5 +1,5 @@
-(+ res/faq-link-syntax.cmd +)
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/faq-link.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
 
 %%
   %title FAQ

@@ -1,4 +1,4 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
 
 %%
   %title ~~ "An History of Mr Shih's Eating of Lions" 《施氏食獅史》 ~~
