@@ -15,7 +15,7 @@ a~~
       this.removeAttribute('integrity');\
       this.removeAttribute('onerror');\
       this.setAttribute('href',\
-        '/katex.min.css'\
+        '/resources/katex/katex.min.css'\
       )\
     ">
 ~~
@@ -37,7 +37,7 @@ a~~
     onerror="\
       let a=document.createElement('script');\
       a.setAttribute('src',\
-        '/katex.min.js'\
+        '/resources/katex/katex.min.js'\
       );\
       a.setAttribute('onload', 'renderMaths()');\
       document.head.appendChild(a);

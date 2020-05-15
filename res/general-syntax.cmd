@@ -885,17 +885,23 @@
       font-display: swap;
       font-family: "KaTeX_Math-Italic";
       src:
-        url("/fonts/KaTeX_Math-Italic.woff2") format("woff2"),
-        url("/fonts/KaTeX_Math-Italic.woff") format("woff"),
-        url("/fonts/KaTeX_Math-Italic.ttf") format("truetype");
+        url("/resources/katex/fonts/KaTeX_Math-Italic.woff2") \
+          format("woff2"),
+        url("/resources/katex/fonts/KaTeX_Math-Italic.woff") \
+          format("woff"),
+        url("/resources/katex/fonts/KaTeX_Math-Italic.ttf") \
+          format("truetype");
     }
     @font-face {
       font-display: swap;
       font-family: "KaTeX_Main-Regular";
       src:
-        url("/fonts/KaTeX_Main-Regular.woff2") format("woff2"),
-        url("/fonts/KaTeX_Main-Regular.woff") format("woff"),
-        url("/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+        url("/resources/katex/fonts/KaTeX_Main-Regular.woff2") \
+          format("woff2"),
+        url("/resources/katex/fonts/KaTeX_Main-Regular.woff") \
+          format("woff"),
+        url("/resources/katex/fonts/KaTeX_Main-Regular.ttf") \
+          format("truetype");
     }
     .maths-italic {
       font-family: "KaTeX_Math-Italic", "KaTeX_Main-Regular";
