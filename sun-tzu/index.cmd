@@ -7,8 +7,8 @@
   %date-created 2019-05-04
   %date-modified 2020-05-13
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %description
     An annotated English translation of Sunzi Suanjing, \
     ~~《孫子算經》~~, "\sun-tzu's Computational Classic".

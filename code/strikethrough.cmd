@@ -7,7 +7,7 @@
   %date-created 2020-03-02
   %date-modified 2020-04-25
   %resources
-    (+ res/main-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
   %css a~~
     .container {
       border: 2px solid black;

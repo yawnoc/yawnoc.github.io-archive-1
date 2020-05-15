@@ -8,7 +8,7 @@
   %date-created 2020-03-27
   %date-modified 2020-03-27
   %resources
-    (+ res/main-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
   %footer-copyright-remark
     except the [original interview][original],
     whose copyright belongs to the ABC

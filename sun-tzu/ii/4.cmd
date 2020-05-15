@@ -8,9 +8,9 @@
   %date-created 2019-06-09
   %date-modified 2020-05-14
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
-    (+ res/maths-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
+    (+ resources/inclusions/preamble/maths.cmd +)
 %%
 
 [[====

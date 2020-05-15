@@ -7,9 +7,9 @@
   %date-created 2019-04-13
   %date-modified 2020-04-26
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
-    (+ res/maths-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
+    (+ resources/inclusions/preamble/maths.cmd +)
   %description
     A derivation of the optimal launch angle (which maximises range) \
     for projectile motion (no air resistance) from a raised platform.

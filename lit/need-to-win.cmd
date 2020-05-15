@@ -7,8 +7,8 @@
   %date-created 2019-04-15
   %date-modified 2020-05-03
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %description
     A discussion and translation of Chuang Tz(uu)'s alleged "archery" quote, \
     "When an archer is shooting for nothing, he has all his skill..."

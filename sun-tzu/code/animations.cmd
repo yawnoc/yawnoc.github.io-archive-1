@@ -6,9 +6,9 @@
   %date-created 2019-05-26
   %date-modified 2020-03-20
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
-    (+ res/maths-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
+    (+ resources/inclusions/preamble/maths.cmd +)
   %description
     Mathematica code generating animations for the \
     Sunzi Suanjing multiplication \& division algorithms.

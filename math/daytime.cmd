@@ -7,9 +7,9 @@
   %date-created 2019-07-12
   %date-modified 2020-04-28
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
-    (+ res/maths-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
+    (+ resources/inclusions/preamble/maths.cmd +)
   %description
     A simple mathematical model for the sun's path through the sky \
     and the amount of daytime at different times of the year.

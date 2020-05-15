@@ -10,8 +10,8 @@
   %date-created 2019-04-07
   %date-modified 2020-05-02
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %description c~~
     An English translation of 《太平山獅子亭記》, \
     "Record of .[the] Lion's Pavilion, Victoria~Peak", \

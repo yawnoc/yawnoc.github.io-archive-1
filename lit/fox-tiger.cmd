@@ -8,8 +8,8 @@
   %date-created 2019-04-07
   %date-modified 2020-05-06
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %description c~~
     An English translation of 《狐假虎威》, \
     "The Fox Feigneth the Tiger's Authority".

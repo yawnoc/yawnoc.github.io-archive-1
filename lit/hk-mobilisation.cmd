@@ -10,7 +10,7 @@
   %date-created 2019-06-22
   %date-modified 2020-05-04
   %resources
-    (+ res/main-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
   %footer-copyright-remark
     except the [original Chinese text] [facebook post],
     which is by [畫字~(Draword)] [draword],

@@ -7,8 +7,8 @@
   %date-created 2019-11-21
   %date-modified 2020-02-15
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %footer-copyright-remark
     except the image of \kimura-yodo,
     taken from [twitter] ([archived version][twitter archived])

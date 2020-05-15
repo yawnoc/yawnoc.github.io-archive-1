@@ -8,7 +8,7 @@
   %date-created 2019-08-01
   %date-modified 2020-05-14
   %resources
-    (+ res/main-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
   %css
     li > ul {
       margin: 0.3em 0;
