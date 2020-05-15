@@ -1,4 +1,4 @@
-(+ resources/inclusions/syntax/faq-link.cmd +)
+(+ resources/inclusions/syntax/faq-links.cmd +)
 (+ resources/inclusions/syntax/general.cmd +)
 
 %%
