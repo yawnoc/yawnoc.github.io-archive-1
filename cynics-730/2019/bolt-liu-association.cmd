@@ -1,4 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
+
 (+ resources/inclusions/syntax/cynics-730.cmd +)
 
 %%
