@@ -1,0 +1,66 @@
+<!--
+  ----------------------------------------------------------------
+  Translation (parallel text)  <<{[class]}↵ || >>
+  ----------------------------------------------------------------
+-->
+
+{%
+  ^ (?P<leading_whitespace> [^\S\n]* )
+  [<]{2,}
+  (
+    \{
+      (?P<class> [^}]*? )
+    \}
+  )?
+  \n
+    
+    (?P<chinese_content> [\s\S]*? )
+    
+  ^ (?P=leading_whitespace)
+  (?P<pipes> [|]{2,} )
+    
+    (?P<english_content> [\s\S]*? )
+    
+  ^ (?P=leading_whitespace)
+  [>]{2,}
+%
+  \g<pipes>||||{translation parallel-text \g<class>}
+  
+  \g<pipes>||{chinese}
+    \g<chinese_content>
+  \g<pipes>||
+  
+  \g<pipes>||{english}
+    \g<english_content>
+  \g<pipes>||
+  
+  \g<pipes>||||
+%}
+
+
+<!--
+  ----------------------------------------------------------------
+  Translator-supplied italics  .[ ]
+  ----------------------------------------------------------------
+-->
+
+{%
+  [.]
+  \[
+    (?P<content> [^]] *? )
+  \]
+%
+  _{translator-supplied}\g<content>_
+%}
+
+
+<!--
+  ----------------------------------------------------------------
+  Translation-alternative markers  \or  \lit
+  ----------------------------------------------------------------
+-->
+
+{: \or : <span class="alternative-marker">or</span> :}
+{: \lit : <span class="alternative-marker">lit.</span> :}
+
+
