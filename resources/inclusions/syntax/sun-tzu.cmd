@@ -231,17 +231,4 @@
   (/sun-tzu/\g<volume>/\g<paragraph> \g<title>)
 %}
 
-<!-- Manuscript for Volume v Paragraph p  [m"v p"] -->
-
-{%
-  [\s]* \[m"p"\]
-%
-  (/manuscripts/sun-tzu-preface.pdf)
-%}
-{%
-  [\s]* \[m"(?P<volume> [i] {1,3} ) [ ] (?P<paragraph> [0-9] + )"\]
-%
-  (/manuscripts/sun-tzu-\g<volume>-\g<paragraph>.pdf)
-%}
-
 

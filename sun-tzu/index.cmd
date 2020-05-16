@@ -223,9 +223,19 @@ These are PDF scans of my handwritten translation scribblings.
 They are drafts, and as such, do not contain
 edits and corrections I have made since they were scanned.
 ----
+
+<!--
+  URL for "Manuscript for Volume v Paragraph p" in round brackets [m"v p"]
+-->
+{%
+  [ ]* \[m"(?P<volume> [i] {1,3} ) [ ] (?P<paragraph> [0-9] + )"\]
+%
+  (/manuscripts/sun-tzu-\g<volume>-\g<paragraph>.pdf)
+%}
+
 ===={manuscript-links}
 * [Version referencing system](/manuscripts/sun-tzu-versions.pdf)
-* [ __Preface__ ][m"p"]
+* [ __Preface__ ](/manuscripts/sun-tzu-preface.pdf)
 * __Volume~I:__
     [\P1] [m"i 1"]
     [\P2] [m"i 2"]
