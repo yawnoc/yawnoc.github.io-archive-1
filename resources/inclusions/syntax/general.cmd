@@ -79,7 +79,7 @@
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
       \/  howpublished = {\\url{https://yawnoc.github.io/%url}},
-      \/  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
+      \/  note = {Accessed\\~<span class="js-date">yyyy-mm-dd</span>},
       \/}
     </code></pre>
   
