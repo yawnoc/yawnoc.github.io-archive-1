@@ -9,22 +9,6 @@
 
 <!--
   ----------------------------------------------------------------
-  Sections
-  ----------------------------------------------------------------
-  Title suffix
-  Noscript for maths equations rendering
-  Cite this page section
-  Page properties with dates  [|||| ||||]
-  Heading permalinks (<h2> through <h6>)
-  Header navigation bar links
-  Navigation bars  [==== ====]
-  
--->
-
-
-
-<!--
-  ----------------------------------------------------------------
   Title suffix
   ----------------------------------------------------------------
 -->
@@ -47,15 +31,15 @@
 
 <!--
   ----------------------------------------------------------------
-  Cite this page section
+  Cite this page section  \cite-this-page[text title][tex key][tex title]
   ----------------------------------------------------------------
 -->
 
+<!-- Default [text title] to [%title] -->
+
 {%
   \\cite[-]this[-]page
-  \[
-    [\s]*
-  \]
+  \[ \]
 %
   \\cite-this-page[%title]
 %}
