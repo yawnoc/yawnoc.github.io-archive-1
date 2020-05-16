@@ -145,7 +145,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
 
 * 鈞： quarter \+
   鈞，音均， \C kwan1, \M j(u-)n \+
-  Ki(u")n ((鈞)).
+  K(u")n ((鈞)).
   A quarter of the shih ((石)) or "stone" below,
   and of similar weight to the [imperial quarter] (28~pounds).
   Difficult to render otherwise
