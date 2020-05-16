@@ -1,5 +1,6 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
+(+ resources/inclusions/syntax/romanisations.cmd +)
 (+ resources/inclusions/syntax/chinese-lang.cmd +)
 
 (+ resources/inclusions/syntax/svg-styles.cmd +)
