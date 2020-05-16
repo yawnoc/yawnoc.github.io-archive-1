@@ -1,14 +1,22 @@
 <!--
+  ================================================================
+  Load
+    BEFORE romanisations.cmd
+  ================================================================
+-->
+
+
+
+<!--
   ----------------------------------------------------------------
   Sections
   ----------------------------------------------------------------
   Title suffix
-  URL
   Noscript  \noscript[feature]
   Cite this page section
   Page properties with dates  [|||| ||||]
   Heading permalinks (<h2> through <h6>)
-  Links
+  Header navigation bar links
   Navigation bars  [==== ====]
   
 -->
@@ -22,16 +30,6 @@
 -->
 
 {: \title-suffix : \\ | Conway's site :}
-
-
-
-<!--
-  ----------------------------------------------------------------
-  URL
-  ----------------------------------------------------------------
--->
-
-{: \url-full : https://yawnoc.github.io/%url :}
 
 
 
@@ -101,7 +99,7 @@
     ----
     Conway~(%year-modified).
     \g<text_title>.
-    \\<\\url-full\\>
+    \\<https://yawnoc.github.io/%url\\>
     Accessed~\\yyyy-mm-dd.
     ----
   
@@ -111,7 +109,7 @@
       \/  author = {Conway},
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
-      \/  howpublished = {\\url{\\url-full}},
+      \/  howpublished = {\\url{https://yawnoc.github.io/%url}},
       \/  note = {Accessed \\yyyy-mm-dd},
       \/}
     </code></pre>
@@ -122,7 +120,7 @@
       \/  author = {Conway},
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
-      \/  url = {\\url-full},
+      \/  url = {https://yawnoc.github.io/%url},
       \/  urldate = {\\yyyy-mm-dd},
       \/}
     </code></pre>
@@ -208,7 +206,7 @@
 
 <!--
   ----------------------------------------------------------------
-  Links
+  Header navigation bar links
   ----------------------------------------------------------------
 -->
 
