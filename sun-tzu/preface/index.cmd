@@ -1,7 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
 (+ resources/inclusions/syntax/chinese-lang.cmd +)
-(+ resources/inclusions/syntax/romanisation-original-chinese.cmd +)
+(+ resources/inclusions/syntax/original-chinese.cmd +)
 
 %%
   %title "\sun-tzu's Computational Classic: Preface" ~~《孫子算經・序》~~

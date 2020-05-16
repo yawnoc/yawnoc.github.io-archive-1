@@ -1,7 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
 (+ resources/inclusions/syntax/chinese-lang.cmd +)
-(+ resources/inclusions/syntax/romanisation-original-chinese.cmd +)
+(+ resources/inclusions/syntax/original-chinese.cmd +)
 
 %%
   %title ~~ "The Fox Feigneth the Tiger's Authority" 《狐假虎威》 ~~
