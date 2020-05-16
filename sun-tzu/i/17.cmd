@@ -1,7 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
-
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~I" ~~《孫子算經・卷上》~~ \P17

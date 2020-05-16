@@ -1,7 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
-
 %%
   %title ~~ "An History of Mr Shih's Eating of Lions" 《施氏食獅史》 ~~
   %title-suffix \title-suffix

@@ -1,7 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
-
 %%
   %title Conway's site
   %author Conway

@@ -1,8 +1,5 @@
 (+ resources/inclusions/syntax/faq-links.cmd +)
-
 (+ resources/inclusions/syntax/general.cmd +)
-
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
 
 %%
   %title FAQ

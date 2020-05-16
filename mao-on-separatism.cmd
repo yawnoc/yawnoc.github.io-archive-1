@@ -1,7 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
-
 %%
   %title Mao on separatism: 27~Chinas
   %title-suffix \title-suffix

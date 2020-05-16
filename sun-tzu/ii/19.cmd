@@ -1,7 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
-
 (+ resources/inclusions/syntax/coloured-spans.cmd +)
 
 (+ resources/inclusions/syntax/svg-embedded-styles.cmd +)

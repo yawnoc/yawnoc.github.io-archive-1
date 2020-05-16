@@ -1,7 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
-
 %%
   %title Quick links for Williams' Tonic Dictionary of Cantonese
   %title-suffix \title-suffix
