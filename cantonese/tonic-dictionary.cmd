@@ -1,4 +1,7 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/romanisations.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
 
 %%
   %title Quick links for Williams' Tonic Dictionary of Cantonese
@@ -7,8 +10,8 @@
   %date-created 2020-02-20
   %date-modified 2020-05-14
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %description
     Quick links for each syllable of Samuel Wells Williams' \
     "A Tonic Dictionary Of The Chinese Language In The Canton Dialect" \

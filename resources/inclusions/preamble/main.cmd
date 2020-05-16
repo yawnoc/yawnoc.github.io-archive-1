@@ -16,5 +16,5 @@ a~~
 
 <!-- Load main CSS -->
 a~~
-  <link rel="stylesheet" href="/main.min.css">
+  <link rel="stylesheet" href="/resources/styles/main.min.css">
 ~~

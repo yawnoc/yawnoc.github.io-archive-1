@@ -1,5 +1,5 @@
-(+ res/general-syntax.cmd +)
-(+ res/cynics-730-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+(+ resources/inclusions/syntax/cynics-730.cmd +)
 
 %%
   %title A cynic's 7.30 (and other programs)
@@ -8,8 +8,8 @@
   %date-created 2019-08-30
   %date-modified 2020-04-24
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %css a~~
     .air-date {
       font-weight: bold;

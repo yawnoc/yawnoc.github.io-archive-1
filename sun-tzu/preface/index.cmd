@@ -1,4 +1,12 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/sun-tzu.cmd +)
+
+(+ resources/inclusions/syntax/translations.cmd +)
+
+(+ resources/inclusions/syntax/romanisations.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
+(+ resources/inclusions/syntax/original-chinese.cmd +)
 
 %%
   %title "\sun-tzu's Computational Classic: Preface" ~~《孫子算經・序》~~
@@ -7,8 +15,8 @@
   %date-created 2019-06-09
   %date-modified 2020-05-13
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %description
     An annotated English translation of the Preface to Sunzi Suanjing, \
     ~~《孫子算經》~~, "\sun-tzu's Computational Classic".

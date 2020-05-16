@@ -1,4 +1,5 @@
 <!-- Thought bubbles [: :] -->
+
 {%
   \[ [:]
   (?P<content> [\s\S]*? )
@@ -9,6 +10,7 @@
 
 
 <!-- Abbreviations for classes -->
+
 {: {h} : {host} :}
 {: {ht} : {host thought-bubble} :}
 {: {g} : {guest} :}
@@ -16,6 +18,7 @@
 
 
 <!-- END of excerpt \END-excerpt -->
+
 {: \END-excerpt :
   <div class="marker end">
     END of Excerpt
@@ -24,8 +27,16 @@
 
 
 <!-- END of interview \END -->
+
 {: \END :
   <div class="marker end">
     END
   </div>
 :}
+
+
+<!-- Sic erat scriptum \sic -->
+
+{: \sic : _sic_ :}
+
+

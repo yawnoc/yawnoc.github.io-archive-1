@@ -1,4 +1,4 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
 
 %%
   %title Strikethrough formatter
@@ -7,7 +7,7 @@
   %date-created 2020-03-02
   %date-modified 2020-04-25
   %resources
-    (+ res/main-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
   %css a~~
     .container {
       border: 2px solid black;
@@ -52,7 +52,9 @@ a~~
 ||||
 
 ||||{container}
-  \noscript[the strikethrough formatter]
+  <noscript>
+    Enable JavaScript for the strikethrough formatter to work.
+  </noscript>
   a~~ <s id="output"></s> ~~
 ||||
 

@@ -1,4 +1,9 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/translations.cmd +)
+
+(+ resources/inclusions/syntax/romanisations.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
 
 %%
   %title Mao on separatism: 27~Chinas
@@ -7,8 +12,8 @@
   %date-created 2019-09-24
   %date-modified 2020-02-15
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %description
     An English translation of Mao's 1920 suggestion, in ~~ 長沙《大公報》 ~~, \
     of dividing China into 27 separate countries, \

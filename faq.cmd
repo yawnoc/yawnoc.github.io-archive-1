@@ -1,5 +1,11 @@
-(+ res/faq-link-syntax.cmd +)
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/faq-links.cmd +)
+
+(+ resources/inclusions/syntax/translations.cmd +)
+
+(+ resources/inclusions/syntax/romanisations.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
 
 %%
   %title FAQ
@@ -8,7 +14,7 @@
   %date-created 2019-08-01
   %date-modified 2020-05-14
   %resources
-    (+ res/main-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
   %css
     li > ul {
       margin: 0.3em 0;

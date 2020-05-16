@@ -1,4 +1,13 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/sun-tzu.cmd +)
+
+(+ resources/inclusions/syntax/translations.cmd +)
+
+(+ resources/inclusions/syntax/romanisations.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
+
+(+ resources/inclusions/syntax/superscripts.cmd +)
 
 %%
   %title
@@ -8,9 +17,9 @@
   %date-created 2019-06-09
   %date-modified 2020-05-13
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
-    (+ res/maths-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
+    (+ resources/inclusions/preamble/maths.cmd +)
 %%
 
 [[====
@@ -39,7 +48,7 @@
 |}}}}
 
 
-\noscript[]
+\noscript:maths
 
 
 [||||

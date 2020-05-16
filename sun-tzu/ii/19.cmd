@@ -1,4 +1,16 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/sun-tzu.cmd +)
+
+(+ resources/inclusions/syntax/translations.cmd +)
+
+(+ resources/inclusions/syntax/romanisations.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
+
+(+ resources/inclusions/syntax/coloured-spans.cmd +)
+
+(+ resources/inclusions/syntax/svg-styles.cmd +)
+(+ resources/inclusions/syntax/accessible-svgs.cmd +)
 
 %%
   %title
@@ -8,9 +20,9 @@
   %date-created 2019-06-09
   %date-modified 2020-05-13
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
-    (+ res/maths-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
+    (+ resources/inclusions/preamble/maths.cmd +)
   %css
     li > ul {
       margin: 0.3em 0;
@@ -56,7 +68,7 @@
 |}}}}
 
 
-\noscript[]
+\noscript:maths
 
 
 [||||

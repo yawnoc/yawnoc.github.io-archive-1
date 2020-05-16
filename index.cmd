@@ -1,4 +1,11 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/sun-tzu.cmd +)
+
+(+ resources/inclusions/syntax/translations.cmd +)
+
+(+ resources/inclusions/syntax/romanisations.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
 
 %%
   %title Conway's site
@@ -6,8 +13,8 @@
   %date-created 2019-03-09
   %date-modified 2020-04-26
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %description Conway's site: Literary Chinese and applied mathematics.
   %footer-remark
     And if the current year is greater than %year-modified:
@@ -130,12 +137,15 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ####
 
 ======{page-link-container}
-* \link:sun-tzu
+* [
+    《孫子算經》 \+
+    "\sun-tzu's Computational Classic"
+  ][""]
   ====
-  * \link:sun-tzu/preface
-  * \link:sun-tzu/i
-  * \link:sun-tzu/ii
-  * \link:sun-tzu/iii
+  * [《序》 "Preface"] ["p"]
+  * [《卷上》 "Volume~I"] ["i"]
+  * [《卷中》 "Volume~II"] ["ii"] (incomplete)
+  * 《卷下》 "Volume~III" (haven't started)
   ====
   ||||{page-description}
     An annotated translation of the entire _Sunzi Suanjing_ (once completed).

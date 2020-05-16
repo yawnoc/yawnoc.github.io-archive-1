@@ -1,4 +1,12 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/sun-tzu.cmd +)
+
+(+ resources/inclusions/syntax/translations.cmd +)
+
+(+ resources/inclusions/syntax/romanisations.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
+(+ resources/inclusions/syntax/original-chinese.cmd +)
 
 %%
   %title "\sun-tzu's Computational Classic" ~~《孫子算經》~~
@@ -7,8 +15,8 @@
   %date-created 2019-05-04
   %date-modified 2020-05-13
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
   %description
     An annotated English translation of Sunzi Suanjing, \
     ~~《孫子算經》~~, "\sun-tzu's Computational Classic".
@@ -64,10 +72,10 @@ Also known as _Sunzi Suanjing_.
 >>
 
 ===={volumes}
-* \link:sun-tzu/preface
-* \link:sun-tzu/i
-* \link:sun-tzu/ii
-* \link:sun-tzu/iii
+* [《序》 "Preface"] ["p"]
+* [《卷上》 "Volume~I"] ["i"]
+* [《卷中》 "Volume~II"] ["ii"] (incomplete)
+* 《卷下》 "Volume~III" (haven't started)
 ====
 
 
@@ -215,9 +223,19 @@ These are PDF scans of my handwritten translation scribblings.
 They are drafts, and as such, do not contain
 edits and corrections I have made since they were scanned.
 ----
+
+<!--
+  URL for "Manuscript for Volume v Paragraph p" in round brackets [m"v p"]
+-->
+{%
+  [ ]* \[m"(?P<volume> [i] {1,3} ) [ ] (?P<paragraph> [0-9] + )"\]
+%
+  (/manuscripts/sun-tzu-\g<volume>-\g<paragraph>.pdf)
+%}
+
 ===={manuscript-links}
 * [Version referencing system](/manuscripts/sun-tzu-versions.pdf)
-* [ __Preface__ ][m"p"]
+* [ __Preface__ ](/manuscripts/sun-tzu-preface.pdf)
 * __Volume~I:__
     [\P1] [m"i 1"]
     [\P2] [m"i 2"]
@@ -325,10 +343,10 @@ edits and corrections I have made since they were scanned.
 >>
 
 ===={volumes}
-* \link:sun-tzu/preface
-* \link:sun-tzu/i
-* \link:sun-tzu/ii
-* \link:sun-tzu/iii
+* [《序》 "Preface"] ["p"]
+* [《卷上》 "Volume~I"] ["i"]
+* [《卷中》 "Volume~II"] ["ii"] (incomplete)
+* 《卷下》 "Volume~III" (haven't started)
 ====
 
 

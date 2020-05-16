@@ -1,5 +1,8 @@
-(+ res/general-syntax.cmd +)
-(+ res/cynics-730-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
+
+(+ resources/inclusions/syntax/cynics-730.cmd +)
 
 %%
   %title A cynic's Bolt Report: \short-title
@@ -8,7 +11,7 @@
   %date-created 2019-09-13
   %date-modified 2020-02-16
   %resources
-    (+ res/main-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
   %footer-copyright-remark
     except the [original interview][original],
     whose copyright belongs to Sky News

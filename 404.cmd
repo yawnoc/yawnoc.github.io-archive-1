@@ -1,10 +1,10 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
 
 %%
   %title Page not found
   %title-suffix \title-suffix
   %resources
-    (+ res/main-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
   %css a~~
     strong {
       display: block;

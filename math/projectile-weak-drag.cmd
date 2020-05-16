@@ -1,4 +1,7 @@
-(+ res/general-syntax.cmd +)
+(+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/svg-styles.cmd +)
+(+ resources/inclusions/syntax/accessible-svgs.cmd +)
 
 %%
   %title Projectile motion: optimal launch angle for weak quadratic drag
@@ -7,9 +10,9 @@
   %date-created 2019-06-21
   %date-modified 2020-04-27
   %resources
-    (+ res/main-resources.cmd +)
-    (+ res/rendering-javascript.cmd +)
-    (+ res/maths-resources.cmd +)
+    (+ resources/inclusions/preamble/main.cmd +)
+    (+ resources/inclusions/preamble/rendering.cmd +)
+    (+ resources/inclusions/preamble/maths.cmd +)
   %description
     A derivation of the optimal launch angle (which maximises range) \
     for projectile motion in weak quadratic drag using perturbation theory.
@@ -28,7 +31,7 @@
 
 
 
-\noscript[]
+\noscript:maths
 
 [||||
 See also: [Projectile motion: optimal launch angle from a platform](
