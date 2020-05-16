@@ -69,7 +69,7 @@
     Conway~(%year-modified).
     \g<text_title>.
     \\<https://yawnoc.github.io/%url\\>
-    Accessed~\\yyyy-mm-dd.
+    Accessed~<span class="js-date">yyyy-mm-dd</span>.
     ----
   
   * BibTeX:
@@ -79,7 +79,7 @@
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
       \/  howpublished = {\\url{https://yawnoc.github.io/%url}},
-      \/  note = {Accessed \\yyyy-mm-dd},
+      \/  note = {Accessed <span class="js-date">yyyy-mm-dd</span>},
       \/}
     </code></pre>
   
@@ -90,7 +90,7 @@
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
       \/  url = {https://yawnoc.github.io/%url},
-      \/  urldate = {\\yyyy-mm-dd},
+      \/  urldate = {<span class="js-date">yyyy-mm-dd</span>},
       \/}
     </code></pre>
   ====
@@ -101,7 +101,6 @@
   ~~
 %}
 
-{: \yyyy-mm-dd : a~~ <span class="js-date">yyyy-mm-dd</span> ~~ :}
 
 
 <!--
