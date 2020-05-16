@@ -364,33 +364,8 @@
 {:: \header-link:result :: [Result](#result Jump to result) ::}
 {:: \header-link:cite :: [Cite](#cite Cite this page) ::}
 {:: \header-link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
-
 {:: \header-link:sun-tzu ::
   [\\sun-tzu] ["" \\sun-tzu's Computational Classic]
-::}
-
-{:: \link:sun-tzu/preface ::
-  [《序》 "Preface"] ["p"]
-::}
-
-{:: \link:sun-tzu/iii ::
-  《卷下》 "Volume~III" (haven't started)
-::}
-
-{:: \link:sun-tzu/ii ::
-  [《卷中》 "Volume~II"] ["ii"] (incomplete)
-::}
-
-{:: \link:sun-tzu/i ::
-  [《卷上》 "Volume~I"] ["i"]
-::}
-
-{:: \link:sun-tzu ::
-  [
-    《孫子算經》 \+
-    "\\sun-tzu's Computational Classic"
-  ]
-  [""]
 ::}
 
 <!-- Sun Tzu URL in round brackets  [""] -->

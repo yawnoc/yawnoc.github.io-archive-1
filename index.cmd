@@ -135,12 +135,15 @@ with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
 ####
 
 ======{page-link-container}
-* \link:sun-tzu
+* [
+    《孫子算經》 \+
+    "\sun-tzu's Computational Classic"
+  ][""]
   ====
-  * \link:sun-tzu/preface
-  * \link:sun-tzu/i
-  * \link:sun-tzu/ii
-  * \link:sun-tzu/iii
+  * [《序》 "Preface"] ["p"]
+  * [《卷上》 "Volume~I"] ["i"]
+  * [《卷中》 "Volume~II"] ["ii"] (incomplete)
+  * 《卷下》 "Volume~III" (haven't started)
   ====
   ||||{page-description}
     An annotated translation of the entire _Sunzi Suanjing_ (once completed).

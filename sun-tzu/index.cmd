@@ -70,10 +70,10 @@ Also known as _Sunzi Suanjing_.
 >>
 
 ===={volumes}
-* \link:sun-tzu/preface
-* \link:sun-tzu/i
-* \link:sun-tzu/ii
-* \link:sun-tzu/iii
+* [《序》 "Preface"] ["p"]
+* [《卷上》 "Volume~I"] ["i"]
+* [《卷中》 "Volume~II"] ["ii"] (incomplete)
+* 《卷下》 "Volume~III" (haven't started)
 ====
 
 
@@ -331,10 +331,10 @@ edits and corrections I have made since they were scanned.
 >>
 
 ===={volumes}
-* \link:sun-tzu/preface
-* \link:sun-tzu/i
-* \link:sun-tzu/ii
-* \link:sun-tzu/iii
+* [《序》 "Preface"] ["p"]
+* [《卷上》 "Volume~I"] ["i"]
+* [《卷中》 "Volume~II"] ["ii"] (incomplete)
+* 《卷下》 "Volume~III" (haven't started)
 ====
 
 
