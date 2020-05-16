@@ -46,7 +46,7 @@
 |}}}}
 
 
-\noscript[]
+\noscript:maths
 
 
 [||||

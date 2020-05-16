@@ -65,7 +65,7 @@
 # %title #
 
 
-\noscript[]
+\noscript:maths
 
 [||||
 ||||]

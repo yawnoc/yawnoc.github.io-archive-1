@@ -31,7 +31,7 @@
 
 
 
-\noscript[]
+\noscript:maths
 
 [||||
 See also: [Projectile motion: optimal launch angle from a platform](

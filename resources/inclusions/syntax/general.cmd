@@ -12,7 +12,7 @@
   Sections
   ----------------------------------------------------------------
   Title suffix
-  Noscript  \noscript[feature]
+  Noscript for maths equations rendering
   Cite this page section
   Page properties with dates  [|||| ||||]
   Heading permalinks (<h2> through <h6>)
@@ -35,28 +35,13 @@
 
 <!--
   ----------------------------------------------------------------
-  Noscript  \noscript[feature]
+  Noscript for maths equations rendering
   ----------------------------------------------------------------
 -->
 
-<!-- Default feature "equation rendering" -->
-
-{%
-  \\noscript \[ \]
-%
-  \\noscript[equation rendering]
-%}
-
-<!-- General -->
-
-{%
-  \\noscript
-  \[
-    (?P<feature> [^]]*? )
-  \]
-%
-  <noscript>Enable JavaScript for \g<feature> to work.</noscript>
-%}
+{:: \noscript:maths ::
+  <noscript>Enable JavaScript for equation rendering to work.</noscript>
+::}
 
 
 

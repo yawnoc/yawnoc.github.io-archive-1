@@ -52,7 +52,9 @@ a~~
 ||||
 
 ||||{container}
-  \noscript[the strikethrough formatter]
+  <noscript>
+    Enable JavaScript for the strikethrough formatter to work.
+  </noscript>
   a~~ <s id="output"></s> ~~
 ||||
 

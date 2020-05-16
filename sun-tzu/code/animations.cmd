@@ -28,7 +28,7 @@
 
 # %title #
 
-\noscript[]
+\noscript:maths
 
 [||||
 ||||]

@@ -46,7 +46,7 @@
 #
 
 
-\noscript[]
+\noscript:maths
 
 [||||
 Also known as _Haidao Suanjing_.
