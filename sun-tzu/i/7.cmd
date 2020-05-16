@@ -3,7 +3,7 @@
 (+ resources/inclusions/syntax/chinese-lang.cmd +)
 (+ resources/inclusions/syntax/original-chinese.cmd +)
 
-(+ resources/inclusions/syntax/svg-embedded-styles.cmd +)
+(+ resources/inclusions/syntax/svg-styles.cmd +)
 (+ resources/inclusions/syntax/accessible-svgs.cmd +)
 
 %%
