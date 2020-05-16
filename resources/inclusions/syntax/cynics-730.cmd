@@ -35,3 +35,8 @@
 :}
 
 
+<!-- Sic erat scriptum \sic -->
+
+{: \sic : _sic_ :}
+
+
