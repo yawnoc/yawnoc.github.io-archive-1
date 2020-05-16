@@ -2,7 +2,7 @@
 
 (+ resources/inclusions/syntax/general.cmd +)
 
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
 
 %%
   %title FAQ

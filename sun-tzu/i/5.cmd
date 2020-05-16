@@ -1,6 +1,6 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
 
 (+ resources/inclusions/syntax/svg-embedded-styles.cmd +)
 (+ resources/inclusions/syntax/accessible-svgs.cmd +)

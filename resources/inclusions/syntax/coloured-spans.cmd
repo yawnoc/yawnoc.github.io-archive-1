@@ -1,4 +1,4 @@
-<!-- Must be loaded AFTER automatic-lang-chinese.cmd -->
+<!-- Must be loaded AFTER chinese-lang.cmd -->
 
 <!--
   ----------------------------------------------------------------

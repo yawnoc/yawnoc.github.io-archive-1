@@ -1,6 +1,6 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
-(+ resources/inclusions/syntax/automatic-lang-chinese.cmd +)
+(+ resources/inclusions/syntax/chinese-lang.cmd +)
 
 %%
   %title ~~ "An History of Mr Shih's Eating of Lions" 《施氏食獅史》 ~~
