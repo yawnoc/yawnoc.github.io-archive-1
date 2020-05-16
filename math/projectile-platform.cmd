@@ -1,4 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
+(+ resources/inclusions/syntax/accessible-svgs.cmd +)
 
 %%
   %title Projectile motion: optimal launch angle from a platform

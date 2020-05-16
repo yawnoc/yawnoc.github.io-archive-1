@@ -1,4 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
+(+ resources/inclusions/syntax/accessible-svgs.cmd +)
 
 %%
   %title ~~ "The Sea Island Computational Classic" 《海島算經》 ~~

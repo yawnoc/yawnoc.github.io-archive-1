@@ -1,4 +1,5 @@
 (+ resources/inclusions/syntax/general.cmd +)
+(+ resources/inclusions/syntax/accessible-svgs.cmd +)
 
 %%
   %title Daytime: dependence on latitude and season
