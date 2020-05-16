@@ -1,5 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
+(+ resources/inclusions/syntax/coloured-spans.cmd +)
+
 (+ resources/inclusions/syntax/svg-embedded-styles.cmd +)
 (+ resources/inclusions/syntax/accessible-svgs.cmd +)
 

@@ -1,5 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
+(+ resources/inclusions/syntax/coloured-spans.cmd +)
+
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~I" ~~《孫子算經・卷上》~~ \P10
