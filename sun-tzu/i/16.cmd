@@ -1,5 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
+(+ resources/inclusions/syntax/sun-tzu.cmd +)
+
 (+ resources/inclusions/syntax/translations.cmd +)
 
 (+ resources/inclusions/syntax/romanisations.cmd +)
