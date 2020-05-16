@@ -1,5 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
+(+ resources/inclusions/syntax/romanisation-original-chinese.cmd +)
+
 %%
   %title "The Need to Win"
   %title-suffix \title-suffix

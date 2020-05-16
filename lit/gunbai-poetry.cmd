@@ -1,5 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
+(+ resources/inclusions/syntax/romanisation-original-chinese.cmd +)
+
 %%
   %title Poetry on a sumo umpire's fan
   %title-suffix \title-suffix

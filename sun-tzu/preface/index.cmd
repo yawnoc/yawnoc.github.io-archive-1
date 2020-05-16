@@ -1,5 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
+(+ resources/inclusions/syntax/romanisation-original-chinese.cmd +)
+
 %%
   %title "\sun-tzu's Computational Classic: Preface" ~~《孫子算經・序》~~
   %title-suffix \title-suffix

@@ -1,5 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
+(+ resources/inclusions/syntax/romanisation-original-chinese.cmd +)
+
 %%
   %title ~~
     "Record of the Lion's Pavilion, Victoria Peak" 《太平山獅子亭記》

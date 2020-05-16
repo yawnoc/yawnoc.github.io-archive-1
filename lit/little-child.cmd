@@ -1,5 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
 
+(+ resources/inclusions/syntax/romanisation-original-chinese.cmd +)
+
 %%
   %title ~~
     "Q & A with Confucius: the Little Child's Discourse" 《孔子問答：小兒論》

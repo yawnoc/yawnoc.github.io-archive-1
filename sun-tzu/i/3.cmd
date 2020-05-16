@@ -1,4 +1,7 @@
 (+ resources/inclusions/syntax/general.cmd +)
+
+(+ resources/inclusions/syntax/romanisation-original-chinese.cmd +)
+
 (+ resources/inclusions/syntax/superscripts.cmd +)
 
 %%
