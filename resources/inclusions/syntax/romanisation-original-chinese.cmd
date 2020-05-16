@@ -1,9 +1,10 @@
+<!-- Must be loaded AFTER automatic-lang-chinese.cmd -->
+
 <!--
   ----------------------------------------------------------------
   Bracketed original Chinese after romanisations  (( ))
   ----------------------------------------------------------------
-  See "Automatic language declarations for Chinese" above
-  for what is regarded as a Chinese character.
+  See automatic-lang-chinese.cmd for what is regarded as a Chinese character.
   Note that the brackets are not a part of the HTML,
   but are added cosmetically via CSS and are therefore not selectable.
   Replaces

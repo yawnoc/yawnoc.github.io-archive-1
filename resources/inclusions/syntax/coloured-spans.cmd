@@ -1,3 +1,5 @@
+<!-- Must be loaded AFTER automatic-lang-chinese.cmd -->
+
 <!--
   ----------------------------------------------------------------
   Coloured spans  [c/ /]
