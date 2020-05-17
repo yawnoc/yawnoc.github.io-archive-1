@@ -235,7 +235,7 @@ edits and corrections I have made since they were scanned.
 
 ===={manuscript-links}
 * [Version referencing system](/manuscripts/sun-tzu-versions.pdf)
-* [ __Preface__ ](/manuscripts/sun-tzu-preface.pdf)
+* [__Preface__](/manuscripts/sun-tzu-preface.pdf)
 * __Volume~I:__
     [\P1] [m"i 1"]
     [\P2] [m"i 2"]

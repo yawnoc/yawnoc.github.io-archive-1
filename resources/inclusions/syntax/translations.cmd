@@ -5,7 +5,7 @@
 -->
 
 {%
-  ^ (?P<leading_whitespace> [^\S\n]* )
+  ^ (?P<leading_whitespace> [ ]* )
   [<]{2,}
   (
     \{

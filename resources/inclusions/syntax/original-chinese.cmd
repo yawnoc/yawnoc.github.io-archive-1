@@ -22,14 +22,14 @@
 -->
 
 {%
-  [\s] *
+  [ ]
   \(\(
     (?P<match_portion_1>
       <span[ ]lang="zh-Hant"
     )
     (?P<match_portion_2>
       >
-        [\s\S]*?
+        [\S]*?
       </span>
     )
   \)\)

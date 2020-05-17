@@ -130,7 +130,7 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
   F(e^)n ((分)), a tenth of the Chinese inch, ts'un ((寸)).
 
 * 寸： inch \+
-  Ts'un ((寸)), the [ __Chinese inch__ ] [寸].
+  Ts'un ((寸)), the [__Chinese inch__] [寸].
   Of the same order of magnitude as the imperial inch,
   and used figuratively as the inch is in English
   to denote a small distance,

@@ -54,7 +54,7 @@ And by that I mean: politics is out to screw you.
 <!-- Air date [. .] -->
 {%
   \[ [.]
-  (?P<content> [\s\S]*? )
+  (?P<content> [\S]*? )
   [.] \]
 %
   <span class="air-date">\g<content></span>

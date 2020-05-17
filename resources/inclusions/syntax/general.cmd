@@ -112,11 +112,10 @@
 <!-- Empty content -->
 
 {%
-  ^ [^\S\n]*
+  ^
   \[
-  (?P<pipes> [|]{4,} )
-    [\s]*?
-  ^ [^\S\n]*
+  (?P<pipes> [|]{4} )
+    \n
   (?P=pipes)
   \]
 %
@@ -128,11 +127,11 @@
 <!-- Non-empty content (requires line break) -->
 
 {%
-  ^ [^\S\n]*
+  ^
   \[
-  (?P<pipes> [|]{4,} )
+  (?P<pipes> [|]{4} )
     (?P<content> [\s\S]*? )
-  ^ [^\S\n]*
+  ^
   (?P=pipes)
   \]
 %
@@ -158,7 +157,7 @@
 -->
 
 {%
-  ^ [^\S\n]*
+  ^
   (?P<hashes> [#]{2,6} (?![#]) )
     (?P<id_> [\S]+? )
   [\s]+
@@ -199,11 +198,11 @@
 <!-- Inside header [[==== ====]] -->
 
 {%
-  ^ [^\S\n]*
+  ^
   \[{2}
-  (?P<equals_signs> [=]{4,} )
+  (?P<equals_signs> [=]{4} )
     (?P<content> [\s\S]*? )
-  ^ [^\S\n]*
+  ^
   (?P=equals_signs)
   \]{2}
 %
@@ -219,11 +218,11 @@
 <!-- Not inside header [==== ====] -->
 
 {%
-  ^ [^\S\n]*
+  ^
   \[
-  (?P<equals_signs> [=]{4,} )
+  (?P<equals_signs> [=]{4} )
     (?P<content> [\s\S]*? )
-  ^ [^\S\n]*
+  ^
   (?P=equals_signs)
   \]
 %

@@ -64,7 +64,7 @@ as the second appears to have many transcription errors:
 {%
   \[
   simp/
-    (?P<content> [\s\S]*? )
+    (?P<content> [\S]*? )
   /
   \]
 %

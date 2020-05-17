@@ -106,9 +106,9 @@ and run the following:
   \\multiplication[-]animation
   \[
       (?P<a> [0-9]+ )
-    [\s]*
+    [ ]
       [*]
-    [\s]*
+    [ ]
       (?P<b> [0-9]+ )
   \]
 %
@@ -121,9 +121,9 @@ and run the following:
   \\division[-]animation
   \[
       (?P<a> [0-9]+ )
-    [\s]*
+    [ ]
       [/]
-    [\s]*
+    [ ]
       (?P<b> [0-9]+ )
   \]
 %

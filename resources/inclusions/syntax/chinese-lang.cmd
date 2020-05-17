@@ -44,7 +44,7 @@
   Also allowed are the following:
   
   * Simple delimiters
-      [type/ /]
+      [c/ /] where c is a lower-case letter
       [: :]
   * Double U+2014 EM DASH
       ——
@@ -59,18 +59,18 @@
 
 {%
   (
-    ( \[ [a-z-]*? / [\s]* ) ?
+    ( \[ [a-z] / ) ?
     ( \[: ) ?
     [⺀-〿㇀-㇣㐀-鿼豈-龎！-｠𠀀-𱍊] +
     ( —{2} ) ?
     ( …{2} ) ?
     ( \\[.] ) ?
     ( :\] ) ?
-    ( [\s]* /\] ) ?
+    ( /\] ) ?
     (
       \\
       \n
-      [^\S\n] *
+      [ ] *
     ) ?
   )+
 %

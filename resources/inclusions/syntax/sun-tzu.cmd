@@ -59,9 +59,7 @@
 <!-- Current location in container  \nav-curr: {text} -->
 
 {%
-  \\nav[-]curr:
-    [\s]*
-      (?P<text> [^\n]* )
+  \\nav[-]curr: [ ] (?P<text> [^\n]* )
 %
   ||||{current}
     \g<text>
@@ -72,11 +70,11 @@
 
 {%
   \\nav[-]up:
-    [\s]*
+    [ ]
       (?P<text> [\s\S]*? )
-    [\s]*
+    [ ]
       :
-    [\s]*
+    [ ]
       (?P<href_spec> [^\n]* )
 %
   ||||{up}
@@ -88,11 +86,11 @@
 
 {%
   \\nav[-]prev:
-    [\s]*
+    [ ]
       (?P<text> [\s\S]*? )
-    [\s]*
+    [ ]
       :
-    [\s]*
+    [ ]
       (?P<href_spec> [^\n]* )
 %
   ||||{previous}
@@ -104,11 +102,11 @@
 
 {%
   \\nav[-]next:
-    [\s]*
+    [ ]
       (?P<text> [\s\S]*? )
-    [\s]*
+    [ ]
       :
-    [\s]*
+    [ ]
       (?P<href_spec> [^\n]* )
 %
   ||||{next}
@@ -182,7 +180,7 @@
 <!-- Index  [""] -->
 
 {%
-  [\s]*
+  [ ]?
   \[
     ""
     (?P<title> [\s\S]*? )
@@ -195,7 +193,7 @@
 <!-- Volume v  ["v"] -->
 
 {%
-  [\s]*
+  [ ]?
   \[
     "p"
     (?P<title> [\s\S]*? )
@@ -205,7 +203,7 @@
 %}
 
 {%
-  [\s]*
+  [ ]?
   \[
     " (?P<volume> [i] {1,3} ) "
     (?P<title> [\s\S]*? )
@@ -218,7 +216,7 @@
 <!-- Volume v Paragraph p  ["v p"] -->
 
 {%
-  [\s]*
+  [ ]?
   \[
     "
       (?P<volume> [i] {1,3} )
