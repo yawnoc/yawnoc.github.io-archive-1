@@ -192,7 +192,7 @@ The inserted punctuation is my own.
   {%
     \[ l
       /
-        (?P<content> [\s\S]*? )
+        (?P<content> [\S]*? )
       /
     \]
   %
@@ -202,7 +202,7 @@ The inserted punctuation is my own.
   {%
     \[ s
       /
-        (?P<content> [\s\S]*? )
+        (?P<content> [\S]*? )
       /
     \]
   %
