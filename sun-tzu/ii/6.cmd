@@ -13,7 +13,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-05-17
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -102,7 +102,7 @@ Chinese source text: \a[30], \b[153], \c[52145], \d[42]. \+
   Multiplying it by .[the] fine grain rate, twenty-seven,
   resulteth in five hundred .[and] sixty-seven quarts as .[the] dividend.
   Use .[the] grain rate, fifty, as .[the] divisor, .[and] divide them.
-  .[For the] remainder, name .[the] fraction using .[the] divisor.
+  .[For the] remainder, use .[the] divisor and name .[the] fraction.
 >>
 ====
 * In modern notation:
