@@ -85,7 +85,7 @@ as spoken and perceived by me.
 %}
 {%
   \[ [.]
-  (?P<content> [\s\S]*? )
+  (?P<content> [\S]*? )
   [.] \]
 %
   <span class="conway-romanisation">\g<content></span>
@@ -94,7 +94,7 @@ as spoken and perceived by me.
 <!-- Approximation parts [: :] -->
 {%
   \[ [:]
-  (?P<content> [\s\S]*? )
+  (?P<content> [\S]*? )
   [:] \]
 %
   <span class="approximation-part">\g<content></span>
@@ -117,7 +117,7 @@ as spoken and perceived by me.
 {%
   \\header[-]row
   \[
-    (?P<type> [\s\S]*? )
+    (?P<type> initials | finals )
   \]
 %
   |^
@@ -442,9 +442,7 @@ of the merger depending on the vowel which follows:
 {%
   \[
   [!]
-  [\s]*
-    (?P<content> [\s\S]*? )
-  [\s]*?
+    (?P<content> [\S]*? )
   \]
 %
   <span class="wrong initial">\g<content></span>
