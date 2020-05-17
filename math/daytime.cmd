@@ -40,9 +40,9 @@
 {%
   \[
   (?P<abbreviated_class> tad | mod[c]? )/
-    [\s]*
+    [ ]*
     (?P<content> [\s\S]*?)
-    [\s]*
+    [ ]*
   /
   \]
 %
