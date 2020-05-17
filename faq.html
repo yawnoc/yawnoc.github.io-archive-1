@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/resources/styles/main.min.css">
 <title>FAQ | Conway's site</title>
-<style>li > ul {
+<style>li > ul, li > ol {
 margin: 0.3em 0;
 }</style>
 </head>
@@ -31,7 +31,7 @@ margin: 0.3em 0;
 <h1>FAQ</h1>
 <div class="page-properties">
 First created: 2019-08-01<br>
-Last modified: 2020-05-14
+Last modified: 2020-05-17
 </div>
 <ul>
 <li><a href="#general">General</a>
@@ -58,6 +58,8 @@ instead of the default yawnoc.github.io?</a>
 <li><a href="#italics">Why are there italicised words in your translations?</a>
 </li>
 <li><a href="#archaic">Wherefore usest thou archaic verb conjugation?</a>
+</li>
+<li><a href="#romanisation">What weird romanisation system(s) are you using for proper names?</a>
 </li>
 <li><a href="#this">But I thought that <span lang="zh-Hant">是</span> means "is", and <span lang="zh-Hant">也</span>, "also".</a>
 </li>
@@ -183,6 +185,48 @@ to
 for the Hebrew
 <span lang="he" dir="rtl" class="no-wrapping">כה אמר יהוה</span>.
 </p>
+<h3 id="romanisation"><a class="permalink" href="#romanisation" aria-label="Permalink"></a>What weird romanisation system(s) are you using for proper names?</h3>
+<h4>In the translation parallel text itself:</h4>
+<ol>
+<li>An <b>established romanisation</b> if one already exists,
+e.g.&nbsp;Confucius for <span lang="zh-Hant">孔子</span> and Mencius for <span lang="zh-Hant">孟子</span>.
+</li>
+<li>Otherwise, the <b>romanisation which best suits the context</b>,
+e.g.&nbsp;<a href="https://en.wikipedia.org/wiki/Hong_Kong_Government_Cantonese_Romanisation">Hong Kong Government Romanisation</a>
+for someone from Hong Kong.
+</li>
+<li>Otherwise, <b>Conway's common romanisation for Mandarin</b>:
+<ol>
+<li>Write down the Wade–Giles romanisation.
+</li>
+<li>Replace alveolo-palatal initial consonants
+with the initial consonants before the dental-velar merger:
+<ul>
+<li>[t͡ɕ] (pinyin j) becomes <b>ts</b> or <b>k</b>
+</li>
+<li>[t͡ɕʰ] (pinyin q) becomes <b>ts'</b> or <b>k'</b>
+</li>
+<li>[ɕ] (pinyin x) becomes <b>s</b> or <b>h</b>
+</li>
+</ul>
+If unsure whether to choose the dental (ts, ts', s)
+or the velar (k, k', h),
+refer to the initial consonant in a <a href="https://ytenx.org/">rime dictionary</a>,
+or to whether the initial consonant is dental or velar in Cantonese.
+</li>
+<li>Change <span class="no-wrapping">-ui</span> to <span class="no-wrapping">-uei</span>.
+</li>
+</ol>
+The result is something similar to <a href="https://en.wikipedia.org/wiki/Chinese_postal_romanization">Postal Romanisation</a>.
+</li>
+</ol>
+<h4>In the annotations (dot points) underneath the parallel text:</h4>
+<ul>
+<li>For Cantonese: <a href="/cantonese/conway-romanisation">Conway romanisation</a>.
+</li>
+<li>For Mandarin: pinyin.
+</li>
+</ul>
 <h3 id="this"><a class="permalink" href="#this" aria-label="Permalink"></a>But I thought that <span lang="zh-Hant">是</span> means "is", and <span lang="zh-Hant">也</span>, "also".</h3>
 <p>
 Forget everything you learnt in Mandarin class; that is modern vernacular.

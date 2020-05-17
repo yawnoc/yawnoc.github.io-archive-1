@@ -12,11 +12,11 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-08-01
-  %date-modified 2020-05-14
+  %date-modified 2020-05-17
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
   %css
-    li > ul {
+    li > ul, li > ol {
       margin: 0.3em 0;
     }
 %%
@@ -52,6 +52,7 @@
   ====
   * \faq-link:italics
   * \faq-link:archaic
+  * \faq-link:romanisation
   * \faq-link:this
   ====
 ======
@@ -265,6 +266,88 @@ For example,
   for the Hebrew
     <span lang="he" dir="rtl" class="no-wrapping">כה אמר יהוה</span>.
 ----
+
+
+
+
+<!-- No-wrapping span [! !] -->
+{%
+  \[! [ ]* (?P<content> [\s\S]*? ) [ ]*? !\]
+%
+  <span class="no-wrapping">\g<content></span>
+%}
+
+
+###romanisation
+  What weird romanisation system(s) are you using for proper names?
+###
+
+
+####
+  In the translation parallel text itself:
+####
+
+++++++
+1.
+  An __established romanisation__ if one already exists,
+  e.g.~Confucius for 孔子 and Mencius for 孟子.
+
+2.
+  Otherwise, the __romanisation which best suits the context__,
+  e.g.~[Hong Kong Government Romanisation] [hk romanisation]
+    for someone from Hong Kong.
+
+3.
+  Otherwise, __Conway's common romanisation for Mandarin__:
+  
+  ++++
+  1. Write down the Wade--Giles romanisation.
+  
+  2. Replace alveolo-palatal initial consonants
+     with the initial consonants before the dental-velar merger:
+     ====
+     * [t͡ɕ] (pinyin j) becomes __ts__ or __k__
+     * [t͡ɕʰ] (pinyin q) becomes __ts'__ or __k'__
+     * [ɕ] (pinyin x) becomes __s__ or __h__
+     ====
+     If unsure whether to choose the dental (ts, ts', s)
+     or the velar (k, k', h),
+     refer to the initial consonant in a [rime dictionary],
+     or to whether the initial consonant is dental or velar in Cantonese.
+  
+  3. Change [! -ui !] to [! -uei !].
+  
+  ++++
+  
+  The result is something similar to [Postal Romanisation].
+
+++++++
+
+@@[hk romanisation]
+  https://en.wikipedia.org/wiki/Hong_Kong_Government_Cantonese_Romanisation
+@@
+
+@@[postal romanisation]
+  https://en.wikipedia.org/wiki/Chinese_postal_romanization
+@@
+
+@@[rime dictionary]
+  https://ytenx.org/
+@@
+
+
+####
+  In the annotations (dot points) underneath the parallel text:
+####
+
+====
+* For Cantonese: [Conway romanisation] [conway].
+* For Mandarin: pinyin.
+====
+
+@@[conway]
+  /cantonese/conway-romanisation
+@@
 
 
 
