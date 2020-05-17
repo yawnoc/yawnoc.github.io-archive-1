@@ -31,7 +31,7 @@
       margin-top: 1em;
     }
     .centred-block {
-      margin: 0em 0 3em;
+      margin: -1em 0 3.5em;
     }
     .keyword {
       display: inline-block;
@@ -1543,8 +1543,9 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
       \colb{R} &:= \colb{d} = \colb{311}.
     \end{aligned}
   $$
+  ----
   The final arrangement of counting rods is thus:
-  
+  ----
   ||||{centred-block}
   <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8"
     \accessible-svg-attributes[final-arrangement-title]\
