@@ -54,7 +54,7 @@
 {%
   \[
   [\^]
-    (?P<content> [\s\S]*? )
+    (?P<content> [^_]*? )
   \]
 %
   <span class="pre-merger initial">\g<content></span>
@@ -65,7 +65,7 @@
 {%
   \[
   [_]
-    (?P<content> [\s\S]*? )
+    (?P<content> [^_]*? )
   \]
 %
   <span class="post-merger initial">\g<content></span>

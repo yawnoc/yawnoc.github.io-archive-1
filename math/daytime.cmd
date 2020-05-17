@@ -203,7 +203,7 @@ the corresponding SVGs would simply be too time consuming to make.
 @@480
 
 ----
-The [ __equatorial coordinate system__][equatorial coords] has
+The [__equatorial coordinate system__][equatorial coords] has
   origin at the centre of the earth,
   $x$-axis pointing towards the northern spring (or March) equinox~(春分),
   and $xy$-plane the plane of the earth's equator~(赤道).
@@ -291,7 +291,7 @@ and that $\phi$ is equivalent to the astronomer's [right ascension].
 
 ----
 Finally we have
-the [ __ecliptic coordinate system__][ecliptic coords]
+the [__ecliptic coordinate system__][ecliptic coords]
 $(\tilde{x}, \tilde{y}, \tilde{z})$,
 whose $\tilde{x}$-axis coincides with the equatorial $x$-axis,
 but whose $\tilde{y}$- and $\tilde{z}$-axes are tilted by tilt $\tau$
