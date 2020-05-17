@@ -23,23 +23,23 @@
   ----------------------------------------------------------------
 -->
 
-{% \\C [\s]* %
+{% \\C [ ] %
   [Cantonese](
     /cantonese/conway-romanisation
     Conway's Romanisation for Cantonese
   ):~
 %}
 
-{% \\pm [\s]* %
+{% \\pm [ ] %
   [post-merger](
     /cantonese/conway-romanisation#ts-vs-ch
     {ts vs ch}, {ts' vs ch'}, and {s vs sh}
   ):~
 %}
 
-{% \\M [\s]* % Mandarin:~ %}
-{% \\gr [\s]* % Government-regulated 統讀:~ %}
-{% \\nc [\s]* % Nominally-Communist 統讀:~ %}
+{% \\M [ ] % Mandarin:~ %}
+{% \\gr [ ] % Government-regulated 統讀:~ %}
+{% \\nc [ ] % Nominally-Communist 統讀:~ %}
 
 
 
@@ -54,9 +54,7 @@
 {%
   \[
   [\^]
-  [\s]*
     (?P<content> [\s\S]*? )
-  [\s]*?
   \]
 %
   <span class="pre-merger initial">\g<content></span>
@@ -67,9 +65,7 @@
 {%
   \[
   [_]
-  [\s]*
     (?P<content> [\s\S]*? )
-  [\s]*?
   \]
 %
   <span class="post-merger initial">\g<content></span>
