@@ -40,7 +40,7 @@ See also: [Conway's Custom Romanisation for Cantonese][conway]
 
 ----
 Quick links for each syllable of
-  [A Tonic Dictionary Of The Chinese Language In The Canton Dialect][" n6 "],
+  [A Tonic Dictionary Of The Chinese Language In The Canton Dialect]["n6"],
   or 《英華分韻撮要》,
 written by [Samuel Wells Williams] in 1856 (or 咸豐丙辰年),
 recording both literary and vernacular Cantonese
@@ -96,26 +96,26 @@ Note that Jyutping (like all contemporary romanisation systems)
   \[
     (?P<archive_page_number> [n]?[0-9]+? )
   \]
-    [^\S\n]+
+    [ ]+
   (?P<williams_page_number> [0-9]+(\\\*)? )
 %
   ==
     ,{merged-cell}[,4]
-      [Page~\g<williams_page_number>][" \g<archive_page_number> "]
+      [Page~\g<williams_page_number>]["\g<archive_page_number>"]
 %}
 
 
 <!-- Syllable row \syllable-row  i  W  C  J -->
 {%
   \\syllable-row
-    [^\S\n]+
+    [ ]+
   (?P<williams_index> [0-9]+? )
-    [^\S\n]+
-  (?P<williams> [^\s\n]+? )
-    [^\S\n]+
-  (?P<conway> [^\s\n]+? )
-    [^\S\n]+
-  (?P<jyutping> [^\s\n]+? )
+    [ ]+
+  (?P<williams> [\S]+? )
+    [ ]+
+  (?P<conway> [\S]+? )
+    [ ]+
+  (?P<jyutping> [\S]+? )
 %
   ==
     , (\g<williams_index>)
@@ -125,12 +125,10 @@ Note that Jyutping (like all contemporary romanisation systems)
 %}
 
 
-<!-- archive.org URL in round brackets [" p "] -->
+<!-- archive.org URL in round brackets ["p"] -->
 {%
   \[ "
-    [\s]*?
     (?P<archive_page_number> [n]?[0-9]+? )
-    [\s]*?
   " \]
 %
   (
