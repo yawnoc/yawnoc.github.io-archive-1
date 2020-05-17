@@ -1698,12 +1698,12 @@ proceeds thus:
   $$
 
 
-<!-- Approximation parts [. .] -->
+<!-- Keyword [. .] -->
 {%
   \[ [.]
-    [\s]*
-    (?P<content> [\s\S]*? )
-    [\s]*
+    [ ]
+    (?P<content> [\S]*? )
+    [ ]
   [.] \]
 %
   <span class="keyword">\g<content></span>
