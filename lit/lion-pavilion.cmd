@@ -28,7 +28,7 @@
       color: green;
     }
     .sloped-tone {
-      color: red;
+      color: #e00;
     }
 %%
 

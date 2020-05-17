@@ -54,7 +54,7 @@
 {:: \svg-style:stroke-colour-rulesets ::
   a~~
     line.colour-r {
-      stroke: red;
+      stroke: #e00;
     }
     line.colour-g {
       stroke: green;
@@ -74,7 +74,7 @@
 {:: \svg-style:text-colour-rulesets ::
   a~~
     text.colour-r {
-      fill: red;
+      fill: #e00;
     }
     text.colour-g {
       fill: green;

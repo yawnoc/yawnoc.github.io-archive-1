@@ -88,7 +88,7 @@ pre {
 
 
 .colour-r {
-  color: red;
+  color: #e00;
 }
 
 .colour-g {
@@ -495,7 +495,7 @@ noscript {
 /* Bracketed original Chinese after romanisations */
 
 .original-chinese {
-  color: red;
+  color: #e00;
 }
 
 .original-chinese::before {

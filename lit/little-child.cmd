@@ -25,7 +25,7 @@
   ~~
   %css
     .danger {
-      color: red;
+      color: #e00;
     }
 %%
 

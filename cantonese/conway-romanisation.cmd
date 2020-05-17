@@ -30,7 +30,7 @@
       font-weight: bold;
     }
     .wrong {
-      color: red;
+      color: #e00;
     }
     .example {
       border: 2px solid black;

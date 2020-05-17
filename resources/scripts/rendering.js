@@ -142,7 +142,7 @@ function renderMaths() {
     '\\order': '\\mathopspace O',
     
     // Colours
-    '\\colr': '\\textcolor{red}{#1}',
+    '\\colr': '\\textcolor{ee0000}{#1}',
     '\\colg': '\\textcolor{green}{#1}',
     '\\colb': '\\textcolor{blue}{#1}',
     '\\colv': '\\textcolor{darkviolet}{#1}',

@@ -20,7 +20,7 @@
     including the Republic of Hunan (~~ 湖南共和國 ~~).
   %css a~~
     .red-emphasis {
-      color: red;
+      color: #e00;
     }
   ~~
 %%

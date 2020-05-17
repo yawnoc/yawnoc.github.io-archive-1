@@ -20,7 +20,7 @@
     ~~《孫子算經》~~, "\sun-tzu's Computational Classic".
   %css
     .wip {
-      color: red;
+      color: #e00;
     }
 %%
 
