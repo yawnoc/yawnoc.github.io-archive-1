@@ -15,7 +15,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-05-18
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -126,10 +126,10 @@ Chinese source text: \a[42], \b[156], \c[52189], \d[54]. \+
 <<
   次[r/借一算為下法/]。[r/步之，超一位，至百而止/]。
 ||
-  Next, [r/ borrow one rod, .[to] be .[the] lower divisor /].
+  Next [r/ borrow one rod .[to] be .[the] lower divisor /].
   [r/
     Step it .[forth], jumping over one place,
-    .[even] unto .[the] hundreds, and stop
+    unto .[the] hundreds and stop
   /].
 >>
 
