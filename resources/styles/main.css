@@ -51,9 +51,15 @@ body {
 /* ---------------------------------------------------------------- */
 
 
+/*
+  Prevent floats sticking outside container (display)
+*/
+
 blockquote {
   background: #ffffce;
   border-left: 3px solid grey;
+  clear: both;
+  display: flow-root;
   padding: 0.6em 0.7em;
 }
 
@@ -214,8 +220,13 @@ img {
 /* ---------------------------------------------------------------- */
 
 
+/*
+  Prevent floats sticking outside container (display)
+*/
+
 .interview {
   font-size: large;
+  display: flow-root;
   margin: 0 auto 1em;
   max-width: 30em;
 }

@@ -32,9 +32,6 @@
     img.host {
       margin-bottom: 1.5em;
     }
-    blockquote {
-      display: flow-root;
-    }
   ~~
 %%
 
