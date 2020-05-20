@@ -21,7 +21,6 @@
       font-size: small;
     }
     .host.marker {
-      color: blue;
       text-align: right;
     }
     .guest.marker {
