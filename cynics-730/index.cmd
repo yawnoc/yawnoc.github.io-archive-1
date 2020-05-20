@@ -18,10 +18,12 @@
       display: block;
     }
     .marker {
+      margin-top: 1em;
       font-size: small;
     }
     .host.marker {
       text-align: right;
+      margin-bottom: 2em;
     }
     .guest.marker {
       text-align: left;
@@ -86,9 +88,7 @@ Brought to you in the safety of Western Australia.
 ----
 
 
-||||||{interview}
-
-""""
+""""{interview}
 
 ![WA Premier Mark McGowan] [Mark McGowan]
 
@@ -110,8 +110,6 @@ I say, you know, fill your boots.
 ||||
 
 """"
-
-||||||
 
 @@![Mark McGowan]{h}
   mark-mcgowan-2020-03-29.jpg
