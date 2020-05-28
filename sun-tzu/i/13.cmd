@@ -13,7 +13,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-05-28
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -142,7 +142,7 @@ Chinese source text: \a[10], \b[148], \c[52073], \d[17]. \+
   上下位俱收，中位即得六千五百六十一。
 ||
   .[The] upper .[and] lower places .[now] all put away,
-  .[the] middle places .[do] then result in
+  .[the] middle places do result in
   six thousand, five hundred .[and] sixty-one.
 >>
 
