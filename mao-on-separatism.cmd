@@ -10,7 +10,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-09-24
-  %date-modified 2020-02-15
+  %date-modified 2020-06-02
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -245,14 +245,14 @@ And who now forbids any mention of self-determination or independence?
   causes semi-developed .[and] undeveloped peoples
   .[to] become slaves .[in] full,
   obstructing their .[moving] upwards .[in] life, and only makes .[them]
-  deferential, obedient, tame .[and] submissive unto oneself.
+  deferential, obedient, tame, .[and] submissive unto oneself.
 >>
 
 <<
   最著的例，是英、美、德、法、俄、奧，他們幸都收了其實沒有成功的成功。
 ||
   .[The] most notable examples, are of
-  Britain, America, Germany, France, Russia .[and] Austria-.[Hungary]:
+  Britain, America, Germany, France, Russia, .[and] Austria-.[Hungary]:
   they all .[have been] fortunate .[to] reap of success without actual success.
 >>
 
