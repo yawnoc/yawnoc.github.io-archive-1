@@ -11,7 +11,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-04-15
-  %date-modified 2020-05-03
+  %date-modified 2020-06-02
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -177,8 +177,8 @@ The Chinese source text is from Chinese Text Project:
 ||
   ".[And they] said,
     '.[It] can. Good swimmers .[are] able to .[upon] repetition.
-    If .[it] be .[a] diver, then having not yet seen boats
-    .[may he] immediately handle them.'
+    If .[it] be .[a] diver, .[having] not once seen boats
+    .[may he] yet immediately handle them.'
 >>
 ====
 * 數： .[upon] repetition \+
@@ -192,7 +192,7 @@ The Chinese source text is from Chinese Text Project:
 <<
   吾問焉而不吾告，敢問何謂也？」
 ||
-  ".[That which] I asked and .[they] told me not:
+  ".[That] I asked of, yet .[they] told me not:
   .[I] dare ask: what .[were they] saying?"
 >>
 ====
@@ -210,7 +210,7 @@ The Chinese source text is from Chinese Text Project:
 <<
   若乃夫沒人之未嘗見舟而便操之也，彼視淵若陵，視舟之覆猶其車卻也。
 ||
-  "Of having not yet seen boats and immediately handling them,
+  "Of .[having] not once seen boats yet immediately handling them
   if .[it] be .[a] diver: he vieweth .[the] deep waters as .[an] hill,
   .[and] vieweth .[the] overturning of .[a] boat like his chariot receding.
 >>
@@ -320,7 +320,7 @@ The Chinese source text is from Chinese Text Project:
       注，射也，射而賭物曰注。
     ||
       注, .[meaneth] shoot;
-      shooting and wagering objects .[is] called 注.
+      shooting to wager objects .[is] called 注.
     >>
     射而賭物 is the meaning taken by James Legge
     (see [footnote~1 of Page~1][Legge footnote]).
