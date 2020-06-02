@@ -461,7 +461,7 @@ The inserted punctuation is my own.
   their efforts no less than .[the] mighty lion's.
 >>
 ====
-* 今兹： here .[and] now; \lit. now .[and] here
+* 今兹： here .[and] now; \lit now .[and] here
 
 * 舉： deed; \or .[commendable] action
 
