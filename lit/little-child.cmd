@@ -14,7 +14,7 @@
   %title-en "Q~.[\&]~A .[with] Confucius: .[the] Little Child's Discourse"
   %author Conway
   %date-created 2019-04-07
-  %date-modified 2020-06-02
+  %date-modified 2020-06-07
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -49,9 +49,9 @@
 This is one of several accounts of [Hiang T'o ((項橐))][項橐],
 a child prodigy who is supposed to have outwitted Confucius
 at the age of seven.
-From 《淮南子\.脩務訓》： [「夫項託七歲為孔子師」][脩務訓], meaning
+From 《淮南子\.脩務訓》： [「夫項託七歲為孔子師」][脩務訓],
 "Hiang T'o ((項橐)) .[at] seven years became teacher of Confucius".
-In 《三字經》 he is mentioned in the line [「昔仲尼，師項橐」][三字經], meaning
+In 《三字經》 he is mentioned in the line [「昔仲尼，師項橐」][三字經],
 "Chung-ni ((仲尼)) of old, .[had] teacher Hiang T'o ((項橐))".
 ----
 
@@ -160,11 +160,11 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子乃駐車問曰：「獨汝不戲，何也？」
+  孔子乃駐車問曰：獨汝不戲，何也？
 ||
   Confucius thus stopped .[his] chariot .[and] asked,
   saying,
-    "Alone thou playest not: why?"
+    Alone thou playest not: why?
 >>
 ====
 * 駐：馬止也；
@@ -173,18 +173,17 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  小兒答曰：「\
+  小兒答曰：\
     凢戲無益，衣破難縫。上辱父母，下及門中。必有鬥爭，勞而無功。\
-    豈爲好事？故乃不戲。\
-  」
+    豈爲好事？故乃不戲。
 ||
   .[The] little child replied, saying,
-    "All play .[is of] no benefit: clothes damaged .[are] hard to mend;
+    All play .[is of] no benefit: clothes damaged .[are] hard to mend;
     .[an] insult .[to] father .[and] mother above:
     .[even] down unto .[those] amidst .[the] family;
     surely there .[shall] be fighting .[and] disputes:
     toil, but no achievement.
-    How be .[this a] good thing? Therefore .[I] play not."
+    How be .[this a] good thing? Therefore .[I] play not.
 >>
 ====
 * 凢 \+
@@ -227,30 +226,30 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子責之曰：「何不避車乎？」
+  孔子責之曰：何不避車乎？
 ||
   Confucius rebuked him, saying,
-    "Wherefore avoidest .[thou] not .[my] chariot?"
+    Wherefore avoidest .[thou] not .[my] chariot?
 >>
 
 <<
-  小兒答曰：「自古及今，爲當車避于城，不當城避於車。」
+  小兒答曰：自古及今，爲當車避于城，不當城避於車。
 ||
   .[The] little child replied, saying,
-    "Since antiquity, .[even] until now,
+    Since antiquity, .[even] until now,
     be .[it that] the chariot ought to avoid the wall,
-    not .[that] the wall ought to avoid the chariot."
+    not .[that] the wall ought to avoid the chariot.
 >>
 ====
 * 當： ought to; \or should
 ====
 
 <<
-  孔子乃勒車論道，下車而問焉：「汝年尚幼，何多詐乎？」
+  孔子乃勒車論道，下車而問焉：汝年尚幼，何多詐乎？
 ||
   Confucius thus restrained .[his] chariot
   .[to] reason, alighting .[his] chariot and asking,
-    "Thy years .[be] yet young; wherefore .[so] much cunning?"
+    Thy years .[be] yet young; wherefore .[so] much cunning?
 >>
 ====
 * 論道： reason; \lit debate logic \+
@@ -262,21 +261,20 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  小兒答曰：「\
+  小兒答曰：\
     人生三歲，分別父母。\
     兔生三日，走地畎畝。\
     魚生三日，遊於江湖。\
-    天生自然，豈謂詐乎？\
-  」
+    天生自然，豈謂詐乎？
 ||
   .[The] little child replied, saying,
-    ".[I the] human lived three years,
+    .[I the] human lived three years,
     .[and was] separated from .[my] father .[and] mother;
     the rabbit liveth three days,
     .[and] runneth upon .[the] ditches .[and] fields of .[the] earth;
     the fish liveth three days,
     .[and] journeyeth unto .[the] rivers .[and] lakes.
-    Naturally .[are they] automatically thus: how be .[this] cunning?"
+    Naturally .[are they] automatically thus: how be .[this] cunning?
 >>
 ====
 * 人生： .[I the] human lived \+
@@ -295,21 +293,21 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子曰：「汝居何鄉、何里、何姓、何名、何字？」
+  孔子曰：汝居何鄉、何里、何姓、何名、何字？
 ||
   Confucius said,
-    "Dwellest thou in what hometown, .[and] what village;
-    .[and] what surname, what name, .[and] what style name .[hast thou]?"
+    Dwellest thou in what hometown, .[and] what village;
+    .[and] what surname, what name, .[and] what style name .[hast thou]?
 >>
 
 <<
-  小兒答曰：「吾居敝鄉、賤地、姓項、名橐、未有字也。」
+  小兒答曰：吾居敝鄉、賤地、姓項、名橐、未有字也。
 ||
   .[The] little child replied, saying,
-    "I dwell in .[a] shabby hometown, .[and a] lowly village,
+    I dwell in .[a] shabby hometown, .[and a] lowly village,
     .[and am] surnamed Hiang ((項)),
     .[and] named T'o ((橐)),
-    .[and am] yet to have .[a] style name."
+    .[and am] yet to have .[a] style name.
 >>
 ====
 * 敝： shabby; \or worn-out \+
@@ -318,11 +316,11 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子曰：「吾欲共汝同遊，汝意下如何？」
+  孔子曰：吾欲共汝同遊，汝意下如何？
 ||
   Confucius said,
-    "I wish to travel together with thee:
-    what .[be] thy thoughts .[upon this]?"
+    I wish to travel together with thee:
+    what .[be] thy thoughts .[upon this]?
 >>
 ====
 * **{danger} Beware stranger danger. **
@@ -333,10 +331,10 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  小兒答曰：「家有嚴父，須當事之。家有慈母，須當養之。
+  小兒答曰：家有嚴父，須當事之。家有慈母，須當養之。
 ||
   .[The] little child replied, saying,
-    ".[In mine] house there is .[my] strict father: .[I] must attend to him.
+    .[In mine] house there is .[my] strict father: .[I] must attend to him.
     .[In mine] house there is .[my] loving mother: .[I] must provide for her.
 >>
 ====
@@ -358,15 +356,15 @@ see [the actual first page of the almanac text][almanac text].
 @@
 
 <<
-  家有賢兄，須當順之。家有弱弟，須當敎之。家有明師，須當學之。何暇同遊也？」
+  家有賢兄，須當順之。家有弱弟，須當敎之。家有明師，須當學之。何暇同遊也？
 ||
-  ".[In mine] house there are .[my] worthy older brothers:
+  .[In mine] house there are .[my] worthy older brothers:
     .[I] must obey them.
   .[In mine] house there are .[my] feeble younger brothers:
     .[I] must teach them.
   .[In mine] house there is .[my] brilliant teacher:
     .[I] must learn from him.
-  What spare time .[have I to] travel together .[with thee]?"
+  What spare time .[have I to] travel together .[with thee]?
 >>
 ====
 * 賢： worthy; also virtuous \+
@@ -380,12 +378,12 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子曰：「吾車中有三十二棋子，與汝奕博，汝意下如何？」
+  孔子曰：吾車中有三十二棋子，與汝奕博，汝意下如何？
 ||
   Confucius said,
-    "In my chariot there are thirty-two chess pieces,
+    In my chariot there are thirty-two chess pieces,
     .[to] play chess .[for a] wager with thee:
-    what .[be] thy thoughts .[upon this]?"
+    what .[be] thy thoughts .[upon this]?
 >>
 ====
 * 三十二棋子 \+
@@ -408,10 +406,10 @@ see [the actual first page of the almanac text][almanac text].
 @@
 
 <<
-  小兒答曰：「天子好博，四海不理。諸侯好博，有妨政紀。士儒好博，學問廢弛。
+  小兒答曰：天子好博，四海不理。諸侯好博，有妨政紀。士儒好博，學問廢弛。
 ||
   .[The] little child replied, saying,
-    ".[Be the] Son of Heaven fond of wagering:
+    .[Be the] Son of Heaven fond of wagering:
       .[all within the] Four Seas .[shall] not .[be properly] administered.
     .[Be the] many lords fond of wagering:
       .[this] doth harm governance .[and] law.
@@ -441,15 +439,15 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  小人好博，輸却家計。奴婢好博，必受鞭撲。農夫好博，耕種失時。是故不博也。」
+  小人好博，輸却家計。奴婢好博，必受鞭撲。農夫好博，耕種失時。是故不博也。
 ||
-  ".[Be] the little man fond of wagering:
+  .[Be] the little man fond of wagering:
     .[he shall] lose away .[the] livelihood of .[his] family.
   .[Be the] manservants .[and] maidservants fond of wagering:
     .[they shall] surely be lashed .[and] beaten.
   .[Be] the farmer fond of wagering:
     .[he shall] plough .[and] sow out of season.
-  .[For] these reasons .[I] wager not."
+  .[For] these reasons .[I] wager not.
 >>
 ====
 * 小人： the little man; \or the despicable man \+
@@ -468,11 +466,11 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子曰：「吾欲與汝平却天下，汝意下如何？」
+  孔子曰：吾欲與汝平却天下，汝意下如何？
 ||
   Confucius said,
-    "I wish to level out .[all] under Heaven with thee:
-    what .[be] thy thoughts .[upon this]?"
+    I wish to level out .[all] under Heaven with thee:
+    what .[be] thy thoughts .[upon this]?
 >>
 ====
 * 平却： level out; \or flatten away \+
@@ -487,10 +485,10 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  小兒答曰：「天下不可平也。或有高山，或有江湖。或有王侯，或有奴婢。
+  小兒答曰：天下不可平也。或有高山，或有江湖。或有王侯，或有奴婢。
 ||
   .[The] little child replied, saying,
-    ".[All] under Heaven cannot .[be] levelled.
+    .[All] under Heaven cannot .[be] levelled.
     Perhaps there be high mountains;
     perhaps there be rivers .[and] lakes;
     perhaps there be kings .[and] lords;
@@ -500,17 +498,17 @@ see [the actual first page of the almanac text][almanac text].
 <<
   平却高山，鳥獸無依。塡却江湖，魚鱉無歸。\
   除却王侯，民多是非。絶却奴婢，君子使誰？\
-  天下蕩蕩，豈可平乎？」
+  天下蕩蕩，豈可平乎？
 ||
-    "Level out .[the] high mountains,
+    Level out .[the] high mountains,
       .[and the] birds .[and] beasts .[shall] have nothing .[to] lean upon;
     fill out .[the] rivers .[and] lakes,
       .[and the] fishes .[and] turtles .[shall] have no home;
     remove out .[the] kings .[and] lords,
       .[and] the people .[shall have] many quarrels;
     cut off .[the] manservants .[and] maidservants,
-      .[and] whom .[shall] the rulers employ?
-    Vast .[be all] under Heaven: how can .[it be] levelled?"
+      .[and] whom .[shall the] rulers employ?
+    Vast .[be all] under Heaven: how can .[it be] levelled?
 >>
 ====
 * 鱉：龜屬； turtle \+
@@ -531,14 +529,14 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子曰：「\
+  孔子曰：\
     汝知天下，\
     何火無烟？何水無魚？\
     何山無石？何樹無枝？\
     何人無婦？何女無夫？
 ||
   Confucius said,
-    "Knowest thou under Heaven:
+    Knowest thou under Heaven:
     What fire hath no smoke?
     What water hath no fish?
     What mountain hath no rock?
@@ -557,9 +555,9 @@ see [the actual first page of the almanac text][almanac text].
 <<
   何牛無犢？何馬無駒？何雄無雌？何雌無雄？\
   何爲君子？何爲小人？何爲不足？何爲有餘？\
-  何城無市？何人無字？」
+  何城無市？何人無字？
 ||
-  "What cow hath no calf?
+  What cow hath no calf?
   What horse hath no foal?
   What male bird hath no female bird?
   What female bird hath no male bird?
@@ -568,7 +566,7 @@ see [the actual first page of the almanac text][almanac text].
   What be not sufficient?
   What be in excess?
   What city hath no market?
-  What man hath no style name?"
+  What man hath no style name?
 >>
 ====
 * 犢：牛子也； calf \+
@@ -584,10 +582,10 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  小兒答曰：「螢火無烟。井水無魚。土山無石。枯樹無枝。仙人無婦。玉女無夫。
+  小兒答曰：螢火無烟。井水無魚。土山無石。枯樹無枝。仙人無婦。玉女無夫。
 ||
   .[The] little child replied, saying,
-    "Firefly light hath no smoke.
+    Firefly light hath no smoke.
     Well water hath no fish.
     The dirt hill hath no rock.
     The withered tree hath no twig.
@@ -623,9 +621,9 @@ see [the actual first page of the almanac text][almanac text].
   孤雄無雌。孤雌無雄。\
   賢爲君子。愚爲小人。\
   冬日不足。夏日有餘。\
-  皇城無市。小人無字。」
+  皇城無市。小人無字。
 ||
-  ".[A] clay cow hath no calf.
+  .[A] clay cow hath no calf.
   .[A] wooden horse hath no foal.
   The lone male bird hath no female bird.
   The lone female bird hath no male bird.
@@ -634,7 +632,7 @@ see [the actual first page of the almanac text][almanac text].
   Winter days .[be] not sufficient.
   Summer days .[be] in excess.
   .[The] imperial city hath no market.
-  .[I the] little man have no style name."
+  .[I the] little man have no style name.
 >>
 ====
 * 小人： .[I the] little man \+
@@ -644,10 +642,10 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子問曰：「汝知天地之綱紀，陰陽之終始？
+  孔子問曰：汝知天地之綱紀，陰陽之終始？
 ||
   Confucius asked, saying,
-    "Knowest thou .[the] principle .[and the] law of Heaven .[and] Earth,
+    Knowest thou .[the] principle .[and the] law of Heaven .[and] Earth,
     .[and the] beginning .[and the] end of Dark .[and] Light?
 >>
 ====
@@ -665,7 +663,7 @@ see [the actual first page of the almanac text][almanac text].
 <<
   何爲左？何爲右？何爲表？何爲裏？何爲父？何爲母？何爲夫？何爲婦？
 ||
-  "What be left?
+  What be left?
   What be right?
   What be .[on the] surface?
   What be within?
@@ -676,14 +674,14 @@ see [the actual first page of the almanac text][almanac text].
 >>
 
 <<
-  風從何來？雨從何至？雲從何出？霧從何起？天地相去幾千萬里？」
+  風從何來？雨從何至？雲從何出？霧從何起？天地相去幾千萬里？
 ||
-  "From whence cometh the wind?
+  From whence cometh the wind?
   From whence arriveth the rain?
   From whence emergeth the clouds?
   From whence ariseth the fog?
   How many thousands .[and] myriads of miles
-  .[are] Heaven .[and] Earth mutually separated?"
+  .[are] Heaven .[and] Earth mutually separated?
 >>
 ====
 * 里： miles \+
@@ -695,10 +693,10 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  小兒答曰：「九九還歸八十一，是天地之綱紀。八九七十二，是陰陽之終始。
+  小兒答曰：九九還歸八十一，是天地之綱紀。八九七十二，是陰陽之終始。
 ||
   .[The] little child replied, saying,
-    "Nine nines return eighty-one:
+    Nine nines return eighty-one:
       this .[be] .[the] principle .[and the] law of Heaven .[and] Earth.
     .[And] eight nines seventy-two:
       this .[be the] beginning .[and the] end of Dark .[and] Light.
@@ -727,7 +725,7 @@ see [the actual first page of the almanac text][almanac text].
 <<
   天爲父。地爲母。日爲夫。月爲婦。東爲左。西爲右。外爲表。内爲裏。
 ||
-  "Heaven be the father.
+  Heaven be the father.
   Earth be the mother.
   .[The] sun be the husband.
   .[The] moon be the wife.
@@ -746,9 +744,9 @@ see [the actual first page of the almanac text][almanac text].
   風從蒼梧。雨從郊市。\
   雲從山出。霧從地起。\
   天地相去，有千千萬萬餘里。\
-  東西南北，皆有寄耳。」
+  東西南北，皆有寄耳。
 ||
-  "The wind .[cometh] from Ts'ang Wu ((蒼梧)).
+  The wind .[cometh] from Ts'ang Wu ((蒼梧)).
   The rain .[arriveth] from .[the] outskirt towns.
   The clouds emergeth from .[the] mountains.
   The fog ariseth from .[the] ground.
@@ -756,7 +754,7 @@ see [the actual first page of the almanac text][almanac text].
    .[in] excess of
     thousands .[upon] thousands .[and]
     myriads .[upon] myriads of miles.
-  East, west, south, .[and] north, all have adherence unto .[these]."
+  East, west, south, .[and] north, all have adherence unto .[these].
 >>
 ====
 * Ts'ang Wu ((蒼梧))：地名，舜葬處 \+
@@ -773,41 +771,41 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子問曰：「汝言父母是親，夫婦是親？」
+  孔子問曰：汝言父母是親，夫婦是親？
 ||
   Confucius asked, saying,
-    "Sayest thou .[that] father .[and] mother are .[more] close
+    Sayest thou .[that] father .[and] mother are .[more] close
     .[unto their children],
-    .[or that] husband .[and] wife are .[more] close?"
+    .[or that] husband .[and] wife are .[more] close?
 >>
 ====
 * 親： close; \or loving
 ====
 
 <<
-  小兒答曰：「父母是親，夫婦不親。」
+  小兒答曰：父母是親，夫婦不親。
 ||
   .[The] little child replied, saying,
-    "Father .[and] mother are .[more] close .[unto their children];
-    husband .[and] wife, not .[as] close."
+    Father .[and] mother are .[more] close .[unto their children];
+    husband .[and] wife, not .[as] close.
 >>
 
 <<
-  孔子曰：「夫婦生則同衾，死則同穴，何得不親？」
+  孔子曰：夫婦生則同衾，死則同穴，何得不親？
 ||
   Confucius said,
-    "Husband .[and] wife .[are under the] same bed quilt .[in] life,
-    .[and the] same grave .[in] death: how can .[they be] not .[as] close?"
+    Husband .[and] wife .[are under the] same bed quilt .[in] life,
+    .[and the] same grave .[in] death: how can .[they be] not .[as] close?
 >>
 ====
 * 衾： bed quilt; \or blanket
 ====
 
 <<
-  小兒答曰：「人生無婦，如車無輪。無輪再造，必得其新。婦死更索，又得其新。
+  小兒答曰：人生無婦，如車無輪。無輪再造，必得其新。婦死更索，又得其新。
 ||
   .[The] little child replied, saying,
-    ".[A] man losing .[his] wife .[in] life,
+    .[A] man losing .[his] wife .[in] life,
     .[is] like .[a] chariot losing .[its] wheel.
     .[Should a] wheel .[be] lost, remake .[it]:
     surely .[a] new .[one shall be] obtained.
@@ -822,7 +820,7 @@ see [the actual first page of the almanac text][almanac text].
 <<
   賢家之女，必配貴夫。十間之室，須得棟樑。
 ||
-  ".[A] daughter of .[a] worthy family,
+  .[A] daughter of .[a] worthy family,
   .[shall] surely .[be] matched with the worthy man.
   .[The] bedchambers of ten partitions,
   must get pillars .[and] roof beams.
@@ -850,14 +848,14 @@ see [the actual first page of the almanac text][almanac text].
 ======
 
 <<
-  三窗六牗，不如一户之光。衆星朗朗，不如孤月獨明。父母之恩，奚可失也？」
+  三窗六牗，不如一户之光。衆星朗朗，不如孤月獨明。父母之恩，奚可失也？
 ||
-  ".[Yet the light of] three windows .[and] six casements,
+  .[Yet the light of] three windows .[and] six casements,
   .[is] not as .[the] light of one .[particular] door.
   .[The] multitude of stars bright,
   .[are] not as .[the] lone moon, radiant by itself.
   .[The] affection of father .[and] mother:
-  how can .[it be] lost?"
+  how can .[it be] lost?
 >>
 ====
 * 牗：窗也； casement \+
@@ -869,25 +867,24 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子歎曰：「賢哉！賢哉！」
+  孔子歎曰：賢哉！賢哉！
 ||
   Confucius sighed, saying,
-    "Worthy .[art thou]! Worthy .[art thou]!"
+    Worthy .[art thou]! Worthy .[art thou]!
 >>
 
 <<
-  小兒問孔子曰：「\
-    適來問橐，橐一一答之。橐今欲求敎夫子一言，明以誨橐，幸請勿棄。\
-  」
+  小兒問孔子曰：\
+    適來問橐，橐一一答之。橐今欲求敎夫子一言，明以誨橐，幸請勿棄。
 ||
   .[The] little child asked Confucius, saying,
-    ".[The master hath] just come to ask T'o ((橐)) .[questions],
+    .[The master hath] just come to ask T'o ((橐)) .[questions],
     .[and] T'o ((橐)) .[hath] answered them one .[by] one.
-    T'o ((橐)) wisheth now to request
+    T'o ((橐)) now wisheth to request
     .[the] advice of .[the] master .[in] one asking,
     .[to] teach T'o ((橐)) with clarity,
     .[and] hopeth .[and] asketh .[that the master]
-    doth not forsake .[this request]."
+    doth not forsake .[this request].
 >>
 ====
 * T'o ((橐)) \+
@@ -909,12 +906,12 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  小兒曰：「鵝鴨何以能浮？鴻雁何以能鳴？松柏何以冬青？」
+  小兒曰：鵝鴨何以能浮？鴻雁何以能鳴？松柏何以冬青？
 ||
   .[The] little child said,
-    "Why .[are] geese .[and] ducks able to float?
+    Why .[are] geese .[and] ducks able to float?
     Why .[are] swans .[and] wild geese able to sound?
-    Why .[are] pine trees .[and] cypress trees evergreen?"
+    Why .[are] pine trees .[and] cypress trees evergreen?
 >>
 ====
 * 浮： float; \or drift
@@ -928,13 +925,13 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子答曰：「鵝鴨能浮，皆因足方。鴻雁能鳴，皆因頸長。松柏冬青，皆因心堅。」
+  孔子答曰：鵝鴨能浮，皆因足方。鴻雁能鳴，皆因頸長。松柏冬青，皆因心堅。
 ||
   Confucius replied, saying,
-    "Geese .[and] ducks .[are] able to float, all because of webbed feet.
+    Geese .[and] ducks .[are] able to float, all because of webbed feet.
     Swans .[and] wild geese .[are] able to sound, all because of long necks.
     Pine trees .[and] cypress trees .[are] evergreen,
-      all because of strong cores."
+      all because of strong cores.
 >>
 ====
 * 足方： webbed feet; \lit square feet
@@ -943,28 +940,27 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  小兒答曰：「\
+  小兒答曰：\
     不然。魚鱉能浮，豈皆足方？\
     蝦蟆能鳴，豈因頸長？\
-    綠竹冬青，豈因心堅？\
-  」
+    綠竹冬青，豈因心堅？
 ||
   .[The] little child replied, saying,
-    "Not so.
+    Not so.
     Fishes .[and] turtles can float: how .[have they] all webbed feet?
     The toad can sound: how .[be this] because of .[a] long neck?
     The green bamboo .[is] evergreen:
-      how .[be this] because of .[a] strong core?"
+      how .[be this] because of .[a] strong core?
 >>
 ====
 * 綠竹： [the green bamboo](https://en.wikipedia.org/wiki/Bambusa_oldhamii)
 ====
 
 <<
-  小兒又問曰：「天上零零有幾星？」
+  小兒又問曰：天上零零有幾星？
 ||
   .[The] little child asked again, saying,
-    "How many stars are there, scattered .[in the] heavens above?"
+    How many stars are there, scattered .[in the] heavens above?
 >>
 ====
 * 零零： scattered \+
@@ -973,18 +969,18 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子答曰：「適來問地，何必談天？」
+  孔子答曰：適來問地，何必談天？
 ||
   Confucius replied, saying,
-    ".[I have] just come to ask .[regarding the] earth;
-    wherefore must .[we] discuss .[the] heavens?"
+    .[I have] just come to ask .[regarding the] earth;
+    wherefore must .[we] discuss .[the] heavens?
 >>
 
 <<
-  小兒曰：「地下碌碌有幾屋？」
+  小兒曰：地下碌碌有幾屋？
 ||
   .[The] little child said,
-    "How many houses are there, ordinary .[on the] earth below?"
+    How many houses are there, ordinary .[on the] earth below?
 >>
 ====
 * 碌碌： ordinary; \or common; \or everyday \+
@@ -992,47 +988,46 @@ see [the actual first page of the almanac text][almanac text].
 ====
 
 <<
-  孔子曰：「且論眼前之事，何必談天説地？」
+  孔子曰：且論眼前之事，何必談天説地？
 ||
   Confucius said,
-    "And .[let us] discuss matters before .[our very] eyes;
+    And .[let us] discuss matters before .[our very] eyes;
     wherefore must .[we] discuss .[the] heavens
-    .[and] speak of .[the] earth?"
+    .[and] speak of .[the] earth?
 >>
 
 <<
-  小兒曰：「若論眼前之事，眉毛中有幾枝？」
+  小兒曰：若論眼前之事，眉毛中有幾枝？
 ||
   .[The] little child said,
-    "If .[we shall] discuss matters before .[our very] eyes,
-    how many .[hairs] be there amidst .[my] brow?"
+    If .[we shall] discuss matters before .[our very] eyes,
+    how many .[hairs] be there amidst .[my] brow?
 >>
 
 <<
-  孔子笑而不答，顧謂諸弟子曰：「後生可畏！焉知來者之不如今也？」
+  孔子笑而不答，顧謂諸弟子曰：後生可畏！焉知來者之不如今也？
 ||
   Confucius smiled and replied not,
   .[and] turned back .[and] spake unto .[his] many disciples, saying,
-    "The young ought to .[be] feared!
+    The young ought to .[be] feared!
     .[For] how know .[we] .[that] those who come .[after us],
-    .[be] not as .[we who are] now?"
+    .[be] not as .[we who are] now?
 >>
 ======
 * 後生可畏！焉知來者之不如今也？ \+
   This is part of an actual (as in canon) quote of Confucius
   in [《論語\.子罕》](https://ctext.org/analects/zi-han#n1331):
   <<
-    子曰：「\
+    子曰：\
       後生可畏，焉知來者之不如今也？\
-      四十、五十而無聞焉，斯亦不足畏也已。\
-    」
+      四十、五十而無聞焉，斯亦不足畏也已。
   ||
     .[The] Master said,
-      "The young ought to .[be] feared;
+      The young ought to .[be] feared;
       .[for] how know .[we] .[that] those who come .[after us],
       .[be] not as .[we who are] now?
       .[By] forty .[or] fifty and .[be they] unheard of,
-      then .[be they] not worthy of fear."
+      then .[be they] not worthy of fear.
   >>
   ====
   * 後生： the young; \lit the after-born \+

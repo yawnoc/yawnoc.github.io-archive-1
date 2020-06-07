@@ -148,12 +148,12 @@ The inserted punctuation is my own.
   The line 如北辰居中，而五星拱之 is a nod to Confucius
   in [《論語\.為政》](https://ctext.org/analects/wei-zheng):
   <<
-    子曰：「為政以德，譬如北辰，居其所而眾星共之。」
+    子曰：為政以德，譬如北辰，居其所而眾星共之。
   ||
     .[The] Master said,
-    ".[He who] governeth using virtue
+    .[He who] governeth using virtue
     .[is] like .[the] North Star, abiding in its place with
-    .[the] multitude of stars going round it."
+    .[the] multitude of stars going round it.
   >>
   Here, 共 is interchangeable with 拱.
 ====

@@ -12,7 +12,7 @@
   %title-en ".[The] Fox Feigneth .[the] Tiger's Authority"
   %author Conway
   %date-created 2019-04-07
-  %date-modified 2020-05-06
+  %date-modified 2020-06-07
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -97,12 +97,11 @@ The Chinese source text is from Chinese Text Project:
 ====
 
 <<
-  荊宣王問群臣曰：「吾聞北方之畏昭奚恤也，果誠何如？」群臣莫對。
+  荊宣王問群臣曰：吾聞北方之畏昭奚恤也，果誠何如？
 ||
   King~S(u")an ((宣)) of~King ((荊)) asked .[his] group of ministers, saying,
-    "I hear of .[the] North's fear of Chao Hi-s(u") ((昭奚恤));
-    if .[it be] true, what of .[it]?"
-  .[And] .[his] group of ministers replied not.
+    I hear of .[the] North's fear of Chao Hi-s(u") ((昭奚恤));
+    if .[it be] true, what of .[it]?
 >>
 ====
 * King ((荊)) \+
@@ -115,10 +114,16 @@ The Chinese source text is from Chinese Text Project:
 ====
 
 <<
-  江一對曰：「虎求百獸而食之，得狐。
+  群臣莫對。
+||
+  .[And] .[his] group of ministers replied not.
+>>
+
+<<
+  江一對曰：虎求百獸而食之，得狐。
 ||
   .[But] Kiang I ((江一)) replied, saying,
-    ".[The] tiger sought .[the] many beasts to eat them,
+    .[The] tiger sought .[the] many beasts to eat them,
     .[and] obtained .[the] fox.
 >>
 ====
@@ -134,10 +139,10 @@ The Chinese source text is from Chinese Text Project:
 ====
 
 <<
-  狐曰：『子無敢食我也。天帝使我長百獸，今子食我，是逆天帝命也。
+  狐曰：子無敢食我也。天帝使我長百獸，今子食我，是逆天帝命也。
 ||
-  ".[The] fox said,
-    'Thou darest not eat me.
+  .[The] fox said,
+    Thou darest not eat me.
     .[The] Emperor of Heaven .[hath] made me leader of .[the] many beasts;
     .[shouldst] thou now eat me:
     this .[would] defy .[the] command of .[the] Emperor of Heaven.
@@ -156,13 +161,13 @@ The Chinese source text is from Chinese Text Project:
 ====
 
 <<
-  子以我為不信，吾為子先行，子隨我後，觀百獸之見我而敢不走乎？』
+  子以我為不信，吾為子先行，子隨我後，觀百獸之見我而敢不走乎？
 ||
-  "\,'.[Shouldst] thou think me untrustworthy,
+  .[Shouldst] thou think me untrustworthy,
   .[let] me walk before for thee,
   .[and let] thee follow behind me,
   .[and let us] see .[who] of .[the] many beasts
-  .[shall] see me and dare run not?'
+  .[shall] see me and dare run not?
 >>
 ====
 * 先： before
@@ -173,20 +178,20 @@ The Chinese source text is from Chinese Text Project:
 <<
   虎以為然，故遂與之行。獸見之皆走。
 ||
-  ".[The] tiger thought so, therefore .[he] then walked with him.
+  .[The] tiger thought so, therefore .[he] then walked with him.
   .[The] beasts seeing him, all ran.
 >>
 
 <<
   虎不知獸畏己而走也，以為畏狐也。
 ||
-  ".[The] tiger knew not .[that the] beasts feared himself and ran,
+  .[The] tiger knew not .[that the] beasts feared himself and ran,
   .[but] thought .[that they] feared .[the] fox.
 >>
 <<
   今王之地方五千里，帶甲百萬，而專屬之昭奚恤；
 ||
-  "Today King's territory .[spanneth a]
+  Today King's territory .[spanneth a]
   circumference of five thousand miles,
   .[with] armour-donning .[soldiers a] million,
   and exclusively subordinate .[are] they unto Chao Hi-s(u") ((昭奚恤));
@@ -202,15 +207,15 @@ The Chinese source text is from Chinese Text Project:
 
 * 百萬： .[a] million; \or .[in their] millions; \lit .[an] hundred myriad
 
-* 屬： subordinate to; \or belonging to
+* 屬： subordinate unto; \or belonging unto
 ====
 
 <<
-  故北方之畏奚恤也，其實畏王之甲兵也，猶百獸之畏虎也。」
+  故北方之畏奚恤也，其實畏王之甲兵也，猶百獸之畏虎也。
 ||
-  "Therefore, .[as to the] North's fear of Hi-s(u") ((奚恤)):
+  Therefore, .[as to the] North's fear of Hi-s(u") ((奚恤)):
   it .[is] actually fear of King's armoured troops,
-  like .[the] many beasts' fear of .[the] tiger."
+  like .[the] many beasts' fear of .[the] tiger.
 >>
 
 \cite-this-page[%title-en][fox-tiger][

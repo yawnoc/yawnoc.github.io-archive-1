@@ -11,7 +11,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-04-15
-  %date-modified 2020-06-02
+  %date-modified 2020-06-07
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -25,6 +25,9 @@
     }
     .sign-off {
       text-align: right;
+    }
+    li > ul > li {
+      margin-bottom: 0.7em
     }
 %%
 
@@ -137,10 +140,10 @@ The Chinese source text is from Chinese Text Project:
 
 
 <<
-  顏淵問仲尼曰：「吾嘗濟乎觴深之淵，津人操舟若神。
+  顏淵問仲尼曰：吾嘗濟乎觴深之淵，津人操舟若神。
 ||
   Yen Y(u")an ((顏淵)) asked Chung-ni ((仲尼)), saying,
-    "I once crossed .[the] deep waters of Shang-sh(e^)n ((觴深)),
+    I once crossed .[the] deep waters of Shang-sh(e^)n ((觴深)),
     .[and the] men of .[the] crossing handled boats like gods.
 >>
 ====
@@ -167,18 +170,18 @@ The Chinese source text is from Chinese Text Project:
 ====
 
 <<
-  吾問焉，曰：『操舟可學邪？』
+  吾問焉，曰：操舟可學邪？
 ||
-  "I asked, saying, 'Can handling of boats .[be] learnt?'
+  I asked, saying, Can handling of boats .[be] learnt?
 >>
 
 <<
-  曰：『可。善游者數能。若乃夫沒人，則未嘗見舟而便操之也。』
+  曰：可。善游者數能。若乃夫沒人，則未嘗見舟而便操之也。
 ||
-  ".[And they] said,
-    '.[It] can. Good swimmers .[are] able to .[upon] repetition.
+  .[And they] said,
+    .[It] can. Good swimmers .[are] able to .[upon] repetition.
     If .[it] be .[a] diver, .[having] not once seen boats
-    .[may he] yet immediately handle them.'
+    .[may he] yet immediately handle them.
 >>
 ====
 * 數： .[upon] repetition \+
@@ -190,27 +193,27 @@ The Chinese source text is from Chinese Text Project:
 ====
 
 <<
-  吾問焉而不吾告，敢問何謂也？」
+  吾問焉而不吾告，敢問何謂也？
 ||
-  ".[That] I asked of, yet .[they] told me not:
-  .[I] dare ask: what .[were they] saying?"
+  .[That] I asked of, yet .[they] told me not;
+  .[I] dare ask: what .[were they] saying?
 >>
 ====
 * 何謂也： what .[were they] saying; \or what .[did they] mean
 ====
 
 <<
-  仲尼曰：「善游者數能，忘水也。
+  仲尼曰：善游者數能，忘水也。
 ||
   Chung-ni ((仲尼)) said,
-    "Good swimmers .[are] able to .[upon] repetition:
+    Good swimmers .[are] able to .[upon] repetition:
     .[they] forget about .[the] water.
 >>
 
 <<
   若乃夫沒人之未嘗見舟而便操之也，彼視淵若陵，視舟之覆猶其車卻也。
 ||
-  "Of .[having] not once seen boats yet immediately handling them
+  Of .[having] not once seen boats yet immediately handling them
   if .[it] be .[a] diver: he vieweth .[the] deep waters as .[an] hill,
   .[and] vieweth .[the] overturning of .[a] boat like his chariot receding.
 >>
@@ -222,7 +225,7 @@ The Chinese source text is from Chinese Text Project:
 <<
   覆卻萬方陳乎前而不得入其舍，惡往而不暇！
 ||
-  "Overturning .[and] receding .[have, in a]
+  Overturning .[and] receding .[have, in a]
   myriad instances, .[been] shown before .[him]
   and not entered his mind; why goeth .[he] and .[be he] not carefree?
 >>
@@ -244,7 +247,7 @@ The Chinese source text is from Chinese Text Project:
 <<
   以瓦注者巧，以鉤注者憚，以黃金注者殙。
 ||
-  "He who wagereth .[by archery] for earthenware .[is] skillful;
+  He who wagereth .[by archery] for earthenware .[is] skillful;
   he who wagereth .[by archery] for .[a] buckle, fearful;
   .[and] he who wagereth .[by archery] for gold, dazed.
 >>
@@ -372,13 +375,13 @@ The Chinese source text is from Chinese Text Project:
 ========
 
 <<
-  其巧一也，而有所矜，則重外也。凡外重者內拙。」
+  其巧一也，而有所矜，則重外也。凡外重者內拙。
 ||
-  "Their skill .[is the] same,
+  Their skill .[is the] same,
   but .[that] there be that which .[they are] concerned about,
   .[is] attaching importance to .[the] external.
   All those who attach importance to .[the] external,
-  .[are] internally stupid."
+  .[are] internally stupid.
 >>
 ====
 * 矜： concerned about \+
