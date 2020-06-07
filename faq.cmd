@@ -12,7 +12,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-08-01
-  %date-modified 2020-05-17
+  %date-modified 2020-06-07
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
   %css
@@ -352,7 +352,7 @@ For example,
 
 
 ###this
-  But I thought that 是 means "is", and 也, "also".
+  Doesn't 是 mean "is", and 也, "also"?
 ###
 
 ----
