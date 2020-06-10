@@ -11,7 +11,7 @@
   %title Conway's site
   %author Conway
   %date-created 2019-03-09
-  %date-modified 2020-04-26
+  %date-modified 2020-06-10
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -57,7 +57,7 @@
 
 
 [||||
-Feedback welcome: `leeconway@protonmail.com`
+Feedback welcome: `yawnoc@pm.me`
 ||||]
 
 ----

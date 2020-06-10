@@ -8,7 +8,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-21
-  %date-modified 2020-04-27
+  %date-modified 2020-06-10
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -420,7 +420,7 @@ $$
 $$
 ----
 If you are able to evaluate either of the two integrals above,
-please contact me at `leeconway@protonmail.com`.
+please contact me at `yawnoc@pm.me`.
 On the other hand, quartic terms, even if they could be found,
 would be of little practical use, since the expansion is asymptotic
 and as such probably does not converge.
@@ -434,7 +434,7 @@ and as such probably does not converge.
 ----
 Having determined the trajectory,
 we then determine the flight time, given by $y (t) = 0$.
-To quadratic order, i.e.~with 
+To quadratic order, i.e.~with
 ----
 $$
   \begin{aligned}
