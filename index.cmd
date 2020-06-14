@@ -62,7 +62,7 @@ Feedback welcome: `yawnoc@pm.me`
 
 ----
 Assorted musings of a remnant of the 20th~century,
-with the cynicism of Daria and the metabolism of Sir Doris the Hamster.
+with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
 ----
 
 
