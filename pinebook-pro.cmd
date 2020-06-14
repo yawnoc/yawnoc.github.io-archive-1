@@ -133,7 +133,7 @@ For whatever reason,
 the default encoding of the text terminal is `ISO-8859-15`.
 Since the locale has been set to `UTF-8`,
 box-drawing characters will be rendered incorrectly,
-and in particular `nmtui` will be too chaotic to handle
+and in particular [`nmtui`](#internet) will be too chaotic to handle
 by the time you get to the "Activate a connection" screen.
 ----
 ----
@@ -179,6 +179,19 @@ While I'm at it, I also increase the terminal font size.
 ''''
 ||||
 ||||||
+
+
+##internet
+  Connect to the internet
+##
+
+----
+Having [fixed the terminal's encoding](#terminal-encoding),
+I then connect to the internet:
+----
+````
+$ nmtui
+````
 
 
 \cite-this-page[][pinebook-pro][
