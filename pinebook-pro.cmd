@@ -193,6 +193,15 @@ I then connect to the internet:
 $ nmtui
 ````
 
+##update
+  Update and upgrade packages
+##
+
+````
+$ sudo apt update
+$ sudo apt upgrade
+````
+
 
 \cite-this-page[][pinebook-pro][
   {Debian} on {Pinebook} {Pro} via {Daniel's} installer
