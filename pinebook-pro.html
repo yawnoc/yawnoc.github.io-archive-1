@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Conway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="/resources/styles/main.min.css">
+<script defer src="/resources/scripts/rendering.min.js"></script>
+<title>Debian on Pinebook Pro via Daniel's installer | Conway's site</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/" title="Home page">Home</a>
+</li>
+<li><a href="#cite" title="Cite this page">Cite</a>
+</li>
+</ul>
+</nav>
+</header>
+<h1>Debian on Pinebook Pro via Daniel's installer</h1>
+<div class="page-properties">
+First created: 2020-06-15<br>
+Last modified: 2020-06-15
+</div>
+<p>
+A step-by-step record of
+the installation of Debian Bullseye onto Pinebook Pro (removable SD card slot)
+using <a href="https://github.com/daniel-thompson/pinebook-pro-debian-installer">Daniel Thompson's unofficial installer</a>,
+along with subsequent customisations to my own liking.
+</p>
+<p>
+Last version I used: <a href="https://github.com/daniel-thompson/pinebook-pro-debian-installer/commit/d4902fc9"><code>d4902fc9</code></a>
+</p>
+<h2 id="clone"><a class="permalink" href="#clone" aria-label="Permalink"></a>Clone the installer</h2>
+<pre><code>$ git clone https://github.com/daniel-thompson/pinebook-pro-debian-installer
+$ cd pinebook-pro-debian-installer
+</code></pre>
+<h2 id="unmount"><a class="permalink" href="#unmount" aria-label="Permalink"></a>Unmount the SD card</h2>
+<pre><code>$ umount /media/conway/mmcblk0
+</code></pre>
+<h2 id="run"><a class="permalink" href="#run" aria-label="Permalink"></a>Run the installer</h2>
+<pre><code>$ ./install-debian BLKDEV=/dev/mmcblk0
+</code></pre>
+<p>
+This installs to the removable SD card slot.
+Reboot upon completion.
+</p>
+<p>
+To avoid bloat,
+I leave the installation of a desktop environment and a window manager
+until later.
+</p>
+<div class="centred-block">
+<div class="overflowing">
+<table>
+<tbody>
+<tr>
+<td>Hostname</td>
+<td>(default)</td>
+</tr>
+<tr>
+<td>Username</td>
+<td><code>conway</code></td>
+</tr>
+<tr>
+<td>User info</td>
+<td>(leave blank)</td>
+</tr>
+<tr>
+<td>Keyboard model</td>
+<td>Generic 105-key PC&nbsp;(intl.)</td>
+</tr>
+<tr>
+<td>Keyboard layout</td>
+<td>English&nbsp;(UK)</td>
+</tr>
+<tr>
+<td>AltGr Key</td>
+<td>Default</td>
+</tr>
+<tr>
+<td>Compose key</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Locales</td>
+<td><code>en_AU.UTF-8 UTF-8</code></td>
+</tr>
+<tr>
+<td>Default locale</td>
+<td><code>en_AU.UTF-8</code></td>
+</tr>
+<tr>
+<td>Geographic area</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>Time zone</td>
+<td>Perth</td>
+</tr>
+<tr>
+<td>Software</td>
+<td>(none)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
+<ul>
+<li>Text:
+<p>
+Conway&nbsp;(2020).
+Debian on Pinebook Pro via Daniel's installer.
+&lt;https://yawnoc.github.io/pinebook-pro&gt;
+Accessed&nbsp;<span class="js-date">yyyy-mm-dd</span>.
+</p>
+</li>
+<li>BibTeX:
+<pre><code>@misc{conway-pinebook-pro,
+  author = {Conway},
+  year = {2020},
+  title = {{Debian} on {Pinebook} {Pro} via {Daniel's} installer},
+  howpublished = {\url{https://yawnoc.github.io/pinebook-pro}},
+  note = {Accessed~<span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+<li>BibLaTeX:
+<pre><code>@online{conway-pinebook-pro,
+  author = {Conway},
+  year = {2020},
+  title = {{Debian} on {Pinebook} {Pro} via {Daniel's} installer},
+  url = {https://yawnoc.github.io/pinebook-pro},
+  urldate = {<span class="js-date">yyyy-mm-dd</span>},
+}
+</code></pre>
+</li>
+</ul>
+<script>document.addEventListener("DOMContentLoaded",function(){renderDate()})</script>
+<footer>
+©&nbsp;2020&nbsp;Conway.
+</footer>
+</body>
+</html>
