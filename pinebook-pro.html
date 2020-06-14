@@ -115,6 +115,52 @@ until later.
 </table>
 </div>
 </div>
+<h2 id="terminal-encoding"><a class="permalink" href="#terminal-encoding" aria-label="Permalink"></a>Fix the TTY (terminal) encoding</h2>
+<p>
+For whatever reason,
+the default encoding of the text terminal is <code>ISO-8859-15</code>.
+Since the locale has been set to <code>UTF-8</code>,
+box-drawing characters will be rendered incorrectly,
+and in particular <code>nmtui</code> will be too chaotic to handle
+by the time you get to the "Activate a connection" screen.
+</p>
+<p>
+So first up I fix the encoding.
+The interface for doing so is itself a TUI (text user interface),
+so it too will have broken borders initially:
+</p>
+<pre><code>$ sudo dpkg-reconfigure console-setup
+</code></pre>
+<div class="centred-block">
+<img alt="Photo: Broken borders on the &quot;Configuring console-setup&quot; text user interface caused by incorrect encoding." src="tty-bad-encoding.jpg">
+</div>
+<p>
+While I'm at it, I also increase the terminal font size.
+</p>
+<div class="centred-block">
+<div class="overflowing">
+<table>
+<tbody>
+<tr>
+<td>Encoding</td>
+<td><code>UTF-8</code></td>
+</tr>
+<tr>
+<td>Character set</td>
+<td>Guess</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>Terminus</td>
+</tr>
+<tr>
+<td>Font size</td>
+<td>12 × 24</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
 <ul>
 <li>Text:

@@ -124,6 +124,63 @@ until later.
 ||||||
 
 
+##terminal-encoding
+  Fix the TTY (terminal) encoding
+##
+
+----
+For whatever reason,
+the default encoding of the text terminal is `ISO-8859-15`.
+Since the locale has been set to `UTF-8`,
+box-drawing characters will be rendered incorrectly,
+and in particular `nmtui` will be too chaotic to handle
+by the time you get to the "Activate a connection" screen.
+----
+----
+So first up I fix the encoding.
+The interface for doing so is itself a TUI (text user interface),
+so it too will have broken borders initially:
+----
+
+````
+$ sudo dpkg-reconfigure console-setup
+````
+
+||||{centred-block}
+![
+  Photo: \
+    Broken borders on the "Configuring console-setup" text user interface \
+    caused by incorrect encoding.
+](
+  tty-bad-encoding.jpg
+)
+||||
+
+----
+While I'm at it, I also increase the terminal font size.
+----
+
+||||||{centred-block}
+||||{overflowing}
+''''
+|:
+  ==
+    , Encoding
+    , `UTF-8`
+  ==
+    , Character set
+    , Guess
+  ==
+    , Font
+    , Terminus
+  ==
+    , Font size
+    , 12 × 24
+''''
+||||
+||||||
+
+
 \cite-this-page[][pinebook-pro][
   {Debian} on {Pinebook} {Pro} via {Daniel's} installer
 ]
