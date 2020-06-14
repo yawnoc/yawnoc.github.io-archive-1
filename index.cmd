@@ -11,7 +11,7 @@
   %title Conway's site
   %author Conway
   %date-created 2019-03-09
-  %date-modified 2020-06-10
+  %date-modified 2020-06-15
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -84,6 +84,15 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
   ||||{page-description}
     Frequently asked questions.
   ||||
+
+* [Debian on Pinebook Pro via Daniel's installer](/pinebook-pro)
+  ||||{page-description}
+    Installation and customisation of Debian Bullseye
+    using [Daniel Thompson's unofficial installer].
+  ||||
+  @@[Daniel Thompson's unofficial installer]
+    https://github.com/daniel-thompson/pinebook-pro-debian-installer
+  @@
 
 * [A cynic's 7.30 (and other programs)](/cynics-730/)
   ||||{page-description}
