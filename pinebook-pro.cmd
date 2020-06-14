@@ -138,7 +138,7 @@ by the time you get to the "Activate a connection" screen.
 ----
 So first up I fix the encoding.
 The interface for doing so is itself a TUI (text user interface),
-so it too will have broken borders initially:
+so it too has broken borders initially:
 ----
 
 ````
