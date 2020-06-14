@@ -82,42 +82,41 @@ until later.
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-|:
   ==
-    , Hostname
+    ; Hostname
     , (default)
   ==
-    , Username
+    ; Username
     , `conway`
   ==
-    , User info
+    ; User info
     , (leave blank)
   ==
-    , Keyboard model
+    ; Keyboard model
     , Generic 105-key PC~(intl.)
   ==
-    , Keyboard layout
+    ; Keyboard layout
     , English~(UK)
   ==
-    , AltGr Key
+    ; AltGr Key
     , Default
   ==
-    , Compose key
+    ; Compose key
     , None
   ==
-    , Locales
+    ; Locales
     , `en_AU.UTF-8 UTF-8`
   ==
-    , Default locale
+    ; Default locale
     , `en_AU.UTF-8`
   ==
-    , Geographic area
+    ; Geographic area
     , Australia
   ==
-    , Time zone
+    ; Time zone
     , Perth
   ==
-    , Software
+    ; Software
     , (none)
 ''''
 ||||
@@ -163,18 +162,17 @@ While I'm at it, I also increase the terminal font size.
 ||||||{centred-block}
 ||||{overflowing}
 ''''
-|:
   ==
-    , Encoding
+    ; Encoding
     , `UTF-8`
   ==
-    , Character set
+    ; Character set
     , Guess
   ==
-    , Font
+    ; Font
     , Terminus
   ==
-    , Font size
+    ; Font size
     , 12 × 24
 ''''
 ||||
