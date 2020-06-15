@@ -96,7 +96,7 @@ until later.
     , Generic 105-key PC~(intl.)
   ==
     ; Keyboard layout
-    , English~(UK)
+    , English~(US)
   ==
     ; AltGr Key
     , Default
