@@ -316,6 +316,18 @@ Then reboot.
 ==========
 
 
+###trackpad
+  Trackpad
+###
+
+==========
+* Start \> System \> Preferences \> Hardware \> Mouse
+  ========
+  * [Touchpad] Acceleration: \~70%
+  ========
+==========
+
+
 
 \cite-this-page[][pinebook-pro][
   {Debian} on {Pinebook} {Pro} via {Daniel's} installer
