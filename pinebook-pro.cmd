@@ -201,6 +201,24 @@ $ sudo apt upgrade
 ````
 
 
+##power-key
+  Disable shutdown on power key
+##
+
+----
+Since the Power key is dierectly above Backspace,
+it is very easy to shutdown by accident while typing.
+We [disable this using `logind`](https://unix.stackexchange.com/a/288734):
+----
+
+````
+$ sudo nano /etc/systemd/logind.conf
+````
+----
+Change the commented `HandlePowerKey=poweroff` line
+to `HandlePowerKey=ignore`.
+----
+
 \cite-this-page[][pinebook-pro][
   {Debian} on {Pinebook} {Pro} via {Daniel's} installer
 ]

@@ -168,6 +168,18 @@ we then connect to the internet:
 <pre><code>$ sudo apt update
 $ sudo apt upgrade
 </code></pre>
+<h2 id="power-key"><a class="permalink" href="#power-key" aria-label="Permalink"></a>Disable shutdown on power key</h2>
+<p>
+Since the Power key is dierectly above Backspace,
+it is very easy to shutdown by accident while typing.
+We <a href="https://unix.stackexchange.com/a/288734">disable this using <code>logind</code></a>:
+</p>
+<pre><code>$ sudo nano /etc/systemd/logind.conf
+</code></pre>
+<p>
+Change the commented <code>HandlePowerKey=poweroff</code> line
+to <code>HandlePowerKey=ignore</code>.
+</p>
 <h2 id="cite"><a class="permalink" href="#cite" aria-label="Permalink"></a>Cite this page</h2>
 <ul>
 <li>Text:
