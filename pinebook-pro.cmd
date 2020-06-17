@@ -5,7 +5,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2020-06-15
-  %date-modified 2020-06-15
+  %date-modified 2020-06-17
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -75,7 +75,7 @@ Reboot upon completion.
 ----
 ----
 To avoid bloat,
-I leave the installation of a desktop environment and a window manager
+we leave the installation of a desktop environment and a window manager
 until later.
 ----
 
@@ -136,7 +136,7 @@ and in particular [`nmtui`](#internet) will be too chaotic to handle
 by the time you get to the "Activate a connection" screen.
 ----
 ----
-So first up I fix the encoding.
+So first up we fix the encoding.
 The interface for doing so is itself a TUI (text user interface),
 so it too has broken borders initially:
 ----
@@ -156,7 +156,7 @@ $ sudo dpkg-reconfigure console-setup
 ||||
 
 ----
-While I'm at it, I also increase the terminal font size.
+While we're at it, we also increase the terminal font size.
 ----
 
 ||||||{centred-block}
@@ -185,7 +185,7 @@ While I'm at it, I also increase the terminal font size.
 
 ----
 Having [fixed the terminal's encoding](#terminal-encoding),
-I then connect to the internet:
+we then connect to the internet:
 ----
 ````
 $ nmtui
