@@ -250,6 +250,72 @@ $ sudo apt install lightdm
 Then reboot.
 ----
 
+###appearance
+  Appearance settings
+###
+
+==========
+* Top panel \> System \> Preferences \> Look and Feel \> Appearance
+  ========
+  * [Theme] TraditionalOK
+  * [Background]
+    ======
+    * No Desktop Background
+    * Colours: Solid colour, black.
+    ======
+  * [Fonts]
+    ======
+    * Fixed width font size~11 (in line with the other families)
+    * Details...
+      ====
+      * Automatic detection: OFF
+      * Dots per inch (DPI): 120 (otherwise text is too small)
+      ====
+    ======
+  ========
+
+* Right Click top panel \> Delete This Panel
+
+* Right Click bottom panel \> Properties
+  ========
+  * [General] Size: 32~pixels
+  ========
+
+* Unlock and Remove everything in the bottom panel,
+  which shall henceforth be called the taskbar
+
+* Add to taskbar and Lock the following
+  ========
+  * Main Menu, which shall henceforth be called Start
+  * Workspace Switcher
+  * Window List
+    ======
+    * Right Click \> Preferences
+      ====
+      * Hide thumbnails on hover: TRUE
+      ====
+    ======
+  * Clock (flush right)
+  ========
+
+* Rename `conway's Home` to `conway`
+
+* Start \> System Tools \> Caja
+  ========
+  * Edit \> Preferences
+    ======
+    * [Views]
+      ====
+      * Default View new folders using: List View
+      * List View Default Zoom level: 66%
+      ====
+    ======
+  * View \> Reset View to Defaults
+  ========
+
+==========
+
+
 
 \cite-this-page[][pinebook-pro][
   {Debian} on {Pinebook} {Pro} via {Daniel's} installer
