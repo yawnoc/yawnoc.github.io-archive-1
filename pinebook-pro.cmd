@@ -25,7 +25,7 @@
 
 ----
 A step-by-step record of
-the installation of Debian Bullseye onto Pinebook Pro (removable SD card slot)
+the installation of Debian Buster onto Pinebook Pro (removable SD card slot)
 using [Daniel Thompson's unofficial installer],
 along with subsequent customisations to my own liking.
 ----
@@ -38,7 +38,7 @@ along with subsequent customisations to my own liking.
 Last version I used: [<code>\last-used-commit</code>] [last-used]
 ----
 
-{: \last-used-commit : d4902fc9 :}
+{: \last-used-commit : 5418880e :}
 @@[last-used]
   https://github.com/daniel-thompson/pinebook-pro-debian-installer/\
     commit/\last-used-commit
@@ -66,7 +66,7 @@ $ umount /media/conway/mmcblk0
 ##
 
 ````
-$ ./install-debian BLKDEV=/dev/mmcblk0
+$ ./install-debian ARCH=armhf BLKDEV=/dev/mmcblk0 RELEASE=buster
 ````
 
 ----

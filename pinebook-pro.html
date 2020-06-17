@@ -33,12 +33,12 @@ Last modified: 2020-06-17
 </div>
 <p>
 A step-by-step record of
-the installation of Debian Bullseye onto Pinebook Pro (removable SD card slot)
+the installation of Debian Buster onto Pinebook Pro (removable SD card slot)
 using <a href="https://github.com/daniel-thompson/pinebook-pro-debian-installer">Daniel Thompson's unofficial installer</a>,
 along with subsequent customisations to my own liking.
 </p>
 <p>
-Last version I used: <a href="https://github.com/daniel-thompson/pinebook-pro-debian-installer/commit/d4902fc9"><code>d4902fc9</code></a>
+Last version I used: <a href="https://github.com/daniel-thompson/pinebook-pro-debian-installer/commit/5418880e"><code>5418880e</code></a>
 </p>
 <h2 id="clone"><a class="permalink" href="#clone" aria-label="Permalink"></a>Clone the installer</h2>
 <pre><code>$ git clone https://github.com/daniel-thompson/pinebook-pro-debian-installer
@@ -48,7 +48,7 @@ $ cd pinebook-pro-debian-installer
 <pre><code>$ umount /media/conway/mmcblk0
 </code></pre>
 <h2 id="run"><a class="permalink" href="#run" aria-label="Permalink"></a>Run the installer</h2>
-<pre><code>$ ./install-debian BLKDEV=/dev/mmcblk0
+<pre><code>$ ./install-debian ARCH=armhf BLKDEV=/dev/mmcblk0 RELEASE=buster
 </code></pre>
 <p>
 This installs to the removable SD card slot.
