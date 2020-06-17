@@ -347,7 +347,11 @@ a:hover {
 
 
 li {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.2em;
+}
+
+li > ul {
+  margin: 0.4em 0;
 }
 
 
