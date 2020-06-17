@@ -188,8 +188,8 @@ We <a href="https://unix.stackexchange.com/a/288734">disable this using <code>lo
 <pre><code>$ sudo nano /etc/systemd/logind.conf
 </code></pre>
 <p>
-Change the commented <code>HandlePowerKey=poweroff</code> line
-to <code>HandlePowerKey=ignore</code>.
+Uncomment the <code>HandlePowerKey=poweroff</code> line
+and change it to <code>HandlePowerKey=ignore</code>.
 </p>
 <h2 id="mate"><a class="permalink" href="#mate" aria-label="Permalink"></a>Minimal MATE and LightDM</h2>
 <pre><code>$ sudo apt install mate-desktop-environment-core

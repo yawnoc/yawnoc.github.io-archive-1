@@ -233,8 +233,8 @@ We [disable this using `logind`](https://unix.stackexchange.com/a/288734):
 $ sudo nano /etc/systemd/logind.conf
 ````
 ----
-Change the commented `HandlePowerKey=poweroff` line
-to `HandlePowerKey=ignore`.
+Uncomment the `HandlePowerKey=poweroff` line
+and change it to `HandlePowerKey=ignore`.
 ----
 
 
