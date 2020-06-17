@@ -345,6 +345,37 @@ Note that Pine key is Mod4.
 ----
 
 
+###terminal
+  MATE Terminal
+###
+
+==========
+* Edit \> Profile Preferences
+  ========
+  * [General]
+    ======
+    * Allow bold text: TRUE
+    * Use custom default terminal size: 79 columns, 48 rows
+    ======
+  * [Colours]
+    ======
+    * Use colours from system theme: FALSE
+    * Built-in schemes: White on black
+    ======
+  * [Scrolling]
+    ======
+    * Unlimited: TRUE
+    ======
+  ========
+
+* Edit \> Keyboard Shortcuts
+  ========
+  * Help Contents: Disabled
+    (otherwise F1 won't work in TUI programs, e.g.~`alsamixer`)
+  ========
+
+==========
+
 
 \cite-this-page[][pinebook-pro][
   {Debian} on {Pinebook} {Pro} via {Daniel's} installer
