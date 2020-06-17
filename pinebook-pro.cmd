@@ -377,6 +377,16 @@ Note that Pine key is Mod4.
 ==========
 
 
+##cjk-fonts
+  CJK fonts
+##
+
+````
+$ sudo apt install fonts-noto-cjk
+$ sudo apt install fonts-noto-cjk-extra
+````
+
+
 \cite-this-page[][pinebook-pro][
   {Debian} on {Pinebook} {Pro} via {Daniel's} installer
 ]
