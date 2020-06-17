@@ -113,6 +113,17 @@ until later.
 </table>
 </div>
 </div>
+<h2 id="swap"><a class="permalink" href="#swap" aria-label="Permalink"></a>Disable swap</h2>
+<p>
+Using swap on an SD card is <a href="https://askubuntu.com/a/149683">a bad idea</a>,
+so we <a href="https://serverfault.com/a/684792">remove it</a>.
+</p>
+<pre><code>$ sudo swapoff -a
+$ sudo nano /etc/fstab
+</code></pre>
+<p>
+Comment out the swap line.
+</p>
 <h2 id="terminal-encoding"><a class="permalink" href="#terminal-encoding" aria-label="Permalink"></a>Fix the TTY (terminal) encoding</h2>
 <p>
 For whatever reason,

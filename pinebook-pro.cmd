@@ -123,6 +123,24 @@ until later.
 ||||||
 
 
+##swap
+  Disable swap
+##
+
+----
+Using swap on an SD card is [a bad idea](https://askubuntu.com/a/149683),
+so we [remove it](https://serverfault.com/a/684792).
+----
+
+````
+$ sudo swapoff -a
+$ sudo nano /etc/fstab
+````
+----
+Comment out the swap line.
+----
+
+
 ##terminal-encoding
   Fix the TTY (terminal) encoding
 ##
