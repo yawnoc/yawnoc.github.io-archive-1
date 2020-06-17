@@ -328,6 +328,23 @@ Then reboot.
 ==========
 
 
+###keyboard
+  Keyboard shortcuts
+###
+
+==========
+* Start \> System \> Preferences \> Hardware \> Keyboard Shortcuts
+  ========
+  * Home folder: Pine + H
+  * Run a terminal: Pine + T
+  * Hide all and focus desktop: Pine + D
+  ========
+==========
+----
+Note that Pine key is Mod4.
+----
+
+
 
 \cite-this-page[][pinebook-pro][
   {Debian} on {Pinebook} {Pro} via {Daniel's} installer
