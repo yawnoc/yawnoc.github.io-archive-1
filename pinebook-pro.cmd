@@ -237,6 +237,20 @@ Change the commented `HandlePowerKey=poweroff` line
 to `HandlePowerKey=ignore`.
 ----
 
+
+##mate
+  Minimal MATE and LightDM
+##
+
+````
+$ sudo apt install mate-desktop-environment-core
+$ sudo apt install lightdm
+````
+----
+Then reboot.
+----
+
+
 \cite-this-page[][pinebook-pro][
   {Debian} on {Pinebook} {Pro} via {Daniel's} installer
 ]
