@@ -5,7 +5,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2020-06-15
-  %date-modified 2020-06-17
+  %date-modified 2020-06-18
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -38,7 +38,7 @@ along with subsequent customisations to my own liking.
 Last version I used: [<code>\last-used-commit</code>] [last-used]
 ----
 
-{: \last-used-commit : 5418880e :}
+{: \last-used-commit : cc50809f :}
 @@[last-used]
   https://github.com/daniel-thompson/pinebook-pro-debian-installer/\
     commit/\last-used-commit
@@ -66,7 +66,7 @@ $ umount /media/conway/mmcblk0
 ##
 
 ````
-$ ./install-debian ARCH=armhf BLKDEV=/dev/mmcblk0 RELEASE=buster
+$ ./install-debian BLKDEV=/dev/mmcblk0 RELEASE=buster
 ````
 
 ----

@@ -29,7 +29,7 @@
 <h1>Debian on Pinebook Pro via Daniel's installer</h1>
 <div class="page-properties">
 First created: 2020-06-15<br>
-Last modified: 2020-06-17
+Last modified: 2020-06-18
 </div>
 <p>
 A step-by-step record of
@@ -38,7 +38,7 @@ using <a href="https://github.com/daniel-thompson/pinebook-pro-debian-installer"
 along with subsequent customisations to my own liking.
 </p>
 <p>
-Last version I used: <a href="https://github.com/daniel-thompson/pinebook-pro-debian-installer/commit/5418880e"><code>5418880e</code></a>
+Last version I used: <a href="https://github.com/daniel-thompson/pinebook-pro-debian-installer/commit/cc50809f"><code>cc50809f</code></a>
 </p>
 <h2 id="clone"><a class="permalink" href="#clone" aria-label="Permalink"></a>Clone the installer</h2>
 <pre><code>$ git clone https://github.com/daniel-thompson/pinebook-pro-debian-installer
@@ -48,7 +48,7 @@ $ cd pinebook-pro-debian-installer
 <pre><code>$ umount /media/conway/mmcblk0
 </code></pre>
 <h2 id="run"><a class="permalink" href="#run" aria-label="Permalink"></a>Run the installer</h2>
-<pre><code>$ ./install-debian ARCH=armhf BLKDEV=/dev/mmcblk0 RELEASE=buster
+<pre><code>$ ./install-debian BLKDEV=/dev/mmcblk0 RELEASE=buster
 </code></pre>
 <p>
 This installs to the removable SD card slot.
