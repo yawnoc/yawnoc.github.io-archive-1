@@ -383,6 +383,30 @@ Then reboot.
 ----
 
 
+##cli-essentials
+  Command line essentials
+##
+
+----
+Python~3 was installed along with MATE.
+----
+````
+$ sudo apt install git
+$ sudo apt install w3m
+````
+
+###w3m-options
+  w3m options
+###
+======
+* [Display] Tab width: 2
+* [Miscellaneous Settings] Save URL history: NO
+======
+----
+No cookies appears to be the default now.
+----
+
+
 ##cjk-fonts
   CJK fonts
 ##
