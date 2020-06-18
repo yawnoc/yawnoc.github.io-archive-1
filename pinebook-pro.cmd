@@ -394,17 +394,21 @@ at the start and before the dollar sign.
 $ sudo apt install mate-power-manager
 ````
 
-======
+========
 * Start \> System \> Preferences \> Hardware \> Power Management
-  ====
+  ======
   * [On AC Power] Set display brightness to: 30%
-  * [General] Notification Area: Always display an icon
-  ====
+  * [General]
+    ====
+    * When the power button is pressed: Do nothing
+    * Notification Area: Always display an icon
+    ====
+  ======
 * Add to taskbar and Lock
-  ====
+  ======
   * Notification Area (beside clock)
-  ====
-======
+  ======
+========
 ----
 Then reboot.
 ----
