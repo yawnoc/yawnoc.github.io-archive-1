@@ -289,12 +289,6 @@ Then reboot.
   * Main Menu, which shall henceforth be called Start
   * Workspace Switcher
   * Window List
-    ======
-    * Right Click \> Preferences
-      ====
-      * Hide thumbnails on hover: TRUE
-      ====
-    ======
   * Clock (flush right)
   ========
 
@@ -313,18 +307,6 @@ Then reboot.
   * View \> Reset View to Defaults
   ========
 
-==========
-
-
-###trackpad
-  Trackpad
-###
-
-==========
-* Start \> System \> Preferences \> Hardware \> Mouse
-  ========
-  * [Touchpad] Acceleration: \~70%
-  ========
 ==========
 
 
@@ -355,7 +337,7 @@ Note that Pine key is Mod4.
   * [General]
     ======
     * Allow bold text: TRUE
-    * Use custom default terminal size: 79 columns, 48 rows
+    * Use custom default terminal size: 80 columns, 48 rows
     ======
   * [Colours]
     ======
@@ -383,7 +365,6 @@ Note that Pine key is Mod4.
 
 ````
 $ sudo apt install fonts-noto-cjk
-$ sudo apt install fonts-noto-cjk-extra
 ````
 
 
