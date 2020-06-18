@@ -324,6 +324,20 @@ Note that Pine key is Mod4.
 </ul>
 </li>
 </ul>
+<h2 id="bash"><a class="permalink" href="#bash" aria-label="Permalink"></a>Bash customisation</h2>
+<h3 id="bash-aliases"><a class="permalink" href="#bash-aliases" aria-label="Permalink"></a>Bash aliases</h3>
+<p>
+Add the following to <code>.bash_aliases</code>:
+</p>
+<pre><code>alias grep='grep --color=auto'
+alias gr='grep -E'
+alias py='python3'
+</code></pre>
+<h3 id="bash-prompt"><a class="permalink" href="#bash-prompt" aria-label="Permalink"></a>Bash prompt</h3>
+<p>
+Edit <code>.bashrc</code> and insert newlines in <code>PS1</code>
+at the start and before the dollar sign.
+</p>
 <h2 id="power"><a class="permalink" href="#power" aria-label="Permalink"></a>Power management</h2>
 <pre><code>$ sudo apt install mate-power-manager
 </code></pre>

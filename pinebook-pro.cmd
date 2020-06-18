@@ -359,6 +359,33 @@ Note that Pine key is Mod4.
 ==========
 
 
+##bash
+  Bash customisation
+##
+
+###bash-aliases
+Bash aliases
+###
+
+----
+Add the following to `.bash_aliases`:
+----
+````
+alias grep='grep --color=auto'
+alias gr='grep -E'
+alias py='python3'
+````
+
+###bash-prompt
+Bash prompt
+###
+
+----
+Edit `.bashrc` and insert newlines in `PS1`
+at the start and before the dollar sign.
+----
+
+
 ##power
   Power management
 ##
