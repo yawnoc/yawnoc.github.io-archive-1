@@ -359,6 +359,30 @@ Note that Pine key is Mod4.
 ==========
 
 
+##power
+  Power management
+##
+
+````
+$ sudo apt install mate-power-manager
+````
+
+======
+* Start \> System \> Preferences \> Hardware \> Power Management
+  ====
+  * [On AC Power] Set display brightness to: 30%
+  * [General] Notification Area: Always display an icon
+  ====
+* Add to taskbar and Lock
+  ====
+  * Notification Area (beside clock)
+  ====
+======
+----
+Then reboot.
+----
+
+
 ##cjk-fonts
   CJK fonts
 ##
