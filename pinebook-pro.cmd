@@ -4,7 +4,7 @@
   %title Debian on Pinebook Pro via Daniel's installer
   %title-suffix \title-suffix
   %author Conway
-  %date-created 2020-06-15
+  %date-created 2020-06-21
   %date-modified 2020-06-18
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
@@ -341,8 +341,15 @@ Note that Pine key is Mod4.
     ======
   * [Colours]
     ======
-    * Use colours from system theme: FALSE
-    * Built-in schemes: White on black
+    * Foreground, Background, Bold and Underline
+      ====
+      * Use colours from system theme: FALSE
+      * Built-in schemes: White on black
+      ====
+    * Palette
+      ====
+      * Built-in schemes: Linux console
+      ====
     ======
   * [Scrolling]
     ======
