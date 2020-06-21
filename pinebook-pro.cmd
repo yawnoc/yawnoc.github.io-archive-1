@@ -348,7 +348,7 @@ Note that Pine key is Mod4.
       ====
     * Palette
       ====
-      * Built-in schemes: Linux console
+      * Built-in schemes: XTerm
       ====
     ======
   * [Scrolling]
