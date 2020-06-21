@@ -4,8 +4,8 @@
   %title Debian on Pinebook Pro via Daniel's installer
   %title-suffix \title-suffix
   %author Conway
-  %date-created 2020-06-21
-  %date-modified 2020-06-18
+  %date-created 2020-06-15
+  %date-modified 2020-06-21
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
