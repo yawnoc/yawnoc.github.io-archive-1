@@ -68,7 +68,7 @@
     ----
     Conway~(%year-modified).
     \g<text_title>.
-    \\<https://yawnoc.github.io/%url\\>
+    \\<https://yawnoc.github.io/%clean-url\\>
     Accessed~<span class="js-date">yyyy-mm-dd</span>.
     ----
   
@@ -78,7 +78,7 @@
       \/  author = {Conway},
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
-      \/  howpublished = {\\url{https://yawnoc.github.io/%url}},
+      \/  howpublished = {\\url{https://yawnoc.github.io/%clean-url}},
       \/  note = {Accessed\\~<span class="js-date">yyyy-mm-dd</span>},
       \/}
     </code></pre>
@@ -89,7 +89,7 @@
       \/  author = {Conway},
       \/  year = {%year-modified},
       \/  title = {\g<tex_title>},
-      \/  url = {https://yawnoc.github.io/%url},
+      \/  url = {https://yawnoc.github.io/%clean-url},
       \/  urldate = {<span class="js-date">yyyy-mm-dd</span>},
       \/}
     </code></pre>
