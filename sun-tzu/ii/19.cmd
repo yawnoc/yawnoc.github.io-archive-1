@@ -18,7 +18,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-18
+  %date-modified 2020-06-23
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -153,7 +153,7 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
 ||
   Now there be area,
   twenty-three myriad, four thousand, five hundred .[and] sixty-seven paces.
-  .[We] ask: be .[this a] square .[of edge] how much?
+  .[We] ask: how much .[by edge] be .[this a] square?
 >>
 
 
