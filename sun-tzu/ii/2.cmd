@@ -13,7 +13,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-06-23
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -72,7 +72,7 @@ Chinese source text: \a[26], \b[153], \c[52133], \d[39]. \+
   答曰：一十五分之一十一。
 ||
   Now there be one of three shares .[and] two of five shares.
-  .[We] ask: how much resulteth, .[upon] joining them two? \+
+  .[We] ask: joining them two resulteth in how much? \+
   Answer saith: eleven of fifteen shares.
 >>
 ====

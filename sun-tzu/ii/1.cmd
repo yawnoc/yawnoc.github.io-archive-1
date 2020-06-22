@@ -14,7 +14,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-06-23
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -74,7 +74,7 @@ Chinese source text: \a[26], \b[153], \c[52130], \d[39]. \+
   答曰：三分之二。
 ||
   Now there be twelve eighteenths.
-  .[We] ask: how much resulteth, .[upon] reducing it? \+
+  .[We] ask: reducing it resulteth in how much? \+
   Answer saith: two thirds.
 >>
 ====
@@ -172,7 +172,7 @@ of \sun-tzu's Computational Classic:
   答曰：三分之二。
 ||
   Now there be twelve eighteenths.
-  .[We] ask: how much resulteth, .[upon] reducing it? \+
+  .[We] ask: reducing it resulteth in how much? \+
   Answer saith: two thirds.
 >>
 
@@ -181,7 +181,7 @@ of \sun-tzu's Computational Classic:
   答曰：十三分之七。
 ||
   Also there be forty-nine ninety-firsts.
-  .[We] ask: how much resulteth, .[upon] reducing it? \+
+  .[We] ask: reducing it resulteth in how much? \+
   Answer saith: seven thirteenths.
 >>
 

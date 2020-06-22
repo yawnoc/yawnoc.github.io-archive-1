@@ -15,7 +15,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-14
+  %date-modified 2020-06-23
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -75,8 +75,8 @@ Chinese source text: \a[28], \b[153], \c[52139], \d[41]. \+
 ||
   Now there be one of three shares,
   two of three shares .[and] three of four shares.
-  .[We] ask: how much .[shall we] diminish .[the] greater
-  .[to] benefit .[the] lesser, that .[they be] level?
+  .[We] ask: .[in] diminishing .[the] greater .[to] benefit .[the] lesser,
+  how much that .[they be] level?
 >>
 ====
 * <span lang="zh-Hant">$b$ ~~分之~~ $a$</span>:
