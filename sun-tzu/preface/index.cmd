@@ -88,7 +88,7 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   天地之經緯，群生之元首；
 ||
   .[the] warp .[and] woof of Heaven .[and] Earth,
-  .[and the] origin .[and] beginning of .[the] living masses;
+  .[and the] origin .[and] beginning of amassed life;
 >>
 ====
 * From this line until almost the end of the preface,
@@ -105,11 +105,11 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
 <<
   五常之本末，陰陽之父母；
 ||
-  .[the] beginning .[and] end of .[the] Five Everlasting Virtues,
+  .[the] beginning .[and] end of .[the] Five Everlasting .[Virtues],
   .[and the] father .[and] mother of Yin .[and] Yang;
 >>
 ====
-* 五常： .[the] Five Everlasting Virtues \+
+* 五常： .[the] Five Everlasting .[Virtues] \+
   [仁義禮智信](https://ctext.org/three-character-classic#n90581),
   i.e.~Humanity, Righteousness, Propriety (or Rites), Wisdom and Trust.
 
@@ -341,18 +341,12 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
 ||
   those who .[are] open-minded, .[even as] young children,
     .[shall] immediately comprehend .[it],
-  .[but] those who .[are] close-minded,
+  .[but] those who .[are] closed-minded,
     .[even with a] bright white head .[of hair],
     .[shall find it] hard to .[be] proficient .[in it].
 >>
 ====
 * 沖：童也； children
-
-* 意閉： close-minded \+
-  This is the literal rendering;
-  perhaps "narrow-minded" sounds more natural.
-  I have translated both 心 and 意 as
-  <span class="no-wrapping">"-minded"</span>.
 
 * 皓：光也；白也； bright white \+
   皓，音號， \C hou6, \M h(a\)o
