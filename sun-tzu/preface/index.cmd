@@ -196,7 +196,7 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
 
 * 迭：更也； alternating
 
-* 步： measureth (in steps)
+* 步： measureth (in paces)
 ====
 
 <<
