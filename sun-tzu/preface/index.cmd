@@ -13,7 +13,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-06-24
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -106,7 +106,7 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   五常之本末，陰陽之父母；
 ||
   .[the] beginning .[and] end of .[the] Five Everlasting Virtues,
-  .[and the] father .[and] mother of Dark .[and] Light;
+  .[and the] father .[and] mother of Yin .[and] Yang;
 >>
 ====
 * 五常： .[the] Five Everlasting Virtues \+
@@ -114,9 +114,6 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   i.e.~Humanity, Righteousness, Propriety (or Rites), Wisdom and Trust.
 
 * 本末： .[the] beginning .[and] end; \or .[the] base .[and] tip
-
-* 陰陽： Dark .[and] Light; \or Shade .[and] Sun; \or Female .[and] Male \+
-  ["Yin and Yang"](https://en.wikipedia.org/wiki/Yin_and_yang).
 ====
 
 <<
@@ -169,7 +166,7 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   稽群倫之聚散，考二氣之降升；
 ||
   .[It] examineth .[the] gathering .[and] dispersion of .[the] amassed kinds,
-  .[and] inspecteth .[the] falling .[and] rising of .[the] Two Breaths;
+  .[and] inspecteth .[the] falling .[and] rising of .[the] Two Forces;
 >>
 ====
 * 稽：考也； examineth
@@ -178,8 +175,8 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
 
 * 倫： kinds; \or types
 
-* 二氣： .[the] Two Breaths \+
-  陰氣 and 陽氣.
+* 二氣： .[the] Two Forces; \lit .[the] Two Breaths \+
+  陰氣, "Yin Force", and 陽氣, "Yang Force".
   Recall 陰 and 陽 are
   "Dark .[and] Light", "Shade .[and] Sun", or "Female .[and] Male".
   [氣](https://en.wikipedia.org/wiki/Qi)

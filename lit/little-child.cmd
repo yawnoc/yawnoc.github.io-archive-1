@@ -14,7 +14,7 @@
   %title-en "Q~.[\&]~A .[with] Confucius: .[the] Little Child's Discourse"
   %author Conway
   %date-created 2019-04-07
-  %date-modified 2020-06-07
+  %date-modified 2020-06-24
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -646,18 +646,10 @@ see [the actual first page of the almanac text][almanac text].
 ||
   Confucius asked, saying,
     Knowest thou .[the] principle .[and the] law of Heaven .[and] Earth,
-    .[and the] beginning .[and the] end of Dark .[and] Light?
+    .[and the] beginning .[and the] end of Yin .[and] Yang?
 >>
 ====
 * 綱： principle; \or crux
-
-* 陰陽：
-  Dark .[and] Light;
-  \or Shade .[and] Sun;
-  \or Female .[and] Male \+
-  Usually rendered ["yin .[and] yang"](
-    https://en.wikipedia.org/wiki/Yin_and_yang
-  ).
 ====
 
 <<
@@ -699,7 +691,7 @@ see [the actual first page of the almanac text][almanac text].
     Nine nines return eighty-one:
       this .[be] .[the] principle .[and the] law of Heaven .[and] Earth.
     .[And] eight nines seventy-two:
-      this .[be the] beginning .[and the] end of Dark .[and] Light.
+      this .[be the] beginning .[and the] end of Yin .[and] Yang.
 >>
 ====
 * There is a whole genre of stuff like this i.e.~divination, numerology etc.
