@@ -14,7 +14,7 @@
   %title-en "Q~.[\&]~A .[with] Confucius: .[the] Little Child's Discourse"
   %author Conway
   %date-created 2019-04-07
-  %date-modified 2020-06-24
+  %date-modified 2020-06-25
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -702,7 +702,7 @@ see [the actual first page of the almanac text][almanac text].
     Heaven .[is] first, Earth second .[and] Man third.
     .[Now] three threes .[are] then nine, .[and] nine nines eighty-one.
     One governeth .[the] sun, .[and the] sun .[hath] number ten;
-    therefore humans .[are] born of .[a term of] ten months.
+    therefore man .[is] born of .[a term of] ten months.
   >>
   (Presumably "months" are 28-day months,
   so that ten months make forty weeks, a full term.)
