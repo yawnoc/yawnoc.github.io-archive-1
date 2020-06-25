@@ -14,6 +14,7 @@
 
 [[====
 * \header-link:home
+* \header-link:top
 * \header-link:cite
 ====]]
 
