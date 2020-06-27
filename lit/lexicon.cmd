@@ -64,6 +64,48 @@ Radical \> Strokes \> First residual stroke \> Simplified \
 @@
 
 
+
+##index
+  Radical index
+##
+
+<!--
+  Anchor id for...
+  * Radical         : {Unicode English radical name}
+  * Radical-stroke  : {Unicode English radical name}-{number of strokes}
+  * Character       : {Chinese character}
+-->
+
+----
+See also: [Unihan Radical-Stroke Index][unihan]
+----
+@@[unihan]
+  https://www.unicode.org/charts/unihanrsindex.html
+@@
+
+[====
+* [⽝](#dog)
+====]
+
+
+##dog
+  ⽝ (dog)
+##
+
+
+###dog-5
+  ⽝ + 5
+###
+
+####~~狐~~
+  狐 `U+72D0`
+####
+
+====
+* fox
+====
+
+
 \cite-this-page[
   %title
 ][
