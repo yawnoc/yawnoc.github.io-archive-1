@@ -48,9 +48,10 @@ for the entries are not indexed to my translations.
 ----
 Sorting Chinese characters is a nightmare.
 [K'ang-hi's dictionary][康熙] uses radical-stroke,
-but I have no idea how sorting works amongst characters
-with the *same* radical \& number of strokes.
+but amongst characters with the *same* radical \& number of strokes
+the ordering appears to be completely arbitrary.
 Here I use [Unicode's sorting algorithm][sorting-algorithm],
+which assigns each character a collation key by
 Radical \> Strokes \> First residual stroke \> Simplified \
   \> Block \> Code point.
 ----
