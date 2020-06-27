@@ -5,7 +5,7 @@
   %title-suffix \title-suffix
   %author Conway
   %date-created 2020-06-15
-  %date-modified 2020-06-21
+  %date-modified 2020-06-27
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
     (+ resources/inclusions/preamble/rendering.cmd +)
@@ -338,6 +338,7 @@ Note that Pine key is Mod4.
   * [General]
     ======
     * Allow bold text: TRUE
+    * Terminal bell: FALSE
     * Use custom default terminal size: 80 columns, 48 rows
     ======
   * [Colours]
