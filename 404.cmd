@@ -2,7 +2,7 @@
 
 %%
   %title Page not found
-  %title-suffix \title-suffix
+  %author <!-- no one -->
   %resources
     (+ resources/inclusions/preamble/main.cmd +)
   %css a~~

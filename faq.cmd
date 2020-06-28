@@ -9,8 +9,6 @@
 
 %%
   %title FAQ
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-08-01
   %date-modified 2020-06-07
   %resources

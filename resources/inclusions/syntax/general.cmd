@@ -9,11 +9,24 @@
 
 <!--
   ----------------------------------------------------------------
-  Title suffix
+  Preamble defaults
   ----------------------------------------------------------------
 -->
 
-{: \title-suffix : \\ | Conway's site :}
+{%%
+  ^
+  (?P<percent_signs> [%]{2,} )
+    \n
+    (?P<content> [\s\S]*? )
+  ^
+  (?P=percent_signs)
+%%
+  \g<percent_signs>
+    %author Conway
+    %title-suffix \\ | Conway's site
+    \g<content>
+  \g<percent_signs>
+%%}
 
 
 

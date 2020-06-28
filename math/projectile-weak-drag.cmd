@@ -5,8 +5,6 @@
 
 %%
   %title Projectile motion: optimal launch angle for weak quadratic drag
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-06-21
   %date-modified 2020-06-10
   %resources

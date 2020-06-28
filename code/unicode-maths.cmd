@@ -2,8 +2,6 @@
 
 %%
   %title Unicode mathematical symbols
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-03-30
   %date-modified 2020-04-25
   %resources

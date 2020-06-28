@@ -7,8 +7,6 @@
 
 %%
   %title Daytime: dependence on latitude and season
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-07-12
   %date-modified 2020-04-28
   %resources

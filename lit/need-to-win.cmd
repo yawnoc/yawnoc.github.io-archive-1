@@ -8,8 +8,6 @@
 
 %%
   %title "The Need to Win"
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-04-15
   %date-modified 2020-06-07
   %resources

@@ -2,8 +2,6 @@
 
 %%
   %title Debian on Pinebook Pro via Daniel's installer
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2020-06-15
   %date-modified 2020-06-27
   %resources

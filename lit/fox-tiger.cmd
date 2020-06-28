@@ -8,9 +8,7 @@
 
 %%
   %title ~~ "The Fox Feigneth the Tiger's Authority" 《狐假虎威》 ~~
-  %title-suffix \title-suffix
   %title-en ".[The] Fox Feigneth .[the] Tiger's Authority"
-  %author Conway
   %date-created 2019-04-07
   %date-modified 2020-06-07
   %resources

@@ -5,8 +5,6 @@
 
 %%
   %title Projectile motion: optimal launch angle from a platform
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-04-13
   %date-modified 2020-04-26
   %resources

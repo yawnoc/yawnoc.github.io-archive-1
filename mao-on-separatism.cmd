@@ -7,8 +7,6 @@
 
 %%
   %title Mao on separatism: 27~Chinas
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-09-24
   %date-modified 2020-06-02
   %resources
