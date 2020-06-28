@@ -25,6 +25,7 @@ https://yawnoc.github.io/mao-on-separatism
 https://yawnoc.github.io/math/daytime
 https://yawnoc.github.io/math/projectile-platform
 https://yawnoc.github.io/math/projectile-weak-drag
+https://yawnoc.github.io/pinebook-pro
 https://yawnoc.github.io/sun-tzu/
 https://yawnoc.github.io/sun-tzu/code/animations
 https://yawnoc.github.io/sun-tzu/i/
