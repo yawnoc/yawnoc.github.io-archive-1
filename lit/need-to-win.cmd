@@ -263,7 +263,7 @@ The Chinese source text is from Chinese Text Project:
   ======
   * [《南華真經\.郭象註》](
       https://ctext.org/library.pl?if=en&file=77894&page=11\
-        \#box\(118,678,50,70\)
+        #box\(118,678,50,70\)
     ),
     "Nan-hua True Classics: Kuo Siang's annotations":
     <<
@@ -303,7 +303,7 @@ The Chinese source text is from Chinese Text Project:
   ======
   * [《南華真經註疏》](
       https://ctext.org/library.pl?if=en&file=88939&page=20\
-        \#box\(196,822,42,46\)
+        #box\(196,822,42,46\)
     ),
     "Nan-hua True Classics annotations .[and] further-commentary"
     <<
@@ -314,7 +314,7 @@ The Chinese source text is from Chinese Text Project:
   
   * [《莊子注》](
       https://ctext.org/library.pl?if=en&file=53877&page=10\
-        \#box\(500,472,38,48\)
+        #box\(500,472,38,48\)
     ),
     "Chuang Tz(uu) annotations" by Kuo Siang ((郭象))
     <<

@@ -131,7 +131,7 @@ to revise and type up all of it up in web (HTML) format.
 ----
 
 @@[manuscript]
-  \#translation-manuscript
+  #translation-manuscript
 @@
 
 
