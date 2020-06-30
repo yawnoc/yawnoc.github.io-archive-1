@@ -45,7 +45,7 @@
   
   * Simple delimiters
       [c/ /] where c is a lower-case letter
-      [: :]
+      [: :] defined per document (use flag later than i)
   * Double U+2014 EM DASH
       ——
   * Double U+2026 HORIZONTAL ELLIPSIS
@@ -57,7 +57,7 @@
   
 -->
 
-{%
+i{%
   (
     ( \[ [a-z] / ) ?
     ( \[: ) ?
@@ -87,6 +87,6 @@
 
 <!-- U+30FB KATAKANA MIDDLE DOT -->
 
-{: \. : ・ :}
+i{: \. : ・ :}
 
 
