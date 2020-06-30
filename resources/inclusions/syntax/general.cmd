@@ -36,8 +36,10 @@ p{%%
   ----------------------------------------------------------------
 -->
 
-{:: \noscript:maths ::
-  <noscript>Enable JavaScript for equation rendering to work.</noscript>
+Z{:: \noscript:maths ::
+  a~~
+    <noscript>Enable JavaScript for equation rendering to work.</noscript>
+  ~~
 ::}
 
 
