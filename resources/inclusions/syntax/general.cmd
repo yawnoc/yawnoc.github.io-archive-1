@@ -126,7 +126,7 @@ p{%
 
 <!-- Empty content -->
 
-{%
+p{%
   ^
   \[
   (?P<pipes> [|]{4} )
@@ -141,7 +141,7 @@ p{%
 
 <!-- Non-empty content (requires line break) -->
 
-{%
+p{%
   ^
   \[
   (?P<pipes> [|]{4} )
@@ -158,7 +158,7 @@ p{%
 
 <!-- Dates -->
 
-{: \page-property-dates :
+p{: \page-property-dates :
   First created: %date-created \\+
   Last modified: %date-modified
 :}
