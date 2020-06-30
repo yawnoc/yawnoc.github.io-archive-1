@@ -52,14 +52,14 @@ Z{:: \noscript:maths ::
 
 <!-- Default [text title] to [%title] -->
 
-{%
+p{%
   \\cite[-]this[-]page
   \[ \]
 %
   \\cite-this-page[%title]
 %}
 
-{%
+p{%
   \\cite[-]this[-]page
   \[
     [\s]*
@@ -171,7 +171,7 @@ Z{:: \noscript:maths ::
   ----------------------------------------------------------------
 -->
 
-{%
+c{%
   ^
   (?P<hashes> [#]{2,6} (?![#]) )
     (?P<id_> [\S]+? )
