@@ -171,18 +171,13 @@ p{: \page-property-dates :
   ----------------------------------------------------------------
 -->
 
-c{%
-  ^
-  (?P<hashes> [#]{2,6} (?![#]) )
-    (?P<id_> [\S]+? )
-  [\s]+
-    (?P<content> [\s\S]*? )
-  (?P=hashes)
+s{%
+  <h[2-6]
+    [ ]
+    id = " (?P<id_> [^"]+? ) "
+  >
 %
-  \g<hashes>\g<id_>
-    <a class="permalink" href="#\g<id_>" aria-label="Permalink"></a>\\
-    \g<content>
-  \g<hashes>
+  \g<0><a class="permalink" href="#\g<id_>" aria-label="Permalink"></a>
 %}
 
 
