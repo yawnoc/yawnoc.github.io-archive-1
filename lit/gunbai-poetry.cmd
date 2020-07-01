@@ -50,7 +50,7 @@
 ||||]
 
 <!-- Japanese declaration [ja/ /] -->
-{%
+l{%
   \[ja
     /
       (?P<content> [\s\S]*? )

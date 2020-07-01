@@ -13,7 +13,7 @@
   ----------------------------------------------------------------
 -->
 
-{%%
+p{%%
   ^
   (?P<percent_signs> [%]{2,} )
     \n
@@ -36,8 +36,10 @@
   ----------------------------------------------------------------
 -->
 
-{:: \noscript:maths ::
-  <noscript>Enable JavaScript for equation rendering to work.</noscript>
+Z{:: \noscript:maths ::
+  a~~
+    <noscript>Enable JavaScript for equation rendering to work.</noscript>
+  ~~
 ::}
 
 
@@ -50,14 +52,14 @@
 
 <!-- Default [text title] to [%title] -->
 
-{%
+p{%
   \\cite[-]this[-]page
   \[ \]
 %
   \\cite-this-page[%title]
 %}
 
-{%
+p{%
   \\cite[-]this[-]page
   \[
     [\s]*
@@ -124,7 +126,7 @@
 
 <!-- Empty content -->
 
-{%
+p{%
   ^
   \[
   (?P<pipes> [|]{4} )
@@ -139,7 +141,7 @@
 
 <!-- Non-empty content (requires line break) -->
 
-{%
+p{%
   ^
   \[
   (?P<pipes> [|]{4} )
@@ -156,7 +158,7 @@
 
 <!-- Dates -->
 
-{: \page-property-dates :
+p{: \page-property-dates :
   First created: %date-created \\+
   Last modified: %date-modified
 :}
@@ -169,18 +171,13 @@
   ----------------------------------------------------------------
 -->
 
-{%
-  ^
-  (?P<hashes> [#]{2,6} (?![#]) )
-    (?P<id_> [\S]+? )
-  [\s]+
-    (?P<content> [\s\S]*? )
-  (?P=hashes)
+s{%
+  <h[2-6]
+    [ ]
+    id = " (?P<id_> [^"]+? ) "
+  >
 %
-  \g<hashes>\g<id_>
-    <a class="permalink" href="#\g<id_>" aria-label="Permalink"></a>\\
-    \g<content>
-  \g<hashes>
+  \g<0><a class="permalink" href="#\g<id_>" aria-label="Permalink"></a>
 %}
 
 
@@ -190,14 +187,14 @@
   ----------------------------------------------------------------
 -->
 
-{:: \header-link-here:home :: [Home](\/ You are on the Home page) ::}
-{:: \header-link:home :: [Home](/ Home page) ::}
-{:: \header-link:top :: [Top](# Jump back to top) ::}
-{:: \header-link:translation :: [Translation](#translation Translation) ::}
-{:: \header-link:result :: [Result](#result Jump to result) ::}
-{:: \header-link:cite :: [Cite](#cite Cite this page) ::}
-{:: \header-link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
-{:: \header-link:sun-tzu ::
+A{:: \header-link-here:home :: [Home](\/ You are on the Home page) ::}
+A{:: \header-link:home :: [Home](/ Home page) ::}
+A{:: \header-link:top :: [Top](# Jump back to top) ::}
+A{:: \header-link:translation :: [Translation](#translation Translation) ::}
+A{:: \header-link:result :: [Result](#result Jump to result) ::}
+A{:: \header-link:cite :: [Cite](#cite Cite this page) ::}
+A{:: \header-link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
+A{:: \header-link:sun-tzu ::
   [\\sun-tzu] ["" \\sun-tzu's Computational Classic]
 ::}
 
@@ -210,7 +207,7 @@
 
 <!-- Inside header [[==== ====]] -->
 
-{%
+b{%
   ^
   \[{2}
   (?P<equals_signs> [=]{4} )
@@ -230,7 +227,7 @@
 
 <!-- Not inside header [==== ====] -->
 
-{%
+b{%
   ^
   \[
   (?P<equals_signs> [=]{4} )

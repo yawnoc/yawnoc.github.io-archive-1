@@ -1,20 +1,10 @@
 <!--
-  ================================================================
-  Load
-    BEFORE chinese-lang.cmd
-    AFTER  general.cmd
-  ================================================================
--->
-
-
-
-<!--
   ----------------------------------------------------------------
   Sun Tzu navigation-bar breadcrumb link list item  *>
   ----------------------------------------------------------------
 -->
 
-{: *> : *{breadcrumb} :}
+b{: *> : *{breadcrumb} :}
 
 
 
@@ -30,7 +20,7 @@
 
 <!-- Surrounds navigation {{{{| |}}}}  -->
 
-{%
+b{%
   \{{4}
     [|]
     (?P<content> [\s\S]*? )
@@ -44,7 +34,7 @@
 
 <!-- Adjacent row  {{| |}}  -->
 
-{%
+b{%
   \{{2}
     [|]
     (?P<content> [\s\S]*? )
@@ -58,7 +48,7 @@
 
 <!-- Current location in container  \nav-curr: {text} -->
 
-{%
+b{%
   \\nav[-]curr: [ ] (?P<text> [^\n]* )
 %
   ||||{current}
@@ -68,7 +58,7 @@
 
 <!-- Up link in container  \nav-up: {text} : {href_spec}  -->
 
-{%
+b{%
   \\nav[-]up:
     [ ]
       (?P<text> [\s\S]*? )
@@ -84,7 +74,7 @@
 
 <!-- Previous link in container  \nav-prev: {text} : {href_spec}  -->
 
-{%
+b{%
   \\nav[-]prev:
     [ ]
       (?P<text> [\s\S]*? )
@@ -100,7 +90,7 @@
 
 <!-- Next link in container  \nav-next: {text} : {href_spec}  -->
 
-{%
+b{%
   \\nav[-]next:
     [ ]
       (?P<text> [\s\S]*? )
@@ -124,7 +114,7 @@
 
 <!-- Version A  \a[p] -->
 
-{%
+e{%
   \\a \[ (?P<p> [0-9]+ ) \]
 %
   [Version~A](https://archive.org/details/02094034.cn/page/n\g<p>)
@@ -132,7 +122,7 @@
 
 <!-- Version B  \b[p] -->
 
-{%
+e{%
   \\b \[ (?P<p> [0-9]+ ) \]
 %
   [Version~B](
@@ -146,7 +136,7 @@
 
 <!-- Version C  \c[p] -->
 
-{%
+e{%
   \\c \[ (?P<p> [0-9]+ ) \]
 %
   [Version~C](https://ctext.org/sunzi-suan-jing#n\g<p>)
@@ -154,7 +144,7 @@
 
 <!-- Version D  \d[p] -->
 
-{%
+e{%
   \\d \[ (?P<p> [0-9]+ ) \]
 %
   [Version~D](https://ctext.org/library.pl?if=en&file=86926&page=\g<p>)
@@ -162,7 +152,7 @@
 
 <!-- Default to Version D \d-default -->
 
-{:
+e{:
   \d-default
 :
   Unless noted otherwise, I follow the text from Version~D, 《知不足齋叢書》本.
@@ -179,7 +169,7 @@
 
 <!-- Index  [""] -->
 
-{%
+l{%
   [ ]?
   \[
     ""
@@ -192,7 +182,7 @@
 
 <!-- Volume v  ["v"] -->
 
-{%
+l{%
   [ ]?
   \[
     "p"
@@ -202,7 +192,7 @@
   (/sun-tzu/preface/ \g<title>)
 %}
 
-{%
+l{%
   [ ]?
   \[
     " (?P<volume> [i] {1,3} ) "
@@ -215,7 +205,7 @@
 
 <!-- Volume v Paragraph p  ["v p"] -->
 
-{%
+l{%
   [ ]?
   \[
     "

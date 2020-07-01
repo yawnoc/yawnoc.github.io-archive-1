@@ -187,7 +187,7 @@ The inserted punctuation is my own.
   
   <!-- 平仄 -->
   
-  {%
+  Z{%
     \[ l
       /
         (?P<content> [\S]*? )
@@ -197,7 +197,7 @@ The inserted punctuation is my own.
     <span class="level-tone">\g<content></span>
   %}
   
-  {%
+  Z{%
     \[ s
       /
         (?P<content> [\S]*? )

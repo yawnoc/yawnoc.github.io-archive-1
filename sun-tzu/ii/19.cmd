@@ -103,10 +103,10 @@ along with a pseudocode summary in the [Extended commentary](#commentary).
   \svg-style:stroke-colour-rulesets
 /]
 
-{: \step : class="step" :}
-{: \border : class="border" :}
+s{: \step : class="step" :}
+s{: \border : class="border" :}
 
-{%
+w{%
   \\maths
     [-](?P<type> italic | regular)
     [-](?P<colour_letter> [rgbv] )
@@ -114,18 +114,18 @@ along with a pseudocode summary in the [Extended commentary](#commentary).
   class="maths-\g<type> colour-\g<colour_letter>"
 %}
 
-{%
+w{%
   \\(?P<colour_letter> [rgbv] )
 %
   class="colour-\g<colour_letter>"
 %}
 
-{: \maths-italic : class="maths-italic" :}
+w{: \maths-italic : class="maths-italic" :}
 
-{:: \font-size:subscript :: font-size="0.5" ::}
-{:: \font-size:normal :: font-size="0.8" ::}
+w{:: \font-size:subscript :: font-size="0.5" ::}
+w{:: \font-size:normal :: font-size="0.8" ::}
 
-{: \arrowhead : marker-end="url(#arrowhead)" :}
+w{: \arrowhead : marker-end="url(#arrowhead)" :}
 
 <!--
   For the square root algorithm SVGs:
@@ -1697,7 +1697,7 @@ proceeds thus:
 
 
 <!-- Keyword [. .] -->
-{%
+w{%
   \[ [.]
     [ ]
     (?P<content> [\S]*? )

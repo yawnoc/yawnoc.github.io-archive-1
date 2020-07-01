@@ -1,13 +1,4 @@
 <!--
-  ================================================================
-  Load
-    AFTER chinese-lang.cmd
-  ================================================================
--->
-
-
-
-<!--
   ----------------------------------------------------------------
   Bracketed original Chinese after romanisations  (( ))
   ----------------------------------------------------------------
@@ -15,13 +6,13 @@
   Note that the brackets are not a part of the HTML,
   but are added cosmetically via CSS and are therefore not selectable.
   Replaces
-    {leading whitespace} ((<span lang="zh-Hant">{content}</span>))
+    {single space} ((<span lang="zh-Hant">{content}</span>))
   with
-    ~<span lang="zh-Hant" class="original-chinese">{content}</span>
+    &nbsp;<span lang="zh-Hant" class="original-chinese">{content}</span>
   so that the match must be split before the first >.
 -->
 
-{%
+Z{%
   [ ]
   \(\(
     (?P<match_portion_1>
@@ -34,7 +25,7 @@
     )
   \)\)
 %
-  ~\g<match_portion_1> class="original-chinese"\g<match_portion_2>
+  &nbsp;\g<match_portion_1> class="original-chinese"\g<match_portion_2>
 %}
 
 
