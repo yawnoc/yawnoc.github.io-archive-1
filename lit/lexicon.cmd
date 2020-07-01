@@ -67,7 +67,7 @@
 
 <## Character entry heading  \char {character} {code point} ##>
 
-h{%
+l{%
   \\char
     [ ] (?P<character> \S )
     [ ] (?P<code_point> [0-9A-F]+ )
@@ -75,6 +75,9 @@ h{%
   ###\g<character>
     \g<character> <span class="code-point">U+\g<code_point></span>
   ###
+  @@[\g<character>]
+    #\g<character>
+  @@
 %}
 
 
