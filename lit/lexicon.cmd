@@ -74,6 +74,18 @@ Radical \> Strokes \> First residual stroke \> Simplified \
   * Character       : {Chinese character}
 -->
 
+<!-- Character entry heading  \char {character} {code point} -->
+
+h{%
+  \\char
+    [ ] (?P<character> \S )
+    [ ] (?P<code_point> [0-9A-F]+ )
+%
+  ####\g<character>
+    \g<character> <code>U+\g<code_point></code>
+  ####
+%}
+
 ----
 See also: [Unihan Radical-Stroke Index][unihan]
 ----
@@ -95,9 +107,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
   ⽝ + 5
 ###
 
-####狐
-  狐 `U+72D0`
-####
+\char 狐 72D0
 
 ====
 * fox
