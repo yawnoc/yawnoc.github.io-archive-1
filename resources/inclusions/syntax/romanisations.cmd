@@ -42,7 +42,7 @@ p{% \\nc [ ] % Nominally-Communist 統讀:~ %}
 
 <!-- Pre-merger initials [^ ] -->
 
-{%
+l{%
   \[
   [\^]
     (?P<content> [^_]*? )
@@ -53,7 +53,7 @@ p{% \\nc [ ] % Nominally-Communist 統讀:~ %}
 
 <!-- Post-merger initials [_ ] -->
 
-{%
+l{%
   \[
   [_]
     (?P<content> [^_]*? )
