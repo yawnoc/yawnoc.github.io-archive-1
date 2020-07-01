@@ -11,6 +11,13 @@
     {+ resources/inclusions/preamble/rendering.cmd +}
   %description
     Conway's Lexicon for translating Literary Chinese into English.
+  %css a~~
+    .tone {
+      background: black;
+      color: white;
+      padding: 0.13em;
+    }
+  ~~
 %%
 
 
@@ -32,6 +39,7 @@
 <## Radical index ##>
 
 [====
+* [⼈](#man)
 * [⽝](#dog)
 ====]
 
@@ -42,6 +50,7 @@
   * Radical-stroke  : {Unicode English radical name}-{number of strokes}
   * Character       : {Chinese character}
 ##>
+
 
 <## Character entry heading  \char {character} {code point} ##>
 
@@ -55,6 +64,16 @@ h{%
   ####
 %}
 
+
+<## Tone spans  [tone]  ##>
+
+{%
+  \[
+    (?P<tone> [陰陽平上去入聲]+ )
+  \]
+%
+  <span class="tone">\g<tone></span>
+%}
 
 
 ----
@@ -98,17 +117,34 @@ See also: [Unihan Radical-Stroke Index][unihan]
 @@
 
 
+##man
+  ⼈ (man)
+##
+
+###man-9        ⼈ + 9           ###
+
+\char 假 5047
+======
+* [上聲]
+  ====
+  * fake; false
+  * borrow; feign; falsely assume
+  * if; suppose
+  ====
+* [去聲]
+  ====
+  * rest; holiday
+  ====
+======
+
+
 ##dog
   ⽝ (dog)
 ##
 
-
-###dog-5
-  ⽝ + 5
-###
+###dog-5        ⽝ + 5           ###
 
 \char 狐 72D0
-
 ====
 * fox
 ====
