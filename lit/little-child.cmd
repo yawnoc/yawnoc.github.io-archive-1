@@ -10,9 +10,7 @@
   %title ~~
     "Q & A with Confucius: the Little Child's Discourse" 《孔子問答：小兒論》
   ~~
-  %title-suffix \title-suffix
   %title-en "Q~.[\&]~A .[with] Confucius: .[the] Little Child's Discourse"
-  %author Conway
   %date-created 2019-04-07
   %date-modified 2020-06-25
   %resources

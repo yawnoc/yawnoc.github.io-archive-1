@@ -2,8 +2,6 @@
 
 %%
   %title Strikethrough formatter
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2020-03-02
   %date-modified 2020-04-25
   %resources

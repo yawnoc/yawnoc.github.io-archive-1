@@ -3,8 +3,6 @@
 
 %%
   %title A cynic's 7.30: \short-title
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2020-03-14
   %date-modified 2020-03-14
   %resources

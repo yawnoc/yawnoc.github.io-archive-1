@@ -10,8 +10,6 @@
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~II" ~~《孫子算經・卷中》~~ \P16
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-06-09
   %date-modified 2020-05-13
   %resources

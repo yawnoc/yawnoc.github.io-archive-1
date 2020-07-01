@@ -7,8 +7,6 @@
 
 %%
   %title Mao on separatism: 27~Chinas
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-09-24
   %date-modified 2020-06-02
   %resources
@@ -61,7 +59,7 @@ as the second appears to have many transcription errors:
 ----
 
 <!-- Simplified Chinese declaration [simp/ /] -->
-{%
+Z{%
   \[
   simp/
     (?P<content> [\S]*? )
@@ -153,7 +151,7 @@ And who now forbids any mention of self-determination or independence?
 [:Red emphasis:] is mine, but remember, they are Mao's words:
 ----
 
-{%
+Z{%
   \[ [:]
   (?P<content> [\s\S]*? )
   [:] \]

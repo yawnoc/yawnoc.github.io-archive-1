@@ -4,8 +4,6 @@
 
 %%
   %title Conway's Lexicon for Literary Chinese
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2020-0x-xx
   %date-modified 2020-0x-xx
   %resources

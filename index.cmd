@@ -9,7 +9,7 @@
 
 %%
   %title Conway's site
-  %author Conway
+  %title-suffix <!-- nothing -->
   %date-created 2019-03-09
   %date-modified 2020-06-15
   %resources

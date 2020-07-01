@@ -9,11 +9,24 @@
 
 <!--
   ----------------------------------------------------------------
-  Title suffix
+  Preamble defaults
   ----------------------------------------------------------------
 -->
 
-{: \title-suffix : \\ | Conway's site :}
+p{%%
+  ^
+  (?P<percent_signs> [%]{2,} )
+    \n
+    (?P<content> [\s\S]*? )
+  ^
+  (?P=percent_signs)
+%%
+  \g<percent_signs>
+    %author Conway
+    %title-suffix \\ | Conway's site
+    \g<content>
+  \g<percent_signs>
+%%}
 
 
 
@@ -23,8 +36,10 @@
   ----------------------------------------------------------------
 -->
 
-{:: \noscript:maths ::
-  <noscript>Enable JavaScript for equation rendering to work.</noscript>
+Z{:: \noscript:maths ::
+  a~~
+    <noscript>Enable JavaScript for equation rendering to work.</noscript>
+  ~~
 ::}
 
 
@@ -37,14 +52,14 @@
 
 <!-- Default [text title] to [%title] -->
 
-{%
+p{%
   \\cite[-]this[-]page
   \[ \]
 %
   \\cite-this-page[%title]
 %}
 
-{%
+p{%
   \\cite[-]this[-]page
   \[
     [\s]*
@@ -111,7 +126,7 @@
 
 <!-- Empty content -->
 
-{%
+p{%
   ^
   \[
   (?P<pipes> [|]{4} )
@@ -126,7 +141,7 @@
 
 <!-- Non-empty content (requires line break) -->
 
-{%
+p{%
   ^
   \[
   (?P<pipes> [|]{4} )
@@ -143,7 +158,7 @@
 
 <!-- Dates -->
 
-{: \page-property-dates :
+p{: \page-property-dates :
   First created: %date-created \\+
   Last modified: %date-modified
 :}
@@ -156,18 +171,13 @@
   ----------------------------------------------------------------
 -->
 
-{%
-  ^
-  (?P<hashes> [#]{2,6} (?![#]) )
-    (?P<id_> [\S]+? )
-  [\s]+
-    (?P<content> [\s\S]*? )
-  (?P=hashes)
+s{%
+  <h[2-6]
+    [ ]
+    id = " (?P<id_> [^"]+? ) "
+  >
 %
-  \g<hashes>\g<id_>
-    <a class="permalink" href="#\g<id_>" aria-label="Permalink"></a>\\
-    \g<content>
-  \g<hashes>
+  \g<0><a class="permalink" href="#\g<id_>" aria-label="Permalink"></a>
 %}
 
 

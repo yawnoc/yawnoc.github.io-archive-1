@@ -7,8 +7,6 @@
 
 %%
   %title Daytime: dependence on latitude and season
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-07-12
   %date-modified 2020-04-28
   %resources
@@ -198,9 +196,9 @@ the corresponding SVGs would simply be too time consuming to make.
 ]
 ||||
 
-@@![equatorial coordinates and solar year]
+@@![equatorial coordinates and solar year][480]
   equatorial-coordinates-solar-year.png
-@@480
+@@
 
 ----
 The [__equatorial coordinate system__][equatorial coords] has
@@ -241,9 +239,9 @@ $xy$-plane by earth's [axial tilt] $\tau = 23\degree \, 26'$.
 ]
 ||||
 
-@@![equatorial coordinates spherical]
+@@![equatorial coordinates spherical][240]
   equatorial-coordinates-spherical.png
-@@240
+@@
 
 ----
 We also have the associated right-handed spherical coordinates
@@ -285,9 +283,9 @@ and that $\phi$ is equivalent to the astronomer's [right ascension].
 ]
 ||||
 
-@@![ecliptic coordinates]
+@@![ecliptic coordinates][260]
   equatorial-ecliptic-coordinates.png
-@@260
+@@
 
 ----
 Finally we have
@@ -478,9 +476,9 @@ where
 ]
 ||||
 
-@@![equatorial coordinates spherical basis]
+@@![equatorial coordinates spherical basis][320]
   equatorial-coordinates-spherical-basis.png
-@@320
+@@
 
 ----
 Unlike the Cartesian basis,
@@ -737,9 +735,9 @@ north of the Arctic Circle and south of the Antarctic Circle
 ]
 ||||
 
-@@![polar regions]
+@@![polar regions][360]
   earth-polar-regions.png
-@@360
+@@
 
 
 ----
@@ -789,9 +787,9 @@ $$
 ]
 ||||
 
-@@![sun components]
+@@![sun components][280]
   sun-components.png
-@@280
+@@
 
 ----
 Then the sun's __altitude__ (or __elevation angle__) is given by

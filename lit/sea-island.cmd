@@ -13,9 +13,7 @@
 
 %%
   %title ~~ "The Sea Island Computational Classic" 《海島算經》 ~~
-  %title-suffix \title-suffix
   %title-en ".[The] Sea Island Computational Classic"
-  %author Conway
   %date-created 2019-04-20
   %date-modified 2020-05-02
   %resources

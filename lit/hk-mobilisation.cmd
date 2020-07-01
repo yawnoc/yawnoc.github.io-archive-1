@@ -9,9 +9,7 @@
   %title ~~
     "Memorial unto the Mobilisation, Hong Kong" 《香港出師表》
   ~~
-  %title-suffix \title-suffix
   %title-en "Memorial .[unto the] Mobilisation, Hong Kong"
-  %author Conway
   %date-created 2019-06-22
   %date-modified 2020-05-04
   %resources

@@ -5,8 +5,6 @@
 
 %%
   %title Quick links for Williams' Tonic Dictionary of Cantonese
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2020-02-20
   %date-modified 2020-05-14
   %resources

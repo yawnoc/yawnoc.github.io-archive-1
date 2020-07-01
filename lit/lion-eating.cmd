@@ -7,9 +7,7 @@
 
 %%
   %title ~~ "An History of Mr Shih's Eating of Lions" 《施氏食獅史》 ~~
-  %title-suffix \title-suffix
   %title-en ".[An] History of Mr~Shih's Eating of Lions"
-  %author Conway
   %date-created 2019-04-07
   %date-modified 2020-05-02
   %resources

@@ -8,8 +8,6 @@
 
 %%
   %title Poetry on a sumo umpire's fan
-  %title-suffix \title-suffix
-  %author Conway
   %date-created 2019-11-21
   %date-modified 2020-02-15
   %resources
@@ -52,7 +50,7 @@
 ||||]
 
 <!-- Japanese declaration [ja/ /] -->
-{%
+l{%
   \[ja
     /
       (?P<content> [\s\S]*? )

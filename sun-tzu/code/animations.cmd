@@ -6,7 +6,6 @@
 
 %%
   %title \[Mathematica\] \sun-tzu multiplication \& division animations
-  %author Conway
   %date-created 2019-05-26
   %date-modified 2020-03-20
   %resources

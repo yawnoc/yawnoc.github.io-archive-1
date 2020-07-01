@@ -10,9 +10,7 @@
   %title ~~
     "Record of the Lion's Pavilion, Victoria Peak" 《太平山獅子亭記》
   ~~
-  %title-suffix \title-suffix
   %title-en "Record of .[the] Lion's Pavilion, Victoria~Peak"
-  %author Conway
   %date-created 2019-04-07
   %date-modified 2020-05-02
   %resources
@@ -189,7 +187,7 @@ The inserted punctuation is my own.
   
   <!-- 平仄 -->
   
-  {%
+  Z{%
     \[ l
       /
         (?P<content> [\S]*? )
@@ -199,7 +197,7 @@ The inserted punctuation is my own.
     <span class="level-tone">\g<content></span>
   %}
   
-  {%
+  Z{%
     \[ s
       /
         (?P<content> [\S]*? )
