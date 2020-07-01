@@ -207,7 +207,7 @@ A{:: \header-link:sun-tzu ::
 
 <!-- Inside header [[==== ====]] -->
 
-{%
+b{%
   ^
   \[{2}
   (?P<equals_signs> [=]{4} )
@@ -227,7 +227,7 @@ A{:: \header-link:sun-tzu ::
 
 <!-- Not inside header [==== ====] -->
 
-{%
+b{%
   ^
   \[
   (?P<equals_signs> [=]{4} )
