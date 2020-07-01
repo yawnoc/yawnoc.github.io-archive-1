@@ -12,7 +12,7 @@
 {+ resources/inclusions/syntax/accessible-svgs.cmd +}
 
 %%
-  %title ~~ "The Sea Island Computational Classic" 《海島算經》 ~~
+  %title "The Sea Island Computational Classic" 《海島算經》
   %title-en ".[The] Sea Island Computational Classic"
   %date-created 2019-04-20
   %date-modified 2020-05-02
@@ -20,10 +20,9 @@
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
     {+ resources/inclusions/preamble/maths.cmd +}
-  %description c~~
+  %description
     An annotated English translation of the first problem in Haidao Suanjing, \
     《海島算經》, "The Sea Island Computational Classic".
-  ~~
   %css
     .parallel-text + ul + .centred-block,
     .parallel-text + .centred-block {

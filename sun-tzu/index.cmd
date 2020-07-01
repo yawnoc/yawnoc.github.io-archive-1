@@ -9,7 +9,7 @@
 {+ resources/inclusions/syntax/original-chinese.cmd +}
 
 %%
-  %title "\sun-tzu's Computational Classic" ~~《孫子算經》~~
+  %title "\sun-tzu's Computational Classic" 《孫子算經》
   %date-created 2019-05-04
   %date-modified 2020-05-13
   %resources
@@ -17,7 +17,7 @@
     {+ resources/inclusions/preamble/rendering.cmd +}
   %description
     An annotated English translation of Sunzi Suanjing, \
-    ~~《孫子算經》~~, "\sun-tzu's Computational Classic".
+    《孫子算經》, "\sun-tzu's Computational Classic".
   %css
     .manuscript-links > li > a {
       display: inline-block;

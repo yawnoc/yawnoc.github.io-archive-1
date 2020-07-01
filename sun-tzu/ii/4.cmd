@@ -11,7 +11,7 @@
 
 %%
   %title
-    "\sun-tzu's Computational Classic: Volume~II" ~~《孫子算經・卷中》~~ \P4
+    "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P4
   %date-created 2019-06-09
   %date-modified 2020-06-23
   %resources

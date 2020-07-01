@@ -7,17 +7,16 @@
 {+ resources/inclusions/syntax/original-chinese.cmd +}
 
 %%
-  %title ~~ "The Fox Feigneth the Tiger's Authority" 《狐假虎威》 ~~
+  %title "The Fox Feigneth the Tiger's Authority" 《狐假虎威》
   %title-en ".[The] Fox Feigneth .[the] Tiger's Authority"
   %date-created 2019-04-07
   %date-modified 2020-06-07
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
-  %description c~~
+  %description
     An English translation of 《狐假虎威》, \
     "The Fox Feigneth the Tiger's Authority".
-  ~~
 %%
 
 [[====

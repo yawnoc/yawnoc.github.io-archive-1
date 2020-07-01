@@ -6,7 +6,7 @@
 
 <## U+30FB KATAKANA MIDDLE DOT ##>
 
-c{: \. : ・ :}
+p{: \. : ・ :}
 
 
 

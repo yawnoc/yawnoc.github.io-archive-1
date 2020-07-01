@@ -7,20 +7,18 @@
 {+ resources/inclusions/syntax/original-chinese.cmd +}
 
 %%
-  %title ~~
+  %title
     "Record of the Lion's Pavilion, Victoria Peak" 《太平山獅子亭記》
-  ~~
   %title-en "Record of .[the] Lion's Pavilion, Victoria~Peak"
   %date-created 2019-04-07
   %date-modified 2020-05-02
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
-  %description c~~
+  %description
     An English translation of 《太平山獅子亭記》, \
-    "Record of .[the] Lion's Pavilion, Victoria~Peak", \
+    "Record of the Lion's Pavilion, Victoria~Peak", \
     the text on a plaque in the Lion's Pavilion, Victoria Peak, Hong Kong.
-  ~~
   %css
     .level-tone {
       color: green;

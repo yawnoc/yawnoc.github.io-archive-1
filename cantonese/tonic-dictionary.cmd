@@ -13,7 +13,7 @@
   %description
     Quick links for each syllable of Samuel Wells Williams' \
     "A Tonic Dictionary Of The Chinese Language In The Canton Dialect" \
-    ~~ 《英華分韻撮要》 ~~
+    《英華分韻撮要》
 %%
 
 

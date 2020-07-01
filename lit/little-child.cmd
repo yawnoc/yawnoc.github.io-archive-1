@@ -7,20 +7,18 @@
 {+ resources/inclusions/syntax/original-chinese.cmd +}
 
 %%
-  %title ~~
-    "Q & A with Confucius: the Little Child's Discourse" 《孔子問答：小兒論》
-  ~~
+  %title
+    "Q \& A with Confucius: the Little Child's Discourse" 《孔子問答：小兒論》
   %title-en "Q~.[\&]~A .[with] Confucius: .[the] Little Child's Discourse"
   %date-created 2019-04-07
   %date-modified 2020-06-25
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
-  %description c~~
+  %description
     An English translation of 《孔子問答：小兒論》, \
-    "Q & A with Confucius: the Little Child's Discourse". \
+    "Q \& A with Confucius: the Little Child's Discourse". \
     Basically Confucius getting his arse whooped by a little kid.
-  ~~
   %css
     .danger {
       color: #e00;

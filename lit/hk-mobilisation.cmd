@@ -6,9 +6,7 @@
 {+ resources/inclusions/syntax/chinese-lang.cmd +}
 
 %%
-  %title ~~
-    "Memorial unto the Mobilisation, Hong Kong" 《香港出師表》
-  ~~
+  %title "Memorial unto the Mobilisation, Hong Kong" 《香港出師表》
   %title-en "Memorial .[unto the] Mobilisation, Hong Kong"
   %date-created 2019-06-22
   %date-modified 2020-05-04
