@@ -1,18 +1,18 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
 
-(+ resources/inclusions/syntax/svg-styles.cmd +)
-(+ resources/inclusions/syntax/accessible-svgs.cmd +)
+{+ resources/inclusions/syntax/svg-styles.cmd +}
+{+ resources/inclusions/syntax/accessible-svgs.cmd +}
 
 %%
   %title Conway's Romanisation for Cantonese
   %date-created 2019-04-07
   %date-modified 2020-04-19
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
   %description
     Conway's Romanisation for Cantonese, \
     with English approximations and a diagram of the nine tones.
@@ -73,7 +73,7 @@ as spoken and perceived by me.
 ----
 
 
-<!-- Conway romanisation / tone [. .] -->
+<## Conway romanisation / tone [. .] ##>
 {%
   \[ [.]
   (?P<tone> [1-9] )
@@ -89,7 +89,7 @@ as spoken and perceived by me.
   <span class="conway-romanisation">\g<content></span>
 %}
 
-<!-- Approximation parts [: :] -->
+<## Approximation parts [: :] ##>
 {%
   \[ [:]
   (?P<content> [\S]*? )
@@ -111,7 +111,7 @@ as spoken and perceived by me.
 ====]
 
 
-<!-- Header rows for tables -->
+<## Header rows for tables ##>
 {%
   \\header[-]row
   \[
@@ -436,7 +436,7 @@ of the merger depending on the vowel which follows:
 ||||
 ||||||
 
-<!-- Wrong initials [! ] -->
+<## Wrong initials [! ] ##>
 {%
   \[
   [!]
@@ -498,7 +498,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ----
 
 
-<!-- Alternative approximation \OR -->
+<## Alternative approximation \OR ##>
 {:
   \OR
 :
@@ -1310,7 +1310,8 @@ and is **never** sounded as a consonant.
 ||||
 ||||||
 
-<!--                          Tone diagram
+<##
+                              Tone diagram
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -1345,7 +1346,7 @@ and is **never** sounded as a consonant.
      ^                       ^                                ^
     -4                       0                                5
   ***********************************************************************
-  -->
+##>
 
 [svg-styles/
   line {
@@ -1378,7 +1379,7 @@ and is **never** sounded as a consonant.
     
     {:: \font-size :: font-size = "0.4" ::}
     
-    <!-- tone 1 陰平 -->
+    <## tone 1 陰平 ##>
     <line
       x1 = "-2.5"
       y1 = "-5.5"
@@ -1392,7 +1393,7 @@ and is **never** sounded as a consonant.
       >tone~1 ~~ 陰平 ~~
     </text>
     
-    <!-- tone 2 陰上 -->
+    <## tone 2 陰上 ##>
     <line
       x1 = "-2.5"
       y1 = "-3.3"
@@ -1405,10 +1406,10 @@ and is **never** sounded as a consonant.
       dy = "-0.5em"
       transform = "rotate(-23.75 0 -4.4)"
       >tone~2 ~~ 陰上 ~~
-      <!-- arctan (2.2/5) == 23.75 degree -->
+      <## arctan (2.2/5) == 23.75 degree ##>
     </text>
     
-    <!-- tone 3 陰去 -->
+    <## tone 3 陰去 ##>
     <line
       x1 = "-2.5"
       y1 = "-3.3"
@@ -1422,7 +1423,7 @@ and is **never** sounded as a consonant.
       >tone~3 ~~ 陰去 ~~
     </text>
     
-    <!-- tone 4 陽平 -->
+    <## tone 4 陽平 ##>
     <line
       x1 = "-2.5"
       y1 = "-1.1"
@@ -1436,7 +1437,7 @@ and is **never** sounded as a consonant.
       >tone~4 ~~ 陽平 ~~
     </text>
     
-    <!-- tone 5 陽上 -->
+    <## tone 5 陽上 ##>
     <line
       x1 = "-2.5"
       y1 = "-2.2"
@@ -1449,10 +1450,10 @@ and is **never** sounded as a consonant.
       dy = "-0.5em"
       transform = "rotate(-12.41 0 -2.75)"
       >tone~5 ~~ 陽上 ~~
-      <!-- arctan (1.1/5) == 12.41 degree -->
+      <## arctan (1.1/5) == 12.41 degree ##>
     </text>
     
-    <!-- tone 6 陽去 -->
+    <## tone 6 陽去 ##>
     <line
       x1 = "-2.5"
       y1 = "-2.2"
@@ -1466,7 +1467,7 @@ and is **never** sounded as a consonant.
       >tone~6 ~~ 陽去 ~~
     </text>
     
-    <!-- tone 7 高陰入 -->
+    <## tone 7 高陰入 ##>
     <line
       x1 = "3.75"
       y1 = "-5.5"
@@ -1480,7 +1481,7 @@ and is **never** sounded as a consonant.
       >tone~7 ~~ 高陰入 ~~
     </text>
     
-    <!-- tone 8 低陰入 -->
+    <## tone 8 低陰入 ##>
     <line
       x1 = "3.75"
       y1 = "-3.3"
@@ -1494,7 +1495,7 @@ and is **never** sounded as a consonant.
       >tone~8 ~~ 低陰入 ~~
     </text>
     
-    <!-- tone 9 陽入 -->
+    <## tone 9 陽入 ##>
     <line
       x1 = "3.75"
       y1 = "-2.2"
@@ -1508,7 +1509,7 @@ and is **never** sounded as a consonant.
       >tone~9 ~~ 陽入 ~~
     </text>
     
-    <!-- pitch num. -->
+    <## pitch num. ##>
     <text
       x = "-4"
       y = "-6.6"
@@ -1516,7 +1517,7 @@ and is **never** sounded as a consonant.
       >pitch num.
     </text>
     
-    <!-- 5 -->
+    <## 5 ##>
     <text
       x = "-4"
       y = "-5.5"
@@ -1524,7 +1525,7 @@ and is **never** sounded as a consonant.
       >5
     </text>
     
-    <!-- 4 -->
+    <## 4 ##>
     <text
       x = "-4"
       y = "-4.4"
@@ -1532,7 +1533,7 @@ and is **never** sounded as a consonant.
       >4
     </text>
     
-    <!-- 3 -->
+    <## 3 ##>
     <text
       x = "-4"
       y = "-3.3"
@@ -1540,7 +1541,7 @@ and is **never** sounded as a consonant.
       >3
     </text>
     
-    <!-- 2 -->
+    <## 2 ##>
     <text
       x = "-4"
       y = "-2.2"
@@ -1548,7 +1549,7 @@ and is **never** sounded as a consonant.
       >2
     </text>
     
-    <!-- 1 -->
+    <## 1 ##>
     <text
       x = "-4"
       y = "-1.1"

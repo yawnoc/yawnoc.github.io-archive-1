@@ -1,23 +1,23 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/sun-tzu.cmd +)
+{+ resources/inclusions/syntax/sun-tzu.cmd +}
 
-(+ resources/inclusions/syntax/translations.cmd +)
+{+ resources/inclusions/syntax/translations.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
-(+ resources/inclusions/syntax/original-chinese.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/inclusions/syntax/original-chinese.cmd +}
 
 %%
-  %title "\sun-tzu's Computational Classic" ~~《孫子算經》~~
+  %title "\sun-tzu's Computational Classic" 《孫子算經》
   %date-created 2019-05-04
   %date-modified 2020-05-13
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
   %description
     An annotated English translation of Sunzi Suanjing, \
-    ~~《孫子算經》~~, "\sun-tzu's Computational Classic".
+    《孫子算經》, "\sun-tzu's Computational Classic".
   %css
     .manuscript-links > li > a {
       display: inline-block;
@@ -41,7 +41,7 @@
 *> [Pref.] ["p" Preface]
 * [I] ["i" Volume~I]
 * [II] ["ii" Volume~II]
-<!-- * [III] ["iii" Volume~III] -->
+<## * [III] ["iii" Volume~III] ##>
 * \header-link:cite
 ====]]
 
@@ -222,9 +222,9 @@ They are drafts, and as such, do not contain
 edits and corrections I have made since they were scanned.
 ----
 
-<!--
+<##
   URL for "Manuscript for Volume v Paragraph p" in round brackets [m"v p"]
--->
+##>
 {%
   [ ]* \[m"(?P<volume> [i] {1,3} ) [ ] (?P<paragraph> [0-9] + )"\]
 %

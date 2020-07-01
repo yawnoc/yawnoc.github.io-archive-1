@@ -1,21 +1,21 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/sun-tzu.cmd +)
+{+ resources/inclusions/syntax/sun-tzu.cmd +}
 
-(+ resources/inclusions/syntax/translations.cmd +)
+{+ resources/inclusions/syntax/translations.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
 
 %%
   %title
-    "\sun-tzu's Computational Classic: Volume~II" ~~《孫子算經・卷中》~~ \P16
+    "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P16
   %date-created 2019-06-09
   %date-modified 2020-05-13
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
-    (+ resources/inclusions/preamble/maths.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
+    {+ resources/inclusions/preamble/maths.cmd +}
 %%
 
 [[====

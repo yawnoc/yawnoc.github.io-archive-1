@@ -1,24 +1,24 @@
-<!--
+<##
   ----------------------------------------------------------------
   SVG embedded styles
   ----------------------------------------------------------------
--->
+##>
 
-{:: \svg-style:stroke-declarations ::
+w{:: \svg-style:stroke-declarations ::
   a~~
     stroke: black;
     vector-effect: non-scaling-stroke;
   ~~
 ::}
 
-{:: \svg-style:text-declarations ::
+w{:: \svg-style:text-declarations ::
   a~~
     font-family: sans-serif;
     text-anchor: middle;
   ~~
 ::}
 
-{:: \svg-style:maths-font-rulesets ::
+w{:: \svg-style:maths-font-rulesets ::
   a~~
     @font-face {
       font-display: swap;
@@ -51,7 +51,7 @@
   ~~
 ::}
 
-{:: \svg-style:stroke-colour-rulesets ::
+w{:: \svg-style:stroke-colour-rulesets ::
   a~~
     line.colour-r {
       stroke: #e00;
@@ -71,7 +71,7 @@
   ~~
 ::}
 
-{:: \svg-style:text-colour-rulesets ::
+w{:: \svg-style:text-colour-rulesets ::
   a~~
     text.colour-r {
       fill: #e00;
@@ -88,9 +88,9 @@
   ~~
 ::}
 
-<!-- Container [svg-styles/ /] -->
+<## Container [svg-styles/ /] ##>
 
-{%
+c{%
   \[
   svg[-]styles/
     (?P<content> [\s\S]*? )

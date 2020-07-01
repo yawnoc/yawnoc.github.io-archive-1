@@ -1,13 +1,13 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
 %%
   %title Unicode mathematical symbols
   %date-created 2019-03-30
-  %date-modified 2020-04-25
+  %date-modified 2020-07-01
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
-    (+ resources/inclusions/preamble/maths.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
+    {+ resources/inclusions/preamble/maths.cmd +}
 %%
 
 [[====
@@ -39,7 +39,7 @@ Convenient for use in emails.
 ----
 
 
-<!-- Header row for tables -->
+<## Header row for tables ##>
 {::
   \header-row
 ::
@@ -305,7 +305,8 @@ For the definitions of `\pd` and `\del`,
 see `macros` in [`rendering.js`][js].
 ----
 @@[js]
-  https://github.com/yawnoc/yawnoc.github.io/blob/master/rendering.js
+  https://github.com/yawnoc/yawnoc.github.io/blob/master/\
+    resources/scripts/rendering.js
 @@
 
 

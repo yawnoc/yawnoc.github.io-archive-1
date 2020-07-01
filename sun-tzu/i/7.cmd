@@ -1,24 +1,24 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/sun-tzu.cmd +)
+{+ resources/inclusions/syntax/sun-tzu.cmd +}
 
-(+ resources/inclusions/syntax/translations.cmd +)
+{+ resources/inclusions/syntax/translations.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
-(+ resources/inclusions/syntax/original-chinese.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/inclusions/syntax/original-chinese.cmd +}
 
-(+ resources/inclusions/syntax/svg-styles.cmd +)
-(+ resources/inclusions/syntax/accessible-svgs.cmd +)
+{+ resources/inclusions/syntax/svg-styles.cmd +}
+{+ resources/inclusions/syntax/accessible-svgs.cmd +}
 
 %%
   %title
-    "\sun-tzu's Computational Classic: Volume~I" ~~《孫子算經・卷上》~~ \P7
+    "\sun-tzu's Computational Classic: Volume~I" 《孫子算經\.卷上》 \P7
   %date-created 2019-06-09
   %date-modified 2020-05-13
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
   %css
     td {
       padding: 0;
@@ -130,7 +130,8 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
 ====
 
 
-<!--                   Rod calculus numerals
+<##
+                       Rod calculus numerals
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -144,7 +145,7 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
     s           rod spacing                             0.1
   ***********************************************************************
   Each numeral shall occupy a width of 36px.
-  -->
+##>
 
 [svg-styles/
   text {
@@ -164,12 +165,12 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
   }
 /]
 
-<!-- Rod at origin -->
+<## Rod at origin ##>
 {% \\rod[-] (?P<type> [vh] ) \[ (?P<n>[1-9]) \] %
   <polyline \\point points="0,0" \\marker:rod-\g<type>[\g<n>]/>
 %}
 
-<!-- Rod marker reference by id -->
+<## Rod marker reference by id ##>
 {% \\marker:rod[-]v \[ (?P<n>[1-9]) \] %
   marker-end="url(#rod-vertical-\g<n>)"
 %}
@@ -179,7 +180,7 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
 {:: \marker:rod-v-g[5] :: marker-end="url(#rod-vertical-grouping-5)" ::}
 {:: \marker:rod-h-g[5] :: marker-end="url(#rod-horizontal-grouping-5)" ::}
 
-<!-- Attributes -->
+<## Attributes ##>
 {:: \svg-attributes:rod ::
   width="36px" \\view-box:rod
 ::}
@@ -227,37 +228,37 @@ there are two forms, vertical and horizontal:
         \accessible-svg-attributes[rod-vertical-1-title]\
       >
         
-        <!-- Rod definitions -->
-        <!--
+        <## Rod definitions ##>
+        <##
           It would be better to put these definitions into a
           dedicated definitions SVG rather than include them here
           inside the SVG for "rod-vertical-1",
           but when I do that I can't figure out
           how to make that SVG take up zero width and height
           without breaking the definitions.
-        -->
+        ##>
         
         <defs>
           
-          <!-- Rod calculus vertical 1 -->
+          <## Rod calculus vertical 1 ##>
           <marker id="rod-vertical-1" \marker-attributes:rod>
             <line class="thick" x1="0" y1="-0.25" x2="0" y2="0.25"/>
           </marker>
           
-          <!-- Rod calculus vertical 2 -->
+          <## Rod calculus vertical 2 ##>
           <marker id="rod-vertical-2" \marker-attributes:rod>
             <polyline \point points="-0.05,0" \marker:rod-v[1]/>
             <polyline \point points="0.05,0" \marker:rod-v[1]/>
           </marker>
           
-          <!-- Rod calculus vertical 3 -->
+          <## Rod calculus vertical 3 ##>
           <marker id="rod-vertical-3" \marker-attributes:rod>
             <polyline \point points="-0.1,0" \marker:rod-v[1]/>
             <polyline \point points="0,0" \marker:rod-v[1]/>
             <polyline \point points="0.1,0" \marker:rod-v[1]/>
           </marker>
           
-          <!-- Rod calculus vertical 4 -->
+          <## Rod calculus vertical 4 ##>
           <marker id="rod-vertical-4" \marker-attributes:rod>
             <polyline \point points="-0.15,0" \marker:rod-v[1]/>
             <polyline \point points="-0.05,0" \marker:rod-v[1]/>
@@ -265,7 +266,7 @@ there are two forms, vertical and horizontal:
             <polyline \point points="0.15,0" \marker:rod-v[1]/>
           </marker>
           
-          <!-- Rod calculus vertical 5 -->
+          <## Rod calculus vertical 5 ##>
           <marker id="rod-vertical-5" \marker-attributes:rod>
             <polyline \point points="-0.2,0" \marker:rod-v[1]/>
             <polyline \point points="-0.1,0" \marker:rod-v[1]/>
@@ -274,54 +275,54 @@ there are two forms, vertical and horizontal:
             <polyline \point points="0.2,0" \marker:rod-v[1]/>
           </marker>
           
-          <!-- Rod calculus vertical grouping horizontal 5 -->
+          <## Rod calculus vertical grouping horizontal 5 ##>
           <marker id="rod-vertical-grouping-5" \marker-attributes:rod>
             <polyline \point points="0,-0.25" \marker:rod-h[1]/>
           </marker>
           
-          <!-- Rod calculus vertical 6 -->
+          <## Rod calculus vertical 6 ##>
           <marker id="rod-vertical-6" \marker-attributes:rod>
             <polyline \point points="0,0" \marker:rod-v-g[5]/>
             <polyline \point points="0,0" \marker:rod-v[1]/>
           </marker>
           
-          <!-- Rod calculus vertical 7 -->
+          <## Rod calculus vertical 7 ##>
           <marker id="rod-vertical-7" \marker-attributes:rod>
             <polyline \point points="0,0" \marker:rod-v-g[5]/>
             <polyline \point points="0,0" \marker:rod-v[2]/>
           </marker>
           
-          <!-- Rod calculus vertical 8 -->
+          <## Rod calculus vertical 8 ##>
           <marker id="rod-vertical-8" \marker-attributes:rod>
             <polyline \point points="0,0" \marker:rod-v-g[5]/>
             <polyline \point points="0,0" \marker:rod-v[3]/>
           </marker>
           
-          <!-- Rod calculus vertical 9 -->
+          <## Rod calculus vertical 9 ##>
           <marker id="rod-vertical-9" \marker-attributes:rod>
             <polyline \point points="0,0" \marker:rod-v-g[5]/>
             <polyline \point points="0,0" \marker:rod-v[4]/>
           </marker>
           
-          <!-- Rod calculus horizontal 1 -->
+          <## Rod calculus horizontal 1 ##>
           <marker id="rod-horizontal-1" \marker-attributes:rod>
             <line class="thick" x1="-0.25" y1="0" x2="0.25" y2="0"/>
           </marker>
           
-          <!-- Rod calculus horizontal 2 -->
+          <## Rod calculus horizontal 2 ##>
           <marker id="rod-horizontal-2" \marker-attributes:rod>
             <polyline \point points="0,-0.05" \marker:rod-h[1]/>
             <polyline \point points="0,0.05" \marker:rod-h[1]/>
           </marker>
           
-          <!-- Rod calculus horizontal 3 -->
+          <## Rod calculus horizontal 3 ##>
           <marker id="rod-horizontal-3" \marker-attributes:rod>
             <polyline \point points="0,-0.1" \marker:rod-h[1]/>
             <polyline \point points="0,0" \marker:rod-h[1]/>
             <polyline \point points="0,0.1" \marker:rod-h[1]/>
           </marker>
           
-          <!-- Rod calculus horizontal 4 -->
+          <## Rod calculus horizontal 4 ##>
           <marker id="rod-horizontal-4" \marker-attributes:rod>
             <polyline \point points="0,-0.15" \marker:rod-h[1]/>
             <polyline \point points="0,-0.05" \marker:rod-h[1]/>
@@ -329,7 +330,7 @@ there are two forms, vertical and horizontal:
             <polyline \point points="0,0.15" \marker:rod-h[1]/>
           </marker>
           
-          <!-- Rod calculus horizontal 5 -->
+          <## Rod calculus horizontal 5 ##>
           <marker id="rod-horizontal-5" \marker-attributes:rod>
             <polyline \point points="0,-0.2" \marker:rod-h[1]/>
             <polyline \point points="0,-0.1" \marker:rod-h[1]/>
@@ -338,30 +339,30 @@ there are two forms, vertical and horizontal:
             <polyline \point points="0,0.2" \marker:rod-h[1]/>
           </marker>
           
-          <!-- Rod calculus horizontal grouping vertical 5 -->
+          <## Rod calculus horizontal grouping vertical 5 ##>
           <marker id="rod-horizontal-grouping-5" \marker-attributes:rod>
             <polyline \point points="0,0" \marker:rod-v[1]/>
           </marker>
           
-          <!-- Rod calculus horizontal 6 -->
+          <## Rod calculus horizontal 6 ##>
           <marker id="rod-horizontal-6" \marker-attributes:rod>
             <polyline \point points="0,0" \marker:rod-h-g[5]/>
             <polyline \point points="0,0.25" \marker:rod-h[1]/>
           </marker>
           
-          <!-- Rod calculus horizontal 7 -->
+          <## Rod calculus horizontal 7 ##>
           <marker id="rod-horizontal-7" \marker-attributes:rod>
             <polyline \point points="0,-0.05" \marker:rod-h-g[5]/>
             <polyline \point points="0,0.25" \marker:rod-h[2]/>
           </marker>
           
-          <!-- Rod calculus horizontal 8 -->
+          <## Rod calculus horizontal 8 ##>
           <marker id="rod-horizontal-8" \marker-attributes:rod>
             <polyline \point points="0,-0.075" \marker:rod-h-g[5]/>
             <polyline \point points="0,0.3" \marker:rod-h[3]/>
           </marker>
           
-          <!-- Rod calculus horizontal 9 -->
+          <## Rod calculus horizontal 9 ##>
           <marker id="rod-horizontal-9" \marker-attributes:rod>
             <polyline \point points="0,-0.1" \marker:rod-h-g[5]/>
             <polyline \point points="0,0.325" \marker:rod-h[4]/>

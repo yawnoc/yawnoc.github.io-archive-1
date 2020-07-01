@@ -1,6 +1,6 @@
-<!-- Superscript elements x ** n -->
+<## Superscript elements x ** n ##>
 
-{%
+s{%
   (?P<base> [0-9]+ )
     [ ]
   [*]{2}

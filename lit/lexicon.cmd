@@ -1,14 +1,14 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
 
 %%
   %title Conway's Lexicon for Literary Chinese
   %date-created 2020-0x-xx
   %date-modified 2020-0x-xx
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
   %description
     Conway's Lexicon for translating Literary Chinese into English.
 %%
@@ -29,21 +29,21 @@
 
 
 
-<!-- Radical index -->
+<## Radical index ##>
 
 [====
 * [⽝](#dog)
 ====]
 
 
-<!--
+<##
   Anchor id for...
   * Radical         : {Unicode English radical name}
   * Radical-stroke  : {Unicode English radical name}-{number of strokes}
   * Character       : {Chinese character}
--->
+##>
 
-<!-- Character entry heading  \char {character} {code point} -->
+<## Character entry heading  \char {character} {code point} ##>
 
 h{%
   \\char

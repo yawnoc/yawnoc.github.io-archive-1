@@ -1,12 +1,12 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
 %%
   %title Debian on Pinebook Pro via Daniel's installer
   %date-created 2020-06-15
   %date-modified 2020-06-27
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
 %%
 
 

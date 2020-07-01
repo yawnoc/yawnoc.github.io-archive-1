@@ -1,4 +1,4 @@
-<!-- Load favicon -->
+<## Load favicon ##>
 a~~
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -9,7 +9,7 @@ a~~
   <meta name="theme-color" content="#ffffff">
 ~~
 
-<!-- Load main CSS -->
+<## Load main CSS ##>
 a~~
   <link rel="stylesheet" href="/resources/styles/main.min.css">
 ~~

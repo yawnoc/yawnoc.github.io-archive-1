@@ -1,19 +1,19 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
 
 %%
   %title Quick links for Williams' Tonic Dictionary of Cantonese
   %date-created 2020-02-20
   %date-modified 2020-05-14
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
   %description
     Quick links for each syllable of Samuel Wells Williams' \
     "A Tonic Dictionary Of The Chinese Language In The Canton Dialect" \
-    ~~ 《英華分韻撮要》 ~~
+    《英華分韻撮要》
 %%
 
 
@@ -74,7 +74,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 ====]
 
 
-<!-- Header rows for tables -->
+<## Header rows for tables ##>
 {::
   \header-row
 ::
@@ -88,7 +88,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 ::}
 
 
-<!-- Page row \page-row[p] n -->
+<## Page row \page-row[p] n ##>
 {%
   \\page-row
   \[
@@ -103,7 +103,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 %}
 
 
-<!-- Syllable row \syllable-row  i  W  C  J -->
+<## Syllable row \syllable-row  i  W  C  J ##>
 {%
   \\syllable-row
     [ ]+
@@ -123,7 +123,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 %}
 
 
-<!-- archive.org URL in round brackets ["p"] -->
+<## archive.org URL in round brackets ["p"] ##>
 {%
   \[ "
     (?P<archive_page_number> [n]?[0-9]+? )

@@ -1,12 +1,12 @@
-(+ resources/inclusions/syntax/general.cmd +)
-(+ resources/inclusions/syntax/cynics-730.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/inclusions/syntax/cynics-730.cmd +}
 
 %%
   %title A cynic's 7.30: \short-title
   %date-created 2020-03-16
   %date-modified 2020-03-16
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
   %footer-copyright-remark
     except the [original interview][original],
     whose copyright belongs to the ABC
@@ -49,7 +49,7 @@
   was based on 'forecasts at the time'
 ##
 
-<!-- Excerpt images -->
+<## Excerpt images ##>
 
 {: \leigh-sales-2019 : ![LEIGH SALES (2019)] :}
 @@![leigh sales (2019)]{h}
@@ -71,7 +71,7 @@
   josh-frydenberg-2019-04-02-sky.jpg
 @@
 
-<!-- Main images -->
+<## Main images ##>
 
 {: \leigh-sales : ![LEIGH SALES] :}
 @@![leigh sales]{h}

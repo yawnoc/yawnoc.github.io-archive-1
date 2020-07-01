@@ -1,18 +1,18 @@
-(+ resources/inclusions/syntax/faq-links.cmd +)
+{+ resources/inclusions/syntax/faq-links.cmd +}
 
-(+ resources/inclusions/syntax/translations.cmd +)
+{+ resources/inclusions/syntax/translations.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
 
 %%
   %title FAQ
   %date-created 2019-08-01
   %date-modified 2020-06-07
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
   %css
     li > ul, li > ol {
       margin: 0.3em 0;
@@ -268,7 +268,7 @@ For example,
 
 
 
-<!-- No-wrapping span [! !] -->
+<## No-wrapping span [! !] ##>
 {%
   \[! [ ]* (?P<content> [\s\S]*? ) [ ]*? !\]
 %

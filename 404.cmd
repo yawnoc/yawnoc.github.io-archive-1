@@ -1,10 +1,10 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
 %%
   %title Page not found
-  %author <!-- no one -->
+  %author <## no one ##>
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
   %css a~~
     strong {
       display: block;
