@@ -187,14 +187,14 @@ s{%
   ----------------------------------------------------------------
 -->
 
-{:: \header-link-here:home :: [Home](\/ You are on the Home page) ::}
-{:: \header-link:home :: [Home](/ Home page) ::}
-{:: \header-link:top :: [Top](# Jump back to top) ::}
-{:: \header-link:translation :: [Translation](#translation Translation) ::}
-{:: \header-link:result :: [Result](#result Jump to result) ::}
-{:: \header-link:cite :: [Cite](#cite Cite this page) ::}
-{:: \header-link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
-{:: \header-link:sun-tzu ::
+A{:: \header-link-here:home :: [Home](\/ You are on the Home page) ::}
+A{:: \header-link:home :: [Home](/ Home page) ::}
+A{:: \header-link:top :: [Top](# Jump back to top) ::}
+A{:: \header-link:translation :: [Translation](#translation Translation) ::}
+A{:: \header-link:result :: [Result](#result Jump to result) ::}
+A{:: \header-link:cite :: [Cite](#cite Cite this page) ::}
+A{:: \header-link:cynicism :: [More cynicism](/cynics-730/ A cynic's 7.30) ::}
+A{:: \header-link:sun-tzu ::
   [\\sun-tzu] ["" \\sun-tzu's Computational Classic]
 ::}
 
