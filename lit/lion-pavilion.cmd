@@ -1,10 +1,10 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/translations.cmd +)
+{+ resources/inclusions/syntax/translations.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
-(+ resources/inclusions/syntax/original-chinese.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/inclusions/syntax/original-chinese.cmd +}
 
 %%
   %title ~~
@@ -14,8 +14,8 @@
   %date-created 2019-04-07
   %date-modified 2020-05-02
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
   %description c~~
     An English translation of 《太平山獅子亭記》, \
     "Record of .[the] Lion's Pavilion, Victoria~Peak", \

@@ -1,20 +1,20 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/sun-tzu.cmd +)
+{+ resources/inclusions/syntax/sun-tzu.cmd +}
 
-(+ resources/inclusions/syntax/translations.cmd +)
+{+ resources/inclusions/syntax/translations.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
-(+ resources/inclusions/syntax/original-chinese.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/inclusions/syntax/original-chinese.cmd +}
 
 %%
   %title "\sun-tzu's Computational Classic" ~~《孫子算經》~~
   %date-created 2019-05-04
   %date-modified 2020-05-13
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
   %description
     An annotated English translation of Sunzi Suanjing, \
     ~~《孫子算經》~~, "\sun-tzu's Computational Classic".

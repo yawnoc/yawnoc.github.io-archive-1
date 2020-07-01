@@ -1,11 +1,11 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
 %%
   %title Strikethrough formatter
   %date-created 2020-03-02
   %date-modified 2020-04-25
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
   %css a~~
     .container {
       border: 2px solid black;

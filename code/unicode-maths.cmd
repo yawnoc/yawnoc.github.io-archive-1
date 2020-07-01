@@ -1,13 +1,13 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
 %%
   %title Unicode mathematical symbols
   %date-created 2019-03-30
   %date-modified 2020-07-01
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
-    (+ resources/inclusions/preamble/maths.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
+    {+ resources/inclusions/preamble/maths.cmd +}
 %%
 
 [[====

@@ -1,11 +1,11 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/sun-tzu.cmd +)
+{+ resources/inclusions/syntax/sun-tzu.cmd +}
 
-(+ resources/inclusions/syntax/translations.cmd +)
+{+ resources/inclusions/syntax/translations.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
 
 %%
   %title
@@ -13,9 +13,9 @@
   %date-created 2019-06-09
   %date-modified 2020-06-23
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
-    (+ resources/inclusions/preamble/maths.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
+    {+ resources/inclusions/preamble/maths.cmd +}
 %%
 
 [[====

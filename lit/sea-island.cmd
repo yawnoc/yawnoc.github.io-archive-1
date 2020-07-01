@@ -1,15 +1,15 @@
-(+ resources/inclusions/syntax/general.cmd +)
+{+ resources/inclusions/syntax/general.cmd +}
 
-(+ resources/inclusions/syntax/translations.cmd +)
+{+ resources/inclusions/syntax/translations.cmd +}
 
-(+ resources/inclusions/syntax/romanisations.cmd +)
-(+ resources/inclusions/syntax/chinese-lang.cmd +)
-(+ resources/inclusions/syntax/original-chinese.cmd +)
+{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/inclusions/syntax/original-chinese.cmd +}
 
-(+ resources/inclusions/syntax/coloured-spans.cmd +)
+{+ resources/inclusions/syntax/coloured-spans.cmd +}
 
-(+ resources/inclusions/syntax/svg-styles.cmd +)
-(+ resources/inclusions/syntax/accessible-svgs.cmd +)
+{+ resources/inclusions/syntax/svg-styles.cmd +}
+{+ resources/inclusions/syntax/accessible-svgs.cmd +}
 
 %%
   %title ~~ "The Sea Island Computational Classic" 《海島算經》 ~~
@@ -17,9 +17,9 @@
   %date-created 2019-04-20
   %date-modified 2020-05-02
   %resources
-    (+ resources/inclusions/preamble/main.cmd +)
-    (+ resources/inclusions/preamble/rendering.cmd +)
-    (+ resources/inclusions/preamble/maths.cmd +)
+    {+ resources/inclusions/preamble/main.cmd +}
+    {+ resources/inclusions/preamble/rendering.cmd +}
+    {+ resources/inclusions/preamble/maths.cmd +}
   %description c~~
     An annotated English translation of the first problem in Haidao Suanjing, \
     《海島算經》, "The Sea Island Computational Classic".
