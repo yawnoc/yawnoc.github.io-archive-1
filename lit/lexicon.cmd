@@ -82,7 +82,7 @@ h{%
 
 {%
   \[
-    (?P<tone> [陰陽平上去入聲]+ )
+    (?P<tone> [陰陽平上去入聲]{2} )
   \]
 %
   <span class="tone">\g<tone></span>
