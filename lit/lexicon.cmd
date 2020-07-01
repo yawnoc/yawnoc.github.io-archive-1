@@ -46,9 +46,8 @@
 
 <##
   Anchor id for...
-  * Radical         : {Unicode English radical name}
-  * Radical-stroke  : {Unicode English radical name}-{number of strokes}
-  * Character       : {Chinese character}
+  * Radical  : {Unicode English radical name}
+  * Character: {Chinese character}
 ##>
 
 
@@ -59,9 +58,9 @@ h{%
     [ ] (?P<character> \S )
     [ ] (?P<code_point> [0-9A-F]+ )
 %
-  ####\g<character>
+  ###\g<character>
     \g<character> <code>U+\g<code_point></code>
-  ####
+  ###
 %}
 
 
@@ -121,8 +120,6 @@ See also: [Unihan Radical-Stroke Index][unihan]
   ⼈ (man)
 ##
 
-###man-9        ⼈ + 9           ###
-
 \char 假 5047
 ======
 * [上聲]
@@ -141,8 +138,6 @@ See also: [Unihan Radical-Stroke Index][unihan]
 ##dog
   ⽝ (dog)
 ##
-
-###dog-5        ⽝ + 5           ###
 
 \char 狐 72D0
 ====
