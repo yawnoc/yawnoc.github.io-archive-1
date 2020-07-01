@@ -12,8 +12,22 @@
   %description
     Conway's Lexicon for translating Literary Chinese into English.
   %css a~~
+    h3 {
+      border: 1px solid black;
+      font-size: 1.3em;
+      margin-bottom: 0.5em;
+      padding: 0.2em 0.3em;
+    }
+    h3 + ul {
+      margin-top: 0em;
+    }
+    .code-point {
+      font-family: Consolas, "Lucida Sans Typewriter", monospace;
+      font-size: 0.8em;
+      padding: 0 0.5em;
+    }
     .tone {
-      background: black;
+      background: #666;
       color: white;
       padding: 0.13em;
     }
@@ -59,7 +73,7 @@ h{%
     [ ] (?P<code_point> [0-9A-F]+ )
 %
   ###\g<character>
-    \g<character> <code>U+\g<code_point></code>
+    \g<character> <span class="code-point">U+\g<code_point></span>
   ###
 %}
 
