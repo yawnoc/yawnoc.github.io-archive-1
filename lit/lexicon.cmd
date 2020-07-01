@@ -28,6 +28,35 @@
 ||||]
 
 
+
+<!-- Radical index -->
+
+[====
+* [⽝](#dog)
+====]
+
+
+<!--
+  Anchor id for...
+  * Radical         : {Unicode English radical name}
+  * Radical-stroke  : {Unicode English radical name}-{number of strokes}
+  * Character       : {Chinese character}
+-->
+
+<!-- Character entry heading  \char {character} {code point} -->
+
+h{%
+  \\char
+    [ ] (?P<character> \S )
+    [ ] (?P<code_point> [0-9A-F]+ )
+%
+  ####\g<character>
+    \g<character> <code>U+\g<code_point></code>
+  ####
+%}
+
+
+
 ----
 This lexicon is meant to be a quick reference
 for Literary Chinese words and phrases
@@ -61,41 +90,12 @@ Radical \> Strokes \> First residual stroke \> Simplified \
   https://www.unicode.org/reports/tr38/#SortingAlgorithm
 @@
 
-
-
-##index
-  Radical index
-##
-
-<!--
-  Anchor id for...
-  * Radical         : {Unicode English radical name}
-  * Radical-stroke  : {Unicode English radical name}-{number of strokes}
-  * Character       : {Chinese character}
--->
-
-<!-- Character entry heading  \char {character} {code point} -->
-
-h{%
-  \\char
-    [ ] (?P<character> \S )
-    [ ] (?P<code_point> [0-9A-F]+ )
-%
-  ####\g<character>
-    \g<character> <code>U+\g<code_point></code>
-  ####
-%}
-
 ----
 See also: [Unihan Radical-Stroke Index][unihan]
 ----
 @@[unihan]
   https://www.unicode.org/charts/unihanrsindex.html
 @@
-
-[====
-* [⽝](#dog)
-====]
 
 
 ##dog
