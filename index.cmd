@@ -134,6 +134,13 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
   English translations of Literary Chinese
 ###
 
+======{page-link-container}
+* [Conway's Lexicon for Literary Chinese](lit/lexicon)
+  ||||{page-description}
+    Quick reference for words and phrases which I have rendered into English.
+  ||||
+======
+
 
 ####literary-chinese-maths
   Mathematics
