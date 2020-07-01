@@ -1,4 +1,4 @@
-<!-- Thought bubbles [: :] -->
+<## Thought bubbles [: :] ##>
 
 l{%
   \[ [:]
@@ -9,7 +9,7 @@ l{%
 %}
 
 
-<!-- Abbreviations for classes -->
+<## Abbreviations for classes ##>
 
 b{: {h} : {host} :}
 b{: {ht} : {host thought-bubble} :}
@@ -17,7 +17,7 @@ b{: {g} : {guest} :}
 b{: {gt} : {guest thought-bubble} :}
 
 
-<!-- END of excerpt \END-excerpt -->
+<## END of excerpt \END-excerpt ##>
 
 w{: \END-excerpt :
   <div class="marker end">
@@ -26,7 +26,7 @@ w{: \END-excerpt :
 :}
 
 
-<!-- END of interview \END -->
+<## END of interview \END ##>
 
 w{: \END :
   <div class="marker end">
@@ -35,7 +35,7 @@ w{: \END :
 :}
 
 
-<!-- Sic erat scriptum \sic -->
+<## Sic erat scriptum \sic ##>
 
 s{: \sic : _sic_ :}
 

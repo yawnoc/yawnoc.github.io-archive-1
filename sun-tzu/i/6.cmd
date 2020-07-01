@@ -216,7 +216,8 @@ the measurements for silver and jade.
 Or maybe he only had access to *very* impure silver and jade:
 ----
 
-<!--                     Density comparison
+<##
+                         Density comparison
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -227,7 +228,7 @@ Or maybe he only had access to *very* impure silver and jade:
     ybottom     bottom y pos                            4
     h           total height                           22
   ***********************************************************************
-  -->
+##>
 
 {: \data-point : \\point marker-end="url(#datapoint)" :}
 
@@ -256,29 +257,29 @@ Or maybe he only had access to *very* impure silver and jade:
   
   [accessible-svg-content/
     
-    <!-- Marker definitions -->
+    <## Marker definitions ##>
     <defs>
-      <!-- Horizontal axis coarse tick -->
+      <## Horizontal axis coarse tick ##>
       <marker id="htickcoarse" viewBox="-0.1 0 0.2 0.4"
         refX="0" refY="0" markerWidth="0.2" markerHeight="0.4">
         <line x1="0" y1="0" x2="0" y2="0.4"/>
       </marker>
-      <!-- Horizontal axis fine tick -->
+      <## Horizontal axis fine tick ##>
       <marker id="htickfine" viewBox="-0.1 0 0.2 0.25"
         refX="0" refY="0" markerWidth="0.2" markerHeight="0.25">
         <line x1="0" y1="0" x2="0" y2="0.25"/>
       </marker>
-      <!-- Vertical axis coarse tick -->
+      <## Vertical axis coarse tick ##>
       <marker id="vtickcoarse" viewBox="-0.4 -0.1 0.4 0.2"
         refX="0" refY="0" markerWidth="0.4" markerHeight="0.2">
         <line x1="-0.4" y1="0" x2="0" y2="0"/>
       </marker>
-      <!-- Vertical axis fine tick -->
+      <## Vertical axis fine tick ##>
       <marker id="vtickfine" viewBox="-0.25 -0.1 0.25 0.2"
         refX="0" refY="0" markerWidth="0.25" markerHeight="0.2">
         <line x1="-0.25" y1="0" x2="0" y2="0"/>
       </marker>
-      <!-- Data point -->
+      <## Data point ##>
       <marker id="datapoint"
         viewBox="-0.5 -0.5 1 1"
         refX="0" refY="0" markerWidth="1" markerHeight="1"\
@@ -309,7 +310,7 @@ Or maybe he only had access to *very* impure silver and jade:
       marker-end="url(#vtickfine)"
     ::}
     
-    <!-- Horizontal axis -->
+    <## Horizontal axis ##>
     <line x1="0" y1="0" x2="20.5" y2="0"/>
     <text \maths-italic x="11" y="2.6" \font-size:axis>\
       ρ<tspan \maths-regular \font-size:axis-indices
@@ -320,7 +321,7 @@ Or maybe he only had access to *very* impure silver and jade:
         dy="-0.4em">−3</tspan>\
       <tspan dx="0.1em" dy="0.32em">)</tspan>
     </text>
-    <!-- Horizontal axis coarse ticks -->
+    <## Horizontal axis coarse ticks ##>
     <polyline \point points="5,0 10,0 15,0 20,0"
       \ticks:coarse-horizontal/>
     <text \maths-italic x="5" y="0" \tick-labels:horizontal>5</text>
@@ -328,14 +329,14 @@ Or maybe he only had access to *very* impure silver and jade:
     <text \maths-italic x="15" y="0" \tick-labels:horizontal>15</text>
     <text \maths-italic x="20" y="0" \tick-labels:horizontal>20</text>
     
-    <!-- Horizontal axis fine ticks -->
+    <## Horizontal axis fine ticks ##>
     <polyline \point
       points =
        "1,0  2,0  3,0  4,0  6,0  7,0  8,0  9,0
         11,0 12,0 13,0 14,0 16,0 17,0 18,0 19,0"
       \ticks:fine-horizontal/>
     
-    <!-- Vertical axis -->
+    <## Vertical axis ##>
     <line x1="0" y1="0" x2="0" y2="-17.5"/>
     <text \maths-italic x="-2.4" y="-8.5" \font-size:axis
       transform = "rotate(-90 -2.4 -8.5)">\
@@ -349,7 +350,7 @@ Or maybe he only had access to *very* impure silver and jade:
       <tspan dx="0.1em" dy="0.32em">)</tspan>
     </text>
     
-    <!-- Vertical axis coarse ticks -->
+    <## Vertical axis coarse ticks ##>
     <polyline \point points="0,-5 0,-10 0,-15"
       \ticks:coarse-vertical/>
     <text \maths-italic x="0" y="-5" \font-size:ticks
@@ -359,41 +360,41 @@ Or maybe he only had access to *very* impure silver and jade:
     <text \maths-italic x="0" y="-15" \font-size:ticks
       dx="-1.2em" dy="0.3em">15</text>
     
-    <!-- Vertical axis fine ticks -->
+    <## Vertical axis fine ticks ##>
     <polyline \point
       points =
        "0, -1 0, -2 0, -3 0, -4 0, -6 0, -7 0, -8 0,-9
         0,-11 0,-12 0,-13 0,-14 0,-16 0,-17"
       \ticks:fine-vertical/>
     
-    <!-- Data points -->
+    <## Data points ##>
     
-    <!-- Gold -->
+    <## Gold ##>
     <polyline \data-point points="19.29,-16"/>
     <text x="19.29" y="-16" \font-size:material
       dx="0.8em" dy="1.4em">~~金~~ Gold</text>
-    <!-- Silver -->
+    <## Silver ##>
     <polyline \data-point points="10.5,-14"/>
     <text x="10.5" y="-14" \font-size:material
       dy="-0.6em">~~銀~~ Silver</text>
-    <!-- Jade -->
+    <## Jade ##>
     <polyline \data-point points="3,-12"/>
     <text x="3" y="-12" \font-size:material
       dy="-0.6em">~~玉~~ Jade</text>
-    <!-- Copper -->
+    <## Copper ##>
     <polyline \data-point points="8.79,-7.5"/>
     <text x="8.79" y="-7.5" \font-size:material
       dx="-1.5em" dy="-0.7em">~~銅~~ Copper</text>
-    <!-- Lead -->
+    <## Lead ##>
     <polyline \data-point points="11.35,-9.5"/>
     <text x="11.35" y="-9.5" \font-size:material
       dx="-1.4em" dy="-0.6em">~~鉛~~ Lead</text>
-    <!-- Cast iron -->
+    <## Cast iron ##>
     <polyline \data-point points="7.2,-6"/>
     <text x="7.2" y="-6" \font-size:material
       dx="2.2em" dy="1.4em">~~鐵~~ Cast iron</text>
     
-    <!-- Line of best fit (slope 0.834229) -->
+    <## Line of best fit (slope 0.834229) ##>
     <line x1="0" y1="0" x2="20" y2="-16.68458"/>
   
   /]

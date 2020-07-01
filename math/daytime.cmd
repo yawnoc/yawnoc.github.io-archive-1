@@ -29,12 +29,12 @@
   ~~
 %%
 
-<!--
+<##
   Spans of various classes:
     [tad/   /]  timeanddate
     [mod/   /]  model
     [modc/  /]  model with-correction
--->
+##>
 {%
   \[
   (?P<abbreviated_class> tad | mod[c]? )/
@@ -528,7 +528,8 @@ meaning $\mathrm{atan2} (y, x)$
 (in other words $\varphi$ is always in the same quadrant as $Y$).
 ----
 
-<!--                Tilt-reduced quantities diagram
+<##
+                    Tilt-reduced quantities diagram
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -541,7 +542,7 @@ meaning $\mathrm{atan2} (y, x)$
     ybottom     bottom y pos                            1
     h           total height                            5.1
   ***********************************************************************
-  -->
+##>
 
 ||||{centred-block}
 <svg class="fit-width" width="320px" viewBox="-0.5 -4.1 12 5.1"
@@ -561,21 +562,21 @@ meaning $\mathrm{atan2} (y, x)$
     {: \maths-regular : class="maths-regular" :}
     {: \font-size : font-size="0.7" :}
     
-    <!-- hypotenuse (radius) -->
+    <## hypotenuse (radius) ##>
     <line x1="0" y1="0" x2="8" y2="-4" />
     <text \maths-italic x="4" y="-2" \font-size dy="-0.6em">ρ</text>
     
-    <!-- angle -->
+    <## angle ##>
     <text \maths-italic x="1.8" y="-0.3" \font-size>φ</text>
     
-    <!-- run -->
+    <## run ##>
     <line x1="0" y1="0" x2="8" y2="0" />
     <text x="4" y="0.8" \font-size>
       <tspan \maths-regular>cos</tspan>
       <tspan \maths-italic>Y</tspan>
     </text>
     
-    <!-- rise -->
+    <## rise ##>
     <line x1="8" y1="0" x2="8" y2="-4" />
     <text x="9.8" y="-1.8" \font-size>
       <tspan \maths-regular>cos</tspan>
@@ -584,7 +585,7 @@ meaning $\mathrm{atan2} (y, x)$
       <tspan \maths-italic>Y</tspan>
     </text>
     
-    <!-- right angle -->
+    <## right angle ##>
     <line x1="7.5" y1="0" x2="7.5" y2="-0.5" />
     <line x1="7.5" y1="-0.5" x2="8" y2="-0.5" />
   
@@ -865,7 +866,7 @@ for Hong Kong and Perth:
   \tad-url
 @@
 
-<!-- Strip spaces around thin space \, -->
+<## Strip spaces around thin space \, ##>
 {% [ ]*\\[,][ ]* % \\, %}
 
 ||||||{centred-block}

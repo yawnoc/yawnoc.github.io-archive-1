@@ -102,7 +102,8 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
   /manuscripts/resistance.pdf
 @@
 
-<!--                      Trajectory diagram
+<##
+                          Trajectory diagram
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -117,7 +118,7 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
     ybottom     bottom y pos                            1
     h           total height                           10
   ***********************************************************************
-  -->
+##>
 
 ||||{centred-block}
 <svg class="fit-width" width="360px" viewBox="-2 -9 14 10"
@@ -136,9 +137,9 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
     {:: \font-size:diagram :: font-size="0.8" ::}
     {: \maths-italic : class="maths-italic" :}
     
-    <!-- Marker definitions -->
+    <## Marker definitions ##>
     <defs>
-      <!-- velocity arrowhead -->
+      <## velocity arrowhead ##>
       <marker id="arrowhead" viewBox="0 -0.3 1 0.6"
         refX="1" refY="0"
         markerWidth="1" markerHeight="0.3"
@@ -147,21 +148,21 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
       </marker>
     </defs>
     
-    <!-- x-axis -->
+    <## x-axis ##>
     <line x1="0" y1="0" x2="11" y2="0"/>
     <text \maths-italic x="11" y="0" \font-size:diagram
       dx="0.6em" dy="0.3em">x</text>
     
-    <!-- y-axis -->
+    <## y-axis ##>
     <line x1="0" y1="0" x2="0" y2="-8"/>
     <text \maths-italic x="0" y="-8" \font-size:diagram
       dy="-0.5em">y</text>
     
-    <!-- trajectory
+    <## trajectory
       See svg_points_trajectory_script.m
       https://github.com/yawnoc/projectile-motion-numerics/
         blob/master/svg_points_trajectory_script.m
-      -->
+    ##>
     <polyline points="\
       0,-0
       0.245,-0.486
@@ -250,15 +251,15 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
       10,-3.29e-16
     "/>
     
-    <!-- launch angle phi -->
+    <## launch angle phi ##>
     <text \maths-italic x="1.2" y="-0.1" \font-size:diagram
       dx="-0.5em" dy="-0.35em">ϕ</text>
     
-    <!-- range R -->
+    <## range R ##>
     <text \maths-italic x="10" y="0" \font-size:diagram
       dy="1em">R</text>
     
-    <!-- velocity vector u -->
+    <## velocity vector u ##>
     <line x1="0" y1="0" x2="1" y2="-2" marker-end="url(#arrowhead)"/>
     <text \maths-italic x="1" y="-2" \font-size:diagram
       dx="-0.6em">u</text>
@@ -610,11 +611,11 @@ In the following table we compare numerically computed optimal launch angles
 (see [GitHub repository][numerics-repo])
 with those from the asymptotic [result above](#result):
 ----
-<!--
+<##
   See table_b_phi_script.m
   https://github.com/yawnoc/projectile-motion-numerics/
     blob/master/table_b_phi_script.m
-  -->
+##>
 ||||||{centred-block}
 ||||{overflowing}
 ''''
@@ -745,7 +746,8 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
 (or equivalently $u / c < 0.7$).
 ----
 
-<!--            Optimal launch angle plot (in terms of B)
+<##
+                Optimal launch angle plot (in terms of B)
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -757,7 +759,7 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
     h           total height                           16
   ***********************************************************************
   Horizontal scale is 4:1.
-  -->
+##>
 
 ||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 16"
@@ -773,24 +775,24 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
   
   [accessible-svg-content/
     
-    <!-- Marker definitions -->
+    <## Marker definitions ##>
     <defs>
-      <!-- Horizontal axis coarse tick -->
+      <## Horizontal axis coarse tick ##>
       <marker id="htickcoarse" viewBox="-0.1 0 0.2 0.4"
         refX="0" refY="0" markerWidth="0.2" markerHeight="0.4">
         <line x1="0" y1="0" x2="0" y2="0.4"/>
       </marker>
-      <!-- Horizontal axis fine tick -->
+      <## Horizontal axis fine tick ##>
       <marker id="htickfine" viewBox="-0.1 0 0.2 0.25"
         refX="0" refY="0" markerWidth="0.2" markerHeight="0.25">
         <line x1="0" y1="0" x2="0" y2="0.25"/>
       </marker>
-      <!-- Vertical axis coarse tick -->
+      <## Vertical axis coarse tick ##>
       <marker id="vtickcoarse" viewBox="-0.4 -0.1 0.4 0.2"
         refX="0" refY="0" markerWidth="0.4" markerHeight="0.2">
         <line x1="-0.4" y1="0" x2="0" y2="0"/>
       </marker>
-      <!-- Vertical axis fine tick -->
+      <## Vertical axis fine tick ##>
       <marker id="vtickfine" viewBox="-0.25 -0.1 0.25 0.2"
         refX="0" refY="0" markerWidth="0.25" markerHeight="0.2">
         <line x1="-0.25" y1="0" x2="0" y2="0"/>
@@ -820,12 +822,12 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
     
     {:: \font-size:plot :: font-size="1" ::}
     
-    <!-- B-axis -->
+    <## B-axis ##>
     <line x1="0" y1="-35" x2="21" y2="-35"/>
     <text \maths-italic x="21" y="-35" \font-size:plot
       dx="0.6em" dy="0.3em">B</text>
     
-    <!-- Horizontal axis coarse ticks -->
+    <## Horizontal axis coarse ticks ##>
     <polyline class="points" points="0,-35 4,-35 8,-35 12,-35 16,-35 20,-35"
       \ticks:coarse-horizontal/>
     <text \maths-italic x="0" y="-35" \tick-labels:horizontal>0</text>
@@ -837,19 +839,19 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
     
     {:: \tick-labels:horizontal :: font-size="1" dy="1.35em" ::}
     
-    <!-- Horizontal axis fine ticks -->
+    <## Horizontal axis fine ticks ##>
     <polyline class="points"
       points="0.8,-35 1.6,-35 2.4,-35 3.2,-35 4.8,-35 5.6,-35 6.4,-35 7.2,-35
         8.8,-35 9.6,-35 10.4,-35 11.2,-35 12.8,-35 13.6,-35 14.4,-35 15.2,-35
         16.8,-35 17.6,-35 18.4,-35 19.2,-35 20.8,-35"
       \ticks:fine-horizontal/>
     
-    <!-- phi-axis -->
+    <## phi-axis ##>
     <line x1="0" y1="-35" x2="0" y2="-46.8"/>
     <text \maths-italic x="0" y="-46.8" \font-size:plot
       dy="-0.5em">ϕ</text>
     
-    <!-- Vertical axis coarse ticks -->
+    <## Vertical axis coarse ticks ##>
     <polyline class="points"
       points="0,-35 0,-40 0,-45"
       \ticks:coarse-vertical/>
@@ -859,16 +861,16 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
     
     {:: \tick-labels:vertical :: font-size="1" dx="-1.4em" dy="0.3em" ::}
     
-    <!-- Vertical axis fine ticks -->
+    <## Vertical axis fine ticks ##>
     <polyline class="points"
       points="0,-36 0,-37 0,-38 0,-39 0,-41 0,-42 0,-43 0,-44 0,-46"
       \ticks:fine-vertical/>
     
-    <!-- numerical
+    <## numerical
       See svg_points_b_phi_script.m
       https://github.com/yawnoc/projectile-motion-numerics/
         blob/master/svg_points_b_phi_script.m
-      -->
+    ##>
     <polyline points="0,-45
     0.4,-44.43
     0.8,-43.91
@@ -923,11 +925,11 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
     "/>
     <text x="10" y="-37.98" \font-size:plot
       dx="2.5em" dy="-0.5em">Numerical</text>
-    <!-- asymptotic
+    <## asymptotic
       See svg_points_b_phi_asymptotic_script.m
       https://github.com/yawnoc/projectile-motion-numerics/
         blob/master/svg_points_b_phi_asymptotic_script.m
-      -->
+    ##>
     <polyline points="0,-45
     0.2,-44.71
     0.4,-44.43
@@ -993,7 +995,8 @@ $$
 Finally, here is a plot of the optimal launch angle in terms of
 $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
 ----
-<!--         Optimal launch angle plot (in terms of u / c)
+<##
+             Optimal launch angle plot (in terms of u / c)
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -1005,7 +1008,7 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
     h           total height                           21
   ***********************************************************************
   Horizontal scale is 5:1.
-  -->
+##>
 
 ||||{centred-block}
 <svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 21"
@@ -1021,12 +1024,12 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
   
   [accessible-svg-content/
     
-    <!-- u/c-axis -->
+    <## u/c-axis ##>
     <line x1="0" y1="-30" x2="20.5" y2="-30"/>
     <text \maths-italic x="20.5" y="-30" \font-size:plot
       dx="1.2em" dy="0.3em">u\,/\,c</text>
     
-    <!-- Horizontal axis coarse ticks -->
+    <## Horizontal axis coarse ticks ##>
     <polyline class="points"
       points="0,-30 5,-30 10,-30 15,-30 20,-30"
       \ticks:coarse-horizontal/>
@@ -1036,16 +1039,16 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
     <text \maths-italic x="15" y="-30" \tick-labels:horizontal>3</text>
     <text \maths-italic x="20" y="-30" \tick-labels:horizontal>4</text>
     
-    <!-- Horizontal axis fine ticks -->
+    <## Horizontal axis fine ticks ##>
     <polyline class="points"
       points="1,-30 2,-30 3,-30 4,-30 6,-30 7,-30 8,-30 9,-30
         11,-30 12,-30 13,-30 14,-30 16,-30 17,-30 18,-30 19,-30"
       \ticks:fine-horizontal/>
     
-    <!-- phi-axis -->
+    <## phi-axis ##>
     <line x1="0" y1="-30" x2="0" y2="-46.8"/>
     <text \maths-italic x="0" y="-46.8" \font-size:plot dy="-0.5em">ϕ</text>
-    <!-- Vertical axis coarse ticks -->
+    <## Vertical axis coarse ticks ##>
     <polyline class="points"
       points="0,-30 0,-35 0,-40 0,-45"
       \ticks:coarse-vertical/>
@@ -1054,17 +1057,17 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
     <text \maths-italic x="0" y="-40" \tick-labels:vertical>40°</text>
     <text \maths-italic x="0" y="-45" \tick-labels:vertical>45°</text>
     
-    <!-- Vertical axis fine ticks -->
+    <## Vertical axis fine ticks ##>
     <polyline class="points"
       points="0,-31 0,-32 0,-33 0,-34 0,-36 0,-37 0,-38 0,-39
         0,-41 0,-42 0,-43 0,-44 0,-46"
       \ticks:fine-vertical/>
     
-    <!-- numerical
+    <## numerical
       See svg_points_u_phi_script.m
       https://github.com/yawnoc/projectile-motion-numerics/
         blob/master/svg_points_u_phi_script.m
-      -->
+    ##>
     <polyline points="0,-45
     0.5,-44.94
     1,-44.76
@@ -1111,11 +1114,11 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
     <text x="10" y="-36.2" \font-size:plot
       dx="2.5em" dy="-0.5em">Numerical</text>
     
-    <!-- asymptotic
+    <## asymptotic
       See svg_points_u_phi_asymptotic.m
       https://github.com/yawnoc/projectile-motion-numerics/
         blob/master/svg_points_u_phi_asymptotic.m
-      -->
+    ##>
     <polyline points="0,-45
     0.25,-44.98
     0.5,-44.94

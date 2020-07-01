@@ -268,7 +268,7 @@ For example,
 
 
 
-<!-- No-wrapping span [! !] -->
+<## No-wrapping span [! !] ##>
 {%
   \[! [ ]* (?P<content> [\s\S]*? ) [ ]*? !\]
 %

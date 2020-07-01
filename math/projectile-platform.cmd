@@ -59,7 +59,8 @@ although more algebra is required to compute it.
 __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
 ----
 
-<!--                       Trajectory diagram
+<##
+                           Trajectory diagram
   ***********************************************************************
   We choose the parabola with initial height h and range R
   with peak along x == b.
@@ -143,7 +144,7 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
       |_________________________________|__ x
                                         R
   ***********************************************************************
-  -->
+##>
 
 [svg-styles/
   text {
@@ -171,9 +172,9 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
     {: \maths-italic : class="maths-italic" :}
     {: \font-size : font-size="0.45" :}
     
-    <!-- Marker definitions -->
+    <## Marker definitions ##>
     <defs>
-      <!-- velocity arrowhead -->
+      <## velocity arrowhead ##>
       <marker
         id="arrowhead" viewBox="0 -0.15 0.5 0.3"
         refX="0.5" refY="0"
@@ -183,33 +184,33 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
       </marker>
     </defs>
     
-    <!-- x-axis -->
+    <## x-axis ##>
     <line x1="0" y1="0" x2="5.5" y2="0"/>
     <text \maths-italic x="5.5" y="0" \font-size
       dx="0.5em" dy="0.3em">x</text>
     
-    <!-- y-axis -->
+    <## y-axis ##>
     <line x1="0" y1="0" x2="0" y2="-3.5"/>
     <text \maths-italic x="0" y="-3.5" \font-size
       dy="-0.5em">y</text>
     
-    <!-- initial height h -->
+    <## initial height h ##>
     <line x1="-0.2" y1="-2" x2="0.7" y2="-2"/>
     <text \maths-italic x="-0.25" y="-2" \font-size
       dx="-0.5em" dy="0.3em">h</text>
     
-    <!-- trajectory -->
+    <## trajectory ##>
     <path d="M 0,-2 Q 2.5,-6 5,0" fill="none"/>
     
-    <!-- launch angle phi -->
+    <## launch angle phi ##>
     <text \maths-italic x="0" y="-2" \font-size
       dx="1em" dy="-0.35em">ϕ</text>
     
-    <!-- range R -->
+    <## range R ##>
     <text \maths-italic x="5" y="0" \font-size
       dy="1em">R</text>
     
-    <!-- velocity vector u -->
+    <## velocity vector u ##>
     <line x1="0" y1="-2" x2="1" y2="-3.6" marker-end = "url(#arrowhead)"/>
     <text \maths-italic x="1" y="-3.6" \font-size
       dx="0.5em">u</text>

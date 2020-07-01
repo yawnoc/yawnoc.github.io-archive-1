@@ -1,14 +1,14 @@
-<!--
+<##
   ----------------------------------------------------------------
   Sun Tzu navigation-bar breadcrumb link list item  *>
   ----------------------------------------------------------------
--->
+##>
 
 b{: *> : *{breadcrumb} :}
 
 
 
-<!--
+<##
   ----------------------------------------------------------------
   Sun Tzu surrounds navigation  {{{{| |}}}}
   ----------------------------------------------------------------
@@ -16,9 +16,9 @@ b{: *> : *{breadcrumb} :}
   * ← U+2190 LEFTWARDS ARROW
   * ↑ U+2191 UPWARDS ARROW
   * → U+2192 RIGHTWARDS ARROW
--->
+##>
 
-<!-- Surrounds navigation {{{{| |}}}}  -->
+<## Surrounds navigation {{{{| |}}}}  ##>
 
 b{%
   \{{4}
@@ -32,7 +32,7 @@ b{%
   </nav>
 %}
 
-<!-- Adjacent row  {{| |}}  -->
+<## Adjacent row  {{| |}}  ##>
 
 b{%
   \{{2}
@@ -46,7 +46,7 @@ b{%
   ||||||
 %}
 
-<!-- Current location in container  \nav-curr: {text} -->
+<## Current location in container  \nav-curr: {text} ##>
 
 b{%
   \\nav[-]curr: [ ] (?P<text> [^\n]* )
@@ -56,7 +56,7 @@ b{%
   ||||
 %}
 
-<!-- Up link in container  \nav-up: {text} : {href_spec}  -->
+<## Up link in container  \nav-up: {text} : {href_spec}  ##>
 
 b{%
   \\nav[-]up:
@@ -72,7 +72,7 @@ b{%
   ||||
 %}
 
-<!-- Previous link in container  \nav-prev: {text} : {href_spec}  -->
+<## Previous link in container  \nav-prev: {text} : {href_spec}  ##>
 
 b{%
   \\nav[-]prev:
@@ -88,7 +88,7 @@ b{%
   ||||
 %}
 
-<!-- Next link in container  \nav-next: {text} : {href_spec}  -->
+<## Next link in container  \nav-next: {text} : {href_spec}  ##>
 
 b{%
   \\nav[-]next:
@@ -106,13 +106,13 @@ b{%
 
 
 
-<!--
+<##
   ----------------------------------------------------------------
   Sun Tzu source text links
   ----------------------------------------------------------------
--->
+##>
 
-<!-- Version A  \a[p] -->
+<## Version A  \a[p] ##>
 
 e{%
   \\a \[ (?P<p> [0-9]+ ) \]
@@ -120,7 +120,7 @@ e{%
   [Version~A](https://archive.org/details/02094034.cn/page/n\g<p>)
 %}
 
-<!-- Version B  \b[p] -->
+<## Version B  \b[p] ##>
 
 e{%
   \\b \[ (?P<p> [0-9]+ ) \]
@@ -134,7 +134,7 @@ e{%
   )
 %}
 
-<!-- Version C  \c[p] -->
+<## Version C  \c[p] ##>
 
 e{%
   \\c \[ (?P<p> [0-9]+ ) \]
@@ -142,7 +142,7 @@ e{%
   [Version~C](https://ctext.org/sunzi-suan-jing#n\g<p>)
 %}
 
-<!-- Version D  \d[p] -->
+<## Version D  \d[p] ##>
 
 e{%
   \\d \[ (?P<p> [0-9]+ ) \]
@@ -150,7 +150,7 @@ e{%
   [Version~D](https://ctext.org/library.pl?if=en&file=86926&page=\g<p>)
 %}
 
-<!-- Default to Version D \d-default -->
+<## Default to Version D \d-default ##>
 
 e{:
   \d-default
@@ -160,14 +160,14 @@ e{:
 
 
 
-<!--
+<##
   ----------------------------------------------------------------
   Sun Tzu URLs in round brackets
   ----------------------------------------------------------------
--->
+##>
 
 
-<!-- Index  [""] -->
+<## Index  [""] ##>
 
 l{%
   [ ]?
@@ -180,7 +180,7 @@ l{%
 %}
 
 
-<!-- Volume v  ["v"] -->
+<## Volume v  ["v"] ##>
 
 l{%
   [ ]?
@@ -203,7 +203,7 @@ l{%
 %}
 
 
-<!-- Volume v Paragraph p  ["v p"] -->
+<## Volume v Paragraph p  ["v p"] ##>
 
 l{%
   [ ]?

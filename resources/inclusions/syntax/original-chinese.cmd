@@ -1,4 +1,4 @@
-<!--
+<##
   ----------------------------------------------------------------
   Bracketed original Chinese after romanisations  (( ))
   ----------------------------------------------------------------
@@ -10,7 +10,7 @@
   with
     &nbsp;<span lang="zh-Hant" class="original-chinese">{content}</span>
   so that the match must be split before the first >.
--->
+##>
 
 Z{%
   [ ]

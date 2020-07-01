@@ -58,7 +58,7 @@ of which I shall be using the first version as the source text,
 as the second appears to have many transcription errors:
 ----
 
-<!-- Simplified Chinese declaration [simp/ /] -->
+<## Simplified Chinese declaration [simp/ /] ##>
 Z{%
   \[
   simp/

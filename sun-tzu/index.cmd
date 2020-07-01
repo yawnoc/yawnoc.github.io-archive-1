@@ -41,7 +41,7 @@
 *> [Pref.] ["p" Preface]
 * [I] ["i" Volume~I]
 * [II] ["ii" Volume~II]
-<!-- * [III] ["iii" Volume~III] -->
+<## * [III] ["iii" Volume~III] ##>
 * \header-link:cite
 ====]]
 
@@ -222,9 +222,9 @@ They are drafts, and as such, do not contain
 edits and corrections I have made since they were scanned.
 ----
 
-<!--
+<##
   URL for "Manuscript for Volume v Paragraph p" in round brackets [m"v p"]
--->
+##>
 {%
   [ ]* \[m"(?P<volume> [i] {1,3} ) [ ] (?P<paragraph> [0-9] + )"\]
 %

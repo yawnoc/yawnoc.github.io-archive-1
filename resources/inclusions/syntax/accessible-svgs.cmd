@@ -1,4 +1,4 @@
-<!--
+<##
   ----------------------------------------------------------------
   Accessible inline SVGs
   ----------------------------------------------------------------
@@ -74,9 +74,9 @@
   If the labelling by id ever becomes unnecessary,
   then I will remove the {id} bits.
   
--->
+##>
 
-<!-- \accessible-svg-attributes[{id}] -->
+<## \accessible-svg-attributes[{id}] ##>
 
 w{%
   \\accessible[-]svg[-]attributes
@@ -88,7 +88,7 @@ w{%
 %}
 
 
-<!-- [accessible-svg-title/{id}  {content}  /] -->
+<## [accessible-svg-title/{id}  {content}  /] ##>
 
 w{%
   \[
@@ -104,7 +104,7 @@ w{%
 %}
 
 
-<!-- [accessible-svg-content/  {content}  /] -->
+<## [accessible-svg-content/  {content}  /] ##>
 
 w{%
   \[

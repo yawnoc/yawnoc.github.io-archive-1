@@ -74,7 +74,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 ====]
 
 
-<!-- Header rows for tables -->
+<## Header rows for tables ##>
 {::
   \header-row
 ::
@@ -88,7 +88,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 ::}
 
 
-<!-- Page row \page-row[p] n -->
+<## Page row \page-row[p] n ##>
 {%
   \\page-row
   \[
@@ -103,7 +103,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 %}
 
 
-<!-- Syllable row \syllable-row  i  W  C  J -->
+<## Syllable row \syllable-row  i  W  C  J ##>
 {%
   \\syllable-row
     [ ]+
@@ -123,7 +123,7 @@ Note that Jyutping (like all contemporary romanisation systems)
 %}
 
 
-<!-- archive.org URL in round brackets ["p"] -->
+<## archive.org URL in round brackets ["p"] ##>
 {%
   \[ "
     (?P<archive_page_number> [n]?[0-9]+? )

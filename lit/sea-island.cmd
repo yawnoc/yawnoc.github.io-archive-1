@@ -185,29 +185,29 @@ $$
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line \b x1="0" y1="-3.5" x2="0" y2="0"/>
     <text \b x="0" y="-1.75" \font-size
       dx="0em" dy="-1em"
       transform="rotate(-90 0 -1.75)">sea island</text>
-    <!-- ground BH except DG -->
+    <## ground BH except DG ##>
     <line x1="0" y1="0" x2="3" y2="0"/>
     <line x1="5.5" y1="0" x2="7.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line \r x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
     dy="-0.5em">front</text>
     <text \maths-regular-r x="3" y="-0.5" \font-size
       dx="0em" dy="-0.5em"
       transform="rotate(-90 3 -0.5)">3 rods</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line \r x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
     dy="-0.5em">rear</text>
     <text \maths-regular-r x="5.5" y="-0.5" \font-size
       dx="0em" dy="1.3em"
       transform="rotate(-90 5.5 -0.5)">3 rods</text>
-    <!-- post separation DG -->
+    <## post separation DG ##>
     <line \g x1="3" y1="0" x2="5.5" y2="0"/>
     <text \maths-regular-g x="4.25" y="0" \font-size
       dy="-0.5em">1000 paces</text>
@@ -263,18 +263,18 @@ $$
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line x1="0" y1="-3.5" x2="0" y2="0"/>
-    <!-- ground BH except DE -->
+    <## ground BH except DE ##>
     <line x1="0" y1="0" x2="3" y2="0"/>
     <line x1="4.2" y1="0" x2="7.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line \r x1="0" y1="-3.5" x2="4.2" y2="0"/>
-    <!-- front post backward walk DE -->
+    <## front post backward walk DE ##>
     <line \b x1="3" y1="0" x2="4.2" y2="0"/>
     <text \maths-regular-b x="3.6" y="0" \font-size
       dy="1.2em">123 paces</text>
@@ -320,17 +320,17 @@ $$
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line x1="0" y1="-3.5" x2="0" y2="0"/>
-    <!-- ground BH except GH -->
+    <## ground BH except GH ##>
     <line x1="0" y1="0" x2="5.5" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line \r x1="0" y1="-3.5" x2="7.7" y2="0"/>
-    <!-- rear post backward walk GH -->
+    <## rear post backward walk GH ##>
     <line \b x1="5.5" y1="0" x2="7.7" y2="0"/>
     <text \maths-regular-b x="6.6" y="0" \font-size
       dy="1.2em">127 paces</text>
@@ -365,20 +365,20 @@ $$
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line \b x1="0" y1="-3.5" x2="0" y2="0"/>
     <text \b x="0" y="-1.75" \font-size
     dx="0em" dy="-1em"
       transform="rotate(-90 0 -1.75)">island height?</text>
-    <!-- ground BH except BD -->
+    <## ground BH except BD ##>
     <line x1="3" y1="0" x2="7.7" y2="0"/>
-    <!-- distance from front post BD -->
+    <## distance from front post BD ##>
     <line \r x1="0" y1="0" x2="3" y2="0"/>
     <text \r x="1.5" y="0" \font-size
     dy="-0.5em">distance?</text>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
   
   /]
@@ -572,7 +572,8 @@ I have mapped the names of the vertices as follows:
 ||||||
 
 
-<!--                       Full diagram
+<##
+                           Full diagram
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -609,7 +610,7 @@ I have mapped the names of the vertices as follows:
       B           d            D   f   E      G   f   I       H
                                       s              r
   ***********************************************************************
-  -->
+##>
 
 
 {%
@@ -646,7 +647,7 @@ I have mapped the names of the vertices as follows:
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line x1="0" y1="-3.5" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -656,9 +657,9 @@ I have mapped the names of the vertices as follows:
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- ground BH -->
+    <## ground BH ##>
     <line x1="0" y1="0" x2="7.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -668,7 +669,7 @@ I have mapped the names of the vertices as follows:
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -678,25 +679,25 @@ I have mapped the names of the vertices as follows:
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF -->
+    <## post height line OF ##>
     <line x1="0" y1="-1" x2="5.5" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- front line of sight translated unto rear FI -->
+    <## front line of sight translated unto rear FI ##>
     <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
     <text x="6.7" y="0" \font-size
       dy="1.2em">~~ 壬 ~~</text>
@@ -726,7 +727,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line \b x1="0" y1="-3.5" x2="0" y2="0"/>
     <text \r x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -736,7 +737,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- ground BH -->
+    <## ground BH ##>
     <line x1="0" y1="0" x2="7.7" y2="0"/>
   
   /]
@@ -765,7 +766,7 @@ The punctuation inserted in this section is my own.
   /]
   
   [accessible-svg-content/
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line x1="0" y1="-3.5" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -775,10 +776,10 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- ground BH except DE -->
+    <## ground BH except DE ##>
     <line x1="0" y1="0" x2="3" y2="0"/>
     <line x1="4.2" y1="0" x2="7.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line \b x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -788,13 +789,13 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line \v x1="0" y1="-3.5" x2="4.2" y2="0"/>
     <text \g x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic-g x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- front pillar backward walk ED -->
+    <## front pillar backward walk ED ##>
     <line \r x1="3" y1="0" x2="4.2" y2="0"/>
   
   /]
@@ -829,7 +830,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line x1="0" y1="-3.5" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -839,9 +840,9 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- ground BH except HG -->
+    <## ground BH except HG ##>
     <line x1="0" y1="0" x2="5.5" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -851,7 +852,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line \b x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -861,19 +862,19 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line \v x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text \g x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic-g x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- rear post backward walk HG -->
+    <## rear post backward walk HG ##>
     <line \r x1="5.5" y1="0" x2="7.7" y2="0"/>
   
   /]
@@ -906,7 +907,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
     
-    <!-- sea island AB except OB -->
+    <## sea island AB except OB ##>
     <line x1="0" y1="-3.5" x2="0" y2="-1"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -916,13 +917,13 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- OB -->
+    <## OB ##>
     <line \g x1="0" y1="-1" x2="0" y2="0"/>
-    <!-- ground BH except GEDB -->
+    <## ground BH except GEDB ##>
     <line x1="5.5" y1="0" x2="7.7" y2="0"/>
-    <!-- GEDB -->
+    <## GEDB ##>
     <line \b x1="0" y1="0" x2="5.5" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line \g x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -932,7 +933,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line \g x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -942,19 +943,19 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF -->
+    <## post height line OF ##>
     <line \r x1="0" y1="-1" x2="5.5" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
@@ -988,7 +989,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line x1="0" y1="-3.5" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -998,15 +999,15 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- ground BH except IG and ED -->
+    <## ground BH except IG and ED ##>
     <line x1="0" y1="0" x2="3" y2="0"/>
     <line x1="4.2" y1="0" x2="5.5" y2="0"/>
     <line x1="6.7" y1="0" x2="7.7" y2="0"/>
-    <!-- ED -->
+    <## ED ##>
     <line \g x1="3" y1="0" x2="4.2" y2="0"/>
-    <!-- IG -->
+    <## IG ##>
     <line \g x1="5.5" y1="0" x2="6.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -1016,7 +1017,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -1026,27 +1027,27 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF -->
+    <## post height line OF ##>
     <line x1="0" y1="-1" x2="5.5" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- front line of sight ACE except CE -->
+    <## front line of sight ACE except CE ##>
     <line x1="0" y1="-3.5" x2="3" y2="-1"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- CE -->
+    <## CE ##>
     <line \b x1="3" y1="-1" x2="4.2" y2="0"/>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- front line of sight translated unto rear FI -->
+    <## front line of sight translated unto rear FI ##>
     <line \r x1="5.5" y1="-1" x2="6.7" y2="0"/>
     <text x="6.7" y="0" \font-size
       dy="1.2em">~~ 壬 ~~</text>
@@ -1076,7 +1077,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB except AO -->
+    <## sea island AB except AO ##>
     <line x1="0" y1="-1" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -1086,13 +1087,13 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- AO -->
+    <## AO ##>
     <line \r x1="0" y1="-3.5" x2="0" y2="-1"/>
-    <!-- ground BH except GH -->
+    <## ground BH except GH ##>
     <line x1="0" y1="0" x2="5.5" y2="0"/>
-    <!-- GH -->
+    <## GH ##>
     <line \b x1="5.5" y1="0" x2="7.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -1102,7 +1103,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line \b x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -1112,27 +1113,27 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF -->
+    <## post height line OF ##>
     <line \r x1="0" y1="-1" x2="5.5" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- rear line of sight AFH except HF -->
+    <## rear line of sight AFH except HF ##>
     <line \r x1="0" y1="-3.5" x2="5.5" y2="-1"/>
-    <!-- HF -->
+    <## HF ##>
     <line \b x1="7.7" y1="0" x2="5.5" y2="-1"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- front line of sight translated unto rear FI -->
+    <## front line of sight translated unto rear FI ##>
     <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
     <text x="6.7" y="0" \font-size
       dy="1.2em">~~ 壬 ~~</text>
@@ -1165,7 +1166,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB except AO -->
+    <## sea island AB except AO ##>
     <line x1="0" y1="-1" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -1175,14 +1176,14 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- AO -->
+    <## AO ##>
     <line \r x1="0" y1="-3.5" x2="0" y2="-1"/>
-    <!-- ground BH except GI -->
+    <## ground BH except GI ##>
     <line x1="0" y1="0" x2="5.5" y2="0"/>
     <line x1="6.7" y1="0" x2="7.7" y2="0"/>
-    <!-- GI -->
+    <## GI ##>
     <line \b x1="5.5" y1="0" x2="6.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -1192,7 +1193,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line \b x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -1202,29 +1203,29 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF except OC -->
+    <## post height line OF except OC ##>
     <line x1="3" y1="-1" x2="5.5" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- OC -->
+    <## OC ##>
     <line \r x1="0" y1="-1" x2="3" y2="-1"/>
-    <!-- front line of sight ACE except CA -->
+    <## front line of sight ACE except CA ##>
     <line x1="3" y1="-1" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- CA -->
+    <## CA ##>
     <line \r x1="0" y1="-3.5" x2="3" y2="-1"/>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- front line of sight translated unto rear FI -->
+    <## front line of sight translated unto rear FI ##>
     <line \b x1="5.5" y1="-1" x2="6.7" y2="0"/>
     <text x="6.7" y="0" \font-size
       dy="1.2em">~~ 壬 ~~</text>
@@ -1255,7 +1256,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line x1="0" y1="-3.5" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -1265,13 +1266,13 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- ground BH except GH -->
+    <## ground BH except GH ##>
     <line x1="0" y1="0" x2="5.5" y2="0"/>
-    <!-- GI -->
+    <## GI ##>
     <line \b x1="5.5" y1="0" x2="6.7" y2="0"/>
-    <!-- HI -->
+    <## HI ##>
     <line \r x1="6.7" y1="0" x2="7.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -1281,7 +1282,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line \b x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -1291,25 +1292,25 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF -->
+    <## post height line OF ##>
     <line x1="0" y1="-1" x2="5.5" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- front line of sight translated unto rear FI -->
+    <## front line of sight translated unto rear FI ##>
     <line \b x1="5.5" y1="-1" x2="6.7" y2="0"/>
     <text x="6.7" y="0" \font-size
       dy="1.2em">~~ 壬 ~~</text>
@@ -1371,7 +1372,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB except AO -->
+    <## sea island AB except AO ##>
     <line x1="0" y1="-1" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -1381,11 +1382,11 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- AO -->
+    <## AO ##>
     <line \b x1="0" y1="-3.5" x2="0" y2="-1"/>
-    <!-- ground BH -->
+    <## ground BH ##>
     <line x1="0" y1="0" x2="7.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -1395,7 +1396,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -1405,29 +1406,29 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF except OC -->
+    <## post height line OF except OC ##>
     <line \r x1="3" y1="-1" x2="5.5" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- OC -->
+    <## OC ##>
     <line \b x1="0" y1="-1" x2="3" y2="-1"/>
-    <!-- front line of sight ACE except CA -->
+    <## front line of sight ACE except CA ##>
     <line x1="3" y1="-1" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- CA -->
+    <## CA ##>
     <line \b x1="0" y1="-3.5" x2="3" y2="-1"/>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- front line of sight translated unto rear FI -->
+    <## front line of sight translated unto rear FI ##>
     <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
     <text x="6.7" y="0" \font-size
       dy="1.2em">~~ 壬 ~~</text>
@@ -1459,7 +1460,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB except AO -->
+    <## sea island AB except AO ##>
     <line x1="0" y1="-1" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -1469,13 +1470,13 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- AO -->
+    <## AO ##>
     <line \v x1="0" y1="-3.5" x2="0" y2="-1"/>
-    <!-- ground BH except HI -->
+    <## ground BH except HI ##>
     <line x1="0" y1="0" x2="6.7" y2="0"/>
-    <!-- HI -->
+    <## HI ##>
     <line \b x1="6.7" y1="0" x2="7.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -1485,7 +1486,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line \r x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -1495,27 +1496,27 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF except FC -->
+    <## post height line OF except FC ##>
     <line x1="0" y1="-1" x2="3" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- FC -->
+    <## FC ##>
     <line \g x1="3" y1="-1" x2="5.5" y2="-1"/>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- front line of sight translated unto rear FI -->
+    <## front line of sight translated unto rear FI ##>
     <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
     <text x="6.7" y="0" \font-size
       dy="1.2em">~~ 壬 ~~</text>
@@ -1558,7 +1559,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB except AO -->
+    <## sea island AB except AO ##>
     <line \r x1="0" y1="-1" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -1568,13 +1569,13 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- AO -->
+    <## AO ##>
     <line \v x1="0" y1="-3.5" x2="0" y2="-1"/>
-    <!-- ground BH except HI -->
+    <## ground BH except HI ##>
     <line x1="0" y1="0" x2="6.7" y2="0"/>
-    <!-- HI -->
+    <## HI ##>
     <line \b x1="6.7" y1="0" x2="7.7" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line \r x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -1584,7 +1585,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line \r x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -1594,27 +1595,27 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF except FC -->
+    <## post height line OF except FC ##>
     <line x1="0" y1="-1" x2="3" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- FC -->
+    <## FC ##>
     <line \g x1="3" y1="-1" x2="5.5" y2="-1"/>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- front line of sight translated unto rear FI -->
+    <## front line of sight translated unto rear FI ##>
     <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
     <text x="6.7" y="0" \font-size
       dy="1.2em">~~ 壬 ~~</text>
@@ -1678,7 +1679,7 @@ The punctuation inserted in this section is my own.
   
   [accessible-svg-content/
   
-    <!-- sea island AB -->
+    <## sea island AB ##>
     <line x1="0" y1="-3.5" x2="0" y2="0"/>
     <text x="0" y="-3.5" \font-size
       dx="-1em" dy="0.3em">~~ 甲 ~~</text>
@@ -1688,15 +1689,15 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 乙 ~~</text>
     <text \maths-italic x="0" y="0" \font-size
       dy="2.7em">B</text>
-    <!-- ground BH except GH and DB -->
+    <## ground BH except GH and DB ##>
     <line x1="3" y1="0" x2="5.5" y2="0"/>
-    <!-- HI -->
+    <## HI ##>
     <line \b x1="6.7" y1="0" x2="7.7" y2="0"/>
-    <!-- IG -->
+    <## IG ##>
     <line \r x1="5.5" y1="0" x2="6.7" y2="0"/>
-    <!-- DB -->
+    <## DB ##>
     <line \v x1="0" y1="0" x2="3" y2="0"/>
-    <!-- front post CD -->
+    <## front post CD ##>
     <line x1="3" y1="-1" x2="3" y2="0"/>
     <text x="3" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 丙 ~~</text>
@@ -1706,7 +1707,7 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 丁 ~~</text>
     <text \maths-italic x="3" y="0" \font-size
       dy="2.7em">D</text>
-    <!-- rear post FG -->
+    <## rear post FG ##>
     <line x1="5.5" y1="-1" x2="5.5" y2="0"/>
     <text x="5.5" y="-1" \font-size
       dx="0.4em" dy="-0.5em">~~ 己 ~~</text>
@@ -1716,27 +1717,27 @@ The punctuation inserted in this section is my own.
       dy="1.2em">~~ 庚 ~~</text>
     <text \maths-italic x="5.5" y="0" \font-size
       dy="2.7em">G</text>
-    <!-- post height line OF except CO -->
+    <## post height line OF except CO ##>
     <line \g x1="3" y1="-1" x2="5.5" y2="-1"/>
-    <!-- CO -->
+    <## CO ##>
     <line \v x1="0" y1="-1" x2="3" y2="-1"/>
     <text x="0" y="-1" \font-size
       dx="-1em" dy="0.3em">~~ 辰 ~~</text>
     <text \maths-italic x="0" y="-1" \font-size
       dx="-2.25em" dy="0.3em">O</text>
-    <!-- front line of sight ACE -->
+    <## front line of sight ACE ##>
     <line x1="0" y1="-3.5" x2="4.2" y2="0"/>
     <text x="4.2" y="0" \font-size
       dy="1.2em">~~ 戊 ~~</text>
     <text \maths-italic x="4.2" y="0" \font-size
       dy="2.7em">E</text>
-    <!-- rear line of sight AFH -->
+    <## rear line of sight AFH ##>
     <line x1="0" y1="-3.5" x2="7.7" y2="0"/>
     <text x="7.7" y="0" \font-size
       dy="1.2em">~~ 辛 ~~</text>
     <text \maths-italic x="7.7" y="0" \font-size
       dy="2.7em">H</text>
-    <!-- front line of sight translated unto rear FI -->
+    <## front line of sight translated unto rear FI ##>
     <line x1="5.5" y1="-1" x2="6.7" y2="0"/>
     <text x="6.7" y="0" \font-size
       dy="1.2em">~~ 壬 ~~</text>

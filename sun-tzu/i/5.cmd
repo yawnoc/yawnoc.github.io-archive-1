@@ -126,7 +126,8 @@ $$
   \frac{C}{d} = \pi \approx \frac{3}{1}.
 $$
 
-<!--                 Circumference and diameter
+<##
+                     Circumference and diameter
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -138,7 +139,7 @@ $$
     ybottom     bottom y pos                            1.1
     h           total height                            2.6
   ***********************************************************************
-  -->
+##>
 
 {: \maths-italic : class="maths-italic" :}
 {: \font-size : font-size="0.4" :}
@@ -151,10 +152,10 @@ $$
     Diagram of a circle of circumference C and diameter d.
   /]
   [accessible-svg-content/
-    <!-- Circumference -->
+    <## Circumference ##>
     <circle r = "1"/>
     <text \maths-italic x="0" y="-1" \font-size dy="-0.25em">C</text>
-    <!-- Diameter -->
+    <## Diameter ##>
     <line x1="-1" y1="0" x2="1" y2="0"/>
     <text \maths-italic x="0" y="0" \font-size dy="-0.25em">d</text>
   /]
@@ -177,7 +178,8 @@ $$
   \end{aligned}
 $$
 
-<!--                 Square's edge and diagonal
+<##
+                     Square's edge and diagonal
   ***********************************************************************
   Constant    Description                           Value
   ***********************************************************************
@@ -189,7 +191,7 @@ $$
     ybottom     bottom y pos                            1.5
     h           total height                            2.6
   ***********************************************************************
-  -->
+##>
 
 ||||{centred-block}
 <svg class="fit-width" width="120px" viewBox="-1.1 -1.1 2.2 2.6"
@@ -199,14 +201,14 @@ $$
     Diagram of a square of side length L and diagonal D.
   /]
   [accessible-svg-content/
-    <!-- Square -->
+    <## Square ##>
     <line x1="-1" y1="-1" x2="1" y2="-1"/>
     <line x1="1" y1="-1" x2="1" y2="1"/>
     <line x1="1" y1="1" x2="-1" y2="1"/>
     <line x1="-1" y1="1" x2="-1" y2="-1"/>
-    <!-- Square's edge -->
+    <## Square's edge ##>
     <text \maths-italic x="0" y="1" \font-size dy="0.9em">L</text>
-    <!-- Diagonal -->
+    <## Diagonal ##>
     <line x1="-1" y1="1" x2="1" y2="-1"/>
     <text \maths-italic x="0" y="0" \font-size dx="-0.5em">D</text>
   /]

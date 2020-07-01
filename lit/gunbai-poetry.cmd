@@ -49,7 +49,7 @@
 [||||
 ||||]
 
-<!-- Japanese declaration [ja/ /] -->
+<## Japanese declaration [ja/ /] ##>
 l{%
   \[ja
     /

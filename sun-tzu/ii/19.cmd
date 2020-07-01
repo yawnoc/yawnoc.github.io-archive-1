@@ -127,12 +127,12 @@ w{:: \font-size:normal :: font-size="0.8" ::}
 
 w{: \arrowhead : marker-end="url(#arrowhead)" :}
 
-<!--
+<##
   For the square root algorithm SVGs:
     Roman variable names shall be at x = -3;
     Chinese names shall be at x = -1;
     Digits shall at x = 1, 2, 3, ..., 6.
--->
+##>
 
 
 ##translation
@@ -195,18 +195,18 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
       Put down the dividend 234567.
     /]
     [accessible-svg-content/
-      <!-- d -->
+      <## d ##>
       <text \maths-italic-b x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text \b x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 234567 -->
+      <## 234567 ##>
       <text \b x="1" y="1" \font-size:normal>2</text>
       <text \b x="2" y="1" \font-size:normal>3</text>
       <text \b x="3" y="1" \font-size:normal>4</text>
       <text \b x="4" y="1" \font-size:normal>5</text>
       <text \b x="5" y="1" \font-size:normal>6</text>
       <text \b x="6" y="1" \font-size:normal>7</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="0" width="9" height="1.5"/>
     /]
   </svg>
@@ -256,9 +256,9 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 10000.
     /]
     [accessible-svg-content/
-      <!-- Marker definitions -->
+      <## Marker definitions ##>
       <defs>
-        <!-- Arrowhead -->
+        <## Arrowhead ##>
         <marker id="arrowhead" viewBox="0 -0.15 0.7 0.3"
           refX="0.5" refY="0"
           markerWidth="0.7" markerHeight="0.15"
@@ -266,27 +266,27 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
           <path d="M 0,-0.15 L 0,0.15 L 0.7,0 z"/>
         </marker>
       </defs>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 234567 -->
+      <## 234567 ##>
       <text x="1" y="1" \font-size:normal>2</text>
       <text x="2" y="1" \font-size:normal>3</text>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>5</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic-r x="-3" y="2" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text \r x="-1" y="2" \font-size:normal>~~下法~~</text>
-      <!-- 10000 -->
+      <## 10000 ##>
       <text \r x="2" y="2" \font-size:normal>1</text>
-      <!-- 步之，超一位，至百而止。 -->
+      <## 步之，超一位，至百而止。 ##>
       <path \step d="M 6 2 m -0.1 -0.3 a 2 2 0 0 0 -1.7 0" \arrowhead/>
       <path \step d="M 4 2 m -0.1 -0.3 a 2 2 0 0 0 -1.5 0" \arrowhead/>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="0" width="9" height="2.5"/>
     /]
   </svg>
@@ -330,32 +330,32 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 10000.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text \g x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic-g x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text \g x="4" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 234567 -->
+      <## 234567 ##>
       <text x="1" y="1" \font-size:normal>2</text>
       <text x="2" y="1" \font-size:normal>3</text>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>5</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="2" \font-size:normal>~~下法~~</text>
-      <!-- 10000 -->
+      <## 10000 ##>
       <text x="2" y="2" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="3.5"/>
     /]
   </svg>
@@ -405,40 +405,40 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 10000.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 234567 -->
+      <## 234567 ##>
       <text x="1" y="1" \font-size:normal>2</text>
       <text x="2" y="1" \font-size:normal>3</text>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>5</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic-v x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text \v x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 40000 -->
+      <## 40000 ##>
       <text \v x="2" y="2" \font-size:normal>4</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="3" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="3" \font-size:normal>~~下法~~</text>
-      <!-- 10000 -->
+      <## 10000 ##>
       <text x="2" y="3" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="4.5"/>
     /]
   </svg>
@@ -485,39 +485,39 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 10000.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic-b x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 74567 -->
+      <## 74567 ##>
       <text \b x="2" y="1" \font-size:normal>7</text>
       <text \b x="3" y="1" \font-size:normal>4</text>
       <text \b x="4" y="1" \font-size:normal>5</text>
       <text \b x="5" y="1" \font-size:normal>6</text>
       <text \b x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 40000 -->
+      <## 40000 ##>
       <text x="2" y="2" \font-size:normal>4</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="3" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="3" \font-size:normal>~~下法~~</text>
-      <!-- 10000 -->
+      <## 10000 ##>
       <text x="2" y="3" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="4.5"/>
     /]
   </svg>
@@ -551,39 +551,39 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 10000.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 74567 -->
+      <## 74567 ##>
       <text x="2" y="1" \font-size:normal>7</text>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>5</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic-v x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text \v x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 80000 -->
+      <## 80000 ##>
       <text \v x="2" y="2" \font-size:normal>8</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="3" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="3" \font-size:normal>~~下法~~</text>
-      <!-- 10000 -->
+      <## 10000 ##>
       <text x="2" y="3" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="4.5"/>
     /]
   </svg>
@@ -626,43 +626,43 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 100.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 74567 -->
+      <## 74567 ##>
       <text x="2" y="1" \font-size:normal>7</text>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>5</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic-v x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text \v x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 8000 -->
+      <## 8000 ##>
       <text \v x="3" y="2" \font-size:normal>8</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic-r x="-3" y="3" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text \r x="-1" y="3" \font-size:normal>~~下法~~</text>
-      <!-- 100 -->
+      <## 100 ##>
       <text \r x="4" y="3" \font-size:normal>1</text>
-      <!-- 方法一退 -->
+      <## 方法一退 ##>
       <path \step d="M 2 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" \arrowhead/>
-      <!-- 下法再退 -->
+      <## 下法再退 ##>
       <path \step d="M 2 3 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" \arrowhead/>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="4.5"/>
     /]
   </svg>
@@ -704,45 +704,45 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 100.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text \g x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic-g x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text \g x="5" y="0" \font-size:normal>8</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 74567 -->
+      <## 74567 ##>
       <text x="2" y="1" \font-size:normal>7</text>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>5</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 8000 -->
+      <## 8000 ##>
       <text x="3" y="2" \font-size:normal>8</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="3" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="3" \font-size:normal>~~下法~~</text>
-      <!-- 100 -->
+      <## 100 ##>
       <text x="4" y="3" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="4.5"/>
     /]
   </svg>
@@ -785,53 +785,53 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 100.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text x="5" y="0" \font-size:normal>8</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 74567 -->
+      <## 74567 ##>
       <text x="2" y="1" \font-size:normal>7</text>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>5</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- s_2 -->
+      <## s_2 ##>
       <text \maths-italic-v x="-3" y="3" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 8000 -->
+      <## 8000 ##>
       <text x="3" y="2" \font-size:normal>8</text>
-      <!-- 廉法 -->
+      <## 廉法 ##>
       <text \v x="-1" y="3" \font-size:normal>~~廉法~~</text>
-      <!-- 800 -->
+      <## 800 ##>
       <text \v x="4" y="3" \font-size:normal>8</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="4" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="4" \font-size:normal>~~下法~~</text>
-      <!-- 100 -->
+      <## 100 ##>
       <text x="4" y="4" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="5.5"/>
     /]
   </svg>
@@ -875,52 +875,52 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 100.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text x="5" y="0" \font-size:normal>8</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic-b x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text \b x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 4167 -->
+      <## 4167 ##>
       <text \b x="3" y="1" \font-size:normal>4</text>
       <text \b x="4" y="1" \font-size:normal>1</text>
       <text \b x="5" y="1" \font-size:normal>6</text>
       <text \b x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- s_2 -->
+      <## s_2 ##>
       <text \maths-italic x="-3" y="3" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 8000 -->
+      <## 8000 ##>
       <text x="3" y="2" \font-size:normal>8</text>
-      <!-- 廉法 -->
+      <## 廉法 ##>
       <text x="-1" y="3" \font-size:normal>~~廉法~~</text>
-      <!-- 800 -->
+      <## 800 ##>
       <text x="4" y="3" \font-size:normal>8</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="4" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="4" \font-size:normal>~~下法~~</text>
-      <!-- 100 -->
+      <## 100 ##>
       <text x="4" y="4" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="5.5"/>
     /]
   </svg>
@@ -958,53 +958,53 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 100.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text x="5" y="0" \font-size:normal>8</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 4167 -->
+      <## 4167 ##>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>1</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- s_2 -->
+      <## s_2 ##>
       <text \maths-italic-v x="-3" y="3" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 8000 -->
+      <## 8000 ##>
       <text x="3" y="2" \font-size:normal>8</text>
-      <!-- 廉法 -->
+      <## 廉法 ##>
       <text \v x="-1" y="3" \font-size:normal>~~廉法~~</text>
-      <!-- 1600 -->
+      <## 1600 ##>
       <text \v x="3" y="3" \font-size:normal>1</text>
       <text \v x="4" y="3" \font-size:normal>6</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="4" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="4" \font-size:normal>~~下法~~</text>
-      <!-- 100 -->
+      <## 100 ##>
       <text x="4" y="4" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="5.5"/>
     /]
   </svg>
@@ -1053,58 +1053,58 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 1.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text x="5" y="0" \font-size:normal>8</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 4167 -->
+      <## 4167 ##>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>1</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic-v x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- s_2 -->
+      <## s_2 ##>
       <text \maths-italic-v x="-3" y="3" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text \v x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 800 -->
+      <## 800 ##>
       <text \v x="4" y="2" \font-size:normal>8</text>
-      <!-- 廉法 -->
+      <## 廉法 ##>
       <text \v x="-1" y="3" \font-size:normal>~~廉法~~</text>
-      <!-- 160 -->
+      <## 160 ##>
       <text \v x="4" y="3" \font-size:normal>1</text>
       <text \v x="5" y="3" \font-size:normal>6</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic-r x="-3" y="4" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text \r x="-1" y="4" \font-size:normal>~~下法~~</text>
-      <!-- 1 -->
+      <## 1 ##>
       <text \r x="6" y="4" \font-size:normal>1</text>
-      <!-- 方法一退 -->
+      <## 方法一退 ##>
       <path \step d="M 3 2 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" \arrowhead/>
       <path \step d="M 3 3 m -0.1 -0.3 a 1.5 2 0 0 1 0.7 0" \arrowhead/>
-      <!-- 下法再退 -->
+      <## 下法再退 ##>
       <path \step d="M 4 4 m -0.1 -0.3 a 2 2 0 0 1 1.7 0" \arrowhead/>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="5.5"/>
     /]
   </svg>
@@ -1148,59 +1148,59 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 1.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text \g x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text x="5" y="0" \font-size:normal>8</text>
-      <!-- a_3 -->
+      <## a_3 ##>
       <text \maths-italic-g x="6" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">3</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text \g x="6" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 4167 -->
+      <## 4167 ##>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>1</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- s_2 -->
+      <## s_2 ##>
       <text \maths-italic x="-3" y="3" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 800 -->
+      <## 800 ##>
       <text x="4" y="2" \font-size:normal>8</text>
-      <!-- 廉法 -->
+      <## 廉法 ##>
       <text x="-1" y="3" \font-size:normal>~~廉法~~</text>
-      <!-- 160 -->
+      <## 160 ##>
       <text x="4" y="3" \font-size:normal>1</text>
       <text x="5" y="3" \font-size:normal>6</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="4" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="4" \font-size:normal>~~下法~~</text>
-      <!-- 1 -->
+      <## 1 ##>
       <text x="6" y="4" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="5.5"/>
     /]
   </svg>
@@ -1244,67 +1244,67 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 1.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text x="5" y="0" \font-size:normal>8</text>
-      <!-- a_3 -->
+      <## a_3 ##>
       <text \maths-italic x="6" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">3</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="6" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 4167 -->
+      <## 4167 ##>
       <text x="3" y="1" \font-size:normal>4</text>
       <text x="4" y="1" \font-size:normal>1</text>
       <text x="5" y="1" \font-size:normal>6</text>
       <text x="6" y="1" \font-size:normal>7</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- s_2 -->
+      <## s_2 ##>
       <text \maths-italic x="-3" y="3" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- s_3 -->
+      <## s_3 ##>
       <text \maths-italic-v x="-3" y="4" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">3</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 800 -->
+      <## 800 ##>
       <text x="4" y="2" \font-size:normal>8</text>
-      <!-- 廉法 -->
+      <## 廉法 ##>
       <text x="-1" y="3" \font-size:normal>~~廉法~~</text>
-      <!-- 160 -->
+      <## 160 ##>
       <text x="4" y="3" \font-size:normal>1</text>
       <text x="5" y="3" \font-size:normal>6</text>
-      <!-- 隅法 -->
+      <## 隅法 ##>
       <text \v x="-1" y="4" \font-size:normal>~~隅法~~</text>
-      <!-- 4 -->
+      <## 4 ##>
       <text \v x="6" y="4" \font-size:normal>4</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="5" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="5" \font-size:normal>~~下法~~</text>
-      <!-- 1 -->
+      <## 1 ##>
       <text x="6" y="5" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="6.5"/>
     /]
   </svg>
@@ -1349,66 +1349,66 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 1.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text x="5" y="0" \font-size:normal>8</text>
-      <!-- a_3 -->
+      <## a_3 ##>
       <text \maths-italic x="6" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">3</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="6" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic-b x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text \b x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 311 -->
+      <## 311 ##>
       <text \b x="4" y="1" \font-size:normal>3</text>
       <text \b x="5" y="1" \font-size:normal>1</text>
       <text \b x="6" y="1" \font-size:normal>1</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- s_2 -->
+      <## s_2 ##>
       <text \maths-italic x="-3" y="3" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- s_3 -->
+      <## s_3 ##>
       <text \maths-italic x="-3" y="4" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">3</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 800 -->
+      <## 800 ##>
       <text x="4" y="2" \font-size:normal>8</text>
-      <!-- 廉法 -->
+      <## 廉法 ##>
       <text x="-1" y="3" \font-size:normal>~~廉法~~</text>
-      <!-- 160 -->
+      <## 160 ##>
       <text x="4" y="3" \font-size:normal>1</text>
       <text x="5" y="3" \font-size:normal>6</text>
-      <!-- 隅法 -->
+      <## 隅法 ##>
       <text x="-1" y="4" \font-size:normal>~~隅法~~</text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="6" y="4" \font-size:normal>4</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="5" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="5" \font-size:normal>~~下法~~</text>
-      <!-- 1 -->
+      <## 1 ##>
       <text x="6" y="5" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="6.5"/>
     /]
   </svg>
@@ -1447,66 +1447,66 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 1.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text x="5" y="0" \font-size:normal>8</text>
-      <!-- a_3 -->
+      <## a_3 ##>
       <text \maths-italic x="6" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">3</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text x="6" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 311 -->
+      <## 311 ##>
       <text x="4" y="1" \font-size:normal>3</text>
       <text x="5" y="1" \font-size:normal>1</text>
       <text x="6" y="1" \font-size:normal>1</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- s_2 -->
+      <## s_2 ##>
       <text \maths-italic x="-3" y="3" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- s_3 -->
+      <## s_3 ##>
       <text \maths-italic-v x="-3" y="4" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">3</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 800 -->
+      <## 800 ##>
       <text x="4" y="2" \font-size:normal>8</text>
-      <!-- 廉法 -->
+      <## 廉法 ##>
       <text x="-1" y="3" \font-size:normal>~~廉法~~</text>
-      <!-- 160 -->
+      <## 160 ##>
       <text x="4" y="3" \font-size:normal>1</text>
       <text x="5" y="3" \font-size:normal>6</text>
-      <!-- 隅法 -->
+      <## 隅法 ##>
       <text \v x="-1" y="4" \font-size:normal>~~隅法~~</text>
-      <!-- 8 -->
+      <## 8 ##>
       <text \v x="6" y="4" \font-size:normal>8</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic x="-3" y="5" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text x="-1" y="5" \font-size:normal>~~下法~~</text>
-      <!-- 1 -->
+      <## 1 ##>
       <text x="6" y="5" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="6.5"/>
     /]
   </svg>
@@ -1559,66 +1559,66 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         the lower divisor 1.
     /]
     [accessible-svg-content/
-      <!-- 上商 -->
+      <## 上商 ##>
       <text \g x="-1" y="0" \font-size:normal>~~上商~~</text>
-      <!-- a_1 -->
+      <## a_1 ##>
       <text \maths-italic-g x="4" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text \g x="4" y="0" \font-size:normal>4</text>
-      <!-- a_2 -->
+      <## a_2 ##>
       <text \maths-italic-g x="5" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- 8 -->
+      <## 8 ##>
       <text \g x="5" y="0" \font-size:normal>8</text>
-      <!-- a_3 -->
+      <## a_3 ##>
       <text \maths-italic-g x="6" y="-1.3" \font-size:normal>\
         a<tspan \font-size:subscript dy="0.25em">3</tspan>\
       </text>
-      <!-- 4 -->
+      <## 4 ##>
       <text \g x="6" y="0" \font-size:normal>4</text>
-      <!-- d -->
+      <## d ##>
       <text \maths-italic-b x="-3" y="1" \font-size:normal>d</text>
-      <!-- 實 -->
+      <## 實 ##>
       <text \b x="-1" y="1" \font-size:normal>~~實~~</text>
-      <!-- 311 -->
+      <## 311 ##>
       <text \b x="4" y="1" \font-size:normal>3</text>
       <text \b x="5" y="1" \font-size:normal>1</text>
       <text \b x="6" y="1" \font-size:normal>1</text>
-      <!-- s_1 -->
+      <## s_1 ##>
       <text \maths-italic-v x="-3" y="2" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">1</tspan>\
       </text>
-      <!-- s_2 -->
+      <## s_2 ##>
       <text \maths-italic-v x="-3" y="3" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">2</tspan>\
       </text>
-      <!-- s_3 -->
+      <## s_3 ##>
       <text \maths-italic-v x="-3" y="4" \font-size:normal>\
         s<tspan \font-size:subscript dy="0.25em">3</tspan>\
       </text>
-      <!-- 方法 -->
+      <## 方法 ##>
       <text \v x="-1" y="2" \font-size:normal>~~方法~~</text>
-      <!-- 800 -->
+      <## 800 ##>
       <text \v x="4" y="2" \font-size:normal>8</text>
-      <!-- 廉法 -->
+      <## 廉法 ##>
       <text \v x="-1" y="3" \font-size:normal>~~廉法~~</text>
-      <!-- 160 -->
+      <## 160 ##>
       <text \v x="4" y="3" \font-size:normal>1</text>
       <text \v x="5" y="3" \font-size:normal>6</text>
-      <!-- 隅法 -->
+      <## 隅法 ##>
       <text \v x="-1" y="4" \font-size:normal>~~隅法~~</text>
-      <!-- 8 -->
+      <## 8 ##>
       <text \v x="6" y="4" \font-size:normal>8</text>
-      <!-- L -->
+      <## L ##>
       <text \maths-italic-r x="-3" y="5" \font-size:normal>L</text>
-      <!-- 下法 -->
+      <## 下法 ##>
       <text \r x="-1" y="5" \font-size:normal>~~下法~~</text>
-      <!-- 1 -->
+      <## 1 ##>
       <text \r x="6" y="5" \font-size:normal>1</text>
-      <!-- Rectangular border -->
+      <## Rectangular border ##>
       <rect \border x="-2.25" y="-1" width="9" height="6.5"/>
     /]
   </svg>
@@ -1696,7 +1696,7 @@ proceeds thus:
   $$
 
 
-<!-- Keyword [. .] -->
+<## Keyword [. .] ##>
 w{%
   \[ [.]
     [ ]

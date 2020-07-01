@@ -1,8 +1,8 @@
-<!--
+<##
   ----------------------------------------------------------------
   SVG embedded styles
   ----------------------------------------------------------------
--->
+##>
 
 w{:: \svg-style:stroke-declarations ::
   a~~
@@ -88,7 +88,7 @@ w{:: \svg-style:text-colour-rulesets ::
   ~~
 ::}
 
-<!-- Container [svg-styles/ /] -->
+<## Container [svg-styles/ /] ##>
 
 c{%
   \[

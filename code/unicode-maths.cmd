@@ -39,7 +39,7 @@ Convenient for use in emails.
 ----
 
 
-<!-- Header row for tables -->
+<## Header row for tables ##>
 {::
   \header-row
 ::
