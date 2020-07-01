@@ -95,7 +95,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
   ⽝ + 5
 ###
 
-####~~狐~~
+####狐
   狐 `U+72D0`
 ####
 
