@@ -50,13 +50,20 @@
 <## Radical index ##>
 
 [====
+
 <## 2 strokes ##>
 * [⼈](#man)
+
 <## 3 strokes ##>
 * [⼞](#enclosure)
+
 <## 4 strokes ##>
 * [⼽](#halberd)
 * [⽝](#dog)
+
+<## 6 strokes ##>
+* [⽵](#bamboo)
+
 ====]
 
 
@@ -206,6 +213,20 @@ See also: [Unihan Radical-Stroke Index][unihan]
 \char 狐 72D0
 ====
 * fox
+====
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 6 strokes
+  ----------------------------------------------------------------
+##>
+
+\rad ⽵ bamboo
+
+\char 策 7B56
+====
+* strategy; scheme
 ====
 
 
