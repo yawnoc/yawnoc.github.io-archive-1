@@ -50,7 +50,11 @@
 <## Radical index ##>
 
 [====
+<## 2 strokes ##>
 * [⼈](#man)
+<## 3 strokes ##>
+* [⼞](#enclosure)
+<## 4 strokes ##>
 * [⼽](#halberd)
 * [⽝](#dog)
 ====]
@@ -167,6 +171,20 @@ See also: [Unihan Radical-Stroke Index][unihan]
   ====
 ======
 
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 3 strokes
+  ----------------------------------------------------------------
+##>
+
+\rad ⼞ enclosure
+
+\char 國 570B
+====
+* nation; country; state
+====
 
 
 <##
