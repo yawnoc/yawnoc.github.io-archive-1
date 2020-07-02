@@ -405,12 +405,26 @@ See also: [Unihan Radical-Stroke Index][unihan]
 * same
 ====
 
+<#### \rad ⼁ line ####>
+
+<#### \rad ⼂ dot ####>
+
+<#### \rad ⼃ slash ####>
+
+<#### \rad ⼄ second ####>
+
+<#### \rad ⼅ hook ####>
+
 
 <##
   ----------------------------------------------------------------
   Radicals with 2 strokes
   ----------------------------------------------------------------
 ##>
+
+<#### \rad ⼆ two ####>
+
+<#### \rad ⼇ lid ####>
 
 \rad ⼈ man
 
@@ -428,6 +442,46 @@ See also: [Unihan Radical-Stroke Index][unihan]
   ====
 ======
 
+<#### \rad ⼉ legs ####>
+
+<#### \rad ⼊ enter ####>
+
+<#### \rad ⼋ eight ####>
+
+<#### \rad ⼌ down-box ####>
+
+<#### \rad ⼍ cover ####>
+
+<#### \rad ⼎ ice ####>
+
+<#### \rad ⼏ table ####>
+
+<#### \rad ⼐ open-box ####>
+
+<#### \rad ⼑ knife ####>
+
+<#### \rad ⼒ power ####>
+
+<#### \rad ⼓ wrap ####>
+
+<#### \rad ⼔ spoon ####>
+
+<#### \rad ⼕ right-open-box ####>
+
+<#### \rad ⼖ hiding-enclosure ####>
+
+<#### \rad ⼗ ten ####>
+
+<#### \rad ⼘ divination ####>
+
+<#### \rad ⼙ seal ####>
+
+<#### \rad ⼚ cliff ####>
+
+<#### \rad ⼛ private ####>
+
+<#### \rad ⼜ again ####>
+
 
 
 <##
@@ -436,12 +490,72 @@ See also: [Unihan Radical-Stroke Index][unihan]
   ----------------------------------------------------------------
 ##>
 
+<#### \rad ⼝ mouth ####>
+
 \rad ⼞ enclosure
 
 \char 國 570B
 ====
 * nation; country; state
 ====
+
+<#### \rad ⼟ earth ####>
+
+<#### \rad ⼠ scholar ####>
+
+<#### \rad ⼡ go ####>
+
+<#### \rad ⼢ go-slowly ####>
+
+<#### \rad ⼣ evening ####>
+
+<#### \rad ⼤ big ####>
+
+<#### \rad ⼥ woman ####>
+
+<#### \rad ⼦ child ####>
+
+<#### \rad ⼧ roof ####>
+
+<#### \rad ⼨ inch ####>
+
+<#### \rad ⼩ small ####>
+
+<#### \rad ⼪ lame ####>
+
+<#### \rad ⼫ corpse ####>
+
+<#### \rad ⼬ sprout ####>
+
+<#### \rad ⼭ mountain ####>
+
+<#### \rad ⼮ river ####>
+
+<#### \rad ⼯ work ####>
+
+<#### \rad ⼰ oneself ####>
+
+<#### \rad ⼱ turban ####>
+
+<#### \rad ⼲ dry ####>
+
+<#### \rad ⼳ short-thread ####>
+
+<#### \rad ⼴ dotted-cliff ####>
+
+<#### \rad ⼵ long-stride ####>
+
+<#### \rad ⼶ two-hands ####>
+
+<#### \rad ⼷ shoot ####>
+
+<#### \rad ⼸ bow ####>
+
+<#### \rad ⼹ snout ####>
+
+<#### \rad ⼺ bristle ####>
+
+<#### \rad ⼻ step ####>
 
 
 <##
@@ -450,6 +564,8 @@ See also: [Unihan Radical-Stroke Index][unihan]
   ----------------------------------------------------------------
 ##>
 
+<#### \rad ⼼ heart ####>
+
 \rad ⼽ halberd
 
 \char 戰 6230
@@ -457,6 +573,67 @@ See also: [Unihan Radical-Stroke Index][unihan]
 * battle; war
 ====
 
+<#### \rad ⼾ door ####>
+
+<#### \rad ⼿ hand ####>
+
+<#### \rad ⽀ branch ####>
+
+<#### \rad ⽁ rap ####>
+
+<#### \rad ⽂ script ####>
+
+<#### \rad ⽃ dipper ####>
+
+<#### \rad ⽄ axe ####>
+
+<#### \rad ⽅ square ####>
+
+<#### \rad ⽆ not ####>
+
+<#### \rad ⽇ sun ####>
+
+<#### \rad ⽈ say ####>
+
+<#### \rad ⽉ moon ####>
+
+<#### \rad ⽊ tree ####>
+
+<#### \rad ⽋ lack ####>
+
+<#### \rad ⽌ stop ####>
+
+<#### \rad ⽍ death ####>
+
+<#### \rad ⽎ weapon ####>
+
+<#### \rad ⽏ do-not ####>
+
+<#### \rad ⽐ compare ####>
+
+<#### \rad ⽑ fur ####>
+
+<#### \rad ⽒ clan ####>
+
+<#### \rad ⽓ steam ####>
+
+<#### \rad ⽔ water ####>
+
+<#### \rad ⽕ fire ####>
+
+<#### \rad ⽖ claw ####>
+
+<#### \rad ⽗ father ####>
+
+<#### \rad ⽘ double-x ####>
+
+<#### \rad ⽙ half-tree-trunk ####>
+
+<#### \rad ⽚ slice ####>
+
+<#### \rad ⽛ fang ####>
+
+<#### \rad ⽜ cow ####>
 
 \rad ⽝ dog
 
@@ -464,6 +641,60 @@ See also: [Unihan Radical-Stroke Index][unihan]
 ====
 * fox
 ====
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 5 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⽞ profound ####>
+
+<#### \rad ⽟ jade ####>
+
+<#### \rad ⽠ melon ####>
+
+<#### \rad ⽡ tile ####>
+
+<#### \rad ⽢ sweet ####>
+
+<#### \rad ⽣ life ####>
+
+<#### \rad ⽤ use ####>
+
+<#### \rad ⽥ field ####>
+
+<#### \rad ⽦ bolt-of-cloth ####>
+
+<#### \rad ⽧ sickness ####>
+
+<#### \rad ⽨ dotted-tent ####>
+
+<#### \rad ⽩ white ####>
+
+<#### \rad ⽪ skin ####>
+
+<#### \rad ⽫ dish ####>
+
+<#### \rad ⽬ eye ####>
+
+<#### \rad ⽭ spear ####>
+
+<#### \rad ⽮ arrow ####>
+
+<#### \rad ⽯ stone ####>
+
+<#### \rad ⽰ spirit ####>
+
+<#### \rad ⽱ track ####>
+
+<#### \rad ⽲ grain ####>
+
+<#### \rad ⽳ cave ####>
+
+<#### \rad ⽴ stand ####>
+
 
 
 <##
@@ -478,6 +709,285 @@ See also: [Unihan Radical-Stroke Index][unihan]
 ====
 * strategy; scheme
 ====
+
+<#### \rad ⽶ rice ####>
+
+<#### \rad ⽷ silk ####>
+
+<#### \rad ⽸ jar ####>
+
+<#### \rad ⽹ net ####>
+
+<#### \rad ⽺ sheep ####>
+
+<#### \rad ⽻ feather ####>
+
+<#### \rad ⽼ old ####>
+
+<#### \rad ⽽ and ####>
+
+<#### \rad ⽾ plow ####>
+
+<#### \rad ⽿ ear ####>
+
+<#### \rad ⾀ brush ####>
+
+<#### \rad ⾁ meat ####>
+
+<#### \rad ⾂ minister ####>
+
+<#### \rad ⾃ self ####>
+
+<#### \rad ⾄ arrive ####>
+
+<#### \rad ⾅ mortar ####>
+
+<#### \rad ⾆ tongue ####>
+
+<#### \rad ⾇ oppose ####>
+
+<#### \rad ⾈ boat ####>
+
+<#### \rad ⾉ stopping ####>
+
+<#### \rad ⾊ color ####>
+
+<#### \rad ⾋ grass ####>
+
+<#### \rad ⾌ tiger ####>
+
+<#### \rad ⾍ insect ####>
+
+<#### \rad ⾎ blood ####>
+
+<#### \rad ⾏ walk-enclosure ####>
+
+<#### \rad ⾐ clothes ####>
+
+<#### \rad ⾑ west ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 7 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⾒ see ####>
+
+<#### \rad ⾓ horn ####>
+
+<#### \rad ⾔ speech ####>
+
+<#### \rad ⾕ valley ####>
+
+<#### \rad ⾖ bean ####>
+
+<#### \rad ⾗ pig ####>
+
+<#### \rad ⾘ badger ####>
+
+<#### \rad ⾙ shell ####>
+
+<#### \rad ⾚ red ####>
+
+<#### \rad ⾛ run ####>
+
+<#### \rad ⾜ foot ####>
+
+<#### \rad ⾝ body ####>
+
+<#### \rad ⾞ cart ####>
+
+<#### \rad ⾟ bitter ####>
+
+<#### \rad ⾠ morning ####>
+
+<#### \rad ⾡ walk ####>
+
+<#### \rad ⾢ city ####>
+
+<#### \rad ⾣ wine ####>
+
+<#### \rad ⾤ distinguish ####>
+
+<#### \rad ⾥ village ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 8 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⾦ gold ####>
+
+<#### \rad ⾧ long ####>
+
+<#### \rad ⾨ gate ####>
+
+<#### \rad ⾩ mound ####>
+
+<#### \rad ⾪ slave ####>
+
+<#### \rad ⾫ short-tailed-bird ####>
+
+<#### \rad ⾬ rain ####>
+
+<#### \rad ⾭ blue ####>
+
+<#### \rad ⾮ wrong ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 9 strokes
+  ----------------------------------------------------------------
+##>
+<#### \rad ⾯ face ####>
+
+<#### \rad ⾰ leather ####>
+
+<#### \rad ⾱ tanned-leather ####>
+
+<#### \rad ⾲ leek ####>
+
+<#### \rad ⾳ sound ####>
+
+<#### \rad ⾴ leaf ####>
+
+<#### \rad ⾵ wind ####>
+
+<#### \rad ⾶ fly ####>
+
+<#### \rad ⾷ eat ####>
+
+<#### \rad ⾸ head ####>
+
+<#### \rad ⾹ fragrant ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 10 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⾺ horse ####>
+
+<#### \rad ⾻ bone ####>
+
+<#### \rad ⾼ tall ####>
+
+<#### \rad ⾽ hair ####>
+
+<#### \rad ⾾ fight ####>
+
+<#### \rad ⾿ sacrificial-wine ####>
+
+<#### \rad ⿀ cauldron ####>
+
+<#### \rad ⿁ ghost ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 11 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⿂ fish ####>
+
+<#### \rad ⿃ bird ####>
+
+<#### \rad ⿄ salt ####>
+
+<#### \rad ⿅ deer ####>
+
+<#### \rad ⿆ wheat ####>
+
+<#### \rad ⿇ hemp ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 12 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⿈ yellow ####>
+
+<#### \rad ⿉ millet ####>
+
+<#### \rad ⿊ black ####>
+
+<#### \rad ⿋ embroidery ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 13 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⿌ frog ####>
+
+<#### \rad ⿍ tripod ####>
+
+<#### \rad ⿎ drum ####>
+
+<#### \rad ⿏ rat ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 14 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⿐ nose ####>
+
+<#### \rad ⿑ even ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 15 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⿒ tooth ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 16 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⿓ dragon ####>
+
+<#### \rad ⿔ turtle ####>
+
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 17 strokes
+  ----------------------------------------------------------------
+##>
+
+<#### \rad ⿕ flute ####>
 
 
 
