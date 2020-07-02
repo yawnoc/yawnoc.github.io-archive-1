@@ -51,6 +51,9 @@
 
 [====
 
+<## 1 stroke ##>
+* [⼀](#one)
+
 <## 2 strokes ##>
 * [⼈](#man)
 
@@ -154,6 +157,21 @@ See also: [Unihan Radical-Stroke Index][unihan]
   https://www.unicode.org/charts/unihanrsindex.html
 @@
 
+
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 1 stroke
+  ----------------------------------------------------------------
+##>
+
+\rad ⼀ one
+
+\char 一 4E00
+====
+* one; unity; first
+* same
+====
 
 
 <##
