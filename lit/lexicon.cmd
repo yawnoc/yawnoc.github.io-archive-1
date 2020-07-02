@@ -202,7 +202,7 @@
 <#### * [⾉](#stopping) ####>
 <#### * [⾊](#color) ####>
 <#### * [⾋](#grass) ####>
-<#### * [⾌](#tiger) ####>
+* [⾌](#tiger)
 <#### * [⾍](#insect) ####>
 <#### * [⾎](#blood) ####>
 <#### * [⾏](#walk-enclosure) ####>
@@ -754,7 +754,12 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 <#### \rad ⾋ grass ####>
 
-<#### \rad ⾌ tiger ####>
+\rad ⾌ tiger
+
+\char 虎 864E
+====
+* tiger
+====
 
 <#### \rad ⾍ insect ####>
 
