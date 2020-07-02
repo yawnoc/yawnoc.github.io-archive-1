@@ -51,6 +51,7 @@
 
 [====
 * [⼈](#man)
+* [⼽](#halberd)
 * [⽝](#dog)
 ====]
 
@@ -148,6 +149,16 @@ See also: [Unihan Radical-Stroke Index][unihan]
   * rest; holiday
   ====
 ======
+
+
+##halberd
+  ⼽ (halberd)
+##
+
+\char 戰 6230
+====
+* battle; war
+====
 
 
 ##dog
