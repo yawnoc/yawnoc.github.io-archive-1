@@ -56,12 +56,24 @@
 ====]
 
 
+
 <##
   Anchor id for...
   * Radical  : {Unicode English radical name}
   * Character: {Chinese character}
 ##>
 
+<## Radical heading \rad {character} {unicode-name} ##>
+
+l{%
+  \\rad
+    [ ] (?P<radical> \S )
+    [ ] (?P<unicode_name> [a-z]+ )
+%
+  ##\g<unicode_name>
+    \g<radical> (\g<unicode_name>)
+  ##
+%}
 
 <## Character entry heading  \char {character} {code point} ##>
 
@@ -79,7 +91,6 @@ l{%
   @@
 %}
 
-
 <## Tone spans  [tone]  ##>
 
 {%
@@ -89,6 +100,7 @@ l{%
 %
   <span class="tone">\g<tone></span>
 %}
+
 
 
 ----
@@ -132,9 +144,14 @@ See also: [Unihan Radical-Stroke Index][unihan]
 @@
 
 
-##man
-  ⼈ (man)
-##
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 2 strokes
+  ----------------------------------------------------------------
+##>
+
+\rad ⼈ man
 
 \char 假 5047
 ======
@@ -151,9 +168,14 @@ See also: [Unihan Radical-Stroke Index][unihan]
 ======
 
 
-##halberd
-  ⼽ (halberd)
-##
+
+<##
+  ----------------------------------------------------------------
+  Radicals with 4 strokes
+  ----------------------------------------------------------------
+##>
+
+\rad ⼽ halberd
 
 \char 戰 6230
 ====
@@ -161,14 +183,13 @@ See also: [Unihan Radical-Stroke Index][unihan]
 ====
 
 
-##dog
-  ⽝ (dog)
-##
+\rad ⽝ dog
 
 \char 狐 72D0
 ====
 * fox
 ====
+
 
 
 \cite-this-page[
