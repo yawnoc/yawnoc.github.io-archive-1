@@ -44,7 +44,7 @@ b{%
   ----------------------------------------------------------------
 ##>
 
-{%
+l{%
   [.]
   \[
     (?P<content> [^]] *? )
@@ -60,7 +60,7 @@ b{%
   ----------------------------------------------------------------
 ##>
 
-{: \or : <span class="alternative-marker">or</span> :}
-{: \lit : <span class="alternative-marker">lit.</span> :}
+Z{: \or : <span class="alternative-marker">or</span> :}
+Z{: \lit : <span class="alternative-marker">lit.</span> :}
 
 
