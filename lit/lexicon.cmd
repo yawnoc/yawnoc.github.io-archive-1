@@ -93,7 +93,7 @@
 <#### * [⼢](#go-slowly) ####>
 <#### * [⼣](#evening) ####>
 <#### * [⼤](#big) ####>
-<#### * [⼥](#woman) ####>
+* [⼥](#woman)
 <#### * [⼦](#child) ####>
 <#### * [⼧](#roof) ####>
 <#### * [⼨](#inch) ####>
@@ -347,6 +347,9 @@ l{%
   <span class="tone">\g<tone></span>
 %}
 
+<## Metaphorical rendering ##>
+Z{: \met : <span class="alternative-marker">met.</span> :}
+
 
 
 ----
@@ -511,7 +514,12 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 <#### \rad ⼤ big ####>
 
-<#### \rad ⼥ woman ####>
+\rad ⼥ woman
+
+\char 威 5A01
+====
+* pomp; might; \met authority
+====
 
 <#### \rad ⼦ child ####>
 
