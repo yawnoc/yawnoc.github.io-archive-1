@@ -158,7 +158,7 @@
 
 <## 5 strokes ##>
 <#### * [⽞](#profound) ####>
-<#### * [⽟](#jade) ####>
+* [⽟](#jade)
 <#### * [⽠](#melon) ####>
 <#### * [⽡](#tile) ####>
 <#### * [⽢](#sweet) ####>
@@ -674,7 +674,19 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 <#### \rad ⽞ profound ####>
 
-<#### \rad ⽟ jade ####>
+\rad ⽟ jade
+
+\char 王 738B
+======
+* [平聲]
+  ====
+  * [:noun:] king
+  ====
+* [去聲]
+  ====
+  * [:verb:] king (to rule as king)
+  ====
+======
 
 <#### \rad ⽠ melon ####>
 
