@@ -28,6 +28,9 @@
       color: white;
       padding: 0.13em 0.2em;
     }
+    .type {
+      color: darkviolet
+    }
   ~~
 %%
 
@@ -339,12 +342,24 @@ l{%
 
 <## Tone spans  [tone]  ##>
 
-{%
+l{%
   \[
     (?P<tone> [陰陽平上去入聲]{2} )
   \]
 %
   <span class="tone">\g<tone></span>
+%}
+
+<## Type spans  [:type:] ##>
+
+l{%
+  \[
+    [:]
+      (?P<type> [a-z-]+ )
+    [:]
+  \]
+%
+  <span class="type">[\g<type>]</span>
 %}
 
 <## Metaphorical rendering ##>
