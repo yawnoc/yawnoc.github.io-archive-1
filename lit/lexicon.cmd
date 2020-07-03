@@ -26,7 +26,7 @@
     .tone {
       background: #666;
       color: white;
-      padding: 0.13em;
+      padding: 0.13em 0.2em;
     }
   ~~
 %%
