@@ -375,7 +375,7 @@ l{%
     (?P<tone> [陰陽平上去入聲]{2} )
   \]
 %
-  <h4><span class="tone">\g<tone></span></h4>
+  #### <span class="tone">\g<tone></span> ####
 %}
 
 <## Type spans  [:type:] ##>
