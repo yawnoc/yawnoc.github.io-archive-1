@@ -511,6 +511,11 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⼝ mouth
 
+\char 吾 543E
+====
+* I; we
+====
+
 \char 問 554F
 ====
 * [:verb:] ask; enquire; question
