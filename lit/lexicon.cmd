@@ -14,6 +14,7 @@
   %css a~~
     h3 {
       margin-bottom: 0;
+      font-weight: normal;
     }
     .character {
       background: #ffc;
@@ -28,7 +29,6 @@
     .residual-strokes {
       display: inline-block;
       font-size: 0.8rem;
-      font-weight: normal;
       text-align: right;
       vertical-align: top;
       width: 1.3rem;
