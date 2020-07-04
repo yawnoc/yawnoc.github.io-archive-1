@@ -24,6 +24,11 @@
     .code-point {
       font-family: Consolas, "Lucida Sans Typewriter", monospace;
     }
+    .residual-strokes {
+      font-size: 0.8rem;
+      font-weight: normal;
+      vertical-align: top;
+    }
     .tone {
       background: #666;
       color: white;
@@ -325,14 +330,16 @@ l{%
   ##
 %}
 
-<## Character entry heading  \char {character} {code point} ##>
+<## Character entry heading  \char {strokes} {character} {code point} ##>
 
 l{%
   \\char
+    [ ] (?P<residual_strokes> [0-9]+ )
     [ ] (?P<character> \S )
     [ ] (?P<code_point> [0-9A-F]+ )
 %
   ###\g<character>
+    <span class="residual-strokes">\g<residual_strokes></span>
     <span class="character">\g<character></span>
     <span class="code-point">U+\g<code_point></span>
   ###
@@ -418,7 +425,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⼀ one
 
-\char 一 4E00
+\char 0 一 4E00
 ====
 * one; unity; first
 * same
@@ -447,7 +454,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⼈ man
 
-\char 假 5047
+\char 9 假 5047
 ======
 * [上聲]
   ====
@@ -511,12 +518,12 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⼝ mouth
 
-\char 吾 543E
+\char 4 吾 543E
 ====
 * I; we
 ====
 
-\char 問 554F
+\char 8 問 554F
 ====
 * [:verb:] ask; enquire; question
 * [:noun:] asking; enquiry; question
@@ -524,7 +531,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⼞ enclosure
 
-\char 國 570B
+\char 8 國 570B
 ====
 * nation; country; state
 ====
@@ -543,7 +550,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⼥ woman
 
-\char 威 5A01
+\char 6 威 5A01
 ====
 * pomp; might; \met authority
 ====
@@ -603,7 +610,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⼽ halberd
 
-\char 戰 6230
+\char 12 戰 6230
 ====
 * battle; war
 ====
@@ -630,7 +637,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⽈ say
 
-\char 曰 66F0
+\char 0 曰 66F0
 ====
 * say
 ====
@@ -677,7 +684,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⽝ dog
 
-\char 狐 72D0
+\char 5 狐 72D0
 ====
 * fox
 ====
@@ -693,7 +700,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⽟ jade
 
-\char 王 738B
+\char 0 王 738B
 ======
 * [平聲]
   ====
@@ -757,7 +764,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⽵ bamboo
 
-\char 策 7B56
+\char 6 策 7B56
 ====
 * strategy; scheme
 ====
@@ -772,7 +779,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⽺ sheep
 
-\char 群 7FA4
+\char 7 群 7FA4
 ====
 * group; gathering; amass
 ====
@@ -793,7 +800,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⾂ minister
 
-\char 臣 81E3
+\char 0 臣 81E3
 ====
 * minister
 ====
@@ -818,7 +825,7 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 \rad ⾌ tiger
 
-\char 虎 864E
+\char 2 虎 864E
 ====
 * tiger
 ====
