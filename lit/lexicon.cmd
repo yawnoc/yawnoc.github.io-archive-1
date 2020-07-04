@@ -1,5 +1,7 @@
 {+ resources/inclusions/syntax/general.cmd +}
 
+{+ resources/inclusions/syntax/translations.cmd +}
+
 {+ resources/inclusions/syntax/chinese-lang.cmd +}
 
 %%
@@ -516,6 +518,9 @@ See also: [Unihan Radical-Stroke Index][unihan]
 ====
 * north
 ====
+----
+See also: [北方][方]
+----
 
 <#### \rad ⼕ right-open-box ####>
 
@@ -667,6 +672,9 @@ See also: [Unihan Radical-Stroke Index][unihan]
 * (medical) prescription
 * just; only then; at
 * \met instance
+====
+====
+* 北方： .[the] north
 ====
 
 <#### \rad ⽆ not ####>
