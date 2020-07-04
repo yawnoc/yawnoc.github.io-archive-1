@@ -134,7 +134,7 @@
 <#### * [⽅](#square) ####>
 <#### * [⽆](#not) ####>
 <#### * [⽇](#sun) ####>
-<#### * [⽈](#say) ####>
+* [⽈](#say)
 <#### * [⽉](#moon) ####>
 <#### * [⽊](#tree) ####>
 <#### * [⽋](#lack) ####>
@@ -623,7 +623,12 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 <#### \rad ⽇ sun ####>
 
-<#### \rad ⽈ say ####>
+\rad ⽈ say
+
+\char 曰 66F0
+====
+* say
+====
 
 <#### \rad ⽉ moon ####>
 
