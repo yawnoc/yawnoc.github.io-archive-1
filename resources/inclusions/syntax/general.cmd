@@ -78,8 +78,8 @@ p{%
   \]
 %
   ##cite Cite this page ##
-  ====
-  * Text:
+  
+  ### Text ###
     ----
     Conway~(%year-modified).
     \g<text_title>.
@@ -87,7 +87,7 @@ p{%
     Accessed~<span class="js-date">yyyy-mm-dd</span>.
     ----
   
-  * BibTeX:
+  ### BibTeX ###
     <pre><code>\\
       \/@misc{conway-\g<tex_key>,
       \/  author = {Conway},
@@ -98,7 +98,7 @@ p{%
       \/}
     </code></pre>
   
-  * BibLaTeX:
+  ### BibLaTeX ###
     <pre><code>\\
       \/@online{conway-\g<tex_key>,
       \/  author = {Conway},
@@ -108,7 +108,7 @@ p{%
       \/  urldate = {<span class="js-date">yyyy-mm-dd</span>},
       \/}
     </code></pre>
-  ====
+  
   a~~
     <script>\
       document.addEventListener("DOMContentLoaded",function(){renderDate()})\
