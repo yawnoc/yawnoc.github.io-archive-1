@@ -19,15 +19,19 @@
       background: #ffc;
       border: 2px solid black;
       font-size: 1.17em;
+      margin-right: 0.5em;
       padding: 0.13em 0.2em;
     }
     .code-point {
       font-family: Consolas, "Lucida Sans Typewriter", monospace;
     }
     .residual-strokes {
+      display: inline-block;
       font-size: 0.8rem;
       font-weight: normal;
+      text-align: right;
       vertical-align: top;
+      width: 1.3rem;
     }
     .tone {
       background: #666;
