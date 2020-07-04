@@ -196,7 +196,7 @@
 <#### * [⽿](#ear) ####>
 <#### * [⾀](#brush) ####>
 <#### * [⾁](#meat) ####>
-<#### * [⾂](#minister) ####>
+* [⾂](#minister)
 <#### * [⾃](#self) ####>
 <#### * [⾄](#arrive) ####>
 <#### * [⾅](#mortar) ####>
@@ -781,7 +781,12 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 <#### \rad ⾁ meat ####>
 
-<#### \rad ⾂ minister ####>
+\rad ⾂ minister
+
+\char 臣 81E3
+====
+* minister
+====
 
 <#### \rad ⾃ self ####>
 
