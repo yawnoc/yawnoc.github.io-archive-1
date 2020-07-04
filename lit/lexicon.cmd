@@ -16,11 +16,11 @@
       margin-top: 1.7em;
     }
     h3 {
-      margin-bottom: 0;
       margin-top: 1.5em;
       font-weight: normal;
     }
-    body > ul {
+    ul {
+      margin-top: 0;
       padding-left: 2.7em;
     }
     .character {
@@ -42,8 +42,17 @@
     }
     .tone {
       background: #666;
+      font-weight: normal;
       color: white;
       padding: 0.13em 0.2em;
+    }
+    h4 {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      padding-left: 1.7em;
+    }
+    h4 + ul {
+      margin: 0.5em 0;
     }
     .type {
       color: darkviolet
@@ -359,14 +368,14 @@ l{%
   @@
 %}
 
-<## Tone spans  [tone]  ##>
+<## Tone heading  [tone]  ##>
 
 l{%
   \[
     (?P<tone> [陰陽平上去入聲]{2} )
   \]
 %
-  <span class="tone">\g<tone></span>
+  <h4><span class="tone">\g<tone></span></h4>
 %}
 
 <## Type spans  [:type:] ##>
@@ -466,18 +475,16 @@ See also: [Unihan Radical-Stroke Index][unihan]
 \rad ⼈ man
 
 \char 9 假 5047
-======
-* [上聲]
-  ====
-  * fake; false
-  * borrow; feign; falsely assume
-  * suppose; if
-  ====
-* [去聲]
-  ====
-  * rest; holiday
-  ====
-======
+[上聲]
+====
+* fake; false
+* borrow; feign; falsely assume
+* suppose; if
+====
+[去聲]
+====
+* rest; holiday
+====
 
 <#### \rad ⼉ legs ####>
 
@@ -717,16 +724,14 @@ See also: [Unihan Radical-Stroke Index][unihan]
 \rad ⽟ jade
 
 \char 0 王 738B
-======
-* [平聲]
-  ====
-  * [:noun:] king
-  ====
-* [去聲]
-  ====
-  * [:verb:] king (to rule as king)
-  ====
-======
+[平聲]
+====
+* [:noun:] king
+====
+[去聲]
+====
+* [:verb:] king (to rule as king)
+====
 
 <#### \rad ⽠ melon ####>
 
