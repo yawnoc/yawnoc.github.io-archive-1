@@ -16,6 +16,7 @@
       margin-bottom: 0;
     }
     .character {
+      background: #ffc;
       border: 2px solid black;
       font-size: 1.17em;
       padding: 0.13em 0.2em;
