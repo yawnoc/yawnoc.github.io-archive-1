@@ -88,7 +88,7 @@
 <#### * [⼜](#again) ####>
 
 <## 3 strokes ##>
-<#### * [⼝](#mouth) ####>
+* [⼝](#mouth)
 * [⼞](#enclosure)
 <#### * [⼟](#earth) ####>
 <#### * [⼠](#scholar) ####>
@@ -508,7 +508,13 @@ See also: [Unihan Radical-Stroke Index][unihan]
   ----------------------------------------------------------------
 ##>
 
-<#### \rad ⼝ mouth ####>
+\rad ⼝ mouth
+
+\char 問 554F
+====
+* [:verb:] ask; enquire; question
+* [:noun:] asking; enquiry; question
+====
 
 \rad ⼞ enclosure
 
