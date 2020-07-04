@@ -188,7 +188,7 @@
 <#### * [⽷](#silk) ####>
 <#### * [⽸](#jar) ####>
 <#### * [⽹](#net) ####>
-<#### * [⽺](#sheep) ####>
+* [⽺](#sheep)
 <#### * [⽻](#feather) ####>
 <#### * [⽼](#old) ####>
 <#### * [⽽](#and) ####>
@@ -760,7 +760,12 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 <#### \rad ⽹ net ####>
 
-<#### \rad ⽺ sheep ####>
+\rad ⽺ sheep
+
+\char 群 7FA4
+====
+* group; gathering; amass
+====
 
 <#### \rad ⽻ feather ####>
 
