@@ -94,7 +94,7 @@
 <#### * [⼑](#knife) ####>
 <#### * [⼒](#power) ####>
 <#### * [⼓](#wrap) ####>
-<#### * [⼔](#spoon) ####>
+* [⼔](#spoon)
 <#### * [⼕](#right-open-box) ####>
 <#### * [⼖](#hiding-enclosure) ####>
 <#### * [⼗](#ten) ####>
@@ -501,7 +501,12 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 <#### \rad ⼓ wrap ####>
 
-<#### \rad ⼔ spoon ####>
+\rad ⼔ spoon
+
+\char 3 北 5317
+====
+* north
+====
 
 <#### \rad ⼕ right-open-box ####>
 
