@@ -12,9 +12,16 @@
   %description
     Conway's Lexicon for translating Literary Chinese into English.
   %css a~~
+    h2 {
+      margin-top: 1.7em;
+    }
     h3 {
       margin-bottom: 0;
+      margin-top: 1.5em;
       font-weight: normal;
+    }
+    body > ul {
+      padding-left: 2.7em;
     }
     .character {
       background: #ffc;
