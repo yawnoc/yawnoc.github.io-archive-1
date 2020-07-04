@@ -17,6 +17,8 @@
     }
     h3 {
       margin-top: 1.5em;
+    }
+    h3 > span {
       font-weight: normal;
     }
     ul {
