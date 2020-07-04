@@ -158,7 +158,7 @@
 <#### * [⽂](#script) ####>
 <#### * [⽃](#dipper) ####>
 <#### * [⽄](#axe) ####>
-<#### * [⽅](#square) ####>
+* [⽅](#square)
 <#### * [⽆](#not) ####>
 <#### * [⽇](#sun) ####>
 * [⽈](#say)
@@ -654,7 +654,20 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 <#### \rad ⽄ axe ####>
 
-<#### \rad ⽅ square ####>
+\rad ⽅ square
+
+\char 0 方 65B9
+====
+* square; rectangle; cube; \met block
+* direction; side
+* place
+* (morally) upright
+* method
+* circumference; perimeter
+* (medical) prescription
+* just; only then; at
+* \met instance
+====
 
 <#### \rad ⽆ not ####>
 
