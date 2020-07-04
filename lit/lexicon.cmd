@@ -202,7 +202,7 @@
 <#### * [⽼](#old) ####>
 <#### * [⽽](#and) ####>
 <#### * [⽾](#plow) ####>
-<#### * [⽿](#ear) ####>
+* [⽿](#ear)
 <#### * [⾀](#brush) ####>
 <#### * [⾁](#meat) ####>
 * [⾂](#minister)
@@ -796,7 +796,12 @@ See also: [Unihan Radical-Stroke Index][unihan]
 
 <#### \rad ⽾ plow ####>
 
-<#### \rad ⽿ ear ####>
+\rad ⽿ ear
+
+\char 8 聞 805E
+====
+* hear
+====
 
 <#### \rad ⾀ brush ####>
 
