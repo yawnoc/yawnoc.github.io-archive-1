@@ -147,7 +147,7 @@ Chinese source text: \a[6], \b[147], \c[52064], \d[14]. \+
   with the upper number's thousands digit, 1:
   
   ||||{centred-block}
-    <svg class="fit-width" width="180px" viewBox="0.5 -0.5 5 3"
+    <svg width="180px" height="100%" viewBox="0.5 -0.5 5 3"
       \accessible-svg-attributes[rod-numerals-1989-times-64-title]\
     >
       
@@ -310,7 +310,7 @@ Chinese source text: \a[6], \b[147], \c[52064], \d[14]. \+
   Or, in Arabic numerals for readability:
   
   ||||{centred-block}
-    <svg class="fit-width" width="180px" viewBox="0.5 -0.7 5 2.8"
+    <svg width="180px" height="100%" viewBox="0.5 -0.7 5 2.8"
       \accessible-svg-attributes[arabic-numerals-1989-times-64-title]\
     >
       

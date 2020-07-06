@@ -545,7 +545,7 @@ meaning $\mathrm{atan2} (y, x)$
 ##>
 
 ||||{centred-block}
-<svg class="fit-width" width="320px" viewBox="-0.5 -4.1 12 5.1"
+<svg width="320px" height="100%" viewBox="-0.5 -4.1 12 5.1"
   \accessible-svg-attributes[tilt-reduced-quantities-diagram]\
 >
   [accessible-svg-title/tilt-reduced-quantities-diagram

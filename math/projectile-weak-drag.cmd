@@ -121,7 +121,7 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
 ##>
 
 ||||{centred-block}
-<svg class="fit-width" width="360px" viewBox="-2 -9 14 10"
+<svg width="360px" height="100%" viewBox="-2 -9 14 10"
   \accessible-svg-attributes[trajectory-diagram-title]\
 >
   [accessible-svg-title/trajectory-diagram-title
@@ -762,7 +762,7 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
 ##>
 
 ||||{centred-block}
-<svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 16"
+<svg width="480px" height="100%" viewBox="-2.5 -48 25.5 16"
   \accessible-svg-attributes[optimal-angle-phi-vs-b-plot-title]
 >
   [accessible-svg-title/optimal-angle-phi-vs-b-plot-title
@@ -1011,7 +1011,7 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
 ##>
 
 ||||{centred-block}
-<svg class="fit-width" width="480px" viewBox="-2.5 -48 25.5 21"
+<svg width="480px" height="100%" viewBox="-2.5 -48 25.5 21"
   \accessible-svg-attributes[optimal-angle-phi-vs-u-on-c-plot-title]
 >
   [accessible-svg-title/optimal-angle-phi-vs-u-on-c-plot-title

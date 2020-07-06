@@ -157,7 +157,7 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
 /]
 
 ||||{centred-block}
-<svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5"
+<svg width="360px" height="100%" viewBox="-1 -4 7.5 4.5"
   \accessible-svg-attributes[trajectory-diagram-title]\
 >
   [accessible-svg-title/trajectory-diagram-title

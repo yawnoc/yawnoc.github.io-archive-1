@@ -237,7 +237,7 @@ Or maybe he only had access to *very* impure silver and jade:
 {: \point : class="points" :}
 
 ||||{centred-block}
-<svg class="fit-width" width="480px" viewBox="-3.5 -18 25.5 22"
+<svg width="480px" height="100%" viewBox="-3.5 -18 25.5 22"
   \accessible-svg-attributes[scatter-plot-title]\
 >
   [accessible-svg-title/scatter-plot-title

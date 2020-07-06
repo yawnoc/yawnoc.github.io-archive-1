@@ -1358,7 +1358,7 @@ and is **never** sounded as a consonant.
 /]
 
 ||||{centred-block}
-<svg class="fit-width" width="480px" viewBox="-5.5 -7 12 6.5"
+<svg width="480px" height="100%" viewBox="-5.5 -7 12 6.5"
   \accessible-svg-attributes[tone-diagram-title]
 >
   [accessible-svg-title/tone-diagram-title

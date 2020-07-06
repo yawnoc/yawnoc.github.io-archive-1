@@ -145,7 +145,7 @@ $$
 {: \font-size : font-size="0.4" :}
 
 ||||{centred-block}
-<svg class="fit-width" width="120px" viewBox="-1.1 -1.5 2.2 2.6"
+<svg width="120px" height="100%" viewBox="-1.1 -1.5 2.2 2.6"
   \accessible-svg-attributes[circle-diagram-title]\
 >
   [accessible-svg-title/circle-diagram-title
@@ -194,7 +194,7 @@ $$
 ##>
 
 ||||{centred-block}
-<svg class="fit-width" width="120px" viewBox="-1.1 -1.1 2.2 2.6"
+<svg width="120px" height="100%" viewBox="-1.1 -1.1 2.2 2.6"
   \accessible-svg-attributes[square-diagram-title]\
 >
   [accessible-svg-title/square-diagram-title
