@@ -11,7 +11,7 @@
   %title Conway's site
   %title-suffix <## nothing ##>
   %date-created 2019-03-09
-  %date-modified 2020-06-15
+  %date-modified 2020-07-13
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -248,6 +248,9 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
 ###
 
 ====
+* [\oct Image to ASCII art converter (GitHub)](
+    https://github.com/yawnoc/ascii-art
+  )
 * [\py Big Two (鋤大弟) scoring statistics (GitHub)](
     https://github.com/yawnoc/big-two-stats
   )
@@ -263,6 +266,7 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
 ====
 
 {: \py : \[Python\] :}
+{: \oct : \[GNU Octave\] :}
 {: \ma : \[Mathematica\] :}
 
 
