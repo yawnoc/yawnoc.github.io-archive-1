@@ -141,6 +141,14 @@ pre {
 /* ---------------------------------------------------------------- */
 
 /*
+  Prevent invisible fonts while loading
+*/
+
+.katex {
+  font-display: swap;
+}
+
+/*
   Overflow display equations with horizontal scrolling (overflow-*)
   Prevent vertical clipping (margin-*, padding-*)
 */
