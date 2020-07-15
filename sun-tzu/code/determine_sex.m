@@ -5,9 +5,8 @@
 # Sex determination algorithm in Volume III Paragraph 36:
 #   https://yawnoc.github.io/sun-tzu/iii/36
 #   https://yawnoc.github.io/manuscripts/sun-tzu-iii-36.pdf
-# Released into the public domain (CC0):
-#   https://creativecommons.org/publicdomain/zero/1.0/
-# ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
+## Licensed under "MIT No Attribution" (MIT-0),
+## see <https://spdx.org/licenses/MIT-0>.
 ################################################################
 
 function male = determine_sex (years, months)

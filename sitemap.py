@@ -9,9 +9,9 @@ Generate sitemap.txt.
 
 To be kept in the root directory.
 
-Released into the public domain (CC0):
-  <https://creativecommons.org/publicdomain/zero/1.0/>
-ABSOLUTELY NO WARRANTY, i.e. "GOD SAVE YOU"
+Licensed under "MIT No Attribution" (MIT-0),
+see <https://spdx.org/licenses/MIT-0>.
+
 """
 
 
