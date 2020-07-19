@@ -58,7 +58,7 @@ Also known as _Sunzi Suanjing_.
 
 
 
-##translation-links
+##{#translation-links}
   Translation (links to volumes)
 ##
 
@@ -69,7 +69,7 @@ Also known as _Sunzi Suanjing_.
   "\sun-tzu's Computational Classic"
 >>
 
-===={volumes}
+===={.volumes}
 * [《序》 "Preface"] ["p"]
 * [《卷上》 "Volume~I"] ["i"]
 * [《卷中》 "Volume~II"] ["ii"] (incomplete)
@@ -78,7 +78,7 @@ Also known as _Sunzi Suanjing_.
 
 
 
-##conways-preface
+##{#conways-preface}
   Conway's Preface
 ##
 
@@ -135,7 +135,7 @@ to revise and type up all of it up in web (HTML) format.
 @@
 
 
-###versions
+###{#versions}
   Versions
 ###
 
@@ -179,7 +179,7 @@ and to make it easier to refer to specific parts of the text.
 ----
 
 
-###variant-characters
+###{#variant-characters}
   Canonical variant-character substitutions
 ###
 
@@ -187,7 +187,7 @@ and to make it easier to refer to specific parts of the text.
 The following variant-character substitutions have been used
 (in each pair the character on the right is preferred):
 ----
-||||{variant-characters}
+||||{.variant-characters}
   羣群
   氂釐
   歴歷
@@ -201,7 +201,7 @@ The following variant-character substitutions have been used
 ||||
 
 
-###weight
+###{#weight}
   A note on mass and weight
 ###
 
@@ -212,7 +212,7 @@ Therefore I will be using the two terms interchangeably.
 ----
 
 
-###translation-manuscript
+###{#translation-manuscript}
   Conway's translation manuscript
 ###
 
@@ -231,7 +231,7 @@ edits and corrections I have made since they were scanned.
   (/manuscripts/sun-tzu-\g<volume>-\g<paragraph>.pdf)
 %}
 
-===={manuscript-links}
+===={.manuscript-links}
 * [Version referencing system](/manuscripts/sun-tzu-versions.pdf)
 * [__Preface__](/manuscripts/sun-tzu-preface.pdf)
 * __Volume~I:__
@@ -329,7 +329,7 @@ edits and corrections I have made since they were scanned.
 
 
 
-##translation-links-2
+##{#translation-links-2}
   Translation (links to volumes)
 ##
 
@@ -340,7 +340,7 @@ edits and corrections I have made since they were scanned.
   "\sun-tzu's Computational Classic"
 >>
 
-===={volumes}
+===={.volumes}
 * [《序》 "Preface"] ["p"]
 * [《卷上》 "Volume~I"] ["i"]
 * [《卷中》 "Volume~II"] ["ii"] (incomplete)

@@ -11,10 +11,10 @@ l{%
 
 <## Abbreviations for classes ##>
 
-b{: {h} : {host} :}
-b{: {ht} : {host thought-bubble} :}
-b{: {g} : {guest} :}
-b{: {gt} : {guest thought-bubble} :}
+b{: {.h} : {.host} :}
+b{: {.ht} : {.host .thought-bubble} :}
+b{: {.g} : {.guest} :}
+b{: {.gt} : {.guest .thought-bubble} :}
 
 
 <## END of excerpt \END-excerpt ##>

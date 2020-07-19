@@ -24,13 +24,13 @@ b{%
   ^ (?P=leading_whitespace)
   [>]{2,}
 %
-  \g<pipes>||||{translation parallel-text \g<class>}
+  \g<pipes>||||{.translation .parallel-text \g<class>}
   
-  \g<pipes>||{chinese}
+  \g<pipes>||{.chinese}
     \g<chinese_content>
   \g<pipes>||
   
-  \g<pipes>||{english}
+  \g<pipes>||{.english}
     \g<english_content>
   \g<pipes>||
   
@@ -50,7 +50,7 @@ l{%
     (?P<content> [^]] *? )
   \]
 %
-  _{translator-supplied}\g<content>_
+  _{.translator-supplied}\g<content>_
 %}
 
 

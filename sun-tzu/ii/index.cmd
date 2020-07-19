@@ -57,7 +57,7 @@ Literally "Middle Volume".
 
 
 
-##translation-links
+##{#translation-links}
   Translation (links to paragraphs)
 ##
 
@@ -90,7 +90,7 @@ and the headings I have allocated are **not** part of the original text.
 ====
 
 
-||||{marker wip}
+||||{.marker .wip}
  WORK IN PROGRESS
 ||||
 

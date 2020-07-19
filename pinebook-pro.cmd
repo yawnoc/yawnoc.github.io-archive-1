@@ -43,7 +43,7 @@ Last version I used: [<code>\last-used-commit</code>] [last-used]
     commit/\last-used-commit
 @@
 
-##clone
+##{#clone}
   Clone the installer
 ##
 
@@ -52,7 +52,7 @@ $ git clone https://github.com/daniel-thompson/pinebook-pro-debian-installer
 $ cd pinebook-pro-debian-installer
 ````
 
-##unmount
+##{#unmount}
   Unmount the SD card
 ##
 
@@ -60,7 +60,7 @@ $ cd pinebook-pro-debian-installer
 $ umount /media/conway/mmcblk0
 ````
 
-##run
+##{#run}
   Run the installer
 ##
 
@@ -78,8 +78,8 @@ we leave the installation of a desktop environment and a window manager
 until later.
 ----
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
   ==
     ; Hostname
@@ -122,7 +122,7 @@ until later.
 ||||||
 
 
-##swap
+##{#swap}
   Disable swap
 ##
 
@@ -140,7 +140,7 @@ Comment out the swap line.
 ----
 
 
-##terminal-encoding
+##{#terminal-encoding}
   Fix the TTY (terminal) encoding
 ##
 
@@ -162,7 +162,7 @@ so it too has broken borders initially:
 $ sudo dpkg-reconfigure console-setup
 ````
 
-||||{centred-block}
+||||{.centred-block}
 ![
   Photo: \
     Broken borders on the "Configuring console-setup" text user interface \
@@ -176,8 +176,8 @@ $ sudo dpkg-reconfigure console-setup
 While we're at it, we also increase the terminal font size.
 ----
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
   ==
     ; Encoding
@@ -196,7 +196,7 @@ While we're at it, we also increase the terminal font size.
 ||||||
 
 
-##internet
+##{#internet}
   Connect to the internet
 ##
 
@@ -208,7 +208,7 @@ we then connect to the internet:
 $ nmtui
 ````
 
-##update
+##{#update}
   Update and upgrade packages
 ##
 
@@ -218,7 +218,7 @@ $ sudo apt upgrade
 ````
 
 
-##power-key
+##{#power-key}
   Disable shutdown on power key
 ##
 
@@ -237,7 +237,7 @@ and change it to `HandlePowerKey=ignore`.
 ----
 
 
-##mate
+##{#mate}
   Minimal MATE and LightDM
 ##
 
@@ -249,7 +249,7 @@ $ sudo apt install lightdm
 Then reboot.
 ----
 
-###appearance
+###{#appearance}
   Appearance settings
 ###
 
@@ -309,7 +309,7 @@ Then reboot.
 ==========
 
 
-###keyboard
+###{#keyboard}
   Keyboard shortcuts
 ###
 
@@ -328,7 +328,7 @@ Note that Pine key is Mod4.
 ----
 
 
-###terminal
+###{#terminal}
   MATE Terminal
 ###
 
@@ -368,11 +368,11 @@ Note that Pine key is Mod4.
 ==========
 
 
-##bash
+##{#bash}
   Bash customisation
 ##
 
-###bash-aliases
+###{#bash-aliases}
 Bash aliases
 ###
 
@@ -385,7 +385,7 @@ alias gr='grep -E'
 alias py='python3'
 ````
 
-###bash-prompt
+###{#bash-prompt}
 Bash prompt
 ###
 
@@ -395,7 +395,7 @@ at the start and before the dollar sign.
 ----
 
 
-##power
+##{#power}
   Power management
 ##
 
@@ -423,7 +423,7 @@ Then reboot.
 ----
 
 
-##cli-essentials
+##{#cli-essentials}
   Command line essentials
 ##
 
@@ -435,7 +435,7 @@ $ sudo apt install git
 $ sudo apt install w3m
 ````
 
-###w3m-options
+###{#w3m-options}
   w3m options
 ###
 ======
@@ -447,7 +447,7 @@ No cookies appears to be the default now.
 ----
 
 
-##cjk-fonts
+##{#cjk-fonts}
   CJK fonts
 ##
 

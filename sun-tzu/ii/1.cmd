@@ -58,7 +58,7 @@ using the __subtraction-only__ version of the __Euclidean algorithm__.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -116,7 +116,7 @@ Chinese source text: \a[26], \b[153], \c[52130], \d[39]. \+
 ====
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 

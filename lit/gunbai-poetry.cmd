@@ -85,7 +85,7 @@ has the lines [ja/~~ 及時當勉励 歳月不待人 ~~/]:
 @@
 
 
-||||{centred-block}
+||||{.centred-block}
   ![
     Photograph of sumo umpire \kimura-yodo in yellow outfit, \
     with calligraphy-bearing gunbai raised.
@@ -95,7 +95,7 @@ has the lines [ja/~~ 及時當勉励 歳月不待人 ~~/]:
 ||||
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -117,7 +117,7 @@ but I would guess that that side bears the two lines before. All up:
 
 
 <<<<<<<<
-  ||||||{centred-block}
+  ||||||{.centred-block}
   ||||
     盛年不重來， \+
     一日難再晨。 \+
@@ -126,7 +126,7 @@ but I would guess that that side bears the two lines before. All up:
   ||||
   ||||||
 ||||||||
-  ||||||{centred-block}
+  ||||||{.centred-block}
   ||||
     .[The] years of prime come not once more; \+
     .[A] day cannot dawn again. \+

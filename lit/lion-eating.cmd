@@ -49,7 +49,7 @@ It is written in literary Chinese, with every character pronounced
 
 
 
-##translation
+##{#translation}
   Translation
 ##
 

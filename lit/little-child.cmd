@@ -90,7 +90,7 @@ see [the actual first page of the almanac text][almanac text].
 @@
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -208,7 +208,7 @@ see [the actual first page of the almanac text][almanac text].
   having finished speaking he turned his head back down.
   From the [illustration][almanac text] in the almanac, he then
   joins in with the building of the wall:
-  ||||{centred-block}
+  ||||{.centred-block}
     ![
       Almanac illustration.
       A little child with Confucius,
@@ -319,7 +319,7 @@ see [the actual first page of the almanac text][almanac text].
     what .[be] thy thoughts .[upon this]?
 >>
 ====
-* **{danger} Beware stranger danger. **
+* **{.danger} Beware stranger danger. **
 
 * 汝意下如何：
     what .[be] thy thoughts .[upon this];
@@ -1043,7 +1043,7 @@ see [the actual first page of the almanac text][almanac text].
 
 <<<<<<<<
   詩曰：
-  ||||||{centred-block}
+  ||||||{.centred-block}
   ||||
     休欺年少聰明子， \+
     廣有英才智過人。 \+
@@ -1053,7 +1053,7 @@ see [the actual first page of the almanac text][almanac text].
   ||||||
 ||||||||
   Verse saith:
-  ||||||{centred-block}
+  ||||||{.centred-block}
   ||||
     Do not bully the intelligent child, young .[in] years, \+
     .[Who] greatly hath outstanding talent, \

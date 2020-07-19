@@ -66,7 +66,7 @@ See also:
 @@
 
 
-##translation
+##{#translation}
   Translation
 ##
 

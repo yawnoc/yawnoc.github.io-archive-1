@@ -66,7 +66,7 @@ See [Vol.~I \P1 (Units of length)] ["i 1"].
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

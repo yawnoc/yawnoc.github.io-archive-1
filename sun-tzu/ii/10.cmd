@@ -84,7 +84,7 @@ and [Vol.~I \P3 (Units of capacity)] ["i 3"].
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -183,7 +183,7 @@ Chinese source text: \a[32], \b[154], \c[52157], \d[45]. \+
 ====
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 

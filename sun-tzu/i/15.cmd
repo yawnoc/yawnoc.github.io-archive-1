@@ -78,7 +78,7 @@ This paragraph corresponds to $n = 9$.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

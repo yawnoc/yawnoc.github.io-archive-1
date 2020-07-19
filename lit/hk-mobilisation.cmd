@@ -39,7 +39,7 @@
 
 
 
-||||{centred-block}
+||||{.centred-block}
   ![
     Photograph of 16 June 2019 demonstration (aerial view), \
     Hennessy Road, Wan Chai, Hong Kong
@@ -78,7 +78,7 @@
 
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -103,13 +103,13 @@ by [畫字~(Draword)][draword].
 
 
 
-<<{front-matter}
+<<{.front-matter}
   六月廿一，行動升級，不撤不散。
 ||
   Twenty-first of June: action escalates. No withdrawal: no dispersion.
 >>
 
-<<{front-matter}
+<<{.front-matter}
   行動在即，寫左篇出師表。\
   雖係劣改，不過一字一句，都係我一直以黎嘅經歷同諗法。到時見。
 ||
@@ -470,13 +470,13 @@ by [畫字~(Draword)][draword].
   勝，平聲， \C [^sh]ing1 (\pm [_s]ing1), \M sh(e-)ng1 (\nc sh(e\)ng)
 ====
 
-<<{back-matter}
+<<{.back-matter}
   六月廿一，行動升級，不撤不散。
 ||
   Twenty-first of June: action escalates. No withdrawal: no dispersion.
 >>
 
-<<{back-matter}
+<<{.back-matter}
   畫字
 ||
   Draword

@@ -67,7 +67,7 @@ and run the following:
 
 
 
-##multiplication
+##{#multiplication}
   Multiplication
 ##
 
@@ -82,8 +82,8 @@ and run the following:
     {x_, y_} :> MultiplyAnimation[x, y, Export -> True]
 ``
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
   ==
     ; $81 \times 81 = 6561$
@@ -133,7 +133,7 @@ and run the following:
 
 
 
-##division
+##{#division}
   Division
 ##
 
@@ -148,8 +148,8 @@ and run the following:
     {x_, y_} :> DivideAnimation[x, y, Export -> True]
 ``
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
   ==
     ; $100 \div 6 = 16 + \dfrac{4}{6}$

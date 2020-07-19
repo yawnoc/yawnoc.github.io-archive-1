@@ -58,11 +58,11 @@ but no mention of the author.
   https://en.wikipedia.org/wiki/Victoria_Peak
 @@
 
-||||{centred-block}
+||||{.centred-block}
   ![Photograph of the plaque text.][plaque text small]
 ||||
 
-@@![plaque text small]
+@@[plaque text small]
   lion-pavilion-small.jpg
 @@
 
@@ -71,7 +71,7 @@ __High-resolution version:__ [`lion-pavilion.jpg`~(1.6~MB)](lion-pavilion.jpg)
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

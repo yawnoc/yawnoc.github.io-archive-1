@@ -54,12 +54,12 @@ Convenient for use in emails.
 
 
 
-##constants
+##{#constants}
   Constants
 ##
 
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row
   ==
@@ -111,12 +111,12 @@ Convenient for use in emails.
 ||||
 
 
-##subscripts
+##{#subscripts}
   Subscripts
 ##
 
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row
   ==
@@ -133,12 +133,12 @@ Convenient for use in emails.
 ||||
 
 
-##superscripts
+##{#superscripts}
   Superscripts
 ##
 
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row
   ==
@@ -155,12 +155,12 @@ Convenient for use in emails.
 ||||
 
 
-##arithmetic
+##{#arithmetic}
   Arithmetic operators
 ##
 
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row
   ==
@@ -202,12 +202,12 @@ Convenient for use in emails.
 ||||
 
 
-##relations
+##{#relations}
   Relations
 ##
 
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row
   ==
@@ -274,12 +274,12 @@ Convenient for use in emails.
 ||||
 
 
-##calculus
+##{#calculus}
   Calculus
 ##
 
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row
   ==
@@ -310,12 +310,12 @@ see `macros` in [`rendering.js`][js].
 @@
 
 
-##greek
+##{#greek}
   Greek alphabet
 ##
 
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row
   ==

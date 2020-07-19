@@ -61,7 +61,7 @@ it's supposed to be in a thought bubble.
   http://comicneue.com/
 @@
 
-||||{important statement}
+||||{.important .statement}
 You may not care about politics, but politics cares about you.
 And by that I mean: politics is out to screw you.
 ||||
@@ -77,55 +77,49 @@ And by that I mean: politics is out to screw you.
 %}
 
 
-##2020
-  2020
-##
+##{#2020} 2020 ##
 
 ----
 Brought to you in the safety of Western Australia.
 ----
 
 
-""""{interview}
+""""{.interview}
 
 ![WA Premier Mark McGowan] [Mark McGowan]
 
-----{h}
+----{.h}
 Don't come. We don't want you.
 ----
-||||{host marker}
+||||{.host .marker}
 ---Mark McGowan [(29~March~2020)] [don't come]
 ||||
 
 ![WA Health Minister Roger Cook] [Roger Cook]
 
-----{g}
+----{.g}
 If someone wants to challenge that in the High Court, good luck to them.
 I say, you know, fill your boots.
 ----
-||||{guest marker}
+||||{.guest .marker}
 ---Roger Cook [(20~May~2020)] [good luck]
 ||||
 
 """"
 
-@@![Mark McGowan]{h}
-  mark-mcgowan-2020-03-29.jpg
-@@
-@@[don't come]
+@[Mark McGowan]{.h} mark-mcgowan-2020-03-29.jpg @
+@[don't come]
   https://www.abc.net.au/news/2020-03-29/\
     coronavirus-pandemic-prompts-wa-to-consider-hard-border-closure/\
     12100824
-@@
+@
 
-@@![Roger Cook]{g}
-  roger-cook-2020-05-20.jpg
-@@
-@@[good luck]
+@[Roger Cook]{.g} roger-cook-2020-05-20.jpg @
+@[good luck]
   https://www.abc.net.au/news/2020-05-20/\
     wa-escalates-coronavirus-state-border-closure-row-with-nsw/\
     12266628
-@@
+@
 
 
 ====
@@ -165,9 +159,7 @@ I say, you know, fill your boots.
 ====
 
 
-##2019
-  2019
-##
+##{#2019} 2019 ##
 
 ====
 * [.14~October~2019.]

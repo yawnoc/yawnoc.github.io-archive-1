@@ -59,7 +59,7 @@ Note that the [previous paragraph (\P3)] ["i 3"] uses a "short scale".
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -98,7 +98,7 @@ Chinese source text: \a[6], \b[147], \c[52060], \d[13]. \+
 ====
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 
@@ -132,8 +132,8 @@ the named quantities go up by a factor of 10 ** 4.
 In summary:
 ----
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 |^
   ==

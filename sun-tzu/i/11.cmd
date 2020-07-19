@@ -56,7 +56,7 @@ This paragraph gives some equivalent fractions.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

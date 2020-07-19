@@ -90,7 +90,7 @@ for the optimal launch angle when air resistance is relatively weak.
 /]
 
 
-##solution
+##{#solution}
   Solution
 ##
 
@@ -120,7 +120,7 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
   ***********************************************************************
 ##>
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="360px" height="100%" viewBox="-2 -9 14 10"
   \accessible-svg-attributes[trajectory-diagram-title]\
 >
@@ -269,7 +269,7 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
 </svg>
 ||||
 
-###motion
+###{#motion}
   Equations of motion
 ###
 
@@ -297,7 +297,7 @@ $$
   \end{alignedat}
 $$
 
-###scaling
+###{#scaling}
   Scaling
 ###
 
@@ -362,7 +362,7 @@ the ratio between the initial and terminal speeds**.
 (I wish I knew this back in Year~12.)
 ----
 
-###perturbation
+###{#perturbation}
   Perturbed trajectory
 ###
 
@@ -426,7 +426,7 @@ and as such probably does not converge.
 ----
 
 
-###time
+###{#time}
   Flight time
 ###
 
@@ -472,7 +472,7 @@ we then obtain $t_1$ and $t_2$
 (see page~20 onwards of [manuscript]).
 ----
 
-###range
+###{#range}
   Range
 ###
 
@@ -503,7 +503,7 @@ where $R_0$, $R_1$, and $R_2$ are (horribly complicated) functions of $\phi$
 (see page~24 onwards of [manuscript]).
 ----
 
-###angle
+###{#angle}
   Optimal launch angle
 ###
 
@@ -541,7 +541,7 @@ and hence the result:
 ----
 
 
-##result
+##{#result}
   Result
 ##
 
@@ -556,7 +556,7 @@ $$
 ----
   the __optimal launch angle__ has the __asymptotic expansion__
 ----
-$${important}
+$${.important}
   \begin{aligned}
     \phi =
       \frac{\pi}{4}
@@ -581,7 +581,7 @@ $$
 ----
 or
 ----
-$${important}
+$${.important}
   \begin{aligned}
     \phi
     &= 45 \degree - 6.018 \degree B + 3.290 \degree B^2 \plusorder{B^3} \\
@@ -592,7 +592,7 @@ $${important}
 $$
 
 
-##numerics
+##{#numerics}
   Numerical verification
 ##
 
@@ -616,13 +616,13 @@ with those from the asymptotic [result above](#result):
   https://github.com/yawnoc/projectile-motion-numerics/
     blob/master/table_b_phi_script.m
 ##>
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 |^
   ==
-    ;[2] $B$
-    ;[,3] Optimal $\phi$
+    ;{r2} $B$
+    ;{c3} Optimal $\phi$
   ==
     ; Numerical
     ; Asymptotic
@@ -691,7 +691,7 @@ with those from the asymptotic [result above](#result):
   ==
     , \0\0\0\03
     , 37.3°
-    ,{not-applicable}[16,2]
+    ,{.not-applicable r16 c2}
   ==
     , \0\0\0\04
     , 36.2°
@@ -761,7 +761,7 @@ Indeed the asymptotic expansion is very accurate for $B < 0.5$
   Horizontal scale is 4:1.
 ##>
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-2.5 -48 25.5 16"
   \accessible-svg-attributes[optimal-angle-phi-vs-b-plot-title]
 >
@@ -1010,7 +1010,7 @@ $\sqrt{B} = u / c$, the initial-to-terminal speed ratio:
   Horizontal scale is 5:1.
 ##>
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-2.5 -48 25.5 21"
   \accessible-svg-attributes[optimal-angle-phi-vs-u-on-c-plot-title]
 >
