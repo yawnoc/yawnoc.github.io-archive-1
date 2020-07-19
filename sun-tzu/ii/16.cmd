@@ -11,7 +11,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P16
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -82,7 +82,7 @@ Chinese source text: \a[38], \b[155], \c[52177], \d[50]. \+
   Now there be rope,
   of length five thousand, seven hundred .[and] ninety-four paces,
   .[and we] wish to make .[it] be .[a] square.
-  .[We] ask: how much .[be its edge]? \+
+  .[We] ask, how much .[be its edge]? \+
   Answer saith:
     one thousand, four hundred .[and] forty-eight paces .[and] three rules.
 >>

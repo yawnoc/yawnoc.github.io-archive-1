@@ -11,7 +11,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P2
   %date-created 2019-06-09
-  %date-modified 2020-06-23
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -70,7 +70,7 @@ Chinese source text: \a[26], \b[153], \c[52133], \d[39]. \+
   答曰：一十五分之一十一。
 ||
   Now there be one of three shares .[and] two of five shares.
-  .[We] ask: joining them two resulteth in how much? \+
+  .[We] ask, joining them two resulteth in how much? \+
   Answer saith: eleven of fifteen shares.
 >>
 ====

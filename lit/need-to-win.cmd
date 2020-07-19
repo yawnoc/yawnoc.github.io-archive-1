@@ -9,7 +9,7 @@
 %%
   %title "The Need to Win"
   %date-created 2019-04-15
-  %date-modified 2020-06-07
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -194,7 +194,7 @@ The Chinese source text is from Chinese Text Project:
   吾問焉而不吾告，敢問何謂也？
 ||
   .[That] I asked of, yet .[they] told me not;
-  .[I] dare ask: what .[were they] saying?
+  .[I] dare ask, what .[were they] saying?
 >>
 ====
 * 何謂也： what .[were they] saying; \or what .[did they] mean

@@ -15,7 +15,7 @@
   %title "The Sea Island Computational Classic" 《海島算經》
   %title-en ".[The] Sea Island Computational Classic"
   %date-created 2019-04-20
-  %date-modified 2020-05-02
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -356,7 +356,7 @@ $$
   \accessible-svg-attributes[we-ask-how-much-title]\
 >
   [accessible-svg-title/we-ask-how-much-title
-    "We ask: how much" diagram.
+    "We ask how much" diagram.
     What is the height of the sea island?
     What is the distance from the base of the sea island \
     to the base of the front post?
@@ -388,7 +388,7 @@ $$
 <<
   問[b/島高/]及[r/去表/]各幾何？
 ||
-  .[We] ask: how much .[are] each of [b/ .[the] height of .[the] island /]
+  .[We] ask, how much .[are] each of [b/ .[the] height of .[the] island /]
   and [r/ .[its] distance from .[the] post /]?
 >>
 

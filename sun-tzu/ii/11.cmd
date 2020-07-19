@@ -12,7 +12,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P11
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -108,7 +108,7 @@ Chinese source text: \a[34], \b[154], \c[52160], \d[46]. \+
   of width four rods .[and] six rules,
   length five rods .[and] four rules,
   .[and] depth three rods .[and] five rules.
-  .[We] ask: how much grain beareth .[it]?
+  .[We] ask, how much grain beareth .[it]?
 >>
 
 <<

@@ -11,7 +11,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P17
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -84,7 +84,7 @@ Chinese source text: \a[38], \b[155], \c[52180], \d[51]. \+
     height two rods, .[and]
     length sixty rules,
   .[and we] wish to consider one thousand rules as one block.
-  .[We] ask: how many amounteth .[this] to?
+  .[We] ask, how many amounteth .[this] to?
 >>
 ====
 * 一千尺： one thousand rules \+

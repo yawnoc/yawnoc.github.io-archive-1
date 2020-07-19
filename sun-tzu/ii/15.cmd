@@ -11,7 +11,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P15
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -81,7 +81,7 @@ Chinese source text: \a[36], \b[155], \c[52174], \d[49]. \+
   Now there be .[a] wooden cube .[of edge] three rules,
   .[and we] wish .[that each] cube .[of edge] five inches .[thereof be]
   made into one pillow.
-  .[We] ask: how many result?
+  .[We] ask, how many result?
 >>
 ====
 * \b[155] and \c[52174] have 高三尺 after 木方三尺.

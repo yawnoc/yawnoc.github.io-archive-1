@@ -11,7 +11,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P9
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -81,7 +81,7 @@ Chinese source text: \a[32], \b[154], \c[52154], \d[44]. \+
   three rods north-.[to]-south, .[and] six rods east-.[to]-west,
   .[and we] wish to build it with bricks.
   Every two rules of area, useth five bricks.
-  .[We] ask: how many amounteth .[this] to?
+  .[We] ask, how many amounteth .[this] to?
 >>
 ====
 * 南北： north-.[to]-south; \lit south-.[to]-north

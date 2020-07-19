@@ -12,7 +12,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P13
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -81,7 +81,7 @@ Chinese source text: \a[34], \b[155], \c[52166], \d[48]. \+
   Now there be .[a] circular field,
   of circumference three hundred paces,
   .[and] diameter one hundred paces.
-  .[We] ask: how much field resulteth?
+  .[We] ask, how much field resulteth?
 >>
 ----
 * Here $\pi \approx 3$, see [Vol.~I \P5] ["i 5"].

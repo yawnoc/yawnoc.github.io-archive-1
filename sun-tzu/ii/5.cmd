@@ -11,7 +11,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P5
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -80,7 +80,7 @@ Chinese source text: \a[30], \b[153], \c[52142], \d[42]. \+
   答曰：六升。
 ||
   Now there be grain, one peck.
-  .[We] ask: how much be .[this in] coarse grain? \+
+  .[We] ask, how much be .[this in] coarse grain? \+
   Answer saith: six quarts.
 >>
 ====

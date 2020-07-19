@@ -12,7 +12,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P12
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -97,7 +97,7 @@ Chinese source text: \a[34], \b[154], \c[52163], \d[47]. \+
   Now there be .[a] circular cellar,
   of circumference five rods .[and] four rules,
   .[and] depth one rod .[and] eight rules.
-  .[We] ask: how much grain beareth .[it]?
+  .[We] ask, how much grain beareth .[it]?
 >>
 
 <<

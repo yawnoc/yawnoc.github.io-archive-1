@@ -11,7 +11,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P3
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -71,7 +71,7 @@ Chinese source text: \a[28], \b[153], \c[52136], \d[40]. \+
 ||
   Now there be eight of nine shares,
   .[and we] diminish of it one of five shares.
-  .[We] ask: how much remaineth? \+
+  .[We] ask, how much remaineth? \+
   Answer saith: thirty-one of forty-five shares.
 >>
 ====

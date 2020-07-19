@@ -12,7 +12,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P14
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -86,7 +86,7 @@ Chinese source text: \a[36], \b[155], \c[52171], \d[49]. \+
   .[with a] mulberry tree growing .[in the] centre.
   From .[a] corner unto .[the] mulberry tree:
     one hundred .[and] forty-seven paces.
-  .[We] ask: how much field be .[this]?
+  .[We] ask, how much field be .[this]?
 >>
 
 <<

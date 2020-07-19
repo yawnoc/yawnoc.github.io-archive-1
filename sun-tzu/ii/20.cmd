@@ -13,7 +13,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P20
   %date-created 2019-06-09
-  %date-modified 2020-06-23
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -80,7 +80,7 @@ Chinese source text: \a[42], \b[156], \c[52189], \d[54]. \+
   今有積三萬五千步。問為圓幾何？
 ||
   Now there be area, three myriad .[and] five thousand paces.
-  .[We] ask: how much .[by circumference] be .[this a] circle?
+  .[We] ask, how much .[by circumference] be .[this a] circle?
 >>
 
 <<

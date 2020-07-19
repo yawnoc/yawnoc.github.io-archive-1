@@ -11,7 +11,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~I" 《孫子算經\.卷上》 \P14
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -72,7 +72,7 @@ Chinese source text: \a[10], \b[148], \c[52074], \d[18]. \+
 ||
   Six thousand, five hundred .[and] sixty-one:
   .[with] nine men sharing it,
-  .[we] ask: how much receiveth .[each] man? \+
+  .[we] ask, how much receiveth .[each] man? \+
   Answer saith: seven hundred .[and] twenty-nine.
 >>
 ====

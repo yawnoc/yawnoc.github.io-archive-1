@@ -11,7 +11,7 @@
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P7
   %date-created 2019-06-09
-  %date-modified 2020-05-13
+  %date-modified 2020-07-19
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -80,7 +80,7 @@ Chinese source text: \a[30], \b[154], \c[52148], \d[43]. \+
   答曰：二斗一升五分升之三。
 ||
   Now there be grain, four pecks .[and] five quarts.
-  .[We] ask: how much be .[this in] intricate grain? \+
+  .[We] ask, how much be .[this in] intricate grain? \+
   Answer saith:
     two pecks, one quart, .[and] three fifths of .[a] quart.
 >>
