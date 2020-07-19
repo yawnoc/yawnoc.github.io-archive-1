@@ -70,7 +70,7 @@ you may wish to [skip to Volume~II] ["ii"].
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -239,7 +239,7 @@ Chinese source text: \a[20], \b[151], \c[52118], \d[32]. \+
     two thousand, eight hundred .[and] eighty-two.
 >>
 
-||||{marker end}
+||||{.marker .end}
 END of Volume~I
 ||||
 

@@ -78,7 +78,7 @@ This paragraph corresponds to $n = 3$.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

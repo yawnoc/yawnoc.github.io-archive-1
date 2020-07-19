@@ -113,7 +113,7 @@ and its corresponding derivation as found in 《海島算經細草圖說》.
 /]
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -158,13 +158,13 @@ $$
 \end{aligned}
 $$
 
-###problem
+###{#problem}
   Problem
 ###
 
 
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -3.7 9.2 4"
   \accessible-svg-attributes[now-there-be-title]\
 >
@@ -248,7 +248,7 @@ $$
 
 
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -3.7 9.2 4.2"
   \accessible-svg-attributes[walking-back-123-paces-title]\
 >
@@ -305,7 +305,7 @@ $$
 
 
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -3.7 9.2 4.2"
   \accessible-svg-attributes[walking-back-127-paces-title]\
 >
@@ -351,7 +351,7 @@ $$
 
 
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -3.7 9.2 4.2"
   \accessible-svg-attributes[we-ask-how-much-title]\
 >
@@ -526,7 +526,7 @@ $$
 ====
 
 
-###derivation
+###{#derivation}
   Derivation
 ###
 
@@ -541,8 +541,8 @@ I have mapped the names of the vertices as follows:
   https://archive.org/details/02094033.cn/page/n4/mode/1up
 @@
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
   ==
     , 甲
@@ -630,7 +630,7 @@ I have mapped the names of the vertices as follows:
 {: \font-size : font-size="0.3" :}
 
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[main-diagram-title]\
 >
@@ -712,7 +712,7 @@ I have mapped the names of the vertices as follows:
 The punctuation inserted in this section is my own.
 ----
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[ab-is-the-sea-island-title]\
 >
@@ -752,7 +752,7 @@ The punctuation inserted in this section is my own.
   [r/ $A$ is .[the] peak of .[the] island /].
 >>
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[cd-is-the-front-post-title]\
 >
@@ -813,7 +813,7 @@ The punctuation inserted in this section is my own.
   looking at .[the] peak of .[the] island/].
 >>
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[fg-is-the-rear-post-title]\
 >
@@ -892,7 +892,7 @@ The punctuation inserted in this section is my own.
     .[the] peak of .[the] island/].
 >>
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[construct-fco-title]\
 >
@@ -976,7 +976,7 @@ The punctuation inserted in this section is my own.
 * 俱： both; \lit all
 ====
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[constructing-fi-title]\
 >
@@ -1065,7 +1065,7 @@ The punctuation inserted in this section is my own.
   [g/$IG$ .[is] equal with $ED$/].
 >>
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[similar-with-the-shape-aof-title]\
 >
@@ -1154,7 +1154,7 @@ The punctuation inserted in this section is my own.
 * 同式： similar; \lit same form; \or same style
 ====
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[similar-with-the-shape-aoc-title]\
 >
@@ -1243,7 +1243,7 @@ The punctuation inserted in this section is my own.
   [r/.[the] shape $AOC$/].
 >>
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[hi-as-the-major-cathetus-title]\
 >
@@ -1359,7 +1359,7 @@ The punctuation inserted in this section is my own.
   @@
 ====
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[fc-as-the-major-cathetus-title]\
 >
@@ -1447,7 +1447,7 @@ The punctuation inserted in this section is my own.
   with [r/$FC$ as .[the] major cathetus chariot-beam/].
 >>
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[compared-unto-the-large-minor-cathetus-title]\
 >
@@ -1547,7 +1547,7 @@ The punctuation inserted in this section is my own.
   $$
 ====
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[add-the-post-height-title]\
 >
@@ -1665,7 +1665,7 @@ The punctuation inserted in this section is my own.
   $$
 ====
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-1 -4 9.2 5"
   \accessible-svg-attributes[compared-unto-the-split-major-cathetus-title]\
 >

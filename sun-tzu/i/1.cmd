@@ -58,7 +58,7 @@ and gives the conversion rates between them.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -232,7 +232,7 @@ Chinese source text: \a[4], \b[146], \c[52058], \d[11]. \+
 ====
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 
@@ -292,7 +292,7 @@ gives the following conversions between Chinese length units
 (consistent with those above):
 ----
 
-||||{centred-block}
+||||{.centred-block}
   ![
     Image of Ordinance No.~22 of~1844, British Hong Kong.
     Measures of Length.
@@ -329,7 +329,7 @@ in [Ordinance No.~8 of~1885 (PDF)] [ord 8 of 1885],
 more than four decades later:
 ----
 
-||||{centred-block}
+||||{.centred-block}
   ![
     Image of Ordinance No.~8 of~1885, British Hong Kong.
     Length.

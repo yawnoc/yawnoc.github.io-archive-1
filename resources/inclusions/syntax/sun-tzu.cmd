@@ -4,7 +4,7 @@
   ----------------------------------------------------------------
 ##>
 
-b{: *> : *{breadcrumb} :}
+b{: *> : *{.breadcrumb} :}
 
 
 
@@ -41,7 +41,7 @@ b{%
     [|]
   \}{2}
 %
-  ||||||{adjacent}
+  ||||||{.adjacent}
     \g<content>
   ||||||
 %}
@@ -51,7 +51,7 @@ b{%
 b{%
   \\nav[-]curr: [ ] (?P<text> [^\n]* )
 %
-  ||||{current}
+  ||||{.current}
     \g<text>
   ||||
 %}
@@ -67,7 +67,7 @@ b{%
     [ ]
       (?P<href_spec> [^\n]* )
 %
-  ||||{up}
+  ||||{.up}
     [↑ \g<text>]\g<href_spec>
   ||||
 %}
@@ -83,7 +83,7 @@ b{%
     [ ]
       (?P<href_spec> [^\n]* )
 %
-  ||||{previous}
+  ||||{.previous}
     [← \g<text>]\g<href_spec>
   ||||
 %}
@@ -99,7 +99,7 @@ b{%
     [ ]
       (?P<href_spec> [^\n]* )
 %
-  ||||{next}
+  ||||{.next}
     [\g<text> →]\g<href_spec>
   ||||
 %}

@@ -99,7 +99,7 @@ as spoken and perceived by me.
 %}
 
 
-##initials
+##{#initials}
   Initials (聲)
 ##
 
@@ -133,11 +133,11 @@ as spoken and perceived by me.
 {: \heading-cell[finals] : Finals (韻) :}
 
 
-###labial
+###{#labial}
   Labial
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[initials]
   ==
@@ -176,11 +176,11 @@ as spoken and perceived by me.
 ||||
 
 
-###plain-dental-alveolar
+###{#plain-dental-alveolar}
   Plain dental/alveolar
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[initials]
   ==
@@ -219,11 +219,11 @@ as spoken and perceived by me.
 ||||
 
 
-###velar-glottal
+###{#velar-glottal}
   Velar and glottal
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[initials]
   ==
@@ -286,20 +286,20 @@ as spoken and perceived by me.
 ||||
 
 
-###sibilant-palatal
+###{#sibilant-palatal}
   Sibilant dental/alveolar and palatal
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[initials]
   ==
     , 將
     , [ts]
     , [.ts.]
-    ,[2] z
-    ,[2] j
-    ,[2] j
+    ,{r2} z
+    ,{r2} j
+    ,{r2} j
     , [[:ts:] as in lis[:ts:]]
   ==
     , 張
@@ -314,9 +314,9 @@ as spoken and perceived by me.
     , 槍
     , [tsʰ]
     , [.ts'.]
-    ,[2] c
-    ,[2] ch
-    ,[2] ch
+    ,{r2} c
+    ,{r2} ch
+    ,{r2} ch
     , [[:ts:] as in hi[:ts:]]
   ==
     , 昌
@@ -329,9 +329,9 @@ as spoken and perceived by me.
     , 相
     , [s]
     , [.s.]
-    ,[2] s
-    ,[2] s
-    ,[2] s
+    ,{r2} s
+    ,{r2} s
+    ,{r2} s
     , [[:s:] as in [:s:]igh]
   ==
     , 傷
@@ -352,7 +352,7 @@ as spoken and perceived by me.
 ||||
 
 
-####ts-vs-ch
+####{#ts-vs-ch}
   {[^ts] vs [^ch]}, {[^ts'] vs [^ch']}, and {[^s] vs [^sh]}
 ####
 
@@ -406,8 +406,8 @@ of the merger depending on the vowel which follows:
 ----
 
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
   ==
     ; Following vowel
@@ -423,15 +423,15 @@ of the merger depending on the vowel which follows:
     , [ɵ]
     , [yː]
   ==
-    ;[3] Favoured post-merger initial
-    ,{merged-cell}[,5] [_ts]
-    ,{merged-cell}[,6] [_ch]
+    ;{r3} Favoured post-merger initial
+    ,{.merged-cell c5} [_ts]
+    ,{.merged-cell c6} [_ch]
   ==
-    ,{merged-cell}[,5] [_ts']
-    ,{merged-cell}[,6] [_ch']
+    ,{.merged-cell c5} [_ts']
+    ,{.merged-cell c6} [_ch']
   ==
-    ,{merged-cell}[,10] [_s]
-    ,{merged-cell} [_sh]
+    ,{.merged-cell c10} [_s]
+    ,{.merged-cell} [_sh]
 ''''
 ||||
 ||||||
@@ -457,14 +457,14 @@ The {[_ts]~vs~[_ch]} and {[_ts']~vs~[_ch']} tendencies are not as strong,
 but still prevalent.
 ----
 
-||||{important}
+||||{.important}
 I have decided for historical purposes
 to preserve the pre-merger distinctions in my romanisation system,
 using the [^pre-merger initial]
 according to [《分韻撮要》](https://ytenx.org/pyonh/).
 ||||
 
-||||{important}
+||||{.important}
 However, unless you want to sound really weird,
 **I still suggest pronouncing words out loud
 using the appropriate [_favoured post-merger initial]**
@@ -474,7 +474,7 @@ For example, [_s]aang [_ch']oi rather than [^sh]aang [^ts']oi for 生菜.
 ||||
 
 
-##finals
+##{#finals}
   Finals (韻)
 ##
 
@@ -506,11 +506,11 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 :}
 
 
-###aa
+###{#aa}
   aː
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -615,11 +615,11 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ||||
 
 
-###a
+###{#a}
   ɐ
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -707,11 +707,11 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ||||
 
 
-###e
+###{#e}
   ɛː and e
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -797,11 +797,11 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ||||
 
 
-###ee-i
+###{#ee-i}
   iː and e
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -887,7 +887,7 @@ you may use the ASCII-only substitutes [.oe.] and [.ue.] respectively.
 ||||
 
 
-###or-o
+###{#or-o}
   ɔː and o
 ###
 
@@ -897,7 +897,7 @@ The letter R only appears in "[.or.]" to represent the vowel [ɔː],
 and is **never** sounded as a consonant.
 ----
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -982,11 +982,11 @@ and is **never** sounded as a consonant.
 ||||
 
 
-###oo-u
+###{#oo-u}
   uː and o
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -1059,11 +1059,11 @@ and is **never** sounded as a consonant.
 ||||
 
 
-###oe
+###{#oe}
   œ
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -1101,11 +1101,11 @@ and is **never** sounded as a consonant.
 ||||
 
 
-###_
+###{#_}
   ɵ
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -1142,11 +1142,11 @@ and is **never** sounded as a consonant.
 ||||
 
 
-###ue
+###{#ue}
   yː
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -1181,11 +1181,11 @@ and is **never** sounded as a consonant.
 ||||
 
 
-###m-ng
+###{#m-ng}
   m̩ and ŋ̍
 ###
 
-||||{overflowing}
+||||{.overflowing}
 ''''
   \header-row[finals]
   ==
@@ -1208,17 +1208,17 @@ and is **never** sounded as a consonant.
 ||||
 
 
-##tones
+##{#tones}
   Nine tones (九聲) with tone diagram
 ##
 
 
-||||||{centred-block}
-||||{overflowing}
-''''{no-wrapping}
+||||||{.centred-block}
+||||{.overflowing}
+''''{.no-wrapping}
 |^
   ==
-    ;[,3] 九聲
+    ;{c3} 九聲
     ; IPA~(num.)
     ; Conway
     ; Jyutping
@@ -1357,7 +1357,7 @@ and is **never** sounded as a consonant.
   }
 /]
 
-||||{centred-block}
+||||{.centred-block}
 <svg width="480px" height="100%" viewBox="-5.5 -7 12 6.5"
   \accessible-svg-attributes[tone-diagram-title]
 >
@@ -1578,8 +1578,8 @@ Pronunciations in old rime dictionaries can only be understood
 in terms of this correspondence:
 ----
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 |^
   ==
@@ -1631,8 +1631,8 @@ probably the most inconsistent language in the world.
 Here are a few examples:
 ----
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 |^
   ==
@@ -1671,16 +1671,16 @@ Here are a few examples:
 ||||||
 
 
-##compact-tables
+##{#compact-tables}
   Compact reference tables
 ##
 
-###initials-table
+###{#initials-table}
   Initials (聲)
 ###
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
   ==
     , 巴~[.p.]
@@ -1715,12 +1715,12 @@ Here are a few examples:
 ||||||
 
 
-###finals-table
+###{#finals-table}
   Finals (韻)
 ###
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
   ==
     , 叉~[.aa.]
@@ -1825,27 +1825,27 @@ Here are a few examples:
 ||||
 ||||||
 
-###tones-table
+###{#tones-table}
   Nine tones (九聲)
 ###
 
 {: \to : → :}
 
-||||||{centred-block}
-||||{centred-block overflowing}
+||||||{.centred-block}
+||||{.centred-block .overflowing}
 ''''
 |^
   ==
-    ;{vertical-rtl} 陰平
-    ;{vertical-rtl} 陰上
-    ;{vertical-rtl} 陰去
-    ;{vertical-rtl} 陽平
-    ;{vertical-rtl} 陽上
-    ;{vertical-rtl} 陽去
-    ;{no-wrapping}[2] 鼻 → 塞
-    ;{vertical-rtl} 高陰入
-    ;{vertical-rtl} 低陰入
-    ;{vertical-rtl} 陽入
+    ;{.vertical-rtl} 陰平
+    ;{.vertical-rtl} 陰上
+    ;{.vertical-rtl} 陰去
+    ;{.vertical-rtl} 陽平
+    ;{.vertical-rtl} 陽上
+    ;{.vertical-rtl} 陽去
+    ;{.no-wrapping r2} 鼻 → 塞
+    ;{.vertical-rtl} 高陰入
+    ;{.vertical-rtl} 低陰入
+    ;{.vertical-rtl} 陽入
   ==
     ; 1
     ; 2
@@ -1864,7 +1864,7 @@ Here are a few examples:
     , 炎
     , 染
     , 艷
-    ,{no-wrapping} [m] \to [p̚]
+    ,{.no-wrapping} [m] \to [p̚]
     , 　
     , 醃
     , 頁
@@ -1875,7 +1875,7 @@ Here are a few examples:
     , 焚
     , 奮
     , 份
-    ,{no-wrapping} [n] \to [t̚]
+    ,{.no-wrapping} [n] \to [t̚]
     , 忽
     , 　
     , 佛
@@ -1886,7 +1886,7 @@ Here are a few examples:
     , 形
     , 　
     , 認
-    ,{no-wrapping} [ŋ] \to [k̚]
+    ,{.no-wrapping} [ŋ] \to [k̚]
     , 益
     , 　
     , 亦
@@ -1895,7 +1895,7 @@ Here are a few examples:
 ||||||
 
 
-##examples
+##{#examples}
   Examples
 ##
 
@@ -1905,7 +1905,7 @@ then with [_favoured post-merger initials].
 See [{[^ts] vs [^ch]} etc](#ts-vs-ch).
 ----
 
-||||{example}
+||||{.example}
   身體髮膚，受之父母，不敢毀傷，孝之始也。
 ||||
 ====
@@ -1921,7 +1921,7 @@ See [{[^ts] vs [^ch]} etc](#ts-vs-ch).
   haau3 [_ts]ee1 [_ts']ee2 yaa5.
 ====
 
-||||{example}
+||||{.example}
   天地玄黃，宇宙洪荒。日月盈昃，辰宿列張。
 ||||
 ====
@@ -1937,7 +1937,7 @@ See [{[^ts] vs [^ch]} etc](#ts-vs-ch).
   [_s]an4 [_s]uk7 leet9 [_ch](oe)ng1.
 ====
 
-||||{example}
+||||{.example}
   夫質以代興，妍因俗易。
 ||||
 ====
@@ -1949,7 +1949,7 @@ See [{[^ts] vs [^ch]} etc](#ts-vs-ch).
   yeen4 yan1 [_ch]uk9 yik9.
 ====
 
-||||{example}
+||||{.example}
   攜書劍，滯京華。
 ||||
 ====
@@ -1961,7 +1961,7 @@ See [{[^ts] vs [^ch]} etc](#ts-vs-ch).
   [_ts]ai6 king1 waa4.
 ====
 
-||||{example}
+||||{.example}
   日日醉涼州，笙歌卒未休。
 ||||
 ====
@@ -1973,7 +1973,7 @@ See [{[^ts] vs [^ch]} etc](#ts-vs-ch).
   [_s]ang1 kor1 [_ch]\_t7 mei6 yau1.
 ====
 
-||||{example}
+||||{.example}
   胡不念花園盟香？
 ||||
 ====
@@ -1981,7 +1981,7 @@ See [{[^ts] vs [^ch]} etc](#ts-vs-ch).
   woo4 pat7 neem6 faa1 y(u")n2 mang4 h(oe)ng1?
 ====
 
-||||{example}
+||||{.example}
   妾從無錯處，嘆我自招報應，怨句匹夫變性。
 ||||
 ====
@@ -1995,7 +1995,7 @@ See [{[^ts] vs [^ch]} etc](#ts-vs-ch).
   y(u")n3 k\_(u")3 p'at7 foo1 peen3 [_s]ing3.
 ====
 
-||||{example}
+||||{.example}
   請勿靠近車門。
 ||||
 ====
@@ -2005,7 +2005,7 @@ See [{[^ts] vs [^ch]} etc](#ts-vs-ch).
   [_ts']ing2 mat9 k'aau3 kan6 [_ts']e1 moon4.
 ====
 
-||||{example}
+||||{.example}
   下一站：九龍塘，乘客可以轉乘九廣東鐵。
 ||||
 ====

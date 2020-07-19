@@ -50,36 +50,36 @@
 
 
 {: \leigh-sales : ![LEIGH SALES] :}
-@@![leigh sales]{h}
+@@[leigh sales]{.h}
   leigh-sales-2020-03-26.jpg
 @@
 
 {: \paul-kelly : ![PAUL KELLY] :}
-@@![paul kelly]{g}
+@@[paul kelly]{.g}
   paul-kelly-2020-03-26.jpg
 @@
 
-||||{interview}
+||||{.interview}
   
-  ----{h}
+  ----{.h}
   [...]
   ----
-  ----{g}
+  ----{.g}
   [...]
   ----
   
   \leigh-sales
-  ----{h}
+  ----{.h}
   You've said that most new cases
   are still coming into Australia from overseas.
   ----
-  ----{h}
+  ----{.h}
   There were some pretty [confronting scenes] today at Sydney Airport,
   where big crowds of people were arriving and going to be temperature tested
   in spaces where there was *clearly* insufficient room for
   any sort of social distancing.
   ----
-  ----{h}
+  ----{.h}
   How can a situation like that be allowed to happen?
   ----
   @@[confronting scenes]
@@ -89,23 +89,23 @@
   @@
   
   \paul-kelly
-  ----{gt}
+  ----{.gt}
   {Incompetence?}
   ----
-  ----{g}
+  ----{.g}
   A couple of things I'd say about that:
   ----
-  ----{g}
+  ----{.g}
   One is, that the numbers of people returning from overseas
   are decreasing quite rapidly.
   But there's [\sic] still several thousand people every day.
   ----
-  ----{gt}
+  ----{.gt}
   {Now, as intelligent a person as I am (a Professor at ANU),
   I shall pretend that your point is about the testing,
   and not the amount of space.}
   ----
-  ----{g}
+  ----{.g}
   Uh... it's interesting that you would say that
   people were concerned about being held up for temperature testing.
   Of course, a few days ago we were being criticised
@@ -113,30 +113,30 @@
   ----
   
   \leigh-sales
-  ----{ht}
+  ----{.ht}
   {Christ, you sound like a politician.
   You're supposed to be a medical expert.}
   ----
-  ----{h}
+  ----{.h}
   I'm not saying that they were concerned about that.
   ----
-  ----{h}
+  ----{.h}
   I'm saying that the concern was
   the amount of space that had been allocated.
   ----
-  ----{ht}
+  ----{.ht}
   {Don't you have any shame?}
   ----
   
   \paul-kelly
-  ----{gt}
+  ----{.gt}
   {Apparently not. Let me ignore your question and change the topic.}
   ----
-  ----{g}
+  ----{.g}
   Yeah, and that's one of the reasons why
   we've gone to the 14~days of self-isolation.
   ----
-  ----{gt}
+  ----{.gt}
   {Verily, before 15~March,
     we travelled forward in time
     and saw today's packed queues at Sydney Airport,
@@ -144,19 +144,19 @@
   to extend the 14-day isolation requirement
   to *all* international arrivals from 15~March.}
   ----
-  ----{g}
+  ----{.g}
   That means staying at home, umm, because...
   airports are not set up for this sort of thing
   ----
-  ----{gt}
+  ----{.gt}
   {so it's the airport's fault, for being an incompetent airport}.
   ----
-  ----{g}
+  ----{.g}
   [...]
   ----
   
   \leigh-sales
-  ----{h}
+  ----{.h}
   Can you explain to people watching tonight
   why the health body that advises the government
   is not opting for the extreme lockdown measures
@@ -165,37 +165,37 @@
   ----
   
   \paul-kelly
-  ----{g}
+  ----{.g}
   In terms of [...] should we go hard-and-fast
   or should we have a proportionate response
   ----
-  ----{gt}
+  ----{.gt}
   {note how I use "proportion*ate*"
   rather than "proportion*al*",
   so as to imply, from the outset of my answer,
   that hard-and-fast is disproportion*ate*}
   ----
-  ----{g}
+  ----{.g}
   that can be scaled over time, uh...
   there is a difference of opinion, I'll agree with that.
   ----
-  ----{g}
+  ----{.g}
   [...] [COVID-19] is an infectious disease,
   it's transmitted from person to person,
   it's mostly when you're very close to another person,
   and you increase that by being in large crowds of people
   who may or may not have the infection
   ----
-  ----{gt}
+  ----{.gt}
   {such as high-density queues for Centrelink
   or for temperature screening at Sydney Airport}.
   ----
-  ----{g}
+  ----{.g}
   [...]
   ----
   
   \leigh-sales
-  ----{h}
+  ----{.h}
   Why was the half-hour advice given about hairdressers
   and then changed so soon after,
   how does that square with the assurance that
@@ -203,10 +203,10 @@
   ----
   
   \paul-kelly
-  ----{gt}
+  ----{.gt}
   {Iunno.}
   ----
-  ----{g}
+  ----{.g}
   In terms of hairdressers [...]
   it's impractical to keep the [...] 1.5~metres [...]
   but there are many other things that people can do [...].
@@ -216,33 +216,33 @@
   ----
   
   \leigh-sales
-  ----{h}
+  ----{.h}
   But you're not answering the actual question, which is regarding
   how the rule can be changed from one day to the next
   if the restrictions are based on the medical advice.
   ----
   
   \paul-kelly
-  ----{gt}
+  ----{.gt}
   {Incompetence?}
   ----
-  ----{g}
+  ----{.g}
   Uh look, the advice we give goes to the Cabinet;
   the Cabinet have their discussions;
   I'm not privy to how those discussions went [...].
   ----
-  ----{g}
+  ----{.g}
   Things are changing every day here [...]
   and that was one of the things that was changed today.
   ----
   
   \leigh-sales
-  ----{h}
+  ----{.h}
   Dr~Kelly, thanks for your time.
   ----
   
   \paul-kelly
-  ----{g}
+  ----{.g}
   You're welcome, Leigh.
   ----
   

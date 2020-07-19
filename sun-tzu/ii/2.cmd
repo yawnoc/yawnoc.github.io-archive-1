@@ -56,7 +56,7 @@ This paragraph gives a worked example of adding fractions.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

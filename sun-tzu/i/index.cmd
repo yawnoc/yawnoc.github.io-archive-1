@@ -55,7 +55,7 @@ Literally "Upper Volume".
 
 
 
-##translation-links
+##{#translation-links}
   Translation (links to paragraphs)
 ##
 

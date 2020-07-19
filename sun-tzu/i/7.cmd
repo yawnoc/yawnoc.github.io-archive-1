@@ -70,7 +70,7 @@ a means of doing arithmetic computations using counting rods
 @@
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -191,7 +191,7 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
 {: \point : class="points" :}
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 
@@ -205,8 +205,8 @@ For each numeral (except zero which is denoted by a blank space)
 there are two forms, vertical and horizontal:
 ----
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 |^
   ==

@@ -59,7 +59,7 @@ __redistributing__ three __fractions for equality__.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

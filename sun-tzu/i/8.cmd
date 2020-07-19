@@ -103,7 +103,7 @@ see [\P7 commentary](/sun-tzu/i/7#commentary).
 
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -146,7 +146,7 @@ Chinese source text: \a[6], \b[147], \c[52064], \d[14]. \+
   until its units digit, 4, is in line
   with the upper number's thousands digit, 1:
   
-  ||||{centred-block}
+  ||||{.centred-block}
     <svg width="180px" height="100%" viewBox="0.5 -0.5 5 3"
       \accessible-svg-attributes[rod-numerals-1989-times-64-title]\
     >
@@ -309,7 +309,7 @@ Chinese source text: \a[6], \b[147], \c[52064], \d[14]. \+
   
   Or, in Arabic numerals for readability:
   
-  ||||{centred-block}
+  ||||{.centred-block}
     <svg width="180px" height="100%" viewBox="0.5 -0.7 5 2.8"
       \accessible-svg-attributes[arabic-numerals-1989-times-64-title]\
     >
@@ -389,7 +389,7 @@ Chinese source text: \a[6], \b[147], \c[52064], \d[14]. \+
   to make the intermediate additions clearer.
   I have greyed out the finished digits instead of removing them:
   
-  ||||{centred-block}
+  ||||{.centred-block}
     ![Animation for \sun-tzu multiplication: 1989 multiplied by 64](
       /sun-tzu/code/multiply-1989-64.gif
     )

@@ -57,7 +57,7 @@ of the __rod calculus division__ algorithm described in [\P9] ["i 9"].
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -147,7 +147,7 @@ Chinese source text: \a[10], \b[148], \c[52074], \d[18]. \+
 
 * In animated form ([link to source code]):
   
-  ||||{centred-block}
+  ||||{.centred-block}
     ![Animation for \sun-tzu division: 6561 divided by 9](
       /sun-tzu/code/divide-6561-9.gif
     )

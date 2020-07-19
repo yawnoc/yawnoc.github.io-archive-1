@@ -92,7 +92,7 @@ and [Vol.~II \P10 Extended commentary (capacity--volume conversion)] [斛法].
 @@
 
 
-##translation
+##{#translation}
   Translation
 ##
 

@@ -51,7 +51,7 @@ begins the chapter "Family" in Tim Winton's _The~Turning_:
 ----
 
 """"
-||||||{centred-block poetic}
+||||||{.centred-block .poetic}
 ||||
   When an archer is shooting for nothing \+
   He has all his skill \+
@@ -70,7 +70,7 @@ begins the chapter "Family" in Tim Winton's _The~Turning_:
   Drains him of power. \+
 ||||
 ||||||
-||||{sign-off}
+||||{.sign-off}
   Chuang Tz(uu)
 ||||
 """"
@@ -123,7 +123,7 @@ Just reading _The~Turning_ though, you wouldn't have any clue of this.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -396,13 +396,13 @@ The Chinese source text is from Chinese Text Project:
 ====
 
 
-###comparison
+###{#comparison}
   Comparison
 ###
 
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 |^
   ==
