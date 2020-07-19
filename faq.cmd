@@ -57,13 +57,13 @@
 
 
 
-##general
+##{#general}
   General
 ##
 
 
 
-###time
+###{#time}
   What do you do in your spare time?
 ###
 
@@ -82,7 +82,7 @@ to make such material freely available online.
 
 
 
-###site
+###{#site}
   How is this site built?
 ###
 
@@ -124,7 +124,7 @@ blame [Jake Conway].
 
 
 
-###domain
+###{#domain}
   Why don't you get yourself a custom domain
   instead of the default yawnoc.github.io?
 ###
@@ -138,7 +138,7 @@ is as permanent as GitHub Pages itself.
 
 
 
-###death
+###{#death}
   That's a bit macabre.
 ###
 
@@ -150,7 +150,7 @@ At the time of writing the latter is more probable. Fear changes nothing.
 
 
 
-###cookies
+###{#cookies}
   Does your site use cookies?
 ###
 
@@ -160,7 +160,7 @@ No, unless you have visited this site prior to 14~May 2020.
 
 
 
-###favicon
+###{#favicon}
   How did you set up the site favicon?
 ###
 
@@ -171,7 +171,7 @@ by [Philippe Bernard](https://stackoverflow.com/a/19590415).
 
 
 
-###equations
+###{#equations}
   How are equations rendered?
 ###
 
@@ -181,13 +181,13 @@ Using [KaTeX](https://katex.org/).
 
 
 
-##translation
+##{#translation}
   Translation
 ##
 
 
 
-###italics
+###{#italics}
   Why are there italicised words in your translations?
 ###
 
@@ -246,7 +246,7 @@ or contains that word) are .[distinguished], except:
 
 
 
-###archaic
+###{#archaic}
   Wherefore usest thou archaic verb conjugation?
 ###
 
@@ -276,7 +276,7 @@ For example,
 %}
 
 
-###romanisation
+###{#romanisation}
   What weird romanisation system(s) are you using for proper names?
 ###
 
@@ -349,7 +349,7 @@ For example,
 
 
 
-###this
+###{#this}
   Doesn't 是 mean "is", and 也, "also"?
 ###
 

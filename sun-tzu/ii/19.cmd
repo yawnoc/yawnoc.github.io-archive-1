@@ -135,7 +135,7 @@ w{: \arrowhead : marker-end="url(#arrowhead)" :}
 ##>
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -186,8 +186,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \colb{d} := \colb{234567}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -0.25 10.5 2"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -0.25 10.5 2"
     \accessible-svg-attributes[put-down-the-area-title]\
   >
     [accessible-svg-title/put-down-the-area-title
@@ -242,8 +242,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \colr{L} := (10 ^ {n - 1}) ^ 2 = \colr{10^4}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -0.25 10.5 3"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -0.25 10.5 3"
     \accessible-svg-attributes[next-borrow-one-rod-title]\
   >
     [accessible-svg-title/next-borrow-one-rod-title
@@ -317,8 +317,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \colg{a_1} := \colg{4}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 5"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 5"
     \accessible-svg-attributes[for-the-upper-quotient-put-400-title]\
   >
     [accessible-svg-title/for-the-upper-quotient-put-400-title
@@ -390,8 +390,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     = \colv{40000}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 6"
     \accessible-svg-attributes[subsidiarily-put-40000-title]\
   >
     [accessible-svg-title/subsidiarily-put-40000-title
@@ -471,8 +471,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \end{aligned}
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 6"
     \accessible-svg-attributes[name-the-upper-quotients-400-title]\
   >
     [accessible-svg-title/name-the-upper-quotients-400-title
@@ -537,8 +537,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \colv{s_1} := 2 s_1 = 2 \times 40000 = \colv{80000}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 6"
     \accessible-svg-attributes[double-the-upright-divisor-title]\
   >
     [accessible-svg-title/double-the-upright-divisor-title
@@ -611,8 +611,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \end{aligned}
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 6"
     \accessible-svg-attributes[the-upright-divisor-retreateth-title-1]\
   >
     [accessible-svg-title/the-upright-divisor-retreateth-title-1
@@ -690,8 +690,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \colg{a_2} := \colg{8}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 6"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 6"
     \accessible-svg-attributes[put-again-for-the-upper-quotient-80-title]\
   >
     [accessible-svg-title/put-again-for-the-upper-quotient-80-title
@@ -769,8 +769,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     = \colv{800}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 7"
     \accessible-svg-attributes[subsidiarily-put-800-title]\
   >
     [accessible-svg-title/subsidiarily-put-800-title
@@ -860,8 +860,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \end{aligned}
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 7"
     \accessible-svg-attributes[the-incorrupt-nameth-title]\
   >
     [accessible-svg-title/the-incorrupt-nameth-title
@@ -943,8 +943,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \colv{s_2} := 2 s_2 = 2 \times 800 = \colv{1600}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 7"
     \accessible-svg-attributes[double-the-incorrupt-divisor-title]\
   >
     [accessible-svg-title/double-the-incorrupt-divisor-title
@@ -1036,8 +1036,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \end{aligned}
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 7"
     \accessible-svg-attributes[the-upright-divisor-retreateth-title-2]\
   >
     [accessible-svg-title/the-upright-divisor-retreateth-title-2
@@ -1133,8 +1133,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \colg{a_3} := \colg{4}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 7"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 7"
     \accessible-svg-attributes[put-again-for-the-upper-quotient-4-title]\
   >
     [accessible-svg-title/put-again-for-the-upper-quotient-4-title
@@ -1227,8 +1227,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     = \colv{4}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 8"
     \accessible-svg-attributes[subsidiarily-put-4-title]\
   >
     [accessible-svg-title/subsidiarily-put-4-title
@@ -1333,8 +1333,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \end{aligned}
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 8"
     \accessible-svg-attributes[the-honest-nameth-title]\
   >
     [accessible-svg-title/the-honest-nameth-title
@@ -1431,8 +1431,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
     \colv{s_3} := 2 s_3 = 2 \times 4 = \colv{8}.
   $$
   
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 8"
     \accessible-svg-attributes[double-the-honest-divisor-title]\
   >
     [accessible-svg-title/double-the-honest-divisor-title
@@ -1544,8 +1544,8 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
   ----
   The final arrangement of counting rods is thus:
   ----
-  ||||{centred-block}
-  <svg class="fit-width tight" width="280px" viewBox="-3.5 -2.25 10.5 8"
+  ||||{.centred-block}
+  <svg width="280px" height="100%" viewBox="-3.5 -2.25 10.5 8"
     \accessible-svg-attributes[final-arrangement-title]\
   >
     [accessible-svg-title/final-arrangement-title
@@ -1650,12 +1650,12 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
 ====
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 
 
-###pseudocode
+###{#pseudocode}
   Pseudocode
 ###
 
@@ -1790,7 +1790,7 @@ For an implementation in Python, see [`/sun-tzu/code/sqrt.py`] [python].
 @@
 
 
-###why
+###{#why}
   Why does it work?
 ###
 

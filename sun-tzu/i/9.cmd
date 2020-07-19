@@ -60,7 +60,7 @@ see [\P7 commentary](/sun-tzu/i/7#commentary).
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -126,7 +126,7 @@ Chinese source text: \a[8], \b[147], \c[52065], \d[15]. \+
   Since it would be instructive to see the full algorithm,
   I provide an animation here ([link to source code]):
   
-  ||||{centred-block}
+  ||||{.centred-block}
     ![Animation for \sun-tzu division: 100 divided by 6](
       /sun-tzu/code/divide-100-6.gif
     )

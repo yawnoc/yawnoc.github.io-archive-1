@@ -51,7 +51,7 @@ although more algebra is required to compute it.
 ----
 
 
-##solution
+##{#solution}
   Solution
 ##
 
@@ -156,8 +156,8 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
   \svg-style:maths-font-rulesets
 /]
 
-||||{centred-block}
-<svg class="fit-width" width="360px" viewBox="-1 -4 7.5 4.5"
+||||{.centred-block}
+<svg width="360px" height="100%" viewBox="-1 -4 7.5 4.5"
   \accessible-svg-attributes[trajectory-diagram-title]\
 >
   [accessible-svg-title/trajectory-diagram-title
@@ -360,7 +360,7 @@ We then carefully consider the ways in which $\pd R / {\pd\phi}$ can vanish:
 ++++
 
 
-##result
+##{#result}
   Result
 ##
 
@@ -370,13 +370,13 @@ Hence the __optimal launch angle__ for a projectile
 launched at speed $u$ from height $h$
 in a gravitational field of strength $g$ is
 ----
-$${important}
+$${.important}
   \phi = \sin^{-1} \frac{1}{\sqrt{2 g h / u^2 + 2}},
 $$
 ----
 achieving a __maximum range__ of
 ----
-$${important}
+$${.important}
   R = \frac{u^2}{g} \sqrt{2 g h / u^2 + 1}.
 $$
 

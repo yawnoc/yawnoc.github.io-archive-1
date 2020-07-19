@@ -41,7 +41,7 @@
   {{|
     \nav-prev: \P19 : ["ii 19"]
     \nav-curr: \P20
-    ||||{next}
+    ||||{.next}
     ||||
   |}}
 |}}}}
@@ -66,7 +66,7 @@ whose level of detail I will not be repeating here.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -275,7 +275,7 @@ Chinese source text: \a[42], \b[156], \c[52189], \d[54]. \+
   {{|
     \nav-prev: \P19 : ["ii 19"]
     \nav-curr: \P20
-    ||||{next}
+    ||||{.next}
     ||||
   |}}
 |}}}}

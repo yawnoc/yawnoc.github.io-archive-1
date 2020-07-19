@@ -66,7 +66,7 @@ See [Vol.~I \P3 (Units of capacity)] ["i 3"].
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -116,7 +116,7 @@ Chinese source text: \a[30], \b[153], \c[52142], \d[42]. \+
 ====
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 

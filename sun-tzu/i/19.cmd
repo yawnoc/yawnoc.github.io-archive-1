@@ -78,7 +78,7 @@ This paragraph corresponds to $n = 5$.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

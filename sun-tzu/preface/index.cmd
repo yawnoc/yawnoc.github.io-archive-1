@@ -39,7 +39,7 @@
 {{{{|
   \nav-up: \sun-tzu's Computational Classic : [""]
   {{|
-    ||||{previous}
+    ||||{.previous}
     ||||
     \nav-curr: Pref.
     \nav-next: Vol.~I : ["i"]
@@ -60,7 +60,7 @@ prospective STEM undergraduates.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -383,7 +383,7 @@ Chinese source text: \a[2], \b[146], \c[52056], \d[7]. \+
   .[Among those] like this, how be there those who succeed not!
 >>
 
-||||{marker end}
+||||{.marker .end}
 END of Preface
 ||||
 
@@ -391,7 +391,7 @@ END of Preface
 {{{{|
   \nav-up: \sun-tzu's Computational Classic : [""]
   {{|
-    ||||{previous}
+    ||||{.previous}
     ||||
     \nav-curr: Pref.
     \nav-next: Vol.~I : ["i"]

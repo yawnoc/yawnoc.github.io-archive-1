@@ -77,7 +77,7 @@ p{%
     [\s]*?
   \]
 %
-  ##cite Cite this page ##
+  ##{#cite} Cite this page ##
   
   ### Text ###
     ----
@@ -134,7 +134,7 @@ p{%
   (?P=pipes)
   \]
 %
-  \g<pipes>{page-properties}
+  \g<pipes>{.page-properties}
     \\page-property-dates
   \g<pipes>
 %}
@@ -150,7 +150,7 @@ p{%
   (?P=pipes)
   \]
 %
-  \g<pipes>{page-properties}
+  \g<pipes>{.page-properties}
     \\page-property-dates \\+
     \g<content>
   \g<pipes>

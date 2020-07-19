@@ -37,7 +37,7 @@
 [||||
 ||||]
 
-||||{container}
+||||{.container}
 a~~
   <textarea
     autofocus
@@ -49,7 +49,7 @@ a~~
 ~~
 ||||
 
-||||{container}
+||||{.container}
   <noscript>
     Enable JavaScript for the strikethrough formatter to work.
   </noscript>

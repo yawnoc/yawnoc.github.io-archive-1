@@ -110,7 +110,7 @@ __Manuscript:__ [`daytime.pdf`~(624~KB)](/manuscripts/daytime.pdf)
 /]
 
 
-##assumptions
+##{#assumptions}
   Assumptions
 ##
 
@@ -163,7 +163,7 @@ Later on I give a first-order correction to account for this.
 ----
 
 
-##coordinates
+##{#coordinates}
   Coordinate systems
 ##
 
@@ -175,7 +175,7 @@ the corresponding SVGs would simply be too time consuming to make.
 </small>
 ----
 
-||||{centred-block}
+||||{.centred-block}
 ![
   Diagram of equatorial coordinates and the solar year.
   The earth lies at the centre of the equatorial coordinate system, \
@@ -196,7 +196,7 @@ the corresponding SVGs would simply be too time consuming to make.
 ]
 ||||
 
-@@![equatorial coordinates and solar year][480]
+@@[equatorial coordinates and solar year]{w480}
   equatorial-coordinates-solar-year.png
 @@
 
@@ -226,7 +226,7 @@ $xy$-plane by earth's [axial tilt] $\tau = 23\degree \, 26'$.
   https://en.wikipedia.org/wiki/Axial_tilt
 @@
 
-||||{centred-block}
+||||{.centred-block}
 ![
   Diagram of equatorial spherical coordinates.
   r is the distance from the origin, the centre of the earth.
@@ -239,7 +239,7 @@ $xy$-plane by earth's [axial tilt] $\tau = 23\degree \, 26'$.
 ]
 ||||
 
-@@![equatorial coordinates spherical][240]
+@@[equatorial coordinates spherical]{w240}
   equatorial-coordinates-spherical.png
 @@
 
@@ -271,7 +271,7 @@ and that $\phi$ is equivalent to the astronomer's [right ascension].
   https://en.wikipedia.org/wiki/Right_ascension
 @@
 
-||||{centred-block}
+||||{.centred-block}
 ![
   Diagram of ecliptic coordinates.
   The ecliptic coordinate axes (with tildes) are tilted \
@@ -283,7 +283,7 @@ and that $\phi$ is equivalent to the astronomer's [right ascension].
 ]
 ||||
 
-@@![ecliptic coordinates][260]
+@@[ecliptic coordinates]{w260}
   equatorial-ecliptic-coordinates.png
 @@
 
@@ -308,7 +308,7 @@ $$
 @@
 
 
-##sun
+##{#sun}
   Sun's position
 ##
 
@@ -341,7 +341,7 @@ autumnal equinox~(秋分), and winter solstice~(冬至) respectively.
 ----
 
 
-##observer
+##{#observer}
   Observer's position
 ##
 
@@ -384,7 +384,7 @@ the year angle $Y$ is almost constant
 (it only changes by order $\unit{day} / {\unit{yr}} = 1 / 365.242 = 0.3\%$).
 ----
 
-||||{important}
+||||{.important}
 Thus, to make the maths simpler, I shall assert that
 $Y$ actually is constant over a day,
 and compensate for the associated error by instead putting
@@ -408,7 +408,7 @@ $$
 $$
 
 
-##direction
+##{#direction}
   Direction from the observer to the sun
 ##
 
@@ -465,7 +465,7 @@ where
   $\basisvec{\phi}$ points east~(東).
 ----
 
-||||{centred-block}
+||||{.centred-block}
 ![
   Diagram of the local basis of equatorial spherical coordinate.
   The r-vector points up,
@@ -476,7 +476,7 @@ where
 ]
 ||||
 
-@@![equatorial coordinates spherical basis][320]
+@@[equatorial coordinates spherical basis]{w320}
   equatorial-coordinates-spherical-basis.png
 @@
 
@@ -544,8 +544,8 @@ meaning $\mathrm{atan2} (y, x)$
   ***********************************************************************
 ##>
 
-||||{centred-block}
-<svg class="fit-width" width="320px" viewBox="-0.5 -4.1 12 5.1"
+||||{.centred-block}
+<svg width="320px" height="100%" viewBox="-0.5 -4.1 12 5.1"
   \accessible-svg-attributes[tilt-reduced-quantities-diagram]\
 >
   [accessible-svg-title/tilt-reduced-quantities-diagram
@@ -659,7 +659,7 @@ There are several reasons for this:
 ++++
 
 
-##daytime
+##{#daytime}
   Daytime duration
 ##
 
@@ -724,7 +724,7 @@ north of the Arctic Circle and south of the Antarctic Circle
 (give or take due to refraction).
 ----
 
-||||{centred-block}
+||||{.centred-block}
 ![
   Diagram of earth's polar regions.
   Midnight sun and polar night possible
@@ -736,7 +736,7 @@ north of the Arctic Circle and south of the Antarctic Circle
 ]
 ||||
 
-@@![polar regions][360]
+@@[polar regions]{w360}
   earth-polar-regions.png
 @@
 
@@ -757,7 +757,7 @@ $$
 $$
 
 
-##angles
+##{#angles}
   Assorted angles
 ##
 
@@ -776,7 +776,7 @@ $$
   \end{aligned}
 $$
 
-||||{centred-block}
+||||{.centred-block}
 ![
   Diagram of components of the direction towards the sun.
   This direction makes an angle alpha to the horizontal plane (the ground).
@@ -788,7 +788,7 @@ $$
 ]
 ||||
 
-@@![sun components][280]
+@@[sun components]{w280}
   sun-components.png
 @@
 
@@ -834,7 +834,7 @@ i.e.~when $\abs{\tan\tau \tan\delta \sin\varphi} > 1$.
 ----
 
 
-##correction
+##{#correction}
   Refraction correction
 ##
 
@@ -869,13 +869,13 @@ for Hong Kong and Perth:
 <## Strip spaces around thin space \, ##>
 {% [ ]*\\[,][ ]* % \\, %}
 
-||||||{centred-block}
-||||{overflowing}
-''''{no-wrapping}
+||||||{.centred-block}
+||||{.overflowing}
+''''{.no-wrapping}
 |^
 ==
-  ;[2] Location \+ ($\delta$)
-  ;[,3] Daytime
+  ;{r2} Location \+ ($\delta$)
+  ;{c3} Daytime
 ==
   ; [tad/   \tad    /]
   ; [mod/   Model   /]
@@ -1012,13 +1012,13 @@ the [modc/ refraction-corrected model /] is able to predict daytime
 to within two minutes:
 ----
 
-||||||{centred-block}
-||||{overflowing}
-''''{no-wrapping}
+||||||{.centred-block}
+||||{.overflowing}
+''''{.no-wrapping}
 |^
 ==
-  ;[2] Location \+ ($\delta$)
-  ;[,3] Daytime
+  ;{r2} Location \+ ($\delta$)
+  ;{c3} Daytime
 ==
   ; [tad/   \tad    /]
   ; [modc/  Model   /]
@@ -1041,7 +1041,7 @@ to within two minutes:
 ||||||
 
 
-##verification
+##{#verification}
   Verification
 ##
 
@@ -1053,9 +1053,9 @@ for different time zones).
 The entries in the table are of the form
 ----
 
-||||||{centred-block}
-||||{overflowing}
-''''{no-wrapping}
+||||||{.centred-block}
+||||{.overflowing}
+''''{.no-wrapping}
 ==
   , [tad/ timeanddate.com /]  \+
     [mod/ Model (Error)   /]  \+
@@ -1068,15 +1068,15 @@ The entries in the table are of the form
 No refraction correction is used for the sun's noon altitude.
 ----
 
-||||||{centred-block}
-||||{overflowing}
-''''{no-wrapping}
+||||||{.centred-block}
+||||{.overflowing}
+''''{.no-wrapping}
 |^
 ==
-  ;[2] Location \+ ($\delta$)
-  ;[2] Daytime
-  ;[2] Sun's altitude \+ at noon
-  ;[,2] Sun's bearing at
+  ;{r2} Location \+ ($\delta$)
+  ;{r2} Daytime
+  ;{r2} Sun's altitude \+ at noon
+  ;{c2} Sun's bearing at
 ==
   ; sunrise
   ; sunset
@@ -1092,7 +1092,7 @@ No refraction correction is used for the sun's noon altitude.
     [tad/   31.0°           /]  \+
     [mod/   30.8° (−0.2°)   /]  \+
     ~
-  ,{merged-cell}[,2]
+  ,{.merged-cell c2}
     N/A \+
     (midnight sun)
 ==
@@ -1226,7 +1226,7 @@ No refraction correction is used for the sun's noon altitude.
     [tad/  −7.7°          /]  \+
     [mod/  −7.5° (+0.2°)  /]  \+
     ~
-  ,{merged-cell}[,2]
+  ,{.merged-cell c2}
     N/A \+
     (polar night)
 ''''
@@ -1255,7 +1255,7 @@ compared to a hypothetical Earth with no atmosphere.
 ----
 
 
-###code
+###{#code}
   Code for computing modelled quantities
 ###
 
@@ -1309,7 +1309,7 @@ Script for printing the model values used in the table [above](#verification):
 ````
 
 
-##result
+##{#result}
   Result
 ##
 
@@ -1317,7 +1317,7 @@ Script for printing the model values used in the table [above](#verification):
 ----
 The amount of __daytime__ (without refraction) is
 ----
-$${important}
+$${.important}
   \Re \curlybr{T} =
     \Re \curlybr{
       12 +
@@ -1349,7 +1349,7 @@ $$
 The sun's __bearing at sunrise/sunset__ (measured clockwise from north)
 is given by
 ----
-$${important}
+$${.important}
   \beta_\pm = \tan^{-1} \frac{
     \mp \sqrt{1 - \tan^2\tau \tan^2\delta \sin^2\varphi}
   }{
@@ -1365,7 +1365,7 @@ A first-order __correction to daytime__ which accounts
 __for refraction__ by angle $\alpha_\text{ref}$
 (taken to be 0°50') is given by
 ----
-$${important}
+$${.important}
   \frac{
     24 \tan\alpha_\text{ref} \sqrt{1 + \tan^2\tau \sin^2\varphi}
   }{
@@ -1384,7 +1384,7 @@ $\eps_\pm$ in [Refraction correction](#correction).
 ----
 The sun's __altitude__ (or __elevation angle__) at noon is given by
 ----
-$${important}
+$${.important}
   \alpha_\text{noon} =
   \tan^{-1} \frac{
     \cos\delta + \tan\tau \sin\delta \sin\varphi

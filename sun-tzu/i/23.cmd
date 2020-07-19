@@ -77,7 +77,7 @@ the result of which is used in its own example of multiplication and division.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

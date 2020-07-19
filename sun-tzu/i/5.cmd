@@ -60,7 +60,7 @@ and $7/5$ for $\sqrt{2}$.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -110,7 +110,7 @@ Chinese source text: \a[6], \b[147], \c[52061], \d[13]. \+
 /]
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 
@@ -144,8 +144,8 @@ $$
 {: \maths-italic : class="maths-italic" :}
 {: \font-size : font-size="0.4" :}
 
-||||{centred-block}
-<svg class="fit-width" width="120px" viewBox="-1.1 -1.5 2.2 2.6"
+||||{.centred-block}
+<svg width="120px" height="100%" viewBox="-1.1 -1.5 2.2 2.6"
   \accessible-svg-attributes[circle-diagram-title]\
 >
   [accessible-svg-title/circle-diagram-title
@@ -193,8 +193,8 @@ $$
   ***********************************************************************
 ##>
 
-||||{centred-block}
-<svg class="fit-width" width="120px" viewBox="-1.1 -1.1 2.2 2.6"
+||||{.centred-block}
+<svg width="120px" height="100%" viewBox="-1.1 -1.1 2.2 2.6"
   \accessible-svg-attributes[square-diagram-title]\
 >
   [accessible-svg-title/square-diagram-title

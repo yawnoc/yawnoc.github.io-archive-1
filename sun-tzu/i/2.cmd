@@ -58,7 +58,7 @@ and gives the conversion rates between them.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -168,7 +168,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[11]. \+
 ====
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 
@@ -208,7 +208,7 @@ gives the relevant conversions between the Chinese units themselves
 (here, candareen and mace are used rather than "piles" and "drams"):
 ----
 
-||||{centred-block}
+||||{.centred-block}
   ![
     Image of Ordinance No.~22 of~1844, British Hong Kong.
     Weights.
@@ -240,7 +240,7 @@ in [Ordinance No.~8 of~1885 (PDF)] [ord 8 of 1885]
 (note the typo in the definition of candareen):
 ----
 
-||||{centred-block}
+||||{.centred-block}
   ![
     Image of Ordinance No.~8 of~1885, British Hong Kong.
     Weights.

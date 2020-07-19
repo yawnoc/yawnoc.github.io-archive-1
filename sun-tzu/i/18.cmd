@@ -78,7 +78,7 @@ This paragraph corresponds to $n = 6$.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

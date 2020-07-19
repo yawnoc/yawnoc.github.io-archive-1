@@ -64,7 +64,7 @@ Note that Jyutping (like all contemporary romanisation systems)
   /cantonese/conway-romanisation#ts-vs-ch
 @@
 
-##links
+##{#links}
   Links A to Z
 ##
 
@@ -98,7 +98,7 @@ Note that Jyutping (like all contemporary romanisation systems)
   (?P<williams_page_number> [0-9]+(\\\*)? )
 %
   ==
-    ,{merged-cell}[,4]
+    ,{.merged-cell c4}
       [Page~\g<williams_page_number>]["\g<archive_page_number>"]
 %}
 
@@ -136,11 +136,11 @@ Note that Jyutping (like all contemporary romanisation systems)
 %}
 
 
-###a  A  ###
+###{#a}  A  ###
 
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 
 \header-row
@@ -178,11 +178,11 @@ Note that Jyutping (like all contemporary romanisation systems)
 ||||||
 
 
-###c  C  ###
+###{#c}  C  ###
 
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 
 \header-row

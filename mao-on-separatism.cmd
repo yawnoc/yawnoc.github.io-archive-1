@@ -133,12 +133,12 @@ And who now forbids any mention of self-determination or independence?
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
 
-<<{front-matter}
+<<{.front-matter}
   長沙《大公報》一九二零年九月三日
 ||
   "Ta Kung Pao", Changsha, 3~September~1920

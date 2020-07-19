@@ -70,7 +70,7 @@ a means of doing arithmetic computations using counting rods
 @@
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -182,7 +182,7 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
 
 <## Attributes ##>
 {:: \svg-attributes:rod ::
-  width="36px" \\view-box:rod
+  width="36px" height="100%" \\view-box:rod
 ::}
 {:: \marker-attributes:rod ::
   \\view-box:rod refX="0" refY="0" markerWidth="1" markerHeight="1"
@@ -191,7 +191,7 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
 {: \point : class="points" :}
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 
@@ -205,8 +205,8 @@ For each numeral (except zero which is denoted by a blank space)
 there are two forms, vertical and horizontal:
 ----
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 |^
   ==
@@ -601,7 +601,7 @@ The text tells us to use
 
 ----
 For example, the number~345 is displayed as
-  <svg width="108px" viewBox="0.5 -0.3 3 0.6"
+  <svg width="108px" height="100%" viewBox="0.5 -0.3 3 0.6"
     \accessible-svg-attributes[rod-numerals-345-title]\
   >
     [accessible-svg-title/rod-numerals-345-title

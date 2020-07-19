@@ -43,7 +43,7 @@
   https://youtu.be/qoy8mKRmALA
 @@
 
-||||{important statement}
+||||{.important .statement}
 **Wake up Australia.** \+
 It is not racist or xenophobic to question
 potential links to the Chinese Communist Party. \+
@@ -55,38 +55,38 @@ Race and place of origin are irrelevant.
 
 
 {: \andrew-bolt : ![ANDREW BOLT] :}
-@@![andrew bolt]{h}
+@@[andrew bolt]{.h}
   andrew-bolt-2019-09-10.jpg
 @@
 
 {: \gladys-liu : ![GLADYS LIU] :}
-@@![gladys liu]{g}
+@@[gladys liu]{.g}
   gladys-liu-2019-09-10.jpg
 @@
 
 
-||||{interview}
+||||{.interview}
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   Gladys, thank you so much for your time.
   ----
-  ----{h}
+  ----{.h}
   Can I just start: were you on the committee of
   two chapters of the China Overseas Exchange Association:
   one in Guangdong, from between 2003 and 2015, and the other in Shandong?
   ----
   
   \gladys-liu
-  ----{g}
+  ----{.g}
   Well, good to be with you Andrew.
   ----
-  ----{g}
+  ----{.g}
   I can tell you that, I cannot recall, as is reported,
   that from 2003 to 2015, twelve years long, that if I can't recall,
   I can't be an active member of that council, can I.
   ----
-  ----{gt}
+  ----{.gt}
   {However, my memory shall be magically restored within the next 24~hours,
   and I shall release a [statement] tomorrow, Wednesday the 11th,
   confirming that I was a member of the
@@ -99,21 +99,21 @@ Race and place of origin are irrelevant.
   @@
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   How can you not recall a membership of twelve years? [...]
   ----
-  ----{g}
+  ----{.g}
   [...]
   ----
-  ----{h}
+  ----{.h}
   [...]
   ----
-  ----{g}
+  ----{.g}
   [...]
   ----
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   You've been Honorary President also,
   of the Australia Jiangmen General Commerce Association.
   It has backed China's theft of the South China Sea.
@@ -121,33 +121,33 @@ Race and place of origin are irrelevant.
   ----
   
   \gladys-liu
-  ----{g}
+  ----{.g}
   Well, as the Honorary President of the organisation,
   that they didn't tell me everything that they do
   [...] they want to use your fame,
   they want you to attend their functions,
   [...] to lift the profile of their organisation and their event.
   ----
-  ----{g}
+  ----{.g}
   Definitely, there was no information to me, what they do day to day,
   and I have no knowledge [...].
   ----
-  ----{gt}
+  ----{.gt}
   {So there I was in an honorary leadersip role,
   happy to attend their functions and lift their profile,
   and content with them exploiting my name, in return for having
   absolutely no knowledge of the actual operations of the Association;
   what the hell was I even doing there, and how naive/stupid can I be eh?}
   ----
-  ----{h}
+  ----{.h}
   [...]
   ----
-  ----{g}
+  ----{.g}
   [...]
   ----
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   [...] Can I just hear, you were also Honorary President of the
   United Chinese Commerce Association.
   Now there is evidence that this too is connected to the
@@ -158,11 +158,11 @@ Race and place of origin are irrelevant.
   ----
   
   \gladys-liu
-  ----{g}
+  ----{.g}
   What is that organisation again? I don't think I am. [...]
   ----
   \andrew-bolt
-  ----{h}
+  ----{.h}
   You have been Honorary President of the United Chinese Commerce Association
   and you've forgotten that as well.
   ----
@@ -185,45 +185,45 @@ Race and place of origin are irrelevant.
     https://web.archive.org/web/20190912155936/http://uccaai.org/
   @@
   
-  ----{g}
+  ----{.g}
   [...]
   ----
-  ----{h}
+  ----{.h}
   [...]
   ----
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   Can you now tell us, in what way should Australia
   be more friendly to China? Can you give some examples?
   ----
   
   \gladys-liu
-  ----{g}
+  ----{.g}
   ...
   ----
-  ----{gt}
+  ----{.gt}
   {Handball:}
   ----
-  ----{g}
+  ----{.g}
   Well... that is what our Foreign Minister has been doing very well,
   and she has been looking at the relationship between all countries,
   and she has been talking for the interests of Australia with other
   Foreign Ministers.
   ----
-  ----{gt}
+  ----{.gt}
   {And by "the interests of Australia" I of course mean
   "the interests of Australia's government".}
   ----
-  ----{h}
+  ----{.h}
   [...]
   ----
-  ----{g}
+  ----{.g}
   [...]
   ----
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   Can I just end by just asking you a couple of things:
   Xi Jinping has made himself dictator for life;
   he is cracking down on dissidents, human rights activists;
@@ -234,16 +234,16 @@ Race and place of origin are irrelevant.
   ----
   
   \gladys-liu
-  ----{gt}
+  ----{.gt}
   {Eep!}
   ----
-  ----{g}
+  ----{.g}
   Umm... well honestly I have been focusing on serving the seat of Chisholm
   [...] I don't really know and I don't really...
   ----
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   Gladys, excuse me. You were born in Hong Kong;
   at the moment you have seen in your home place,
   people in their millions at times, 1.7 million, in their millions,
@@ -252,11 +252,11 @@ Race and place of origin are irrelevant.
   ----
   
   \gladys-liu
-  ----{g}
+  ----{.g}
   OK. [...] In terms of Hong Kong,
   it is very very sad for anyone to see what has happened
   ----
-  ----{gt}
+  ----{.gt}
   {which, depending on who you're talking to, translates to either
   (a)~"it's sad, there is no hope for HK people anymore...
   2047 is really coming..."
@@ -272,61 +272,61 @@ Race and place of origin are irrelevant.
   @@
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   But Gladys, simple question: is Xi Jinping a dictator?
   ----
   
   \gladys-liu
-  ----{gt}
+  ----{.gt}
   {Eep!!}
   ----
-  ----{g}
+  ----{.g}
   That is not a question for me to answer.
   But I can tell you about Hong Kong, it is very very sad to see...
   ----
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   I don't want to know about Hong Kong; I'm asking you about Xi Jinping,
   the dictator of Communist China, and you don't have an opinion about him?
   ----
   
   \gladys-liu
-  ----{g}
+  ----{.g}
   I do have an opinion, but I'm not going to use the word "dictator"
   ----
-  ----{gt}
+  ----{.gt}
   {because, having joined the Australian government,
   I am now obliged to cower in submission
   and not offend the Communist Party,
   because money}.
   ----
-  ----{g}
+  ----{.g}
   He is, in their system, an elected Chairman, or President,
   they call it, for China.
   ----
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   Gladys Liu, are you, in effect, a spokesman
   for the Chinese Communist regime in Australia?
   ----
   
   \gladys-liu
-  ----{gt}
+  ----{.gt}
   {Aren't we all, except Andrew Hastie and a few others?}
   ----
-  ----{g}
+  ----{.g}
   The simple answer is no. As I said...
   ----
   
   \andrew-bolt
-  ----{h}
+  ----{.h}
   Gladys Liu, thank you so much indeed for your time.
   ----
   
   \gladys-liu
-  ----{g}
+  ----{.g}
   Thank you Andrew.
   ----
   

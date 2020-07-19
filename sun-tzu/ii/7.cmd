@@ -66,7 +66,7 @@ See [Vol.~I \P3 (Units of capacity)] ["i 3"].
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

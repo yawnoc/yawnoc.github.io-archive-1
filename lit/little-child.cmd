@@ -11,7 +11,7 @@
     "Q \& A with Confucius: the Little Child's Discourse" 《孔子問答：小兒論》
   %title-en "Q~.[\&]~A .[with] Confucius: .[the] Little Child's Discourse"
   %date-created 2019-04-07
-  %date-modified 2020-06-25
+  %date-modified 2020-07-05
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -90,7 +90,7 @@ see [the actual first page of the almanac text][almanac text].
 @@
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -208,7 +208,7 @@ see [the actual first page of the almanac text][almanac text].
   having finished speaking he turned his head back down.
   From the [illustration][almanac text] in the almanac, he then
   joins in with the building of the wall:
-  ||||{centred-block}
+  ||||{.centred-block}
     ![
       Almanac illustration.
       A little child with Confucius,
@@ -319,7 +319,7 @@ see [the actual first page of the almanac text][almanac text].
     what .[be] thy thoughts .[upon this]?
 >>
 ====
-* **{danger} Beware stranger danger. **
+* **{.danger} Beware stranger danger. **
 
 * 汝意下如何：
     what .[be] thy thoughts .[upon this];
@@ -916,14 +916,12 @@ see [the actual first page of the almanac text][almanac text].
   孔子答曰：鵝鴨能浮，皆因足方。鴻雁能鳴，皆因頸長。松柏冬青，皆因心堅。
 ||
   Confucius replied, saying,
-    Geese .[and] ducks .[are] able to float, all because of webbed feet.
+    Geese .[and] ducks .[are] able to float, all because of square feet.
     Swans .[and] wild geese .[are] able to sound, all because of long necks.
     Pine trees .[and] cypress trees .[are] evergreen,
       all because of strong cores.
 >>
 ====
-* 足方： webbed feet; \lit square feet
-
 * 堅： strong; \or firm
 ====
 
@@ -935,7 +933,7 @@ see [the actual first page of the almanac text][almanac text].
 ||
   .[The] little child replied, saying,
     Not so.
-    Fishes .[and] turtles can float: how .[have they] all webbed feet?
+    Fishes .[and] turtles can float: how .[have they] all square feet?
     The toad can sound: how .[be this] because of .[a] long neck?
     The green bamboo .[is] evergreen:
       how .[be this] because of .[a] strong core?
@@ -1045,7 +1043,7 @@ see [the actual first page of the almanac text][almanac text].
 
 <<<<<<<<
   詩曰：
-  ||||||{centred-block}
+  ||||||{.centred-block}
   ||||
     休欺年少聰明子， \+
     廣有英才智過人。 \+
@@ -1055,7 +1053,7 @@ see [the actual first page of the almanac text][almanac text].
   ||||||
 ||||||||
   Verse saith:
-  ||||||{centred-block}
+  ||||||{.centred-block}
   ||||
     Do not bully the intelligent child, young .[in] years, \+
     .[Who] greatly hath outstanding talent, \

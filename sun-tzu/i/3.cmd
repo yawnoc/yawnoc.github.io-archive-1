@@ -63,7 +63,7 @@ Note that the [next paragraph (\P4)] ["i 4"] uses a "long scale".
 
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -273,7 +273,7 @@ Chinese source text: \a[4], \b[146], \c[52059], \d[12]. \+
 ====
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 
@@ -322,7 +322,7 @@ Note however that Ordinance No.~22 has the "barrel", hu ((斛)), defined as
 five tou ((斗)) rather than ten tou ((斗)):
 ----
 
-||||{centred-block}
+||||{.centred-block}
   ![
     Image of Ordinance No.~22 of~1844, British Hong Kong.
     Measures of Grain.

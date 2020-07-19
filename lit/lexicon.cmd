@@ -349,27 +349,25 @@ l{%
     [ ] (?P<radical> \S )
     [ ] (?P<unicode_name> [a-z-]+ )
 %
-  ##\g<unicode_name>
+  ##{#\g<unicode_name>}
     \g<radical> (\g<unicode_name>)
   ##
 %}
 
 <## Character entry heading  \char {strokes} {character} {code point} ##>
 
-l{%
+r{%
   \\char
     [ ] (?P<residual_strokes> [0-9]+ )
     [ ] (?P<character> \S )
     [ ] (?P<code_point> [0-9A-F]+ )
 %
-  ###\g<character>
+  ###{#\g<character>}
     <span class="residual-strokes">\g<residual_strokes></span>
     <span class="character">\g<character></span>
     <span class="code-point">U+\g<code_point></span>
   ###
-  @@[\g<character>]
-    #\g<character>
-  @@
+  @[\g<character>] #\g<character> @
 %}
 
 <## Tone heading  [tone]  ##>

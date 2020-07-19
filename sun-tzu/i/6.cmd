@@ -60,7 +60,7 @@ along with those of jade and an unspecific "stone/rock".
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -127,7 +127,7 @@ Chinese source text: \a[6], \b[147], \c[52062], \d[13]. \+
 /]
 
 
-##commentary
+##{#commentary}
   Extended commentary
 ##
 
@@ -144,8 +144,8 @@ since it does not adequately pinpoint a specific material.
   https://www.engineeringtoolbox.com/density-solids-d_1265.html
 @@
 
-||||||{centred-block}
-||||{overflowing}
+||||||{.centred-block}
+||||{.overflowing}
 ''''
 |^
   ==
@@ -236,8 +236,8 @@ Or maybe he only had access to *very* impure silver and jade:
 {: \maths-italic : class="maths-italic" :}
 {: \point : class="points" :}
 
-||||{centred-block}
-<svg class="fit-width" width="480px" viewBox="-3.5 -18 25.5 22"
+||||{.centred-block}
+<svg width="480px" height="100%" viewBox="-3.5 -18 25.5 22"
   \accessible-svg-attributes[scatter-plot-title]\
 >
   [accessible-svg-title/scatter-plot-title

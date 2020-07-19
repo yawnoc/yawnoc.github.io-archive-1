@@ -11,7 +11,7 @@
     "Record of the Lion's Pavilion, Victoria Peak" 《太平山獅子亭記》
   %title-en "Record of .[the] Lion's Pavilion, Victoria~Peak"
   %date-created 2019-04-07
-  %date-modified 2020-05-02
+  %date-modified 2020-07-17
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -58,11 +58,11 @@ but no mention of the author.
   https://en.wikipedia.org/wiki/Victoria_Peak
 @@
 
-||||{centred-block}
+||||{.centred-block}
   ![Photograph of the plaque text.][plaque text small]
 ||||
 
-@@![plaque text small]
+@@[plaque text small]
   lion-pavilion-small.jpg
 @@
 
@@ -71,7 +71,7 @@ __High-resolution version:__ [`lion-pavilion.jpg`~(1.6~MB)](lion-pavilion.jpg)
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 
@@ -159,7 +159,7 @@ The inserted punctuation is my own.
 ||
   .[With] red-painted columns .[and] drawing-decorated balustrades,
   through to .[the] Moon Gate,
-  all .[were] made according to .[the] old .[ways].
+  all .[were] made according to the olden.
 >>
 ====
 * 楹：柱也； columns \+

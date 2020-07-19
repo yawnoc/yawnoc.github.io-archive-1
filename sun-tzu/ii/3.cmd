@@ -56,7 +56,7 @@ This paragraph gives a worked example of subtracting fractions.
 ----
 
 
-##translation
+##{#translation}
   Translation
 ##
 

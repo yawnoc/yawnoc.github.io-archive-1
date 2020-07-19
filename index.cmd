@@ -11,7 +11,7 @@
   %title Conway's site
   %title-suffix <## nothing ##>
   %date-created 2019-03-09
-  %date-modified 2020-06-15
+  %date-modified 2020-07-13
   %resources
     {+ resources/inclusions/preamble/main.cmd +}
     {+ resources/inclusions/preamble/rendering.cmd +}
@@ -60,27 +60,27 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
 ----
 
 
-##pages
+##{#pages}
   Pages to read
 ##
 
-###general
+###{#general}
   General material
 ###
 
-===={page-link-container}
+===={.page-link-container}
 * [Conway's Romanisation for Cantonese](/cantonese/conway-romanisation)
-  ||||{page-description}
+  ||||{.page-description}
     Wade--Giles-style initials and length-indicative finals.
   ||||
 
 * [FAQ](/faq)
-  ||||{page-description}
+  ||||{.page-description}
     Frequently asked questions.
   ||||
 
 * [Debian on Pinebook Pro via Daniel's installer](/pinebook-pro)
-  ||||{page-description}
+  ||||{.page-description}
     Installation and customisation of Debian Bullseye
     using [Daniel Thompson's unofficial installer].
   ||||
@@ -89,25 +89,25 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
   @@
 
 * [A cynic's 7.30 (and other programs)](/cynics-730/)
-  ||||{page-description}
+  ||||{.page-description}
     Mind reading: Australian politics.
   ||||
 
 * [Mao on separatism: 27 Chinas](/mao-on-separatism)
-  ||||{page-description}
+  ||||{.page-description}
     Mao in 1920, on why China ought to be split into 27 separate countries.
   ||||
 
 ====
 
 
-###applied-maths
+###{#applied-maths}
   Applied mathematics (or, physics)
 ###
 
-===={page-link-container}
+===={.page-link-container}
 * [Daytime: dependence on latitude and season](/math/daytime)
-  ||||{page-description}
+  ||||{.page-description}
     The sun's path through the sky
     and the duration of daytime (among other quantities).
   ||||
@@ -115,7 +115,7 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
 * [Projectile motion: optimal launch angle for weak quadratic drag](
     /math/projectile-weak-drag
   )
-  ||||{page-description}
+  ||||{.page-description}
     Launching projectiles in weak air resistance
     proportional to the square of speed.
   ||||
@@ -123,30 +123,30 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
 * [Projectile motion: optimal launch angle from a platform](
     /math/projectile-platform
   )
-  ||||{page-description}
+  ||||{.page-description}
     Launching projectiles from a raised platform.
   ||||
 
 ====
 
 
-###literary-chinese
+###{#literary-chinese}
   English translations of Literary Chinese
 ###
 
-======{page-link-container}
+======{.page-link-container}
 * [Conway's Lexicon for Literary Chinese](lit/lexicon)
-  ||||{page-description}
+  ||||{.page-description}
     Quick reference for words and phrases which I have rendered into English.
   ||||
 ======
 
 
-####literary-chinese-maths
+####{#literary-chinese-maths}
   Mathematics
 ####
 
-======{page-link-container}
+======{.page-link-container}
 * [
     《孫子算經》 \+
     "\sun-tzu's Computational Classic"
@@ -157,7 +157,7 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
   * [《卷中》 "Volume~II"] ["ii"] (incomplete)
   * 《卷下》 "Volume~III" (haven't started)
   ====
-  ||||{page-description}
+  ||||{.page-description}
     An annotated translation of the entire _Sunzi Suanjing_ (once completed).
   ||||
 
@@ -165,20 +165,20 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
     《海島算經》 \+
     ".[The] Sea Island Computational Classic"
   ](/lit/sea-island)
-  ||||{page-description}
+  ||||{.page-description}
     The first problem in _Haidao Suanjing_.
   ||||
 
 ======
 
 
-####literary-chinese-not-maths
+####{#literary-chinese-not-maths}
   Not mathematics
 ####
 
-===={page-link-container}
+===={.page-link-container}
 * ["The Need to Win"](/lit/need-to-win)
-  ||||{page-description}
+  ||||{.page-description}
     On _The Turning_ (Tim Winton), quoting Thomas Merton,
     paraphrasing Chuang Tz(uu), on Confucius, on (probably) archery.
   ||||
@@ -187,7 +187,7 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
     《孔子問答：小兒論》 \+
     "Q .[\&] A .[with] Confucius: .[the] Little Child's Discourse"
   ](/lit/little-child)
-  ||||{page-description}
+  ||||{.page-description}
     Confucius getting his arse whooped by a little kid.
   ||||
 
@@ -195,7 +195,7 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
     《太平山獅子亭記》 \+
     "Record of .[the] Lion's Pavilion, Victoria Peak"
   ](/lit/lion-pavilion)
-  ||||{page-description}
+  ||||{.page-description}
      Plaque text commemorating the Lion's Pavilion.
   ||||
 
@@ -203,7 +203,7 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
     《狐假虎威》 \+
     ".[The] Fox Feigneth .[the] Tiger's Authority"
   ](/lit/fox-tiger)
-  ||||{page-description}
+  ||||{.page-description}
      The original second half of _The Gruffalo_.
   ||||
 
@@ -211,19 +211,19 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
     《施氏食獅史》 \+
     ".[An] History of Mr Shih's Eating of Lions"
   ](/lit/lion-eating)
-  ||||{page-description}
+  ||||{.page-description}
      The original Mandarin "lion tongue twister".
   ||||
 
 ====
 
 
-##code
+##{#code}
   Useful code
 ##
 
 
-###code-web
+###{#code-web}
   Website building
 ###
 
@@ -250,11 +250,14 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
 @@
 
 
-###code-maths
+###{#code-maths}
   Mathematical stuff
 ###
 
 ====
+* [\oct Image to ASCII art converter (GitHub)](
+    https://github.com/yawnoc/ascii-art
+  )
 * [\py Big Two (鋤大弟) scoring statistics (GitHub)](
     https://github.com/yawnoc/big-two-stats
   )
@@ -270,10 +273,11 @@ with the cynicism of Daria and the metabolism of Sir~Doris the Hamster.
 ====
 
 {: \py : \[Python\] :}
+{: \oct : \[GNU Octave\] :}
 {: \ma : \[Mathematica\] :}
 
 
-###code-emails
+###{#code-emails}
   Email typing
 ###
 
