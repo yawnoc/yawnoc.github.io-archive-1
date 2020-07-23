@@ -1,4 +1,5 @@
 {+ resources/syntax/general.cmd +}
+
 {+ resources/syntax/cynics-730.cmd +}
 
 %%

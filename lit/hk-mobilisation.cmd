@@ -1,9 +1,8 @@
 {+ resources/syntax/general.cmd +}
 
-{+ resources/syntax/translations.cmd +}
-
-{+ resources/syntax/romanisations.cmd +}
 {+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title "Memorial unto the Mobilisation, Hong Kong" 《香港出師表》

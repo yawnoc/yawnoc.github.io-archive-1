@@ -1,10 +1,9 @@
 {+ resources/syntax/general.cmd +}
 
-{+ resources/syntax/romanisations.cmd +}
-{+ resources/syntax/chinese-lang.cmd +}
-
-{+ resources/syntax/svg-styles.cmd +}
 {+ resources/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
 
 %%
   %title Conway's Romanisation for Cantonese

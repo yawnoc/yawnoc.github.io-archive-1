@@ -1,8 +1,7 @@
 {+ resources/syntax/general.cmd +}
 
-{+ resources/syntax/sun-tzu.cmd +}
-
 {+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
 
 %%
   %title \[Mathematica\] \sun-tzu multiplication \& division animations

@@ -1,7 +1,7 @@
 {+ resources/syntax/general.cmd +}
 
-{+ resources/syntax/svg-styles.cmd +}
 {+ resources/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
 
 %%
   %title Projectile motion: optimal launch angle for weak quadratic drag

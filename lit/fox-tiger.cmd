@@ -1,10 +1,9 @@
 {+ resources/syntax/general.cmd +}
 
-{+ resources/syntax/translations.cmd +}
-
-{+ resources/syntax/romanisations.cmd +}
 {+ resources/syntax/chinese-lang.cmd +}
 {+ resources/syntax/original-chinese.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title "The Fox Feigneth the Tiger's Authority" 《狐假虎威》

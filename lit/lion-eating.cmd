@@ -1,9 +1,8 @@
 {+ resources/syntax/general.cmd +}
 
-{+ resources/syntax/translations.cmd +}
-
-{+ resources/syntax/romanisations.cmd +}
 {+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title "An History of Mr Shih's Eating of Lions" 《施氏食獅史》

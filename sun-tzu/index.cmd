@@ -1,12 +1,10 @@
 {+ resources/syntax/general.cmd +}
 
-{+ resources/syntax/sun-tzu.cmd +}
-
-{+ resources/syntax/translations.cmd +}
-
-{+ resources/syntax/romanisations.cmd +}
 {+ resources/syntax/chinese-lang.cmd +}
 {+ resources/syntax/original-chinese.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title "\sun-tzu's Computational Classic" 《孫子算經》
