@@ -10,9 +10,7 @@
   %title-en ".[An] History of Mr~Shih's Eating of Lions"
   %date-created 2019-04-07
   %date-modified 2020-05-02
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %description
     An English translation of the Mandarin "lion tongue twister" \
     《施氏食獅史》, "shi shi shi shi shi", or \

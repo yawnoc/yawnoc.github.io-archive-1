@@ -23,6 +23,91 @@ p{%%
 
 <##
   ----------------------------------------------------------------
+  Preamble resources
+  ----------------------------------------------------------------
+  There are three tiers, each depending on those before:
+  1. \resources
+  2. \resources:rendering
+  3. \resources:maths
+##>
+
+
+<## Tier 3: Maths equations CSS and JS ##>
+
+p{::
+  \resources:maths
+::
+  \\resources:rendering
+  a~~
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+      integrity="sha384-\
+        zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq\
+      " \
+      crossorigin \
+      onerror="\
+        this.removeAttribute('integrity');\
+        this.removeAttribute('onerror');\
+        this.setAttribute('href',\
+          '/resources/katex/katex.min.css'\
+        )\
+      ">
+  ~~
+  a~~
+    <script defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+      integrity="sha384-\
+        y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz\
+      " \
+      crossorigin \
+      onerror="\
+        let a=document.createElement('script');\
+        a.setAttribute('src',\
+          '/resources/katex/katex.min.js'\
+        );\
+        a.setAttribute('onload', 'renderMaths()');\
+        document.head.appendChild(a);
+        this.remove()\
+      "
+      onload="renderMaths()"></script>
+  ~~
+::}
+
+
+<## Tier 2: Rendering JS (Cite this page and or maths equations) ##>
+
+p{::
+  \resources:rendering
+::
+  \\resources
+    a~~
+      <script defer src="/resources/scripts/rendering.min.js"></script>
+    ~~
+::}
+
+
+<## Tier 1: Favicon and main CSS ##>
+
+p{: \resources :
+  %resources
+  a~~
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+  ~~
+  a~~
+    <link rel="stylesheet" href="/resources/styles/main.min.css">
+  ~~
+:}
+
+
+
+<##
+  ----------------------------------------------------------------
   Noscript for maths equations rendering
   ----------------------------------------------------------------
 ##>

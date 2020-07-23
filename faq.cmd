@@ -11,8 +11,7 @@
   %title FAQ
   %date-created 2019-08-01
   %date-modified 2020-06-07
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
+  \resources
   %css
     li > ul, li > ol {
       margin: 0.3em 0;

@@ -10,8 +10,7 @@
   %title-en "Memorial .[unto the] Mobilisation, Hong Kong"
   %date-created 2019-06-22
   %date-modified 2020-05-04
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
+  \resources
   %footer-copyright-remark
     except the [original Chinese text] [facebook post],
     which is by [畫字~(Draword)] [draword],

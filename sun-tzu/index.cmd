@@ -12,9 +12,7 @@
   %title "\sun-tzu's Computational Classic" 《孫子算經》
   %date-created 2019-05-04
   %date-modified 2020-05-13
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %description
     An annotated English translation of Sunzi Suanjing, \
     《孫子算經》, "\sun-tzu's Computational Classic".

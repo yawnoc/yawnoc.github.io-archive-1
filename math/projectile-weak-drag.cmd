@@ -7,10 +7,7 @@
   %title Projectile motion: optimal launch angle for weak quadratic drag
   %date-created 2019-06-21
   %date-modified 2020-06-10
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  \resources:maths
   %description
     A derivation of the optimal launch angle (which maximises range) \
     for projectile motion in weak quadratic drag using perturbation theory.

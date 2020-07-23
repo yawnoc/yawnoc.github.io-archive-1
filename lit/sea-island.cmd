@@ -16,10 +16,7 @@
   %title-en ".[The] Sea Island Computational Classic"
   %date-created 2019-04-20
   %date-modified 2020-07-19
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  \resources:maths
   %description
     An annotated English translation of the first problem in Haidao Suanjing, \
     《海島算經》, "The Sea Island Computational Classic".
@@ -612,7 +609,7 @@ I have mapped the names of the vertices as follows:
 ##>
 
 
-{%
+w{%
   \\maths
     [-](?P<type> italic | regular)
     [-](?P<colour_letter> [rgbv] )
@@ -620,14 +617,14 @@ I have mapped the names of the vertices as follows:
   class="maths-\g<type> colour-\g<colour_letter>"
 %}
 
-{%
+w{%
   \\(?P<colour_letter> [rgbv] )
 %
   class="colour-\g<colour_letter>"
 %}
 
-{: \maths-italic : class="maths-italic" :}
-{: \font-size : font-size="0.3" :}
+w{: \maths-italic : class="maths-italic" :}
+w{: \font-size : font-size="0.3" :}
 
 
 ||||{.centred-block}

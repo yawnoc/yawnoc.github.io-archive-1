@@ -5,8 +5,7 @@
   %title A cynic's 7.30: \short-title
   %date-created 2020-03-27
   %date-modified 2020-03-27
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
+  \resources
   %footer-copyright-remark
     except the [original interview][original],
     whose copyright belongs to the ABC

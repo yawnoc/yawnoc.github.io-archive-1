@@ -7,9 +7,7 @@
   %title Quick links for Williams' Tonic Dictionary of Cantonese
   %date-created 2020-02-20
   %date-modified 2020-05-14
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %description
     Quick links for each syllable of Samuel Wells Williams' \
     "A Tonic Dictionary Of The Chinese Language In The Canton Dialect" \

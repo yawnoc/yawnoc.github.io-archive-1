@@ -5,9 +5,7 @@
   %title A cynic's 7.30 (and other programs)
   %date-created 2019-08-30
   %date-modified 2020-05-21
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %css a~~
     .air-date {
       font-weight: bold;

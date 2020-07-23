@@ -9,9 +9,7 @@
   %title Mao on separatism: 27~Chinas
   %date-created 2019-09-24
   %date-modified 2020-06-02
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %description
     An English translation of Mao's 1920 suggestion, in 長沙《大公報》, \
     of dividing China into 27 separate countries, \

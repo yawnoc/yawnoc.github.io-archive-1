@@ -10,9 +10,7 @@
   %title "The Need to Win"
   %date-created 2019-04-15
   %date-modified 2020-07-19
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %description
     A discussion and translation of Chuang Tz(uu)'s alleged "archery" quote, \
     "When an archer is shooting for nothing, he has all his skill..."

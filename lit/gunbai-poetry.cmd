@@ -10,9 +10,7 @@
   %title Poetry on a sumo umpire's fan
   %date-created 2019-11-21
   %date-modified 2020-02-15
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %footer-copyright-remark
     except the image of \kimura-yodo,
     taken from [twitter] ([archived version][twitter archived])

@@ -3,8 +3,7 @@
 %%
   %title Page not found
   %author <## no one ##>
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
+  \resources
   %css a~~
     strong {
       display: block;

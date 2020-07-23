@@ -8,10 +8,7 @@
   %title \[Mathematica\] \sun-tzu multiplication \& division animations
   %date-created 2019-05-26
   %date-modified 2020-03-20
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  \resources:maths
   %description
     Mathematica code generating animations for the \
     Sunzi Suanjing multiplication \& division algorithms.

@@ -12,9 +12,7 @@
   %title-suffix <## nothing ##>
   %date-created 2019-03-09
   %date-modified 2020-07-13
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %description Conway's site: Literary Chinese and applied mathematics.
   %footer-remark
     And if the current year is greater than %year-modified:

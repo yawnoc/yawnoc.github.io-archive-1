@@ -16,9 +16,7 @@
     "\sun-tzu's Computational Classic: Volume~I" 《孫子算經\.卷上》 \P7
   %date-created 2019-06-09
   %date-modified 2020-05-13
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %css
     td {
       padding: 0;
