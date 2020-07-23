@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Minify main CSS using CSSO
+# <https://github.com/css/csso-cli>
+# npm install -g csso-cli
+csso resources/styles/main.css -o resources/styles/main.min.css
+
+# Minify rendering JS using terser
+# <https://github.com/terser/terser>
+# npm install -g terser
+terser resources/scripts/rendering.js -c -m -o resources/scripts/rendering.min.js
