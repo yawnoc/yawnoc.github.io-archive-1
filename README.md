@@ -9,7 +9,7 @@ Built using [Conway's markdown (CMD)][cmd].
 ````bash
 $ cmd
 $ ./minify-resources
-$ ./sitemap.py
+$ ./generate-sitemap.py
 ````
 
 ## Testing
