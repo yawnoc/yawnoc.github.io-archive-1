@@ -1,22 +1,17 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-{+ resources/inclusions/syntax/original-chinese.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/original-chinese.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P1
   %date-created 2019-06-09
-  %date-modified 2020-06-23
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  %date-modified 2020-07-19
+  \resources:maths
 %%
 
 [[====
@@ -72,7 +67,7 @@ Chinese source text: \a[26], \b[153], \c[52130], \d[39]. \+
   答曰：三分之二。
 ||
   Now there be twelve eighteenths.
-  .[We] ask: reducing it resulteth in how much? \+
+  .[We] ask, reducing it resulteth in how much? \+
   Answer saith: two thirds.
 >>
 ====
@@ -170,7 +165,7 @@ of \sun-tzu's Computational Classic:
   答曰：三分之二。
 ||
   Now there be twelve eighteenths.
-  .[We] ask: reducing it resulteth in how much? \+
+  .[We] ask, reducing it resulteth in how much? \+
   Answer saith: two thirds.
 >>
 
@@ -179,7 +174,7 @@ of \sun-tzu's Computational Classic:
   答曰：十三分之七。
 ||
   Also there be forty-nine ninety-firsts.
-  .[We] ask: reducing it resulteth in how much? \+
+  .[We] ask, reducing it resulteth in how much? \+
   Answer saith: seven thirteenths.
 >>
 

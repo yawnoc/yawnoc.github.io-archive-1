@@ -1,18 +1,15 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-{+ resources/inclusions/syntax/original-chinese.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/original-chinese.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title Poetry on a sumo umpire's fan
   %date-created 2019-11-21
   %date-modified 2020-02-15
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %footer-copyright-remark
     except the image of \kimura-yodo,
     taken from [twitter] ([archived version][twitter archived])

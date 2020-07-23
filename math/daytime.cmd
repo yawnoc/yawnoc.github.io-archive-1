@@ -1,18 +1,14 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-
-{+ resources/inclusions/syntax/svg-styles.cmd +}
-{+ resources/inclusions/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
 
 %%
   %title Daytime: dependence on latitude and season
   %date-created 2019-07-12
   %date-modified 2020-04-28
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  \resources:maths
   %description
     A simple mathematical model for the sun's path through the sky \
     and the amount of daytime at different times of the year.

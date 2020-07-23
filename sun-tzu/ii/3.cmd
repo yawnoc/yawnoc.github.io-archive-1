@@ -1,21 +1,16 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P3
   %date-created 2019-06-09
-  %date-modified 2020-05-13
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  %date-modified 2020-07-19
+  \resources:maths
 %%
 
 [[====
@@ -71,7 +66,7 @@ Chinese source text: \a[28], \b[153], \c[52136], \d[40]. \+
 ||
   Now there be eight of nine shares,
   .[and we] diminish of it one of five shares.
-  .[We] ask: how much remaineth? \+
+  .[We] ask, how much remaineth? \+
   Answer saith: thirty-one of forty-five shares.
 >>
 ====

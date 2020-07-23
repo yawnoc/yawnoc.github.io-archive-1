@@ -1,25 +1,19 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-{+ resources/inclusions/syntax/original-chinese.cmd +}
-
-{+ resources/inclusions/syntax/coloured-spans.cmd +}
-
-{+ resources/inclusions/syntax/svg-styles.cmd +}
-{+ resources/inclusions/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/coloured-spans.cmd +}
+{+ resources/syntax/original-chinese.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title "The Sea Island Computational Classic" 《海島算經》
   %title-en ".[The] Sea Island Computational Classic"
   %date-created 2019-04-20
-  %date-modified 2020-05-02
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  %date-modified 2020-07-19
+  \resources:maths
   %description
     An annotated English translation of the first problem in Haidao Suanjing, \
     《海島算經》, "The Sea Island Computational Classic".
@@ -356,7 +350,7 @@ $$
   \accessible-svg-attributes[we-ask-how-much-title]\
 >
   [accessible-svg-title/we-ask-how-much-title
-    "We ask: how much" diagram.
+    "We ask how much" diagram.
     What is the height of the sea island?
     What is the distance from the base of the sea island \
     to the base of the front post?
@@ -388,7 +382,7 @@ $$
 <<
   問[b/島高/]及[r/去表/]各幾何？
 ||
-  .[We] ask: how much .[are] each of [b/ .[the] height of .[the] island /]
+  .[We] ask, how much .[are] each of [b/ .[the] height of .[the] island /]
   and [r/ .[its] distance from .[the] post /]?
 >>
 
@@ -612,7 +606,7 @@ I have mapped the names of the vertices as follows:
 ##>
 
 
-{%
+w{%
   \\maths
     [-](?P<type> italic | regular)
     [-](?P<colour_letter> [rgbv] )
@@ -620,14 +614,14 @@ I have mapped the names of the vertices as follows:
   class="maths-\g<type> colour-\g<colour_letter>"
 %}
 
-{%
+w{%
   \\(?P<colour_letter> [rgbv] )
 %
   class="colour-\g<colour_letter>"
 %}
 
-{: \maths-italic : class="maths-italic" :}
-{: \font-size : font-size="0.3" :}
+w{: \maths-italic : class="maths-italic" :}
+w{: \font-size : font-size="0.3" :}
 
 
 ||||{.centred-block}

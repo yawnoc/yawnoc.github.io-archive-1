@@ -1,24 +1,19 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-{+ resources/inclusions/syntax/original-chinese.cmd +}
-
-{+ resources/inclusions/syntax/svg-styles.cmd +}
-{+ resources/inclusions/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/original-chinese.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~I" 《孫子算經\.卷上》 \P7
   %date-created 2019-06-09
   %date-modified 2020-05-13
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %css
     td {
       padding: 0;
@@ -182,10 +177,11 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
 
 <## Attributes ##>
 {:: \svg-attributes:rod ::
-  width="36px" height="100%" \\view-box:rod
+  width="36px" \\view-box:rod
 ::}
 {:: \marker-attributes:rod ::
   \\view-box:rod refX="0" refY="0" markerWidth="1" markerHeight="1"
+  markerUnits="userSpaceOnUse"
 ::}
 {:: \view-box:rod :: viewBox="-0.5 -0.5 1 1" ::}
 {: \point : class="points" :}
@@ -601,7 +597,7 @@ The text tells us to use
 
 ----
 For example, the number~345 is displayed as
-  <svg width="108px" height="100%" viewBox="0.5 -0.3 3 0.6"
+  <svg width="108px" viewBox="0.5 -0.3 3 0.6"
     \accessible-svg-attributes[rod-numerals-345-title]\
   >
     [accessible-svg-title/rod-numerals-345-title

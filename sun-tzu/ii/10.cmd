@@ -1,22 +1,17 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-{+ resources/inclusions/syntax/original-chinese.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/original-chinese.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P10
   %date-created 2019-06-09
-  %date-modified 2020-05-13
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  %date-modified 2020-07-19
+  \resources:maths
 %%
 
 [[====
@@ -99,7 +94,7 @@ Chinese source text: \a[32], \b[154], \c[52157], \d[45]. \+
   Now there be .[a] circular cellar,
   of lower circumference two hundred .[and] eighty-six rules,
   .[and] depth three rods .[and] six rules.
-  .[We] ask: how much grain beareth .[it]?
+  .[We] ask, how much grain beareth .[it]?
 >>
 ====
 * 窖：地藏也； cellar \+

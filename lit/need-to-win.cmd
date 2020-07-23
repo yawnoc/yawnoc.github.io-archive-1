@@ -1,18 +1,15 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-{+ resources/inclusions/syntax/original-chinese.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/original-chinese.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title "The Need to Win"
   %date-created 2019-04-15
-  %date-modified 2020-06-07
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  %date-modified 2020-07-19
+  \resources:rendering
   %description
     A discussion and translation of Chuang Tz(uu)'s alleged "archery" quote, \
     "When an archer is shooting for nothing, he has all his skill..."
@@ -194,7 +191,7 @@ The Chinese source text is from Chinese Text Project:
   吾問焉而不吾告，敢問何謂也？
 ||
   .[That] I asked of, yet .[they] told me not;
-  .[I] dare ask: what .[were they] saying?
+  .[I] dare ask, what .[were they] saying?
 >>
 ====
 * 何謂也： what .[were they] saying; \or what .[did they] mean

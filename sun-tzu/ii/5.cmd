@@ -1,21 +1,16 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P5
   %date-created 2019-06-09
-  %date-modified 2020-05-13
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  %date-modified 2020-07-19
+  \resources:maths
 %%
 
 [[====
@@ -80,7 +75,7 @@ Chinese source text: \a[30], \b[153], \c[52142], \d[42]. \+
   答曰：六升。
 ||
   Now there be grain, one peck.
-  .[We] ask: how much be .[this in] coarse grain? \+
+  .[We] ask, how much be .[this in] coarse grain? \+
   Answer saith: six quarts.
 >>
 ====

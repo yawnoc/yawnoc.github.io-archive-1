@@ -1,23 +1,17 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-
-{+ resources/inclusions/syntax/coloured-spans.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/coloured-spans.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P4
   %date-created 2019-06-09
-  %date-modified 2020-06-23
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  %date-modified 2020-07-19
+  \resources:maths
 %%
 
 [[====
@@ -73,7 +67,7 @@ Chinese source text: \a[28], \b[153], \c[52139], \d[41]. \+
 ||
   Now there be one of three shares,
   two of three shares .[and] three of four shares.
-  .[We] ask: .[in] diminishing .[the] greater .[to] benefit .[the] lesser,
+  .[We] ask, .[in] diminishing .[the] greater .[to] benefit .[the] lesser,
   how much that .[they be] level?
 >>
 ====

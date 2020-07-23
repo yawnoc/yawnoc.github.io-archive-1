@@ -1,21 +1,16 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P2
   %date-created 2019-06-09
-  %date-modified 2020-06-23
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  %date-modified 2020-07-19
+  \resources:maths
 %%
 
 [[====
@@ -70,7 +65,7 @@ Chinese source text: \a[26], \b[153], \c[52133], \d[39]. \+
   答曰：一十五分之一十一。
 ||
   Now there be one of three shares .[and] two of five shares.
-  .[We] ask: joining them two resulteth in how much? \+
+  .[We] ask, joining them two resulteth in how much? \+
   Answer saith: eleven of fifteen shares.
 >>
 ====

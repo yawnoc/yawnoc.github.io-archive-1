@@ -1,17 +1,13 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
 
 %%
   %title \[Mathematica\] \sun-tzu multiplication \& division animations
   %date-created 2019-05-26
   %date-modified 2020-03-20
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  \resources:maths
   %description
     Mathematica code generating animations for the \
     Sunzi Suanjing multiplication \& division algorithms.

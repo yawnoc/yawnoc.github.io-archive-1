@@ -1,18 +1,15 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-
-{+ resources/inclusions/syntax/svg-styles.cmd +}
-{+ resources/inclusions/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
 
 %%
   %title Conway's Romanisation for Cantonese
   %date-created 2019-04-07
   %date-modified 2020-04-19
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
+  \resources:rendering
   %description
     Conway's Romanisation for Cantonese, \
     with English approximations and a diagram of the nine tones.

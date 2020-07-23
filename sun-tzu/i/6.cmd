@@ -1,24 +1,18 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-
-{+ resources/inclusions/syntax/svg-styles.cmd +}
-{+ resources/inclusions/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~I" 《孫子算經\.卷上》 \P6
   %date-created 2019-06-09
   %date-modified 2020-05-13
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  \resources:maths
 %%
 
 [[====
@@ -261,26 +255,31 @@ Or maybe he only had access to *very* impure silver and jade:
     <defs>
       <## Horizontal axis coarse tick ##>
       <marker id="htickcoarse" viewBox="-0.1 0 0.2 0.4"
+        markerUnits="userSpaceOnUse"
         refX="0" refY="0" markerWidth="0.2" markerHeight="0.4">
         <line x1="0" y1="0" x2="0" y2="0.4"/>
       </marker>
       <## Horizontal axis fine tick ##>
       <marker id="htickfine" viewBox="-0.1 0 0.2 0.25"
+        markerUnits="userSpaceOnUse"
         refX="0" refY="0" markerWidth="0.2" markerHeight="0.25">
         <line x1="0" y1="0" x2="0" y2="0.25"/>
       </marker>
       <## Vertical axis coarse tick ##>
       <marker id="vtickcoarse" viewBox="-0.4 -0.1 0.4 0.2"
+        markerUnits="userSpaceOnUse"
         refX="0" refY="0" markerWidth="0.4" markerHeight="0.2">
         <line x1="-0.4" y1="0" x2="0" y2="0"/>
       </marker>
       <## Vertical axis fine tick ##>
       <marker id="vtickfine" viewBox="-0.25 -0.1 0.25 0.2"
+        markerUnits="userSpaceOnUse"
         refX="0" refY="0" markerWidth="0.25" markerHeight="0.2">
         <line x1="-0.25" y1="0" x2="0" y2="0"/>
       </marker>
       <## Data point ##>
       <marker id="datapoint"
+        markerUnits="userSpaceOnUse"
         viewBox="-0.5 -0.5 1 1"
         refX="0" refY="0" markerWidth="1" markerHeight="1"\
       >

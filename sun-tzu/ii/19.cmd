@@ -1,26 +1,19 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
-
-{+ resources/inclusions/syntax/translations.cmd +}
-
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
-
-{+ resources/inclusions/syntax/coloured-spans.cmd +}
-
-{+ resources/inclusions/syntax/svg-styles.cmd +}
-{+ resources/inclusions/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
+{+ resources/syntax/coloured-spans.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
+{+ resources/syntax/translations.cmd +}
 
 %%
   %title
     "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》 \P19
   %date-created 2019-06-09
-  %date-modified 2020-06-23
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  %date-modified 2020-07-19
+  \resources:maths
   %css
     li > ul {
       margin: 0.3em 0;
@@ -151,7 +144,7 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
 ||
   Now there be area,
   twenty-three myriad, four thousand, five hundred .[and] sixty-seven paces.
-  .[We] ask: how much .[by edge] be .[this a] square?
+  .[We] ask, how much .[by edge] be .[this a] square?
 >>
 
 
@@ -261,6 +254,7 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         <## Arrowhead ##>
         <marker id="arrowhead" viewBox="0 -0.15 0.7 0.3"
           refX="0.5" refY="0"
+          markerUnits="userSpaceOnUse"
           markerWidth="0.7" markerHeight="0.15"
           orient="auto-start-reverse">
           <path d="M 0,-0.15 L 0,0.15 L 0.7,0 z"/>

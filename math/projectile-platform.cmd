@@ -1,16 +1,13 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/svg-styles.cmd +}
-{+ resources/inclusions/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
 
 %%
   %title Projectile motion: optimal launch angle from a platform
   %date-created 2019-04-13
   %date-modified 2020-04-26
-  %resources
-    {+ resources/inclusions/preamble/main.cmd +}
-    {+ resources/inclusions/preamble/rendering.cmd +}
-    {+ resources/inclusions/preamble/maths.cmd +}
+  \resources:maths
   %description
     A derivation of the optimal launch angle (which maximises range) \
     for projectile motion (no air resistance) from a raised platform.
@@ -178,6 +175,7 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
       <marker
         id="arrowhead" viewBox="0 -0.15 0.5 0.3"
         refX="0.5" refY="0"
+        markerUnits="userSpaceOnUse"
         markerWidth="0.5" markerHeight="0.15"
         orient="auto-start-reverse">
         <path d="M 0, -0.15 L 0, 0.15 L 0.5, 0 z"/>
