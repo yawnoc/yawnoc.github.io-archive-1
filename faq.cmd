@@ -1,11 +1,11 @@
-{+ resources/inclusions/syntax/faq-links.cmd +}
+{+ resources/syntax/faq-links.cmd +}
 
-{+ resources/inclusions/syntax/translations.cmd +}
+{+ resources/syntax/translations.cmd +}
 
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
 
 %%
   %title FAQ

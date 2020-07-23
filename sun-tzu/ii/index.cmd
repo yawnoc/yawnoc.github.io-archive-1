@@ -1,9 +1,9 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
 
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
 
 %%
   %title "\sun-tzu's Computational Classic: Volume~II" 《孫子算經\.卷中》

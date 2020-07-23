@@ -1,9 +1,9 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
 
-{+ resources/inclusions/syntax/svg-styles.cmd +}
-{+ resources/inclusions/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
+{+ resources/syntax/accessible-svgs.cmd +}
 
 %%
   %title Daytime: dependence on latitude and season

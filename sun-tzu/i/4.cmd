@@ -1,13 +1,13 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
 
-{+ resources/inclusions/syntax/translations.cmd +}
+{+ resources/syntax/translations.cmd +}
 
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
 
-{+ resources/inclusions/syntax/superscripts.cmd +}
+{+ resources/syntax/superscripts.cmd +}
 
 %%
   %title

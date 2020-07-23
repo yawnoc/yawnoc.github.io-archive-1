@@ -1,4 +1,4 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
 %%
   %title Debian on Pinebook Pro via Daniel's installer

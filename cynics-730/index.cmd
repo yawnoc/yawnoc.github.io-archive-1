@@ -1,5 +1,5 @@
-{+ resources/inclusions/syntax/general.cmd +}
-{+ resources/inclusions/syntax/cynics-730.cmd +}
+{+ resources/syntax/general.cmd +}
+{+ resources/syntax/cynics-730.cmd +}
 
 %%
   %title A cynic's 7.30 (and other programs)

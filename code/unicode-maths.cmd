@@ -1,4 +1,4 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
 %%
   %title Unicode mathematical symbols

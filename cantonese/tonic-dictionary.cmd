@@ -1,7 +1,7 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
 
 %%
   %title Quick links for Williams' Tonic Dictionary of Cantonese

@@ -1,8 +1,8 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
 
-{+ resources/inclusions/syntax/cynics-730.cmd +}
+{+ resources/syntax/cynics-730.cmd +}
 
 %%
   %title A cynic's Bolt Report: \short-title

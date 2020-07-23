@@ -1,16 +1,16 @@
-{+ resources/inclusions/syntax/general.cmd +}
+{+ resources/syntax/general.cmd +}
 
-{+ resources/inclusions/syntax/sun-tzu.cmd +}
+{+ resources/syntax/sun-tzu.cmd +}
 
-{+ resources/inclusions/syntax/translations.cmd +}
+{+ resources/syntax/translations.cmd +}
 
-{+ resources/inclusions/syntax/romanisations.cmd +}
-{+ resources/inclusions/syntax/chinese-lang.cmd +}
+{+ resources/syntax/romanisations.cmd +}
+{+ resources/syntax/chinese-lang.cmd +}
 
-{+ resources/inclusions/syntax/coloured-spans.cmd +}
+{+ resources/syntax/coloured-spans.cmd +}
 
-{+ resources/inclusions/syntax/svg-styles.cmd +}
-{+ resources/inclusions/syntax/accessible-svgs.cmd +}
+{+ resources/syntax/svg-styles.cmd +}
+{+ resources/syntax/accessible-svgs.cmd +}
 
 %%
   %title
