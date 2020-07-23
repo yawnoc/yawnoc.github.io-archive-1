@@ -48,9 +48,7 @@ p{::
       onerror="\
         this.removeAttribute('integrity');\
         this.removeAttribute('onerror');\
-        this.setAttribute('href',\
-          '/resources/katex/katex.min.css'\
-        )\
+        this.setAttribute('href','/resources/katex/katex.min.css')\
       ">
   ~~
   a~~
@@ -62,9 +60,7 @@ p{::
       crossorigin \
       onerror="\
         let a=document.createElement('script');\
-        a.setAttribute('src',\
-          '/resources/katex/katex.min.js'\
-        );\
+        a.setAttribute('src','/resources/katex/katex.min.js');\
         a.setAttribute('onload', 'renderMaths()');\
         document.head.appendChild(a);
         this.remove()\
