@@ -254,6 +254,7 @@ Chinese source text: \a[40], \b[156], \c[52186], \d[52]. \+
         <## Arrowhead ##>
         <marker id="arrowhead" viewBox="0 -0.15 0.7 0.3"
           refX="0.5" refY="0"
+          markerUnits="userSpaceOnUse"
           markerWidth="0.7" markerHeight="0.15"
           orient="auto-start-reverse">
           <path d="M 0,-0.15 L 0,0.15 L 0.7,0 z"/>

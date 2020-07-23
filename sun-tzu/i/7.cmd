@@ -181,6 +181,7 @@ Chinese source text: \a[6], \b[147], \c[52063], \d[14]. \+
 ::}
 {:: \marker-attributes:rod ::
   \\view-box:rod refX="0" refY="0" markerWidth="1" markerHeight="1"
+  markerUnits="userSpaceOnUse"
 ::}
 {:: \view-box:rod :: viewBox="-0.5 -0.5 1 1" ::}
 {: \point : class="points" :}

@@ -175,6 +175,7 @@ __Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
       <marker
         id="arrowhead" viewBox="0 -0.15 0.5 0.3"
         refX="0.5" refY="0"
+        markerUnits="userSpaceOnUse"
         markerWidth="0.5" markerHeight="0.15"
         orient="auto-start-reverse">
         <path d="M 0, -0.15 L 0, 0.15 L 0.5, 0 z"/>

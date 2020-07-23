@@ -255,26 +255,31 @@ Or maybe he only had access to *very* impure silver and jade:
     <defs>
       <## Horizontal axis coarse tick ##>
       <marker id="htickcoarse" viewBox="-0.1 0 0.2 0.4"
+        markerUnits="userSpaceOnUse"
         refX="0" refY="0" markerWidth="0.2" markerHeight="0.4">
         <line x1="0" y1="0" x2="0" y2="0.4"/>
       </marker>
       <## Horizontal axis fine tick ##>
       <marker id="htickfine" viewBox="-0.1 0 0.2 0.25"
+        markerUnits="userSpaceOnUse"
         refX="0" refY="0" markerWidth="0.2" markerHeight="0.25">
         <line x1="0" y1="0" x2="0" y2="0.25"/>
       </marker>
       <## Vertical axis coarse tick ##>
       <marker id="vtickcoarse" viewBox="-0.4 -0.1 0.4 0.2"
+        markerUnits="userSpaceOnUse"
         refX="0" refY="0" markerWidth="0.4" markerHeight="0.2">
         <line x1="-0.4" y1="0" x2="0" y2="0"/>
       </marker>
       <## Vertical axis fine tick ##>
       <marker id="vtickfine" viewBox="-0.25 -0.1 0.25 0.2"
+        markerUnits="userSpaceOnUse"
         refX="0" refY="0" markerWidth="0.25" markerHeight="0.2">
         <line x1="-0.25" y1="0" x2="0" y2="0"/>
       </marker>
       <## Data point ##>
       <marker id="datapoint"
+        markerUnits="userSpaceOnUse"
         viewBox="-0.5 -0.5 1 1"
         refX="0" refY="0" markerWidth="1" markerHeight="1"\
       >
