@@ -53,7 +53,10 @@ although more algebra is required to compute it.
 ##
 
 ----
-__Manuscript:__ [`platform.pdf`](/manuscripts/platform.pdf)
+__Manuscript:__ [`platform.pdf`](
+  https://github.com/yawnoc/yawnoc.github.io-archive-1/blob/master/\
+    manuscripts/platform.pdf
+)
 ----
 
 <##
