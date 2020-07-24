@@ -96,7 +96,8 @@ __Manuscript:__ [`resistance.pdf`~(983~KB)][manuscript]
 ----
 
 @@[manuscript]
-  /manuscripts/resistance.pdf
+  https://github.com/yawnoc/yawnoc.github.io-archive-1/blob/master/\
+    manuscripts/resistance.pdf
 @@
 
 <##
