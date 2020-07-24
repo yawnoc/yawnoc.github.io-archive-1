@@ -171,6 +171,14 @@ div.js-maths {
   text-align: center;
 }
 
+/*
+  Reduce effective vertical padding from .important
+*/
+
+.important > .katex-display {
+  margin: 0.5em 0;
+}
+
 /* ---------------------------------------------------------------- */
 /* Footer                                                           */
 /* ---------------------------------------------------------------- */
