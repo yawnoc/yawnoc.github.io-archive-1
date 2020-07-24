@@ -85,7 +85,10 @@ Skipped steps/algebra may be found in the manuscript.
 ----
 
 ----
-__Manuscript:__ [`daytime.pdf`~(624~KB)](/manuscripts/daytime.pdf)
+__Manuscript:__ [`daytime.pdf`~(624~KB)](
+  https://github.com/yawnoc/yawnoc.github.io-archive-1/blob/master/\
+    manuscripts/daytime.pdf
+)
 ----
 
 [svg-styles/

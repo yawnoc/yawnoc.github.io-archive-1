@@ -64,7 +64,10 @@ but no mention of the author.
 @@
 
 ----
-__High-resolution version:__ [`lion-pavilion.jpg`~(1.6~MB)](lion-pavilion.jpg)
+__High-resolution version:__ [`lion-pavilion.jpg`~(1.6~MB)](
+  https://github.com/yawnoc/yawnoc.github.io-archive-1/blob/master/\
+    lit/lion-pavilion.jpg
+)
 ----
 
 
