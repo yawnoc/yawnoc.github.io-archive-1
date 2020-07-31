@@ -1,4 +1,7 @@
-# yawnoc.github.io
+**This is archive-1. For the current version,
+see <https://github.com/yawnoc/yawnoc.github.io>.**
+
+# yawnoc.github.io-archive-1
 
 Conway's site: https://yawnoc.github.io
 
